@@ -38,7 +38,8 @@ def main():
         shutil.rmtree(site)
     shutil.copytree(ROOT / "gallery", site)
     (site / "gallery").mkdir(exist_ok=True)
-    (site / "gallery/index.html").write_text('<!doctype html><meta charset="utf-8"><meta http-equiv="refresh" content="0;url=../"><title>Motion assets</title><a href="../">Open Motion assets</a>', encoding="utf-8")
+    gallery_page = (site / "index.html").read_text(encoding="utf-8")
+    (site / "gallery/index.html").write_text(gallery_page.replace('<meta charset="utf-8">', '<meta charset="utf-8"><base href="../">', 1), encoding="utf-8")
     for name in manifest["files"]:
         if name.startswith("assets/"):
             target = site / name
