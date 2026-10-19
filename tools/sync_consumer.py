@@ -44,11 +44,14 @@ def main():
             parser.error("Use a pinned release version")
         manifest_data = read_url(f"https://raw.githubusercontent.com/{REPOSITORY}/{version}/manifest.json")
     digest = hashlib.sha256(manifest_data).hexdigest()
-    if not args.update and not args.version and not args.source and previous.get("manifestSha256") != digest:
+    if not args.source and previous.get("version") == version and previous.get("manifestSha256") != digest:
         raise ValueError("Release manifest changed; refusing an unreviewed replacement")
     manifest = json.loads(manifest_data)
     if "v" + manifest["version"] != version:
         raise ValueError("Version/tag mismatch")
+    if args.update and previous.get("version") == version and previous.get("manifestSha256") == digest:
+        print(f"Already pinned to {version}; no update")
+        return
     aliases = {
         "android": {
             "assets/fonts/FeldmanFont.ttf": "motion/src/main/res/font/feldman_font.ttf",
