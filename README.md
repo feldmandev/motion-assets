@@ -19,6 +19,9 @@ The code license does not relicense vendor artwork or logos.
 
 ## Gallery
 
+Open [the hosted gallery](https://feldmandev.github.io/motion-assets/).
+The `/gallery/` address redirects to the same gallery.
+
 The unified gallery browses all four modules. Devices retain the existing finish,
 rotate, fold/unfold, exact frame and screen-checker controls. Only the selected
 model is downloaded and decompressed; filenames include a content hash.
