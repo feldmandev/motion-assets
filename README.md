@@ -98,3 +98,10 @@ snapshot, not a promise of byte-identical regeneration on every Blender version.
 Always run `tools/catalog.py` then `tools/validate.py` before publication. The
 validator checks inventory hashes, SVGs, fonts, catalog links and common private
 path/credential patterns. Imports do not copy source-repository Git history.
+
+## Repository hosting setup
+
+A repository owner must enable **Settings ? Pages ? Source: GitHub Actions**
+for the gallery deployment workflow. The release gallery ZIP also works locally.
+For scheduled update PRs, allow Actions to create pull requests in the repository
+Actions settings; the workflows otherwise require no personal access token.

@@ -8,13 +8,14 @@ import argparse
 import hashlib
 import json
 from pathlib import Path
+from urllib.parse import quote
 from urllib.request import Request, urlopen
 
 REPOSITORY = "feldmandev/motion-assets"
 
 
 def read_url(url):
-    with urlopen(Request(url, headers={"User-Agent": "motion-assets-consumer"}), timeout=120) as response:
+    with urlopen(Request(quote(url, safe=":/%?=&"), headers={"User-Agent": "motion-assets-consumer"}), timeout=120) as response:
         return response.read()
 
 

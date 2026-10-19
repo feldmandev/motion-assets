@@ -43,7 +43,7 @@ jobs:
         with:
           python-version: '3.12'
       - run: python -m pip install -r requirements.txt
-      - run: python tools/validate.py && python tools/build.py
+      - run: python tools/validate.py && python tools/fetch_models.py && python tools/build.py --models
       - name: Publish immutable module archives
         env:
           GH_TOKEN: ${{ github.token }}
