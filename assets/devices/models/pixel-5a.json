@@ -1,0 +1,151 @@
+{
+  "id": "pixel-5a",
+  "name": "Pixel 5a",
+  "state": "default",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        1080,
+        2400
+      ],
+      "size_mm": [
+        66.0834861783203,
+        146.85219150737845
+      ],
+      "center_mm": [
+        0,
+        0,
+        4.4350000000000005
+      ],
+      "corner_radius_mm": 5.3,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0,
+      "frame_bounds_mm": [
+        3.5582569108398516,
+        4.673904246310769,
+        66.0834861783203,
+        146.85219150737845
+      ],
+      "frame_screen_px": null,
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "height": 156.2,
+        "width": 73.2,
+        "depth": 8.8,
+        "corner_radius": 8.858256910839852,
+        "edge_roll": 0.95,
+        "edge_roll_mm": [
+          2.45,
+          0.95
+        ],
+        "front_curve": 0,
+        "rear_style": "unibody",
+        "corner_radii_mm": [
+          8.858256910839852,
+          8.858256910839852,
+          8.858256910839852,
+          8.858256910839852
+        ]
+      },
+      "cutouts": [
+        {
+          "center_mm": [
+            -28.04174308916015,
+            68.42609575368922
+          ],
+          "radius_mm": 1.9
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "articulation": null,
+  "panels": [],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/pixel-5a-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "button": "button",
+    "fingerprint": "fingerprint",
+    "black": "black",
+    "flash": "flash"
+  },
+  "finishes": [
+    {
+      "name": "Mostly Black",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.16078,
+            0.22745,
+            0.19608
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.16078,
+            0.22745,
+            0.19608
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.03529,
+            0.04314,
+            0.0549
+          ]
+        },
+        "button": {
+          "rgb": [
+            0.44706,
+            0.48235,
+            0.32549
+          ]
+        },
+        "fingerprint": {
+          "rgb": [
+            0.1451,
+            0.2,
+            0.17255
+          ]
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/pixel-5a.fa7c4f1f6aae.glb.gz",
+  "sha256": "fa7c4f1f6aae8a9adea24c295706fe4db08da1b1f3035da071b1aabe1b4c9458",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/pixel-5a.json",
+    "accuracy": {
+      "body_dimensions": "Google published metric dimensions",
+      "screen_resolution": "Google published panel resolution",
+      "screen_geometry": "Published panel diagonal/aspect geometry; no matching Android SDK skin is installed",
+      "camera_geometry": "Model-specific rear housing/lens placement proportioned from reviewed product photography; optical stacks reuse the reviewed Pixel optics and are illustrative",
+      "buttons_and_rear_hardware": "Model-specific placement reviewed against product photography",
+      "finishes": "Approximate sRGB appearance matched to named Google finishes; not measured material samples"
+    },
+    "sources": [
+      "https://support.google.com/pixelphone/answer/16043605?hl=en",
+      "https://www.backmarket.com/en-us/p/google-pixel-5a-5g-verizon",
+      "https://blog.google/products-and-platforms/devices/pixel/pixel5a-with-5g-new-google-phone/"
+    ]
+  }
+}

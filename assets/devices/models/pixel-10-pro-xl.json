@@ -1,0 +1,215 @@
+{
+  "id": "pixel-10-pro-xl",
+  "name": "Pixel 10 Pro XL",
+  "state": "default",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        1344,
+        2992
+      ],
+      "size_mm": [
+        70.5589164785553,
+        157.07758787487907
+      ],
+      "center_mm": [
+        0.026249596904224445,
+        -0.026249596904224445,
+        4.285
+      ],
+      "corner_radius_mm": 8.239014498417301,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0,
+      "frame_bounds_mm": [
+        3.0467913576265673,
+        2.887455659464692,
+        70.5589164785553,
+        157.07758787487907
+      ],
+      "frame_screen_px": [
+        60,
+        55,
+        1344,
+        2992
+      ],
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "height": 162.8,
+        "width": 76.6,
+        "depth": 8.5,
+        "corner_radius": 11.100220560977771,
+        "edge_roll": 0.55,
+        "front_curve": 0,
+        "edge_roll_mm": [
+          0.75,
+          0.75
+        ],
+        "corner_radii_mm": [
+          11.073970964073549,
+          11.126470157881993,
+          11.126470157881993,
+          11.073970964073549
+        ]
+      },
+      "cutouts": [
+        {
+          "center_mm": [
+            0,
+            74.53879393743954
+          ],
+          "radius_mm": 1.5
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "articulation": null,
+  "panels": [],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/pixel-10-pro-xl-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "black": "black",
+    "flash": "flash"
+  },
+  "finishes": [
+    {
+      "name": "Moonstone",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.58824,
+            0.61176,
+            0.6549
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.58236,
+            0.59764,
+            0.62569
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.58236,
+            0.59764,
+            0.62569
+          ]
+        }
+      }
+    },
+    {
+      "name": "Jade",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.7098,
+            0.74118,
+            0.6
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.66137,
+            0.68177,
+            0.59
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.66137,
+            0.68177,
+            0.59
+          ]
+        }
+      }
+    },
+    {
+      "name": "Porcelain",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.87843,
+            0.87843,
+            0.83529
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.77098,
+            0.77098,
+            0.74294
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.77098,
+            0.77098,
+            0.74294
+          ]
+        }
+      }
+    },
+    {
+      "name": "Obsidian",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.2,
+            0.22745,
+            0.23922
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.33,
+            0.34784,
+            0.35549
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.33,
+            0.34784,
+            0.35549
+          ]
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/pixel-10-pro-xl.867601ac1ac2.glb.gz",
+  "sha256": "867601ac1ac2b88a637a8972b94fcfa82c669c4b1fc0af0da9f75b5f7ed90db7",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/pixel-10-pro-xl.json",
+    "accuracy": {
+      "body_dimensions": "Google published metric dimensions",
+      "screen_resolution": "Google published panel resolution",
+      "screen_geometry": "Screen fit and corner radius measured from Google emulator artwork; native pixel aspect preserved. Skin artwork is a reference, not physical CAD.",
+      "camera_geometry": "Housing width, height and top gap scaled from official rear artwork; pixel bounds and uncertainty in camera_measurement. Optical internals remain illustrative. Official side image scaled by published body thickness; approximate raster boundaries, +/-0.5 mm. Rear handheld image has lower confidence than orthographic artwork.",
+      "finishes": "Approximate sRGB colors and roughness, not calibrated measured materials"
+    },
+    "sources": [
+      "https://support.google.com/pixelphone/answer/7158570?hl=en",
+      "https://store.google.com/product/pixel_10_pro_xl?hl=en-US"
+    ]
+  }
+}

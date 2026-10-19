@@ -1,0 +1,110 @@
+[
+  {
+    "id": "feldman",
+    "name": "Feldman Font",
+    "file": "assets/fonts/FeldmanFont.ttf",
+    "license": "OFL-1.1",
+    "axes": [
+      {
+        "tag": "opsz",
+        "min": 6.0,
+        "default": 18.0,
+        "max": 144.0
+      },
+      {
+        "tag": "wdth",
+        "min": 25.0,
+        "default": 100.0,
+        "max": 151.0
+      },
+      {
+        "tag": "wght",
+        "min": 1.0,
+        "default": 400.0,
+        "max": 1000.0
+      },
+      {
+        "tag": "GRAD",
+        "min": 0.0,
+        "default": 0.0,
+        "max": 100.0
+      },
+      {
+        "tag": "ROND",
+        "min": 0.0,
+        "default": 0.0,
+        "max": 100.0
+      },
+      {
+        "tag": "slnt",
+        "min": -10.0,
+        "default": 0.0,
+        "max": 0.0
+      }
+    ]
+  },
+  {
+    "id": "fredoka",
+    "name": "Fredoka Light",
+    "file": "assets/fonts/Fredoka-VariableFont_wdth,wght.ttf",
+    "license": "OFL-1.1",
+    "axes": [
+      {
+        "tag": "wght",
+        "min": 300.0,
+        "default": 300.0,
+        "max": 700.0
+      },
+      {
+        "tag": "wdth",
+        "min": 75.0,
+        "default": 100.0,
+        "max": 125.0
+      }
+    ]
+  },
+  {
+    "id": "googlesansflex",
+    "name": "Google Sans Flex",
+    "file": "assets/fonts/GoogleSansFlex-VariableFont_GRAD,ROND,opsz,slnt,wdth,wght.ttf",
+    "license": "OFL-1.1",
+    "axes": [
+      {
+        "tag": "opsz",
+        "min": 6.0,
+        "default": 18.0,
+        "max": 144.0
+      },
+      {
+        "tag": "wdth",
+        "min": 25.0,
+        "default": 100.0,
+        "max": 151.0
+      },
+      {
+        "tag": "wght",
+        "min": 1.0,
+        "default": 400.0,
+        "max": 1000.0
+      },
+      {
+        "tag": "GRAD",
+        "min": 0.0,
+        "default": 0.0,
+        "max": 100.0
+      },
+      {
+        "tag": "ROND",
+        "min": 0.0,
+        "default": 0.0,
+        "max": 100.0
+      },
+      {
+        "tag": "slnt",
+        "min": -10.0,
+        "default": 0.0,
+        "max": 0.0
+      }
+    ]
+  }
+]

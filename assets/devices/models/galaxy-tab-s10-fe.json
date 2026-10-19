@@ -1,0 +1,283 @@
+{
+  "id": "galaxy-tab-s10-fe",
+  "name": "Galaxy Tab S10 FE",
+  "state": "default",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        1440,
+        2304
+      ],
+      "size_mm": [
+        146.80970638088084,
+        234.89553020940934
+      ],
+      "center_mm": [
+        0.0,
+        0.0,
+        3.0349998474121094
+      ],
+      "corner_radius_mm": 1.2818531904404153,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0,
+      "frame_bounds_mm": [
+        9.495146809559586,
+        9.702234895295334,
+        146.80970638088084,
+        234.89553020940934
+      ],
+      "frame_screen_px": null,
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "width": 165.8,
+        "height": 254.3,
+        "depth": 6,
+        "corner_radius": 10.777000000000001,
+        "edge_roll": 0.32,
+        "front_rail_mm": 0.45,
+        "corner_radii_mm": [
+          10.777000000000001,
+          10.777000000000001,
+          10.777000000000001,
+          10.777000000000001
+        ]
+      },
+      "cutouts": [
+        {
+          "center_mm": [
+            78.15242659522022,
+            0
+          ],
+          "radius_mm": 1.3
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "articulation": null,
+  "panels": [],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/galaxy-tab-s10-fe-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "logo": "logo",
+    "black": "black",
+    "flash": "flash",
+    "strip": "strip",
+    "camera_ring": "camera_ring"
+  },
+  "finishes": [
+    {
+      "name": "Gray",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.4980392156862745,
+            0.5372549019607843,
+            0.5882352941176471
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "rail": {
+          "rgb": [
+            0.4980392156862745,
+            0.5372549019607843,
+            0.5882352941176471
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "bar": {
+          "rgb": [
+            0.025,
+            0.028,
+            0.032
+          ],
+          "rough": 0.34
+        },
+        "logo": {
+          "rgb": [
+            0.25898039215686275,
+            0.27937254901960784,
+            0.3058823529411765
+          ],
+          "metal": 0.3,
+          "rough": 0.45
+        },
+        "strip": {
+          "rgb": [
+            0.5777843137254902,
+            0.6220980392156862,
+            0.6797058823529412
+          ],
+          "metal": 0.5,
+          "rough": 0.5
+        },
+        "camera_ring": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.15
+          ],
+          "metal": 0.75,
+          "rough": 0.3
+        }
+      }
+    },
+    {
+      "name": "Silver",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.8,
+            0.8196078431372549,
+            0.8352941176470589
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "rail": {
+          "rgb": [
+            0.8,
+            0.8196078431372549,
+            0.8352941176470589
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "bar": {
+          "rgb": [
+            0.025,
+            0.028,
+            0.032
+          ],
+          "rough": 0.34
+        },
+        "logo": {
+          "rgb": [
+            0.41600000000000004,
+            0.4261960784313725,
+            0.4343529411764706
+          ],
+          "metal": 0.3,
+          "rough": 0.45
+        },
+        "strip": {
+          "rgb": [
+            0.9189999999999999,
+            0.9411568627450979,
+            0.9588823529411764
+          ],
+          "metal": 0.5,
+          "rough": 0.5
+        },
+        "camera_ring": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.15
+          ],
+          "metal": 0.75,
+          "rough": 0.3
+        }
+      }
+    },
+    {
+      "name": "Blue",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.6941176470588235,
+            0.788235294117647,
+            0.8627450980392157
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "rail": {
+          "rgb": [
+            0.6941176470588235,
+            0.788235294117647,
+            0.8627450980392157
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "bar": {
+          "rgb": [
+            0.025,
+            0.028,
+            0.032
+          ],
+          "rough": 0.34
+        },
+        "logo": {
+          "rgb": [
+            0.3609411764705882,
+            0.4098823529411765,
+            0.4486274509803922
+          ],
+          "metal": 0.3,
+          "rough": 0.45
+        },
+        "strip": {
+          "rgb": [
+            0.7993529411764705,
+            0.905705882352941,
+            0.9899019607843137
+          ],
+          "metal": 0.5,
+          "rough": 0.5
+        },
+        "camera_ring": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.15
+          ],
+          "metal": 0.75,
+          "rough": 0.3
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/galaxy-tab-s10-fe.63cb0c7094b2.glb.gz",
+  "sha256": "63cb0c7094b29c315b1bed64449160d2d0b2cd84458d9096ab2e7e1ad1b170b0",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/galaxy-tab-s10-fe.json",
+    "accuracy": {
+      "body_dimensions": "Samsung published metric dimensions",
+      "screen_resolution": "Samsung native panel resolution; exact aspect ratio",
+      "screen_geometry": "Published rectangular diagonal and exact native aspect; inferred bezels. Concentric corner radii, selfie aperture/notch dimensions are photo estimates.",
+      "camera_geometry": "Official rear-render normalized measurements; model-family housing/charging insert, separate glass windows, rims, apertures and flash. Protrusion and internal optics estimated, not OEM CAD.",
+      "details": "Rear wordmark and built-in charging surface where present; no S Pen accessory. Ports, speaker holes and antenna seams omitted. See research/samsung-tablet-rear-measurements.json for measurements and family transfer limits.",
+      "finishes": "Official names (regional availability varies); source-icon sampled/representative RGB, not measured material samples."
+    },
+    "sources": [
+      "https://news.samsung.com/es/la-serie-galaxy-tab-s10-fe-acerca-las-experiencias-inteligentes-a-todo-el-mundo-con-un-diseno-premium-y-versatil",
+      "[local reference path omitted]",
+      "[local reference path omitted]",
+      "https://api.samsungmobilepress.com/media-assets/galaxy-tab-s10-fe",
+      "https://api.samsungmobilepress.com/file/E6C5C17B589249345FE00451B2CF9D56C68F83EB7FA9DEFC5E4E53D8BA7F7A217BBB00A6B5C8B9187D61108E85B4A7F75A8A39DACDE162F9F6CD0EE7219976DD3993BF05A3A2C026C70E0F6161620E05CA8A94E173190BC4E6147883AD4CD94C7BD364833DB7251F617765464138658CB6AC40CB284652B6FFE29661C178EB73"
+    ]
+  }
+}

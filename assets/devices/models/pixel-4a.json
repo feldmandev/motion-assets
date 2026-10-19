@@ -1,0 +1,196 @@
+{
+  "id": "pixel-4a",
+  "name": "Pixel 4a",
+  "state": "default",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        1080,
+        2340
+      ],
+      "size_mm": [
+        62.53317249698432,
+        135.48854041013269
+      ],
+      "center_mm": [
+        0.20265379975874548,
+        0.43425814234016885,
+        4.135
+      ],
+      "corner_radius_mm": 5.480121805284496,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0,
+      "frame_bounds_mm": [
+        3.636067551266585,
+        3.8214716525934875,
+        62.53317249698432,
+        135.48854041013269
+      ],
+      "frame_screen_px": [
+        62,
+        68,
+        1080,
+        2340
+      ],
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "height": 144.0,
+        "width": 69.4,
+        "depth": 8.2,
+        "corner_radius": 8.91353555679234,
+        "edge_roll": 1.0,
+        "edge_roll_mm": [
+          2.35,
+          1.0
+        ],
+        "front_curve": 0,
+        "rear_style": "unibody",
+        "corner_radii_mm": [
+          8.710881757033597,
+          8.710881757033597,
+          9.116189356551082,
+          9.116189356551082
+        ]
+      },
+      "cutouts": [
+        {
+          "center_mm": [
+            -26.27,
+            62.74
+          ],
+          "radius_mm": 1.9
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "articulation": null,
+  "panels": [],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/pixel-4a-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "button": "button",
+    "fingerprint": "fingerprint",
+    "black": "black",
+    "flash": "flash"
+  },
+  "finishes": [
+    {
+      "name": "Just Black",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.14118,
+            0.14902,
+            0.15686
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.14118,
+            0.14902,
+            0.15686
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.03529,
+            0.04314,
+            0.0549
+          ]
+        },
+        "button": {
+          "rgb": [
+            0.62353,
+            0.79216,
+            0.76471
+          ]
+        },
+        "fingerprint": {
+          "rgb": [
+            0.18824,
+            0.19608,
+            0.20784
+          ]
+        }
+      }
+    },
+    {
+      "name": "Barely Blue",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.79608,
+            0.86275,
+            0.92549
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.79608,
+            0.86275,
+            0.92549
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.03529,
+            0.04314,
+            0.0549
+          ]
+        },
+        "button": {
+          "rgb": [
+            0.94118,
+            0.63137,
+            0.4549
+          ]
+        },
+        "fingerprint": {
+          "rgb": [
+            0.74118,
+            0.80784,
+            0.87059
+          ]
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/pixel-4a.5b22ab23f9b8.glb.gz",
+  "sha256": "5b22ab23f9b83a73991f3eecc12d6b9c4d21cec9d1fc0229381d0cfa7298d9d5",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/pixel-4a.json",
+    "accuracy": {
+      "body_dimensions": "Google published metric dimensions",
+      "screen_resolution": "Google published panel resolution",
+      "screen_geometry": "Google Android Emulator skin trace with native panel aspect preserved",
+      "camera_geometry": "Model-specific rear housing/lens placement proportioned from reviewed product photography; optical stacks reuse the reviewed Pixel optics and are illustrative",
+      "buttons_and_rear_hardware": "Model-specific placement reviewed against product photography",
+      "finishes": "Approximate sRGB appearance matched to named Google finishes; not measured material samples"
+    },
+    "sources": [
+      "https://support.google.com/pixelphone/answer/16043605?hl=en",
+      "https://www.mobiel.nl/smartphone/google/pixel-4a",
+      "https://blog.google/intl/ja-jp/products/devices-services/2020_12_2020featuredrop/"
+    ]
+  }
+}

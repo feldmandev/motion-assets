@@ -1,0 +1,294 @@
+{
+  "id": "pixel-10a",
+  "name": "Pixel 10a",
+  "finish": "Lavender",
+  "body_mm": {
+    "height": 153.9,
+    "width": 73.0,
+    "depth": 9.0,
+    "corner_radius": 12.788878764705881,
+    "edge_roll": 0.55,
+    "front_curve": 0,
+    "edge_roll_mm": [
+      1.0,
+      0.8
+    ]
+  },
+  "materials": {
+    "back": {
+      "rgb": [
+        0.7098,
+        0.69412,
+        0.83922
+      ],
+      "rough": 0.42
+    },
+    "rail": {
+      "rgb": [
+        0.66137,
+        0.65118,
+        0.74549
+      ],
+      "metal": 1,
+      "rough": 0.36
+    },
+    "bar": {
+      "rgb": [
+        0.66137,
+        0.65118,
+        0.74549
+      ],
+      "metal": 0.6,
+      "rough": 0.3
+    },
+    "black": {
+      "rgb": [
+        0.007,
+        0.009,
+        0.012
+      ],
+      "rough": 0.5
+    },
+    "flash": {
+      "rgb": [
+        0.85,
+        0.84,
+        0.77
+      ],
+      "rough": 0.33
+    }
+  },
+  "finishes": {
+    "Lavender": {
+      "back": {
+        "rgb": [
+          0.7098,
+          0.69412,
+          0.83922
+        ]
+      },
+      "rail": {
+        "rgb": [
+          0.66137,
+          0.65118,
+          0.74549
+        ]
+      },
+      "bar": {
+        "rgb": [
+          0.66137,
+          0.65118,
+          0.74549
+        ]
+      }
+    },
+    "Berry": {
+      "back": {
+        "rgb": [
+          0.80784,
+          0.39216,
+          0.48235
+        ]
+      },
+      "rail": {
+        "rgb": [
+          0.7251,
+          0.4549,
+          0.51353
+        ]
+      },
+      "bar": {
+        "rgb": [
+          0.7251,
+          0.4549,
+          0.51353
+        ]
+      }
+    },
+    "Fog": {
+      "back": {
+        "rgb": [
+          0.85098,
+          0.86667,
+          0.83922
+        ]
+      },
+      "rail": {
+        "rgb": [
+          0.75314,
+          0.76334,
+          0.74549
+        ]
+      },
+      "bar": {
+        "rgb": [
+          0.75314,
+          0.76334,
+          0.74549
+        ]
+      }
+    },
+    "Obsidian": {
+      "back": {
+        "rgb": [
+          0.2,
+          0.22745,
+          0.23922
+        ]
+      },
+      "rail": {
+        "rgb": [
+          0.33,
+          0.34784,
+          0.35549
+        ]
+      },
+      "bar": {
+        "rgb": [
+          0.33,
+          0.34784,
+          0.35549
+        ]
+      }
+    },
+    "Isai Blue": {
+      "back": {
+        "rgb": [
+          0.20392,
+          0.29412,
+          0.56471
+        ]
+      },
+      "rail": {
+        "rgb": [
+          0.33255,
+          0.39118,
+          0.56706
+        ]
+      },
+      "bar": {
+        "rgb": [
+          0.33255,
+          0.39118,
+          0.56706
+        ]
+      }
+    }
+  },
+  "screen": {
+    "object": "Device screen",
+    "node": "Device screen",
+    "panel": "Body",
+    "resolution": [
+      1080,
+      2424
+    ],
+    "fit_box_mm": [
+      65.18117647058824,
+      146.2955294117647
+    ],
+    "center_mm": [
+      0.0,
+      0.0,
+      4.535
+    ],
+    "corner_radius_mm": 8.866390235294118,
+    "edge_curve_mm": 0,
+    "create_cutouts": true,
+    "cutouts": [
+      {
+        "center_mm": [
+          0,
+          69.14776470588235
+        ],
+        "radius_mm": 1.5
+      }
+    ]
+  },
+  "camera": {
+    "center_mm": [
+      14.05,
+      55.75000000000001
+    ],
+    "size_mm": [
+      30.7,
+      19.8,
+      9.9
+    ],
+    "bump_mm": 0.15,
+    "roll_mm": 0.05,
+    "windows": [
+      [
+        14.05,
+        55.75000000000001,
+        30.1,
+        19.2,
+        9.6
+      ]
+    ],
+    "lenses": [
+      {
+        "kind": "ultrawide",
+        "center_mm": [
+          20.55,
+          55.75000000000001
+        ],
+        "radius_mm": 3.0,
+        "window": 0
+      },
+      {
+        "kind": "main",
+        "center_mm": [
+          7.550000000000001,
+          55.75000000000001
+        ],
+        "radius_mm": 3.4,
+        "window": 0
+      }
+    ],
+    "flash": [
+      [
+        -8.95,
+        55.75000000000001,
+        2.9
+      ]
+    ],
+    "flash_surface": "body"
+  },
+  "accuracy": {
+    "body_dimensions": "Google published metric dimensions",
+    "screen_resolution": "Google published panel resolution",
+    "screen_geometry": "Screen fit and corner radius measured from Google emulator artwork; native pixel aspect preserved. Skin artwork is a reference, not physical CAD.",
+    "camera_geometry": "Housing width, height and top gap scaled from official rear artwork; pixel bounds and uncertainty in camera_measurement. Optical internals remain illustrative. Not measurable from this rear view; model depth remains a visual estimate.",
+    "finishes": "Approximate sRGB colors and roughness, not calibrated measured materials"
+  },
+  "sources": [
+    "https://support.google.com/pixelphone/answer/7158570?hl=en",
+    "https://store.google.com/product/pixel_10a?hl=en-US",
+    "https://store.google.com/jp/magazine/google-pixel-10a-isai-blue?hl=ja"
+  ],
+  "status": "provisional",
+  "reference_frame": "research\\skins\\pixel-10a\\frame.png",
+  "camera_measurement": {
+    "reference": "research/images/pixel-10a-isai-blue-camera.webp",
+    "body_bounds_px": [
+      595,
+      136,
+      1325,
+      1080
+    ],
+    "bar_bounds_px": [
+      666,
+      249,
+      973,
+      447
+    ],
+    "scale_mm_per_px": 0.1,
+    "width_mm": 30.7,
+    "height_mm": 19.8,
+    "top_gap_mm": 11.3,
+    "rear_measurement_uncertainty_mm": 0.5,
+    "protrusion_mm": null,
+    "depth_status": "Not measurable from this rear view; model depth remains a visual estimate."
+  }
+}

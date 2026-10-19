@@ -1,0 +1,223 @@
+{
+  "id": "galaxy-s25-edge",
+  "name": "Galaxy S25 edge",
+  "state": "default",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        1440,
+        3120
+      ],
+      "size_mm": [
+        71.3153206404401,
+        154.51652805428688
+      ],
+      "center_mm": [
+        0.0,
+        0.0,
+        2.934999704360962
+      ],
+      "corner_radius_mm": 8,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0,
+      "frame_bounds_mm": [
+        2.142339679779944,
+        1.8417359728565543,
+        71.3153206404401,
+        154.51652805428688
+      ],
+      "frame_screen_px": null,
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "width": 75.6,
+        "height": 158.2,
+        "depth": 5.8,
+        "corner_radius": 9.841735972856554,
+        "edge_roll_mm": [
+          0.35,
+          0.25
+        ],
+        "front_rail_mm": 0.4,
+        "rear_inset": 0.4,
+        "corner_radii_mm": [
+          9.841735972856554,
+          9.841735972856554,
+          9.841735972856554,
+          9.841735972856554
+        ]
+      },
+      "cutouts": [
+        {
+          "center_mm": [
+            0,
+            73.45826402714344
+          ],
+          "radius_mm": 1.4
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "articulation": null,
+  "panels": [],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/galaxy-s25-edge-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "logo": "logo",
+    "black": "black",
+    "flash": "flash",
+    "front_sensor": "front_sensor",
+    "front_speaker": "front_speaker"
+  },
+  "finishes": [
+    {
+      "name": "Titanium Silver",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.8274509803921568,
+            0.8274509803921568,
+            0.8274509803921568
+          ],
+          "rough": 0.36
+        },
+        "rail": {
+          "rgb": [
+            0.7605882352941177,
+            0.7605882352941177,
+            0.7605882352941177
+          ],
+          "metal": 0.8,
+          "rough": 0.27
+        },
+        "bar": {
+          "rgb": [
+            0.8012549019607843,
+            0.8012549019607843,
+            0.8012549019607843
+          ],
+          "metal": 0.55,
+          "rough": 0.27
+        },
+        "logo": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.16
+          ]
+        }
+      }
+    },
+    {
+      "name": "Titanium Icyblue",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.803921568627451,
+            0.8274509803921568,
+            0.8823529411764706
+          ],
+          "rough": 0.36
+        },
+        "rail": {
+          "rgb": [
+            0.7429411764705883,
+            0.7605882352941177,
+            0.8017647058823529
+          ],
+          "metal": 0.8,
+          "rough": 0.27
+        },
+        "bar": {
+          "rgb": [
+            0.779607843137255,
+            0.8012549019607843,
+            0.851764705882353
+          ],
+          "metal": 0.55,
+          "rough": 0.27
+        },
+        "logo": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.16
+          ]
+        }
+      }
+    },
+    {
+      "name": "Titanium Jetblack",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.1607843137254902,
+            0.16470588235294117,
+            0.1803921568627451
+          ],
+          "rough": 0.36
+        },
+        "rail": {
+          "rgb": [
+            0.2605882352941177,
+            0.2635294117647059,
+            0.2752941176470588
+          ],
+          "metal": 0.8,
+          "rough": 0.27
+        },
+        "bar": {
+          "rgb": [
+            0.18792156862745102,
+            0.1915294117647059,
+            0.2059607843137255
+          ],
+          "metal": 0.55,
+          "rough": 0.27
+        },
+        "logo": {
+          "rgb": [
+            0.62,
+            0.64,
+            0.68
+          ]
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/galaxy-s25-edge.c7a67ade00ca.glb.gz",
+  "sha256": "c7a67ade00cabaf67cf1e733a2bcb6223985c79270c990161b8a376d978798fd",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/galaxy-s25-edge.json",
+    "accuracy": {
+      "body_dimensions": "Samsung published chassis dimensions. Corner radii, edge rolls and curvature are photo estimates, not CAD.",
+      "screen_resolution": "Samsung native resolution. Active rectangle calculated from rounded published full diagonal and native aspect; physical bezel widths therefore approximate.",
+      "screen_geometry": "Model-specific flat/dual-edge display, rectangular/rounded corners, bezel selfie or Infinity-O aperture. Radii, hole positions and curve depth are photo estimates.",
+      "camera_geometry": "Model-specific rear layout scaled from generate_galaxy_svgs.PHONES / base MODELS official-render measurements. Internal optics, radii and protrusions illustrative; early cover internal lens positions estimated from photographs. Laser/ToF/heart-rate/fingerprint features distinguished from imaging lenses.",
+      "finishes": "Published finish names; approximate sampled sRGB and material response. S21+ Phantom Violet uses muted rose champagne camera housing.",
+      "omissions": "USB/headphone ports, speaker perforations, antenna seams and S Pen silo omitted. Legacy capacitive navigation marks and bezel hardware simplified."
+    },
+    "sources": [
+      "https://news.samsung.com/global/meet-the-samsung-galaxy-s25-edge-an-engineering-marvel-of-new-slim-hardware-innovation"
+    ]
+  }
+}

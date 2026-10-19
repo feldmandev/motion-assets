@@ -1,0 +1,270 @@
+{
+  "id": "pixel-11",
+  "name": "Pixel 11",
+  "finish": "Frost",
+  "body_mm": {
+    "height": 152.8,
+    "width": 72.0,
+    "depth": 8.6,
+    "corner_radius": 12.3,
+    "edge_roll": 0.55,
+    "front_curve": 0,
+    "edge_roll_mm": [
+      0.65,
+      0.65
+    ]
+  },
+  "materials": {
+    "back": {
+      "rgb": [
+        0.72549,
+        0.72941,
+        0.81176
+      ],
+      "rough": 0.18
+    },
+    "rail": {
+      "rgb": [
+        0.69961,
+        0.75823,
+        0.77863
+      ],
+      "metal": 1,
+      "rough": 0.36
+    },
+    "bar": {
+      "rgb": [
+        0.69961,
+        0.75823,
+        0.77863
+      ],
+      "metal": 0.6,
+      "rough": 0.36
+    },
+    "black": {
+      "rgb": [
+        0.007,
+        0.009,
+        0.012
+      ],
+      "rough": 0.5
+    },
+    "flash": {
+      "rgb": [
+        0.85,
+        0.84,
+        0.77
+      ],
+      "rough": 0.33
+    }
+  },
+  "finishes": {
+    "Frost": {
+      "back": {
+        "rgb": [
+          0.72549,
+          0.72941,
+          0.81176
+        ]
+      },
+      "rail": {
+        "rgb": [
+          0.69961,
+          0.75823,
+          0.77863
+        ],
+        "rough": 0.36
+      },
+      "bar": {
+        "rgb": [
+          0.69961,
+          0.75823,
+          0.77863
+        ],
+        "rough": 0.36
+      }
+    },
+    "Pistachio": {
+      "back": {
+        "rgb": [
+          0.76863,
+          0.80784,
+          0.61961
+        ]
+      },
+      "rail": {
+        "rgb": [
+          0.69961,
+          0.7251,
+          0.60275
+        ],
+        "rough": 0.36
+      },
+      "bar": {
+        "rgb": [
+          0.69961,
+          0.7251,
+          0.60275
+        ],
+        "rough": 0.36
+      }
+    },
+    "Hibiscus": {
+      "back": {
+        "rgb": [
+          0.85882,
+          0.49412,
+          0.6
+        ]
+      },
+      "rail": {
+        "rgb": [
+          0.75823,
+          0.52118,
+          0.59
+        ],
+        "rough": 0.36
+      },
+      "bar": {
+        "rgb": [
+          0.75823,
+          0.52118,
+          0.59
+        ],
+        "rough": 0.36
+      }
+    },
+    "Obsidian": {
+      "back": {
+        "rgb": [
+          0.2,
+          0.22745,
+          0.23922
+        ]
+      },
+      "rail": {
+        "rgb": [
+          0.33,
+          0.34784,
+          0.35549
+        ],
+        "rough": 0.36
+      },
+      "bar": {
+        "rgb": [
+          0.33,
+          0.34784,
+          0.35549
+        ],
+        "rough": 0.36
+      }
+    }
+  },
+  "screen": {
+    "object": "Device screen",
+    "node": "Device screen",
+    "panel": "Body",
+    "resolution": [
+      1080,
+      2424
+    ],
+    "fit_box_mm": [
+      66.47524752475248,
+      149.20000000000002
+    ],
+    "center_mm": [
+      0,
+      0,
+      4.335
+    ],
+    "corner_radius_mm": 10.5,
+    "edge_curve_mm": 0,
+    "create_cutouts": true,
+    "cutouts": [
+      {
+        "center_mm": [
+          0,
+          69.50000000000001
+        ],
+        "radius_mm": 1.5
+      }
+    ]
+  },
+  "camera": {
+    "center_mm": [
+      0,
+      51.10000000000001
+    ],
+    "size_mm": [
+      66.0,
+      24.4,
+      12.2
+    ],
+    "bump_mm": 2.16,
+    "roll_mm": 0.25,
+    "windows": [
+      [
+        0,
+        51.10000000000001,
+        65.0,
+        23.4,
+        11.7
+      ]
+    ],
+    "lenses": [
+      {
+        "kind": "ultrawide",
+        "center_mm": [
+          21.0,
+          51.10000000000001
+        ],
+        "radius_mm": 2.7,
+        "window": 0
+      },
+      {
+        "kind": "main",
+        "center_mm": [
+          6.0,
+          51.10000000000001
+        ],
+        "radius_mm": 3.5,
+        "window": 0
+      },
+      {
+        "kind": "periscope",
+        "center_mm": [
+          -8.0,
+          51.10000000000001
+        ],
+        "radius_mm": 3.0,
+        "window": 0
+      }
+    ],
+    "flash": [
+      [
+        -22.0,
+        51.10000000000001,
+        3.0
+      ]
+    ],
+    "sensors": [],
+    "cover_depth_mm": 0.06,
+    "skip_source_pupil": true
+  },
+  "accuracy": {
+    "body_dimensions": "Google published metric dimensions",
+    "screen_resolution": "Google published panel resolution",
+    "screen_geometry": "Native resolution aspect preserved; concentric display/body corners and thin symmetric bezels estimated from official front artwork, not a measured CAD outline.",
+    "camera_geometry": "Camera capsule proportions estimated from official launch images: edge-to-edge black glass, three optics and in-glass flash. Base protrusion estimated as 60% of previous 3.6 mm baseline per Google thickness reduction; Pro protrusion estimated. HiLight represented in its unlit state. Optical internals illustrative, not manufacturer CAD.",
+    "finishes": "Approximate sRGB colors and roughness, not calibrated measured materials"
+  },
+  "sources": [
+    "https://support.google.com/pixelphone/answer/7158570?hl=en",
+    "https://store.google.com/gb/product/pixel_11_specs?hl=en-GB",
+    "https://blog.google/products-and-platforms/devices/pixel/google-pixel-11-pro-xl/"
+  ],
+  "status": "provisional",
+  "reference_images": [
+    "research/images/NFG_Cubs_Frost.webp"
+  ]
+}

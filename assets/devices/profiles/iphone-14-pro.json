@@ -1,0 +1,373 @@
+{
+  "id": "iphone-14-pro",
+  "name": "iPhone 14 Pro",
+  "manufacturer": "Apple",
+  "body_mm": {
+    "width": 71.45,
+    "height": 147.46,
+    "depth": 7.85,
+    "corner_radius": 17.32,
+    "edge_roll_mm": [
+      0.3,
+      0.3
+    ],
+    "front_curve": 0
+  },
+  "screen": {
+    "object": "Device screen",
+    "node": "Device screen",
+    "resolution": [
+      1179,
+      2556
+    ],
+    "fit_box_mm": [
+      65.08,
+      141.09
+    ],
+    "center_mm": [
+      0,
+      0,
+      3.96
+    ],
+    "corner_radius_mm": 14.13,
+    "edge_curve_mm": 0,
+    "create_cutouts": true,
+    "cutouts": [
+      {
+        "size_mm": [
+          20.69,
+          6.07
+        ],
+        "radius_mm": 3.035,
+        "center_mm": [
+          0,
+          62.595
+        ]
+      }
+    ]
+  },
+  "camera": {
+    "center_mm": [
+      12.570000000000004,
+      49.830000000000005
+    ],
+    "size_mm": [
+      41.93,
+      43.42,
+      10.9
+    ],
+    "bump_mm": 1.85,
+    "optical_bump_mm": 2.3299999999999996,
+    "lens_ring_mm": 0.65,
+    "roll_mm": 0.18,
+    "windows": [
+      [
+        21.445000000000004,
+        59.45,
+        14.309999999999999,
+        14.309999999999999,
+        7.154999999999999
+      ],
+      [
+        21.445000000000004,
+        40.21000000000001,
+        14.309999999999999,
+        14.309999999999999,
+        7.154999999999999
+      ],
+      [
+        3.605000000000004,
+        49.830000000000005,
+        14.309999999999999,
+        14.309999999999999,
+        7.154999999999999
+      ]
+    ],
+    "lenses": [
+      {
+        "kind": "main",
+        "center_mm": [
+          21.445000000000004,
+          59.45
+        ],
+        "radius_mm": 5.724,
+        "window": 0
+      },
+      {
+        "kind": "ultrawide",
+        "center_mm": [
+          21.445000000000004,
+          40.21000000000001
+        ],
+        "radius_mm": 5.724,
+        "window": 1
+      },
+      {
+        "kind": "main",
+        "center_mm": [
+          3.605000000000004,
+          49.830000000000005
+        ],
+        "radius_mm": 5.724,
+        "window": 2
+      }
+    ],
+    "flash": [
+      [
+        3.605000000000004,
+        63.410000000000004,
+        3.45
+      ]
+    ],
+    "sensors": [
+      [
+        3.9743500000000047,
+        37.58556000000001,
+        3.15
+      ],
+      [
+        -1.476549999999996,
+        40.23418000000001,
+        0.4
+      ]
+    ],
+    "local_pupil": true,
+    "integrated_plateau": false
+  },
+  "buttons": [
+    {
+      "name": "Side button",
+      "side": "right",
+      "center_y_mm": 18.190000000000005,
+      "length_mm": 15.8,
+      "width_mm": 2.55,
+      "thickness_mm": 0.45,
+      "radius_mm": 1.15
+    },
+    {
+      "name": "Volume up",
+      "side": "left",
+      "center_y_mm": 29.14,
+      "length_mm": 10.0,
+      "width_mm": 2.55,
+      "thickness_mm": 0.45,
+      "radius_mm": 1.15
+    },
+    {
+      "name": "Volume down",
+      "side": "left",
+      "center_y_mm": 14.940000000000005,
+      "length_mm": 10.0,
+      "width_mm": 2.55,
+      "thickness_mm": 0.45,
+      "radius_mm": 1.15
+    },
+    {
+      "name": "Ring/Silent switch",
+      "side": "left",
+      "center_y_mm": 42.59,
+      "length_mm": 5.5,
+      "width_mm": 2.55,
+      "thickness_mm": 0.45,
+      "radius_mm": 1.15
+    }
+  ],
+  "rear_logo": {
+    "kind": "apple",
+    "center_mm": [
+      0,
+      0.0
+    ],
+    "width_mm": 11.5,
+    "height_mm": 14.1,
+    "material": "logo"
+  },
+  "finish": "Space Black",
+  "materials": {
+    "back": {
+      "rgb": [
+        0.25882352941176473,
+        0.2627450980392157,
+        0.25098039215686274
+      ],
+      "rough": 0.38
+    },
+    "rail": {
+      "rgb": [
+        0.25882352941176473,
+        0.2627450980392157,
+        0.25098039215686274
+      ],
+      "metal": 1,
+      "rough": 0.17
+    },
+    "bar": {
+      "rgb": [
+        0.25882352941176473,
+        0.2627450980392157,
+        0.25098039215686274
+      ],
+      "metal": 0,
+      "rough": 0.25
+    },
+    "logo": {
+      "rgb": [
+        0.3863529411764706,
+        0.38917647058823535,
+        0.38070588235294117
+      ],
+      "metal": 0.92,
+      "rough": 0.18
+    },
+    "black": {
+      "rgb": [
+        0.007,
+        0.009,
+        0.012
+      ],
+      "rough": 0.5
+    },
+    "flash": {
+      "rgb": [
+        0.88,
+        0.87,
+        0.82
+      ],
+      "rough": 0.4
+    }
+  },
+  "finishes": {
+    "Space Black": {
+      "back": {
+        "rgb": [
+          0.25882352941176473,
+          0.2627450980392157,
+          0.25098039215686274
+        ]
+      },
+      "rail": {
+        "rgb": [
+          0.25882352941176473,
+          0.2627450980392157,
+          0.25098039215686274
+        ]
+      },
+      "bar": {
+        "rgb": [
+          0.25882352941176473,
+          0.2627450980392157,
+          0.25098039215686274
+        ]
+      },
+      "logo": {
+        "rgb": [
+          0.3863529411764706,
+          0.38917647058823535,
+          0.38070588235294117
+        ]
+      }
+    },
+    "Silver": {
+      "back": {
+        "rgb": [
+          0.8980392156862745,
+          0.8941176470588236,
+          0.8862745098039215
+        ]
+      },
+      "rail": {
+        "rgb": [
+          0.8980392156862745,
+          0.8941176470588236,
+          0.8862745098039215
+        ]
+      },
+      "bar": {
+        "rgb": [
+          0.8980392156862745,
+          0.8941176470588236,
+          0.8862745098039215
+        ]
+      },
+      "logo": {
+        "rgb": [
+          0.5567843137254902,
+          0.5543529411764706,
+          0.5494901960784313
+        ]
+      }
+    },
+    "Gold": {
+      "back": {
+        "rgb": [
+          0.9058823529411765,
+          0.8509803921568627,
+          0.7647058823529411
+        ]
+      },
+      "rail": {
+        "rgb": [
+          0.9058823529411765,
+          0.8509803921568627,
+          0.7647058823529411
+        ]
+      },
+      "bar": {
+        "rgb": [
+          0.9058823529411765,
+          0.8509803921568627,
+          0.7647058823529411
+        ]
+      },
+      "logo": {
+        "rgb": [
+          0.5616470588235294,
+          0.5276078431372548,
+          0.4741176470588235
+        ]
+      }
+    },
+    "Deep Purple": {
+      "back": {
+        "rgb": [
+          0.396078431372549,
+          0.3607843137254902,
+          0.4196078431372549
+        ]
+      },
+      "rail": {
+        "rgb": [
+          0.396078431372549,
+          0.3607843137254902,
+          0.4196078431372549
+        ]
+      },
+      "bar": {
+        "rgb": [
+          0.396078431372549,
+          0.3607843137254902,
+          0.4196078431372549
+        ]
+      },
+      "logo": {
+        "rgb": [
+          0.24556862745098038,
+          0.2236862745098039,
+          0.260156862745098
+        ]
+      }
+    }
+  },
+  "status": "official released device; model curves/material colors approximate",
+  "sources": [
+    "https://support.apple.com/en-us/111849",
+    "https://developer.apple.com/download/files/accessories/dimensional-drawings/iphone-14-pro.pdf"
+  ],
+  "accuracy": {
+    "body_dimensions": "Apple published metric dimensions",
+    "screen_geometry": "Equivalent circular approximation of Apple continuous corner profile; not manufacturer radius/CAD",
+    "camera_geometry": "Apple dimensional drawing printed dimensions; island radius equivalent circular approximation",
+    "controls": "Apple dimensional-drawing control centerlines across the generated slab catalog",
+    "finishes": "Official finish names; approximate sRGB visually matched, not Apple color calibration"
+  }
+}

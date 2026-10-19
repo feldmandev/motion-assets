@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Motion assets</title>
+<style>
+@font-face{font-family:Motion;src:url(assets/fonts/FeldmanFont.ttf);font-weight:100 1000}
+@font-face{font-family:SymbolsRounded;src:url(assets/symbols/material_symbols_rounded.woff2)}
+@font-face{font-family:SymbolsOutlined;src:url(assets/symbols/material_symbols_outlined.woff2)}
+@font-face{font-family:SymbolsSharp;src:url(assets/symbols/material_symbols_sharp.woff2)}
+:root{color-scheme:light dark;--surface:#f8f7fc;--card:#eeedf5;--ink:#24232b;--muted:#615f6b;--primary:#5d4a92;--selected:#e6dcff}
+@media(prefers-color-scheme:dark){:root{--surface:#141318;--card:#25232c;--ink:#e8e2ef;--muted:#c4bdcf;--primary:#d0bcff;--selected:#453565}}
+*{box-sizing:border-box}body{margin:0;background:var(--surface);color:var(--ink);font:16px Motion,system-ui,sans-serif}header{padding:28px 32px 16px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}h1{font-size:30px;font-weight:650;margin:0}header p{color:var(--muted);margin:6px 0 0}a{color:var(--primary)}nav{display:flex;gap:4px;margin-left:auto;flex-wrap:wrap}button,input,select{font:inherit;border:0;border-radius:20px;padding:13px 18px;background:var(--card);color:var(--ink)}button{cursor:pointer}button[aria-selected=true]{background:var(--selected);color:var(--primary)}button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--primary);outline-offset:2px}main{padding:0 32px 32px}section[hidden]{display:none!important}iframe{width:100%;height:calc(100dvh - 150px);border:0;border-radius:24px;background:var(--surface)}.toolbar{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin:12px 0 24px}.toolbar input{flex:1;min-width:180px}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px}.tile{display:flex;flex-direction:column;align-items:center;justify-content:center;background:var(--card);border-radius:24px;padding:20px;min-height:170px;gap:14px;text-align:center;overflow:hidden}.tile img{width:100px;height:100px;object-fit:contain}.tile small{color:var(--muted);overflow-wrap:anywhere}.symbol{font-size:48px;line-height:1;font-variation-settings:'FILL' 1,'wght' 400,'GRAD' 0,'opsz' 24}.font-preview{font-size:34px;overflow-wrap:anywhere}.font-tile{align-items:start;text-align:left;grid-column:span 2}.note{color:var(--muted);font-size:14px}.status{padding:32px}footer{padding:0 32px 24px;color:var(--muted);font-size:13px}@media(max-width:600px){header,main{padding-left:16px;padding-right:16px}nav{margin-left:0}.font-tile{grid-column:auto}.grid{grid-template-columns:repeat(auto-fill,minmax(140px,1fr))}}
+</style>
+<header><div><h1>Motion assets</h1><p>One collection. Every Motion platform.</p></div><nav aria-label="Asset modules" role="tablist">
+<button role="tab" data-module="devices" aria-selected="true">Devices</button><button role="tab" data-module="shapes" aria-selected="false">Shapes</button><button role="tab" data-module="fonts" aria-selected="false">Fonts</button><button role="tab" data-module="symbols" aria-selected="false">Symbols</button></nav></header>
+<main>
+<section id="devices"><iframe title="Device icons, 3D models and screen frames" src="devices.html"></iframe></section>
+<section id="shapes" hidden><div class="toolbar"><input aria-label="Find a shape" placeholder="Find a shape"></div><div class="grid"></div></section>
+<section id="fonts" hidden><div class="toolbar"><input aria-label="Preview text" value="The quick brown fox — שלום עולם"><label>Weight <input id="fontWeight" type="range" min="100" max="900" value="450"></label></div><div class="grid"></div></section>
+<section id="symbols" hidden><div class="toolbar"><input aria-label="Find a symbol" placeholder="Find a symbol"><select aria-label="Symbol style"><option value="rounded">Rounded</option><option value="outlined">Outlined</option><option value="sharp">Sharp</option></select><label>Filled <input type="checkbox" checked></label></div><p class="note"></p><div class="grid"></div><button id="more" hidden>Show more</button></section>
+<p id="error" role="alert" hidden></p>
+</main><footer><span id="version"></span> · <a href="https://github.com/feldmandev/motion-assets">GitHub</a> · <a href="ATTRIBUTION.md">Sources &amp; licenses</a></footer>
+<script type="module" src="gallery.js"></script>
+</html>

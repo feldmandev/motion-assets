@@ -1,0 +1,11 @@
+The drawn collection follows Pixel Tips icon design: shared 30 x 50 slab silhouettes, intentionally wider than the hardware, softer corners and richer gradients. OnePlus and OPPO camera assemblies use the same 30-unit scale in both axes, preserving housing/lens placement. Nothing cameras use individually fitted 26/28/30-unit scales; lenses and circular housings stay circular. Glyph and back shapes retain uniform scaling. Full-width Nothing 4a Pro / 4b panels use equal 1.2-unit top/side margins. Nothing Phone 1/2 Glyph layouts are manually fitted to the wider silhouette; Phone 2 omits the lower camera arc absent from the photographed back. Original extracted Glyph files are untouched. Phone 3 / 4a Pro matrices depict a waveform rather than a generic star. Back-panel detail is reduced, especially Phone 3 and 3a, while camera layouts remain distinct. CMF Phone 1 uses separate circular cameras in a body-colored capsule, edge screws and an enlarged corner accessory dial. Extracted Pixel originals remain unchanged; Pro/XL aliases are byte-identical documented copies. OnePlus 16 stays provisional.
+
+Nothing cleanup: CMF Phone 2 Pro screws/accessory ring render once. Phone 2a/Plus and 3a/Pro lower wiring uses faint thin contours instead of filled ornaments. Phone 4a camera capsules are taller; 4b panel is taller with the original equal top/side inset.
+
+Glyph revision: thicker light strokes and wider segmented LEDs; lit matrix dots are bolder. Camera/body/window bevels use gentler shading; Phone 3a Pro metal treatment is preserved. 4b cameras, flash slot, Glyph Bar and housing screws now share the same camera scale.
+
+Nothing panel revision: 4a camera capsules and 4a Pro/4b upper panels use a contrasting single metallic gradient. 4a Pro panel is taller; 4b omits chassis screws and heavy lens rims at icon size. 2a/Plus and 3a/Pro Glyph arcs and lower contours are thicker.
+
+4a Pro/4b visibility: camera panels derive their tint from each device color, lighter on colored/dark bodies and darker on the white 4b, with a gentle gradient and no bevel/shadow.
+
+Body contrast revision: all drawn brands/tablets share stronger highlights and darker lower tones, preserving sampled hues. The common vertical gradient reaches the device midtone earlier so the lower falloff spans more of the body. Original extracted Pixel resources are unchanged.

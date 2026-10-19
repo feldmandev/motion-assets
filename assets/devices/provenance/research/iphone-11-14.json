@@ -1,0 +1,1974 @@
+[
+  {
+    "id": "iphone-11",
+    "name": "iPhone 11",
+    "body_mm": {
+      "width": 75.72,
+      "height": 150.91,
+      "depth": 8.32
+    },
+    "native_px": [
+      828,
+      1792
+    ],
+    "resolution": [
+      828,
+      1792
+    ],
+    "colors": [
+      {
+        "name": "Black",
+        "hex": "#292a2b"
+      },
+      {
+        "name": "White",
+        "hex": "#eeece8"
+      },
+      {
+        "name": "Green",
+        "hex": "#a9d1bc"
+      },
+      {
+        "name": "Yellow",
+        "hex": "#f9dc82"
+      },
+      {
+        "name": "Purple",
+        "hex": "#c8bedc"
+      },
+      {
+        "name": "(PRODUCT)RED",
+        "hex": "#b92b3b"
+      }
+    ],
+    "finishes": [
+      {
+        "name": "Black",
+        "hex": "#292a2b"
+      },
+      {
+        "name": "White",
+        "hex": "#eeece8"
+      },
+      {
+        "name": "Green",
+        "hex": "#a9d1bc"
+      },
+      {
+        "name": "Yellow",
+        "hex": "#f9dc82"
+      },
+      {
+        "name": "Purple",
+        "hex": "#c8bedc"
+      },
+      {
+        "name": "(PRODUCT)RED",
+        "hex": "#b92b3b"
+      }
+    ],
+    "front": {
+      "active_mm": [
+        64.58,
+        139.78
+      ],
+      "body_radius_mm": 16.46,
+      "display_radius_mm": 10.89,
+      "radius_status": "Equivalent circular approximation of Apple continuous corner profile; not manufacturer radius/CAD",
+      "cutout": {
+        "type": "notch",
+        "size_mm": [
+          35.96,
+          5.15
+        ],
+        "top_mm": -0.1,
+        "position_reference": "active display top"
+      },
+      "edge_style": "rounded"
+    },
+    "body_radius_mm": 16.46,
+    "display_radius_mm": 10.89,
+    "camera_geometry": {
+      "island_mm": [
+        28.8,
+        31.99,
+        8.5
+      ],
+      "inset_mm": [
+        3.74,
+        3.74
+      ],
+      "lenses": [
+        {
+          "center_from_top_left_mm": [
+            8.74,
+            8.74
+          ],
+          "diameter_mm": 12.1
+        },
+        {
+          "center_from_top_left_mm": [
+            8.74,
+            23.02
+          ],
+          "diameter_mm": 12.1
+        }
+      ],
+      "flash": {
+        "center_from_top_left_mm": [
+          20.27,
+          15.88
+        ],
+        "diameter_mm": 5.66
+      },
+      "plate_bump_mm": 0.8,
+      "lens_bump_mm": 1.48,
+      "measurement_status": "Apple archival dimensional drawing: island width/height, lens diameters and relative centers published. Island inset/body-to-detail datum and plateau rise approximated; lens turret height published. Equivalent island radius approximate."
+    },
+    "status": "official released device; model curves/material colors approximate",
+    "sources": [
+      "https://support.apple.com/en-us/111865",
+      "https://developer.apple.com/jp/accessories/Accessory-Design-Guidelines-JP.pdf"
+    ],
+    "color_status": "Official finish names; approximate sRGB visually matched, not Apple color calibration",
+    "drawing": "research/iphone/iphone-11-official-drawing.pdf",
+    "drawing_page": 1,
+    "archival_source_page": 917
+  },
+  {
+    "id": "iphone-11-pro",
+    "name": "iPhone 11 Pro",
+    "body_mm": {
+      "width": 71.36,
+      "height": 143.99,
+      "depth": 8.1
+    },
+    "native_px": [
+      1125,
+      2436
+    ],
+    "resolution": [
+      1125,
+      2436
+    ],
+    "colors": [
+      {
+        "name": "Space Gray",
+        "hex": "#535453"
+      },
+      {
+        "name": "Silver",
+        "hex": "#e7e6e3"
+      },
+      {
+        "name": "Gold",
+        "hex": "#e8d4b8"
+      },
+      {
+        "name": "Midnight Green",
+        "hex": "#59645a"
+      }
+    ],
+    "finishes": [
+      {
+        "name": "Space Gray",
+        "hex": "#535453"
+      },
+      {
+        "name": "Silver",
+        "hex": "#e7e6e3"
+      },
+      {
+        "name": "Gold",
+        "hex": "#e8d4b8"
+      },
+      {
+        "name": "Midnight Green",
+        "hex": "#59645a"
+      }
+    ],
+    "front": {
+      "active_mm": [
+        62.33,
+        134.95
+      ],
+      "body_radius_mm": 17.77,
+      "display_radius_mm": 13.25,
+      "radius_status": "Equivalent circular approximation of Apple continuous corner profile; not manufacturer radius/CAD",
+      "cutout": {
+        "type": "notch",
+        "size_mm": [
+          34.8,
+          4.99
+        ],
+        "top_mm": -0.1,
+        "position_reference": "active display top"
+      },
+      "edge_style": "rounded"
+    },
+    "body_radius_mm": 17.77,
+    "display_radius_mm": 13.25,
+    "camera_geometry": {
+      "island_mm": [
+        30.59,
+        32.71,
+        8.5
+      ],
+      "inset_mm": [
+        3.74,
+        3.74
+      ],
+      "lenses": [
+        {
+          "center_from_top_left_mm": [
+            8.3,
+            8.3
+          ],
+          "diameter_mm": 12.3
+        },
+        {
+          "center_from_top_left_mm": [
+            8.3,
+            23.32
+          ],
+          "diameter_mm": 12.3
+        },
+        {
+          "center_from_top_left_mm": [
+            21.3,
+            15.81
+          ],
+          "diameter_mm": 12.3
+        }
+      ],
+      "flash": {
+        "center_from_top_left_mm": [
+          21.3,
+          5.57
+        ],
+        "diameter_mm": 5.66
+      },
+      "plate_bump_mm": 0.8,
+      "lens_bump_mm": 1.21,
+      "measurement_status": "Apple archival dimensional drawing: island width/height, lens diameters and relative centers published. Island inset/body-to-detail datum and plateau rise approximated; lens turret height published. Equivalent island radius approximate."
+    },
+    "status": "official released device; model curves/material colors approximate",
+    "sources": [
+      "https://support.apple.com/en-us/111879",
+      "https://developer.apple.com/jp/accessories/Accessory-Design-Guidelines-JP.pdf"
+    ],
+    "color_status": "Official finish names; approximate sRGB visually matched, not Apple color calibration",
+    "drawing": "research/iphone/iphone-11-pro-official-drawing.pdf",
+    "drawing_page": 1,
+    "archival_source_page": 916
+  },
+  {
+    "id": "iphone-11-pro-max",
+    "name": "iPhone 11 Pro Max",
+    "body_mm": {
+      "width": 77.84,
+      "height": 157.95,
+      "depth": 8.1
+    },
+    "native_px": [
+      1242,
+      2688
+    ],
+    "resolution": [
+      1242,
+      2688
+    ],
+    "colors": [
+      {
+        "name": "Space Gray",
+        "hex": "#535453"
+      },
+      {
+        "name": "Silver",
+        "hex": "#e7e6e3"
+      },
+      {
+        "name": "Gold",
+        "hex": "#e8d4b8"
+      },
+      {
+        "name": "Midnight Green",
+        "hex": "#59645a"
+      }
+    ],
+    "finishes": [
+      {
+        "name": "Space Gray",
+        "hex": "#535453"
+      },
+      {
+        "name": "Silver",
+        "hex": "#e7e6e3"
+      },
+      {
+        "name": "Gold",
+        "hex": "#e8d4b8"
+      },
+      {
+        "name": "Midnight Green",
+        "hex": "#59645a"
+      }
+    ],
+    "front": {
+      "active_mm": [
+        68.81,
+        148.91
+      ],
+      "body_radius_mm": 17.77,
+      "display_radius_mm": 13.25,
+      "radius_status": "Equivalent circular approximation of Apple continuous corner profile; not manufacturer radius/CAD",
+      "cutout": {
+        "type": "notch",
+        "size_mm": [
+          34.8,
+          4.99
+        ],
+        "top_mm": -0.1,
+        "position_reference": "active display top"
+      },
+      "edge_style": "rounded"
+    },
+    "body_radius_mm": 17.77,
+    "display_radius_mm": 13.25,
+    "camera_geometry": {
+      "island_mm": [
+        30.61,
+        32.73,
+        8.5
+      ],
+      "inset_mm": [
+        3.74,
+        3.74
+      ],
+      "lenses": [
+        {
+          "center_from_top_left_mm": [
+            8.3,
+            8.3
+          ],
+          "diameter_mm": 12.3
+        },
+        {
+          "center_from_top_left_mm": [
+            8.3,
+            23.32
+          ],
+          "diameter_mm": 12.3
+        },
+        {
+          "center_from_top_left_mm": [
+            21.3,
+            15.81
+          ],
+          "diameter_mm": 12.3
+        }
+      ],
+      "flash": {
+        "center_from_top_left_mm": [
+          21.3,
+          5.57
+        ],
+        "diameter_mm": 5.66
+      },
+      "plate_bump_mm": 0.8,
+      "lens_bump_mm": 1.21,
+      "measurement_status": "Apple archival dimensional drawing: island width/height, lens diameters and relative centers published. Island inset/body-to-detail datum and plateau rise approximated; lens turret height published. Equivalent island radius approximate."
+    },
+    "status": "official released device; model curves/material colors approximate",
+    "sources": [
+      "https://support.apple.com/en-us/111878",
+      "https://developer.apple.com/jp/accessories/Accessory-Design-Guidelines-JP.pdf"
+    ],
+    "color_status": "Official finish names; approximate sRGB visually matched, not Apple color calibration",
+    "drawing": "research/iphone/iphone-11-pro-max-official-drawing.pdf",
+    "drawing_page": 1,
+    "archival_source_page": 915
+  },
+  {
+    "id": "iphone-12-mini",
+    "name": "iPhone 12 mini",
+    "body_mm": {
+      "width": 64.21,
+      "height": 131.5,
+      "depth": 7.39
+    },
+    "native_px": [
+      1080,
+      2340
+    ],
+    "resolution": [
+      1080,
+      2340
+    ],
+    "colors": [
+      {
+        "name": "Black",
+        "hex": "#25272c"
+      },
+      {
+        "name": "White",
+        "hex": "#f3eee4"
+      },
+      {
+        "name": "(PRODUCT)RED",
+        "hex": "#d8424b"
+      },
+      {
+        "name": "Green",
+        "hex": "#d4e8d4"
+      },
+      {
+        "name": "Blue",
+        "hex": "#284d6f"
+      },
+      {
+        "name": "Purple",
+        "hex": "#b9aad0"
+      }
+    ],
+    "finishes": [
+      {
+        "name": "Black",
+        "hex": "#25272c"
+      },
+      {
+        "name": "White",
+        "hex": "#f3eee4"
+      },
+      {
+        "name": "(PRODUCT)RED",
+        "hex": "#d8424b"
+      },
+      {
+        "name": "Green",
+        "hex": "#d4e8d4"
+      },
+      {
+        "name": "Blue",
+        "hex": "#284d6f"
+      },
+      {
+        "name": "Purple",
+        "hex": "#b9aad0"
+      }
+    ],
+    "front": {
+      "active_mm": [
+        57.67,
+        124.96
+      ],
+      "body_radius_mm": 13.03,
+      "display_radius_mm": 9.76,
+      "radius_status": "Equivalent circular approximation of Apple continuous corner profile; not manufacturer radius/CAD",
+      "cutout": {
+        "type": "notch",
+        "size_mm": [
+          34.83,
+          5.3
+        ],
+        "top_mm": -0.1,
+        "position_reference": "active display top"
+      },
+      "edge_style": "flat"
+    },
+    "body_radius_mm": 13.03,
+    "display_radius_mm": 9.76,
+    "camera_geometry": {
+      "island_mm": [
+        29.09,
+        32.28,
+        8
+      ],
+      "inset_mm": [
+        1.67,
+        1.67
+      ],
+      "lenses": [
+        {
+          "center_from_top_left_mm": [
+            9.0,
+            9.0
+          ],
+          "diameter_mm": 12.1
+        },
+        {
+          "center_from_top_left_mm": [
+            9.0,
+            23.28
+          ],
+          "diameter_mm": 12.1
+        }
+      ],
+      "flash": {
+        "center_from_top_left_mm": [
+          20.54,
+          16.14
+        ],
+        "diameter_mm": 5.66
+      },
+      "plate_bump_mm": 0.73,
+      "lens_bump_mm": 1.51,
+      "measurement_status": "Apple dimensional drawing printed dimensions; island radius equivalent circular approximation"
+    },
+    "status": "official released device; model curves/material colors approximate",
+    "sources": [
+      "https://support.apple.com/en-us/111877",
+      "https://developer.apple.com/download/files/accessories/dimensional-drawings/iphone-12-mini.pdf"
+    ],
+    "drawing": "research/iphone/iphone-12-mini.pdf",
+    "drawing_page": 2,
+    "color_status": "Official finish names; approximate sRGB visually matched, not Apple color calibration"
+  },
+  {
+    "id": "iphone-12",
+    "name": "iPhone 12",
+    "body_mm": {
+      "width": 71.52,
+      "height": 146.71,
+      "depth": 7.39
+    },
+    "native_px": [
+      1170,
+      2532
+    ],
+    "resolution": [
+      1170,
+      2532
+    ],
+    "colors": [
+      {
+        "name": "Black",
+        "hex": "#25272c"
+      },
+      {
+        "name": "White",
+        "hex": "#f3eee4"
+      },
+      {
+        "name": "(PRODUCT)RED",
+        "hex": "#d8424b"
+      },
+      {
+        "name": "Green",
+        "hex": "#d4e8d4"
+      },
+      {
+        "name": "Blue",
+        "hex": "#284d6f"
+      },
+      {
+        "name": "Purple",
+        "hex": "#b9aad0"
+      }
+    ],
+    "finishes": [
+      {
+        "name": "Black",
+        "hex": "#25272c"
+      },
+      {
+        "name": "White",
+        "hex": "#f3eee4"
+      },
+      {
+        "name": "(PRODUCT)RED",
+        "hex": "#d8424b"
+      },
+      {
+        "name": "Green",
+        "hex": "#d4e8d4"
+      },
+      {
+        "name": "Blue",
+        "hex": "#284d6f"
+      },
+      {
+        "name": "Purple",
+        "hex": "#b9aad0"
+      }
+    ],
+    "front": {
+      "active_mm": [
+        64.58,
+        139.77
+      ],
+      "body_radius_mm": 14.64,
+      "display_radius_mm": 11.17,
+      "radius_status": "Equivalent circular approximation of Apple continuous corner profile; not manufacturer radius/CAD",
+      "cutout": {
+        "type": "notch",
+        "size_mm": [
+          34.83,
+          5.3
+        ],
+        "top_mm": -0.1,
+        "position_reference": "active display top"
+      },
+      "edge_style": "flat"
+    },
+    "body_radius_mm": 14.64,
+    "display_radius_mm": 11.17,
+    "camera_geometry": {
+      "island_mm": [
+        30.7,
+        32.87,
+        8
+      ],
+      "inset_mm": [
+        3.43,
+        3.43
+      ],
+      "lenses": [
+        {
+          "center_from_top_left_mm": [
+            9.3,
+            9.3
+          ],
+          "diameter_mm": 12.1
+        },
+        {
+          "center_from_top_left_mm": [
+            9.3,
+            23.58
+          ],
+          "diameter_mm": 12.1
+        }
+      ],
+      "flash": {
+        "center_from_top_left_mm": [
+          21.85,
+          16.44
+        ],
+        "diameter_mm": 5.66
+      },
+      "plate_bump_mm": 0.73,
+      "lens_bump_mm": 1.51,
+      "measurement_status": "Apple dimensional drawing printed dimensions; island radius equivalent circular approximation"
+    },
+    "status": "official released device; model curves/material colors approximate",
+    "sources": [
+      "https://support.apple.com/en-us/111876",
+      "https://developer.apple.com/download/files/accessories/dimensional-drawings/iphone-12.pdf"
+    ],
+    "drawing": "research/iphone/iphone-12.pdf",
+    "drawing_page": 2,
+    "color_status": "Official finish names; approximate sRGB visually matched, not Apple color calibration"
+  },
+  {
+    "id": "iphone-12-pro",
+    "name": "iPhone 12 Pro",
+    "body_mm": {
+      "width": 71.52,
+      "height": 146.71,
+      "depth": 7.39
+    },
+    "native_px": [
+      1170,
+      2532
+    ],
+    "resolution": [
+      1170,
+      2532
+    ],
+    "colors": [
+      {
+        "name": "Graphite",
+        "hex": "#5a5b58"
+      },
+      {
+        "name": "Silver",
+        "hex": "#e6e6df"
+      },
+      {
+        "name": "Gold",
+        "hex": "#e9d4b9"
+      },
+      {
+        "name": "Pacific Blue",
+        "hex": "#516a75"
+      }
+    ],
+    "finishes": [
+      {
+        "name": "Graphite",
+        "hex": "#5a5b58"
+      },
+      {
+        "name": "Silver",
+        "hex": "#e6e6df"
+      },
+      {
+        "name": "Gold",
+        "hex": "#e9d4b9"
+      },
+      {
+        "name": "Pacific Blue",
+        "hex": "#516a75"
+      }
+    ],
+    "front": {
+      "active_mm": [
+        64.58,
+        139.77
+      ],
+      "body_radius_mm": 14.64,
+      "display_radius_mm": 11.17,
+      "radius_status": "Equivalent circular approximation of Apple continuous corner profile; not manufacturer radius/CAD",
+      "cutout": {
+        "type": "notch",
+        "size_mm": [
+          34.83,
+          5.3
+        ],
+        "top_mm": -0.1,
+        "position_reference": "active display top"
+      },
+      "edge_style": "flat"
+    },
+    "body_radius_mm": 14.64,
+    "display_radius_mm": 11.17,
+    "camera_geometry": {
+      "island_mm": [
+        33.32,
+        35.5,
+        9
+      ],
+      "inset_mm": [
+        2.12,
+        2.12
+      ],
+      "lenses": [
+        {
+          "center_from_top_left_mm": [
+            10.04,
+            10.04
+          ],
+          "diameter_mm": 12.45
+        },
+        {
+          "center_from_top_left_mm": [
+            10.04,
+            25.46
+          ],
+          "diameter_mm": 12.45
+        },
+        {
+          "center_from_top_left_mm": [
+            23.39,
+            17.75
+          ],
+          "diameter_mm": 12.45
+        }
+      ],
+      "flash": {
+        "center_from_top_left_mm": [
+          23.39,
+          7.05
+        ],
+        "diameter_mm": 6.28
+      },
+      "plate_bump_mm": 0.94,
+      "lens_bump_mm": 1.72,
+      "measurement_status": "Apple dimensional drawing printed dimensions; island radius equivalent circular approximation"
+    },
+    "status": "official released device; model curves/material colors approximate",
+    "sources": [
+      "https://support.apple.com/en-us/111875",
+      "https://developer.apple.com/download/files/accessories/dimensional-drawings/iphone-12-pro.pdf"
+    ],
+    "drawing": "research/iphone/iphone-12-pro.pdf",
+    "drawing_page": 2,
+    "color_status": "Official finish names; approximate sRGB visually matched, not Apple color calibration"
+  },
+  {
+    "id": "iphone-12-pro-max",
+    "name": "iPhone 12 Pro Max",
+    "body_mm": {
+      "width": 78.07,
+      "height": 160.84,
+      "depth": 7.39
+    },
+    "native_px": [
+      1284,
+      2778
+    ],
+    "resolution": [
+      1284,
+      2778
+    ],
+    "colors": [
+      {
+        "name": "Graphite",
+        "hex": "#5a5b58"
+      },
+      {
+        "name": "Silver",
+        "hex": "#e6e6df"
+      },
+      {
+        "name": "Gold",
+        "hex": "#e9d4b9"
+      },
+      {
+        "name": "Pacific Blue",
+        "hex": "#516a75"
+      }
+    ],
+    "finishes": [
+      {
+        "name": "Graphite",
+        "hex": "#5a5b58"
+      },
+      {
+        "name": "Silver",
+        "hex": "#e6e6df"
+      },
+      {
+        "name": "Gold",
+        "hex": "#e9d4b9"
+      },
+      {
+        "name": "Pacific Blue",
+        "hex": "#516a75"
+      }
+    ],
+    "front": {
+      "active_mm": [
+        71.13,
+        153.9
+      ],
+      "body_radius_mm": 15.96,
+      "display_radius_mm": 12.49,
+      "radius_status": "Equivalent circular approximation of Apple continuous corner profile; not manufacturer radius/CAD",
+      "cutout": {
+        "type": "notch",
+        "size_mm": [
+          34.83,
+          5.3
+        ],
+        "top_mm": -0.1,
+        "position_reference": "active display top"
+      },
+      "edge_style": "flat"
+    },
+    "body_radius_mm": 15.96,
+    "display_radius_mm": 12.49,
+    "camera_geometry": {
+      "island_mm": [
+        38.45,
+        40.93,
+        10
+      ],
+      "inset_mm": [
+        1.7,
+        1.7
+      ],
+      "lenses": [
+        {
+          "center_from_top_left_mm": [
+            11.73,
+            11.73
+          ],
+          "diameter_mm": 14.11
+        },
+        {
+          "center_from_top_left_mm": [
+            11.73,
+            29.2
+          ],
+          "diameter_mm": 14.11
+        },
+        {
+          "center_from_top_left_mm": [
+            26.86,
+            20.46
+          ],
+          "diameter_mm": 14.11
+        }
+      ],
+      "flash": {
+        "center_from_top_left_mm": [
+          26.86,
+          8.41
+        ],
+        "diameter_mm": 6.28
+      },
+      "plate_bump_mm": 1.26,
+      "lens_bump_mm": 2.19,
+      "measurement_status": "Apple dimensional drawing printed dimensions; island radius equivalent circular approximation"
+    },
+    "status": "official released device; model curves/material colors approximate",
+    "sources": [
+      "https://support.apple.com/en-us/111874",
+      "https://developer.apple.com/download/files/accessories/dimensional-drawings/iphone-12-pro-max.pdf"
+    ],
+    "drawing": "research/iphone/iphone-12-pro-max.pdf",
+    "drawing_page": 2,
+    "color_status": "Official finish names; approximate sRGB visually matched, not Apple color calibration"
+  },
+  {
+    "id": "iphone-13-mini",
+    "name": "iPhone 13 mini",
+    "body_mm": {
+      "width": 64.21,
+      "height": 131.5,
+      "depth": 7.65
+    },
+    "native_px": [
+      1080,
+      2340
+    ],
+    "resolution": [
+      1080,
+      2340
+    ],
+    "colors": [
+      {
+        "name": "Midnight",
+        "hex": "#252b32"
+      },
+      {
+        "name": "Starlight",
+        "hex": "#eee9e0"
+      },
+      {
+        "name": "Pink",
+        "hex": "#eddbd7"
+      },
+      {
+        "name": "Blue",
+        "hex": "#54758b"
+      },
+      {
+        "name": "(PRODUCT)RED",
+        "hex": "#b81f39"
+      },
+      {
+        "name": "Green",
+        "hex": "#3c5042"
+      }
+    ],
+    "finishes": [
+      {
+        "name": "Midnight",
+        "hex": "#252b32"
+      },
+      {
+        "name": "Starlight",
+        "hex": "#eee9e0"
+      },
+      {
+        "name": "Pink",
+        "hex": "#eddbd7"
+      },
+      {
+        "name": "Blue",
+        "hex": "#54758b"
+      },
+      {
+        "name": "(PRODUCT)RED",
+        "hex": "#b81f39"
+      },
+      {
+        "name": "Green",
+        "hex": "#3c5042"
+      }
+    ],
+    "front": {
+      "active_mm": [
+        57.67,
+        124.96
+      ],
+      "body_radius_mm": 14.09,
+      "display_radius_mm": 10.82,
+      "radius_status": "Equivalent circular approximation of Apple continuous corner profile; not manufacturer radius/CAD",
+      "cutout": {
+        "type": "notch",
+        "size_mm": [
+          26.79,
+          5.58
+        ],
+        "top_mm": -0.1,
+        "position_reference": "active display top"
+      },
+      "edge_style": "flat"
+    },
+    "body_radius_mm": 14.09,
+    "display_radius_mm": 10.82,
+    "camera_geometry": {
+      "island_mm": [
+        30.2,
+        30.1,
+        8
+      ],
+      "inset_mm": [
+        1.87,
+        1.87
+      ],
+      "lenses": [
+        {
+          "center_from_top_left_mm": [
+            9.08,
+            9.08
+          ],
+          "diameter_mm": 13.69
+        },
+        {
+          "center_from_top_left_mm": [
+            21.34,
+            21.34
+          ],
+          "diameter_mm": 13.69
+        }
+      ],
+      "flash": {
+        "center_from_top_left_mm": [
+          23.13,
+          7.11
+        ],
+        "diameter_mm": 6.28
+      },
+      "plate_bump_mm": 1.48,
+      "lens_bump_mm": 2.51,
+      "measurement_status": "Apple dimensional drawing printed dimensions; island radius equivalent circular approximation"
+    },
+    "status": "official released device; model curves/material colors approximate",
+    "sources": [
+      "https://support.apple.com/en-us/111873",
+      "https://developer.apple.com/download/files/accessories/dimensional-drawings/iphone-13-mini.pdf"
+    ],
+    "drawing": "research/iphone/iphone-13-mini.pdf",
+    "drawing_page": 2,
+    "color_status": "Official finish names; approximate sRGB visually matched, not Apple color calibration"
+  },
+  {
+    "id": "iphone-13",
+    "name": "iPhone 13",
+    "body_mm": {
+      "width": 71.52,
+      "height": 146.7,
+      "depth": 7.65
+    },
+    "native_px": [
+      1170,
+      2532
+    ],
+    "resolution": [
+      1170,
+      2532
+    ],
+    "colors": [
+      {
+        "name": "Midnight",
+        "hex": "#252b32"
+      },
+      {
+        "name": "Starlight",
+        "hex": "#eee9e0"
+      },
+      {
+        "name": "Pink",
+        "hex": "#eddbd7"
+      },
+      {
+        "name": "Blue",
+        "hex": "#54758b"
+      },
+      {
+        "name": "(PRODUCT)RED",
+        "hex": "#b81f39"
+      },
+      {
+        "name": "Green",
+        "hex": "#3c5042"
+      }
+    ],
+    "finishes": [
+      {
+        "name": "Midnight",
+        "hex": "#252b32"
+      },
+      {
+        "name": "Starlight",
+        "hex": "#eee9e0"
+      },
+      {
+        "name": "Pink",
+        "hex": "#eddbd7"
+      },
+      {
+        "name": "Blue",
+        "hex": "#54758b"
+      },
+      {
+        "name": "(PRODUCT)RED",
+        "hex": "#b81f39"
+      },
+      {
+        "name": "Green",
+        "hex": "#3c5042"
+      }
+    ],
+    "front": {
+      "active_mm": [
+        64.58,
+        139.77
+      ],
+      "body_radius_mm": 15.89,
+      "display_radius_mm": 12.42,
+      "radius_status": "Equivalent circular approximation of Apple continuous corner profile; not manufacturer radius/CAD",
+      "cutout": {
+        "type": "notch",
+        "size_mm": [
+          26.79,
+          5.58
+        ],
+        "top_mm": -0.1,
+        "position_reference": "active display top"
+      },
+      "edge_style": "flat"
+    },
+    "body_radius_mm": 15.89,
+    "display_radius_mm": 12.42,
+    "camera_geometry": {
+      "island_mm": [
+        33.97,
+        34.96,
+        9
+      ],
+      "inset_mm": [
+        1.15,
+        1.15
+      ],
+      "lenses": [
+        {
+          "center_from_top_left_mm": [
+            10.73,
+            10.73
+          ],
+          "diameter_mm": 13.69
+        },
+        {
+          "center_from_top_left_mm": [
+            23.09,
+            23.09
+          ],
+          "diameter_mm": 13.69
+        }
+      ],
+      "flash": {
+        "center_from_top_left_mm": [
+          24.96,
+          8.86
+        ],
+        "diameter_mm": 6.28
+      },
+      "plate_bump_mm": 1.5,
+      "lens_bump_mm": 2.59,
+      "measurement_status": "Apple dimensional drawing printed dimensions; island radius equivalent circular approximation"
+    },
+    "status": "official released device; model curves/material colors approximate",
+    "sources": [
+      "https://support.apple.com/en-us/111872",
+      "https://developer.apple.com/download/files/accessories/dimensional-drawings/iphone-13.pdf"
+    ],
+    "drawing": "research/iphone/iphone-13.pdf",
+    "drawing_page": 2,
+    "color_status": "Official finish names; approximate sRGB visually matched, not Apple color calibration"
+  },
+  {
+    "id": "iphone-13-pro",
+    "name": "iPhone 13 Pro",
+    "body_mm": {
+      "width": 71.52,
+      "height": 146.71,
+      "depth": 7.65
+    },
+    "native_px": [
+      1170,
+      2532
+    ],
+    "resolution": [
+      1170,
+      2532
+    ],
+    "colors": [
+      {
+        "name": "Graphite",
+        "hex": "#626360"
+      },
+      {
+        "name": "Gold",
+        "hex": "#e8d6bf"
+      },
+      {
+        "name": "Silver",
+        "hex": "#e8e8e4"
+      },
+      {
+        "name": "Sierra Blue",
+        "hex": "#a1b4c8"
+      },
+      {
+        "name": "Alpine Green",
+        "hex": "#576856"
+      }
+    ],
+    "finishes": [
+      {
+        "name": "Graphite",
+        "hex": "#626360"
+      },
+      {
+        "name": "Gold",
+        "hex": "#e8d6bf"
+      },
+      {
+        "name": "Silver",
+        "hex": "#e8e8e4"
+      },
+      {
+        "name": "Sierra Blue",
+        "hex": "#a1b4c8"
+      },
+      {
+        "name": "Alpine Green",
+        "hex": "#576856"
+      }
+    ],
+    "front": {
+      "active_mm": [
+        64.58,
+        139.77
+      ],
+      "body_radius_mm": 15.89,
+      "display_radius_mm": 12.42,
+      "radius_status": "Equivalent circular approximation of Apple continuous corner profile; not manufacturer radius/CAD",
+      "cutout": {
+        "type": "notch",
+        "size_mm": [
+          26.79,
+          5.58
+        ],
+        "top_mm": -0.1,
+        "position_reference": "active display top"
+      },
+      "edge_style": "flat"
+    },
+    "body_radius_mm": 15.89,
+    "display_radius_mm": 12.42,
+    "camera_geometry": {
+      "island_mm": [
+        41.24,
+        42.47,
+        11
+      ],
+      "inset_mm": [
+        1.15,
+        1.15
+      ],
+      "lenses": [
+        {
+          "center_from_top_left_mm": [
+            12.28,
+            12.28
+          ],
+          "diameter_mm": 15.53
+        },
+        {
+          "center_from_top_left_mm": [
+            12.28,
+            30.2
+          ],
+          "diameter_mm": 15.53
+        },
+        {
+          "center_from_top_left_mm": [
+            28.93,
+            21.24
+          ],
+          "diameter_mm": 15.53
+        }
+      ],
+      "flash": {
+        "center_from_top_left_mm": [
+          28.93,
+          8.27
+        ],
+        "diameter_mm": 6.28
+      },
+      "plate_bump_mm": 1.68,
+      "lens_bump_mm": 3.6,
+      "measurement_status": "Apple dimensional drawing printed dimensions; island radius equivalent circular approximation"
+    },
+    "status": "official released device; model curves/material colors approximate",
+    "sources": [
+      "https://support.apple.com/en-us/111871",
+      "https://developer.apple.com/download/files/accessories/dimensional-drawings/iphone-13-pro.pdf"
+    ],
+    "drawing": "research/iphone/iphone-13-pro.pdf",
+    "drawing_page": 2,
+    "color_status": "Official finish names; approximate sRGB visually matched, not Apple color calibration"
+  },
+  {
+    "id": "iphone-13-pro-max",
+    "name": "iPhone 13 Pro Max",
+    "body_mm": {
+      "width": 78.07,
+      "height": 160.84,
+      "depth": 7.65
+    },
+    "native_px": [
+      1284,
+      2778
+    ],
+    "resolution": [
+      1284,
+      2778
+    ],
+    "colors": [
+      {
+        "name": "Graphite",
+        "hex": "#626360"
+      },
+      {
+        "name": "Gold",
+        "hex": "#e8d6bf"
+      },
+      {
+        "name": "Silver",
+        "hex": "#e8e8e4"
+      },
+      {
+        "name": "Sierra Blue",
+        "hex": "#a1b4c8"
+      },
+      {
+        "name": "Alpine Green",
+        "hex": "#576856"
+      }
+    ],
+    "finishes": [
+      {
+        "name": "Graphite",
+        "hex": "#626360"
+      },
+      {
+        "name": "Gold",
+        "hex": "#e8d6bf"
+      },
+      {
+        "name": "Silver",
+        "hex": "#e8e8e4"
+      },
+      {
+        "name": "Sierra Blue",
+        "hex": "#a1b4c8"
+      },
+      {
+        "name": "Alpine Green",
+        "hex": "#576856"
+      }
+    ],
+    "front": {
+      "active_mm": [
+        71.13,
+        153.9
+      ],
+      "body_radius_mm": 17.32,
+      "display_radius_mm": 13.85,
+      "radius_status": "Equivalent circular approximation of Apple continuous corner profile; not manufacturer radius/CAD",
+      "cutout": {
+        "type": "notch",
+        "size_mm": [
+          26.79,
+          5.58
+        ],
+        "top_mm": -0.1,
+        "position_reference": "active display top"
+      },
+      "edge_style": "flat"
+    },
+    "body_radius_mm": 17.32,
+    "display_radius_mm": 13.85,
+    "camera_geometry": {
+      "island_mm": [
+        41.24,
+        42.47,
+        11
+      ],
+      "inset_mm": [
+        1.15,
+        1.15
+      ],
+      "lenses": [
+        {
+          "center_from_top_left_mm": [
+            12.28,
+            12.28
+          ],
+          "diameter_mm": 15.53
+        },
+        {
+          "center_from_top_left_mm": [
+            12.28,
+            30.2
+          ],
+          "diameter_mm": 15.53
+        },
+        {
+          "center_from_top_left_mm": [
+            28.93,
+            21.24
+          ],
+          "diameter_mm": 15.53
+        }
+      ],
+      "flash": {
+        "center_from_top_left_mm": [
+          28.93,
+          8.27
+        ],
+        "diameter_mm": 6.28
+      },
+      "plate_bump_mm": 1.68,
+      "lens_bump_mm": 3.6,
+      "measurement_status": "Apple dimensional drawing printed dimensions; island radius equivalent circular approximation"
+    },
+    "status": "official released device; model curves/material colors approximate",
+    "sources": [
+      "https://support.apple.com/en-us/111870",
+      "https://developer.apple.com/download/files/accessories/dimensional-drawings/iphone-13-pro-max.pdf"
+    ],
+    "drawing": "research/iphone/iphone-13-pro-max.pdf",
+    "drawing_page": 2,
+    "color_status": "Official finish names; approximate sRGB visually matched, not Apple color calibration"
+  },
+  {
+    "id": "iphone-14",
+    "name": "iPhone 14",
+    "body_mm": {
+      "width": 71.52,
+      "height": 146.71,
+      "depth": 7.8
+    },
+    "native_px": [
+      1170,
+      2532
+    ],
+    "resolution": [
+      1170,
+      2532
+    ],
+    "colors": [
+      {
+        "name": "Midnight",
+        "hex": "#252d34"
+      },
+      {
+        "name": "Starlight",
+        "hex": "#eee9df"
+      },
+      {
+        "name": "(PRODUCT)RED",
+        "hex": "#dc3346"
+      },
+      {
+        "name": "Blue",
+        "hex": "#a2b6c8"
+      },
+      {
+        "name": "Purple",
+        "hex": "#d9d1e2"
+      },
+      {
+        "name": "Yellow",
+        "hex": "#f5db84"
+      }
+    ],
+    "finishes": [
+      {
+        "name": "Midnight",
+        "hex": "#252d34"
+      },
+      {
+        "name": "Starlight",
+        "hex": "#eee9df"
+      },
+      {
+        "name": "(PRODUCT)RED",
+        "hex": "#dc3346"
+      },
+      {
+        "name": "Blue",
+        "hex": "#a2b6c8"
+      },
+      {
+        "name": "Purple",
+        "hex": "#d9d1e2"
+      },
+      {
+        "name": "Yellow",
+        "hex": "#f5db84"
+      }
+    ],
+    "front": {
+      "active_mm": [
+        64.58,
+        139.77
+      ],
+      "body_radius_mm": 16.14,
+      "display_radius_mm": 12.67,
+      "radius_status": "Equivalent circular approximation of Apple continuous corner profile; not manufacturer radius/CAD",
+      "cutout": {
+        "type": "notch",
+        "size_mm": [
+          26.79,
+          5.58
+        ],
+        "top_mm": -0.1,
+        "position_reference": "active display top"
+      },
+      "edge_style": "flat"
+    },
+    "body_radius_mm": 16.14,
+    "display_radius_mm": 12.67,
+    "camera_geometry": {
+      "island_mm": [
+        34.75,
+        34.75,
+        9
+      ],
+      "inset_mm": [
+        1.15,
+        1.15
+      ],
+      "lenses": [
+        {
+          "center_from_top_left_mm": [
+            10.73,
+            10.73
+          ],
+          "diameter_mm": 14.38
+        },
+        {
+          "center_from_top_left_mm": [
+            23.48,
+            23.48
+          ],
+          "diameter_mm": 14.38
+        }
+      ],
+      "flash": {
+        "center_from_top_left_mm": [
+          25.15,
+          9.06
+        ],
+        "diameter_mm": 6.28
+      },
+      "plate_bump_mm": 1.85,
+      "lens_bump_mm": 3.42,
+      "measurement_status": "Apple dimensional drawing printed dimensions; island radius equivalent circular approximation"
+    },
+    "status": "official released device; model curves/material colors approximate",
+    "sources": [
+      "https://support.apple.com/en-us/111850",
+      "https://developer.apple.com/download/files/accessories/dimensional-drawings/iphone-14.pdf"
+    ],
+    "drawing": "research/iphone/iphone-14.pdf",
+    "drawing_page": 2,
+    "color_status": "Official finish names; approximate sRGB visually matched, not Apple color calibration"
+  },
+  {
+    "id": "iphone-14-plus",
+    "name": "iPhone 14 Plus",
+    "body_mm": {
+      "width": 78.07,
+      "height": 160.84,
+      "depth": 7.8
+    },
+    "native_px": [
+      1284,
+      2778
+    ],
+    "resolution": [
+      1284,
+      2778
+    ],
+    "colors": [
+      {
+        "name": "Midnight",
+        "hex": "#252d34"
+      },
+      {
+        "name": "Starlight",
+        "hex": "#eee9df"
+      },
+      {
+        "name": "(PRODUCT)RED",
+        "hex": "#dc3346"
+      },
+      {
+        "name": "Blue",
+        "hex": "#a2b6c8"
+      },
+      {
+        "name": "Purple",
+        "hex": "#d9d1e2"
+      },
+      {
+        "name": "Yellow",
+        "hex": "#f5db84"
+      }
+    ],
+    "finishes": [
+      {
+        "name": "Midnight",
+        "hex": "#252d34"
+      },
+      {
+        "name": "Starlight",
+        "hex": "#eee9df"
+      },
+      {
+        "name": "(PRODUCT)RED",
+        "hex": "#dc3346"
+      },
+      {
+        "name": "Blue",
+        "hex": "#a2b6c8"
+      },
+      {
+        "name": "Purple",
+        "hex": "#d9d1e2"
+      },
+      {
+        "name": "Yellow",
+        "hex": "#f5db84"
+      }
+    ],
+    "front": {
+      "active_mm": [
+        71.13,
+        153.9
+      ],
+      "body_radius_mm": 15.96,
+      "display_radius_mm": 12.49,
+      "radius_status": "Equivalent circular approximation of Apple continuous corner profile; not manufacturer radius/CAD",
+      "cutout": {
+        "type": "notch",
+        "size_mm": [
+          26.79,
+          5.58
+        ],
+        "top_mm": -0.1,
+        "position_reference": "active display top"
+      },
+      "edge_style": "flat"
+    },
+    "body_radius_mm": 15.96,
+    "display_radius_mm": 12.49,
+    "camera_geometry": {
+      "island_mm": [
+        35.29,
+        35.29,
+        9
+      ],
+      "inset_mm": [
+        1.28,
+        1.28
+      ],
+      "lenses": [
+        {
+          "center_from_top_left_mm": [
+            11.27,
+            11.27
+          ],
+          "diameter_mm": 14.38
+        },
+        {
+          "center_from_top_left_mm": [
+            24.02,
+            24.02
+          ],
+          "diameter_mm": 14.38
+        }
+      ],
+      "flash": {
+        "center_from_top_left_mm": [
+          25.69,
+          9.59
+        ],
+        "diameter_mm": 6.28
+      },
+      "plate_bump_mm": 1.85,
+      "lens_bump_mm": 3.42,
+      "measurement_status": "Apple dimensional drawing printed dimensions; island radius equivalent circular approximation"
+    },
+    "status": "official released device; model curves/material colors approximate",
+    "sources": [
+      "https://support.apple.com/en-us/111854",
+      "https://developer.apple.com/download/files/accessories/dimensional-drawings/iphone-14-plus.pdf"
+    ],
+    "drawing": "research/iphone/iphone-14-plus.pdf",
+    "drawing_page": 2,
+    "color_status": "Official finish names; approximate sRGB visually matched, not Apple color calibration"
+  },
+  {
+    "id": "iphone-14-pro",
+    "name": "iPhone 14 Pro",
+    "body_mm": {
+      "width": 71.45,
+      "height": 147.46,
+      "depth": 7.85
+    },
+    "native_px": [
+      1179,
+      2556
+    ],
+    "resolution": [
+      1179,
+      2556
+    ],
+    "colors": [
+      {
+        "name": "Space Black",
+        "hex": "#424340"
+      },
+      {
+        "name": "Silver",
+        "hex": "#e5e4e2"
+      },
+      {
+        "name": "Gold",
+        "hex": "#e7d9c3"
+      },
+      {
+        "name": "Deep Purple",
+        "hex": "#655c6b"
+      }
+    ],
+    "finishes": [
+      {
+        "name": "Space Black",
+        "hex": "#424340"
+      },
+      {
+        "name": "Silver",
+        "hex": "#e5e4e2"
+      },
+      {
+        "name": "Gold",
+        "hex": "#e7d9c3"
+      },
+      {
+        "name": "Deep Purple",
+        "hex": "#655c6b"
+      }
+    ],
+    "front": {
+      "active_mm": [
+        65.08,
+        141.09
+      ],
+      "body_radius_mm": 17.32,
+      "display_radius_mm": 14.13,
+      "radius_status": "Equivalent circular approximation of Apple continuous corner profile; not manufacturer radius/CAD",
+      "cutout": {
+        "type": "island",
+        "size_mm": [
+          20.69,
+          6.07
+        ],
+        "top_mm": 4.915,
+        "position_reference": "active display top"
+      },
+      "edge_style": "flat"
+    },
+    "body_radius_mm": 17.32,
+    "display_radius_mm": 14.13,
+    "camera_geometry": {
+      "island_mm": [
+        41.93,
+        43.42,
+        10.9
+      ],
+      "inset_mm": [
+        2.19,
+        2.19
+      ],
+      "lenses": [
+        {
+          "center_from_top_left_mm": [
+            12.09,
+            12.09
+          ],
+          "diameter_mm": 15.61
+        },
+        {
+          "center_from_top_left_mm": [
+            12.09,
+            31.33
+          ],
+          "diameter_mm": 15.61
+        },
+        {
+          "center_from_top_left_mm": [
+            29.93,
+            21.71
+          ],
+          "diameter_mm": 15.61
+        }
+      ],
+      "flash": {
+        "center_from_top_left_mm": [
+          29.93,
+          8.13
+        ],
+        "diameter_mm": 6.9
+      },
+      "plate_bump_mm": 1.85,
+      "lens_bump_mm": 4.18,
+      "measurement_status": "Apple dimensional drawing printed dimensions; island radius equivalent circular approximation"
+    },
+    "status": "official released device; model curves/material colors approximate",
+    "sources": [
+      "https://support.apple.com/en-us/111849",
+      "https://developer.apple.com/download/files/accessories/dimensional-drawings/iphone-14-pro.pdf"
+    ],
+    "drawing": "research/iphone/iphone-14-pro.pdf",
+    "drawing_page": 2,
+    "color_status": "Official finish names; approximate sRGB visually matched, not Apple color calibration"
+  },
+  {
+    "id": "iphone-14-pro-max",
+    "name": "iPhone 14 Pro Max",
+    "body_mm": {
+      "width": 77.58,
+      "height": 160.71,
+      "depth": 7.85
+    },
+    "native_px": [
+      1290,
+      2796
+    ],
+    "resolution": [
+      1290,
+      2796
+    ],
+    "colors": [
+      {
+        "name": "Space Black",
+        "hex": "#424340"
+      },
+      {
+        "name": "Silver",
+        "hex": "#e5e4e2"
+      },
+      {
+        "name": "Gold",
+        "hex": "#e7d9c3"
+      },
+      {
+        "name": "Deep Purple",
+        "hex": "#655c6b"
+      }
+    ],
+    "finishes": [
+      {
+        "name": "Space Black",
+        "hex": "#424340"
+      },
+      {
+        "name": "Silver",
+        "hex": "#e5e4e2"
+      },
+      {
+        "name": "Gold",
+        "hex": "#e7d9c3"
+      },
+      {
+        "name": "Deep Purple",
+        "hex": "#655c6b"
+      }
+    ],
+    "front": {
+      "active_mm": [
+        71.21,
+        154.34
+      ],
+      "body_radius_mm": 15.55,
+      "display_radius_mm": 12.36,
+      "radius_status": "Equivalent circular approximation of Apple continuous corner profile; not manufacturer radius/CAD",
+      "cutout": {
+        "type": "island",
+        "size_mm": [
+          20.76,
+          6.07
+        ],
+        "top_mm": 4.915,
+        "position_reference": "active display top"
+      },
+      "edge_style": "flat"
+    },
+    "body_radius_mm": 15.55,
+    "display_radius_mm": 12.36,
+    "camera_geometry": {
+      "island_mm": [
+        41.93,
+        44.46,
+        10.9
+      ],
+      "inset_mm": [
+        2.19,
+        1.15
+      ],
+      "lenses": [
+        {
+          "center_from_top_left_mm": [
+            12.09,
+            13.13
+          ],
+          "diameter_mm": 15.61
+        },
+        {
+          "center_from_top_left_mm": [
+            12.09,
+            32.37
+          ],
+          "diameter_mm": 15.61
+        },
+        {
+          "center_from_top_left_mm": [
+            29.93,
+            22.75
+          ],
+          "diameter_mm": 15.61
+        }
+      ],
+      "flash": {
+        "center_from_top_left_mm": [
+          29.93,
+          9.17
+        ],
+        "diameter_mm": 6.9
+      },
+      "plate_bump_mm": 1.85,
+      "lens_bump_mm": 4.18,
+      "measurement_status": "Apple dimensional drawing printed dimensions; island radius equivalent circular approximation"
+    },
+    "status": "official released device; model curves/material colors approximate",
+    "sources": [
+      "https://support.apple.com/en-us/111846",
+      "https://developer.apple.com/download/files/accessories/dimensional-drawings/iphone-14-pro-max.pdf"
+    ],
+    "drawing": "research/iphone/iphone-14-pro-max.pdf",
+    "drawing_page": 2,
+    "color_status": "Official finish names; approximate sRGB visually matched, not Apple color calibration"
+  }
+]

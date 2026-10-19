@@ -1,0 +1,236 @@
+{
+  "id": "iphone-18-pro",
+  "name": "iPhone 18 Pro",
+  "state": "default",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        1206,
+        2622
+      ],
+      "size_mm": [
+        66.569176201373,
+        144.73
+      ],
+      "center_mm": [
+        0.0,
+        0.0,
+        4.409999847412109
+      ],
+      "corner_radius_mm": 9.5,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0,
+      "frame_bounds_mm": [
+        2.6654118993135043,
+        2.635000000000005,
+        66.569176201373,
+        144.73
+      ],
+      "frame_screen_px": null,
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "width": 71.9,
+        "height": 150.0,
+        "depth": 8.75,
+        "corner_radius": 12.0,
+        "edge_roll_mm": [
+          0.7,
+          0.58
+        ],
+        "front_curve": 0
+      },
+      "cutouts": [
+        {
+          "size_mm": [
+            15.66,
+            6.07
+          ],
+          "radius_mm": 3.035,
+          "center_mm": [
+            0,
+            67.01
+          ]
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "articulation": null,
+  "panels": [],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/iphone-18-pro-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "logo": "logo",
+    "black": "black",
+    "flash": "flash"
+  },
+  "finishes": [
+    {
+      "name": "Black",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.1607843137254902,
+            0.16470588235294117,
+            0.17647058823529413
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.1607843137254902,
+            0.16470588235294117,
+            0.17647058823529413
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.1607843137254902,
+            0.16470588235294117,
+            0.17647058823529413
+          ]
+        },
+        "logo": {
+          "rgb": [
+            0.31576470588235295,
+            0.31858823529411767,
+            0.3270588235294118
+          ]
+        }
+      }
+    },
+    {
+      "name": "Silver",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.8431372549019608,
+            0.8431372549019608,
+            0.8352941176470589
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.8431372549019608,
+            0.8431372549019608,
+            0.8352941176470589
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.8431372549019608,
+            0.8431372549019608,
+            0.8352941176470589
+          ]
+        },
+        "logo": {
+          "rgb": [
+            0.5227450980392156,
+            0.5227450980392156,
+            0.5178823529411765
+          ]
+        }
+      }
+    },
+    {
+      "name": "Glacier",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.6392156862745098,
+            0.7686274509803922,
+            0.8235294117647058
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.6392156862745098,
+            0.7686274509803922,
+            0.8235294117647058
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.6392156862745098,
+            0.7686274509803922,
+            0.8235294117647058
+          ]
+        },
+        "logo": {
+          "rgb": [
+            0.39631372549019606,
+            0.4765490196078432,
+            0.5105882352941176
+          ]
+        }
+      }
+    },
+    {
+      "name": "Burgundy",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.4117647058823529,
+            0.24313725490196078,
+            0.2980392156862745
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.4117647058823529,
+            0.24313725490196078,
+            0.2980392156862745
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.4117647058823529,
+            0.24313725490196078,
+            0.2980392156862745
+          ]
+        },
+        "logo": {
+          "rgb": [
+            0.4964705882352941,
+            0.3750588235294118,
+            0.41458823529411765
+          ]
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/iphone-18-pro.e9be14f6993f.glb.gz",
+  "sha256": "e9be14f6993f1b0c5267226ed330ab7d987e8c76255d3d335846442f632d83e8",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/iphone-18-pro.json",
+    "accuracy": {
+      "body_dimensions": "Apple published metric dimensions",
+      "screen_geometry": "visual estimates; compound corner curves documented in Apple dimensional PDFs are not constant circular radii",
+      "camera_geometry": "Apple drawing lens coordinates and depths; island outline bounds/radius are visual approximations",
+      "controls": "Apple dimensional-drawing control centerlines across the generated slab catalog",
+      "finishes": "finish names official; RGB visual approximations, not calibrated manufacturer paint values"
+    },
+    "sources": [
+      "https://www.apple.com/iphone-18-pro/specs/",
+      "https://developer.apple.com/download/files/accessories/dimensional-drawings/iphone-18-pro.pdf"
+    ]
+  }
+}

@@ -1,0 +1,280 @@
+{
+  "id": "galaxy-s6",
+  "name": "Galaxy S6",
+  "state": "default",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        1440,
+        2560
+      ],
+      "size_mm": [
+        63.50844098200168,
+        112.90389507911411
+      ],
+      "center_mm": [
+        0.0,
+        0.0,
+        3.434999942779541
+      ],
+      "corner_radius_mm": 0.3,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0,
+      "frame_bounds_mm": [
+        3.49577950899916,
+        15.248052460442949,
+        63.50844098200168,
+        112.90389507911411
+      ],
+      "frame_screen_px": null,
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "width": 70.5,
+        "height": 143.4,
+        "depth": 6.8,
+        "corner_radius": 9,
+        "edge_roll_mm": [
+          0.35,
+          0.25
+        ],
+        "front_rail_mm": 0.4,
+        "rear_inset": 0.4
+      },
+      "cutouts": [],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "articulation": null,
+  "panels": [],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/galaxy-s6-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "logo": "logo",
+    "front_bezel": "front_bezel",
+    "black": "black",
+    "flash": "flash",
+    "front_sensor": "front_sensor",
+    "front_speaker": "front_speaker"
+  },
+  "finishes": [
+    {
+      "name": "White Pearl",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.9333333333333333,
+            0.9411764705882353,
+            0.9450980392156862
+          ],
+          "rough": 0.2
+        },
+        "rail": {
+          "rgb": [
+            0.84,
+            0.8458823529411764,
+            0.8488235294117646
+          ],
+          "metal": 0.8,
+          "rough": 0.27
+        },
+        "bar": {
+          "rgb": [
+            0.018,
+            0.022,
+            0.03
+          ],
+          "metal": 0.55,
+          "rough": 0.27
+        },
+        "logo": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.16
+          ]
+        },
+        "front_bezel": {
+          "rgb": [
+            0.9333333333333333,
+            0.9411764705882353,
+            0.9450980392156862
+          ],
+          "rough": 0.22
+        }
+      }
+    },
+    {
+      "name": "Black Sapphire",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.15294117647058825,
+            0.18823529411764706,
+            0.25098039215686274
+          ],
+          "rough": 0.2
+        },
+        "rail": {
+          "rgb": [
+            0.2547058823529412,
+            0.2811764705882353,
+            0.32823529411764707
+          ],
+          "metal": 0.8,
+          "rough": 0.27
+        },
+        "bar": {
+          "rgb": [
+            0.018,
+            0.022,
+            0.03
+          ],
+          "metal": 0.55,
+          "rough": 0.27
+        },
+        "logo": {
+          "rgb": [
+            0.62,
+            0.64,
+            0.68
+          ]
+        },
+        "front_bezel": {
+          "rgb": [
+            0.15294117647058825,
+            0.18823529411764706,
+            0.25098039215686274
+          ],
+          "rough": 0.22
+        }
+      }
+    },
+    {
+      "name": "Gold Platinum",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.788235294117647,
+            0.7215686274509804,
+            0.596078431372549
+          ],
+          "rough": 0.2
+        },
+        "rail": {
+          "rgb": [
+            0.7311764705882353,
+            0.6811764705882353,
+            0.5870588235294117
+          ],
+          "metal": 0.8,
+          "rough": 0.27
+        },
+        "bar": {
+          "rgb": [
+            0.018,
+            0.022,
+            0.03
+          ],
+          "metal": 0.55,
+          "rough": 0.27
+        },
+        "logo": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.16
+          ]
+        },
+        "front_bezel": {
+          "rgb": [
+            0.788235294117647,
+            0.7215686274509804,
+            0.596078431372549
+          ],
+          "rough": 0.22
+        }
+      }
+    },
+    {
+      "name": "Blue Topaz",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.21176470588235294,
+            0.6745098039215687,
+            0.8
+          ],
+          "rough": 0.2
+        },
+        "rail": {
+          "rgb": [
+            0.2988235294117647,
+            0.6458823529411765,
+            0.7400000000000001
+          ],
+          "metal": 0.8,
+          "rough": 0.27
+        },
+        "bar": {
+          "rgb": [
+            0.018,
+            0.022,
+            0.03
+          ],
+          "metal": 0.55,
+          "rough": 0.27
+        },
+        "logo": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.16
+          ]
+        },
+        "front_bezel": {
+          "rgb": [
+            0.21176470588235294,
+            0.6745098039215687,
+            0.8
+          ],
+          "rough": 0.22
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/galaxy-s6.5cc08b7c53d7.glb.gz",
+  "sha256": "5cc08b7c53d786e9cf9ace7b4b97a39969b7f6596c574808b807300279960608",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/galaxy-s6.json",
+    "accuracy": {
+      "body_dimensions": "Samsung published chassis dimensions. Corner radii, edge rolls and curvature are photo estimates, not CAD.",
+      "screen_resolution": "Samsung native resolution. Active rectangle calculated from rounded published full diagonal and native aspect; physical bezel widths therefore approximate.",
+      "screen_geometry": "Model-specific flat/dual-edge display, rectangular/rounded corners, bezel selfie or Infinity-O aperture. Radii, hole positions and curve depth are photo estimates.",
+      "camera_geometry": "Model-specific rear layout scaled from generate_galaxy_svgs.PHONES / base MODELS official-render measurements. Internal optics, radii and protrusions illustrative; early cover internal lens positions estimated from photographs. Laser/ToF/heart-rate/fingerprint features distinguished from imaging lenses.",
+      "finishes": "Published finish names; approximate sampled sRGB and material response. S21+ Phantom Violet uses muted rose champagne camera housing.",
+      "omissions": "USB/headphone ports, speaker perforations, antenna seams and S Pen silo omitted. Legacy capacitive navigation marks and bezel hardware simplified."
+    },
+    "sources": [
+      "https://www.samsungmobilepress.com/articles/beautifully-crafted-from-metal-and-glass-samsung-galaxy-s6-and-galaxy-s6-edge-define-whats-next-in-mobility"
+    ]
+  }
+}

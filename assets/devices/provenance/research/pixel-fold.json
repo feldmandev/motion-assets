@@ -1,0 +1,224 @@
+{
+  "source_policy": "Published values follow Google support and Google Store specs. Original Pixel Fold dimensions and display resolution are explicitly published in metric; resolution arrays preserve Google's stated order. Shape, cutout position and exterior camera details below are visual observations from downloaded official Google product images, not CAD measurements.",
+  "models": [
+    {
+      "name": "Pixel Fold (2023)",
+      "dimensions_mm": {
+        "folded": {
+          "height": 139.7,
+          "width": 79.5,
+          "depth": 12.1,
+          "status": "published metric (Google Pixel Phone Help)"
+        },
+        "unfolded": {
+          "height": 139.7,
+          "width": 158.7,
+          "depth": 5.8,
+          "status": "published metric (Google Pixel Phone Help)"
+        }
+      },
+      "displays": {
+        "outer": {
+          "diagonal_in": 5.8,
+          "resolution_px": [
+            2092,
+            1080
+          ],
+          "ppi": 408,
+          "status": "published"
+        },
+        "inner": {
+          "diagonal_in": 7.6,
+          "resolution_px": [
+            2208,
+            1840
+          ],
+          "ppi": 380,
+          "status": "published"
+        }
+      },
+      "colors": [
+        "Obsidian",
+        "Porcelain"
+      ],
+      "visual_estimates": {
+        "hinge": "Google specifies a mirror-polished multi-alloy steel hinge with custom dual-axis, synchronized quad-cam mechanism and fluid friction through 180 degrees. Model as two panels with a continuous external spine; internal mechanism is not visible.",
+        "screens_bezels_cutouts": "Inspected official Google composite shows a centered punch-hole on the outer display. The inner display has a broad dark perimeter frame and a small selfie camera aperture at the upper-left in the displayed landscape view. Bezel and aperture dimensions remain visual estimates.",
+        "rear_camera": "Official rear view shows a long horizontal camera bar spanning most of the back width: a black horizontal pill window contains two lens positions, with a third separate circular lens at its right. Flash and small sensor details are on the left side of the bar. Bar height, protrusion and exact optical centers are estimates from the official render.",
+        "camera_difference": "Distinct from both Pro Folds: full-width horizontal bar, with two lenses inside the left pill and a separate third circular aperture to its right."
+      },
+      "official_refs": [
+        "https://support.google.com/pixelphone/answer/7158570?hl=en",
+        "https://blog.google/products-and-platforms/devices/pixel/google-pixel-fold/"
+      ],
+      "inspected_images": [
+        "images/pixel-fold-front-back-open.webp"
+      ]
+    },
+    {
+      "name": "Pixel 9 Pro Fold (2024)",
+      "dimensions_mm": {
+        "folded": {
+          "height": 155.2,
+          "width": 77.1,
+          "depth": 10.5,
+          "status": "published metric (Google Store compare page)"
+        },
+        "unfolded": {
+          "height": 155.2,
+          "width": 150.2,
+          "depth": 5.1,
+          "status": "published metric (Google Store compare page)"
+        }
+      },
+      "displays": {
+        "outer": {
+          "diagonal_in": 6.3,
+          "resolution_px": [
+            1080,
+            2424
+          ],
+          "ppi": 422,
+          "status": "published"
+        },
+        "inner": {
+          "diagonal_in": 8.0,
+          "resolution_px": [
+            2076,
+            2152
+          ],
+          "ppi": 373,
+          "status": "published"
+        }
+      },
+      "colors": [
+        "Obsidian",
+        "Porcelain"
+      ],
+      "visual_estimates": {
+        "hinge": "Long-edge book hinge, designed to open flat to 180 degrees; slim exposed hinge spine on the back edge. Use two panels joined along center with a narrow, softly rounded hinge cover.",
+        "screens_bezels_cutouts": "Inspected official Google inner-display image shows a dark, rounded perimeter frame and a small selfie-camera aperture at the upper-left in the landscape promotional view. The external cover-screen cutout position was not established from the downloaded official images. Border widths and aperture diameter are visual estimates.",
+        "rear_camera": "Inspected official Google rear render shows a raised rounded-rectangle camera housing with two separate black horizontal pill windows stacked vertically. Three camera positions are arranged across the two rows; the bright round flash and a small sensor dot sit to the right of the pill windows. Preserve the stacked two-window layout; precise lens/window sizes and spacing remain estimates.",
+        "camera_difference": "Google explicitly describes the Pixel 9 Pro Fold camera bar as using a stacked-lens layout. Its two vertically stacked black pill windows distinguish it from the original Fold full-width horizontal window and separate third lens."
+      },
+      "official_refs": [
+        "https://store.google.com/gb/magazine/compare_pixel?hl=en-GB&toggler0=Pixel%209%20Pro%20Fold",
+        "https://store.google.com/au/magazine/introducing-pixel-9-pro-fold?hl=en-GB",
+        "https://blog.google/products-and-platforms/devices/pixel/google-pixel-9-pro-fold/",
+        "https://blog.google/products-and-platforms/devices/pixel/google-pixel-9-series-design/"
+      ],
+      "inspected_images": [
+        "images/pixel-9-pro-fold-inner-front.webp",
+        "images/pixel-9-pro-fold-back-main-camera.webp",
+        "images/pixel-9-pro-fold-back-oblique.webp"
+      ]
+    },
+    {
+      "name": "Pixel 10 Pro Fold (2025)",
+      "dimensions_mm": {
+        "folded": {
+          "height": 155.2,
+          "width": 76.3,
+          "depth": 10.8,
+          "status": "published metric (Google Store Japan specs)"
+        },
+        "unfolded": {
+          "height": 155.2,
+          "width": 150.4,
+          "depth": 5.2,
+          "status": "published metric (Google Store Japan specs)"
+        }
+      },
+      "displays": {
+        "outer": {
+          "diagonal_in": 6.4,
+          "resolution_px": [
+            1080,
+            2364
+          ],
+          "ppi": 408,
+          "status": "published"
+        },
+        "inner": {
+          "diagonal_in": 8.0,
+          "resolution_px": [
+            2076,
+            2152
+          ],
+          "ppi": 373,
+          "status": "published"
+        }
+      },
+      "colors": [
+        "Moonstone",
+        "Jade"
+      ],
+      "visual_estimates": {
+        "hinge": "Long-edge book hinge; Google describes a gearless hinge and the device opens flat. Keep a clean continuous hinge spine with subtle separation at the two halves, no visible gear segments.",
+        "screens_bezels_cutouts": "Inspected official Google inner-display product render shows a very narrow dark rounded perimeter edge, but does not clearly resolve the selfie-camera aperture. Do not place a cutout from this image alone. External cover-screen cutout was also not established from the downloaded official image. Bezel width is visual estimate.",
+        "rear_camera": "Inspected official Google straight-on rear render shows a raised rounded-rectangle island containing two separate black horizontal pill windows stacked vertically. The upper window has a round lens aperture toward its right; the lower window contains a round aperture toward its left and a smaller rectangular dark aperture toward its right. A bright round flash sits to the upper-right of the windows, with a small sensor dot lower-right. Preserve this two-row layout; exact positions and sizes are visual estimates.",
+        "camera_difference": "Pixel 10 Pro Fold retains stacked black pill windows rather than a single row of three lenses. The inspected render makes the upper and lower window outlines, separate flash and small sensor placement visible."
+      },
+      "official_refs": [
+        "https://store.google.com/product/pixel_10_pro_fold_specs?hl=en-US",
+        "https://store.google.com/jp/product/pixel_10_pro_fold_specs?hl=ja",
+        "https://blog.google/products-and-platforms/devices/pixel/google-pixel-10-pro-fold/"
+      ],
+      "inspected_images": [
+        "images/pixel-10-pro-fold-back.webp",
+        "images/pixel-10-pro-fold-unfolded-front.webp"
+      ]
+    },
+    {
+      "name": "Pixel 11 Pro Fold (2026)",
+      "dimensions_mm": {
+        "folded": {
+          "height": 155.2,
+          "width": 76.0,
+          "depth": 10.1
+        },
+        "unfolded": {
+          "height": 155.2,
+          "width": 150.4,
+          "depth": 5.0
+        }
+      },
+      "displays": {
+        "outer": {
+          "diagonal_in": 6.5,
+          "resolution_px": [
+            1080,
+            2342
+          ]
+        },
+        "inner": {
+          "diagonal_in": 8.0,
+          "resolution_px": [
+            2076,
+            2152
+          ]
+        }
+      },
+      "colors": [
+        "Obsidian",
+        "Olive"
+      ],
+      "official_refs": [
+        "https://support.google.com/pixelphone/answer/7158570?hl=en",
+        "https://blog.google/products-and-platforms/devices/pixel/pixel-11-pro-fold/",
+        "https://store.google.com/de/product/pixel_11_pro_fold_specs?hl=de"
+      ],
+      "inspected_images": [
+        "images/pixel-11-pro-fold-obsidian-open-back.webp"
+      ],
+      "visual_estimates": {
+        "camera": "Compact two-row visor; flash/HiLight inside upper black window, two lenses in lower window. Housing free-edge top corner shares the enclosure corner centre; dimensions estimated from official render."
+      }
+    }
+  ],
+  "modeling_notes": [
+    "Use Google-published body dimensions as outer bounding boxes. Resolution arrays preserve Google's published number order; screen orientation depends on physical orientation.",
+    "Hinge axis runs along the long body edge; Google specifies 180-degree motion for Pixel Fold and Pixel 9 Pro Fold, and a gearless hinge for Pixel 10 Pro Fold. Animate 0 degrees closed to 180 degrees open as a simplified visible motion.",
+    "Camera-window shapes and flash/sensor placement are based on the inspected images under images/. Bezel widths, corner radii, aperture diameters, component depths, and all camera centers remain visual estimates because Google does not publish CAD or dimensioned layouts."
+  ]
+}

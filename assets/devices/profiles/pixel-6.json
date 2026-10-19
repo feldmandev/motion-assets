@@ -1,0 +1,256 @@
+{
+  "id": "pixel-6",
+  "name": "Pixel 6",
+  "finish": "Stormy Black",
+  "body_mm": {
+    "height": 158.6,
+    "width": 74.8,
+    "depth": 8.9,
+    "corner_radius": 5.323334763023893,
+    "edge_roll": 0.55,
+    "front_curve": 0,
+    "edge_roll_mm": [
+      3.4,
+      1.0
+    ]
+  },
+  "materials": {
+    "back": {
+      "rgb": [
+        0.2549,
+        0.27451,
+        0.2902
+      ],
+      "rough": 0.18
+    },
+    "rail": {
+      "rgb": [
+        0.36569,
+        0.37843,
+        0.38863
+      ],
+      "metal": 1,
+      "rough": 0.36
+    },
+    "bar": {
+      "rgb": [
+        0.08235,
+        0.09804,
+        0.11373
+      ],
+      "metal": 0.05,
+      "rough": 0.3
+    },
+    "black": {
+      "rgb": [
+        0.007,
+        0.009,
+        0.012
+      ],
+      "rough": 0.5
+    },
+    "flash": {
+      "rgb": [
+        0.85,
+        0.84,
+        0.77
+      ],
+      "rough": 0.33
+    },
+    "upper": {
+      "rgb": [
+        0.43922,
+        0.45098,
+        0.45882
+      ],
+      "rough": 0.18
+    }
+  },
+  "finishes": {
+    "Stormy Black": {
+      "back": {
+        "rgb": [
+          0.2549,
+          0.27451,
+          0.2902
+        ]
+      },
+      "rail": {
+        "rgb": [
+          0.36569,
+          0.37843,
+          0.38863
+        ]
+      },
+      "bar": {
+        "rgb": [
+          0.08235,
+          0.09804,
+          0.11373
+        ]
+      },
+      "upper": {
+        "rgb": [
+          0.43922,
+          0.45098,
+          0.45882
+        ]
+      }
+    },
+    "Kinda Coral": {
+      "back": {
+        "rgb": [
+          0.92941,
+          0.70588,
+          0.61961
+        ]
+      },
+      "rail": {
+        "rgb": [
+          0.80412,
+          0.65882,
+          0.60275
+        ]
+      },
+      "bar": {
+        "rgb": [
+          0.08235,
+          0.09804,
+          0.11373
+        ]
+      },
+      "upper": {
+        "rgb": [
+          0.90588,
+          0.58039,
+          0.49412
+        ]
+      }
+    },
+    "Sorta Seafoam": {
+      "back": {
+        "rgb": [
+          0.75294,
+          0.82745,
+          0.78431
+        ]
+      },
+      "rail": {
+        "rgb": [
+          0.68941,
+          0.73784,
+          0.7098
+        ]
+      },
+      "bar": {
+        "rgb": [
+          0.08235,
+          0.09804,
+          0.11373
+        ]
+      },
+      "upper": {
+        "rgb": [
+          0.8902,
+          0.91373,
+          0.71373
+        ]
+      }
+    }
+  },
+  "screen": {
+    "object": "Device screen",
+    "node": "Device screen",
+    "panel": "Body",
+    "resolution": [
+      1080,
+      2400
+    ],
+    "fit_box_mm": [
+      67.09283196239717,
+      149.0951821386604
+    ],
+    "center_mm": [
+      -0.09318448883666275,
+      0.4659224441833137,
+      4.485
+    ],
+    "corner_radius_mm": 2.162252878965922,
+    "edge_curve_mm": 0,
+    "create_cutouts": true,
+    "cutouts": [
+      {
+        "center_mm": [
+          0,
+          70.5475910693302
+        ],
+        "radius_mm": 1.5
+      }
+    ]
+  },
+  "camera": {
+    "center_mm": [
+      0,
+      50.8
+    ],
+    "size_mm": [
+      74.8,
+      18.8,
+      0.6
+    ],
+    "bump_mm": 3.0,
+    "roll_mm": 1.3,
+    "windows": [
+      [
+        0,
+        50.8,
+        74.5,
+        16.2,
+        0.3
+      ]
+    ],
+    "lenses": [
+      {
+        "kind": "main",
+        "center_mm": [
+          21.691999999999997,
+          50.8
+        ],
+        "radius_mm": 2.7,
+        "window": 0
+      },
+      {
+        "kind": "ultrawide",
+        "center_mm": [
+          7.48,
+          50.8
+        ],
+        "radius_mm": 2.1,
+        "window": 0
+      }
+    ],
+    "flash": [
+      [
+        -25.432000000000002,
+        50.8,
+        2.5
+      ]
+    ],
+    "cover_depth_mm": 0.12,
+    "cover_roll_mm": 0.025,
+    "side_wrap_mm": 5.0
+  },
+  "accuracy": {
+    "body_dimensions": "Google published metric dimensions",
+    "screen_resolution": "Google published panel resolution",
+    "screen_geometry": "Screen fit and corner radius measured from Google emulator artwork; native pixel aspect preserved. Skin artwork is a reference, not physical CAD.",
+    "camera_geometry": "Provisional photo-informed blockout; shared reviewed optics are illustrative, not device-specific optical prescriptions",
+    "finishes": "Approximate sRGB colors and roughness, not calibrated measured materials"
+  },
+  "sources": [
+    "https://support.google.com/pixelphone/answer/7158570?hl=en",
+    "https://store.google.com/us/magazine/compare_pixel?hl=en-US&toggler0=Pixel+6&toggler1=Pixel+6a&toggler2=Pixel+6+Pro"
+  ],
+  "status": "provisional",
+  "reference_frame": "research\\skins\\pixel-6\\frame.png"
+}

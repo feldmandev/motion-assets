@@ -1,0 +1,53 @@
+name: Validate and release assets
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: assets-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: python -m pip install -r requirements.txt
+      - run: python tools/validate.py
+      - run: python tools/export_symbol.py home --output build/home.svg
+      - run: python tools/build.py
+      - uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6
+        with:
+          name: motion-asset-packages
+          path: build/dist
+  release:
+    if: github.event_name == 'push'
+    needs: validate
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements.txt
+      - run: python tools/validate.py && python tools/build.py
+      - name: Publish immutable module archives
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          version="v$(python -c 'import json; print(json.load(open("package.json"))["version"])')"
+          if gh release view "$version" >/dev/null 2>&1; then exit 0; fi
+          gh release create "$version" build/dist/* --target "$GITHUB_SHA" --generate-notes

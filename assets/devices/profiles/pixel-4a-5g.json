@@ -1,0 +1,290 @@
+{
+  "id": "pixel-4a-5g",
+  "name": "Pixel 4a (5G)",
+  "finish": "Just Black",
+  "body_mm": {
+    "height": 153.9,
+    "width": 74.0,
+    "depth": 8.2,
+    "corner_radius": 8.3,
+    "edge_roll": 0.95,
+    "edge_roll_mm": [
+      2.45,
+      0.95
+    ],
+    "front_curve": 0,
+    "rear_style": "unibody"
+  },
+  "materials": {
+    "back": {
+      "rgb": [
+        0.14118,
+        0.14902,
+        0.15686
+      ],
+      "rough": 0.58
+    },
+    "rail": {
+      "rgb": [
+        0.14118,
+        0.14902,
+        0.15686
+      ],
+      "metal": 0.08,
+      "rough": 0.52
+    },
+    "bar": {
+      "rgb": [
+        0.03529,
+        0.04314,
+        0.0549
+      ],
+      "rough": 0.16
+    },
+    "button": {
+      "rgb": [
+        0.71373,
+        0.83137,
+        0.8
+      ],
+      "metal": 0.15,
+      "rough": 0.34
+    },
+    "fingerprint": {
+      "rgb": [
+        0.18824,
+        0.19608,
+        0.20784
+      ],
+      "rough": 0.72
+    },
+    "black": {
+      "rgb": [
+        0.006,
+        0.008,
+        0.011
+      ],
+      "rough": 0.5
+    },
+    "flash": {
+      "rgb": [
+        0.88,
+        0.87,
+        0.78
+      ],
+      "rough": 0.3
+    }
+  },
+  "finishes": {
+    "Just Black": {
+      "back": {
+        "rgb": [
+          0.14118,
+          0.14902,
+          0.15686
+        ]
+      },
+      "rail": {
+        "rgb": [
+          0.14118,
+          0.14902,
+          0.15686
+        ]
+      },
+      "bar": {
+        "rgb": [
+          0.03529,
+          0.04314,
+          0.0549
+        ]
+      },
+      "button": {
+        "rgb": [
+          0.71373,
+          0.83137,
+          0.8
+        ]
+      },
+      "fingerprint": {
+        "rgb": [
+          0.18824,
+          0.19608,
+          0.20784
+        ]
+      }
+    },
+    "Clearly White": {
+      "back": {
+        "rgb": [
+          0.89804,
+          0.89804,
+          0.87451
+        ]
+      },
+      "rail": {
+        "rgb": [
+          0.89804,
+          0.89804,
+          0.87451
+        ]
+      },
+      "bar": {
+        "rgb": [
+          0.03529,
+          0.04314,
+          0.0549
+        ]
+      },
+      "button": {
+        "rgb": [
+          0.71373,
+          0.83137,
+          0.8
+        ]
+      },
+      "fingerprint": {
+        "rgb": [
+          0.81961,
+          0.82353,
+          0.80784
+        ]
+      }
+    }
+  },
+  "screen": {
+    "object": "Device screen",
+    "node": "Device screen",
+    "panel": "Body",
+    "resolution": [
+      1080,
+      2340
+    ],
+    "fit_box_mm": [
+      65.99328178667591,
+      142.98544387113114
+    ],
+    "center_mm": [
+      0,
+      0,
+      4.135
+    ],
+    "corner_radius_mm": 4.8,
+    "edge_curve_mm": 0,
+    "create_cutouts": true,
+    "cutouts": [
+      {
+        "center_mm": [
+          -27.996640893337954,
+          66.49272193556557
+        ],
+        "radius_mm": 1.9
+      }
+    ]
+  },
+  "camera": {
+    "center_mm": [
+      18.0,
+      59.6
+    ],
+    "size_mm": [
+      24.7,
+      24.7,
+      4.1
+    ],
+    "bump_mm": 1.05,
+    "roll_mm": 0.35,
+    "cover_depth_mm": 0.1,
+    "cover_roll_mm": 0.025,
+    "windows": [
+      [
+        18.0,
+        59.6,
+        23.9,
+        23.9,
+        3.7499999999999996
+      ]
+    ],
+    "lenses": [
+      {
+        "kind": "main",
+        "center_mm": [
+          12.5,
+          55.800000000000004
+        ],
+        "radius_mm": 3.5,
+        "window": 0
+      },
+      {
+        "kind": "ultrawide",
+        "center_mm": [
+          23.5,
+          55.800000000000004
+        ],
+        "radius_mm": 3.05,
+        "window": 0
+      }
+    ],
+    "flash": [
+      [
+        18.0,
+        65.8,
+        1.95
+      ]
+    ],
+    "sensors": [
+      [
+        18.0,
+        51.5,
+        0.65
+      ]
+    ]
+  },
+  "buttons": [
+    {
+      "name": "Power",
+      "side": "right",
+      "center_y_mm": 31.0,
+      "length_mm": 10.0,
+      "width_mm": 2.3,
+      "thickness_mm": 0.48,
+      "radius_mm": 0.8,
+      "material": "button"
+    },
+    {
+      "name": "Volume",
+      "side": "right",
+      "center_y_mm": 11.5,
+      "length_mm": 18.5,
+      "width_mm": 2.3,
+      "thickness_mm": 0.43,
+      "radius_mm": 0.8,
+      "material": "rail"
+    }
+  ],
+  "rear_details": [
+    {
+      "name": "Rear fingerprint",
+      "center_mm": [
+        0,
+        29.0
+      ],
+      "radius_mm": 4.3,
+      "depth_mm": 0.035,
+      "material": "fingerprint"
+    }
+  ],
+  "accuracy": {
+    "body_dimensions": "Google published metric dimensions",
+    "screen_resolution": "Google published panel resolution",
+    "screen_geometry": "Published 6.2-inch 19.5:9 panel geometry; no matching Android SDK skin is installed",
+    "camera_geometry": "Model-specific rear housing/lens placement proportioned from reviewed product photography; optical stacks reuse the reviewed Pixel optics and are illustrative",
+    "buttons_and_rear_hardware": "Model-specific placement reviewed against product photography",
+    "finishes": "Approximate sRGB appearance matched to named Google finishes; not measured material samples",
+    "body_variant": "Sub-6 model, 8.2 mm depth; Verizon mmWave model is 8.5 mm"
+  },
+  "sources": [
+    "https://support.google.com/pixelphone/answer/16043605?hl=en",
+    "https://blog.google/products/pixel/new-pixel-5-4a-5g/"
+  ],
+  "status": "reviewed legacy reference"
+}

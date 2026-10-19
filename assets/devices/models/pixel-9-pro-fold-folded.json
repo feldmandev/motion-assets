@@ -1,0 +1,293 @@
+{
+  "id": "pixel-9-pro-fold-folded",
+  "name": "Pixel 9 Pro Fold · folded",
+  "state": "folded",
+  "screens": [
+    {
+      "node": "Cover screen",
+      "nodes": [
+        "Cover screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        1080,
+        2424
+      ],
+      "size_mm": [
+        65.62881754111197,
+        147.30023492560687
+      ],
+      "center_mm": [
+        0.9722787783868441,
+        -0.30383711824588877,
+        5.285
+      ],
+      "corner_radius_mm": 8.994795161686923,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0,
+      "frame_bounds_mm": [
+        6.707870007830856,
+        4.253719655442453,
+        65.62881754111197,
+        147.30023492560687
+      ],
+      "frame_screen_px": [
+        94,
+        70,
+        1080,
+        2424
+      ],
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "height": 155.2,
+        "width": 77.1,
+        "depth": 10.5,
+        "corner_radius": 13.153564604541893,
+        "edge_roll": 0.45,
+        "front_curve": 0,
+        "edge_roll_mm": [
+          0.75,
+          0.75
+        ],
+        "corner_radii_mm": [
+          13.081828660924039,
+          13.225300548159748,
+          2.133544244322631,
+          1.9370831636648391
+        ]
+      },
+      "cutouts": [
+        {
+          "center_mm": [
+            0,
+            69.65011746280344
+          ],
+          "radius_mm": 1.5
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "articulation": null,
+  "panels": [
+    {
+      "name": "Cover half",
+      "body_mm": {
+        "height": 155.2,
+        "width": 76.5,
+        "depth": 5.1,
+        "corner_radius": 13.153564604541893,
+        "edge_roll": 0.45,
+        "front_curve": 0,
+        "edge_roll_mm": [
+          0.75,
+          0.75
+        ],
+        "corner_radii_mm": [
+          13.153564604541893,
+          13.153564604541893,
+          2.0353137039937352,
+          2.0353137039937352
+        ]
+      },
+      "center_mm": [
+        0.3,
+        0,
+        2.7
+      ],
+      "buttons": false
+    },
+    {
+      "name": "Camera half",
+      "body_mm": {
+        "height": 155.2,
+        "width": 76.5,
+        "depth": 5.1,
+        "corner_radius": 13.153564604541893,
+        "edge_roll": 0.45,
+        "front_curve": 0,
+        "edge_roll_mm": [
+          0.75,
+          0.75
+        ],
+        "corner_radii_mm": [
+          13.153564604541893,
+          13.153564604541893,
+          2.0353137039937352,
+          2.0353137039937352
+        ]
+      },
+      "center_mm": [
+        0.3,
+        0,
+        -2.7
+      ],
+      "buttons": true,
+      "camera": {
+        "center_mm": [
+          8.5,
+          54.099999999999994
+        ],
+        "size_mm": [
+          47.5,
+          35.0,
+          7.153564604541893
+        ],
+        "bump_mm": 3.0,
+        "windows": [
+          [
+            14.5,
+            62.099999999999994,
+            31.5,
+            14,
+            7
+          ],
+          [
+            14.5,
+            46.099999999999994,
+            31.5,
+            14,
+            7
+          ]
+        ],
+        "lenses": [
+          {
+            "kind": "main",
+            "center_mm": [
+              7.2,
+              62.099999999999994
+            ],
+            "radius_mm": 4.2,
+            "window": 0
+          },
+          {
+            "kind": "ultrawide",
+            "center_mm": [
+              22,
+              46.099999999999994
+            ],
+            "radius_mm": 3.5,
+            "window": 1
+          },
+          {
+            "kind": "periscope",
+            "center_mm": [
+              7.2,
+              46.099999999999994
+            ],
+            "radius_mm": 3.1,
+            "window": 1
+          }
+        ],
+        "flash": [
+          [
+            -9,
+            62.099999999999994,
+            2.1
+          ]
+        ],
+        "sensors": [
+          [
+            -9,
+            46.099999999999994,
+            0.6
+          ]
+        ]
+      }
+    }
+  ],
+  "frames": [
+    {
+      "name": "Cover screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/pixel-9-pro-fold-folded-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "black": "black",
+    "flash": "flash"
+  },
+  "finishes": [
+    {
+      "name": "Obsidian",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.2,
+            0.22745,
+            0.23922
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.33,
+            0.34784,
+            0.35549
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.33,
+            0.34784,
+            0.35549
+          ]
+        }
+      }
+    },
+    {
+      "name": "Porcelain",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.87843,
+            0.87843,
+            0.83529
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.77098,
+            0.77098,
+            0.74294
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.77098,
+            0.77098,
+            0.74294
+          ]
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/pixel-9-pro-fold-folded.1b2c430801b2.glb.gz",
+  "sha256": "1b2c430801b2bdf6fd9bf6ad2e4d5b05427bc3c37fe45fe0a2223ae6f6af5ef6",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/pixel-9-pro-fold-folded.json",
+    "accuracy": {
+      "body_dimensions": "Google published metric dimensions",
+      "screen_resolution": "Google published panel resolution",
+      "screen_geometry": "Screen fit and corner radius measured from Google emulator artwork; native pixel aspect preserved. Skin artwork is a reference, not physical CAD.",
+      "camera_geometry": "Provisional photo-informed blockout; shared reviewed optics are illustrative, not device-specific optical prescriptions",
+      "finishes": "Approximate sRGB colors and roughness, not calibrated measured materials",
+      "hinge": "Static closed companion profile retained for dimensional/reference checks."
+    },
+    "sources": [
+      "https://support.google.com/pixelphone/answer/7158570?hl=en",
+      "https://store.google.com/gb/magazine/compare_pixel?hl=en-GB&toggler0=Pixel%209%20Pro%20Fold",
+      "https://store.google.com/au/magazine/introducing-pixel-9-pro-fold?hl=en-GB",
+      "https://blog.google/products-and-platforms/devices/pixel/google-pixel-9-pro-fold/",
+      "https://blog.google/products-and-platforms/devices/pixel/google-pixel-9-series-design/"
+    ]
+  }
+}

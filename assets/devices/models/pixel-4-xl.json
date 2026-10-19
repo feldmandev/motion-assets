@@ -1,0 +1,211 @@
+{
+  "id": "pixel-4-xl",
+  "name": "Pixel 4 XL",
+  "state": "default",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        1440,
+        3040
+      ],
+      "size_mm": [
+        69.36216216216216,
+        146.43123123123124
+      ],
+      "center_mm": [
+        0.04816816816816817,
+        -2.3602402402402403,
+        4.135
+      ],
+      "corner_radius_mm": 6.664696508962519,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0,
+      "frame_bounds_mm": [
+        2.917087087087083,
+        9.344624624624629,
+        69.36216216216216,
+        146.43123123123124
+      ],
+      "frame_screen_px": [
+        61,
+        195,
+        1440,
+        3040
+      ],
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "height": 160.4,
+        "width": 75.1,
+        "depth": 8.2,
+        "corner_radius": 9.533615427881434,
+        "edge_roll": 0.75,
+        "edge_roll_mm": [
+          1.75,
+          0.75
+        ],
+        "front_curve": 0,
+        "rear_style": "inset_glass",
+        "rear_inset": 0.45,
+        "corner_radii_mm": [
+          9.485447259713267,
+          9.485447259713267,
+          9.581783596049602,
+          9.581783596049602
+        ]
+      },
+      "cutouts": [],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "articulation": null,
+  "panels": [],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/pixel-4-xl-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "button": "button",
+    "fingerprint": "fingerprint",
+    "black": "black",
+    "flash": "flash"
+  },
+  "finishes": [
+    {
+      "name": "Just Black",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.0902,
+            0.09804,
+            0.10588
+          ],
+          "rough": 0.16
+        },
+        "rail": {
+          "rgb": [
+            0.0902,
+            0.09804,
+            0.10588
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.03529,
+            0.04314,
+            0.0549
+          ]
+        },
+        "button": {
+          "rgb": [
+            0.90196,
+            0.90588,
+            0.8902
+          ]
+        }
+      }
+    },
+    {
+      "name": "Clearly White",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.93333,
+            0.93333,
+            0.91765
+          ],
+          "rough": 0.56
+        },
+        "rail": {
+          "rgb": [
+            0.0902,
+            0.09804,
+            0.10588
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.03529,
+            0.04314,
+            0.0549
+          ]
+        },
+        "button": {
+          "rgb": [
+            0.94902,
+            0.55294,
+            0.34902
+          ]
+        }
+      }
+    },
+    {
+      "name": "Oh So Orange",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.95294,
+            0.63137,
+            0.52157
+          ],
+          "rough": 0.56
+        },
+        "rail": {
+          "rgb": [
+            0.0902,
+            0.09804,
+            0.10588
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.03529,
+            0.04314,
+            0.0549
+          ]
+        },
+        "button": {
+          "rgb": [
+            0.95686,
+            0.83529,
+            0.84314
+          ]
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/pixel-4-xl.4e21834384e7.glb.gz",
+  "sha256": "4e21834384e79a3fb916fecbbb58931d85685bd6a90b7b29fa138eb02522461f",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/pixel-4-xl.json",
+    "accuracy": {
+      "body_dimensions": "Google published metric dimensions",
+      "screen_resolution": "Google published panel resolution",
+      "screen_geometry": "Google Android Emulator skin trace with native panel aspect preserved",
+      "camera_geometry": "Model-specific rear housing/lens placement proportioned from reviewed product photography; optical stacks reuse the reviewed Pixel optics and are illustrative",
+      "buttons_and_rear_hardware": "Model-specific placement reviewed against product photography",
+      "finishes": "Approximate sRGB appearance matched to named Google finishes; not measured material samples"
+    },
+    "sources": [
+      "https://support.google.com/pixelphone/answer/16043605?hl=en",
+      "https://blog.google/products-and-platforms/devices/pixel/pixel-4/",
+      "https://connecteddevices.co.za/products/google-pixel-4-64gb-just-black-special-import"
+    ]
+  }
+}

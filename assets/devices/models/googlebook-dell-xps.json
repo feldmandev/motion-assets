@@ -1,0 +1,366 @@
+{
+  "id": "googlebook-dell-xps",
+  "name": "Dell XPS Googlebook",
+  "state": "default",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        2560,
+        1600
+      ],
+      "size_mm": [
+        288.8,
+        180.5
+      ],
+      "center_mm": [
+        0.0,
+        102.62999725341797,
+        0.1399998962879181
+      ],
+      "corner_radius_mm": 1.5,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0,
+      "frame_bounds_mm": [
+        4.049999999999983,
+        7.780000000000001,
+        288.8,
+        180.5
+      ],
+      "frame_screen_px": null,
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "width": 296.9,
+        "height": 200.66,
+        "depth": 4.8,
+        "base_depth_mm": 7.9,
+        "closed_depth_mm": 12.7,
+        "corner_radius": 5.6,
+        "edge_roll_mm": [
+          0.55,
+          0.45
+        ],
+        "front_curve": 0
+      },
+      "cutouts": [
+        {
+          "center_mm": [
+            0.0,
+            92.85
+          ],
+          "radius_mm": 1.15
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "articulation": {
+    "animation": "Fold",
+    "axis": "X",
+    "axis_mm": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "moving_panel": "Lid",
+    "fixed_panel": "Base",
+    "pivots": {
+      "Lid": "Fold pivot | Lid",
+      "Base": "Fold pivot | Base"
+    },
+    "open_degrees": 0,
+    "closed_degrees": 90,
+    "duration_seconds": 1.0,
+    "closed_body_mm": {
+      "width": 296.9,
+      "height": 12.7,
+      "depth": 200.66
+    }
+  },
+  "panels": [
+    {
+      "name": "Lid",
+      "center_mm": [
+        0.0,
+        100.33,
+        -2.4
+      ],
+      "body_mm": {
+        "width": 296.9,
+        "height": 200.66,
+        "depth": 4.8,
+        "corner_radius": 5.6,
+        "edge_roll_mm": [
+          0.55,
+          0.45
+        ],
+        "front_curve": 0
+      },
+      "buttons": false
+    },
+    {
+      "name": "Base",
+      "center_mm": [
+        0.0,
+        -3.95,
+        100.33
+      ],
+      "body_mm": {
+        "width": 296.9,
+        "height": 7.9,
+        "depth": 200.66,
+        "corner_radius": 5.6,
+        "edge_roll_mm": [
+          0.55,
+          0.45
+        ],
+        "front_curve": 0
+      },
+      "buttons": false
+    }
+  ],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/googlebook-dell-xps-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "logo": "logo",
+    "keycap": "keycap",
+    "black": "black",
+    "flash": "flash"
+  },
+  "finishes": [
+    {
+      "name": "Platinum",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.8627,
+            0.8745,
+            0.8863
+          ],
+          "metal": 0.12,
+          "rough": 0.26
+        },
+        "rail": {
+          "rgb": [
+            0.8627,
+            0.8745,
+            0.8863
+          ],
+          "metal": 0.18,
+          "rough": 0.24
+        },
+        "bar": {
+          "rgb": [
+            0.8627,
+            0.8745,
+            0.8863
+          ],
+          "metal": 0.22,
+          "rough": 0.26
+        },
+        "logo": {
+          "rgb": [
+            0.5529,
+            0.5725,
+            0.6
+          ],
+          "metal": 0.65,
+          "rough": 0.18
+        },
+        "keycap": {
+          "rgb": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metal": 0.04,
+          "rough": 0.44
+        }
+      }
+    },
+    {
+      "name": "Graphite",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.2275,
+            0.2392,
+            0.251
+          ],
+          "metal": 0.12,
+          "rough": 0.3
+        },
+        "rail": {
+          "rgb": [
+            0.2275,
+            0.2392,
+            0.251
+          ],
+          "metal": 0.18,
+          "rough": 0.26
+        },
+        "bar": {
+          "rgb": [
+            0.2275,
+            0.2392,
+            0.251
+          ],
+          "metal": 0.22,
+          "rough": 0.3
+        },
+        "logo": {
+          "rgb": [
+            0.4235,
+            0.4392,
+            0.4588
+          ],
+          "metal": 0.65,
+          "rough": 0.18
+        },
+        "keycap": {
+          "rgb": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metal": 0.04,
+          "rough": 0.44
+        }
+      }
+    },
+    {
+      "name": "Shimmer",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.7216,
+            0.6941,
+            0.6392
+          ],
+          "metal": 0.12,
+          "rough": 0.28
+        },
+        "rail": {
+          "rgb": [
+            0.7216,
+            0.6941,
+            0.6392
+          ],
+          "metal": 0.18,
+          "rough": 0.24000000000000002
+        },
+        "bar": {
+          "rgb": [
+            0.7216,
+            0.6941,
+            0.6392
+          ],
+          "metal": 0.22,
+          "rough": 0.28
+        },
+        "logo": {
+          "rgb": [
+            0.4902,
+            0.4667,
+            0.4196
+          ],
+          "metal": 0.65,
+          "rough": 0.18
+        },
+        "keycap": {
+          "rgb": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metal": 0.04,
+          "rough": 0.44
+        }
+      }
+    },
+    {
+      "name": "Sky",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.7373,
+            0.7765,
+            0.8157
+          ],
+          "metal": 0.12,
+          "rough": 0.28
+        },
+        "rail": {
+          "rgb": [
+            0.7373,
+            0.7765,
+            0.8157
+          ],
+          "metal": 0.18,
+          "rough": 0.24000000000000002
+        },
+        "bar": {
+          "rgb": [
+            0.7373,
+            0.7765,
+            0.8157
+          ],
+          "metal": 0.22,
+          "rough": 0.28
+        },
+        "logo": {
+          "rgb": [
+            0.4941,
+            0.5333,
+            0.5804
+          ],
+          "metal": 0.65,
+          "rough": 0.18
+        },
+        "keycap": {
+          "rgb": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metal": 0.04,
+          "rough": 0.44
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/googlebook-dell-xps.4865ea16561e.glb.gz",
+  "sha256": "4865ea16561ed8b3263106905c1a35718072cb8199a082114141adbf6f75c120",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/googlebook-dell-xps.json",
+    "accuracy": {
+      "body_dimensions": "Published metric Googlebook specifications from googlebook.google",
+      "screen_geometry": "Published 16:10 display active area and resolution",
+      "camera_geometry": "Top bezel 1080p webcam + dual-mic array + lid LED Glowbar measured from official renders",
+      "finishes": "Official Googlebook launch finishes sampled from product renders",
+      "hinge": "Articulated clamshell X-axis hinge rotating lid 0 to 90 degrees flush onto keyboard base"
+    },
+    "sources": [
+      "https://googlebook.google/",
+      "https://googlebook.google/compare/"
+    ]
+  }
+}

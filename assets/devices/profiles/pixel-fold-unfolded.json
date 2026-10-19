@@ -1,0 +1,406 @@
+{
+  "id": "pixel-fold-unfolded",
+  "name": "Pixel Fold · unfolded",
+  "finish": "Obsidian",
+  "body_mm": {
+    "height": 139.7,
+    "width": 158.7,
+    "depth": 5.8,
+    "corner_radius": 6.567116719823356,
+    "edge_roll": 0.45,
+    "front_curve": 0,
+    "edge_roll_mm": [
+      0.75,
+      0.75
+    ]
+  },
+  "materials": {
+    "back": {
+      "rgb": [
+        0.2,
+        0.22745,
+        0.23922
+      ],
+      "rough": 0.42
+    },
+    "rail": {
+      "rgb": [
+        0.33,
+        0.34784,
+        0.35549
+      ],
+      "metal": 1,
+      "rough": 0.18
+    },
+    "bar": {
+      "rgb": [
+        0.33,
+        0.34784,
+        0.35549
+      ],
+      "metal": 0.6,
+      "rough": 0.3
+    },
+    "black": {
+      "rgb": [
+        0.007,
+        0.009,
+        0.012
+      ],
+      "rough": 0.5
+    },
+    "flash": {
+      "rgb": [
+        0.85,
+        0.84,
+        0.77
+      ],
+      "rough": 0.33
+    }
+  },
+  "finishes": {
+    "Obsidian": {
+      "back": {
+        "rgb": [
+          0.2,
+          0.22745,
+          0.23922
+        ]
+      },
+      "rail": {
+        "rgb": [
+          0.33,
+          0.34784,
+          0.35549
+        ]
+      },
+      "bar": {
+        "rgb": [
+          0.33,
+          0.34784,
+          0.35549
+        ]
+      }
+    },
+    "Porcelain": {
+      "back": {
+        "rgb": [
+          0.87843,
+          0.87843,
+          0.83529
+        ]
+      },
+      "rail": {
+        "rgb": [
+          0.77098,
+          0.77098,
+          0.74294
+        ]
+      },
+      "bar": {
+        "rgb": [
+          0.77098,
+          0.77098,
+          0.74294
+        ]
+      }
+    }
+  },
+  "accuracy": {
+    "body_dimensions": "Google published metric dimensions",
+    "screen_resolution": "Google published panel resolution",
+    "screen_geometry": "Screen fit and corner radius measured from Google emulator artwork; native pixel aspect preserved. Skin artwork is a reference, not physical CAD.",
+    "camera_geometry": "Housing width, height and top gap scaled from official rear artwork; pixel bounds and uncertainty in camera_measurement. Optical internals remain illustrative. Not measurable from this rear view; model depth remains a visual estimate.",
+    "finishes": "Approximate sRGB colors and roughness, not calibrated measured materials",
+    "hinge": "Animated rigid-panel hinge with a measured open/closed thickness axis; half-angle barrel and hinge leaves remain an estimated mechanism; the flexible OLED is split at the crease."
+  },
+  "sources": [
+    "https://support.google.com/pixelphone/answer/7158570?hl=en",
+    "https://blog.google/products-and-platforms/devices/pixel/google-pixel-fold/"
+  ],
+  "status": "provisional",
+  "state": "unfolded",
+  "panels": [
+    {
+      "name": "Cover half",
+      "body_mm": {
+        "height": 139.7,
+        "width": 79.05,
+        "depth": 5.8,
+        "corner_radius": 9.592973152709359,
+        "edge_roll": 0.45,
+        "front_curve": 0,
+        "edge_roll_mm": [
+          0.75,
+          0.75
+        ],
+        "corner_radii_mm": [
+          2.3205339901477826,
+          2.3205339901477826,
+          9.592973152709359,
+          9.592973152709359
+        ]
+      },
+      "center_mm": [
+        -39.824999999999996,
+        0,
+        0
+      ],
+      "buttons": false
+    },
+    {
+      "name": "Camera half",
+      "body_mm": {
+        "height": 139.7,
+        "width": 79.05,
+        "depth": 5.8,
+        "corner_radius": 9.592973152709359,
+        "edge_roll": 0.45,
+        "front_curve": 0,
+        "edge_roll_mm": [
+          0.75,
+          0.75
+        ],
+        "corner_radii_mm": [
+          9.592973152709359,
+          9.592973152709359,
+          2.3205339901477826,
+          2.3205339901477826
+        ]
+      },
+      "center_mm": [
+        39.824999999999996,
+        0,
+        0
+      ],
+      "buttons": true,
+      "camera": {
+        "center_mm": [
+          0,
+          47.78999999999999
+        ],
+        "size_mm": [
+          65.73,
+          20.34,
+          3.9595192915876027
+        ],
+        "bump_mm": 2.4,
+        "windows": [
+          [
+            10.888678051865908,
+            47.78999999999999,
+            28.70651486401012,
+            13.895643564356437,
+            6.830170777988615
+          ],
+          [
+            -10.888678051865908,
+            47.78999999999999,
+            10.888678051865908,
+            11.076237623762376,
+            5.444339025932954
+          ]
+        ],
+        "lenses": [
+          {
+            "kind": "ultrawide",
+            "center_mm": [
+              18.609740670461733,
+              47.78999999999999
+            ],
+            "radius_mm": 3.1,
+            "window": 0
+          },
+          {
+            "kind": "main",
+            "center_mm": [
+              4.949399114484503,
+              47.78999999999999
+            ],
+            "radius_mm": 4.1,
+            "window": 0
+          },
+          {
+            "kind": "periscope",
+            "center_mm": [
+              -10.888678051865908,
+              47.78999999999999
+            ],
+            "radius_mm": 3.1,
+            "window": 1
+          }
+        ],
+        "flash": [
+          [
+            28.169999999999998,
+            50.91148514851484,
+            1.8
+          ]
+        ],
+        "sensors": [
+          [
+            28.169999999999998,
+            44.16504950495049,
+            1.8
+          ]
+        ]
+      }
+    }
+  ],
+  "hinge": {
+    "center_mm": [
+      0,
+      0,
+      0
+    ],
+    "size_mm": [
+      2,
+      134.7,
+      5.2
+    ],
+    "radius_mm": 0.7,
+    "spine_width_mm": 12.1,
+    "closed_spine_center_x_mm": 0.8499999999999943,
+    "closed_spine_center_z_mm": 3.15,
+    "spine_depth_mm": 2.0,
+    "spine_center_x_mm": 0,
+    "spine_center_z_mm": -1.9
+  },
+  "articulation": {
+    "animation": "Fold",
+    "axis": "Y",
+    "axis_mm": [
+      0,
+      0,
+      3.15
+    ],
+    "moving_panel": "Cover half",
+    "fixed_panel": "Camera half",
+    "pivots": {
+      "Cover half": "Fold pivot | Cover half",
+      "Camera half": "Fold pivot | Camera half"
+    },
+    "open_degrees": 0,
+    "closed_degrees": 180,
+    "duration_seconds": 1.0,
+    "open_gap_mm": 0.5999999999999943,
+    "closed_gap_mm": 0.5,
+    "closed_body_mm": {
+      "height": 139.7,
+      "width": 79.5,
+      "depth": 12.1
+    },
+    "companion_profile": "pixel-fold-folded"
+  },
+  "screens": [
+    {
+      "object": "Inner screen",
+      "node": "Inner screen",
+      "panel": "Inner display",
+      "resolution": [
+        2208,
+        1840
+      ],
+      "fit_box_mm": [
+        151.353091265947,
+        126.12757605495584
+      ],
+      "center_mm": [
+        0.03427379784102061,
+        -0.20564278704612365,
+        2.94
+      ],
+      "corner_radius_mm": 3.2790427870461234,
+      "edge_curve_mm": 0,
+      "create_cutouts": true,
+      "cutouts": [],
+      "foldable_surface": true
+    },
+    {
+      "object": "Cover screen",
+      "node": "Cover screen",
+      "panel": "Cover half",
+      "resolution": [
+        1080,
+        2092
+      ],
+      "fit_box_mm": [
+        67.56650246305418,
+        130.87881773399013
+      ],
+      "center_mm": [
+        -1.2953201970443347,
+        -0.15640394088669948,
+        -2.935
+      ],
+      "corner_radius_mm": 5.753600492610836,
+      "edge_curve_mm": 0,
+      "create_cutouts": true,
+      "cutouts": [
+        {
+          "center_mm": [
+            0,
+            61.439408866995066
+          ],
+          "radius_mm": 1.5
+        }
+      ],
+      "rotation_deg": [
+        0,
+        180,
+        0
+      ],
+      "frame_file": "cover-frame.svg",
+      "frame_body_mm": {
+        "height": 139.7,
+        "width": 79.5,
+        "depth": 12.1,
+        "corner_radius": 9.592973152709359,
+        "corner_radii_mm": [
+          9.514176847290639,
+          9.671769458128077,
+          2.462110837438423,
+          2.1789571428571426
+        ]
+      },
+      "frame_center_mm": [
+        1.5953201970443347,
+        -0.15640394088669948
+      ],
+      "glass_border_mm": 1.8,
+      "frame_glass_border_mm": 1.8,
+      "foldable_surface": true
+    }
+  ],
+  "bezel_cameras": [
+    [
+      57,
+      66,
+      2.925,
+      1.4
+    ]
+  ],
+  "reference_frame": "research\\skins\\pixel-fold-unfolded\\frame.png",
+  "camera_measurement": {
+    "reference": "research/images/pixel-fold-front-back-open.webp",
+    "body_bounds_px": [
+      64,
+      92,
+      318,
+      542
+    ],
+    "bar_bounds_px": [
+      81,
+      130,
+      291,
+      195
+    ],
+    "scale_mm_per_px": 0.31299212598425197,
+    "width_mm": 65.73,
+    "height_mm": 20.34,
+    "top_gap_mm": 11.89,
+    "rear_measurement_uncertainty_mm": 1.0,
+    "protrusion_mm": null,
+    "depth_status": "Not measurable from this rear view; model depth remains a visual estimate."
+  }
+}

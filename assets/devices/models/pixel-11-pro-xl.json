@@ -1,0 +1,219 @@
+{
+  "id": "pixel-11-pro-xl",
+  "name": "Pixel 11 Pro XL",
+  "state": "default",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        1344,
+        2992
+      ],
+      "size_mm": [
+        71.82673796791443,
+        159.89999999999995
+      ],
+      "center_mm": [
+        0.0,
+        0.0,
+        4.284999370574951
+      ],
+      "corner_radius_mm": 11.5,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0,
+      "frame_bounds_mm": [
+        2.3366310160427872,
+        1.40000000000002,
+        71.82673796791443,
+        159.89999999999995
+      ],
+      "frame_screen_px": null,
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "height": 162.7,
+        "width": 76.5,
+        "depth": 8.5,
+        "corner_radius": 12.90000000000002,
+        "edge_roll": 0.55,
+        "front_curve": 0,
+        "edge_roll_mm": [
+          0.65,
+          0.65
+        ],
+        "corner_radii_mm": [
+          12.90000000000002,
+          12.90000000000002,
+          12.90000000000002,
+          12.90000000000002
+        ]
+      },
+      "cutouts": [
+        {
+          "center_mm": [
+            0,
+            74.85
+          ],
+          "radius_mm": 1.5
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "articulation": null,
+  "panels": [],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/pixel-11-pro-xl-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "black": "black",
+    "flash": "flash"
+  },
+  "finishes": [
+    {
+      "name": "Canyon",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.91373,
+            0.58039,
+            0.5098
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.79392,
+            0.57725,
+            0.53137
+          ],
+          "rough": 0.18
+        },
+        "bar": {
+          "rgb": [
+            0.79392,
+            0.57725,
+            0.53137
+          ],
+          "rough": 0.18
+        }
+      }
+    },
+    {
+      "name": "Olive",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.55294,
+            0.58039,
+            0.4902
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.55941,
+            0.57725,
+            0.51863
+          ],
+          "rough": 0.18
+        },
+        "bar": {
+          "rgb": [
+            0.55941,
+            0.57725,
+            0.51863
+          ],
+          "rough": 0.18
+        }
+      }
+    },
+    {
+      "name": "Fog",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.79608,
+            0.83922,
+            0.80784
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.75314,
+            0.76334,
+            0.74549
+          ],
+          "rough": 0.18
+        },
+        "bar": {
+          "rgb": [
+            0.75314,
+            0.76334,
+            0.74549
+          ],
+          "rough": 0.18
+        }
+      }
+    },
+    {
+      "name": "Obsidian",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.2,
+            0.22745,
+            0.23922
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.33,
+            0.34784,
+            0.35549
+          ],
+          "rough": 0.48
+        },
+        "bar": {
+          "rgb": [
+            0.33,
+            0.34784,
+            0.35549
+          ],
+          "rough": 0.48
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/pixel-11-pro-xl.dad76a9687e1.glb.gz",
+  "sha256": "dad76a9687e1ec6b9a560c9948eeafa3a9d6cd7b95567b413eedec86719bbff7",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/pixel-11-pro-xl.json",
+    "accuracy": {
+      "body_dimensions": "Google published metric dimensions",
+      "screen_resolution": "Google published panel resolution",
+      "screen_geometry": "Native resolution aspect preserved; concentric display/body corners and thin symmetric bezels estimated from official front artwork, not a measured CAD outline.",
+      "camera_geometry": "Camera capsule proportions estimated from official launch images: edge-to-edge black glass, three optics and in-glass flash. Base protrusion estimated as 60% of previous 3.6 mm baseline per Google thickness reduction; Pro protrusion estimated. HiLight represented in its unlit state. Optical internals illustrative, not manufacturer CAD.",
+      "finishes": "Approximate sRGB colors and roughness, not calibrated measured materials"
+    },
+    "sources": [
+      "https://support.google.com/pixelphone/answer/7158570?hl=en",
+      "https://store.google.com/gb/product/pixel_11_pro_specs?hl=en-GB",
+      "https://blog.google/products-and-platforms/devices/pixel/google-pixel-11-pro-xl/"
+    ]
+  }
+}

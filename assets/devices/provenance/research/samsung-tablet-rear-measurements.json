@@ -1,0 +1,1002 @@
+{
+  "method": "Manual measurements of official orthographic rear renders, normalized to visible chassis width W and height H in reference_orientation. Coordinates from top left. logo=[cx/W,cy/H,width/W]; lenses=[cx/W,cy/H,outer diameter/W]; housing/strip=[left/W,top/H,right/W,bottom/H,corner radius/W]; flash=[cx/W,cy/H,diameter/W]; sensors=[cx/W,cy/H,radius/W]. Dimensions are render estimates, not OEM CAD. Grouped identical/reused enclosure families explicitly noted. Native body/display geometry remains unchanged.",
+  "groups": {
+    "s6": {
+      "models": [
+        "s6"
+      ],
+      "reference_orientation": "portrait",
+      "source": {
+        "page": "https://news.samsung.com/ca/tab-s6",
+        "render": "https://img.global.news.samsung.com/ca/wp-content/uploads/2019/10/SM-T865_012_Back-With-Pen_Brown.png",
+        "body_bounds_px": [
+          554,
+          23,
+          1363,
+          1257
+        ]
+      },
+      "logo": [
+        0.5,
+        0.493,
+        0.195
+      ],
+      "lenses": [
+        [
+          0.094,
+          0.066,
+          0.043
+        ],
+        [
+          0.094,
+          0.104,
+          0.043
+        ]
+      ],
+      "housing": [
+        0.061,
+        0.039,
+        0.127,
+        0.133,
+        0.033
+      ],
+      "strip": [
+        0.065,
+        0.157,
+        0.119,
+        0.73,
+        0.027
+      ],
+      "strip_kind": "body-colored recessed charging groove; lower endpoint obscured by pen in reference, estimated",
+      "note": "Centered portrait logo; no flash. Pen in reference excluded from model."
+    },
+    "s6-lite": {
+      "models": [
+        "s6-lite-2020",
+        "s6-lite-2022",
+        "s6-lite-2024"
+      ],
+      "reference_orientation": "portrait",
+      "source": {
+        "page": "https://www.samsung.com/al/tablets/galaxy-tab-s/galaxy-tab-s6-lite-pink-64gb-sm-p625nziaeuc/",
+        "render": "https://images.samsung.com/is/image/samsung/p6pim/al/sm-p625nziaeuc/gallery/al-galaxy-tab-s6-lite-sm-p625-sm-p625nziaeuc-541034141?$650_519_PNG$",
+        "body_bounds_px": [
+          192,
+          50,
+          458,
+          470
+        ]
+      },
+      "logo": [
+        0.5,
+        0.49,
+        0.2
+      ],
+      "lenses": [
+        [
+          0.096,
+          0.069,
+          0.061
+        ]
+      ],
+      "housing": [
+        0.057,
+        0.044,
+        0.135,
+        0.094,
+        0.02
+      ],
+      "note": "Rounded square single camera island; same enclosure layout across 2020/2022/2024 editions; centered portrait logo."
+    },
+    "s7-fe": {
+      "models": [
+        "s7-fe"
+      ],
+      "reference_orientation": "landscape",
+      "source": {
+        "page": "https://news.samsung.com/de/das-sind-die-neuen-tablets-samsung-prasentiert-galaxy-tab-s7-fe-und-galaxy-tab-a7-lite",
+        "render": "https://img.global.news.samsung.com/de/wp-content/uploads/2021/06/Samsung_Galaxy_Tab_S7_FE_SM-T730N_Mystic_Black_180_RGB.jpg",
+        "body_bounds_px": [
+          103,
+          85,
+          1816,
+          1198
+        ]
+      },
+      "logo": [
+        0.113,
+        0.084,
+        0.107
+      ],
+      "lenses": [
+        [
+          0.938,
+          0.084,
+          0.03
+        ]
+      ],
+      "housing": [
+        0.878,
+        0.054,
+        0.961,
+        0.114,
+        0.0195
+      ],
+      "sensors": [
+        [
+          0.902,
+          0.084,
+          0.0022
+        ]
+      ],
+      "note": "Single optical camera at right of short capsule, small auxiliary aperture at left; no flash; no charging strip."
+    },
+    "s8": {
+      "models": [
+        "s8"
+      ],
+      "reference_orientation": "landscape",
+      "source": {
+        "page": "https://api.samsungmobilepress.com/media-assets/galaxy-tab-s8",
+        "render": "https://api.samsungmobilepress.com/file/03A485E4ABD48110DA64E4C47AD04A861BB07258B76EAFEA582DDFA197617A8C258BBDB1C92714EF0C4B1A94C2C630AF9DB09C55705562C783ECA2DDCD7B8BDA9AA1E2F4B4F03B2CA3853D6B3ECC7A37F26FA7186981C9901DA1D7B664CFEEE97799F2C7C1CF8996369A5D0D1D73AB2F304E92E5643E3CEA95EE8562ADD706FE8C4A27453EA6C4A8F420B76A0185C3FC",
+        "filename": "004_galaxytabs8_pen_back.jpg",
+        "bytes": 12425
+      },
+      "logo": [
+        0.127,
+        0.095,
+        0.112
+      ],
+      "lenses": [
+        [
+          0.93,
+          0.095,
+          0.029
+        ],
+        [
+          0.897,
+          0.095,
+          0.029
+        ]
+      ],
+      "housing": [
+        0.848,
+        0.064,
+        0.957,
+        0.126,
+        0.02
+      ],
+      "flash": [
+        [
+          0.867,
+          0.095,
+          0.01
+        ]
+      ],
+      "body_bounds_px": [
+        128,
+        90,
+        672,
+        443
+      ],
+      "note": "Short raised camera capsule at the right end of a separate flat dark S Pen charging surface; original full-insert dimensions retained as strip bounds. Continuous black camera/charging insert, not the attached S Pen. S7 and S8 use same 253.8 x165.3mm chassis/layout; narrow glass windows and separate flash.",
+      "strip": [
+        0.239,
+        0.064,
+        0.957,
+        0.126,
+        0.02
+      ],
+      "strip_kind": "Flat dark charging surface, not a raised camera bar"
+    },
+    "s8-plus": {
+      "models": [
+        "s7-plus",
+        "s8-plus"
+      ],
+      "reference_orientation": "landscape",
+      "source": {
+        "page": "https://api.samsungmobilepress.com/media-assets/galaxy-tab-s8-plus",
+        "render": "https://api.samsungmobilepress.com/file/DFBE93C65AC7960F137253428B2D17EBF82B34D96305CBEA0373EED31F6A32BDB6DF5A80AAAFE389ECCE19A996DF60D72C4519A523C1EBFA683B64D0ED0A49A4E7444A55C555EB722883F6D2136232733AAAA568088FB94E9A96E6EE92A31CD57B6CE5AD6186AD0EC9E05947159E5D44A0934235314B5469D396390804AD99B52E76A2904FB6C335EBDB2CFA7304A14D5AABC3C2368B999D45BDF1EF9DAC5549",
+        "filename": "003_galaxytabs8plus_pinkgold_back.jpg",
+        "bytes": 13318
+      },
+      "logo": [
+        0.126,
+        0.084,
+        0.105
+      ],
+      "lenses": [
+        [
+          0.934,
+          0.084,
+          0.026
+        ],
+        [
+          0.905,
+          0.084,
+          0.026
+        ]
+      ],
+      "housing": [
+        0.857,
+        0.05500000000000001,
+        0.962,
+        0.113,
+        0.019
+      ],
+      "flash": [
+        [
+          0.875,
+          0.084,
+          0.009
+        ]
+      ],
+      "body_bounds_px": [
+        94,
+        68,
+        705,
+        465
+      ],
+      "note": "Short raised camera capsule at the right end of a separate flat dark S Pen charging surface; original full-insert dimensions retained as strip bounds. Continuous black camera/charging insert; S7+ and S8+ share 285 x185mm enclosure/layout.",
+      "strip": [
+        0.305,
+        0.05500000000000001,
+        0.962,
+        0.113,
+        0.019
+      ],
+      "strip_kind": "Flat dark charging surface, not a raised camera bar"
+    },
+    "s8-ultra": {
+      "models": [
+        "s8-ultra"
+      ],
+      "reference_orientation": "landscape",
+      "source": {
+        "page": "https://api.samsungmobilepress.com/media-assets/galaxy-tab-s8-ultra?page=3",
+        "render": "https://api.samsungmobilepress.com/file/3E87987B7847BCDE9236B2A87128B0F386493C48851878EC6C46D17682E2D29E9F65F52538D0D07FE8FDB9F8830DDE9A9EFAE7CFCA502060D8F333BE46C32C3BFA59F5093BAA4A0B56ECEF9759468B627C277DE4CF4B4471AE49468B08AADB0D84DD99835A7BB3AEBD398D435E4478BE24EF2F499EE3BEACF16756F4F72FEB50B7724811554F2C0E1347E208693F382A7732157E3140B64ABF893230B2F28351",
+        "filename": "003_galaxytabs8ultra_graphite_back.jpg"
+      },
+      "logo": [
+        0.096,
+        0.081,
+        0.098
+      ],
+      "lenses": [
+        [
+          0.944,
+          0.081,
+          0.024
+        ],
+        [
+          0.919,
+          0.081,
+          0.024
+        ]
+      ],
+      "housing": [
+        0.857,
+        0.054,
+        0.964,
+        0.106,
+        0.016
+      ],
+      "flash": [
+        [
+          0.875,
+          0.081,
+          0.008
+        ]
+      ],
+      "note": "Short raised camera capsule at the right end of a separate flat dark S Pen charging surface; original full-insert dimensions retained as strip bounds. Measured bare rear render: continuous black insert from x=.380 to .964, separate optics at far right, LED to their left; no pen.",
+      "body_bounds_px": [
+        50,
+        44,
+        750,
+        490
+      ],
+      "strip": [
+        0.38,
+        0.054,
+        0.964,
+        0.106,
+        0.016
+      ],
+      "strip_kind": "Flat dark charging surface, not a raised camera bar"
+    },
+    "s9": {
+      "models": [
+        "s9"
+      ],
+      "reference_orientation": "landscape",
+      "source": {
+        "page": "https://api.samsungmobilepress.com/media-assets/galaxy-tab-s9",
+        "render": "https://api.samsungmobilepress.com/file/4F018CCE1DB25704BA5D11802FAAE9A2E8FBD60C7FF97705285CA53CA929CD0AB438AE696334FE8543CFAABE0D645B34431D189614A863CFD10CB7586DEE1B6ACC7E9A70C8195D081C64E46AD7F3D6A7031AF863C9ABBE1751C96E4B39EBE8B0EEECE6AD69C37B92DE423C47E339DF5F26B1FEBAF80F73213C23547219B3DA26",
+        "filename": "003-galaxy-tabs9-graphite-back.jpg",
+        "bytes": 12981
+      },
+      "logo": [
+        0.12,
+        0.1,
+        0.108
+      ],
+      "lenses": [
+        [
+          0.935,
+          0.1,
+          0.05
+        ]
+      ],
+      "flash": [
+        [
+          0.886,
+          0.1,
+          0.018
+        ]
+      ],
+      "strip": [
+        0.274,
+        0.08700000000000001,
+        0.846,
+        0.114,
+        0.009
+      ],
+      "body_bounds_px": [
+        143,
+        98,
+        656,
+        433
+      ],
+      "note": "Separate black lens ring, pale LED flash and low contrast body-colored rear charging strip."
+    },
+    "s9plus": {
+      "models": [
+        "s9-plus"
+      ],
+      "reference_orientation": "landscape",
+      "source": {
+        "page": "https://api.samsungmobilepress.com/media-assets/galaxy-tab-s9plus",
+        "render": "https://api.samsungmobilepress.com/file/F3E743BDD6296039AF1A6AE107B9809E4106CE63FD25AD869E606C92A2AADECD051C7727AF05A7B1A2075707646D9D4724C23C2FF091F10163E872BE152E5078EA9863237B1E24C35F22D53B675DE1FF2C35C9DCF814B26CC02B05A0BECBC9755674EC08B5EF474A7FFF6C6C613A05EFF3E83239E5D9F760E9322BC1C0664D0566245822E47CBD40293DEE7335DB87B5",
+        "filename": "003-galaxy-tabs9plus-graphite-back.jpg"
+      },
+      "logo": [
+        0.117,
+        0.089,
+        0.103
+      ],
+      "lenses": [
+        [
+          0.945,
+          0.089,
+          0.044
+        ],
+        [
+          0.888,
+          0.089,
+          0.044
+        ]
+      ],
+      "flash": [
+        [
+          0.843,
+          0.089,
+          0.015
+        ]
+      ],
+      "strip": [
+        0.295,
+        0.075,
+        0.808,
+        0.104,
+        0.009
+      ],
+      "body_bounds_px": [
+        112,
+        78,
+        687,
+        453
+      ],
+      "note": "Official orthographic render; separate camera rings, LED and subtle charging strip."
+    },
+    "s9-ultra": {
+      "models": [
+        "s9-ultra"
+      ],
+      "reference_orientation": "landscape",
+      "source": {
+        "page": "https://api.samsungmobilepress.com/media-assets/galaxy-tab-s9-ultra",
+        "render": "https://api.samsungmobilepress.com/file/E964BADE4924D7A674BE81D66212AE0A015A30C8B3CD6667AC1B9C11D4C5536CC2B7EB9322F1BE76D5A2A54B49850020E5DFAC6C88CEFC31EA061B1A1642B347C46F5D6D68F67EB079FCEBAB78081CADFB4727EE96330C83605BB896C3E68FFAE589078F308AC5F77C48270DE3111EBDE0410FDDC82E2768E71B95F59ADF580EDF17414E3A19CEE2295E503C310E0096",
+        "filename": "003-galaxy-tabs9ultra-graphite-back.jpg",
+        "bytes": 15126
+      },
+      "logo": [
+        0.105,
+        0.089,
+        0.096
+      ],
+      "lenses": [
+        [
+          0.945,
+          0.089,
+          0.04
+        ],
+        [
+          0.895,
+          0.089,
+          0.04
+        ]
+      ],
+      "flash": [
+        [
+          0.856,
+          0.089,
+          0.014
+        ]
+      ],
+      "strip": [
+        0.369,
+        0.076,
+        0.825,
+        0.102,
+        0.008
+      ],
+      "body_bounds_px": [
+        70,
+        55,
+        729,
+        477
+      ],
+      "note": "Official orthographic render; separate camera rings, LED and subtle charging strip."
+    },
+    "s9-fe": {
+      "models": [
+        "s9-fe"
+      ],
+      "reference_orientation": "landscape",
+      "source": {
+        "page": "https://api.samsungmobilepress.com/media-assets/galaxy-tab-s9-fe",
+        "render": "https://api.samsungmobilepress.com/file/DEB8F24C6AFAFAE336CD4731E41DFCB30AF2EB1BCE596FED8075B371C964260D779C5D61D85D10E4D649E505B3DF3BAB6DCA1C7A3C0C73DC0D1544225CAC66C9272B3EBAE16B580C71EFFC150B1E7DDD1126F6A114BFD737E0C2B34C553FD863F4421A53E3C165C9DEDF9BF9DE8E95BA8C405478F37A7357EA5DB1D564FDC7F0",
+        "filename": "003-galaxy-tabs9-fe-mint-back.jpg",
+        "bytes": 11107
+      },
+      "logo": [
+        0.12,
+        0.094,
+        0.108
+      ],
+      "lenses": [
+        [
+          0.937,
+          0.094,
+          0.053
+        ]
+      ],
+      "sensors": [
+        [
+          0.895,
+          0.094,
+          0.0016
+        ]
+      ],
+      "body_bounds_px": [
+        143,
+        101,
+        656,
+        432
+      ],
+      "note": "Single round ring plus tiny aperture; no flash or rear charging strip."
+    },
+    "s9-fe-plus": {
+      "models": [
+        "s9-fe-plus"
+      ],
+      "reference_orientation": "landscape",
+      "source": {
+        "page": "https://api.samsungmobilepress.com/media-assets/galaxy-tab-s9-fe-plus",
+        "render": "https://api.samsungmobilepress.com/file/E8BD6AA7D4B50FBCE9C82B321306BAE0DFC363A2C99B122219252C82A5BF693839A78D46C45020D7C54F03C5746B9A145184E5DECF3D1096576A8C0A68FF7FA1F153C958F7C32E4B37C7E1C424A70B8F6F3E7D1885E0E474E97202C2F67956BDF3056F59149FFEA7045FBA1AA321F01F279D067F60F360F98E989458D876F322A1AD7DF01C4614940DDAD5D9F4CB1305",
+        "filename": "003-galaxy-tabs9-fe-plus-mint-back.jpg"
+      },
+      "logo": [
+        0.114,
+        0.085,
+        0.105
+      ],
+      "lenses": [
+        [
+          0.946,
+          0.085,
+          0.047
+        ],
+        [
+          0.887,
+          0.085,
+          0.047
+        ]
+      ],
+      "sensors": [
+        [
+          0.844,
+          0.085,
+          0.0015
+        ]
+      ],
+      "body_bounds_px": [
+        67,
+        50,
+        733,
+        483
+      ],
+      "note": "Two separate camera rings; no flash or charging strip."
+    },
+    "s10-fe": {
+      "models": [
+        "s10-fe",
+        "s10-fe-plus"
+      ],
+      "reference_orientation": "landscape",
+      "source": {
+        "page": "https://api.samsungmobilepress.com/media-assets/galaxy-tab-s10-fe",
+        "render": "https://api.samsungmobilepress.com/file/E6C5C17B589249345FE00451B2CF9D56C68F83EB7FA9DEFC5E4E53D8BA7F7A217BBB00A6B5C8B9187D61108E85B4A7F75A8A39DACDE162F9F6CD0EE7219976DD3993BF05A3A2C026C70E0F6161620E05CA8A94E173190BC4E6147883AD4CD94C7BD364833DB7251F617765464138658CB6AC40CB284652B6FFE29661C178EB73",
+        "filename": "003-galaxy-tabs10-fe-gray-back.jpg",
+        "bytes": 14173
+      },
+      "logo": [
+        0.119,
+        0.099,
+        0.108
+      ],
+      "lenses": [
+        [
+          0.94,
+          0.099,
+          0.051
+        ]
+      ],
+      "sensors": [
+        [
+          0.89,
+          0.099,
+          0.0015
+        ]
+      ],
+      "body_bounds_px": [
+        100,
+        73,
+        699,
+        463
+      ],
+      "note": "Single camera both sizes. Plus uses same physical camera/edge inset, scaled by chassis ratio in generator; no flash/strip.",
+      "verification": {
+        "model": "s10-fe-plus",
+        "page": "https://api.samsungmobilepress.com/media-assets/galaxy-tab-s10-fe-plus",
+        "filename": "003-galaxy-tabs10-fe-plus-gray-back.jpg",
+        "body_bounds_px": [
+          46,
+          37,
+          754,
+          496
+        ],
+        "camera_center_normalized": [
+          0.944,
+          0.082
+        ],
+        "camera_outer_diameter_normalized": 0.045,
+        "note": "Larger body checked separately; physical lens/inset transfer differs by about 1.5mm at this thumbnail scale."
+      }
+    },
+    "s10-lite": {
+      "models": [
+        "s10-lite"
+      ],
+      "reference_orientation": "landscape",
+      "source": {
+        "page": "https://api.samsungmobilepress.com/media-assets/galaxy-tab-s10-lite",
+        "render": "https://api.samsungmobilepress.com/file/6302DF372B7B99EAA6326268614EF24CEEE3BC766430970295A54929062FD8F579A8EDC4F728E6890A1D918C9059A9C8E6AF683D9F344FBA045D73F6E1A64B9A123FED2754820BA7476510FE58C3CDCC0B33420FF4EC3068612F238B2602E5C69F21CD1F15912E51A6AC61750E03135A204D2A1D617DA8043E4234E9A0E51472C73A7625E2DCBCCA4E416CFA40A0B2AC",
+        "filename": "003-galaxy-tabs10-lite-coralred-back.jpg",
+        "bytes": 15088
+      },
+      "logo": [
+        0.116,
+        0.1,
+        0.108
+      ],
+      "lenses": [
+        [
+          0.94,
+          0.1,
+          0.051
+        ]
+      ],
+      "body_bounds_px": [
+        100,
+        70,
+        699,
+        461
+      ],
+      "note": "Single separate black camera ring; no flash or strip."
+    },
+    "s11": {
+      "models": [
+        "s11"
+      ],
+      "reference_orientation": "landscape",
+      "source": {
+        "page": "https://api.samsungmobilepress.com/media-assets/galaxy-tab-s11",
+        "render": "https://api.samsungmobilepress.com/file/BA9501717B90F9C75F52CEF92F55FF64D748E0F6449D302EEF4C7AC2EE0D25C739F4359DB13F1E694C9B08991211CA258409B8355F5A208EA2B0B707FF3D5BE0DE6C91EE34FF37D6AE269925A5EBA3F4FC9CC78EDE94006D5016DB33B63B680CCBFC12BAA497D5AE862E5576F2D3705A055CFE9D53A819FDFF17F5D0A4B574B7",
+        "filename": "003-galaxy-tabs11-gray-back.jpg",
+        "bytes": 14346
+      },
+      "logo": [
+        0.115,
+        0.099,
+        0.108
+      ],
+      "lenses": [
+        [
+          0.942,
+          0.099,
+          0.056
+        ]
+      ],
+      "flash": [
+        [
+          0.891,
+          0.099,
+          0.016
+        ]
+      ],
+      "body_bounds_px": [
+        96,
+        70,
+        702,
+        465
+      ],
+      "note": "Single larger ring and flash; no rear charging strip, S Pen attaches at edge."
+    },
+    "s11-ultra": {
+      "models": [
+        "s11-ultra"
+      ],
+      "reference_orientation": "landscape",
+      "source": {
+        "page": "https://api.samsungmobilepress.com/media-assets/galaxy-tab-s11-ultra",
+        "render": "https://api.samsungmobilepress.com/file/410ABC1603ABB18EC0105DAB648C84B22CE58FE9160D97908409EE66B0B23ED3C417480BFB572197AD4A06B7AB88728600B16D9822D034981E1EF09C849BFB010A7DD7B86171BBE85B7660D8B9EFC9BAE0FFFF11CEA9A1B95875FACEB9B2B1821A27978F92C27092CB6C211E90008A5DA63CD7349B6203E7DCB0E6EF1F5A67AA",
+        "filename": "003-galaxy-tabs11-ultra-gray-back.jpg",
+        "bytes": 14833
+      },
+      "logo": [
+        0.096,
+        0.081,
+        0.094
+      ],
+      "lenses": [
+        [
+          0.949,
+          0.081,
+          0.049
+        ],
+        [
+          0.89,
+          0.081,
+          0.049
+        ]
+      ],
+      "flash": [
+        [
+          0.847,
+          0.081,
+          0.014
+        ]
+      ],
+      "body_bounds_px": [
+        49,
+        41,
+        750,
+        490
+      ],
+      "note": "Larger separate body-color outer rings, flash to their left; no charging strip."
+    },
+    "s12": {
+      "models": [
+        "s12-plus"
+      ],
+      "reference_orientation": "landscape",
+      "source": {
+        "page": "https://api.samsungmobilepress.com/media-assets/galaxy-tab-s12",
+        "render": "https://api.samsungmobilepress.com/file/2E71950DF7E384E465FE5F99B9C577737C5BDE648BCF67D7204174C2F7AA097535E5AB701CC77AC5AFD76BCA5CEDA532881365A75D52691D83A96F7107E89472038DEACE7331D696E1B372884256ECF11B388FCB69B1460CBB3D6F03122C1CCA5FEAF16374A9C5AF58FBE0E92F58A452ADDC479814C30509705A6652523624E44BA120A4E9F6E76D212D494B88386E4F",
+        "filename": "003-product-galaxy-tab-s12-plus-gray-back.jpg"
+      },
+      "logo": [
+        0.105,
+        0.089,
+        0.104
+      ],
+      "lenses": [
+        [
+          0.947,
+          0.089,
+          0.054
+        ]
+      ],
+      "flash": [
+        [
+          0.9,
+          0.089,
+          0.015
+        ]
+      ],
+      "body_bounds_px": [
+        45,
+        36,
+        753,
+        496
+      ],
+      "note": "Single mono-tone outer camera ring with flash, no charging strip."
+    },
+    "s12-ultra": {
+      "models": [
+        "s12-ultra"
+      ],
+      "reference_orientation": "landscape",
+      "source": {
+        "page": "https://www.samsung.com/ie/tablets/galaxy-tab-s/galaxy-tab-s12-ultra-silver-256gb-sm-x940nzsreub/",
+        "render": "https://images.samsung.com/is/image/samsung/p6pim/ie/sm-x940nzsreub/gallery/ie-galaxy-tab-s12-ultra-sm-x940-sm-x940nzsreub-thumb-554709747?$650_519_PNG$",
+        "body_bounds_px": [
+          180,
+          166,
+          468,
+          351
+        ]
+      },
+      "logo": [
+        0.096,
+        0.078,
+        0.094
+      ],
+      "lenses": [
+        [
+          0.949,
+          0.078,
+          0.049
+        ],
+        [
+          0.89,
+          0.078,
+          0.049
+        ]
+      ],
+      "flash": [
+        [
+          0.847,
+          0.078,
+          0.014
+        ]
+      ],
+      "note": "Dual mono-tone camera rings; no charging strip."
+    },
+    "a11": {
+      "models": [
+        "a11"
+      ],
+      "reference_orientation": "portrait",
+      "source": {
+        "page": "https://www.samsung.com/latin_en/tablets/galaxy-tab-a/galaxy-tab-a11-gray-64gb-sm-x133nzaagto/",
+        "render": "https://images.samsung.com/is/image/samsung/p6pim/latin_en/sm-x133nzaagto/gallery/latin-en-galaxy-tab-a11-sm-x130-sm-x133nzaagto-thumb-550331480?$650_519_PNG$",
+        "body_bounds_px": [
+          246,
+          129,
+          399,
+          389
+        ]
+      },
+      "logo": [
+        0.5,
+        0.5,
+        0.22
+      ],
+      "lenses": [
+        [
+          0.13,
+          0.091,
+          0.108
+        ]
+      ],
+      "note": "Portrait centered wordmark and one ring; no flash or strip."
+    },
+    "a11-plus": {
+      "models": [
+        "a11-plus"
+      ],
+      "reference_orientation": "landscape",
+      "source": {
+        "page": "https://www.samsung.com/ie/tablets/galaxy-tab-a/galaxy-tab-a11-plus-silver-128gb-5g-sm-x236bzsreub/",
+        "render": "https://images.samsung.com/is/image/samsung/p6pim/ie/sm-x236bzsreub/gallery/ie-galaxy-tab-a11-plus-sm-x230-570967-sm-x236bzsreub-thumb-550053513?$650_519_PNG$",
+        "body_bounds_px": [
+          183,
+          166,
+          467,
+          352
+        ]
+      },
+      "logo": [
+        0.115,
+        0.098,
+        0.108
+      ],
+      "lenses": [
+        [
+          0.94,
+          0.098,
+          0.055
+        ]
+      ],
+      "note": "Landscape upper left wordmark and single camera upper right; no flash or strip."
+    },
+    "s10-plus": {
+      "models": [
+        "s10-plus"
+      ],
+      "reference_orientation": "landscape",
+      "source": {
+        "page": "https://www.samsung.com/ie/tablets/galaxy-tab-s/galaxy-tab-s10-plus-silver-256gb-wi-fi-sm-x820nzsreub/",
+        "render": "https://images.samsung.com/is/image/samsung/p6pim/ie/sm-x820nzsreub/gallery/ie-galaxy-tab-s10-plus-sm-x820-sm-x820nzsreub-thumb-543697184?$650_519_PNG$",
+        "body_bounds_px": [
+          206,
+          182,
+          444,
+          337
+        ]
+      },
+      "logo": [
+        0.117,
+        0.087,
+        0.103
+      ],
+      "lenses": [
+        [
+          0.945,
+          0.087,
+          0.044
+        ],
+        [
+          0.888,
+          0.087,
+          0.044
+        ]
+      ],
+      "flash": [
+        [
+          0.843,
+          0.087,
+          0.015
+        ]
+      ],
+      "strip": [
+        0.295,
+        0.075,
+        0.808,
+        0.104,
+        0.009
+      ],
+      "body_bounds_px": [
+        112,
+        78,
+        687,
+        453
+      ],
+      "note": "Official S10 rear render confirms separate rings/flash and pale charging strip; shared S9 enclosure proportions cross-checked against S10 chassis bounds."
+    },
+    "s10-ultra": {
+      "models": [
+        "s10-ultra"
+      ],
+      "reference_orientation": "landscape",
+      "source": {
+        "page": "https://www.samsung.com/ie/tablets/galaxy-tab-s/galaxy-tab-s10-ultra-silver-256gb-wi-fi-sm-x920nzsreub/",
+        "render": "https://images.samsung.com/is/image/samsung/p6pim/ie/sm-x920nzsreub/gallery/ie-galaxy-tab-s10-ultra-sm-x920-524326-sm-x920nzsreub-thumb-543696714?$650_519_PNG$",
+        "body_bounds_px": [
+          189,
+          171,
+          462,
+          347
+        ]
+      },
+      "logo": [
+        0.105,
+        0.091,
+        0.096
+      ],
+      "lenses": [
+        [
+          0.945,
+          0.091,
+          0.04
+        ],
+        [
+          0.895,
+          0.091,
+          0.04
+        ]
+      ],
+      "flash": [
+        [
+          0.856,
+          0.091,
+          0.014
+        ]
+      ],
+      "strip": [
+        0.369,
+        0.076,
+        0.825,
+        0.102,
+        0.008
+      ],
+      "body_bounds_px": [
+        70,
+        55,
+        729,
+        477
+      ],
+      "note": "Official S10 rear render confirms separate rings/flash and pale charging strip; shared S9 enclosure proportions cross-checked against S10 chassis bounds."
+    },
+    "s7": {
+      "models": [
+        "s7"
+      ],
+      "reference_orientation": "landscape",
+      "source": {
+        "page": "https://www.samsungmobilepress.com/media-assets/galaxy_tabs7",
+        "render": "https://api.samsungmobilepress.com/api/v1/file/4DDE0924C8B88E5B3157A3DFFCBE2AF6A96F2444154E56CF135C7BA752B31F459D37A305B17E6BDE7A6599FC97FC79326F710ABA0A190E2C6D59F86062135DBA609160BD0A5B3FD24D7863E7A735E51A55E20E567A716030FFFBC4CE10B472B208CF088894FF3B22C08A3DA8EE84AE3076E5B132E27D912FBC8BC7F817086A1FE2E4DF68CAD0E90F936C8F1071C77E82684202720B0645670A14C2AA81D21E2E",
+        "filename": "001_galaxytabs7_mysticblack_back-2.jpg"
+      },
+      "logo": [
+        0.129,
+        0.097,
+        0.112
+      ],
+      "lenses": [
+        [
+          0.929,
+          0.097,
+          0.029
+        ],
+        [
+          0.893,
+          0.097,
+          0.029
+        ]
+      ],
+      "housing": [
+        0.842,
+        0.063,
+        0.952,
+        0.131,
+        0.021
+      ],
+      "flash": [
+        [
+          0.862,
+          0.097,
+          0.011
+        ]
+      ],
+      "body_bounds_px": [
+        35,
+        29,
+        765,
+        503
+      ],
+      "note": "Official bare S7 rear: short raised camera capsule at the right end of the long flat dark S Pen charging surface; no S Pen accessory.",
+      "strip": [
+        0.238,
+        0.063,
+        0.952,
+        0.131,
+        0.021
+      ],
+      "strip_kind": "Flat dark charging surface, not a raised camera bar"
+    }
+  }
+}

@@ -1,0 +1,316 @@
+{
+  "id": "googlebook-asus-14",
+  "name": "ASUS Googlebook 14",
+  "state": "default",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        2880,
+        1800
+      ],
+      "size_mm": [
+        301.59999999999997,
+        188.5
+      ],
+      "center_mm": [
+        0.0,
+        108.99999237060547,
+        0.140000119805336
+      ],
+      "corner_radius_mm": 2.8,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0,
+      "frame_bounds_mm": [
+        4.650000000000006,
+        9.550000000000011,
+        301.59999999999997,
+        188.5
+      ],
+      "frame_screen_px": null,
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "width": 310.9,
+        "height": 212.8,
+        "depth": 5.0,
+        "base_depth_mm": 8.6,
+        "closed_depth_mm": 13.6,
+        "corner_radius": 7.5,
+        "edge_roll_mm": [
+          0.55,
+          0.45
+        ],
+        "front_curve": 0
+      },
+      "cutouts": [
+        {
+          "center_mm": [
+            0.0,
+            96.85
+          ],
+          "radius_mm": 1.15
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "articulation": {
+    "animation": "Fold",
+    "axis": "X",
+    "axis_mm": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "moving_panel": "Lid",
+    "fixed_panel": "Base",
+    "pivots": {
+      "Lid": "Fold pivot | Lid",
+      "Base": "Fold pivot | Base"
+    },
+    "open_degrees": 0,
+    "closed_degrees": 90,
+    "duration_seconds": 1.0,
+    "closed_body_mm": {
+      "width": 310.9,
+      "height": 13.6,
+      "depth": 212.8
+    }
+  },
+  "panels": [
+    {
+      "name": "Lid",
+      "center_mm": [
+        0.0,
+        106.4,
+        -2.5
+      ],
+      "body_mm": {
+        "width": 310.9,
+        "height": 212.8,
+        "depth": 5.0,
+        "corner_radius": 7.5,
+        "edge_roll_mm": [
+          0.55,
+          0.45
+        ],
+        "front_curve": 0
+      },
+      "buttons": false
+    },
+    {
+      "name": "Base",
+      "center_mm": [
+        0.0,
+        -4.3,
+        106.4
+      ],
+      "body_mm": {
+        "width": 310.9,
+        "height": 8.6,
+        "depth": 212.8,
+        "corner_radius": 7.5,
+        "edge_roll_mm": [
+          0.55,
+          0.45
+        ],
+        "front_curve": 0
+      },
+      "buttons": false
+    }
+  ],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/googlebook-asus-14-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "logo": "logo",
+    "keycap": "keycap",
+    "black": "black",
+    "flash": "flash"
+  },
+  "finishes": [
+    {
+      "name": "Dusk Ash",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.2824,
+            0.298,
+            0.3137
+          ],
+          "metal": 0.12,
+          "rough": 0.3
+        },
+        "rail": {
+          "rgb": [
+            0.2824,
+            0.298,
+            0.3137
+          ],
+          "metal": 0.18,
+          "rough": 0.26
+        },
+        "bar": {
+          "rgb": [
+            0.2824,
+            0.298,
+            0.3137
+          ],
+          "metal": 0.22,
+          "rough": 0.3
+        },
+        "logo": {
+          "rgb": [
+            0.5216,
+            0.5373,
+            0.5529
+          ],
+          "metal": 0.65,
+          "rough": 0.18
+        },
+        "keycap": {
+          "rgb": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metal": 0.04,
+          "rough": 0.44
+        }
+      }
+    },
+    {
+      "name": "Star Black",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.1216,
+            0.1294,
+            0.1412
+          ],
+          "metal": 0.12,
+          "rough": 0.32
+        },
+        "rail": {
+          "rgb": [
+            0.1216,
+            0.1294,
+            0.1412
+          ],
+          "metal": 0.18,
+          "rough": 0.28
+        },
+        "bar": {
+          "rgb": [
+            0.1216,
+            0.1294,
+            0.1412
+          ],
+          "metal": 0.22,
+          "rough": 0.32
+        },
+        "logo": {
+          "rgb": [
+            0.3333,
+            0.3451,
+            0.3647
+          ],
+          "metal": 0.65,
+          "rough": 0.18
+        },
+        "keycap": {
+          "rgb": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metal": 0.04,
+          "rough": 0.44
+        }
+      }
+    },
+    {
+      "name": "Cool Silver",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.7843,
+            0.8,
+            0.8157
+          ],
+          "metal": 0.12,
+          "rough": 0.26
+        },
+        "rail": {
+          "rgb": [
+            0.7843,
+            0.8,
+            0.8157
+          ],
+          "metal": 0.18,
+          "rough": 0.24
+        },
+        "bar": {
+          "rgb": [
+            0.7843,
+            0.8,
+            0.8157
+          ],
+          "metal": 0.22,
+          "rough": 0.26
+        },
+        "logo": {
+          "rgb": [
+            0.9255,
+            0.9373,
+            0.949
+          ],
+          "metal": 0.65,
+          "rough": 0.18
+        },
+        "keycap": {
+          "rgb": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metal": 0.04,
+          "rough": 0.44
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/googlebook-asus-14.ed1ad294231c.glb.gz",
+  "sha256": "ed1ad294231c2ff88267db85c61c58004b79f911cf6bc565c7ca9b518991c851",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/googlebook-asus-14.json",
+    "accuracy": {
+      "body_dimensions": "Published metric Googlebook specifications from googlebook.google",
+      "screen_geometry": "Published 16:10 display active area and resolution",
+      "camera_geometry": "Top bezel 1080p webcam + dual-mic array + lid LED Glowbar measured from official renders",
+      "finishes": "Official Googlebook launch finishes sampled from product renders",
+      "hinge": "Articulated clamshell X-axis hinge rotating lid 0 to 90 degrees flush onto keyboard base"
+    },
+    "sources": [
+      "https://googlebook.google/",
+      "https://googlebook.google/compare/"
+    ]
+  }
+}

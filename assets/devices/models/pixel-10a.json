@@ -1,0 +1,242 @@
+{
+  "id": "pixel-10a",
+  "name": "Pixel 10a",
+  "state": "default",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        1080,
+        2424
+      ],
+      "size_mm": [
+        65.18117647058824,
+        146.2955294117647
+      ],
+      "center_mm": [
+        0.0,
+        0.0,
+        4.535
+      ],
+      "corner_radius_mm": 8.820508925776489,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0,
+      "frame_bounds_mm": [
+        3.9094117647058795,
+        3.8022352941176507,
+        65.18117647058824,
+        146.2955294117647
+      ],
+      "frame_screen_px": [
+        65,
+        64,
+        1080,
+        2424
+      ],
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "height": 153.9,
+        "width": 73.0,
+        "depth": 9.0,
+        "corner_radius": 12.62274421989414,
+        "edge_roll": 0.55,
+        "front_curve": 0,
+        "edge_roll_mm": [
+          1.0,
+          0.8
+        ],
+        "corner_radii_mm": [
+          12.62274421989414,
+          12.62274421989414,
+          12.62274421989414,
+          12.62274421989414
+        ]
+      },
+      "cutouts": [
+        {
+          "center_mm": [
+            0,
+            69.14776470588235
+          ],
+          "radius_mm": 1.5
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "articulation": null,
+  "panels": [],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/pixel-10a-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "black": "black",
+    "flash": "flash"
+  },
+  "finishes": [
+    {
+      "name": "Lavender",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.7098,
+            0.69412,
+            0.83922
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.66137,
+            0.65118,
+            0.74549
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.66137,
+            0.65118,
+            0.74549
+          ]
+        }
+      }
+    },
+    {
+      "name": "Berry",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.80784,
+            0.39216,
+            0.48235
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.7251,
+            0.4549,
+            0.51353
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.7251,
+            0.4549,
+            0.51353
+          ]
+        }
+      }
+    },
+    {
+      "name": "Fog",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.85098,
+            0.86667,
+            0.83922
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.75314,
+            0.76334,
+            0.74549
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.75314,
+            0.76334,
+            0.74549
+          ]
+        }
+      }
+    },
+    {
+      "name": "Obsidian",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.2,
+            0.22745,
+            0.23922
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.33,
+            0.34784,
+            0.35549
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.33,
+            0.34784,
+            0.35549
+          ]
+        }
+      }
+    },
+    {
+      "name": "Isai Blue",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.20392,
+            0.29412,
+            0.56471
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.33255,
+            0.39118,
+            0.56706
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.33255,
+            0.39118,
+            0.56706
+          ]
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/pixel-10a.fe3f4ac7412b.glb.gz",
+  "sha256": "fe3f4ac7412bb6c27decda6a4068c20511437cc758f517a97591f3c4905ec508",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/pixel-10a.json",
+    "accuracy": {
+      "body_dimensions": "Google published metric dimensions",
+      "screen_resolution": "Google published panel resolution",
+      "screen_geometry": "Screen fit and corner radius measured from Google emulator artwork; native pixel aspect preserved. Skin artwork is a reference, not physical CAD.",
+      "camera_geometry": "Housing width, height and top gap scaled from official rear artwork; pixel bounds and uncertainty in camera_measurement. Optical internals remain illustrative. Not measurable from this rear view; model depth remains a visual estimate.",
+      "finishes": "Approximate sRGB colors and roughness, not calibrated measured materials"
+    },
+    "sources": [
+      "https://support.google.com/pixelphone/answer/7158570?hl=en",
+      "https://store.google.com/product/pixel_10a?hl=en-US",
+      "https://store.google.com/jp/magazine/google-pixel-10a-isai-blue?hl=ja"
+    ]
+  }
+}

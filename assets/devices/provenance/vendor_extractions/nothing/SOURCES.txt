@@ -1,0 +1,11 @@
+Nothing Settings (com.android.settings, Nothing OS), NothingSettings.apk.
+Material You colours resolved to framework defaults from a Pixel framework-res.apk.
+
+nothing_phone_1_black.png <- NothingSettings.apk res/drawable-xxhdpi/nt_about_phone_black.png (raster, no vector original exists)
+nothing_phone_1_black_top.png <- NothingSettings.apk res/drawable-xxhdpi/ic_about_phone_black.png (raster, no vector original exists)
+nothing_phone_1_glyph_layout.svg <- NothingSettings.apk res/drawable/nt_glyph_preview_spacewar.xml
+nothing_phone_1_glyph_preview.svg <- NothingSettings.apk res/drawable/ic_glyph_preview.xml
+nothing_phone_1_glyph_preview_background.svg <- NothingSettings.apk res/drawable/ic_glyph_preview_background.xml
+nothing_phone_1_white.png <- NothingSettings.apk res/drawable-xxhdpi/nt_about_phone_white.png (raster, no vector original exists)
+nothing_phone_1_white_top.png <- NothingSettings.apk res/drawable-xxhdpi/ic_about_phone_white.png (raster, no vector original exists)
+nothing_phone_2_glyph_layout.svg <- NothingSettings.apk res/drawable/nt_glyph_preview.xml

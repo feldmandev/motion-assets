@@ -1,0 +1,215 @@
+{
+  "id": "pixel-9",
+  "name": "Pixel 9",
+  "state": "default",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        1080,
+        2424
+      ],
+      "size_mm": [
+        65.20110628210193,
+        146.34026076649545
+      ],
+      "center_mm": [
+        -0.03018569735282497,
+        -0.27167127617542475,
+        4.285
+      ],
+      "corner_radius_mm": 8.823953556199841,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0,
+      "frame_bounds_mm": [
+        3.3692611615962065,
+        3.501540892927707,
+        65.20110628210193,
+        146.34026076649545
+      ],
+      "frame_screen_px": [
+        55,
+        58,
+        1080,
+        2424
+      ],
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "height": 152.8,
+        "width": 72.0,
+        "depth": 8.5,
+        "corner_radius": 12.002776155962787,
+        "edge_roll": 0.55,
+        "front_curve": 0,
+        "edge_roll_mm": [
+          0.75,
+          0.75
+        ],
+        "corner_radii_mm": [
+          11.782151896776698,
+          12.253586112501702,
+          12.193214717796048,
+          11.782151896776698
+        ]
+      },
+      "cutouts": [
+        {
+          "center_mm": [
+            0,
+            69.17013038324774
+          ],
+          "radius_mm": 1.5
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "articulation": null,
+  "panels": [],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/pixel-9-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "black": "black",
+    "flash": "flash"
+  },
+  "finishes": [
+    {
+      "name": "Obsidian",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.2,
+            0.22745,
+            0.23922
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.33,
+            0.34784,
+            0.35549
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.33,
+            0.34784,
+            0.35549
+          ]
+        }
+      }
+    },
+    {
+      "name": "Porcelain",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.87843,
+            0.87843,
+            0.83529
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.77098,
+            0.77098,
+            0.74294
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.77098,
+            0.77098,
+            0.74294
+          ]
+        }
+      }
+    },
+    {
+      "name": "Wintergreen",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.70196,
+            0.78824,
+            0.69412
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.65627,
+            0.71236,
+            0.65118
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.65627,
+            0.71236,
+            0.65118
+          ]
+        }
+      }
+    },
+    {
+      "name": "Peony",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.93725,
+            0.68627,
+            0.74902
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.80921,
+            0.64608,
+            0.68686
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.80921,
+            0.64608,
+            0.68686
+          ]
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/pixel-9.4f6acb2bb6ea.glb.gz",
+  "sha256": "4f6acb2bb6ea2660b021c9133f5dc969f59d191e661c3d29d5a37b56b12602b1",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/pixel-9.json",
+    "accuracy": {
+      "body_dimensions": "Google published metric dimensions",
+      "screen_resolution": "Google published panel resolution",
+      "screen_geometry": "Screen fit and corner radius measured from Google emulator artwork; native pixel aspect preserved. Skin artwork is a reference, not physical CAD.",
+      "camera_geometry": "Housing width, height and top gap scaled from official rear artwork; pixel bounds and uncertainty in camera_measurement. Optical internals remain illustrative. Not measurable from this rear view; model depth remains a visual estimate.",
+      "finishes": "Approximate sRGB colors and roughness, not calibrated measured materials"
+    },
+    "sources": [
+      "https://support.google.com/pixelphone/answer/7158570?hl=en",
+      "https://store.google.com/product/pixel_9?hl=en-US"
+    ]
+  }
+}

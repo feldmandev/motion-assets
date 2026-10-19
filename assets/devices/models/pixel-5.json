@@ -1,0 +1,195 @@
+{
+  "id": "pixel-5",
+  "name": "Pixel 5",
+  "state": "default",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        1080,
+        2340
+      ],
+      "size_mm": [
+        63.16734033953112,
+        136.86257073565076
+      ],
+      "center_mm": [
+        -0.17546483427647533,
+        0.11697655618431689,
+        4.035
+      ],
+      "corner_radius_mm": 5.777114310504011,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0,
+      "frame_bounds_mm": [
+        3.4408649959579662,
+        3.8017380759903006,
+        63.16734033953112,
+        136.86257073565076
+      ],
+      "frame_screen_px": [
+        60,
+        65,
+        1080,
+        2340
+      ],
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "height": 144.7,
+        "width": 70.4,
+        "depth": 8.0,
+        "corner_radius": 9.393444140738453,
+        "edge_roll": 0.95,
+        "edge_roll_mm": [
+          2.55,
+          0.95
+        ],
+        "front_curve": 0,
+        "rear_style": "unibody",
+        "corner_radii_mm": [
+          9.568908975014928,
+          9.568908975014928,
+          9.217979306461977,
+          9.217979306461977
+        ]
+      },
+      "cutouts": [
+        {
+          "center_mm": [
+            -26.58,
+            63.43
+          ],
+          "radius_mm": 1.9
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "articulation": null,
+  "panels": [],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/pixel-5-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "button": "button",
+    "fingerprint": "fingerprint",
+    "black": "black",
+    "flash": "flash"
+  },
+  "finishes": [
+    {
+      "name": "Just Black",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.1451,
+            0.16078,
+            0.16471
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.1451,
+            0.16078,
+            0.16471
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.03529,
+            0.04314,
+            0.0549
+          ]
+        },
+        "button": {
+          "rgb": [
+            0.2,
+            0.21569,
+            0.21961
+          ]
+        },
+        "fingerprint": {
+          "rgb": [
+            0.12549,
+            0.14118,
+            0.1451
+          ]
+        }
+      }
+    },
+    {
+      "name": "Sorta Sage",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.65882,
+            0.73333,
+            0.6902
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.65882,
+            0.73333,
+            0.6902
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.03529,
+            0.04314,
+            0.0549
+          ]
+        },
+        "button": {
+          "rgb": [
+            0.5098,
+            0.59216,
+            0.54902
+          ]
+        },
+        "fingerprint": {
+          "rgb": [
+            0.57647,
+            0.6549,
+            0.61176
+          ]
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/pixel-5.877ad4ff7217.glb.gz",
+  "sha256": "877ad4ff7217d1a5590e0644b44bb218f208a60e24a4401bc073515efbdc8112",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/pixel-5.json",
+    "accuracy": {
+      "body_dimensions": "Google published metric dimensions",
+      "screen_resolution": "Google published panel resolution",
+      "screen_geometry": "Google Android Emulator skin trace with native panel aspect preserved",
+      "camera_geometry": "Model-specific rear housing/lens placement proportioned from reviewed product photography; optical stacks reuse the reviewed Pixel optics and are illustrative",
+      "buttons_and_rear_hardware": "Model-specific placement reviewed against product photography",
+      "finishes": "Approximate sRGB appearance matched to named Google finishes; not measured material samples"
+    },
+    "sources": [
+      "https://support.google.com/pixelphone/answer/16043605?hl=en",
+      "https://superbia.ru/catalog/mobile/google/google-pixel-5/8571-smartfon-google-pixel-5-8128gb-seryy.html"
+    ]
+  }
+}

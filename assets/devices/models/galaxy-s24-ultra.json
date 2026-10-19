@@ -1,0 +1,344 @@
+{
+  "id": "galaxy-s24-ultra",
+  "name": "Galaxy S24 Ultra",
+  "state": "default",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        1440,
+        3120
+      ],
+      "size_mm": [
+        72.37972841119293,
+        156.82274489091802
+      ],
+      "center_mm": [
+        0.0,
+        0.0,
+        4.335000038146973
+      ],
+      "corner_radius_mm": 0.4,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0,
+      "frame_bounds_mm": [
+        3.3101357944035357,
+        2.7386275545409973,
+        72.37972841119293,
+        156.82274489091802
+      ],
+      "frame_screen_px": null,
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "width": 79,
+        "height": 162.3,
+        "depth": 8.6,
+        "corner_radius": 3.138627554540997,
+        "edge_roll_mm": [
+          0.3,
+          0.25
+        ],
+        "front_rail_mm": 0.45,
+        "rear_inset": 0.45,
+        "corner_radii_mm": [
+          3.138627554540997,
+          3.138627554540997,
+          3.138627554540997,
+          3.138627554540997
+        ]
+      },
+      "cutouts": [
+        {
+          "center_mm": [
+            0,
+            76.15
+          ],
+          "radius_mm": 1.35
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "articulation": null,
+  "panels": [],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/galaxy-s24-ultra-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "logo": "logo",
+    "black": "black",
+    "flash": "flash"
+  },
+  "finishes": [
+    {
+      "name": "Titanium Gray",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.6745098039215687,
+            0.6509803921568628,
+            0.611764705882353
+          ],
+          "rough": 0.37
+        },
+        "rail": {
+          "rgb": [
+            0.6396078431372549,
+            0.6207843137254903,
+            0.5894117647058824
+          ],
+          "metal": 0.8,
+          "rough": 0.3
+        },
+        "bar": {
+          "rgb": [
+            0.6672941176470589,
+            0.6454117647058825,
+            0.6089411764705883
+          ],
+          "metal": 0.3,
+          "rough": 0.32
+        },
+        "logo": {
+          "rgb": [
+            0.3912156862745098,
+            0.37756862745098035,
+            0.3548235294117647
+          ]
+        }
+      }
+    },
+    {
+      "name": "Titanium Black",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.25882352941176473,
+            0.2627450980392157,
+            0.27058823529411763
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.30705882352941183,
+            0.31019607843137254,
+            0.3164705882352941
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.2807058823529412,
+            0.2843529411764706,
+            0.29164705882352937
+          ]
+        },
+        "logo": {
+          "rgb": [
+            0.15011764705882352,
+            0.1523921568627451,
+            0.15694117647058822
+          ]
+        }
+      }
+    },
+    {
+      "name": "Titanium Violet",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.4196078431372549,
+            0.4117647058823529,
+            0.47058823529411764
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.4356862745098039,
+            0.4294117647058824,
+            0.4764705882352941
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.43023529411764705,
+            0.4229411764705882,
+            0.4776470588235294
+          ]
+        },
+        "logo": {
+          "rgb": [
+            0.24337254901960784,
+            0.23882352941176468,
+            0.2729411764705882
+          ]
+        }
+      }
+    },
+    {
+      "name": "Titanium Yellow",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.8784313725490196,
+            0.8196078431372549,
+            0.6823529411764706
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.8027450980392157,
+            0.755686274509804,
+            0.6458823529411765
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.8569411764705883,
+            0.8022352941176472,
+            0.6745882352941177
+          ]
+        },
+        "logo": {
+          "rgb": [
+            0.5094901960784314,
+            0.4753725490196078,
+            0.3957647058823529
+          ]
+        }
+      }
+    },
+    {
+      "name": "Titanium Blue",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.7098039215686275,
+            0.7411764705882353,
+            0.7725490196078432
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.667843137254902,
+            0.6929411764705883,
+            0.7180392156862746
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.7001176470588236,
+            0.7292941176470589,
+            0.7584705882352942
+          ]
+        },
+        "logo": {
+          "rgb": [
+            0.4116862745098039,
+            0.42988235294117644,
+            0.448078431372549
+          ]
+        }
+      }
+    },
+    {
+      "name": "Titanium Green",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.7411764705882353,
+            0.7686274509803922,
+            0.6823529411764706
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.6929411764705883,
+            0.7149019607843138,
+            0.6458823529411765
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.7292941176470589,
+            0.7548235294117648,
+            0.6745882352941177
+          ]
+        },
+        "logo": {
+          "rgb": [
+            0.42988235294117644,
+            0.44580392156862747,
+            0.3957647058823529
+          ]
+        }
+      }
+    },
+    {
+      "name": "Titanium Orange",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.8352941176470589,
+            0.7294117647058823,
+            0.6509803921568628
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.7682352941176471,
+            0.6835294117647058,
+            0.6207843137254903
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.8168235294117648,
+            0.7183529411764706,
+            0.6454117647058825
+          ]
+        },
+        "logo": {
+          "rgb": [
+            0.4844705882352941,
+            0.4230588235294117,
+            0.37756862745098035
+          ]
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/galaxy-s24-ultra.34637607c0d9.glb.gz",
+  "sha256": "34637607c0d97a3ebc0e337562ee3525e51cd12e1799f74c2d5ba9223ca61b27",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/galaxy-s24-ultra.json",
+    "accuracy": {
+      "body_dimensions": "Samsung published width, height and thickness; S26 chassis radius 7 mm published in 2026 Q1 report; other radii visual estimates.",
+      "screen_resolution": "Samsung native panel resolution; active rectangle derived from published full diagonal and native aspect.",
+      "screen_geometry": "Concentric chassis/display corners; front hole location and bezel sizes are estimates pending measured artwork.",
+      "camera_geometry": "Rear positions scaled from official render measurements used by the icon collection. Individual lens collars; Ultra laser sensor distinguished from four cameras. Protrusion and internal optics illustrative, not CAD.",
+      "finishes": "Official finish names with approximate sRGB and material roughness.",
+      "omissions": "USB port, speaker perforations, antenna seams and Ultra S Pen silo pending detail pass."
+    },
+    "sources": [
+      "https://images.samsung.com/is/content/samsung/assets/us/2401/business/mobile/phones/galaxy/Galaxy_S24_Series_B2B_Spec_Sheet.pdf",
+      "https://www.samsung.com/uk/smartphones/galaxy-s24/specs/"
+    ]
+  }
+}

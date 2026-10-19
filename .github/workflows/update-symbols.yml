@@ -1,0 +1,46 @@
+name: Update Material Symbols
+on:
+  schedule:
+    - cron: '23 5 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+  pull-requests: write
+concurrency:
+  group: material-symbols-update
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements.txt
+      - name: Fetch and validate one upstream revision
+        run: |
+          python tools/update_symbols.py --latest
+          if git diff --quiet -- symbols-upstream.json; then
+            git restore assets/symbols integrations/android LICENSES
+            exit 0
+          fi
+          python -c 'import json,pathlib;p=pathlib.Path("package.json");d=json.loads(p.read_text());v=d["version"].split(".");v[2]=str(int(v[2])+1);d["version"]=".".join(v);p.write_text(json.dumps(d,indent=2)+"\n")'
+          python tools/catalog.py
+          python tools/validate.py
+      - name: Open a release update PR
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if git diff --quiet; then exit 0; fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git checkout -B automation/material-symbols
+          git add symbols-upstream.json assets/symbols assets/fonts integrations/android LICENSES manifest.json package.json
+          git commit -m 'Update pinned Material Symbols assets'
+          git push --force-with-lease origin HEAD:automation/material-symbols
+          if ! gh pr list --head automation/material-symbols --json number --jq '.[0].number' | grep -q '[0-9]'; then
+            gh pr create --base main --head automation/material-symbols --title 'Update Material Symbols' --body 'Updates all three fonts and codepoint maps from one Google commit. Generated APIs, checksums, font validation and privacy checks passed.'
+          fi

@@ -1,0 +1,342 @@
+{
+  "id": "galaxy-tab-s7",
+  "name": "Galaxy Tab S7",
+  "state": "default",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        1600,
+        2560
+      ],
+      "size_mm": [
+        147.39270521488436,
+        235.82832834381497
+      ],
+      "center_mm": [
+        0.0,
+        0.0,
+        3.184999942779541
+      ],
+      "corner_radius_mm": 1.790852607442174,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0,
+      "frame_bounds_mm": [
+        8.953647392557826,
+        8.985835828092519,
+        147.39270521488436,
+        235.82832834381497
+      ],
+      "frame_screen_px": null,
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "width": 165.3,
+        "height": 253.8,
+        "depth": 6.3,
+        "corner_radius": 10.7445,
+        "edge_roll": 0.32,
+        "front_rail_mm": 0.45,
+        "corner_radii_mm": [
+          10.7445,
+          10.7445,
+          10.7445,
+          10.7445
+        ]
+      },
+      "cutouts": [
+        {
+          "center_mm": [
+            78.17317630372109,
+            0
+          ],
+          "radius_mm": 1.3
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "articulation": null,
+  "panels": [],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/galaxy-tab-s7-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "logo": "logo",
+    "black": "black",
+    "flash": "flash",
+    "strip": "strip",
+    "camera_ring": "camera_ring"
+  },
+  "finishes": [
+    {
+      "name": "Mystic Black",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.25882352941176473,
+            0.2823529411764706,
+            0.3176470588235294
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "rail": {
+          "rgb": [
+            0.25882352941176473,
+            0.2823529411764706,
+            0.3176470588235294
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "bar": {
+          "rgb": [
+            0.025,
+            0.028,
+            0.032
+          ],
+          "rough": 0.34
+        },
+        "logo": {
+          "rgb": [
+            0.43529411764705883,
+            0.4694117647058823,
+            0.5205882352941176
+          ],
+          "metal": 0.3,
+          "rough": 0.45
+        },
+        "strip": {
+          "rgb": [
+            0.045,
+            0.05,
+            0.06
+          ],
+          "metal": 0.15,
+          "rough": 0.48
+        },
+        "camera_ring": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.15
+          ],
+          "metal": 0.75,
+          "rough": 0.3
+        }
+      }
+    },
+    {
+      "name": "Mystic Silver",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.7490196078431373,
+            0.7647058823529411,
+            0.7686274509803922
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "rail": {
+          "rgb": [
+            0.7490196078431373,
+            0.7647058823529411,
+            0.7686274509803922
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "bar": {
+          "rgb": [
+            0.025,
+            0.028,
+            0.032
+          ],
+          "rough": 0.34
+        },
+        "logo": {
+          "rgb": [
+            0.3894901960784314,
+            0.3976470588235294,
+            0.399686274509804
+          ],
+          "metal": 0.3,
+          "rough": 0.45
+        },
+        "strip": {
+          "rgb": [
+            0.045,
+            0.05,
+            0.06
+          ],
+          "metal": 0.15,
+          "rough": 0.48
+        },
+        "camera_ring": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.15
+          ],
+          "metal": 0.75,
+          "rough": 0.3
+        }
+      }
+    },
+    {
+      "name": "Mystic Bronze",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.7019607843137254,
+            0.5803921568627451,
+            0.5490196078431373
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "rail": {
+          "rgb": [
+            0.7019607843137254,
+            0.5803921568627451,
+            0.5490196078431373
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "bar": {
+          "rgb": [
+            0.025,
+            0.028,
+            0.032
+          ],
+          "rough": 0.34
+        },
+        "logo": {
+          "rgb": [
+            0.36501960784313725,
+            0.3018039215686275,
+            0.2854901960784314
+          ],
+          "metal": 0.3,
+          "rough": 0.45
+        },
+        "strip": {
+          "rgb": [
+            0.045,
+            0.05,
+            0.06
+          ],
+          "metal": 0.15,
+          "rough": 0.48
+        },
+        "camera_ring": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.15
+          ],
+          "metal": 0.75,
+          "rough": 0.3
+        }
+      }
+    },
+    {
+      "name": "Mystic Navy",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.26666666666666666,
+            0.3568627450980392,
+            0.4666666666666667
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "rail": {
+          "rgb": [
+            0.26666666666666666,
+            0.3568627450980392,
+            0.4666666666666667
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "bar": {
+          "rgb": [
+            0.025,
+            0.028,
+            0.032
+          ],
+          "rough": 0.34
+        },
+        "logo": {
+          "rgb": [
+            0.44666666666666666,
+            0.5774509803921568,
+            0.7366666666666666
+          ],
+          "metal": 0.3,
+          "rough": 0.45
+        },
+        "strip": {
+          "rgb": [
+            0.045,
+            0.05,
+            0.06
+          ],
+          "metal": 0.15,
+          "rough": 0.48
+        },
+        "camera_ring": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.15
+          ],
+          "metal": 0.75,
+          "rough": 0.3
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/galaxy-tab-s7.a036589df872.glb.gz",
+  "sha256": "a036589df872fc6ba106d4f444786994782721d249f77dcf6afe95c06bbc2e68",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/galaxy-tab-s7.json",
+    "accuracy": {
+      "body_dimensions": "Samsung published metric dimensions",
+      "screen_resolution": "Samsung native panel resolution; exact aspect ratio",
+      "screen_geometry": "Published rectangular diagonal and exact native aspect; inferred bezels. Concentric corner radii, selfie aperture/notch dimensions are photo estimates.",
+      "camera_geometry": "Official rear-render normalized measurements; model-family housing/charging insert, separate glass windows, rims, apertures and flash. Protrusion and internal optics estimated, not OEM CAD.",
+      "details": "Rear wordmark and built-in charging surface where present; no S Pen accessory. Ports, speaker holes and antenna seams omitted. See research/samsung-tablet-rear-measurements.json for measurements and family transfer limits.",
+      "finishes": "Official names (regional availability varies); source-icon sampled/representative RGB, not measured material samples."
+    },
+    "sources": [
+      "https://news.samsung.com/uk/samsung-announces-new-mystic-navy-colour-for-galaxy-tab-s7-and-tab-s7-further-expanding-the-samsung-galaxy-ecosystem",
+      "https://www.samsung.com/es/business/tablets/galaxy-tab-s/galaxy-tab-s7-4g-t875-sm-t875nzkaeub/",
+      "[local reference path omitted]",
+      "[local reference path omitted]",
+      "https://www.samsungmobilepress.com/media-assets/galaxy_tabs7",
+      "https://api.samsungmobilepress.com/api/v1/file/4DDE0924C8B88E5B3157A3DFFCBE2AF6A96F2444154E56CF135C7BA752B31F459D37A305B17E6BDE7A6599FC97FC79326F710ABA0A190E2C6D59F86062135DBA609160BD0A5B3FD24D7863E7A735E51A55E20E567A716030FFFBC4CE10B472B208CF088894FF3B22C08A3DA8EE84AE3076E5B132E27D912FBC8BC7F817086A1FE2E4DF68CAD0E90F936C8F1071C77E82684202720B0645670A14C2AA81D21E2E"
+    ]
+  }
+}

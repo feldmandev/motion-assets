@@ -1,0 +1,341 @@
+{
+  "id": "galaxy-tab-s7-fe",
+  "name": "Galaxy Tab S7 FE",
+  "state": "default",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        1600,
+        2560
+      ],
+      "size_mm": [
+        166.94966610100167,
+        267.11946576160267
+      ],
+      "center_mm": [
+        0.0,
+        0.0,
+        3.184999942779541
+      ],
+      "corner_radius_mm": 3.184732880801329,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0,
+      "frame_bounds_mm": [
+        9.025166949499166,
+        8.840267119198671,
+        166.94966610100167,
+        267.11946576160267
+      ],
+      "frame_screen_px": null,
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "width": 185,
+        "height": 284.8,
+        "depth": 6.3,
+        "corner_radius": 12.025,
+        "edge_roll": 0.32,
+        "front_rail_mm": 0.45,
+        "corner_radii_mm": [
+          12.025,
+          12.025,
+          12.025,
+          12.025
+        ]
+      },
+      "cutouts": [
+        {
+          "center_mm": [
+            87.98741652525041,
+            0
+          ],
+          "radius_mm": 1.3
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "articulation": null,
+  "panels": [],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/galaxy-tab-s7-fe-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "logo": "logo",
+    "black": "black",
+    "flash": "flash",
+    "strip": "strip",
+    "camera_ring": "camera_ring"
+  },
+  "finishes": [
+    {
+      "name": "Mystic Black",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.27450980392156865,
+            0.2980392156862745,
+            0.3333333333333333
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "rail": {
+          "rgb": [
+            0.27450980392156865,
+            0.2980392156862745,
+            0.3333333333333333
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "bar": {
+          "rgb": [
+            0.025,
+            0.028,
+            0.032
+          ],
+          "rough": 0.34
+        },
+        "logo": {
+          "rgb": [
+            0.45803921568627454,
+            0.492156862745098,
+            0.5433333333333332
+          ],
+          "metal": 0.3,
+          "rough": 0.45
+        },
+        "strip": {
+          "rgb": [
+            0.32519607843137255,
+            0.3517843137254902,
+            0.3916666666666666
+          ],
+          "metal": 0.5,
+          "rough": 0.5
+        },
+        "camera_ring": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.15
+          ],
+          "metal": 0.75,
+          "rough": 0.3
+        }
+      }
+    },
+    {
+      "name": "Mystic Silver",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.7647058823529411,
+            0.7764705882352941,
+            0.7803921568627451
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "rail": {
+          "rgb": [
+            0.7647058823529411,
+            0.7764705882352941,
+            0.7803921568627451
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "bar": {
+          "rgb": [
+            0.025,
+            0.028,
+            0.032
+          ],
+          "rough": 0.34
+        },
+        "logo": {
+          "rgb": [
+            0.3976470588235294,
+            0.40376470588235297,
+            0.4058039215686275
+          ],
+          "metal": 0.3,
+          "rough": 0.45
+        },
+        "strip": {
+          "rgb": [
+            0.8791176470588234,
+            0.8924117647058823,
+            0.896843137254902
+          ],
+          "metal": 0.5,
+          "rough": 0.5
+        },
+        "camera_ring": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.15
+          ],
+          "metal": 0.75,
+          "rough": 0.3
+        }
+      }
+    },
+    {
+      "name": "Mystic Pink",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.8352941176470589,
+            0.7176470588235294,
+            0.7137254901960784
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "rail": {
+          "rgb": [
+            0.8352941176470589,
+            0.7176470588235294,
+            0.7137254901960784
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "bar": {
+          "rgb": [
+            0.025,
+            0.028,
+            0.032
+          ],
+          "rough": 0.34
+        },
+        "logo": {
+          "rgb": [
+            0.4343529411764706,
+            0.37317647058823533,
+            0.3711372549019608
+          ],
+          "metal": 0.3,
+          "rough": 0.45
+        },
+        "strip": {
+          "rgb": [
+            0.9588823529411764,
+            0.8259411764705882,
+            0.8215098039215686
+          ],
+          "metal": 0.5,
+          "rough": 0.5
+        },
+        "camera_ring": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.15
+          ],
+          "metal": 0.75,
+          "rough": 0.3
+        }
+      }
+    },
+    {
+      "name": "Mystic Green",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.6588235294117647,
+            0.7490196078431373,
+            0.6901960784313725
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "rail": {
+          "rgb": [
+            0.6588235294117647,
+            0.7490196078431373,
+            0.6901960784313725
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "bar": {
+          "rgb": [
+            0.025,
+            0.028,
+            0.032
+          ],
+          "rough": 0.34
+        },
+        "logo": {
+          "rgb": [
+            0.34258823529411764,
+            0.3894901960784314,
+            0.35890196078431374
+          ],
+          "metal": 0.3,
+          "rough": 0.45
+        },
+        "strip": {
+          "rgb": [
+            0.759470588235294,
+            0.8613921568627451,
+            0.7949215686274509
+          ],
+          "metal": 0.5,
+          "rough": 0.5
+        },
+        "camera_ring": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.15
+          ],
+          "metal": 0.75,
+          "rough": 0.3
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/galaxy-tab-s7-fe.701fa4bdb7ab.glb.gz",
+  "sha256": "701fa4bdb7ab4d0b77f3bb6479d5773d2e37176e69d3d9d5fd680a8c6faa21d9",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/galaxy-tab-s7-fe.json",
+    "accuracy": {
+      "body_dimensions": "Samsung published metric dimensions",
+      "screen_resolution": "Samsung native panel resolution; exact aspect ratio",
+      "screen_geometry": "Published rectangular diagonal and exact native aspect; inferred bezels. Concentric corner radii, selfie aperture/notch dimensions are photo estimates.",
+      "camera_geometry": "Official rear-render normalized measurements; model-family housing/charging insert, separate glass windows, rims, apertures and flash. Protrusion and internal optics estimated, not OEM CAD.",
+      "details": "Rear wordmark and built-in charging surface where present; no S Pen accessory. Ports, speaker holes and antenna seams omitted. See research/samsung-tablet-rear-measurements.json for measurements and family transfer limits.",
+      "finishes": "Official names (regional availability varies); source-icon sampled/representative RGB, not measured material samples."
+    },
+    "sources": [
+      "https://news.samsung.com/ca/power-your-productivity-and-play-with-the-samsung-galaxy-tab-s7-fe",
+      "[local reference path omitted]",
+      "[local reference path omitted]",
+      "https://news.samsung.com/de/das-sind-die-neuen-tablets-samsung-prasentiert-galaxy-tab-s7-fe-und-galaxy-tab-a7-lite",
+      "https://img.global.news.samsung.com/de/wp-content/uploads/2021/06/Samsung_Galaxy_Tab_S7_FE_SM-T730N_Mystic_Black_180_RGB.jpg"
+    ]
+  }
+}

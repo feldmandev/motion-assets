@@ -1,0 +1,203 @@
+{
+  "id": "iphone-17-pro",
+  "name": "iPhone 17 Pro",
+  "state": "default",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        1206,
+        2622
+      ],
+      "size_mm": [
+        66.569176201373,
+        144.73
+      ],
+      "center_mm": [
+        0.0,
+        0.0,
+        4.409999847412109
+      ],
+      "corner_radius_mm": 9.5,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0,
+      "frame_bounds_mm": [
+        2.6654118993135043,
+        2.635000000000005,
+        66.569176201373,
+        144.73
+      ],
+      "frame_screen_px": null,
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "width": 71.9,
+        "height": 150.0,
+        "depth": 8.75,
+        "corner_radius": 12.0,
+        "edge_roll_mm": [
+          0.7,
+          0.58
+        ],
+        "front_curve": 0
+      },
+      "cutouts": [
+        {
+          "size_mm": [
+            20.76,
+            6.07
+          ],
+          "radius_mm": 3.035,
+          "center_mm": [
+            0,
+            67.01
+          ]
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "articulation": null,
+  "panels": [],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/iphone-17-pro-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "logo": "logo",
+    "black": "black",
+    "flash": "flash"
+  },
+  "finishes": [
+    {
+      "name": "Silver",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.8431372549019608,
+            0.8431372549019608,
+            0.8352941176470589
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.8431372549019608,
+            0.8431372549019608,
+            0.8352941176470589
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.8431372549019608,
+            0.8431372549019608,
+            0.8352941176470589
+          ]
+        },
+        "logo": {
+          "rgb": [
+            0.5227450980392156,
+            0.5227450980392156,
+            0.5178823529411765
+          ]
+        }
+      }
+    },
+    {
+      "name": "Cosmic Orange",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.792156862745098,
+            0.4588235294117647,
+            0.29411764705882354
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.792156862745098,
+            0.4588235294117647,
+            0.29411764705882354
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.792156862745098,
+            0.4588235294117647,
+            0.29411764705882354
+          ]
+        },
+        "logo": {
+          "rgb": [
+            0.49113725490196075,
+            0.2844705882352941,
+            0.1823529411764706
+          ]
+        }
+      }
+    },
+    {
+      "name": "Deep Blue",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.20392156862745098,
+            0.24705882352941178,
+            0.3254901960784314
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.20392156862745098,
+            0.24705882352941178,
+            0.3254901960784314
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.20392156862745098,
+            0.24705882352941178,
+            0.3254901960784314
+          ]
+        },
+        "logo": {
+          "rgb": [
+            0.3468235294117647,
+            0.37788235294117645,
+            0.4343529411764706
+          ]
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/iphone-17-pro.fc66913af82c.glb.gz",
+  "sha256": "fc66913af82c2c8efb5248fc3caf999dc66999f374071274f25d8a76c6e11420",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/iphone-17-pro.json",
+    "accuracy": {
+      "body_dimensions": "Apple published metric dimensions",
+      "screen_geometry": "visual estimates; compound corner curves documented in Apple dimensional PDFs are not constant circular radii",
+      "camera_geometry": "Apple drawing lens coordinates and depths; island outline bounds/radius are visual approximations",
+      "controls": "Apple dimensional-drawing control centerlines across the generated slab catalog",
+      "finishes": "finish names official; RGB visual approximations, not calibrated manufacturer paint values"
+    },
+    "sources": [
+      "https://support.apple.com/en-us/125090",
+      "https://developer.apple.com/download/files/accessories/dimensional-drawings/iphone-17-pro.pdf"
+    ]
+  }
+}

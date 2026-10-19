@@ -1,0 +1,285 @@
+{
+  "id": "pixel-11-pro-fold-folded",
+  "name": "Pixel 11 Pro Fold · folded",
+  "state": "folded",
+  "screens": [
+    {
+      "node": "Cover screen",
+      "nodes": [
+        "Cover screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        1080,
+        2342
+      ],
+      "size_mm": [
+        69.72502134927412,
+        151.2
+      ],
+      "center_mm": [
+        0.38158653957116745,
+        -0.031102204408817634,
+        5.085
+      ],
+      "corner_radius_mm": 8.296587580546982,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0,
+      "frame_bounds_mm": [
+        3.519075864934109,
+        2.0311022044088247,
+        69.72502134927412,
+        151.2
+      ],
+      "frame_screen_px": [
+        55,
+        31,
+        1080,
+        2342
+      ],
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "height": 155.2,
+        "width": 76.0,
+        "depth": 10.1,
+        "corner_radius": 13.5,
+        "edge_roll": 0.45,
+        "front_curve": 0,
+        "edge_roll_mm": [
+          0.75,
+          0.75
+        ],
+        "corner_radii_mm": [
+          13.5,
+          13.5,
+          1.6,
+          1.6
+        ]
+      },
+      "cutouts": [
+        {
+          "center_mm": [
+            0,
+            69.86328514923413
+          ],
+          "radius_mm": 1.5
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "articulation": null,
+  "panels": [
+    {
+      "name": "Cover half",
+      "body_mm": {
+        "height": 155.2,
+        "width": 75.4,
+        "depth": 5.0,
+        "corner_radius": 13.5,
+        "edge_roll": 0.45,
+        "front_curve": 0,
+        "edge_roll_mm": [
+          0.75,
+          0.75
+        ],
+        "corner_radii_mm": [
+          13.5,
+          13.5,
+          1.6,
+          1.6
+        ]
+      },
+      "center_mm": [
+        0.3,
+        0,
+        2.55
+      ],
+      "buttons": false
+    },
+    {
+      "name": "Camera half",
+      "body_mm": {
+        "height": 155.2,
+        "width": 75.4,
+        "depth": 5.0,
+        "corner_radius": 13.5,
+        "edge_roll": 0.45,
+        "front_curve": 0,
+        "edge_roll_mm": [
+          0.75,
+          0.75
+        ],
+        "corner_radii_mm": [
+          13.5,
+          13.5,
+          1.6,
+          1.6
+        ]
+      },
+      "center_mm": [
+        0.3,
+        0,
+        -2.55
+      ],
+      "buttons": true,
+      "camera": {
+        "center_mm": [
+          12.270000000000003,
+          54.724999999999994
+        ],
+        "size_mm": [
+          43.08,
+          37.97,
+          9.61
+        ],
+        "bump_mm": 2.5,
+        "roll_mm": 0.45,
+        "windows": [
+          [
+            12.270000000000003,
+            63.7178947368421,
+            38.772,
+            15.987368421052631,
+            7.9936842105263155
+          ],
+          [
+            12.270000000000003,
+            45.73210526315789,
+            38.772,
+            15.987368421052631,
+            7.9936842105263155
+          ]
+        ],
+        "lenses": [
+          {
+            "kind": "ultrawide",
+            "center_mm": [
+              1.5000000000000036,
+              63.7178947368421
+            ],
+            "radius_mm": 3.0,
+            "window": 0
+          },
+          {
+            "kind": "main",
+            "center_mm": [
+              21.963,
+              45.73210526315789
+            ],
+            "radius_mm": 4.2,
+            "window": 1
+          },
+          {
+            "kind": "telephoto",
+            "center_mm": [
+              5.808000000000003,
+              45.73210526315789
+            ],
+            "radius_mm": 3.1,
+            "window": 1
+          }
+        ],
+        "flash": [
+          [
+            23.040000000000003,
+            63.7178947368421,
+            3.1
+          ]
+        ]
+      }
+    }
+  ],
+  "frames": [
+    {
+      "name": "Cover screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/pixel-11-pro-fold-folded-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "black": "black",
+    "flash": "flash"
+  },
+  "finishes": [
+    {
+      "name": "Obsidian",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.2,
+            0.22745,
+            0.23922
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.33,
+            0.34784,
+            0.35549
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.2,
+            0.22745,
+            0.23922
+          ]
+        }
+      }
+    },
+    {
+      "name": "Olive",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.55294,
+            0.58039,
+            0.4902
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.55941,
+            0.57725,
+            0.51863
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.55294,
+            0.58039,
+            0.4902
+          ]
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/pixel-11-pro-fold-folded.59499e71074c.glb.gz",
+  "sha256": "59499e71074cab363cd970456a99104c0b8d6f1f0efdb8f901ec8f1bc5c0d5cc",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/pixel-11-pro-fold-folded.json",
+    "accuracy": {
+      "body_dimensions": "Google published metric dimensions",
+      "screen_resolution": "Google published panel resolution",
+      "screen_geometry": "Photo-informed fit box with exact native pixel aspect; bezels, radii, cutouts and edge curves estimated",
+      "camera_geometry": "Housing width, height and top gap scaled from official rear artwork; pixel bounds and uncertainty in camera_measurement. Optical internals remain illustrative. Not measurable from this rear view; model depth remains a visual estimate.",
+      "finishes": "Approximate sRGB colors and roughness, not calibrated measured materials",
+      "hinge": "Static closed companion profile retained for dimensional/reference checks."
+    },
+    "sources": [
+      "https://support.google.com/pixelphone/answer/7158570?hl=en",
+      "https://blog.google/products-and-platforms/devices/pixel/pixel-11-pro-fold/",
+      "https://store.google.com/de/product/pixel_11_pro_fold_specs?hl=de"
+    ]
+  }
+}

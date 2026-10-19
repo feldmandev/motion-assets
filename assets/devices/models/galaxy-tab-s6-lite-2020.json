@@ -1,0 +1,284 @@
+{
+  "id": "galaxy-tab-s6-lite-2020",
+  "name": "Galaxy Tab S6 Lite (2020)",
+  "state": "default",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        1200,
+        2000
+      ],
+      "size_mm": [
+        135.36383325298223,
+        225.6063887549704
+      ],
+      "center_mm": [
+        0.0,
+        0.0,
+        3.5349996089935303
+      ],
+      "corner_radius_mm": 0.5826943774851987,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0,
+      "frame_bounds_mm": [
+        9.46808337350889,
+        9.446805622514802,
+        135.36383325298223,
+        225.6063887549704
+      ],
+      "frame_screen_px": null,
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "width": 154.3,
+        "height": 244.5,
+        "depth": 7,
+        "corner_radius": 10.0295,
+        "edge_roll": 0.32,
+        "front_rail_mm": 0.45,
+        "corner_radii_mm": [
+          10.0295,
+          10.0295,
+          10.0295,
+          10.0295
+        ]
+      },
+      "cutouts": [
+        {
+          "center_mm": [
+            0,
+            117.5265971887426
+          ],
+          "radius_mm": 1.25
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "articulation": null,
+  "panels": [],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/galaxy-tab-s6-lite-2020-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "logo": "logo",
+    "black": "black",
+    "flash": "flash",
+    "strip": "strip",
+    "camera_ring": "camera_ring"
+  },
+  "finishes": [
+    {
+      "name": "Oxford Gray",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.40784313725490196,
+            0.4470588235294118,
+            0.5098039215686274
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "rail": {
+          "rgb": [
+            0.40784313725490196,
+            0.4470588235294118,
+            0.5098039215686274
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "bar": {
+          "rgb": [
+            0.025,
+            0.028,
+            0.032
+          ],
+          "rough": 0.34
+        },
+        "logo": {
+          "rgb": [
+            0.6513725490196078,
+            0.7082352941176471,
+            0.7992156862745097
+          ],
+          "metal": 0.3,
+          "rough": 0.45
+        },
+        "strip": {
+          "rgb": [
+            0.47586274509803916,
+            0.5201764705882352,
+            0.5910784313725489
+          ],
+          "metal": 0.5,
+          "rough": 0.5
+        },
+        "camera_ring": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.15
+          ],
+          "metal": 0.75,
+          "rough": 0.3
+        }
+      }
+    },
+    {
+      "name": "Angora Blue",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.6784313725490196,
+            0.7686274509803922,
+            0.8431372549019608
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "rail": {
+          "rgb": [
+            0.6784313725490196,
+            0.7686274509803922,
+            0.8431372549019608
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "bar": {
+          "rgb": [
+            0.025,
+            0.028,
+            0.032
+          ],
+          "rough": 0.34
+        },
+        "logo": {
+          "rgb": [
+            0.35278431372549024,
+            0.399686274509804,
+            0.43843137254901965
+          ],
+          "metal": 0.3,
+          "rough": 0.45
+        },
+        "strip": {
+          "rgb": [
+            0.7816274509803921,
+            0.8835490196078432,
+            0.9677450980392156
+          ],
+          "metal": 0.5,
+          "rough": 0.5
+        },
+        "camera_ring": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.15
+          ],
+          "metal": 0.75,
+          "rough": 0.3
+        }
+      }
+    },
+    {
+      "name": "Chiffon Pink",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.8509803921568627,
+            0.7137254901960784,
+            0.7058823529411765
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "rail": {
+          "rgb": [
+            0.8509803921568627,
+            0.7137254901960784,
+            0.7058823529411765
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "bar": {
+          "rgb": [
+            0.025,
+            0.028,
+            0.032
+          ],
+          "rough": 0.34
+        },
+        "logo": {
+          "rgb": [
+            0.44250980392156863,
+            0.3711372549019608,
+            0.3670588235294118
+          ],
+          "metal": 0.3,
+          "rough": 0.45
+        },
+        "strip": {
+          "rgb": [
+            0.9766078431372548,
+            0.8215098039215686,
+            0.8126470588235294
+          ],
+          "metal": 0.5,
+          "rough": 0.5
+        },
+        "camera_ring": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.15
+          ],
+          "metal": 0.75,
+          "rough": 0.3
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/galaxy-tab-s6-lite-2020.c43f29442730.glb.gz",
+  "sha256": "c43f294427309dd6be2094e9ffcf939c11ba386d46bb8ce1af0a6ebcd1fdf0f5",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/galaxy-tab-s6-lite-2020.json",
+    "accuracy": {
+      "body_dimensions": "Samsung published metric dimensions",
+      "screen_resolution": "Samsung native panel resolution; exact aspect ratio",
+      "screen_geometry": "Published rectangular diagonal and exact native aspect; inferred bezels. Concentric corner radii, selfie aperture/notch dimensions are photo estimates.",
+      "camera_geometry": "Official rear-render normalized measurements; model-family housing/charging insert, separate glass windows, rims, apertures and flash. Protrusion and internal optics estimated, not OEM CAD.",
+      "details": "Rear wordmark and built-in charging surface where present; no S Pen accessory. Ports, speaker holes and antenna seams omitted. See research/samsung-tablet-rear-measurements.json for measurements and family transfer limits.",
+      "finishes": "Official names (regional availability varies); source-icon sampled/representative RGB, not measured material samples."
+    },
+    "sources": [
+      "https://news.samsung.com/tw/galaxy-tab-s6-lite",
+      "https://www.samsung.com/al/business/tablets/galaxy-tab-s/galaxy-tab-s6-lite-10-4-inch-gray-64gb-wi-fi-sm-p610nzaasee/",
+      "[local reference path omitted]",
+      "[local reference path omitted]",
+      "https://www.samsung.com/al/tablets/galaxy-tab-s/galaxy-tab-s6-lite-pink-64gb-sm-p625nziaeuc/",
+      "https://images.samsung.com/is/image/samsung/p6pim/al/sm-p625nziaeuc/gallery/al-galaxy-tab-s6-lite-sm-p625-sm-p625nziaeuc-541034141?$650_519_PNG$"
+    ]
+  }
+}

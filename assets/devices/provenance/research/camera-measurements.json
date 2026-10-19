@@ -1,0 +1,340 @@
+{
+  "pixel-6-pro": {
+    "reference": "research/images/pixel_camera_bar_google.webp",
+    "body_bounds_px": [
+      168,
+      159,
+      414,
+      589
+    ],
+    "bar_bounds_px": [
+      168,
+      216,
+      414,
+      285
+    ],
+    "scale_mm_per_px": 0.30853658536585366,
+    "width_mm": 75.9,
+    "height_mm": 21.29,
+    "top_gap_mm": 17.59,
+    "rear_measurement_uncertainty_mm": 0.8,
+    "protrusion_mm": null,
+    "depth_status": "Not measurable from this rear view; model depth remains a visual estimate."
+  },
+  "pixel-7-pro": {
+    "reference": "research/images/pixel_camera_bar_google.webp",
+    "body_bounds_px": [
+      473,
+      165,
+      724,
+      589
+    ],
+    "bar_bounds_px": [
+      474,
+      216,
+      723,
+      287
+    ],
+    "scale_mm_per_px": 0.30517928286852586,
+    "width_mm": 75.99,
+    "height_mm": 21.67,
+    "top_gap_mm": 15.56,
+    "rear_measurement_uncertainty_mm": 0.8,
+    "protrusion_mm": null,
+    "depth_status": "Not measurable from this rear view; model depth remains a visual estimate."
+  },
+  "pixel-7a": {
+    "reference": "research/images/pixel7a_colors_google.webp",
+    "body_bounds_px": [
+      739,
+      79,
+      1028,
+      689
+    ],
+    "bar_bounds_px": [
+      739,
+      132,
+      1028,
+      201
+    ],
+    "scale_mm_per_px": 0.2522491349480969,
+    "width_mm": 72.9,
+    "height_mm": 17.41,
+    "top_gap_mm": 13.37,
+    "rear_measurement_uncertainty_mm": 0.6,
+    "protrusion_mm": null,
+    "depth_status": "Not measurable from this rear view; model depth remains a visual estimate."
+  },
+  "pixel-9a": {
+    "reference": "research/images/pixel-9a-rear.jpg",
+    "body_bounds_px": [
+      233,
+      91,
+      1403,
+      1200
+    ],
+    "bar_bounds_px": [
+      349,
+      329,
+      849,
+      614
+    ],
+    "scale_mm_per_px": 0.06264957264957265,
+    "width_mm": 31.32,
+    "height_mm": 17.86,
+    "top_gap_mm": 14.91,
+    "rear_measurement_uncertainty_mm": 0.4,
+    "protrusion_mm": 0.5,
+    "depth_status": "Side profile: 81 px body thickness represents 8.9 mm; approximately 5 px camera protrusion.",
+    "protrusion_uncertainty_mm": 0.2,
+    "depth_reference": "research/images/pixel-9a-back-side.jpg",
+    "body_depth_bounds_px": [
+      54,
+      135
+    ],
+    "bar_depth_bounds_px": [
+      135,
+      140
+    ]
+  },
+  "pixel-10a": {
+    "reference": "research/images/pixel-10a-isai-blue-camera.webp",
+    "body_bounds_px": [
+      595,
+      136,
+      1325,
+      1080
+    ],
+    "bar_bounds_px": [
+      666,
+      249,
+      973,
+      447
+    ],
+    "scale_mm_per_px": 0.1,
+    "width_mm": 30.7,
+    "height_mm": 19.8,
+    "top_gap_mm": 11.3,
+    "rear_measurement_uncertainty_mm": 0.5,
+    "protrusion_mm": null,
+    "depth_status": "Not measurable from this rear view; model depth remains a visual estimate."
+  },
+  "pixel-9-pro": {
+    "reference": "research/images/pixel-9-pro-rear.jpg",
+    "body_bounds_px": [
+      79,
+      93,
+      582,
+      920
+    ],
+    "bar_bounds_px": [
+      102,
+      188,
+      560,
+      340
+    ],
+    "scale_mm_per_px": 0.14314115308151093,
+    "width_mm": 65.56,
+    "height_mm": 21.76,
+    "top_gap_mm": 13.6,
+    "rear_measurement_uncertainty_mm": 0.6,
+    "protrusion_mm": null,
+    "depth_status": "Not measurable from this rear view; model depth remains a visual estimate."
+  },
+  "pixel-10": {
+    "reference": "research/images/pixel-10-rear.jpg",
+    "body_bounds_px": [
+      362,
+      78,
+      1244,
+      1200
+    ],
+    "bar_bounds_px": [
+      405,
+      249,
+      1202,
+      529
+    ],
+    "scale_mm_per_px": 0.08163265306122448,
+    "width_mm": 65.06,
+    "height_mm": 22.86,
+    "top_gap_mm": 13.96,
+    "rear_measurement_uncertainty_mm": 0.5,
+    "protrusion_mm": null,
+    "depth_status": "Not measurable from this rear view; model depth remains a visual estimate."
+  },
+  "pixel-fold": {
+    "reference": "research/images/pixel-fold-front-back-open.webp",
+    "body_bounds_px": [
+      64,
+      92,
+      318,
+      542
+    ],
+    "bar_bounds_px": [
+      81,
+      130,
+      291,
+      195
+    ],
+    "scale_mm_per_px": 0.31299212598425197,
+    "width_mm": 65.73,
+    "height_mm": 20.34,
+    "top_gap_mm": 11.89,
+    "rear_measurement_uncertainty_mm": 1.0,
+    "protrusion_mm": null,
+    "depth_status": "Not measurable from this rear view; model depth remains a visual estimate."
+  },
+  "pixel-10-pro-fold": {
+    "reference": "research/images/pixel-10-pro-fold-back.webp",
+    "body_bounds_px": [
+      398,
+      200,
+      797,
+      1017
+    ],
+    "bar_bounds_px": [
+      421,
+      219,
+      678,
+      408
+    ],
+    "scale_mm_per_px": 0.19122807017543858,
+    "width_mm": 49.15,
+    "height_mm": 36.14,
+    "top_gap_mm": 3.63,
+    "rear_measurement_uncertainty_mm": 0.8,
+    "protrusion_mm": null,
+    "depth_status": "Not measurable from this rear view; model depth remains a visual estimate."
+  },
+  "pixel-11-pro-fold": {
+    "reference": "research/images/pixel-11-pro-fold-obsidian-open-back.webp",
+    "body_bounds_px": [
+      290,
+      20,
+      599,
+      662
+    ],
+    "bar_bounds_px": [
+      304,
+      36,
+      481,
+      192
+    ],
+    "scale_mm_per_px": 0.24336569579288025,
+    "width_mm": 43.08,
+    "height_mm": 37.97,
+    "top_gap_mm": 3.89,
+    "rear_measurement_uncertainty_mm": 1.0,
+    "protrusion_mm": null,
+    "depth_status": "Not measurable from this rear view; model depth remains a visual estimate."
+  },
+  "pixel-9": {
+    "reference": "research/images/pixel-9-comparison-rear.webp",
+    "body_bounds_px": [
+      535,
+      38,
+      785,
+      568
+    ],
+    "bar_bounds_px": [
+      548,
+      82,
+      775,
+      159
+    ],
+    "scale_mm_per_px": 0.288,
+    "width_mm": 65.38,
+    "height_mm": 22.18,
+    "top_gap_mm": 12.67,
+    "rear_measurement_uncertainty_mm": 0.9,
+    "protrusion_mm": null,
+    "depth_status": "Not measurable from this rear view; model depth remains a visual estimate."
+  },
+  "pixel-9-pro-xl": {
+    "reference": "research/images/pixel-9-pro-xl-orthographic.webp",
+    "body_bounds_px": [
+      290,
+      175,
+      1628,
+      1080
+    ],
+    "bar_bounds_px": [
+      352,
+      431,
+      1565,
+      835
+    ],
+    "scale_mm_per_px": 0.05724962630792227,
+    "width_mm": 69.44,
+    "height_mm": 23.13,
+    "top_gap_mm": 14.66,
+    "rear_measurement_uncertainty_mm": 0.6,
+    "protrusion_mm": null,
+    "depth_status": "Not measurable from this rear view; model depth remains a visual estimate."
+  },
+  "pixel-10-pro": {
+    "reference": "research/images/p10pro-pair.jpg",
+    "body_bounds_px": [
+      260,
+      316,
+      648,
+      1125
+    ],
+    "bar_bounds_px": [
+      280,
+      393,
+      628,
+      511
+    ],
+    "scale_mm_per_px": 0.18556701030927836,
+    "width_mm": 64.58,
+    "height_mm": 21.9,
+    "top_gap_mm": 14.29,
+    "rear_measurement_uncertainty_mm": 2,
+    "protrusion_mm": 3.72,
+    "depth_status": "Official side image scaled by published body thickness; approximate raster boundaries, +/-0.5 mm. Rear handheld image has lower confidence than orthographic artwork.",
+    "protrusion_uncertainty_mm": 0.5,
+    "depth_reference": "research/images/p10pro-side.jpg",
+    "body_depth_bounds_px": [
+      241,
+      278
+    ],
+    "bar_depth_bounds_px": [
+      278,
+      294
+    ]
+  },
+  "pixel-10-pro-xl": {
+    "reference": "research/images/p10pro-pair.jpg",
+    "body_bounds_px": [
+      932,
+      260,
+      1343,
+      1125
+    ],
+    "bar_bounds_px": [
+      953,
+      342,
+      1322,
+      472
+    ],
+    "scale_mm_per_px": 0.18637469586374694,
+    "width_mm": 68.77,
+    "height_mm": 24.23,
+    "top_gap_mm": 15.28,
+    "rear_measurement_uncertainty_mm": 2,
+    "protrusion_mm": 3.61,
+    "depth_status": "Official side image scaled by published body thickness; approximate raster boundaries, +/-0.5 mm. Rear handheld image has lower confidence than orthographic artwork.",
+    "protrusion_uncertainty_mm": 0.5,
+    "depth_reference": "research/images/p10pro-side.jpg",
+    "body_depth_bounds_px": [
+      362,
+      402
+    ],
+    "bar_depth_bounds_px": [
+      402,
+      419
+    ]
+  }
+}

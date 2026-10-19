@@ -1,0 +1,228 @@
+{
+  "asOf": "2026-10-11",
+  "units": {
+    "bodyDimensions": "mm [height, width, depth]",
+    "displayResolution": "native pixels [width, height]"
+  },
+  "measurementPolicy": "Body dimensions and display resolutions below are published by Google. Google does not publish camera-bar dimensions, camera-center coordinates, corner radii, or edge bevel profiles; camera descriptions below are observations from inspected official Google Store images, not CAD measurements.",
+  "officialSpecsUrl": "https://support.google.com/pixelphone/answer/7158570?hl=en",
+  "devices": [
+    {
+      "model": "Pixel 9",
+      "bodyMm": [
+        152.8,
+        72.0,
+        8.5
+      ],
+      "displayResolutionPx": [
+        1080,
+        2424
+      ],
+      "colors": [
+        "Obsidian",
+        "Porcelain",
+        "Wintergreen",
+        "Peony"
+      ],
+      "googleStoreProductUrl": "https://store.google.com/product/pixel_9?hl=en-US",
+      "cameraVisualNotes": "Google product render reference: https://store.google.com/product/pixel_9?hl=en-US. Dual rear cameras; camera-bar silhouette/layout and body-relative centers are visual-only estimates. Rounded corners and flat-side profile are visible in product views; radii/bevels unpublished."
+    },
+    {
+      "model": "Pixel 9 Pro",
+      "bodyMm": [
+        152.8,
+        72.0,
+        8.5
+      ],
+      "displayResolutionPx": [
+        1280,
+        2856
+      ],
+      "colors": [
+        "Obsidian",
+        "Porcelain",
+        "Hazel",
+        "Rose Quartz"
+      ],
+      "googleStoreProductUrl": "https://store.google.com/product/pixel_9_pro?hl=en-US",
+      "inspectedImageFiles": [
+        "images/pixel-9-pro-rear.jpg"
+      ],
+      "cameraVisualNotes": "Inspected official rear render. Raised elongated rounded visor is inset from both side edges; continuous black-glass window is nested inside. Within the black area, visible order left-to-right is two round apertures, small rectangular window, tiny dot; flash and another sensor sit on exposed visor at right. Rounded corners and flat-looking rails are visible, but radii/bevel dimensions are estimates."
+    },
+    {
+      "model": "Pixel 9 Pro XL",
+      "bodyMm": [
+        162.8,
+        76.6,
+        8.5
+      ],
+      "displayResolutionPx": [
+        1344,
+        2992
+      ],
+      "colors": [
+        "Obsidian",
+        "Porcelain",
+        "Hazel",
+        "Rose Quartz"
+      ],
+      "googleStoreProductUrl": "https://store.google.com/product/pixel_9_pro_xl?hl=en-US",
+      "cameraVisualNotes": "Pro-family layout: inset rounded visor and nested connected black-glass camera window, with triple-camera arrangement. Trace exact Pro XL positions from its own straight-on image if needed; do not assume pixel coordinates are identical to 9 Pro. Body corners/flat rail treatment are visible qualitatively only."
+    },
+    {
+      "model": "Pixel 9a",
+      "bodyMm": [
+        154.7,
+        73.3,
+        8.9
+      ],
+      "displayResolutionPx": [
+        1080,
+        2424
+      ],
+      "colors": [
+        "Obsidian",
+        "Porcelain",
+        "Iris",
+        "Peony"
+      ],
+      "googleStoreProductUrl": "https://store.google.com/product/pixel_9a?hl=en-US",
+      "inspectedImageFiles": [
+        "images/pixel-9a-rear.jpg",
+        "images/pixel-9a-back-side.jpg"
+      ],
+      "cameraVisualNotes": "Inspected straight-on and side/back official renders. Compact raised oblong capsule sits high and horizontally centered; two circular lens windows share continuous black glass, with a separate circular flash to the right on the body-colored back. Side view makes the protrusion apparent. Rounded corners and flat side rail are visible; bump dimensions, radii and edge treatment are image estimates."
+    },
+    {
+      "model": "Pixel 10",
+      "bodyMm": [
+        152.8,
+        72.0,
+        8.6
+      ],
+      "displayResolutionPx": [
+        1080,
+        2424
+      ],
+      "colors": [
+        "Indigo",
+        "Frost",
+        "Lemongrass",
+        "Obsidian"
+      ],
+      "googleStoreProductUrl": "https://store.google.com/product/pixel_10?hl=en-US",
+      "inspectedImageFiles": [
+        "images/pixel-10-rear.jpg",
+        "images/pixel-10-rear-side-angles.jpg"
+      ],
+      "cameraVisualNotes": "Inspected official rear close-up and front/back/side render. Broad horizontal rounded assembly sits high; its body-colored plate ends remain inset from the phone sides. The continuous black-glass window contains left-to-right: small round opening, tiny dot, larger round opening, and tall rounded-rectangular opening; flash is separate in the plate at right. Compared with Pro, base 10 has a longer plate relative to body. Rounded corners and flat-looking rails are visual only."
+    },
+    {
+      "model": "Pixel 10 Pro",
+      "bodyMm": [
+        152.8,
+        72.0,
+        8.6
+      ],
+      "displayResolutionPx": [
+        1280,
+        2856
+      ],
+      "colors": [
+        "Moonstone",
+        "Jade",
+        "Porcelain",
+        "Obsidian"
+      ],
+      "googleStoreProductUrl": "https://store.google.com/product/pixel_10_pro?hl=en-US",
+      "inspectedImageFiles": [
+        "images/pixel-10-pro-comparison.jpg"
+      ],
+      "cameraVisualNotes": "Inspected official side-by-side hand-held comparison render. Pro camera assembly is a rounded pill floating/inset within the upper back, with clear body-colored margins at both side ends; it is not full-width. Continuous black window holds three distinct camera apertures, while flash and sensor sit on exposed plate at right. Compared with base 10, Pro bar is a shorter, more isolated pill. Edge/corner appearance is visual only; radii and bevels are unpublished."
+    },
+    {
+      "model": "Pixel 10 Pro XL",
+      "bodyMm": [
+        162.8,
+        76.6,
+        8.5
+      ],
+      "displayResolutionPx": [
+        1344,
+        2992
+      ],
+      "colors": [
+        "Moonstone",
+        "Jade",
+        "Porcelain",
+        "Obsidian"
+      ],
+      "googleStoreProductUrl": "https://store.google.com/product/pixel_10_pro_xl?hl=en-US",
+      "cameraVisualNotes": "Pro-family camera plate is an inset rounded pill, not full-width, with connected black-glass camera window, triple apertures and flash/sensor on exposed right portion. Trace XL positions from its own rear render. Official tech specs list depth as 8.5 mm (not 8.6 mm); height 162.8 and width 76.6 mm."
+    },
+    {
+      "model": "Pixel 10a",
+      "bodyMm": [
+        153.9,
+        73.0,
+        9.0
+      ],
+      "displayResolutionPx": [
+        1080,
+        2424
+      ],
+      "colors": [
+        "Lavender",
+        "Berry",
+        "Fog",
+        "Obsidian",
+        "Isai Blue"
+      ],
+      "googleStoreProductUrl": "https://store.google.com/product/pixel_10a?hl=en-US",
+      "inspectedImageFiles": [
+        "images/pixel-10a-rear-front.jpg",
+        "images/pixel-10a-back-closeup.jpg"
+      ],
+      "cameraVisualNotes": "Inspected official rear/front and close-up renders. Two round lens windows share one black capsule, nested in a very low-profile body-colored rounded shelf; flash is separate immediately to the right. Area blends into the back and protrudes much less than the Pixel 9a capsule in the side-by-side visual. Rounded corners and flat rails are visible; no exact radius or protrusion is published.",
+      "regionalColors": {
+        "Isai Blue": "Japan exclusive; https://store.google.com/jp/product/pixel_10a?hl=ja"
+      },
+      "regionalColorSources": [
+        "https://store.google.com/jp/magazine/google-pixel-10a-isai-blue?hl=ja"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Pixel phone hardware tech specs (all models)",
+      "url": "https://support.google.com/pixelphone/answer/7158570?hl=en"
+    },
+    {
+      "title": "Google Store Pixel 10a design article",
+      "url": "https://store.google.com/magazine/google-pixel-10a-design?hl=en-US"
+    },
+    {
+      "title": "Google Store Pixel 10a vs Pixel 9a",
+      "url": "https://store.google.com/magazine/pixel-10a-vs-9a?hl=en-US"
+    },
+    {
+      "title": "Google Store Pixel 10 series design story",
+      "url": "https://store.google.com/us/magazine/google-pixel-design-story?hl=en-US"
+    },
+    {
+      "title": "Google Store Pixel 9a product page (3D view and back/side render)",
+      "url": "https://store.google.com/product/pixel_9a?hl=en-US"
+    },
+    {
+      "title": "Google Store Pixel 10 product page",
+      "url": "https://store.google.com/product/pixel_10?hl=en-US"
+    },
+    {
+      "title": "Google Store Pixel 10a product page",
+      "url": "https://store.google.com/product/pixel_10a?hl=en-US"
+    }
+  ],
+  "visualEvidencePolicy": "Camera descriptions were checked against downloaded official Google Store renders in images/. They are visual observations, not CAD measurements; Google does not publish camera dimensions, centers, corner radii, or bevels.",
+  "visualModelingGuidance": "Keep body dimensions and display resolution at published values. Model camera outlines, relative placements, protrusions, corner curvature and rail edge treatment as visual approximations. Connected black camera glass is distinct from individual lens apertures. Pixel 10 base has a broad inset assembly; Pixel 10 Pro/Pro XL use a shorter floating inset pill, not a full-width bar. Pixel 10a camera blends into back with a low-profile shelf around connected dual-camera glass."
+}

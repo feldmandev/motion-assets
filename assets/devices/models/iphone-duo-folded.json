@@ -1,0 +1,338 @@
+{
+  "id": "iphone-duo-folded",
+  "name": "iPhone Duo · folded",
+  "state": "folded",
+  "screens": [
+    {
+      "node": "Cover screen",
+      "nodes": [
+        "Cover screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        1398,
+        2034
+      ],
+      "size_mm": [
+        77.19391304347826,
+        112.31217391304347
+      ],
+      "center_mm": [
+        1.0500001907348633,
+        0.0,
+        5.684999465942383
+      ],
+      "corner_radius_mm": 6.5,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0,
+      "frame_bounds_mm": [
+        4.503043478260864,
+        2.7439130434782655,
+        77.19391304347826,
+        112.31217391304347
+      ],
+      "frame_screen_px": null,
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "width": 84.1,
+        "height": 117.8,
+        "depth": 11.3,
+        "corner_radius": 9,
+        "edge_roll_mm": [
+          0.7,
+          0.58
+        ],
+        "front_curve": 0
+      },
+      "cutouts": [
+        {
+          "radius_mm": 3.0,
+          "center_mm": [
+            29.59695652173913,
+            45.15608695652173
+          ]
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "articulation": null,
+  "panels": [
+    {
+      "name": "Cover half",
+      "body_mm": {
+        "width": 82.0,
+        "height": 117.8,
+        "depth": 5.2,
+        "corner_radius": 9,
+        "edge_roll_mm": [
+          0.7,
+          0.58
+        ],
+        "front_curve": 0,
+        "corner_radii_mm": [
+          9,
+          9,
+          9,
+          9
+        ]
+      },
+      "center_mm": [
+        1.0499999999999972,
+        0,
+        3.0500000000000003
+      ],
+      "button_specs": [
+        {
+          "name": "Volume up",
+          "side": "left",
+          "center_y_mm": 24.0,
+          "length_mm": 10.0
+        },
+        {
+          "name": "Volume down",
+          "side": "left",
+          "center_y_mm": 11.5,
+          "length_mm": 10.0
+        }
+      ],
+      "rotation_deg": [
+        0,
+        180,
+        0
+      ]
+    },
+    {
+      "name": "Camera half",
+      "body_mm": {
+        "width": 82.0,
+        "height": 117.8,
+        "depth": 5.2,
+        "corner_radius": 9,
+        "edge_roll_mm": [
+          0.7,
+          0.58
+        ],
+        "front_curve": 0,
+        "corner_radii_mm": [
+          9,
+          9,
+          9,
+          9
+        ]
+      },
+      "center_mm": [
+        1.0499999999999972,
+        0,
+        -3.0500000000000003
+      ],
+      "button_specs": [
+        {
+          "name": "Side button | Touch ID",
+          "side": "right",
+          "center_y_mm": 22.0,
+          "length_mm": 15.0
+        },
+        {
+          "name": "Camera Control",
+          "side": "right",
+          "center_y_mm": -22.0,
+          "length_mm": 14.0
+        }
+      ],
+      "camera": {
+        "center_mm": [
+          8.700000000000003,
+          43.599999999999994
+        ],
+        "size_mm": [
+          56.8,
+          22.2,
+          11.1
+        ],
+        "bump_mm": 1.65,
+        "optical_bump_mm": 0.6000000000000001,
+        "lens_ring_mm": 0.65,
+        "roll_mm": 0.18,
+        "windows": [
+          [
+            26.900000000000002,
+            43.599999999999994,
+            13.7,
+            13.7,
+            6.85
+          ],
+          [
+            8.600000000000001,
+            43.599999999999994,
+            13.7,
+            13.7,
+            6.85
+          ]
+        ],
+        "lenses": [
+          {
+            "kind": "main",
+            "center_mm": [
+              26.900000000000002,
+              43.599999999999994
+            ],
+            "radius_mm": 5.48,
+            "window": 0
+          },
+          {
+            "kind": "ultrawide",
+            "center_mm": [
+              8.600000000000001,
+              43.599999999999994
+            ],
+            "radius_mm": 5.48,
+            "window": 1
+          }
+        ],
+        "flash": [
+          [
+            -7.899999999999999,
+            39.39999999999999,
+            1.8
+          ]
+        ],
+        "sensors": [
+          {
+            "center_mm": [
+              -8.199999999999996,
+              48.099999999999994
+            ],
+            "size_mm": [
+              3.2,
+              1.2
+            ],
+            "radius_mm": 0.6,
+            "kind": "microphone"
+          }
+        ],
+        "local_pupil": true,
+        "integrated_plateau": true
+      },
+      "rear_logo": {
+        "kind": "apple",
+        "center_mm": [
+          0,
+          0.0
+        ],
+        "width_mm": 11.5,
+        "height_mm": 14.1,
+        "material": "logo"
+      }
+    }
+  ],
+  "frames": [
+    {
+      "name": "Cover screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/iphone-duo-folded-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "logo": "logo",
+    "black": "black",
+    "flash": "flash"
+  },
+  "finishes": [
+    {
+      "name": "Night Sky",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.18823529411764706,
+            0.20392156862745098,
+            0.25882352941176473
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.18823529411764706,
+            0.20392156862745098,
+            0.25882352941176473
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.18823529411764706,
+            0.20392156862745098,
+            0.25882352941176473
+          ]
+        },
+        "logo": {
+          "rgb": [
+            0.33552941176470585,
+            0.3468235294117647,
+            0.3863529411764706
+          ]
+        }
+      }
+    },
+    {
+      "name": "Star White",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.9058823529411765,
+            0.9058823529411765,
+            0.8941176470588236
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.9058823529411765,
+            0.9058823529411765,
+            0.8941176470588236
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.9058823529411765,
+            0.9058823529411765,
+            0.8941176470588236
+          ]
+        },
+        "logo": {
+          "rgb": [
+            0.5616470588235294,
+            0.5616470588235294,
+            0.5543529411764706
+          ]
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/iphone-duo-folded.b8d90db07c48.glb.gz",
+  "sha256": "b8d90db07c481fc130f0c2bdc19a966e179021ff80649508a9a44d27aa147ac5",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/iphone-duo-folded.json",
+    "accuracy": {
+      "body_dimensions": "Apple published metric dimensions",
+      "screen_geometry": "visual estimates; compound corner curves documented in Apple dimensional PDFs are not constant circular radii",
+      "camera_geometry": "Rear plateau/lens/flash/microphone layout measured from Apple's official iPhone Duo camera close-up, open rear imagery and local gallery artwork; coordinates are approximate +/-1 mm. Apple does not publish camera protrusion dimensions, so the 1.65 mm plateau and 2.25 mm total lens protrusion are visual estimates chosen to keep the lens stack seated in the plateau.",
+      "controls": "Apple dimensional-drawing control centerlines across the generated slab catalog",
+      "finishes": "finish names official; RGB visual approximations, not calibrated manufacturer paint values",
+      "hinge": "Apple published open/closed envelopes and Grade 5 titanium hinge cover; panel seam, pivot axis and barrel cross-section are reconstructed to match those envelopes.",
+      "buttons": "Control identities follow Apple technical specifications; rail positions are visually placed from Apple external-buttons artwork because Apple does not publish offsets."
+    },
+    "sources": [
+      "https://www.apple.com/iphone-duo/specs/",
+      "https://www.apple.com/iphone-duo/",
+      "https://www.apple.com/v/iphone-duo/d/images/overview/highlights/highlights_camera_startframe__ltwlwv2cm9ua_large.jpg",
+      "https://www.apple.com/v/iphone-duo/d/images/specs/external_connectors__fjf6vf5ap02m_large.jpg"
+    ]
+  }
+}

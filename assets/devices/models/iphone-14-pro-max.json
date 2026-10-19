@@ -1,0 +1,236 @@
+{
+  "id": "iphone-14-pro-max",
+  "name": "iPhone 14 Pro Max",
+  "state": "default",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        1290,
+        2796
+      ],
+      "size_mm": [
+        71.20836909871245,
+        154.34
+      ],
+      "center_mm": [
+        0.0,
+        0.0,
+        3.9599995613098145
+      ],
+      "corner_radius_mm": 12.36,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0,
+      "frame_bounds_mm": [
+        3.185815450643773,
+        3.1850000000000023,
+        71.20836909871245,
+        154.34
+      ],
+      "frame_screen_px": null,
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "width": 77.58,
+        "height": 160.71,
+        "depth": 7.85,
+        "corner_radius": 15.55,
+        "edge_roll_mm": [
+          0.3,
+          0.3
+        ],
+        "front_curve": 0
+      },
+      "cutouts": [
+        {
+          "size_mm": [
+            20.76,
+            6.07
+          ],
+          "radius_mm": 3.035,
+          "center_mm": [
+            0,
+            69.22
+          ]
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "articulation": null,
+  "panels": [],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/iphone-14-pro-max-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "logo": "logo",
+    "black": "black",
+    "flash": "flash"
+  },
+  "finishes": [
+    {
+      "name": "Space Black",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.25882352941176473,
+            0.2627450980392157,
+            0.25098039215686274
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.25882352941176473,
+            0.2627450980392157,
+            0.25098039215686274
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.25882352941176473,
+            0.2627450980392157,
+            0.25098039215686274
+          ]
+        },
+        "logo": {
+          "rgb": [
+            0.3863529411764706,
+            0.38917647058823535,
+            0.38070588235294117
+          ]
+        }
+      }
+    },
+    {
+      "name": "Silver",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.8980392156862745,
+            0.8941176470588236,
+            0.8862745098039215
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.8980392156862745,
+            0.8941176470588236,
+            0.8862745098039215
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.8980392156862745,
+            0.8941176470588236,
+            0.8862745098039215
+          ]
+        },
+        "logo": {
+          "rgb": [
+            0.5567843137254902,
+            0.5543529411764706,
+            0.5494901960784313
+          ]
+        }
+      }
+    },
+    {
+      "name": "Gold",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.9058823529411765,
+            0.8509803921568627,
+            0.7647058823529411
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.9058823529411765,
+            0.8509803921568627,
+            0.7647058823529411
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.9058823529411765,
+            0.8509803921568627,
+            0.7647058823529411
+          ]
+        },
+        "logo": {
+          "rgb": [
+            0.5616470588235294,
+            0.5276078431372548,
+            0.4741176470588235
+          ]
+        }
+      }
+    },
+    {
+      "name": "Deep Purple",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.396078431372549,
+            0.3607843137254902,
+            0.4196078431372549
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.396078431372549,
+            0.3607843137254902,
+            0.4196078431372549
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.396078431372549,
+            0.3607843137254902,
+            0.4196078431372549
+          ]
+        },
+        "logo": {
+          "rgb": [
+            0.24556862745098038,
+            0.2236862745098039,
+            0.260156862745098
+          ]
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/iphone-14-pro-max.7dfed38e66bf.glb.gz",
+  "sha256": "7dfed38e66bf79b32e434e5fc9154bd95024b6f4d3ef6f396e03dde81f613d9c",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/iphone-14-pro-max.json",
+    "accuracy": {
+      "body_dimensions": "Apple published metric dimensions",
+      "screen_geometry": "Equivalent circular approximation of Apple continuous corner profile; not manufacturer radius/CAD",
+      "camera_geometry": "Apple dimensional drawing printed dimensions; island radius equivalent circular approximation",
+      "controls": "Apple dimensional-drawing control centerlines across the generated slab catalog",
+      "finishes": "Official finish names; approximate sRGB visually matched, not Apple color calibration"
+    },
+    "sources": [
+      "https://support.apple.com/en-us/111846",
+      "https://developer.apple.com/download/files/accessories/dimensional-drawings/iphone-14-pro-max.pdf"
+    ]
+  }
+}

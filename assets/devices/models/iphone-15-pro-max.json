@@ -1,0 +1,236 @@
+{
+  "id": "iphone-15-pro-max",
+  "name": "iPhone 15 Pro Max",
+  "state": "default",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        1290,
+        2796
+      ],
+      "size_mm": [
+        71.28680257510729,
+        154.51
+      ],
+      "center_mm": [
+        0.0,
+        0.0,
+        4.159999847412109
+      ],
+      "corner_radius_mm": 9.5,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0,
+      "frame_bounds_mm": [
+        2.7065987124463575,
+        2.6950000000000074,
+        71.28680257510729,
+        154.51
+      ],
+      "frame_screen_px": null,
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "width": 76.7,
+        "height": 159.9,
+        "depth": 8.25,
+        "corner_radius": 12.0,
+        "edge_roll_mm": [
+          0.7,
+          0.58
+        ],
+        "front_curve": 0
+      },
+      "cutouts": [
+        {
+          "size_mm": [
+            20.69,
+            6.07
+          ],
+          "radius_mm": 3.035,
+          "center_mm": [
+            0,
+            72.28
+          ]
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "articulation": null,
+  "panels": [],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/iphone-15-pro-max-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "logo": "logo",
+    "black": "black",
+    "flash": "flash"
+  },
+  "finishes": [
+    {
+      "name": "Black Titanium",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.23137254901960785,
+            0.22745098039215686,
+            0.2196078431372549
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.23137254901960785,
+            0.22745098039215686,
+            0.2196078431372549
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.23137254901960785,
+            0.22745098039215686,
+            0.2196078431372549
+          ]
+        },
+        "logo": {
+          "rgb": [
+            0.36658823529411766,
+            0.36376470588235293,
+            0.35811764705882354
+          ]
+        }
+      }
+    },
+    {
+      "name": "White Titanium",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.8980392156862745,
+            0.8862745098039215,
+            0.8627450980392157
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.8980392156862745,
+            0.8862745098039215,
+            0.8627450980392157
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.8980392156862745,
+            0.8862745098039215,
+            0.8627450980392157
+          ]
+        },
+        "logo": {
+          "rgb": [
+            0.5567843137254902,
+            0.5494901960784313,
+            0.5349019607843137
+          ]
+        }
+      }
+    },
+    {
+      "name": "Blue Titanium",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.25882352941176473,
+            0.30196078431372547,
+            0.3764705882352941
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.25882352941176473,
+            0.30196078431372547,
+            0.3764705882352941
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.25882352941176473,
+            0.30196078431372547,
+            0.3764705882352941
+          ]
+        },
+        "logo": {
+          "rgb": [
+            0.3863529411764706,
+            0.41741176470588237,
+            0.47105882352941175
+          ]
+        }
+      }
+    },
+    {
+      "name": "Natural Titanium",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.6509803921568628,
+            0.6352941176470588,
+            0.6
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.6509803921568628,
+            0.6352941176470588,
+            0.6
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.6509803921568628,
+            0.6352941176470588,
+            0.6
+          ]
+        },
+        "logo": {
+          "rgb": [
+            0.4036078431372549,
+            0.39388235294117646,
+            0.372
+          ]
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/iphone-15-pro-max.63b52e31ad52.glb.gz",
+  "sha256": "63b52e31ad52b869bfb73ec3a879edbe76d3f8a7226248eaa568bd5f17b03ed8",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/iphone-15-pro-max.json",
+    "accuracy": {
+      "body_dimensions": "Apple published metric dimensions",
+      "screen_geometry": "visual estimates; compound corner curves documented in Apple dimensional PDFs are not constant circular radii",
+      "camera_geometry": "Apple drawing lens coordinates and depths; island outline bounds/radius are visual approximations",
+      "controls": "Apple dimensional-drawing control centerlines across the generated slab catalog",
+      "finishes": "finish names official; RGB visual approximations, not calibrated manufacturer paint values"
+    },
+    "sources": [
+      "https://support.apple.com/en-us/111828",
+      "https://developer.apple.com/download/files/accessories/dimensional-drawings/iphone-15-pro-max.pdf"
+    ]
+  }
+}

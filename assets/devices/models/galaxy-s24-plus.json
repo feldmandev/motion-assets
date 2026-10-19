@@ -1,0 +1,344 @@
+{
+  "id": "galaxy-s24-plus",
+  "name": "Galaxy S24+",
+  "state": "default",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        1440,
+        3120
+      ],
+      "size_mm": [
+        71.3153206404401,
+        154.51652805428688
+      ],
+      "center_mm": [
+        0.0,
+        0.0,
+        3.8849997520446777
+      ],
+      "corner_radius_mm": 7.50826402714344,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0,
+      "frame_bounds_mm": [
+        2.29233967977995,
+        1.99173597285656,
+        71.3153206404401,
+        154.51652805428688
+      ],
+      "frame_screen_px": null,
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "width": 75.9,
+        "height": 158.5,
+        "depth": 7.7,
+        "corner_radius": 9.5,
+        "edge_roll_mm": [
+          0.3,
+          0.25
+        ],
+        "front_rail_mm": 0.45,
+        "rear_inset": 0.45,
+        "corner_radii_mm": [
+          9.5,
+          9.5,
+          9.5,
+          9.5
+        ]
+      },
+      "cutouts": [
+        {
+          "center_mm": [
+            0,
+            74.25
+          ],
+          "radius_mm": 1.35
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "articulation": null,
+  "panels": [],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/galaxy-s24-plus-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "logo": "logo",
+    "black": "black",
+    "flash": "flash"
+  },
+  "finishes": [
+    {
+      "name": "Onyx Black",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.2549019607843137,
+            0.2549019607843137,
+            0.2627450980392157
+          ],
+          "rough": 0.37
+        },
+        "rail": {
+          "rgb": [
+            0.303921568627451,
+            0.303921568627451,
+            0.31019607843137254
+          ],
+          "metal": 0.8,
+          "rough": 0.3
+        },
+        "bar": {
+          "rgb": [
+            0.27705882352941175,
+            0.27705882352941175,
+            0.2843529411764706
+          ],
+          "metal": 0.3,
+          "rough": 0.32
+        },
+        "logo": {
+          "rgb": [
+            0.14784313725490195,
+            0.14784313725490195,
+            0.1523921568627451
+          ]
+        }
+      }
+    },
+    {
+      "name": "Marble Gray",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.7254901960784313,
+            0.7254901960784313,
+            0.7058823529411765
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.6803921568627451,
+            0.6803921568627451,
+            0.6647058823529413
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.7147058823529412,
+            0.7147058823529412,
+            0.6964705882352943
+          ]
+        },
+        "logo": {
+          "rgb": [
+            0.42078431372549013,
+            0.42078431372549013,
+            0.40941176470588236
+          ]
+        }
+      }
+    },
+    {
+      "name": "Cobalt Violet",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.40784313725490196
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.3666666666666667,
+            0.3666666666666667,
+            0.42627450980392156
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.35,
+            0.35,
+            0.4192941176470588
+          ]
+        },
+        "logo": {
+          "rgb": [
+            0.1933333333333333,
+            0.1933333333333333,
+            0.2365490196078431
+          ]
+        }
+      }
+    },
+    {
+      "name": "Amber Yellow",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.8980392156862745,
+            0.8549019607843137,
+            0.7098039215686275
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.8184313725490197,
+            0.783921568627451,
+            0.667843137254902
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.8751764705882354,
+            0.8350588235294119,
+            0.7001176470588236
+          ]
+        },
+        "logo": {
+          "rgb": [
+            0.5208627450980392,
+            0.4958431372549019,
+            0.4116862745098039
+          ]
+        }
+      }
+    },
+    {
+      "name": "Jade Green",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.7294117647058823,
+            0.8117647058823529,
+            0.7568627450980392
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.6835294117647058,
+            0.7494117647058823,
+            0.7054901960784313
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.7183529411764706,
+            0.7949411764705883,
+            0.7438823529411766
+          ]
+        },
+        "logo": {
+          "rgb": [
+            0.4230588235294117,
+            0.4708235294117647,
+            0.4389803921568627
+          ]
+        }
+      }
+    },
+    {
+      "name": "Sandstone Orange",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.8745098039215686,
+            0.7450980392156863,
+            0.6588235294117647
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.799607843137255,
+            0.696078431372549,
+            0.6270588235294118
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.8532941176470589,
+            0.7329411764705883,
+            0.6527058823529412
+          ]
+        },
+        "logo": {
+          "rgb": [
+            0.5072156862745097,
+            0.432156862745098,
+            0.3821176470588235
+          ]
+        }
+      }
+    },
+    {
+      "name": "Sapphire Blue",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.7254901960784313,
+            0.7843137254901961,
+            0.8627450980392157
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.6803921568627451,
+            0.7274509803921568,
+            0.7901960784313726
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.7147058823529412,
+            0.7694117647058825,
+            0.8423529411764707
+          ]
+        },
+        "logo": {
+          "rgb": [
+            0.42078431372549013,
+            0.45490196078431366,
+            0.5003921568627451
+          ]
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/galaxy-s24-plus.6d2252eb905d.glb.gz",
+  "sha256": "6d2252eb905d914b2ff758fe5436e200cf7adb652ddff2e8f736420145106f17",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/galaxy-s24-plus.json",
+    "accuracy": {
+      "body_dimensions": "Samsung published width, height and thickness; S26 chassis radius 7 mm published in 2026 Q1 report; other radii visual estimates.",
+      "screen_resolution": "Samsung native panel resolution; active rectangle derived from published full diagonal and native aspect.",
+      "screen_geometry": "Concentric chassis/display corners; front hole location and bezel sizes are estimates pending measured artwork.",
+      "camera_geometry": "Rear positions scaled from official render measurements used by the icon collection. Individual lens collars; Ultra laser sensor distinguished from four cameras. Protrusion and internal optics illustrative, not CAD.",
+      "finishes": "Official finish names with approximate sRGB and material roughness.",
+      "omissions": "USB port, speaker perforations, antenna seams and Ultra S Pen silo pending detail pass."
+    },
+    "sources": [
+      "https://images.samsung.com/is/content/samsung/assets/us/2401/business/mobile/phones/galaxy/Galaxy_S24_Series_B2B_Spec_Sheet.pdf",
+      "https://www.samsung.com/uk/smartphones/galaxy-s24/specs/"
+    ]
+  }
+}

@@ -1,0 +1,261 @@
+{
+  "id": "galaxy-s21",
+  "name": "Galaxy S21",
+  "state": "default",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        1080,
+        2400
+      ],
+      "size_mm": [
+        64.62422938573908,
+        143.60939863497575
+      ],
+      "center_mm": [
+        0.0,
+        0.0,
+        3.984999656677246
+      ],
+      "corner_radius_mm": 8,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0,
+      "frame_bounds_mm": [
+        3.287885307130459,
+        4.045300682512121,
+        64.62422938573908,
+        143.60939863497575
+      ],
+      "frame_screen_px": null,
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "width": 71.2,
+        "height": 151.7,
+        "depth": 7.9,
+        "corner_radius": 11.287885307130459,
+        "edge_roll_mm": [
+          0.35,
+          0.25
+        ],
+        "front_rail_mm": 0.4,
+        "rear_inset": 0.4,
+        "corner_radii_mm": [
+          11.287885307130459,
+          11.287885307130459,
+          11.287885307130459,
+          11.287885307130459
+        ]
+      },
+      "cutouts": [
+        {
+          "center_mm": [
+            0,
+            68.00469931748788
+          ],
+          "radius_mm": 1.4
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "articulation": null,
+  "panels": [],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/galaxy-s21-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "logo": "logo",
+    "black": "black",
+    "flash": "flash",
+    "front_sensor": "front_sensor",
+    "front_speaker": "front_speaker"
+  },
+  "finishes": [
+    {
+      "name": "Phantom Pink",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.9803921568627451,
+            0.8470588235294118,
+            0.8156862745098039
+          ],
+          "rough": 0.36
+        },
+        "rail": {
+          "rgb": [
+            0.8588235294117647,
+            0.7078431372549019,
+            0.6607843137254902
+          ],
+          "metal": 0.8,
+          "rough": 0.27
+        },
+        "bar": {
+          "rgb": [
+            0.8588235294117647,
+            0.7078431372549019,
+            0.6607843137254902
+          ],
+          "metal": 0.55,
+          "rough": 0.27
+        },
+        "logo": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.16
+          ]
+        }
+      }
+    },
+    {
+      "name": "Phantom Violet",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.6078431372549019,
+            0.611764705882353,
+            0.7294117647058823
+          ],
+          "rough": 0.36
+        },
+        "rail": {
+          "rgb": [
+            0.8235294117647058,
+            0.7,
+            0.6058823529411764
+          ],
+          "metal": 0.8,
+          "rough": 0.27
+        },
+        "bar": {
+          "rgb": [
+            0.8235294117647058,
+            0.7,
+            0.6058823529411764
+          ],
+          "metal": 0.55,
+          "rough": 0.27
+        },
+        "logo": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.16
+          ]
+        }
+      }
+    },
+    {
+      "name": "Phantom White",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.9568627450980393,
+            0.9568627450980393,
+            0.9647058823529412
+          ],
+          "rough": 0.36
+        },
+        "rail": {
+          "rgb": [
+            0.8254901960784313,
+            0.8352941176470587,
+            0.8490196078431373
+          ],
+          "metal": 0.8,
+          "rough": 0.27
+        },
+        "bar": {
+          "rgb": [
+            0.8254901960784313,
+            0.8352941176470587,
+            0.8490196078431373
+          ],
+          "metal": 0.55,
+          "rough": 0.27
+        },
+        "logo": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.16
+          ]
+        }
+      }
+    },
+    {
+      "name": "Phantom Gray",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.14901960784313725,
+            0.14901960784313725,
+            0.14901960784313725
+          ],
+          "rough": 0.36
+        },
+        "rail": {
+          "rgb": [
+            0.17450980392156862,
+            0.17647058823529413,
+            0.18823529411764706
+          ],
+          "metal": 0.8,
+          "rough": 0.27
+        },
+        "bar": {
+          "rgb": [
+            0.17450980392156862,
+            0.17647058823529413,
+            0.18823529411764706
+          ],
+          "metal": 0.55,
+          "rough": 0.27
+        },
+        "logo": {
+          "rgb": [
+            0.62,
+            0.64,
+            0.68
+          ]
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/galaxy-s21.ed7b9dfe1e5e.glb.gz",
+  "sha256": "ed7b9dfe1e5ec1a22ee1699befc43b34c7b714107dd94b08d5d1254a4fc84258",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/galaxy-s21.json",
+    "accuracy": {
+      "body_dimensions": "Samsung published chassis dimensions. Corner radii, edge rolls and curvature are photo estimates, not CAD.",
+      "screen_resolution": "Samsung native resolution. Active rectangle calculated from rounded published full diagonal and native aspect; physical bezel widths therefore approximate.",
+      "screen_geometry": "Model-specific flat/dual-edge display, rectangular/rounded corners, bezel selfie or Infinity-O aperture. Radii, hole positions and curve depth are photo estimates.",
+      "camera_geometry": "Model-specific rear layout scaled from generate_galaxy_svgs.PHONES / base MODELS official-render measurements. Internal optics, radii and protrusions illustrative; early cover internal lens positions estimated from photographs. Laser/ToF/heart-rate/fingerprint features distinguished from imaging lenses.",
+      "finishes": "Published finish names; approximate sampled sRGB and material response. S21+ Phantom Violet uses muted rose champagne camera housing.",
+      "omissions": "USB/headphone ports, speaker perforations, antenna seams and S Pen silo omitted. Legacy capacitive navigation marks and bezel hardware simplified."
+    },
+    "sources": [
+      "https://news.samsung.com/tw/samsung-galaxy-s21%EF%B8%B1s21"
+    ]
+  }
+}

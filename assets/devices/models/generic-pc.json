@@ -1,0 +1,58 @@
+{
+  "id": "generic-pc",
+  "name": "Generic PC",
+  "state": "default",
+  "glbUrl": "assets/devices/models/generic-pc.8ff94f724a97.glb.gz",
+  "sha256": "8ff94f724a970d7b23d08ae4d734b63b2b8e7f45109b23e0f9be47b5b7bba62d",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "size_mm": [
+        296,
+        186
+      ],
+      "center_mm": [
+        0,
+        0,
+        6.1
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "corner_radius_mm": 18
+    }
+  ],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "generic-pc-0.svg",
+      "image": "assets/devices/frames/generic-pc-0.svg"
+    }
+  ],
+  "adaptive": true,
+  "slots": {},
+  "finishes": [],
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/generic-pc.json",
+    "accuracy": {
+      "geometry": "Brand-neutral procedural illustration, not measured hardware or vendor CAD."
+    },
+    "sources": [
+      {
+        "kind": "original",
+        "description": "Motion generic device artwork and authored screen mapping"
+      }
+    ]
+  }
+}

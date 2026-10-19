@@ -1,0 +1,228 @@
+{
+  "id": "galaxy-tab-s9-ultra",
+  "name": "Galaxy Tab S9 Ultra",
+  "state": "default",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        1848,
+        2960
+      ],
+      "size_mm": [
+        196.39194206658908,
+        314.5671799334977
+      ],
+      "center_mm": [
+        0.0,
+        0.0,
+        2.7849998474121094
+      ],
+      "corner_radius_mm": 3.3959710332945434,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0,
+      "frame_bounds_mm": [
+        6.104028966705457,
+        5.91641003325114,
+        196.39194206658908,
+        314.5671799334977
+      ],
+      "frame_screen_px": null,
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "width": 208.6,
+        "height": 326.4,
+        "depth": 5.5,
+        "corner_radius": 9.312381066545683,
+        "edge_roll": 0.32,
+        "front_rail_mm": 0.45,
+        "corner_radii_mm": [
+          9.312381066545683,
+          9.312381066545683,
+          9.312381066545683,
+          9.312381066545683
+        ]
+      },
+      "cutouts": [
+        {
+          "center_mm": [
+            96.59597103329455,
+            0
+          ],
+          "size_mm": [
+            5.0,
+            21
+          ],
+          "radius_mm": 2.3
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "articulation": null,
+  "panels": [],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/galaxy-tab-s9-ultra-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "black": "black",
+    "flash": "flash",
+    "logo": "logo",
+    "strip": "strip",
+    "camera_ring": "camera_ring"
+  },
+  "finishes": [
+    {
+      "name": "Graphite",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.3254901960784314,
+            0.33725490196078434,
+            0.35294117647058826
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "rail": {
+          "rgb": [
+            0.3254901960784314,
+            0.33725490196078434,
+            0.35294117647058826
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "bar": {
+          "rgb": [
+            0.025,
+            0.028,
+            0.032
+          ],
+          "rough": 0.34
+        },
+        "logo": {
+          "rgb": [
+            0.5319607843137255,
+            0.5490196078431373,
+            0.571764705882353
+          ],
+          "metal": 0.3,
+          "rough": 0.45
+        },
+        "strip": {
+          "rgb": [
+            0.3828039215686274,
+            0.39609803921568626,
+            0.4138235294117647
+          ],
+          "metal": 0.5,
+          "rough": 0.5
+        },
+        "camera_ring": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.15
+          ],
+          "metal": 0.75,
+          "rough": 0.3
+        }
+      }
+    },
+    {
+      "name": "Beige",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.8509803921568627,
+            0.8352941176470589,
+            0.788235294117647
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "rail": {
+          "rgb": [
+            0.8509803921568627,
+            0.8352941176470589,
+            0.788235294117647
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "bar": {
+          "rgb": [
+            0.025,
+            0.028,
+            0.032
+          ],
+          "rough": 0.34
+        },
+        "logo": {
+          "rgb": [
+            0.44250980392156863,
+            0.4343529411764706,
+            0.4098823529411765
+          ],
+          "metal": 0.3,
+          "rough": 0.45
+        },
+        "strip": {
+          "rgb": [
+            0.9766078431372548,
+            0.9588823529411764,
+            0.905705882352941
+          ],
+          "metal": 0.5,
+          "rough": 0.5
+        },
+        "camera_ring": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.15
+          ],
+          "metal": 0.75,
+          "rough": 0.3
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/galaxy-tab-s9-ultra.3eab8f820bbf.glb.gz",
+  "sha256": "3eab8f820bbf2c018c1059441d627fd85aca72a47b7567a6247c6db074c43d93",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/galaxy-tab-s9-ultra.json",
+    "accuracy": {
+      "body_dimensions": "Samsung published metric dimensions",
+      "screen_resolution": "Samsung native panel resolution; exact aspect ratio",
+      "screen_geometry": "Published rectangular diagonal; corner radii and camera notch estimated from product design",
+      "camera_geometry": "Official rear-render normalized measurements; model-family housing/charging insert, separate glass windows, rims, apertures and flash. Protrusion and internal optics estimated, not OEM CAD.",
+      "details": "Rear wordmark and built-in charging surface where present; no S Pen accessory. Ports, speaker holes and antenna seams omitted. See research/samsung-tablet-rear-measurements.json for measurements and family transfer limits.",
+      "finishes": "Approximate display RGB; not measured material samples"
+    },
+    "sources": [
+      "https://news.samsung.com/global/samsung-galaxy-tab-s9-sets-the-new-standard-to-bring-galaxys-premium-experience-to-a-tablet",
+      "https://www.samsung.com/us/support/answer/ANS10003691/",
+      "https://api.samsungmobilepress.com/media-assets/galaxy-tab-s9-ultra",
+      "https://api.samsungmobilepress.com/file/E964BADE4924D7A674BE81D66212AE0A015A30C8B3CD6667AC1B9C11D4C5536CC2B7EB9322F1BE76D5A2A54B49850020E5DFAC6C88CEFC31EA061B1A1642B347C46F5D6D68F67EB079FCEBAB78081CADFB4727EE96330C83605BB896C3E68FFAE589078F308AC5F77C48270DE3111EBDE0410FDDC82E2768E71B95F59ADF580EDF17414E3A19CEE2295E503C310E0096"
+    ]
+  }
+}

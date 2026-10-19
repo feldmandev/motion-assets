@@ -1,0 +1,439 @@
+{
+  "id": "googlebook-dell-xps",
+  "name": "Dell XPS Googlebook",
+  "manufacturer": "Dell",
+  "form_factor": "laptop",
+  "body_mm": {
+    "width": 296.9,
+    "height": 200.66,
+    "depth": 4.8,
+    "base_depth_mm": 7.9,
+    "closed_depth_mm": 12.7,
+    "corner_radius": 5.6,
+    "edge_roll_mm": [
+      0.55,
+      0.45
+    ],
+    "front_curve": 0
+  },
+  "finish": "Platinum",
+  "materials": {
+    "back": {
+      "rgb": [
+        0.8627,
+        0.8745,
+        0.8863
+      ],
+      "metal": 0.12,
+      "rough": 0.26
+    },
+    "rail": {
+      "rgb": [
+        0.8627,
+        0.8745,
+        0.8863
+      ],
+      "metal": 0.18,
+      "rough": 0.24
+    },
+    "bar": {
+      "rgb": [
+        0.8627,
+        0.8745,
+        0.8863
+      ],
+      "metal": 0.22,
+      "rough": 0.26
+    },
+    "logo": {
+      "rgb": [
+        0.5529,
+        0.5725,
+        0.6
+      ],
+      "metal": 0.65,
+      "rough": 0.18
+    },
+    "keycap": {
+      "rgb": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "metal": 0.04,
+      "rough": 0.44
+    },
+    "black": {
+      "rgb": [
+        0.012,
+        0.014,
+        0.018
+      ],
+      "rough": 0.42
+    },
+    "flash": {
+      "rgb": [
+        0.88,
+        0.87,
+        0.82
+      ],
+      "rough": 0.4
+    }
+  },
+  "finishes": {
+    "Platinum": {
+      "back": {
+        "rgb": [
+          0.8627,
+          0.8745,
+          0.8863
+        ],
+        "metal": 0.12,
+        "rough": 0.26
+      },
+      "rail": {
+        "rgb": [
+          0.8627,
+          0.8745,
+          0.8863
+        ],
+        "metal": 0.18,
+        "rough": 0.24
+      },
+      "bar": {
+        "rgb": [
+          0.8627,
+          0.8745,
+          0.8863
+        ],
+        "metal": 0.22,
+        "rough": 0.26
+      },
+      "logo": {
+        "rgb": [
+          0.5529,
+          0.5725,
+          0.6
+        ],
+        "metal": 0.65,
+        "rough": 0.18
+      },
+      "keycap": {
+        "rgb": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "metal": 0.04,
+        "rough": 0.44
+      }
+    },
+    "Graphite": {
+      "back": {
+        "rgb": [
+          0.2275,
+          0.2392,
+          0.251
+        ],
+        "metal": 0.12,
+        "rough": 0.3
+      },
+      "rail": {
+        "rgb": [
+          0.2275,
+          0.2392,
+          0.251
+        ],
+        "metal": 0.18,
+        "rough": 0.26
+      },
+      "bar": {
+        "rgb": [
+          0.2275,
+          0.2392,
+          0.251
+        ],
+        "metal": 0.22,
+        "rough": 0.3
+      },
+      "logo": {
+        "rgb": [
+          0.4235,
+          0.4392,
+          0.4588
+        ],
+        "metal": 0.65,
+        "rough": 0.18
+      },
+      "keycap": {
+        "rgb": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "metal": 0.04,
+        "rough": 0.44
+      }
+    },
+    "Shimmer": {
+      "back": {
+        "rgb": [
+          0.7216,
+          0.6941,
+          0.6392
+        ],
+        "metal": 0.12,
+        "rough": 0.28
+      },
+      "rail": {
+        "rgb": [
+          0.7216,
+          0.6941,
+          0.6392
+        ],
+        "metal": 0.18,
+        "rough": 0.24000000000000002
+      },
+      "bar": {
+        "rgb": [
+          0.7216,
+          0.6941,
+          0.6392
+        ],
+        "metal": 0.22,
+        "rough": 0.28
+      },
+      "logo": {
+        "rgb": [
+          0.4902,
+          0.4667,
+          0.4196
+        ],
+        "metal": 0.65,
+        "rough": 0.18
+      },
+      "keycap": {
+        "rgb": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "metal": 0.04,
+        "rough": 0.44
+      }
+    },
+    "Sky": {
+      "back": {
+        "rgb": [
+          0.7373,
+          0.7765,
+          0.8157
+        ],
+        "metal": 0.12,
+        "rough": 0.28
+      },
+      "rail": {
+        "rgb": [
+          0.7373,
+          0.7765,
+          0.8157
+        ],
+        "metal": 0.18,
+        "rough": 0.24000000000000002
+      },
+      "bar": {
+        "rgb": [
+          0.7373,
+          0.7765,
+          0.8157
+        ],
+        "metal": 0.22,
+        "rough": 0.28
+      },
+      "logo": {
+        "rgb": [
+          0.4941,
+          0.5333,
+          0.5804
+        ],
+        "metal": 0.65,
+        "rough": 0.18
+      },
+      "keycap": {
+        "rgb": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "metal": 0.04,
+        "rough": 0.44
+      }
+    }
+  },
+  "status": "official",
+  "sources": [
+    "https://googlebook.google/",
+    "https://googlebook.google/compare/"
+  ],
+  "accuracy": {
+    "body_dimensions": "Published metric Googlebook specifications from googlebook.google",
+    "screen_geometry": "Published 16:10 display active area and resolution",
+    "camera_geometry": "Top bezel 1080p webcam + dual-mic array + lid LED Glowbar measured from official renders",
+    "finishes": "Official Googlebook launch finishes sampled from product renders",
+    "hinge": "Articulated clamshell X-axis hinge rotating lid 0 to 90 degrees flush onto keyboard base"
+  },
+  "glowbar": {
+    "center_mm": [
+      0.0,
+      90.0
+    ],
+    "size_mm": [
+      39.2,
+      1.7
+    ],
+    "colors": [
+      [
+        0.918,
+        0.263,
+        0.208
+      ],
+      [
+        0.984,
+        0.737,
+        0.016
+      ],
+      [
+        0.204,
+        0.659,
+        0.325
+      ],
+      [
+        0.259,
+        0.522,
+        0.957
+      ]
+    ]
+  },
+  "rear_logo": {
+    "kind": "xps",
+    "center_mm": [
+      0.0,
+      1.0
+    ],
+    "width_mm": 44.0
+  },
+  "hinge_style": "dual_wide",
+  "deck_style": "dell_chiclet",
+  "ports": {
+    "left": [
+      {
+        "type": "usb_c",
+        "z": 26.0
+      }
+    ],
+    "right": [
+      {
+        "type": "usb_c",
+        "z": 26.0
+      }
+    ]
+  },
+  "panels": [
+    {
+      "name": "Lid",
+      "center_mm": [
+        0.0,
+        100.33,
+        -2.4
+      ],
+      "body_mm": {
+        "width": 296.9,
+        "height": 200.66,
+        "depth": 4.8,
+        "corner_radius": 5.6,
+        "edge_roll_mm": [
+          0.55,
+          0.45
+        ],
+        "front_curve": 0
+      },
+      "buttons": false
+    },
+    {
+      "name": "Base",
+      "center_mm": [
+        0.0,
+        -3.95,
+        100.33
+      ],
+      "body_mm": {
+        "width": 296.9,
+        "height": 7.9,
+        "depth": 200.66,
+        "corner_radius": 5.6,
+        "edge_roll_mm": [
+          0.55,
+          0.45
+        ],
+        "front_curve": 0
+      },
+      "buttons": false
+    }
+  ],
+  "screen": {
+    "panel": "Lid",
+    "object": "Device screen",
+    "node": "Device screen",
+    "resolution": [
+      2560,
+      1600
+    ],
+    "fit_box_mm": [
+      288.8,
+      180.5
+    ],
+    "center_mm": [
+      0.0,
+      2.3,
+      2.54
+    ],
+    "frame_center_mm": [
+      0.0,
+      2.3
+    ],
+    "corner_radius_mm": 1.5,
+    "create_cutouts": true,
+    "cutouts": [
+      {
+        "center_mm": [
+          0.0,
+          92.85
+        ],
+        "radius_mm": 1.15
+      }
+    ]
+  },
+  "articulation": {
+    "animation": "Fold",
+    "axis": "X",
+    "axis_mm": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "moving_panel": "Lid",
+    "fixed_panel": "Base",
+    "pivots": {
+      "Lid": "Fold pivot | Lid",
+      "Base": "Fold pivot | Base"
+    },
+    "open_degrees": 0,
+    "closed_degrees": 90,
+    "duration_seconds": 1.0,
+    "closed_body_mm": {
+      "width": 296.9,
+      "height": 12.7,
+      "depth": 200.66
+    }
+  }
+}

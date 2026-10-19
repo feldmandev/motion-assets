@@ -1,0 +1,261 @@
+{
+  "id": "galaxy-a55",
+  "name": "Galaxy A55",
+  "state": "default",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        1080,
+        2340
+      ],
+      "size_mm": [
+        70.25091286968724,
+        152.2103112176557
+      ],
+      "center_mm": [
+        0.0,
+        0.0,
+        4.134999752044678
+      ],
+      "corner_radius_mm": 6.5,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0,
+      "frame_bounds_mm": [
+        3.5745435651563824,
+        4.444844391172154,
+        70.25091286968724,
+        152.2103112176557
+      ],
+      "frame_screen_px": null,
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "width": 77.4,
+        "height": 161.1,
+        "depth": 8.2,
+        "corner_radius": 10.074543565156382,
+        "edge_roll_mm": [
+          0.35,
+          0.25
+        ],
+        "front_rail_mm": 0.4,
+        "rear_inset": 0.4,
+        "corner_radii_mm": [
+          10.074543565156382,
+          10.074543565156382,
+          10.074543565156382,
+          10.074543565156382
+        ]
+      },
+      "cutouts": [
+        {
+          "center_mm": [
+            0,
+            72.30515560882785
+          ],
+          "radius_mm": 1.4
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "articulation": null,
+  "panels": [],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/galaxy-a55-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "logo": "logo",
+    "black": "black",
+    "flash": "flash",
+    "front_sensor": "front_sensor",
+    "front_speaker": "front_speaker"
+  },
+  "finishes": [
+    {
+      "name": "Awesome Iceblue",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.8862745098039215,
+            0.9137254901960784,
+            0.9529411764705882
+          ],
+          "rough": 0.36
+        },
+        "rail": {
+          "rgb": [
+            0.8047058823529412,
+            0.8252941176470588,
+            0.8547058823529411
+          ],
+          "metal": 0.8,
+          "rough": 0.27
+        },
+        "bar": {
+          "rgb": [
+            0.8553725490196079,
+            0.8806274509803922,
+            0.9167058823529411
+          ],
+          "metal": 0.55,
+          "rough": 0.27
+        },
+        "logo": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.16
+          ]
+        }
+      }
+    },
+    {
+      "name": "Awesome Lemon",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.9882352941176471,
+            0.9490196078431372,
+            0.7176470588235294
+          ],
+          "rough": 0.36
+        },
+        "rail": {
+          "rgb": [
+            0.8811764705882353,
+            0.8517647058823529,
+            0.678235294117647
+          ],
+          "metal": 0.8,
+          "rough": 0.27
+        },
+        "bar": {
+          "rgb": [
+            0.9491764705882354,
+            0.9130980392156863,
+            0.7002352941176472
+          ],
+          "metal": 0.55,
+          "rough": 0.27
+        },
+        "logo": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.16
+          ]
+        }
+      }
+    },
+    {
+      "name": "Awesome Lilac",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.9137254901960784,
+            0.8274509803921568,
+            0.9098039215686274
+          ],
+          "rough": 0.36
+        },
+        "rail": {
+          "rgb": [
+            0.8252941176470588,
+            0.7605882352941177,
+            0.8223529411764706
+          ],
+          "metal": 0.8,
+          "rough": 0.27
+        },
+        "bar": {
+          "rgb": [
+            0.8806274509803922,
+            0.8012549019607843,
+            0.8770196078431373
+          ],
+          "metal": 0.55,
+          "rough": 0.27
+        },
+        "logo": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.16
+          ]
+        }
+      }
+    },
+    {
+      "name": "Awesome Navy",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.11372549019607843,
+            0.12156862745098039,
+            0.16862745098039217
+          ],
+          "rough": 0.36
+        },
+        "rail": {
+          "rgb": [
+            0.22529411764705884,
+            0.23117647058823532,
+            0.2664705882352941
+          ],
+          "metal": 0.8,
+          "rough": 0.27
+        },
+        "bar": {
+          "rgb": [
+            0.14462745098039215,
+            0.15184313725490198,
+            0.19513725490196082
+          ],
+          "metal": 0.55,
+          "rough": 0.27
+        },
+        "logo": {
+          "rgb": [
+            0.62,
+            0.64,
+            0.68
+          ]
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/galaxy-a55.a1046ccbcc2e.glb.gz",
+  "sha256": "a1046ccbcc2ed03319585c5806a1a6411021869e8df3c74c3764b897ea5059f4",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/galaxy-a55.json",
+    "accuracy": {
+      "body_dimensions": "Samsung published chassis dimensions. Corner radii, edge rolls and curvature are photo estimates, not CAD.",
+      "screen_resolution": "Samsung native resolution. Active rectangle calculated from rounded published full diagonal and native aspect; physical bezel widths therefore approximate.",
+      "screen_geometry": "Model-specific flat/dual-edge display, rectangular/rounded corners, bezel selfie or Infinity-O aperture. Radii, hole positions and curve depth are photo estimates.",
+      "camera_geometry": "Model-specific rear layout scaled from generate_galaxy_svgs.PHONES / base MODELS official-render measurements. Internal optics, radii and protrusions illustrative; early cover internal lens positions estimated from photographs. Laser/ToF/heart-rate/fingerprint features distinguished from imaging lenses.",
+      "finishes": "Published finish names; approximate sampled sRGB and material response. S21+ Phantom Violet uses muted rose champagne camera housing.",
+      "omissions": "USB/headphone ports, speaker perforations, antenna seams and S Pen silo omitted. Legacy capacitive navigation marks and bezel hardware simplified."
+    },
+    "sources": [
+      "https://api.samsungmobilepress.com/press-releases/samsung-galaxy-a55-5g-and-galaxy-a35-5g-awesome-innovations-and-security-engineered-for-everyone"
+    ]
+  }
+}

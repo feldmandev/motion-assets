@@ -1,0 +1,227 @@
+{
+  "id": "galaxy-s10-5g",
+  "name": "Galaxy S10 5G",
+  "state": "default",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        1440,
+        3040
+      ],
+      "size_mm": [
+        72.85173414769064,
+        153.79810542290244
+      ],
+      "center_mm": [
+        0.0,
+        0.0,
+        4.00499963760376
+      ],
+      "corner_radius_mm": 8,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 1.4,
+      "frame_bounds_mm": [
+        2.1241329261546795,
+        4.400947288548778,
+        72.85173414769064,
+        153.79810542290244
+      ],
+      "frame_screen_px": null,
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "width": 77.1,
+        "height": 162.6,
+        "depth": 7.94,
+        "corner_radius": 10.12413292615468,
+        "edge_roll_mm": [
+          1.15,
+          0.25
+        ],
+        "front_rail_mm": 0.4,
+        "rear_inset": 0.4,
+        "corner_radii_mm": [
+          10.12413292615468,
+          10.12413292615468,
+          10.12413292615468,
+          10.12413292615468
+        ]
+      },
+      "cutouts": [
+        {
+          "center_mm": [
+            27.425867073845318,
+            71.39905271145122
+          ],
+          "radius_mm": 2.1,
+          "size_mm": [
+            12,
+            4.2
+          ]
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "articulation": null,
+  "panels": [],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/galaxy-s10-5g-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "logo": "logo",
+    "black": "black",
+    "flash": "flash",
+    "front_sensor": "front_sensor",
+    "front_speaker": "front_speaker"
+  },
+  "finishes": [
+    {
+      "name": "Crown Silver",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.7215686274509804,
+            0.7568627450980392,
+            0.8313725490196079
+          ],
+          "rough": 0.36
+        },
+        "rail": {
+          "rgb": [
+            0.6811764705882353,
+            0.7076470588235294,
+            0.7635294117647059
+          ],
+          "metal": 0.8,
+          "rough": 0.27
+        },
+        "bar": {
+          "rgb": [
+            0.018,
+            0.022,
+            0.03
+          ],
+          "metal": 0.55,
+          "rough": 0.27
+        },
+        "logo": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.16
+          ]
+        }
+      }
+    },
+    {
+      "name": "Majestic Black",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.2,
+            0.21568627450980393,
+            0.25098039215686274
+          ],
+          "rough": 0.36
+        },
+        "rail": {
+          "rgb": [
+            0.29000000000000004,
+            0.30176470588235293,
+            0.32823529411764707
+          ],
+          "metal": 0.8,
+          "rough": 0.27
+        },
+        "bar": {
+          "rgb": [
+            0.018,
+            0.022,
+            0.03
+          ],
+          "metal": 0.55,
+          "rough": 0.27
+        },
+        "logo": {
+          "rgb": [
+            0.62,
+            0.64,
+            0.68
+          ]
+        }
+      }
+    },
+    {
+      "name": "Royal Gold",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.7803921568627451,
+            0.6862745098039216,
+            0.5372549019607843
+          ],
+          "rough": 0.36
+        },
+        "rail": {
+          "rgb": [
+            0.7252941176470589,
+            0.6547058823529411,
+            0.5429411764705883
+          ],
+          "metal": 0.8,
+          "rough": 0.27
+        },
+        "bar": {
+          "rgb": [
+            0.018,
+            0.022,
+            0.03
+          ],
+          "metal": 0.55,
+          "rough": 0.27
+        },
+        "logo": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.16
+          ]
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/galaxy-s10-5g.078d5789b6dc.glb.gz",
+  "sha256": "078d5789b6dc628fd3dcb0b44d53a7b1d15c1a72432d5e72282bc5f44d5a595d",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/galaxy-s10-5g.json",
+    "accuracy": {
+      "body_dimensions": "Samsung published chassis dimensions. Corner radii, edge rolls and curvature are photo estimates, not CAD.",
+      "screen_resolution": "Samsung native resolution. Active rectangle calculated from rounded published full diagonal and native aspect; physical bezel widths therefore approximate.",
+      "screen_geometry": "Model-specific flat/dual-edge display, rectangular/rounded corners, bezel selfie or Infinity-O aperture. Radii, hole positions and curve depth are photo estimates.",
+      "camera_geometry": "Model-specific rear layout scaled from generate_galaxy_svgs.PHONES / base MODELS official-render measurements. Internal optics, radii and protrusions illustrative; early cover internal lens positions estimated from photographs. Laser/ToF/heart-rate/fingerprint features distinguished from imaging lenses.",
+      "finishes": "Published finish names; approximate sampled sRGB and material response. S21+ Phantom Violet uses muted rose champagne camera housing.",
+      "omissions": "USB/headphone ports, speaker perforations, antenna seams and S Pen silo omitted. Legacy capacitive navigation marks and bezel hardware simplified."
+    },
+    "sources": [
+      "https://news.samsung.com/uk/samsung-raises-the-bar-with-galaxy-s10-more-screen-cameras-and-choices"
+    ]
+  }
+}

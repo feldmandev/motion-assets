@@ -1,0 +1,269 @@
+{
+  "id": "iphone-15-plus",
+  "name": "iPhone 15 Plus",
+  "state": "default",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        1290,
+        2796
+      ],
+      "size_mm": [
+        71.28680257510729,
+        154.51
+      ],
+      "center_mm": [
+        0.0,
+        0.0,
+        3.934999704360962
+      ],
+      "corner_radius_mm": 9.5,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0,
+      "frame_bounds_mm": [
+        3.2565987124463547,
+        3.1950000000000074,
+        71.28680257510729,
+        154.51
+      ],
+      "frame_screen_px": null,
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "width": 77.8,
+        "height": 160.9,
+        "depth": 7.8,
+        "corner_radius": 12.0,
+        "edge_roll_mm": [
+          0.7,
+          0.58
+        ],
+        "front_curve": 0
+      },
+      "cutouts": [
+        {
+          "size_mm": [
+            20.69,
+            6.07
+          ],
+          "radius_mm": 3.035,
+          "center_mm": [
+            0,
+            72.26
+          ]
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "articulation": null,
+  "panels": [],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/iphone-15-plus-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "logo": "logo",
+    "black": "black",
+    "flash": "flash"
+  },
+  "finishes": [
+    {
+      "name": "Black",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.1607843137254902,
+            0.16470588235294117,
+            0.17647058823529413
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.1607843137254902,
+            0.16470588235294117,
+            0.17647058823529413
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.1607843137254902,
+            0.16470588235294117,
+            0.17647058823529413
+          ]
+        },
+        "logo": {
+          "rgb": [
+            0.31576470588235295,
+            0.31858823529411767,
+            0.3270588235294118
+          ]
+        }
+      }
+    },
+    {
+      "name": "Blue",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.7254901960784313,
+            0.8156862745098039,
+            0.8627450980392157
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.7254901960784313,
+            0.8156862745098039,
+            0.8627450980392157
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.7254901960784313,
+            0.8156862745098039,
+            0.8627450980392157
+          ]
+        },
+        "logo": {
+          "rgb": [
+            0.4498039215686274,
+            0.5057254901960784,
+            0.5349019607843137
+          ]
+        }
+      }
+    },
+    {
+      "name": "Green",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.7607843137254902,
+            0.8274509803921568,
+            0.7490196078431373
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.7607843137254902,
+            0.8274509803921568,
+            0.7490196078431373
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.7607843137254902,
+            0.8274509803921568,
+            0.7490196078431373
+          ]
+        },
+        "logo": {
+          "rgb": [
+            0.4716862745098039,
+            0.5130196078431373,
+            0.4643921568627451
+          ]
+        }
+      }
+    },
+    {
+      "name": "Yellow",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.9058823529411765,
+            0.8745098039215686,
+            0.7176470588235294
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.9058823529411765,
+            0.8745098039215686,
+            0.7176470588235294
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.9058823529411765,
+            0.8745098039215686,
+            0.7176470588235294
+          ]
+        },
+        "logo": {
+          "rgb": [
+            0.5616470588235294,
+            0.5421960784313725,
+            0.44494117647058823
+          ]
+        }
+      }
+    },
+    {
+      "name": "Pink",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.9098039215686274,
+            0.7215686274509804,
+            0.7411764705882353
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.9098039215686274,
+            0.7215686274509804,
+            0.7411764705882353
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.9098039215686274,
+            0.7215686274509804,
+            0.7411764705882353
+          ]
+        },
+        "logo": {
+          "rgb": [
+            0.564078431372549,
+            0.4473725490196078,
+            0.4595294117647059
+          ]
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/iphone-15-plus.91ae7d398594.glb.gz",
+  "sha256": "91ae7d398594962c93b658efa7170d9d7aefa5e915ebc4ca369df98937a567f9",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/iphone-15-plus.json",
+    "accuracy": {
+      "body_dimensions": "Apple published metric dimensions",
+      "screen_geometry": "visual estimates; compound corner curves documented in Apple dimensional PDFs are not constant circular radii",
+      "camera_geometry": "Apple drawing lens coordinates and depths; island outline bounds/radius are visual approximations",
+      "controls": "Apple dimensional-drawing control centerlines across the generated slab catalog",
+      "finishes": "finish names official; RGB visual approximations, not calibrated manufacturer paint values"
+    },
+    "sources": [
+      "https://support.apple.com/en-us/111830",
+      "https://developer.apple.com/download/files/accessories/dimensional-drawings/iphone-15-plus.pdf"
+    ]
+  }
+}

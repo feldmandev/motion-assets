@@ -1,0 +1,312 @@
+{
+  "title": "Google Pixel 6–8 reference research",
+  "units": "mm; dimensions ordered height x width x depth",
+  "source_policy": "Published hardware values are from Google Pixel Phone Help hardware tech specs (answer 7158570) where listed, and Google Store specifications for Pixel 8. Visual shape notes are qualitative and cross-checked against locally downloaded official Google imagery listed in image_evidence; no camera geometry was measured.",
+  "sources": {
+    "google_pixel_compare": "https://store.google.com/us/magazine/compare_pixel?hl=en-US&toggler0=Pixel+6&toggler1=Pixel+6a&toggler2=Pixel+6+Pro",
+    "google_pixel_7_compare": "https://store.google.com/us/magazine/compare_pixel?hl=en-US&toggler0=Pixel+7a&toggler1=Pixel+7&toggler2=Pixel+7+Pro",
+    "google_pixel_8_specs": "https://store.google.com/us/product/pixel_8_specs?hl=en-US",
+    "google_pixel_8_pro": "https://store.google.com/us/product/pixel_8_pro?hl=en-US",
+    "google_pixel_8a_compare": "https://store.google.com/us/magazine/compare_pixel?hl=en-US&toggler0=Pixel+8a&toggler1=Pixel+7&toggler2=Pixel+8",
+    "official_design_story_7a": "https://store.google.com/us/magazine/pixel-fold-and-tablet-design?hl=en-US",
+    "official_7a_product_page": "https://store.google.com/us/product/pixel_7a?hl=en-US",
+    "official_8_product_page": "https://store.google.com/us/product/pixel_8?hl=en-US",
+    "official_8a_product_page": "https://store.google.com/us/product/pixel_8a?hl=en-US",
+    "google_support_hardware_specs": "https://support.google.com/pixelphone/answer/7158570?hl=en",
+    "google_camera_bar_design_story": "https://blog.google/products-and-platforms/devices/pixel/google-pixel-camera-bar/",
+    "google_pixel6_launch_design": "https://blog.google/products-and-platforms/devices/pixel/meet-pixel-6-pixel-6-pro/",
+    "google_pixel8_design": "https://blog.google/products-and-platforms/devices/pixel/google-pixel-8-watch-2-buds-pro-design/",
+    "google_pixel8a_launch": "https://blog.google/products-and-platforms/devices/pixel/pixel-8a-launch/"
+  },
+  "models": [
+    {
+      "id": "Pixel 6",
+      "body_mm": {
+        "height": 158.6,
+        "width": 74.8,
+        "depth": 8.9,
+        "status": "published Google specifications"
+      },
+      "display": {
+        "resolution_px": [
+          1080,
+          2400
+        ],
+        "diagonal_in": 6.4,
+        "type": "OLED, flat"
+      },
+      "colors": [
+        "Stormy Black",
+        "Kinda Coral",
+        "Sorta Seafoam"
+      ],
+      "geometry": {
+        "corners": "rounded slab; screen corners rounded",
+        "screen": "flat cover glass; flat side rails",
+        "camera_bar": "Full-width bar reaches both side edges. Two camera openings are grouped under one continuous dark visor; flash is a distinct small aperture toward the right end.",
+        "layout": "Rear cameras grouped on the left side of the continuous glass visor; flash at right end."
+      },
+      "imagery": "https://store.google.com/us/magazine/compare_pixel?hl=en-US&toggler0=Pixel+6&toggler1=Pixel+6a&toggler2=Pixel+6+Pro"
+    },
+    {
+      "id": "Pixel 6 Pro",
+      "body_mm": {
+        "height": 163.9,
+        "width": 75.9,
+        "depth": 8.9,
+        "status": "published Google specifications"
+      },
+      "display": {
+        "resolution_px": [
+          1440,
+          3120
+        ],
+        "diagonal_in": 6.7,
+        "type": "LTPO OLED, curved edges"
+      },
+      "colors": [
+        "Stormy Black",
+        "Cloudy White",
+        "Sorta Sunny"
+      ],
+      "geometry": {
+        "corners": "rounded slab; screen corners rounded",
+        "screen": "curved glass edges wrap onto polished rails; visibly more curved than base Pixel 6",
+        "camera_bar": "Full-width bar reaches both side edges. All three camera apertures appear beneath one continuous dark visor/glass element; separate flash aperture at far right."
+      },
+      "imagery": "https://store.google.com/us/magazine/compare_pixel?hl=en-US&toggler0=Pixel+6&toggler1=Pixel+6a&toggler2=Pixel+6+Pro"
+    },
+    {
+      "id": "Pixel 6a",
+      "body_mm": {
+        "height": 152.2,
+        "width": 71.8,
+        "depth": 8.9,
+        "status": "published Google specifications"
+      },
+      "display": {
+        "resolution_px": [
+          1080,
+          2400
+        ],
+        "diagonal_in": 6.1,
+        "type": "OLED, flat"
+      },
+      "colors": [
+        "Charcoal",
+        "Chalk",
+        "Sage"
+      ],
+      "geometry": {
+        "corners": "rounded slab; screen corners rounded",
+        "screen": "flat front and flat rails",
+        "camera_bar": "Full-width bar reaches both side edges. Two camera openings grouped under one continuous dark visor; flash is a distinct aperture toward the right end."
+      },
+      "imagery": "https://store.google.com/us/magazine/compare_pixel?hl=en-US&toggler0=Pixel+6&toggler1=Pixel+6a&toggler2=Pixel+6+Pro"
+    },
+    {
+      "id": "Pixel 7",
+      "body_mm": {
+        "height": 155.6,
+        "width": 73.2,
+        "depth": 8.7,
+        "status": "published Google specifications"
+      },
+      "display": {
+        "resolution_px": [
+          1080,
+          2400
+        ],
+        "diagonal_in": 6.3,
+        "type": "AMOLED, flat"
+      },
+      "colors": [
+        "Obsidian",
+        "Snow",
+        "Lemongrass"
+      ],
+      "geometry": {
+        "corners": "rounded slab; screen corners rounded",
+        "screen": "flat glass and rails",
+        "camera_bar": "Full-width aluminum bar reaches both side edges. Camera glass is visibly separated into a left pill-shaped window for two cameras and an independent circular window for the right camera; flash at far right."
+      },
+      "imagery": "https://store.google.com/us/magazine/compare_pixel?hl=en-US&toggler0=Pixel+7a&toggler1=Pixel+7&toggler2=Pixel+7+Pro"
+    },
+    {
+      "id": "Pixel 7 Pro",
+      "body_mm": {
+        "height": 162.9,
+        "width": 76.6,
+        "depth": 8.9,
+        "status": "published Google specifications"
+      },
+      "display": {
+        "resolution_px": [
+          1440,
+          3120
+        ],
+        "diagonal_in": 6.7,
+        "type": "LTPO AMOLED, curved edges"
+      },
+      "colors": [
+        "Obsidian",
+        "Snow",
+        "Hazel"
+      ],
+      "geometry": {
+        "corners": "rounded slab; screen corners rounded",
+        "screen": "curved edges over polished aluminum rails",
+        "camera_bar": "Full-width aluminum bar reaches both side edges. Camera glass separates into a left pill window for two cameras and a distinct round right window for the telephoto; flash at far right."
+      },
+      "imagery": "https://store.google.com/us/magazine/compare_pixel?hl=en-US&toggler0=Pixel+7a&toggler1=Pixel+7&toggler2=Pixel+7+Pro"
+    },
+    {
+      "id": "Pixel 7a",
+      "body_mm": {
+        "height": 152.0,
+        "width": 72.9,
+        "depth": 9.0,
+        "status": "published Google specifications"
+      },
+      "display": {
+        "resolution_px": [
+          1080,
+          2400
+        ],
+        "diagonal_in": 6.1,
+        "type": "OLED, flat"
+      },
+      "colors": [
+        "Charcoal",
+        "Snow",
+        "Sea",
+        "Coral"
+      ],
+      "geometry": {
+        "corners": "rounded slab; screen corners rounded",
+        "screen": "flat front; flat metal rails",
+        "camera_bar": "Full-width aluminum bar reaches both side edges. Two lenses share a black pill-shaped glass window; flash is separate at the right."
+      },
+      "imagery": "https://store.google.com/us/product/pixel_7a?hl=en-US"
+    },
+    {
+      "id": "Pixel 8",
+      "body_mm": {
+        "height": 150.5,
+        "width": 70.8,
+        "depth": 8.9,
+        "status": "published Google Store tech specs"
+      },
+      "display": {
+        "resolution_px": [
+          1080,
+          2400
+        ],
+        "diagonal_in": 6.2,
+        "type": "OLED, flat"
+      },
+      "colors": [
+        "Obsidian",
+        "Hazel",
+        "Rose",
+        "Mint"
+      ],
+      "geometry": {
+        "corners": "rounded slab with more pronounced corner radii than Pixel 7; screen corners rounded",
+        "screen": "flat display, flat rails",
+        "camera_bar": "Full-width bar reaches both side edges. Two camera openings share a dark pill-shaped window; flash is a separate aperture at right."
+      },
+      "imagery": "https://store.google.com/us/product/pixel_8?hl=en-US"
+    },
+    {
+      "id": "Pixel 8 Pro",
+      "body_mm": {
+        "height": 162.6,
+        "width": 76.5,
+        "depth": 8.8,
+        "status": "published Google specifications"
+      },
+      "display": {
+        "resolution_px": [
+          1344,
+          2992
+        ],
+        "diagonal_in": 6.7,
+        "type": "LTPO OLED, flat"
+      },
+      "colors": [
+        "Obsidian",
+        "Porcelain",
+        "Bay",
+        "Mint"
+      ],
+      "geometry": {
+        "corners": "rounded slab with broad corner radii; rounded display corners",
+        "screen": "flat display with very thin symmetric border; flat polished aluminum rails",
+        "camera_bar": "Full-width bar reaches both side edges. Google describes the rear array as sitting within a single pill-shaped enclosure on the bar; three lenses share that dark window, with flash and temperature-sensor apertures to its right."
+      },
+      "imagery": "https://store.google.com/us/product/pixel_8_pro?hl=en-US"
+    },
+    {
+      "id": "Pixel 8a",
+      "body_mm": {
+        "height": 152.1,
+        "width": 72.7,
+        "depth": 8.9,
+        "status": "published Google specifications"
+      },
+      "display": {
+        "resolution_px": [
+          1080,
+          2400
+        ],
+        "diagonal_in": 6.1,
+        "type": "OLED, flat"
+      },
+      "colors": [
+        "Obsidian",
+        "Porcelain",
+        "Bay",
+        "Aloe"
+      ],
+      "geometry": {
+        "corners": "rounded slab with very broad corner radii; screen corners rounded",
+        "screen": "flat display; matte aluminum side rails",
+        "camera_bar": "Full-width aluminum bar reaches both side edges. Two lenses share a black pill-shaped camera-glass window; flash is a separate right-side aperture."
+      },
+      "imagery": "https://store.google.com/us/product/pixel_8a?hl=en-US"
+    }
+  ],
+  "geometry_estimates": {
+    "method": "No dimensional camera measurements made. Qualitative grouping/layout was checked against downloaded official Google product/design imagery listed in image_evidence.",
+    "normalized_guidance": "No numeric normalized ratios or mm dimensions included. The phone models can be blocked from the downloaded references; measure a fixed-view image before finalizing any camera-bar span or lens proportions.",
+    "confidence": "High for window grouping and full-width bar continuity visible in official rear images; low for hidden underside/rail wrap shape and any dimensions not published."
+  },
+  "image_evidence": [
+    {
+      "source": "https://blog.google/products-and-platforms/devices/pixel/meet-pixel-6-pixel-6-pro/",
+      "description": "Official Google portfolio image inspected locally; shows Pixel 6-family back views and full-width continuous dark visor.",
+      "file": "images/pixel6_family_google.webp"
+    },
+    {
+      "source": "https://blog.google/products-and-platforms/devices/pixel/google-pixel-camera-bar/",
+      "description": "Official Google Pixel 7 Pro camera-bar close-up inspected locally; shows edge-to-edge metal rail and separate pill/circle camera-glass windows.",
+      "file": "images/pixel7pro_camera_bar_google.webp"
+    },
+    {
+      "source": "https://blog.google/products-and-platforms/devices/pixel/pixel-7a-io-2023/",
+      "description": "Official Google 7a color lineup inspected locally; shows full-width rail, two-lens pill and separate flash.",
+      "file": "images/pixel7a_colors_google.webp"
+    },
+    {
+      "source": "https://blog.google/products-and-platforms/devices/pixel/google-pixel-8-watch-2-buds-pro-design/",
+      "description": "Official Google Pixel 8 Pro design mockup inspected locally; shows full-width bar and the shared pill enclosure grouping the rear cameras.",
+      "file": "images/pixel8pro_design_mockup_google.webp"
+    },
+    {
+      "source": "https://blog.google/products-and-platforms/devices/pixel/google-pixel-camera-bar/",
+      "description": "Official Google Camera Bar story image inspected locally; context lineup illustrating the edge-to-edge bars.",
+      "file": "images/pixel_camera_bar_google.webp"
+    }
+  ]
+}

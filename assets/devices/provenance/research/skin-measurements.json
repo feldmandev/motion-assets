@@ -1,0 +1,1129 @@
+{
+  "pixel-10-pro-fold-folded": {
+    "source": "[local reference path omitted]",
+    "reference_frame": "research\\skins\\pixel-10-pro-fold-folded\\frame.png",
+    "body_bounds_px": [
+      1,
+      0,
+      1228,
+      2495
+    ],
+    "screen_bounds_px": [
+      84,
+      66,
+      1080,
+      2364
+    ],
+    "mm_per_pixel": 0.06220440881763527,
+    "body_radii_px": [
+      209.884,
+      211.265,
+      92.166,
+      87.294
+    ],
+    "body_fit_error_px": [
+      2.173,
+      2.784,
+      3.159,
+      2.107
+    ],
+    "screen_radii_px": [
+      129.917,
+      137.905,
+      129.89,
+      129.917
+    ],
+    "screen_fit_error_px": [
+      0.439,
+      0.434,
+      0.442,
+      0.439
+    ],
+    "screen_center_mm": [
+      0.5598396793587174,
+      -0.031102204408817634
+    ],
+    "screen_size_mm": [
+      67.18076152304609,
+      147.05122244488976
+    ]
+  },
+  "pixel-10-pro-fold-unfolded": {
+    "source": "[local reference path omitted]",
+    "reference_frame": "research\\skins\\pixel-10-pro-fold-unfolded\\frame.png",
+    "body_bounds_px": [
+      0,
+      25,
+      2196,
+      2218
+    ],
+    "screen_bounds_px": [
+      62,
+      58,
+      2076,
+      2152
+    ],
+    "mm_per_pixel": 0.06997294860234445,
+    "body_radii_px": [
+      139.402,
+      139.589,
+      141.078,
+      140.544
+    ],
+    "body_fit_error_px": [
+      3.708,
+      3.686,
+      3.845,
+      3.847
+    ],
+    "screen_radii_px": [
+      131.827,
+      218.367,
+      131.855,
+      131.827
+    ],
+    "screen_fit_error_px": [
+      0.471,
+      34.696,
+      0.469,
+      0.471
+    ],
+    "screen_center_mm": [
+      0.1399458972046889,
+      0.0
+    ],
+    "screen_size_mm": [
+      145.26384129846707,
+      150.58178539224525
+    ]
+  },
+  "pixel-10-pro-xl": {
+    "source": "[local reference path omitted]",
+    "reference_frame": "research\\skins\\pixel-10-pro-xl\\frame.png",
+    "body_bounds_px": [
+      0,
+      0,
+      1463,
+      3101
+    ],
+    "screen_bounds_px": [
+      60,
+      55,
+      1344,
+      2992
+    ],
+    "mm_per_pixel": 0.05249919380844889,
+    "body_radii_px": [
+      237.332,
+      233.837,
+      234.689,
+      238.367
+    ],
+    "body_fit_error_px": [
+      2.235,
+      1.139,
+      1.251,
+      2.417
+    ],
+    "screen_radii_px": [
+      157.878,
+      181.529,
+      157.907,
+      157.907
+    ],
+    "screen_fit_error_px": [
+      0.441,
+      0.446,
+      0.442,
+      0.442
+    ],
+    "screen_center_mm": [
+      0.026249596904224445,
+      -0.026249596904224445
+    ],
+    "screen_size_mm": [
+      70.5589164785553,
+      157.07758787487907
+    ]
+  },
+  "pixel-10-pro": {
+    "source": "[local reference path omitted]",
+    "reference_frame": "research\\skins\\pixel-10-pro\\frame.png",
+    "body_bounds_px": [
+      0,
+      0,
+      1400,
+      2968
+    ],
+    "screen_bounds_px": [
+      59,
+      60,
+      1280,
+      2856
+    ],
+    "mm_per_pixel": 0.05148247978436658,
+    "body_radii_px": [
+      242.939,
+      245.251,
+      244.487,
+      241.917
+    ],
+    "body_fit_error_px": [
+      2.035,
+      3.259,
+      3.623,
+      2.02
+    ],
+    "screen_radii_px": [
+      179.854,
+      179.715,
+      179.854,
+      179.854
+    ],
+    "screen_fit_error_px": [
+      0.434,
+      0.435,
+      0.434,
+      0.434
+    ],
+    "screen_center_mm": [
+      -0.05148247978436658,
+      -0.20592991913746633
+    ],
+    "screen_size_mm": [
+      65.89757412398923,
+      147.03396226415097
+    ]
+  },
+  "pixel-10": {
+    "source": "[local reference path omitted]",
+    "reference_frame": "research\\skins\\pixel-10\\frame.png",
+    "body_bounds_px": [
+      0,
+      0,
+      1197,
+      2535
+    ],
+    "screen_bounds_px": [
+      59,
+      55,
+      1080,
+      2424
+    ],
+    "mm_per_pixel": 0.06027613412228797,
+    "body_radii_px": [
+      210.225,
+      208.627,
+      207.928,
+      209.613
+    ],
+    "body_fit_error_px": [
+      3.037,
+      2.114,
+      2.273,
+      3.03
+    ],
+    "screen_radii_px": [
+      146.898,
+      146.92,
+      146.92,
+      146.877
+    ],
+    "screen_fit_error_px": [
+      0.432,
+      0.43,
+      0.43,
+      0.43
+    ],
+    "screen_center_mm": [
+      0.030138067061143987,
+      0.030138067061143987
+    ],
+    "screen_size_mm": [
+      65.09822485207101,
+      146.10934911242606
+    ]
+  },
+  "pixel-10a": {
+    "source": "[local reference path omitted]",
+    "reference_frame": "research\\skins\\pixel-10a\\frame.png",
+    "body_bounds_px": [
+      1,
+      1,
+      1208,
+      2550
+    ],
+    "screen_bounds_px": [
+      65,
+      64,
+      1080,
+      2424
+    ],
+    "mm_per_pixel": 0.06035294117647059,
+    "body_radii_px": [
+      211.719,
+      212.251,
+      212.085,
+      211.551
+    ],
+    "body_fit_error_px": [
+      1.123,
+      1.275,
+      1.258,
+      1.112
+    ],
+    "screen_radii_px": [
+      146.898,
+      146.92,
+      146.92,
+      146.898
+    ],
+    "screen_fit_error_px": [
+      0.432,
+      0.43,
+      0.43,
+      0.432
+    ],
+    "screen_center_mm": [
+      0.0,
+      0.0
+    ],
+    "screen_size_mm": [
+      65.18117647058824,
+      146.2955294117647
+    ]
+  },
+  "pixel-6-pro": {
+    "source": "[local reference path omitted]",
+    "reference_frame": "research\\skins\\pixel-6-pro\\frame.png",
+    "body_bounds_px": [
+      0,
+      0,
+      1520,
+      3289
+    ],
+    "screen_bounds_px": [
+      41,
+      72,
+      1440,
+      3120
+    ],
+    "mm_per_pixel": 0.049832775919732446,
+    "body_radii_px": [
+      110.319,
+      102.172,
+      105.228,
+      104.438
+    ],
+    "body_fit_error_px": [
+      0.534,
+      1.093,
+      0.677,
+      0.915
+    ],
+    "screen_radii_px": [
+      62.965,
+      62.965,
+      62.965,
+      62.965
+    ],
+    "screen_fit_error_px": [
+      0.481,
+      0.481,
+      0.481,
+      0.481
+    ],
+    "screen_center_mm": [
+      0.049832775919732446,
+      0.6229096989966556
+    ],
+    "screen_size_mm": [
+      71.75919732441473,
+      155.47826086956522
+    ]
+  },
+  "pixel-6": {
+    "source": "[local reference path omitted]",
+    "reference_frame": "research\\skins\\pixel-6\\frame.png",
+    "body_bounds_px": [
+      0,
+      0,
+      1203,
+      2553
+    ],
+    "screen_bounds_px": [
+      60,
+      69,
+      1080,
+      2400
+    ],
+    "mm_per_pixel": 0.06212299255777516,
+    "body_radii_px": [
+      88.484,
+      86.357,
+      83.885,
+      84.035
+    ],
+    "body_fit_error_px": [
+      0.682,
+      0.677,
+      0.591,
+      0.502
+    ],
+    "screen_radii_px": [
+      34.806,
+      34.806,
+      34.806,
+      34.806
+    ],
+    "screen_fit_error_px": [
+      0.484,
+      0.484,
+      0.484,
+      0.484
+    ],
+    "screen_center_mm": [
+      -0.09318448883666275,
+      0.4659224441833137
+    ],
+    "screen_size_mm": [
+      67.09283196239717,
+      149.0951821386604
+    ]
+  },
+  "pixel-6a": {
+    "source": "[local reference path omitted]",
+    "reference_frame": "research\\skins\\pixel-6a\\frame.png",
+    "body_bounds_px": [
+      0,
+      0,
+      1202,
+      2555
+    ],
+    "screen_bounds_px": [
+      57,
+      69,
+      1080,
+      2400
+    ],
+    "mm_per_pixel": 0.05956947162426614,
+    "body_radii_px": [
+      90.992,
+      87.297,
+      84.229,
+      90.426
+    ],
+    "body_fit_error_px": [
+      1.406,
+      1.632,
+      0.966,
+      1.87
+    ],
+    "screen_radii_px": [
+      46.68,
+      46.68,
+      46.68,
+      46.68
+    ],
+    "screen_fit_error_px": [
+      0.479,
+      0.479,
+      0.479,
+      0.479
+    ],
+    "screen_center_mm": [
+      -0.23827788649706455,
+      0.5063405088062621
+    ],
+    "screen_size_mm": [
+      64.33502935420744,
+      142.96673189823872
+    ]
+  },
+  "pixel-7-pro": {
+    "source": "[local reference path omitted]",
+    "reference_frame": "research\\skins\\pixel-7-pro\\frame.png",
+    "body_bounds_px": [
+      0,
+      1,
+      1536,
+      3268
+    ],
+    "screen_bounds_px": [
+      48,
+      66,
+      1440,
+      3120
+    ],
+    "mm_per_pixel": 0.04984700122399021,
+    "body_radii_px": [
+      126.833,
+      130.625,
+      132.231,
+      128.522
+    ],
+    "body_fit_error_px": [
+      0.717,
+      0.883,
+      0.99,
+      0.961
+    ],
+    "screen_radii_px": [
+      75.83,
+      75.83,
+      75.83,
+      75.83
+    ],
+    "screen_fit_error_px": [
+      0.477,
+      0.477,
+      0.477,
+      0.477
+    ],
+    "screen_center_mm": [
+      0.0,
+      0.4486230110159119
+    ],
+    "screen_size_mm": [
+      71.7796817625459,
+      155.52264381884945
+    ]
+  },
+  "pixel-7": {
+    "source": "[local reference path omitted]",
+    "reference_frame": "research\\skins\\pixel-7\\frame.png",
+    "body_bounds_px": [
+      1,
+      1,
+      1192,
+      2539
+    ],
+    "screen_bounds_px": [
+      59,
+      58,
+      1080,
+      2400
+    ],
+    "mm_per_pixel": 0.06128397006695549,
+    "body_radii_px": [
+      107.54,
+      105.032,
+      105.765,
+      106.864
+    ],
+    "body_fit_error_px": [
+      1.273,
+      0.963,
+      1.01,
+      1.192
+    ],
+    "screen_radii_px": [
+      56.805,
+      56.805,
+      56.827,
+      56.805
+    ],
+    "screen_fit_error_px": [
+      0.476,
+      0.476,
+      0.478,
+      0.476
+    ],
+    "screen_center_mm": [
+      0.12256794013391098,
+      0.7660496258369436
+    ],
+    "screen_size_mm": [
+      66.18668767231193,
+      147.08152816069318
+    ]
+  },
+  "pixel-7a": {
+    "source": "[local reference path omitted]",
+    "reference_frame": "research\\skins\\pixel-7a\\frame.png",
+    "body_bounds_px": [
+      0,
+      0,
+      1219,
+      2559
+    ],
+    "screen_bounds_px": [
+      69,
+      69,
+      1080,
+      2400
+    ],
+    "mm_per_pixel": 0.059398202422821414,
+    "body_radii_px": [
+      89.428,
+      94.305,
+      92.969,
+      89.559
+    ],
+    "body_fit_error_px": [
+      0.887,
+      1.248,
+      0.833,
+      1.183
+    ],
+    "screen_radii_px": [
+      46.68,
+      46.68,
+      46.68,
+      46.68
+    ],
+    "screen_fit_error_px": [
+      0.479,
+      0.479,
+      0.479,
+      0.479
+    ],
+    "screen_center_mm": [
+      -0.029699101211410707,
+      0.6236811254396248
+    ],
+    "screen_size_mm": [
+      64.15005861664713,
+      142.55568581477138
+    ]
+  },
+  "pixel-8-pro": {
+    "source": "[local reference path omitted]",
+    "reference_frame": "research\\skins\\pixel-8-pro\\frame.png",
+    "body_bounds_px": [
+      0,
+      0,
+      1459,
+      3104
+    ],
+    "screen_bounds_px": [
+      58,
+      58,
+      1344,
+      2992
+    ],
+    "mm_per_pixel": 0.0523840206185567,
+    "body_radii_px": [
+      173.42,
+      167.408,
+      168.561,
+      172.639
+    ],
+    "body_fit_error_px": [
+      2.321,
+      0.979,
+      1.187,
+      1.356
+    ],
+    "screen_radii_px": [
+      106.753,
+      106.719,
+      106.719,
+      106.753
+    ],
+    "screen_fit_error_px": [
+      0.495,
+      0.498,
+      0.498,
+      0.495
+    ],
+    "screen_center_mm": [
+      0.02619201030927835,
+      -0.1047680412371134
+    ],
+    "screen_size_mm": [
+      70.4041237113402,
+      156.73298969072167
+    ]
+  },
+  "pixel-8": {
+    "source": "[local reference path omitted]",
+    "reference_frame": "research\\skins\\pixel-8\\frame.png",
+    "body_bounds_px": [
+      0,
+      0,
+      1179,
+      2513
+    ],
+    "screen_bounds_px": [
+      49,
+      55,
+      1080,
+      2400
+    ],
+    "mm_per_pixel": 0.05988857938718663,
+    "body_radii_px": [
+      149.763,
+      154.367,
+      154.614,
+      149.808
+    ],
+    "body_fit_error_px": [
+      1.067,
+      1.639,
+      1.789,
+      1.022
+    ],
+    "screen_radii_px": [
+      89.836,
+      89.836,
+      89.836,
+      89.836
+    ],
+    "screen_fit_error_px": [
+      0.495,
+      0.495,
+      0.495,
+      0.495
+    ],
+    "screen_center_mm": [
+      -0.029944289693593314,
+      0.08983286908077995
+    ],
+    "screen_size_mm": [
+      64.67966573816156,
+      143.73259052924791
+    ]
+  },
+  "pixel-8a": {
+    "source": "[local reference path omitted]",
+    "reference_frame": "research\\skins\\pixel-8a\\frame.png",
+    "body_bounds_px": [
+      0,
+      0,
+      1190,
+      2538
+    ],
+    "screen_bounds_px": [
+      57,
+      57,
+      1080,
+      2400
+    ],
+    "mm_per_pixel": 0.05992907801418439,
+    "body_radii_px": [
+      102.155,
+      102.877,
+      105.195,
+      103.243
+    ],
+    "body_fit_error_px": [
+      0.914,
+      1.008,
+      1.293,
+      0.926
+    ],
+    "screen_radii_px": [
+      89.836,
+      89.836,
+      89.836,
+      89.836
+    ],
+    "screen_fit_error_px": [
+      0.495,
+      0.495,
+      0.495,
+      0.495
+    ],
+    "screen_center_mm": [
+      0.11985815602836879,
+      0.7191489361702127
+    ],
+    "screen_size_mm": [
+      64.72340425531914,
+      143.82978723404256
+    ]
+  },
+  "pixel-9-pro-fold-folded": {
+    "source": "[local reference path omitted]",
+    "reference_frame": "research\\skins\\pixel-9-pro-fold-folded\\frame.png",
+    "body_bounds_px": [
+      0,
+      0,
+      1236,
+      2554
+    ],
+    "screen_bounds_px": [
+      94,
+      70,
+      1080,
+      2424
+    ],
+    "mm_per_pixel": 0.060767423649177754,
+    "body_radii_px": [
+      215.277,
+      217.638,
+      35.11,
+      31.877
+    ],
+    "body_fit_error_px": [
+      2.015,
+      4.062,
+      1.08,
+      0.513
+    ],
+    "screen_radii_px": [
+      148.824,
+      149.344,
+      149.613,
+      149.143
+    ],
+    "screen_fit_error_px": [
+      1.176,
+      1.297,
+      1.332,
+      1.181
+    ],
+    "screen_center_mm": [
+      0.9722787783868441,
+      -0.30383711824588877
+    ],
+    "screen_size_mm": [
+      65.62881754111197,
+      147.30023492560687
+    ]
+  },
+  "pixel-9-pro-fold-unfolded": {
+    "source": "[local reference path omitted]",
+    "reference_frame": "research\\skins\\pixel-9-pro-fold-unfolded\\frame.png",
+    "body_bounds_px": [
+      0,
+      18,
+      2200,
+      2238
+    ],
+    "screen_bounds_px": [
+      62,
+      62,
+      2076,
+      2152
+    ],
+    "mm_per_pixel": 0.06934763181411975,
+    "body_radii_px": [
+      154.166,
+      153.733,
+      153.664,
+      154.165
+    ],
+    "body_fit_error_px": [
+      3.383,
+      3.39,
+      3.392,
+      3.368
+    ],
+    "screen_radii_px": [
+      120.105,
+      213.352,
+      120.093,
+      120.531
+    ],
+    "screen_fit_error_px": [
+      0.662,
+      33.62,
+      0.603,
+      0.647
+    ],
+    "screen_center_mm": [
+      0.0,
+      -0.06934763181411975
+    ],
+    "screen_size_mm": [
+      143.9656836461126,
+      149.23610366398572
+    ]
+  },
+  "pixel-9-pro-xl": {
+    "source": "[local reference path omitted]",
+    "reference_frame": "research\\skins\\pixel-9-pro-xl\\frame.png",
+    "body_bounds_px": [
+      0,
+      0,
+      1458,
+      3100
+    ],
+    "screen_bounds_px": [
+      57,
+      56,
+      1344,
+      2992
+    ],
+    "mm_per_pixel": 0.052516129032258066,
+    "body_radii_px": [
+      234.391,
+      237.268,
+      238.047,
+      235.717
+    ],
+    "body_fit_error_px": [
+      1.224,
+      2.568,
+      2.227,
+      1.396
+    ],
+    "screen_radii_px": [
+      174.598,
+      174.733,
+      175.187,
+      175.007
+    ],
+    "screen_fit_error_px": [
+      1.314,
+      1.439,
+      1.485,
+      1.356
+    ],
+    "screen_center_mm": [
+      0.0,
+      -0.10503225806451613
+    ],
+    "screen_size_mm": [
+      70.58167741935485,
+      157.12825806451613
+    ]
+  },
+  "pixel-9-pro": {
+    "source": "[local reference path omitted]",
+    "reference_frame": "research\\skins\\pixel-9-pro\\frame.png",
+    "body_bounds_px": [
+      0,
+      0,
+      1400,
+      2974
+    ],
+    "screen_bounds_px": [
+      60,
+      61,
+      1280,
+      2856
+    ],
+    "mm_per_pixel": 0.05137861466039005,
+    "body_radii_px": [
+      241.444,
+      242.392,
+      243.303,
+      242.278
+    ],
+    "body_fit_error_px": [
+      1.65,
+      2.278,
+      2.435,
+      1.709
+    ],
+    "screen_radii_px": [
+      179.361,
+      179.027,
+      179.373,
+      179.608
+    ],
+    "screen_fit_error_px": [
+      1.435,
+      1.348,
+      1.421,
+      1.505
+    ],
+    "screen_center_mm": [
+      0.0,
+      -0.1027572293207801
+    ],
+    "screen_size_mm": [
+      65.76462676529927,
+      146.737323470074
+    ]
+  },
+  "pixel-9": {
+    "source": "[local reference path omitted]",
+    "reference_frame": "research\\skins\\pixel-9\\frame.png",
+    "body_bounds_px": [
+      0,
+      0,
+      1191,
+      2531
+    ],
+    "screen_bounds_px": [
+      55,
+      58,
+      1080,
+      2424
+    ],
+    "mm_per_pixel": 0.06037139470564994,
+    "body_radii_px": [
+      207.168,
+      206.078,
+      207.242,
+      208.258
+    ],
+    "body_fit_error_px": [
+      2.692,
+      2.019,
+      2.223,
+      2.844
+    ],
+    "screen_radii_px": [
+      163.59,
+      151.504,
+      150.825,
+      163.039
+    ],
+    "screen_fit_error_px": [
+      18.994,
+      2.228,
+      2.162,
+      19.033
+    ],
+    "screen_center_mm": [
+      -0.03018569735282497,
+      -0.27167127617542475
+    ],
+    "screen_size_mm": [
+      65.20110628210193,
+      146.34026076649548
+    ]
+  },
+  "pixel-9a": {
+    "source": "[local reference path omitted]",
+    "reference_frame": "research\\skins\\pixel-9a\\frame.png",
+    "body_bounds_px": [
+      0,
+      0,
+      1217,
+      2570
+    ],
+    "screen_bounds_px": [
+      69,
+      73,
+      1080,
+      2424
+    ],
+    "mm_per_pixel": 0.060194552529182876,
+    "body_radii_px": [
+      214.192,
+      212.983,
+      212.561,
+      213.866
+    ],
+    "body_fit_error_px": [
+      2.875,
+      2.417,
+      2.442,
+      2.612
+    ],
+    "screen_radii_px": [
+      145.833,
+      145.816,
+      145.816,
+      145.816
+    ],
+    "screen_fit_error_px": [
+      0.433,
+      0.433,
+      0.433,
+      0.433
+    ],
+    "screen_center_mm": [
+      0.030097276264591438,
+      0.0
+    ],
+    "screen_size_mm": [
+      65.01011673151751,
+      145.9115953307393
+    ]
+  },
+  "pixel-fold-folded": {
+    "source": "[local reference path omitted]",
+    "reference_frame": "research\\skins\\pixel-fold-folded\\frame.png",
+    "body_bounds_px": [
+      0,
+      0,
+      1261,
+      2233
+    ],
+    "screen_bounds_px": [
+      116,
+      73,
+      1080,
+      2092
+    ],
+    "mm_per_pixel": 0.0625615763546798,
+    "body_radii_px": [
+      152.077,
+      154.596,
+      39.355,
+      34.829
+    ],
+    "body_fit_error_px": [
+      1.214,
+      2.213,
+      0.592,
+      0.846
+    ],
+    "screen_radii_px": [
+      91.967,
+      91.967,
+      91.967,
+      91.967
+    ],
+    "screen_fit_error_px": [
+      0.457,
+      0.457,
+      0.457,
+      0.457
+    ],
+    "screen_center_mm": [
+      1.5953201970443347,
+      -0.15640394088669948
+    ],
+    "screen_size_mm": [
+      67.56650246305418,
+      130.87881773399013
+    ]
+  },
+  "pixel-fold-unfolded": {
+    "source": "[local reference path omitted]",
+    "reference_frame": "research\\skins\\pixel-fold-unfolded\\frame.png",
+    "body_bounds_px": [
+      0,
+      24,
+      2361,
+      2038
+    ],
+    "screen_bounds_px": [
+      77,
+      126,
+      2208,
+      1840
+    ],
+    "mm_per_pixel": 0.06854759568204122,
+    "body_radii_px": [
+      95.009,
+      98.996,
+      93.91,
+      95.3
+    ],
+    "body_fit_error_px": [
+      3.0,
+      2.988,
+      2.861,
+      2.856
+    ],
+    "screen_radii_px": [
+      47.836,
+      47.836,
+      47.836,
+      47.836
+    ],
+    "screen_fit_error_px": [
+      0.486,
+      0.486,
+      0.486,
+      0.486
+    ],
+    "screen_center_mm": [
+      0.03427379784102061,
+      -0.20564278704612365
+    ],
+    "screen_size_mm": [
+      151.353091265947,
+      126.12757605495584
+    ]
+  }
+}

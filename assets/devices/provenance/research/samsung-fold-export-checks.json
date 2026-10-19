@@ -1,0 +1,272 @@
+[
+  {
+    "id": "galaxy-z-flip3-folded",
+    "enclosure_bounds": true,
+    "screen_mesh_bounds": true,
+    "native_uv": true,
+    "frame_orientation": true,
+    "flash_ring_clearance": true,
+    "finish_renders": 7
+  },
+  {
+    "id": "galaxy-z-flip3-unfolded",
+    "enclosure_bounds": true,
+    "screen_mesh_bounds": true,
+    "native_uv": true,
+    "frame_orientation": true,
+    "flash_ring_clearance": true,
+    "finish_renders": 7
+  },
+  {
+    "id": "galaxy-z-flip4-folded",
+    "enclosure_bounds": true,
+    "screen_mesh_bounds": true,
+    "native_uv": true,
+    "frame_orientation": true,
+    "flash_ring_clearance": true,
+    "finish_renders": 4
+  },
+  {
+    "id": "galaxy-z-flip4-unfolded",
+    "enclosure_bounds": true,
+    "screen_mesh_bounds": true,
+    "native_uv": true,
+    "frame_orientation": true,
+    "flash_ring_clearance": true,
+    "finish_renders": 4
+  },
+  {
+    "id": "galaxy-z-flip5-folded",
+    "enclosure_bounds": true,
+    "screen_mesh_bounds": true,
+    "native_uv": true,
+    "frame_orientation": true,
+    "flash_ring_clearance": true,
+    "finish_renders": 8
+  },
+  {
+    "id": "galaxy-z-flip5-unfolded",
+    "enclosure_bounds": true,
+    "screen_mesh_bounds": true,
+    "native_uv": true,
+    "frame_orientation": true,
+    "flash_ring_clearance": true,
+    "finish_renders": 8
+  },
+  {
+    "id": "galaxy-z-flip6-folded",
+    "enclosure_bounds": true,
+    "screen_mesh_bounds": true,
+    "native_uv": true,
+    "frame_orientation": true,
+    "flash_ring_clearance": true,
+    "finish_renders": 7
+  },
+  {
+    "id": "galaxy-z-flip6-unfolded",
+    "enclosure_bounds": true,
+    "screen_mesh_bounds": true,
+    "native_uv": true,
+    "frame_orientation": true,
+    "flash_ring_clearance": true,
+    "finish_renders": 7
+  },
+  {
+    "id": "galaxy-z-flip7-fe-folded",
+    "enclosure_bounds": true,
+    "screen_mesh_bounds": true,
+    "native_uv": true,
+    "frame_orientation": true,
+    "flash_ring_clearance": true,
+    "finish_renders": 2
+  },
+  {
+    "id": "galaxy-z-flip7-fe-unfolded",
+    "enclosure_bounds": true,
+    "screen_mesh_bounds": true,
+    "native_uv": true,
+    "frame_orientation": true,
+    "flash_ring_clearance": true,
+    "finish_renders": 2
+  },
+  {
+    "id": "galaxy-z-flip7-folded",
+    "enclosure_bounds": true,
+    "screen_mesh_bounds": true,
+    "native_uv": true,
+    "frame_orientation": true,
+    "flash_ring_clearance": true,
+    "finish_renders": 4
+  },
+  {
+    "id": "galaxy-z-flip7-unfolded",
+    "enclosure_bounds": true,
+    "screen_mesh_bounds": true,
+    "native_uv": true,
+    "frame_orientation": true,
+    "flash_ring_clearance": true,
+    "finish_renders": 4
+  },
+  {
+    "id": "galaxy-z-flip8-folded",
+    "enclosure_bounds": true,
+    "screen_mesh_bounds": true,
+    "native_uv": true,
+    "frame_orientation": true,
+    "flash_ring_clearance": true,
+    "finish_renders": 4
+  },
+  {
+    "id": "galaxy-z-flip8-unfolded",
+    "enclosure_bounds": true,
+    "screen_mesh_bounds": true,
+    "native_uv": true,
+    "frame_orientation": true,
+    "flash_ring_clearance": true,
+    "finish_renders": 4
+  },
+  {
+    "id": "galaxy-z-fold3-folded",
+    "enclosure_bounds": true,
+    "screen_mesh_bounds": true,
+    "native_uv": true,
+    "frame_orientation": true,
+    "flash_ring_clearance": true,
+    "finish_renders": 3
+  },
+  {
+    "id": "galaxy-z-fold3-unfolded",
+    "enclosure_bounds": true,
+    "screen_mesh_bounds": true,
+    "native_uv": true,
+    "frame_orientation": true,
+    "flash_ring_clearance": true,
+    "finish_renders": 3
+  },
+  {
+    "id": "galaxy-z-fold4-folded",
+    "enclosure_bounds": true,
+    "screen_mesh_bounds": true,
+    "native_uv": true,
+    "frame_orientation": true,
+    "flash_ring_clearance": true,
+    "finish_renders": 4
+  },
+  {
+    "id": "galaxy-z-fold4-unfolded",
+    "enclosure_bounds": true,
+    "screen_mesh_bounds": true,
+    "native_uv": true,
+    "frame_orientation": true,
+    "flash_ring_clearance": true,
+    "finish_renders": 4
+  },
+  {
+    "id": "galaxy-z-fold5-folded",
+    "enclosure_bounds": true,
+    "screen_mesh_bounds": true,
+    "native_uv": true,
+    "frame_orientation": true,
+    "flash_ring_clearance": true,
+    "finish_renders": 5
+  },
+  {
+    "id": "galaxy-z-fold5-unfolded",
+    "enclosure_bounds": true,
+    "screen_mesh_bounds": true,
+    "native_uv": true,
+    "frame_orientation": true,
+    "flash_ring_clearance": true,
+    "finish_renders": 5
+  },
+  {
+    "id": "galaxy-z-fold6-folded",
+    "enclosure_bounds": true,
+    "screen_mesh_bounds": true,
+    "native_uv": true,
+    "frame_orientation": true,
+    "flash_ring_clearance": true,
+    "finish_renders": 5
+  },
+  {
+    "id": "galaxy-z-fold6-unfolded",
+    "enclosure_bounds": true,
+    "screen_mesh_bounds": true,
+    "native_uv": true,
+    "frame_orientation": true,
+    "flash_ring_clearance": true,
+    "finish_renders": 5
+  },
+  {
+    "id": "galaxy-z-fold7-folded",
+    "enclosure_bounds": true,
+    "screen_mesh_bounds": true,
+    "native_uv": true,
+    "frame_orientation": true,
+    "flash_ring_clearance": true,
+    "finish_renders": 4
+  },
+  {
+    "id": "galaxy-z-fold7-unfolded",
+    "enclosure_bounds": true,
+    "screen_mesh_bounds": true,
+    "native_uv": true,
+    "frame_orientation": true,
+    "flash_ring_clearance": true,
+    "finish_renders": 4
+  },
+  {
+    "id": "galaxy-z-fold8-folded",
+    "enclosure_bounds": true,
+    "screen_mesh_bounds": true,
+    "native_uv": true,
+    "frame_orientation": true,
+    "flash_ring_clearance": true,
+    "finish_renders": 4
+  },
+  {
+    "id": "galaxy-z-fold8-ultra-folded",
+    "enclosure_bounds": true,
+    "screen_mesh_bounds": true,
+    "native_uv": true,
+    "frame_orientation": true,
+    "flash_ring_clearance": true,
+    "finish_renders": 4
+  },
+  {
+    "id": "galaxy-z-fold8-ultra-unfolded",
+    "enclosure_bounds": true,
+    "screen_mesh_bounds": true,
+    "native_uv": true,
+    "frame_orientation": true,
+    "flash_ring_clearance": true,
+    "finish_renders": 4
+  },
+  {
+    "id": "galaxy-z-fold8-unfolded",
+    "enclosure_bounds": true,
+    "screen_mesh_bounds": true,
+    "native_uv": true,
+    "frame_orientation": true,
+    "flash_ring_clearance": true,
+    "finish_renders": 4
+  },
+  {
+    "id": "galaxy-z-trifold-folded",
+    "enclosure_bounds": true,
+    "screen_mesh_bounds": true,
+    "native_uv": true,
+    "frame_orientation": true,
+    "flash_ring_clearance": true,
+    "finish_renders": 1
+  },
+  {
+    "id": "galaxy-z-trifold-unfolded",
+    "enclosure_bounds": true,
+    "screen_mesh_bounds": true,
+    "native_uv": true,
+    "frame_orientation": true,
+    "flash_ring_clearance": true,
+    "finish_renders": 1
+  }
+]

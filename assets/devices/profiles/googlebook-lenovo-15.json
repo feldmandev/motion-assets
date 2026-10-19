@@ -1,0 +1,412 @@
+{
+  "id": "googlebook-lenovo-15",
+  "name": "Lenovo Googlebook 15",
+  "manufacturer": "Lenovo",
+  "form_factor": "laptop",
+  "body_mm": {
+    "width": 341.0,
+    "height": 236.0,
+    "depth": 5.6,
+    "base_depth_mm": 10.35,
+    "closed_depth_mm": 15.95,
+    "corner_radius": 7.2,
+    "edge_roll_mm": [
+      0.55,
+      0.45
+    ],
+    "front_curve": 0,
+    "top_lip_mm": [
+      98.0,
+      3.6
+    ]
+  },
+  "finish": "Cloud Grey",
+  "materials": {
+    "back": {
+      "rgb": [
+        0.5451,
+        0.5647,
+        0.5922
+      ],
+      "metal": 0.12,
+      "rough": 0.28
+    },
+    "rail": {
+      "rgb": [
+        0.5451,
+        0.5647,
+        0.5922
+      ],
+      "metal": 0.18,
+      "rough": 0.24000000000000002
+    },
+    "bar": {
+      "rgb": [
+        0.5451,
+        0.5647,
+        0.5922
+      ],
+      "metal": 0.22,
+      "rough": 0.28
+    },
+    "logo": {
+      "rgb": [
+        0.3216,
+        0.3412,
+        0.3647
+      ],
+      "metal": 0.65,
+      "rough": 0.18
+    },
+    "keycap": {
+      "rgb": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "metal": 0.04,
+      "rough": 0.44
+    },
+    "black": {
+      "rgb": [
+        0.012,
+        0.014,
+        0.018
+      ],
+      "rough": 0.42
+    },
+    "flash": {
+      "rgb": [
+        0.88,
+        0.87,
+        0.82
+      ],
+      "rough": 0.4
+    }
+  },
+  "finishes": {
+    "Cloud Grey": {
+      "back": {
+        "rgb": [
+          0.5451,
+          0.5647,
+          0.5922
+        ],
+        "metal": 0.12,
+        "rough": 0.28
+      },
+      "rail": {
+        "rgb": [
+          0.5451,
+          0.5647,
+          0.5922
+        ],
+        "metal": 0.18,
+        "rough": 0.24000000000000002
+      },
+      "bar": {
+        "rgb": [
+          0.5451,
+          0.5647,
+          0.5922
+        ],
+        "metal": 0.22,
+        "rough": 0.28
+      },
+      "logo": {
+        "rgb": [
+          0.3216,
+          0.3412,
+          0.3647
+        ],
+        "metal": 0.65,
+        "rough": 0.18
+      },
+      "keycap": {
+        "rgb": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "metal": 0.04,
+        "rough": 0.44
+      }
+    },
+    "Celestial White": {
+      "back": {
+        "rgb": [
+          0.9098,
+          0.9176,
+          0.9294
+        ],
+        "metal": 0.12,
+        "rough": 0.26
+      },
+      "rail": {
+        "rgb": [
+          0.9098,
+          0.9176,
+          0.9294
+        ],
+        "metal": 0.18,
+        "rough": 0.24
+      },
+      "bar": {
+        "rgb": [
+          0.9098,
+          0.9176,
+          0.9294
+        ],
+        "metal": 0.22,
+        "rough": 0.26
+      },
+      "logo": {
+        "rgb": [
+          0.5647,
+          0.5882,
+          0.6157
+        ],
+        "metal": 0.65,
+        "rough": 0.18
+      },
+      "keycap": {
+        "rgb": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "metal": 0.04,
+        "rough": 0.44
+      }
+    },
+    "Abyss Blue": {
+      "back": {
+        "rgb": [
+          0.1569,
+          0.2078,
+          0.2706
+        ],
+        "metal": 0.12,
+        "rough": 0.3
+      },
+      "rail": {
+        "rgb": [
+          0.1569,
+          0.2078,
+          0.2706
+        ],
+        "metal": 0.18,
+        "rough": 0.26
+      },
+      "bar": {
+        "rgb": [
+          0.1569,
+          0.2078,
+          0.2706
+        ],
+        "metal": 0.22,
+        "rough": 0.3
+      },
+      "logo": {
+        "rgb": [
+          0.3333,
+          0.3961,
+          0.4706
+        ],
+        "metal": 0.65,
+        "rough": 0.18
+      },
+      "keycap": {
+        "rgb": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "metal": 0.04,
+        "rough": 0.44
+      }
+    }
+  },
+  "status": "official",
+  "sources": [
+    "https://googlebook.google/",
+    "https://googlebook.google/compare/"
+  ],
+  "accuracy": {
+    "body_dimensions": "Published metric Googlebook specifications from googlebook.google",
+    "screen_geometry": "Published 16:10 display active area and resolution",
+    "camera_geometry": "Top bezel 1080p webcam + dual-mic array + lid LED Glowbar measured from official renders",
+    "finishes": "Official Googlebook launch finishes sampled from product renders",
+    "hinge": "Articulated clamshell X-axis hinge rotating lid 0 to 90 degrees flush onto keyboard base"
+  },
+  "glowbar": {
+    "center_mm": [
+      0.0,
+      109.6
+    ],
+    "size_mm": [
+      58.0,
+      1.8
+    ],
+    "colors": [
+      [
+        0.259,
+        0.522,
+        0.957
+      ],
+      [
+        0.204,
+        0.659,
+        0.325
+      ],
+      [
+        0.984,
+        0.737,
+        0.016
+      ],
+      [
+        0.918,
+        0.263,
+        0.208
+      ]
+    ]
+  },
+  "rear_logo": {
+    "kind": "lenovo",
+    "center_mm": [
+      0.0,
+      3.5
+    ],
+    "width_mm": 60.0
+  },
+  "hinge_style": "center_bar",
+  "deck_style": "lenovo_15",
+  "ports": {
+    "left": [
+      {
+        "type": "hdmi",
+        "z": 25.0
+      },
+      {
+        "type": "usb_c",
+        "z": 40.0
+      },
+      {
+        "type": "audio",
+        "z": 54.0
+      }
+    ],
+    "right": [
+      {
+        "type": "microsd",
+        "z": 22.0
+      },
+      {
+        "type": "usb_a",
+        "z": 36.0
+      },
+      {
+        "type": "usb_c",
+        "z": 52.0
+      }
+    ]
+  },
+  "panels": [
+    {
+      "name": "Lid",
+      "center_mm": [
+        0.0,
+        118.0,
+        -2.8
+      ],
+      "body_mm": {
+        "width": 341.0,
+        "height": 236.0,
+        "depth": 5.6,
+        "corner_radius": 7.2,
+        "edge_roll_mm": [
+          0.55,
+          0.45
+        ],
+        "front_curve": 0
+      },
+      "buttons": false
+    },
+    {
+      "name": "Base",
+      "center_mm": [
+        0.0,
+        -5.175,
+        118.0
+      ],
+      "body_mm": {
+        "width": 341.0,
+        "height": 10.35,
+        "depth": 236.0,
+        "corner_radius": 7.2,
+        "edge_roll_mm": [
+          0.55,
+          0.45
+        ],
+        "front_curve": 0
+      },
+      "buttons": false
+    }
+  ],
+  "screen": {
+    "panel": "Lid",
+    "object": "Device screen",
+    "node": "Device screen",
+    "resolution": [
+      2880,
+      1800
+    ],
+    "fit_box_mm": [
+      330.0,
+      206.25
+    ],
+    "center_mm": [
+      0.0,
+      3.2,
+      2.94
+    ],
+    "frame_center_mm": [
+      0.0,
+      3.2
+    ],
+    "corner_radius_mm": 2.0,
+    "create_cutouts": true,
+    "cutouts": [
+      {
+        "center_mm": [
+          0.0,
+          105.725
+        ],
+        "radius_mm": 1.15
+      }
+    ]
+  },
+  "articulation": {
+    "animation": "Fold",
+    "axis": "X",
+    "axis_mm": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "moving_panel": "Lid",
+    "fixed_panel": "Base",
+    "pivots": {
+      "Lid": "Fold pivot | Lid",
+      "Base": "Fold pivot | Base"
+    },
+    "open_degrees": 0,
+    "closed_degrees": 90,
+    "duration_seconds": 1.0,
+    "closed_body_mm": {
+      "width": 341.0,
+      "height": 15.95,
+      "depth": 236.0
+    }
+  }
+}

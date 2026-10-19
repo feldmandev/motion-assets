@@ -1,0 +1,171 @@
+{
+  "id": "galaxy-tab-s8-ultra",
+  "name": "Galaxy Tab S8 Ultra",
+  "state": "default",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        1848,
+        2960
+      ],
+      "size_mm": [
+        195.89413054263645,
+        313.7698194838766
+      ],
+      "center_mm": [
+        0.0,
+        0.0,
+        2.7849998474121094
+      ],
+      "corner_radius_mm": 7.243909741938298,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0,
+      "frame_bounds_mm": [
+        6.352934728681774,
+        6.315090258061701,
+        195.89413054263645,
+        313.7698194838766
+      ],
+      "frame_screen_px": null,
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "width": 208.6,
+        "height": 326.4,
+        "depth": 5.5,
+        "corner_radius": 13.559,
+        "edge_roll": 0.32,
+        "front_rail_mm": 0.45,
+        "corner_radii_mm": [
+          13.559,
+          13.559,
+          13.559,
+          13.559
+        ]
+      },
+      "cutouts": [
+        {
+          "center_mm": [
+            96.44706527131822,
+            0
+          ],
+          "size_mm": [
+            5,
+            21
+          ],
+          "radius_mm": 2.3
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "articulation": null,
+  "panels": [],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/galaxy-tab-s8-ultra-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "logo": "logo",
+    "black": "black",
+    "flash": "flash",
+    "strip": "strip",
+    "camera_ring": "camera_ring"
+  },
+  "finishes": [
+    {
+      "name": "Graphite",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.3137254901960784,
+            0.33725490196078434,
+            0.3764705882352941
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "rail": {
+          "rgb": [
+            0.3137254901960784,
+            0.33725490196078434,
+            0.3764705882352941
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "bar": {
+          "rgb": [
+            0.025,
+            0.028,
+            0.032
+          ],
+          "rough": 0.34
+        },
+        "logo": {
+          "rgb": [
+            0.5149019607843137,
+            0.5490196078431373,
+            0.6058823529411765
+          ],
+          "metal": 0.3,
+          "rough": 0.45
+        },
+        "strip": {
+          "rgb": [
+            0.045,
+            0.05,
+            0.06
+          ],
+          "metal": 0.15,
+          "rough": 0.48
+        },
+        "camera_ring": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.15
+          ],
+          "metal": 0.75,
+          "rough": 0.3
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/galaxy-tab-s8-ultra.28b9f94b74f8.glb.gz",
+  "sha256": "28b9f94b74f8f40dddb8c1a4879d03572b3e98e4f6ee5a0b81bfb10baf1e5023",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/galaxy-tab-s8-ultra.json",
+    "accuracy": {
+      "body_dimensions": "Samsung published metric dimensions",
+      "screen_resolution": "Samsung native panel resolution; exact aspect ratio",
+      "screen_geometry": "Published rectangular diagonal and exact native aspect; inferred bezels. Concentric corner radii, selfie aperture/notch dimensions are photo estimates.",
+      "camera_geometry": "Official rear-render normalized measurements; model-family housing/charging insert, separate glass windows, rims, apertures and flash. Protrusion and internal optics estimated, not OEM CAD.",
+      "details": "Rear wordmark and built-in charging surface where present; no S Pen accessory. Ports, speaker holes and antenna seams omitted. See research/samsung-tablet-rear-measurements.json for measurements and family transfer limits.",
+      "finishes": "Official names (regional availability varies); source-icon sampled/representative RGB, not measured material samples."
+    },
+    "sources": [
+      "https://news.samsung.com/global/breaking-the-rules-with-galaxy-tab-s8-series-the-biggest-boldest-most-versatile-galaxy-tablet-ever",
+      "[local reference path omitted]",
+      "[local reference path omitted]",
+      "https://api.samsungmobilepress.com/media-assets/galaxy-tab-s8-ultra?page=3",
+      "https://api.samsungmobilepress.com/file/3E87987B7847BCDE9236B2A87128B0F386493C48851878EC6C46D17682E2D29E9F65F52538D0D07FE8FDB9F8830DDE9A9EFAE7CFCA502060D8F333BE46C32C3BFA59F5093BAA4A0B56ECEF9759468B627C277DE4CF4B4471AE49468B08AADB0D84DD99835A7BB3AEBD398D435E4478BE24EF2F499EE3BEACF16756F4F72FEB50B7724811554F2C0E1347E208693F382A7732157E3140B64ABF893230B2F28351"
+    ]
+  }
+}

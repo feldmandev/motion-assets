@@ -1,0 +1,215 @@
+{
+  "id": "pixel-7a",
+  "name": "Pixel 7a",
+  "state": "default",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        1080,
+        2400
+      ],
+      "size_mm": [
+        64.15005861664712,
+        142.55568581477138
+      ],
+      "center_mm": [
+        -0.029699101211410707,
+        0.6236811254396248,
+        4.535
+      ],
+      "corner_radius_mm": 2.7161513251925813,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0,
+      "frame_bounds_mm": [
+        4.345271590465032,
+        4.098475967174679,
+        64.15005861664712,
+        142.55568581477138
+      ],
+      "frame_screen_px": [
+        69,
+        69,
+        1080,
+        2400
+      ],
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "height": 152.0,
+        "width": 72.9,
+        "depth": 9.0,
+        "corner_radius": 6.952874654618143,
+        "edge_roll": 0.55,
+        "front_curve": 0,
+        "edge_roll_mm": [
+          2.8,
+          0.9
+        ],
+        "corner_radii_mm": [
+          7.12082111808044,
+          6.81462729236726,
+          6.81462729236726,
+          7.061422915657613
+        ]
+      },
+      "cutouts": [
+        {
+          "center_mm": [
+            0,
+            67.27784290738569
+          ],
+          "radius_mm": 1.5
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "articulation": null,
+  "panels": [],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/pixel-7a-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "black": "black",
+    "flash": "flash"
+  },
+  "finishes": [
+    {
+      "name": "Charcoal",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.26667,
+            0.29412,
+            0.2902
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.37334,
+            0.39118,
+            0.38863
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.37334,
+            0.39118,
+            0.38863
+          ]
+        }
+      }
+    },
+    {
+      "name": "Snow",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.90196,
+            0.90196,
+            0.87451
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.78627,
+            0.78627,
+            0.76843
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.78627,
+            0.78627,
+            0.76843
+          ]
+        }
+      }
+    },
+    {
+      "name": "Sea",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.66275,
+            0.78824,
+            0.88627
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.63079,
+            0.71236,
+            0.77608
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.63079,
+            0.71236,
+            0.77608
+          ]
+        }
+      }
+    },
+    {
+      "name": "Coral",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.95686,
+            0.47843,
+            0.4
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.82196,
+            0.51098,
+            0.46
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.82196,
+            0.51098,
+            0.46
+          ]
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/pixel-7a.05cb28ff5008.glb.gz",
+  "sha256": "05cb28ff5008d929f7357060fa2779c4abbaa8692c7d9960ca72108f72dfb386",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/pixel-7a.json",
+    "accuracy": {
+      "body_dimensions": "Google published metric dimensions",
+      "screen_resolution": "Google published panel resolution",
+      "screen_geometry": "Screen fit and corner radius measured from Google emulator artwork; native pixel aspect preserved. Skin artwork is a reference, not physical CAD.",
+      "camera_geometry": "Housing width, height and top gap scaled from official rear artwork; pixel bounds and uncertainty in camera_measurement. Optical internals remain illustrative. Not measurable from this rear view; model depth remains a visual estimate.",
+      "finishes": "Approximate sRGB colors and roughness, not calibrated measured materials"
+    },
+    "sources": [
+      "https://support.google.com/pixelphone/answer/7158570?hl=en",
+      "https://store.google.com/us/product/pixel_7a?hl=en-US"
+    ]
+  }
+}

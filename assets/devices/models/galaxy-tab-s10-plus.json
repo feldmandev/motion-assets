@@ -1,0 +1,224 @@
+{
+  "id": "galaxy-tab-s10-plus",
+  "name": "Galaxy Tab S10+",
+  "state": "default",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        1752,
+        2800
+      ],
+      "size_mm": [
+        167.06558688974926,
+        266.99979639914267
+      ],
+      "center_mm": [
+        0.0,
+        0.0,
+        2.8349997997283936
+      ],
+      "corner_radius_mm": 2,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0,
+      "frame_bounds_mm": [
+        9.167206555125375,
+        9.200101800428655,
+        167.06558688974926,
+        266.99979639914267
+      ],
+      "frame_screen_px": null,
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "width": 185.4,
+        "height": 285.4,
+        "depth": 5.6,
+        "corner_radius": 11.167206555125375,
+        "edge_roll": 0.32,
+        "front_rail_mm": 0.45,
+        "corner_radii_mm": [
+          11.167206555125375,
+          11.167206555125375,
+          11.167206555125375,
+          11.167206555125375
+        ]
+      },
+      "cutouts": [
+        {
+          "center_mm": [
+            88.11639672243732,
+            0
+          ],
+          "radius_mm": 1.35
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "articulation": null,
+  "panels": [],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/galaxy-tab-s10-plus-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "black": "black",
+    "flash": "flash",
+    "logo": "logo",
+    "strip": "strip",
+    "camera_ring": "camera_ring"
+  },
+  "finishes": [
+    {
+      "name": "Moonstone Gray",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.3843137254901961,
+            0.38823529411764707,
+            0.41568627450980394
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "rail": {
+          "rgb": [
+            0.3843137254901961,
+            0.38823529411764707,
+            0.41568627450980394
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "bar": {
+          "rgb": [
+            0.025,
+            0.028,
+            0.032
+          ],
+          "rough": 0.34
+        },
+        "logo": {
+          "rgb": [
+            0.6172549019607843,
+            0.6229411764705883,
+            0.6627450980392158
+          ],
+          "metal": 0.3,
+          "rough": 0.45
+        },
+        "strip": {
+          "rgb": [
+            0.4492745098039216,
+            0.4537058823529412,
+            0.4847254901960784
+          ],
+          "metal": 0.5,
+          "rough": 0.5
+        },
+        "camera_ring": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.15
+          ],
+          "metal": 0.75,
+          "rough": 0.3
+        }
+      }
+    },
+    {
+      "name": "Platinum Silver",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.7843137254901961,
+            0.788235294117647,
+            0.796078431372549
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "rail": {
+          "rgb": [
+            0.7843137254901961,
+            0.788235294117647,
+            0.796078431372549
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "bar": {
+          "rgb": [
+            0.025,
+            0.028,
+            0.032
+          ],
+          "rough": 0.34
+        },
+        "logo": {
+          "rgb": [
+            0.40784313725490196,
+            0.4098823529411765,
+            0.41396078431372546
+          ],
+          "metal": 0.3,
+          "rough": 0.45
+        },
+        "strip": {
+          "rgb": [
+            0.9012745098039214,
+            0.905705882352941,
+            0.9145686274509802
+          ],
+          "metal": 0.5,
+          "rough": 0.5
+        },
+        "camera_ring": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.15
+          ],
+          "metal": 0.75,
+          "rough": 0.3
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/galaxy-tab-s10-plus.2eab3483f1d1.glb.gz",
+  "sha256": "2eab3483f1d164716ac2276009b194cf6f6c44cf095d5b43cca5ff513bca2e02",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/galaxy-tab-s10-plus.json",
+    "accuracy": {
+      "body_dimensions": "Samsung published metric dimensions",
+      "screen_resolution": "Samsung native panel resolution; exact aspect ratio",
+      "screen_geometry": "Published rectangular diagonal; corner radii and camera notch estimated from product design",
+      "camera_geometry": "Official rear-render normalized measurements; model-family housing/charging insert, separate glass windows, rims, apertures and flash. Protrusion and internal optics estimated, not OEM CAD.",
+      "details": "Rear wordmark and built-in charging surface where present; no S Pen accessory. Ports, speaker holes and antenna seams omitted. See research/samsung-tablet-rear-measurements.json for measurements and family transfer limits.",
+      "finishes": "Approximate display RGB; not measured material samples"
+    },
+    "sources": [
+      "https://www.samsung.com/ae/support/mobile-devices/galaxy-tab-s10-series-colors-dimensions-and-weight/",
+      "https://www.samsung.com/us/support/answer/ANS10003773/",
+      "https://www.samsung.com/ie/tablets/galaxy-tab-s/galaxy-tab-s10-plus-silver-256gb-wi-fi-sm-x820nzsreub/",
+      "https://images.samsung.com/is/image/samsung/p6pim/ie/sm-x820nzsreub/gallery/ie-galaxy-tab-s10-plus-sm-x820-sm-x820nzsreub-thumb-543697184?$650_519_PNG$"
+    ]
+  }
+}

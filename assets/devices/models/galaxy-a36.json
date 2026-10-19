@@ -1,0 +1,261 @@
+{
+  "id": "galaxy-a36",
+  "name": "Galaxy A36",
+  "state": "default",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        1080,
+        2340
+      ],
+      "size_mm": [
+        71.31532064044009,
+        154.51652805428685
+      ],
+      "center_mm": [
+        0.0,
+        0.0,
+        3.734999895095825
+      ],
+      "corner_radius_mm": 7,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0,
+      "frame_bounds_mm": [
+        3.4423396797799555,
+        4.191735972856577,
+        71.31532064044009,
+        154.51652805428685
+      ],
+      "frame_screen_px": null,
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "width": 78.2,
+        "height": 162.9,
+        "depth": 7.4,
+        "corner_radius": 10.442339679779955,
+        "edge_roll_mm": [
+          0.35,
+          0.25
+        ],
+        "front_rail_mm": 0.4,
+        "rear_inset": 0.4,
+        "corner_radii_mm": [
+          10.442339679779955,
+          10.442339679779955,
+          10.442339679779955,
+          10.442339679779955
+        ]
+      },
+      "cutouts": [
+        {
+          "center_mm": [
+            0,
+            73.45826402714343
+          ],
+          "radius_mm": 1.4
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "articulation": null,
+  "panels": [],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/galaxy-a36-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "logo": "logo",
+    "black": "black",
+    "flash": "flash",
+    "front_sensor": "front_sensor",
+    "front_speaker": "front_speaker"
+  },
+  "finishes": [
+    {
+      "name": "Awesome White",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.9058823529411765,
+            0.9058823529411765,
+            0.9137254901960784
+          ],
+          "rough": 0.36
+        },
+        "rail": {
+          "rgb": [
+            0.8194117647058824,
+            0.8194117647058824,
+            0.8252941176470588
+          ],
+          "metal": 0.8,
+          "rough": 0.27
+        },
+        "bar": {
+          "rgb": [
+            0.018,
+            0.022,
+            0.03
+          ],
+          "metal": 0.55,
+          "rough": 0.27
+        },
+        "logo": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.16
+          ]
+        }
+      }
+    },
+    {
+      "name": "Awesome Lime",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.8549019607843137,
+            0.8784313725490196,
+            0.8431372549019608
+          ],
+          "rough": 0.36
+        },
+        "rail": {
+          "rgb": [
+            0.7811764705882352,
+            0.7988235294117647,
+            0.7723529411764706
+          ],
+          "metal": 0.8,
+          "rough": 0.27
+        },
+        "bar": {
+          "rgb": [
+            0.018,
+            0.022,
+            0.03
+          ],
+          "metal": 0.55,
+          "rough": 0.27
+        },
+        "logo": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.16
+          ]
+        }
+      }
+    },
+    {
+      "name": "Awesome Lavender",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.7607843137254902,
+            0.792156862745098,
+            0.8549019607843137
+          ],
+          "rough": 0.36
+        },
+        "rail": {
+          "rgb": [
+            0.7105882352941176,
+            0.7341176470588235,
+            0.7811764705882352
+          ],
+          "metal": 0.8,
+          "rough": 0.27
+        },
+        "bar": {
+          "rgb": [
+            0.018,
+            0.022,
+            0.03
+          ],
+          "metal": 0.55,
+          "rough": 0.27
+        },
+        "logo": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.16
+          ]
+        }
+      }
+    },
+    {
+      "name": "Awesome Black",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.1843137254901961,
+            0.1843137254901961,
+            0.19215686274509805
+          ],
+          "rough": 0.36
+        },
+        "rail": {
+          "rgb": [
+            0.2782352941176471,
+            0.2782352941176471,
+            0.2841176470588236
+          ],
+          "metal": 0.8,
+          "rough": 0.27
+        },
+        "bar": {
+          "rgb": [
+            0.018,
+            0.022,
+            0.03
+          ],
+          "metal": 0.55,
+          "rough": 0.27
+        },
+        "logo": {
+          "rgb": [
+            0.62,
+            0.64,
+            0.68
+          ]
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/galaxy-a36.9adda8cbe7e6.glb.gz",
+  "sha256": "9adda8cbe7e62aab35e2dfd1d0f44cd825b595b2dffb45722d7c721fb2e22ab1",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/galaxy-a36.json",
+    "accuracy": {
+      "body_dimensions": "Samsung published chassis dimensions. Corner radii, edge rolls and curvature are photo estimates, not CAD.",
+      "screen_resolution": "Samsung native resolution. Active rectangle calculated from rounded published full diagonal and native aspect; physical bezel widths therefore approximate.",
+      "screen_geometry": "Model-specific flat/dual-edge display, rectangular/rounded corners, bezel selfie or Infinity-O aperture. Radii, hole positions and curve depth are photo estimates.",
+      "camera_geometry": "Model-specific rear layout scaled from generate_galaxy_svgs.PHONES / base MODELS official-render measurements. Internal optics, radii and protrusions illustrative; early cover internal lens positions estimated from photographs. Laser/ToF/heart-rate/fingerprint features distinguished from imaging lenses.",
+      "finishes": "Published finish names; approximate sampled sRGB and material response. S21+ Phantom Violet uses muted rose champagne camera housing.",
+      "omissions": "USB/headphone ports, speaker perforations, antenna seams and S Pen silo omitted. Legacy capacitive navigation marks and bezel hardware simplified."
+    },
+    "sources": [
+      "https://news.samsung.com/ph/samsung-marks-a-step-forward-with-ai-for-everyone-by-introducing-new-galaxy-a56-5g-and-galaxy-a36-5g"
+    ]
+  }
+}

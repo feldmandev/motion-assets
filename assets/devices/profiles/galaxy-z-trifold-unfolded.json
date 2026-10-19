@@ -1,0 +1,507 @@
+{
+  "id": "galaxy-z-trifold-unfolded",
+  "name": "Galaxy Z TriFold · unfolded",
+  "manufacturer": "Samsung",
+  "form_factor": "phone",
+  "state": "unfolded",
+  "status": "provisional",
+  "body_mm": {
+    "width": 214.1,
+    "height": 159.2,
+    "depth": 4.2,
+    "corner_radius": 6.5,
+    "edge_roll_mm": [
+      0.25,
+      0.2
+    ],
+    "front_rail_mm": 0.45,
+    "rear_inset": 0.45
+  },
+  "finish": "Crafted Black",
+  "materials": {
+    "back": {
+      "rgb": [
+        0.08627450980392157,
+        0.08627450980392157,
+        0.10196078431372549
+      ],
+      "rough": 0.32
+    },
+    "rail": {
+      "rgb": [
+        0.15074509803921568,
+        0.15074509803921568,
+        0.1636078431372549
+      ],
+      "metal": 0.85,
+      "rough": 0.27
+    },
+    "bar": {
+      "rgb": [
+        0.08627450980392157,
+        0.08627450980392157,
+        0.10196078431372549
+      ],
+      "metal": 0.55,
+      "rough": 0.3
+    },
+    "logo": {
+      "rgb": [
+        0.043137254901960784,
+        0.043137254901960784,
+        0.050980392156862744
+      ]
+    },
+    "black": {
+      "rgb": [
+        0.006,
+        0.008,
+        0.011
+      ],
+      "rough": 0.35
+    },
+    "flash": {
+      "rgb": [
+        0.88,
+        0.86,
+        0.76
+      ],
+      "rough": 0.35
+    }
+  },
+  "finishes": {
+    "Crafted Black": {
+      "back": {
+        "rgb": [
+          0.08627450980392157,
+          0.08627450980392157,
+          0.10196078431372549
+        ],
+        "rough": 0.32
+      },
+      "rail": {
+        "rgb": [
+          0.15074509803921568,
+          0.15074509803921568,
+          0.1636078431372549
+        ],
+        "metal": 0.85,
+        "rough": 0.27
+      },
+      "bar": {
+        "rgb": [
+          0.08627450980392157,
+          0.08627450980392157,
+          0.10196078431372549
+        ],
+        "metal": 0.55,
+        "rough": 0.3
+      },
+      "logo": {
+        "rgb": [
+          0.043137254901960784,
+          0.043137254901960784,
+          0.050980392156862744
+        ]
+      }
+    }
+  },
+  "sources": [
+    "https://www.samsungmobilepress.com/articles/introducing-galaxy-z-trifold-the-shape-of-whats-next-in-mobile-innovation"
+  ],
+  "accuracy": {
+    "body_dimensions": "Published Samsung chassis dimensions excluding camera modules. Historical Fold3/4 and Flip3/4 thickness range retained in published_spec; closed wedge angle inferred from that range.",
+    "screen_resolution": "Published native panel pixels; orientation follows portrait cover/inner in the physical open chassis. ADB feed maps through full native UVs.",
+    "screen_geometry": "Active full rectangle from published diagonal/native aspect, fitted within chassis. Rounded corners, bezels, cover folder contour, camera cutouts are photo estimates; not CAD.",
+    "camera_geometry": "Lens and flash centres/diameters from source icon measurements of Samsung artwork. Samsung-specific individual rings/capsule, no Pixel bar. Protrusions and optical internals are estimates.",
+    "finishes": "Official standard and online-exclusive finish names; approximate sampled sRGB. Bespoke combinations and special editions excluded.",
+    "hinge": "Rigid articulated panels with physically positioned axes; external barrel dimensions/curves estimated. Internal multi-link and flexible OLED bend not simulated. Two independent inward hinges close left first, then camera leaf, with clearance for the three unequal published leaf thicknesses.",
+    "omissions": "Ports, grille perforations, antenna seams and internal hinge linkages."
+  },
+  "published_spec": {
+    "open_mm": [
+      214.1,
+      159.2,
+      4.2
+    ],
+    "closed_mm": [
+      75.0,
+      159.2,
+      12.9
+    ],
+    "closed_min_depth_mm": 12.9
+  },
+  "buttons": [
+    {
+      "name": "Volume",
+      "side": "right",
+      "center_y_mm": 16,
+      "length_mm": 19,
+      "width_mm": 2.1,
+      "thickness_mm": 0.3,
+      "radius_mm": 1
+    },
+    {
+      "name": "Power",
+      "side": "right",
+      "center_y_mm": -4,
+      "length_mm": 11,
+      "width_mm": 2.1,
+      "thickness_mm": 0.3,
+      "radius_mm": 1
+    }
+  ],
+  "source_key": "z_trifold",
+  "panels": [
+    {
+      "name": "Left half",
+      "body_mm": {
+        "width": 71.15,
+        "height": 159.2,
+        "depth": 3.9,
+        "corner_radius": 6.5,
+        "edge_roll_mm": [
+          0.25,
+          0.2
+        ],
+        "front_rail_mm": 0.45,
+        "rear_inset": 0.45,
+        "corner_radii_mm": [
+          1,
+          1,
+          6.5,
+          6.5
+        ]
+      },
+      "center_mm": [
+        -71.475,
+        0,
+        0.15
+      ],
+      "buttons": false
+    },
+    {
+      "name": "Cover half",
+      "body_mm": {
+        "width": 71.4,
+        "height": 159.2,
+        "depth": 4.2,
+        "corner_radius": 6.5,
+        "edge_roll_mm": [
+          0.25,
+          0.2
+        ],
+        "front_rail_mm": 0.45,
+        "rear_inset": 0.45,
+        "corner_radii_mm": [
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "center_mm": [
+        0,
+        0,
+        0
+      ],
+      "buttons": false
+    },
+    {
+      "name": "Camera half",
+      "body_mm": {
+        "width": 71.15,
+        "height": 159.2,
+        "depth": 4.0,
+        "corner_radius": 6.5,
+        "edge_roll_mm": [
+          0.25,
+          0.2
+        ],
+        "front_rail_mm": 0.45,
+        "rear_inset": 0.45,
+        "corner_radii_mm": [
+          6.5,
+          6.5,
+          1,
+          1
+        ]
+      },
+      "center_mm": [
+        71.475,
+        0,
+        0.1
+      ],
+      "buttons": true,
+      "camera": {
+        "center_mm": [
+          19.825000000000003,
+          48.099999999999994
+        ],
+        "size_mm": [
+          19.499999999999996,
+          52.5,
+          9.749999999999998
+        ],
+        "bump_mm": 0.8,
+        "ring_material": "black",
+        "optical_bump_mm": 1.1,
+        "lens_ring_mm": 0.4,
+        "roll_mm": 0.15,
+        "integrated_plateau": true,
+        "windows": [
+          [
+            19.825000000000003,
+            64.6,
+            13.45,
+            13.45,
+            6.725
+          ],
+          [
+            19.825000000000003,
+            48.099999999999994,
+            13.45,
+            13.45,
+            6.725
+          ],
+          [
+            19.825000000000003,
+            31.599999999999994,
+            13.45,
+            13.45,
+            6.725
+          ]
+        ],
+        "lenses": [
+          {
+            "kind": "ultrawide",
+            "center_mm": [
+              19.825000000000003,
+              64.6
+            ],
+            "radius_mm": 4.132499999999999,
+            "window": 0
+          },
+          {
+            "kind": "main",
+            "center_mm": [
+              19.825000000000003,
+              48.099999999999994
+            ],
+            "radius_mm": 4.132499999999999,
+            "window": 1
+          },
+          {
+            "kind": "telephoto",
+            "center_mm": [
+              19.825000000000003,
+              31.599999999999994
+            ],
+            "radius_mm": 4.132499999999999,
+            "window": 2
+          }
+        ],
+        "flash": [
+          [
+            1.0750000000000028,
+            63.849999999999994,
+            1.6875
+          ]
+        ],
+        "flash_surface": "body",
+        "sensors": []
+      }
+    }
+  ],
+  "screens": [
+    {
+      "object": "Inner screen",
+      "node": "Inner screen",
+      "panel": "Inner display",
+      "resolution": [
+        2160,
+        1584
+      ],
+      "fit_box_mm": [
+        204.82686894734923,
+        150.20637056138943
+      ],
+      "center_mm": [
+        0,
+        0,
+        2.15
+      ],
+      "corner_radius_mm": 5,
+      "create_cutouts": true,
+      "cutouts": [
+        {
+          "center_mm": [
+            94.41343447367461,
+            70.10318528069472
+          ],
+          "radius_mm": 1.35
+        }
+      ],
+      "foldable_surface": true,
+      "panel_regions_mm": {
+        "Left half": [
+          -10000.0,
+          -10000.0,
+          -35.75,
+          10000.0
+        ],
+        "Cover half": [
+          -35.75,
+          -10000.0,
+          35.75,
+          10000.0
+        ],
+        "Camera half": [
+          35.75,
+          -10000.0,
+          10000.0,
+          10000.0
+        ]
+      }
+    },
+    {
+      "object": "Cover screen",
+      "node": "Cover screen",
+      "panel": "Cover half",
+      "resolution": [
+        1080,
+        2520
+      ],
+      "fit_box_mm": [
+        65.03607619542059,
+        151.75084445598137
+      ],
+      "center_mm": [
+        0,
+        0,
+        -2.19
+      ],
+      "corner_radius_mm": 5,
+      "create_cutouts": true,
+      "cutouts": [
+        {
+          "center_mm": [
+            0,
+            71.37542222799068
+          ],
+          "radius_mm": 1.35
+        }
+      ],
+      "foldable_surface": true,
+      "rotation_deg": [
+        0,
+        180,
+        0
+      ],
+      "frame_file": "cover-frame.svg",
+      "frame_body_mm": {
+        "width": 75.0,
+        "height": 159.2,
+        "depth": 12.9,
+        "corner_radius": 6.5,
+        "edge_roll_mm": [
+          0.25,
+          0.2
+        ],
+        "front_rail_mm": 0.45,
+        "rear_inset": 0.45
+      },
+      "frame_center_mm": [
+        0,
+        0
+      ],
+      "glass_border_mm": 0.65
+    }
+  ],
+  "articulation": {
+    "animation": "Fold",
+    "axis": "Y",
+    "axis_mm": [
+      -35.75,
+      0,
+      2.2
+    ],
+    "moving_panel": "Left half",
+    "fixed_panel": "Cover half",
+    "pivots": {
+      "Left half": "Fold pivot | Left half",
+      "Cover half": "Fold pivot | Cover half",
+      "Camera half": "Fold pivot | Camera half"
+    },
+    "open_degrees": 0,
+    "closed_degrees": 180,
+    "duration_seconds": 1.0,
+    "closed_body_mm": {
+      "width": 75.0,
+      "height": 159.2,
+      "depth": 12.9,
+      "corner_radius": 6.5,
+      "edge_roll_mm": [
+        0.25,
+        0.2
+      ],
+      "front_rail_mm": 0.45,
+      "rear_inset": 0.45
+    },
+    "companion_profile": "galaxy-z-trifold-folded",
+    "joints": [
+      {
+        "moving_panel": "Left half",
+        "axis": "Y",
+        "axis_mm": [
+          -35.75,
+          0,
+          2.2
+        ],
+        "closed_degrees": 180,
+        "fixed_anchor_mm": [
+          -36.9,
+          0,
+          -1.5
+        ],
+        "moving_anchor_mm": [
+          -34.6,
+          0,
+          -1.2
+        ],
+        "spine_width_mm": 8.35,
+        "spine_depth_mm": 1.2,
+        "length_mm": 154.2,
+        "spine_pivot": "Fold pivot | Hinge spine Left half",
+        "start_fraction": 0,
+        "end_fraction": 0.5
+      },
+      {
+        "moving_panel": "Camera half",
+        "axis": "Y",
+        "axis_mm": [
+          35.75,
+          0,
+          4.45
+        ],
+        "closed_degrees": -180,
+        "fixed_anchor_mm": [
+          36.9,
+          0,
+          -1.5
+        ],
+        "moving_anchor_mm": [
+          34.6,
+          0,
+          -1.3
+        ],
+        "spine_width_mm": 12.9,
+        "spine_depth_mm": 1.2,
+        "length_mm": 154.2,
+        "spine_pivot": "Fold pivot | Hinge spine Camera half",
+        "start_fraction": 0.5,
+        "end_fraction": 1
+      }
+    ]
+  }
+}

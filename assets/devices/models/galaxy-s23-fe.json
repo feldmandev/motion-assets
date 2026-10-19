@@ -1,0 +1,337 @@
+{
+  "id": "galaxy-s23-fe",
+  "name": "Galaxy S23 FE",
+  "state": "default",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        1080,
+        2340
+      ],
+      "size_mm": [
+        68.12209732818158,
+        147.59787754439344
+      ],
+      "center_mm": [
+        0.0,
+        0.0,
+        4.134999752044678
+      ],
+      "corner_radius_mm": 6.5,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0,
+      "frame_bounds_mm": [
+        4.188951335909209,
+        5.2010612278032795,
+        68.12209732818158,
+        147.59787754439344
+      ],
+      "frame_screen_px": null,
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "width": 76.5,
+        "height": 158,
+        "depth": 8.2,
+        "corner_radius": 10.68895133590921,
+        "edge_roll_mm": [
+          0.35,
+          0.25
+        ],
+        "front_rail_mm": 0.4,
+        "rear_inset": 0.4,
+        "corner_radii_mm": [
+          10.68895133590921,
+          10.68895133590921,
+          10.68895133590921,
+          10.68895133590921
+        ]
+      },
+      "cutouts": [
+        {
+          "center_mm": [
+            0,
+            69.99893877219672
+          ],
+          "radius_mm": 1.4
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "articulation": null,
+  "panels": [],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/galaxy-s23-fe-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "logo": "logo",
+    "black": "black",
+    "flash": "flash",
+    "front_sensor": "front_sensor",
+    "front_speaker": "front_speaker"
+  },
+  "finishes": [
+    {
+      "name": "Graphite",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.20392156862745098,
+            0.20392156862745098,
+            0.20392156862745098
+          ],
+          "rough": 0.36
+        },
+        "rail": {
+          "rgb": [
+            0.29294117647058826,
+            0.29294117647058826,
+            0.29294117647058826
+          ],
+          "metal": 0.8,
+          "rough": 0.27
+        },
+        "bar": {
+          "rgb": [
+            0.2276078431372549,
+            0.2276078431372549,
+            0.2276078431372549
+          ],
+          "metal": 0.55,
+          "rough": 0.27
+        },
+        "logo": {
+          "rgb": [
+            0.62,
+            0.64,
+            0.68
+          ]
+        }
+      }
+    },
+    {
+      "name": "Purple",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.37254901960784315,
+            0.3137254901960784,
+            0.43529411764705883
+          ],
+          "rough": 0.36
+        },
+        "rail": {
+          "rgb": [
+            0.4194117647058824,
+            0.37529411764705883,
+            0.46647058823529414
+          ],
+          "metal": 0.8,
+          "rough": 0.27
+        },
+        "bar": {
+          "rgb": [
+            0.3827450980392157,
+            0.32862745098039214,
+            0.4404705882352941
+          ],
+          "metal": 0.55,
+          "rough": 0.27
+        },
+        "logo": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.16
+          ]
+        }
+      }
+    },
+    {
+      "name": "Mint",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.8352941176470589,
+            0.8980392156862745,
+            0.8549019607843137
+          ],
+          "rough": 0.36
+        },
+        "rail": {
+          "rgb": [
+            0.7664705882352941,
+            0.813529411764706,
+            0.7811764705882352
+          ],
+          "metal": 0.8,
+          "rough": 0.27
+        },
+        "bar": {
+          "rgb": [
+            0.8084705882352942,
+            0.8661960784313727,
+            0.8265098039215687
+          ],
+          "metal": 0.55,
+          "rough": 0.27
+        },
+        "logo": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.16
+          ]
+        }
+      }
+    },
+    {
+      "name": "Cream",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.9725490196078431,
+            0.9529411764705882,
+            0.9372549019607843
+          ],
+          "rough": 0.36
+        },
+        "rail": {
+          "rgb": [
+            0.8694117647058823,
+            0.8547058823529411,
+            0.8429411764705882
+          ],
+          "metal": 0.8,
+          "rough": 0.27
+        },
+        "bar": {
+          "rgb": [
+            0.9347450980392158,
+            0.9167058823529411,
+            0.9022745098039217
+          ],
+          "metal": 0.55,
+          "rough": 0.27
+        },
+        "logo": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.16
+          ]
+        }
+      }
+    },
+    {
+      "name": "Tangerine",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.7215686274509804,
+            0.4823529411764706,
+            0.26666666666666666
+          ],
+          "rough": 0.36
+        },
+        "rail": {
+          "rgb": [
+            0.6811764705882353,
+            0.5017647058823529,
+            0.34
+          ],
+          "metal": 0.8,
+          "rough": 0.27
+        },
+        "bar": {
+          "rgb": [
+            0.703843137254902,
+            0.48376470588235293,
+            0.2853333333333333
+          ],
+          "metal": 0.55,
+          "rough": 0.27
+        },
+        "logo": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.16
+          ]
+        }
+      }
+    },
+    {
+      "name": "Indigo",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.4980392156862745,
+            0.5764705882352941,
+            0.6745098039215687
+          ],
+          "rough": 0.36
+        },
+        "rail": {
+          "rgb": [
+            0.5135294117647059,
+            0.5723529411764705,
+            0.6458823529411765
+          ],
+          "metal": 0.8,
+          "rough": 0.27
+        },
+        "bar": {
+          "rgb": [
+            0.49819607843137254,
+            0.5703529411764706,
+            0.6605490196078433
+          ],
+          "metal": 0.55,
+          "rough": 0.27
+        },
+        "logo": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.16
+          ]
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/galaxy-s23-fe.874eaff24cbb.glb.gz",
+  "sha256": "874eaff24cbb2f77402a516fdf6c457d2cfea1dc77d6ae78801aa0320dda6bb0",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/galaxy-s23-fe.json",
+    "accuracy": {
+      "body_dimensions": "Samsung published chassis dimensions. Corner radii, edge rolls and curvature are photo estimates, not CAD.",
+      "screen_resolution": "Samsung native resolution. Active rectangle calculated from rounded published full diagonal and native aspect; physical bezel widths therefore approximate.",
+      "screen_geometry": "Model-specific flat/dual-edge display, rectangular/rounded corners, bezel selfie or Infinity-O aperture. Radii, hole positions and curve depth are photo estimates.",
+      "camera_geometry": "Model-specific rear layout scaled from generate_galaxy_svgs.PHONES / base MODELS official-render measurements. Internal optics, radii and protrusions illustrative; early cover internal lens positions estimated from photographs. Laser/ToF/heart-rate/fingerprint features distinguished from imaging lenses.",
+      "finishes": "Published finish names; approximate sampled sRGB and material response. S21+ Phantom Violet uses muted rose champagne camera housing.",
+      "omissions": "USB/headphone ports, speaker perforations, antenna seams and S Pen silo omitted. Legacy capacitive navigation marks and bezel hardware simplified."
+    },
+    "sources": [
+      "https://www.samsung.com/africa_en/support/mobile-devices/specifications-for-the-new-galaxy-s23-fe/"
+    ]
+  }
+}

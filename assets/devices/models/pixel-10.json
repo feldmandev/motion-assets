@@ -1,0 +1,215 @@
+{
+  "id": "pixel-10",
+  "name": "Pixel 10",
+  "state": "default",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        1080,
+        2424
+      ],
+      "size_mm": [
+        65.09822485207101,
+        146.10934911242606
+      ],
+      "center_mm": [
+        0.030138067061143987,
+        0.030138067061143987,
+        4.335
+      ],
+      "corner_radius_mm": 8.80931557053898,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0,
+      "frame_bounds_mm": [
+        3.4810256410256386,
+        3.315187376725831,
+        65.09822485207101,
+        146.10934911242606
+      ],
+      "frame_screen_px": [
+        59,
+        55,
+        1080,
+        2424
+      ],
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "height": 152.8,
+        "width": 72.0,
+        "depth": 8.6,
+        "corner_radius": 12.154641014325955,
+        "edge_roll": 0.55,
+        "front_curve": 0,
+        "edge_roll_mm": [
+          0.75,
+          0.75
+        ],
+        "corner_radii_mm": [
+          12.1847790813871,
+          12.12450294726481,
+          12.12450294726481,
+          12.1847790813871
+        ]
+      },
+      "cutouts": [
+        {
+          "center_mm": [
+            0,
+            69.05467455621303
+          ],
+          "radius_mm": 1.5
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "articulation": null,
+  "panels": [],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/pixel-10-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "black": "black",
+    "flash": "flash"
+  },
+  "finishes": [
+    {
+      "name": "Indigo",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.38431,
+            0.42745,
+            0.6
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.4498,
+            0.47784,
+            0.59
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.4498,
+            0.47784,
+            0.59
+          ]
+        }
+      }
+    },
+    {
+      "name": "Frost",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.76863,
+            0.85882,
+            0.8902
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.69961,
+            0.75823,
+            0.77863
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.69961,
+            0.75823,
+            0.77863
+          ]
+        }
+      }
+    },
+    {
+      "name": "Lemongrass",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.86275,
+            0.90196,
+            0.70196
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.76079,
+            0.78627,
+            0.65627
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.76079,
+            0.78627,
+            0.65627
+          ]
+        }
+      }
+    },
+    {
+      "name": "Obsidian",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.2,
+            0.22745,
+            0.23922
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.33,
+            0.34784,
+            0.35549
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.33,
+            0.34784,
+            0.35549
+          ]
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/pixel-10.3ad3d6b7239c.glb.gz",
+  "sha256": "3ad3d6b7239cdcdb5d30ba25a1e30dc8763a0e58c56dc846623dc577928245bc",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/pixel-10.json",
+    "accuracy": {
+      "body_dimensions": "Google published metric dimensions",
+      "screen_resolution": "Google published panel resolution",
+      "screen_geometry": "Screen fit and corner radius measured from Google emulator artwork; native pixel aspect preserved. Skin artwork is a reference, not physical CAD.",
+      "camera_geometry": "Housing width, height and top gap scaled from official rear artwork; pixel bounds and uncertainty in camera_measurement. Optical internals remain illustrative. Not measurable from this rear view; model depth remains a visual estimate.",
+      "finishes": "Approximate sRGB colors and roughness, not calibrated measured materials"
+    },
+    "sources": [
+      "https://support.google.com/pixelphone/answer/7158570?hl=en",
+      "https://store.google.com/product/pixel_10?hl=en-US"
+    ]
+  }
+}

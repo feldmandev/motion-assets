@@ -1,0 +1,37 @@
+# Copy to .github/workflows/update-motion-assets.yml in a Motion consumer repo.
+name: Update Motion assets
+on:
+  schedule:
+    - cron: '53 6 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+  pull-requests: write
+concurrency:
+  group: motion-assets-update
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1
+        with:
+          python-version: '3.12'
+      - run: python scripts/update_motion_assets.py --update
+      - name: Open an asset update PR
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if git diff --quiet; then exit 0; fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git checkout -B automation/motion-assets
+          python -c 'import json,subprocess;d=json.load(open("motion-assets.lock.json"));subprocess.run(["git","add","--",*d["files"],"motion-assets.lock.json"],check=True)'
+          git commit -m 'Update pinned Motion assets'
+          git push --force-with-lease origin HEAD:automation/motion-assets
+          if ! gh pr list --head automation/motion-assets --json number --jq '.[0].number' | grep -q '[0-9]'; then
+            gh pr create --base main --head automation/motion-assets --title 'Update Motion assets' --body 'Updates checksummed assets from the shared motion-assets release. Existing font resource names are retained.'
+          fi

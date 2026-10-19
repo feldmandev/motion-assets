@@ -1,0 +1,451 @@
+{
+  "id": "googlebook-emulator",
+  "name": "Googlebook Emulator",
+  "manufacturer": "Google",
+  "form_factor": "laptop",
+  "body_mm": {
+    "width": 312.0,
+    "height": 218.0,
+    "depth": 4.8,
+    "base_depth_mm": 8.0,
+    "closed_depth_mm": 12.8,
+    "corner_radius": 6.5,
+    "edge_roll_mm": [
+      0.55,
+      0.45
+    ],
+    "front_curve": 0
+  },
+  "finish": "Titanium Silver",
+  "materials": {
+    "back": {
+      "rgb": [
+        0.8314,
+        0.8471,
+        0.8627
+      ],
+      "metal": 0.12,
+      "rough": 0.26
+    },
+    "rail": {
+      "rgb": [
+        0.8314,
+        0.8471,
+        0.8627
+      ],
+      "metal": 0.18,
+      "rough": 0.24
+    },
+    "bar": {
+      "rgb": [
+        0.8314,
+        0.8471,
+        0.8627
+      ],
+      "metal": 0.22,
+      "rough": 0.26
+    },
+    "logo": {
+      "rgb": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "metal": 0.65,
+      "rough": 0.18
+    },
+    "keycap": {
+      "rgb": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "metal": 0.04,
+      "rough": 0.44
+    },
+    "black": {
+      "rgb": [
+        0.012,
+        0.014,
+        0.018
+      ],
+      "rough": 0.42
+    },
+    "flash": {
+      "rgb": [
+        0.88,
+        0.87,
+        0.82
+      ],
+      "rough": 0.4
+    }
+  },
+  "finishes": {
+    "Titanium Silver": {
+      "back": {
+        "rgb": [
+          0.8314,
+          0.8471,
+          0.8627
+        ],
+        "metal": 0.12,
+        "rough": 0.26
+      },
+      "rail": {
+        "rgb": [
+          0.8314,
+          0.8471,
+          0.8627
+        ],
+        "metal": 0.18,
+        "rough": 0.24
+      },
+      "bar": {
+        "rgb": [
+          0.8314,
+          0.8471,
+          0.8627
+        ],
+        "metal": 0.22,
+        "rough": 0.26
+      },
+      "logo": {
+        "rgb": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "metal": 0.65,
+        "rough": 0.18
+      },
+      "keycap": {
+        "rgb": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "metal": 0.04,
+        "rough": 0.44
+      }
+    },
+    "Obsidian": {
+      "back": {
+        "rgb": [
+          0.1255,
+          0.1294,
+          0.1412
+        ],
+        "metal": 0.12,
+        "rough": 0.3
+      },
+      "rail": {
+        "rgb": [
+          0.1255,
+          0.1294,
+          0.1412
+        ],
+        "metal": 0.18,
+        "rough": 0.26
+      },
+      "bar": {
+        "rgb": [
+          0.1255,
+          0.1294,
+          0.1412
+        ],
+        "metal": 0.22,
+        "rough": 0.3
+      },
+      "logo": {
+        "rgb": [
+          0.502,
+          0.5255,
+          0.5451
+        ],
+        "metal": 0.65,
+        "rough": 0.18
+      },
+      "keycap": {
+        "rgb": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "metal": 0.04,
+        "rough": 0.44
+      }
+    },
+    "Porcelain": {
+      "back": {
+        "rgb": [
+          0.9451,
+          0.9529,
+          0.9569
+        ],
+        "metal": 0.12,
+        "rough": 0.28
+      },
+      "rail": {
+        "rgb": [
+          0.9451,
+          0.9529,
+          0.9569
+        ],
+        "metal": 0.18,
+        "rough": 0.24000000000000002
+      },
+      "bar": {
+        "rgb": [
+          0.9451,
+          0.9529,
+          0.9569
+        ],
+        "metal": 0.22,
+        "rough": 0.28
+      },
+      "logo": {
+        "rgb": [
+          0.3725,
+          0.3882,
+          0.4078
+        ],
+        "metal": 0.65,
+        "rough": 0.18
+      },
+      "keycap": {
+        "rgb": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "metal": 0.04,
+        "rough": 0.44
+      }
+    },
+    "Hazel": {
+      "back": {
+        "rgb": [
+          0.502,
+          0.5333,
+          0.5098
+        ],
+        "metal": 0.12,
+        "rough": 0.28
+      },
+      "rail": {
+        "rgb": [
+          0.502,
+          0.5333,
+          0.5098
+        ],
+        "metal": 0.18,
+        "rough": 0.24000000000000002
+      },
+      "bar": {
+        "rgb": [
+          0.502,
+          0.5333,
+          0.5098
+        ],
+        "metal": 0.22,
+        "rough": 0.28
+      },
+      "logo": {
+        "rgb": [
+          0.8235,
+          0.8902,
+          0.9882
+        ],
+        "metal": 0.65,
+        "rough": 0.18
+      },
+      "keycap": {
+        "rgb": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "metal": 0.04,
+        "rough": 0.44
+      }
+    }
+  },
+  "status": "official",
+  "sources": [
+    "https://googlebook.google/",
+    "https://googlebook.google/compare/"
+  ],
+  "accuracy": {
+    "body_dimensions": "Published metric Googlebook specifications from googlebook.google",
+    "screen_geometry": "Published 16:10 display active area and resolution",
+    "camera_geometry": "Top bezel 1080p webcam + dual-mic array + lid LED Glowbar measured from official renders",
+    "finishes": "Official Googlebook launch finishes sampled from product renders",
+    "hinge": "Articulated clamshell X-axis hinge rotating lid 0 to 90 degrees flush onto keyboard base"
+  },
+  "glowbar": {
+    "center_mm": [
+      0.0,
+      94.0
+    ],
+    "size_mm": [
+      42.0,
+      1.8
+    ],
+    "colors": [
+      [
+        0.259,
+        0.522,
+        0.957
+      ],
+      [
+        0.204,
+        0.659,
+        0.325
+      ],
+      [
+        0.984,
+        0.737,
+        0.016
+      ],
+      [
+        0.918,
+        0.263,
+        0.208
+      ]
+    ]
+  },
+  "rear_logo": {
+    "kind": "google_g",
+    "center_mm": [
+      0.0,
+      2.0
+    ],
+    "width_mm": 32.0
+  },
+  "hinge_style": "center_bar",
+  "deck_style": "standard",
+  "ports": {
+    "left": [
+      {
+        "type": "usb_c",
+        "z": 22.0
+      },
+      {
+        "type": "usb_c",
+        "z": 36.0
+      },
+      {
+        "type": "audio",
+        "z": 52.0
+      }
+    ],
+    "right": [
+      {
+        "type": "usb_c",
+        "z": 22.0
+      },
+      {
+        "type": "usb_a",
+        "z": 38.0
+      }
+    ]
+  },
+  "panels": [
+    {
+      "name": "Lid",
+      "center_mm": [
+        0.0,
+        109.0,
+        -2.4
+      ],
+      "body_mm": {
+        "width": 312.0,
+        "height": 218.0,
+        "depth": 4.8,
+        "corner_radius": 6.5,
+        "edge_roll_mm": [
+          0.55,
+          0.45
+        ],
+        "front_curve": 0
+      },
+      "buttons": false
+    },
+    {
+      "name": "Base",
+      "center_mm": [
+        0.0,
+        -4.0,
+        109.0
+      ],
+      "body_mm": {
+        "width": 312.0,
+        "height": 8.0,
+        "depth": 218.0,
+        "corner_radius": 6.5,
+        "edge_roll_mm": [
+          0.55,
+          0.45
+        ],
+        "front_curve": 0
+      },
+      "buttons": false
+    }
+  ],
+  "screen": {
+    "panel": "Lid",
+    "object": "Device screen",
+    "node": "Device screen",
+    "resolution": [
+      2880,
+      1800
+    ],
+    "fit_box_mm": [
+      302.4,
+      189.0
+    ],
+    "center_mm": [
+      0.0,
+      2.8,
+      2.54
+    ],
+    "frame_center_mm": [
+      0.0,
+      2.8
+    ],
+    "corner_radius_mm": 2.2,
+    "create_cutouts": true,
+    "cutouts": [
+      {
+        "center_mm": [
+          0.0,
+          97.1
+        ],
+        "radius_mm": 1.15
+      }
+    ]
+  },
+  "articulation": {
+    "animation": "Fold",
+    "axis": "X",
+    "axis_mm": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "moving_panel": "Lid",
+    "fixed_panel": "Base",
+    "pivots": {
+      "Lid": "Fold pivot | Lid",
+      "Base": "Fold pivot | Base"
+    },
+    "open_degrees": 0,
+    "closed_degrees": 90,
+    "duration_seconds": 1.0,
+    "closed_body_mm": {
+      "width": 312.0,
+      "height": 12.8,
+      "depth": 218.0
+    }
+  }
+}

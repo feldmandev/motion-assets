@@ -1,0 +1,211 @@
+{
+  "id": "pixel-6-pro",
+  "name": "Pixel 6 Pro",
+  "state": "default",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        1440,
+        3120
+      ],
+      "size_mm": [
+        71.75919732441471,
+        155.47826086956522
+      ],
+      "center_mm": [
+        0.049832775919732446,
+        0.6229096989966556,
+        4.485
+      ],
+      "corner_radius_mm": 3.090161582623768,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 1.0,
+      "frame_bounds_mm": [
+        2.120234113712378,
+        3.587959866220743,
+        71.75919732441471,
+        155.47826086956522
+      ],
+      "frame_screen_px": [
+        41,
+        72,
+        1440,
+        3120
+      ],
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "height": 163.9,
+        "width": 75.9,
+        "depth": 8.9,
+        "corner_radius": 5.160562920416414,
+        "edge_roll": 1.6,
+        "front_curve": 1.0,
+        "edge_roll_mm": [
+          3.4,
+          1.6
+        ],
+        "corner_radii_mm": [
+          5.1107301444966815,
+          5.1107301444966815,
+          5.210395696336146,
+          5.210395696336146
+        ]
+      },
+      "cutouts": [
+        {
+          "center_mm": [
+            0,
+            73.73913043478261
+          ],
+          "radius_mm": 1.5
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "articulation": null,
+  "panels": [],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/pixel-6-pro-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "black": "black",
+    "flash": "flash",
+    "upper": "upper"
+  },
+  "finishes": [
+    {
+      "name": "Stormy Black",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.2549,
+            0.27451,
+            0.2902
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.36569,
+            0.37843,
+            0.38863
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.08235,
+            0.09804,
+            0.11373
+          ]
+        },
+        "upper": {
+          "rgb": [
+            0.43922,
+            0.45098,
+            0.45882
+          ]
+        }
+      }
+    },
+    {
+      "name": "Cloudy White",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.88235,
+            0.87451,
+            0.84314
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.77353,
+            0.76843,
+            0.74804
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.08235,
+            0.09804,
+            0.11373
+          ]
+        },
+        "upper": {
+          "rgb": [
+            0.71765,
+            0.72549,
+            0.71765
+          ]
+        }
+      }
+    },
+    {
+      "name": "Sorta Sunny",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.92549,
+            0.85098,
+            0.71373
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.80157,
+            0.75314,
+            0.66392
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.08235,
+            0.09804,
+            0.11373
+          ]
+        },
+        "upper": {
+          "rgb": [
+            0.8902,
+            0.75686,
+            0.60392
+          ]
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/pixel-6-pro.4f0496f1aab3.glb.gz",
+  "sha256": "4f0496f1aab3eb93604d675fb880a2200dd078989cf72359bbd56ed5946b219c",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/pixel-6-pro.json",
+    "accuracy": {
+      "body_dimensions": "Google published metric dimensions",
+      "screen_resolution": "Google published panel resolution",
+      "screen_geometry": "Screen fit and corner radius measured from Google emulator artwork; native pixel aspect preserved. Skin artwork is a reference, not physical CAD.",
+      "camera_geometry": "Housing width, height and top gap scaled from official rear artwork; pixel bounds and uncertainty in camera_measurement. Optical internals remain illustrative. Not measurable from this rear view; model depth remains a visual estimate.",
+      "finishes": "Approximate sRGB colors and roughness, not calibrated measured materials"
+    },
+    "sources": [
+      "https://support.google.com/pixelphone/answer/7158570?hl=en",
+      "https://store.google.com/us/magazine/compare_pixel?hl=en-US&toggler0=Pixel+6&toggler1=Pixel+6a&toggler2=Pixel+6+Pro"
+    ]
+  }
+}

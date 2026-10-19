@@ -1,0 +1,412 @@
+{
+  "id": "googlebook-acer-14",
+  "name": "Acer Googlebook 14",
+  "manufacturer": "Acer",
+  "form_factor": "laptop",
+  "body_mm": {
+    "width": 312.0,
+    "height": 222.9,
+    "depth": 5.2,
+    "base_depth_mm": 8.7,
+    "closed_depth_mm": 13.9,
+    "corner_radius": 6.8,
+    "edge_roll_mm": [
+      0.55,
+      0.45
+    ],
+    "front_curve": 0
+  },
+  "finish": "Elemental Blue",
+  "materials": {
+    "back": {
+      "rgb": [
+        0.1686,
+        0.2353,
+        0.3059
+      ],
+      "metal": 0.12,
+      "rough": 0.32
+    },
+    "rail": {
+      "rgb": [
+        0.1686,
+        0.2353,
+        0.3059
+      ],
+      "metal": 0.18,
+      "rough": 0.28
+    },
+    "bar": {
+      "rgb": [
+        0.1686,
+        0.2353,
+        0.3059
+      ],
+      "metal": 0.22,
+      "rough": 0.32
+    },
+    "logo": {
+      "rgb": [
+        0.4235,
+        0.5098,
+        0.6
+      ],
+      "metal": 0.65,
+      "rough": 0.18
+    },
+    "keycap": {
+      "rgb": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "metal": 0.04,
+      "rough": 0.44
+    },
+    "black": {
+      "rgb": [
+        0.012,
+        0.014,
+        0.018
+      ],
+      "rough": 0.42
+    },
+    "flash": {
+      "rgb": [
+        0.88,
+        0.87,
+        0.82
+      ],
+      "rough": 0.4
+    }
+  },
+  "finishes": {
+    "Elemental Blue": {
+      "back": {
+        "rgb": [
+          0.1686,
+          0.2353,
+          0.3059
+        ],
+        "metal": 0.12,
+        "rough": 0.32
+      },
+      "rail": {
+        "rgb": [
+          0.1686,
+          0.2353,
+          0.3059
+        ],
+        "metal": 0.18,
+        "rough": 0.28
+      },
+      "bar": {
+        "rgb": [
+          0.1686,
+          0.2353,
+          0.3059
+        ],
+        "metal": 0.22,
+        "rough": 0.32
+      },
+      "logo": {
+        "rgb": [
+          0.4235,
+          0.5098,
+          0.6
+        ],
+        "metal": 0.65,
+        "rough": 0.18
+      },
+      "keycap": {
+        "rgb": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "metal": 0.04,
+        "rough": 0.44
+      }
+    },
+    "Steel Gray": {
+      "back": {
+        "rgb": [
+          0.5569,
+          0.5804,
+          0.6118
+        ],
+        "metal": 0.12,
+        "rough": 0.28
+      },
+      "rail": {
+        "rgb": [
+          0.5569,
+          0.5804,
+          0.6118
+        ],
+        "metal": 0.18,
+        "rough": 0.24000000000000002
+      },
+      "bar": {
+        "rgb": [
+          0.5569,
+          0.5804,
+          0.6118
+        ],
+        "metal": 0.22,
+        "rough": 0.28
+      },
+      "logo": {
+        "rgb": [
+          0.7529,
+          0.7765,
+          0.8
+        ],
+        "metal": 0.65,
+        "rough": 0.18
+      },
+      "keycap": {
+        "rgb": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "metal": 0.04,
+        "rough": 0.44
+      }
+    },
+    "Pure Silver": {
+      "back": {
+        "rgb": [
+          0.8314,
+          0.8471,
+          0.8627
+        ],
+        "metal": 0.12,
+        "rough": 0.26
+      },
+      "rail": {
+        "rgb": [
+          0.8314,
+          0.8471,
+          0.8627
+        ],
+        "metal": 0.18,
+        "rough": 0.24
+      },
+      "bar": {
+        "rgb": [
+          0.8314,
+          0.8471,
+          0.8627
+        ],
+        "metal": 0.22,
+        "rough": 0.26
+      },
+      "logo": {
+        "rgb": [
+          0.9412,
+          0.9529,
+          0.9647
+        ],
+        "metal": 0.65,
+        "rough": 0.18
+      },
+      "keycap": {
+        "rgb": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "metal": 0.04,
+        "rough": 0.44
+      }
+    }
+  },
+  "status": "official",
+  "sources": [
+    "https://googlebook.google/",
+    "https://googlebook.google/compare/"
+  ],
+  "accuracy": {
+    "body_dimensions": "Published metric Googlebook specifications from googlebook.google",
+    "screen_geometry": "Published 16:10 display active area and resolution",
+    "camera_geometry": "Top bezel 1080p webcam + dual-mic array + lid LED Glowbar measured from official renders",
+    "finishes": "Official Googlebook launch finishes sampled from product renders",
+    "hinge": "Articulated clamshell X-axis hinge rotating lid 0 to 90 degrees flush onto keyboard base"
+  },
+  "glowbar": {
+    "center_mm": [
+      112.0,
+      96.5
+    ],
+    "size_mm": [
+      39.3,
+      1.8
+    ],
+    "colors": [
+      [
+        0.259,
+        0.522,
+        0.957
+      ],
+      [
+        0.204,
+        0.659,
+        0.325
+      ],
+      [
+        0.984,
+        0.737,
+        0.016
+      ],
+      [
+        0.918,
+        0.263,
+        0.208
+      ]
+    ]
+  },
+  "rear_logo": {
+    "kind": "acer",
+    "center_mm": [
+      -110.8,
+      96.5
+    ],
+    "width_mm": 28.5
+  },
+  "hinge_style": "convertible_dual",
+  "deck_style": "standard",
+  "ports": {
+    "left": [
+      {
+        "type": "battery_led",
+        "z": 18.0
+      },
+      {
+        "type": "usb_c",
+        "z": 26.0
+      },
+      {
+        "type": "usb_c",
+        "z": 38.0
+      },
+      {
+        "type": "hdmi",
+        "z": 54.0
+      }
+    ],
+    "right": [
+      {
+        "type": "kensington",
+        "z": 16.0
+      },
+      {
+        "type": "usb_a",
+        "z": 28.0
+      },
+      {
+        "type": "audio",
+        "z": 44.0
+      }
+    ]
+  },
+  "panels": [
+    {
+      "name": "Lid",
+      "center_mm": [
+        0.0,
+        111.45,
+        -2.6
+      ],
+      "body_mm": {
+        "width": 312.0,
+        "height": 222.9,
+        "depth": 5.2,
+        "corner_radius": 6.8,
+        "edge_roll_mm": [
+          0.55,
+          0.45
+        ],
+        "front_curve": 0
+      },
+      "buttons": false
+    },
+    {
+      "name": "Base",
+      "center_mm": [
+        0.0,
+        -4.35,
+        111.45
+      ],
+      "body_mm": {
+        "width": 312.0,
+        "height": 8.7,
+        "depth": 222.9,
+        "corner_radius": 6.8,
+        "edge_roll_mm": [
+          0.55,
+          0.45
+        ],
+        "front_curve": 0
+      },
+      "buttons": false
+    }
+  ],
+  "screen": {
+    "panel": "Lid",
+    "object": "Device screen",
+    "node": "Device screen",
+    "resolution": [
+      2880,
+      1800
+    ],
+    "fit_box_mm": [
+      302.4,
+      189.0
+    ],
+    "center_mm": [
+      0.0,
+      3.8,
+      2.74
+    ],
+    "frame_center_mm": [
+      0.0,
+      3.8
+    ],
+    "corner_radius_mm": 2.0,
+    "create_cutouts": true,
+    "cutouts": [
+      {
+        "center_mm": [
+          0.0,
+          97.1
+        ],
+        "radius_mm": 1.15
+      }
+    ]
+  },
+  "articulation": {
+    "animation": "Fold",
+    "axis": "X",
+    "axis_mm": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "moving_panel": "Lid",
+    "fixed_panel": "Base",
+    "pivots": {
+      "Lid": "Fold pivot | Lid",
+      "Base": "Fold pivot | Base"
+    },
+    "open_degrees": 0,
+    "closed_degrees": 90,
+    "duration_seconds": 1.0,
+    "closed_body_mm": {
+      "width": 312.0,
+      "height": 13.9,
+      "depth": 222.9
+    }
+  }
+}

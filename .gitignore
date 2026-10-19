@@ -1,0 +1,11 @@
+build/
+.cache/
+__pycache__/
+*.pyc
+node_modules/
+assets/devices/models/*.glb
+assets/devices/models/*.glb.gz
+*.log
+.env*
+assets/devices/exports/
+*.blend

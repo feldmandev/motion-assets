@@ -1,0 +1,323 @@
+{
+  "id": "galaxy-s8-plus",
+  "name": "Galaxy S8+",
+  "state": "default",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        1440,
+        2960
+      ],
+      "size_mm": [
+        68.89210140438874,
+        141.61154177568795
+      ],
+      "center_mm": [
+        0.0,
+        0.0,
+        4.085000038146973
+      ],
+      "corner_radius_mm": 7,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 1.8,
+      "frame_bounds_mm": [
+        2.253949297805633,
+        8.944229112156023,
+        68.89210140438874,
+        141.61154177568795
+      ],
+      "frame_screen_px": null,
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "width": 73.4,
+        "height": 159.5,
+        "depth": 8.1,
+        "corner_radius": 10,
+        "edge_roll_mm": [
+          1.15,
+          0.25
+        ],
+        "front_rail_mm": 0.4,
+        "rear_inset": 0.4
+      },
+      "cutouts": [],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "articulation": null,
+  "panels": [],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/galaxy-s8-plus-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "logo": "logo",
+    "black": "black",
+    "flash": "flash",
+    "front_sensor": "front_sensor",
+    "front_speaker": "front_speaker"
+  },
+  "finishes": [
+    {
+      "name": "Midnight Black",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.12549019607843137,
+            0.12941176470588237,
+            0.14901960784313725
+          ],
+          "rough": 0.2
+        },
+        "rail": {
+          "rgb": [
+            0.23411764705882354,
+            0.2370588235294118,
+            0.25176470588235295
+          ],
+          "metal": 0.8,
+          "rough": 0.27
+        },
+        "bar": {
+          "rgb": [
+            0.018,
+            0.022,
+            0.03
+          ],
+          "metal": 0.55,
+          "rough": 0.27
+        },
+        "logo": {
+          "rgb": [
+            0.62,
+            0.64,
+            0.68
+          ]
+        }
+      }
+    },
+    {
+      "name": "Orchid Gray",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.6666666666666666,
+            0.6392156862745098,
+            0.6980392156862745
+          ],
+          "rough": 0.2
+        },
+        "rail": {
+          "rgb": [
+            0.64,
+            0.6194117647058823,
+            0.6635294117647058
+          ],
+          "metal": 0.8,
+          "rough": 0.27
+        },
+        "bar": {
+          "rgb": [
+            0.018,
+            0.022,
+            0.03
+          ],
+          "metal": 0.55,
+          "rough": 0.27
+        },
+        "logo": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.16
+          ]
+        }
+      }
+    },
+    {
+      "name": "Coral Blue",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.48627450980392156,
+            0.6823529411764706,
+            0.7764705882352941
+          ],
+          "rough": 0.2
+        },
+        "rail": {
+          "rgb": [
+            0.5047058823529411,
+            0.6517647058823529,
+            0.7223529411764706
+          ],
+          "metal": 0.8,
+          "rough": 0.27
+        },
+        "bar": {
+          "rgb": [
+            0.018,
+            0.022,
+            0.03
+          ],
+          "metal": 0.55,
+          "rough": 0.27
+        },
+        "logo": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.16
+          ]
+        }
+      }
+    },
+    {
+      "name": "Arctic Silver",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.7529411764705882,
+            0.7686274509803922,
+            0.796078431372549
+          ],
+          "rough": 0.2
+        },
+        "rail": {
+          "rgb": [
+            0.7047058823529412,
+            0.7164705882352942,
+            0.7370588235294118
+          ],
+          "metal": 0.8,
+          "rough": 0.27
+        },
+        "bar": {
+          "rgb": [
+            0.018,
+            0.022,
+            0.03
+          ],
+          "metal": 0.55,
+          "rough": 0.27
+        },
+        "logo": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.16
+          ]
+        }
+      }
+    },
+    {
+      "name": "Maple Gold",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.8274509803921568,
+            0.7647058823529411,
+            0.6470588235294118
+          ],
+          "rough": 0.2
+        },
+        "rail": {
+          "rgb": [
+            0.7605882352941177,
+            0.7135294117647059,
+            0.6252941176470589
+          ],
+          "metal": 0.8,
+          "rough": 0.27
+        },
+        "bar": {
+          "rgb": [
+            0.018,
+            0.022,
+            0.03
+          ],
+          "metal": 0.55,
+          "rough": 0.27
+        },
+        "logo": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.16
+          ]
+        }
+      }
+    },
+    {
+      "name": "Rose Pink",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.9098039215686274,
+            0.7176470588235294,
+            0.7725490196078432
+          ],
+          "rough": 0.2
+        },
+        "rail": {
+          "rgb": [
+            0.8223529411764706,
+            0.678235294117647,
+            0.7194117647058824
+          ],
+          "metal": 0.8,
+          "rough": 0.27
+        },
+        "bar": {
+          "rgb": [
+            0.018,
+            0.022,
+            0.03
+          ],
+          "metal": 0.55,
+          "rough": 0.27
+        },
+        "logo": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.16
+          ]
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/galaxy-s8-plus.cf136e0d706e.glb.gz",
+  "sha256": "cf136e0d706ef3abaf085aef9486c9a57713bfdec2a64f92db7bc204d6b782cc",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/galaxy-s8-plus.json",
+    "accuracy": {
+      "body_dimensions": "Samsung published chassis dimensions. Corner radii, edge rolls and curvature are photo estimates, not CAD.",
+      "screen_resolution": "Samsung native resolution. Active rectangle calculated from rounded published full diagonal and native aspect; physical bezel widths therefore approximate.",
+      "screen_geometry": "Model-specific flat/dual-edge display, rectangular/rounded corners, bezel selfie or Infinity-O aperture. Radii, hole positions and curve depth are photo estimates.",
+      "camera_geometry": "Model-specific rear layout scaled from generate_galaxy_svgs.PHONES / base MODELS official-render measurements. Internal optics, radii and protrusions illustrative; early cover internal lens positions estimated from photographs. Laser/ToF/heart-rate/fingerprint features distinguished from imaging lenses.",
+      "finishes": "Published finish names; approximate sampled sRGB and material response. S21+ Phantom Violet uses muted rose champagne camera housing.",
+      "omissions": "USB/headphone ports, speaker perforations, antenna seams and S Pen silo omitted. Legacy capacitive navigation marks and bezel hardware simplified."
+    },
+    "sources": [
+      "https://news.samsung.com/es/samsung-presenta-samsung-galaxy-s8-un-smartphone-sin-limites"
+    ]
+  }
+}

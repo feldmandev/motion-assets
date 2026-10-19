@@ -1,0 +1,283 @@
+{
+  "id": "galaxy-tab-s8-plus",
+  "name": "Galaxy Tab S8+",
+  "state": "default",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        1752,
+        2800
+      ],
+      "size_mm": [
+        167.086804261719,
+        267.03370544110345
+      ],
+      "center_mm": [
+        0.0,
+        0.0,
+        2.884999990463257
+      ],
+      "corner_radius_mm": 3.0684021308595053,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0,
+      "frame_bounds_mm": [
+        8.956597869140495,
+        8.983147279448275,
+        167.086804261719,
+        267.03370544110345
+      ],
+      "frame_screen_px": null,
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "width": 185,
+        "height": 285,
+        "depth": 5.7,
+        "corner_radius": 12.025,
+        "edge_roll": 0.32,
+        "front_rail_mm": 0.45,
+        "corner_radii_mm": [
+          12.025,
+          12.025,
+          12.025,
+          12.025
+        ]
+      },
+      "cutouts": [
+        {
+          "center_mm": [
+            88.02170106542975,
+            0
+          ],
+          "radius_mm": 1.3
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "articulation": null,
+  "panels": [],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/galaxy-tab-s8-plus-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "logo": "logo",
+    "black": "black",
+    "flash": "flash",
+    "strip": "strip",
+    "camera_ring": "camera_ring"
+  },
+  "finishes": [
+    {
+      "name": "Graphite",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.3137254901960784,
+            0.33725490196078434,
+            0.3764705882352941
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "rail": {
+          "rgb": [
+            0.3137254901960784,
+            0.33725490196078434,
+            0.3764705882352941
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "bar": {
+          "rgb": [
+            0.025,
+            0.028,
+            0.032
+          ],
+          "rough": 0.34
+        },
+        "logo": {
+          "rgb": [
+            0.5149019607843137,
+            0.5490196078431373,
+            0.6058823529411765
+          ],
+          "metal": 0.3,
+          "rough": 0.45
+        },
+        "strip": {
+          "rgb": [
+            0.045,
+            0.05,
+            0.06
+          ],
+          "metal": 0.15,
+          "rough": 0.48
+        },
+        "camera_ring": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.15
+          ],
+          "metal": 0.75,
+          "rough": 0.3
+        }
+      }
+    },
+    {
+      "name": "Silver",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.7529411764705882,
+            0.7607843137254902,
+            0.7725490196078432
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "rail": {
+          "rgb": [
+            0.7529411764705882,
+            0.7607843137254902,
+            0.7725490196078432
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "bar": {
+          "rgb": [
+            0.025,
+            0.028,
+            0.032
+          ],
+          "rough": 0.34
+        },
+        "logo": {
+          "rgb": [
+            0.3915294117647059,
+            0.3956078431372549,
+            0.40172549019607845
+          ],
+          "metal": 0.3,
+          "rough": 0.45
+        },
+        "strip": {
+          "rgb": [
+            0.045,
+            0.05,
+            0.06
+          ],
+          "metal": 0.15,
+          "rough": 0.48
+        },
+        "camera_ring": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.15
+          ],
+          "metal": 0.75,
+          "rough": 0.3
+        }
+      }
+    },
+    {
+      "name": "Pink Gold",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.807843137254902,
+            0.7294117647058823,
+            0.7137254901960784
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "rail": {
+          "rgb": [
+            0.807843137254902,
+            0.7294117647058823,
+            0.7137254901960784
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "bar": {
+          "rgb": [
+            0.025,
+            0.028,
+            0.032
+          ],
+          "rough": 0.34
+        },
+        "logo": {
+          "rgb": [
+            0.420078431372549,
+            0.37929411764705884,
+            0.3711372549019608
+          ],
+          "metal": 0.3,
+          "rough": 0.45
+        },
+        "strip": {
+          "rgb": [
+            0.045,
+            0.05,
+            0.06
+          ],
+          "metal": 0.15,
+          "rough": 0.48
+        },
+        "camera_ring": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.15
+          ],
+          "metal": 0.75,
+          "rough": 0.3
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/galaxy-tab-s8-plus.1e52501ce0bb.glb.gz",
+  "sha256": "1e52501ce0bb024b258631bfc19866c933dd06efca4e5f141b88550612473fe1",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/galaxy-tab-s8-plus.json",
+    "accuracy": {
+      "body_dimensions": "Samsung published metric dimensions",
+      "screen_resolution": "Samsung native panel resolution; exact aspect ratio",
+      "screen_geometry": "Published rectangular diagonal and exact native aspect; inferred bezels. Concentric corner radii, selfie aperture/notch dimensions are photo estimates.",
+      "camera_geometry": "Official rear-render normalized measurements; model-family housing/charging insert, separate glass windows, rims, apertures and flash. Protrusion and internal optics estimated, not OEM CAD.",
+      "details": "Rear wordmark and built-in charging surface where present; no S Pen accessory. Ports, speaker holes and antenna seams omitted. See research/samsung-tablet-rear-measurements.json for measurements and family transfer limits.",
+      "finishes": "Official names (regional availability varies); source-icon sampled/representative RGB, not measured material samples."
+    },
+    "sources": [
+      "https://news.samsung.com/global/breaking-the-rules-with-galaxy-tab-s8-series-the-biggest-boldest-most-versatile-galaxy-tablet-ever",
+      "[local reference path omitted]",
+      "[local reference path omitted]",
+      "https://api.samsungmobilepress.com/media-assets/galaxy-tab-s8-plus",
+      "https://api.samsungmobilepress.com/file/DFBE93C65AC7960F137253428B2D17EBF82B34D96305CBEA0373EED31F6A32BDB6DF5A80AAAFE389ECCE19A996DF60D72C4519A523C1EBFA683B64D0ED0A49A4E7444A55C555EB722883F6D2136232733AAAA568088FB94E9A96E6EE92A31CD57B6CE5AD6186AD0EC9E05947159E5D44A0934235314B5469D396390804AD99B52E76A2904FB6C335EBDB2CFA7304A14D5AABC3C2368B999D45BDF1EF9DAC5549"
+    ]
+  }
+}

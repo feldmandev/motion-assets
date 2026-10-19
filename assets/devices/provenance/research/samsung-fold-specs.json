@@ -1,0 +1,426 @@
+{
+  "models": [
+    {
+      "id": "galaxy-z-fold3-unfolded",
+      "published_spec": {
+        "open_mm": [
+          128.1,
+          158.2,
+          6.4
+        ],
+        "closed_mm": [
+          67.1,
+          158.2,
+          16.0
+        ],
+        "closed_min_depth_mm": 14.4
+      },
+      "sources": [
+        "https://api.samsungmobilepress.com/press-releases/the-next-chapter-in-mobile-innovation-unfold-your-world-with-galaxy-z-fold3-5g-and-galaxy-z-flip3-5g"
+      ],
+      "accuracy": {
+        "body_dimensions": "Published Samsung chassis dimensions excluding camera modules. Historical Fold3/4 and Flip3/4 thickness range retained in published_spec; closed wedge angle inferred from that range.",
+        "screen_resolution": "Published native panel pixels; orientation follows portrait cover/inner in the physical open chassis. ADB feed maps through full native UVs.",
+        "screen_geometry": "Active full rectangle from published diagonal/native aspect, fitted within chassis. Rounded corners, bezels, cover folder contour, camera cutouts are photo estimates; not CAD.",
+        "camera_geometry": "Lens and flash centres/diameters from source icon measurements of Samsung artwork. Samsung-specific individual rings/capsule, no Pixel bar. Protrusions and optical internals are estimates.",
+        "finishes": "Official standard and online-exclusive finish names; approximate sampled sRGB. Bespoke combinations and special editions excluded.",
+        "hinge": "Rigid articulated panels with physically positioned axes; external barrel dimensions/curves estimated. Internal multi-link and flexible OLED bend not simulated.",
+        "omissions": "Ports, grille perforations, antenna seams and internal hinge linkages."
+      }
+    },
+    {
+      "id": "galaxy-z-fold4-unfolded",
+      "published_spec": {
+        "open_mm": [
+          130.1,
+          155.1,
+          6.3
+        ],
+        "closed_mm": [
+          67.1,
+          155.1,
+          15.8
+        ],
+        "closed_min_depth_mm": 14.2
+      },
+      "sources": [
+        "https://www.samsung.com/hk/news/product/galaxyzfold4zflip4/"
+      ],
+      "accuracy": {
+        "body_dimensions": "Published Samsung chassis dimensions excluding camera modules. Historical Fold3/4 and Flip3/4 thickness range retained in published_spec; closed wedge angle inferred from that range.",
+        "screen_resolution": "Published native panel pixels; orientation follows portrait cover/inner in the physical open chassis. ADB feed maps through full native UVs.",
+        "screen_geometry": "Active full rectangle from published diagonal/native aspect, fitted within chassis. Rounded corners, bezels, cover folder contour, camera cutouts are photo estimates; not CAD.",
+        "camera_geometry": "Lens and flash centres/diameters from source icon measurements of Samsung artwork. Samsung-specific individual rings/capsule, no Pixel bar. Protrusions and optical internals are estimates.",
+        "finishes": "Official standard and online-exclusive finish names; approximate sampled sRGB. Bespoke combinations and special editions excluded.",
+        "hinge": "Rigid articulated panels with physically positioned axes; external barrel dimensions/curves estimated. Internal multi-link and flexible OLED bend not simulated.",
+        "omissions": "Ports, grille perforations, antenna seams and internal hinge linkages."
+      }
+    },
+    {
+      "id": "galaxy-z-fold5-unfolded",
+      "published_spec": {
+        "open_mm": [
+          129.9,
+          154.9,
+          6.1
+        ],
+        "closed_mm": [
+          67.1,
+          154.9,
+          13.4
+        ],
+        "closed_min_depth_mm": 13.4
+      },
+      "sources": [
+        "https://api.samsungmobilepress.com/press-releases/samsung-galaxy-z-flip5-and-galaxy-z-fold5-delivering-flexibility-and-versatility-without-compromise"
+      ],
+      "accuracy": {
+        "body_dimensions": "Published Samsung chassis dimensions excluding camera modules. Historical Fold3/4 and Flip3/4 thickness range retained in published_spec; closed wedge angle inferred from that range.",
+        "screen_resolution": "Published native panel pixels; orientation follows portrait cover/inner in the physical open chassis. ADB feed maps through full native UVs.",
+        "screen_geometry": "Active full rectangle from published diagonal/native aspect, fitted within chassis. Rounded corners, bezels, cover folder contour, camera cutouts are photo estimates; not CAD.",
+        "camera_geometry": "Lens and flash centres/diameters from source icon measurements of Samsung artwork. Samsung-specific individual rings/capsule, no Pixel bar. Protrusions and optical internals are estimates.",
+        "finishes": "Official standard and online-exclusive finish names; approximate sampled sRGB. Bespoke combinations and special editions excluded.",
+        "hinge": "Rigid articulated panels with physically positioned axes; external barrel dimensions/curves estimated. Internal multi-link and flexible OLED bend not simulated.",
+        "omissions": "Ports, grille perforations, antenna seams and internal hinge linkages."
+      }
+    },
+    {
+      "id": "galaxy-z-fold6-unfolded",
+      "published_spec": {
+        "open_mm": [
+          132.6,
+          153.5,
+          5.6
+        ],
+        "closed_mm": [
+          68.1,
+          153.5,
+          12.1
+        ],
+        "closed_min_depth_mm": 12.1
+      },
+      "sources": [
+        "https://api.samsungmobilepress.com/press-releases/samsung-galaxy-z-fold6-and-z-flip6-elevate-galaxy-ai-to-new-heights"
+      ],
+      "accuracy": {
+        "body_dimensions": "Published Samsung chassis dimensions excluding camera modules. Historical Fold3/4 and Flip3/4 thickness range retained in published_spec; closed wedge angle inferred from that range.",
+        "screen_resolution": "Published native panel pixels; orientation follows portrait cover/inner in the physical open chassis. ADB feed maps through full native UVs.",
+        "screen_geometry": "Active full rectangle from published diagonal/native aspect, fitted within chassis. Rounded corners, bezels, cover folder contour, camera cutouts are photo estimates; not CAD.",
+        "camera_geometry": "Lens and flash centres/diameters from source icon measurements of Samsung artwork. Samsung-specific individual rings/capsule, no Pixel bar. Protrusions and optical internals are estimates.",
+        "finishes": "Official standard and online-exclusive finish names; approximate sampled sRGB. Bespoke combinations and special editions excluded.",
+        "hinge": "Rigid articulated panels with physically positioned axes; external barrel dimensions/curves estimated. Internal multi-link and flexible OLED bend not simulated.",
+        "omissions": "Ports, grille perforations, antenna seams and internal hinge linkages."
+      }
+    },
+    {
+      "id": "galaxy-z-fold7-unfolded",
+      "published_spec": {
+        "open_mm": [
+          143.2,
+          158.4,
+          4.2
+        ],
+        "closed_mm": [
+          72.8,
+          158.4,
+          8.9
+        ],
+        "closed_min_depth_mm": 8.9
+      },
+      "sources": [
+        "https://www.samsungmobilepress.com/articles/samsung-galaxy-z-fold7-raising-the-bar-for-smartphones"
+      ],
+      "accuracy": {
+        "body_dimensions": "Published Samsung chassis dimensions excluding camera modules. Historical Fold3/4 and Flip3/4 thickness range retained in published_spec; closed wedge angle inferred from that range.",
+        "screen_resolution": "Published native panel pixels; orientation follows portrait cover/inner in the physical open chassis. ADB feed maps through full native UVs.",
+        "screen_geometry": "Active full rectangle from published diagonal/native aspect, fitted within chassis. Rounded corners, bezels, cover folder contour, camera cutouts are photo estimates; not CAD.",
+        "camera_geometry": "Lens and flash centres/diameters from source icon measurements of Samsung artwork. Samsung-specific individual rings/capsule, no Pixel bar. Protrusions and optical internals are estimates.",
+        "finishes": "Official standard and online-exclusive finish names; approximate sampled sRGB. Bespoke combinations and special editions excluded.",
+        "hinge": "Rigid articulated panels with physically positioned axes; external barrel dimensions/curves estimated. Internal multi-link and flexible OLED bend not simulated.",
+        "omissions": "Ports, grille perforations, antenna seams and internal hinge linkages."
+      }
+    },
+    {
+      "id": "galaxy-z-fold8-unfolded",
+      "published_spec": {
+        "open_mm": [
+          161.4,
+          123.9,
+          4.5
+        ],
+        "closed_mm": [
+          81.9,
+          123.9,
+          9.7
+        ],
+        "closed_min_depth_mm": 9.7
+      },
+      "sources": [
+        "https://news.samsung.com/de/samsung-galaxy-z-fold8-ultra-fold8-und-flip8-fur-jeden-lifestyle-ein-faltbares-gerat"
+      ],
+      "accuracy": {
+        "body_dimensions": "Published Samsung chassis dimensions excluding camera modules. Historical Fold3/4 and Flip3/4 thickness range retained in published_spec; closed wedge angle inferred from that range.",
+        "screen_resolution": "Published native panel pixels; orientation follows portrait cover/inner in the physical open chassis. ADB feed maps through full native UVs.",
+        "screen_geometry": "Active full rectangle from published diagonal/native aspect, fitted within chassis. Rounded corners, bezels, cover folder contour, camera cutouts are photo estimates; not CAD.",
+        "camera_geometry": "Lens and flash centres/diameters from source icon measurements of Samsung artwork. Samsung-specific individual rings/capsule, no Pixel bar. Protrusions and optical internals are estimates.",
+        "finishes": "Official standard and online-exclusive finish names; approximate sampled sRGB. Bespoke combinations and special editions excluded.",
+        "hinge": "Rigid articulated panels with physically positioned axes; external barrel dimensions/curves estimated. Internal multi-link and flexible OLED bend not simulated.",
+        "omissions": "Ports, grille perforations, antenna seams and internal hinge linkages."
+      }
+    },
+    {
+      "id": "galaxy-z-fold8-ultra-unfolded",
+      "published_spec": {
+        "open_mm": [
+          143.2,
+          158.4,
+          4.1
+        ],
+        "closed_mm": [
+          72.8,
+          158.4,
+          8.9
+        ],
+        "closed_min_depth_mm": 8.9
+      },
+      "sources": [
+        "https://news.samsung.com/de/samsung-galaxy-z-fold8-ultra-fold8-und-flip8-fur-jeden-lifestyle-ein-faltbares-gerat"
+      ],
+      "accuracy": {
+        "body_dimensions": "Published Samsung chassis dimensions excluding camera modules. Historical Fold3/4 and Flip3/4 thickness range retained in published_spec; closed wedge angle inferred from that range.",
+        "screen_resolution": "Published native panel pixels; orientation follows portrait cover/inner in the physical open chassis. ADB feed maps through full native UVs.",
+        "screen_geometry": "Active full rectangle from published diagonal/native aspect, fitted within chassis. Rounded corners, bezels, cover folder contour, camera cutouts are photo estimates; not CAD.",
+        "camera_geometry": "Lens and flash centres/diameters from source icon measurements of Samsung artwork. Samsung-specific individual rings/capsule, no Pixel bar. Protrusions and optical internals are estimates.",
+        "finishes": "Official standard and online-exclusive finish names; approximate sampled sRGB. Bespoke combinations and special editions excluded.",
+        "hinge": "Rigid articulated panels with physically positioned axes; external barrel dimensions/curves estimated. Internal multi-link and flexible OLED bend not simulated.",
+        "omissions": "Ports, grille perforations, antenna seams and internal hinge linkages."
+      }
+    },
+    {
+      "id": "galaxy-z-flip3-unfolded",
+      "published_spec": {
+        "open_mm": [
+          72.2,
+          166.0,
+          6.9
+        ],
+        "closed_mm": [
+          72.2,
+          86.4,
+          17.1
+        ],
+        "closed_min_depth_mm": 15.9
+      },
+      "sources": [
+        "https://api.samsungmobilepress.com/press-releases/the-next-chapter-in-mobile-innovation-unfold-your-world-with-galaxy-z-fold3-5g-and-galaxy-z-flip3-5g"
+      ],
+      "accuracy": {
+        "body_dimensions": "Published Samsung chassis dimensions excluding camera modules. Historical Fold3/4 and Flip3/4 thickness range retained in published_spec; closed wedge angle inferred from that range.",
+        "screen_resolution": "Published native panel pixels; orientation follows portrait cover/inner in the physical open chassis. ADB feed maps through full native UVs.",
+        "screen_geometry": "Active full rectangle from published diagonal/native aspect, fitted within chassis. Rounded corners, bezels, cover folder contour, camera cutouts are photo estimates; not CAD.",
+        "camera_geometry": "Lens and flash centres/diameters from source icon measurements of Samsung artwork. Samsung-specific individual rings/capsule, no Pixel bar. Protrusions and optical internals are estimates.",
+        "finishes": "Official standard and online-exclusive finish names; approximate sampled sRGB. Bespoke combinations and special editions excluded.",
+        "hinge": "Rigid articulated panels with physically positioned axes; external barrel dimensions/curves estimated. Internal multi-link and flexible OLED bend not simulated.",
+        "omissions": "Ports, grille perforations, antenna seams and internal hinge linkages."
+      }
+    },
+    {
+      "id": "galaxy-z-flip4-unfolded",
+      "published_spec": {
+        "open_mm": [
+          71.9,
+          165.2,
+          6.9
+        ],
+        "closed_mm": [
+          71.9,
+          84.9,
+          17.1
+        ],
+        "closed_min_depth_mm": 15.9
+      },
+      "sources": [
+        "https://www.samsung.com/hk/news/product/galaxyzfold4zflip4/"
+      ],
+      "accuracy": {
+        "body_dimensions": "Published Samsung chassis dimensions excluding camera modules. Historical Fold3/4 and Flip3/4 thickness range retained in published_spec; closed wedge angle inferred from that range.",
+        "screen_resolution": "Published native panel pixels; orientation follows portrait cover/inner in the physical open chassis. ADB feed maps through full native UVs.",
+        "screen_geometry": "Active full rectangle from published diagonal/native aspect, fitted within chassis. Rounded corners, bezels, cover folder contour, camera cutouts are photo estimates; not CAD.",
+        "camera_geometry": "Lens and flash centres/diameters from source icon measurements of Samsung artwork. Samsung-specific individual rings/capsule, no Pixel bar. Protrusions and optical internals are estimates.",
+        "finishes": "Official standard and online-exclusive finish names; approximate sampled sRGB. Bespoke combinations and special editions excluded.",
+        "hinge": "Rigid articulated panels with physically positioned axes; external barrel dimensions/curves estimated. Internal multi-link and flexible OLED bend not simulated.",
+        "omissions": "Ports, grille perforations, antenna seams and internal hinge linkages."
+      }
+    },
+    {
+      "id": "galaxy-z-flip5-unfolded",
+      "published_spec": {
+        "open_mm": [
+          71.9,
+          165.1,
+          6.9
+        ],
+        "closed_mm": [
+          71.9,
+          85.1,
+          15.1
+        ],
+        "closed_min_depth_mm": 15.1
+      },
+      "sources": [
+        "https://api.samsungmobilepress.com/press-releases/samsung-galaxy-z-flip5-and-galaxy-z-fold5-delivering-flexibility-and-versatility-without-compromise"
+      ],
+      "accuracy": {
+        "body_dimensions": "Published Samsung chassis dimensions excluding camera modules. Historical Fold3/4 and Flip3/4 thickness range retained in published_spec; closed wedge angle inferred from that range.",
+        "screen_resolution": "Published native panel pixels; orientation follows portrait cover/inner in the physical open chassis. ADB feed maps through full native UVs.",
+        "screen_geometry": "Active full rectangle from published diagonal/native aspect, fitted within chassis. Rounded corners, bezels, cover folder contour, camera cutouts are photo estimates; not CAD.",
+        "camera_geometry": "Lens and flash centres/diameters from source icon measurements of Samsung artwork. Samsung-specific individual rings/capsule, no Pixel bar. Protrusions and optical internals are estimates.",
+        "finishes": "Official standard and online-exclusive finish names; approximate sampled sRGB. Bespoke combinations and special editions excluded.",
+        "hinge": "Rigid articulated panels with physically positioned axes; external barrel dimensions/curves estimated. Internal multi-link and flexible OLED bend not simulated.",
+        "omissions": "Ports, grille perforations, antenna seams and internal hinge linkages."
+      }
+    },
+    {
+      "id": "galaxy-z-flip6-unfolded",
+      "published_spec": {
+        "open_mm": [
+          71.9,
+          165.1,
+          6.9
+        ],
+        "closed_mm": [
+          71.9,
+          85.1,
+          14.9
+        ],
+        "closed_min_depth_mm": 14.9
+      },
+      "sources": [
+        "https://api.samsungmobilepress.com/press-releases/samsung-galaxy-z-fold6-and-z-flip6-elevate-galaxy-ai-to-new-heights"
+      ],
+      "accuracy": {
+        "body_dimensions": "Published Samsung chassis dimensions excluding camera modules. Historical Fold3/4 and Flip3/4 thickness range retained in published_spec; closed wedge angle inferred from that range.",
+        "screen_resolution": "Published native panel pixels; orientation follows portrait cover/inner in the physical open chassis. ADB feed maps through full native UVs.",
+        "screen_geometry": "Active full rectangle from published diagonal/native aspect, fitted within chassis. Rounded corners, bezels, cover folder contour, camera cutouts are photo estimates; not CAD.",
+        "camera_geometry": "Lens and flash centres/diameters from source icon measurements of Samsung artwork. Samsung-specific individual rings/capsule, no Pixel bar. Protrusions and optical internals are estimates.",
+        "finishes": "Official standard and online-exclusive finish names; approximate sampled sRGB. Bespoke combinations and special editions excluded.",
+        "hinge": "Rigid articulated panels with physically positioned axes; external barrel dimensions/curves estimated. Internal multi-link and flexible OLED bend not simulated.",
+        "omissions": "Ports, grille perforations, antenna seams and internal hinge linkages."
+      }
+    },
+    {
+      "id": "galaxy-z-flip7-unfolded",
+      "published_spec": {
+        "open_mm": [
+          75.2,
+          166.7,
+          6.5
+        ],
+        "closed_mm": [
+          75.2,
+          85.5,
+          13.7
+        ],
+        "closed_min_depth_mm": 13.7
+      },
+      "sources": [
+        "https://www.samsungmobilepress.com/articles/samsung-galaxy-z-flip7-a-pocket-sized-ai-powerhouse-with-a-new-edge-to-edge-flexwindow"
+      ],
+      "accuracy": {
+        "body_dimensions": "Published Samsung chassis dimensions excluding camera modules. Historical Fold3/4 and Flip3/4 thickness range retained in published_spec; closed wedge angle inferred from that range.",
+        "screen_resolution": "Published native panel pixels; orientation follows portrait cover/inner in the physical open chassis. ADB feed maps through full native UVs.",
+        "screen_geometry": "Active full rectangle from published diagonal/native aspect, fitted within chassis. Rounded corners, bezels, cover folder contour, camera cutouts are photo estimates; not CAD.",
+        "camera_geometry": "Lens and flash centres/diameters from source icon measurements of Samsung artwork. Samsung-specific individual rings/capsule, no Pixel bar. Protrusions and optical internals are estimates.",
+        "finishes": "Official standard and online-exclusive finish names; approximate sampled sRGB. Bespoke combinations and special editions excluded.",
+        "hinge": "Rigid articulated panels with physically positioned axes; external barrel dimensions/curves estimated. Internal multi-link and flexible OLED bend not simulated.",
+        "omissions": "Ports, grille perforations, antenna seams and internal hinge linkages."
+      }
+    },
+    {
+      "id": "galaxy-z-flip7-fe-unfolded",
+      "published_spec": {
+        "open_mm": [
+          71.9,
+          165.1,
+          6.9
+        ],
+        "closed_mm": [
+          71.9,
+          85.1,
+          14.9
+        ],
+        "closed_min_depth_mm": 14.9
+      },
+      "sources": [
+        "https://www.samsungmobilepress.com/articles/samsung-galaxy-z-flip7-a-pocket-sized-ai-powerhouse-with-a-new-edge-to-edge-flexwindow"
+      ],
+      "accuracy": {
+        "body_dimensions": "Published Samsung chassis dimensions excluding camera modules. Historical Fold3/4 and Flip3/4 thickness range retained in published_spec; closed wedge angle inferred from that range.",
+        "screen_resolution": "Published native panel pixels; orientation follows portrait cover/inner in the physical open chassis. ADB feed maps through full native UVs.",
+        "screen_geometry": "Active full rectangle from published diagonal/native aspect, fitted within chassis. Rounded corners, bezels, cover folder contour, camera cutouts are photo estimates; not CAD.",
+        "camera_geometry": "Lens and flash centres/diameters from source icon measurements of Samsung artwork. Samsung-specific individual rings/capsule, no Pixel bar. Protrusions and optical internals are estimates.",
+        "finishes": "Official standard and online-exclusive finish names; approximate sampled sRGB. Bespoke combinations and special editions excluded.",
+        "hinge": "Rigid articulated panels with physically positioned axes; external barrel dimensions/curves estimated. Internal multi-link and flexible OLED bend not simulated.",
+        "omissions": "Ports, grille perforations, antenna seams and internal hinge linkages."
+      }
+    },
+    {
+      "id": "galaxy-z-flip8-unfolded",
+      "published_spec": {
+        "open_mm": [
+          75.4,
+          166.9,
+          6.1
+        ],
+        "closed_mm": [
+          75.4,
+          85.7,
+          13.1
+        ],
+        "closed_min_depth_mm": 13.1
+      },
+      "sources": [
+        "https://news.samsung.com/de/samsung-galaxy-z-fold8-ultra-fold8-und-flip8-fur-jeden-lifestyle-ein-faltbares-gerat"
+      ],
+      "accuracy": {
+        "body_dimensions": "Published Samsung chassis dimensions excluding camera modules. Historical Fold3/4 and Flip3/4 thickness range retained in published_spec; closed wedge angle inferred from that range.",
+        "screen_resolution": "Published native panel pixels; orientation follows portrait cover/inner in the physical open chassis. ADB feed maps through full native UVs.",
+        "screen_geometry": "Active full rectangle from published diagonal/native aspect, fitted within chassis. Rounded corners, bezels, cover folder contour, camera cutouts are photo estimates; not CAD.",
+        "camera_geometry": "Lens and flash centres/diameters from source icon measurements of Samsung artwork. Samsung-specific individual rings/capsule, no Pixel bar. Protrusions and optical internals are estimates.",
+        "finishes": "Official standard and online-exclusive finish names; approximate sampled sRGB. Bespoke combinations and special editions excluded.",
+        "hinge": "Rigid articulated panels with physically positioned axes; external barrel dimensions/curves estimated. Internal multi-link and flexible OLED bend not simulated.",
+        "omissions": "Ports, grille perforations, antenna seams and internal hinge linkages."
+      }
+    },
+    {
+      "id": "galaxy-z-trifold-unfolded",
+      "published_spec": {
+        "open_mm": [
+          214.1,
+          159.2,
+          4.2
+        ],
+        "closed_mm": [
+          75.0,
+          159.2,
+          12.9
+        ],
+        "closed_min_depth_mm": 12.9
+      },
+      "sources": [
+        "https://www.samsungmobilepress.com/articles/introducing-galaxy-z-trifold-the-shape-of-whats-next-in-mobile-innovation"
+      ],
+      "accuracy": {
+        "body_dimensions": "Published Samsung chassis dimensions excluding camera modules. Historical Fold3/4 and Flip3/4 thickness range retained in published_spec; closed wedge angle inferred from that range.",
+        "screen_resolution": "Published native panel pixels; orientation follows portrait cover/inner in the physical open chassis. ADB feed maps through full native UVs.",
+        "screen_geometry": "Active full rectangle from published diagonal/native aspect, fitted within chassis. Rounded corners, bezels, cover folder contour, camera cutouts are photo estimates; not CAD.",
+        "camera_geometry": "Lens and flash centres/diameters from source icon measurements of Samsung artwork. Samsung-specific individual rings/capsule, no Pixel bar. Protrusions and optical internals are estimates.",
+        "finishes": "Official standard and online-exclusive finish names; approximate sampled sRGB. Bespoke combinations and special editions excluded.",
+        "hinge": "Rigid articulated panels with physically positioned axes; external barrel dimensions/curves estimated. Internal multi-link and flexible OLED bend not simulated. Two independent inward hinges close left first, then camera leaf, with clearance for the three unequal published leaf thicknesses.",
+        "omissions": "Ports, grille perforations, antenna seams and internal hinge linkages."
+      }
+    }
+  ],
+  "camera_measurements": "documents/generate_galaxy_svgs.py FOLDS/FLIPS; colours galaxy_colors.json",
+  "catalog_mapping": "galaxy-z-NAME => galaxy-z-NAME-unfolded + galaxy-z-NAME-folded"
+}

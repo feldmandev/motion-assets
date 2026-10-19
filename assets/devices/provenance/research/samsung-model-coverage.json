@@ -1,0 +1,646 @@
+{
+  "models": [
+    {
+      "catalog_id": "galaxy_a34",
+      "profile_id": "galaxy-a34",
+      "kind": "phone",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_a35",
+      "profile_id": "galaxy-a35",
+      "kind": "phone",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_a36",
+      "profile_id": "galaxy-a36",
+      "kind": "phone",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_a37",
+      "profile_id": "galaxy-a37",
+      "kind": "phone",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_a54",
+      "profile_id": "galaxy-a54",
+      "kind": "phone",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_a55",
+      "profile_id": "galaxy-a55",
+      "kind": "phone",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_a56",
+      "profile_id": "galaxy-a56",
+      "kind": "phone",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_a57",
+      "profile_id": "galaxy-a57",
+      "kind": "phone",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_s6",
+      "profile_id": "galaxy-s6",
+      "kind": "phone",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_s6_edge",
+      "profile_id": "galaxy-s6-edge",
+      "kind": "phone",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_s6_edge_plus",
+      "profile_id": "galaxy-s6-edge-plus",
+      "kind": "phone",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_s7",
+      "profile_id": "galaxy-s7",
+      "kind": "phone",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_s7_edge",
+      "profile_id": "galaxy-s7-edge",
+      "kind": "phone",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_s8",
+      "profile_id": "galaxy-s8",
+      "kind": "phone",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_s8_plus",
+      "profile_id": "galaxy-s8-plus",
+      "kind": "phone",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_s9",
+      "profile_id": "galaxy-s9",
+      "kind": "phone",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_s9_plus",
+      "profile_id": "galaxy-s9-plus",
+      "kind": "phone",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_s10",
+      "profile_id": "galaxy-s10",
+      "kind": "phone",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_s10_5g",
+      "profile_id": "galaxy-s10-5g",
+      "kind": "phone",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_s10_lite",
+      "profile_id": "galaxy-s10-lite",
+      "kind": "phone",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_s10_plus",
+      "profile_id": "galaxy-s10-plus",
+      "kind": "phone",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_s10e",
+      "profile_id": "galaxy-s10e",
+      "kind": "phone",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_s20",
+      "profile_id": "galaxy-s20",
+      "kind": "phone",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_s20_fe",
+      "profile_id": "galaxy-s20-fe",
+      "kind": "phone",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_s20_plus",
+      "profile_id": "galaxy-s20-plus",
+      "kind": "phone",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_s20_ultra",
+      "profile_id": "galaxy-s20-ultra",
+      "kind": "phone",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_s21",
+      "profile_id": "galaxy-s21",
+      "kind": "phone",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_s21_fe",
+      "profile_id": "galaxy-s21-fe",
+      "kind": "phone",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_s21_plus",
+      "profile_id": "galaxy-s21-plus",
+      "kind": "phone",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_s21_ultra",
+      "profile_id": "galaxy-s21-ultra",
+      "kind": "phone",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_s22",
+      "profile_id": "galaxy-s22",
+      "kind": "phone",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_s22_plus",
+      "profile_id": "galaxy-s22-plus",
+      "kind": "phone",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_s22_ultra",
+      "profile_id": "galaxy-s22-ultra",
+      "kind": "phone",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_s23",
+      "profile_id": "galaxy-s23",
+      "kind": "phone",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_s23_fe",
+      "profile_id": "galaxy-s23-fe",
+      "kind": "phone",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_s23_plus",
+      "profile_id": "galaxy-s23-plus",
+      "kind": "phone",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_s23_ultra",
+      "profile_id": "galaxy-s23-ultra",
+      "kind": "phone",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_s24",
+      "profile_id": "galaxy-s24",
+      "kind": "phone",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_s24_fe",
+      "profile_id": "galaxy-s24-fe",
+      "kind": "phone",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_s24_plus",
+      "profile_id": "galaxy-s24-plus",
+      "kind": "phone",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_s24_ultra",
+      "profile_id": "galaxy-s24-ultra",
+      "kind": "phone",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_s25",
+      "profile_id": "galaxy-s25",
+      "kind": "phone",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_s25_edge",
+      "profile_id": "galaxy-s25-edge",
+      "kind": "phone",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_s25_fe",
+      "profile_id": "galaxy-s25-fe",
+      "kind": "phone",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_s25_plus",
+      "profile_id": "galaxy-s25-plus",
+      "kind": "phone",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_s25_ultra",
+      "profile_id": "galaxy-s25-ultra",
+      "kind": "phone",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_s26",
+      "profile_id": "galaxy-s26",
+      "kind": "phone",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_s26_fe",
+      "profile_id": "galaxy-s26-fe",
+      "kind": "phone",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_s26_plus",
+      "profile_id": "galaxy-s26-plus",
+      "kind": "phone",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_s26_ultra",
+      "profile_id": "galaxy-s26-ultra",
+      "kind": "phone",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_tab_a11",
+      "profile_id": "galaxy-tab-a11",
+      "kind": "tablet",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_tab_a11_plus",
+      "profile_id": "galaxy-tab-a11-plus",
+      "kind": "tablet",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_tab_s6",
+      "profile_id": "galaxy-tab-s6",
+      "kind": "tablet",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_tab_s6_lite_2020",
+      "profile_id": "galaxy-tab-s6-lite-2020",
+      "kind": "tablet",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_tab_s6_lite_2022",
+      "profile_id": "galaxy-tab-s6-lite-2022",
+      "kind": "tablet",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_tab_s6_lite_2024",
+      "profile_id": "galaxy-tab-s6-lite-2024",
+      "kind": "tablet",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_tab_s7",
+      "profile_id": "galaxy-tab-s7",
+      "kind": "tablet",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_tab_s7_fe",
+      "profile_id": "galaxy-tab-s7-fe",
+      "kind": "tablet",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_tab_s7_plus",
+      "profile_id": "galaxy-tab-s7-plus",
+      "kind": "tablet",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_tab_s8",
+      "profile_id": "galaxy-tab-s8",
+      "kind": "tablet",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_tab_s8_plus",
+      "profile_id": "galaxy-tab-s8-plus",
+      "kind": "tablet",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_tab_s8_ultra",
+      "profile_id": "galaxy-tab-s8-ultra",
+      "kind": "tablet",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_tab_s9",
+      "profile_id": "galaxy-tab-s9",
+      "kind": "tablet",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_tab_s9_fe",
+      "profile_id": "galaxy-tab-s9-fe",
+      "kind": "tablet",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_tab_s9_fe_plus",
+      "profile_id": "galaxy-tab-s9-fe-plus",
+      "kind": "tablet",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_tab_s9_plus",
+      "profile_id": "galaxy-tab-s9-plus",
+      "kind": "tablet",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_tab_s9_ultra",
+      "profile_id": "galaxy-tab-s9-ultra",
+      "kind": "tablet",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_tab_s10_fe",
+      "profile_id": "galaxy-tab-s10-fe",
+      "kind": "tablet",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_tab_s10_fe_plus",
+      "profile_id": "galaxy-tab-s10-fe-plus",
+      "kind": "tablet",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_tab_s10_lite",
+      "profile_id": "galaxy-tab-s10-lite",
+      "kind": "tablet",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_tab_s10_plus",
+      "profile_id": "galaxy-tab-s10-plus",
+      "kind": "tablet",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_tab_s10_ultra",
+      "profile_id": "galaxy-tab-s10-ultra",
+      "kind": "tablet",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_tab_s11",
+      "profile_id": "galaxy-tab-s11",
+      "kind": "tablet",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_tab_s11_ultra",
+      "profile_id": "galaxy-tab-s11-ultra",
+      "kind": "tablet",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_tab_s12_plus",
+      "profile_id": "galaxy-tab-s12-plus",
+      "kind": "tablet",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_tab_s12_ultra",
+      "profile_id": "galaxy-tab-s12-ultra",
+      "kind": "tablet",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_z_flip3",
+      "profile_id": "galaxy-z-flip3",
+      "kind": "phone",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_z_flip4",
+      "profile_id": "galaxy-z-flip4",
+      "kind": "phone",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_z_flip5",
+      "profile_id": "galaxy-z-flip5",
+      "kind": "phone",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_z_flip6",
+      "profile_id": "galaxy-z-flip6",
+      "kind": "phone",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_z_flip7",
+      "profile_id": "galaxy-z-flip7",
+      "kind": "phone",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_z_flip7_fe",
+      "profile_id": "galaxy-z-flip7-fe",
+      "kind": "phone",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_z_flip8",
+      "profile_id": "galaxy-z-flip8",
+      "kind": "phone",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_z_fold3",
+      "profile_id": "galaxy-z-fold3",
+      "kind": "phone",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_z_fold4",
+      "profile_id": "galaxy-z-fold4",
+      "kind": "phone",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_z_fold5",
+      "profile_id": "galaxy-z-fold5",
+      "kind": "phone",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_z_fold6",
+      "profile_id": "galaxy-z-fold6",
+      "kind": "phone",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_z_fold7",
+      "profile_id": "galaxy-z-fold7",
+      "kind": "phone",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_z_fold8",
+      "profile_id": "galaxy-z-fold8",
+      "kind": "phone",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_z_fold8_ultra",
+      "profile_id": "galaxy-z-fold8-ultra",
+      "kind": "phone",
+      "status": "built-provisional",
+      "reason": null
+    },
+    {
+      "catalog_id": "galaxy_z_trifold",
+      "profile_id": "galaxy-z-trifold",
+      "kind": "phone",
+      "status": "built-provisional",
+      "reason": null
+    }
+  ],
+  "counts": {
+    "built-provisional": 91,
+    "profile-ready": 0,
+    "pending": 0
+  }
+}

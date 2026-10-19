@@ -1,0 +1,225 @@
+{
+  "id": "galaxy-tab-s12-plus",
+  "name": "Galaxy Tab S12+",
+  "state": "default",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        1752,
+        2800
+      ],
+      "size_mm": [
+        169.95114947763417,
+        271.61142610580805
+      ],
+      "center_mm": [
+        0.0,
+        0.0,
+        2.684999704360962
+      ],
+      "corner_radius_mm": 3.2825747388170825,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0,
+      "frame_bounds_mm": [
+        8.924425261182918,
+        8.944286947095975,
+        169.95114947763417,
+        271.61142610580805
+      ],
+      "frame_screen_px": null,
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "width": 187.8,
+        "height": 289.5,
+        "depth": 5.3,
+        "corner_radius": 12.207,
+        "edge_roll": 0.32,
+        "front_rail_mm": 0.45,
+        "corner_radii_mm": [
+          12.207,
+          12.207,
+          12.207,
+          12.207
+        ]
+      },
+      "cutouts": [
+        {
+          "center_mm": [
+            89.43778736940854,
+            0
+          ],
+          "radius_mm": 1.3
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "articulation": null,
+  "panels": [],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/galaxy-tab-s12-plus-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "logo": "logo",
+    "black": "black",
+    "flash": "flash",
+    "strip": "strip",
+    "camera_ring": "camera_ring"
+  },
+  "finishes": [
+    {
+      "name": "Silver",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.8352941176470589,
+            0.8392156862745098,
+            0.8549019607843137
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "rail": {
+          "rgb": [
+            0.8352941176470589,
+            0.8392156862745098,
+            0.8549019607843137
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "bar": {
+          "rgb": [
+            0.025,
+            0.028,
+            0.032
+          ],
+          "rough": 0.34
+        },
+        "logo": {
+          "rgb": [
+            0.4343529411764706,
+            0.43639215686274513,
+            0.44454901960784315
+          ],
+          "metal": 0.3,
+          "rough": 0.45
+        },
+        "strip": {
+          "rgb": [
+            0.9588823529411764,
+            0.963313725490196,
+            0.9810392156862744
+          ],
+          "metal": 0.5,
+          "rough": 0.5
+        },
+        "camera_ring": {
+          "rgb": [
+            0.8352941176470589,
+            0.8392156862745098,
+            0.8549019607843137
+          ],
+          "metal": 0.75,
+          "rough": 0.3
+        }
+      }
+    },
+    {
+      "name": "Gray",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.35294117647058826,
+            0.3568627450980392,
+            0.37254901960784315
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "rail": {
+          "rgb": [
+            0.35294117647058826,
+            0.3568627450980392,
+            0.37254901960784315
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "bar": {
+          "rgb": [
+            0.025,
+            0.028,
+            0.032
+          ],
+          "rough": 0.34
+        },
+        "logo": {
+          "rgb": [
+            0.571764705882353,
+            0.5774509803921568,
+            0.6001960784313725
+          ],
+          "metal": 0.3,
+          "rough": 0.45
+        },
+        "strip": {
+          "rgb": [
+            0.4138235294117647,
+            0.4182549019607843,
+            0.43598039215686274
+          ],
+          "metal": 0.5,
+          "rough": 0.5
+        },
+        "camera_ring": {
+          "rgb": [
+            0.35294117647058826,
+            0.3568627450980392,
+            0.37254901960784315
+          ],
+          "metal": 0.75,
+          "rough": 0.3
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/galaxy-tab-s12-plus.9faa3921c488.glb.gz",
+  "sha256": "9faa3921c48835139a82af008d785d2e292ec3573474cf810b1201020ca11736",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/galaxy-tab-s12-plus.json",
+    "accuracy": {
+      "body_dimensions": "Samsung published metric dimensions",
+      "screen_resolution": "Samsung native panel resolution; exact aspect ratio",
+      "screen_geometry": "Published rectangular diagonal and exact native aspect; inferred bezels. Concentric corner radii, selfie aperture/notch dimensions are photo estimates.",
+      "camera_geometry": "Official rear-render normalized measurements; model-family housing/charging insert, separate glass windows, rims, apertures and flash. Protrusion and internal optics estimated, not OEM CAD.",
+      "details": "Rear wordmark and built-in charging surface where present; no S Pen accessory. Ports, speaker holes and antenna seams omitted. See research/samsung-tablet-rear-measurements.json for measurements and family transfer limits.",
+      "finishes": "Official names (regional availability varies); source-icon sampled/representative RGB, not measured material samples."
+    },
+    "sources": [
+      "https://www.samsung.com/uk/tablets/galaxy-tab-s/galaxy-tab-s12-plus-grey-256gb-sm-x840nzareub/",
+      "[local reference path omitted]",
+      "[local reference path omitted]",
+      "https://api.samsungmobilepress.com/media-assets/galaxy-tab-s12",
+      "https://api.samsungmobilepress.com/file/2E71950DF7E384E465FE5F99B9C577737C5BDE648BCF67D7204174C2F7AA097535E5AB701CC77AC5AFD76BCA5CEDA532881365A75D52691D83A96F7107E89472038DEACE7331D696E1B372884256ECF11B388FCB69B1460CBB3D6F03122C1CCA5FEAF16374A9C5AF58FBE0E92F58A452ADDC479814C30509705A6652523624E44BA120A4E9F6E76D212D494B88386E4F"
+    ]
+  }
+}

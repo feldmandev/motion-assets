@@ -1,0 +1,995 @@
+{
+  "checked": "2026-10-18",
+  "units": "mm; diagonal inches; portrait native pixels",
+  "build_command": "blender.exe -b -t 4 --python make_samsung_legacy_profiles.py -- --build",
+  "source_geometry": "[local reference path omitted]",
+  "source_palettes": "[local reference path omitted]",
+  "estimates": "Chassis/display radii, edge curvature, bezel/selfie/control positions, protrusions and optical internals are photo estimates. Full display rectangle derives from rounded published diagonal.",
+  "body_dimension_order": [
+    "width",
+    "height",
+    "depth"
+  ],
+  "models": [
+    {
+      "id": "galaxy-a34",
+      "body_mm": [
+        78.1,
+        161.3,
+        8.2
+      ],
+      "diagonal_in": 6.6,
+      "resolution": [
+        1080,
+        2340
+      ],
+      "imaging_lenses": 3,
+      "finishes": [
+        "Awesome Silver",
+        "Awesome Violet",
+        "Awesome Lime",
+        "Awesome Graphite"
+      ],
+      "sources": [
+        "https://news.samsung.com/be_fr/les-samsung-galaxy-a54-5g-et-galaxy-a34-5g-lexperience-samsung-galaxy-absolue-pour-tout-le-monde"
+      ]
+    },
+    {
+      "id": "galaxy-a35",
+      "body_mm": [
+        78,
+        161.7,
+        8.2
+      ],
+      "diagonal_in": 6.6,
+      "resolution": [
+        1080,
+        2340
+      ],
+      "imaging_lenses": 3,
+      "finishes": [
+        "Awesome Iceblue",
+        "Awesome Lemon",
+        "Awesome Lilac",
+        "Awesome Navy"
+      ],
+      "sources": [
+        "https://api.samsungmobilepress.com/press-releases/samsung-galaxy-a55-5g-and-galaxy-a35-5g-awesome-innovations-and-security-engineered-for-everyone"
+      ]
+    },
+    {
+      "id": "galaxy-a36",
+      "body_mm": [
+        78.2,
+        162.9,
+        7.4
+      ],
+      "diagonal_in": 6.7,
+      "resolution": [
+        1080,
+        2340
+      ],
+      "imaging_lenses": 3,
+      "finishes": [
+        "Awesome White",
+        "Awesome Lime",
+        "Awesome Lavender",
+        "Awesome Black"
+      ],
+      "sources": [
+        "https://news.samsung.com/ph/samsung-marks-a-step-forward-with-ai-for-everyone-by-introducing-new-galaxy-a56-5g-and-galaxy-a36-5g"
+      ]
+    },
+    {
+      "id": "galaxy-a37",
+      "body_mm": [
+        78.2,
+        162.9,
+        7.4
+      ],
+      "diagonal_in": 6.7,
+      "resolution": [
+        1080,
+        2340
+      ],
+      "imaging_lenses": 3,
+      "finishes": [
+        "Awesome White",
+        "Awesome Lavender",
+        "Awesome Graygreen",
+        "Awesome Charcoal"
+      ],
+      "sources": [
+        "https://www.samsungmobilepress.com/articles/samsung-galaxy-a57-a37-5g-pro-features-awesome-price"
+      ]
+    },
+    {
+      "id": "galaxy-a54",
+      "body_mm": [
+        76.7,
+        158.2,
+        8.2
+      ],
+      "diagonal_in": 6.4,
+      "resolution": [
+        1080,
+        2340
+      ],
+      "imaging_lenses": 3,
+      "finishes": [
+        "Awesome White",
+        "Awesome Lime",
+        "Awesome Violet",
+        "Awesome Graphite"
+      ],
+      "sources": [
+        "https://news.samsung.com/be_fr/les-samsung-galaxy-a54-5g-et-galaxy-a34-5g-lexperience-samsung-galaxy-absolue-pour-tout-le-monde"
+      ]
+    },
+    {
+      "id": "galaxy-a55",
+      "body_mm": [
+        77.4,
+        161.1,
+        8.2
+      ],
+      "diagonal_in": 6.6,
+      "resolution": [
+        1080,
+        2340
+      ],
+      "imaging_lenses": 3,
+      "finishes": [
+        "Awesome Iceblue",
+        "Awesome Lemon",
+        "Awesome Lilac",
+        "Awesome Navy"
+      ],
+      "sources": [
+        "https://api.samsungmobilepress.com/press-releases/samsung-galaxy-a55-5g-and-galaxy-a35-5g-awesome-innovations-and-security-engineered-for-everyone"
+      ]
+    },
+    {
+      "id": "galaxy-a56",
+      "body_mm": [
+        77.5,
+        162.2,
+        7.4
+      ],
+      "diagonal_in": 6.7,
+      "resolution": [
+        1080,
+        2340
+      ],
+      "imaging_lenses": 3,
+      "finishes": [
+        "Awesome Pink",
+        "Awesome Olive",
+        "Awesome Lightgray",
+        "Awesome Graphite"
+      ],
+      "sources": [
+        "https://news.samsung.com/ph/samsung-marks-a-step-forward-with-ai-for-everyone-by-introducing-new-galaxy-a56-5g-and-galaxy-a36-5g"
+      ]
+    },
+    {
+      "id": "galaxy-a57",
+      "body_mm": [
+        76.8,
+        161.5,
+        6.9
+      ],
+      "diagonal_in": 6.7,
+      "resolution": [
+        1080,
+        2340
+      ],
+      "imaging_lenses": 3,
+      "finishes": [
+        "Awesome Icyblue",
+        "Awesome Lilac",
+        "Awesome Gray",
+        "Awesome Navy"
+      ],
+      "sources": [
+        "https://www.samsungmobilepress.com/articles/samsung-galaxy-a57-a37-5g-pro-features-awesome-price"
+      ]
+    },
+    {
+      "id": "galaxy-s6",
+      "body_mm": [
+        70.5,
+        143.4,
+        6.8
+      ],
+      "diagonal_in": 5.1,
+      "resolution": [
+        1440,
+        2560
+      ],
+      "imaging_lenses": 1,
+      "finishes": [
+        "White Pearl",
+        "Black Sapphire",
+        "Gold Platinum",
+        "Blue Topaz"
+      ],
+      "sources": [
+        "https://www.samsungmobilepress.com/articles/beautifully-crafted-from-metal-and-glass-samsung-galaxy-s6-and-galaxy-s6-edge-define-whats-next-in-mobility"
+      ]
+    },
+    {
+      "id": "galaxy-s6-edge",
+      "body_mm": [
+        70.1,
+        142.1,
+        7
+      ],
+      "diagonal_in": 5.1,
+      "resolution": [
+        1440,
+        2560
+      ],
+      "imaging_lenses": 1,
+      "finishes": [
+        "White Pearl",
+        "Black Sapphire",
+        "Gold Platinum",
+        "Green Emerald"
+      ],
+      "sources": [
+        "https://www.samsungmobilepress.com/articles/beautifully-crafted-from-metal-and-glass-samsung-galaxy-s6-and-galaxy-s6-edge-define-whats-next-in-mobility"
+      ]
+    },
+    {
+      "id": "galaxy-s6-edge-plus",
+      "body_mm": [
+        75.8,
+        154.4,
+        6.9
+      ],
+      "diagonal_in": 5.7,
+      "resolution": [
+        1440,
+        2560
+      ],
+      "imaging_lenses": 1,
+      "finishes": [
+        "White Pearl",
+        "Black Sapphire",
+        "Gold Platinum",
+        "Silver Titanium"
+      ],
+      "sources": [
+        "https://api.samsungmobilepress.com/press-releases/samsung-stays-ahead-of-the-curve-with-bold-big-screen-smartphones"
+      ]
+    },
+    {
+      "id": "galaxy-s7",
+      "body_mm": [
+        69.6,
+        142.4,
+        7.9
+      ],
+      "diagonal_in": 5.1,
+      "resolution": [
+        1440,
+        2560
+      ],
+      "imaging_lenses": 1,
+      "finishes": [
+        "Black Onyx",
+        "Gold Platinum",
+        "Silver Titanium",
+        "White Pearl"
+      ],
+      "sources": [
+        "https://news.samsung.com/us/samsung-introduces-galaxy-s7-galaxy-s7-edge-center-new-mobile-world/"
+      ]
+    },
+    {
+      "id": "galaxy-s7-edge",
+      "body_mm": [
+        72.6,
+        150.9,
+        7.7
+      ],
+      "diagonal_in": 5.5,
+      "resolution": [
+        1440,
+        2560
+      ],
+      "imaging_lenses": 1,
+      "finishes": [
+        "Black Onyx",
+        "Gold Platinum",
+        "Silver Titanium",
+        "White Pearl"
+      ],
+      "sources": [
+        "https://news.samsung.com/us/samsung-introduces-galaxy-s7-galaxy-s7-edge-center-new-mobile-world/"
+      ]
+    },
+    {
+      "id": "galaxy-s8",
+      "body_mm": [
+        68.1,
+        148.9,
+        8
+      ],
+      "diagonal_in": 5.8,
+      "resolution": [
+        1440,
+        2960
+      ],
+      "imaging_lenses": 1,
+      "finishes": [
+        "Midnight Black",
+        "Orchid Gray",
+        "Coral Blue",
+        "Arctic Silver",
+        "Maple Gold",
+        "Rose Pink",
+        "Burgundy Red"
+      ],
+      "sources": [
+        "https://news.samsung.com/es/samsung-presenta-samsung-galaxy-s8-un-smartphone-sin-limites"
+      ]
+    },
+    {
+      "id": "galaxy-s8-plus",
+      "body_mm": [
+        73.4,
+        159.5,
+        8.1
+      ],
+      "diagonal_in": 6.2,
+      "resolution": [
+        1440,
+        2960
+      ],
+      "imaging_lenses": 1,
+      "finishes": [
+        "Midnight Black",
+        "Orchid Gray",
+        "Coral Blue",
+        "Arctic Silver",
+        "Maple Gold",
+        "Rose Pink"
+      ],
+      "sources": [
+        "https://news.samsung.com/es/samsung-presenta-samsung-galaxy-s8-un-smartphone-sin-limites"
+      ]
+    },
+    {
+      "id": "galaxy-s9",
+      "body_mm": [
+        68.7,
+        147.7,
+        8.5
+      ],
+      "diagonal_in": 5.8,
+      "resolution": [
+        1440,
+        2960
+      ],
+      "imaging_lenses": 1,
+      "finishes": [
+        "Midnight Black",
+        "Titanium Gray",
+        "Coral Blue",
+        "Lilac Purple",
+        "Sunrise Gold",
+        "Burgundy Red"
+      ],
+      "sources": [
+        "https://news.samsung.com/uk/built-for-the-way-we-communicate-today-samsung-galaxy-s9-and-s9"
+      ]
+    },
+    {
+      "id": "galaxy-s9-plus",
+      "body_mm": [
+        73.8,
+        158.1,
+        8.5
+      ],
+      "diagonal_in": 6.2,
+      "resolution": [
+        1440,
+        2960
+      ],
+      "imaging_lenses": 2,
+      "finishes": [
+        "Midnight Black",
+        "Titanium Gray",
+        "Coral Blue",
+        "Lilac Purple",
+        "Sunrise Gold",
+        "Burgundy Red"
+      ],
+      "sources": [
+        "https://news.samsung.com/uk/built-for-the-way-we-communicate-today-samsung-galaxy-s9-and-s9"
+      ]
+    },
+    {
+      "id": "galaxy-s10",
+      "body_mm": [
+        70.4,
+        149.9,
+        7.8
+      ],
+      "diagonal_in": 6.1,
+      "resolution": [
+        1440,
+        3040
+      ],
+      "imaging_lenses": 3,
+      "finishes": [
+        "Prism White",
+        "Prism Black",
+        "Prism Green",
+        "Prism Blue",
+        "Flamingo Pink"
+      ],
+      "sources": [
+        "https://news.samsung.com/uk/samsung-raises-the-bar-with-galaxy-s10-more-screen-cameras-and-choices"
+      ]
+    },
+    {
+      "id": "galaxy-s10-5g",
+      "body_mm": [
+        77.1,
+        162.6,
+        7.94
+      ],
+      "diagonal_in": 6.7,
+      "resolution": [
+        1440,
+        3040
+      ],
+      "imaging_lenses": 3,
+      "finishes": [
+        "Crown Silver",
+        "Majestic Black",
+        "Royal Gold"
+      ],
+      "sources": [
+        "https://news.samsung.com/uk/samsung-raises-the-bar-with-galaxy-s10-more-screen-cameras-and-choices"
+      ]
+    },
+    {
+      "id": "galaxy-s10-lite",
+      "body_mm": [
+        75.6,
+        162.5,
+        8.1
+      ],
+      "diagonal_in": 6.7,
+      "resolution": [
+        1080,
+        2400
+      ],
+      "imaging_lenses": 3,
+      "finishes": [
+        "Prism White",
+        "Prism Black",
+        "Prism Blue"
+      ],
+      "sources": [
+        "https://api.samsungmobilepress.com/press-releases/samsung-brings-galaxy-to-more-people-introducing-galaxy-s10-lite-and-note10-lite"
+      ]
+    },
+    {
+      "id": "galaxy-s10-plus",
+      "body_mm": [
+        74.1,
+        157.6,
+        7.8
+      ],
+      "diagonal_in": 6.4,
+      "resolution": [
+        1440,
+        3040
+      ],
+      "imaging_lenses": 3,
+      "finishes": [
+        "Prism White",
+        "Prism Black",
+        "Prism Green",
+        "Prism Blue",
+        "Flamingo Pink",
+        "Ceramic White",
+        "Ceramic Black"
+      ],
+      "sources": [
+        "https://news.samsung.com/uk/samsung-raises-the-bar-with-galaxy-s10-more-screen-cameras-and-choices"
+      ]
+    },
+    {
+      "id": "galaxy-s10e",
+      "body_mm": [
+        69.9,
+        142.2,
+        7.9
+      ],
+      "diagonal_in": 5.8,
+      "resolution": [
+        1080,
+        2280
+      ],
+      "imaging_lenses": 2,
+      "finishes": [
+        "Prism White",
+        "Prism Black",
+        "Prism Green",
+        "Prism Blue",
+        "Flamingo Pink",
+        "Canary Yellow"
+      ],
+      "sources": [
+        "https://news.samsung.com/uk/samsung-raises-the-bar-with-galaxy-s10-more-screen-cameras-and-choices"
+      ]
+    },
+    {
+      "id": "galaxy-s20",
+      "body_mm": [
+        69.1,
+        151.7,
+        7.9
+      ],
+      "diagonal_in": 6.2,
+      "resolution": [
+        1440,
+        3200
+      ],
+      "imaging_lenses": 3,
+      "finishes": [
+        "Cosmic Gray",
+        "Cloud Blue",
+        "Cloud Pink"
+      ],
+      "sources": [
+        "https://www.samsungsvc.co.kr/solution/25670"
+      ]
+    },
+    {
+      "id": "galaxy-s20-fe",
+      "body_mm": [
+        74.5,
+        159.8,
+        8.4
+      ],
+      "diagonal_in": 6.5,
+      "resolution": [
+        1080,
+        2400
+      ],
+      "imaging_lenses": 3,
+      "finishes": [
+        "Cloud Navy",
+        "Cloud Mint",
+        "Cloud Lavender",
+        "Cloud Red",
+        "Cloud Orange",
+        "Cloud White"
+      ],
+      "sources": [
+        "https://news.samsung.com/us/samsung-galaxy-s20-fe-fan-edition-accessible-price-point-favorite-features/"
+      ]
+    },
+    {
+      "id": "galaxy-s20-plus",
+      "body_mm": [
+        73.7,
+        161.9,
+        7.8
+      ],
+      "diagonal_in": 6.7,
+      "resolution": [
+        1440,
+        3200
+      ],
+      "imaging_lenses": 3,
+      "finishes": [
+        "Cosmic Gray",
+        "Cloud Blue",
+        "Cosmic Black"
+      ],
+      "sources": [
+        "https://www.samsungsvc.co.kr/solution/25670"
+      ]
+    },
+    {
+      "id": "galaxy-s20-ultra",
+      "body_mm": [
+        76,
+        166.9,
+        8.8
+      ],
+      "diagonal_in": 6.9,
+      "resolution": [
+        1440,
+        3200
+      ],
+      "imaging_lenses": 3,
+      "finishes": [
+        "Cosmic Gray",
+        "Cosmic Black"
+      ],
+      "sources": [
+        "https://www.samsungsvc.co.kr/solution/25670"
+      ]
+    },
+    {
+      "id": "galaxy-s21",
+      "body_mm": [
+        71.2,
+        151.7,
+        7.9
+      ],
+      "diagonal_in": 6.2,
+      "resolution": [
+        1080,
+        2400
+      ],
+      "imaging_lenses": 3,
+      "finishes": [
+        "Phantom Pink",
+        "Phantom Violet",
+        "Phantom White",
+        "Phantom Gray"
+      ],
+      "sources": [
+        "https://news.samsung.com/tw/samsung-galaxy-s21%EF%B8%B1s21"
+      ]
+    },
+    {
+      "id": "galaxy-s21-fe",
+      "body_mm": [
+        74.5,
+        155.7,
+        7.9
+      ],
+      "diagonal_in": 6.4,
+      "resolution": [
+        1080,
+        2340
+      ],
+      "imaging_lenses": 3,
+      "finishes": [
+        "Graphite",
+        "Olive",
+        "Lavender",
+        "White"
+      ],
+      "sources": [
+        "https://news.samsung.com/in/samsung-unveils-galaxy-s21-fe-5g-in-india-at-effective-price-of-inr-49999"
+      ]
+    },
+    {
+      "id": "galaxy-s21-plus",
+      "body_mm": [
+        75.6,
+        161.5,
+        7.8
+      ],
+      "diagonal_in": 6.7,
+      "resolution": [
+        1080,
+        2400
+      ],
+      "imaging_lenses": 3,
+      "finishes": [
+        "Phantom Violet",
+        "Phantom Silver",
+        "Phantom Black",
+        "Phantom Pink",
+        "Phantom Gold",
+        "Phantom Red"
+      ],
+      "sources": [
+        "https://news.samsung.com/tw/samsung-galaxy-s21%EF%B8%B1s21"
+      ]
+    },
+    {
+      "id": "galaxy-s21-ultra",
+      "body_mm": [
+        75.6,
+        165.1,
+        8.9
+      ],
+      "diagonal_in": 6.8,
+      "resolution": [
+        1440,
+        3200
+      ],
+      "imaging_lenses": 4,
+      "finishes": [
+        "Phantom Silver",
+        "Phantom Black",
+        "Phantom Titanium",
+        "Phantom Navy",
+        "Phantom Brown"
+      ],
+      "sources": [
+        "https://news.samsung.com/es/samsung-galaxy-s21-ultra-5g-una-experiencia-movil-epica-en-todos-los-sentidos"
+      ]
+    },
+    {
+      "id": "galaxy-s22",
+      "body_mm": [
+        70.6,
+        146,
+        7.6
+      ],
+      "diagonal_in": 6.1,
+      "resolution": [
+        1080,
+        2340
+      ],
+      "imaging_lenses": 3,
+      "finishes": [
+        "Phantom White",
+        "Pink Gold",
+        "Phantom Black",
+        "Green",
+        "Graphite",
+        "Cream",
+        "Sky Blue",
+        "Violet",
+        "Bora Purple"
+      ],
+      "sources": [
+        "https://www.samsung.com/uk/support/mobile-devices/enjoy-the-epic-standard-of-smartphone-experiences-with-the-galaxy-s22-series/"
+      ]
+    },
+    {
+      "id": "galaxy-s22-plus",
+      "body_mm": [
+        75.8,
+        157.4,
+        7.6
+      ],
+      "diagonal_in": 6.6,
+      "resolution": [
+        1080,
+        2340
+      ],
+      "imaging_lenses": 3,
+      "finishes": [
+        "Phantom White",
+        "Phantom Black",
+        "Green",
+        "Pink Gold",
+        "Graphite",
+        "Cream",
+        "Sky Blue",
+        "Violet"
+      ],
+      "sources": [
+        "https://www.samsung.com/uk/support/mobile-devices/enjoy-the-epic-standard-of-smartphone-experiences-with-the-galaxy-s22-series/"
+      ]
+    },
+    {
+      "id": "galaxy-s22-ultra",
+      "body_mm": [
+        77.9,
+        163.3,
+        8.9
+      ],
+      "diagonal_in": 6.8,
+      "resolution": [
+        1440,
+        3088
+      ],
+      "imaging_lenses": 4,
+      "finishes": [
+        "Burgundy",
+        "Green",
+        "Phantom Black",
+        "Phantom White",
+        "Graphite",
+        "Sky Blue",
+        "Red"
+      ],
+      "sources": [
+        "https://www.samsung.com/uk/support/mobile-devices/enjoy-the-epic-standard-of-smartphone-experiences-with-the-galaxy-s22-series/"
+      ]
+    },
+    {
+      "id": "galaxy-s23",
+      "body_mm": [
+        70.9,
+        146.3,
+        7.6
+      ],
+      "diagonal_in": 6.1,
+      "resolution": [
+        1080,
+        2340
+      ],
+      "imaging_lenses": 3,
+      "finishes": [
+        "Phantom Black",
+        "Green",
+        "Lavender",
+        "Cream",
+        "Lime",
+        "Graphite"
+      ],
+      "sources": [
+        "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2023_3Q_Interim_Report.pdf"
+      ]
+    },
+    {
+      "id": "galaxy-s23-fe",
+      "body_mm": [
+        76.5,
+        158,
+        8.2
+      ],
+      "diagonal_in": 6.4,
+      "resolution": [
+        1080,
+        2340
+      ],
+      "imaging_lenses": 3,
+      "finishes": [
+        "Graphite",
+        "Purple",
+        "Mint",
+        "Cream",
+        "Tangerine",
+        "Indigo"
+      ],
+      "sources": [
+        "https://www.samsung.com/africa_en/support/mobile-devices/specifications-for-the-new-galaxy-s23-fe/"
+      ]
+    },
+    {
+      "id": "galaxy-s23-plus",
+      "body_mm": [
+        76.2,
+        157.8,
+        7.6
+      ],
+      "diagonal_in": 6.6,
+      "resolution": [
+        1080,
+        2340
+      ],
+      "imaging_lenses": 3,
+      "finishes": [
+        "Phantom Black",
+        "Green",
+        "Lavender",
+        "Cream",
+        "Lime",
+        "Graphite"
+      ],
+      "sources": [
+        "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2023_3Q_Interim_Report.pdf"
+      ]
+    },
+    {
+      "id": "galaxy-s23-ultra",
+      "body_mm": [
+        78.1,
+        163.4,
+        8.9
+      ],
+      "diagonal_in": 6.8,
+      "resolution": [
+        1440,
+        3088
+      ],
+      "imaging_lenses": 4,
+      "finishes": [
+        "Phantom Black",
+        "Green",
+        "Cream",
+        "Lavender",
+        "Graphite",
+        "Sky Blue",
+        "Lime",
+        "Red"
+      ],
+      "sources": [
+        "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2023_3Q_Interim_Report.pdf"
+      ]
+    },
+    {
+      "id": "galaxy-s24-fe",
+      "body_mm": [
+        77.3,
+        162,
+        8
+      ],
+      "diagonal_in": 6.7,
+      "resolution": [
+        1080,
+        2340
+      ],
+      "imaging_lenses": 3,
+      "finishes": [
+        "Mint",
+        "Yellow",
+        "Blue",
+        "Gray",
+        "Graphite"
+      ],
+      "sources": [
+        "https://api.samsungmobilepress.com/press-releases/galaxy-s24-series-expands-with-s24-fe-a-premium-experience-that-makes-full-galaxy-ai-capabilities-attainable-for-more-users"
+      ]
+    },
+    {
+      "id": "galaxy-s25-edge",
+      "body_mm": [
+        75.6,
+        158.2,
+        5.8
+      ],
+      "diagonal_in": 6.7,
+      "resolution": [
+        1440,
+        3120
+      ],
+      "imaging_lenses": 2,
+      "finishes": [
+        "Titanium Silver",
+        "Titanium Icyblue",
+        "Titanium Jetblack"
+      ],
+      "sources": [
+        "https://news.samsung.com/global/meet-the-samsung-galaxy-s25-edge-an-engineering-marvel-of-new-slim-hardware-innovation"
+      ]
+    },
+    {
+      "id": "galaxy-s25-fe",
+      "body_mm": [
+        76.6,
+        161.3,
+        7.4
+      ],
+      "diagonal_in": 6.7,
+      "resolution": [
+        1080,
+        2340
+      ],
+      "imaging_lenses": 3,
+      "finishes": [
+        "White",
+        "Icyblue",
+        "Navy",
+        "Jetblack"
+      ],
+      "sources": [
+        "https://news.samsung.com/global/meet-samsung-galaxy-s25-fe-the-gateway-to-the-galaxy-ai-and-flagship-essentials"
+      ]
+    },
+    {
+      "id": "galaxy-s26-fe",
+      "body_mm": [
+        76.9,
+        161.6,
+        7.4
+      ],
+      "diagonal_in": 6.7,
+      "resolution": [
+        1080,
+        2340
+      ],
+      "imaging_lenses": 3,
+      "finishes": [
+        "Pistachio",
+        "Blueberry",
+        "Graphite"
+      ],
+      "sources": [
+        "https://news.samsung.com/uk/samsung-galaxy-s26-fe-delivering-the-latest-flagship-experience-focused-on-what-matters-most",
+        "https://www.samsung.com/uk/smartphones/galaxy-s/galaxy-s26-fe-graphite-256gb-sm-s741bzkgeub/"
+      ]
+    }
+  ],
+  "pending": []
+}

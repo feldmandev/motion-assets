@@ -1,0 +1,199 @@
+{
+  "id": "pixel-10-pro",
+  "name": "Pixel 10 Pro",
+  "state": "default",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        1280,
+        2856
+      ],
+      "size_mm": [
+        65.89757412398923,
+        147.03396226415097
+      ],
+      "center_mm": [
+        -0.05148247978436658,
+        -0.20592991913746633,
+        4.3275
+      ],
+      "corner_radius_mm": 9.257540902964962,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0,
+      "frame_bounds_mm": [
+        2.9997304582210162,
+        3.0889487870619803,
+        65.89757412398923,
+        147.03396226415097
+      ],
+      "frame_screen_px": [
+        59,
+        60,
+        1280,
+        2856
+      ],
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "width": 72,
+        "height": 152.8,
+        "depth": 8.6,
+        "corner_radius": 11.8
+      },
+      "cutouts": [
+        {
+          "center_mm": [
+            0,
+            69.51698113207549
+          ],
+          "radius_mm": 1.72
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "articulation": null,
+  "panels": [],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/pixel-10-pro-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "Obsidian | silky matte glass",
+    "rail": "Obsidian | polished aluminum",
+    "bar": "Camera bar | satin gunmetal aluminum"
+  },
+  "finishes": [
+    {
+      "name": "Obsidian",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.2,
+            0.22745,
+            0.23922
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.33,
+            0.34784,
+            0.35549
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.33,
+            0.34784,
+            0.35549
+          ]
+        }
+      }
+    },
+    {
+      "name": "Moonstone",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.58824,
+            0.61176,
+            0.6549
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.58236,
+            0.59764,
+            0.62569
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.58236,
+            0.59764,
+            0.62569
+          ]
+        }
+      }
+    },
+    {
+      "name": "Jade",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.7098,
+            0.74118,
+            0.6
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.66137,
+            0.68177,
+            0.59
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.66137,
+            0.68177,
+            0.59
+          ]
+        }
+      }
+    },
+    {
+      "name": "Porcelain",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.87843,
+            0.87843,
+            0.83529
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.77098,
+            0.77098,
+            0.74294
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.77098,
+            0.77098,
+            0.74294
+          ]
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/pixel-10-pro.738a77d0a3b4.glb.gz",
+  "sha256": "738a77d0a3b42e0a98e5567ffbab2ebb1c4a47593595e3b3425f78d98df54b5b",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/pixel-10-pro.json",
+    "accuracy": {
+      "body_dimensions": "Published manufacturer dimensions",
+      "screen_resolution": "Published native resolution; ADB may use a lower resolution with the same aspect ratio",
+      "screen_geometry": "Screen fit and corner radius measured from Google emulator artwork; native pixel aspect preserved. Skin artwork is a reference, not physical CAD.",
+      "camera_geometry": "Original reviewed camera assembly; photo-matched, not manufacturer CAD"
+    },
+    "sources": [
+      "https://store.google.com/product/pixel_10_pro_specs?hl=en-US"
+    ]
+  }
+}

@@ -1,0 +1,404 @@
+{
+  "id": "galaxy-z-flip7-folded",
+  "name": "Galaxy Z Flip7 · folded",
+  "state": "folded",
+  "screens": [
+    {
+      "node": "Cover screen",
+      "nodes": [
+        "Cover screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        948,
+        1048
+      ],
+      "size_mm": [
+        69.86119471483124,
+        77.23051905183877
+      ],
+      "center_mm": [
+        0.0,
+        -0.17500028014183044,
+        6.989999294281006
+      ],
+      "corner_radius_mm": 5,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0,
+      "frame_bounds_mm": [
+        2.66940264258438,
+        5.1347404740806155,
+        69.86119471483124,
+        77.23051905183877
+      ],
+      "frame_screen_px": null,
+      "frame_file": "cover-frame.svg",
+      "frame_body_mm": {
+        "width": 75.2,
+        "height": 85.5,
+        "depth": 13.7,
+        "corner_radius": 9.5,
+        "edge_roll_mm": [
+          0.25,
+          0.2
+        ],
+        "front_rail_mm": 0.45,
+        "rear_inset": 0.45
+      },
+      "cutouts": [
+        {
+          "center_mm": [
+            -24.565333333333328,
+            25.23819999999999
+          ],
+          "radius_mm": 5.363333333333333
+        },
+        {
+          "center_mm": [
+            -10.026666666666667,
+            25.23819999999999
+          ],
+          "radius_mm": 5.363333333333333
+        },
+        {
+          "center_mm": [
+            1.0026666666666628,
+            25.23819999999999
+          ],
+          "radius_mm": 1.628666666666667
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "articulation": null,
+  "panels": [
+    {
+      "name": "Cover half",
+      "body_mm": {
+        "width": 75.2,
+        "height": 83.14999999999999,
+        "depth": 6.5,
+        "corner_radius": 9.5,
+        "edge_roll_mm": [
+          0.25,
+          0.2
+        ],
+        "front_rail_mm": 0.45,
+        "rear_inset": 0.45,
+        "corner_radii_mm": [
+          1,
+          9.5,
+          9.5,
+          1
+        ],
+        "rear_style": "inset_glass"
+      },
+      "center_mm": [
+        0,
+        -1.1750000000000043,
+        3.600000000000005
+      ],
+      "buttons": true,
+      "camera": {
+        "center_mm": [
+          0,
+          0
+        ],
+        "size_mm": [
+          1,
+          1,
+          0.5
+        ],
+        "bump_mm": 0,
+        "ring_material": "rail",
+        "optical_bump_mm": 1.1,
+        "lens_ring_mm": 0.4,
+        "roll_mm": 0.15,
+        "integrated_plateau": false,
+        "windows": [
+          [
+            24.565333333333328,
+            24.23819999999999,
+            9.226666666666667,
+            9.226666666666667,
+            4.613333333333333
+          ],
+          [
+            10.026666666666667,
+            24.23819999999999,
+            9.226666666666667,
+            9.226666666666667,
+            4.613333333333333
+          ]
+        ],
+        "lenses": [
+          {
+            "kind": "ultrawide",
+            "center_mm": [
+              24.565333333333328,
+              24.23819999999999
+            ],
+            "radius_mm": 2.9077333333333333,
+            "window": 0
+          },
+          {
+            "kind": "main",
+            "center_mm": [
+              10.026666666666667,
+              24.23819999999999
+            ],
+            "radius_mm": 2.9077333333333333,
+            "window": 1
+          }
+        ],
+        "flash": [
+          [
+            -1.0026666666666628,
+            24.23819999999999,
+            1.378666666666667
+          ]
+        ],
+        "flash_surface": "body",
+        "sensors": [],
+        "flash_offset_mm": 0.17
+      },
+      "rear_glass_region_mm": [
+        0,
+        0.0,
+        74.3,
+        82.24999999999999
+      ],
+      "rear_glass_region_radii_mm": [
+        0.5,
+        9.05,
+        9.05,
+        0.5
+      ],
+      "rotation_deg": [
+        180,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Camera half",
+      "body_mm": {
+        "width": 75.2,
+        "height": 83.14999999999999,
+        "depth": 6.5,
+        "corner_radius": 9.5,
+        "edge_roll_mm": [
+          0.25,
+          0.2
+        ],
+        "front_rail_mm": 0.45,
+        "rear_inset": 0.45,
+        "corner_radii_mm": [
+          9.5,
+          1,
+          1,
+          9.5
+        ]
+      },
+      "center_mm": [
+        0,
+        -1.1750000000000043,
+        -3.5999999999999996
+      ],
+      "buttons": false
+    }
+  ],
+  "frames": [
+    {
+      "name": "Cover screen",
+      "file": "cover-frame.svg",
+      "image": "assets/devices/frames/galaxy-z-flip7-folded-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "logo": "logo",
+    "black": "black",
+    "flash": "flash"
+  },
+  "finishes": [
+    {
+      "name": "Blue Shadow",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.19607843137254902,
+            0.25882352941176473,
+            0.4470588235294118
+          ],
+          "rough": 0.32
+        },
+        "rail": {
+          "rgb": [
+            0.2407843137254902,
+            0.2922352941176471,
+            0.4465882352941177
+          ],
+          "metal": 0.85,
+          "rough": 0.27
+        },
+        "bar": {
+          "rgb": [
+            0.19607843137254902,
+            0.25882352941176473,
+            0.4470588235294118
+          ],
+          "metal": 0.55,
+          "rough": 0.3
+        },
+        "logo": {
+          "rgb": [
+            0.09803921568627451,
+            0.12941176470588237,
+            0.2235294117647059
+          ]
+        }
+      }
+    },
+    {
+      "name": "Mint",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.9019607843137255,
+            0.9490196078431372,
+            0.9411764705882353
+          ],
+          "rough": 0.32
+        },
+        "rail": {
+          "rgb": [
+            0.8196078431372549,
+            0.8581960784313725,
+            0.8517647058823529
+          ],
+          "metal": 0.85,
+          "rough": 0.27
+        },
+        "bar": {
+          "rgb": [
+            0.9019607843137255,
+            0.9490196078431372,
+            0.9411764705882353
+          ],
+          "metal": 0.55,
+          "rough": 0.3
+        },
+        "logo": {
+          "rgb": [
+            0.45098039215686275,
+            0.4745098039215686,
+            0.47058823529411764
+          ]
+        }
+      }
+    },
+    {
+      "name": "Coralred",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.9725490196078431,
+            0.4,
+            0.403921568627451
+          ],
+          "rough": 0.32
+        },
+        "rail": {
+          "rgb": [
+            0.8774901960784313,
+            0.40800000000000003,
+            0.41121568627450983
+          ],
+          "metal": 0.85,
+          "rough": 0.27
+        },
+        "bar": {
+          "rgb": [
+            0.9725490196078431,
+            0.4,
+            0.403921568627451
+          ],
+          "metal": 0.55,
+          "rough": 0.3
+        },
+        "logo": {
+          "rgb": [
+            0.48627450980392156,
+            0.2,
+            0.2019607843137255
+          ]
+        }
+      }
+    },
+    {
+      "name": "Jetblack",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.24313725490196078,
+            0.23921568627450981,
+            0.25882352941176473
+          ],
+          "rough": 0.32
+        },
+        "rail": {
+          "rgb": [
+            0.27937254901960784,
+            0.27615686274509804,
+            0.2922352941176471
+          ],
+          "metal": 0.85,
+          "rough": 0.27
+        },
+        "bar": {
+          "rgb": [
+            0.24313725490196078,
+            0.23921568627450981,
+            0.25882352941176473
+          ],
+          "metal": 0.55,
+          "rough": 0.3
+        },
+        "logo": {
+          "rgb": [
+            0.12156862745098039,
+            0.11960784313725491,
+            0.12941176470588237
+          ]
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/galaxy-z-flip7-folded.197c2b3cbb3f.glb.gz",
+  "sha256": "197c2b3cbb3f25f94117d7f96542aa4279f8da6428b24c141419268615ad39ef",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/galaxy-z-flip7-folded.json",
+    "accuracy": {
+      "body_dimensions": "Published Samsung chassis dimensions excluding camera modules. Historical Fold3/4 and Flip3/4 thickness range retained in published_spec; closed wedge angle inferred from that range.",
+      "screen_resolution": "Published native panel pixels; orientation follows portrait cover/inner in the physical open chassis. ADB feed maps through full native UVs.",
+      "screen_geometry": "Active full rectangle from published diagonal/native aspect, fitted within chassis. Rounded corners, bezels, cover folder contour, camera cutouts are photo estimates; not CAD.",
+      "camera_geometry": "Lens and flash centres/diameters from source icon measurements of Samsung artwork. Samsung-specific individual rings/capsule, no Pixel bar. Protrusions and optical internals are estimates.",
+      "finishes": "Official standard and online-exclusive finish names; approximate sampled sRGB. Bespoke combinations and special editions excluded.",
+      "hinge": "Rigid articulated panels with physically positioned axes; external barrel dimensions/curves estimated. Internal multi-link and flexible OLED bend not simulated.",
+      "omissions": "Ports, grille perforations, antenna seams and internal hinge linkages."
+    },
+    "sources": [
+      "https://www.samsungmobilepress.com/articles/samsung-galaxy-z-flip7-a-pocket-sized-ai-powerhouse-with-a-new-edge-to-edge-flexwindow"
+    ]
+  }
+}

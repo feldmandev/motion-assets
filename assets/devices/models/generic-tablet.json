@@ -1,0 +1,58 @@
+{
+  "id": "generic-tablet",
+  "name": "Generic tablet",
+  "state": "default",
+  "glbUrl": "assets/devices/models/generic-tablet.686128346a96.glb.gz",
+  "sha256": "686128346a96ea02da64f69c999ecc284b654ddf239816dcfeb828527a9a2312",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        1600,
+        1000
+      ],
+      "size_mm": [
+        235,
+        155
+      ],
+      "center_mm": [
+        0,
+        0,
+        3.35
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "corner_radius_mm": 9
+    }
+  ],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "generic-tablet-0.svg",
+      "image": "assets/devices/frames/generic-tablet-0.svg"
+    }
+  ],
+  "adaptive": true,
+  "slots": {},
+  "finishes": [],
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/generic-tablet.json",
+    "accuracy": {
+      "geometry": "Brand-neutral procedural illustration, not measured hardware or vendor CAD."
+    },
+    "sources": [
+      {
+        "kind": "original",
+        "description": "Motion generic device artwork and authored screen mapping"
+      }
+    ]
+  }
+}

@@ -1,0 +1,270 @@
+{
+  "id": "pixel-7a",
+  "name": "Pixel 7a",
+  "finish": "Charcoal",
+  "body_mm": {
+    "height": 152.0,
+    "width": 72.9,
+    "depth": 9.0,
+    "corner_radius": 5.438811254396248,
+    "edge_roll": 0.55,
+    "front_curve": 0,
+    "edge_roll_mm": [
+      2.8,
+      0.9
+    ]
+  },
+  "materials": {
+    "back": {
+      "rgb": [
+        0.26667,
+        0.29412,
+        0.2902
+      ],
+      "rough": 0.42
+    },
+    "rail": {
+      "rgb": [
+        0.37334,
+        0.39118,
+        0.38863
+      ],
+      "metal": 1,
+      "rough": 0.36
+    },
+    "bar": {
+      "rgb": [
+        0.37334,
+        0.39118,
+        0.38863
+      ],
+      "metal": 0.6,
+      "rough": 0.3
+    },
+    "black": {
+      "rgb": [
+        0.007,
+        0.009,
+        0.012
+      ],
+      "rough": 0.5
+    },
+    "flash": {
+      "rgb": [
+        0.85,
+        0.84,
+        0.77
+      ],
+      "rough": 0.33
+    }
+  },
+  "finishes": {
+    "Charcoal": {
+      "back": {
+        "rgb": [
+          0.26667,
+          0.29412,
+          0.2902
+        ]
+      },
+      "rail": {
+        "rgb": [
+          0.37334,
+          0.39118,
+          0.38863
+        ]
+      },
+      "bar": {
+        "rgb": [
+          0.37334,
+          0.39118,
+          0.38863
+        ]
+      }
+    },
+    "Snow": {
+      "back": {
+        "rgb": [
+          0.90196,
+          0.90196,
+          0.87451
+        ]
+      },
+      "rail": {
+        "rgb": [
+          0.78627,
+          0.78627,
+          0.76843
+        ]
+      },
+      "bar": {
+        "rgb": [
+          0.78627,
+          0.78627,
+          0.76843
+        ]
+      }
+    },
+    "Sea": {
+      "back": {
+        "rgb": [
+          0.66275,
+          0.78824,
+          0.88627
+        ]
+      },
+      "rail": {
+        "rgb": [
+          0.63079,
+          0.71236,
+          0.77608
+        ]
+      },
+      "bar": {
+        "rgb": [
+          0.63079,
+          0.71236,
+          0.77608
+        ]
+      }
+    },
+    "Coral": {
+      "back": {
+        "rgb": [
+          0.95686,
+          0.47843,
+          0.4
+        ]
+      },
+      "rail": {
+        "rgb": [
+          0.82196,
+          0.51098,
+          0.46
+        ]
+      },
+      "bar": {
+        "rgb": [
+          0.82196,
+          0.51098,
+          0.46
+        ]
+      }
+    }
+  },
+  "screen": {
+    "object": "Device screen",
+    "node": "Device screen",
+    "panel": "Body",
+    "resolution": [
+      1080,
+      2400
+    ],
+    "fit_box_mm": [
+      64.15005861664713,
+      142.55568581477138
+    ],
+    "center_mm": [
+      -0.029699101211410707,
+      0.6236811254396248,
+      4.535
+    ],
+    "corner_radius_mm": 2.7727080890973035,
+    "edge_curve_mm": 0,
+    "create_cutouts": true,
+    "cutouts": [
+      {
+        "center_mm": [
+          0,
+          67.27784290738569
+        ],
+        "radius_mm": 1.5
+      }
+    ]
+  },
+  "camera": {
+    "center_mm": [
+      0,
+      53.925000000000004
+    ],
+    "size_mm": [
+      72.9,
+      17.41,
+      2.2
+    ],
+    "bump_mm": 1.9,
+    "roll_mm": 0.9,
+    "windows": [
+      [
+        12.5,
+        53.925000000000004,
+        27.0,
+        12.494235294117647,
+        6.1
+      ]
+    ],
+    "lenses": [
+      {
+        "kind": "ultrawide",
+        "center_mm": [
+          20.0,
+          53.925000000000004
+        ],
+        "radius_mm": 3.0,
+        "window": 0
+      },
+      {
+        "kind": "main",
+        "center_mm": [
+          5.5,
+          53.925000000000004
+        ],
+        "radius_mm": 3.6,
+        "window": 0
+      }
+    ],
+    "flash": [
+      [
+        -20.5,
+        53.925000000000004,
+        2.7
+      ]
+    ],
+    "side_wrap_mm": 4.3
+  },
+  "accuracy": {
+    "body_dimensions": "Google published metric dimensions",
+    "screen_resolution": "Google published panel resolution",
+    "screen_geometry": "Screen fit and corner radius measured from Google emulator artwork; native pixel aspect preserved. Skin artwork is a reference, not physical CAD.",
+    "camera_geometry": "Housing width, height and top gap scaled from official rear artwork; pixel bounds and uncertainty in camera_measurement. Optical internals remain illustrative. Not measurable from this rear view; model depth remains a visual estimate.",
+    "finishes": "Approximate sRGB colors and roughness, not calibrated measured materials"
+  },
+  "sources": [
+    "https://support.google.com/pixelphone/answer/7158570?hl=en",
+    "https://store.google.com/us/product/pixel_7a?hl=en-US"
+  ],
+  "status": "provisional",
+  "reference_frame": "research\\skins\\pixel-7a\\frame.png",
+  "camera_measurement": {
+    "reference": "research/images/pixel7a_colors_google.webp",
+    "body_bounds_px": [
+      739,
+      79,
+      1028,
+      689
+    ],
+    "bar_bounds_px": [
+      739,
+      132,
+      1028,
+      201
+    ],
+    "scale_mm_per_px": 0.2522491349480969,
+    "width_mm": 72.9,
+    "height_mm": 17.41,
+    "top_gap_mm": 13.37,
+    "rear_measurement_uncertainty_mm": 0.6,
+    "protrusion_mm": null,
+    "depth_status": "Not measurable from this rear view; model depth remains a visual estimate."
+  }
+}

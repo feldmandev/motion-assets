@@ -1,0 +1,284 @@
+{
+  "id": "galaxy-tab-s6",
+  "name": "Galaxy Tab S6",
+  "state": "default",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        1600,
+        2560
+      ],
+      "size_mm": [
+        141.61571676884967,
+        226.5851468301595
+      ],
+      "center_mm": [
+        0.0,
+        0.0,
+        2.884999990463257
+      ],
+      "corner_radius_mm": 1.4253583844248325,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0,
+      "frame_bounds_mm": [
+        8.942141615575167,
+        8.957426584920256,
+        141.61571676884967,
+        226.5851468301595
+      ],
+      "frame_screen_px": null,
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "width": 159.5,
+        "height": 244.5,
+        "depth": 5.7,
+        "corner_radius": 10.3675,
+        "edge_roll": 0.32,
+        "front_rail_mm": 0.45,
+        "corner_radii_mm": [
+          10.3675,
+          10.3675,
+          10.3675,
+          10.3675
+        ]
+      },
+      "cutouts": [
+        {
+          "center_mm": [
+            0,
+            117.77128670753987
+          ],
+          "radius_mm": 1.25
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "articulation": null,
+  "panels": [],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/galaxy-tab-s6-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "logo": "logo",
+    "black": "black",
+    "flash": "flash",
+    "strip": "strip",
+    "camera_ring": "camera_ring"
+  },
+  "finishes": [
+    {
+      "name": "Mountain Gray",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.4549019607843137,
+            0.4980392156862745,
+            0.5529411764705883
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "rail": {
+          "rgb": [
+            0.4549019607843137,
+            0.4980392156862745,
+            0.5529411764705883
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "bar": {
+          "rgb": [
+            0.025,
+            0.028,
+            0.032
+          ],
+          "rough": 0.34
+        },
+        "logo": {
+          "rgb": [
+            0.23654901960784314,
+            0.25898039215686275,
+            0.2875294117647059
+          ],
+          "metal": 0.3,
+          "rough": 0.45
+        },
+        "strip": {
+          "rgb": [
+            0.38666666666666666,
+            0.42333333333333334,
+            0.47000000000000003
+          ],
+          "metal": 0.5,
+          "rough": 0.5
+        },
+        "camera_ring": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.15
+          ],
+          "metal": 0.75,
+          "rough": 0.3
+        }
+      }
+    },
+    {
+      "name": "Cloud Blue",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.6,
+            0.7019607843137254,
+            0.807843137254902
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "rail": {
+          "rgb": [
+            0.6,
+            0.7019607843137254,
+            0.807843137254902
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "bar": {
+          "rgb": [
+            0.025,
+            0.028,
+            0.032
+          ],
+          "rough": 0.34
+        },
+        "logo": {
+          "rgb": [
+            0.312,
+            0.36501960784313725,
+            0.420078431372549
+          ],
+          "metal": 0.3,
+          "rough": 0.45
+        },
+        "strip": {
+          "rgb": [
+            0.51,
+            0.5966666666666666,
+            0.6866666666666666
+          ],
+          "metal": 0.5,
+          "rough": 0.5
+        },
+        "camera_ring": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.15
+          ],
+          "metal": 0.75,
+          "rough": 0.3
+        }
+      }
+    },
+    {
+      "name": "Rose Blush",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.7647058823529411,
+            0.6509803921568628,
+            0.6588235294117647
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "rail": {
+          "rgb": [
+            0.7647058823529411,
+            0.6509803921568628,
+            0.6588235294117647
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "bar": {
+          "rgb": [
+            0.025,
+            0.028,
+            0.032
+          ],
+          "rough": 0.34
+        },
+        "logo": {
+          "rgb": [
+            0.3976470588235294,
+            0.33850980392156865,
+            0.34258823529411764
+          ],
+          "metal": 0.3,
+          "rough": 0.45
+        },
+        "strip": {
+          "rgb": [
+            0.6499999999999999,
+            0.5533333333333333,
+            0.5599999999999999
+          ],
+          "metal": 0.5,
+          "rough": 0.5
+        },
+        "camera_ring": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.15
+          ],
+          "metal": 0.75,
+          "rough": 0.3
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/galaxy-tab-s6.f639aed56314.glb.gz",
+  "sha256": "f639aed563149b1cb81d8851e23e4d8c9c7d6093322fa782fb140630c0ebd677",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/galaxy-tab-s6.json",
+    "accuracy": {
+      "body_dimensions": "Samsung published metric dimensions",
+      "screen_resolution": "Samsung native panel resolution; exact aspect ratio",
+      "screen_geometry": "Published rectangular diagonal and exact native aspect; inferred bezels. Concentric corner radii, selfie aperture/notch dimensions are photo estimates.",
+      "camera_geometry": "Official rear-render normalized measurements; model-family housing/charging insert, separate glass windows, rims, apertures and flash. Protrusion and internal optics estimated, not OEM CAD.",
+      "details": "Rear wordmark and built-in charging surface where present; no S Pen accessory. Ports, speaker holes and antenna seams omitted. See research/samsung-tablet-rear-measurements.json for measurements and family transfer limits.",
+      "finishes": "Official names (regional availability varies); source-icon sampled/representative RGB, not measured material samples."
+    },
+    "sources": [
+      "https://news.samsung.com/us/samsung-galaxy-tab-s6-new-tablet-enhances-creativity-and-productivity/",
+      "https://www.samsung.com/ie/business/tablets/galaxy-tab-s/galaxy-tab-s6-128gb-sm-t860nzaabtu/",
+      "[local reference path omitted]",
+      "[local reference path omitted]",
+      "https://news.samsung.com/ca/tab-s6",
+      "https://img.global.news.samsung.com/ca/wp-content/uploads/2019/10/SM-T865_012_Back-With-Pen_Brown.png"
+    ]
+  }
+}

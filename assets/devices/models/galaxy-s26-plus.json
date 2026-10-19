@@ -1,0 +1,311 @@
+{
+  "id": "galaxy-s26-plus",
+  "name": "Galaxy S26+",
+  "state": "default",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        1440,
+        3120
+      ],
+      "size_mm": [
+        71.3153206404401,
+        154.51652805428688
+      ],
+      "center_mm": [
+        0.0,
+        0.0,
+        3.684999704360962
+      ],
+      "corner_radius_mm": 5.058264027143437,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0,
+      "frame_bounds_mm": [
+        2.2423396797799455,
+        1.9417359728565629,
+        71.3153206404401,
+        154.51652805428688
+      ],
+      "frame_screen_px": null,
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "width": 75.8,
+        "height": 158.4,
+        "depth": 7.3,
+        "corner_radius": 7.0,
+        "edge_roll_mm": [
+          0.3,
+          0.25
+        ],
+        "front_rail_mm": 0.45,
+        "rear_inset": 0.45,
+        "corner_radii_mm": [
+          7.0,
+          7.0,
+          7.0,
+          7.0
+        ]
+      },
+      "cutouts": [
+        {
+          "center_mm": [
+            0,
+            74.2
+          ],
+          "radius_mm": 1.35
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "articulation": null,
+  "panels": [],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/galaxy-s26-plus-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "logo": "logo",
+    "black": "black",
+    "flash": "flash"
+  },
+  "finishes": [
+    {
+      "name": "White",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.9725490196078431,
+            0.9686274509803922,
+            0.9882352941176471
+          ],
+          "rough": 0.37
+        },
+        "rail": {
+          "rgb": [
+            0.8780392156862745,
+            0.8749019607843137,
+            0.8905882352941177
+          ],
+          "metal": 0.8,
+          "rough": 0.3
+        },
+        "bar": {
+          "rgb": [
+            0.9444705882352942,
+            0.9408235294117648,
+            0.9590588235294119
+          ],
+          "metal": 0.3,
+          "rough": 0.32
+        },
+        "logo": {
+          "rgb": [
+            0.564078431372549,
+            0.5618039215686275,
+            0.5731764705882353
+          ]
+        }
+      }
+    },
+    {
+      "name": "Sky Blue",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.7843137254901961,
+            0.8470588235294118,
+            0.8980392156862745
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.7274509803921568,
+            0.7776470588235295,
+            0.8184313725490197
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.7694117647058825,
+            0.827764705882353,
+            0.8751764705882354
+          ]
+        },
+        "logo": {
+          "rgb": [
+            0.45490196078431366,
+            0.49129411764705877,
+            0.5208627450980392
+          ]
+        }
+      }
+    },
+    {
+      "name": "Cobalt Violet",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.2823529411764706,
+            0.2823529411764706,
+            0.39215686274509803
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.3258823529411765,
+            0.3258823529411765,
+            0.4137254901960784
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.30258823529411766,
+            0.30258823529411766,
+            0.4047058823529412
+          ]
+        },
+        "logo": {
+          "rgb": [
+            0.16376470588235292,
+            0.16376470588235292,
+            0.22745098039215683
+          ]
+        }
+      }
+    },
+    {
+      "name": "Black",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.16862745098039217,
+            0.1803921568627451,
+            0.2
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.23490196078431375,
+            0.2443137254901961,
+            0.26
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.19682352941176473,
+            0.20776470588235296,
+            0.22600000000000003
+          ]
+        },
+        "logo": {
+          "rgb": [
+            0.09780392156862745,
+            0.10462745098039215,
+            0.11599999999999999
+          ]
+        }
+      }
+    },
+    {
+      "name": "Pink Gold",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.9294117647058824,
+            0.8745098039215686,
+            0.8313725490196079
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.843529411764706,
+            0.799607843137255,
+            0.7650980392156863
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.9043529411764707,
+            0.8532941176470589,
+            0.8131764705882354
+          ]
+        },
+        "logo": {
+          "rgb": [
+            0.5390588235294117,
+            0.5072156862745097,
+            0.4821960784313725
+          ]
+        }
+      }
+    },
+    {
+      "name": "Silver Shadow",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.6196078431372549,
+            0.6196078431372549,
+            0.6274509803921569
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.5956862745098039,
+            0.5956862745098039,
+            0.6019607843137255
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.6162352941176471,
+            0.6162352941176471,
+            0.6235294117647059
+          ]
+        },
+        "logo": {
+          "rgb": [
+            0.35937254901960786,
+            0.35937254901960786,
+            0.36392156862745095
+          ]
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/galaxy-s26-plus.e5e9967df743.glb.gz",
+  "sha256": "e5e9967df7434c92d1d7d4d3f4a58b5b8e116796f545d8f81fa2354fe5b6de5f",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/galaxy-s26-plus.json",
+    "accuracy": {
+      "body_dimensions": "Samsung published width, height and thickness; S26 chassis radius 7 mm published in 2026 Q1 report; other radii visual estimates.",
+      "screen_resolution": "Samsung native panel resolution; active rectangle derived from published full diagonal and native aspect.",
+      "screen_geometry": "Concentric chassis/display corners; front hole location and bezel sizes are estimates pending measured artwork.",
+      "camera_geometry": "Rear positions scaled from official render measurements used by the icon collection. Individual lens collars; Ultra laser sensor distinguished from four cameras. Protrusion and internal optics illustrative, not CAD.",
+      "finishes": "Official finish names with approximate sRGB and material roughness.",
+      "omissions": "USB port, speaker perforations, antenna seams and Ultra S Pen silo pending detail pass."
+    },
+    "sources": [
+      "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2026_1Q_Interim_Report.pdf",
+      "https://www.samsung.com/uk/smartphones/galaxy-s26/specs/"
+    ]
+  }
+}

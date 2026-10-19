@@ -1,0 +1,229 @@
+{
+  "id": "galaxy-tab-s12-ultra",
+  "name": "Galaxy Tab S12 Ultra",
+  "state": "default",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        1848,
+        2960
+      ],
+      "size_mm": [
+        195.89413054263645,
+        313.7698194838766
+      ],
+      "center_mm": [
+        0.0,
+        0.0,
+        2.5849997997283936
+      ],
+      "corner_radius_mm": 7.287409741938282,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0,
+      "frame_bounds_mm": [
+        6.302934728681777,
+        6.2650902580617185,
+        195.89413054263645,
+        313.7698194838766
+      ],
+      "frame_screen_px": null,
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "width": 208.5,
+        "height": 326.3,
+        "depth": 5.1,
+        "corner_radius": 13.5525,
+        "edge_roll": 0.32,
+        "front_rail_mm": 0.45,
+        "corner_radii_mm": [
+          13.5525,
+          13.5525,
+          13.5525,
+          13.5525
+        ]
+      },
+      "cutouts": [
+        {
+          "center_mm": [
+            96.44706527131822,
+            0
+          ],
+          "size_mm": [
+            5,
+            12
+          ],
+          "radius_mm": 2.3
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "articulation": null,
+  "panels": [],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/galaxy-tab-s12-ultra-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "logo": "logo",
+    "black": "black",
+    "flash": "flash",
+    "strip": "strip",
+    "camera_ring": "camera_ring"
+  },
+  "finishes": [
+    {
+      "name": "Gray",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.35294117647058826,
+            0.3568627450980392,
+            0.37254901960784315
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "rail": {
+          "rgb": [
+            0.35294117647058826,
+            0.3568627450980392,
+            0.37254901960784315
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "bar": {
+          "rgb": [
+            0.025,
+            0.028,
+            0.032
+          ],
+          "rough": 0.34
+        },
+        "logo": {
+          "rgb": [
+            0.571764705882353,
+            0.5774509803921568,
+            0.6001960784313725
+          ],
+          "metal": 0.3,
+          "rough": 0.45
+        },
+        "strip": {
+          "rgb": [
+            0.4138235294117647,
+            0.4182549019607843,
+            0.43598039215686274
+          ],
+          "metal": 0.5,
+          "rough": 0.5
+        },
+        "camera_ring": {
+          "rgb": [
+            0.35294117647058826,
+            0.3568627450980392,
+            0.37254901960784315
+          ],
+          "metal": 0.75,
+          "rough": 0.3
+        }
+      }
+    },
+    {
+      "name": "Silver",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.8352941176470589,
+            0.8392156862745098,
+            0.8549019607843137
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "rail": {
+          "rgb": [
+            0.8352941176470589,
+            0.8392156862745098,
+            0.8549019607843137
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "bar": {
+          "rgb": [
+            0.025,
+            0.028,
+            0.032
+          ],
+          "rough": 0.34
+        },
+        "logo": {
+          "rgb": [
+            0.4343529411764706,
+            0.43639215686274513,
+            0.44454901960784315
+          ],
+          "metal": 0.3,
+          "rough": 0.45
+        },
+        "strip": {
+          "rgb": [
+            0.9588823529411764,
+            0.963313725490196,
+            0.9810392156862744
+          ],
+          "metal": 0.5,
+          "rough": 0.5
+        },
+        "camera_ring": {
+          "rgb": [
+            0.8352941176470589,
+            0.8392156862745098,
+            0.8549019607843137
+          ],
+          "metal": 0.75,
+          "rough": 0.3
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/galaxy-tab-s12-ultra.914fa206e9e8.glb.gz",
+  "sha256": "914fa206e9e8b84705e852661033d6fb319aa6091a22f5dfcbd83758c496c4ea",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/galaxy-tab-s12-ultra.json",
+    "accuracy": {
+      "body_dimensions": "Samsung published metric dimensions",
+      "screen_resolution": "Samsung native panel resolution; exact aspect ratio",
+      "screen_geometry": "Published rectangular diagonal and exact native aspect; inferred bezels. Concentric corner radii, selfie aperture/notch dimensions are photo estimates.",
+      "camera_geometry": "Official rear-render normalized measurements; model-family housing/charging insert, separate glass windows, rims, apertures and flash. Protrusion and internal optics estimated, not OEM CAD.",
+      "details": "Rear wordmark and built-in charging surface where present; no S Pen accessory. Ports, speaker holes and antenna seams omitted. See research/samsung-tablet-rear-measurements.json for measurements and family transfer limits.",
+      "finishes": "Official names (regional availability varies); source-icon sampled/representative RGB, not measured material samples."
+    },
+    "sources": [
+      "https://www.samsung.com/uk/tablets/galaxy-tab-s/galaxy-tab-s12-ultra-grey-256gb-sm-x940nzareub/",
+      "[local reference path omitted]",
+      "[local reference path omitted]",
+      "https://www.samsung.com/ie/tablets/galaxy-tab-s/galaxy-tab-s12-ultra-silver-256gb-sm-x940nzsreub/",
+      "https://images.samsung.com/is/image/samsung/p6pim/ie/sm-x940nzsreub/gallery/ie-galaxy-tab-s12-ultra-sm-x940-sm-x940nzsreub-thumb-554709747?$650_519_PNG$"
+    ]
+  }
+}

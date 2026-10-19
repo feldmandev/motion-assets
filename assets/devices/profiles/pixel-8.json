@@ -1,0 +1,248 @@
+{
+  "id": "pixel-8",
+  "name": "Pixel 8",
+  "finish": "Obsidian",
+  "body_mm": {
+    "height": 150.5,
+    "width": 70.8,
+    "depth": 8.9,
+    "corner_radius": 9.111328690807799,
+    "edge_roll": 0.55,
+    "front_curve": 0,
+    "edge_roll_mm": [
+      3.0,
+      1.2
+    ]
+  },
+  "materials": {
+    "back": {
+      "rgb": [
+        0.2,
+        0.22745,
+        0.23922
+      ],
+      "rough": 0.18
+    },
+    "rail": {
+      "rgb": [
+        0.33,
+        0.34784,
+        0.35549
+      ],
+      "metal": 1,
+      "rough": 0.36
+    },
+    "bar": {
+      "rgb": [
+        0.33,
+        0.34784,
+        0.35549
+      ],
+      "metal": 0.6,
+      "rough": 0.3
+    },
+    "black": {
+      "rgb": [
+        0.007,
+        0.009,
+        0.012
+      ],
+      "rough": 0.5
+    },
+    "flash": {
+      "rgb": [
+        0.85,
+        0.84,
+        0.77
+      ],
+      "rough": 0.33
+    }
+  },
+  "finishes": {
+    "Obsidian": {
+      "back": {
+        "rgb": [
+          0.2,
+          0.22745,
+          0.23922
+        ]
+      },
+      "rail": {
+        "rgb": [
+          0.33,
+          0.34784,
+          0.35549
+        ]
+      },
+      "bar": {
+        "rgb": [
+          0.33,
+          0.34784,
+          0.35549
+        ]
+      }
+    },
+    "Hazel": {
+      "back": {
+        "rgb": [
+          0.61961,
+          0.66275,
+          0.61176
+        ]
+      },
+      "rail": {
+        "rgb": [
+          0.60275,
+          0.63079,
+          0.59764
+        ]
+      },
+      "bar": {
+        "rgb": [
+          0.60275,
+          0.63079,
+          0.59764
+        ]
+      }
+    },
+    "Rose": {
+      "back": {
+        "rgb": [
+          0.86275,
+          0.74118,
+          0.7098
+        ]
+      },
+      "rail": {
+        "rgb": [
+          0.76079,
+          0.68177,
+          0.66137
+        ]
+      },
+      "bar": {
+        "rgb": [
+          0.76079,
+          0.68177,
+          0.66137
+        ]
+      }
+    },
+    "Mint": {
+      "back": {
+        "rgb": [
+          0.76863,
+          0.87451,
+          0.80392
+        ]
+      },
+      "rail": {
+        "rgb": [
+          0.69961,
+          0.76843,
+          0.72255
+        ]
+      },
+      "bar": {
+        "rgb": [
+          0.69961,
+          0.76843,
+          0.72255
+        ]
+      }
+    }
+  },
+  "screen": {
+    "object": "Device screen",
+    "node": "Device screen",
+    "panel": "Body",
+    "resolution": [
+      1080,
+      2400
+    ],
+    "fit_box_mm": [
+      64.67966573816156,
+      143.73259052924791
+    ],
+    "center_mm": [
+      -0.029944289693593314,
+      0.08983286908077995,
+      4.485
+    ],
+    "corner_radius_mm": 5.380150417827298,
+    "edge_curve_mm": 0,
+    "create_cutouts": true,
+    "cutouts": [
+      {
+        "center_mm": [
+          0,
+          67.86629526462396
+        ],
+        "radius_mm": 1.5
+      }
+    ]
+  },
+  "camera": {
+    "center_mm": [
+      0,
+      50.75
+    ],
+    "size_mm": [
+      70.8,
+      21.6,
+      0.7
+    ],
+    "bump_mm": 2.8,
+    "roll_mm": 0.45,
+    "windows": [
+      [
+        11.328,
+        50.75,
+        34.692,
+        13.8,
+        6.9
+      ]
+    ],
+    "lenses": [
+      {
+        "kind": "ultrawide",
+        "center_mm": [
+          21.24,
+          50.75
+        ],
+        "radius_mm": 3.7,
+        "window": 0
+      },
+      {
+        "kind": "main",
+        "center_mm": [
+          2.832,
+          50.75
+        ],
+        "radius_mm": 4.6,
+        "window": 0
+      }
+    ],
+    "flash": [
+      [
+        -24.072,
+        50.75,
+        2.0
+      ]
+    ],
+    "side_wrap_mm": 4.5
+  },
+  "accuracy": {
+    "body_dimensions": "Google published metric dimensions",
+    "screen_resolution": "Google published panel resolution",
+    "screen_geometry": "Screen fit and corner radius measured from Google emulator artwork; native pixel aspect preserved. Skin artwork is a reference, not physical CAD.",
+    "camera_geometry": "Provisional photo-informed blockout; shared reviewed optics are illustrative, not device-specific optical prescriptions",
+    "finishes": "Approximate sRGB colors and roughness, not calibrated measured materials"
+  },
+  "sources": [
+    "https://support.google.com/pixelphone/answer/7158570?hl=en",
+    "https://store.google.com/us/product/pixel_8?hl=en-US"
+  ],
+  "status": "provisional",
+  "reference_frame": "research\\skins\\pixel-8\\frame.png"
+}

@@ -1,0 +1,223 @@
+{
+  "id": "galaxy-s10-lite",
+  "name": "Galaxy S10 Lite",
+  "state": "default",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        1080,
+        2400
+      ],
+      "size_mm": [
+        69.83586078781482,
+        155.1908017506996
+      ],
+      "center_mm": [
+        0.0,
+        0.0,
+        4.085000038146973
+      ],
+      "corner_radius_mm": 7,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0,
+      "frame_bounds_mm": [
+        2.8820696060925854,
+        3.654599124650204,
+        69.83586078781482,
+        155.1908017506996
+      ],
+      "frame_screen_px": null,
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "width": 75.6,
+        "height": 162.5,
+        "depth": 8.1,
+        "corner_radius": 9.882069606092585,
+        "edge_roll_mm": [
+          0.35,
+          0.25
+        ],
+        "front_rail_mm": 0.4,
+        "rear_inset": 0.4,
+        "corner_radii_mm": [
+          9.882069606092585,
+          9.882069606092585,
+          9.882069606092585,
+          9.882069606092585
+        ]
+      },
+      "cutouts": [
+        {
+          "center_mm": [
+            0,
+            73.7954008753498
+          ],
+          "radius_mm": 1.4
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "articulation": null,
+  "panels": [],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/galaxy-s10-lite-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "logo": "logo",
+    "black": "black",
+    "flash": "flash",
+    "front_sensor": "front_sensor",
+    "front_speaker": "front_speaker"
+  },
+  "finishes": [
+    {
+      "name": "Prism White",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.8862745098039215,
+            0.9098039215686274,
+            0.9215686274509803
+          ],
+          "rough": 0.36
+        },
+        "rail": {
+          "rgb": [
+            0.8047058823529412,
+            0.8223529411764706,
+            0.8311764705882353
+          ],
+          "metal": 0.8,
+          "rough": 0.27
+        },
+        "bar": {
+          "rgb": [
+            0.018,
+            0.022,
+            0.03
+          ],
+          "metal": 0.55,
+          "rough": 0.27
+        },
+        "logo": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.16
+          ]
+        }
+      }
+    },
+    {
+      "name": "Prism Black",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.16862745098039217,
+            0.19607843137254902,
+            0.23529411764705882
+          ],
+          "rough": 0.36
+        },
+        "rail": {
+          "rgb": [
+            0.2664705882352941,
+            0.2870588235294118,
+            0.3164705882352941
+          ],
+          "metal": 0.8,
+          "rough": 0.27
+        },
+        "bar": {
+          "rgb": [
+            0.018,
+            0.022,
+            0.03
+          ],
+          "metal": 0.55,
+          "rough": 0.27
+        },
+        "logo": {
+          "rgb": [
+            0.62,
+            0.64,
+            0.68
+          ]
+        }
+      }
+    },
+    {
+      "name": "Prism Blue",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.13725490196078433,
+            0.3607843137254902,
+            0.7333333333333333
+          ],
+          "rough": 0.36
+        },
+        "rail": {
+          "rgb": [
+            0.24294117647058827,
+            0.41058823529411764,
+            0.69
+          ],
+          "metal": 0.8,
+          "rough": 0.27
+        },
+        "bar": {
+          "rgb": [
+            0.018,
+            0.022,
+            0.03
+          ],
+          "metal": 0.55,
+          "rough": 0.27
+        },
+        "logo": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.16
+          ]
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/galaxy-s10-lite.0cbcd1213134.glb.gz",
+  "sha256": "0cbcd1213134bc6e8c92cf7ce069f8a6255c91da0d2ca9df653cf9d22b8620cd",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/galaxy-s10-lite.json",
+    "accuracy": {
+      "body_dimensions": "Samsung published chassis dimensions. Corner radii, edge rolls and curvature are photo estimates, not CAD.",
+      "screen_resolution": "Samsung native resolution. Active rectangle calculated from rounded published full diagonal and native aspect; physical bezel widths therefore approximate.",
+      "screen_geometry": "Model-specific flat/dual-edge display, rectangular/rounded corners, bezel selfie or Infinity-O aperture. Radii, hole positions and curve depth are photo estimates.",
+      "camera_geometry": "Model-specific rear layout scaled from generate_galaxy_svgs.PHONES / base MODELS official-render measurements. Internal optics, radii and protrusions illustrative; early cover internal lens positions estimated from photographs. Laser/ToF/heart-rate/fingerprint features distinguished from imaging lenses.",
+      "finishes": "Published finish names; approximate sampled sRGB and material response. S21+ Phantom Violet uses muted rose champagne camera housing.",
+      "omissions": "USB/headphone ports, speaker perforations, antenna seams and S Pen silo omitted. Legacy capacitive navigation marks and bezel hardware simplified."
+    },
+    "sources": [
+      "https://api.samsungmobilepress.com/press-releases/samsung-brings-galaxy-to-more-people-introducing-galaxy-s10-lite-and-note10-lite"
+    ]
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "id": "galaxy-tab-a11",
+  "name": "Galaxy Tab A11",
+  "state": "default",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        800,
+        1340
+      ],
+      "size_mm": [
+        113.03048682057002,
+        189.32606542445478
+      ],
+      "center_mm": [
+        0.0,
+        0.0,
+        4.034999847412109
+      ],
+      "corner_radius_mm": 2.270743410285009,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0,
+      "frame_bounds_mm": [
+        5.834756589714992,
+        10.836967287772609,
+        113.03048682057002,
+        189.32606542445478
+      ],
+      "frame_screen_px": null,
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "width": 124.7,
+        "height": 211,
+        "depth": 8,
+        "corner_radius": 8.105500000000001,
+        "edge_roll": 0.32,
+        "front_rail_mm": 0.45,
+        "corner_radii_mm": [
+          8.105500000000001,
+          8.105500000000001,
+          8.105500000000001,
+          8.105500000000001
+        ]
+      },
+      "cutouts": [
+        {
+          "center_mm": [
+            0,
+            100.0815163561137
+          ],
+          "radius_mm": 1.25
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "articulation": null,
+  "panels": [],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/galaxy-tab-a11-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "logo": "logo",
+    "black": "black",
+    "flash": "flash",
+    "strip": "strip",
+    "camera_ring": "camera_ring"
+  },
+  "finishes": [
+    {
+      "name": "Silver",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.7607843137254902,
+            0.7686274509803922,
+            0.7843137254901961
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "rail": {
+          "rgb": [
+            0.7607843137254902,
+            0.7686274509803922,
+            0.7843137254901961
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "bar": {
+          "rgb": [
+            0.025,
+            0.028,
+            0.032
+          ],
+          "rough": 0.34
+        },
+        "logo": {
+          "rgb": [
+            0.3956078431372549,
+            0.399686274509804,
+            0.40784313725490196
+          ],
+          "metal": 0.3,
+          "rough": 0.45
+        },
+        "strip": {
+          "rgb": [
+            0.8746862745098039,
+            0.8835490196078432,
+            0.9012745098039214
+          ],
+          "metal": 0.5,
+          "rough": 0.5
+        },
+        "camera_ring": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.15
+          ],
+          "metal": 0.75,
+          "rough": 0.3
+        }
+      }
+    },
+    {
+      "name": "Gray",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.3686274509803922,
+            0.3686274509803922,
+            0.3843137254901961
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "rail": {
+          "rgb": [
+            0.3686274509803922,
+            0.3686274509803922,
+            0.3843137254901961
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "bar": {
+          "rgb": [
+            0.025,
+            0.028,
+            0.032
+          ],
+          "rough": 0.34
+        },
+        "logo": {
+          "rgb": [
+            0.5945098039215686,
+            0.5945098039215686,
+            0.6172549019607843
+          ],
+          "metal": 0.3,
+          "rough": 0.45
+        },
+        "strip": {
+          "rgb": [
+            0.43154901960784314,
+            0.43154901960784314,
+            0.4492745098039216
+          ],
+          "metal": 0.5,
+          "rough": 0.5
+        },
+        "camera_ring": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.15
+          ],
+          "metal": 0.75,
+          "rough": 0.3
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/galaxy-tab-a11.2ccbd040ad47.glb.gz",
+  "sha256": "2ccbd040ad479fdfe9fb3092fc71a6efbfeafb7a221bd962cb444b4aba5ee94a",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/galaxy-tab-a11.json",
+    "accuracy": {
+      "body_dimensions": "Samsung published metric dimensions",
+      "screen_resolution": "Samsung native panel resolution; exact aspect ratio",
+      "screen_geometry": "Published rectangular diagonal and exact native aspect; inferred bezels. Concentric corner radii, selfie aperture/notch dimensions are photo estimates.",
+      "camera_geometry": "Official rear-render normalized measurements; model-family housing/charging insert, separate glass windows, rims, apertures and flash. Protrusion and internal optics estimated, not OEM CAD.",
+      "details": "Rear wordmark and built-in charging surface where present; no S Pen accessory. Ports, speaker holes and antenna seams omitted. See research/samsung-tablet-rear-measurements.json for measurements and family transfer limits.",
+      "finishes": "Official names (regional availability varies); source-icon sampled/representative RGB, not measured material samples."
+    },
+    "sources": [
+      "https://www.samsung.com/uk/tablets/galaxy-tab-a/galaxy-tab-a11-grey-64gb-wi-fi-sm-x130nzaaeub/",
+      "[local reference path omitted]",
+      "[local reference path omitted]",
+      "https://www.samsung.com/latin_en/tablets/galaxy-tab-a/galaxy-tab-a11-gray-64gb-sm-x133nzaagto/",
+      "https://images.samsung.com/is/image/samsung/p6pim/latin_en/sm-x133nzaagto/gallery/latin-en-galaxy-tab-a11-sm-x130-sm-x133nzaagto-thumb-550331480?$650_519_PNG$"
+    ]
+  }
+}

@@ -1,0 +1,212 @@
+[
+  {
+    "id": "galaxy-z-flip3-folded",
+    "native_aspect": true,
+    "camera_flash_clearance": true,
+    "frames": true,
+    "finishes": 7
+  },
+  {
+    "id": "galaxy-z-flip3-unfolded",
+    "native_aspect": true,
+    "camera_flash_clearance": true,
+    "frames": true,
+    "finishes": 7
+  },
+  {
+    "id": "galaxy-z-flip4-folded",
+    "native_aspect": true,
+    "camera_flash_clearance": true,
+    "frames": true,
+    "finishes": 4
+  },
+  {
+    "id": "galaxy-z-flip4-unfolded",
+    "native_aspect": true,
+    "camera_flash_clearance": true,
+    "frames": true,
+    "finishes": 4
+  },
+  {
+    "id": "galaxy-z-flip5-folded",
+    "native_aspect": true,
+    "camera_flash_clearance": true,
+    "frames": true,
+    "finishes": 8
+  },
+  {
+    "id": "galaxy-z-flip5-unfolded",
+    "native_aspect": true,
+    "camera_flash_clearance": true,
+    "frames": true,
+    "finishes": 8
+  },
+  {
+    "id": "galaxy-z-flip6-folded",
+    "native_aspect": true,
+    "camera_flash_clearance": true,
+    "frames": true,
+    "finishes": 7
+  },
+  {
+    "id": "galaxy-z-flip6-unfolded",
+    "native_aspect": true,
+    "camera_flash_clearance": true,
+    "frames": true,
+    "finishes": 7
+  },
+  {
+    "id": "galaxy-z-flip7-fe-folded",
+    "native_aspect": true,
+    "camera_flash_clearance": true,
+    "frames": true,
+    "finishes": 2
+  },
+  {
+    "id": "galaxy-z-flip7-fe-unfolded",
+    "native_aspect": true,
+    "camera_flash_clearance": true,
+    "frames": true,
+    "finishes": 2
+  },
+  {
+    "id": "galaxy-z-flip7-folded",
+    "native_aspect": true,
+    "camera_flash_clearance": true,
+    "frames": true,
+    "finishes": 4
+  },
+  {
+    "id": "galaxy-z-flip7-unfolded",
+    "native_aspect": true,
+    "camera_flash_clearance": true,
+    "frames": true,
+    "finishes": 4
+  },
+  {
+    "id": "galaxy-z-flip8-folded",
+    "native_aspect": true,
+    "camera_flash_clearance": true,
+    "frames": true,
+    "finishes": 4
+  },
+  {
+    "id": "galaxy-z-flip8-unfolded",
+    "native_aspect": true,
+    "camera_flash_clearance": true,
+    "frames": true,
+    "finishes": 4
+  },
+  {
+    "id": "galaxy-z-fold3-folded",
+    "native_aspect": true,
+    "camera_flash_clearance": true,
+    "frames": true,
+    "finishes": 3
+  },
+  {
+    "id": "galaxy-z-fold3-unfolded",
+    "native_aspect": true,
+    "camera_flash_clearance": true,
+    "frames": true,
+    "finishes": 3
+  },
+  {
+    "id": "galaxy-z-fold4-folded",
+    "native_aspect": true,
+    "camera_flash_clearance": true,
+    "frames": true,
+    "finishes": 4
+  },
+  {
+    "id": "galaxy-z-fold4-unfolded",
+    "native_aspect": true,
+    "camera_flash_clearance": true,
+    "frames": true,
+    "finishes": 4
+  },
+  {
+    "id": "galaxy-z-fold5-folded",
+    "native_aspect": true,
+    "camera_flash_clearance": true,
+    "frames": true,
+    "finishes": 5
+  },
+  {
+    "id": "galaxy-z-fold5-unfolded",
+    "native_aspect": true,
+    "camera_flash_clearance": true,
+    "frames": true,
+    "finishes": 5
+  },
+  {
+    "id": "galaxy-z-fold6-folded",
+    "native_aspect": true,
+    "camera_flash_clearance": true,
+    "frames": true,
+    "finishes": 5
+  },
+  {
+    "id": "galaxy-z-fold6-unfolded",
+    "native_aspect": true,
+    "camera_flash_clearance": true,
+    "frames": true,
+    "finishes": 5
+  },
+  {
+    "id": "galaxy-z-fold7-folded",
+    "native_aspect": true,
+    "camera_flash_clearance": true,
+    "frames": true,
+    "finishes": 4
+  },
+  {
+    "id": "galaxy-z-fold7-unfolded",
+    "native_aspect": true,
+    "camera_flash_clearance": true,
+    "frames": true,
+    "finishes": 4
+  },
+  {
+    "id": "galaxy-z-fold8-folded",
+    "native_aspect": true,
+    "camera_flash_clearance": true,
+    "frames": true,
+    "finishes": 4
+  },
+  {
+    "id": "galaxy-z-fold8-ultra-folded",
+    "native_aspect": true,
+    "camera_flash_clearance": true,
+    "frames": true,
+    "finishes": 4
+  },
+  {
+    "id": "galaxy-z-fold8-ultra-unfolded",
+    "native_aspect": true,
+    "camera_flash_clearance": true,
+    "frames": true,
+    "finishes": 4
+  },
+  {
+    "id": "galaxy-z-fold8-unfolded",
+    "native_aspect": true,
+    "camera_flash_clearance": true,
+    "frames": true,
+    "finishes": 4
+  },
+  {
+    "id": "galaxy-z-trifold-folded",
+    "native_aspect": true,
+    "camera_flash_clearance": true,
+    "frames": true,
+    "finishes": 1
+  },
+  {
+    "id": "galaxy-z-trifold-unfolded",
+    "native_aspect": true,
+    "camera_flash_clearance": true,
+    "frames": true,
+    "finishes": 1
+  }
+]

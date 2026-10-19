@@ -1,0 +1,404 @@
+{
+  "id": "galaxy-z-flip8-folded",
+  "name": "Galaxy Z Flip8 · folded",
+  "state": "folded",
+  "screens": [
+    {
+      "node": "Cover screen",
+      "nodes": [
+        "Cover screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        948,
+        1048
+      ],
+      "size_mm": [
+        69.86119471483124,
+        77.23051905183877
+      ],
+      "center_mm": [
+        0.0,
+        -0.22500018775463104,
+        6.689999580383301
+      ],
+      "corner_radius_mm": 5,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0,
+      "frame_bounds_mm": [
+        2.7694026425843816,
+        5.234740474080617,
+        69.86119471483124,
+        77.23051905183877
+      ],
+      "frame_screen_px": null,
+      "frame_file": "cover-frame.svg",
+      "frame_body_mm": {
+        "width": 75.4,
+        "height": 85.7,
+        "depth": 13.1,
+        "corner_radius": 9.5,
+        "edge_roll_mm": [
+          0.25,
+          0.2
+        ],
+        "front_rail_mm": 0.45,
+        "rear_inset": 0.45
+      },
+      "cutouts": [
+        {
+          "center_mm": [
+            -24.630666666666663,
+            25.26739999999999
+          ],
+          "radius_mm": 5.376666666666667
+        },
+        {
+          "center_mm": [
+            -10.053333333333335,
+            25.26739999999999
+          ],
+          "radius_mm": 5.376666666666667
+        },
+        {
+          "center_mm": [
+            1.0053333333333327,
+            25.26739999999999
+          ],
+          "radius_mm": 1.6323333333333336
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "articulation": null,
+  "panels": [
+    {
+      "name": "Cover half",
+      "body_mm": {
+        "width": 75.4,
+        "height": 83.25,
+        "depth": 6.1,
+        "corner_radius": 9.5,
+        "edge_roll_mm": [
+          0.25,
+          0.2
+        ],
+        "front_rail_mm": 0.45,
+        "rear_inset": 0.45,
+        "corner_radii_mm": [
+          1,
+          9.5,
+          9.5,
+          1
+        ],
+        "rear_style": "inset_glass"
+      },
+      "center_mm": [
+        0,
+        -1.2250000000000014,
+        3.5000000000000053
+      ],
+      "buttons": true,
+      "camera": {
+        "center_mm": [
+          0,
+          0
+        ],
+        "size_mm": [
+          1,
+          1,
+          0.5
+        ],
+        "bump_mm": 0,
+        "ring_material": "rail",
+        "optical_bump_mm": 1.1,
+        "lens_ring_mm": 0.4,
+        "roll_mm": 0.15,
+        "integrated_plateau": false,
+        "windows": [
+          [
+            24.630666666666663,
+            24.26739999999999,
+            9.253333333333334,
+            9.253333333333334,
+            4.626666666666667
+          ],
+          [
+            10.053333333333335,
+            24.26739999999999,
+            9.253333333333334,
+            9.253333333333334,
+            4.626666666666667
+          ]
+        ],
+        "lenses": [
+          {
+            "kind": "ultrawide",
+            "center_mm": [
+              24.630666666666663,
+              24.26739999999999
+            ],
+            "radius_mm": 2.9154666666666667,
+            "window": 0
+          },
+          {
+            "kind": "main",
+            "center_mm": [
+              10.053333333333335,
+              24.26739999999999
+            ],
+            "radius_mm": 2.9154666666666667,
+            "window": 1
+          }
+        ],
+        "flash": [
+          [
+            -1.0053333333333327,
+            24.26739999999999,
+            1.3823333333333336
+          ]
+        ],
+        "flash_surface": "body",
+        "sensors": [],
+        "flash_offset_mm": 0.17
+      },
+      "rear_glass_region_mm": [
+        0,
+        0.0,
+        74.5,
+        82.35
+      ],
+      "rear_glass_region_radii_mm": [
+        0.5,
+        9.05,
+        9.05,
+        0.5
+      ],
+      "rotation_deg": [
+        180,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Camera half",
+      "body_mm": {
+        "width": 75.4,
+        "height": 83.25,
+        "depth": 6.1,
+        "corner_radius": 9.5,
+        "edge_roll_mm": [
+          0.25,
+          0.2
+        ],
+        "front_rail_mm": 0.45,
+        "rear_inset": 0.45,
+        "corner_radii_mm": [
+          9.5,
+          1,
+          1,
+          9.5
+        ]
+      },
+      "center_mm": [
+        0,
+        -1.2250000000000014,
+        -3.5
+      ],
+      "buttons": false
+    }
+  ],
+  "frames": [
+    {
+      "name": "Cover screen",
+      "file": "cover-frame.svg",
+      "image": "assets/devices/frames/galaxy-z-flip8-folded-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "logo": "logo",
+    "black": "black",
+    "flash": "flash"
+  },
+  "finishes": [
+    {
+      "name": "Pink",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.9803921568627451,
+            0.8156862745098039,
+            0.8941176470588236
+          ],
+          "rough": 0.32
+        },
+        "rail": {
+          "rgb": [
+            0.8839215686274509,
+            0.7488627450980391,
+            0.8131764705882353
+          ],
+          "metal": 0.85,
+          "rough": 0.27
+        },
+        "bar": {
+          "rgb": [
+            0.9803921568627451,
+            0.8156862745098039,
+            0.8941176470588236
+          ],
+          "metal": 0.55,
+          "rough": 0.3
+        },
+        "logo": {
+          "rgb": [
+            0.49019607843137253,
+            0.40784313725490196,
+            0.4470588235294118
+          ]
+        }
+      }
+    },
+    {
+      "name": "Cream",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.9882352941176471,
+            0.9882352941176471,
+            0.9803921568627451
+          ],
+          "rough": 0.32
+        },
+        "rail": {
+          "rgb": [
+            0.8903529411764706,
+            0.8903529411764706,
+            0.8839215686274509
+          ],
+          "metal": 0.85,
+          "rough": 0.27
+        },
+        "bar": {
+          "rgb": [
+            0.9882352941176471,
+            0.9882352941176471,
+            0.9803921568627451
+          ],
+          "metal": 0.55,
+          "rough": 0.3
+        },
+        "logo": {
+          "rgb": [
+            0.49411764705882355,
+            0.49411764705882355,
+            0.49019607843137253
+          ]
+        }
+      }
+    },
+    {
+      "name": "Mint",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.9450980392156862,
+            0.9607843137254902,
+            0.9019607843137255
+          ],
+          "rough": 0.32
+        },
+        "rail": {
+          "rgb": [
+            0.8549803921568626,
+            0.8678431372549019,
+            0.8196078431372549
+          ],
+          "metal": 0.85,
+          "rough": 0.27
+        },
+        "bar": {
+          "rgb": [
+            0.9450980392156862,
+            0.9607843137254902,
+            0.9019607843137255
+          ],
+          "metal": 0.55,
+          "rough": 0.3
+        },
+        "logo": {
+          "rgb": [
+            0.4725490196078431,
+            0.4803921568627451,
+            0.45098039215686275
+          ]
+        }
+      }
+    },
+    {
+      "name": "Graphite",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.30980392156862746,
+            0.30980392156862746,
+            0.34901960784313724
+          ],
+          "rough": 0.32
+        },
+        "rail": {
+          "rgb": [
+            0.33403921568627454,
+            0.33403921568627454,
+            0.36619607843137253
+          ],
+          "metal": 0.85,
+          "rough": 0.27
+        },
+        "bar": {
+          "rgb": [
+            0.30980392156862746,
+            0.30980392156862746,
+            0.34901960784313724
+          ],
+          "metal": 0.55,
+          "rough": 0.3
+        },
+        "logo": {
+          "rgb": [
+            0.15490196078431373,
+            0.15490196078431373,
+            0.17450980392156862
+          ]
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/galaxy-z-flip8-folded.5c137806d32f.glb.gz",
+  "sha256": "5c137806d32f9618b2d0c23fd35fa266e39419a3de8689681c580ab6472111f7",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/galaxy-z-flip8-folded.json",
+    "accuracy": {
+      "body_dimensions": "Published Samsung chassis dimensions excluding camera modules. Historical Fold3/4 and Flip3/4 thickness range retained in published_spec; closed wedge angle inferred from that range.",
+      "screen_resolution": "Published native panel pixels; orientation follows portrait cover/inner in the physical open chassis. ADB feed maps through full native UVs.",
+      "screen_geometry": "Active full rectangle from published diagonal/native aspect, fitted within chassis. Rounded corners, bezels, cover folder contour, camera cutouts are photo estimates; not CAD.",
+      "camera_geometry": "Lens and flash centres/diameters from source icon measurements of Samsung artwork. Samsung-specific individual rings/capsule, no Pixel bar. Protrusions and optical internals are estimates.",
+      "finishes": "Official standard and online-exclusive finish names; approximate sampled sRGB. Bespoke combinations and special editions excluded.",
+      "hinge": "Rigid articulated panels with physically positioned axes; external barrel dimensions/curves estimated. Internal multi-link and flexible OLED bend not simulated.",
+      "omissions": "Ports, grille perforations, antenna seams and internal hinge linkages."
+    },
+    "sources": [
+      "https://news.samsung.com/de/samsung-galaxy-z-fold8-ultra-fold8-und-flip8-fur-jeden-lifestyle-ein-faltbares-gerat"
+    ]
+  }
+}

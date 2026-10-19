@@ -1,0 +1,236 @@
+{
+  "id": "iphone-16-pro",
+  "name": "iPhone 16 Pro",
+  "state": "default",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        1206,
+        2622
+      ],
+      "size_mm": [
+        66.57,
+        144.73179104477612
+      ],
+      "center_mm": [
+        0.0,
+        0.0,
+        4.159999847412109
+      ],
+      "corner_radius_mm": 9.5,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0,
+      "frame_bounds_mm": [
+        2.4650000000000034,
+        2.434104477611939,
+        66.57,
+        144.73179104477612
+      ],
+      "frame_screen_px": null,
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "width": 71.5,
+        "height": 149.6,
+        "depth": 8.25,
+        "corner_radius": 12.0,
+        "edge_roll_mm": [
+          0.7,
+          0.58
+        ],
+        "front_curve": 0
+      },
+      "cutouts": [
+        {
+          "size_mm": [
+            20.69,
+            6.07
+          ],
+          "radius_mm": 3.035,
+          "center_mm": [
+            0,
+            67.09
+          ]
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "articulation": null,
+  "panels": [],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/iphone-16-pro-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "logo": "logo",
+    "black": "black",
+    "flash": "flash"
+  },
+  "finishes": [
+    {
+      "name": "Black Titanium",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.23137254901960785,
+            0.22745098039215686,
+            0.2196078431372549
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.23137254901960785,
+            0.22745098039215686,
+            0.2196078431372549
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.23137254901960785,
+            0.22745098039215686,
+            0.2196078431372549
+          ]
+        },
+        "logo": {
+          "rgb": [
+            0.36658823529411766,
+            0.36376470588235293,
+            0.35811764705882354
+          ]
+        }
+      }
+    },
+    {
+      "name": "White Titanium",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.8980392156862745,
+            0.8862745098039215,
+            0.8627450980392157
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.8980392156862745,
+            0.8862745098039215,
+            0.8627450980392157
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.8980392156862745,
+            0.8862745098039215,
+            0.8627450980392157
+          ]
+        },
+        "logo": {
+          "rgb": [
+            0.5567843137254902,
+            0.5494901960784313,
+            0.5349019607843137
+          ]
+        }
+      }
+    },
+    {
+      "name": "Natural Titanium",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.6509803921568628,
+            0.6352941176470588,
+            0.6
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.6509803921568628,
+            0.6352941176470588,
+            0.6
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.6509803921568628,
+            0.6352941176470588,
+            0.6
+          ]
+        },
+        "logo": {
+          "rgb": [
+            0.4036078431372549,
+            0.39388235294117646,
+            0.372
+          ]
+        }
+      }
+    },
+    {
+      "name": "Desert Titanium",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.7647058823529411,
+            0.6705882352941176,
+            0.5803921568627451
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.7647058823529411,
+            0.6705882352941176,
+            0.5803921568627451
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.7647058823529411,
+            0.6705882352941176,
+            0.5803921568627451
+          ]
+        },
+        "logo": {
+          "rgb": [
+            0.4741176470588235,
+            0.4157647058823529,
+            0.35984313725490197
+          ]
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/iphone-16-pro.f2f0bb23417f.glb.gz",
+  "sha256": "f2f0bb23417f4d03da13e39e533d9e35c2f9d3c31b0bbe299958e03c32f4df20",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/iphone-16-pro.json",
+    "accuracy": {
+      "body_dimensions": "Apple published metric dimensions",
+      "screen_geometry": "visual estimates; compound corner curves documented in Apple dimensional PDFs are not constant circular radii",
+      "camera_geometry": "Apple drawing lens coordinates and depths; island outline bounds/radius are visual approximations",
+      "controls": "Apple dimensional-drawing control centerlines across the generated slab catalog",
+      "finishes": "finish names official; RGB visual approximations, not calibrated manufacturer paint values"
+    },
+    "sources": [
+      "https://support.apple.com/en-us/121031",
+      "https://developer.apple.com/download/files/accessories/dimensional-drawings/iphone-16-pro.pdf"
+    ]
+  }
+}

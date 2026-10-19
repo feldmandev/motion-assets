@@ -1,0 +1,223 @@
+{
+  "id": "galaxy-s20-plus",
+  "name": "Galaxy S20+",
+  "state": "default",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        1440,
+        3200
+      ],
+      "size_mm": [
+        69.83586078781482,
+        155.19080175069962
+      ],
+      "center_mm": [
+        0.0,
+        0.0,
+        3.934999704360962
+      ],
+      "corner_radius_mm": 8,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0.6,
+      "frame_bounds_mm": [
+        1.9320696060925897,
+        3.3545991246501927,
+        69.83586078781482,
+        155.19080175069962
+      ],
+      "frame_screen_px": null,
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "width": 73.7,
+        "height": 161.9,
+        "depth": 7.8,
+        "corner_radius": 9.93206960609259,
+        "edge_roll_mm": [
+          1.15,
+          0.25
+        ],
+        "front_rail_mm": 0.4,
+        "rear_inset": 0.4,
+        "corner_radii_mm": [
+          9.93206960609259,
+          9.93206960609259,
+          9.93206960609259,
+          9.93206960609259
+        ]
+      },
+      "cutouts": [
+        {
+          "center_mm": [
+            0,
+            73.79540087534981
+          ],
+          "radius_mm": 1.4
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "articulation": null,
+  "panels": [],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/galaxy-s20-plus-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "logo": "logo",
+    "black": "black",
+    "flash": "flash",
+    "front_sensor": "front_sensor",
+    "front_speaker": "front_speaker"
+  },
+  "finishes": [
+    {
+      "name": "Cosmic Gray",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.4980392156862745,
+            0.5176470588235295,
+            0.5490196078431373
+          ],
+          "rough": 0.36
+        },
+        "rail": {
+          "rgb": [
+            0.5135294117647059,
+            0.5282352941176471,
+            0.5517647058823529
+          ],
+          "metal": 0.8,
+          "rough": 0.27
+        },
+        "bar": {
+          "rgb": [
+            0.018,
+            0.022,
+            0.03
+          ],
+          "metal": 0.55,
+          "rough": 0.27
+        },
+        "logo": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.16
+          ]
+        }
+      }
+    },
+    {
+      "name": "Cloud Blue",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.6901960784313725,
+            0.8117647058823529,
+            0.8745098039215686
+          ],
+          "rough": 0.36
+        },
+        "rail": {
+          "rgb": [
+            0.6576470588235294,
+            0.7488235294117648,
+            0.7958823529411765
+          ],
+          "metal": 0.8,
+          "rough": 0.27
+        },
+        "bar": {
+          "rgb": [
+            0.018,
+            0.022,
+            0.03
+          ],
+          "metal": 0.55,
+          "rough": 0.27
+        },
+        "logo": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.16
+          ]
+        }
+      }
+    },
+    {
+      "name": "Cosmic Black",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.15294117647058825,
+            0.16862745098039217,
+            0.18823529411764706
+          ],
+          "rough": 0.36
+        },
+        "rail": {
+          "rgb": [
+            0.2547058823529412,
+            0.2664705882352941,
+            0.2811764705882353
+          ],
+          "metal": 0.8,
+          "rough": 0.27
+        },
+        "bar": {
+          "rgb": [
+            0.018,
+            0.022,
+            0.03
+          ],
+          "metal": 0.55,
+          "rough": 0.27
+        },
+        "logo": {
+          "rgb": [
+            0.62,
+            0.64,
+            0.68
+          ]
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/galaxy-s20-plus.298603183d09.glb.gz",
+  "sha256": "298603183d097061d1d7a0d71ed636fe4f438061c6501c161596f0d758471717",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/galaxy-s20-plus.json",
+    "accuracy": {
+      "body_dimensions": "Samsung published chassis dimensions. Corner radii, edge rolls and curvature are photo estimates, not CAD.",
+      "screen_resolution": "Samsung native resolution. Active rectangle calculated from rounded published full diagonal and native aspect; physical bezel widths therefore approximate.",
+      "screen_geometry": "Model-specific flat/dual-edge display, rectangular/rounded corners, bezel selfie or Infinity-O aperture. Radii, hole positions and curve depth are photo estimates.",
+      "camera_geometry": "Model-specific rear layout scaled from generate_galaxy_svgs.PHONES / base MODELS official-render measurements. Internal optics, radii and protrusions illustrative; early cover internal lens positions estimated from photographs. Laser/ToF/heart-rate/fingerprint features distinguished from imaging lenses.",
+      "finishes": "Published finish names; approximate sampled sRGB and material response. S21+ Phantom Violet uses muted rose champagne camera housing.",
+      "omissions": "USB/headphone ports, speaker perforations, antenna seams and S Pen silo omitted. Legacy capacitive navigation marks and bezel hardware simplified."
+    },
+    "sources": [
+      "https://www.samsungsvc.co.kr/solution/25670"
+    ]
+  }
+}

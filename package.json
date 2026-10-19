@@ -1,0 +1,32 @@
+{
+  "name": "@feldmandev/motion-assets",
+  "version": "0.1.0",
+  "description": "Shared Motion shapes, device artwork and models, fonts, and Material Symbols.",
+  "type": "module",
+  "license": "SEE LICENSE IN ATTRIBUTION.md",
+  "repository": "github:feldmandev/motion-assets",
+  "exports": {
+    "./manifest": "./manifest.json",
+    "./shapes": "./assets/shapes/catalog.json",
+    "./devices": "./assets/devices/catalog.json",
+    "./symbols": "./assets/symbols/catalog.json",
+    "./*": "./*"
+  },
+  "files": [
+    "assets",
+    "integrations",
+    "manifest.json",
+    "ATTRIBUTION.md",
+    "LICENSE",
+    "LICENSES",
+    "!assets/devices/models/*.glb.gz",
+    "!assets/devices/models/*.glb",
+    "!assets/devices/exports/**"
+  ],
+  "scripts": {
+    "validate": "python tools/validate.py",
+    "catalog": "python tools/catalog.py",
+    "update:symbols": "python tools/update_symbols.py --latest",
+    "build": "python tools/build.py"
+  }
+}

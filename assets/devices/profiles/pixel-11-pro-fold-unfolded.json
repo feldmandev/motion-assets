@@ -1,0 +1,400 @@
+{
+  "id": "pixel-11-pro-fold-unfolded",
+  "name": "Pixel 11 Pro Fold · unfolded",
+  "finish": "Obsidian",
+  "body_mm": {
+    "height": 155.2,
+    "width": 150.4,
+    "depth": 5.0,
+    "corner_radius": 13.5,
+    "edge_roll": 0.45,
+    "front_curve": 0,
+    "edge_roll_mm": [
+      0.75,
+      0.75
+    ]
+  },
+  "materials": {
+    "back": {
+      "rgb": [
+        0.2,
+        0.22745,
+        0.23922
+      ],
+      "rough": 0.42
+    },
+    "rail": {
+      "rgb": [
+        0.33,
+        0.34784,
+        0.35549
+      ],
+      "metal": 1,
+      "rough": 0.18
+    },
+    "bar": {
+      "rgb": [
+        0.2,
+        0.22745,
+        0.23922
+      ],
+      "metal": 0.3,
+      "rough": 0.35
+    },
+    "black": {
+      "rgb": [
+        0.007,
+        0.009,
+        0.012
+      ],
+      "rough": 0.5
+    },
+    "flash": {
+      "rgb": [
+        0.85,
+        0.84,
+        0.77
+      ],
+      "rough": 0.33
+    }
+  },
+  "finishes": {
+    "Obsidian": {
+      "back": {
+        "rgb": [
+          0.2,
+          0.22745,
+          0.23922
+        ]
+      },
+      "rail": {
+        "rgb": [
+          0.33,
+          0.34784,
+          0.35549
+        ]
+      },
+      "bar": {
+        "rgb": [
+          0.2,
+          0.22745,
+          0.23922
+        ]
+      }
+    },
+    "Olive": {
+      "back": {
+        "rgb": [
+          0.55294,
+          0.58039,
+          0.4902
+        ]
+      },
+      "rail": {
+        "rgb": [
+          0.55941,
+          0.57725,
+          0.51863
+        ]
+      },
+      "bar": {
+        "rgb": [
+          0.55294,
+          0.58039,
+          0.4902
+        ]
+      }
+    }
+  },
+  "accuracy": {
+    "body_dimensions": "Google published metric dimensions",
+    "screen_resolution": "Google published panel resolution",
+    "screen_geometry": "Photo-informed fit box with exact native pixel aspect; bezels, radii, cutouts and edge curves estimated",
+    "camera_geometry": "Housing width, height and top gap scaled from official rear artwork; pixel bounds and uncertainty in camera_measurement. Optical internals remain illustrative. Not measurable from this rear view; model depth remains a visual estimate.",
+    "finishes": "Approximate sRGB colors and roughness, not calibrated measured materials",
+    "hinge": "Animated rigid-panel hinge with a measured open/closed thickness axis; half-angle barrel and hinge leaves remain an estimated mechanism; the flexible OLED is split at the crease."
+  },
+  "sources": [
+    "https://support.google.com/pixelphone/answer/7158570?hl=en",
+    "https://blog.google/products-and-platforms/devices/pixel/pixel-11-pro-fold/",
+    "https://store.google.com/de/product/pixel_11_pro_fold_specs?hl=de"
+  ],
+  "status": "provisional",
+  "state": "unfolded",
+  "panels": [
+    {
+      "name": "Cover half",
+      "body_mm": {
+        "height": 155.2,
+        "width": 74.9,
+        "depth": 5.0,
+        "corner_radius": 13.5,
+        "edge_roll": 0.45,
+        "front_curve": 0,
+        "edge_roll_mm": [
+          0.75,
+          0.75
+        ],
+        "corner_radii_mm": [
+          1.6,
+          1.6,
+          13.5,
+          13.5
+        ]
+      },
+      "center_mm": [
+        -37.75,
+        0,
+        0
+      ],
+      "buttons": false
+    },
+    {
+      "name": "Camera half",
+      "body_mm": {
+        "height": 155.2,
+        "width": 74.9,
+        "depth": 5.0,
+        "corner_radius": 13.5,
+        "edge_roll": 0.45,
+        "front_curve": 0,
+        "edge_roll_mm": [
+          0.75,
+          0.75
+        ],
+        "corner_radii_mm": [
+          13.5,
+          13.5,
+          1.6,
+          1.6
+        ]
+      },
+      "center_mm": [
+        37.75,
+        0,
+        0
+      ],
+      "buttons": true,
+      "camera": {
+        "center_mm": [
+          12.020000000000003,
+          54.724999999999994
+        ],
+        "size_mm": [
+          43.08,
+          37.97,
+          9.61
+        ],
+        "bump_mm": 2.5,
+        "roll_mm": 0.45,
+        "windows": [
+          [
+            12.020000000000003,
+            63.7178947368421,
+            38.772,
+            15.987368421052631,
+            7.9936842105263155
+          ],
+          [
+            12.020000000000003,
+            45.73210526315789,
+            38.772,
+            15.987368421052631,
+            7.9936842105263155
+          ]
+        ],
+        "lenses": [
+          {
+            "kind": "ultrawide",
+            "center_mm": [
+              1.2500000000000036,
+              63.7178947368421
+            ],
+            "radius_mm": 3.0,
+            "window": 0
+          },
+          {
+            "kind": "main",
+            "center_mm": [
+              21.713,
+              45.73210526315789
+            ],
+            "radius_mm": 4.2,
+            "window": 1
+          },
+          {
+            "kind": "telephoto",
+            "center_mm": [
+              5.558000000000003,
+              45.73210526315789
+            ],
+            "radius_mm": 3.1,
+            "window": 1
+          }
+        ],
+        "flash": [
+          [
+            22.790000000000003,
+            63.7178947368421,
+            3.1
+          ]
+        ]
+      }
+    }
+  ],
+  "hinge": {
+    "center_mm": [
+      0,
+      0,
+      0
+    ],
+    "size_mm": [
+      2,
+      150.2,
+      4.4
+    ],
+    "radius_mm": 0.7,
+    "spine_width_mm": 10.1,
+    "closed_spine_center_x_mm": 0.10000000000000286,
+    "closed_spine_center_z_mm": 2.55,
+    "spine_depth_mm": 1.8,
+    "spine_center_x_mm": 0,
+    "spine_center_z_mm": -1.6
+  },
+  "articulation": {
+    "animation": "Fold",
+    "axis": "Y",
+    "axis_mm": [
+      0,
+      0,
+      2.55
+    ],
+    "moving_panel": "Cover half",
+    "fixed_panel": "Camera half",
+    "pivots": {
+      "Cover half": "Fold pivot | Cover half",
+      "Camera half": "Fold pivot | Camera half"
+    },
+    "open_degrees": 0,
+    "closed_degrees": 180,
+    "duration_seconds": 1.0,
+    "open_gap_mm": 0.5999999999999943,
+    "closed_gap_mm": 0.09999999999999964,
+    "closed_body_mm": {
+      "height": 155.2,
+      "width": 76.0,
+      "depth": 10.1
+    },
+    "companion_profile": "pixel-11-pro-fold-folded"
+  },
+  "screens": [
+    {
+      "object": "Inner screen",
+      "node": "Inner screen",
+      "panel": "Inner display",
+      "resolution": [
+        2076,
+        2152
+      ],
+      "fit_box_mm": [
+        145.86022304832713,
+        151.2
+      ],
+      "center_mm": [
+        0,
+        0,
+        2.54
+      ],
+      "corner_radius_mm": 11.3,
+      "edge_curve_mm": 0,
+      "create_cutouts": true,
+      "cutouts": [
+        {
+          "center_mm": [
+            64.93011152416356,
+            69.6
+          ],
+          "radius_mm": 1.5
+        }
+      ],
+      "foldable_surface": true
+    },
+    {
+      "object": "Cover screen",
+      "node": "Cover screen",
+      "panel": "Cover half",
+      "resolution": [
+        1080,
+        2342
+      ],
+      "fit_box_mm": [
+        69.72502134927413,
+        151.2
+      ],
+      "center_mm": [
+        -0.8,
+        0,
+        -2.535
+      ],
+      "corner_radius_mm": 11.3,
+      "edge_curve_mm": 0,
+      "create_cutouts": true,
+      "cutouts": [
+        {
+          "center_mm": [
+            0,
+            69.86328514923413
+          ],
+          "radius_mm": 1.5
+        }
+      ],
+      "rotation_deg": [
+        0,
+        180,
+        0
+      ],
+      "frame_file": "cover-frame.svg",
+      "frame_body_mm": {
+        "height": 155.2,
+        "width": 76.0,
+        "depth": 10.1,
+        "corner_radius": 13.5,
+        "corner_radii_mm": [
+          13.5,
+          13.5,
+          1.6,
+          1.6
+        ]
+      },
+      "frame_center_mm": [
+        1.1,
+        0
+      ],
+      "glass_border_mm": 1.5,
+      "frame_glass_border_mm": 1.5,
+      "foldable_surface": true
+    }
+  ],
+  "camera_measurement": {
+    "reference": "research/images/pixel-11-pro-fold-obsidian-open-back.webp",
+    "body_bounds_px": [
+      290,
+      20,
+      599,
+      662
+    ],
+    "bar_bounds_px": [
+      304,
+      36,
+      481,
+      192
+    ],
+    "scale_mm_per_px": 0.24336569579288025,
+    "width_mm": 43.08,
+    "height_mm": 37.97,
+    "top_gap_mm": 3.89,
+    "rear_measurement_uncertainty_mm": 1.0,
+    "protrusion_mm": null,
+    "depth_status": "Not measurable from this rear view; model depth remains a visual estimate."
+  }
+}

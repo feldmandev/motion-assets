@@ -1,0 +1,119 @@
+{
+  "models": 26,
+  "coverage": "All 26 published tablet IDs match samsung-model-coverage.json",
+  "body_screen_preservation": "All26 body_mm and screen definitions compared equal to pre-correction JSONs before generation",
+  "review_checks": "All26 rear640x440, nonclipped transparent body bounds; all named finish images420x300",
+  "exports": [
+    {
+      "id": "galaxy-tab-a11-plus",
+      "checks": "body dimensions, native screen aspect, lens/flash clearance, exported lens rim seating, wordmark nodes when specified, GLB structure, SVG XML, review and finish images"
+    },
+    {
+      "id": "galaxy-tab-a11",
+      "checks": "body dimensions, native screen aspect, lens/flash clearance, exported lens rim seating, wordmark nodes when specified, GLB structure, SVG XML, review and finish images"
+    },
+    {
+      "id": "galaxy-tab-s10-fe-plus",
+      "checks": "body dimensions, native screen aspect, lens/flash clearance, exported lens rim seating, wordmark nodes when specified, GLB structure, SVG XML, review and finish images"
+    },
+    {
+      "id": "galaxy-tab-s10-fe",
+      "checks": "body dimensions, native screen aspect, lens/flash clearance, exported lens rim seating, wordmark nodes when specified, GLB structure, SVG XML, review and finish images"
+    },
+    {
+      "id": "galaxy-tab-s10-lite",
+      "checks": "body dimensions, native screen aspect, lens/flash clearance, exported lens rim seating, wordmark nodes when specified, GLB structure, SVG XML, review and finish images"
+    },
+    {
+      "id": "galaxy-tab-s10-plus",
+      "checks": "body dimensions, native screen aspect, lens/flash clearance, exported lens rim seating, wordmark nodes when specified, GLB structure, SVG XML, review and finish images"
+    },
+    {
+      "id": "galaxy-tab-s10-ultra",
+      "checks": "body dimensions, native screen aspect, lens/flash clearance, exported lens rim seating, wordmark nodes when specified, GLB structure, SVG XML, review and finish images"
+    },
+    {
+      "id": "galaxy-tab-s11-ultra",
+      "checks": "body dimensions, native screen aspect, lens/flash clearance, exported lens rim seating, wordmark nodes when specified, GLB structure, SVG XML, review and finish images"
+    },
+    {
+      "id": "galaxy-tab-s11",
+      "checks": "body dimensions, native screen aspect, lens/flash clearance, exported lens rim seating, wordmark nodes when specified, GLB structure, SVG XML, review and finish images"
+    },
+    {
+      "id": "galaxy-tab-s12-plus",
+      "checks": "body dimensions, native screen aspect, lens/flash clearance, exported lens rim seating, wordmark nodes when specified, GLB structure, SVG XML, review and finish images"
+    },
+    {
+      "id": "galaxy-tab-s12-ultra",
+      "checks": "body dimensions, native screen aspect, lens/flash clearance, exported lens rim seating, wordmark nodes when specified, GLB structure, SVG XML, review and finish images"
+    },
+    {
+      "id": "galaxy-tab-s6-lite-2020",
+      "checks": "body dimensions, native screen aspect, lens/flash clearance, exported lens rim seating, wordmark nodes when specified, GLB structure, SVG XML, review and finish images"
+    },
+    {
+      "id": "galaxy-tab-s6-lite-2022",
+      "checks": "body dimensions, native screen aspect, lens/flash clearance, exported lens rim seating, wordmark nodes when specified, GLB structure, SVG XML, review and finish images"
+    },
+    {
+      "id": "galaxy-tab-s6-lite-2024",
+      "checks": "body dimensions, native screen aspect, lens/flash clearance, exported lens rim seating, wordmark nodes when specified, GLB structure, SVG XML, review and finish images"
+    },
+    {
+      "id": "galaxy-tab-s6",
+      "checks": "body dimensions, native screen aspect, lens/flash clearance, exported lens rim seating, wordmark nodes when specified, GLB structure, SVG XML, review and finish images"
+    },
+    {
+      "id": "galaxy-tab-s7-fe",
+      "checks": "body dimensions, native screen aspect, lens/flash clearance, exported lens rim seating, wordmark nodes when specified, GLB structure, SVG XML, review and finish images"
+    },
+    {
+      "id": "galaxy-tab-s7-plus",
+      "checks": "body dimensions, native screen aspect, lens/flash clearance, exported lens rim seating, wordmark nodes when specified, GLB structure, SVG XML, review and finish images"
+    },
+    {
+      "id": "galaxy-tab-s7",
+      "checks": "body dimensions, native screen aspect, lens/flash clearance, exported lens rim seating, wordmark nodes when specified, GLB structure, SVG XML, review and finish images"
+    },
+    {
+      "id": "galaxy-tab-s8-plus",
+      "checks": "body dimensions, native screen aspect, lens/flash clearance, exported lens rim seating, wordmark nodes when specified, GLB structure, SVG XML, review and finish images"
+    },
+    {
+      "id": "galaxy-tab-s8-ultra",
+      "checks": "body dimensions, native screen aspect, lens/flash clearance, exported lens rim seating, wordmark nodes when specified, GLB structure, SVG XML, review and finish images"
+    },
+    {
+      "id": "galaxy-tab-s8",
+      "checks": "body dimensions, native screen aspect, lens/flash clearance, exported lens rim seating, wordmark nodes when specified, GLB structure, SVG XML, review and finish images"
+    },
+    {
+      "id": "galaxy-tab-s9-fe-plus",
+      "checks": "body dimensions, native screen aspect, lens/flash clearance, exported lens rim seating, wordmark nodes when specified, GLB structure, SVG XML, review and finish images"
+    },
+    {
+      "id": "galaxy-tab-s9-fe",
+      "checks": "body dimensions, native screen aspect, lens/flash clearance, exported lens rim seating, wordmark nodes when specified, GLB structure, SVG XML, review and finish images"
+    },
+    {
+      "id": "galaxy-tab-s9-plus",
+      "checks": "body dimensions, native screen aspect, lens/flash clearance, exported lens rim seating, wordmark nodes when specified, GLB structure, SVG XML, review and finish images"
+    },
+    {
+      "id": "galaxy-tab-s9-ultra",
+      "checks": "body dimensions, native screen aspect, lens/flash clearance, exported lens rim seating, wordmark nodes when specified, GLB structure, SVG XML, review and finish images"
+    },
+    {
+      "id": "galaxy-tab-s9",
+      "checks": "body dimensions, native screen aspect, lens/flash clearance, exported lens rim seating, wordmark nodes when specified, GLB structure, SVG XML, review and finish images"
+    }
+  ],
+  "limitations": [
+    "Rear dimensions are measurements from Samsung renders, not OEM CAD; bump depths and inherited internal glass optics remain illustrative.",
+    "S6 charging groove represented as shallow darker rear surface; endpoint estimated where official reference pen obscures groove.",
+    "S7/S8 and their Plus variants share measured enclosure layouts; S6 Lite editions share the 2024 rear layout. S10 FE+ physical inset transfer cross-check differs by about1.5mm at thumbnail scale."
+  ],
+  "unresolved_models": [],
+  "camera_charging_separation": "S7/S7+/S8/S8+/S8Ultra have short raised 28-35mm camera capsules and separate flat charging surfaces."
+}

@@ -1,0 +1,211 @@
+{
+  "id": "pixel-6",
+  "name": "Pixel 6",
+  "state": "default",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        1080,
+        2400
+      ],
+      "size_mm": [
+        67.09283196239717,
+        149.09518213866036
+      ],
+      "center_mm": [
+        -0.09318448883666275,
+        0.4659224441833137,
+        4.485
+      ],
+      "corner_radius_mm": 2.1022334960018227,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0,
+      "frame_bounds_mm": [
+        3.760399529964751,
+        4.2864864864864956,
+        67.09283196239717,
+        149.09518213866036
+      ],
+      "frame_screen_px": [
+        60,
+        69,
+        1080,
+        2400
+      ],
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "height": 158.6,
+        "width": 74.8,
+        "depth": 8.9,
+        "corner_radius": 5.955817514803236,
+        "edge_roll": 0.55,
+        "front_curve": 0,
+        "edge_roll_mm": [
+          3.4,
+          1.0
+        ],
+        "corner_radii_mm": [
+          6.049002003639899,
+          6.049002003639899,
+          5.8626330259665735,
+          5.8626330259665735
+        ]
+      },
+      "cutouts": [
+        {
+          "center_mm": [
+            0,
+            70.5475910693302
+          ],
+          "radius_mm": 1.5
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "articulation": null,
+  "panels": [],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/pixel-6-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "black": "black",
+    "flash": "flash",
+    "upper": "upper"
+  },
+  "finishes": [
+    {
+      "name": "Stormy Black",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.2549,
+            0.27451,
+            0.2902
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.36569,
+            0.37843,
+            0.38863
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.08235,
+            0.09804,
+            0.11373
+          ]
+        },
+        "upper": {
+          "rgb": [
+            0.43922,
+            0.45098,
+            0.45882
+          ]
+        }
+      }
+    },
+    {
+      "name": "Kinda Coral",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.92941,
+            0.70588,
+            0.61961
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.80412,
+            0.65882,
+            0.60275
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.08235,
+            0.09804,
+            0.11373
+          ]
+        },
+        "upper": {
+          "rgb": [
+            0.90588,
+            0.58039,
+            0.49412
+          ]
+        }
+      }
+    },
+    {
+      "name": "Sorta Seafoam",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.75294,
+            0.82745,
+            0.78431
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.68941,
+            0.73784,
+            0.7098
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.08235,
+            0.09804,
+            0.11373
+          ]
+        },
+        "upper": {
+          "rgb": [
+            0.8902,
+            0.91373,
+            0.71373
+          ]
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/pixel-6.7c7e4ace7d65.glb.gz",
+  "sha256": "7c7e4ace7d65c97d74616b42eaaead1918f8aa0f036ca3cf65f0bbc556782165",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/pixel-6.json",
+    "accuracy": {
+      "body_dimensions": "Google published metric dimensions",
+      "screen_resolution": "Google published panel resolution",
+      "screen_geometry": "Screen fit and corner radius measured from Google emulator artwork; native pixel aspect preserved. Skin artwork is a reference, not physical CAD.",
+      "camera_geometry": "Provisional photo-informed blockout; shared reviewed optics are illustrative, not device-specific optical prescriptions",
+      "finishes": "Approximate sRGB colors and roughness, not calibrated measured materials"
+    },
+    "sources": [
+      "https://support.google.com/pixelphone/answer/7158570?hl=en",
+      "https://store.google.com/us/magazine/compare_pixel?hl=en-US&toggler0=Pixel+6&toggler1=Pixel+6a&toggler2=Pixel+6+Pro"
+    ]
+  }
+}

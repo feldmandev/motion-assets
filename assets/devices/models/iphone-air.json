@@ -1,0 +1,236 @@
+{
+  "id": "iphone-air",
+  "name": "iPhone Air",
+  "state": "default",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        1260,
+        2736
+      ],
+      "size_mm": [
+        69.55,
+        151.02285714285713
+      ],
+      "center_mm": [
+        0.0,
+        0.0,
+        2.8550000190734863
+      ],
+      "corner_radius_mm": 16.79,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0,
+      "frame_bounds_mm": [
+        2.575000000000003,
+        2.588571428571427,
+        69.55,
+        151.02285714285713
+      ],
+      "frame_screen_px": null,
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "width": 74.7,
+        "height": 156.2,
+        "depth": 5.64,
+        "corner_radius": 19.37,
+        "edge_roll_mm": [
+          0.7,
+          0.58
+        ],
+        "front_curve": 0
+      },
+      "cutouts": [
+        {
+          "size_mm": [
+            20.69,
+            6.07
+          ],
+          "radius_mm": 3.035,
+          "center_mm": [
+            0,
+            69.18
+          ]
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "articulation": null,
+  "panels": [],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/iphone-air-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "logo": "logo",
+    "black": "black",
+    "flash": "flash"
+  },
+  "finishes": [
+    {
+      "name": "Space Black",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.20784313725490197,
+            0.20784313725490197,
+            0.20784313725490197
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.20784313725490197,
+            0.20784313725490197,
+            0.20784313725490197
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.20784313725490197,
+            0.20784313725490197,
+            0.20784313725490197
+          ]
+        },
+        "logo": {
+          "rgb": [
+            0.3496470588235294,
+            0.3496470588235294,
+            0.3496470588235294
+          ]
+        }
+      }
+    },
+    {
+      "name": "Cloud White",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.9372549019607843,
+            0.9294117647058824,
+            0.9058823529411765
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.9372549019607843,
+            0.9294117647058824,
+            0.9058823529411765
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.9372549019607843,
+            0.9294117647058824,
+            0.9058823529411765
+          ]
+        },
+        "logo": {
+          "rgb": [
+            0.5810980392156863,
+            0.5762352941176471,
+            0.5616470588235294
+          ]
+        }
+      }
+    },
+    {
+      "name": "Light Gold",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.8509803921568627,
+            0.8196078431372549,
+            0.7333333333333333
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.8509803921568627,
+            0.8196078431372549,
+            0.7333333333333333
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.8509803921568627,
+            0.8196078431372549,
+            0.7333333333333333
+          ]
+        },
+        "logo": {
+          "rgb": [
+            0.5276078431372548,
+            0.508156862745098,
+            0.4546666666666666
+          ]
+        }
+      }
+    },
+    {
+      "name": "Sky Blue",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.7254901960784313,
+            0.796078431372549,
+            0.8313725490196079
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.7254901960784313,
+            0.796078431372549,
+            0.8313725490196079
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.7254901960784313,
+            0.796078431372549,
+            0.8313725490196079
+          ]
+        },
+        "logo": {
+          "rgb": [
+            0.4498039215686274,
+            0.49356862745098035,
+            0.5154509803921569
+          ]
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/iphone-air.e0c3bf5f64d5.glb.gz",
+  "sha256": "e0c3bf5f64d5c250cc0f4cf6b560d87b01533770c3c6f6529cf6c45aedb9753a",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/iphone-air.json",
+    "accuracy": {
+      "body_dimensions": "Apple published metric dimensions",
+      "screen_geometry": "Compound chassis and display curves traced from Apple iPhone Air dimensional drawing, page 1",
+      "camera_geometry": "Apple drawing lens coordinates and depths; island outline bounds/radius are visual approximations",
+      "controls": "Apple dimensional-drawing control centerlines across the generated slab catalog",
+      "finishes": "finish names official; RGB visual approximations, not calibrated manufacturer paint values"
+    },
+    "sources": [
+      "https://www.apple.com/iphone-air/specs/",
+      "https://developer.apple.com/download/files/accessories/dimensional-drawings/iphone-air.pdf"
+    ]
+  }
+}

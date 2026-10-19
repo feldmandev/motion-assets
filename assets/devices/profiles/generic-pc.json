@@ -1,0 +1,13 @@
+{
+  "id": "generic-pc",
+  "name": "Generic PC",
+  "accuracy": {
+    "geometry": "Brand-neutral procedural illustration, not measured hardware or vendor CAD."
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "description": "Motion generic device artwork and authored screen mapping"
+    }
+  ]
+}

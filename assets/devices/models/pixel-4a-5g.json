@@ -1,0 +1,191 @@
+{
+  "id": "pixel-4a-5g",
+  "name": "Pixel 4a (5G)",
+  "state": "default",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        1080,
+        2340
+      ],
+      "size_mm": [
+        65.99328178667591,
+        142.98544387113114
+      ],
+      "center_mm": [
+        0,
+        0,
+        4.135
+      ],
+      "corner_radius_mm": 4.8,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0,
+      "frame_bounds_mm": [
+        4.003359106662046,
+        5.457278064434433,
+        65.99328178667591,
+        142.98544387113114
+      ],
+      "frame_screen_px": null,
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "height": 153.9,
+        "width": 74.0,
+        "depth": 8.2,
+        "corner_radius": 8.803359106662047,
+        "edge_roll": 0.95,
+        "edge_roll_mm": [
+          2.45,
+          0.95
+        ],
+        "front_curve": 0,
+        "rear_style": "unibody",
+        "corner_radii_mm": [
+          8.803359106662047,
+          8.803359106662047,
+          8.803359106662047,
+          8.803359106662047
+        ]
+      },
+      "cutouts": [
+        {
+          "center_mm": [
+            -27.996640893337954,
+            66.49272193556557
+          ],
+          "radius_mm": 1.9
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "articulation": null,
+  "panels": [],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/pixel-4a-5g-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "button": "button",
+    "fingerprint": "fingerprint",
+    "black": "black",
+    "flash": "flash"
+  },
+  "finishes": [
+    {
+      "name": "Just Black",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.14118,
+            0.14902,
+            0.15686
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.14118,
+            0.14902,
+            0.15686
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.03529,
+            0.04314,
+            0.0549
+          ]
+        },
+        "button": {
+          "rgb": [
+            0.71373,
+            0.83137,
+            0.8
+          ]
+        },
+        "fingerprint": {
+          "rgb": [
+            0.18824,
+            0.19608,
+            0.20784
+          ]
+        }
+      }
+    },
+    {
+      "name": "Clearly White",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.89804,
+            0.89804,
+            0.87451
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.89804,
+            0.89804,
+            0.87451
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.03529,
+            0.04314,
+            0.0549
+          ]
+        },
+        "button": {
+          "rgb": [
+            0.71373,
+            0.83137,
+            0.8
+          ]
+        },
+        "fingerprint": {
+          "rgb": [
+            0.81961,
+            0.82353,
+            0.80784
+          ]
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/pixel-4a-5g.9f3b771ca682.glb.gz",
+  "sha256": "9f3b771ca6829efbad1da4caee342a61c6dbdd1daa1dcc87885c5caf2498661b",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/pixel-4a-5g.json",
+    "accuracy": {
+      "body_dimensions": "Google published metric dimensions",
+      "screen_resolution": "Google published panel resolution",
+      "screen_geometry": "Published 6.2-inch 19.5:9 panel geometry; no matching Android SDK skin is installed",
+      "camera_geometry": "Model-specific rear housing/lens placement proportioned from reviewed product photography; optical stacks reuse the reviewed Pixel optics and are illustrative",
+      "buttons_and_rear_hardware": "Model-specific placement reviewed against product photography",
+      "finishes": "Approximate sRGB appearance matched to named Google finishes; not measured material samples",
+      "body_variant": "Sub-6 model, 8.2 mm depth; Verizon mmWave model is 8.5 mm"
+    },
+    "sources": [
+      "https://support.google.com/pixelphone/answer/16043605?hl=en",
+      "https://blog.google/products/pixel/new-pixel-5-4a-5g/"
+    ]
+  }
+}

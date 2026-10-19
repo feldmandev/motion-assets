@@ -1,0 +1,285 @@
+{
+  "id": "pixel-9-pro-xl",
+  "name": "Pixel 9 Pro XL",
+  "finish": "Obsidian",
+  "body_mm": {
+    "height": 162.8,
+    "width": 76.6,
+    "depth": 8.5,
+    "corner_radius": 12.41248906451613,
+    "edge_roll": 0.55,
+    "front_curve": 0,
+    "edge_roll_mm": [
+      0.75,
+      0.75
+    ]
+  },
+  "materials": {
+    "back": {
+      "rgb": [
+        0.2,
+        0.22745,
+        0.23922
+      ],
+      "rough": 0.42
+    },
+    "rail": {
+      "rgb": [
+        0.33,
+        0.34784,
+        0.35549
+      ],
+      "metal": 1,
+      "rough": 0.18
+    },
+    "bar": {
+      "rgb": [
+        0.33,
+        0.34784,
+        0.35549
+      ],
+      "metal": 0.6,
+      "rough": 0.3
+    },
+    "black": {
+      "rgb": [
+        0.007,
+        0.009,
+        0.012
+      ],
+      "rough": 0.5
+    },
+    "flash": {
+      "rgb": [
+        0.85,
+        0.84,
+        0.77
+      ],
+      "rough": 0.33
+    }
+  },
+  "finishes": {
+    "Obsidian": {
+      "back": {
+        "rgb": [
+          0.2,
+          0.22745,
+          0.23922
+        ]
+      },
+      "rail": {
+        "rgb": [
+          0.33,
+          0.34784,
+          0.35549
+        ]
+      },
+      "bar": {
+        "rgb": [
+          0.33,
+          0.34784,
+          0.35549
+        ]
+      }
+    },
+    "Porcelain": {
+      "back": {
+        "rgb": [
+          0.87843,
+          0.87843,
+          0.83529
+        ]
+      },
+      "rail": {
+        "rgb": [
+          0.77098,
+          0.77098,
+          0.74294
+        ]
+      },
+      "bar": {
+        "rgb": [
+          0.77098,
+          0.77098,
+          0.74294
+        ]
+      }
+    },
+    "Hazel": {
+      "back": {
+        "rgb": [
+          0.61961,
+          0.66275,
+          0.61176
+        ]
+      },
+      "rail": {
+        "rgb": [
+          0.60275,
+          0.63079,
+          0.59764
+        ]
+      },
+      "bar": {
+        "rgb": [
+          0.60275,
+          0.63079,
+          0.59764
+        ]
+      }
+    },
+    "Rose Quartz": {
+      "back": {
+        "rgb": [
+          0.83922,
+          0.74118,
+          0.76471
+        ]
+      },
+      "rail": {
+        "rgb": [
+          0.74549,
+          0.68177,
+          0.69706
+        ]
+      },
+      "bar": {
+        "rgb": [
+          0.74549,
+          0.68177,
+          0.69706
+        ]
+      }
+    }
+  },
+  "screen": {
+    "object": "Device screen",
+    "node": "Device screen",
+    "panel": "Body",
+    "resolution": [
+      1344,
+      2992
+    ],
+    "fit_box_mm": [
+      70.58167741935485,
+      157.12825806451613
+    ],
+    "center_mm": [
+      0.0,
+      -0.10503225806451613,
+      4.285
+    ],
+    "corner_radius_mm": 9.184086290322583,
+    "edge_curve_mm": 0,
+    "create_cutouts": true,
+    "cutouts": [
+      {
+        "center_mm": [
+          0,
+          74.56412903225807
+        ],
+        "radius_mm": 1.5
+      }
+    ]
+  },
+  "camera": {
+    "center_mm": [
+      0,
+      55.17500000000001
+    ],
+    "size_mm": [
+      69.44,
+      23.13,
+      11.281230055120393
+    ],
+    "bump_mm": 3.6,
+    "roll_mm": 0.45,
+    "windows": [
+      [
+        7.09831111111111,
+        55.17500000000001,
+        52.31146666666667,
+        20.44526785714286,
+        9.971801566579634
+      ]
+    ],
+    "lenses": [
+      {
+        "kind": "ultrawide",
+        "center_mm": [
+          23.995377777777776,
+          55.17500000000001
+        ],
+        "radius_mm": 3.8,
+        "window": 0
+      },
+      {
+        "kind": "main",
+        "center_mm": [
+          7.484088888888888,
+          55.17500000000001
+        ],
+        "radius_mm": 5.5,
+        "window": 0
+      },
+      {
+        "kind": "periscope",
+        "center_mm": [
+          -6.558222222222222,
+          55.17500000000001
+        ],
+        "radius_mm": 3.8,
+        "window": 0
+      }
+    ],
+    "flash": [
+      [
+        -25.6928,
+        60.02816964285716,
+        3.0
+      ]
+    ],
+    "sensors": [
+      [
+        -25.6928,
+        50.52834821428573,
+        3.05
+      ]
+    ]
+  },
+  "accuracy": {
+    "body_dimensions": "Google published metric dimensions",
+    "screen_resolution": "Google published panel resolution",
+    "screen_geometry": "Screen fit and corner radius measured from Google emulator artwork; native pixel aspect preserved. Skin artwork is a reference, not physical CAD.",
+    "camera_geometry": "Housing width, height and top gap scaled from official rear artwork; pixel bounds and uncertainty in camera_measurement. Optical internals remain illustrative. Not measurable from this rear view; model depth remains a visual estimate.",
+    "finishes": "Approximate sRGB colors and roughness, not calibrated measured materials"
+  },
+  "sources": [
+    "https://support.google.com/pixelphone/answer/7158570?hl=en",
+    "https://store.google.com/product/pixel_9_pro_xl?hl=en-US"
+  ],
+  "status": "provisional",
+  "reference_frame": "research\\skins\\pixel-9-pro-xl\\frame.png",
+  "camera_measurement": {
+    "reference": "research/images/pixel-9-pro-xl-orthographic.webp",
+    "body_bounds_px": [
+      290,
+      175,
+      1628,
+      1080
+    ],
+    "bar_bounds_px": [
+      352,
+      431,
+      1565,
+      835
+    ],
+    "scale_mm_per_px": 0.05724962630792227,
+    "width_mm": 69.44,
+    "height_mm": 23.13,
+    "top_gap_mm": 14.66,
+    "rear_measurement_uncertainty_mm": 0.6,
+    "protrusion_mm": null,
+    "depth_status": "Not measurable from this rear view; model depth remains a visual estimate."
+  }
+}

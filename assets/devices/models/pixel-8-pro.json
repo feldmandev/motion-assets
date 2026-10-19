@@ -1,0 +1,215 @@
+{
+  "id": "pixel-8-pro",
+  "name": "Pixel 8 Pro",
+  "state": "default",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        1344,
+        2992
+      ],
+      "size_mm": [
+        70.4041237113402,
+        156.73298969072167
+      ],
+      "center_mm": [
+        0.02619201030927835,
+        -0.1047680412371134,
+        4.4350000000000005
+      ],
+      "corner_radius_mm": 5.555770927067815,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0,
+      "frame_bounds_mm": [
+        3.074130154639178,
+        3.038273195876272,
+        70.4041237113402,
+        156.73298969072167
+      ],
+      "frame_screen_px": [
+        58,
+        58,
+        1344,
+        2992
+      ],
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "height": 162.6,
+        "width": 76.5,
+        "depth": 8.8,
+        "corner_radius": 8.485144316243066,
+        "edge_roll": 0.55,
+        "front_curve": 0,
+        "edge_roll_mm": [
+          2.2,
+          0.9
+        ],
+        "corner_radii_mm": [
+          8.384508040469871,
+          8.577517061088432,
+          8.594044122944087,
+          8.384508040469871
+        ]
+      },
+      "cutouts": [
+        {
+          "center_mm": [
+            0,
+            74.36649484536083
+          ],
+          "radius_mm": 1.5
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "articulation": null,
+  "panels": [],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/pixel-8-pro-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "black": "black",
+    "flash": "flash"
+  },
+  "finishes": [
+    {
+      "name": "Obsidian",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.2,
+            0.22745,
+            0.23922
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.33,
+            0.34784,
+            0.35549
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.33,
+            0.34784,
+            0.35549
+          ]
+        }
+      }
+    },
+    {
+      "name": "Porcelain",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.87843,
+            0.87843,
+            0.83529
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.77098,
+            0.77098,
+            0.74294
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.77098,
+            0.77098,
+            0.74294
+          ]
+        }
+      }
+    },
+    {
+      "name": "Bay",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.56863,
+            0.70196,
+            0.85098
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.56961,
+            0.65627,
+            0.75314
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.56961,
+            0.65627,
+            0.75314
+          ]
+        }
+      }
+    },
+    {
+      "name": "Mint",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.76863,
+            0.87451,
+            0.80392
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.69961,
+            0.76843,
+            0.72255
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.69961,
+            0.76843,
+            0.72255
+          ]
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/pixel-8-pro.c18710123876.glb.gz",
+  "sha256": "c1871012387673bea0dc06ee8be31211fcd201c611c3e8a7f8fbb6c6c3312a13",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/pixel-8-pro.json",
+    "accuracy": {
+      "body_dimensions": "Google published metric dimensions",
+      "screen_resolution": "Google published panel resolution",
+      "screen_geometry": "Screen fit and corner radius measured from Google emulator artwork; native pixel aspect preserved. Skin artwork is a reference, not physical CAD.",
+      "camera_geometry": "Provisional photo-informed blockout; shared reviewed optics are illustrative, not device-specific optical prescriptions",
+      "finishes": "Approximate sRGB colors and roughness, not calibrated measured materials"
+    },
+    "sources": [
+      "https://support.google.com/pixelphone/answer/7158570?hl=en",
+      "https://store.google.com/us/product/pixel_8_pro?hl=en-US"
+    ]
+  }
+}

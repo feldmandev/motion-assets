@@ -1,0 +1,264 @@
+{
+  "id": "pixel-8-pro",
+  "name": "Pixel 8 Pro",
+  "finish": "Obsidian",
+  "body_mm": {
+    "height": 162.6,
+    "width": 76.5,
+    "depth": 8.8,
+    "corner_radius": 8.931842203608248,
+    "edge_roll": 0.55,
+    "front_curve": 0,
+    "edge_roll_mm": [
+      2.2,
+      0.9
+    ]
+  },
+  "materials": {
+    "back": {
+      "rgb": [
+        0.2,
+        0.22745,
+        0.23922
+      ],
+      "rough": 0.42
+    },
+    "rail": {
+      "rgb": [
+        0.33,
+        0.34784,
+        0.35549
+      ],
+      "metal": 1,
+      "rough": 0.18
+    },
+    "bar": {
+      "rgb": [
+        0.33,
+        0.34784,
+        0.35549
+      ],
+      "metal": 0.6,
+      "rough": 0.3
+    },
+    "black": {
+      "rgb": [
+        0.007,
+        0.009,
+        0.012
+      ],
+      "rough": 0.5
+    },
+    "flash": {
+      "rgb": [
+        0.85,
+        0.84,
+        0.77
+      ],
+      "rough": 0.33
+    }
+  },
+  "finishes": {
+    "Obsidian": {
+      "back": {
+        "rgb": [
+          0.2,
+          0.22745,
+          0.23922
+        ]
+      },
+      "rail": {
+        "rgb": [
+          0.33,
+          0.34784,
+          0.35549
+        ]
+      },
+      "bar": {
+        "rgb": [
+          0.33,
+          0.34784,
+          0.35549
+        ]
+      }
+    },
+    "Porcelain": {
+      "back": {
+        "rgb": [
+          0.87843,
+          0.87843,
+          0.83529
+        ]
+      },
+      "rail": {
+        "rgb": [
+          0.77098,
+          0.77098,
+          0.74294
+        ]
+      },
+      "bar": {
+        "rgb": [
+          0.77098,
+          0.77098,
+          0.74294
+        ]
+      }
+    },
+    "Bay": {
+      "back": {
+        "rgb": [
+          0.56863,
+          0.70196,
+          0.85098
+        ]
+      },
+      "rail": {
+        "rgb": [
+          0.56961,
+          0.65627,
+          0.75314
+        ]
+      },
+      "bar": {
+        "rgb": [
+          0.56961,
+          0.65627,
+          0.75314
+        ]
+      }
+    },
+    "Mint": {
+      "back": {
+        "rgb": [
+          0.76863,
+          0.87451,
+          0.80392
+        ]
+      },
+      "rail": {
+        "rgb": [
+          0.69961,
+          0.76843,
+          0.72255
+        ]
+      },
+      "bar": {
+        "rgb": [
+          0.69961,
+          0.76843,
+          0.72255
+        ]
+      }
+    }
+  },
+  "screen": {
+    "object": "Device screen",
+    "node": "Device screen",
+    "panel": "Body",
+    "resolution": [
+      1344,
+      2992
+    ],
+    "fit_box_mm": [
+      70.4041237113402,
+      156.73298969072167
+    ],
+    "center_mm": [
+      0.02619201030927835,
+      -0.1047680412371134,
+      4.4350000000000005
+    ],
+    "corner_radius_mm": 5.5912608247422675,
+    "edge_curve_mm": 0,
+    "create_cutouts": true,
+    "cutouts": [
+      {
+        "center_mm": [
+          0,
+          74.36649484536083
+        ],
+        "radius_mm": 1.5
+      }
+    ]
+  },
+  "camera": {
+    "center_mm": [
+      0,
+      56.3
+    ],
+    "size_mm": [
+      76.5,
+      21.6,
+      0.7
+    ],
+    "bump_mm": 3.6,
+    "roll_mm": 0.45,
+    "windows": [
+      [
+        6.579,
+        56.3,
+        52.02,
+        17.6,
+        8.8
+      ]
+    ],
+    "lenses": [
+      {
+        "kind": "ultrawide",
+        "center_mm": [
+          23.7915,
+          56.3
+        ],
+        "radius_mm": 3.8,
+        "window": 0
+      },
+      {
+        "kind": "main",
+        "center_mm": [
+          7.4205000000000005,
+          56.3
+        ],
+        "radius_mm": 5.5,
+        "window": 0
+      },
+      {
+        "kind": "periscope",
+        "center_mm": [
+          -6.5025,
+          56.3
+        ],
+        "radius_mm": 3.8,
+        "window": 0
+      }
+    ],
+    "flash": [
+      [
+        -25.474500000000003,
+        61.0,
+        3.0
+      ]
+    ],
+    "sensors": [
+      [
+        -25.474500000000003,
+        51.8,
+        3.05
+      ]
+    ],
+    "side_wrap_mm": 3.7
+  },
+  "accuracy": {
+    "body_dimensions": "Google published metric dimensions",
+    "screen_resolution": "Google published panel resolution",
+    "screen_geometry": "Screen fit and corner radius measured from Google emulator artwork; native pixel aspect preserved. Skin artwork is a reference, not physical CAD.",
+    "camera_geometry": "Provisional photo-informed blockout; shared reviewed optics are illustrative, not device-specific optical prescriptions",
+    "finishes": "Approximate sRGB colors and roughness, not calibrated measured materials"
+  },
+  "sources": [
+    "https://support.google.com/pixelphone/answer/7158570?hl=en",
+    "https://store.google.com/us/product/pixel_8_pro?hl=en-US"
+  ],
+  "status": "provisional",
+  "reference_frame": "research\\skins\\pixel-8-pro\\frame.png"
+}

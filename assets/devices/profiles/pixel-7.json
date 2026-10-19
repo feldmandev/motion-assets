@@ -1,0 +1,225 @@
+{
+  "id": "pixel-7",
+  "name": "Pixel 7",
+  "finish": "Obsidian",
+  "body_mm": {
+    "height": 155.6,
+    "width": 73.2,
+    "depth": 8.7,
+    "corner_radius": 6.514501339109885,
+    "edge_roll": 0.55,
+    "front_curve": 0,
+    "edge_roll_mm": [
+      3.0,
+      0.9
+    ]
+  },
+  "materials": {
+    "back": {
+      "rgb": [
+        0.2,
+        0.22745,
+        0.23922
+      ],
+      "rough": 0.18
+    },
+    "rail": {
+      "rgb": [
+        0.33,
+        0.34784,
+        0.35549
+      ],
+      "metal": 1,
+      "rough": 0.36
+    },
+    "bar": {
+      "rgb": [
+        0.33,
+        0.34784,
+        0.35549
+      ],
+      "metal": 0.6,
+      "rough": 0.3
+    },
+    "black": {
+      "rgb": [
+        0.007,
+        0.009,
+        0.012
+      ],
+      "rough": 0.5
+    },
+    "flash": {
+      "rgb": [
+        0.85,
+        0.84,
+        0.77
+      ],
+      "rough": 0.33
+    }
+  },
+  "finishes": {
+    "Obsidian": {
+      "back": {
+        "rgb": [
+          0.2,
+          0.22745,
+          0.23922
+        ]
+      },
+      "rail": {
+        "rgb": [
+          0.33,
+          0.34784,
+          0.35549
+        ]
+      },
+      "bar": {
+        "rgb": [
+          0.33,
+          0.34784,
+          0.35549
+        ]
+      }
+    },
+    "Snow": {
+      "back": {
+        "rgb": [
+          0.90196,
+          0.90196,
+          0.87451
+        ]
+      },
+      "rail": {
+        "rgb": [
+          0.78627,
+          0.78627,
+          0.76843
+        ]
+      },
+      "bar": {
+        "rgb": [
+          0.78627,
+          0.78627,
+          0.76843
+        ]
+      }
+    },
+    "Lemongrass": {
+      "back": {
+        "rgb": [
+          0.86275,
+          0.90196,
+          0.70196
+        ]
+      },
+      "rail": {
+        "rgb": [
+          0.76079,
+          0.78627,
+          0.65627
+        ]
+      },
+      "bar": {
+        "rgb": [
+          0.76079,
+          0.78627,
+          0.65627
+        ]
+      }
+    }
+  },
+  "screen": {
+    "object": "Device screen",
+    "node": "Device screen",
+    "panel": "Body",
+    "resolution": [
+      1080,
+      2400
+    ],
+    "fit_box_mm": [
+      66.18668767231193,
+      147.08152816069318
+    ],
+    "center_mm": [
+      0.12256794013391098,
+      0.7660496258369436,
+      4.385
+    ],
+    "corner_radius_mm": 3.4815729814887746,
+    "edge_curve_mm": 0,
+    "create_cutouts": true,
+    "cutouts": [
+      {
+        "center_mm": [
+          0,
+          69.54076408034659
+        ],
+        "radius_mm": 1.5
+      }
+    ]
+  },
+  "camera": {
+    "center_mm": [
+      0,
+      50.8
+    ],
+    "size_mm": [
+      73.2,
+      19.8,
+      0.7
+    ],
+    "bump_mm": 2.8,
+    "roll_mm": 0.45,
+    "windows": [
+      [
+        11.712000000000002,
+        50.8,
+        35.868,
+        13.8,
+        6.9
+      ]
+    ],
+    "lenses": [
+      {
+        "kind": "ultrawide",
+        "center_mm": [
+          21.96,
+          50.8
+        ],
+        "radius_mm": 3.7,
+        "window": 0
+      },
+      {
+        "kind": "main",
+        "center_mm": [
+          2.9280000000000004,
+          50.8
+        ],
+        "radius_mm": 4.6,
+        "window": 0
+      }
+    ],
+    "flash": [
+      [
+        -24.888,
+        50.8,
+        2.0
+      ]
+    ],
+    "side_wrap_mm": 4.5
+  },
+  "accuracy": {
+    "body_dimensions": "Google published metric dimensions",
+    "screen_resolution": "Google published panel resolution",
+    "screen_geometry": "Screen fit and corner radius measured from Google emulator artwork; native pixel aspect preserved. Skin artwork is a reference, not physical CAD.",
+    "camera_geometry": "Provisional photo-informed blockout; shared reviewed optics are illustrative, not device-specific optical prescriptions",
+    "finishes": "Approximate sRGB colors and roughness, not calibrated measured materials"
+  },
+  "sources": [
+    "https://support.google.com/pixelphone/answer/7158570?hl=en",
+    "https://store.google.com/us/magazine/compare_pixel?hl=en-US&toggler0=Pixel+7a&toggler1=Pixel+7&toggler2=Pixel+7+Pro"
+  ],
+  "status": "provisional",
+  "reference_frame": "research\\skins\\pixel-7\\frame.png"
+}

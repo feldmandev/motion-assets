@@ -1,0 +1,148 @@
+{
+  "id": "pixel-10-pro",
+  "name": "Pixel 10 Pro",
+  "finish": "Obsidian",
+  "asset": "../../pixel-10-pro-model/Pixel-10-Pro-Obsidian.blend",
+  "root": "Pixel 10 Pro | 152.8 x 72 x 8.6 mm",
+  "body_mm": {
+    "width": 72,
+    "height": 152.8,
+    "depth": 8.6,
+    "corner_radius": 11.8
+  },
+  "screen": {
+    "object": "OLED | uniform 1.8 mm visible bezel",
+    "resolution": [
+      1280,
+      2856
+    ],
+    "fit_box_mm": [
+      65.89757412398923,
+      147.03396226415097
+    ],
+    "center_mm": [
+      -0.05148247978436658,
+      -0.20592991913746633,
+      4.3275
+    ],
+    "corner_radius_mm": 9.257540902964962,
+    "cutouts": [
+      {
+        "center_mm": [
+          0,
+          69.51698113207549
+        ],
+        "radius_mm": 1.72
+      }
+    ]
+  },
+  "accuracy": {
+    "body_dimensions": "Published manufacturer dimensions",
+    "screen_resolution": "Published native resolution; ADB may use a lower resolution with the same aspect ratio",
+    "screen_geometry": "Screen fit and corner radius measured from Google emulator artwork; native pixel aspect preserved. Skin artwork is a reference, not physical CAD.",
+    "camera_geometry": "Original reviewed camera assembly; photo-matched, not manufacturer CAD"
+  },
+  "sources": [
+    "https://store.google.com/product/pixel_10_pro_specs?hl=en-US"
+  ],
+  "material_objects": {
+    "back": "Obsidian | silky matte glass",
+    "rail": "Obsidian | polished aluminum",
+    "bar": "Camera bar | satin gunmetal aluminum"
+  },
+  "finishes": {
+    "Obsidian": {
+      "back": {
+        "rgb": [
+          0.2,
+          0.22745,
+          0.23922
+        ]
+      },
+      "rail": {
+        "rgb": [
+          0.33,
+          0.34784,
+          0.35549
+        ]
+      },
+      "bar": {
+        "rgb": [
+          0.33,
+          0.34784,
+          0.35549
+        ]
+      }
+    },
+    "Moonstone": {
+      "back": {
+        "rgb": [
+          0.58824,
+          0.61176,
+          0.6549
+        ]
+      },
+      "rail": {
+        "rgb": [
+          0.58236,
+          0.59764,
+          0.62569
+        ]
+      },
+      "bar": {
+        "rgb": [
+          0.58236,
+          0.59764,
+          0.62569
+        ]
+      }
+    },
+    "Jade": {
+      "back": {
+        "rgb": [
+          0.7098,
+          0.74118,
+          0.6
+        ]
+      },
+      "rail": {
+        "rgb": [
+          0.66137,
+          0.68177,
+          0.59
+        ]
+      },
+      "bar": {
+        "rgb": [
+          0.66137,
+          0.68177,
+          0.59
+        ]
+      }
+    },
+    "Porcelain": {
+      "back": {
+        "rgb": [
+          0.87843,
+          0.87843,
+          0.83529
+        ]
+      },
+      "rail": {
+        "rgb": [
+          0.77098,
+          0.77098,
+          0.74294
+        ]
+      },
+      "bar": {
+        "rgb": [
+          0.77098,
+          0.77098,
+          0.74294
+        ]
+      }
+    }
+  },
+  "reference_frame": "research\\skins\\pixel-10-pro\\frame.png"
+}

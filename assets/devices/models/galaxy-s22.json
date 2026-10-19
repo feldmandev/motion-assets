@@ -1,0 +1,451 @@
+{
+  "id": "galaxy-s22",
+  "name": "Galaxy S22",
+  "state": "default",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        1080,
+        2340
+      ],
+      "size_mm": [
+        64.92887401592304,
+        140.67922703449992
+      ],
+      "center_mm": [
+        0.0,
+        0.0,
+        3.8349997997283936
+      ],
+      "corner_radius_mm": 8,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0,
+      "frame_bounds_mm": [
+        2.8355629920384757,
+        2.6603864827500416,
+        64.92887401592304,
+        140.67922703449992
+      ],
+      "frame_screen_px": null,
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "width": 70.6,
+        "height": 146,
+        "depth": 7.6,
+        "corner_radius": 10.660386482750042,
+        "edge_roll_mm": [
+          0.35,
+          0.25
+        ],
+        "front_rail_mm": 0.4,
+        "rear_inset": 0.4,
+        "corner_radii_mm": [
+          10.660386482750042,
+          10.660386482750042,
+          10.660386482750042,
+          10.660386482750042
+        ]
+      },
+      "cutouts": [
+        {
+          "center_mm": [
+            0,
+            66.53961351724998
+          ],
+          "radius_mm": 1.4
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "articulation": null,
+  "panels": [],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/galaxy-s22-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "logo": "logo",
+    "black": "black",
+    "flash": "flash",
+    "front_sensor": "front_sensor",
+    "front_speaker": "front_speaker"
+  },
+  "finishes": [
+    {
+      "name": "Phantom White",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.9647058823529412,
+            0.9647058823529412,
+            0.9647058823529412
+          ],
+          "rough": 0.36
+        },
+        "rail": {
+          "rgb": [
+            0.9058823529411765,
+            0.907843137254902,
+            0.8999999999999999
+          ],
+          "metal": 0.8,
+          "rough": 0.27
+        },
+        "bar": {
+          "rgb": [
+            0.9058823529411765,
+            0.907843137254902,
+            0.8999999999999999
+          ],
+          "metal": 0.55,
+          "rough": 0.27
+        },
+        "logo": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.16
+          ]
+        }
+      }
+    },
+    {
+      "name": "Pink Gold",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.9215686274509803,
+            0.8549019607843137,
+            0.8274509803921568
+          ],
+          "rough": 0.36
+        },
+        "rail": {
+          "rgb": [
+            0.8588235294117647,
+            0.7078431372549019,
+            0.6607843137254902
+          ],
+          "metal": 0.8,
+          "rough": 0.27
+        },
+        "bar": {
+          "rgb": [
+            0.8588235294117647,
+            0.7078431372549019,
+            0.6607843137254902
+          ],
+          "metal": 0.55,
+          "rough": 0.27
+        },
+        "logo": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.16
+          ]
+        }
+      }
+    },
+    {
+      "name": "Phantom Black",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.1411764705882353,
+            0.1411764705882353,
+            0.14901960784313725
+          ],
+          "rough": 0.36
+        },
+        "rail": {
+          "rgb": [
+            0.17450980392156862,
+            0.17647058823529413,
+            0.18823529411764706
+          ],
+          "metal": 0.8,
+          "rough": 0.27
+        },
+        "bar": {
+          "rgb": [
+            0.17450980392156862,
+            0.17647058823529413,
+            0.18823529411764706
+          ],
+          "metal": 0.55,
+          "rough": 0.27
+        },
+        "logo": {
+          "rgb": [
+            0.62,
+            0.64,
+            0.68
+          ]
+        }
+      }
+    },
+    {
+      "name": "Green",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.1843137254901961,
+            0.2823529411764706,
+            0.26666666666666666
+          ],
+          "rough": 0.36
+        },
+        "rail": {
+          "rgb": [
+            0.2782352941176471,
+            0.351764705882353,
+            0.34
+          ],
+          "metal": 0.8,
+          "rough": 0.27
+        },
+        "bar": {
+          "rgb": [
+            0.20956862745098043,
+            0.29976470588235293,
+            0.2853333333333333
+          ],
+          "metal": 0.55,
+          "rough": 0.27
+        },
+        "logo": {
+          "rgb": [
+            0.62,
+            0.64,
+            0.68
+          ]
+        }
+      }
+    },
+    {
+      "name": "Graphite",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.37254901960784315,
+            0.3843137254901961,
+            0.403921568627451
+          ],
+          "rough": 0.36
+        },
+        "rail": {
+          "rgb": [
+            0.17450980392156862,
+            0.17647058823529413,
+            0.18823529411764706
+          ],
+          "metal": 0.8,
+          "rough": 0.27
+        },
+        "bar": {
+          "rgb": [
+            0.17450980392156862,
+            0.17647058823529413,
+            0.18823529411764706
+          ],
+          "metal": 0.55,
+          "rough": 0.27
+        },
+        "logo": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.16
+          ]
+        }
+      }
+    },
+    {
+      "name": "Cream",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.9215686274509803,
+            0.8823529411764706,
+            0.7411764705882353
+          ],
+          "rough": 0.36
+        },
+        "rail": {
+          "rgb": [
+            0.9058823529411765,
+            0.907843137254902,
+            0.8999999999999999
+          ],
+          "metal": 0.8,
+          "rough": 0.27
+        },
+        "bar": {
+          "rgb": [
+            0.9058823529411765,
+            0.907843137254902,
+            0.8999999999999999
+          ],
+          "metal": 0.55,
+          "rough": 0.27
+        },
+        "logo": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.16
+          ]
+        }
+      }
+    },
+    {
+      "name": "Sky Blue",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.6666666666666666,
+            0.7490196078431373,
+            0.8627450980392157
+          ],
+          "rough": 0.36
+        },
+        "rail": {
+          "rgb": [
+            0.9058823529411765,
+            0.907843137254902,
+            0.8999999999999999
+          ],
+          "metal": 0.8,
+          "rough": 0.27
+        },
+        "bar": {
+          "rgb": [
+            0.9058823529411765,
+            0.907843137254902,
+            0.8999999999999999
+          ],
+          "metal": 0.55,
+          "rough": 0.27
+        },
+        "logo": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.16
+          ]
+        }
+      }
+    },
+    {
+      "name": "Violet",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.8352941176470589,
+            0.7803921568627451,
+            0.8705882352941177
+          ],
+          "rough": 0.36
+        },
+        "rail": {
+          "rgb": [
+            0.8588235294117647,
+            0.7078431372549019,
+            0.6607843137254902
+          ],
+          "metal": 0.8,
+          "rough": 0.27
+        },
+        "bar": {
+          "rgb": [
+            0.8588235294117647,
+            0.7078431372549019,
+            0.6607843137254902
+          ],
+          "metal": 0.55,
+          "rough": 0.27
+        },
+        "logo": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.16
+          ]
+        }
+      }
+    },
+    {
+      "name": "Bora Purple",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.7607843137254902,
+            0.7176470588235294,
+            0.8509803921568627
+          ],
+          "rough": 0.36
+        },
+        "rail": {
+          "rgb": [
+            0.7105882352941176,
+            0.678235294117647,
+            0.778235294117647
+          ],
+          "metal": 0.8,
+          "rough": 0.27
+        },
+        "bar": {
+          "rgb": [
+            0.7399215686274511,
+            0.7002352941176472,
+            0.8229019607843138
+          ],
+          "metal": 0.55,
+          "rough": 0.27
+        },
+        "logo": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.16
+          ]
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/galaxy-s22.14824c61292c.glb.gz",
+  "sha256": "14824c61292ccdb5afa3593db381ae458737c1ea2b5f935251fa57ecf464c3ed",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/galaxy-s22.json",
+    "accuracy": {
+      "body_dimensions": "Samsung published chassis dimensions. Corner radii, edge rolls and curvature are photo estimates, not CAD.",
+      "screen_resolution": "Samsung native resolution. Active rectangle calculated from rounded published full diagonal and native aspect; physical bezel widths therefore approximate.",
+      "screen_geometry": "Model-specific flat/dual-edge display, rectangular/rounded corners, bezel selfie or Infinity-O aperture. Radii, hole positions and curve depth are photo estimates.",
+      "camera_geometry": "Model-specific rear layout scaled from generate_galaxy_svgs.PHONES / base MODELS official-render measurements. Internal optics, radii and protrusions illustrative; early cover internal lens positions estimated from photographs. Laser/ToF/heart-rate/fingerprint features distinguished from imaging lenses.",
+      "finishes": "Published finish names; approximate sampled sRGB and material response. S21+ Phantom Violet uses muted rose champagne camera housing.",
+      "omissions": "USB/headphone ports, speaker perforations, antenna seams and S Pen silo omitted. Legacy capacitive navigation marks and bezel hardware simplified."
+    },
+    "sources": [
+      "https://www.samsung.com/uk/support/mobile-devices/enjoy-the-epic-standard-of-smartphone-experiences-with-the-galaxy-s22-series/"
+    ]
+  }
+}

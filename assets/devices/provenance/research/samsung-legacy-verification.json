@@ -1,0 +1,412 @@
+[
+  {
+    "id": "galaxy-a34",
+    "checks": "body dimensions, native screen aspect, lens/flash clearance, exported lens rim seating, wordmark nodes when specified, GLB structure, SVG XML, review and finish images",
+    "screen_aspect": true,
+    "exported_screen_bounds": true,
+    "enclosure_bounds": true,
+    "camera_clearance_mm": 1.96219864,
+    "triangles": 139667,
+    "glb_bytes": 2409624
+  },
+  {
+    "id": "galaxy-a35",
+    "checks": "body dimensions, native screen aspect, lens/flash clearance, exported lens rim seating, wordmark nodes when specified, GLB structure, SVG XML, review and finish images",
+    "screen_aspect": true,
+    "exported_screen_bounds": true,
+    "enclosure_bounds": true,
+    "camera_clearance_mm": 2.1506344,
+    "triangles": 135147,
+    "glb_bytes": 2325212
+  },
+  {
+    "id": "galaxy-a36",
+    "checks": "body dimensions, native screen aspect, lens/flash clearance, exported lens rim seating, wordmark nodes when specified, GLB structure, SVG XML, review and finish images",
+    "screen_aspect": true,
+    "exported_screen_bounds": true,
+    "enclosure_bounds": true,
+    "camera_clearance_mm": 2.2931660000000003,
+    "triangles": 140934,
+    "glb_bytes": 2448416
+  },
+  {
+    "id": "galaxy-a37",
+    "checks": "body dimensions, native screen aspect, lens/flash clearance, exported lens rim seating, wordmark nodes when specified, GLB structure, SVG XML, review and finish images",
+    "screen_aspect": true,
+    "exported_screen_bounds": true,
+    "enclosure_bounds": true,
+    "camera_clearance_mm": 2.2612291200000003,
+    "triangles": 140939,
+    "glb_bytes": 2419964
+  },
+  {
+    "id": "galaxy-a54",
+    "checks": "body dimensions, native screen aspect, lens/flash clearance, exported lens rim seating, wordmark nodes when specified, GLB structure, SVG XML, review and finish images",
+    "screen_aspect": true,
+    "exported_screen_bounds": true,
+    "enclosure_bounds": true,
+    "camera_clearance_mm": 2.0497596000000002,
+    "triangles": 135168,
+    "glb_bytes": 2324712
+  },
+  {
+    "id": "galaxy-a55",
+    "checks": "body dimensions, native screen aspect, lens/flash clearance, exported lens rim seating, wordmark nodes when specified, GLB structure, SVG XML, review and finish images",
+    "screen_aspect": true,
+    "exported_screen_bounds": true,
+    "enclosure_bounds": true,
+    "camera_clearance_mm": 2.1487966000000003,
+    "triangles": 135171,
+    "glb_bytes": 2326016
+  },
+  {
+    "id": "galaxy-a56",
+    "checks": "body dimensions, native screen aspect, lens/flash clearance, exported lens rim seating, wordmark nodes when specified, GLB structure, SVG XML, review and finish images",
+    "screen_aspect": true,
+    "exported_screen_bounds": true,
+    "enclosure_bounds": true,
+    "camera_clearance_mm": 2.271725,
+    "triangles": 140916,
+    "glb_bytes": 2447924
+  },
+  {
+    "id": "galaxy-a57",
+    "checks": "body dimensions, native screen aspect, lens/flash clearance, exported lens rim seating, wordmark nodes when specified, GLB structure, SVG XML, review and finish images",
+    "screen_aspect": true,
+    "exported_screen_bounds": true,
+    "enclosure_bounds": true,
+    "camera_clearance_mm": 2.1718712,
+    "triangles": 140908,
+    "glb_bytes": 2447476
+  },
+  {
+    "id": "galaxy-s6",
+    "checks": "body dimensions, native screen aspect, lens/flash clearance, exported lens rim seating, wordmark nodes when specified, GLB structure, SVG XML, review and finish images",
+    "screen_aspect": true,
+    "exported_screen_bounds": true,
+    "enclosure_bounds": true,
+    "triangles": 86386,
+    "glb_bytes": 1420088,
+    "corner_check": "Independent legacy chassis/display corners retained; Pixel concentric-corner assertion inapplicable"
+  },
+  {
+    "id": "galaxy-s6-edge",
+    "checks": "body dimensions, native screen aspect, lens/flash clearance, exported lens rim seating, wordmark nodes when specified, GLB structure, SVG XML, review and finish images",
+    "screen_aspect": true,
+    "exported_screen_bounds": true,
+    "enclosure_bounds": true,
+    "triangles": 107952,
+    "glb_bytes": 1986584,
+    "corner_check": "Independent legacy chassis/display corners retained; Pixel concentric-corner assertion inapplicable"
+  },
+  {
+    "id": "galaxy-s6-edge-plus",
+    "checks": "body dimensions, native screen aspect, lens/flash clearance, exported lens rim seating, wordmark nodes when specified, GLB structure, SVG XML, review and finish images",
+    "screen_aspect": true,
+    "exported_screen_bounds": true,
+    "enclosure_bounds": true,
+    "triangles": 108050,
+    "glb_bytes": 1988192,
+    "corner_check": "Independent legacy chassis/display corners retained; Pixel concentric-corner assertion inapplicable"
+  },
+  {
+    "id": "galaxy-s7",
+    "checks": "body dimensions, native screen aspect, lens/flash clearance, exported lens rim seating, wordmark nodes when specified, GLB structure, SVG XML, review and finish images",
+    "screen_aspect": true,
+    "exported_screen_bounds": true,
+    "enclosure_bounds": true,
+    "triangles": 86382,
+    "glb_bytes": 1417592,
+    "corner_check": "Independent legacy chassis/display corners retained; Pixel concentric-corner assertion inapplicable"
+  },
+  {
+    "id": "galaxy-s7-edge",
+    "checks": "body dimensions, native screen aspect, lens/flash clearance, exported lens rim seating, wordmark nodes when specified, GLB structure, SVG XML, review and finish images",
+    "screen_aspect": true,
+    "exported_screen_bounds": true,
+    "enclosure_bounds": true,
+    "triangles": 107952,
+    "glb_bytes": 1985412,
+    "corner_check": "Independent legacy chassis/display corners retained; Pixel concentric-corner assertion inapplicable"
+  },
+  {
+    "id": "galaxy-s8",
+    "checks": "body dimensions, native screen aspect, lens/flash clearance, exported lens rim seating, wordmark nodes when specified, GLB structure, SVG XML, review and finish images",
+    "screen_aspect": true,
+    "exported_screen_bounds": true,
+    "enclosure_bounds": true,
+    "triangles": 107530,
+    "glb_bytes": 1950756,
+    "corner_check": "Independent legacy chassis/display corners retained; Pixel concentric-corner assertion inapplicable"
+  },
+  {
+    "id": "galaxy-s8-plus",
+    "checks": "body dimensions, native screen aspect, lens/flash clearance, exported lens rim seating, wordmark nodes when specified, GLB structure, SVG XML, review and finish images",
+    "screen_aspect": true,
+    "exported_screen_bounds": true,
+    "enclosure_bounds": true,
+    "triangles": 107534,
+    "glb_bytes": 1951284,
+    "corner_check": "Independent legacy chassis/display corners retained; Pixel concentric-corner assertion inapplicable"
+  },
+  {
+    "id": "galaxy-s9",
+    "checks": "body dimensions, native screen aspect, lens/flash clearance, exported lens rim seating, wordmark nodes when specified, GLB structure, SVG XML, review and finish images",
+    "screen_aspect": true,
+    "exported_screen_bounds": true,
+    "enclosure_bounds": true,
+    "triangles": 107534,
+    "glb_bytes": 1949724,
+    "corner_check": "Independent legacy chassis/display corners retained; Pixel concentric-corner assertion inapplicable"
+  },
+  {
+    "id": "galaxy-s9-plus",
+    "checks": "body dimensions, native screen aspect, lens/flash clearance, exported lens rim seating, wordmark nodes when specified, GLB structure, SVG XML, review and finish images",
+    "screen_aspect": true,
+    "exported_screen_bounds": true,
+    "enclosure_bounds": true,
+    "triangles": 139720,
+    "glb_bytes": 2492684,
+    "corner_check": "Independent legacy chassis/display corners retained; Pixel concentric-corner assertion inapplicable"
+  },
+  {
+    "id": "galaxy-s10",
+    "checks": "body dimensions, native screen aspect, lens/flash clearance, exported lens rim seating, wordmark nodes when specified, GLB structure, SVG XML, review and finish images",
+    "screen_aspect": true,
+    "exported_screen_bounds": true,
+    "enclosure_bounds": true,
+    "camera_clearance_mm": 1.6532032,
+    "triangles": 157156,
+    "glb_bytes": 2874492
+  },
+  {
+    "id": "galaxy-s10-5g",
+    "checks": "body dimensions, native screen aspect, lens/flash clearance, exported lens rim seating, wordmark nodes when specified, GLB structure, SVG XML, review and finish images",
+    "screen_aspect": true,
+    "exported_screen_bounds": true,
+    "enclosure_bounds": true,
+    "camera_clearance_mm": 1.8105392999999999,
+    "triangles": 157066,
+    "glb_bytes": 2901428
+  },
+  {
+    "id": "galaxy-s10-lite",
+    "checks": "body dimensions, native screen aspect, lens/flash clearance, exported lens rim seating, wordmark nodes when specified, GLB structure, SVG XML, review and finish images",
+    "screen_aspect": true,
+    "exported_screen_bounds": true,
+    "enclosure_bounds": true,
+    "camera_clearance_mm": 1.8525024,
+    "triangles": 125976,
+    "glb_bytes": 2180032
+  },
+  {
+    "id": "galaxy-s10-plus",
+    "checks": "body dimensions, native screen aspect, lens/flash clearance, exported lens rim seating, wordmark nodes when specified, GLB structure, SVG XML, review and finish images",
+    "screen_aspect": true,
+    "exported_screen_bounds": true,
+    "enclosure_bounds": true,
+    "camera_clearance_mm": 1.7400903000000003,
+    "triangles": 161562,
+    "glb_bytes": 2956780
+  },
+  {
+    "id": "galaxy-s10e",
+    "checks": "body dimensions, native screen aspect, lens/flash clearance, exported lens rim seating, wordmark nodes when specified, GLB structure, SVG XML, review and finish images",
+    "screen_aspect": true,
+    "exported_screen_bounds": true,
+    "enclosure_bounds": true,
+    "camera_clearance_mm": 1.6414617000000002,
+    "triangles": 98662,
+    "glb_bytes": 1732876
+  },
+  {
+    "id": "galaxy-s20",
+    "checks": "body dimensions, native screen aspect, lens/flash clearance, exported lens rim seating, wordmark nodes when specified, GLB structure, SVG XML, review and finish images",
+    "screen_aspect": true,
+    "exported_screen_bounds": true,
+    "enclosure_bounds": true,
+    "camera_clearance_mm": 1.7637774999999998,
+    "triangles": 147666,
+    "glb_bytes": 2733296
+  },
+  {
+    "id": "galaxy-s20-fe",
+    "checks": "body dimensions, native screen aspect, lens/flash clearance, exported lens rim seating, wordmark nodes when specified, GLB structure, SVG XML, review and finish images",
+    "screen_aspect": true,
+    "exported_screen_bounds": true,
+    "enclosure_bounds": true,
+    "camera_clearance_mm": 1.9016125000000001,
+    "triangles": 125978,
+    "glb_bytes": 2208700
+  },
+  {
+    "id": "galaxy-s20-plus",
+    "checks": "body dimensions, native screen aspect, lens/flash clearance, exported lens rim seating, wordmark nodes when specified, GLB structure, SVG XML, review and finish images",
+    "screen_aspect": true,
+    "exported_screen_bounds": true,
+    "enclosure_bounds": true,
+    "camera_clearance_mm": 1.8811925,
+    "triangles": 147820,
+    "glb_bytes": 2711784
+  },
+  {
+    "id": "galaxy-s20-ultra",
+    "checks": "body dimensions, native screen aspect, lens/flash clearance, exported lens rim seating, wordmark nodes when specified, GLB structure, SVG XML, review and finish images",
+    "screen_aspect": true,
+    "exported_screen_bounds": true,
+    "enclosure_bounds": true,
+    "camera_clearance_mm": 1.707112,
+    "triangles": 146482,
+    "glb_bytes": 2857504
+  },
+  {
+    "id": "galaxy-s21",
+    "checks": "body dimensions, native screen aspect, lens/flash clearance, exported lens rim seating, wordmark nodes when specified, GLB structure, SVG XML, review and finish images",
+    "screen_aspect": true,
+    "exported_screen_bounds": true,
+    "enclosure_bounds": true,
+    "camera_clearance_mm": 2.0665040000000006,
+    "triangles": 141554,
+    "glb_bytes": 2467320
+  },
+  {
+    "id": "galaxy-s21-fe",
+    "checks": "body dimensions, native screen aspect, lens/flash clearance, exported lens rim seating, wordmark nodes when specified, GLB structure, SVG XML, review and finish images",
+    "screen_aspect": true,
+    "exported_screen_bounds": true,
+    "enclosure_bounds": true,
+    "camera_clearance_mm": 1.8633250000000001,
+    "triangles": 141480,
+    "glb_bytes": 2436780
+  },
+  {
+    "id": "galaxy-s21-plus",
+    "checks": "body dimensions, native screen aspect, lens/flash clearance, exported lens rim seating, wordmark nodes when specified, GLB structure, SVG XML, review and finish images",
+    "screen_aspect": true,
+    "exported_screen_bounds": true,
+    "enclosure_bounds": true,
+    "camera_clearance_mm": 2.0469008,
+    "triangles": 141460,
+    "glb_bytes": 2464708
+  },
+  {
+    "id": "galaxy-s21-ultra",
+    "checks": "body dimensions, native screen aspect, lens/flash clearance, exported lens rim seating, wordmark nodes when specified, GLB structure, SVG XML, review and finish images",
+    "screen_aspect": true,
+    "exported_screen_bounds": true,
+    "enclosure_bounds": true,
+    "camera_clearance_mm": 1.5837752000000003,
+    "triangles": 199306,
+    "glb_bytes": 3803980
+  },
+  {
+    "id": "galaxy-s22",
+    "checks": "body dimensions, native screen aspect, lens/flash clearance, exported lens rim seating, wordmark nodes when specified, GLB structure, SVG XML, review and finish images",
+    "screen_aspect": true,
+    "exported_screen_bounds": true,
+    "enclosure_bounds": true,
+    "camera_clearance_mm": 2.048126,
+    "triangles": 141480,
+    "glb_bytes": 2465432
+  },
+  {
+    "id": "galaxy-s22-plus",
+    "checks": "body dimensions, native screen aspect, lens/flash clearance, exported lens rim seating, wordmark nodes when specified, GLB structure, SVG XML, review and finish images",
+    "screen_aspect": true,
+    "exported_screen_bounds": true,
+    "enclosure_bounds": true,
+    "camera_clearance_mm": 2.1300102,
+    "triangles": 141456,
+    "glb_bytes": 2464656
+  },
+  {
+    "id": "galaxy-s22-ultra",
+    "checks": "body dimensions, native screen aspect, lens/flash clearance, exported lens rim seating, wordmark nodes when specified, GLB structure, SVG XML, review and finish images",
+    "screen_aspect": true,
+    "exported_screen_bounds": true,
+    "enclosure_bounds": true,
+    "camera_clearance_mm": 1.538185841593867,
+    "triangles": 199153,
+    "glb_bytes": 3787276
+  },
+  {
+    "id": "galaxy-s23",
+    "checks": "body dimensions, native screen aspect, lens/flash clearance, exported lens rim seating, wordmark nodes when specified, GLB structure, SVG XML, review and finish images",
+    "screen_aspect": true,
+    "exported_screen_bounds": true,
+    "enclosure_bounds": true,
+    "camera_clearance_mm": 2.2458937,
+    "triangles": 135168,
+    "glb_bytes": 2324812
+  },
+  {
+    "id": "galaxy-s23-fe",
+    "checks": "body dimensions, native screen aspect, lens/flash clearance, exported lens rim seating, wordmark nodes when specified, GLB structure, SVG XML, review and finish images",
+    "screen_aspect": true,
+    "exported_screen_bounds": true,
+    "enclosure_bounds": true,
+    "camera_clearance_mm": 2.2314976000000004,
+    "triangles": 135168,
+    "glb_bytes": 2326152
+  },
+  {
+    "id": "galaxy-s23-plus",
+    "checks": "body dimensions, native screen aspect, lens/flash clearance, exported lens rim seating, wordmark nodes when specified, GLB structure, SVG XML, review and finish images",
+    "screen_aspect": true,
+    "exported_screen_bounds": true,
+    "enclosure_bounds": true,
+    "camera_clearance_mm": 2.2688662,
+    "triangles": 135168,
+    "glb_bytes": 2325984
+  },
+  {
+    "id": "galaxy-s23-ultra",
+    "checks": "body dimensions, native screen aspect, lens/flash clearance, exported lens rim seating, wordmark nodes when specified, GLB structure, SVG XML, review and finish images",
+    "screen_aspect": true,
+    "exported_screen_bounds": true,
+    "enclosure_bounds": true,
+    "camera_clearance_mm": 1.4959028285115856,
+    "triangles": 199150,
+    "glb_bytes": 3715068
+  },
+  {
+    "id": "galaxy-s24-fe",
+    "checks": "body dimensions, native screen aspect, lens/flash clearance, exported lens rim seating, wordmark nodes when specified, GLB structure, SVG XML, review and finish images",
+    "screen_aspect": true,
+    "exported_screen_bounds": true,
+    "enclosure_bounds": true,
+    "camera_clearance_mm": 2.4141749200000002,
+    "triangles": 135168,
+    "glb_bytes": 2325940
+  },
+  {
+    "id": "galaxy-s25-edge",
+    "checks": "body dimensions, native screen aspect, lens/flash clearance, exported lens rim seating, wordmark nodes when specified, GLB structure, SVG XML, review and finish images",
+    "screen_aspect": true,
+    "exported_screen_bounds": true,
+    "enclosure_bounds": true,
+    "camera_clearance_mm": 2.8001537599999997,
+    "triangles": 103996,
+    "glb_bytes": 1843348
+  },
+  {
+    "id": "galaxy-s25-fe",
+    "checks": "body dimensions, native screen aspect, lens/flash clearance, exported lens rim seating, wordmark nodes when specified, GLB structure, SVG XML, review and finish images",
+    "screen_aspect": true,
+    "exported_screen_bounds": true,
+    "enclosure_bounds": true,
+    "camera_clearance_mm": 2.68821132,
+    "triangles": 135168,
+    "glb_bytes": 2326000
+  },
+  {
+    "id": "galaxy-s26-fe",
+    "checks": "body dimensions, native screen aspect, lens/flash clearance, exported lens rim seating, wordmark nodes when specified, GLB structure, SVG XML, review and finish images",
+    "screen_aspect": true,
+    "exported_screen_bounds": true,
+    "enclosure_bounds": true,
+    "camera_clearance_mm": 2.6930304400000002,
+    "triangles": 141519,
+    "glb_bytes": 2466524
+  }
+]

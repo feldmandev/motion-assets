@@ -1,0 +1,44 @@
+{
+  "completed_catalog_ids": [
+    "galaxy-z-flip3",
+    "galaxy-z-flip4",
+    "galaxy-z-flip5",
+    "galaxy-z-flip6",
+    "galaxy-z-flip7",
+    "galaxy-z-flip7-fe",
+    "galaxy-z-flip8",
+    "galaxy-z-fold3",
+    "galaxy-z-fold4",
+    "galaxy-z-fold5",
+    "galaxy-z-fold6",
+    "galaxy-z-fold7",
+    "galaxy-z-fold8",
+    "galaxy-z-fold8-ultra",
+    "galaxy-z-trifold"
+  ],
+  "profiles": 30,
+  "native_screens": 45,
+  "finish_renders": 132,
+  "pose_checks": 135,
+  "legacy_regressions": [
+    "pixel-9-pro-fold-unfolded",
+    "iphone-duo-unfolded"
+  ],
+  "group_mapping": "Each catalog base ID maps to base-unfolded and base-folded; standard suffix regex applies.",
+  "shared_changes": [
+    "build.py explicit articulation.joints animation and screen part regions; frame_use_outline SVG mask",
+    "geometry.py explicit joints, static_hinges, rear_glass_region_mm, ring_material and flash_offset_mm"
+  ],
+  "limitations": [
+    "Rigid panels and photo-estimated external hinge barrels; no flexible OLED bend or internal linkage simulation.",
+    "Wedge generations have conservative closed bounding-box overshoot up to 0.19 mm; nominal published envelope retained in profile.",
+    "Parent fold_centering.js must allow X-axis phones and evaluate articulation.joints with start_fraction/end_fraction.",
+    "Existing build_pixels.review cover-front camera targets Y=0 and hides only Camera half; Flip isolation is vertically offset and TriFold leaves Left half visible. Native frame SVGs and GLB hierarchy pass checks."
+  ],
+  "contact_sheets": [
+    "research/samsung-flip-contact-sheet.jpg",
+    "research/samsung-fold-contact-sheet.jpg",
+    "research/samsung-fold-finishes-contact-sheet.jpg",
+    "research/samsung-fold-poses-contact-sheet.jpg"
+  ]
+}

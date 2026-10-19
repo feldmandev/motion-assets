@@ -1,0 +1,189 @@
+{
+  "id": "pixel-7",
+  "name": "Pixel 7",
+  "state": "default",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        1080,
+        2400
+      ],
+      "size_mm": [
+        66.18668767231193,
+        147.08152816069318
+      ],
+      "center_mm": [
+        0.12256794013391098,
+        0.7660496258369436,
+        4.385
+      ],
+      "corner_radius_mm": 3.4315252615420833,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0,
+      "frame_bounds_mm": [
+        3.629224103977947,
+        3.493186293816464,
+        66.18668767231193,
+        147.08152816069318
+      ],
+      "frame_screen_px": [
+        59,
+        58,
+        1080,
+        2400
+      ],
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "height": 155.6,
+        "width": 73.2,
+        "depth": 8.7,
+        "corner_radius": 6.904171972845747,
+        "edge_roll": 0.55,
+        "front_curve": 0,
+        "edge_roll_mm": [
+          3.0,
+          0.9
+        ],
+        "corner_radii_mm": [
+          6.8156134852522055,
+          6.8156134852522055,
+          6.924711555358547,
+          7.06074936552003
+        ]
+      },
+      "cutouts": [
+        {
+          "center_mm": [
+            0,
+            69.54076408034659
+          ],
+          "radius_mm": 1.5
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "articulation": null,
+  "panels": [],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/pixel-7-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "black": "black",
+    "flash": "flash"
+  },
+  "finishes": [
+    {
+      "name": "Obsidian",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.2,
+            0.22745,
+            0.23922
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.33,
+            0.34784,
+            0.35549
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.33,
+            0.34784,
+            0.35549
+          ]
+        }
+      }
+    },
+    {
+      "name": "Snow",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.90196,
+            0.90196,
+            0.87451
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.78627,
+            0.78627,
+            0.76843
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.78627,
+            0.78627,
+            0.76843
+          ]
+        }
+      }
+    },
+    {
+      "name": "Lemongrass",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.86275,
+            0.90196,
+            0.70196
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.76079,
+            0.78627,
+            0.65627
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.76079,
+            0.78627,
+            0.65627
+          ]
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/pixel-7.c3aaecec4265.glb.gz",
+  "sha256": "c3aaecec4265c0743d6294e4c830edb659a9f41883f1d1660d8a183a207f125f",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/pixel-7.json",
+    "accuracy": {
+      "body_dimensions": "Google published metric dimensions",
+      "screen_resolution": "Google published panel resolution",
+      "screen_geometry": "Screen fit and corner radius measured from Google emulator artwork; native pixel aspect preserved. Skin artwork is a reference, not physical CAD.",
+      "camera_geometry": "Provisional photo-informed blockout; shared reviewed optics are illustrative, not device-specific optical prescriptions",
+      "finishes": "Approximate sRGB colors and roughness, not calibrated measured materials"
+    },
+    "sources": [
+      "https://support.google.com/pixelphone/answer/7158570?hl=en",
+      "https://store.google.com/us/magazine/compare_pixel?hl=en-US&toggler0=Pixel+7a&toggler1=Pixel+7&toggler2=Pixel+7+Pro"
+    ]
+  }
+}

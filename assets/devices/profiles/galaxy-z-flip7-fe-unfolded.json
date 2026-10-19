@@ -1,0 +1,691 @@
+{
+  "id": "galaxy-z-flip7-fe-unfolded",
+  "name": "Galaxy Z Flip7 FE · unfolded",
+  "manufacturer": "Samsung",
+  "form_factor": "phone",
+  "state": "unfolded",
+  "status": "provisional",
+  "body_mm": {
+    "width": 71.9,
+    "height": 165.1,
+    "depth": 6.9,
+    "corner_radius": 8.5,
+    "edge_roll_mm": [
+      0.25,
+      0.2
+    ],
+    "front_rail_mm": 0.45,
+    "rear_inset": 0.45
+  },
+  "finish": "White",
+  "materials": {
+    "back": {
+      "rgb": [
+        0.9411764705882353,
+        0.9411764705882353,
+        0.9411764705882353
+      ],
+      "rough": 0.32
+    },
+    "rail": {
+      "rgb": [
+        0.8517647058823529,
+        0.8517647058823529,
+        0.8517647058823529
+      ],
+      "metal": 0.85,
+      "rough": 0.27
+    },
+    "bar": {
+      "rgb": [
+        0.9411764705882353,
+        0.9411764705882353,
+        0.9411764705882353
+      ],
+      "metal": 0.55,
+      "rough": 0.3
+    },
+    "logo": {
+      "rgb": [
+        0.47058823529411764,
+        0.47058823529411764,
+        0.47058823529411764
+      ]
+    },
+    "black": {
+      "rgb": [
+        0.006,
+        0.008,
+        0.011
+      ],
+      "rough": 0.35
+    },
+    "flash": {
+      "rgb": [
+        0.88,
+        0.86,
+        0.76
+      ],
+      "rough": 0.35
+    }
+  },
+  "finishes": {
+    "White": {
+      "back": {
+        "rgb": [
+          0.9411764705882353,
+          0.9411764705882353,
+          0.9411764705882353
+        ],
+        "rough": 0.32
+      },
+      "rail": {
+        "rgb": [
+          0.8517647058823529,
+          0.8517647058823529,
+          0.8517647058823529
+        ],
+        "metal": 0.85,
+        "rough": 0.27
+      },
+      "bar": {
+        "rgb": [
+          0.9411764705882353,
+          0.9411764705882353,
+          0.9411764705882353
+        ],
+        "metal": 0.55,
+        "rough": 0.3
+      },
+      "logo": {
+        "rgb": [
+          0.47058823529411764,
+          0.47058823529411764,
+          0.47058823529411764
+        ]
+      }
+    },
+    "Black": {
+      "back": {
+        "rgb": [
+          0.13333333333333333,
+          0.13333333333333333,
+          0.13333333333333333
+        ],
+        "rough": 0.32
+      },
+      "rail": {
+        "rgb": [
+          0.18933333333333333,
+          0.18933333333333333,
+          0.18933333333333333
+        ],
+        "metal": 0.85,
+        "rough": 0.27
+      },
+      "bar": {
+        "rgb": [
+          0.13333333333333333,
+          0.13333333333333333,
+          0.13333333333333333
+        ],
+        "metal": 0.55,
+        "rough": 0.3
+      },
+      "logo": {
+        "rgb": [
+          0.06666666666666667,
+          0.06666666666666667,
+          0.06666666666666667
+        ]
+      }
+    }
+  },
+  "sources": [
+    "https://www.samsungmobilepress.com/articles/samsung-galaxy-z-flip7-a-pocket-sized-ai-powerhouse-with-a-new-edge-to-edge-flexwindow"
+  ],
+  "accuracy": {
+    "body_dimensions": "Published Samsung chassis dimensions excluding camera modules. Historical Fold3/4 and Flip3/4 thickness range retained in published_spec; closed wedge angle inferred from that range.",
+    "screen_resolution": "Published native panel pixels; orientation follows portrait cover/inner in the physical open chassis. ADB feed maps through full native UVs.",
+    "screen_geometry": "Active full rectangle from published diagonal/native aspect, fitted within chassis. Rounded corners, bezels, cover folder contour, camera cutouts are photo estimates; not CAD.",
+    "camera_geometry": "Lens and flash centres/diameters from source icon measurements of Samsung artwork. Samsung-specific individual rings/capsule, no Pixel bar. Protrusions and optical internals are estimates.",
+    "finishes": "Official standard and online-exclusive finish names; approximate sampled sRGB. Bespoke combinations and special editions excluded.",
+    "hinge": "Rigid articulated panels with physically positioned axes; external barrel dimensions/curves estimated. Internal multi-link and flexible OLED bend not simulated.",
+    "omissions": "Ports, grille perforations, antenna seams and internal hinge linkages."
+  },
+  "published_spec": {
+    "open_mm": [
+      71.9,
+      165.1,
+      6.9
+    ],
+    "closed_mm": [
+      71.9,
+      85.1,
+      14.9
+    ],
+    "closed_min_depth_mm": 14.9
+  },
+  "buttons": [
+    {
+      "name": "Volume",
+      "side": "right",
+      "center_y_mm": 16,
+      "length_mm": 19,
+      "width_mm": 2.1,
+      "thickness_mm": 0.3,
+      "radius_mm": 1
+    },
+    {
+      "name": "Power",
+      "side": "right",
+      "center_y_mm": -4,
+      "length_mm": 11,
+      "width_mm": 2.1,
+      "thickness_mm": 0.3,
+      "radius_mm": 1
+    }
+  ],
+  "source_key": "z_flip7_fe",
+  "panels": [
+    {
+      "name": "Cover half",
+      "body_mm": {
+        "width": 71.9,
+        "height": 82.35,
+        "depth": 6.9,
+        "corner_radius": 8.5,
+        "edge_roll_mm": [
+          0.25,
+          0.2
+        ],
+        "front_rail_mm": 0.45,
+        "rear_inset": 0.45,
+        "corner_radii_mm": [
+          1,
+          8.5,
+          8.5,
+          1
+        ],
+        "rear_style": "inset_glass"
+      },
+      "center_mm": [
+        0,
+        41.375,
+        0
+      ],
+      "buttons": true,
+      "camera": {
+        "center_mm": [
+          0,
+          0
+        ],
+        "size_mm": [
+          1,
+          1,
+          0.5
+        ],
+        "bump_mm": 0,
+        "ring_material": "rail",
+        "optical_bump_mm": 1.1,
+        "lens_ring_mm": 0.4,
+        "roll_mm": 0.15,
+        "integrated_plateau": false,
+        "windows": [
+          [
+            23.726999999999997,
+            24.334799999999994,
+            7.828000000000002,
+            7.828000000000002,
+            3.914000000000001
+          ],
+          [
+            10.545333333333328,
+            24.334799999999994,
+            7.828000000000002,
+            7.828000000000002,
+            3.914000000000001
+          ]
+        ],
+        "lenses": [
+          {
+            "kind": "ultrawide",
+            "center_mm": [
+              23.726999999999997,
+              24.334799999999994
+            ],
+            "radius_mm": 2.5021200000000006,
+            "window": 0
+          },
+          {
+            "kind": "main",
+            "center_mm": [
+              10.545333333333328,
+              24.334799999999994
+            ],
+            "radius_mm": 2.5021200000000006,
+            "window": 1
+          }
+        ],
+        "flash": [
+          [
+            0.9586666666666588,
+            24.334799999999994,
+            1.1983333333333335
+          ]
+        ],
+        "flash_surface": "body",
+        "sensors": [],
+        "flash_offset_mm": 0.07
+      },
+      "rear_glass_region_mm": [
+        0,
+        0.0,
+        71.0,
+        81.44999999999999
+      ],
+      "rear_glass_region_radii_mm": [
+        0.5,
+        8.05,
+        8.05,
+        0.5
+      ]
+    },
+    {
+      "name": "Camera half",
+      "body_mm": {
+        "width": 71.9,
+        "height": 82.35,
+        "depth": 6.9,
+        "corner_radius": 8.5,
+        "edge_roll_mm": [
+          0.25,
+          0.2
+        ],
+        "front_rail_mm": 0.45,
+        "rear_inset": 0.45,
+        "corner_radii_mm": [
+          8.5,
+          1,
+          1,
+          8.5
+        ]
+      },
+      "center_mm": [
+        0,
+        -41.375,
+        0
+      ],
+      "buttons": false
+    }
+  ],
+  "screens": [
+    {
+      "object": "Inner screen",
+      "node": "Inner screen",
+      "panel": "Inner display",
+      "resolution": [
+        1080,
+        2640
+      ],
+      "fit_box_mm": [
+        64.43573768471539,
+        157.5095810070821
+      ],
+      "center_mm": [
+        0,
+        0,
+        3.49
+      ],
+      "corner_radius_mm": 7.0,
+      "create_cutouts": true,
+      "cutouts": [
+        {
+          "center_mm": [
+            0,
+            73.75479050354105
+          ],
+          "radius_mm": 1.35
+        }
+      ],
+      "foldable_surface": true,
+      "panel_regions_mm": {
+        "Cover half": [
+          -10000.0,
+          0,
+          10000.0,
+          10000.0
+        ],
+        "Camera half": [
+          -10000.0,
+          -10000.0,
+          10000.0,
+          0
+        ]
+      }
+    },
+    {
+      "object": "Cover screen",
+      "node": "Cover screen",
+      "panel": "Cover half",
+      "resolution": [
+        720,
+        748
+      ],
+      "fit_box_mm": [
+        59.89010690609485,
+        62.21916661910965
+      ],
+      "center_mm": [
+        0,
+        -1,
+        -3.54
+      ],
+      "corner_radius_mm": 5,
+      "create_cutouts": true,
+      "cutouts": [],
+      "foldable_surface": true,
+      "rotation_deg": [
+        0,
+        180,
+        0
+      ],
+      "frame_file": "cover-frame.svg",
+      "frame_body_mm": {
+        "width": 71.9,
+        "height": 85.1,
+        "depth": 14.9,
+        "corner_radius": 8.5,
+        "edge_roll_mm": [
+          0.25,
+          0.2
+        ],
+        "front_rail_mm": 0.45,
+        "rear_inset": 0.45
+      },
+      "frame_center_mm": [
+        0,
+        -1
+      ],
+      "glass_border_mm": 0.6,
+      "frame_use_outline": true,
+      "outline_mm": [
+        [
+          -29.945053453047425,
+          -26.109583309554825
+        ],
+        [
+          -29.866928453047425,
+          -27.281458309554825
+        ],
+        [
+          -29.63255345304743,
+          -28.297083309554825
+        ],
+        [
+          -29.241928453047425,
+          -29.15645830955483
+        ],
+        [
+          -28.695053453047425,
+          -29.859583309554825
+        ],
+        [
+          -27.99192845304743,
+          -30.40645830955482
+        ],
+        [
+          -27.132553453047425,
+          -30.79708330955483
+        ],
+        [
+          -26.116928453047425,
+          -31.031458309554825
+        ],
+        [
+          -24.945053453047425,
+          -31.109583309554825
+        ],
+        [
+          24.945053453047425,
+          -31.109583309554825
+        ],
+        [
+          26.116928453047425,
+          -31.031458309554825
+        ],
+        [
+          27.132553453047425,
+          -30.797083309554825
+        ],
+        [
+          27.991928453047425,
+          -30.40645830955483
+        ],
+        [
+          28.695053453047425,
+          -29.859583309554825
+        ],
+        [
+          29.24192845304743,
+          -29.15645830955482
+        ],
+        [
+          29.63255345304743,
+          -28.29708330955483
+        ],
+        [
+          29.866928453047425,
+          -27.281458309554825
+        ],
+        [
+          29.945053453047425,
+          -26.109583309554825
+        ],
+        [
+          29.945053453047425,
+          26.109583309554825
+        ],
+        [
+          29.866928453047425,
+          27.281458309554825
+        ],
+        [
+          29.63255345304743,
+          28.297083309554825
+        ],
+        [
+          29.241928453047425,
+          29.15645830955483
+        ],
+        [
+          28.695053453047425,
+          29.859583309554825
+        ],
+        [
+          27.99192845304743,
+          30.40645830955482
+        ],
+        [
+          27.132553453047425,
+          30.79708330955483
+        ],
+        [
+          26.116928453047425,
+          31.031458309554825
+        ],
+        [
+          24.945053453047425,
+          31.109583309554825
+        ],
+        [
+          10.989010690609486,
+          31.109583309554825
+        ],
+        [
+          9.817135690609486,
+          31.031458309554825
+        ],
+        [
+          8.801510690609486,
+          30.797083309554825
+        ],
+        [
+          7.942135690609486,
+          30.40645830955483
+        ],
+        [
+          7.2390106906094855,
+          29.859583309554825
+        ],
+        [
+          6.692135690609485,
+          29.15645830955482
+        ],
+        [
+          6.3015106906094855,
+          28.29708330955483
+        ],
+        [
+          6.067135690609486,
+          27.281458309554825
+        ],
+        [
+          5.9890106906094855,
+          26.109583309554825
+        ],
+        [
+          5.9890106906094855,
+          20.55479165477741
+        ],
+        [
+          5.9108856906094855,
+          19.38291665477741
+        ],
+        [
+          5.6765106906094855,
+          18.36729165477741
+        ],
+        [
+          5.2858856906094855,
+          17.50791665477741
+        ],
+        [
+          4.7390106906094855,
+          16.804791654777414
+        ],
+        [
+          4.0358856906094855,
+          16.25791665477741
+        ],
+        [
+          3.1765106906094855,
+          15.867291654777413
+        ],
+        [
+          2.1608856906094855,
+          15.632916654777413
+        ],
+        [
+          0.9890106906094855,
+          15.554791654777413
+        ],
+        [
+          -24.945053453047425,
+          15.554791654777413
+        ],
+        [
+          -26.116928453047425,
+          15.476666654777413
+        ],
+        [
+          -27.132553453047425,
+          15.242291654777413
+        ],
+        [
+          -27.991928453047425,
+          14.851666654777414
+        ],
+        [
+          -28.695053453047425,
+          14.304791654777413
+        ],
+        [
+          -29.24192845304743,
+          13.60166665477741
+        ],
+        [
+          -29.63255345304743,
+          12.742291654777414
+        ],
+        [
+          -29.866928453047425,
+          11.726666654777413
+        ],
+        [
+          -29.945053453047425,
+          10.554791654777413
+        ]
+      ]
+    }
+  ],
+  "articulation": {
+    "animation": "Fold",
+    "axis": "X",
+    "axis_mm": [
+      0,
+      0,
+      4.0
+    ],
+    "moving_panel": "Cover half",
+    "fixed_panel": "Camera half",
+    "pivots": {
+      "Cover half": "Fold pivot | Cover half",
+      "Camera half": "Fold pivot | Camera half"
+    },
+    "open_degrees": 0,
+    "closed_degrees": 180,
+    "duration_seconds": 1.0,
+    "closed_body_mm": {
+      "width": 71.9,
+      "height": 85.1,
+      "depth": 14.9,
+      "corner_radius": 8.5,
+      "edge_roll_mm": [
+        0.25,
+        0.2
+      ],
+      "front_rail_mm": 0.45,
+      "rear_inset": 0.45
+    },
+    "companion_profile": "galaxy-z-flip7-fe-folded",
+    "joints": [
+      {
+        "moving_panel": "Cover half",
+        "axis": "X",
+        "axis_mm": [
+          0,
+          0,
+          4.0
+        ],
+        "closed_degrees": 180,
+        "fixed_anchor_mm": [
+          0,
+          1.949999999999997,
+          -2.85
+        ],
+        "moving_anchor_mm": [
+          0,
+          -1.949999999999997,
+          -2.85
+        ],
+        "spine_width_mm": 14.9,
+        "spine_depth_mm": 1.2,
+        "length_mm": 66.9,
+        "spine_pivot": "Fold pivot | Hinge spine Cover half",
+        "start_fraction": 0,
+        "end_fraction": 1
+      }
+    ]
+  }
+}

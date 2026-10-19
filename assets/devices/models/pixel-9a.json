@@ -1,0 +1,215 @@
+{
+  "id": "pixel-9a",
+  "name": "Pixel 9a",
+  "state": "default",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        1080,
+        2424
+      ],
+      "size_mm": [
+        65.01011673151751,
+        145.9115953307393
+      ],
+      "center_mm": [
+        0.030097276264591438,
+        0.0,
+        4.485
+      ],
+      "corner_radius_mm": 8.727384225970187,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0,
+      "frame_bounds_mm": [
+        4.175038910505833,
+        4.39420233463035,
+        65.01011673151751,
+        145.9115953307393
+      ],
+      "frame_screen_px": [
+        69,
+        73,
+        1080,
+        2424
+      ],
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "height": 154.7,
+        "width": 73.3,
+        "depth": 8.9,
+        "corner_radius": 12.87232586021143,
+        "edge_roll": 0.55,
+        "front_curve": 0,
+        "edge_roll_mm": [
+          1.0,
+          0.8
+        ],
+        "corner_radii_mm": [
+          12.842228583946838,
+          12.842228583946838,
+          12.90242313647602,
+          12.90242313647602
+        ]
+      },
+      "cutouts": [
+        {
+          "center_mm": [
+            0,
+            68.95579766536964
+          ],
+          "radius_mm": 1.5
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "articulation": null,
+  "panels": [],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/pixel-9a-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "black": "black",
+    "flash": "flash"
+  },
+  "finishes": [
+    {
+      "name": "Obsidian",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.2,
+            0.22745,
+            0.23922
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.33,
+            0.34784,
+            0.35549
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.08235,
+            0.09804,
+            0.11373
+          ]
+        }
+      }
+    },
+    {
+      "name": "Porcelain",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.87843,
+            0.87843,
+            0.83529
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.77098,
+            0.77098,
+            0.74294
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.08235,
+            0.09804,
+            0.11373
+          ]
+        }
+      }
+    },
+    {
+      "name": "Iris",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.6902,
+            0.67451,
+            0.79608
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.64863,
+            0.63843,
+            0.71745
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.08235,
+            0.09804,
+            0.11373
+          ]
+        }
+      }
+    },
+    {
+      "name": "Peony",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.93725,
+            0.68627,
+            0.74902
+          ]
+        },
+        "rail": {
+          "rgb": [
+            0.80921,
+            0.64608,
+            0.68686
+          ]
+        },
+        "bar": {
+          "rgb": [
+            0.08235,
+            0.09804,
+            0.11373
+          ]
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/pixel-9a.8ebcc7f463a0.glb.gz",
+  "sha256": "8ebcc7f463a0f738cb7c9d22cc676e2a2bbbc4df82fcc0ec68e8ea544d757269",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/pixel-9a.json",
+    "accuracy": {
+      "body_dimensions": "Google published metric dimensions",
+      "screen_resolution": "Google published panel resolution",
+      "screen_geometry": "Screen fit and corner radius measured from Google emulator artwork; native pixel aspect preserved. Skin artwork is a reference, not physical CAD.",
+      "camera_geometry": "Housing width, height and top gap scaled from official rear artwork; pixel bounds and uncertainty in camera_measurement. Optical internals remain illustrative. Side profile: 81 px body thickness represents 8.9 mm; approximately 5 px camera protrusion.",
+      "finishes": "Approximate sRGB colors and roughness, not calibrated measured materials"
+    },
+    "sources": [
+      "https://support.google.com/pixelphone/answer/7158570?hl=en",
+      "https://store.google.com/product/pixel_9a?hl=en-US"
+    ]
+  }
+}

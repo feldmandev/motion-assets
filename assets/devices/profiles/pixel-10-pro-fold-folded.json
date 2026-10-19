@@ -1,0 +1,334 @@
+{
+  "id": "pixel-10-pro-fold-folded",
+  "name": "Pixel 10 Pro Fold · folded",
+  "finish": "Moonstone",
+  "body_mm": {
+    "height": 155.2,
+    "width": 76.3,
+    "depth": 10.8,
+    "corner_radius": 13.098662284569137,
+    "edge_roll": 0.45,
+    "front_curve": 0,
+    "edge_roll_mm": [
+      0.75,
+      0.75
+    ],
+    "corner_radii_mm": [
+      13.05571014028056,
+      13.141614428857714,
+      5.733131543086172,
+      5.430071663326653
+    ]
+  },
+  "materials": {
+    "back": {
+      "rgb": [
+        0.58824,
+        0.61176,
+        0.6549
+      ],
+      "rough": 0.42
+    },
+    "rail": {
+      "rgb": [
+        0.58236,
+        0.59764,
+        0.62569
+      ],
+      "metal": 1,
+      "rough": 0.18
+    },
+    "bar": {
+      "rgb": [
+        0.58236,
+        0.59764,
+        0.62569
+      ],
+      "metal": 0.6,
+      "rough": 0.3
+    },
+    "black": {
+      "rgb": [
+        0.007,
+        0.009,
+        0.012
+      ],
+      "rough": 0.5
+    },
+    "flash": {
+      "rgb": [
+        0.85,
+        0.84,
+        0.77
+      ],
+      "rough": 0.33
+    }
+  },
+  "finishes": {
+    "Moonstone": {
+      "back": {
+        "rgb": [
+          0.58824,
+          0.61176,
+          0.6549
+        ]
+      },
+      "rail": {
+        "rgb": [
+          0.58236,
+          0.59764,
+          0.62569
+        ]
+      },
+      "bar": {
+        "rgb": [
+          0.58236,
+          0.59764,
+          0.62569
+        ]
+      }
+    },
+    "Jade": {
+      "back": {
+        "rgb": [
+          0.7098,
+          0.74118,
+          0.6
+        ]
+      },
+      "rail": {
+        "rgb": [
+          0.66137,
+          0.68177,
+          0.59
+        ]
+      },
+      "bar": {
+        "rgb": [
+          0.66137,
+          0.68177,
+          0.59
+        ]
+      }
+    }
+  },
+  "accuracy": {
+    "body_dimensions": "Google published metric dimensions",
+    "screen_resolution": "Google published panel resolution",
+    "screen_geometry": "Screen fit and corner radius measured from Google emulator artwork; native pixel aspect preserved. Skin artwork is a reference, not physical CAD.",
+    "camera_geometry": "Housing width, height and top gap scaled from official rear artwork; pixel bounds and uncertainty in camera_measurement. Optical internals remain illustrative. Not measurable from this rear view; model depth remains a visual estimate.",
+    "finishes": "Approximate sRGB colors and roughness, not calibrated measured materials",
+    "hinge": "Static closed companion profile retained for dimensional/reference checks."
+  },
+  "sources": [
+    "https://support.google.com/pixelphone/answer/7158570?hl=en",
+    "https://store.google.com/product/pixel_10_pro_fold_specs?hl=en-US",
+    "https://store.google.com/jp/product/pixel_10_pro_fold_specs?hl=ja",
+    "https://blog.google/products-and-platforms/devices/pixel/google-pixel-10-pro-fold/"
+  ],
+  "status": "provisional",
+  "state": "folded",
+  "panels": [
+    {
+      "name": "Cover half",
+      "body_mm": {
+        "height": 155.2,
+        "width": 75.7,
+        "depth": 5.2,
+        "corner_radius": 13.098662284569137,
+        "edge_roll": 0.45,
+        "front_curve": 0,
+        "edge_roll_mm": [
+          0.75,
+          0.75
+        ],
+        "corner_radii_mm": [
+          13.098662284569137,
+          13.098662284569137,
+          5.581601603206412,
+          5.581601603206412
+        ]
+      },
+      "center_mm": [
+        0.3,
+        0,
+        2.8000000000000003
+      ],
+      "buttons": false
+    },
+    {
+      "name": "Camera half",
+      "body_mm": {
+        "height": 155.2,
+        "width": 75.7,
+        "depth": 5.2,
+        "corner_radius": 13.098662284569137,
+        "edge_roll": 0.45,
+        "front_curve": 0,
+        "edge_roll_mm": [
+          0.75,
+          0.75
+        ],
+        "corner_radii_mm": [
+          13.098662284569137,
+          13.098662284569137,
+          5.581601603206412,
+          5.581601603206412
+        ]
+      },
+      "center_mm": [
+        0.3,
+        0,
+        -2.8000000000000003
+      ],
+      "buttons": true,
+      "camera": {
+        "center_mm": [
+          9.645,
+          55.9
+        ],
+        "size_mm": [
+          49.15,
+          36.14,
+          9.468662284569138
+        ],
+        "bump_mm": 3.0,
+        "windows": [
+          [
+            15.853421052631578,
+            64.16057142857143,
+            32.59421052631579,
+            14.456000000000001,
+            7.228000000000001
+          ],
+          [
+            15.853421052631578,
+            47.63942857142857,
+            32.59421052631579,
+            14.456000000000001,
+            7.228000000000001
+          ]
+        ],
+        "lenses": [
+          {
+            "kind": "main",
+            "center_mm": [
+              8.299842105263158,
+              64.16057142857143
+            ],
+            "radius_mm": 4.2,
+            "window": 0
+          },
+          {
+            "kind": "ultrawide",
+            "center_mm": [
+              23.61394736842105,
+              47.63942857142857
+            ],
+            "radius_mm": 3.5,
+            "window": 1
+          },
+          {
+            "kind": "periscope",
+            "center_mm": [
+              8.299842105263158,
+              47.63942857142857
+            ],
+            "radius_mm": 3.1,
+            "window": 1
+          }
+        ],
+        "flash": [
+          [
+            -8.462894736842106,
+            64.16057142857143,
+            2.1
+          ]
+        ],
+        "sensors": [
+          [
+            -8.462894736842106,
+            47.63942857142857,
+            0.6
+          ]
+        ]
+      }
+    }
+  ],
+  "hinge": {
+    "center_mm": [
+      -37.15,
+      0,
+      0
+    ],
+    "size_mm": [
+      2,
+      150.2,
+      8.4
+    ],
+    "radius_mm": 0.7,
+    "spine_width_mm": 10.8,
+    "closed_spine_center_x_mm": 0.6000000000000029,
+    "closed_spine_center_z_mm": 2.8000000000000003,
+    "spine_depth_mm": 1.8,
+    "spine_center_x_mm": 0,
+    "spine_center_z_mm": -1.7000000000000002
+  },
+  "screens": [
+    {
+      "object": "Cover screen",
+      "node": "Cover screen",
+      "panel": "Cover half",
+      "resolution": [
+        1080,
+        2364
+      ],
+      "fit_box_mm": [
+        67.18076152304609,
+        147.05122244488976
+      ],
+      "center_mm": [
+        0.2598396793587174,
+        -0.031102204408817634,
+        2.6350000000000002
+      ],
+      "corner_radius_mm": 8.205212505010019,
+      "edge_curve_mm": 0,
+      "create_cutouts": true,
+      "cutouts": [
+        {
+          "center_mm": [
+            0,
+            69.52561122244488
+          ],
+          "radius_mm": 1.5
+        }
+      ],
+      "glass_border_mm": 1.5,
+      "frame_glass_border_mm": 1.5
+    }
+  ],
+  "reference_frame": "research\\skins\\pixel-10-pro-fold-folded\\frame.png",
+  "camera_measurement": {
+    "reference": "research/images/pixel-10-pro-fold-back.webp",
+    "body_bounds_px": [
+      398,
+      200,
+      797,
+      1017
+    ],
+    "bar_bounds_px": [
+      421,
+      219,
+      678,
+      408
+    ],
+    "scale_mm_per_px": 0.19122807017543858,
+    "width_mm": 49.15,
+    "height_mm": 36.14,
+    "top_gap_mm": 3.63,
+    "rear_measurement_uncertainty_mm": 0.8,
+    "protrusion_mm": null,
+    "depth_status": "Not measurable from this rear view; model depth remains a visual estimate."
+  }
+}

@@ -1,0 +1,341 @@
+{
+  "id": "galaxy-tab-s9-fe-plus",
+  "name": "Galaxy Tab S9 FE+",
+  "state": "default",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        1600,
+        2560
+      ],
+      "size_mm": [
+        166.94966610100167,
+        267.11946576160267
+      ],
+      "center_mm": [
+        0.0,
+        0.0,
+        3.2849998474121094
+      ],
+      "corner_radius_mm": 2.910732880801346,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0,
+      "frame_bounds_mm": [
+        9.225166949499169,
+        9.140267119198654,
+        166.94966610100167,
+        267.11946576160267
+      ],
+      "frame_screen_px": null,
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "width": 185.4,
+        "height": 285.4,
+        "depth": 6.5,
+        "corner_radius": 12.051,
+        "edge_roll": 0.32,
+        "front_rail_mm": 0.45,
+        "corner_radii_mm": [
+          12.051,
+          12.051,
+          12.051,
+          12.051
+        ]
+      },
+      "cutouts": [
+        {
+          "center_mm": [
+            88.08741652525042,
+            0
+          ],
+          "radius_mm": 1.3
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "articulation": null,
+  "panels": [],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/galaxy-tab-s9-fe-plus-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "logo": "logo",
+    "black": "black",
+    "flash": "flash",
+    "strip": "strip",
+    "camera_ring": "camera_ring"
+  },
+  "finishes": [
+    {
+      "name": "Gray",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.45098039215686275,
+            0.48627450980392156,
+            0.5294117647058824
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "rail": {
+          "rgb": [
+            0.45098039215686275,
+            0.48627450980392156,
+            0.5294117647058824
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "bar": {
+          "rgb": [
+            0.025,
+            0.028,
+            0.032
+          ],
+          "rough": 0.34
+        },
+        "logo": {
+          "rgb": [
+            0.7139215686274509,
+            0.7650980392156863,
+            0.8276470588235294
+          ],
+          "metal": 0.3,
+          "rough": 0.45
+        },
+        "strip": {
+          "rgb": [
+            0.5246078431372548,
+            0.5644901960784313,
+            0.613235294117647
+          ],
+          "metal": 0.5,
+          "rough": 0.5
+        },
+        "camera_ring": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.15
+          ],
+          "metal": 0.75,
+          "rough": 0.3
+        }
+      }
+    },
+    {
+      "name": "Silver",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.796078431372549,
+            0.8156862745098039,
+            0.8274509803921568
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "rail": {
+          "rgb": [
+            0.796078431372549,
+            0.8156862745098039,
+            0.8274509803921568
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "bar": {
+          "rgb": [
+            0.025,
+            0.028,
+            0.032
+          ],
+          "rough": 0.34
+        },
+        "logo": {
+          "rgb": [
+            0.41396078431372546,
+            0.42415686274509806,
+            0.43027450980392157
+          ],
+          "metal": 0.3,
+          "rough": 0.45
+        },
+        "strip": {
+          "rgb": [
+            0.9145686274509802,
+            0.9367254901960783,
+            0.9500196078431371
+          ],
+          "metal": 0.5,
+          "rough": 0.5
+        },
+        "camera_ring": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.15
+          ],
+          "metal": 0.75,
+          "rough": 0.3
+        }
+      }
+    },
+    {
+      "name": "Mint",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.7176470588235294,
+            0.792156862745098,
+            0.7529411764705882
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "rail": {
+          "rgb": [
+            0.7176470588235294,
+            0.792156862745098,
+            0.7529411764705882
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "bar": {
+          "rgb": [
+            0.025,
+            0.028,
+            0.032
+          ],
+          "rough": 0.34
+        },
+        "logo": {
+          "rgb": [
+            0.37317647058823533,
+            0.411921568627451,
+            0.3915294117647059
+          ],
+          "metal": 0.3,
+          "rough": 0.45
+        },
+        "strip": {
+          "rgb": [
+            0.8259411764705882,
+            0.9101372549019606,
+            0.8658235294117647
+          ],
+          "metal": 0.5,
+          "rough": 0.5
+        },
+        "camera_ring": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.15
+          ],
+          "metal": 0.75,
+          "rough": 0.3
+        }
+      }
+    },
+    {
+      "name": "Lavender",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.7607843137254902,
+            0.7372549019607844,
+            0.803921568627451
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "rail": {
+          "rgb": [
+            0.7607843137254902,
+            0.7372549019607844,
+            0.803921568627451
+          ],
+          "metal": 0.75,
+          "rough": 0.35
+        },
+        "bar": {
+          "rgb": [
+            0.025,
+            0.028,
+            0.032
+          ],
+          "rough": 0.34
+        },
+        "logo": {
+          "rgb": [
+            0.3956078431372549,
+            0.3833725490196079,
+            0.41803921568627456
+          ],
+          "metal": 0.3,
+          "rough": 0.45
+        },
+        "strip": {
+          "rgb": [
+            0.8746862745098039,
+            0.8480980392156863,
+            0.9234313725490195
+          ],
+          "metal": 0.5,
+          "rough": 0.5
+        },
+        "camera_ring": {
+          "rgb": [
+            0.13,
+            0.14,
+            0.15
+          ],
+          "metal": 0.75,
+          "rough": 0.3
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/galaxy-tab-s9-fe-plus.ecfb68771e86.glb.gz",
+  "sha256": "ecfb68771e86bb091b418843bb75156a6f49246ddb028d75055e47be8ba13286",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/galaxy-tab-s9-fe-plus.json",
+    "accuracy": {
+      "body_dimensions": "Samsung published metric dimensions",
+      "screen_resolution": "Samsung native panel resolution; exact aspect ratio",
+      "screen_geometry": "Published rectangular diagonal and exact native aspect; inferred bezels. Concentric corner radii, selfie aperture/notch dimensions are photo estimates.",
+      "camera_geometry": "Official rear-render normalized measurements; model-family housing/charging insert, separate glass windows, rims, apertures and flash. Protrusion and internal optics estimated, not OEM CAD.",
+      "details": "Rear wordmark and built-in charging surface where present; no S Pen accessory. Ports, speaker holes and antenna seams omitted. See research/samsung-tablet-rear-measurements.json for measurements and family transfer limits.",
+      "finishes": "Official names (regional availability varies); source-icon sampled/representative RGB, not measured material samples."
+    },
+    "sources": [
+      "https://news.samsung.com/global/samsung-galaxy-s23-fe-galaxy-tab-s9-fe-and-galaxy-buds-fe-bring-standout-features-to-even-more-users",
+      "[local reference path omitted]",
+      "[local reference path omitted]",
+      "https://api.samsungmobilepress.com/media-assets/galaxy-tab-s9-fe-plus",
+      "https://api.samsungmobilepress.com/file/E8BD6AA7D4B50FBCE9C82B321306BAE0DFC363A2C99B122219252C82A5BF693839A78D46C45020D7C54F03C5746B9A145184E5DECF3D1096576A8C0A68FF7FA1F153C958F7C32E4B37C7E1C424A70B8F6F3E7D1885E0E474E97202C2F67956BDF3056F59149FFEA7045FBA1AA321F01F279D067F60F360F98E989458D876F322A1AD7DF01C4614940DDAD5D9F4CB1305"
+    ]
+  }
+}
