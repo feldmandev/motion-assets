@@ -87,7 +87,8 @@
     "rail": "rail",
     "bar": "bar",
     "black": "black",
-    "flash": "flash"
+    "flash": "flash",
+    "logo": "logo"
   },
   "finishes": [
     {
@@ -113,6 +114,15 @@
             0.34784,
             0.35549
           ]
+        },
+        "logo": {
+          "rgb": [
+            0.5529411764705883,
+            0.5568627450980392,
+            0.5568627450980392
+          ],
+          "metal": 0.5,
+          "rough": 0.28
         }
       }
     },
@@ -139,6 +149,15 @@
             0.77098,
             0.74294
           ]
+        },
+        "logo": {
+          "rgb": [
+            0.6392156862745098,
+            0.6352941176470588,
+            0.6196078431372549
+          ],
+          "metal": 0.5,
+          "rough": 0.28
         }
       }
     },
@@ -165,6 +184,15 @@
             0.71236,
             0.65118
           ]
+        },
+        "logo": {
+          "rgb": [
+            0.5843137254901961,
+            0.611764705882353,
+            0.5725490196078431
+          ],
+          "metal": 0.5,
+          "rough": 0.28
         }
       }
     },
@@ -191,12 +219,21 @@
             0.64608,
             0.68686
           ]
+        },
+        "logo": {
+          "rgb": [
+            0.5176470588235295,
+            0.3764705882352941,
+            0.4117647058823529
+          ],
+          "metal": 0.5,
+          "rough": 0.28
         }
       }
     }
   ],
-  "glbUrl": "assets/devices/models/pixel-9.4f6acb2bb6ea.glb.gz",
-  "sha256": "4f6acb2bb6ea2660b021c9133f5dc969f59d191e661c3d29d5a37b56b12602b1",
+  "glbUrl": "assets/devices/models/pixel-9.897b1e671f1b.glb.gz",
+  "sha256": "897b1e671f1b4a10c374ab75503320e9ba071cf5bbeb364bd6331219aebc9b58",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/pixel-9.json",
@@ -205,7 +242,8 @@
       "screen_resolution": "Google published panel resolution",
       "screen_geometry": "Screen fit and corner radius measured from Google emulator artwork; native pixel aspect preserved. Skin artwork is a reference, not physical CAD.",
       "camera_geometry": "Housing width, height and top gap scaled from official rear artwork; pixel bounds and uncertainty in camera_measurement. Optical internals remain illustrative. Not measurable from this rear view; model depth remains a visual estimate.",
-      "finishes": "Approximate sRGB colors and roughness, not calibrated measured materials"
+      "finishes": "Approximate sRGB colors and roughness, not calibrated measured materials",
+      "branding": "Google G contour retained from reference artwork. Legacy Pixel4/4a/5/5a lower rear placement (approximately80%height); Pixel6 onward and folds centered on rear/camera leaf. Size, position and finish-tinted material are photo estimates, not manufacturer CAD."
     },
     "sources": [
       "https://support.google.com/pixelphone/answer/7158570?hl=en",

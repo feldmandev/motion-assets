@@ -119,10 +119,12 @@
         },
         "logo": {
           "rgb": [
-            0.13,
-            0.14,
-            0.16
-          ]
+            0.6431372549019608,
+            0.6509803921568628,
+            0.6588235294117647
+          ],
+          "metal": 0,
+          "rough": 0.3
         }
       }
     },
@@ -157,10 +159,12 @@
         },
         "logo": {
           "rgb": [
-            0.62,
-            0.64,
-            0.68
-          ]
+            0.4392156862745098,
+            0.45098039215686275,
+            0.4666666666666667
+          ],
+          "metal": 0,
+          "rough": 0.3
         }
       }
     },
@@ -195,16 +199,18 @@
         },
         "logo": {
           "rgb": [
-            0.13,
-            0.14,
-            0.16
-          ]
+            0.47058823529411764,
+            0.5607843137254902,
+            0.7058823529411765
+          ],
+          "metal": 0,
+          "rough": 0.3
         }
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-s10-lite.0cbcd1213134.glb.gz",
-  "sha256": "0cbcd1213134bc6e8c92cf7ce069f8a6255c91da0d2ca9df653cf9d22b8620cd",
+  "glbUrl": "assets/devices/models/galaxy-s10-lite.c5ecea2c0998.glb.gz",
+  "sha256": "c5ecea2c09986c703b8f19fec570a021315980d3f7dc28362347a4317edd9d2d",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-s10-lite.json",

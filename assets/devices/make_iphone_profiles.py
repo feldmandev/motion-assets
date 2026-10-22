@@ -1,5 +1,6 @@
 """Generate Apple profiles from sourced device dimensions and accessory drawings."""
 import copy
+from make_device_branding import apply as apply_branding
 import json
 import math
 from pathlib import Path
@@ -388,6 +389,7 @@ def main():
         for device in data['devices'] if isinstance(data,dict) else data:
             results = fold_profiles(device) if device.get('closed_body_mm') else [profile(device)]
             for result in results:
+                apply_branding(result)
                 (BASE/'profiles'/f"{result['id']}.json").write_text(json.dumps(result,indent=2)+'\n',encoding='utf-8')
                 count += 1
     print(f'Generated {count} Apple profiles')

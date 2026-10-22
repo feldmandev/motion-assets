@@ -177,9 +177,9 @@
         },
         "logo": {
           "rgb": [
-            0.4235,
-            0.5098,
-            0.6
+            0.3803921568627451,
+            0.4392156862745098,
+            0.49411764705882355
           ],
           "metal": 0.65,
           "rough": 0.18
@@ -296,8 +296,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/googlebook-acer-14.f2d7208b9fb9.glb.gz",
-  "sha256": "f2d7208b9fb9622224a67093ae870d4765975022805b804a2bfff4e1624d0c84",
+  "glbUrl": "assets/devices/models/googlebook-acer-14.4814f93b8dff.glb.gz",
+  "sha256": "4814f93b8dffa2d28e3e300cbbd420487df05ba17a9a378dff32e4aa69d2372a",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/googlebook-acer-14.json",

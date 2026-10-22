@@ -83,7 +83,8 @@
     "button": "button",
     "fingerprint": "fingerprint",
     "black": "black",
-    "flash": "flash"
+    "flash": "flash",
+    "logo": "logo"
   },
   "finishes": [
     {
@@ -117,6 +118,15 @@
             0.90588,
             0.8902
           ]
+        },
+        "logo": {
+          "rgb": [
+            0.3843137254901961,
+            0.38823529411764707,
+            0.38823529411764707
+          ],
+          "metal": 0.5,
+          "rough": 0.28
         }
       }
     },
@@ -151,6 +161,15 @@
             0.55294,
             0.34902
           ]
+        },
+        "logo": {
+          "rgb": [
+            0.5607843137254902,
+            0.5607843137254902,
+            0.5490196078431373
+          ],
+          "metal": 0.5,
+          "rough": 0.28
         }
       }
     },
@@ -185,12 +204,21 @@
             0.83529,
             0.84314
           ]
+        },
+        "logo": {
+          "rgb": [
+            0.5725490196078431,
+            0.3803921568627451,
+            0.3137254901960784
+          ],
+          "metal": 0.5,
+          "rough": 0.28
         }
       }
     }
   ],
-  "glbUrl": "assets/devices/models/pixel-4-xl.4e21834384e7.glb.gz",
-  "sha256": "4e21834384e79a3fb916fecbbb58931d85685bd6a90b7b29fa138eb02522461f",
+  "glbUrl": "assets/devices/models/pixel-4-xl.7f7849f0d481.glb.gz",
+  "sha256": "7f7849f0d481cef7aa22677373d5b82fc4fe1df6254c448c0166f94837769f49",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/pixel-4-xl.json",
@@ -200,7 +228,8 @@
       "screen_geometry": "Google Android Emulator skin trace with native panel aspect preserved",
       "camera_geometry": "Model-specific rear housing/lens placement proportioned from reviewed product photography; optical stacks reuse the reviewed Pixel optics and are illustrative",
       "buttons_and_rear_hardware": "Model-specific placement reviewed against product photography",
-      "finishes": "Approximate sRGB appearance matched to named Google finishes; not measured material samples"
+      "finishes": "Approximate sRGB appearance matched to named Google finishes; not measured material samples",
+      "branding": "Google G contour retained from reference artwork. Legacy Pixel4/4a/5/5a lower rear placement (approximately80%height); Pixel6 onward and folds centered on rear/camera leaf. Size, position and finish-tinted material are photo estimates, not manufacturer CAD."
     },
     "sources": [
       "https://support.google.com/pixelphone/answer/16043605?hl=en",

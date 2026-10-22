@@ -29,7 +29,8 @@ def main():
     for module in manifest["modules"]:
         files = [ROOT / name for name in manifest["files"] if name.startswith(f"assets/{module}/") or (module == "symbols" and name.startswith("integrations/"))]
         archive(out / f"motion-assets-{module}-{manifest['version']}.zip", set(files + notices))
-    models = [p for p in (ROOT / "assets/devices/models").glob("*.glb.gz")]
+    model_manifest = json.loads((ROOT / "assets/devices/models-manifest.json").read_text())
+    models = [ROOT / name for name in model_manifest["files"] if (ROOT / name).is_file()]
     if models:
         archive(out / f"motion-assets-models-{manifest['version']}.zip", models)
     site = ROOT / "build/site"
@@ -57,7 +58,7 @@ def main():
     shutil.copy2(ROOT / "manifest.json", site / "manifest.json")
     shutil.copy2(ROOT / "ATTRIBUTION.md", site / "ATTRIBUTION.md")
     archive(out / f"motion-assets-gallery-{manifest['version']}.zip", [p for p in site.rglob("*") if p.is_file()], site)
-    hashes = {p.name: hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(out.glob("*.zip"))}
+    hashes = {p.name: hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(out.glob(f"*-{manifest['version']}.zip"))}
     (out / "SHA256SUMS").write_text("".join(f"{digest}  {name}\n" for name, digest in hashes.items()))
     print(f"Built {len(hashes)} archives and build/site; model payloads {'included' if args.models else 'optional'}")
 

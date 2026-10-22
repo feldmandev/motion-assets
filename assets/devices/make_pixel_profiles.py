@@ -1,6 +1,7 @@
 """Create editable Pixel profiles from published specs and explicit visual estimates."""
 import copy
 import json
+from make_device_branding import apply as apply_branding
 from pathlib import Path
 
 BASE = Path(__file__).resolve().parent
@@ -545,6 +546,7 @@ def main():
     for item in profiles:
         apply_skin_measurements(item, measurements)
         apply_camera_measurements(item, camera_measurements)
+        apply_branding(item)
         (BASE/'profiles'/f'{item["id"]}.json').write_text(json.dumps(item, indent=2)+'\n', encoding='utf-8')
     reviewed_path = BASE/'profiles/pixel-10-pro.json'
     reviewed = json.loads(reviewed_path.read_text(encoding='utf-8'))
@@ -555,6 +557,7 @@ def main():
                                    'bar':'Camera bar | satin gunmetal aluminum'}
     reviewed['finishes'] = profile('Pixel 10 Pro',[152.8,72,8.6],[1280,2856],6.3,
                                    ['Obsidian','Moonstone','Jade','Porcelain'],[])['finishes']
+    apply_branding(reviewed)
     reviewed_path.write_text(json.dumps(reviewed, indent=2)+'\n', encoding='utf-8')
     print(f'Wrote {len(profiles)} procedural profiles; kept reviewed Pixel 10 Pro asset profile')
 

@@ -119,10 +119,12 @@
         },
         "logo": {
           "rgb": [
-            0.13,
-            0.14,
-            0.16
-          ]
+            0.596078431372549,
+            0.596078431372549,
+            0.596078431372549
+          ],
+          "metal": 0,
+          "rough": 0.3
         }
       }
     },
@@ -157,10 +159,12 @@
         },
         "logo": {
           "rgb": [
-            0.13,
-            0.14,
-            0.16
-          ]
+            0.5843137254901961,
+            0.596078431372549,
+            0.6196078431372549
+          ],
+          "metal": 0,
+          "rough": 0.3
         }
       }
     },
@@ -195,16 +199,18 @@
         },
         "logo": {
           "rgb": [
-            0.62,
-            0.64,
-            0.68
-          ]
+            0.43137254901960786,
+            0.43137254901960786,
+            0.4392156862745098
+          ],
+          "metal": 0,
+          "rough": 0.3
         }
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-s25-edge.c7a67ade00ca.glb.gz",
-  "sha256": "c7a67ade00cabaf67cf1e733a2bcb6223985c79270c990161b8a376d978798fd",
+  "glbUrl": "assets/devices/models/galaxy-s25-edge.85b59643de91.glb.gz",
+  "sha256": "85b59643de913ba749e8b4f10a5c10f6d476dbb9fd4a68996eda7a702e46a094",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-s25-edge.json",

@@ -3012,7 +3012,9 @@
             0.052941176470588235,
             0.07254901960784314,
             0.060784313725490195
-          ]
+          ],
+          "metal": 0,
+          "rough": 0.3
         }
       }
     },
@@ -3050,7 +3052,9 @@
             0.4235294117647059,
             0.41568627450980394,
             0.4176470588235294
-          ]
+          ],
+          "metal": 0,
+          "rough": 0.3
         }
       }
     },
@@ -3088,13 +3092,15 @@
             0.07254901960784314,
             0.07450980392156863,
             0.0803921568627451
-          ]
+          ],
+          "metal": 0,
+          "rough": 0.3
         }
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-z-fold3-folded.fb602b7cd373.glb.gz",
-  "sha256": "fb602b7cd373819c8545434842a10b5abe8f0204d5d0e03eb21d17bbca0f1736",
+  "glbUrl": "assets/devices/models/galaxy-z-fold3-folded.59e8d306a7af.glb.gz",
+  "sha256": "59e8d306a7af32b4d168756da5acafc6415d8bd11a63f922aaf996ced7ea6ba6",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-z-fold3-folded.json",

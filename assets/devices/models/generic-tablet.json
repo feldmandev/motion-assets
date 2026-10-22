@@ -2,8 +2,6 @@
   "id": "generic-tablet",
   "name": "Generic tablet",
   "state": "default",
-  "glbUrl": "assets/devices/models/generic-tablet.686128346a96.glb.gz",
-  "sha256": "686128346a96ea02da64f69c999ecc284b654ddf239816dcfeb828527a9a2312",
   "screens": [
     {
       "node": "Device screen",
@@ -54,5 +52,7 @@
         "description": "Motion generic device artwork and authored screen mapping"
       }
     ]
-  }
+  },
+  "glbUrl": "assets/devices/models/generic-tablet.686128346a96.glb.gz",
+  "sha256": "686128346a96ea02da64f69c999ecc284b654ddf239816dcfeb828527a9a2312"
 }

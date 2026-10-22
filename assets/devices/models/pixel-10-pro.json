@@ -73,7 +73,8 @@
   "slots": {
     "back": "Obsidian | silky matte glass",
     "rail": "Obsidian | polished aluminum",
-    "bar": "Camera bar | satin gunmetal aluminum"
+    "bar": "Camera bar | satin gunmetal aluminum",
+    "logo": "Graphite G inlay"
   },
   "finishes": [
     {
@@ -99,6 +100,15 @@
             0.34784,
             0.35549
           ]
+        },
+        "logo": {
+          "rgb": [
+            0.5529411764705883,
+            0.5568627450980392,
+            0.5568627450980392
+          ],
+          "metal": 0.5,
+          "rough": 0.28
         }
       }
     },
@@ -125,6 +135,15 @@
             0.59764,
             0.62569
           ]
+        },
+        "logo": {
+          "rgb": [
+            0.4392156862745098,
+            0.4470588235294118,
+            0.44313725490196076
+          ],
+          "metal": 0.5,
+          "rough": 0.28
         }
       }
     },
@@ -151,6 +170,15 @@
             0.68177,
             0.59
           ]
+        },
+        "logo": {
+          "rgb": [
+            0.5843137254901961,
+            0.611764705882353,
+            0.5725490196078431
+          ],
+          "metal": 0.5,
+          "rough": 0.28
         }
       }
     },
@@ -177,12 +205,21 @@
             0.77098,
             0.74294
           ]
+        },
+        "logo": {
+          "rgb": [
+            0.6392156862745098,
+            0.6352941176470588,
+            0.6196078431372549
+          ],
+          "metal": 0.5,
+          "rough": 0.28
         }
       }
     }
   ],
-  "glbUrl": "assets/devices/models/pixel-10-pro.738a77d0a3b4.glb.gz",
-  "sha256": "738a77d0a3b42e0a98e5567ffbab2ebb1c4a47593595e3b3425f78d98df54b5b",
+  "glbUrl": "assets/devices/models/pixel-10-pro.d68f8ceec1f5.glb.gz",
+  "sha256": "d68f8ceec1f507d842b19b4cf2d3a0eb1191ee402e89e878233cb1f793011123",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/pixel-10-pro.json",
@@ -190,7 +227,8 @@
       "body_dimensions": "Published manufacturer dimensions",
       "screen_resolution": "Published native resolution; ADB may use a lower resolution with the same aspect ratio",
       "screen_geometry": "Screen fit and corner radius measured from Google emulator artwork; native pixel aspect preserved. Skin artwork is a reference, not physical CAD.",
-      "camera_geometry": "Original reviewed camera assembly; photo-matched, not manufacturer CAD"
+      "camera_geometry": "Original reviewed camera assembly; photo-matched, not manufacturer CAD",
+      "branding": "Google G contour retained from reference artwork. Legacy Pixel4/4a/5/5a lower rear placement (approximately80%height); Pixel6 onward and folds centered on rear/camera leaf. Size, position and finish-tinted material are photo estimates, not manufacturer CAD."
     },
     "sources": [
       "https://store.google.com/product/pixel_10_pro_specs?hl=en-US"

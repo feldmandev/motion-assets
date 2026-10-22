@@ -89,6 +89,49 @@
     "license": "LicenseRef-Device-Artwork"
   },
   {
+    "model": "googlebook_emulator",
+    "brand": "pixel",
+    "kind": "laptop",
+    "label": "googlebook emulator",
+    "provisional": false,
+    "variants": [
+      {
+        "color": "titanium_silver",
+        "svg": "assets/devices/icons/pixel/laptops/ic_googlebook_emulator_titanium_silver_icon.svg",
+        "preview": "assets/devices/previews/googlebook_emulator_titanium_silver.png"
+      },
+      {
+        "color": "obsidian",
+        "svg": "assets/devices/icons/pixel/laptops/ic_googlebook_emulator_obsidian_icon.svg",
+        "preview": "assets/devices/previews/googlebook_emulator_obsidian.png"
+      },
+      {
+        "color": "porcelain",
+        "svg": "assets/devices/icons/pixel/laptops/ic_googlebook_emulator_porcelain_icon.svg",
+        "preview": "assets/devices/previews/googlebook_emulator_porcelain.png"
+      },
+      {
+        "color": "hazel",
+        "svg": "assets/devices/icons/pixel/laptops/ic_googlebook_emulator_hazel_icon.svg",
+        "preview": "assets/devices/previews/googlebook_emulator_hazel.png"
+      },
+      {
+        "color": "monochrome",
+        "svg": "assets/devices/icons/pixel/laptops/ic_googlebook_emulator_monochrome_icon.svg",
+        "preview": "assets/devices/previews/googlebook_emulator_monochrome.png"
+      }
+    ],
+    "model3d": {
+      "states": {
+        "default": "googlebook-emulator"
+      },
+      "hasFrame": true,
+      "articulated": true
+    },
+    "provenance": "mixed-vendor-and-derived",
+    "license": "LicenseRef-Device-Artwork"
+  },
+  {
     "model": "googlebook_hp_14",
     "brand": "pixel",
     "kind": "laptop",
@@ -5398,6 +5441,12 @@
         "preview": "assets/devices/previews/oneplus_13_monochrome.png"
       }
     ],
+    "model3d": {
+      "states": {
+        "default": "oneplus-13"
+      },
+      "hasFrame": true
+    },
     "provenance": "drawn-from-references",
     "license": "LicenseRef-Device-Artwork"
   },
@@ -5424,6 +5473,12 @@
         "preview": "assets/devices/previews/oneplus_13r_monochrome.png"
       }
     ],
+    "model3d": {
+      "states": {
+        "default": "oneplus-13r"
+      },
+      "hasFrame": true
+    },
     "provenance": "drawn-from-references",
     "license": "LicenseRef-Device-Artwork"
   },
@@ -5688,6 +5743,12 @@
         "preview": "assets/devices/previews/oneplus_pad_monochrome.png"
       }
     ],
+    "model3d": {
+      "states": {
+        "default": "oneplus-pad"
+      },
+      "hasFrame": true
+    },
     "provenance": "drawn-from-references",
     "license": "LicenseRef-Device-Artwork"
   },
@@ -5709,6 +5770,12 @@
         "preview": "assets/devices/previews/oneplus_pad_2_monochrome.png"
       }
     ],
+    "model3d": {
+      "states": {
+        "default": "oneplus-pad-2"
+      },
+      "hasFrame": true
+    },
     "provenance": "drawn-from-references",
     "license": "LicenseRef-Device-Artwork"
   },
@@ -5782,6 +5849,12 @@
         "preview": "assets/devices/previews/oneplus_pad_3_monochrome.png"
       }
     ],
+    "model3d": {
+      "states": {
+        "default": "oneplus-pad-3"
+      },
+      "hasFrame": true
+    },
     "provenance": "drawn-from-references",
     "license": "LicenseRef-Device-Artwork"
   },
@@ -5881,6 +5954,12 @@
         "preview": "assets/devices/previews/oneplus_pad_go_monochrome.png"
       }
     ],
+    "model3d": {
+      "states": {
+        "default": "oneplus-pad-go"
+      },
+      "hasFrame": true
+    },
     "provenance": "drawn-from-references",
     "license": "LicenseRef-Device-Artwork"
   },
@@ -13139,120 +13218,6 @@
     "license": "LicenseRef-Device-Artwork"
   },
   {
-    "model": "googlebook_emulator",
-    "brand": "pixel",
-    "kind": "laptop",
-    "label": "Googlebook Emulator",
-    "provisional": false,
-    "variants": [
-      {
-        "color": "titanium_silver",
-        "svg": "assets/devices/icons/pixel/laptops/ic_googlebook_emulator_titanium_silver_icon.svg",
-        "preview": "assets/devices/previews/googlebook_emulator_titanium_silver.png"
-      },
-      {
-        "color": "obsidian",
-        "svg": "assets/devices/icons/pixel/laptops/ic_googlebook_emulator_obsidian_icon.svg",
-        "preview": "assets/devices/previews/googlebook_emulator_obsidian.png"
-      },
-      {
-        "color": "porcelain",
-        "svg": "assets/devices/icons/pixel/laptops/ic_googlebook_emulator_porcelain_icon.svg",
-        "preview": "assets/devices/previews/googlebook_emulator_porcelain.png"
-      },
-      {
-        "color": "hazel",
-        "svg": "assets/devices/icons/pixel/laptops/ic_googlebook_emulator_hazel_icon.svg",
-        "preview": "assets/devices/previews/googlebook_emulator_hazel.png"
-      },
-      {
-        "color": "monochrome",
-        "svg": "assets/devices/icons/pixel/laptops/ic_googlebook_emulator_monochrome_icon.svg",
-        "preview": "assets/devices/previews/googlebook_emulator_monochrome.png"
-      },
-      {
-        "color": "monochrome",
-        "svg": "assets/devices/icons/pixel/laptops/ic_googlebook_emulator_monochrome_icon.svg",
-        "preview": "assets/devices/previews/googlebook_emulator_monochrome.png"
-      }
-    ],
-    "model3d": {
-      "states": {
-        "default": "googlebook-emulator"
-      },
-      "hasFrame": true,
-      "articulated": true
-    },
-    "provenance": "mixed-vendor-and-derived",
-    "license": "LicenseRef-Device-Artwork"
-  },
-  {
-    "model": "generic_phone",
-    "brand": "generic",
-    "kind": "phone",
-    "label": "Generic Phone",
-    "provisional": false,
-    "variants": [
-      {
-        "color": "graphite",
-        "svg": "assets/devices/icons/generic/phones/ic_generic_phone_graphite_icon.svg",
-        "preview": "assets/devices/previews/generic_phone_graphite.png"
-      }
-    ],
-    "provenance": "drawn-from-references",
-    "license": "LicenseRef-Device-Artwork",
-    "model3d": {
-      "states": {
-        "default": "generic-phone"
-      },
-      "hasFrame": true
-    }
-  },
-  {
-    "model": "generic_tablet",
-    "brand": "generic",
-    "kind": "tablet",
-    "label": "Generic Tablet",
-    "provisional": false,
-    "variants": [
-      {
-        "color": "graphite",
-        "svg": "assets/devices/icons/generic/tablets/ic_generic_tablet_graphite_icon.svg",
-        "preview": "assets/devices/previews/generic_tablet_graphite.png"
-      }
-    ],
-    "provenance": "drawn-from-references",
-    "license": "LicenseRef-Device-Artwork",
-    "model3d": {
-      "states": {
-        "default": "generic-tablet"
-      },
-      "hasFrame": true
-    }
-  },
-  {
-    "model": "generic_pc",
-    "brand": "generic",
-    "kind": "pc",
-    "label": "Generic PC",
-    "provisional": false,
-    "variants": [
-      {
-        "color": "graphite",
-        "svg": "assets/devices/icons/generic/pcs/ic_generic_pc_graphite_icon.svg",
-        "preview": "assets/devices/previews/generic_pc_graphite.png"
-      }
-    ],
-    "provenance": "drawn-from-references",
-    "license": "LicenseRef-Device-Artwork",
-    "model3d": {
-      "states": {
-        "default": "generic-pc"
-      },
-      "hasFrame": true
-    }
-  },
-  {
     "model": "generic_googlebook",
     "brand": "generic",
     "kind": "laptop",
@@ -13271,6 +13236,72 @@
       },
       "hasFrame": true,
       "articulated": true
+    },
+    "provenance": "drawn-from-references",
+    "license": "LicenseRef-Device-Artwork"
+  },
+  {
+    "model": "generic_pc",
+    "brand": "generic",
+    "kind": "pc",
+    "label": "Generic PC",
+    "provisional": false,
+    "variants": [
+      {
+        "color": "graphite",
+        "svg": "assets/devices/icons/generic/pcs/ic_generic_pc_graphite_icon.svg",
+        "preview": "assets/devices/previews/generic_pc_graphite.png"
+      }
+    ],
+    "model3d": {
+      "states": {
+        "default": "generic-pc"
+      },
+      "hasFrame": true
+    },
+    "provenance": "drawn-from-references",
+    "license": "LicenseRef-Device-Artwork"
+  },
+  {
+    "model": "generic_phone",
+    "brand": "generic",
+    "kind": "phone",
+    "label": "Generic Phone",
+    "provisional": false,
+    "variants": [
+      {
+        "color": "graphite",
+        "svg": "assets/devices/icons/generic/phones/ic_generic_phone_graphite_icon.svg",
+        "preview": "assets/devices/previews/generic_phone_graphite.png"
+      }
+    ],
+    "model3d": {
+      "states": {
+        "default": "generic-phone"
+      },
+      "hasFrame": true
+    },
+    "provenance": "drawn-from-references",
+    "license": "LicenseRef-Device-Artwork"
+  },
+  {
+    "model": "generic_tablet",
+    "brand": "generic",
+    "kind": "tablet",
+    "label": "Generic Tablet",
+    "provisional": false,
+    "variants": [
+      {
+        "color": "graphite",
+        "svg": "assets/devices/icons/generic/tablets/ic_generic_tablet_graphite_icon.svg",
+        "preview": "assets/devices/previews/generic_tablet_graphite.png"
+      }
+    ],
+    "model3d": {
+      "states": {
+        "default": "generic-tablet"
+      },
+      "hasFrame": true
     },
     "provenance": "drawn-from-references",
     "license": "LicenseRef-Device-Artwork"

@@ -562,6 +562,10 @@ def build(profile_path, output, screen_image=None, finish=None):
                 shader = bpy.data.materials[profile['material_objects'][role]].node_tree.nodes['Principled BSDF']
                 shader.inputs['Base Color'].default_value = tuple(value/12.92 if value <= .04045
                     else ((value+.055)/1.055)**2.4 for value in settings['rgb'])+(1,)
+        if 'logo' in profile.get('material_objects', {}):
+            shader = bpy.data.materials[profile['material_objects']['logo']].node_tree.nodes['Principled BSDF']
+            color = profile['finishes'][profile['finish']]['logo']['rgb']
+            shader.inputs['Base Color'].default_value = tuple(value/12.92 if value <= .04045 else ((value+.055)/1.055)**2.4 for value in color)+(1,)
     else:
         from geometry import create_device
         apply_trace(profile)

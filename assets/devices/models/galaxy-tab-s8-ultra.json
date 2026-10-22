@@ -119,9 +119,9 @@
         },
         "logo": {
           "rgb": [
-            0.5149019607843137,
-            0.5490196078431373,
-            0.6058823529411765
+            0.5372549019607843,
+            0.5450980392156862,
+            0.5607843137254902
           ],
           "metal": 0.3,
           "rough": 0.45
@@ -147,8 +147,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-tab-s8-ultra.28b9f94b74f8.glb.gz",
-  "sha256": "28b9f94b74f8f40dddb8c1a4879d03572b3e98e4f6ee5a0b81bfb10baf1e5023",
+  "glbUrl": "assets/devices/models/galaxy-tab-s8-ultra.c233e0cf781c.glb.gz",
+  "sha256": "c233e0cf781c49fd7b2e8acd5cdb9a0f6ef4614369f2039d66d7fbada687dc83",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-tab-s8-ultra.json",

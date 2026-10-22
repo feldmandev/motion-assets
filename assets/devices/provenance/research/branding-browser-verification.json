@@ -1,0 +1,101 @@
+{
+  "models": [
+    {
+      "id": "pixel_4",
+      "loaded": true,
+      "finish": "Oh So Orange",
+      "logoMaterial": "logo",
+      "logoColorMatches": true,
+      "animations": []
+    },
+    {
+      "id": "pixel_9",
+      "loaded": true,
+      "finish": "Peony",
+      "logoMaterial": "logo",
+      "logoColorMatches": true,
+      "animations": []
+    },
+    {
+      "id": "pixel_10_pro",
+      "loaded": true,
+      "finish": "Porcelain",
+      "logoMaterial": "Graphite G inlay",
+      "logoColorMatches": true,
+      "animations": []
+    },
+    {
+      "id": "galaxy_tab_s6",
+      "loaded": true,
+      "finish": "Rose Blush",
+      "logoMaterial": "logo",
+      "logoColorMatches": true,
+      "animations": []
+    },
+    {
+      "id": "galaxy_s25",
+      "loaded": true,
+      "finish": "Blue Black",
+      "logoMaterial": "logo",
+      "logoColorMatches": true,
+      "animations": []
+    },
+    {
+      "id": "apple_iphone_17_pro",
+      "loaded": true,
+      "finish": "Deep Blue",
+      "logoMaterial": "logo",
+      "logoColorMatches": true,
+      "animations": []
+    },
+    {
+      "id": "oneplus_13",
+      "loaded": true,
+      "finish": "Black Eclipse",
+      "logoMaterial": "logo",
+      "logoColorMatches": true,
+      "animations": []
+    },
+    {
+      "id": "galaxy_z_flip7",
+      "loaded": true,
+      "finish": "Jetblack",
+      "logoMaterial": "logo",
+      "logoColorMatches": true,
+      "animations": [
+        "Fold"
+      ]
+    },
+    {
+      "id": "galaxy_z_trifold",
+      "loaded": true,
+      "finish": "Crafted Black",
+      "logoMaterial": "logo",
+      "logoColorMatches": true,
+      "animations": [
+        "Fold"
+      ]
+    },
+    {
+      "id": "googlebook_acer_14",
+      "loaded": true,
+      "finish": "Pure Silver",
+      "logoMaterial": "logo",
+      "logoColorMatches": true,
+      "animations": [
+        "Fold"
+      ]
+    },
+    {
+      "id": "galaxy_z_trifold",
+      "loaded": true,
+      "finish": "Crafted Black",
+      "logoMaterial": "logo",
+      "logoColorMatches": true,
+      "animations": [
+        "Fold"
+      ]
+    }
+  ],
+  "errors": []
+}

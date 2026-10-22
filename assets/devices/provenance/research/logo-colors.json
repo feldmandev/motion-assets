@@ -1,0 +1,4261 @@
+{
+  "schema": 1,
+  "models": {
+    "googlebook_acer_14": {
+      "elemental_blue": "#61707e"
+    },
+    "googlebook_asus_14": {
+      "dusk_ash": "#8c8f90"
+    },
+    "googlebook_dell_xps": {
+      "shimmer": "#8c8576",
+      "sky": "#929ba6"
+    },
+    "googlebook_emulator": {
+      "titanium_silver": "#a9adb1",
+      "obsidian": "#5e5f62",
+      "porcelain": "#c1c2c3",
+      "hazel": "#656e67"
+    },
+    "googlebook_hp_14": {
+      "atmospheric_blue": "#808a9e"
+    },
+    "googlebook_lenovo_15": {
+      "celestial_white": "#b9bbbe",
+      "cloud_grey": "#656a70"
+    },
+    "pixel_4": {
+      "clearly_white": "#8f8f8c",
+      "just_black": "#626363",
+      "oh_so_orange": "#926150"
+    },
+    "pixel_4_a": {
+      "barely_blue": "#7a848e",
+      "just_black": "#6b6b6c"
+    },
+    "pixel_4_a_5g": {
+      "clearly_white": "#898986",
+      "just_black": "#6b6b6c"
+    },
+    "pixel_4_xl": {
+      "clearly_white": "#8f8f8c",
+      "just_black": "#626363",
+      "oh_so_orange": "#926150"
+    },
+    "pixel_5": {
+      "just_black": "#555858",
+      "sorta_sage": "#7f8481"
+    },
+    "pixel_5_a": {
+      "mostly_black": "#727875"
+    },
+    "pixel_6": {
+      "kinda_coral": "#d3a697",
+      "sorta_seafoam": "#6c7d77",
+      "stormy_black": "#82868b"
+    },
+    "pixel_6_a": {
+      "chalk": "#c7ccc9",
+      "charcoal": "#202527",
+      "sage": "#829c8f"
+    },
+    "pixel_6_pro": {
+      "cloudy_white": "#a2a29e",
+      "sorta_sunny": "#9b7c50",
+      "stormy_black": "#82868b"
+    },
+    "pixel_7": {
+      "lemongrass": "#848a6b",
+      "obsidian": "#76787a",
+      "snow": "#8a8a86"
+    },
+    "pixel_7_a": {
+      "charcoal": "#828483",
+      "coral": "#92493d",
+      "sea": "#848f97",
+      "snow": "#8a8a86"
+    },
+    "pixel_7_pro": {
+      "hazel": "#757875",
+      "obsidian": "#76787a",
+      "snow": "#8a8a86"
+    },
+    "pixel_8": {
+      "hazel": "#757875",
+      "mint": "#76867b",
+      "obsidian": "#76787a",
+      "rose": "#84716d"
+    },
+    "pixel_8_a": {
+      "aloe": "#959c92",
+      "bay": "#7d8a9c",
+      "obsidian": "#8d8e8e",
+      "porcelain": "#a3a29e"
+    },
+    "pixel_8_pro": {
+      "beg": "#a3a29e",
+      "blk": "#8d8e8e",
+      "blu": "#7d8a9c",
+      "blue": "#8fa9cf",
+      "grn": "#99a2a1"
+    },
+    "pixel_9": {
+      "beg": "#a3a29e",
+      "blk": "#8d8e8e",
+      "blue": "#8fa9cf",
+      "grn": "#959c92",
+      "gry": "#707271",
+      "pnk": "#846069"
+    },
+    "pixel_9_a": {
+      "beg": "#a3a29e",
+      "blk": "#8d8e8e",
+      "blue": "#8fa9cf",
+      "pnk": "#846069",
+      "ppl": "#7d8295"
+    },
+    "pixel_9_fold": {
+      "beg": "#a3a29e",
+      "blk": "#878989",
+      "blue": "#8fa9cf"
+    },
+    "pixel_9_pro": {
+      "beg": "#a3a29e",
+      "blk": "#8d8e8e",
+      "blue": "#8fa9cf",
+      "grn": "#959c92",
+      "gry": "#707271",
+      "pnk": "#846069"
+    },
+    "pixel_9_pro_xl": {
+      "beg": "#a3a29e",
+      "blk": "#8d8e8e",
+      "blue": "#8fa9cf",
+      "grn": "#959c92",
+      "gry": "#707271",
+      "pnk": "#846069"
+    },
+    "pixel_10": {
+      "beg": "#a3a29e",
+      "blk": "#8d8e8e",
+      "blue": "#8fa9cf",
+      "grn": "#959c92",
+      "gry": "#707271",
+      "pnk": "#846069"
+    },
+    "pixel_10_a": {
+      "beg": "#a3a29e",
+      "blk": "#8d8e8e",
+      "pnk": "#846069",
+      "ppl": "#7d8295"
+    },
+    "pixel_10_fold": {
+      "beg": "#a3a29e",
+      "blk": "#878989"
+    },
+    "pixel_10_pro": {
+      "beg": "#a3a29e",
+      "blk": "#8d8e8e",
+      "blue": "#8fa9cf",
+      "grn": "#959c92",
+      "gry": "#707271",
+      "pnk": "#846069"
+    },
+    "pixel_10_pro_xl": {
+      "beg": "#a3a29e",
+      "blk": "#8d8e8e",
+      "blue": "#8fa9cf",
+      "grn": "#959c92",
+      "gry": "#707271",
+      "pnk": "#846069"
+    },
+    "pixel_11": {
+      "beg": "#876d69",
+      "blk": "#8d8e8e",
+      "blue": "#8fa9cf",
+      "grn": "#898879",
+      "gry": "#676860",
+      "pnk": "#c296aa",
+      "ppl": "#9ea1a9",
+      "slv": "#929593"
+    },
+    "pixel_11_fold": {
+      "blk": "#7f8083",
+      "blue": "#8fa9cf",
+      "gry": "#676860"
+    },
+    "pixel_11_pro": {
+      "beg": "#876d69",
+      "blk": "#8d8e8e",
+      "blue": "#8fa9cf",
+      "grn": "#898879",
+      "gry": "#676860",
+      "pnk": "#c296aa",
+      "ppl": "#9ea1a9",
+      "slv": "#929593"
+    },
+    "pixel_11_pro_xl": {
+      "beg": "#876d69",
+      "blk": "#8d8e8e",
+      "blue": "#8fa9cf",
+      "grn": "#898879",
+      "gry": "#676860",
+      "pnk": "#c296aa",
+      "ppl": "#9ea1a9",
+      "slv": "#929593"
+    },
+    "pixel_fold": {
+      "obsidian": "#76787a",
+      "porcelain": "#868680"
+    },
+    "pixel_tablet": {
+      "default": "#8fa9cf"
+    },
+    "galaxy_a34": {
+      "awesome_silver": "#a5a29e",
+      "awesome_violet": "#72738e",
+      "awesome_lime": "#a5aa8f",
+      "awesome_graphite": "#6c6c6e"
+    },
+    "galaxy_a35": {
+      "awesome_iceblue": "#a3a6ab",
+      "awesome_lemon": "#b1ad96",
+      "awesome_lilac": "#a49ca3",
+      "awesome_navy": "#696a6f"
+    },
+    "galaxy_a36": {
+      "awesome_white": "#a6a6a7",
+      "awesome_lime": "#9ea19d",
+      "awesome_lavender": "#8e9198",
+      "awesome_black": "#727272"
+    },
+    "galaxy_a37": {
+      "white": "#a8a8a9",
+      "light_violet": "#87828c",
+      "graygreen": "#72777a",
+      "charcoal": "#757576"
+    },
+    "galaxy_a54": {
+      "awesome_white": "#b5b5b4",
+      "awesome_lime": "#a6ac9a",
+      "awesome_violet": "#76788f",
+      "awesome_graphite": "#7a7a7a"
+    },
+    "galaxy_a55": {
+      "awesome_iceblue": "#a4a7ab",
+      "awesome_lemon": "#b2ae95",
+      "awesome_lilac": "#a399a3",
+      "awesome_navy": "#66676b"
+    },
+    "galaxy_a56": {
+      "awesome_pink": "#a6a0a3",
+      "awesome_olive": "#757a75",
+      "awesome_lightgray": "#8f8f90",
+      "awesome_graphite": "#818383"
+    },
+    "galaxy_a57": {
+      "icyblue": "#969a9e",
+      "lilac": "#726e7d",
+      "gray": "#8b8a8d",
+      "navy": "#636368"
+    },
+    "galaxy_s6": {
+      "white_pearl": "#acadad",
+      "black_sapphire": "#6e7278",
+      "gold_platinum": "#8c8578",
+      "blue_topaz": "#447582"
+    },
+    "galaxy_s6_edge": {
+      "white_pearl": "#acadad",
+      "black_sapphire": "#6e7278",
+      "gold_platinum": "#8c8578",
+      "green_emerald": "#7d9f9b"
+    },
+    "galaxy_s6_edge_plus": {
+      "white_pearl": "#acadad",
+      "black_sapphire": "#6e7278",
+      "gold_platinum": "#8c8578",
+      "silver_titanium": "#838488"
+    },
+    "galaxy_s7": {
+      "black_onyx": "#696a6d",
+      "gold_platinum": "#8a8579",
+      "silver_titanium": "#8a8c8f",
+      "white_pearl": "#adadad"
+    },
+    "galaxy_s7_edge": {
+      "black_onyx": "#696a6d",
+      "gold_platinum": "#8a8579",
+      "silver_titanium": "#8a8c8f",
+      "white_pearl": "#adadad"
+    },
+    "galaxy_s8": {
+      "midnight_black": "#68686a",
+      "orchid_gray": "#79767c",
+      "coral_blue": "#667a84",
+      "arctic_silver": "#8c8d90",
+      "maple_gold": "#948d80",
+      "rose_pink": "#9c878d",
+      "burgundy_red": "#90757b"
+    },
+    "galaxy_s8_plus": {
+      "midnight_black": "#68686a",
+      "orchid_gray": "#79767c",
+      "coral_blue": "#667a84",
+      "arctic_silver": "#8c8d90",
+      "maple_gold": "#948d80",
+      "rose_pink": "#9c878d"
+    },
+    "galaxy_s9": {
+      "midnight_black": "#696a6d",
+      "titanium_gray": "#6d7074",
+      "coral_blue": "#56697a",
+      "lilac_purple": "#726378",
+      "sunrise_gold": "#928775",
+      "burgundy_red": "#98767e"
+    },
+    "galaxy_s9_plus": {
+      "midnight_black": "#696a6d",
+      "titanium_gray": "#6d7074",
+      "coral_blue": "#56697a",
+      "lilac_purple": "#726378",
+      "sunrise_gold": "#928775",
+      "burgundy_red": "#98767e"
+    },
+    "galaxy_s10": {
+      "prism_white": "#a5a6a7",
+      "prism_black": "#747578",
+      "prism_green": "#4d746e",
+      "prism_blue": "#566d84",
+      "flamingo_pink": "#977775"
+    },
+    "galaxy_s10_5g": {
+      "crown_silver": "#878a92",
+      "majestic_black": "#76777a",
+      "royal_gold": "#897f6f"
+    },
+    "galaxy_s10_lite": {
+      "prism_white": "#a4a6a8",
+      "prism_black": "#707377",
+      "prism_blue": "#788fb4"
+    },
+    "galaxy_s10_plus": {
+      "prism_white": "#a5a6a7",
+      "prism_black": "#747578",
+      "prism_green": "#4d746e",
+      "prism_blue": "#566d84",
+      "flamingo_pink": "#977775",
+      "ceramic_white": "#aaa8a3",
+      "ceramic_black": "#6b6b6b"
+    },
+    "galaxy_s10e": {
+      "prism_white": "#a5a6a7",
+      "prism_black": "#747578",
+      "prism_green": "#4d746e",
+      "prism_blue": "#566d84",
+      "flamingo_pink": "#977775",
+      "canary_yellow": "#a2945d"
+    },
+    "galaxy_s20": {
+      "cosmic_gray": "#5d5e62",
+      "cloud_blue": "#87949a",
+      "cloud_pink": "#9f9095"
+    },
+    "galaxy_s20_fe": {
+      "cloud_navy": "#82858f",
+      "cloud_mint": "#80928e",
+      "cloud_lavender": "#848290",
+      "cloud_red": "#b18389",
+      "cloud_orange": "#977a67",
+      "cloud_white": "#ababab"
+    },
+    "galaxy_s20_plus": {
+      "cosmic_gray": "#5d5e62",
+      "cloud_blue": "#87949a",
+      "cosmic_black": "#6d6e71"
+    },
+    "galaxy_s20_ultra": {
+      "cosmic_gray": "#5d5e62",
+      "cosmic_black": "#6d6e71"
+    },
+    "galaxy_s21": {
+      "phantom_pink": "#ab9d9a",
+      "phantom_violet": "#70717d",
+      "phantom_white": "#b0b0b0",
+      "phantom_gray": "#6b6b6b"
+    },
+    "galaxy_s21_fe": {
+      "graphite": "#777779",
+      "olive": "#818277",
+      "lavender": "#8c878f",
+      "white": "#aeaeae"
+    },
+    "galaxy_s21_plus": {
+      "phantom_violet": "#6f6f7d",
+      "phantom_silver": "#919699",
+      "phantom_black": "#686868",
+      "phantom_pink": "#a1908d",
+      "phantom_gold": "#887671",
+      "phantom_red": "#b07478"
+    },
+    "galaxy_s21_ultra": {
+      "phantom_silver": "#848b8e",
+      "phantom_black": "#626262",
+      "phantom_titanium": "#8f8f8d",
+      "phantom_navy": "#76787c",
+      "phantom_brown": "#7a7572"
+    },
+    "galaxy_s22": {
+      "phantom_white": "#b1b1b1",
+      "pink_gold": "#a59e9b",
+      "phantom_black": "#6a6a6b",
+      "green": "#78817f",
+      "graphite": "#939496",
+      "cream": "#a6a193",
+      "sky_blue": "#808995",
+      "violet": "#96919a",
+      "bora_purple": "#8a8594"
+    },
+    "galaxy_s22_plus": {
+      "phantom_white": "#b1b1b1",
+      "phantom_black": "#6a6a6a",
+      "green": "#798281",
+      "pink_gold": "#a69f9c",
+      "graphite": "#939496",
+      "cream": "#a6a193",
+      "sky_blue": "#808995",
+      "violet": "#96919a"
+    },
+    "galaxy_s22_ultra": {
+      "burgundy": "#8a7e81",
+      "green": "#7c8785",
+      "phantom_black": "#6b6b6b",
+      "phantom_white": "#afafaf",
+      "graphite": "#939496",
+      "sky_blue": "#7d8591",
+      "red": "#b1847a"
+    },
+    "galaxy_s23": {
+      "phantom_black": "#696969",
+      "green": "#878987",
+      "lavender": "#a39ea2",
+      "cream": "#b0aea9",
+      "lime": "#a0a390",
+      "graphite": "#989899"
+    },
+    "galaxy_s23_fe": {
+      "graphite": "#757575",
+      "purple": "#8f8996",
+      "mint": "#9da39f",
+      "cream": "#b1b0ae",
+      "tangerine": "#755b44",
+      "indigo": "#616974"
+    },
+    "galaxy_s23_plus": {
+      "phantom_black": "#696969",
+      "green": "#878987",
+      "lavender": "#a39ea2",
+      "cream": "#b0ada8",
+      "lime": "#a1a491",
+      "graphite": "#989899"
+    },
+    "galaxy_s23_ultra": {
+      "phantom_black": "#696969",
+      "green": "#878987",
+      "cream": "#b0ada8",
+      "lavender": "#a29da1",
+      "graphite": "#989899",
+      "sky_blue": "#7f8691",
+      "lime": "#9fa38f",
+      "red": "#b58b88"
+    },
+    "galaxy_s24": {
+      "amber_yellow": "#aba69a",
+      "marble_grey": "#8c8c8c",
+      "cobalt_violet": "#8f8d99",
+      "onyx_black": "#787878",
+      "jade_green": "#9da199",
+      "sapphire_blue": "#919499",
+      "sandstone_orange": "#8a705d"
+    },
+    "galaxy_s24_fe": {
+      "mint": "#9ea7a3",
+      "yellow": "#aea88c",
+      "blue": "#9ca1a8",
+      "gray": "#959594",
+      "graphite": "#7e7e7e"
+    },
+    "galaxy_s24_plus": {
+      "amber_yellow": "#aba69a",
+      "marble_grey": "#8c8b8b",
+      "cobalt_violet": "#8f8d98",
+      "onyx_black": "#777777",
+      "jade_green": "#9da199",
+      "sapphire_blue": "#919499",
+      "sandstone_orange": "#8a705d"
+    },
+    "galaxy_s24_ultra": {
+      "titanium_yellow": "#a6a08c",
+      "titanium_violet": "#7d7b85",
+      "titanium_gray": "#696663",
+      "titanium_black": "#787878",
+      "titanium_green": "#9da29a",
+      "titanium_blue": "#91949a",
+      "titanium_orange": "#8a6f5c"
+    },
+    "galaxy_s25": {
+      "icyblue": "#b6c9e3",
+      "mint": "#a8bcb3",
+      "navy": "#687b9d",
+      "silver_shadow": "#a2a5af",
+      "pinkgold": "#a09893",
+      "coralred": "#895759",
+      "blueblack": "#707175"
+    },
+    "galaxy_s25_edge": {
+      "titanium_silver": "#989898",
+      "titanium_icyblue": "#95989e",
+      "titanium_jetblack": "#6e6e70"
+    },
+    "galaxy_s25_fe": {
+      "white": "#b2b2b2",
+      "icyblue": "#9e9fa6",
+      "navy": "#767b89",
+      "jetblack": "#717173"
+    },
+    "galaxy_s25_plus": {
+      "icyblue": "#91949b",
+      "mint": "#969d99",
+      "silver_shadow": "#6b6b6d",
+      "navy": "#676e7d",
+      "pinkgold": "#a19a94",
+      "coralred": "#8a595b",
+      "blueblack": "#74767a"
+    },
+    "galaxy_s25_ultra": {
+      "titanium_whitesilver": "#d8dfe0",
+      "titanium_gray": "#878580",
+      "titanium_silverblue": "#858b9a",
+      "titanium_black": "#181c25",
+      "titanium_pinkgold": "#a09893",
+      "titanium_jadegreen": "#747670",
+      "titanium_jetblack": "#6d6d6e"
+    },
+    "galaxy_s26": {
+      "white": "#b3b3b4",
+      "sky_blue": "#949ba1",
+      "cobalt_violet": "#83838e",
+      "black": "#707173",
+      "pink_gold": "#a7a19c",
+      "silver_shadow": "#727272"
+    },
+    "galaxy_s26_fe": {
+      "pistachio": "#919997",
+      "blueberry": "#7a7c8b",
+      "graphite": "#717275"
+    },
+    "galaxy_s26_plus": {
+      "white": "#b3b3b4",
+      "sky_blue": "#989ea4",
+      "cobalt_violet": "#868691",
+      "black": "#727375",
+      "silver_shadow": "#767677",
+      "pink_gold": "#aaa4a1"
+    },
+    "galaxy_s26_ultra": {
+      "white": "#b5b5b5",
+      "sky_blue": "#9ba1a5",
+      "cobalt_violet": "#92929c",
+      "black": "#797a7c",
+      "pink_gold": "#a8a29d",
+      "silver_shadow": "#727272"
+    },
+    "galaxy_tab_a11": {
+      "silver": "#8c8d8f",
+      "gray": "#929293"
+    },
+    "galaxy_tab_a11_plus": {
+      "gray": "#8b8b8d",
+      "silver": "#9a9a9c"
+    },
+    "galaxy_tab_s6": {
+      "mountain_gray": "#a3a7ad",
+      "cloud_blue": "#75808c",
+      "rose_blush": "#85797a"
+    },
+    "galaxy_tab_s6_lite_2020": {
+      "oxford_gray": "#9b9ea5",
+      "angora_blue": "#838c94",
+      "chiffon_rose": "#948584"
+    },
+    "galaxy_tab_s6_lite_2022": {
+      "oxford_gray": "#9b9ea5",
+      "angora_blue": "#838c94"
+    },
+    "galaxy_tab_s6_lite_2024": {
+      "oxford_gray": "#9b9ea5",
+      "chiffon_pink": "#948584",
+      "mint": "#8a948f"
+    },
+    "galaxy_tab_s7": {
+      "mystic_black": "#808286",
+      "mystic_silver": "#8a8c8c",
+      "mystic_bronze": "#796c69",
+      "mystic_navy": "#858f9a"
+    },
+    "galaxy_tab_s7_fe": {
+      "mystic_black": "#838589",
+      "mystic_silver": "#8d8e8f",
+      "mystic_pink": "#928585",
+      "mystic_green": "#7e8882"
+    },
+    "galaxy_tab_s7_plus": {
+      "mystic_black": "#808286",
+      "mystic_silver": "#8a8c8c",
+      "mystic_bronze": "#796c69",
+      "mystic_navy": "#858f9a"
+    },
+    "galaxy_tab_s8": {
+      "graphite": "#898b8f",
+      "silver": "#8b8c8d",
+      "pink_gold": "#8f8786"
+    },
+    "galaxy_tab_s8_plus": {
+      "graphite": "#898b8f",
+      "silver": "#8b8c8d",
+      "pink_gold": "#8f8786"
+    },
+    "galaxy_tab_s8_ultra": {
+      "graphite": "#898b8f"
+    },
+    "galaxy_tab_s9": {
+      "graphite": "#969798",
+      "beige": "#96928c"
+    },
+    "galaxy_tab_s9_fe": {
+      "gray": "#a2a5aa",
+      "silver": "#949596",
+      "mint": "#88908c",
+      "lavender": "#8a888f"
+    },
+    "galaxy_tab_s9_fe_plus": {
+      "gray": "#a2a5aa",
+      "silver": "#949596",
+      "mint": "#88908c",
+      "lavender": "#8a888f"
+    },
+    "galaxy_tab_s9_plus": {
+      "graphite": "#969798",
+      "beige": "#96928c"
+    },
+    "galaxy_tab_s9_ultra": {
+      "graphite": "#969798",
+      "beige": "#96928c"
+    },
+    "galaxy_tab_s10_fe": {
+      "gray": "#5e6268",
+      "silver": "#949698",
+      "blue": "#858f97"
+    },
+    "galaxy_tab_s10_fe_plus": {
+      "gray": "#5e6268",
+      "silver": "#949698",
+      "blue": "#858f97"
+    },
+    "galaxy_tab_s10_lite": {
+      "coral_red": "#b0878c",
+      "silver": "#969698",
+      "gray": "#99999a"
+    },
+    "galaxy_tab_s10_plus": {
+      "moonstone_gray": "#616366",
+      "platinum_silver": "#949596"
+    },
+    "galaxy_tab_s10_ultra": {
+      "moonstone_gray": "#616366",
+      "platinum_silver": "#949596"
+    },
+    "galaxy_tab_s11": {
+      "platinum_silver": "#9e9ea0",
+      "moonstone_gray": "#8d8d8f"
+    },
+    "galaxy_tab_s11_ultra": {
+      "platinum_silver": "#9b9b9c",
+      "moonstone_gray": "#8f8f90"
+    },
+    "galaxy_tab_s12_plus": {
+      "silver": "#9a9a9c",
+      "gray": "#8f8f91"
+    },
+    "galaxy_tab_s12_ultra": {
+      "gray": "#8f8f91",
+      "silver": "#9a9a9c"
+    },
+    "oneplus_13": {
+      "arctic_dawn": "#b6b6b6",
+      "midnight_ocean": "#6b7da6",
+      "black_eclipse": "#5f5f5f"
+    },
+    "oneplus_13r": {
+      "astral_trail": "#918c89",
+      "nebula_noir": "#707073"
+    },
+    "oneplus_15": {
+      "sand_storm": "#a49f9b",
+      "ultra_violet": "#ada5ba",
+      "infinite_black": "#5c5c61"
+    },
+    "oneplus_15r": {
+      "charcoal_black": "#737375",
+      "mint_breeze": "#b3bea5",
+      "electric_violet": "#9792b3"
+    },
+    "oneplus_15t": {
+      "white": "#b1b2ad",
+      "green": "#6f884c",
+      "brown": "#736a6b"
+    },
+    "oneplus_16": {
+      "teaser_black": "#636671",
+      "teaser_silver": "#8692a3",
+      "teaser_peach": "#ba7e63"
+    },
+    "oneplus_nord_5": {
+      "phantom_grey": "#807e8a",
+      "dry_ice": "#a5aebd",
+      "marble_sands": "#c3c3c3"
+    },
+    "oneplus_nord_6": {
+      "quick_silver": "#848791",
+      "fresh_mint": "#90b2a7",
+      "pitch_black": "#616165"
+    },
+    "oneplus_nord_ce6": {
+      "lunar_pearl": "#aaaaab",
+      "blue": "#94a5b5",
+      "pitch_black": "#626365"
+    },
+    "oneplus_nord_ce6_lite": {
+      "vivid_mint": "#97b2a2",
+      "hyper_black": "#6b6d6f"
+    },
+    "oneplus_pad": {
+      "halo_green": "#6e887a"
+    },
+    "oneplus_pad_2": {
+      "nimbus_gray": "#848896"
+    },
+    "oneplus_pad_2_2025_cn": {
+      "sky_blue": "#8fa6b2",
+      "deep_space_gray": "#8d9296"
+    },
+    "oneplus_pad_2_pro": {
+      "deep_sea_blue": "#5b647d",
+      "glacier_silver": "#a9abb3"
+    },
+    "oneplus_pad_3": {
+      "storm_blue": "#9195a4"
+    },
+    "oneplus_pad_3_pro": {
+      "dune_glow": "#887b78",
+      "sage_mist": "#a8b8ad"
+    },
+    "oneplus_pad_4": {
+      "dune_glow": "#8d807d",
+      "sage_mist": "#9cb59f"
+    },
+    "oneplus_pad_2025_cn": {
+      "tundra_green": "#9dab8e",
+      "deep_space_gray": "#84878d"
+    },
+    "oneplus_pad_go": {
+      "twin_mint": "#92a286"
+    },
+    "oneplus_pad_go_2": {
+      "lavender_drift": "#aeaabc",
+      "shadow_black": "#666669"
+    },
+    "oneplus_pad_lite": {
+      "aero_blue": "#7e919b"
+    },
+    "oneplus_pad_pro": {
+      "space_gray": "#797e8a",
+      "khaki_green": "#728668"
+    },
+    "oppo_find_n5": {
+      "dusk_purple": "#817992",
+      "misty_white": "#b1b0b6",
+      "cosmic_black": "#737276"
+    },
+    "oppo_find_n6": {
+      "blossom_orange": "#cc6a23",
+      "stellar_titanium": "#6a6a6a",
+      "pearl_black": "#696969"
+    },
+    "oppo_find_x9": {
+      "velvet_red": "#c76b88",
+      "white": "#bebebe",
+      "titanium_grey": "#868282",
+      "space_black": "#6d6e6d"
+    },
+    "oppo_find_x9_pro": {
+      "silk_white": "#b1b1ae",
+      "velvet_red": "#bc637f",
+      "titanium_charcoal": "#898485"
+    },
+    "oppo_find_x9_ultra": {
+      "polar_glacier": "#b8b8b8",
+      "canyon_orange": "#cc6932",
+      "tundra_umber": "#828282"
+    },
+    "oppo_find_x9s": {
+      "midnight_grey": "#969192",
+      "lavender_sky": "#c4c2ca",
+      "sunset_orange": "#cca593"
+    },
+    "oppo_find_x9s_pro": {
+      "native_titanium": "#979091",
+      "free_white": "#b6b2ba",
+      "vitality_orange": "#cb9a7f",
+      "breeze_cyan": "#66c1bf"
+    },
+    "oppo_find_x10": {
+      "glow_coral": "#ccbab3",
+      "glacier_blue": "#bdc2c5",
+      "mist_grey": "#928d91"
+    },
+    "oppo_find_x10_e": {
+      "blue": "#c0c4c7",
+      "titanium_gray": "#938f91"
+    },
+    "oppo_find_x10_pro_max": {
+      "luna_white": "#bebec0",
+      "orange": "#cc977b",
+      "titanium_grey": "#837e82"
+    },
+    "oppo_pad_6": {
+      "silver": "#b2bfc7"
+    },
+    "oppo_reno15": {
+      "white": "#aeafb3",
+      "blue": "#8d9cbc",
+      "brown": "#847673"
+    },
+    "oppo_reno15_pro": {
+      "white": "#afaeb3",
+      "gold": "#baa396",
+      "dusk_brown": "#837770"
+    },
+    "oppo_reno16": {
+      "dream_purple": "#a9cacc",
+      "twilight_violet": "#706573",
+      "pop_white": "#c6c6c9"
+    },
+    "oppo_reno16_f": {
+      "dream_purple": "#a6c7cc",
+      "twilight_violet": "#736875",
+      "pop_white": "#c6c6c7"
+    },
+    "oppo_reno16_pro": {
+      "starlight_black": "#6d7074",
+      "pop_white": "#c6c6c9"
+    },
+    "honor_30_pro": {
+      "midnight_black": "#797d83",
+      "titanium_silver": "#8787a6",
+      "emerald_green": "#3a7a77",
+      "neon_purple": "#ae8ad8"
+    },
+    "honor_90": {
+      "midnight_black": "#787e80",
+      "emerald_green": "#6d9188",
+      "peacock_blue": "#7ea8ab"
+    },
+    "honor_200": {
+      "black": "#777b7f",
+      "moonlight_white": "#b4b5b2",
+      "coral_pink": "#b598a8",
+      "emerald_green": "#7a9a99"
+    },
+    "honor_200_pro": {
+      "black": "#757a7d",
+      "moonlight_white": "#b3b5af",
+      "ocean_cyan": "#7ea49d"
+    },
+    "honor_400": {
+      "midnight_black": "#787d80",
+      "desert_gold": "#b0a092",
+      "meteor_silver": "#9a9ea4"
+    },
+    "honor_400_pro": {
+      "midnight_black": "#757d82",
+      "lunar_gray": "#868c96",
+      "tidal_blue": "#86a3ba"
+    },
+    "honor_600": {
+      "black": "#828586",
+      "golden_white": "#b5aa95",
+      "orange": "#cb6f2e"
+    },
+    "honor_600_pro": {
+      "black": "#828586",
+      "golden_white": "#b5aa95",
+      "orange": "#cb6f2e"
+    },
+    "honor_magic3_pro_plus": {
+      "ceramic_black": "#717578",
+      "ceramic_white": "#afb0ae"
+    },
+    "honor_magic4_pro": {
+      "black": "#737c80",
+      "cyan": "#529696",
+      "gold": "#9f9688"
+    },
+    "honor_magic5": {
+      "black": "#767d84",
+      "blue": "#6696b7"
+    },
+    "honor_magic5_pro": {
+      "black": "#777b80",
+      "meadow_green": "#6f9181",
+      "purple": "#917f9c"
+    },
+    "honor_magic6_pro": {
+      "black": "#787d7d",
+      "epi_green": "#869a85"
+    },
+    "honor_magic7": {
+      "black": "#757d81",
+      "moonlight_gray": "#9aa1a4",
+      "breeze_blue": "#87abba"
+    },
+    "honor_magic7_pro": {
+      "black": "#757d81",
+      "moonlight_gray": "#9aa1a4",
+      "breeze_blue": "#87abba"
+    },
+    "honor_magic8_pro": {
+      "black": "#707a83",
+      "sunrise_gold": "#b5a281",
+      "sky_cyan": "#7aa2a2"
+    },
+    "honor_magic_v2": {
+      "black": "#767b7d",
+      "purple": "#867b9d"
+    },
+    "honor_magic_v3": {
+      "black": "#747b7e",
+      "green": "#557266",
+      "reddish_brown": "#825a47"
+    },
+    "honor_magic_v5": {
+      "black": "#757c7f",
+      "ivory_white": "#b2aea3",
+      "dawn_gold": "#a28356",
+      "reddish_brown": "#8c5b44"
+    },
+    "honor_magic_v6": {
+      "black": "#74787f",
+      "white": "#b3b2ae",
+      "red": "#c57e73",
+      "gold": "#a28555"
+    },
+    "honor_magicpad_2": {
+      "black": "#868a92",
+      "moonlight_white": "#b3b4af"
+    },
+    "honor_magicpad_3": {
+      "starry_gray": "#84888b",
+      "moonlight_white": "#b2b2ae"
+    },
+    "honor_magicpad_4": {
+      "gray": "#81868b",
+      "white": "#b6b7b2"
+    },
+    "honor_magicpad_13": {
+      "sky_blue": "#7aa2a5",
+      "moonlight_white": "#b1ac9d",
+      "star_gray": "#707881"
+    },
+    "honor_pad_8": {
+      "blue_hour": "#526d86"
+    },
+    "honor_pad_9": {
+      "space_gray": "#6b767f",
+      "cyan_lake": "#7fa9a9"
+    },
+    "honor_pad_10": {
+      "space_gray": "#828a90"
+    },
+    "honor_pad_20": {
+      "space_gray": "#7e868e"
+    },
+    "honor_pad_20_pro": {
+      "space_gray": "#767e86"
+    },
+    "honor_pad_v6": {
+      "emerald_green": "#348176",
+      "midnight_black": "#787d85"
+    },
+    "honor_pad_v9": {
+      "gray": "#848a92",
+      "white": "#b3b5b2"
+    },
+    "honor_robot_phone": {
+      "black": "#788292",
+      "white": "#aeafb0"
+    },
+    "motorola_edge_20_pro": {
+      "midnight_blue": "#73889d",
+      "iridescent_white": "#a8abb5"
+    },
+    "motorola_edge_30_pro": {
+      "cosmos_blue": "#7f92a0",
+      "stardust_white": "#aaaeb4"
+    },
+    "motorola_edge_30_ultra": {
+      "interstellar_black": "#758087",
+      "starlight_white": "#b0b2b4"
+    },
+    "motorola_edge_40_pro": {
+      "interstellar_black": "#6f7c85",
+      "lunar_blue": "#7c929f"
+    },
+    "motorola_edge_50_ultra": {
+      "forest_gray": "#4e635f",
+      "peach_fuzz": "#c29374",
+      "nordic_wood": "#aa9e82"
+    },
+    "motorola_edge_60_pro": {
+      "dazzling_blue": "#7a85d2",
+      "shadow_green": "#5c6356",
+      "sparkling_grape": "#865372"
+    },
+    "motorola_edge_70_max": {
+      "dark_shadow": "#8d9799",
+      "ice_melt": "#98afb2",
+      "aqua_gray": "#779790"
+    },
+    "motorola_edge_70_pro": {
+      "titan": "#788ea4",
+      "zinfandel": "#9e7f98"
+    },
+    "motorola_edge_70_pro_plus": {
+      "zinfandel": "#ab808d",
+      "stormy_sea": "#596f7b",
+      "chicory_coffee": "#a08d80"
+    },
+    "motorola_edge_2026": {
+      "martini_olive": "#858156"
+    },
+    "motorola_edge_plus_2020": {
+      "thunder_gray": "#7f96a1",
+      "smoky_sangria": "#a47a88"
+    },
+    "motorola_moto_g_power_2026": {
+      "evening_blue": "#808fa2",
+      "pure_cashmere": "#989180"
+    },
+    "motorola_moto_g_stylus_2026": {
+      "lavender_mist": "#8c718e",
+      "coal_smoke": "#949aa6"
+    },
+    "motorola_moto_pad_60_neo": {
+      "bronze_green": "#74836a",
+      "malibu_blue": "#547ea1"
+    },
+    "motorola_moto_pad_60_pro": {
+      "bronze_green": "#657659"
+    },
+    "motorola_moto_pad_70": {
+      "sea_angel": "#62a0a9"
+    },
+    "motorola_moto_pad_70_groove": {
+      "blue_surf": "#7a9e92"
+    },
+    "motorola_moto_pad_70_pro": {
+      "titan": "#819bb2"
+    },
+    "motorola_moto_pad_2026": {
+      "bronze_green": "#627a58"
+    },
+    "motorola_moto_tab_g62": {
+      "frost_blue": "#6e718c"
+    },
+    "motorola_moto_tab_g70": {
+      "modernist_teal": "#3f6776"
+    },
+    "motorola_razr_5g": {
+      "polished_graphite": "#858d96",
+      "liquid_mercury": "#969da4",
+      "blush_gold": "#a78c76"
+    },
+    "motorola_razr_40": {
+      "sage_green": "#707f68",
+      "vanilla_cream": "#afa38a",
+      "summer_lilac": "#93859c"
+    },
+    "motorola_razr_40_ultra": {
+      "infinite_black": "#757a81",
+      "glacier_blue": "#7b9ab1",
+      "viva_magenta": "#d782a1"
+    },
+    "motorola_razr_50": {
+      "koala_gray": "#7a7a7d",
+      "beach_sand": "#a39782",
+      "spritz_orange": "#ba6b3b"
+    },
+    "motorola_razr_50_ultra": {
+      "midnight_blue": "#7296c4",
+      "spring_green": "#899673",
+      "peach_fuzz": "#bc8c72",
+      "hot_pink": "#a95f84"
+    },
+    "motorola_razr_60": {
+      "gibraltar_sea": "#768eae",
+      "spring_bud": "#8ea281",
+      "lightest_sky": "#a5b2b6",
+      "parfait_pink": "#b28893"
+    },
+    "motorola_razr_60_ultra": {
+      "rio_red": "#cd8183",
+      "scarab": "#7f968d",
+      "mountain_trail": "#8d7455",
+      "cabot_cream": "#b0a67f"
+    },
+    "motorola_razr_2026": {
+      "violet_ice": "#ae9bae",
+      "hematite": "#616a71",
+      "bright_white": "#b3b4ad"
+    },
+    "motorola_razr_fold": {
+      "blackened_blue": "#6a7a88",
+      "lily_white": "#aeab9f"
+    },
+    "motorola_razr_plus_2026": {
+      "mountain_view": "#4e664a",
+      "cool_white": "#b2b2aa"
+    },
+    "motorola_razr_ultra_2026": {
+      "violet_indigo": "#9482cd",
+      "cocoa": "#7a604a",
+      "orient_blue": "#73a1b6"
+    },
+    "motorola_signature": {
+      "carbon": "#748090",
+      "martini_olive": "#6f7659"
+    },
+    "apple_iphone_11": {
+      "purple": "#a28fbe",
+      "green": "#7eb098",
+      "yellow": "#c8b14c",
+      "black": "#6f7177",
+      "white": "#bdbcb8",
+      "product_red": "#ff6572"
+    },
+    "apple_iphone_11_pro": {
+      "silver": "#b6b7ba",
+      "space_gray": "#84848a",
+      "gold": "#bea488",
+      "midnight_green": "#8f9d94"
+    },
+    "apple_iphone_11_pro_max": {
+      "silver": "#b6b7ba",
+      "space_gray": "#84848a",
+      "gold": "#bea488",
+      "midnight_green": "#8f9d94"
+    },
+    "apple_iphone_12": {
+      "black": "#6f7177",
+      "white": "#bdbcb8",
+      "product_red": "#f16677",
+      "green": "#93baaa",
+      "blue": "#6196c3",
+      "purple": "#a28fbe"
+    },
+    "apple_iphone_12_mini": {
+      "black": "#6f7177",
+      "white": "#bdbcb8",
+      "product_red": "#f16677",
+      "green": "#93baaa",
+      "blue": "#6196c3",
+      "purple": "#a28fbe"
+    },
+    "apple_iphone_12_pro": {
+      "silver": "#b6b7ba",
+      "graphite": "#8f8f95",
+      "gold": "#bea488",
+      "pacific_blue": "#7097ab"
+    },
+    "apple_iphone_12_pro_max": {
+      "silver": "#b6b7ba",
+      "graphite": "#8f8f95",
+      "gold": "#bea488",
+      "pacific_blue": "#7097ab"
+    },
+    "apple_iphone_13": {
+      "product_red": "#f16677",
+      "starlight": "#bab6aa",
+      "midnight": "#687385",
+      "blue": "#3e779a",
+      "pink": "#c598a4",
+      "green": "#709786"
+    },
+    "apple_iphone_13_mini": {
+      "product_red": "#f16677",
+      "starlight": "#bab6aa",
+      "midnight": "#687385",
+      "blue": "#3e779a",
+      "pink": "#c598a4",
+      "green": "#709786"
+    },
+    "apple_iphone_13_pro": {
+      "graphite": "#8f8f95",
+      "gold": "#bea488",
+      "silver": "#b6b7ba",
+      "sierra_blue": "#7795ae",
+      "alpine_green": "#4c6653"
+    },
+    "apple_iphone_13_pro_max": {
+      "graphite": "#8f8f95",
+      "gold": "#bea488",
+      "silver": "#b6b7ba",
+      "sierra_blue": "#7795ae",
+      "alpine_green": "#4c6653"
+    },
+    "apple_iphone_14": {
+      "midnight": "#687385",
+      "starlight": "#bab6aa",
+      "product_red": "#f16677",
+      "blue": "#7da0b7",
+      "purple": "#a28fbe",
+      "yellow": "#c8b14c"
+    },
+    "apple_iphone_14_plus": {
+      "midnight": "#687385",
+      "starlight": "#bab6aa",
+      "product_red": "#f16677",
+      "blue": "#7da0b7",
+      "purple": "#a28fbe",
+      "yellow": "#c8b14c"
+    },
+    "apple_iphone_14_pro": {
+      "silver": "#b6b7ba",
+      "gold": "#bea488",
+      "space_black": "#6c6d74",
+      "deep_purple": "#9288a6"
+    },
+    "apple_iphone_14_pro_max": {
+      "silver": "#b6b7ba",
+      "gold": "#bea488",
+      "space_black": "#6c6d74",
+      "deep_purple": "#9288a6"
+    },
+    "apple_iphone_15": {
+      "black": "#6f7177",
+      "blue": "#99aeb9",
+      "green": "#a2ae99",
+      "yellow": "#c2b589",
+      "pink": "#c49ea7"
+    },
+    "apple_iphone_15_plus": {
+      "black": "#6f7177",
+      "blue": "#99aeb9",
+      "green": "#a2ae99",
+      "yellow": "#c2b589",
+      "pink": "#c49ea7"
+    },
+    "apple_iphone_15_pro": {
+      "black_titanium": "#7b7d82",
+      "white_titanium": "#b7b4ae",
+      "blue_titanium": "#8092a9",
+      "natural_titanium": "#90887e"
+    },
+    "apple_iphone_15_pro_max": {
+      "black_titanium": "#7b7d82",
+      "white_titanium": "#b7b4ae",
+      "blue_titanium": "#8092a9",
+      "natural_titanium": "#90887e"
+    },
+    "apple_iphone_16": {
+      "black": "#6f7177",
+      "white": "#bdbcb8",
+      "pink": "#c598a4",
+      "teal": "#46968f",
+      "ultramarine": "#4d59c5"
+    },
+    "apple_iphone_16_plus": {
+      "black": "#6f7177",
+      "white": "#bdbcb8",
+      "pink": "#c598a4",
+      "teal": "#46968f",
+      "ultramarine": "#4d59c5"
+    },
+    "apple_iphone_16_pro": {
+      "black_titanium": "#7b7d82",
+      "white_titanium": "#b7b4ae",
+      "natural_titanium": "#90887e",
+      "desert_titanium": "#b0967e"
+    },
+    "apple_iphone_16_pro_max": {
+      "black_titanium": "#7b7d82",
+      "white_titanium": "#b7b4ae",
+      "natural_titanium": "#90887e",
+      "desert_titanium": "#b0967e"
+    },
+    "apple_iphone_16e": {
+      "black": "#6f7177",
+      "white": "#bdbcb8"
+    },
+    "apple_iphone_17": {
+      "black": "#6f7177",
+      "white": "#bdbcb8",
+      "mist_blue": "#899fb6",
+      "sage": "#9aaa76",
+      "lavender": "#ae9dc3"
+    },
+    "apple_iphone_17_pro": {
+      "silver": "#969698",
+      "cosmic_orange": "#ca875a",
+      "deep_blue": "#606d87"
+    },
+    "apple_iphone_17_pro_max": {
+      "silver": "#969698",
+      "cosmic_orange": "#ca875a",
+      "deep_blue": "#606d87"
+    },
+    "apple_iphone_17e": {
+      "black": "#6f7177",
+      "white": "#bdbcb8",
+      "soft_pink": "#c3a1ac"
+    },
+    "apple_iphone_18_pro": {
+      "black": "#6f7177",
+      "silver": "#b6b7ba",
+      "glacier": "#7f9eba",
+      "burgundy": "#ae7983"
+    },
+    "apple_iphone_18_pro_max": {
+      "black": "#6f7177",
+      "silver": "#b6b7ba",
+      "glacier": "#7f9eba",
+      "burgundy": "#ae7983"
+    },
+    "apple_iphone_air": {
+      "space_black": "#6c6d74",
+      "cloud_white": "#bdc0bd",
+      "light_gold": "#bab29d",
+      "sky_blue": "#8faec2"
+    },
+    "apple_iphone_duo": {
+      "night_sky": "#6e7887",
+      "star_white": "#b9bab5"
+    },
+    "apple_iphone_se_2020": {
+      "white": "#bdbcb8",
+      "black": "#6f7177",
+      "product_red": "#f16677"
+    },
+    "apple_iphone_se_2022": {
+      "product_red": "#49494a",
+      "starlight": "#777879",
+      "midnight": "#3d3d3f"
+    },
+    "apple_iphone_x": {
+      "silver": "#b6b7ba",
+      "space_gray": "#84848a"
+    },
+    "apple_iphone_xr": {
+      "black": "#6f7177",
+      "white": "#bdbcb8",
+      "blue": "#5695ba",
+      "yellow": "#c8b14c",
+      "coral": "#cc5a48",
+      "product_red": "#ff6572"
+    },
+    "apple_iphone_xs": {
+      "silver": "#b6b7ba",
+      "space_gray": "#84848a",
+      "gold": "#bea488"
+    },
+    "apple_iphone_xs_max": {
+      "silver": "#b6b7ba",
+      "space_gray": "#84848a",
+      "gold": "#bea488"
+    },
+    "generic_googlebook": {
+      "titanium_silver": "#a9adb1"
+    }
+  },
+  "notes": "Actual current SVG logo fills keyed by catalog model ID and variant color code. Prior reference fixes preserved. Remaining flat black/white marks use authorized restrained finish-tinted style defaults derived from retained body RGB: 55% luminance-gray mix, then 28% black for light backs or 32% white for dark backs. Existing nonflat tones retained. Physical placement may remain approximate. Missing/ambiguous marks omitted; see logo-audit.json. Monochrome variants retain intentional black/white.",
+  "changed": [
+    {
+      "model": "apple_iphone_se_2020",
+      "color": "white",
+      "fill": "#bdbcb8",
+      "path": "device_icons_svg/apple/phones/ic_apple_iphone_se_2020_white_icon.svg"
+    },
+    {
+      "model": "apple_iphone_se_2020",
+      "color": "black",
+      "fill": "#6f7177",
+      "path": "device_icons_svg/apple/phones/ic_apple_iphone_se_2020_black_icon.svg"
+    },
+    {
+      "model": "apple_iphone_se_2020",
+      "color": "product_red",
+      "fill": "#f16677",
+      "path": "device_icons_svg/apple/phones/ic_apple_iphone_se_2020_product_red_icon.svg"
+    },
+    {
+      "model": "apple_iphone_se_2022",
+      "color": "product_red",
+      "fill": "#49494a",
+      "path": "device_icons_svg/apple/phones/ic_apple_iphone_se_2022_product_red_icon.svg"
+    },
+    {
+      "model": "apple_iphone_se_2022",
+      "color": "starlight",
+      "fill": "#777879",
+      "path": "device_icons_svg/apple/phones/ic_apple_iphone_se_2022_starlight_icon.svg"
+    },
+    {
+      "model": "apple_iphone_se_2022",
+      "color": "midnight",
+      "fill": "#3d3d3f",
+      "path": "device_icons_svg/apple/phones/ic_apple_iphone_se_2022_midnight_icon.svg"
+    },
+    {
+      "model": "honor_200",
+      "color": "black",
+      "fill": "#777b7f",
+      "path": "device_icons_svg/honor/phones/ic_honor_200_black_icon.svg"
+    },
+    {
+      "model": "honor_200",
+      "color": "moonlight_white",
+      "fill": "#b4b5b2",
+      "path": "device_icons_svg/honor/phones/ic_honor_200_moonlight_white_icon.svg"
+    },
+    {
+      "model": "honor_200",
+      "color": "coral_pink",
+      "fill": "#b598a8",
+      "path": "device_icons_svg/honor/phones/ic_honor_200_coral_pink_icon.svg"
+    },
+    {
+      "model": "honor_200",
+      "color": "emerald_green",
+      "fill": "#7a9a99",
+      "path": "device_icons_svg/honor/phones/ic_honor_200_emerald_green_icon.svg"
+    },
+    {
+      "model": "honor_200_pro",
+      "color": "black",
+      "fill": "#757a7d",
+      "path": "device_icons_svg/honor/phones/ic_honor_200_pro_black_icon.svg"
+    },
+    {
+      "model": "honor_200_pro",
+      "color": "moonlight_white",
+      "fill": "#b3b5af",
+      "path": "device_icons_svg/honor/phones/ic_honor_200_pro_moonlight_white_icon.svg"
+    },
+    {
+      "model": "honor_200_pro",
+      "color": "ocean_cyan",
+      "fill": "#7ea49d",
+      "path": "device_icons_svg/honor/phones/ic_honor_200_pro_ocean_cyan_icon.svg"
+    },
+    {
+      "model": "honor_magic5_pro",
+      "color": "black",
+      "fill": "#777b80",
+      "path": "device_icons_svg/honor/phones/ic_honor_magic5_pro_black_icon.svg"
+    },
+    {
+      "model": "honor_magic5_pro",
+      "color": "meadow_green",
+      "fill": "#6f9181",
+      "path": "device_icons_svg/honor/phones/ic_honor_magic5_pro_meadow_green_icon.svg"
+    },
+    {
+      "model": "honor_magic5_pro",
+      "color": "purple",
+      "fill": "#917f9c",
+      "path": "device_icons_svg/honor/phones/ic_honor_magic5_pro_purple_icon.svg"
+    },
+    {
+      "model": "honor_magic6_pro",
+      "color": "black",
+      "fill": "#787d7d",
+      "path": "device_icons_svg/honor/phones/ic_honor_magic6_pro_black_icon.svg"
+    },
+    {
+      "model": "honor_magic6_pro",
+      "color": "epi_green",
+      "fill": "#869a85",
+      "path": "device_icons_svg/honor/phones/ic_honor_magic6_pro_epi_green_icon.svg"
+    },
+    {
+      "model": "oneplus_13",
+      "color": "midnight_ocean",
+      "fill": "#6b7da6",
+      "path": "device_icons_svg/oneplus/phones/ic_oneplus_13_midnight_ocean_icon.svg"
+    },
+    {
+      "model": "galaxy_s25",
+      "color": "icyblue",
+      "fill": "#b6c9e3",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s25_icyblue_icon.svg"
+    },
+    {
+      "model": "galaxy_s25",
+      "color": "mint",
+      "fill": "#a8bcb3",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s25_mint_icon.svg"
+    },
+    {
+      "model": "galaxy_s25",
+      "color": "navy",
+      "fill": "#687b9d",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s25_navy_icon.svg"
+    },
+    {
+      "model": "galaxy_s25",
+      "color": "silver_shadow",
+      "fill": "#a2a5af",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s25_silver_shadow_icon.svg"
+    },
+    {
+      "model": "galaxy_s25_ultra",
+      "color": "titanium_silverblue",
+      "fill": "#858b9a",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s25_ultra_titanium_silverblue_icon.svg"
+    },
+    {
+      "model": "galaxy_s25_ultra",
+      "color": "titanium_black",
+      "fill": "#181c25",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s25_ultra_titanium_black_icon.svg"
+    },
+    {
+      "model": "galaxy_s25_ultra",
+      "color": "titanium_gray",
+      "fill": "#878580",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s25_ultra_titanium_gray_icon.svg"
+    },
+    {
+      "model": "galaxy_s25_ultra",
+      "color": "titanium_whitesilver",
+      "fill": "#d8dfe0",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s25_ultra_titanium_whitesilver_icon.svg"
+    },
+    {
+      "model": "pixel_6",
+      "color": "kinda_coral",
+      "fill": "#d3a697",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_6_kinda_coral_icon.svg"
+    },
+    {
+      "model": "pixel_6_pro",
+      "color": "sorta_sunny",
+      "fill": "#9b7c50",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_6_pro_sorta_sunny_icon.svg"
+    },
+    {
+      "model": "pixel_6_a",
+      "color": "charcoal",
+      "fill": "#202527",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_6_a_charcoal_icon.svg"
+    },
+    {
+      "model": "pixel_6_a",
+      "color": "chalk",
+      "fill": "#c7ccc9",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_6_a_chalk_icon.svg"
+    },
+    {
+      "model": "pixel_6_a",
+      "color": "sage",
+      "fill": "#829c8f",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_6_a_sage_icon.svg"
+    },
+    {
+      "model": "pixel_5",
+      "color": "just_black",
+      "fill": "#555858",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_5_just_black_icon.svg"
+    },
+    {
+      "model": "pixel_5",
+      "color": "default",
+      "fill": "#555858",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_5_icon.svg"
+    },
+    {
+      "model": "pixel_10_a",
+      "color": "beg",
+      "fill": "#a3a29e",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_10_a_beg_icon.svg"
+    },
+    {
+      "model": "pixel_10_a",
+      "color": "blk",
+      "fill": "#8d8e8e",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_10_a_blk_icon.svg"
+    },
+    {
+      "model": "pixel_10_a",
+      "color": "pnk",
+      "fill": "#846069",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_10_a_pnk_icon.svg"
+    },
+    {
+      "model": "pixel_10_a",
+      "color": "ppl",
+      "fill": "#7d8295",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_10_a_ppl_icon.svg"
+    },
+    {
+      "model": "pixel_10",
+      "color": "beg",
+      "fill": "#a3a29e",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_10_beg_icon.svg"
+    },
+    {
+      "model": "pixel_10",
+      "color": "blk",
+      "fill": "#8d8e8e",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_10_blk_icon.svg"
+    },
+    {
+      "model": "pixel_10",
+      "color": "blue",
+      "fill": "#8fa9cf",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_10_blue_icon.svg"
+    },
+    {
+      "model": "pixel_10_fold",
+      "color": "beg",
+      "fill": "#a3a29e",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_10_fold_beg_icon.svg"
+    },
+    {
+      "model": "pixel_10_fold",
+      "color": "blk",
+      "fill": "#878989",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_10_fold_blk_icon.svg"
+    },
+    {
+      "model": "pixel_10_fold",
+      "color": "default",
+      "fill": "#8fa9cf",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_10_fold_icon.svg"
+    },
+    {
+      "model": "pixel_10",
+      "color": "grn",
+      "fill": "#959c92",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_10_grn_icon.svg"
+    },
+    {
+      "model": "pixel_10",
+      "color": "gry",
+      "fill": "#707271",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_10_gry_icon.svg"
+    },
+    {
+      "model": "pixel_10",
+      "color": "pnk",
+      "fill": "#846069",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_10_pnk_icon.svg"
+    },
+    {
+      "model": "pixel_10_pro",
+      "color": "beg",
+      "fill": "#a3a29e",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_10_pro_beg_icon.svg"
+    },
+    {
+      "model": "pixel_10_pro",
+      "color": "blk",
+      "fill": "#8d8e8e",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_10_pro_blk_icon.svg"
+    },
+    {
+      "model": "pixel_10_pro",
+      "color": "blue",
+      "fill": "#8fa9cf",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_10_pro_blue_icon.svg"
+    },
+    {
+      "model": "pixel_10_pro",
+      "color": "grn",
+      "fill": "#959c92",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_10_pro_grn_icon.svg"
+    },
+    {
+      "model": "pixel_10_pro",
+      "color": "gry",
+      "fill": "#707271",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_10_pro_gry_icon.svg"
+    },
+    {
+      "model": "pixel_10_pro",
+      "color": "pnk",
+      "fill": "#846069",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_10_pro_pnk_icon.svg"
+    },
+    {
+      "model": "pixel_10_pro_xl",
+      "color": "beg",
+      "fill": "#a3a29e",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_10_pro_xl_beg_icon.svg"
+    },
+    {
+      "model": "pixel_10_pro_xl",
+      "color": "blk",
+      "fill": "#8d8e8e",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_10_pro_xl_blk_icon.svg"
+    },
+    {
+      "model": "pixel_10_pro_xl",
+      "color": "blue",
+      "fill": "#8fa9cf",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_10_pro_xl_blue_icon.svg"
+    },
+    {
+      "model": "pixel_10_pro_xl",
+      "color": "grn",
+      "fill": "#959c92",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_10_pro_xl_grn_icon.svg"
+    },
+    {
+      "model": "pixel_10_pro_xl",
+      "color": "gry",
+      "fill": "#707271",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_10_pro_xl_gry_icon.svg"
+    },
+    {
+      "model": "pixel_10_pro_xl",
+      "color": "pnk",
+      "fill": "#846069",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_10_pro_xl_pnk_icon.svg"
+    },
+    {
+      "model": "pixel_11",
+      "color": "beg",
+      "fill": "#876d69",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_11_beg_icon.svg"
+    },
+    {
+      "model": "pixel_11",
+      "color": "blk",
+      "fill": "#8d8e8e",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_11_blk_icon.svg"
+    },
+    {
+      "model": "pixel_11",
+      "color": "blue",
+      "fill": "#8fa9cf",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_11_blue_icon.svg"
+    },
+    {
+      "model": "pixel_11_fold",
+      "color": "blk",
+      "fill": "#7f8083",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_11_fold_blk_icon.svg"
+    },
+    {
+      "model": "pixel_11_fold",
+      "color": "blue",
+      "fill": "#8fa9cf",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_11_fold_blue_icon.svg"
+    },
+    {
+      "model": "pixel_11_fold",
+      "color": "gry",
+      "fill": "#676860",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_11_fold_gry_icon.svg"
+    },
+    {
+      "model": "pixel_11",
+      "color": "grn",
+      "fill": "#898879",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_11_grn_icon.svg"
+    },
+    {
+      "model": "pixel_11",
+      "color": "gry",
+      "fill": "#676860",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_11_gry_icon.svg"
+    },
+    {
+      "model": "pixel_11",
+      "color": "pnk",
+      "fill": "#c296aa",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_11_pnk_icon.svg"
+    },
+    {
+      "model": "pixel_11",
+      "color": "ppl",
+      "fill": "#9ea1a9",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_11_ppl_icon.svg"
+    },
+    {
+      "model": "pixel_11_pro",
+      "color": "beg",
+      "fill": "#876d69",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_11_pro_beg_icon.svg"
+    },
+    {
+      "model": "pixel_11_pro",
+      "color": "blk",
+      "fill": "#8d8e8e",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_11_pro_blk_icon.svg"
+    },
+    {
+      "model": "pixel_11_pro",
+      "color": "blue",
+      "fill": "#8fa9cf",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_11_pro_blue_icon.svg"
+    },
+    {
+      "model": "pixel_11_pro",
+      "color": "grn",
+      "fill": "#898879",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_11_pro_grn_icon.svg"
+    },
+    {
+      "model": "pixel_11_pro",
+      "color": "gry",
+      "fill": "#676860",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_11_pro_gry_icon.svg"
+    },
+    {
+      "model": "pixel_11_pro",
+      "color": "pnk",
+      "fill": "#c296aa",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_11_pro_pnk_icon.svg"
+    },
+    {
+      "model": "pixel_11_pro",
+      "color": "ppl",
+      "fill": "#9ea1a9",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_11_pro_ppl_icon.svg"
+    },
+    {
+      "model": "pixel_11_pro",
+      "color": "slv",
+      "fill": "#929593",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_11_pro_slv_icon.svg"
+    },
+    {
+      "model": "pixel_11_pro_xl",
+      "color": "beg",
+      "fill": "#876d69",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_11_pro_xl_beg_icon.svg"
+    },
+    {
+      "model": "pixel_11_pro_xl",
+      "color": "blk",
+      "fill": "#8d8e8e",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_11_pro_xl_blk_icon.svg"
+    },
+    {
+      "model": "pixel_11_pro_xl",
+      "color": "blue",
+      "fill": "#8fa9cf",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_11_pro_xl_blue_icon.svg"
+    },
+    {
+      "model": "pixel_11_pro_xl",
+      "color": "grn",
+      "fill": "#898879",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_11_pro_xl_grn_icon.svg"
+    },
+    {
+      "model": "pixel_11_pro_xl",
+      "color": "gry",
+      "fill": "#676860",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_11_pro_xl_gry_icon.svg"
+    },
+    {
+      "model": "pixel_11_pro_xl",
+      "color": "pnk",
+      "fill": "#c296aa",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_11_pro_xl_pnk_icon.svg"
+    },
+    {
+      "model": "pixel_11_pro_xl",
+      "color": "ppl",
+      "fill": "#9ea1a9",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_11_pro_xl_ppl_icon.svg"
+    },
+    {
+      "model": "pixel_11_pro_xl",
+      "color": "slv",
+      "fill": "#929593",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_11_pro_xl_slv_icon.svg"
+    },
+    {
+      "model": "pixel_11",
+      "color": "slv",
+      "fill": "#929593",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_11_slv_icon.svg"
+    },
+    {
+      "model": "pixel_4_a_5g",
+      "color": "clearly_white",
+      "fill": "#898986",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_4_a_5g_clearly_white_icon.svg"
+    },
+    {
+      "model": "pixel_4_a_5g",
+      "color": "default",
+      "fill": "#6b6b6c",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_4_a_5g_icon.svg"
+    },
+    {
+      "model": "pixel_4_a_5g",
+      "color": "just_black",
+      "fill": "#6b6b6c",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_4_a_5g_just_black_icon.svg"
+    },
+    {
+      "model": "pixel_4_a_5g",
+      "color": "default",
+      "fill": "#000000",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_4_a_5g_monochrome_icon.svg"
+    },
+    {
+      "model": "pixel_4_a",
+      "color": "barely_blue",
+      "fill": "#7a848e",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_4_a_barely_blue_icon.svg"
+    },
+    {
+      "model": "pixel_4_a",
+      "color": "default",
+      "fill": "#6b6b6c",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_4_a_icon.svg"
+    },
+    {
+      "model": "pixel_4_a",
+      "color": "just_black",
+      "fill": "#6b6b6c",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_4_a_just_black_icon.svg"
+    },
+    {
+      "model": "pixel_4_a",
+      "color": "default",
+      "fill": "#000000",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_4_a_monochrome_icon.svg"
+    },
+    {
+      "model": "pixel_4",
+      "color": "clearly_white",
+      "fill": "#8f8f8c",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_4_clearly_white_icon.svg"
+    },
+    {
+      "model": "pixel_4",
+      "color": "default",
+      "fill": "#626363",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_4_icon.svg"
+    },
+    {
+      "model": "pixel_4",
+      "color": "just_black",
+      "fill": "#626363",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_4_just_black_icon.svg"
+    },
+    {
+      "model": "pixel_4",
+      "color": "default",
+      "fill": "#000000",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_4_monochrome_icon.svg"
+    },
+    {
+      "model": "pixel_4",
+      "color": "oh_so_orange",
+      "fill": "#926150",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_4_oh_so_orange_icon.svg"
+    },
+    {
+      "model": "pixel_4_xl",
+      "color": "clearly_white",
+      "fill": "#8f8f8c",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_4_xl_clearly_white_icon.svg"
+    },
+    {
+      "model": "pixel_4_xl",
+      "color": "default",
+      "fill": "#626363",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_4_xl_icon.svg"
+    },
+    {
+      "model": "pixel_4_xl",
+      "color": "just_black",
+      "fill": "#626363",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_4_xl_just_black_icon.svg"
+    },
+    {
+      "model": "pixel_4_xl",
+      "color": "default",
+      "fill": "#000000",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_4_xl_monochrome_icon.svg"
+    },
+    {
+      "model": "pixel_4_xl",
+      "color": "oh_so_orange",
+      "fill": "#926150",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_4_xl_oh_so_orange_icon.svg"
+    },
+    {
+      "model": "pixel_5_a",
+      "color": "default",
+      "fill": "#727875",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_5_a_icon.svg"
+    },
+    {
+      "model": "pixel_5_a",
+      "color": "default",
+      "fill": "#000000",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_5_a_monochrome_icon.svg"
+    },
+    {
+      "model": "pixel_5_a",
+      "color": "mostly_black",
+      "fill": "#727875",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_5_a_mostly_black_icon.svg"
+    },
+    {
+      "model": "pixel_5",
+      "color": "default",
+      "fill": "#000000",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_5_monochrome_icon.svg"
+    },
+    {
+      "model": "pixel_5",
+      "color": "sorta_sage",
+      "fill": "#7f8481",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_5_sorta_sage_icon.svg"
+    },
+    {
+      "model": "pixel_7_a",
+      "color": "charcoal",
+      "fill": "#828483",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_7_a_charcoal_icon.svg"
+    },
+    {
+      "model": "pixel_7_a",
+      "color": "default",
+      "fill": "#8fa9cf",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_7_a_icon.svg"
+    },
+    {
+      "model": "pixel_7_a",
+      "color": "sea",
+      "fill": "#848f97",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_7_a_sea_icon.svg"
+    },
+    {
+      "model": "pixel_7",
+      "color": "default",
+      "fill": "#8fa9cf",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_7_icon.svg"
+    },
+    {
+      "model": "pixel_7",
+      "color": "obsidian",
+      "fill": "#76787a",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_7_obsidian_icon.svg"
+    },
+    {
+      "model": "pixel_7_pro",
+      "color": "hazel",
+      "fill": "#757875",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_7_pro_hazel_icon.svg"
+    },
+    {
+      "model": "pixel_7_pro",
+      "color": "default",
+      "fill": "#8fa9cf",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_7_pro_icon.svg"
+    },
+    {
+      "model": "pixel_7_pro",
+      "color": "obsidian",
+      "fill": "#76787a",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_7_pro_obsidian_icon.svg"
+    },
+    {
+      "model": "pixel_8_a",
+      "color": "aloe",
+      "fill": "#959c92",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_8_a_aloe_icon.svg"
+    },
+    {
+      "model": "pixel_8_a",
+      "color": "bay",
+      "fill": "#7d8a9c",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_8_a_bay_icon.svg"
+    },
+    {
+      "model": "pixel_8_a",
+      "color": "obsidian",
+      "fill": "#8d8e8e",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_8_a_obsidian_icon.svg"
+    },
+    {
+      "model": "pixel_8_a",
+      "color": "porcelain",
+      "fill": "#a3a29e",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_8_a_porcelain_icon.svg"
+    },
+    {
+      "model": "pixel_8",
+      "color": "hazel",
+      "fill": "#757875",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_8_hazel_icon.svg"
+    },
+    {
+      "model": "pixel_8",
+      "color": "default",
+      "fill": "#8fa9cf",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_8_icon.svg"
+    },
+    {
+      "model": "pixel_8",
+      "color": "obsidian",
+      "fill": "#76787a",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_8_obsidian_icon.svg"
+    },
+    {
+      "model": "pixel_8_pro",
+      "color": "beg",
+      "fill": "#a3a29e",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_8_pro_beg_icon.svg"
+    },
+    {
+      "model": "pixel_8_pro",
+      "color": "blk",
+      "fill": "#8d8e8e",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_8_pro_blk_icon.svg"
+    },
+    {
+      "model": "pixel_8_pro",
+      "color": "blu",
+      "fill": "#7d8a9c",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_8_pro_blu_icon.svg"
+    },
+    {
+      "model": "pixel_8_pro",
+      "color": "blue",
+      "fill": "#8fa9cf",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_8_pro_blue_icon.svg"
+    },
+    {
+      "model": "pixel_8_pro",
+      "color": "grn",
+      "fill": "#99a2a1",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_8_pro_grn_icon.svg"
+    },
+    {
+      "model": "pixel_9_a",
+      "color": "beg",
+      "fill": "#a3a29e",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_9_a_beg_icon.svg"
+    },
+    {
+      "model": "pixel_9_a",
+      "color": "blk",
+      "fill": "#8d8e8e",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_9_a_blk_icon.svg"
+    },
+    {
+      "model": "pixel_9_a",
+      "color": "blue",
+      "fill": "#8fa9cf",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_9_a_blue_icon.svg"
+    },
+    {
+      "model": "pixel_9_a",
+      "color": "pnk",
+      "fill": "#846069",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_9_a_pnk_icon.svg"
+    },
+    {
+      "model": "pixel_9_a",
+      "color": "ppl",
+      "fill": "#7d8295",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_9_a_ppl_icon.svg"
+    },
+    {
+      "model": "pixel_9",
+      "color": "beg",
+      "fill": "#a3a29e",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_9_beg_icon.svg"
+    },
+    {
+      "model": "pixel_9",
+      "color": "blk",
+      "fill": "#8d8e8e",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_9_blk_icon.svg"
+    },
+    {
+      "model": "pixel_9",
+      "color": "blue",
+      "fill": "#8fa9cf",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_9_blue_icon.svg"
+    },
+    {
+      "model": "pixel_9_fold",
+      "color": "beg",
+      "fill": "#a3a29e",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_9_fold_beg_icon.svg"
+    },
+    {
+      "model": "pixel_9_fold",
+      "color": "blk",
+      "fill": "#878989",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_9_fold_blk_icon.svg"
+    },
+    {
+      "model": "pixel_9_fold",
+      "color": "blue",
+      "fill": "#8fa9cf",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_9_fold_blue_icon.svg"
+    },
+    {
+      "model": "pixel_9",
+      "color": "grn",
+      "fill": "#959c92",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_9_grn_icon.svg"
+    },
+    {
+      "model": "pixel_9",
+      "color": "gry",
+      "fill": "#707271",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_9_gry_icon.svg"
+    },
+    {
+      "model": "pixel_9",
+      "color": "pnk",
+      "fill": "#846069",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_9_pnk_icon.svg"
+    },
+    {
+      "model": "pixel_9_pro",
+      "color": "beg",
+      "fill": "#a3a29e",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_9_pro_beg_icon.svg"
+    },
+    {
+      "model": "pixel_9_pro",
+      "color": "blk",
+      "fill": "#8d8e8e",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_9_pro_blk_icon.svg"
+    },
+    {
+      "model": "pixel_9_pro",
+      "color": "blue",
+      "fill": "#8fa9cf",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_9_pro_blue_icon.svg"
+    },
+    {
+      "model": "pixel_9_pro",
+      "color": "grn",
+      "fill": "#959c92",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_9_pro_grn_icon.svg"
+    },
+    {
+      "model": "pixel_9_pro",
+      "color": "gry",
+      "fill": "#707271",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_9_pro_gry_icon.svg"
+    },
+    {
+      "model": "pixel_9_pro",
+      "color": "pnk",
+      "fill": "#846069",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_9_pro_pnk_icon.svg"
+    },
+    {
+      "model": "pixel_9_pro_xl",
+      "color": "beg",
+      "fill": "#a3a29e",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_9_pro_xl_beg_icon.svg"
+    },
+    {
+      "model": "pixel_9_pro_xl",
+      "color": "blk",
+      "fill": "#8d8e8e",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_9_pro_xl_blk_icon.svg"
+    },
+    {
+      "model": "pixel_9_pro_xl",
+      "color": "blue",
+      "fill": "#8fa9cf",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_9_pro_xl_blue_icon.svg"
+    },
+    {
+      "model": "pixel_9_pro_xl",
+      "color": "grn",
+      "fill": "#959c92",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_9_pro_xl_grn_icon.svg"
+    },
+    {
+      "model": "pixel_9_pro_xl",
+      "color": "gry",
+      "fill": "#707271",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_9_pro_xl_gry_icon.svg"
+    },
+    {
+      "model": "pixel_9_pro_xl",
+      "color": "pnk",
+      "fill": "#846069",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_9_pro_xl_pnk_icon.svg"
+    },
+    {
+      "model": "pixel_fold",
+      "color": "default",
+      "fill": "#8fa9cf",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_fold_icon.svg"
+    },
+    {
+      "model": "pixel_fold",
+      "color": "obsidian",
+      "fill": "#76787a",
+      "path": "device_icons_svg/pixel/phones/ic_pixel_fold_obsidian_icon.svg"
+    },
+    {
+      "model": "pixel_tablet",
+      "color": "default",
+      "fill": "#8fa9cf",
+      "path": "device_icons_svg/pixel/tablets/ic_pixel_tablet_icon.svg"
+    },
+    {
+      "model": "galaxy_a34",
+      "color": "awesome_graphite",
+      "fill": "#6c6c6e",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_a34_awesome_graphite_icon.svg"
+    },
+    {
+      "model": "galaxy_a34",
+      "color": "awesome_lime",
+      "fill": "#a5aa8f",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_a34_awesome_lime_icon.svg"
+    },
+    {
+      "model": "galaxy_a34",
+      "color": "awesome_silver",
+      "fill": "#a5a29e",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_a34_awesome_silver_icon.svg"
+    },
+    {
+      "model": "galaxy_a34",
+      "color": "awesome_violet",
+      "fill": "#72738e",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_a34_awesome_violet_icon.svg"
+    },
+    {
+      "model": "galaxy_a35",
+      "color": "awesome_iceblue",
+      "fill": "#a3a6ab",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_a35_awesome_iceblue_icon.svg"
+    },
+    {
+      "model": "galaxy_a35",
+      "color": "awesome_lemon",
+      "fill": "#b1ad96",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_a35_awesome_lemon_icon.svg"
+    },
+    {
+      "model": "galaxy_a35",
+      "color": "awesome_lilac",
+      "fill": "#a49ca3",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_a35_awesome_lilac_icon.svg"
+    },
+    {
+      "model": "galaxy_a35",
+      "color": "awesome_navy",
+      "fill": "#696a6f",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_a35_awesome_navy_icon.svg"
+    },
+    {
+      "model": "galaxy_a36",
+      "color": "awesome_black",
+      "fill": "#727272",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_a36_awesome_black_icon.svg"
+    },
+    {
+      "model": "galaxy_a36",
+      "color": "awesome_lavender",
+      "fill": "#8e9198",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_a36_awesome_lavender_icon.svg"
+    },
+    {
+      "model": "galaxy_a36",
+      "color": "awesome_lime",
+      "fill": "#9ea19d",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_a36_awesome_lime_icon.svg"
+    },
+    {
+      "model": "galaxy_a36",
+      "color": "awesome_white",
+      "fill": "#a6a6a7",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_a36_awesome_white_icon.svg"
+    },
+    {
+      "model": "galaxy_a37",
+      "color": "charcoal",
+      "fill": "#757576",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_a37_charcoal_icon.svg"
+    },
+    {
+      "model": "galaxy_a37",
+      "color": "graygreen",
+      "fill": "#72777a",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_a37_graygreen_icon.svg"
+    },
+    {
+      "model": "galaxy_a37",
+      "color": "light_violet",
+      "fill": "#87828c",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_a37_light_violet_icon.svg"
+    },
+    {
+      "model": "galaxy_a37",
+      "color": "white",
+      "fill": "#a8a8a9",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_a37_white_icon.svg"
+    },
+    {
+      "model": "galaxy_a54",
+      "color": "awesome_graphite",
+      "fill": "#7a7a7a",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_a54_awesome_graphite_icon.svg"
+    },
+    {
+      "model": "galaxy_a54",
+      "color": "awesome_lime",
+      "fill": "#a6ac9a",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_a54_awesome_lime_icon.svg"
+    },
+    {
+      "model": "galaxy_a54",
+      "color": "awesome_violet",
+      "fill": "#76788f",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_a54_awesome_violet_icon.svg"
+    },
+    {
+      "model": "galaxy_a54",
+      "color": "awesome_white",
+      "fill": "#b5b5b4",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_a54_awesome_white_icon.svg"
+    },
+    {
+      "model": "galaxy_a55",
+      "color": "awesome_iceblue",
+      "fill": "#a4a7ab",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_a55_awesome_iceblue_icon.svg"
+    },
+    {
+      "model": "galaxy_a55",
+      "color": "awesome_lemon",
+      "fill": "#b2ae95",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_a55_awesome_lemon_icon.svg"
+    },
+    {
+      "model": "galaxy_a55",
+      "color": "awesome_lilac",
+      "fill": "#a399a3",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_a55_awesome_lilac_icon.svg"
+    },
+    {
+      "model": "galaxy_a55",
+      "color": "awesome_navy",
+      "fill": "#66676b",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_a55_awesome_navy_icon.svg"
+    },
+    {
+      "model": "galaxy_a56",
+      "color": "awesome_graphite",
+      "fill": "#818383",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_a56_awesome_graphite_icon.svg"
+    },
+    {
+      "model": "galaxy_a56",
+      "color": "awesome_lightgray",
+      "fill": "#8f8f90",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_a56_awesome_lightgray_icon.svg"
+    },
+    {
+      "model": "galaxy_a56",
+      "color": "awesome_olive",
+      "fill": "#757a75",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_a56_awesome_olive_icon.svg"
+    },
+    {
+      "model": "galaxy_a56",
+      "color": "awesome_pink",
+      "fill": "#a6a0a3",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_a56_awesome_pink_icon.svg"
+    },
+    {
+      "model": "galaxy_a57",
+      "color": "gray",
+      "fill": "#8b8a8d",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_a57_gray_icon.svg"
+    },
+    {
+      "model": "galaxy_a57",
+      "color": "icyblue",
+      "fill": "#969a9e",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_a57_icyblue_icon.svg"
+    },
+    {
+      "model": "galaxy_a57",
+      "color": "lilac",
+      "fill": "#726e7d",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_a57_lilac_icon.svg"
+    },
+    {
+      "model": "galaxy_a57",
+      "color": "navy",
+      "fill": "#636368",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_a57_navy_icon.svg"
+    },
+    {
+      "model": "galaxy_s10_5g",
+      "color": "crown_silver",
+      "fill": "#878a92",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s10_5g_crown_silver_icon.svg"
+    },
+    {
+      "model": "galaxy_s10_5g",
+      "color": "majestic_black",
+      "fill": "#76777a",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s10_5g_majestic_black_icon.svg"
+    },
+    {
+      "model": "galaxy_s10_5g",
+      "color": "royal_gold",
+      "fill": "#897f6f",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s10_5g_royal_gold_icon.svg"
+    },
+    {
+      "model": "galaxy_s10",
+      "color": "flamingo_pink",
+      "fill": "#977775",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s10_flamingo_pink_icon.svg"
+    },
+    {
+      "model": "galaxy_s10_lite",
+      "color": "prism_black",
+      "fill": "#707377",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s10_lite_prism_black_icon.svg"
+    },
+    {
+      "model": "galaxy_s10_lite",
+      "color": "prism_blue",
+      "fill": "#788fb4",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s10_lite_prism_blue_icon.svg"
+    },
+    {
+      "model": "galaxy_s10_lite",
+      "color": "prism_white",
+      "fill": "#a4a6a8",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s10_lite_prism_white_icon.svg"
+    },
+    {
+      "model": "galaxy_s10_plus",
+      "color": "ceramic_black",
+      "fill": "#6b6b6b",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s10_plus_ceramic_black_icon.svg"
+    },
+    {
+      "model": "galaxy_s10_plus",
+      "color": "ceramic_white",
+      "fill": "#aaa8a3",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s10_plus_ceramic_white_icon.svg"
+    },
+    {
+      "model": "galaxy_s10_plus",
+      "color": "flamingo_pink",
+      "fill": "#977775",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s10_plus_flamingo_pink_icon.svg"
+    },
+    {
+      "model": "galaxy_s10_plus",
+      "color": "prism_black",
+      "fill": "#747578",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s10_plus_prism_black_icon.svg"
+    },
+    {
+      "model": "galaxy_s10_plus",
+      "color": "prism_blue",
+      "fill": "#566d84",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s10_plus_prism_blue_icon.svg"
+    },
+    {
+      "model": "galaxy_s10_plus",
+      "color": "prism_green",
+      "fill": "#4d746e",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s10_plus_prism_green_icon.svg"
+    },
+    {
+      "model": "galaxy_s10_plus",
+      "color": "prism_white",
+      "fill": "#a5a6a7",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s10_plus_prism_white_icon.svg"
+    },
+    {
+      "model": "galaxy_s10",
+      "color": "prism_black",
+      "fill": "#747578",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s10_prism_black_icon.svg"
+    },
+    {
+      "model": "galaxy_s10",
+      "color": "prism_blue",
+      "fill": "#566d84",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s10_prism_blue_icon.svg"
+    },
+    {
+      "model": "galaxy_s10",
+      "color": "prism_green",
+      "fill": "#4d746e",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s10_prism_green_icon.svg"
+    },
+    {
+      "model": "galaxy_s10",
+      "color": "prism_white",
+      "fill": "#a5a6a7",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s10_prism_white_icon.svg"
+    },
+    {
+      "model": "galaxy_s10e",
+      "color": "canary_yellow",
+      "fill": "#a2945d",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s10e_canary_yellow_icon.svg"
+    },
+    {
+      "model": "galaxy_s10e",
+      "color": "flamingo_pink",
+      "fill": "#977775",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s10e_flamingo_pink_icon.svg"
+    },
+    {
+      "model": "galaxy_s10e",
+      "color": "prism_black",
+      "fill": "#747578",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s10e_prism_black_icon.svg"
+    },
+    {
+      "model": "galaxy_s10e",
+      "color": "prism_blue",
+      "fill": "#566d84",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s10e_prism_blue_icon.svg"
+    },
+    {
+      "model": "galaxy_s10e",
+      "color": "prism_green",
+      "fill": "#4d746e",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s10e_prism_green_icon.svg"
+    },
+    {
+      "model": "galaxy_s10e",
+      "color": "prism_white",
+      "fill": "#a5a6a7",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s10e_prism_white_icon.svg"
+    },
+    {
+      "model": "galaxy_s20",
+      "color": "cloud_blue",
+      "fill": "#87949a",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s20_cloud_blue_icon.svg"
+    },
+    {
+      "model": "galaxy_s20",
+      "color": "cloud_pink",
+      "fill": "#9f9095",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s20_cloud_pink_icon.svg"
+    },
+    {
+      "model": "galaxy_s20",
+      "color": "cosmic_gray",
+      "fill": "#5d5e62",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s20_cosmic_gray_icon.svg"
+    },
+    {
+      "model": "galaxy_s20_fe",
+      "color": "cloud_lavender",
+      "fill": "#848290",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s20_fe_cloud_lavender_icon.svg"
+    },
+    {
+      "model": "galaxy_s20_fe",
+      "color": "cloud_mint",
+      "fill": "#80928e",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s20_fe_cloud_mint_icon.svg"
+    },
+    {
+      "model": "galaxy_s20_fe",
+      "color": "cloud_navy",
+      "fill": "#82858f",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s20_fe_cloud_navy_icon.svg"
+    },
+    {
+      "model": "galaxy_s20_fe",
+      "color": "cloud_orange",
+      "fill": "#977a67",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s20_fe_cloud_orange_icon.svg"
+    },
+    {
+      "model": "galaxy_s20_fe",
+      "color": "cloud_red",
+      "fill": "#b18389",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s20_fe_cloud_red_icon.svg"
+    },
+    {
+      "model": "galaxy_s20_fe",
+      "color": "cloud_white",
+      "fill": "#ababab",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s20_fe_cloud_white_icon.svg"
+    },
+    {
+      "model": "galaxy_s20_plus",
+      "color": "cloud_blue",
+      "fill": "#87949a",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s20_plus_cloud_blue_icon.svg"
+    },
+    {
+      "model": "galaxy_s20_plus",
+      "color": "cosmic_black",
+      "fill": "#6d6e71",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s20_plus_cosmic_black_icon.svg"
+    },
+    {
+      "model": "galaxy_s20_plus",
+      "color": "cosmic_gray",
+      "fill": "#5d5e62",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s20_plus_cosmic_gray_icon.svg"
+    },
+    {
+      "model": "galaxy_s20_ultra",
+      "color": "cosmic_black",
+      "fill": "#6d6e71",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s20_ultra_cosmic_black_icon.svg"
+    },
+    {
+      "model": "galaxy_s20_ultra",
+      "color": "cosmic_gray",
+      "fill": "#5d5e62",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s20_ultra_cosmic_gray_icon.svg"
+    },
+    {
+      "model": "galaxy_s21_fe",
+      "color": "graphite",
+      "fill": "#777779",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s21_fe_graphite_icon.svg"
+    },
+    {
+      "model": "galaxy_s21_fe",
+      "color": "lavender",
+      "fill": "#8c878f",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s21_fe_lavender_icon.svg"
+    },
+    {
+      "model": "galaxy_s21_fe",
+      "color": "olive",
+      "fill": "#818277",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s21_fe_olive_icon.svg"
+    },
+    {
+      "model": "galaxy_s21_fe",
+      "color": "white",
+      "fill": "#aeaeae",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s21_fe_white_icon.svg"
+    },
+    {
+      "model": "galaxy_s21",
+      "color": "phantom_gray",
+      "fill": "#6b6b6b",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s21_phantom_gray_icon.svg"
+    },
+    {
+      "model": "galaxy_s21",
+      "color": "phantom_pink",
+      "fill": "#ab9d9a",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s21_phantom_pink_icon.svg"
+    },
+    {
+      "model": "galaxy_s21",
+      "color": "phantom_violet",
+      "fill": "#70717d",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s21_phantom_violet_icon.svg"
+    },
+    {
+      "model": "galaxy_s21",
+      "color": "phantom_white",
+      "fill": "#b0b0b0",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s21_phantom_white_icon.svg"
+    },
+    {
+      "model": "galaxy_s21_plus",
+      "color": "phantom_black",
+      "fill": "#686868",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s21_plus_phantom_black_icon.svg"
+    },
+    {
+      "model": "galaxy_s21_plus",
+      "color": "phantom_gold",
+      "fill": "#887671",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s21_plus_phantom_gold_icon.svg"
+    },
+    {
+      "model": "galaxy_s21_plus",
+      "color": "phantom_pink",
+      "fill": "#a1908d",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s21_plus_phantom_pink_icon.svg"
+    },
+    {
+      "model": "galaxy_s21_plus",
+      "color": "phantom_red",
+      "fill": "#b07478",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s21_plus_phantom_red_icon.svg"
+    },
+    {
+      "model": "galaxy_s21_plus",
+      "color": "phantom_silver",
+      "fill": "#919699",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s21_plus_phantom_silver_icon.svg"
+    },
+    {
+      "model": "galaxy_s21_plus",
+      "color": "phantom_violet",
+      "fill": "#6f6f7d",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s21_plus_phantom_violet_icon.svg"
+    },
+    {
+      "model": "galaxy_s21_ultra",
+      "color": "phantom_black",
+      "fill": "#626262",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s21_ultra_phantom_black_icon.svg"
+    },
+    {
+      "model": "galaxy_s21_ultra",
+      "color": "phantom_brown",
+      "fill": "#7a7572",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s21_ultra_phantom_brown_icon.svg"
+    },
+    {
+      "model": "galaxy_s21_ultra",
+      "color": "phantom_navy",
+      "fill": "#76787c",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s21_ultra_phantom_navy_icon.svg"
+    },
+    {
+      "model": "galaxy_s21_ultra",
+      "color": "phantom_silver",
+      "fill": "#848b8e",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s21_ultra_phantom_silver_icon.svg"
+    },
+    {
+      "model": "galaxy_s21_ultra",
+      "color": "phantom_titanium",
+      "fill": "#8f8f8d",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s21_ultra_phantom_titanium_icon.svg"
+    },
+    {
+      "model": "galaxy_s22",
+      "color": "bora_purple",
+      "fill": "#8a8594",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s22_bora_purple_icon.svg"
+    },
+    {
+      "model": "galaxy_s22",
+      "color": "cream",
+      "fill": "#a6a193",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s22_cream_icon.svg"
+    },
+    {
+      "model": "galaxy_s22",
+      "color": "graphite",
+      "fill": "#939496",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s22_graphite_icon.svg"
+    },
+    {
+      "model": "galaxy_s22",
+      "color": "green",
+      "fill": "#78817f",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s22_green_icon.svg"
+    },
+    {
+      "model": "galaxy_s22",
+      "color": "phantom_black",
+      "fill": "#6a6a6b",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s22_phantom_black_icon.svg"
+    },
+    {
+      "model": "galaxy_s22",
+      "color": "phantom_white",
+      "fill": "#b1b1b1",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s22_phantom_white_icon.svg"
+    },
+    {
+      "model": "galaxy_s22",
+      "color": "pink_gold",
+      "fill": "#a59e9b",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s22_pink_gold_icon.svg"
+    },
+    {
+      "model": "galaxy_s22_plus",
+      "color": "cream",
+      "fill": "#a6a193",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s22_plus_cream_icon.svg"
+    },
+    {
+      "model": "galaxy_s22_plus",
+      "color": "graphite",
+      "fill": "#939496",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s22_plus_graphite_icon.svg"
+    },
+    {
+      "model": "galaxy_s22_plus",
+      "color": "green",
+      "fill": "#798281",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s22_plus_green_icon.svg"
+    },
+    {
+      "model": "galaxy_s22_plus",
+      "color": "phantom_black",
+      "fill": "#6a6a6a",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s22_plus_phantom_black_icon.svg"
+    },
+    {
+      "model": "galaxy_s22_plus",
+      "color": "phantom_white",
+      "fill": "#b1b1b1",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s22_plus_phantom_white_icon.svg"
+    },
+    {
+      "model": "galaxy_s22_plus",
+      "color": "pink_gold",
+      "fill": "#a69f9c",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s22_plus_pink_gold_icon.svg"
+    },
+    {
+      "model": "galaxy_s22_plus",
+      "color": "sky_blue",
+      "fill": "#808995",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s22_plus_sky_blue_icon.svg"
+    },
+    {
+      "model": "galaxy_s22_plus",
+      "color": "violet",
+      "fill": "#96919a",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s22_plus_violet_icon.svg"
+    },
+    {
+      "model": "galaxy_s22",
+      "color": "sky_blue",
+      "fill": "#808995",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s22_sky_blue_icon.svg"
+    },
+    {
+      "model": "galaxy_s22_ultra",
+      "color": "burgundy",
+      "fill": "#8a7e81",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s22_ultra_burgundy_icon.svg"
+    },
+    {
+      "model": "galaxy_s22_ultra",
+      "color": "graphite",
+      "fill": "#939496",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s22_ultra_graphite_icon.svg"
+    },
+    {
+      "model": "galaxy_s22_ultra",
+      "color": "green",
+      "fill": "#7c8785",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s22_ultra_green_icon.svg"
+    },
+    {
+      "model": "galaxy_s22_ultra",
+      "color": "phantom_black",
+      "fill": "#6b6b6b",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s22_ultra_phantom_black_icon.svg"
+    },
+    {
+      "model": "galaxy_s22_ultra",
+      "color": "phantom_white",
+      "fill": "#afafaf",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s22_ultra_phantom_white_icon.svg"
+    },
+    {
+      "model": "galaxy_s22_ultra",
+      "color": "red",
+      "fill": "#b1847a",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s22_ultra_red_icon.svg"
+    },
+    {
+      "model": "galaxy_s22_ultra",
+      "color": "sky_blue",
+      "fill": "#7d8591",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s22_ultra_sky_blue_icon.svg"
+    },
+    {
+      "model": "galaxy_s22",
+      "color": "violet",
+      "fill": "#96919a",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s22_violet_icon.svg"
+    },
+    {
+      "model": "galaxy_s23",
+      "color": "cream",
+      "fill": "#b0aea9",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s23_cream_icon.svg"
+    },
+    {
+      "model": "galaxy_s23_fe",
+      "color": "cream",
+      "fill": "#b1b0ae",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s23_fe_cream_icon.svg"
+    },
+    {
+      "model": "galaxy_s23_fe",
+      "color": "graphite",
+      "fill": "#757575",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s23_fe_graphite_icon.svg"
+    },
+    {
+      "model": "galaxy_s23_fe",
+      "color": "indigo",
+      "fill": "#616974",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s23_fe_indigo_icon.svg"
+    },
+    {
+      "model": "galaxy_s23_fe",
+      "color": "mint",
+      "fill": "#9da39f",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s23_fe_mint_icon.svg"
+    },
+    {
+      "model": "galaxy_s23_fe",
+      "color": "purple",
+      "fill": "#8f8996",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s23_fe_purple_icon.svg"
+    },
+    {
+      "model": "galaxy_s23_fe",
+      "color": "tangerine",
+      "fill": "#755b44",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s23_fe_tangerine_icon.svg"
+    },
+    {
+      "model": "galaxy_s23",
+      "color": "graphite",
+      "fill": "#989899",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s23_graphite_icon.svg"
+    },
+    {
+      "model": "galaxy_s23",
+      "color": "green",
+      "fill": "#878987",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s23_green_icon.svg"
+    },
+    {
+      "model": "galaxy_s23",
+      "color": "lavender",
+      "fill": "#a39ea2",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s23_lavender_icon.svg"
+    },
+    {
+      "model": "galaxy_s23",
+      "color": "lime",
+      "fill": "#a0a390",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s23_lime_icon.svg"
+    },
+    {
+      "model": "galaxy_s23",
+      "color": "phantom_black",
+      "fill": "#696969",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s23_phantom_black_icon.svg"
+    },
+    {
+      "model": "galaxy_s23_plus",
+      "color": "cream",
+      "fill": "#b0ada8",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s23_plus_cream_icon.svg"
+    },
+    {
+      "model": "galaxy_s23_plus",
+      "color": "graphite",
+      "fill": "#989899",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s23_plus_graphite_icon.svg"
+    },
+    {
+      "model": "galaxy_s23_plus",
+      "color": "green",
+      "fill": "#878987",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s23_plus_green_icon.svg"
+    },
+    {
+      "model": "galaxy_s23_plus",
+      "color": "lavender",
+      "fill": "#a39ea2",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s23_plus_lavender_icon.svg"
+    },
+    {
+      "model": "galaxy_s23_plus",
+      "color": "lime",
+      "fill": "#a1a491",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s23_plus_lime_icon.svg"
+    },
+    {
+      "model": "galaxy_s23_plus",
+      "color": "phantom_black",
+      "fill": "#696969",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s23_plus_phantom_black_icon.svg"
+    },
+    {
+      "model": "galaxy_s23_ultra",
+      "color": "cream",
+      "fill": "#b0ada8",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s23_ultra_cream_icon.svg"
+    },
+    {
+      "model": "galaxy_s23_ultra",
+      "color": "graphite",
+      "fill": "#989899",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s23_ultra_graphite_icon.svg"
+    },
+    {
+      "model": "galaxy_s23_ultra",
+      "color": "green",
+      "fill": "#878987",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s23_ultra_green_icon.svg"
+    },
+    {
+      "model": "galaxy_s23_ultra",
+      "color": "lavender",
+      "fill": "#a29da1",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s23_ultra_lavender_icon.svg"
+    },
+    {
+      "model": "galaxy_s23_ultra",
+      "color": "lime",
+      "fill": "#9fa38f",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s23_ultra_lime_icon.svg"
+    },
+    {
+      "model": "galaxy_s23_ultra",
+      "color": "phantom_black",
+      "fill": "#696969",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s23_ultra_phantom_black_icon.svg"
+    },
+    {
+      "model": "galaxy_s23_ultra",
+      "color": "red",
+      "fill": "#b58b88",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s23_ultra_red_icon.svg"
+    },
+    {
+      "model": "galaxy_s23_ultra",
+      "color": "sky_blue",
+      "fill": "#7f8691",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s23_ultra_sky_blue_icon.svg"
+    },
+    {
+      "model": "galaxy_s24",
+      "color": "amber_yellow",
+      "fill": "#aba69a",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s24_amber_yellow_icon.svg"
+    },
+    {
+      "model": "galaxy_s24",
+      "color": "cobalt_violet",
+      "fill": "#8f8d99",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s24_cobalt_violet_icon.svg"
+    },
+    {
+      "model": "galaxy_s24_fe",
+      "color": "blue",
+      "fill": "#9ca1a8",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s24_fe_blue_icon.svg"
+    },
+    {
+      "model": "galaxy_s24_fe",
+      "color": "graphite",
+      "fill": "#7e7e7e",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s24_fe_graphite_icon.svg"
+    },
+    {
+      "model": "galaxy_s24_fe",
+      "color": "gray",
+      "fill": "#959594",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s24_fe_gray_icon.svg"
+    },
+    {
+      "model": "galaxy_s24_fe",
+      "color": "mint",
+      "fill": "#9ea7a3",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s24_fe_mint_icon.svg"
+    },
+    {
+      "model": "galaxy_s24_fe",
+      "color": "yellow",
+      "fill": "#aea88c",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s24_fe_yellow_icon.svg"
+    },
+    {
+      "model": "galaxy_s24",
+      "color": "jade_green",
+      "fill": "#9da199",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s24_jade_green_icon.svg"
+    },
+    {
+      "model": "galaxy_s24",
+      "color": "marble_grey",
+      "fill": "#8c8c8c",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s24_marble_grey_icon.svg"
+    },
+    {
+      "model": "galaxy_s24",
+      "color": "onyx_black",
+      "fill": "#787878",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s24_onyx_black_icon.svg"
+    },
+    {
+      "model": "galaxy_s24_plus",
+      "color": "amber_yellow",
+      "fill": "#aba69a",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s24_plus_amber_yellow_icon.svg"
+    },
+    {
+      "model": "galaxy_s24_plus",
+      "color": "cobalt_violet",
+      "fill": "#8f8d98",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s24_plus_cobalt_violet_icon.svg"
+    },
+    {
+      "model": "galaxy_s24_plus",
+      "color": "jade_green",
+      "fill": "#9da199",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s24_plus_jade_green_icon.svg"
+    },
+    {
+      "model": "galaxy_s24_plus",
+      "color": "marble_grey",
+      "fill": "#8c8b8b",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s24_plus_marble_grey_icon.svg"
+    },
+    {
+      "model": "galaxy_s24_plus",
+      "color": "onyx_black",
+      "fill": "#777777",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s24_plus_onyx_black_icon.svg"
+    },
+    {
+      "model": "galaxy_s24_plus",
+      "color": "sandstone_orange",
+      "fill": "#8a705d",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s24_plus_sandstone_orange_icon.svg"
+    },
+    {
+      "model": "galaxy_s24_plus",
+      "color": "sapphire_blue",
+      "fill": "#919499",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s24_plus_sapphire_blue_icon.svg"
+    },
+    {
+      "model": "galaxy_s24",
+      "color": "sandstone_orange",
+      "fill": "#8a705d",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s24_sandstone_orange_icon.svg"
+    },
+    {
+      "model": "galaxy_s24",
+      "color": "sapphire_blue",
+      "fill": "#919499",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s24_sapphire_blue_icon.svg"
+    },
+    {
+      "model": "galaxy_s24_ultra",
+      "color": "titanium_black",
+      "fill": "#787878",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s24_ultra_titanium_black_icon.svg"
+    },
+    {
+      "model": "galaxy_s24_ultra",
+      "color": "titanium_blue",
+      "fill": "#91949a",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s24_ultra_titanium_blue_icon.svg"
+    },
+    {
+      "model": "galaxy_s24_ultra",
+      "color": "titanium_gray",
+      "fill": "#696663",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s24_ultra_titanium_gray_icon.svg"
+    },
+    {
+      "model": "galaxy_s24_ultra",
+      "color": "titanium_green",
+      "fill": "#9da29a",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s24_ultra_titanium_green_icon.svg"
+    },
+    {
+      "model": "galaxy_s24_ultra",
+      "color": "titanium_orange",
+      "fill": "#8a6f5c",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s24_ultra_titanium_orange_icon.svg"
+    },
+    {
+      "model": "galaxy_s24_ultra",
+      "color": "titanium_violet",
+      "fill": "#7d7b85",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s24_ultra_titanium_violet_icon.svg"
+    },
+    {
+      "model": "galaxy_s24_ultra",
+      "color": "titanium_yellow",
+      "fill": "#a6a08c",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s24_ultra_titanium_yellow_icon.svg"
+    },
+    {
+      "model": "galaxy_s25",
+      "color": "blueblack",
+      "fill": "#707175",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s25_blueblack_icon.svg"
+    },
+    {
+      "model": "galaxy_s25",
+      "color": "coralred",
+      "fill": "#895759",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s25_coralred_icon.svg"
+    },
+    {
+      "model": "galaxy_s25_edge",
+      "color": "titanium_icyblue",
+      "fill": "#95989e",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s25_edge_titanium_icyblue_icon.svg"
+    },
+    {
+      "model": "galaxy_s25_edge",
+      "color": "titanium_jetblack",
+      "fill": "#6e6e70",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s25_edge_titanium_jetblack_icon.svg"
+    },
+    {
+      "model": "galaxy_s25_edge",
+      "color": "titanium_silver",
+      "fill": "#989898",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s25_edge_titanium_silver_icon.svg"
+    },
+    {
+      "model": "galaxy_s25_fe",
+      "color": "icyblue",
+      "fill": "#9e9fa6",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s25_fe_icyblue_icon.svg"
+    },
+    {
+      "model": "galaxy_s25_fe",
+      "color": "jetblack",
+      "fill": "#717173",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s25_fe_jetblack_icon.svg"
+    },
+    {
+      "model": "galaxy_s25_fe",
+      "color": "navy",
+      "fill": "#767b89",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s25_fe_navy_icon.svg"
+    },
+    {
+      "model": "galaxy_s25_fe",
+      "color": "white",
+      "fill": "#b2b2b2",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s25_fe_white_icon.svg"
+    },
+    {
+      "model": "galaxy_s25",
+      "color": "pinkgold",
+      "fill": "#a09893",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s25_pinkgold_icon.svg"
+    },
+    {
+      "model": "galaxy_s25_plus",
+      "color": "blueblack",
+      "fill": "#74767a",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s25_plus_blueblack_icon.svg"
+    },
+    {
+      "model": "galaxy_s25_plus",
+      "color": "coralred",
+      "fill": "#8a595b",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s25_plus_coralred_icon.svg"
+    },
+    {
+      "model": "galaxy_s25_plus",
+      "color": "icyblue",
+      "fill": "#91949b",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s25_plus_icyblue_icon.svg"
+    },
+    {
+      "model": "galaxy_s25_plus",
+      "color": "mint",
+      "fill": "#969d99",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s25_plus_mint_icon.svg"
+    },
+    {
+      "model": "galaxy_s25_plus",
+      "color": "navy",
+      "fill": "#676e7d",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s25_plus_navy_icon.svg"
+    },
+    {
+      "model": "galaxy_s25_plus",
+      "color": "pinkgold",
+      "fill": "#a19a94",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s25_plus_pinkgold_icon.svg"
+    },
+    {
+      "model": "galaxy_s25_plus",
+      "color": "silver_shadow",
+      "fill": "#6b6b6d",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s25_plus_silver_shadow_icon.svg"
+    },
+    {
+      "model": "galaxy_s25_ultra",
+      "color": "titanium_jadegreen",
+      "fill": "#747670",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s25_ultra_titanium_jadegreen_icon.svg"
+    },
+    {
+      "model": "galaxy_s25_ultra",
+      "color": "titanium_jetblack",
+      "fill": "#6d6d6e",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s25_ultra_titanium_jetblack_icon.svg"
+    },
+    {
+      "model": "galaxy_s25_ultra",
+      "color": "titanium_pinkgold",
+      "fill": "#a09893",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s25_ultra_titanium_pinkgold_icon.svg"
+    },
+    {
+      "model": "galaxy_s26",
+      "color": "black",
+      "fill": "#707173",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s26_black_icon.svg"
+    },
+    {
+      "model": "galaxy_s26",
+      "color": "cobalt_violet",
+      "fill": "#83838e",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s26_cobalt_violet_icon.svg"
+    },
+    {
+      "model": "galaxy_s26_fe",
+      "color": "blueberry",
+      "fill": "#7a7c8b",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s26_fe_blueberry_icon.svg"
+    },
+    {
+      "model": "galaxy_s26_fe",
+      "color": "graphite",
+      "fill": "#717275",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s26_fe_graphite_icon.svg"
+    },
+    {
+      "model": "galaxy_s26_fe",
+      "color": "pistachio",
+      "fill": "#919997",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s26_fe_pistachio_icon.svg"
+    },
+    {
+      "model": "galaxy_s26",
+      "color": "pink_gold",
+      "fill": "#a7a19c",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s26_pink_gold_icon.svg"
+    },
+    {
+      "model": "galaxy_s26_plus",
+      "color": "black",
+      "fill": "#727375",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s26_plus_black_icon.svg"
+    },
+    {
+      "model": "galaxy_s26_plus",
+      "color": "cobalt_violet",
+      "fill": "#868691",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s26_plus_cobalt_violet_icon.svg"
+    },
+    {
+      "model": "galaxy_s26_plus",
+      "color": "pink_gold",
+      "fill": "#aaa4a1",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s26_plus_pink_gold_icon.svg"
+    },
+    {
+      "model": "galaxy_s26_plus",
+      "color": "silver_shadow",
+      "fill": "#767677",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s26_plus_silver_shadow_icon.svg"
+    },
+    {
+      "model": "galaxy_s26_plus",
+      "color": "sky_blue",
+      "fill": "#989ea4",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s26_plus_sky_blue_icon.svg"
+    },
+    {
+      "model": "galaxy_s26_plus",
+      "color": "white",
+      "fill": "#b3b3b4",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s26_plus_white_icon.svg"
+    },
+    {
+      "model": "galaxy_s26",
+      "color": "silver_shadow",
+      "fill": "#727272",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s26_silver_shadow_icon.svg"
+    },
+    {
+      "model": "galaxy_s26",
+      "color": "sky_blue",
+      "fill": "#949ba1",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s26_sky_blue_icon.svg"
+    },
+    {
+      "model": "galaxy_s26_ultra",
+      "color": "black",
+      "fill": "#797a7c",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s26_ultra_black_icon.svg"
+    },
+    {
+      "model": "galaxy_s26_ultra",
+      "color": "cobalt_violet",
+      "fill": "#92929c",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s26_ultra_cobalt_violet_icon.svg"
+    },
+    {
+      "model": "galaxy_s26_ultra",
+      "color": "pink_gold",
+      "fill": "#a8a29d",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s26_ultra_pink_gold_icon.svg"
+    },
+    {
+      "model": "galaxy_s26_ultra",
+      "color": "silver_shadow",
+      "fill": "#727272",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s26_ultra_silver_shadow_icon.svg"
+    },
+    {
+      "model": "galaxy_s26_ultra",
+      "color": "sky_blue",
+      "fill": "#9ba1a5",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s26_ultra_sky_blue_icon.svg"
+    },
+    {
+      "model": "galaxy_s26_ultra",
+      "color": "white",
+      "fill": "#b5b5b5",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s26_ultra_white_icon.svg"
+    },
+    {
+      "model": "galaxy_s26",
+      "color": "white",
+      "fill": "#b3b3b4",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s26_white_icon.svg"
+    },
+    {
+      "model": "galaxy_s6",
+      "color": "black_sapphire",
+      "fill": "#6e7278",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s6_black_sapphire_icon.svg"
+    },
+    {
+      "model": "galaxy_s6",
+      "color": "blue_topaz",
+      "fill": "#447582",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s6_blue_topaz_icon.svg"
+    },
+    {
+      "model": "galaxy_s6_edge",
+      "color": "black_sapphire",
+      "fill": "#6e7278",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s6_edge_black_sapphire_icon.svg"
+    },
+    {
+      "model": "galaxy_s6_edge",
+      "color": "gold_platinum",
+      "fill": "#8c8578",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s6_edge_gold_platinum_icon.svg"
+    },
+    {
+      "model": "galaxy_s6_edge",
+      "color": "green_emerald",
+      "fill": "#7d9f9b",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s6_edge_green_emerald_icon.svg"
+    },
+    {
+      "model": "galaxy_s6_edge_plus",
+      "color": "black_sapphire",
+      "fill": "#6e7278",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s6_edge_plus_black_sapphire_icon.svg"
+    },
+    {
+      "model": "galaxy_s6_edge_plus",
+      "color": "gold_platinum",
+      "fill": "#8c8578",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s6_edge_plus_gold_platinum_icon.svg"
+    },
+    {
+      "model": "galaxy_s6_edge_plus",
+      "color": "silver_titanium",
+      "fill": "#838488",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s6_edge_plus_silver_titanium_icon.svg"
+    },
+    {
+      "model": "galaxy_s6_edge_plus",
+      "color": "white_pearl",
+      "fill": "#acadad",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s6_edge_plus_white_pearl_icon.svg"
+    },
+    {
+      "model": "galaxy_s6_edge",
+      "color": "white_pearl",
+      "fill": "#acadad",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s6_edge_white_pearl_icon.svg"
+    },
+    {
+      "model": "galaxy_s6",
+      "color": "gold_platinum",
+      "fill": "#8c8578",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s6_gold_platinum_icon.svg"
+    },
+    {
+      "model": "galaxy_s6",
+      "color": "white_pearl",
+      "fill": "#acadad",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s6_white_pearl_icon.svg"
+    },
+    {
+      "model": "galaxy_s7",
+      "color": "black_onyx",
+      "fill": "#696a6d",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s7_black_onyx_icon.svg"
+    },
+    {
+      "model": "galaxy_s7_edge",
+      "color": "black_onyx",
+      "fill": "#696a6d",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s7_edge_black_onyx_icon.svg"
+    },
+    {
+      "model": "galaxy_s7_edge",
+      "color": "gold_platinum",
+      "fill": "#8a8579",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s7_edge_gold_platinum_icon.svg"
+    },
+    {
+      "model": "galaxy_s7_edge",
+      "color": "silver_titanium",
+      "fill": "#8a8c8f",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s7_edge_silver_titanium_icon.svg"
+    },
+    {
+      "model": "galaxy_s7_edge",
+      "color": "white_pearl",
+      "fill": "#adadad",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s7_edge_white_pearl_icon.svg"
+    },
+    {
+      "model": "galaxy_s7",
+      "color": "gold_platinum",
+      "fill": "#8a8579",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s7_gold_platinum_icon.svg"
+    },
+    {
+      "model": "galaxy_s7",
+      "color": "silver_titanium",
+      "fill": "#8a8c8f",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s7_silver_titanium_icon.svg"
+    },
+    {
+      "model": "galaxy_s7",
+      "color": "white_pearl",
+      "fill": "#adadad",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s7_white_pearl_icon.svg"
+    },
+    {
+      "model": "galaxy_s8",
+      "color": "arctic_silver",
+      "fill": "#8c8d90",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s8_arctic_silver_icon.svg"
+    },
+    {
+      "model": "galaxy_s8",
+      "color": "burgundy_red",
+      "fill": "#90757b",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s8_burgundy_red_icon.svg"
+    },
+    {
+      "model": "galaxy_s8",
+      "color": "coral_blue",
+      "fill": "#667a84",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s8_coral_blue_icon.svg"
+    },
+    {
+      "model": "galaxy_s8",
+      "color": "maple_gold",
+      "fill": "#948d80",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s8_maple_gold_icon.svg"
+    },
+    {
+      "model": "galaxy_s8",
+      "color": "midnight_black",
+      "fill": "#68686a",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s8_midnight_black_icon.svg"
+    },
+    {
+      "model": "galaxy_s8",
+      "color": "orchid_gray",
+      "fill": "#79767c",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s8_orchid_gray_icon.svg"
+    },
+    {
+      "model": "galaxy_s8_plus",
+      "color": "arctic_silver",
+      "fill": "#8c8d90",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s8_plus_arctic_silver_icon.svg"
+    },
+    {
+      "model": "galaxy_s8_plus",
+      "color": "coral_blue",
+      "fill": "#667a84",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s8_plus_coral_blue_icon.svg"
+    },
+    {
+      "model": "galaxy_s8_plus",
+      "color": "maple_gold",
+      "fill": "#948d80",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s8_plus_maple_gold_icon.svg"
+    },
+    {
+      "model": "galaxy_s8_plus",
+      "color": "midnight_black",
+      "fill": "#68686a",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s8_plus_midnight_black_icon.svg"
+    },
+    {
+      "model": "galaxy_s8_plus",
+      "color": "orchid_gray",
+      "fill": "#79767c",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s8_plus_orchid_gray_icon.svg"
+    },
+    {
+      "model": "galaxy_s8_plus",
+      "color": "rose_pink",
+      "fill": "#9c878d",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s8_plus_rose_pink_icon.svg"
+    },
+    {
+      "model": "galaxy_s8",
+      "color": "rose_pink",
+      "fill": "#9c878d",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s8_rose_pink_icon.svg"
+    },
+    {
+      "model": "galaxy_s9",
+      "color": "burgundy_red",
+      "fill": "#98767e",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s9_burgundy_red_icon.svg"
+    },
+    {
+      "model": "galaxy_s9",
+      "color": "coral_blue",
+      "fill": "#56697a",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s9_coral_blue_icon.svg"
+    },
+    {
+      "model": "galaxy_s9",
+      "color": "lilac_purple",
+      "fill": "#726378",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s9_lilac_purple_icon.svg"
+    },
+    {
+      "model": "galaxy_s9",
+      "color": "midnight_black",
+      "fill": "#696a6d",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s9_midnight_black_icon.svg"
+    },
+    {
+      "model": "galaxy_s9_plus",
+      "color": "burgundy_red",
+      "fill": "#98767e",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s9_plus_burgundy_red_icon.svg"
+    },
+    {
+      "model": "galaxy_s9_plus",
+      "color": "coral_blue",
+      "fill": "#56697a",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s9_plus_coral_blue_icon.svg"
+    },
+    {
+      "model": "galaxy_s9_plus",
+      "color": "lilac_purple",
+      "fill": "#726378",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s9_plus_lilac_purple_icon.svg"
+    },
+    {
+      "model": "galaxy_s9_plus",
+      "color": "midnight_black",
+      "fill": "#696a6d",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s9_plus_midnight_black_icon.svg"
+    },
+    {
+      "model": "galaxy_s9_plus",
+      "color": "sunrise_gold",
+      "fill": "#928775",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s9_plus_sunrise_gold_icon.svg"
+    },
+    {
+      "model": "galaxy_s9_plus",
+      "color": "titanium_gray",
+      "fill": "#6d7074",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s9_plus_titanium_gray_icon.svg"
+    },
+    {
+      "model": "galaxy_s9",
+      "color": "sunrise_gold",
+      "fill": "#928775",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s9_sunrise_gold_icon.svg"
+    },
+    {
+      "model": "galaxy_s9",
+      "color": "titanium_gray",
+      "fill": "#6d7074",
+      "path": "device_icons_svg/samsung/phones/ic_galaxy_s9_titanium_gray_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_a11",
+      "color": "gray",
+      "fill": "#929293",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_a11_gray_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_a11_plus",
+      "color": "gray",
+      "fill": "#8b8b8d",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_a11_plus_gray_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_a11_plus",
+      "color": "silver",
+      "fill": "#9a9a9c",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_a11_plus_silver_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_a11",
+      "color": "silver",
+      "fill": "#8c8d8f",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_a11_silver_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_s10_fe",
+      "color": "blue",
+      "fill": "#858f97",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s10_fe_blue_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_s10_fe",
+      "color": "gray",
+      "fill": "#5e6268",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s10_fe_gray_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_s10_fe_plus",
+      "color": "blue",
+      "fill": "#858f97",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s10_fe_plus_blue_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_s10_fe_plus",
+      "color": "gray",
+      "fill": "#5e6268",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s10_fe_plus_gray_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_s10_fe_plus",
+      "color": "silver",
+      "fill": "#949698",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s10_fe_plus_silver_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_s10_fe",
+      "color": "silver",
+      "fill": "#949698",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s10_fe_silver_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_s10_lite",
+      "color": "coral_red",
+      "fill": "#b0878c",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s10_lite_coral_red_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_s10_lite",
+      "color": "gray",
+      "fill": "#99999a",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s10_lite_gray_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_s10_lite",
+      "color": "silver",
+      "fill": "#969698",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s10_lite_silver_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_s10_plus",
+      "color": "moonstone_gray",
+      "fill": "#616366",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s10_plus_moonstone_gray_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_s10_plus",
+      "color": "platinum_silver",
+      "fill": "#949596",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s10_plus_platinum_silver_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_s10_ultra",
+      "color": "moonstone_gray",
+      "fill": "#616366",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s10_ultra_moonstone_gray_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_s10_ultra",
+      "color": "platinum_silver",
+      "fill": "#949596",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s10_ultra_platinum_silver_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_s11",
+      "color": "moonstone_gray",
+      "fill": "#8d8d8f",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s11_moonstone_gray_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_s11",
+      "color": "platinum_silver",
+      "fill": "#9e9ea0",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s11_platinum_silver_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_s11_ultra",
+      "color": "moonstone_gray",
+      "fill": "#8f8f90",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s11_ultra_moonstone_gray_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_s11_ultra",
+      "color": "platinum_silver",
+      "fill": "#9b9b9c",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s11_ultra_platinum_silver_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_s12_plus",
+      "color": "gray",
+      "fill": "#8f8f91",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s12_plus_gray_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_s12_plus",
+      "color": "silver",
+      "fill": "#9a9a9c",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s12_plus_silver_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_s12_ultra",
+      "color": "gray",
+      "fill": "#8f8f91",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s12_ultra_gray_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_s12_ultra",
+      "color": "silver",
+      "fill": "#9a9a9c",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s12_ultra_silver_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_s6",
+      "color": "cloud_blue",
+      "fill": "#75808c",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s6_cloud_blue_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_s6_lite_2020",
+      "color": "angora_blue",
+      "fill": "#838c94",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s6_lite_2020_angora_blue_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_s6_lite_2020",
+      "color": "chiffon_rose",
+      "fill": "#948584",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s6_lite_2020_chiffon_rose_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_s6_lite_2020",
+      "color": "oxford_gray",
+      "fill": "#9b9ea5",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s6_lite_2020_oxford_gray_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_s6_lite_2022",
+      "color": "angora_blue",
+      "fill": "#838c94",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s6_lite_2022_angora_blue_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_s6_lite_2022",
+      "color": "oxford_gray",
+      "fill": "#9b9ea5",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s6_lite_2022_oxford_gray_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_s6_lite_2024",
+      "color": "chiffon_pink",
+      "fill": "#948584",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s6_lite_2024_chiffon_pink_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_s6_lite_2024",
+      "color": "mint",
+      "fill": "#8a948f",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s6_lite_2024_mint_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_s6_lite_2024",
+      "color": "oxford_gray",
+      "fill": "#9b9ea5",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s6_lite_2024_oxford_gray_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_s6",
+      "color": "mountain_gray",
+      "fill": "#a3a7ad",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s6_mountain_gray_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_s6",
+      "color": "rose_blush",
+      "fill": "#85797a",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s6_rose_blush_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_s7_fe",
+      "color": "mystic_black",
+      "fill": "#838589",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s7_fe_mystic_black_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_s7_fe",
+      "color": "mystic_green",
+      "fill": "#7e8882",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s7_fe_mystic_green_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_s7_fe",
+      "color": "mystic_pink",
+      "fill": "#928585",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s7_fe_mystic_pink_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_s7_fe",
+      "color": "mystic_silver",
+      "fill": "#8d8e8f",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s7_fe_mystic_silver_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_s7",
+      "color": "mystic_black",
+      "fill": "#808286",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s7_mystic_black_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_s7",
+      "color": "mystic_bronze",
+      "fill": "#796c69",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s7_mystic_bronze_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_s7",
+      "color": "mystic_navy",
+      "fill": "#858f9a",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s7_mystic_navy_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_s7",
+      "color": "mystic_silver",
+      "fill": "#8a8c8c",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s7_mystic_silver_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_s7_plus",
+      "color": "mystic_black",
+      "fill": "#808286",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s7_plus_mystic_black_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_s7_plus",
+      "color": "mystic_bronze",
+      "fill": "#796c69",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s7_plus_mystic_bronze_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_s7_plus",
+      "color": "mystic_navy",
+      "fill": "#858f9a",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s7_plus_mystic_navy_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_s7_plus",
+      "color": "mystic_silver",
+      "fill": "#8a8c8c",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s7_plus_mystic_silver_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_s8",
+      "color": "graphite",
+      "fill": "#898b8f",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s8_graphite_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_s8",
+      "color": "pink_gold",
+      "fill": "#8f8786",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s8_pink_gold_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_s8_plus",
+      "color": "graphite",
+      "fill": "#898b8f",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s8_plus_graphite_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_s8_plus",
+      "color": "pink_gold",
+      "fill": "#8f8786",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s8_plus_pink_gold_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_s8_plus",
+      "color": "silver",
+      "fill": "#8b8c8d",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s8_plus_silver_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_s8",
+      "color": "silver",
+      "fill": "#8b8c8d",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s8_silver_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_s8_ultra",
+      "color": "graphite",
+      "fill": "#898b8f",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s8_ultra_graphite_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_s9",
+      "color": "beige",
+      "fill": "#96928c",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s9_beige_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_s9_fe",
+      "color": "gray",
+      "fill": "#a2a5aa",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s9_fe_gray_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_s9_fe",
+      "color": "lavender",
+      "fill": "#8a888f",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s9_fe_lavender_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_s9_fe",
+      "color": "mint",
+      "fill": "#88908c",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s9_fe_mint_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_s9_fe_plus",
+      "color": "gray",
+      "fill": "#a2a5aa",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s9_fe_plus_gray_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_s9_fe_plus",
+      "color": "lavender",
+      "fill": "#8a888f",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s9_fe_plus_lavender_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_s9_fe_plus",
+      "color": "mint",
+      "fill": "#88908c",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s9_fe_plus_mint_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_s9_fe_plus",
+      "color": "silver",
+      "fill": "#949596",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s9_fe_plus_silver_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_s9_fe",
+      "color": "silver",
+      "fill": "#949596",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s9_fe_silver_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_s9",
+      "color": "graphite",
+      "fill": "#969798",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s9_graphite_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_s9_plus",
+      "color": "beige",
+      "fill": "#96928c",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s9_plus_beige_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_s9_plus",
+      "color": "graphite",
+      "fill": "#969798",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s9_plus_graphite_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_s9_ultra",
+      "color": "beige",
+      "fill": "#96928c",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s9_ultra_beige_icon.svg"
+    },
+    {
+      "model": "galaxy_tab_s9_ultra",
+      "color": "graphite",
+      "fill": "#969798",
+      "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s9_ultra_graphite_icon.svg"
+    }
+  ]
+}

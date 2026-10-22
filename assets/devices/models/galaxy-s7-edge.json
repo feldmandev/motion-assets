@@ -106,10 +106,12 @@
         },
         "logo": {
           "rgb": [
-            0.62,
-            0.64,
-            0.68
-          ]
+            0.4117647058823529,
+            0.41568627450980394,
+            0.42745098039215684
+          ],
+          "metal": 0,
+          "rough": 0.3
         },
         "front_bezel": {
           "rgb": [
@@ -152,10 +154,12 @@
         },
         "logo": {
           "rgb": [
-            0.13,
-            0.14,
-            0.16
-          ]
+            0.5411764705882353,
+            0.5215686274509804,
+            0.4745098039215686
+          ],
+          "metal": 0,
+          "rough": 0.3
         },
         "front_bezel": {
           "rgb": [
@@ -198,10 +202,12 @@
         },
         "logo": {
           "rgb": [
-            0.13,
-            0.14,
-            0.16
-          ]
+            0.5411764705882353,
+            0.5490196078431373,
+            0.5607843137254902
+          ],
+          "metal": 0,
+          "rough": 0.3
         },
         "front_bezel": {
           "rgb": [
@@ -244,10 +250,12 @@
         },
         "logo": {
           "rgb": [
-            0.13,
-            0.14,
-            0.16
-          ]
+            0.6784313725490196,
+            0.6784313725490196,
+            0.6784313725490196
+          ],
+          "metal": 0,
+          "rough": 0.3
         },
         "front_bezel": {
           "rgb": [
@@ -260,8 +268,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-s7-edge.061116628ee7.glb.gz",
-  "sha256": "061116628ee79c8f8af83dd14a0dcb8b7da12a9f4b3199ce0424f25c2268a28b",
+  "glbUrl": "assets/devices/models/galaxy-s7-edge.aad39929ec7c.glb.gz",
+  "sha256": "aad39929ec7cb6e62371fafc060ee4e86c9f9d4b9d9474f381bd9334f33956e3",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-s7-edge.json",

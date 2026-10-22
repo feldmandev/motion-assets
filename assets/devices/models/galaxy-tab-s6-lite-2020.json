@@ -115,9 +115,9 @@
         },
         "logo": {
           "rgb": [
-            0.6513725490196078,
-            0.7082352941176471,
-            0.7992156862745097
+            0.6078431372549019,
+            0.6196078431372549,
+            0.6470588235294118
           ],
           "metal": 0.3,
           "rough": 0.45
@@ -173,9 +173,9 @@
         },
         "logo": {
           "rgb": [
-            0.35278431372549024,
-            0.399686274509804,
-            0.43843137254901965
+            0.5137254901960784,
+            0.5490196078431373,
+            0.5803921568627451
           ],
           "metal": 0.3,
           "rough": 0.45
@@ -259,8 +259,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-tab-s6-lite-2020.c43f29442730.glb.gz",
-  "sha256": "c43f294427309dd6be2094e9ffcf939c11ba386d46bb8ce1af0a6ebcd1fdf0f5",
+  "glbUrl": "assets/devices/models/galaxy-tab-s6-lite-2020.41516207b9d6.glb.gz",
+  "sha256": "41516207b9d6124c96cdf4151e20f2fe3219b885e02945d3f63b8ec6d1300039",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-tab-s6-lite-2020.json",

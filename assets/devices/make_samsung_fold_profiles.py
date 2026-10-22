@@ -1,5 +1,6 @@
 """Samsung Z family: published envelopes/pixels, icon-measured cameras, estimated rigid hinges."""
 import copy
+from make_device_branding import apply as apply_branding
 import json
 import math
 import sys
@@ -306,6 +307,7 @@ def profiles():
 if __name__=='__main__':
     items = profiles()
     for item in items:
+        apply_branding(item)
         (BASE/'profiles'/f"{item['id']}.json").write_text(json.dumps(item,indent=2)+'\n',encoding='utf-8')
     (BASE/'research/samsung-fold-specs.json').write_text(json.dumps({
         'models':[{k:p[k] for k in ('id','published_spec','sources','accuracy')} for p in items if p['state']=='unfolded'],

@@ -1,0 +1,342 @@
+[
+  {
+    "model": "apple_iphone_se_2020",
+    "color": "white",
+    "path": "device_icons_svg/apple/phones/ic_apple_iphone_se_2020_white_icon.svg",
+    "fill": "#bdbcb8",
+    "reason": "reference placement/orientation",
+    "before_sha256": "58201a1596d8a11fe64131e9d982e558fb09b934c4dbbe5a50cde9c45918d422",
+    "after_sha256": "f0d3ea96dd7e6cf4e2b16b2eb610ea1a6403a30a2346bc146166c72c38323572",
+    "non_logo_sha256": "21a057695453f22e927aabe761049ebd5758b54cd77195b61a995612d82bffae"
+  },
+  {
+    "model": "apple_iphone_se_2020",
+    "color": "black",
+    "path": "device_icons_svg/apple/phones/ic_apple_iphone_se_2020_black_icon.svg",
+    "fill": "#6f7177",
+    "reason": "reference placement/orientation",
+    "before_sha256": "86b0a1621537b574635f19d96dbc35ad9d5fc80389ef2586a58377aea55e8a22",
+    "after_sha256": "5c729ebff9c00ac14f6b4293de73f4cb5069185a4d7f83dced454700abac431c",
+    "non_logo_sha256": "355a0d887f3f9660e79d82d66c03ab1f9d9c0a9ee569890f10a3eb9120e47748"
+  },
+  {
+    "model": "apple_iphone_se_2020",
+    "color": "product_red",
+    "path": "device_icons_svg/apple/phones/ic_apple_iphone_se_2020_product_red_icon.svg",
+    "fill": "#f16677",
+    "reason": "reference placement/orientation",
+    "before_sha256": "cc7b76fb12224ed40511924ac166f8f8d9baa437f249502c99f615e95ea9fdf8",
+    "after_sha256": "01f3e1bd8ff9a29bb724cb3f1da67166a3aed432d2972cf4dd75110174e4116a",
+    "non_logo_sha256": "b8cb334b77415682ef559ed8a60da9fba6f90e193d5154d6942f857895886923"
+  },
+  {
+    "model": "apple_iphone_se_2022",
+    "color": "product_red",
+    "path": "device_icons_svg/apple/phones/ic_apple_iphone_se_2022_product_red_icon.svg",
+    "fill": "#49494a",
+    "reason": "reference placement/orientation",
+    "before_sha256": "cc7b76fb12224ed40511924ac166f8f8d9baa437f249502c99f615e95ea9fdf8",
+    "after_sha256": "89797af3d03ad58481388dbc60d630f0d8737fa080ea1b6642f9adf2b5590602",
+    "non_logo_sha256": "b8cb334b77415682ef559ed8a60da9fba6f90e193d5154d6942f857895886923"
+  },
+  {
+    "model": "apple_iphone_se_2022",
+    "color": "starlight",
+    "path": "device_icons_svg/apple/phones/ic_apple_iphone_se_2022_starlight_icon.svg",
+    "fill": "#777879",
+    "reason": "reference placement/orientation",
+    "before_sha256": "23dc00904b76d295571db9fe70895db158b26cfc861f3eeab6efb18db6b5405d",
+    "after_sha256": "e597bf30dc448b0fdbbafdb426a5b35879e007ad6843f57f8f14e4df9f94e7c9",
+    "non_logo_sha256": "0ccc881509a8cb7ff7787fa6e6d7634e9d54cf2c2411076aa0451400452c4801"
+  },
+  {
+    "model": "apple_iphone_se_2022",
+    "color": "midnight",
+    "path": "device_icons_svg/apple/phones/ic_apple_iphone_se_2022_midnight_icon.svg",
+    "fill": "#3d3d3f",
+    "reason": "reference placement/orientation",
+    "before_sha256": "f2c01929b15e3f30ce63280092d3e12f8367bf7f7aefba7e043669b558cb3fd2",
+    "after_sha256": "b850a63d39f46c26288fa4214d2955173fe0d94e20b0df578a5e244e5db8c00a",
+    "non_logo_sha256": "35ab74d57763465a042a830af26fc062acf56be99f68d605b9d8e5d80cd0d221"
+  },
+  {
+    "model": "honor_200",
+    "color": "black",
+    "path": "device_icons_svg/honor/phones/ic_honor_200_black_icon.svg",
+    "fill": "#777b7f",
+    "reason": "reference placement/orientation",
+    "before_sha256": "698da61534312144173fa4d63e7703fb0581b9093517c3e9a33fc12e2e3a2a36",
+    "after_sha256": "2b5452a3dfa08c7abf82ca1347b527d6581972a80d02f197e09ff7d67087be6a",
+    "non_logo_sha256": "4efd34ad357b9f6a99db81766ba8a3571a09fb3558cffaf62541eb8d6a366679"
+  },
+  {
+    "model": "honor_200",
+    "color": "moonlight_white",
+    "path": "device_icons_svg/honor/phones/ic_honor_200_moonlight_white_icon.svg",
+    "fill": "#b4b5b2",
+    "reason": "reference placement/orientation",
+    "before_sha256": "f300a4ddbe354fb45884a8ee1ef8ecb69105aebce8f51ecd039fdf3355918642",
+    "after_sha256": "75f9b9df04c38ba16d09be6e28d7bddb6bb7450afca7e00e714c83d1642bb16a",
+    "non_logo_sha256": "568bc7c5ab1329df59fc805a25b0209224948818cfc060fd618185832c011e20"
+  },
+  {
+    "model": "honor_200",
+    "color": "coral_pink",
+    "path": "device_icons_svg/honor/phones/ic_honor_200_coral_pink_icon.svg",
+    "fill": "#b598a8",
+    "reason": "reference placement/orientation",
+    "before_sha256": "1bbabc99eeed7f898f2d4f5b758a5c2c321358e074f6f6aa35f7fc089bae91c4",
+    "after_sha256": "cfe2d4b5d13ff2795bbd76407b57f0aac85e1f9acdc76798fbed7b05676e0391",
+    "non_logo_sha256": "a42897105fff23cfed9774bf332dd3a2b99563398fc5531f70adb1f2825b45c4"
+  },
+  {
+    "model": "honor_200",
+    "color": "emerald_green",
+    "path": "device_icons_svg/honor/phones/ic_honor_200_emerald_green_icon.svg",
+    "fill": "#7a9a99",
+    "reason": "reference placement/orientation",
+    "before_sha256": "7679df4bc0b8841992823dc95710c617849f0b0418962c19902ca9fc3527de9f",
+    "after_sha256": "43ee14ad54302670e90d3eed90a213e9855e4cbc9c9e261061c61b5b1e3f124d",
+    "non_logo_sha256": "47f03e79b8e3b52f834c723594af517d7103178b5462a2d4298e5f253cfe6298"
+  },
+  {
+    "model": "honor_200_pro",
+    "color": "black",
+    "path": "device_icons_svg/honor/phones/ic_honor_200_pro_black_icon.svg",
+    "fill": "#757a7d",
+    "reason": "reference placement/orientation",
+    "before_sha256": "1d5157e407bec75febe8eae4f789aece19f1b241618f220c636b8f960565c47e",
+    "after_sha256": "00419dc47dfec8f304e8829885f5a5906ea1eff4e5d2957b541bc5920756d9e8",
+    "non_logo_sha256": "231bf394ee3874c77ecbfabe1ad3213e6932167176f86bb50bcd4cfde7e5c233"
+  },
+  {
+    "model": "honor_200_pro",
+    "color": "moonlight_white",
+    "path": "device_icons_svg/honor/phones/ic_honor_200_pro_moonlight_white_icon.svg",
+    "fill": "#b3b5af",
+    "reason": "reference placement/orientation",
+    "before_sha256": "ab5f1ef1923e86456b9062755e5c1bfef756d8478de6fb85364ec45684562878",
+    "after_sha256": "87c0edc126d4ffd5a5962d4935ed257da4f265257538983330449d278e16d82f",
+    "non_logo_sha256": "b65dc86ce50b28448b7a3f2c61a9565b29919a2d08a5d4d84dbee3fa6acf5125"
+  },
+  {
+    "model": "honor_200_pro",
+    "color": "ocean_cyan",
+    "path": "device_icons_svg/honor/phones/ic_honor_200_pro_ocean_cyan_icon.svg",
+    "fill": "#7ea49d",
+    "reason": "reference placement/orientation",
+    "before_sha256": "4f4f7c2455aa9c47eebf8434721a552ddb9169817cc207c3d9891029bc6b619b",
+    "after_sha256": "c85ba6e84cacb8a9a926b20c762be484e954e68fed8b06d7d5764fa582033cb4",
+    "non_logo_sha256": "a18ecfec5f24695916ff0125357de7c0ba1bf489f93d3eca5fa0e40b9ef71178"
+  },
+  {
+    "model": "honor_magic5_pro",
+    "color": "black",
+    "path": "device_icons_svg/honor/phones/ic_honor_magic5_pro_black_icon.svg",
+    "fill": "#777b80",
+    "reason": "reference placement/orientation",
+    "before_sha256": "cec6198bcd8ce39edce42572da89830068cf4e972d63682eb52f717d396b8c5a",
+    "after_sha256": "efee870d3c872ff7c95ee41fc6b8e840def508b85ff185b5110ca40b80307315",
+    "non_logo_sha256": "50a95cc5c673eeda3fe673d5e07ecbdd5d88bffa53b9d8a450f7ea98b5001ecb"
+  },
+  {
+    "model": "honor_magic5_pro",
+    "color": "meadow_green",
+    "path": "device_icons_svg/honor/phones/ic_honor_magic5_pro_meadow_green_icon.svg",
+    "fill": "#6f9181",
+    "reason": "reference placement/orientation",
+    "before_sha256": "ff2d0eefa8770b03aa830e0db7256aadd4e2e5f59098d6fca509a3f4cca5f02a",
+    "after_sha256": "d880ea6449213b0355decf27225471785902070c320db80584db92c8dd9c04ef",
+    "non_logo_sha256": "81a49d6f14d6719eda594ae473c322814a0baf4bf432e3bd1994e7b51408394e"
+  },
+  {
+    "model": "honor_magic5_pro",
+    "color": "purple",
+    "path": "device_icons_svg/honor/phones/ic_honor_magic5_pro_purple_icon.svg",
+    "fill": "#917f9c",
+    "reason": "reference placement/orientation",
+    "before_sha256": "39534eb00ab26f8fa8be925896c4ba9ad77280d0f08ddbfe279515f036a45c81",
+    "after_sha256": "55bd34647bce5bce2628b946f70a4147da512f36ecdd2e1d157fe1ada716fcb1",
+    "non_logo_sha256": "1b8971d17cf68e2e949389804e9f7ae3ae0c4a2fc8263e35f40848dd0fad549c"
+  },
+  {
+    "model": "honor_magic6_pro",
+    "color": "black",
+    "path": "device_icons_svg/honor/phones/ic_honor_magic6_pro_black_icon.svg",
+    "fill": "#787d7d",
+    "reason": "reference placement/orientation",
+    "before_sha256": "125c9dcad0ad17f9572fc9decfb7764b7b183757ee7a0e8d3ba4fb37c50ce615",
+    "after_sha256": "94ee12229c964154709f89dddbf48b9e5700ab521036ecf7f7d3e3fdc7266f72",
+    "non_logo_sha256": "7b125099d2fcdf918c60c506428c9d8bb9391f983d7f1b0c57ec6d322bf35cc6"
+  },
+  {
+    "model": "honor_magic6_pro",
+    "color": "epi_green",
+    "path": "device_icons_svg/honor/phones/ic_honor_magic6_pro_epi_green_icon.svg",
+    "fill": "#869a85",
+    "reason": "reference placement/orientation",
+    "before_sha256": "cbb896a42b2603f6919460d6ea463dc096e1dc9fdb2f65fe4686c32804963221",
+    "after_sha256": "17940ea875b07de24b6625c268668b7cd522df5e897fe211565e104093354e4d",
+    "non_logo_sha256": "b054d409f35e69d42d36afc44ab8517f5f10b2be05901810ccaa17d3dc127878"
+  },
+  {
+    "model": "oneplus_13",
+    "color": "midnight_ocean",
+    "path": "device_icons_svg/oneplus/phones/ic_oneplus_13_midnight_ocean_icon.svg",
+    "fill": "#6b7da6",
+    "reason": "reference finish hue",
+    "before_sha256": "0aac0dcd802583b4c1b303427746c1be2d547e0177d00193e003b7597903f456",
+    "after_sha256": "e55efb67753858da88fc43649eeb884d068744774b2e6b024b9998bb405d189e",
+    "non_logo_sha256": "8848915544c4f8b9d7a615402e2106b1c4b85ad700cd9b5a162e78cff28b0ce0"
+  },
+  {
+    "model": "galaxy_s25",
+    "color": "icyblue",
+    "path": "device_icons_svg/samsung/phones/ic_galaxy_s25_icyblue_icon.svg",
+    "fill": "#b6c9e3",
+    "reason": "Samsung Mobile Press finish hue",
+    "before_sha256": "d1a0e1c58388d2c5123dcd38f92000212d4bc1b744a37d8ec187d8538c55f82b",
+    "after_sha256": "fded83956e797a3ff7f6b8506f524efd29609b96f919c562e77bce935605905f",
+    "non_logo_sha256": "20082cdfa08c94f775857d3c08cb8e9ac7377c7de38837ab570368b4bc3dd411"
+  },
+  {
+    "model": "galaxy_s25",
+    "color": "mint",
+    "path": "device_icons_svg/samsung/phones/ic_galaxy_s25_mint_icon.svg",
+    "fill": "#a8bcb3",
+    "reason": "Samsung Mobile Press finish hue",
+    "before_sha256": "21f00fb9b94205a2b621cf150e2742e07d37c1b232d6594350583b9f890173c4",
+    "after_sha256": "957237264c6cf5075f31091c124b7e4ecb3ed8f1c181b7a8f9fb8c531653a032",
+    "non_logo_sha256": "c0a06d82d847bd581a25eff6dc370e7a4f15a05883cb2813b84c400a910bf6b7"
+  },
+  {
+    "model": "galaxy_s25",
+    "color": "navy",
+    "path": "device_icons_svg/samsung/phones/ic_galaxy_s25_navy_icon.svg",
+    "fill": "#687b9d",
+    "reason": "Samsung Mobile Press finish hue",
+    "before_sha256": "c44a584bb48e81f43471f79f315c5420cf41df03d4beed8bffaf47e56f4f3731",
+    "after_sha256": "8631ad1370ec11578f07777fd84bad87ebf6cbf7abc9472aaeccec16f13bb5ee",
+    "non_logo_sha256": "928e0859ebcd2084b2f4eb90e2c4fe8ad14ad177c774aefbc37ed653ba1ad2de"
+  },
+  {
+    "model": "galaxy_s25",
+    "color": "silver_shadow",
+    "path": "device_icons_svg/samsung/phones/ic_galaxy_s25_silver_shadow_icon.svg",
+    "fill": "#a2a5af",
+    "reason": "Samsung Mobile Press finish hue",
+    "before_sha256": "aebeb1cbe4c8f9fc3b6f39d5ead25187e8cb49efc7cd2f391348ed5c34d832c8",
+    "after_sha256": "06f88e913f1987facd2af2f036d39d62898ea68179465c661b8a5ae4746ce808",
+    "non_logo_sha256": "210ee28daa7a26e4b5a778764fb84eb2dd9062bd98a4f171d556391c71e453a9"
+  },
+  {
+    "model": "galaxy_s25_ultra",
+    "color": "titanium_silverblue",
+    "path": "device_icons_svg/samsung/phones/ic_galaxy_s25_ultra_titanium_silverblue_icon.svg",
+    "fill": "#858b9a",
+    "reason": "Samsung Mobile Press finish hue",
+    "before_sha256": "0c2fc3b95f51823365866c3194ba219ae02ff09f7265a5121bbffdf3b06892e9",
+    "after_sha256": "f3e538993be62f2fb9bbbd43d0fcf67df0825293b61b51df2e4ff6ce890812b9",
+    "non_logo_sha256": "5e2145676aa35099eb709f3240949bf403c15565cadddbc94c3dbe03b2bc7ce2"
+  },
+  {
+    "model": "galaxy_s25_ultra",
+    "color": "titanium_black",
+    "path": "device_icons_svg/samsung/phones/ic_galaxy_s25_ultra_titanium_black_icon.svg",
+    "fill": "#181c25",
+    "reason": "Samsung Mobile Press finish hue",
+    "before_sha256": "5d747c35fb0e3df4d603b67732e42900c6273d088e25ebc4bfc7de9e7f78b783",
+    "after_sha256": "b1f11e7bed17e9f1f7cc3cbbc73ed07a992b2da6b6535968029bdd81f6d1a6f9",
+    "non_logo_sha256": "fd72fd78fb11317687303c52902b91bf88b4ba0f5607714163cc9a3fba027640"
+  },
+  {
+    "model": "galaxy_s25_ultra",
+    "color": "titanium_gray",
+    "path": "device_icons_svg/samsung/phones/ic_galaxy_s25_ultra_titanium_gray_icon.svg",
+    "fill": "#878580",
+    "reason": "Samsung Mobile Press finish hue",
+    "before_sha256": "8f67a94478bd9eca940bbe1997590f954ec5d88095a8b2a803a387a85544df33",
+    "after_sha256": "a8fd81d4289337ef70b0ae805172d2c0346f34142ff363a3a9d601dfcffc0edf",
+    "non_logo_sha256": "0e5c1f7751a6b0506634abf468fde7227589fb76d3925fde657086f1d72b3828"
+  },
+  {
+    "model": "galaxy_s25_ultra",
+    "color": "titanium_whitesilver",
+    "path": "device_icons_svg/samsung/phones/ic_galaxy_s25_ultra_titanium_whitesilver_icon.svg",
+    "fill": "#d8dfe0",
+    "reason": "Samsung Mobile Press finish hue",
+    "before_sha256": "c9d11eb2a82f62b78b5e8ae507895d193e6f3a8ff6a515bc8ad2c125151b67fb",
+    "after_sha256": "30aacb03a999b92b70b147d8d82b877ea48a0e756a57b98012ec53798dc6dd8b",
+    "non_logo_sha256": "234b59f2c4fe2da0ec09f696e352c79292fe2462b5071d4cc3cdf6c9c2581083"
+  },
+  {
+    "model": "pixel_6",
+    "color": "kinda_coral",
+    "path": "device_icons_svg/pixel/phones/ic_pixel_6_kinda_coral_icon.svg",
+    "fill": "#d3a697",
+    "reason": "Google rear-render finish hue; 6a mark centered",
+    "before_sha256": "42706f44285431102edd38f87c3b5f4d4c113eee943b14da9624a470fcd4788d",
+    "after_sha256": "4e130cbcd1a3429d3cbe0696859fa63905bdbb9edd2d6f52279ab7f0dd22ec96",
+    "non_logo_sha256": "16e277046bbcfc8242c677e41622ba226bbb1a459fa3a0b2c8ed5265e671c7ea"
+  },
+  {
+    "model": "pixel_6_pro",
+    "color": "sorta_sunny",
+    "path": "device_icons_svg/pixel/phones/ic_pixel_6_pro_sorta_sunny_icon.svg",
+    "fill": "#9b7c50",
+    "reason": "Google rear-render finish hue; 6a mark centered",
+    "before_sha256": "added3c56288790f4b6778f139fdf19e712501990793a4e7e321a2efa1e08980",
+    "after_sha256": "a2a01b1fee9e8d3770ad7cd822a1cd586082e76d04de2c07488a02a7cbe0f01d",
+    "non_logo_sha256": "7f992ceeac0dc5dda14e814d90403eba652158b330d38a9bee21b129cbf03c1c"
+  },
+  {
+    "model": "pixel_6_a",
+    "color": "charcoal",
+    "path": "device_icons_svg/pixel/phones/ic_pixel_6_a_charcoal_icon.svg",
+    "fill": "#202527",
+    "reason": "Google rear-render finish hue; 6a mark centered",
+    "before_sha256": "a5a1366a7acf226141e0ba1c9f8280714915028d23c7d83024111331dde6aae8",
+    "after_sha256": "6639e7987092a01cdeb280b60b1cf73a1f44d769ea33f45e19c4dfa0422016aa",
+    "non_logo_sha256": "619f955379a5ef30c408daad9e9da13fc58d24d431baa43bcce23791a044aa92"
+  },
+  {
+    "model": "pixel_6_a",
+    "color": "chalk",
+    "path": "device_icons_svg/pixel/phones/ic_pixel_6_a_chalk_icon.svg",
+    "fill": "#c7ccc9",
+    "reason": "Google rear-render finish hue; 6a mark centered",
+    "before_sha256": "3591944dccb82bc8ebcbfdc77172b582d8c73d3b95569110bc6ef1c7e09d797c",
+    "after_sha256": "1e3dfeb9d92bf0abc56e6b17ee945027af65328c673c942f1ecb5587bc0af8d9",
+    "non_logo_sha256": "7fefe5cf9424d3fa5a8d561bedcff27346163aa6155b1a20f4ce689a1240014c"
+  },
+  {
+    "model": "pixel_6_a",
+    "color": "sage",
+    "path": "device_icons_svg/pixel/phones/ic_pixel_6_a_sage_icon.svg",
+    "fill": "#829c8f",
+    "reason": "Google rear-render finish hue; 6a mark centered",
+    "before_sha256": "7eab7d57663e6476d74dd54d0036dbdc3d2dd17f7c88c453812ccfff97e8e2f9",
+    "after_sha256": "265b5364ca72fa82e3a5c1c5eec91a86ae64a9ea2e7336b8185adce0c65dd733",
+    "non_logo_sha256": "4049129392a01553108a02a6c504a4ac3051e838abf0c2c884b2d0f9c5f95cf5"
+  },
+  {
+    "model": "pixel_5",
+    "color": "just_black",
+    "path": "device_icons_svg/pixel/phones/ic_pixel_5_just_black_icon.svg",
+    "fill": "#555858",
+    "reason": "Google 2020 launch render: glossy gray G",
+    "before_sha256": "006a7851960f822a5d9eae8944216969f232161b9e1e41e2f2c8b529badbccf1",
+    "after_sha256": "980d8ed0f6d067a5b3432059c112e1297ce7c8476e79d4367a7771aaeb0f9070",
+    "non_logo_sha256": "bbc71a82bfdcba0faf28aa72e533dae42592a2a3dfe2b4ab282ae4797417203d"
+  },
+  {
+    "model": "pixel_5",
+    "color": "default",
+    "path": "device_icons_svg/pixel/phones/ic_pixel_5_icon.svg",
+    "fill": "#555858",
+    "reason": "Google 2020 launch render: glossy gray G",
+    "before_sha256": "006a7851960f822a5d9eae8944216969f232161b9e1e41e2f2c8b529badbccf1",
+    "after_sha256": "980d8ed0f6d067a5b3432059c112e1297ce7c8476e79d4367a7771aaeb0f9070",
+    "non_logo_sha256": "bbc71a82bfdcba0faf28aa72e533dae42592a2a3dfe2b4ab282ae4797417203d"
+  }
+]

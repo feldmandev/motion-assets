@@ -2,8 +2,6 @@
   "id": "generic-pc",
   "name": "Generic PC",
   "state": "default",
-  "glbUrl": "assets/devices/models/generic-pc.8ff94f724a97.glb.gz",
-  "sha256": "8ff94f724a970d7b23d08ae4d734b63b2b8e7f45109b23e0f9be47b5b7bba62d",
   "screens": [
     {
       "node": "Device screen",
@@ -54,5 +52,7 @@
         "description": "Motion generic device artwork and authored screen mapping"
       }
     ]
-  }
+  },
+  "glbUrl": "assets/devices/models/generic-pc.8ff94f724a97.glb.gz",
+  "sha256": "8ff94f724a970d7b23d08ae4d734b63b2b8e7f45109b23e0f9be47b5b7bba62d"
 }

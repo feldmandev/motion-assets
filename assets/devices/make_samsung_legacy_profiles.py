@@ -4,6 +4,7 @@ The Blender-only hooks add legacy bezel hardware and preserve independently esti
 chassis corners on rectangular/early Infinity displays. Shared builders stay untouched.
 """
 import copy
+from make_device_branding import apply as apply_branding
 import json
 import math
 import sys
@@ -336,7 +337,7 @@ def install_blender_details():
                 mesh=bpy.data.meshes.new(f'Front wordmark {index}')
                 mesh.from_pydata([(x*.001,(-y+(body['height']+sh)/4-3)*.001,
                                   (body['depth']/2+.06)*.001) for x,y in contour],[],[tuple(range(len(contour)))])
-                mesh.materials.append(bpy.data.materials['front_speaker'])
+                mesh.materials.append(bpy.data.materials['logo'])
                 obj=bpy.data.objects.new(f'Front Samsung logo | {index}',mesh)
                 bpy.context.scene.collection.objects.link(obj); obj.parent=parent
         for item in spec.get('front_details',[]):
@@ -459,6 +460,7 @@ def main():
         return
     profiles=[validate_profile(make(key)) for key in DEVICES]
     for p in profiles:
+        apply_branding(p)
         (BASE/'profiles'/f"{p['id']}.json").write_text(json.dumps(p,indent=2)+'\n')
     research={'checked':'2026-10-18','units':'mm; diagonal inches; portrait native pixels',
               'build_command':'blender.exe -b -t 4 --python make_samsung_legacy_profiles.py -- --build',

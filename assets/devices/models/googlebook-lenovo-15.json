@@ -181,9 +181,9 @@
         },
         "logo": {
           "rgb": [
-            0.3216,
-            0.3412,
-            0.3647
+            0.396078431372549,
+            0.41568627450980394,
+            0.4392156862745098
           ],
           "metal": 0.65,
           "rough": 0.18
@@ -231,9 +231,9 @@
         },
         "logo": {
           "rgb": [
-            0.5647,
-            0.5882,
-            0.6157
+            0.7254901960784313,
+            0.7333333333333333,
+            0.7450980392156863
           ],
           "metal": 0.65,
           "rough": 0.18
@@ -300,8 +300,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/googlebook-lenovo-15.4de8c543ef21.glb.gz",
-  "sha256": "4de8c543ef21a6db7b0cc67fedf2c6aa890c9ee5787d74fea33e1657ae893668",
+  "glbUrl": "assets/devices/models/googlebook-lenovo-15.2e956d9bc63c.glb.gz",
+  "sha256": "2e956d9bc63c36892fbf402706aa9c79360883a9d42d566fb077b99e6337f2ab",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/googlebook-lenovo-15.json",

@@ -1,0 +1,1118 @@
+{
+  "passed": 185,
+  "models": [
+    {
+      "id": "galaxy-a34",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-a35",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-a36",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-a37",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-a54",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-a55",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-a56",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-a57",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-s10-5g",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-s10-lite",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-s10-plus",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-s10",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-s10e",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-s20-fe",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-s20-plus",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-s20-ultra",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-s20",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-s21-fe",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-s21-plus",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-s21-ultra",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-s21",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-s22-plus",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-s22-ultra",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-s22",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-s23-fe",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-s23-plus",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-s23-ultra",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-s23",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-s24-fe",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-s24-plus",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-s24-ultra",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-s24",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-s25-edge",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-s25-fe",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-s25-plus",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-s25-ultra",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-s25",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-s26-fe",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-s26-plus",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-s26-ultra",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-s26",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-s6-edge-plus",
+      "brand_nodes": 14,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-s6-edge",
+      "brand_nodes": 14,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-s6",
+      "brand_nodes": 14,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-s7-edge",
+      "brand_nodes": 14,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-s7",
+      "brand_nodes": 14,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-s8-plus",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-s8",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-s9-plus",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-s9",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-tab-a11-plus",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-tab-a11",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-tab-s10-fe-plus",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-tab-s10-fe",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-tab-s10-lite",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-tab-s10-plus",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-tab-s10-ultra",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-tab-s11-ultra",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-tab-s11",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-tab-s12-plus",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-tab-s12-ultra",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-tab-s6-lite-2020",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-tab-s6-lite-2022",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-tab-s6-lite-2024",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-tab-s6",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-tab-s7-fe",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-tab-s7-plus",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-tab-s7",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-tab-s8-plus",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-tab-s8-ultra",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-tab-s8",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-tab-s9-fe-plus",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-tab-s9-fe",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-tab-s9-plus",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-tab-s9-ultra",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-tab-s9",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-z-flip3-folded",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-z-flip3-unfolded",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": true
+    },
+    {
+      "id": "galaxy-z-flip4-folded",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-z-flip4-unfolded",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": true
+    },
+    {
+      "id": "galaxy-z-flip5-folded",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-z-flip5-unfolded",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": true
+    },
+    {
+      "id": "galaxy-z-flip6-folded",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-z-flip6-unfolded",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": true
+    },
+    {
+      "id": "galaxy-z-flip7-fe-folded",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-z-flip7-fe-unfolded",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": true
+    },
+    {
+      "id": "galaxy-z-flip7-folded",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-z-flip7-unfolded",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": true
+    },
+    {
+      "id": "galaxy-z-flip8-folded",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-z-flip8-unfolded",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": true
+    },
+    {
+      "id": "galaxy-z-fold3-folded",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-z-fold3-unfolded",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": true
+    },
+    {
+      "id": "galaxy-z-fold4-folded",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-z-fold4-unfolded",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": true
+    },
+    {
+      "id": "galaxy-z-fold5-folded",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-z-fold5-unfolded",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": true
+    },
+    {
+      "id": "galaxy-z-fold6-folded",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-z-fold6-unfolded",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": true
+    },
+    {
+      "id": "galaxy-z-fold7-folded",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-z-fold7-unfolded",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": true
+    },
+    {
+      "id": "galaxy-z-fold8-folded",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-z-fold8-ultra-folded",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-z-fold8-ultra-unfolded",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": true
+    },
+    {
+      "id": "galaxy-z-fold8-unfolded",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": true
+    },
+    {
+      "id": "galaxy-z-trifold-folded",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "galaxy-z-trifold-unfolded",
+      "brand_nodes": 7,
+      "has_logo_material_slot": true,
+      "animation": true
+    },
+    {
+      "id": "googlebook-acer-14",
+      "brand_nodes": 1,
+      "has_logo_material_slot": true,
+      "animation": true
+    },
+    {
+      "id": "googlebook-asus-14",
+      "brand_nodes": 1,
+      "has_logo_material_slot": true,
+      "animation": true
+    },
+    {
+      "id": "googlebook-dell-xps",
+      "brand_nodes": 1,
+      "has_logo_material_slot": true,
+      "animation": true
+    },
+    {
+      "id": "googlebook-emulator",
+      "brand_nodes": 1,
+      "has_logo_material_slot": true,
+      "animation": true
+    },
+    {
+      "id": "googlebook-hp-14",
+      "brand_nodes": 1,
+      "has_logo_material_slot": true,
+      "animation": true
+    },
+    {
+      "id": "googlebook-lenovo-15",
+      "brand_nodes": 1,
+      "has_logo_material_slot": true,
+      "animation": true
+    },
+    {
+      "id": "iphone-11-pro-max",
+      "brand_nodes": 2,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "iphone-11-pro",
+      "brand_nodes": 2,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "iphone-11",
+      "brand_nodes": 2,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "iphone-12-mini",
+      "brand_nodes": 2,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "iphone-12-pro-max",
+      "brand_nodes": 2,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "iphone-12-pro",
+      "brand_nodes": 2,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "iphone-12",
+      "brand_nodes": 2,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "iphone-13-mini",
+      "brand_nodes": 2,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "iphone-13-pro-max",
+      "brand_nodes": 2,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "iphone-13-pro",
+      "brand_nodes": 2,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "iphone-13",
+      "brand_nodes": 2,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "iphone-14-plus",
+      "brand_nodes": 2,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "iphone-14-pro-max",
+      "brand_nodes": 2,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "iphone-14-pro",
+      "brand_nodes": 2,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "iphone-14",
+      "brand_nodes": 2,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "iphone-15-plus",
+      "brand_nodes": 2,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "iphone-15-pro-max",
+      "brand_nodes": 2,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "iphone-15-pro",
+      "brand_nodes": 2,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "iphone-15",
+      "brand_nodes": 2,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "iphone-16-plus",
+      "brand_nodes": 2,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "iphone-16-pro-max",
+      "brand_nodes": 2,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "iphone-16-pro",
+      "brand_nodes": 2,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "iphone-16",
+      "brand_nodes": 2,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "iphone-16e",
+      "brand_nodes": 2,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "iphone-17-pro-max",
+      "brand_nodes": 2,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "iphone-17-pro",
+      "brand_nodes": 2,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "iphone-17",
+      "brand_nodes": 2,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "iphone-17e",
+      "brand_nodes": 2,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "iphone-18-pro-max",
+      "brand_nodes": 2,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "iphone-18-pro",
+      "brand_nodes": 2,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "iphone-air",
+      "brand_nodes": 2,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "iphone-duo-folded",
+      "brand_nodes": 2,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "iphone-duo-unfolded",
+      "brand_nodes": 2,
+      "has_logo_material_slot": true,
+      "animation": true
+    },
+    {
+      "id": "oneplus-13",
+      "brand_nodes": 3,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "oneplus-13r",
+      "brand_nodes": 3,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "oneplus-pad-2",
+      "brand_nodes": 3,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "oneplus-pad-3",
+      "brand_nodes": 3,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "oneplus-pad-go",
+      "brand_nodes": 3,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "oneplus-pad",
+      "brand_nodes": 3,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "pixel-10-pro-fold-folded",
+      "brand_nodes": 1,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "pixel-10-pro-fold-unfolded",
+      "brand_nodes": 1,
+      "has_logo_material_slot": true,
+      "animation": true
+    },
+    {
+      "id": "pixel-10-pro-xl",
+      "brand_nodes": 1,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "pixel-10-pro",
+      "brand_nodes": 1,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "pixel-10",
+      "brand_nodes": 1,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "pixel-10a",
+      "brand_nodes": 1,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "pixel-11-pro-fold-folded",
+      "brand_nodes": 1,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "pixel-11-pro-fold-unfolded",
+      "brand_nodes": 1,
+      "has_logo_material_slot": true,
+      "animation": true
+    },
+    {
+      "id": "pixel-11-pro-xl",
+      "brand_nodes": 1,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "pixel-11-pro",
+      "brand_nodes": 1,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "pixel-11",
+      "brand_nodes": 1,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "pixel-4-xl",
+      "brand_nodes": 1,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "pixel-4",
+      "brand_nodes": 1,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "pixel-4a-5g",
+      "brand_nodes": 1,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "pixel-4a",
+      "brand_nodes": 1,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "pixel-5",
+      "brand_nodes": 1,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "pixel-5a",
+      "brand_nodes": 1,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "pixel-6-pro",
+      "brand_nodes": 1,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "pixel-6",
+      "brand_nodes": 1,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "pixel-6a",
+      "brand_nodes": 1,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "pixel-7-pro",
+      "brand_nodes": 1,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "pixel-7",
+      "brand_nodes": 1,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "pixel-7a",
+      "brand_nodes": 1,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "pixel-8-pro",
+      "brand_nodes": 1,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "pixel-8",
+      "brand_nodes": 1,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "pixel-8a",
+      "brand_nodes": 1,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "pixel-9-pro-fold-folded",
+      "brand_nodes": 1,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "pixel-9-pro-fold-unfolded",
+      "brand_nodes": 1,
+      "has_logo_material_slot": true,
+      "animation": true
+    },
+    {
+      "id": "pixel-9-pro-xl",
+      "brand_nodes": 1,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "pixel-9-pro",
+      "brand_nodes": 1,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "pixel-9",
+      "brand_nodes": 1,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "pixel-9a",
+      "brand_nodes": 1,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "pixel-fold-folded",
+      "brand_nodes": 1,
+      "has_logo_material_slot": true,
+      "animation": false
+    },
+    {
+      "id": "pixel-fold-unfolded",
+      "brand_nodes": 1,
+      "has_logo_material_slot": true,
+      "animation": true
+    }
+  ],
+  "failed": [],
+  "non_logo_position_hashes_preserved": true,
+  "asset_pixel_10_pro_binary_preserved": true
+}

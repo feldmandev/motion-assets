@@ -119,10 +119,12 @@
         },
         "logo": {
           "rgb": [
-            0.13,
-            0.14,
-            0.16
-          ]
+            0.5686274509803921,
+            0.6,
+            0.592156862745098
+          ],
+          "metal": 0,
+          "rough": 0.3
         }
       }
     },
@@ -157,10 +159,12 @@
         },
         "logo": {
           "rgb": [
-            0.62,
-            0.64,
-            0.68
-          ]
+            0.47843137254901963,
+            0.48627450980392156,
+            0.5450980392156862
+          ],
+          "metal": 0,
+          "rough": 0.3
         }
       }
     },
@@ -195,16 +199,18 @@
         },
         "logo": {
           "rgb": [
-            0.62,
-            0.64,
-            0.68
-          ]
+            0.44313725490196076,
+            0.4470588235294118,
+            0.4588235294117647
+          ],
+          "metal": 0,
+          "rough": 0.3
         }
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-s26-fe.e84109043525.glb.gz",
-  "sha256": "e841090435256269460662c40b9b0b2f97b336d81bab899dbef5ff57763533d3",
+  "glbUrl": "assets/devices/models/galaxy-s26-fe.95e21c59cc50.glb.gz",
+  "sha256": "95e21c59cc506bb7b6643ce4ab9b7adca81628c5d11469071086b9d8e68bdf49",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-s26-fe.json",

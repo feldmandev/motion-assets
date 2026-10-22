@@ -106,10 +106,12 @@
         },
         "logo": {
           "rgb": [
-            0.62,
-            0.64,
-            0.68
-          ]
+            0.4117647058823529,
+            0.41568627450980394,
+            0.42745098039215684
+          ],
+          "metal": 0,
+          "rough": 0.3
         },
         "front_bezel": {
           "rgb": [
@@ -152,10 +154,12 @@
         },
         "logo": {
           "rgb": [
-            0.13,
-            0.14,
-            0.16
-          ]
+            0.5411764705882353,
+            0.5215686274509804,
+            0.4745098039215686
+          ],
+          "metal": 0,
+          "rough": 0.3
         },
         "front_bezel": {
           "rgb": [
@@ -198,10 +202,12 @@
         },
         "logo": {
           "rgb": [
-            0.13,
-            0.14,
-            0.16
-          ]
+            0.5411764705882353,
+            0.5490196078431373,
+            0.5607843137254902
+          ],
+          "metal": 0,
+          "rough": 0.3
         },
         "front_bezel": {
           "rgb": [
@@ -244,10 +250,12 @@
         },
         "logo": {
           "rgb": [
-            0.13,
-            0.14,
-            0.16
-          ]
+            0.6784313725490196,
+            0.6784313725490196,
+            0.6784313725490196
+          ],
+          "metal": 0,
+          "rough": 0.3
         },
         "front_bezel": {
           "rgb": [
@@ -260,8 +268,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-s7.8fb864ed3ee2.glb.gz",
-  "sha256": "8fb864ed3ee2513510769b7c966110fdd1376d5acd53d98458db09ffcf9c16ce",
+  "glbUrl": "assets/devices/models/galaxy-s7.9022ec759668.glb.gz",
+  "sha256": "9022ec7596683b1b6b594ccc541d9ceb8e6d2360082b64714a7bb8b8fb3d908e",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-s7.json",

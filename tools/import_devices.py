@@ -31,6 +31,7 @@ def main():
     parser.add_argument("--models", type=Path, required=True)
     args = parser.parse_args()
     target = ROOT / "assets/devices"
+    version = json.loads((ROOT / "package.json").read_text())["version"]
     text = (args.icons / "gallery.html").read_text(encoding="utf-8")
     start = text.index("const devices=") + len("const devices=")
     devices, length = json.JSONDecoder().raw_decode(text[start:])
@@ -64,6 +65,9 @@ def main():
             variant["preview"] = preview.relative_to(ROOT).as_posix()
     model_files = {}
     profile_cache = {path.stem: public_json(json.loads(path.read_text(encoding="utf-8"))) for path in (args.models / "profiles").glob("*.json")}
+    # Generic models are authored in this library, outside the vendor framework.
+    for path in (target / "profiles").glob("generic-*.json"):
+        profile_cache[path.stem] = json.loads(path.read_text(encoding="utf-8"))
     for path in sorted((args.icons / "model_data").glob("*.js")):
         script = path.read_text(encoding="utf-8")
         start = script.index("={", script.index("window.__DEVICE_MODEL_DATA__[")) + 1
@@ -97,7 +101,7 @@ def main():
         write_json(target / "profiles" / (name + ".json"), profile)
     for path in sorted((args.models / "research").glob("*.json")):
         # Reference measurements/manifests only: never the neighboring downloaded photographs.
-        write_json(target / "provenance/research" / path.name, public_json(json.loads(path.read_text(encoding="utf-8"))))
+        write_json(target / "provenance/research" / path.name, public_json(json.loads(path.read_text(encoding="utf-8-sig"))))
     for name in ["SOURCES.md", "OLDER_MODELS.md", "NEW_BRANDS.md", "APPLE_MODELS.md", "MONOCHROME.md", "RADIUS_STYLE_NOTES.txt"]:
         path = args.icons / name
         if path.exists():
@@ -105,8 +109,8 @@ def main():
             output.parent.mkdir(parents=True, exist_ok=True)
             output.write_text(public_json(path.read_text(encoding="utf-8")), encoding="utf-8")
     write_json(target / "catalog.json", devices)
-    write_json(target / "models-manifest.json", {"schemaVersion": 1, "release": "v0.1.0",
-        "archive": "motion-assets-models-0.1.0.zip", "files": model_files})
+    write_json(target / "models-manifest.json", {"schemaVersion": 1, "release": f"v{version}",
+        "archive": f"motion-assets-models-{version}.zip", "files": model_files})
     # Preserve the existing viewer UI while removing embedded icon and model payloads.
     catalog_start = text.index("const devices=") + len("const devices=")
     _, catalog_length = json.JSONDecoder().raw_decode(text[catalog_start:])
@@ -135,6 +139,7 @@ def main():
     text = text.replace("if(is3d)loadViewer(activeModel)", "if(is3d)await loadViewer(activeModel)")
     text = text.replace("if(activeTab==='3d')loadViewer(data)", "if(activeTab==='3d')await loadViewer(data)")
     text = text.replace("viewer.orientation=activeDevice?.kind==='tablet'?", "viewer.orientation=['generic_phone','generic_tablet','generic_pc'].includes(activeDevice?.model)?'0deg 0deg 0deg':activeDevice?.kind==='tablet'?")
+    text = text.replace("?v=0.1.0", f"?v={version}")
     (ROOT / "gallery/devices.html").write_text(text, encoding="utf-8")
     print(f"Imported {len(devices)} families and {len(model_files)} lazy models; photos/renders/history excluded")
 

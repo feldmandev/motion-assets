@@ -1,0 +1,154 @@
+{
+  "id": "oneplus-pad",
+  "name": "OnePlus Pad",
+  "state": "default",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        2000,
+        2800
+      ],
+      "size_mm": [
+        171.4036558985992,
+        239.96511825803884
+      ],
+      "center_mm": [
+        0.0,
+        0.0,
+        3.304999828338623
+      ],
+      "corner_radius_mm": 1.9968279492996004,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0,
+      "frame_bounds_mm": [
+        9.0031720507004,
+        9.032440870980565,
+        171.4036558985992,
+        239.96511825803884
+      ],
+      "frame_screen_px": null,
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "width": 189.41,
+        "height": 258.03,
+        "depth": 6.54,
+        "corner_radius": 11.0,
+        "edge_roll": 0.55,
+        "front_rail_mm": 0.4,
+        "corner_radii_mm": [
+          11.0,
+          11.0,
+          11.0,
+          11.0
+        ]
+      },
+      "cutouts": [
+        {
+          "center_mm": [
+            -90.2034139746498,
+            0
+          ],
+          "radius_mm": 1.2
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "articulation": null,
+  "panels": [],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/oneplus-pad-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "logo": "logo",
+    "band": "band",
+    "black": "black",
+    "flash": "flash"
+  },
+  "finishes": [
+    {
+      "name": "Halo Green",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.5607843137254902,
+            0.6588235294117647,
+            0.6078431372549019
+          ],
+          "metal": 0.6,
+          "rough": 0.4
+        },
+        "rail": {
+          "rgb": [
+            0.5607843137254902,
+            0.6588235294117647,
+            0.6078431372549019
+          ],
+          "metal": 0.8,
+          "rough": 0.3
+        },
+        "bar": {
+          "rgb": [
+            0.45984313725490195,
+            0.540235294117647,
+            0.49843137254901954
+          ],
+          "metal": 0.75,
+          "rough": 0.3
+        },
+        "logo": {
+          "rgb": [
+            0.43137254901960786,
+            0.5333333333333333,
+            0.47843137254901963
+          ],
+          "metal": 0,
+          "rough": 0.45
+        },
+        "band": {
+          "rgb": [
+            0.6392941176470588,
+            0.7510588235294117,
+            0.6929411764705882
+          ],
+          "metal": 0.5,
+          "rough": 0.35
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/oneplus-pad.76c548350e70.glb.gz",
+  "sha256": "76c548350e70bb9197ce5cbaa4b021baff5055fc855cde3082a5d0aaa63ea081",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/oneplus-pad.json",
+    "accuracy": {
+      "body_dimensions": "OnePlus official metric chassis dimensions. OnePlus 13 uses 8.5 mm glass chassis; Midnight Ocean leather is 8.9 mm and remains an approximate finish on that chassis.",
+      "screen_geometry": "Published full diagonal and native pixel aspect; concentric estimated corners. Bezel camera estimated from product render.",
+      "camera_geometry": "Official rear-render fit, measurements below. Bump depth, roll, glass and optical internals illustrative; not OEM CAD.",
+      "finishes": "Official finish names, approximate existing collection sRGB swatches; not calibrated physical materials.",
+      "omissions": "Ports, speaker holes, alert slider, antenna seams and microscopic inscriptions omitted."
+    },
+    "sources": [
+      "https://www.oneplus.com/us/oneplus-pad/specs",
+      "https://oasis.opstatics.com/content/dam/oasis/page/2023/pad/pad-specs1.png"
+    ]
+  }
+}

@@ -90,7 +90,8 @@
     "button": "button",
     "fingerprint": "fingerprint",
     "black": "black",
-    "flash": "flash"
+    "flash": "flash",
+    "logo": "logo"
   },
   "finishes": [
     {
@@ -130,6 +131,15 @@
             0.19608,
             0.20784
           ]
+        },
+        "logo": {
+          "rgb": [
+            0.4196078431372549,
+            0.4196078431372549,
+            0.4235294117647059
+          ],
+          "metal": 0.5,
+          "rough": 0.28
         }
       }
     },
@@ -170,12 +180,21 @@
             0.80784,
             0.87059
           ]
+        },
+        "logo": {
+          "rgb": [
+            0.47843137254901963,
+            0.5176470588235295,
+            0.5568627450980392
+          ],
+          "metal": 0.5,
+          "rough": 0.28
         }
       }
     }
   ],
-  "glbUrl": "assets/devices/models/pixel-4a.5b22ab23f9b8.glb.gz",
-  "sha256": "5b22ab23f9b83a73991f3eecc12d6b9c4d21cec9d1fc0229381d0cfa7298d9d5",
+  "glbUrl": "assets/devices/models/pixel-4a.1917c3c3663d.glb.gz",
+  "sha256": "1917c3c3663df4da73edf71770cd305d3d25703e0e9ac4ebb31c0e3199988cf9",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/pixel-4a.json",
@@ -185,7 +204,8 @@
       "screen_geometry": "Google Android Emulator skin trace with native panel aspect preserved",
       "camera_geometry": "Model-specific rear housing/lens placement proportioned from reviewed product photography; optical stacks reuse the reviewed Pixel optics and are illustrative",
       "buttons_and_rear_hardware": "Model-specific placement reviewed against product photography",
-      "finishes": "Approximate sRGB appearance matched to named Google finishes; not measured material samples"
+      "finishes": "Approximate sRGB appearance matched to named Google finishes; not measured material samples",
+      "branding": "Google G contour retained from reference artwork. Legacy Pixel4/4a/5/5a lower rear placement (approximately80%height); Pixel6 onward and folds centered on rear/camera leaf. Size, position and finish-tinted material are photo estimates, not manufacturer CAD."
     },
     "sources": [
       "https://support.google.com/pixelphone/answer/16043605?hl=en",

@@ -356,10 +356,12 @@
         },
         "logo": {
           "rgb": [
-            0.49411764705882355,
-            0.48823529411764705,
-            0.4745098039215686
-          ]
+            0.5342117647058823,
+            0.5284235294117646,
+            0.5149176470588235
+          ],
+          "metal": 0.45,
+          "rough": 0.3
         }
       }
     },
@@ -394,10 +396,12 @@
         },
         "logo": {
           "rgb": [
-            0.47058823529411764,
-            0.44509803921568625,
-            0.47843137254901963
-          ]
+            0.5110588235294117,
+            0.4859764705882352,
+            0.5187764705882352
+          ],
+          "metal": 0.45,
+          "rough": 0.3
         }
       }
     },
@@ -432,10 +436,12 @@
         },
         "logo": {
           "rgb": [
-            0.12156862745098039,
-            0.12352941176470589,
-            0.12745098039215685
-          ]
+            0.3136549019607843,
+            0.3154235294117647,
+            0.3189607843137255
+          ],
+          "metal": 0.45,
+          "rough": 0.3
         }
       }
     },
@@ -470,10 +476,12 @@
         },
         "logo": {
           "rgb": [
-            0.4372549019607843,
-            0.46078431372549017,
-            0.45294117647058824
-          ]
+            0.47825882352941174,
+            0.5014117647058822,
+            0.49369411764705873
+          ],
+          "metal": 0.45,
+          "rough": 0.3
         }
       }
     },
@@ -508,10 +516,12 @@
         },
         "logo": {
           "rgb": [
-            0.2607843137254902,
-            0.26666666666666666,
-            0.27058823529411763
-          ]
+            0.3046117647058823,
+            0.31039999999999995,
+            0.31425882352941176
+          ],
+          "metal": 0.45,
+          "rough": 0.3
         }
       }
     },
@@ -546,10 +556,12 @@
         },
         "logo": {
           "rgb": [
-            0.21372549019607842,
-            0.2803921568627451,
-            0.33137254901960783
-          ]
+            0.25830588235294116,
+            0.32390588235294115,
+            0.37407058823529404
+          ],
+          "metal": 0.45,
+          "rough": 0.3
         }
       }
     },
@@ -584,10 +596,12 @@
         },
         "logo": {
           "rgb": [
-            0.19411764705882353,
-            0.2372549019607843,
-            0.20588235294117646
-          ]
+            0.23901176470588234,
+            0.28145882352941176,
+            0.2505882352941176
+          ],
+          "metal": 0.45,
+          "rough": 0.3
         }
       }
     },
@@ -622,16 +636,18 @@
         },
         "logo": {
           "rgb": [
-            0.44901960784313727,
-            0.4196078431372549,
-            0.23333333333333334
-          ]
+            0.489835294117647,
+            0.4608941176470588,
+            0.2776
+          ],
+          "metal": 0.45,
+          "rough": 0.3
         }
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-z-flip5-unfolded.b04ffe6d9ac8.glb.gz",
-  "sha256": "b04ffe6d9ac899e4423524dceb71a3cb238a3d465abac5b2869603efd121a846",
+  "glbUrl": "assets/devices/models/galaxy-z-flip5-unfolded.e26f524860f0.glb.gz",
+  "sha256": "e26f524860f0247eea59e6559fed888bcff058959f04cc19f798d02ad79870e6",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-z-flip5-unfolded.json",
@@ -642,10 +658,12 @@
       "camera_geometry": "Lens and flash centres/diameters from source icon measurements of Samsung artwork. Samsung-specific individual rings/capsule, no Pixel bar. Protrusions and optical internals are estimates.",
       "finishes": "Official standard and online-exclusive finish names; approximate sampled sRGB. Bespoke combinations and special editions excluded.",
       "hinge": "Rigid articulated panels with physically positioned axes; external barrel dimensions/curves estimated. Internal multi-link and flexible OLED bend not simulated.",
-      "omissions": "Ports, grille perforations, antenna seams and internal hinge linkages."
+      "omissions": "Ports, grille perforations, antenna seams and internal hinge linkages.",
+      "branding": "Centered SAMSUNG on exterior hinge, parallel to hinge axis; blank rear panels preserved. Approximately20mm word length from official Mobile Press hinge views; placement/material are visual estimates."
     },
     "sources": [
-      "https://api.samsungmobilepress.com/press-releases/samsung-galaxy-z-flip5-and-galaxy-z-fold5-delivering-flexibility-and-versatility-without-compromise"
+      "https://api.samsungmobilepress.com/press-releases/samsung-galaxy-z-flip5-and-galaxy-z-fold5-delivering-flexibility-and-versatility-without-compromise",
+      "https://api.samsungmobilepress.com/media-assets/galaxy-z-flip5"
     ]
   }
 }

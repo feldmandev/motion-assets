@@ -1,0 +1,425 @@
+{
+  "id": "oneplus-pad",
+  "name": "OnePlus Pad",
+  "manufacturer": "OnePlus",
+  "form_factor": "tablet",
+  "status": "provisional",
+  "finish": "Halo Green",
+  "body_mm": {
+    "width": 189.41,
+    "height": 258.03,
+    "depth": 6.54,
+    "corner_radius": 11,
+    "edge_roll": 0.55,
+    "front_rail_mm": 0.4
+  },
+  "materials": {
+    "back": {
+      "rgb": [
+        0.5607843137254902,
+        0.6588235294117647,
+        0.6078431372549019
+      ],
+      "metal": 0.6,
+      "rough": 0.4
+    },
+    "rail": {
+      "rgb": [
+        0.5607843137254902,
+        0.6588235294117647,
+        0.6078431372549019
+      ],
+      "metal": 0.8,
+      "rough": 0.3
+    },
+    "bar": {
+      "rgb": [
+        0.45984313725490195,
+        0.540235294117647,
+        0.49843137254901954
+      ],
+      "metal": 0.75,
+      "rough": 0.3
+    },
+    "logo": {
+      "rgb": [
+        0.43137254901960786,
+        0.5333333333333333,
+        0.47843137254901963
+      ],
+      "rough": 0.45,
+      "metal": 0
+    },
+    "band": {
+      "rgb": [
+        0.6392941176470588,
+        0.7510588235294117,
+        0.6929411764705882
+      ],
+      "metal": 0.5,
+      "rough": 0.35
+    },
+    "black": {
+      "rgb": [
+        0.008,
+        0.011,
+        0.016
+      ],
+      "rough": 0.4
+    },
+    "flash": {
+      "rgb": [
+        0.85,
+        0.84,
+        0.76
+      ],
+      "rough": 0.4
+    }
+  },
+  "finishes": {
+    "Halo Green": {
+      "back": {
+        "rgb": [
+          0.5607843137254902,
+          0.6588235294117647,
+          0.6078431372549019
+        ],
+        "metal": 0.6,
+        "rough": 0.4
+      },
+      "rail": {
+        "rgb": [
+          0.5607843137254902,
+          0.6588235294117647,
+          0.6078431372549019
+        ],
+        "metal": 0.8,
+        "rough": 0.3
+      },
+      "bar": {
+        "rgb": [
+          0.45984313725490195,
+          0.540235294117647,
+          0.49843137254901954
+        ],
+        "metal": 0.75,
+        "rough": 0.3
+      },
+      "logo": {
+        "rgb": [
+          0.43137254901960786,
+          0.5333333333333333,
+          0.47843137254901963
+        ],
+        "metal": 0,
+        "rough": 0.45
+      },
+      "band": {
+        "rgb": [
+          0.6392941176470588,
+          0.7510588235294117,
+          0.6929411764705882
+        ],
+        "metal": 0.5,
+        "rough": 0.35
+      }
+    }
+  },
+  "screen": {
+    "object": "Device screen",
+    "node": "Device screen",
+    "panel": "Body",
+    "resolution": [
+      2000,
+      2800
+    ],
+    "fit_box_mm": [
+      171.4036558985992,
+      239.96511825803884
+    ],
+    "center_mm": [
+      0,
+      0,
+      3.305
+    ],
+    "corner_radius_mm": 1.9968279492996004,
+    "create_cutouts": true,
+    "cutouts": [
+      {
+        "center_mm": [
+          -90.2034139746498,
+          0
+        ],
+        "radius_mm": 1.2
+      }
+    ]
+  },
+  "camera": {
+    "center_mm": [
+      73.49108,
+      0.0
+    ],
+    "size_mm": [
+      26,
+      26,
+      13
+    ],
+    "bump_mm": 1.2,
+    "roll_mm": 0.18,
+    "integrated_plateau": true,
+    "skip_source_pupil": true,
+    "optical_bump_mm": 0.1,
+    "lens_ring_mm": 0.25,
+    "windows": [
+      [
+        73.49108,
+        0.0,
+        16,
+        16,
+        8
+      ]
+    ],
+    "lenses": [
+      {
+        "kind": "main",
+        "center_mm": [
+          73.49108,
+          0.0
+        ],
+        "radius_mm": 3.2,
+        "window": 0
+      }
+    ],
+    "flash": [],
+    "flash_offset_mm": 0.1
+  },
+  "buttons": [
+    {
+      "name": "Power",
+      "side": "right",
+      "center_y_mm": 85.01499999999999,
+      "length_mm": 10,
+      "width_mm": 2,
+      "thickness_mm": 0.3,
+      "radius_mm": 0.8
+    },
+    {
+      "name": "Volume",
+      "side": "right",
+      "center_y_mm": 106.01499999999999,
+      "length_mm": 18,
+      "width_mm": 2,
+      "thickness_mm": 0.3,
+      "radius_mm": 0.8
+    }
+  ],
+  "rear_logo": {
+    "kind": "oneplus",
+    "surface_offset_mm": 0.08,
+    "center_mm": [
+      -3.7882000000000033,
+      0.0
+    ],
+    "contours_mm": [
+      [
+        [
+          -1.9942661016949157,
+          -4.7814000000000005
+        ],
+        [
+          -2.0046661016949154,
+          -3.6686
+        ],
+        [
+          -3.690766101694915,
+          -3.6582
+        ],
+        [
+          -3.7011661016949153,
+          -1.9720999999999993
+        ],
+        [
+          -4.791866101694915,
+          -1.9824999999999995
+        ],
+        [
+          -4.803566101694916,
+          -3.6686
+        ],
+        [
+          -6.488366101694916,
+          -3.6803000000000003
+        ],
+        [
+          -6.488366101694916,
+          -4.7593
+        ],
+        [
+          -6.455866101694916,
+          -4.7918
+        ],
+        [
+          -4.791866101694915,
+          -4.8035000000000005
+        ],
+        [
+          -4.781466101694916,
+          -6.489599999999999
+        ],
+        [
+          -3.690766101694915,
+          -6.4779
+        ],
+        [
+          -3.6790661016949158,
+          -4.7918
+        ],
+        [
+          -1.9942661016949157,
+          -4.7814000000000005
+        ]
+      ],
+      [
+        [
+          6.467433898305084,
+          -4.7593
+        ],
+        [
+          6.467433898305084,
+          6.4779
+        ],
+        [
+          6.433633898305084,
+          6.510400000000001
+        ],
+        [
+          -4.781466101694916,
+          6.510400000000001
+        ],
+        [
+          -4.781466101694916,
+          -0.8267999999999999
+        ],
+        [
+          -3.690766101694915,
+          -0.8150999999999997
+        ],
+        [
+          -3.6790661016949158,
+          5.3872
+        ],
+        [
+          5.342933898305084,
+          5.376799999999999
+        ],
+        [
+          5.342933898305084,
+          -3.6582
+        ],
+        [
+          -0.8372661016949154,
+          -3.6686
+        ],
+        [
+          -0.8476661016949159,
+          -4.7814000000000005
+        ],
+        [
+          6.411533898305085,
+          -4.7697
+        ],
+        [
+          6.433633898305084,
+          -4.7918
+        ],
+        [
+          6.467433898305084,
+          -4.7593
+        ]
+      ],
+      [
+        [
+          3.646433898305085,
+          -0.8150999999999997
+        ],
+        [
+          3.636033898305085,
+          2.5454
+        ],
+        [
+          2.5557338983050837,
+          2.5454
+        ],
+        [
+          2.545333898305085,
+          1.4546999999999999
+        ],
+        [
+          2.5115338983050846,
+          1.4209
+        ],
+        [
+          -0.8372661016949154,
+          1.4209
+        ],
+        [
+          -0.8593661016949159,
+          2.5454
+        ],
+        [
+          -1.9721661016949152,
+          2.5337
+        ],
+        [
+          -1.9604661016949159,
+          0.31980000000000014
+        ],
+        [
+          2.5115338983050846,
+          0.31980000000000014
+        ],
+        [
+          2.545333898305085,
+          0.28600000000000025
+        ],
+        [
+          2.545333898305085,
+          -0.7930000000000007
+        ],
+        [
+          2.523233898305085,
+          -0.8150999999999997
+        ],
+        [
+          3.646433898305085,
+          -0.8150999999999997
+        ]
+      ]
+    ]
+  },
+  "accuracy": {
+    "body_dimensions": "OnePlus official metric chassis dimensions. OnePlus 13 uses 8.5 mm glass chassis; Midnight Ocean leather is 8.9 mm and remains an approximate finish on that chassis.",
+    "screen_geometry": "Published full diagonal and native pixel aspect; concentric estimated corners. Bezel camera estimated from product render.",
+    "camera_geometry": "Official rear-render fit, measurements below. Bump depth, roll, glass and optical internals illustrative; not OEM CAD.",
+    "finishes": "Official finish names, approximate existing collection sRGB swatches; not calibrated physical materials.",
+    "omissions": "Ports, speaker holes, alert slider, antenna seams and microscopic inscriptions omitted."
+  },
+  "sources": [
+    "https://www.oneplus.com/us/oneplus-pad/specs",
+    "https://oasis.opstatics.com/content/dam/oasis/page/2023/pad/pad-specs1.png"
+  ],
+  "rear_reference": {
+    "reference": "research/oneplus/pad.png",
+    "orientation": "landscape",
+    "housing_size_mm": [
+      26,
+      26
+    ],
+    "center_normalized": [
+      0.5,
+      0.112
+    ],
+    "uncertainty_mm": 1.2,
+    "note": "Official composite render, approximate front-on fitting; protrusion estimated."
+  }
+}

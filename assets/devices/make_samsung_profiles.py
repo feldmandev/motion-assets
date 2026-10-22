@@ -1,4 +1,5 @@
 """Samsung slab profiles: published dimensions and native panel aspect, estimated small hardware."""
+from make_device_branding import apply as apply_branding
 import json
 import math
 import sys
@@ -92,5 +93,5 @@ def coverage():
 
 if __name__=='__main__':
     for key,data in DEVICES.items():
-        p=make(key,data);(BASE/'profiles'/f"{p['id']}.json").write_text(json.dumps(p,indent=2))
+        p=apply_branding(make(key,data));(BASE/'profiles'/f"{p['id']}.json").write_text(json.dumps(p,indent=2))
     coverage();print('Generated',len(DEVICES),'Samsung phone profiles')

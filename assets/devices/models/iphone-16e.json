@@ -331,10 +331,12 @@
         },
         "logo": {
           "rgb": [
-            0.31576470588235295,
-            0.31858823529411767,
-            0.3270588235294118
-          ]
+            0.43529411764705883,
+            0.44313725490196076,
+            0.4666666666666667
+          ],
+          "metal": 0.92,
+          "rough": 0.18
         }
       }
     },
@@ -364,16 +366,18 @@
         },
         "logo": {
           "rgb": [
-            0.588392156862745,
-            0.5859607843137254,
-            0.5762352941176471
-          ]
+            0.7411764705882353,
+            0.7372549019607844,
+            0.7215686274509804
+          ],
+          "metal": 0.92,
+          "rough": 0.18
         }
       }
     }
   ],
-  "glbUrl": "assets/devices/models/iphone-16e.b8c540afb960.glb.gz",
-  "sha256": "b8c540afb960634f942510e356f3a21c64537cbb9885074494075829cd91da60",
+  "glbUrl": "assets/devices/models/iphone-16e.f8e8a31b331a.glb.gz",
+  "sha256": "f8e8a31b331a40d9444762a2161c399910d2f2f01b1e31f6e901da5d9e2b6a39",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/iphone-16e.json",

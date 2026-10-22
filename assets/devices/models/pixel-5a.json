@@ -85,7 +85,8 @@
     "button": "button",
     "fingerprint": "fingerprint",
     "black": "black",
-    "flash": "flash"
+    "flash": "flash",
+    "logo": "logo"
   },
   "finishes": [
     {
@@ -125,12 +126,21 @@
             0.2,
             0.17255
           ]
+        },
+        "logo": {
+          "rgb": [
+            0.4470588235294118,
+            0.47058823529411764,
+            0.4588235294117647
+          ],
+          "metal": 0.5,
+          "rough": 0.28
         }
       }
     }
   ],
-  "glbUrl": "assets/devices/models/pixel-5a.fa7c4f1f6aae.glb.gz",
-  "sha256": "fa7c4f1f6aae8a9adea24c295706fe4db08da1b1f3035da071b1aabe1b4c9458",
+  "glbUrl": "assets/devices/models/pixel-5a.42124ee91eb4.glb.gz",
+  "sha256": "42124ee91eb4426c8f8d4d1c845300ae2a890783db33001fcf41495e2fdf19ca",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/pixel-5a.json",
@@ -140,7 +150,8 @@
       "screen_geometry": "Published panel diagonal/aspect geometry; no matching Android SDK skin is installed",
       "camera_geometry": "Model-specific rear housing/lens placement proportioned from reviewed product photography; optical stacks reuse the reviewed Pixel optics and are illustrative",
       "buttons_and_rear_hardware": "Model-specific placement reviewed against product photography",
-      "finishes": "Approximate sRGB appearance matched to named Google finishes; not measured material samples"
+      "finishes": "Approximate sRGB appearance matched to named Google finishes; not measured material samples",
+      "branding": "Google G contour retained from reference artwork. Legacy Pixel4/4a/5/5a lower rear placement (approximately80%height); Pixel6 onward and folds centered on rear/camera leaf. Size, position and finish-tinted material are photo estimates, not manufacturer CAD."
     },
     "sources": [
       "https://support.google.com/pixelphone/answer/16043605?hl=en",

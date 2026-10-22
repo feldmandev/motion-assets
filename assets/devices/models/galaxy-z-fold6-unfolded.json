@@ -3121,7 +3121,9 @@
             0.26862745098039215,
             0.26862745098039215,
             0.2647058823529412
-          ]
+          ],
+          "metal": 0,
+          "rough": 0.3
         }
       }
     },
@@ -3159,7 +3161,9 @@
             0.4725490196078431,
             0.43529411764705883,
             0.44313725490196076
-          ]
+          ],
+          "metal": 0,
+          "rough": 0.3
         }
       }
     },
@@ -3197,7 +3201,9 @@
             0.06862745098039216,
             0.0784313725490196,
             0.11568627450980393
-          ]
+          ],
+          "metal": 0,
+          "rough": 0.3
         }
       }
     },
@@ -3235,7 +3241,9 @@
             0.07254901960784314,
             0.07450980392156863,
             0.0803921568627451
-          ]
+          ],
+          "metal": 0,
+          "rough": 0.3
         }
       }
     },
@@ -3273,13 +3281,15 @@
             0.4647058823529412,
             0.4647058823529412,
             0.46078431372549017
-          ]
+          ],
+          "metal": 0,
+          "rough": 0.3
         }
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-z-fold6-unfolded.9c335210327a.glb.gz",
-  "sha256": "9c335210327a9ab9eb025cbd4d2c958c74cd02168f6ab261c4f7fbcbbe366c13",
+  "glbUrl": "assets/devices/models/galaxy-z-fold6-unfolded.5fe8311512b8.glb.gz",
+  "sha256": "5fe8311512b849ea240d9bf99f2c97b1664ee517154ae05ec94e44bfd1448b61",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-z-fold6-unfolded.json",

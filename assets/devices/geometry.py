@@ -207,7 +207,7 @@ def apple_mark(spec, body, mat, parent):
     scale_x = spec.get('width_mm', (max(xs)-min(xs))*scale_y)/(max(xs)-min(xs))
     mid_x, mid_y = (max(xs)+min(xs))/2, (max(ys)+min(ys))/2
     center_x, center_y = spec.get('center_mm', [0,0])
-    depth = .045
+    depth = spec.get('surface_offset_mm', .08)
     for index, contour in enumerate(contours):
         # Rear-view artwork must be mirrored into the front-oriented model coordinates.
         points = [(-(x-mid_x)*scale_x+center_x, -(y-mid_y)*scale_y+center_y) for x, y in contour]
@@ -406,6 +406,29 @@ def camera_assembly(spec, body, materials, parent, prototypes):
             obj.data.update()
 
 
+def rear_mark(profile, logo, body, mats, parent):
+    """Place a rear inlay above the glass surface; shared by builds and branding refreshes."""
+    depth = body['depth']
+    if logo and logo.get('kind') == 'apple':
+        apple_mark(logo, body, mats.get(logo.get('material', 'logo'), mats['black']), parent)
+    elif logo and 'contours_mm' in logo:
+        for index, contour in enumerate(logo['contours_mm']):
+            cx, cy = logo['center_mm']
+            vertices = [((-x+cx)*MM, (-y+cy)*MM, (-depth/2-logo.get('surface_offset_mm',.08))*MM) for x,y in contour]
+            mesh = bpy.data.meshes.new(f'{profile.get("manufacturer", "Device")} mark {index}')
+            mesh.from_pydata(vertices, [], [tuple(reversed(range(len(vertices))))])
+            mesh.materials.append(mats.get('logo', mats['black']))
+            obj = bpy.data.objects.new(f'{profile.get("manufacturer", "Device")} logo | {index}', mesh)
+            bpy.context.scene.collection.objects.link(obj); obj.parent = parent
+
+
+def hinge_mark(profile, mats):
+    spec = profile.get('hinge_logo')
+    if spec:
+        parent = bpy.data.objects[spec['parent_node']]
+        rear_mark(profile, spec, {'depth':spec['body_depth_mm']}, mats, parent)
+
+
 def create_device(profile):
     root = bpy.data.objects.new(profile['name'], None)
     bpy.context.scene.collection.objects.link(root)
@@ -539,17 +562,7 @@ def create_device(profile):
         logo = panel.get('rear_logo')
         if logo is None and 'panels' not in profile:
             logo = profile.get('rear_logo')
-        if logo and logo.get('kind') == 'apple':
-            apple_mark(logo, body, mats.get(logo.get('material', 'logo'), mats['black']), parent)
-        elif logo and logo.get('kind') == 'samsung':
-            for index, contour in enumerate(logo['contours_mm']):
-                cx, cy = logo['center_mm']
-                vertices = [((-x+cx)*MM, (-y+cy)*MM, (-depth/2-.035)*MM) for x,y in contour]
-                mesh = bpy.data.meshes.new(f'Samsung mark {index}')
-                mesh.from_pydata(vertices, [], [tuple(reversed(range(len(vertices))))])
-                mesh.materials.append(mats.get('logo', mats['black']))
-                obj = bpy.data.objects.new(f'Samsung logo | {index}', mesh)
-                bpy.context.scene.collection.objects.link(obj); obj.parent = parent
+        rear_mark(profile, logo, body, mats, parent)
         for screen in profile.get('screens', [profile['screen']] if 'screen' in profile else []):
             if screen.get('panel', 'Body') != panel['name']:
                 continue
@@ -616,6 +629,7 @@ def create_device(profile):
         else:
             slab('Hinge spine | estimated', *hinge['size_mm'], hinge['radius_mm'],
                  hinge['center_mm'], mats['rail'], root, .2)
+    hinge_mark(profile, mats)
     if profile.get('form_factor') == 'laptop':
         return create_laptop_device(profile, root, mats)
     for screen in profile.get('screens', []):

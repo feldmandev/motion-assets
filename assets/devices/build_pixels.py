@@ -13,7 +13,7 @@ sys.path.insert(0, str(BASE))
 from build import build
 
 
-def review(output, finishes=False, cover_only=False):
+def review(output, finishes=False, cover_only=False, branding_only=False):
     bpy.ops.wm.open_mainfile(filepath=str(output/'model.blend'))
     scene = bpy.context.scene
     scene.render.engine = 'CYCLES'
@@ -73,6 +73,8 @@ def review(output, finishes=False, cover_only=False):
         views.append(('camera-detail',(.22,.07,-.4)))
     if cover_only:
         views = [view for view in views if view[0]=='cover-front']
+    if branding_only:
+        views = [view for view in views if view[0] in ('rear','rear-angle')]
     for name, location in views:
         mapping = scene.world.node_tree.nodes.get('Mapping')
         mapping.inputs['Rotation'].default_value = (math.pi/2,0,math.radians(292 if name == 'rear' else 205))

@@ -1,0 +1,830 @@
+[
+  {
+    "model": "galaxy_tab_a11",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_a11_gray_icon.svg",
+    "logo_fill": "#929293",
+    "reference_position": [
+      0.5,
+      0.5,
+      0.22,
+      "portrait"
+    ],
+    "non_logo_sha256": "fca84771202581a0556d5a414298d2c58160c8d0abef83b866c17865c1828ffd"
+  },
+  {
+    "model": "galaxy_tab_a11_plus",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_a11_plus_gray_icon.svg",
+    "logo_fill": "#8b8b8d",
+    "reference_position": [
+      0.115,
+      0.098,
+      0.108,
+      "landscape"
+    ],
+    "non_logo_sha256": "5afdf0d218e68868453cb5319fa70cf95fefd9a50fa5ddc768e31a64bf880dbb"
+  },
+  {
+    "model": "galaxy_tab_a11_plus",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_a11_plus_silver_icon.svg",
+    "logo_fill": "#9a9a9c",
+    "reference_position": [
+      0.115,
+      0.098,
+      0.108,
+      "landscape"
+    ],
+    "non_logo_sha256": "b44ac70fe505e894a038269aeae4eee3fb20cb930bf4d3e9df0f0ec347eb58df"
+  },
+  {
+    "model": "galaxy_tab_a11",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_a11_silver_icon.svg",
+    "logo_fill": "#8c8d8f",
+    "reference_position": [
+      0.5,
+      0.5,
+      0.22,
+      "portrait"
+    ],
+    "non_logo_sha256": "e8623d41bb0fa7b4d4f06a8e2d60cd33749632178ced303b62513812b9671bb4"
+  },
+  {
+    "model": "galaxy_tab_s10_fe",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s10_fe_blue_icon.svg",
+    "logo_fill": "#858f97",
+    "reference_position": [
+      0.119,
+      0.099,
+      0.108,
+      "landscape"
+    ],
+    "non_logo_sha256": "db8a0e524eaa6360006a3f976d9bf8fb9feecd9696b75b26ebf21cc545e16fe8"
+  },
+  {
+    "model": "galaxy_tab_s10_fe",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s10_fe_gray_icon.svg",
+    "logo_fill": "#5e6268",
+    "reference_position": [
+      0.119,
+      0.099,
+      0.108,
+      "landscape"
+    ],
+    "non_logo_sha256": "f21296d72445c5fb76f5396f4d51b348d8619fa118e7dd6907b2338bb6e96b4b"
+  },
+  {
+    "model": "galaxy_tab_s10_fe_plus",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s10_fe_plus_blue_icon.svg",
+    "logo_fill": "#858f97",
+    "reference_position": [
+      0.119,
+      0.099,
+      0.108,
+      "landscape"
+    ],
+    "non_logo_sha256": "2def90fcb544f501792bb742617c72312c410694d0b470f3ff936977b916caca"
+  },
+  {
+    "model": "galaxy_tab_s10_fe_plus",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s10_fe_plus_gray_icon.svg",
+    "logo_fill": "#5e6268",
+    "reference_position": [
+      0.119,
+      0.099,
+      0.108,
+      "landscape"
+    ],
+    "non_logo_sha256": "e9c82b77f0111aee7c24b608c0dde915ec0fa19b04e22cc68676a1c45213b2e1"
+  },
+  {
+    "model": "galaxy_tab_s10_fe_plus",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s10_fe_plus_silver_icon.svg",
+    "logo_fill": "#949698",
+    "reference_position": [
+      0.119,
+      0.099,
+      0.108,
+      "landscape"
+    ],
+    "non_logo_sha256": "db8c4b44463e04e29860950f6f65682bbaf0a8441d9582e810e684333818ffe6"
+  },
+  {
+    "model": "galaxy_tab_s10_fe",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s10_fe_silver_icon.svg",
+    "logo_fill": "#949698",
+    "reference_position": [
+      0.119,
+      0.099,
+      0.108,
+      "landscape"
+    ],
+    "non_logo_sha256": "3bd355ea47fc2e165fdf2c12832de78399c205cab07310a63f387f3fee0d5131"
+  },
+  {
+    "model": "galaxy_tab_s10_lite",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s10_lite_coral_red_icon.svg",
+    "logo_fill": "#b0878c",
+    "reference_position": [
+      0.116,
+      0.1,
+      0.108,
+      "landscape"
+    ],
+    "non_logo_sha256": "83cd84e8dd27ca0f1eced92ffb98d803c3a2ae540dac22ce6f109df4853ed639"
+  },
+  {
+    "model": "galaxy_tab_s10_lite",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s10_lite_gray_icon.svg",
+    "logo_fill": "#99999a",
+    "reference_position": [
+      0.116,
+      0.1,
+      0.108,
+      "landscape"
+    ],
+    "non_logo_sha256": "2b20b81b85bc26be0743504a67523dd4e721c2736902e99edc5fcd6e34d4c2e7"
+  },
+  {
+    "model": "galaxy_tab_s10_lite",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s10_lite_silver_icon.svg",
+    "logo_fill": "#969698",
+    "reference_position": [
+      0.116,
+      0.1,
+      0.108,
+      "landscape"
+    ],
+    "non_logo_sha256": "637f54abd7a04b927b760566089dece8ceb7ef4ba120e8cc118c7298a452a423"
+  },
+  {
+    "model": "galaxy_tab_s10_plus",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s10_plus_moonstone_gray_icon.svg",
+    "logo_fill": "#616366",
+    "reference_position": [
+      0.117,
+      0.087,
+      0.103,
+      "landscape"
+    ],
+    "non_logo_sha256": "bca5a1e7380b33bc06e611baed96d6b32d91a82b83a1fe52db43e42571c61797"
+  },
+  {
+    "model": "galaxy_tab_s10_plus",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s10_plus_platinum_silver_icon.svg",
+    "logo_fill": "#949596",
+    "reference_position": [
+      0.117,
+      0.087,
+      0.103,
+      "landscape"
+    ],
+    "non_logo_sha256": "64b0f246a4160874957ee5e6f952c51f11c1fd1cfb1a1357bb0cdb977604f340"
+  },
+  {
+    "model": "galaxy_tab_s10_ultra",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s10_ultra_moonstone_gray_icon.svg",
+    "logo_fill": "#616366",
+    "reference_position": [
+      0.105,
+      0.091,
+      0.096,
+      "landscape"
+    ],
+    "non_logo_sha256": "9c24d3cbc1179455d5065ed94458d45b29dcd1e16d1663e9ce4a12645ae02fa6"
+  },
+  {
+    "model": "galaxy_tab_s10_ultra",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s10_ultra_platinum_silver_icon.svg",
+    "logo_fill": "#949596",
+    "reference_position": [
+      0.105,
+      0.091,
+      0.096,
+      "landscape"
+    ],
+    "non_logo_sha256": "1b2687ecc8e3685225dd679e114bb7efcbbc713fd4c1ecb3d8332538938528ad"
+  },
+  {
+    "model": "galaxy_tab_s11",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s11_moonstone_gray_icon.svg",
+    "logo_fill": "#8d8d8f",
+    "reference_position": [
+      0.115,
+      0.099,
+      0.108,
+      "landscape"
+    ],
+    "non_logo_sha256": "34f6e3f971c9fcc62cc88869b09aa0ec3280b2a9ffb7717cf5359d62b594cdf5"
+  },
+  {
+    "model": "galaxy_tab_s11",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s11_platinum_silver_icon.svg",
+    "logo_fill": "#9e9ea0",
+    "reference_position": [
+      0.115,
+      0.099,
+      0.108,
+      "landscape"
+    ],
+    "non_logo_sha256": "8d13af85c48d4d31780b76deb19af044e4ac792674ad0a6122b18f2716a65e33"
+  },
+  {
+    "model": "galaxy_tab_s11_ultra",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s11_ultra_moonstone_gray_icon.svg",
+    "logo_fill": "#8f8f90",
+    "reference_position": [
+      0.096,
+      0.081,
+      0.094,
+      "landscape"
+    ],
+    "non_logo_sha256": "5dcf35cc3b90cacbd37b102e3620ab8396a30ad600d5aed87c1714e67dd1afa3"
+  },
+  {
+    "model": "galaxy_tab_s11_ultra",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s11_ultra_platinum_silver_icon.svg",
+    "logo_fill": "#9b9b9c",
+    "reference_position": [
+      0.096,
+      0.081,
+      0.094,
+      "landscape"
+    ],
+    "non_logo_sha256": "8716fb451b37295f0d93920c063f56d2dcb963796145218568fa8620ac276aaf"
+  },
+  {
+    "model": "galaxy_tab_s12_plus",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s12_plus_gray_icon.svg",
+    "logo_fill": "#8f8f91",
+    "reference_position": [
+      0.105,
+      0.089,
+      0.104,
+      "landscape"
+    ],
+    "non_logo_sha256": "dbbf985163d2368bb722ccf1998f422bc62badedb3ede0ae9f7f9f7e446eed5d"
+  },
+  {
+    "model": "galaxy_tab_s12_plus",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s12_plus_silver_icon.svg",
+    "logo_fill": "#9a9a9c",
+    "reference_position": [
+      0.105,
+      0.089,
+      0.104,
+      "landscape"
+    ],
+    "non_logo_sha256": "f3605ba2b19c7395fd933c2b76262e6495339f0f0dc3c1978eaac697e23ae8fe"
+  },
+  {
+    "model": "galaxy_tab_s12_ultra",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s12_ultra_gray_icon.svg",
+    "logo_fill": "#8f8f91",
+    "reference_position": [
+      0.096,
+      0.078,
+      0.094,
+      "landscape"
+    ],
+    "non_logo_sha256": "9adc5fff8c82d8397824715df6a6b08d9eab8c319061039c756a2dbe63ac5449"
+  },
+  {
+    "model": "galaxy_tab_s12_ultra",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s12_ultra_silver_icon.svg",
+    "logo_fill": "#9a9a9c",
+    "reference_position": [
+      0.096,
+      0.078,
+      0.094,
+      "landscape"
+    ],
+    "non_logo_sha256": "930a0010144bbb8ef355468a95e91173689deba25f426888e5dd65213388276a"
+  },
+  {
+    "model": "galaxy_tab_s6",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s6_cloud_blue_icon.svg",
+    "logo_fill": "#75808c",
+    "reference_position": [
+      0.5,
+      0.493,
+      0.195,
+      "portrait"
+    ],
+    "non_logo_sha256": "ad3dfe16adb7e0a4df59b482262931e339250c32791e55e70fb870d5aa2564a9"
+  },
+  {
+    "model": "galaxy_tab_s6_lite_2020",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s6_lite_2020_angora_blue_icon.svg",
+    "logo_fill": "#838c94",
+    "reference_position": [
+      0.5,
+      0.49,
+      0.2,
+      "portrait"
+    ],
+    "non_logo_sha256": "d7d4d82cab6d0152e570fd845a3fbd63c651621afdef344dce7b2c77dc97e31f"
+  },
+  {
+    "model": "galaxy_tab_s6_lite_2020",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s6_lite_2020_chiffon_rose_icon.svg",
+    "logo_fill": "#948584",
+    "reference_position": [
+      0.5,
+      0.49,
+      0.2,
+      "portrait"
+    ],
+    "non_logo_sha256": "39cdc0100b18e101e55b3a2a311fe9ed9c144e333acdb4b450b5ca93ecbac1fa"
+  },
+  {
+    "model": "galaxy_tab_s6_lite_2020",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s6_lite_2020_oxford_gray_icon.svg",
+    "logo_fill": "#9b9ea5",
+    "reference_position": [
+      0.5,
+      0.49,
+      0.2,
+      "portrait"
+    ],
+    "non_logo_sha256": "fd4a00ea251b1c495d5074ab7ab11b4d47245238cf1db2cc7a4ea9016d6c2c20"
+  },
+  {
+    "model": "galaxy_tab_s6_lite_2022",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s6_lite_2022_angora_blue_icon.svg",
+    "logo_fill": "#838c94",
+    "reference_position": [
+      0.5,
+      0.49,
+      0.2,
+      "portrait"
+    ],
+    "non_logo_sha256": "d7d4d82cab6d0152e570fd845a3fbd63c651621afdef344dce7b2c77dc97e31f"
+  },
+  {
+    "model": "galaxy_tab_s6_lite_2022",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s6_lite_2022_oxford_gray_icon.svg",
+    "logo_fill": "#9b9ea5",
+    "reference_position": [
+      0.5,
+      0.49,
+      0.2,
+      "portrait"
+    ],
+    "non_logo_sha256": "fd4a00ea251b1c495d5074ab7ab11b4d47245238cf1db2cc7a4ea9016d6c2c20"
+  },
+  {
+    "model": "galaxy_tab_s6_lite_2024",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s6_lite_2024_chiffon_pink_icon.svg",
+    "logo_fill": "#948584",
+    "reference_position": [
+      0.5,
+      0.49,
+      0.2,
+      "portrait"
+    ],
+    "non_logo_sha256": "39cdc0100b18e101e55b3a2a311fe9ed9c144e333acdb4b450b5ca93ecbac1fa"
+  },
+  {
+    "model": "galaxy_tab_s6_lite_2024",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s6_lite_2024_mint_icon.svg",
+    "logo_fill": "#8a948f",
+    "reference_position": [
+      0.5,
+      0.49,
+      0.2,
+      "portrait"
+    ],
+    "non_logo_sha256": "49bed303778d2f5377c013fc973392b173fe0ed10b7267ae87fc14a6f1220751"
+  },
+  {
+    "model": "galaxy_tab_s6_lite_2024",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s6_lite_2024_oxford_gray_icon.svg",
+    "logo_fill": "#9b9ea5",
+    "reference_position": [
+      0.5,
+      0.49,
+      0.2,
+      "portrait"
+    ],
+    "non_logo_sha256": "fd4a00ea251b1c495d5074ab7ab11b4d47245238cf1db2cc7a4ea9016d6c2c20"
+  },
+  {
+    "model": "galaxy_tab_s6",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s6_mountain_gray_icon.svg",
+    "logo_fill": "#a3a7ad",
+    "reference_position": [
+      0.5,
+      0.493,
+      0.195,
+      "portrait"
+    ],
+    "non_logo_sha256": "c62a3c00b569327d3a449eee37de0de375ddb250c407e6004a1f3ecfd1f3f9ad"
+  },
+  {
+    "model": "galaxy_tab_s6",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s6_rose_blush_icon.svg",
+    "logo_fill": "#85797a",
+    "reference_position": [
+      0.5,
+      0.493,
+      0.195,
+      "portrait"
+    ],
+    "non_logo_sha256": "c5d576c0f7d02c2700b15db3d52ea352041dbe0501fcdc963bbf18b59a847307"
+  },
+  {
+    "model": "galaxy_tab_s7_fe",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s7_fe_mystic_black_icon.svg",
+    "logo_fill": "#838589",
+    "reference_position": [
+      0.113,
+      0.084,
+      0.107,
+      "landscape"
+    ],
+    "non_logo_sha256": "fc4e239ca2e7d8ad3b6b8d955c3fdd500eeb35af091304a1b3b42db54f5c348a"
+  },
+  {
+    "model": "galaxy_tab_s7_fe",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s7_fe_mystic_green_icon.svg",
+    "logo_fill": "#7e8882",
+    "reference_position": [
+      0.113,
+      0.084,
+      0.107,
+      "landscape"
+    ],
+    "non_logo_sha256": "fafc2bd15c3f741f0b38fd0ac2a55c200fa52d44f79841416973d6b01dec9519"
+  },
+  {
+    "model": "galaxy_tab_s7_fe",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s7_fe_mystic_pink_icon.svg",
+    "logo_fill": "#928585",
+    "reference_position": [
+      0.113,
+      0.084,
+      0.107,
+      "landscape"
+    ],
+    "non_logo_sha256": "da6c8675121f5aca4d98cbe842e57c7d4b1e4bd996fe3d050a2f232c059f5ca1"
+  },
+  {
+    "model": "galaxy_tab_s7_fe",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s7_fe_mystic_silver_icon.svg",
+    "logo_fill": "#8d8e8f",
+    "reference_position": [
+      0.113,
+      0.084,
+      0.107,
+      "landscape"
+    ],
+    "non_logo_sha256": "7557a5480b0bf90df2c176f5f4f672217496fd1a96eff338cef597e151a6c170"
+  },
+  {
+    "model": "galaxy_tab_s7",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s7_mystic_black_icon.svg",
+    "logo_fill": "#808286",
+    "reference_position": [
+      0.129,
+      0.097,
+      0.112,
+      "landscape"
+    ],
+    "non_logo_sha256": "a750a0e153377ed564a5a524c28cd237233007b8f775838ccc7a5ca004923b36"
+  },
+  {
+    "model": "galaxy_tab_s7",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s7_mystic_bronze_icon.svg",
+    "logo_fill": "#796c69",
+    "reference_position": [
+      0.129,
+      0.097,
+      0.112,
+      "landscape"
+    ],
+    "non_logo_sha256": "a4557c516b162384a4611c04c45c491f2b507c3b732d7dd5871fe2b8852c54f0"
+  },
+  {
+    "model": "galaxy_tab_s7",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s7_mystic_navy_icon.svg",
+    "logo_fill": "#858f9a",
+    "reference_position": [
+      0.129,
+      0.097,
+      0.112,
+      "landscape"
+    ],
+    "non_logo_sha256": "256480a91ffecc90f2cb632501bf6eecad0047ce99f60dbd472cd21442fe6a20"
+  },
+  {
+    "model": "galaxy_tab_s7",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s7_mystic_silver_icon.svg",
+    "logo_fill": "#8a8c8c",
+    "reference_position": [
+      0.129,
+      0.097,
+      0.112,
+      "landscape"
+    ],
+    "non_logo_sha256": "8d6c29138c4ea91ae9d5e547acf27e377e2515a7eb159d6665eec46fa3a6a136"
+  },
+  {
+    "model": "galaxy_tab_s7_plus",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s7_plus_mystic_black_icon.svg",
+    "logo_fill": "#808286",
+    "reference_position": [
+      0.126,
+      0.084,
+      0.105,
+      "landscape"
+    ],
+    "non_logo_sha256": "e9f02401d9e6aab5ca227d5c34c2aafb9927992cfd9a085cd58ddc11321794b5"
+  },
+  {
+    "model": "galaxy_tab_s7_plus",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s7_plus_mystic_bronze_icon.svg",
+    "logo_fill": "#796c69",
+    "reference_position": [
+      0.126,
+      0.084,
+      0.105,
+      "landscape"
+    ],
+    "non_logo_sha256": "de3149865a5346cdf324a8fa7b85dc408b4d9045c8c31ed9e31e7e875d0f83c1"
+  },
+  {
+    "model": "galaxy_tab_s7_plus",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s7_plus_mystic_navy_icon.svg",
+    "logo_fill": "#858f9a",
+    "reference_position": [
+      0.126,
+      0.084,
+      0.105,
+      "landscape"
+    ],
+    "non_logo_sha256": "ee5887f6dbb2397860be2aabb42172115317b27550343424a563ca7b68242c73"
+  },
+  {
+    "model": "galaxy_tab_s7_plus",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s7_plus_mystic_silver_icon.svg",
+    "logo_fill": "#8a8c8c",
+    "reference_position": [
+      0.126,
+      0.084,
+      0.105,
+      "landscape"
+    ],
+    "non_logo_sha256": "4d1fce85ba2ed982fda4080cd1c626904ad352193c9a9a27d0f29f0c910199d9"
+  },
+  {
+    "model": "galaxy_tab_s8",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s8_graphite_icon.svg",
+    "logo_fill": "#898b8f",
+    "reference_position": [
+      0.127,
+      0.095,
+      0.112,
+      "landscape"
+    ],
+    "non_logo_sha256": "d4b19d1a9b0a407d65a7920c95242d8cdc0fb39b15996441847cf1d2097d6216"
+  },
+  {
+    "model": "galaxy_tab_s8",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s8_pink_gold_icon.svg",
+    "logo_fill": "#8f8786",
+    "reference_position": [
+      0.127,
+      0.095,
+      0.112,
+      "landscape"
+    ],
+    "non_logo_sha256": "f3fab1198de1a373e36e5da824052fcd369ce4fad5968903313a901705af3eb5"
+  },
+  {
+    "model": "galaxy_tab_s8_plus",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s8_plus_graphite_icon.svg",
+    "logo_fill": "#898b8f",
+    "reference_position": [
+      0.126,
+      0.084,
+      0.105,
+      "landscape"
+    ],
+    "non_logo_sha256": "a73f03bf823bedffc6dbeebe52f00e7fdb0378df47ad5cbb4f902d98c4c40027"
+  },
+  {
+    "model": "galaxy_tab_s8_plus",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s8_plus_pink_gold_icon.svg",
+    "logo_fill": "#8f8786",
+    "reference_position": [
+      0.126,
+      0.084,
+      0.105,
+      "landscape"
+    ],
+    "non_logo_sha256": "90c492b9b1558644a49e5d43cea8ea6df74b6ff626b9ca7abc62cb594a0915e8"
+  },
+  {
+    "model": "galaxy_tab_s8_plus",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s8_plus_silver_icon.svg",
+    "logo_fill": "#8b8c8d",
+    "reference_position": [
+      0.126,
+      0.084,
+      0.105,
+      "landscape"
+    ],
+    "non_logo_sha256": "9b8b2490376a311d85afe15b6aababe6ef31c368437f2b48a69265aa25490dc5"
+  },
+  {
+    "model": "galaxy_tab_s8",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s8_silver_icon.svg",
+    "logo_fill": "#8b8c8d",
+    "reference_position": [
+      0.127,
+      0.095,
+      0.112,
+      "landscape"
+    ],
+    "non_logo_sha256": "b9012a2e88054c9830e8435a430b3d846aafecf9133fe7aa3477eb30c48a94c3"
+  },
+  {
+    "model": "galaxy_tab_s8_ultra",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s8_ultra_graphite_icon.svg",
+    "logo_fill": "#898b8f",
+    "reference_position": [
+      0.096,
+      0.081,
+      0.098,
+      "landscape"
+    ],
+    "non_logo_sha256": "c2a5c0ab4f2dbc97d559f01b0ccd2e7d5ebf46a579b56e2769b8c6042b2664d0"
+  },
+  {
+    "model": "galaxy_tab_s9",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s9_beige_icon.svg",
+    "logo_fill": "#96928c",
+    "reference_position": [
+      0.12,
+      0.1,
+      0.108,
+      "landscape"
+    ],
+    "non_logo_sha256": "4fec33f251d1a404e9f56a3eb99eeb4eb4ef1132749dee0584335aee47afde5c"
+  },
+  {
+    "model": "galaxy_tab_s9_fe",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s9_fe_gray_icon.svg",
+    "logo_fill": "#a2a5aa",
+    "reference_position": [
+      0.12,
+      0.094,
+      0.108,
+      "landscape"
+    ],
+    "non_logo_sha256": "8c805606a603352dfc9d31d97cfcdbb489bff4748a3809fb7c4a1284089e1d4e"
+  },
+  {
+    "model": "galaxy_tab_s9_fe",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s9_fe_lavender_icon.svg",
+    "logo_fill": "#8a888f",
+    "reference_position": [
+      0.12,
+      0.094,
+      0.108,
+      "landscape"
+    ],
+    "non_logo_sha256": "e49f655d0d3ec4b88c6778ccec356ac83905a6634605e39c6536ef653c0ad337"
+  },
+  {
+    "model": "galaxy_tab_s9_fe",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s9_fe_mint_icon.svg",
+    "logo_fill": "#88908c",
+    "reference_position": [
+      0.12,
+      0.094,
+      0.108,
+      "landscape"
+    ],
+    "non_logo_sha256": "8fb451a07a274444693844b809a2c481a248df85e8cfe37fcd1e002a812118c4"
+  },
+  {
+    "model": "galaxy_tab_s9_fe_plus",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s9_fe_plus_gray_icon.svg",
+    "logo_fill": "#a2a5aa",
+    "reference_position": [
+      0.114,
+      0.085,
+      0.105,
+      "landscape"
+    ],
+    "non_logo_sha256": "228a50fbece1c6e3e4d2703b309624aa3d9f9b2192173e929d8e3cb7d62c930d"
+  },
+  {
+    "model": "galaxy_tab_s9_fe_plus",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s9_fe_plus_lavender_icon.svg",
+    "logo_fill": "#8a888f",
+    "reference_position": [
+      0.114,
+      0.085,
+      0.105,
+      "landscape"
+    ],
+    "non_logo_sha256": "4c4e0da5bafd51c2665b7fbb042b29ce9a4e568495434570bd956f581703ba1c"
+  },
+  {
+    "model": "galaxy_tab_s9_fe_plus",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s9_fe_plus_mint_icon.svg",
+    "logo_fill": "#88908c",
+    "reference_position": [
+      0.114,
+      0.085,
+      0.105,
+      "landscape"
+    ],
+    "non_logo_sha256": "eed2f0904026b0fb3452dd3a4c987f4a7dedf60bbb4e07b413956aced04bb691"
+  },
+  {
+    "model": "galaxy_tab_s9_fe_plus",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s9_fe_plus_silver_icon.svg",
+    "logo_fill": "#949596",
+    "reference_position": [
+      0.114,
+      0.085,
+      0.105,
+      "landscape"
+    ],
+    "non_logo_sha256": "c91b2d10125f1d8f3649a3103468b4afeff2acc1e3e3bb5eed3e91cfa116978b"
+  },
+  {
+    "model": "galaxy_tab_s9_fe",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s9_fe_silver_icon.svg",
+    "logo_fill": "#949596",
+    "reference_position": [
+      0.12,
+      0.094,
+      0.108,
+      "landscape"
+    ],
+    "non_logo_sha256": "07b42823dc97995b5294dfbdff53a57b4e7d57af52524514d8e0469712666927"
+  },
+  {
+    "model": "galaxy_tab_s9",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s9_graphite_icon.svg",
+    "logo_fill": "#969798",
+    "reference_position": [
+      0.12,
+      0.1,
+      0.108,
+      "landscape"
+    ],
+    "non_logo_sha256": "067d8abf7fbedd41433492cb82cbca49ff5c34c2c01b33a2a30a5a35c2557f7e"
+  },
+  {
+    "model": "galaxy_tab_s9_plus",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s9_plus_beige_icon.svg",
+    "logo_fill": "#96928c",
+    "reference_position": [
+      0.117,
+      0.089,
+      0.103,
+      "landscape"
+    ],
+    "non_logo_sha256": "9eae9525c2c9517ca7746e68752e23ae6d9ce07639c8df34946d639c59d1872e"
+  },
+  {
+    "model": "galaxy_tab_s9_plus",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s9_plus_graphite_icon.svg",
+    "logo_fill": "#969798",
+    "reference_position": [
+      0.117,
+      0.089,
+      0.103,
+      "landscape"
+    ],
+    "non_logo_sha256": "ba24097cde67460ee4e20b15806da19443e6b7fb0bfff10cc5df50ae55da6d37"
+  },
+  {
+    "model": "galaxy_tab_s9_ultra",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s9_ultra_beige_icon.svg",
+    "logo_fill": "#96928c",
+    "reference_position": [
+      0.105,
+      0.089,
+      0.096,
+      "landscape"
+    ],
+    "non_logo_sha256": "c31a47cbf3e7d93be7255e013240837945f960b2bfe951e2110eaacf7f139dd6"
+  },
+  {
+    "model": "galaxy_tab_s9_ultra",
+    "path": "device_icons_svg/samsung/tablets/ic_galaxy_tab_s9_ultra_graphite_icon.svg",
+    "logo_fill": "#969798",
+    "reference_position": [
+      0.105,
+      0.089,
+      0.096,
+      "landscape"
+    ],
+    "non_logo_sha256": "4bce50d90d545f64a135e25b615c27ff182b30386a6453bc87a474d81dc628f4"
+  }
+]

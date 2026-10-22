@@ -1,0 +1,154 @@
+{
+  "id": "oneplus-pad-go",
+  "name": "OnePlus Pad go",
+  "state": "default",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        1720,
+        2408
+      ],
+      "size_mm": [
+        167.56515886727829,
+        234.5912224141896
+      ],
+      "center_mm": [
+        0.0,
+        0.0,
+        3.4799997806549072
+      ],
+      "corner_radius_mm": 1,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0,
+      "frame_bounds_mm": [
+        10.237420566360854,
+        10.264388792905208,
+        167.56515886727829,
+        234.5912224141896
+      ],
+      "frame_screen_px": null,
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "width": 188.04,
+        "height": 255.12,
+        "depth": 6.89,
+        "corner_radius": 11.237420566360854,
+        "edge_roll": 0.55,
+        "front_rail_mm": 0.4,
+        "corner_radii_mm": [
+          11.237420566360854,
+          11.237420566360854,
+          11.237420566360854,
+          11.237420566360854
+        ]
+      },
+      "cutouts": [
+        {
+          "center_mm": [
+            -88.90128971681958,
+            0
+          ],
+          "radius_mm": 1.2
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "articulation": null,
+  "panels": [],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/oneplus-pad-go-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "logo": "logo",
+    "band": "band",
+    "black": "black",
+    "flash": "flash"
+  },
+  "finishes": [
+    {
+      "name": "Twin Mint",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.7254901960784313,
+            0.788235294117647,
+            0.6784313725490196
+          ],
+          "metal": 0.6,
+          "rough": 0.4
+        },
+        "rail": {
+          "rgb": [
+            0.7254901960784313,
+            0.788235294117647,
+            0.6784313725490196
+          ],
+          "metal": 0.8,
+          "rough": 0.3
+        },
+        "bar": {
+          "rgb": [
+            0.5949019607843137,
+            0.6463529411764706,
+            0.5563137254901961
+          ],
+          "metal": 0.75,
+          "rough": 0.3
+        },
+        "logo": {
+          "rgb": [
+            0.5725490196078431,
+            0.6352941176470588,
+            0.5254901960784314
+          ],
+          "metal": 0,
+          "rough": 0.45
+        },
+        "band": {
+          "rgb": [
+            0.8270588235294116,
+            0.8985882352941176,
+            0.7734117647058824
+          ],
+          "metal": 0.5,
+          "rough": 0.35
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/oneplus-pad-go.df0174ae1f81.glb.gz",
+  "sha256": "df0174ae1f81df3ccdc7abdbc7f2e4c34eb88bd59414e3acd2a21ebb9a7d6647",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/oneplus-pad-go.json",
+    "accuracy": {
+      "body_dimensions": "OnePlus official metric chassis dimensions. OnePlus 13 uses 8.5 mm glass chassis; Midnight Ocean leather is 8.9 mm and remains an approximate finish on that chassis.",
+      "screen_geometry": "Published full diagonal and native pixel aspect; concentric estimated corners. Bezel camera estimated from product render.",
+      "camera_geometry": "Official rear-render fit, measurements below. Bump depth, roll, glass and optical internals illustrative; not OEM CAD.",
+      "finishes": "Official finish names, approximate existing collection sRGB swatches; not calibrated physical materials.",
+      "omissions": "Ports, speaker holes, alert slider, antenna seams and microscopic inscriptions omitted."
+    },
+    "sources": [
+      "https://www.oneplus.com/uk/oneplus-pad-go/specs",
+      "https://oasis.opstatics.com/content/dam/oasis/page/2023/bluey/bluey-spec.png"
+    ]
+  }
+}

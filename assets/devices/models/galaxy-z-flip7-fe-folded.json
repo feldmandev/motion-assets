@@ -239,10 +239,12 @@
         },
         "logo": {
           "rgb": [
-            0.47058823529411764,
-            0.47058823529411764,
-            0.47058823529411764
-          ]
+            0.5110588235294117,
+            0.5110588235294117,
+            0.5110588235294117
+          ],
+          "metal": 0.45,
+          "rough": 0.3
         }
       }
     },
@@ -277,16 +279,18 @@
         },
         "logo": {
           "rgb": [
-            0.06666666666666667,
-            0.06666666666666667,
-            0.06666666666666667
-          ]
+            0.26413333333333333,
+            0.26413333333333333,
+            0.26413333333333333
+          ],
+          "metal": 0.45,
+          "rough": 0.3
         }
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-z-flip7-fe-folded.83ddb6b01c1b.glb.gz",
-  "sha256": "83ddb6b01c1b720f249b6724be6e916110227eb86a8e2d93f0c2d8897f110b1e",
+  "glbUrl": "assets/devices/models/galaxy-z-flip7-fe-folded.3374ae8836bd.glb.gz",
+  "sha256": "3374ae8836bd56863d2ad293c6eae75b0b9672e3c3797166463f18148b98f579",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-z-flip7-fe-folded.json",
@@ -297,10 +301,12 @@
       "camera_geometry": "Lens and flash centres/diameters from source icon measurements of Samsung artwork. Samsung-specific individual rings/capsule, no Pixel bar. Protrusions and optical internals are estimates.",
       "finishes": "Official standard and online-exclusive finish names; approximate sampled sRGB. Bespoke combinations and special editions excluded.",
       "hinge": "Rigid articulated panels with physically positioned axes; external barrel dimensions/curves estimated. Internal multi-link and flexible OLED bend not simulated.",
-      "omissions": "Ports, grille perforations, antenna seams and internal hinge linkages."
+      "omissions": "Ports, grille perforations, antenna seams and internal hinge linkages.",
+      "branding": "Centered SAMSUNG on exterior hinge, parallel to hinge axis; blank rear panels preserved. Approximately20mm word length from official Mobile Press hinge views; placement/material are visual estimates."
     },
     "sources": [
-      "https://www.samsungmobilepress.com/articles/samsung-galaxy-z-flip7-a-pocket-sized-ai-powerhouse-with-a-new-edge-to-edge-flexwindow"
+      "https://www.samsungmobilepress.com/articles/samsung-galaxy-z-flip7-a-pocket-sized-ai-powerhouse-with-a-new-edge-to-edge-flexwindow",
+      "https://api.samsungmobilepress.com/media-assets/galaxy-z-flip7-fe"
     ]
   }
 }

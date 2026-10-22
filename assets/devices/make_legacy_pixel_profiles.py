@@ -10,6 +10,7 @@ published-aspect parametric screen.
 from __future__ import annotations
 
 import json
+from make_device_branding import apply as apply_branding
 from copy import deepcopy
 import math
 from pathlib import Path
@@ -288,6 +289,7 @@ def profiles() -> list[dict]:
 
 def main() -> None:
     for data in profiles():
+        apply_branding(data)
         target = BASE / 'profiles' / f'{data["id"]}.json'
         target.write_text(json.dumps(data, indent=2) + '\n', encoding='utf-8')
         print('Wrote', target.name)

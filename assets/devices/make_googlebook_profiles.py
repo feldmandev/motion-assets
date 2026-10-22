@@ -1,4 +1,5 @@
 """Generate the 5 official 2026 Googlebook laptop profiles."""
+from make_device_branding import apply as apply_branding
 import json
 from pathlib import Path
 
@@ -414,6 +415,7 @@ def main():
                 },
             },
         }
+        apply_branding(profile)
         out_path = PROFILES / f"{s['id']}.json"
         out_path.write_text(json.dumps(profile, indent=2) + '\n', encoding='utf-8')
         print('Wrote', out_path)

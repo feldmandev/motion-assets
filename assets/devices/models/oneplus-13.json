@@ -1,0 +1,254 @@
+{
+  "id": "oneplus-13",
+  "name": "OnePlus 13",
+  "state": "default",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        1440,
+        3168
+      ],
+      "size_mm": [
+        71.6822564354055,
+        157.70096415789212
+      ],
+      "center_mm": [
+        0.0,
+        0.0,
+        4.284999370574951
+      ],
+      "corner_radius_mm": 6.991128217702753,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0,
+      "frame_bounds_mm": [
+        2.408871782297247,
+        2.5995179210539447,
+        71.6822564354055,
+        157.70096415789212
+      ],
+      "frame_screen_px": null,
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "width": 76.5,
+        "height": 162.9,
+        "depth": 8.5,
+        "corner_radius": 9.4,
+        "edge_roll": 0.55,
+        "front_rail_mm": 0.4,
+        "corner_radii_mm": [
+          9.4,
+          9.4,
+          9.4,
+          9.4
+        ]
+      },
+      "cutouts": [
+        {
+          "center_mm": [
+            0,
+            75.25
+          ],
+          "radius_mm": 1.35
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "articulation": null,
+  "panels": [],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/oneplus-13-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "logo": "logo",
+    "band": "band",
+    "black": "black",
+    "flash": "flash"
+  },
+  "finishes": [
+    {
+      "name": "Arctic Dawn",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.8941176470588236,
+            0.8941176470588236,
+            0.8941176470588236
+          ],
+          "metal": 0.15,
+          "rough": 0.4
+        },
+        "rail": {
+          "rgb": [
+            0.8941176470588236,
+            0.8941176470588236,
+            0.8941176470588236
+          ],
+          "metal": 0.8,
+          "rough": 0.3
+        },
+        "bar": {
+          "rgb": [
+            0.72,
+            0.74,
+            0.77
+          ],
+          "metal": 0.75,
+          "rough": 0.3
+        },
+        "logo": {
+          "rgb": [
+            0.7137254901960784,
+            0.7137254901960784,
+            0.7137254901960784
+          ],
+          "metal": 0,
+          "rough": 0.45
+        },
+        "band": {
+          "rgb": [
+            1,
+            1,
+            1
+          ],
+          "metal": 0.5,
+          "rough": 0.35
+        }
+      }
+    },
+    {
+      "name": "Midnight Ocean",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.11764705882352941,
+            0.17647058823529413,
+            0.2901960784313726
+          ],
+          "metal": 0.15,
+          "rough": 0.4
+        },
+        "rail": {
+          "rgb": [
+            0.11764705882352941,
+            0.17647058823529413,
+            0.2901960784313726
+          ],
+          "metal": 0.8,
+          "rough": 0.3
+        },
+        "bar": {
+          "rgb": [
+            0.72,
+            0.74,
+            0.77
+          ],
+          "metal": 0.75,
+          "rough": 0.3
+        },
+        "logo": {
+          "rgb": [
+            0.4196078431372549,
+            0.49019607843137253,
+            0.6509803921568628
+          ],
+          "metal": 0,
+          "rough": 0.45
+        },
+        "band": {
+          "rgb": [
+            0.1341176470588235,
+            0.2011764705882353,
+            0.3308235294117647
+          ],
+          "metal": 0.5,
+          "rough": 0.35
+        }
+      }
+    },
+    {
+      "name": "Black Eclipse",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.12941176470588237,
+            0.12941176470588237,
+            0.12941176470588237
+          ],
+          "metal": 0.15,
+          "rough": 0.4
+        },
+        "rail": {
+          "rgb": [
+            0.12941176470588237,
+            0.12941176470588237,
+            0.12941176470588237
+          ],
+          "metal": 0.8,
+          "rough": 0.3
+        },
+        "bar": {
+          "rgb": [
+            0.72,
+            0.74,
+            0.77
+          ],
+          "metal": 0.75,
+          "rough": 0.3
+        },
+        "logo": {
+          "rgb": [
+            0.37254901960784315,
+            0.37254901960784315,
+            0.37254901960784315
+          ],
+          "metal": 0,
+          "rough": 0.45
+        },
+        "band": {
+          "rgb": [
+            0.14752941176470588,
+            0.14752941176470588,
+            0.14752941176470588
+          ],
+          "metal": 0.5,
+          "rough": 0.35
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/oneplus-13.03afe21ddfbb.glb.gz",
+  "sha256": "03afe21ddfbb6c34eaa9d56e7d9a3e8c3826b9a52881454f44b1704c89c031e8",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/oneplus-13.json",
+    "accuracy": {
+      "body_dimensions": "OnePlus official metric chassis dimensions. OnePlus 13 uses 8.5 mm glass chassis; Midnight Ocean leather is 8.9 mm and remains an approximate finish on that chassis.",
+      "screen_geometry": "Published full diagonal and native pixel aspect; concentric estimated corners. Bezel camera estimated from product render.",
+      "camera_geometry": "Official rear-render fit, measurements below. Bump depth, roll, glass and optical internals illustrative; not OEM CAD.",
+      "finishes": "Official finish names, approximate existing collection sRGB swatches; not calibrated physical materials.",
+      "omissions": "Ports, speaker holes, alert slider, antenna seams and microscopic inscriptions omitted."
+    },
+    "sources": [
+      "https://www.oneplus.com/us/13/specs",
+      "https://oasis.opstatics.com/content/dam/oasis/page/2024/global/phones/13/specs/13-blue.png"
+    ]
+  }
+}

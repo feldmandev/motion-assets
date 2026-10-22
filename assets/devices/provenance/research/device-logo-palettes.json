@@ -1,0 +1,1007 @@
+{
+  "source": "Documents existing colored icon logo fills; inherited/photo-estimated tones, not measured physical materials",
+  "palettes": {
+    "galaxy-a34": {
+      "Awesome Silver": "#a5a29e",
+      "Awesome Violet": "#72738e",
+      "Awesome Lime": "#a5aa8f",
+      "Awesome Graphite": "#6c6c6e"
+    },
+    "galaxy-a35": {
+      "Awesome Iceblue": "#a3a6ab",
+      "Awesome Lemon": "#b1ad96",
+      "Awesome Lilac": "#a49ca3",
+      "Awesome Navy": "#696a6f"
+    },
+    "galaxy-a36": {
+      "Awesome White": "#a6a6a7",
+      "Awesome Lime": "#9ea19d",
+      "Awesome Lavender": "#8e9198",
+      "Awesome Black": "#727272"
+    },
+    "galaxy-a54": {
+      "Awesome White": "#b5b5b4",
+      "Awesome Lime": "#a6ac9a",
+      "Awesome Violet": "#76788f",
+      "Awesome Graphite": "#7a7a7a"
+    },
+    "galaxy-a55": {
+      "Awesome Iceblue": "#a4a7ab",
+      "Awesome Lemon": "#b2ae95",
+      "Awesome Lilac": "#a399a3",
+      "Awesome Navy": "#66676b"
+    },
+    "galaxy-a56": {
+      "Awesome Pink": "#a6a0a3",
+      "Awesome Olive": "#757a75",
+      "Awesome Lightgray": "#8f8f90",
+      "Awesome Graphite": "#818383"
+    },
+    "galaxy-s10-5g": {
+      "Crown Silver": "#878a92",
+      "Majestic Black": "#76777a",
+      "Royal Gold": "#897f6f"
+    },
+    "galaxy-s10-lite": {
+      "Prism White": "#a4a6a8",
+      "Prism Black": "#707377",
+      "Prism Blue": "#788fb4"
+    },
+    "galaxy-s10-plus": {
+      "Prism White": "#a5a6a7",
+      "Prism Black": "#747578",
+      "Prism Green": "#4d746e",
+      "Prism Blue": "#566d84",
+      "Flamingo Pink": "#977775",
+      "Ceramic White": "#aaa8a3",
+      "Ceramic Black": "#6b6b6b"
+    },
+    "galaxy-s10": {
+      "Prism White": "#a5a6a7",
+      "Prism Black": "#747578",
+      "Prism Green": "#4d746e",
+      "Prism Blue": "#566d84",
+      "Flamingo Pink": "#977775"
+    },
+    "galaxy-s10e": {
+      "Prism White": "#a5a6a7",
+      "Prism Black": "#747578",
+      "Prism Green": "#4d746e",
+      "Prism Blue": "#566d84",
+      "Flamingo Pink": "#977775",
+      "Canary Yellow": "#a2945d"
+    },
+    "galaxy-s20-fe": {
+      "Cloud Navy": "#82858f",
+      "Cloud Mint": "#80928e",
+      "Cloud Lavender": "#848290",
+      "Cloud Red": "#b18389",
+      "Cloud Orange": "#977a67",
+      "Cloud White": "#ababab"
+    },
+    "galaxy-s20-plus": {
+      "Cosmic Gray": "#5d5e62",
+      "Cloud Blue": "#87949a",
+      "Cosmic Black": "#6d6e71"
+    },
+    "galaxy-s20-ultra": {
+      "Cosmic Gray": "#5d5e62",
+      "Cosmic Black": "#6d6e71"
+    },
+    "galaxy-s20": {
+      "Cosmic Gray": "#5d5e62",
+      "Cloud Blue": "#87949a",
+      "Cloud Pink": "#9f9095"
+    },
+    "galaxy-s21-fe": {
+      "Graphite": "#777779",
+      "Olive": "#818277",
+      "Lavender": "#8c878f",
+      "White": "#aeaeae"
+    },
+    "galaxy-s21-plus": {
+      "Phantom Violet": "#6f6f7d",
+      "Phantom Silver": "#919699",
+      "Phantom Black": "#686868",
+      "Phantom Pink": "#a1908d",
+      "Phantom Gold": "#887671",
+      "Phantom Red": "#b07478"
+    },
+    "galaxy-s21-ultra": {
+      "Phantom Silver": "#848b8e",
+      "Phantom Black": "#626262",
+      "Phantom Titanium": "#8f8f8d",
+      "Phantom Navy": "#76787c",
+      "Phantom Brown": "#7a7572"
+    },
+    "galaxy-s21": {
+      "Phantom Pink": "#ab9d9a",
+      "Phantom Violet": "#70717d",
+      "Phantom White": "#b0b0b0",
+      "Phantom Gray": "#6b6b6b"
+    },
+    "galaxy-s22-plus": {
+      "Phantom White": "#b1b1b1",
+      "Phantom Black": "#6a6a6a",
+      "Green": "#798281",
+      "Pink Gold": "#a69f9c",
+      "Graphite": "#939496",
+      "Cream": "#a6a193",
+      "Sky Blue": "#808995",
+      "Violet": "#96919a"
+    },
+    "galaxy-s22-ultra": {
+      "Burgundy": "#8a7e81",
+      "Green": "#7c8785",
+      "Phantom Black": "#6b6b6b",
+      "Phantom White": "#afafaf",
+      "Graphite": "#939496",
+      "Sky Blue": "#7d8591",
+      "Red": "#b1847a"
+    },
+    "galaxy-s22": {
+      "Phantom White": "#b1b1b1",
+      "Pink Gold": "#a59e9b",
+      "Phantom Black": "#6a6a6b",
+      "Green": "#78817f",
+      "Graphite": "#939496",
+      "Cream": "#a6a193",
+      "Sky Blue": "#808995",
+      "Violet": "#96919a",
+      "Bora Purple": "#8a8594"
+    },
+    "galaxy-s23-fe": {
+      "Graphite": "#757575",
+      "Purple": "#8f8996",
+      "Mint": "#9da39f",
+      "Cream": "#b1b0ae",
+      "Tangerine": "#755b44",
+      "Indigo": "#616974"
+    },
+    "galaxy-s23-plus": {
+      "Phantom Black": "#696969",
+      "Green": "#878987",
+      "Lavender": "#a39ea2",
+      "Cream": "#b0ada8",
+      "Lime": "#a1a491",
+      "Graphite": "#989899"
+    },
+    "galaxy-s23-ultra": {
+      "Phantom Black": "#696969",
+      "Green": "#878987",
+      "Cream": "#b0ada8",
+      "Lavender": "#a29da1",
+      "Graphite": "#989899",
+      "Sky Blue": "#7f8691",
+      "Lime": "#9fa38f",
+      "Red": "#b58b88"
+    },
+    "galaxy-s23": {
+      "Phantom Black": "#696969",
+      "Green": "#878987",
+      "Lavender": "#a39ea2",
+      "Cream": "#b0aea9",
+      "Lime": "#a0a390",
+      "Graphite": "#989899"
+    },
+    "galaxy-s24-fe": {
+      "Mint": "#9ea7a3",
+      "Yellow": "#aea88c",
+      "Blue": "#9ca1a8",
+      "Gray": "#959594",
+      "Graphite": "#7e7e7e"
+    },
+    "galaxy-s24-plus": {
+      "Amber Yellow": "#aba69a",
+      "Cobalt Violet": "#8f8d98",
+      "Onyx Black": "#777777",
+      "Jade Green": "#9da199",
+      "Sapphire Blue": "#919499",
+      "Sandstone Orange": "#8a705d"
+    },
+    "galaxy-s24-ultra": {
+      "Titanium Yellow": "#a6a08c",
+      "Titanium Violet": "#7d7b85",
+      "Titanium Gray": "#696663",
+      "Titanium Black": "#787878",
+      "Titanium Green": "#9da29a",
+      "Titanium Blue": "#91949a",
+      "Titanium Orange": "#8a6f5c"
+    },
+    "galaxy-s24": {
+      "Amber Yellow": "#aba69a",
+      "Cobalt Violet": "#8f8d99",
+      "Onyx Black": "#787878",
+      "Jade Green": "#9da199",
+      "Sapphire Blue": "#919499",
+      "Sandstone Orange": "#8a705d"
+    },
+    "galaxy-s25-edge": {
+      "Titanium Silver": "#989898",
+      "Titanium Icyblue": "#95989e",
+      "Titanium Jetblack": "#6e6e70"
+    },
+    "galaxy-s25-fe": {
+      "White": "#b2b2b2",
+      "Icyblue": "#9e9fa6",
+      "Navy": "#767b89",
+      "Jetblack": "#717173"
+    },
+    "galaxy-s25-plus": {
+      "Icy Blue": "#91949b",
+      "Mint": "#969d99",
+      "Silver Shadow": "#6b6b6d",
+      "Navy": "#676e7d",
+      "Pink Gold": "#a19a94",
+      "Coral Red": "#8a595b",
+      "Blue Black": "#74767a"
+    },
+    "galaxy-s25-ultra": {
+      "Titanium White Silver": "#d8dfe0",
+      "Titanium Gray": "#878580",
+      "Titanium Silver Blue": "#858b9a",
+      "Titanium Black": "#181c25",
+      "Titanium Pink Gold": "#a09893",
+      "Titanium Jade Green": "#747670",
+      "Titanium Jet Black": "#6d6d6e"
+    },
+    "galaxy-s25": {
+      "Icy Blue": "#b6c9e3",
+      "Mint": "#a8bcb3",
+      "Navy": "#687b9d",
+      "Silver Shadow": "#a2a5af",
+      "Pink Gold": "#a09893",
+      "Coral Red": "#895759",
+      "Blue Black": "#707175"
+    },
+    "galaxy-s26-fe": {
+      "Pistachio": "#919997",
+      "Blueberry": "#7a7c8b",
+      "Graphite": "#717275"
+    },
+    "galaxy-s26-plus": {
+      "White": "#b3b3b4",
+      "Sky Blue": "#989ea4",
+      "Cobalt Violet": "#868691",
+      "Black": "#727375",
+      "Silver Shadow": "#767677",
+      "Pink Gold": "#aaa4a1"
+    },
+    "galaxy-s26-ultra": {
+      "White": "#b5b5b5",
+      "Sky Blue": "#9ba1a5",
+      "Cobalt Violet": "#92929c",
+      "Black": "#797a7c",
+      "Pink Gold": "#a8a29d",
+      "Silver Shadow": "#727272"
+    },
+    "galaxy-s26": {
+      "White": "#b3b3b4",
+      "Sky Blue": "#949ba1",
+      "Cobalt Violet": "#83838e",
+      "Black": "#707173",
+      "Pink Gold": "#a7a19c",
+      "Silver Shadow": "#727272"
+    },
+    "galaxy-s6-edge-plus": {
+      "White Pearl": "#acadad",
+      "Black Sapphire": "#6e7278",
+      "Gold Platinum": "#8c8578",
+      "Silver Titanium": "#838488"
+    },
+    "galaxy-s6-edge": {
+      "White Pearl": "#acadad",
+      "Black Sapphire": "#6e7278",
+      "Gold Platinum": "#8c8578",
+      "Green Emerald": "#7d9f9b"
+    },
+    "galaxy-s6": {
+      "White Pearl": "#acadad",
+      "Black Sapphire": "#6e7278",
+      "Gold Platinum": "#8c8578",
+      "Blue Topaz": "#447582"
+    },
+    "galaxy-s7-edge": {
+      "Black Onyx": "#696a6d",
+      "Gold Platinum": "#8a8579",
+      "Silver Titanium": "#8a8c8f",
+      "White Pearl": "#adadad"
+    },
+    "galaxy-s7": {
+      "Black Onyx": "#696a6d",
+      "Gold Platinum": "#8a8579",
+      "Silver Titanium": "#8a8c8f",
+      "White Pearl": "#adadad"
+    },
+    "galaxy-s8-plus": {
+      "Midnight Black": "#68686a",
+      "Orchid Gray": "#79767c",
+      "Coral Blue": "#667a84",
+      "Arctic Silver": "#8c8d90",
+      "Maple Gold": "#948d80",
+      "Rose Pink": "#9c878d"
+    },
+    "galaxy-s8": {
+      "Midnight Black": "#68686a",
+      "Orchid Gray": "#79767c",
+      "Coral Blue": "#667a84",
+      "Arctic Silver": "#8c8d90",
+      "Maple Gold": "#948d80",
+      "Rose Pink": "#9c878d",
+      "Burgundy Red": "#90757b"
+    },
+    "galaxy-s9-plus": {
+      "Midnight Black": "#696a6d",
+      "Titanium Gray": "#6d7074",
+      "Coral Blue": "#56697a",
+      "Lilac Purple": "#726378",
+      "Sunrise Gold": "#928775",
+      "Burgundy Red": "#98767e"
+    },
+    "galaxy-s9": {
+      "Midnight Black": "#696a6d",
+      "Titanium Gray": "#6d7074",
+      "Coral Blue": "#56697a",
+      "Lilac Purple": "#726378",
+      "Sunrise Gold": "#928775",
+      "Burgundy Red": "#98767e"
+    },
+    "galaxy-tab-a11-plus": {
+      "Gray": "#8b8b8d",
+      "Silver": "#9a9a9c"
+    },
+    "galaxy-tab-a11": {
+      "Silver": "#8c8d8f",
+      "Gray": "#929293"
+    },
+    "galaxy-tab-s10-fe-plus": {
+      "Gray": "#5e6268",
+      "Silver": "#949698",
+      "Blue": "#858f97"
+    },
+    "galaxy-tab-s10-fe": {
+      "Gray": "#5e6268",
+      "Silver": "#949698",
+      "Blue": "#858f97"
+    },
+    "galaxy-tab-s10-lite": {
+      "Coralred": "#b0878c",
+      "Silver": "#969698",
+      "Gray": "#99999a"
+    },
+    "galaxy-tab-s10-plus": {
+      "Moonstone Gray": "#616366",
+      "Platinum Silver": "#949596"
+    },
+    "galaxy-tab-s10-ultra": {
+      "Moonstone Gray": "#616366",
+      "Platinum Silver": "#949596"
+    },
+    "galaxy-tab-s12-plus": {
+      "Silver": "#9a9a9c",
+      "Gray": "#8f8f91"
+    },
+    "galaxy-tab-s12-ultra": {
+      "Gray": "#8f8f91",
+      "Silver": "#9a9a9c"
+    },
+    "galaxy-tab-s6-lite-2020": {
+      "Oxford Gray": "#9b9ea5",
+      "Angora Blue": "#838c94"
+    },
+    "galaxy-tab-s6-lite-2022": {
+      "Oxford Gray": "#9b9ea5",
+      "Angora Blue": "#838c94"
+    },
+    "galaxy-tab-s6-lite-2024": {
+      "Oxford Gray": "#9b9ea5",
+      "Chiffon Pink": "#948584",
+      "Mint": "#8a948f"
+    },
+    "galaxy-tab-s6": {
+      "Mountain Gray": "#a3a7ad",
+      "Cloud Blue": "#75808c",
+      "Rose Blush": "#85797a"
+    },
+    "galaxy-tab-s7-fe": {
+      "Mystic Black": "#838589",
+      "Mystic Silver": "#8d8e8f",
+      "Mystic Pink": "#928585",
+      "Mystic Green": "#7e8882"
+    },
+    "galaxy-tab-s7-plus": {
+      "Mystic Black": "#808286",
+      "Mystic Silver": "#8a8c8c",
+      "Mystic Bronze": "#796c69",
+      "Mystic Navy": "#858f9a"
+    },
+    "galaxy-tab-s7": {
+      "Mystic Black": "#808286",
+      "Mystic Silver": "#8a8c8c",
+      "Mystic Bronze": "#796c69",
+      "Mystic Navy": "#858f9a"
+    },
+    "galaxy-tab-s8-plus": {
+      "Graphite": "#898b8f",
+      "Silver": "#8b8c8d",
+      "Pink Gold": "#8f8786"
+    },
+    "galaxy-tab-s8-ultra": {
+      "Graphite": "#898b8f"
+    },
+    "galaxy-tab-s8": {
+      "Graphite": "#898b8f",
+      "Silver": "#8b8c8d",
+      "Pink Gold": "#8f8786"
+    },
+    "galaxy-tab-s9-fe-plus": {
+      "Gray": "#a2a5aa",
+      "Silver": "#949596",
+      "Mint": "#88908c",
+      "Lavender": "#8a888f"
+    },
+    "galaxy-tab-s9-fe": {
+      "Gray": "#a2a5aa",
+      "Silver": "#949596",
+      "Mint": "#88908c",
+      "Lavender": "#8a888f"
+    },
+    "galaxy-tab-s9-plus": {
+      "Graphite": "#969798",
+      "Beige": "#96928c"
+    },
+    "galaxy-tab-s9-ultra": {
+      "Graphite": "#969798",
+      "Beige": "#96928c"
+    },
+    "galaxy-tab-s9": {
+      "Graphite": "#969798",
+      "Beige": "#96928c"
+    },
+    "googlebook-acer-14": {
+      "Elemental Blue": "#61707e"
+    },
+    "googlebook-asus-14": {
+      "Dusk Ash": "#8c8f90"
+    },
+    "googlebook-dell-xps": {
+      "Shimmer": "#8c8576",
+      "Sky": "#929ba6"
+    },
+    "googlebook-emulator": {
+      "Titanium Silver": "#a9adb1",
+      "Obsidian": "#5e5f62",
+      "Porcelain": "#c1c2c3",
+      "Hazel": "#656e67"
+    },
+    "googlebook-hp-14": {
+      "Atmospheric Blue": "#808a9e"
+    },
+    "googlebook-lenovo-15": {
+      "Celestial White": "#b9bbbe",
+      "Cloud Grey": "#656a70"
+    },
+    "iphone-11-pro-max": {
+      "Silver": "#b6b7ba",
+      "Space Gray": "#84848a",
+      "Gold": "#bea488",
+      "Midnight Green": "#8f9d94"
+    },
+    "iphone-11-pro": {
+      "Silver": "#b6b7ba",
+      "Space Gray": "#84848a",
+      "Gold": "#bea488",
+      "Midnight Green": "#8f9d94"
+    },
+    "iphone-11": {
+      "Purple": "#a28fbe",
+      "Green": "#7eb098",
+      "Yellow": "#c8b14c",
+      "Black": "#6f7177",
+      "White": "#bdbcb8",
+      "(PRODUCT)RED": "#ff6572"
+    },
+    "iphone-12-mini": {
+      "Black": "#6f7177",
+      "White": "#bdbcb8",
+      "(PRODUCT)RED": "#f16677",
+      "Green": "#93baaa",
+      "Blue": "#6196c3",
+      "Purple": "#a28fbe"
+    },
+    "iphone-12-pro-max": {
+      "Silver": "#b6b7ba",
+      "Graphite": "#8f8f95",
+      "Gold": "#bea488",
+      "Pacific Blue": "#7097ab"
+    },
+    "iphone-12-pro": {
+      "Silver": "#b6b7ba",
+      "Graphite": "#8f8f95",
+      "Gold": "#bea488",
+      "Pacific Blue": "#7097ab"
+    },
+    "iphone-12": {
+      "Black": "#6f7177",
+      "White": "#bdbcb8",
+      "(PRODUCT)RED": "#f16677",
+      "Green": "#93baaa",
+      "Blue": "#6196c3",
+      "Purple": "#a28fbe"
+    },
+    "iphone-13-mini": {
+      "(PRODUCT)RED": "#f16677",
+      "Starlight": "#bab6aa",
+      "Midnight": "#687385",
+      "Blue": "#3e779a",
+      "Pink": "#c598a4",
+      "Green": "#709786"
+    },
+    "iphone-13-pro-max": {
+      "Graphite": "#8f8f95",
+      "Gold": "#bea488",
+      "Silver": "#b6b7ba",
+      "Sierra Blue": "#7795ae",
+      "Alpine Green": "#4c6653"
+    },
+    "iphone-13-pro": {
+      "Graphite": "#8f8f95",
+      "Gold": "#bea488",
+      "Silver": "#b6b7ba",
+      "Sierra Blue": "#7795ae",
+      "Alpine Green": "#4c6653"
+    },
+    "iphone-13": {
+      "(PRODUCT)RED": "#f16677",
+      "Starlight": "#bab6aa",
+      "Midnight": "#687385",
+      "Blue": "#3e779a",
+      "Pink": "#c598a4",
+      "Green": "#709786"
+    },
+    "iphone-14-plus": {
+      "Midnight": "#687385",
+      "Starlight": "#bab6aa",
+      "(PRODUCT)RED": "#f16677",
+      "Blue": "#7da0b7",
+      "Purple": "#a28fbe",
+      "Yellow": "#c8b14c"
+    },
+    "iphone-14-pro-max": {
+      "Silver": "#b6b7ba",
+      "Gold": "#bea488",
+      "Space Black": "#6c6d74",
+      "Deep Purple": "#9288a6"
+    },
+    "iphone-14-pro": {
+      "Silver": "#b6b7ba",
+      "Gold": "#bea488",
+      "Space Black": "#6c6d74",
+      "Deep Purple": "#9288a6"
+    },
+    "iphone-14": {
+      "Midnight": "#687385",
+      "Starlight": "#bab6aa",
+      "(PRODUCT)RED": "#f16677",
+      "Blue": "#7da0b7",
+      "Purple": "#a28fbe",
+      "Yellow": "#c8b14c"
+    },
+    "iphone-15-plus": {
+      "Black": "#6f7177",
+      "Blue": "#99aeb9",
+      "Green": "#a2ae99",
+      "Yellow": "#c2b589",
+      "Pink": "#c49ea7"
+    },
+    "iphone-15-pro-max": {
+      "Black Titanium": "#7b7d82",
+      "White Titanium": "#b7b4ae",
+      "Blue Titanium": "#8092a9",
+      "Natural Titanium": "#90887e"
+    },
+    "iphone-15-pro": {
+      "Black Titanium": "#7b7d82",
+      "White Titanium": "#b7b4ae",
+      "Blue Titanium": "#8092a9",
+      "Natural Titanium": "#90887e"
+    },
+    "iphone-15": {
+      "Black": "#6f7177",
+      "Blue": "#99aeb9",
+      "Green": "#a2ae99",
+      "Yellow": "#c2b589",
+      "Pink": "#c49ea7"
+    },
+    "iphone-16-plus": {
+      "Black": "#6f7177",
+      "White": "#bdbcb8",
+      "Pink": "#c598a4",
+      "Teal": "#46968f",
+      "Ultramarine": "#4d59c5"
+    },
+    "iphone-16-pro-max": {
+      "Black Titanium": "#7b7d82",
+      "White Titanium": "#b7b4ae",
+      "Natural Titanium": "#90887e",
+      "Desert Titanium": "#b0967e"
+    },
+    "iphone-16-pro": {
+      "Black Titanium": "#7b7d82",
+      "White Titanium": "#b7b4ae",
+      "Natural Titanium": "#90887e",
+      "Desert Titanium": "#b0967e"
+    },
+    "iphone-16": {
+      "Black": "#6f7177",
+      "White": "#bdbcb8",
+      "Pink": "#c598a4",
+      "Teal": "#46968f",
+      "Ultramarine": "#4d59c5"
+    },
+    "iphone-16e": {
+      "Black": "#6f7177",
+      "White": "#bdbcb8"
+    },
+    "iphone-17-pro-max": {
+      "Silver": "#969698",
+      "Cosmic Orange": "#ca875a",
+      "Deep Blue": "#606d87"
+    },
+    "iphone-17-pro": {
+      "Silver": "#969698",
+      "Cosmic Orange": "#ca875a",
+      "Deep Blue": "#606d87"
+    },
+    "iphone-17": {
+      "Black": "#6f7177",
+      "White": "#bdbcb8",
+      "Mist Blue": "#899fb6",
+      "Sage": "#9aaa76",
+      "Lavender": "#ae9dc3"
+    },
+    "iphone-17e": {
+      "Black": "#6f7177",
+      "White": "#bdbcb8",
+      "Soft Pink": "#c3a1ac"
+    },
+    "iphone-18-pro-max": {
+      "Black": "#6f7177",
+      "Silver": "#b6b7ba",
+      "Glacier": "#7f9eba",
+      "Burgundy": "#ae7983"
+    },
+    "iphone-18-pro": {
+      "Black": "#6f7177",
+      "Silver": "#b6b7ba",
+      "Glacier": "#7f9eba",
+      "Burgundy": "#ae7983"
+    },
+    "iphone-air": {
+      "Space Black": "#6c6d74",
+      "Cloud White": "#bdc0bd",
+      "Light Gold": "#bab29d",
+      "Sky Blue": "#8faec2"
+    },
+    "iphone-duo": {
+      "Night Sky": "#6e7887",
+      "Star White": "#b9bab5"
+    },
+    "oneplus-13": {
+      "Arctic Dawn": "#b6b6b6",
+      "Midnight Ocean": "#6b7da6",
+      "Black Eclipse": "#5f5f5f"
+    },
+    "oneplus-13r": {
+      "Astral Trail": "#918c89",
+      "Nebula Noir": "#707073"
+    },
+    "oneplus-pad-2": {
+      "Nimbus Gray": "#848896"
+    },
+    "oneplus-pad-3": {
+      "Storm Blue": "#9195a4"
+    },
+    "oneplus-pad-go": {
+      "Twin Mint": "#92a286"
+    },
+    "oneplus-pad": {
+      "Halo Green": "#6e887a"
+    },
+    "pixel-10-pro-xl": {
+      "Porcelain": "#a3a29e",
+      "Obsidian": "#8d8e8e",
+      "Jade": "#959c92",
+      "Moonstone": "#707271"
+    },
+    "pixel-10-pro": {
+      "Porcelain": "#a3a29e",
+      "Obsidian": "#8d8e8e",
+      "Jade": "#959c92",
+      "Moonstone": "#707271"
+    },
+    "pixel-10": {
+      "Obsidian": "#8d8e8e",
+      "Lemongrass": "#959c92"
+    },
+    "pixel-10a": {
+      "Obsidian": "#8d8e8e",
+      "Berry": "#846069",
+      "Lavender": "#7d8295"
+    },
+    "pixel-11-pro-fold": {
+      "Obsidian": "#7f8083"
+    },
+    "pixel-11-pro-xl": {
+      "Obsidian": "#8d8e8e",
+      "Olive": "#898879",
+      "Fog": "#676860",
+      "Canyon": "#c296aa"
+    },
+    "pixel-11-pro": {
+      "Obsidian": "#8d8e8e",
+      "Olive": "#898879",
+      "Fog": "#676860",
+      "Canyon": "#c296aa"
+    },
+    "pixel-11": {
+      "Obsidian": "#8d8e8e",
+      "Frost": "#8fa9cf",
+      "Pistachio": "#898879",
+      "Hibiscus": "#c296aa"
+    },
+    "pixel-4-xl": {
+      "Clearly White": "#8f8f8c",
+      "Just Black": "#626363",
+      "Oh So Orange": "#926150"
+    },
+    "pixel-4": {
+      "Clearly White": "#8f8f8c",
+      "Just Black": "#626363",
+      "Oh So Orange": "#926150"
+    },
+    "pixel-4a-5g": {
+      "Clearly White": "#898986",
+      "Just Black": "#6b6b6c"
+    },
+    "pixel-4a": {
+      "Barely Blue": "#7a848e",
+      "Just Black": "#6b6b6c"
+    },
+    "pixel-5": {
+      "Just Black": "#555858",
+      "Sorta Sage": "#7f8481"
+    },
+    "pixel-5a": {
+      "Mostly Black": "#727875"
+    },
+    "pixel-6-pro": {
+      "Cloudy White": "#a2a29e",
+      "Sorta Sunny": "#9b7c50",
+      "Stormy Black": "#82868b"
+    },
+    "pixel-6": {
+      "Kinda Coral": "#d3a697",
+      "Sorta Seafoam": "#6c7d77",
+      "Stormy Black": "#82868b"
+    },
+    "pixel-6a": {
+      "Chalk": "#c7ccc9",
+      "Charcoal": "#202527",
+      "Sage": "#829c8f"
+    },
+    "pixel-7-pro": {
+      "Hazel": "#757875",
+      "Obsidian": "#76787a",
+      "Snow": "#8a8a86"
+    },
+    "pixel-7": {
+      "Lemongrass": "#848a6b",
+      "Obsidian": "#76787a",
+      "Snow": "#8a8a86"
+    },
+    "pixel-7a": {
+      "Charcoal": "#828483",
+      "Coral": "#92493d",
+      "Sea": "#848f97",
+      "Snow": "#8a8a86"
+    },
+    "pixel-8-pro": {
+      "Porcelain": "#a3a29e",
+      "Obsidian": "#8d8e8e",
+      "Bay": "#8fa9cf"
+    },
+    "pixel-8": {
+      "Hazel": "#757875",
+      "Mint": "#76867b",
+      "Obsidian": "#76787a",
+      "Rose": "#84716d"
+    },
+    "pixel-8a": {
+      "Aloe": "#959c92",
+      "Bay": "#7d8a9c",
+      "Obsidian": "#8d8e8e",
+      "Porcelain": "#a3a29e"
+    },
+    "pixel-9-pro-fold": {
+      "Porcelain": "#a3a29e",
+      "Obsidian": "#878989"
+    },
+    "pixel-9-pro-xl": {
+      "Porcelain": "#a3a29e",
+      "Obsidian": "#8d8e8e",
+      "Hazel": "#707271"
+    },
+    "pixel-9-pro": {
+      "Porcelain": "#a3a29e",
+      "Obsidian": "#8d8e8e",
+      "Hazel": "#707271"
+    },
+    "pixel-9": {
+      "Porcelain": "#a3a29e",
+      "Obsidian": "#8d8e8e",
+      "Wintergreen": "#959c92",
+      "Peony": "#846069"
+    },
+    "pixel-9a": {
+      "Porcelain": "#a3a29e",
+      "Obsidian": "#8d8e8e",
+      "Peony": "#846069",
+      "Iris": "#7d8295"
+    },
+    "pixel-fold": {
+      "Obsidian": "#76787a",
+      "Porcelain": "#868680"
+    }
+  },
+  "unmatched_kept_profile_tone": [
+    [
+      "galaxy-a37",
+      "Awesome White"
+    ],
+    [
+      "galaxy-a37",
+      "Awesome Lavender"
+    ],
+    [
+      "galaxy-a37",
+      "Awesome Graygreen"
+    ],
+    [
+      "galaxy-a37",
+      "Awesome Charcoal"
+    ],
+    [
+      "galaxy-a57",
+      "Awesome Icyblue"
+    ],
+    [
+      "galaxy-a57",
+      "Awesome Lilac"
+    ],
+    [
+      "galaxy-a57",
+      "Awesome Gray"
+    ],
+    [
+      "galaxy-a57",
+      "Awesome Navy"
+    ],
+    [
+      "galaxy-s24-plus",
+      "Marble Gray"
+    ],
+    [
+      "galaxy-s24",
+      "Marble Gray"
+    ],
+    [
+      "galaxy-tab-s11-ultra",
+      "Grey"
+    ],
+    [
+      "galaxy-tab-s11-ultra",
+      "Silver"
+    ],
+    [
+      "galaxy-tab-s11",
+      "Grey"
+    ],
+    [
+      "galaxy-tab-s11",
+      "Silver"
+    ],
+    [
+      "galaxy-tab-s6-lite-2020",
+      "Chiffon Pink"
+    ],
+    [
+      "googlebook-acer-14",
+      "Steel Gray"
+    ],
+    [
+      "googlebook-acer-14",
+      "Pure Silver"
+    ],
+    [
+      "googlebook-asus-14",
+      "Star Black"
+    ],
+    [
+      "googlebook-asus-14",
+      "Cool Silver"
+    ],
+    [
+      "googlebook-dell-xps",
+      "Platinum"
+    ],
+    [
+      "googlebook-dell-xps",
+      "Graphite"
+    ],
+    [
+      "googlebook-hp-14",
+      "Glacier Silver"
+    ],
+    [
+      "googlebook-hp-14",
+      "Ceramic White"
+    ],
+    [
+      "googlebook-lenovo-15",
+      "Abyss Blue"
+    ],
+    [
+      "pixel-10-pro-fold-folded",
+      "Moonstone"
+    ],
+    [
+      "pixel-10-pro-fold-folded",
+      "Jade"
+    ],
+    [
+      "pixel-10-pro-fold-unfolded",
+      "Moonstone"
+    ],
+    [
+      "pixel-10-pro-fold-unfolded",
+      "Jade"
+    ],
+    [
+      "pixel-10",
+      "Indigo"
+    ],
+    [
+      "pixel-10",
+      "Frost"
+    ],
+    [
+      "pixel-10a",
+      "Fog"
+    ],
+    [
+      "pixel-10a",
+      "Isai Blue"
+    ],
+    [
+      "pixel-11-pro-fold-folded",
+      "Olive"
+    ],
+    [
+      "pixel-11-pro-fold-unfolded",
+      "Olive"
+    ],
+    [
+      "pixel-8-pro",
+      "Mint"
+    ],
+    [
+      "pixel-9-pro-xl",
+      "Rose Quartz"
+    ],
+    [
+      "pixel-9-pro",
+      "Rose Quartz"
+    ]
+  ]
+}

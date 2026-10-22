@@ -115,9 +115,9 @@
         },
         "logo": {
           "rgb": [
-            0.5376470588235294,
-            0.5433333333333332,
-            0.5660784313725489
+            0.5450980392156862,
+            0.5450980392156862,
+            0.5529411764705883
           ],
           "metal": 0.3,
           "rough": 0.45
@@ -173,9 +173,9 @@
         },
         "logo": {
           "rgb": [
-            0.4343529411764706,
-            0.43639215686274513,
-            0.44454901960784315
+            0.6039215686274509,
+            0.6039215686274509,
+            0.611764705882353
           ],
           "metal": 0.3,
           "rough": 0.45
@@ -201,8 +201,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-tab-a11-plus.df097e82cf73.glb.gz",
-  "sha256": "df097e82cf73b6040535b43bf76591042220a673103283fd633ca0321ebf3e1c",
+  "glbUrl": "assets/devices/models/galaxy-tab-a11-plus.69634e981161.glb.gz",
+  "sha256": "69634e981161dd4eab03aa19fda9def32b5d370229ffc0b7d523ec8fd756488b",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-tab-a11-plus.json",

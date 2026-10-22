@@ -281,16 +281,18 @@
         },
         "logo": {
           "rgb": [
-            0.043137254901960784,
-            0.043137254901960784,
-            0.050980392156862744
-          ]
+            0.24290980392156863,
+            0.24290980392156863,
+            0.2499843137254902
+          ],
+          "metal": 0.45,
+          "rough": 0.3
         }
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-z-trifold-folded.c76c125c5bd4.glb.gz",
-  "sha256": "c76c125c5bd4b91ebba6941b37dbf2c3262192aa0ccb7fbbedb77f2c83cf7bc5",
+  "glbUrl": "assets/devices/models/galaxy-z-trifold-folded.911a963628c3.glb.gz",
+  "sha256": "911a963628c35ab66e22df04cad601f37f37a93ad51f5aa0d342d4f56d24775b",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-z-trifold-folded.json",
@@ -301,10 +303,12 @@
       "camera_geometry": "Lens and flash centres/diameters from source icon measurements of Samsung artwork. Samsung-specific individual rings/capsule, no Pixel bar. Protrusions and optical internals are estimates.",
       "finishes": "Official standard and online-exclusive finish names; approximate sampled sRGB. Bespoke combinations and special editions excluded.",
       "hinge": "Rigid articulated panels with physically positioned axes; external barrel dimensions/curves estimated. Internal multi-link and flexible OLED bend not simulated. Two independent inward hinges close left first, then camera leaf, with clearance for the three unequal published leaf thicknesses.",
-      "omissions": "Ports, grille perforations, antenna seams and internal hinge linkages."
+      "omissions": "Ports, grille perforations, antenna seams and internal hinge linkages.",
+      "branding": "Centered SAMSUNG on exterior hinge, parallel to hinge axis; blank rear panels preserved. Approximately20mm word length from official Mobile Press hinge views; placement/material are visual estimates."
     },
     "sources": [
-      "https://www.samsungmobilepress.com/articles/introducing-galaxy-z-trifold-the-shape-of-whats-next-in-mobile-innovation"
+      "https://www.samsungmobilepress.com/articles/introducing-galaxy-z-trifold-the-shape-of-whats-next-in-mobile-innovation",
+      "https://api.samsungmobilepress.com/media-assets/galaxy-z-trifold"
     ]
   }
 }

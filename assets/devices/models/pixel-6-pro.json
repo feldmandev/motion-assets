@@ -88,7 +88,8 @@
     "bar": "bar",
     "black": "black",
     "flash": "flash",
-    "upper": "upper"
+    "upper": "upper",
+    "logo": "logo"
   },
   "finishes": [
     {
@@ -121,6 +122,15 @@
             0.45098,
             0.45882
           ]
+        },
+        "logo": {
+          "rgb": [
+            0.5098039215686274,
+            0.5254901960784314,
+            0.5450980392156862
+          ],
+          "metal": 0.5,
+          "rough": 0.28
         }
       }
     },
@@ -154,6 +164,15 @@
             0.72549,
             0.71765
           ]
+        },
+        "logo": {
+          "rgb": [
+            0.6352941176470588,
+            0.6352941176470588,
+            0.6196078431372549
+          ],
+          "metal": 0.5,
+          "rough": 0.28
         }
       }
     },
@@ -187,12 +206,21 @@
             0.75686,
             0.60392
           ]
+        },
+        "logo": {
+          "rgb": [
+            0.6078431372549019,
+            0.48627450980392156,
+            0.3137254901960784
+          ],
+          "metal": 0.5,
+          "rough": 0.28
         }
       }
     }
   ],
-  "glbUrl": "assets/devices/models/pixel-6-pro.4f0496f1aab3.glb.gz",
-  "sha256": "4f0496f1aab3eb93604d675fb880a2200dd078989cf72359bbd56ed5946b219c",
+  "glbUrl": "assets/devices/models/pixel-6-pro.7facf067765a.glb.gz",
+  "sha256": "7facf067765a6c5b6799376753c0bba8f4a7a0dcfcdb8b3984ae7ff38d245bdb",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/pixel-6-pro.json",
@@ -201,7 +229,8 @@
       "screen_resolution": "Google published panel resolution",
       "screen_geometry": "Screen fit and corner radius measured from Google emulator artwork; native pixel aspect preserved. Skin artwork is a reference, not physical CAD.",
       "camera_geometry": "Housing width, height and top gap scaled from official rear artwork; pixel bounds and uncertainty in camera_measurement. Optical internals remain illustrative. Not measurable from this rear view; model depth remains a visual estimate.",
-      "finishes": "Approximate sRGB colors and roughness, not calibrated measured materials"
+      "finishes": "Approximate sRGB colors and roughness, not calibrated measured materials",
+      "branding": "Google G contour retained from reference artwork. Legacy Pixel4/4a/5/5a lower rear placement (approximately80%height); Pixel6 onward and folds centered on rear/camera leaf. Size, position and finish-tinted material are photo estimates, not manufacturer CAD."
     },
     "sources": [
       "https://support.google.com/pixelphone/answer/7158570?hl=en",

@@ -1,0 +1,94 @@
+{
+  "13": {
+    "reference": "research/oneplus/13.png",
+    "body_bounds_px": [
+      194,
+      120,
+      588,
+      960
+    ],
+    "housing_bounds_px": [
+      213,
+      164,
+      482,
+      433
+    ],
+    "scale_mm_per_px": 0.19392857142857142,
+    "uncertainty_mm": 0.8,
+    "note": "Composite has rear width partly occluded; published chassis aspect used for width. Protrusion estimated, not measured."
+  },
+  "13r": {
+    "reference": "research/oneplus/13r.png",
+    "body_bounds_px": [
+      201,
+      119,
+      597,
+      958
+    ],
+    "housing_bounds_px": [
+      225,
+      156,
+      482,
+      413
+    ],
+    "scale_mm_per_px": 0.19272943980929677,
+    "uncertainty_mm": 0.8,
+    "note": "Composite has rear width partly occluded; published chassis aspect used for width. Protrusion estimated, not measured."
+  },
+  "pad": {
+    "reference": "research/oneplus/pad.png",
+    "orientation": "landscape",
+    "housing_size_mm": [
+      26,
+      26
+    ],
+    "center_normalized": [
+      0.5,
+      0.112
+    ],
+    "uncertainty_mm": 1.2,
+    "note": "Official composite render, approximate front-on fitting; protrusion estimated."
+  },
+  "pad-2": {
+    "reference": "research/oneplus/pad-2.png",
+    "orientation": "landscape",
+    "housing_size_mm": [
+      26,
+      26
+    ],
+    "center_normalized": [
+      0.5,
+      0.112
+    ],
+    "uncertainty_mm": 1.2,
+    "note": "Official composite render, approximate front-on fitting; protrusion estimated."
+  },
+  "pad-3": {
+    "reference": "research/oneplus/pad-3.png",
+    "orientation": "landscape",
+    "housing_size_mm": [
+      17.0,
+      36.5
+    ],
+    "center_normalized": [
+      0.914,
+      0.077
+    ],
+    "uncertainty_mm": 1.2,
+    "note": "Official composite render, approximate front-on fitting; protrusion estimated."
+  },
+  "pad-go": {
+    "reference": "research/oneplus/pad-go.png",
+    "orientation": "landscape",
+    "housing_size_mm": [
+      22,
+      22
+    ],
+    "center_normalized": [
+      0.5,
+      0.092
+    ],
+    "uncertainty_mm": 1.2,
+    "note": "Official composite render, approximate front-on fitting; protrusion estimated."
+  }
+}

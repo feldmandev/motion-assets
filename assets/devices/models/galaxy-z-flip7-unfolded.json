@@ -378,10 +378,12 @@
         },
         "logo": {
           "rgb": [
-            0.09803921568627451,
-            0.12941176470588237,
-            0.2235294117647059
-          ]
+            0.29243137254901963,
+            0.32072941176470593,
+            0.4056235294117647
+          ],
+          "metal": 0.45,
+          "rough": 0.3
         }
       }
     },
@@ -416,10 +418,12 @@
         },
         "logo": {
           "rgb": [
-            0.45098039215686275,
-            0.4745098039215686,
-            0.47058823529411764
-          ]
+            0.4917647058823529,
+            0.5149176470588235,
+            0.5110588235294117
+          ],
+          "metal": 0.45,
+          "rough": 0.3
         }
       }
     },
@@ -454,10 +458,12 @@
         },
         "logo": {
           "rgb": [
-            0.48627450980392156,
-            0.2,
-            0.2019607843137255
-          ]
+            0.5264941176470588,
+            0.24480000000000002,
+            0.2467294117647059
+          ],
+          "metal": 0.45,
+          "rough": 0.3
         }
       }
     },
@@ -492,16 +498,18 @@
         },
         "logo": {
           "rgb": [
-            0.12156862745098039,
-            0.11960784313725491,
-            0.12941176470588237
-          ]
+            0.3136549019607843,
+            0.31188627450980394,
+            0.32072941176470593
+          ],
+          "metal": 0.45,
+          "rough": 0.3
         }
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-z-flip7-unfolded.cf005155e1b7.glb.gz",
-  "sha256": "cf005155e1b774c92692fd4974801348366fe08d9ca930e22f6eb0d46efcc602",
+  "glbUrl": "assets/devices/models/galaxy-z-flip7-unfolded.28994cfd9d60.glb.gz",
+  "sha256": "28994cfd9d601d5625f96235c2363abf884930d8cee5e0e33508a472a8fa4c7d",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-z-flip7-unfolded.json",
@@ -512,10 +520,12 @@
       "camera_geometry": "Lens and flash centres/diameters from source icon measurements of Samsung artwork. Samsung-specific individual rings/capsule, no Pixel bar. Protrusions and optical internals are estimates.",
       "finishes": "Official standard and online-exclusive finish names; approximate sampled sRGB. Bespoke combinations and special editions excluded.",
       "hinge": "Rigid articulated panels with physically positioned axes; external barrel dimensions/curves estimated. Internal multi-link and flexible OLED bend not simulated.",
-      "omissions": "Ports, grille perforations, antenna seams and internal hinge linkages."
+      "omissions": "Ports, grille perforations, antenna seams and internal hinge linkages.",
+      "branding": "Centered SAMSUNG on exterior hinge, parallel to hinge axis; blank rear panels preserved. Approximately20mm word length from official Mobile Press hinge views; placement/material are visual estimates."
     },
     "sources": [
-      "https://www.samsungmobilepress.com/articles/samsung-galaxy-z-flip7-a-pocket-sized-ai-powerhouse-with-a-new-edge-to-edge-flexwindow"
+      "https://www.samsungmobilepress.com/articles/samsung-galaxy-z-flip7-a-pocket-sized-ai-powerhouse-with-a-new-edge-to-edge-flexwindow",
+      "https://api.samsungmobilepress.com/media-assets/galaxy-z-flip7"
     ]
   }
 }

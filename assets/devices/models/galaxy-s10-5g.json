@@ -123,10 +123,12 @@
         },
         "logo": {
           "rgb": [
-            0.13,
-            0.14,
-            0.16
-          ]
+            0.5294117647058824,
+            0.5411764705882353,
+            0.5725490196078431
+          ],
+          "metal": 0,
+          "rough": 0.3
         }
       }
     },
@@ -161,10 +163,12 @@
         },
         "logo": {
           "rgb": [
-            0.62,
-            0.64,
-            0.68
-          ]
+            0.4627450980392157,
+            0.4666666666666667,
+            0.47843137254901963
+          ],
+          "metal": 0,
+          "rough": 0.3
         }
       }
     },
@@ -199,16 +203,18 @@
         },
         "logo": {
           "rgb": [
-            0.13,
-            0.14,
-            0.16
-          ]
+            0.5372549019607843,
+            0.4980392156862745,
+            0.43529411764705883
+          ],
+          "metal": 0,
+          "rough": 0.3
         }
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-s10-5g.078d5789b6dc.glb.gz",
-  "sha256": "078d5789b6dc628fd3dcb0b44d53a7b1d15c1a72432d5e72282bc5f44d5a595d",
+  "glbUrl": "assets/devices/models/galaxy-s10-5g.818ba87c7a4a.glb.gz",
+  "sha256": "818ba87c7a4a2133a6b04fa4fe2e4a186797165dbb52498510cdb7c35b830e6f",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-s10-5g.json",

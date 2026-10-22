@@ -273,10 +273,12 @@
         },
         "logo": {
           "rgb": [
-            0.33552941176470585,
-            0.3468235294117647,
-            0.3863529411764706
-          ]
+            0.43137254901960786,
+            0.47058823529411764,
+            0.5294117647058824
+          ],
+          "metal": 0.92,
+          "rough": 0.18
         }
       }
     },
@@ -306,16 +308,18 @@
         },
         "logo": {
           "rgb": [
-            0.5616470588235294,
-            0.5616470588235294,
-            0.5543529411764706
-          ]
+            0.7254901960784313,
+            0.7294117647058823,
+            0.7098039215686275
+          ],
+          "metal": 0.92,
+          "rough": 0.18
         }
       }
     }
   ],
-  "glbUrl": "assets/devices/models/iphone-duo-folded.b8d90db07c48.glb.gz",
-  "sha256": "b8d90db07c481fc130f0c2bdc19a966e179021ff80649508a9a44d27aa147ac5",
+  "glbUrl": "assets/devices/models/iphone-duo-folded.68ec9b53799a.glb.gz",
+  "sha256": "68ec9b53799a476b08e244dee75997c84b2f00c32d85697cea7e6fdba8c8af75",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/iphone-duo-folded.json",

@@ -119,10 +119,12 @@
         },
         "logo": {
           "rgb": [
-            0.13,
-            0.14,
-            0.16
-          ]
+            0.36470588235294116,
+            0.3686274509803922,
+            0.3843137254901961
+          ],
+          "metal": 0,
+          "rough": 0.3
         }
       }
     },
@@ -157,10 +159,12 @@
         },
         "logo": {
           "rgb": [
-            0.13,
-            0.14,
-            0.16
-          ]
+            0.5294117647058824,
+            0.5803921568627451,
+            0.6039215686274509
+          ],
+          "metal": 0,
+          "rough": 0.3
         }
       }
     },
@@ -195,16 +199,18 @@
         },
         "logo": {
           "rgb": [
-            0.62,
-            0.64,
-            0.68
-          ]
+            0.42745098039215684,
+            0.43137254901960786,
+            0.44313725490196076
+          ],
+          "metal": 0,
+          "rough": 0.3
         }
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-s20-plus.298603183d09.glb.gz",
-  "sha256": "298603183d097061d1d7a0d71ed636fe4f438061c6501c161596f0d758471717",
+  "glbUrl": "assets/devices/models/galaxy-s20-plus.b89848c793ae.glb.gz",
+  "sha256": "b89848c793ae93520c8fd82ca6d9833b86adadd5929832c9881ef1967cd47585",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-s20-plus.json",

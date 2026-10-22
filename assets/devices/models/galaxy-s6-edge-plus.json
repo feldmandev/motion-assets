@@ -106,10 +106,12 @@
         },
         "logo": {
           "rgb": [
-            0.13,
-            0.14,
-            0.16
-          ]
+            0.6745098039215687,
+            0.6784313725490196,
+            0.6784313725490196
+          ],
+          "metal": 0,
+          "rough": 0.3
         },
         "front_bezel": {
           "rgb": [
@@ -152,10 +154,12 @@
         },
         "logo": {
           "rgb": [
-            0.62,
-            0.64,
-            0.68
-          ]
+            0.43137254901960786,
+            0.4470588235294118,
+            0.47058823529411764
+          ],
+          "metal": 0,
+          "rough": 0.3
         },
         "front_bezel": {
           "rgb": [
@@ -198,10 +202,12 @@
         },
         "logo": {
           "rgb": [
-            0.13,
-            0.14,
-            0.16
-          ]
+            0.5490196078431373,
+            0.5215686274509804,
+            0.47058823529411764
+          ],
+          "metal": 0,
+          "rough": 0.3
         },
         "front_bezel": {
           "rgb": [
@@ -244,10 +250,12 @@
         },
         "logo": {
           "rgb": [
-            0.13,
-            0.14,
-            0.16
-          ]
+            0.5137254901960784,
+            0.5176470588235295,
+            0.5333333333333333
+          ],
+          "metal": 0,
+          "rough": 0.3
         },
         "front_bezel": {
           "rgb": [
@@ -260,8 +268,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-s6-edge-plus.c8afa1af6e9d.glb.gz",
-  "sha256": "c8afa1af6e9dda9c0f0ad40f87d62942552f76505d24b36331e931a7b92ff5b8",
+  "glbUrl": "assets/devices/models/galaxy-s6-edge-plus.5b51825c7bf0.glb.gz",
+  "sha256": "5b51825c7bf0a2221f89c556c785dedcbaf175dc6f024ccb9796a1a2c76366b7",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-s6-edge-plus.json",

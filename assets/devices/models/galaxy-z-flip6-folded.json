@@ -239,10 +239,12 @@
         },
         "logo": {
           "rgb": [
-            0.3,
-            0.3,
-            0.3
-          ]
+            0.34319999999999995,
+            0.34319999999999995,
+            0.34319999999999995
+          ],
+          "metal": 0.45,
+          "rough": 0.3
         }
       }
     },
@@ -277,10 +279,12 @@
         },
         "logo": {
           "rgb": [
-            0.49019607843137253,
-            0.45098039215686275,
-            0.307843137254902
-          ]
+            0.5303529411764705,
+            0.4917647058823529,
+            0.3509176470588235
+          ],
+          "metal": 0.45,
+          "rough": 0.3
         }
       }
     },
@@ -315,10 +319,12 @@
         },
         "logo": {
           "rgb": [
-            0.41568627450980394,
-            0.4411764705882353,
-            0.4745098039215686
-          ]
+            0.457035294117647,
+            0.4821176470588235,
+            0.5149176470588235
+          ],
+          "metal": 0.45,
+          "rough": 0.3
         }
       }
     },
@@ -353,10 +359,12 @@
         },
         "logo": {
           "rgb": [
-            0.4019607843137255,
-            0.4568627450980392,
-            0.43333333333333335
-          ]
+            0.44352941176470584,
+            0.49755294117647053,
+            0.47439999999999993
+          ],
+          "metal": 0.45,
+          "rough": 0.3
         }
       }
     },
@@ -391,10 +399,12 @@
         },
         "logo": {
           "rgb": [
-            0.09215686274509804,
-            0.09215686274509804,
-            0.09215686274509804
-          ]
+            0.28712549019607847,
+            0.28712549019607847,
+            0.28712549019607847
+          ],
+          "metal": 0.45,
+          "rough": 0.3
         }
       }
     },
@@ -429,10 +439,12 @@
         },
         "logo": {
           "rgb": [
-            0.4647058823529412,
-            0.4647058823529412,
-            0.46078431372549017
-          ]
+            0.505270588235294,
+            0.505270588235294,
+            0.5014117647058822
+          ],
+          "metal": 0.45,
+          "rough": 0.3
         }
       }
     },
@@ -467,16 +479,18 @@
         },
         "logo": {
           "rgb": [
-            0.49607843137254903,
-            0.35294117647058826,
-            0.28823529411764703
-          ]
+            0.5361411764705881,
+            0.3952941176470588,
+            0.3316235294117646
+          ],
+          "metal": 0.45,
+          "rough": 0.3
         }
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-z-flip6-folded.506097688993.glb.gz",
-  "sha256": "5060976889931f766c46e3fbebc1ddafead9c462a93b390c6a02c24e665d75f1",
+  "glbUrl": "assets/devices/models/galaxy-z-flip6-folded.645ceee35c13.glb.gz",
+  "sha256": "645ceee35c13fc3cb27437ff9d69ca77edfccf892b14dc4c8a964a5429eadf10",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-z-flip6-folded.json",
@@ -487,10 +501,12 @@
       "camera_geometry": "Lens and flash centres/diameters from source icon measurements of Samsung artwork. Samsung-specific individual rings/capsule, no Pixel bar. Protrusions and optical internals are estimates.",
       "finishes": "Official standard and online-exclusive finish names; approximate sampled sRGB. Bespoke combinations and special editions excluded.",
       "hinge": "Rigid articulated panels with physically positioned axes; external barrel dimensions/curves estimated. Internal multi-link and flexible OLED bend not simulated.",
-      "omissions": "Ports, grille perforations, antenna seams and internal hinge linkages."
+      "omissions": "Ports, grille perforations, antenna seams and internal hinge linkages.",
+      "branding": "Centered SAMSUNG on exterior hinge, parallel to hinge axis; blank rear panels preserved. Approximately20mm word length from official Mobile Press hinge views; placement/material are visual estimates."
     },
     "sources": [
-      "https://api.samsungmobilepress.com/press-releases/samsung-galaxy-z-fold6-and-z-flip6-elevate-galaxy-ai-to-new-heights"
+      "https://api.samsungmobilepress.com/press-releases/samsung-galaxy-z-fold6-and-z-flip6-elevate-galaxy-ai-to-new-heights",
+      "https://api.samsungmobilepress.com/media-assets/galaxy-z-flip6"
     ]
   }
 }

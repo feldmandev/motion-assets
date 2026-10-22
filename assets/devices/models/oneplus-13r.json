@@ -1,0 +1,204 @@
+{
+  "id": "oneplus-13r",
+  "name": "OnePlus 13R",
+  "state": "default",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        1264,
+        2780
+      ],
+      "size_mm": [
+        71.27882691699992,
+        156.76830603580677
+      ],
+      "center_mm": [
+        0.0,
+        0.0,
+        4.034999847412109
+      ],
+      "corner_radius_mm": 7.139413458499961,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0,
+      "frame_bounds_mm": [
+        2.2605865415000395,
+        2.4658469820966076,
+        71.27882691699992,
+        156.76830603580677
+      ],
+      "frame_screen_px": null,
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "width": 75.8,
+        "height": 161.7,
+        "depth": 8,
+        "corner_radius": 9.4,
+        "edge_roll": 0.3,
+        "front_rail_mm": 0.4,
+        "corner_radii_mm": [
+          9.4,
+          9.4,
+          9.4,
+          9.4
+        ]
+      },
+      "cutouts": [
+        {
+          "center_mm": [
+            0,
+            74.64999999999999
+          ],
+          "radius_mm": 1.35
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "articulation": null,
+  "panels": [],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/oneplus-13r-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "logo": "logo",
+    "band": "band",
+    "black": "black",
+    "flash": "flash"
+  },
+  "finishes": [
+    {
+      "name": "Astral Trail",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.7058823529411765,
+            0.6862745098039216,
+            0.6745098039215687
+          ],
+          "metal": 0.15,
+          "rough": 0.4
+        },
+        "rail": {
+          "rgb": [
+            0.7058823529411765,
+            0.6862745098039216,
+            0.6745098039215687
+          ],
+          "metal": 0.8,
+          "rough": 0.3
+        },
+        "bar": {
+          "rgb": [
+            0.5788235294117647,
+            0.5627450980392157,
+            0.5530980392156862
+          ],
+          "metal": 0.75,
+          "rough": 0.3
+        },
+        "logo": {
+          "rgb": [
+            0.5686274509803921,
+            0.5490196078431373,
+            0.5372549019607843
+          ],
+          "metal": 0,
+          "rough": 0.45
+        },
+        "band": {
+          "rgb": [
+            0.8047058823529412,
+            0.7823529411764705,
+            0.7689411764705882
+          ],
+          "metal": 0.5,
+          "rough": 0.35
+        }
+      }
+    },
+    {
+      "name": "Nebula Noir",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.2196078431372549,
+            0.2196078431372549,
+            0.23529411764705882
+          ],
+          "metal": 0.15,
+          "rough": 0.4
+        },
+        "rail": {
+          "rgb": [
+            0.2196078431372549,
+            0.2196078431372549,
+            0.23529411764705882
+          ],
+          "metal": 0.8,
+          "rough": 0.3
+        },
+        "bar": {
+          "rgb": [
+            0.180078431372549,
+            0.180078431372549,
+            0.19294117647058823
+          ],
+          "metal": 0.75,
+          "rough": 0.3
+        },
+        "logo": {
+          "rgb": [
+            0.4392156862745098,
+            0.4392156862745098,
+            0.45098039215686275
+          ],
+          "metal": 0,
+          "rough": 0.45
+        },
+        "band": {
+          "rgb": [
+            0.25035294117647056,
+            0.25035294117647056,
+            0.268235294117647
+          ],
+          "metal": 0.5,
+          "rough": 0.35
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/oneplus-13r.319449dde8f2.glb.gz",
+  "sha256": "319449dde8f2dadd85cc6b6365686f89d86fcb56985a4a5f8a48bce25b65f658",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/oneplus-13r.json",
+    "accuracy": {
+      "body_dimensions": "OnePlus official metric chassis dimensions. OnePlus 13 uses 8.5 mm glass chassis; Midnight Ocean leather is 8.9 mm and remains an approximate finish on that chassis.",
+      "screen_geometry": "Published full diagonal and native pixel aspect; concentric estimated corners. Bezel camera estimated from product render.",
+      "camera_geometry": "Official rear-render fit, measurements below. Bump depth, roll, glass and optical internals illustrative; not OEM CAD.",
+      "finishes": "Official finish names, approximate existing collection sRGB swatches; not calibrated physical materials.",
+      "omissions": "Ports, speaker holes, alert slider, antenna seams and microscopic inscriptions omitted."
+    },
+    "sources": [
+      "https://www.oneplus.in/13r/specs",
+      "https://oasis.opstatics.com/content/dam/oasis/page/2024/global/phones/13r/specs/13R-Trail.png"
+    ]
+  }
+}

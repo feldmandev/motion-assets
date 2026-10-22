@@ -1,0 +1,4541 @@
+{
+ "nothing_cmf_phone_1": {
+  "black": [
+   "#26252a",
+   "#212025",
+   "#1c1b20"
+  ],
+  "orange": [
+   "#fb4621",
+   "#fc381c",
+   "#fb2e16"
+  ],
+  "light_green": [
+   "#97b5ab",
+   "#89a49b",
+   "#7a958c"
+  ]
+ },
+ "nothing_cmf_phone_2_pro": {
+  "white": [
+   "#e9e9eb",
+   "#e8e8ea",
+   "#e7e7e9"
+  ],
+  "light_green": [
+   "#d4e1da",
+   "#c9d6cf",
+   "#bcc9c2"
+  ],
+  "black": [
+   "#404246",
+   "#313133",
+   "#242426"
+  ],
+  "orange": [
+   "#e63c26",
+   "#e83e24",
+   "#e63c25"
+  ]
+ },
+ "nothing_phone_1": {
+  "white": [
+   "#f4f4f6",
+   "#fafafc",
+   "#f8f8fa"
+  ],
+  "black": [
+   "#383c45",
+   "#727a84",
+   "#3d4049"
+  ]
+ },
+ "nothing_phone_2": {
+  "white": [
+   "#d5d5d3",
+   "#dededc",
+   "#dddddb"
+  ],
+  "dark_gray": [
+   "#484c52",
+   "#555962",
+   "#45484d"
+  ]
+ },
+ "nothing_phone_2a": {
+  "white": [
+   "#eeeeec",
+   "#ebebeb",
+   "#d6d5d3"
+  ],
+  "milk": [
+   "#ececec",
+   "#eaeaea",
+   "#cfcfcd"
+  ],
+  "black": [
+   "#2d343a",
+   "#292e32",
+   "#1a1e21"
+  ],
+  "blue": [
+   "#0e2a41",
+   "#0a263e",
+   "#18324a"
+  ]
+ },
+ "nothing_phone_2a_plus": {
+  "grey": [
+   "#a2a3a2",
+   "#757577",
+   "#78797d"
+  ],
+  "black": [
+   "#72767a",
+   "#4b4f51",
+   "#16191e"
+  ]
+ },
+ "nothing_phone_3": {
+  "white": [
+   "#e4e4e2",
+   "#e4e4e2",
+   "#dcdcdc"
+  ],
+  "black": [
+   "#414046",
+   "#403f45",
+   "#4d4c51"
+  ]
+ },
+ "nothing_phone_3a": {
+  "white": [
+   "#ecebe9",
+   "#e7e7e7",
+   "#cdccca"
+  ],
+  "blue": [
+   "#237497",
+   "#156a8d",
+   "#1a506c"
+  ],
+  "black": [
+   "#3b424a",
+   "#30373f",
+   "#1e242c"
+  ]
+ },
+ "nothing_phone_3a_pro": {
+  "grey": [
+   "#a4a8aa",
+   "#777c80",
+   "#868b8f"
+  ],
+  "black": [
+   "#585f67",
+   "#232b2e",
+   "#2e3639"
+  ]
+ },
+ "nothing_phone_3a_lite": {
+  "white": [
+   "#e7e6e4",
+   "#e3e2e0",
+   "#e3e2e0"
+  ],
+  "black": [
+   "#2e3136",
+   "#26292e",
+   "#1f2227"
+  ],
+  "blue": [
+   "#28748e",
+   "#206c86",
+   "#1b6781"
+  ]
+ },
+ "nothing_phone_4a": {
+  "white": [
+   "#e4eaeb",
+   "#dae2e4",
+   "#b0b8bb"
+  ],
+  "pink": [
+   "#e6d9da",
+   "#ddcace",
+   "#af9fa1"
+  ],
+  "blue": [
+   "#5d9bb7",
+   "#80c4db",
+   "#6ba0b4"
+  ],
+  "black": [
+   "#4d6674",
+   "#354a5b",
+   "#27343f"
+  ]
+ },
+ "nothing_phone_4a_pro": {
+  "pink": [
+   "#d0b6c3",
+   "#ba9caa",
+   "#a28490"
+  ],
+  "silver": [
+   "#b5b8bd",
+   "#9ea3a7",
+   "#878b94"
+  ],
+  "black": [
+   "#30323e",
+   "#292b37",
+   "#222531"
+  ]
+ },
+ "nothing_phone_4b": {
+  "white": [
+   "#ebebeb",
+   "#e8e8e8",
+   "#e7e7e7"
+  ],
+  "blue": [
+   "#5d8fca",
+   "#5082bd",
+   "#4c7db8"
+  ],
+  "black": [
+   "#3e4146",
+   "#36393e",
+   "#32353a"
+  ]
+ },
+ "oneplus_16": {
+  "teaser_black": [
+   "#343844",
+   "#272b37",
+   "#1c202c"
+  ],
+  "teaser_silver": [
+   "#d4dce6",
+   "#aab7c7",
+   "#788a9c"
+  ],
+  "teaser_peach": [
+   "#f2c0a7",
+   "#dba186",
+   "#b87960"
+  ]
+ },
+ "oneplus_15": {
+  "sand_storm": [
+   "#dad5d1",
+   "#ccc7c3",
+   "#b9b4ae"
+  ],
+  "ultra_violet": [
+   "#e9e1f0",
+   "#d7cfe4",
+   "#bfbace"
+  ],
+  "infinite_black": [
+   "#25262a",
+   "#1c1d22",
+   "#16171b"
+  ]
+ },
+ "oneplus_15r": {
+  "charcoal_black": [
+   "#444547",
+   "#3c3d3f",
+   "#393a3c"
+  ],
+  "mint_breeze": [
+   "#ebf5dc",
+   "#e2ecd4",
+   "#d9e3cb"
+  ],
+  "electric_violet": [
+   "#cecae2",
+   "#bdb8d8",
+   "#b6afd0"
+  ]
+ },
+ "oneplus_15t": {
+  "white": [
+   "#eaebe6",
+   "#ddded9",
+   "#d3d4ce"
+  ],
+  "green": [
+   "#a7bf83",
+   "#8fa76d",
+   "#7b9558"
+  ],
+  "brown": [
+   "#493f40",
+   "#3b3132",
+   "#312728"
+  ]
+ },
+ "oneplus_13": {
+  "arctic_dawn": [
+   "#ededed",
+   "#e4e4e4",
+   "#dbdbdb"
+  ],
+  "midnight_ocean": [
+   "#303e5c",
+   "#1e2d4a",
+   "#102240"
+  ],
+  "black_eclipse": [
+   "#303030",
+   "#212121",
+   "#141414"
+  ]
+ },
+ "oneplus_13r": {
+  "astral_trail": [
+   "#d5d0cd",
+   "#b4afac",
+   "#9d9895"
+  ],
+  "nebula_noir": [
+   "#4b4c50",
+   "#38383c",
+   "#2d2e32"
+  ]
+ },
+ "oneplus_nord_6": {
+  "quick_silver": [
+   "#c9ccd5",
+   "#a6a9b2",
+   "#797c85"
+  ],
+  "fresh_mint": [
+   "#d0e7dd",
+   "#bbdcd2",
+   "#a5cbc0"
+  ],
+  "pitch_black": [
+   "#313234",
+   "#232428",
+   "#18191d"
+  ]
+ },
+ "oneplus_nord_5": {
+  "phantom_grey": [
+   "#60606a",
+   "#4e4c59",
+   "#3e3c49"
+  ],
+  "dry_ice": [
+   "#dae4ee",
+   "#d0d9e8",
+   "#c5d1df"
+  ],
+  "marble_sands": [
+   "#edecea",
+   "#f4f4f4",
+   "#f6f6f6"
+  ]
+ },
+ "oneplus_nord_ce6": {
+  "lunar_pearl": [
+   "#e8e8e9",
+   "#d5d5d6",
+   "#bbbbbc"
+  ],
+  "blue": [
+   "#d3dfed",
+   "#bdcddd",
+   "#a8b8ca"
+  ],
+  "pitch_black": [
+   "#343539",
+   "#252628",
+   "#191a1e"
+  ]
+ },
+ "oneplus_pad_3": {
+  "storm_blue": [
+   "#707686",
+   "#676c7c",
+   "#5d6171"
+  ]
+ },
+ "oneplus_pad_3_pro": {
+  "dune_glow": [
+   "#5e504d",
+   "#574946",
+   "#514342"
+  ],
+  "sage_mist": [
+   "#d9e6dc",
+   "#d5e5da",
+   "#d2e2d5"
+  ]
+ },
+ "oneplus_pad_go_2": {
+  "lavender_drift": [
+   "#e2e0ed",
+   "#d9d6e7",
+   "#c9c6d9"
+  ],
+  "shadow_black": [
+   "#2d2e30",
+   "#2a2b2d",
+   "#252628"
+  ]
+ },
+ "oneplus_pad_lite": {
+  "aero_blue": [
+   "#bacbd5",
+   "#a2b4be",
+   "#9fb1bd"
+  ]
+ },
+ "oppo_find_x10": {
+  "glow_coral": [
+   "#ffeee7",
+   "#feeae3",
+   "#ffe2db"
+  ],
+  "glacier_blue": [
+   "#f5fafd",
+   "#edf2f5",
+   "#e6eaee"
+  ],
+  "mist_grey": [
+   "#c9c3c7",
+   "#b6b0b4",
+   "#a19b9f"
+  ]
+ },
+ "oppo_find_x10_pro_max": {
+  "luna_white": [
+   "#f4f4f6",
+   "#ededef",
+   "#eae9ee"
+  ],
+  "orange": [
+   "#ffd1bf",
+   "#ffc0a5",
+   "#f6a98b"
+  ],
+  "titanium_grey": [
+   "#c5c0c4",
+   "#a39ea2",
+   "#848081"
+  ]
+ },
+ "oppo_find_x10_e": {
+  "blue": [
+   "#f6fafd",
+   "#f1f5f8",
+   "#e9edee"
+  ],
+  "titanium_gray": [
+   "#d0cbcf",
+   "#b7b3b5",
+   "#a09b9f"
+  ]
+ },
+ "oppo_find_x9": {
+  "velvet_red": [
+   "#bc4c70",
+   "#9c3858",
+   "#8b314d"
+  ],
+  "white": [
+   "#fbfbfb",
+   "#ededed",
+   "#d2d1cf"
+  ],
+  "titanium_grey": [
+   "#c4c2c3",
+   "#a6a2a3",
+   "#938f8e"
+  ],
+  "space_black": [
+   "#595a5c",
+   "#343534",
+   "#212121"
+  ]
+ },
+ "oppo_find_x9_pro": {
+  "silk_white": [
+   "#f7f8f3",
+   "#dddddb",
+   "#c0c1bc"
+  ],
+  "velvet_red": [
+   "#bc4c70",
+   "#8d2c4b",
+   "#6a1c34"
+  ],
+  "titanium_charcoal": [
+   "#847e80",
+   "#5a5456",
+   "#433d3f"
+  ]
+ },
+ "oppo_find_x9_ultra": {
+  "polar_glacier": [
+   "#e8e8e8",
+   "#e6e6e6",
+   "#d3d3d3"
+  ],
+  "canyon_orange": [
+   "#fc9a62",
+   "#f28852",
+   "#df6b44"
+  ],
+  "tundra_umber": [
+   "#2e2e2e",
+   "#525252",
+   "#202020"
+  ]
+ },
+ "oppo_find_n5": {
+  "dusk_purple": [
+   "#695f7a",
+   "#4f4661",
+   "#48405a"
+  ],
+  "misty_white": [
+   "#d8d7dc",
+   "#dddce2",
+   "#d6d5db"
+  ],
+  "cosmic_black": [
+   "#545359",
+   "#3c3b40",
+   "#28272c"
+  ]
+ },
+ "oppo_find_n6": {
+  "blossom_orange": [
+   "#fb9f59",
+   "#eb8944",
+   "#d67232"
+  ],
+  "stellar_titanium": [
+   "#a2a2a0",
+   "#848484",
+   "#6b6b6b"
+  ],
+  "pearl_black": [
+   "#434343",
+   "#2f2f2f",
+   "#252525"
+  ]
+ },
+ "oppo_reno16": {
+  "dream_purple": [
+   "#eceafc",
+   "#dafbfd",
+   "#ced0f0"
+  ],
+  "twilight_violet": [
+   "#423444",
+   "#362a3a",
+   "#2e2132"
+  ],
+  "pop_white": [
+   "#fdfdff",
+   "#f7f8fa",
+   "#dfe0e4"
+  ]
+ },
+ "oppo_reno16_pro": {
+  "starlight_black": [
+   "#404348",
+   "#35383d",
+   "#2d2e32"
+  ],
+  "pop_white": [
+   "#fefefe",
+   "#f8f8fa",
+   "#e5e6ea"
+  ]
+ },
+ "oppo_reno15": {
+  "white": [
+   "#f0f0f2",
+   "#dadbdf",
+   "#c8c9cd"
+  ],
+  "blue": [
+   "#cfe3f2",
+   "#b4c3e2",
+   "#98acdb"
+  ],
+  "brown": [
+   "#64534c",
+   "#51423f",
+   "#433834"
+  ]
+ },
+ "oppo_reno15_pro": {
+  "white": [
+   "#f0f0f2",
+   "#dbdadf",
+   "#cacbcf"
+  ],
+  "gold": [
+   "#f2e0d2",
+   "#e3cdc0",
+   "#d2b6aa"
+  ],
+  "dusk_brown": [
+   "#67554e",
+   "#50433b",
+   "#3d322e"
+  ]
+ },
+ "oppo_pad_6": {
+  "silver": [
+   "#deebf3",
+   "#e2eef6",
+   "#eaf1f9"
+  ]
+ },
+ "oppo_pad_5_pro": {
+  "purple": [
+   "#e6e1eb",
+   "#d9d1e0",
+   "#d6cedd"
+  ]
+ },
+ "oppo_pad_mini": {
+  "mint_green": [
+   "#d1f5e8",
+   "#b8efdc",
+   "#b3ecd9"
+  ]
+ },
+ "galaxy_tab_s11": {
+  "platinum_silver": [
+   "#d5d6da",
+   "#dbdce0",
+   "#e5e6ea"
+  ],
+  "moonstone_gray": [
+   "#505155",
+   "#57585c",
+   "#64676c"
+  ]
+ },
+ "galaxy_tab_s11_ultra": {
+  "platinum_silver": [
+   "#e2e3e7",
+   "#d6d7db",
+   "#ccccd0"
+  ],
+  "moonstone_gray": [
+   "#505155",
+   "#595a5e",
+   "#66696e"
+  ]
+ },
+ "galaxy_tab_s12_plus": {
+  "silver": [
+   "#e1e2e6",
+   "#d5d6da",
+   "#cccdd1"
+  ],
+  "gray": [
+   "#6a6d72",
+   "#5a5b5f",
+   "#4b4c50"
+  ]
+ },
+ "galaxy_tab_s12_ultra": {
+  "gray": [
+   "#6a6d72",
+   "#5a5b5f",
+   "#4b4c50"
+  ],
+  "silver": [
+   "#e1e2e6",
+   "#d5d6da",
+   "#cccdd1"
+  ]
+ },
+ "galaxy_tab_s10_lite": {
+  "coral_red": [
+   "#bd4e5e",
+   "#ae4452",
+   "#a43e4c"
+  ],
+  "silver": [
+   "#d8d9dd",
+   "#d0d1d5",
+   "#cbccd0"
+  ],
+  "gray": [
+   "#868789",
+   "#68696b",
+   "#666769"
+  ]
+ },
+ "galaxy_tab_a11": {
+  "silver": [
+   "#e7e8ea",
+   "#c2c4c8",
+   "#cccdd1"
+  ],
+  "gray": [
+   "#75767a",
+   "#5e5e62",
+   "#4a4b4f"
+  ]
+ },
+ "galaxy_tab_a11_plus": {
+  "gray": [
+   "#646569",
+   "#545559",
+   "#48494d"
+  ],
+  "silver": [
+   "#e4e5e8",
+   "#d5d6da",
+   "#cacbcf"
+  ]
+ },
+ "oneplus_pad_4": {
+  "dune_glow": [
+   "#71625d",
+   "#5e504c",
+   "#534642"
+  ],
+  "sage_mist": [
+   "#d3e7d5",
+   "#c8e0cb",
+   "#bbd7bf"
+  ]
+ },
+ "oneplus_nord_ce6_lite": {
+  "vivid_mint": [
+   "#dbefe3",
+   "#c2dccd",
+   "#9ebdab"
+  ],
+  "hyper_black": [
+   "#56595d",
+   "#323436",
+   "#1b1c1d"
+  ]
+ },
+ "oppo_find_x9s": {
+  "midnight_grey": [
+   "#928c8e",
+   "#6c6667",
+   "#464041"
+  ],
+  "lavender_sky": [
+   "#fcfaff",
+   "#f5f2fb",
+   "#d6d2dd"
+  ],
+  "sunset_orange": [
+   "#fbe3d9",
+   "#f8d0bf",
+   "#df9e88"
+  ]
+ },
+ "oppo_find_x9s_pro": {
+  "native_titanium": [
+   "#9f9696",
+   "#6d6566",
+   "#4d4545"
+  ],
+  "free_white": [
+   "#f3f1f6",
+   "#e2dfe6",
+   "#cac7d2"
+  ],
+  "vitality_orange": [
+   "#f9dccd",
+   "#f3c3a9",
+   "#e39e86"
+  ],
+  "breeze_cyan": [
+   "#c0f9f8",
+   "#93ecea",
+   "#62d3d1"
+  ]
+ },
+ "oppo_reno16_f": {
+  "dream_purple": [
+   "#f2f1fe",
+   "#d7f7fd",
+   "#d0d3f1"
+  ],
+  "twilight_violet": [
+   "#443748",
+   "#3a2e3d",
+   "#2f2333"
+  ],
+  "pop_white": [
+   "#fdfeff",
+   "#f7f8f9",
+   "#e8eaee"
+  ]
+ },
+ "oneplus_pad": {
+  "halo_green": [
+   "#8fa89b",
+   "#8fa89b",
+   "#8fa89b"
+  ]
+ },
+ "oneplus_pad_go": {
+  "twin_mint": [
+   "#b9c9ad",
+   "#b9c9ad",
+   "#b9c9ad"
+  ]
+ },
+ "oneplus_pad_2": {
+  "nimbus_gray": [
+   "#a6aab8",
+   "#a6aab8",
+   "#a6aab8"
+  ]
+ },
+ "oneplus_pad_pro": {
+  "space_gray": [
+   "#989da9",
+   "#989da9",
+   "#989da9"
+  ],
+  "khaki_green": [
+   "#92a588",
+   "#92a588",
+   "#92a588"
+  ]
+ },
+ "oneplus_pad_2025_cn": {
+  "tundra_green": [
+   "#c7d5b8",
+   "#c7d5b8",
+   "#c7d5b8"
+  ],
+  "deep_space_gray": [
+   "#55595e",
+   "#55595e",
+   "#55595e"
+  ]
+ },
+ "oneplus_pad_2_2025_cn": {
+  "sky_blue": [
+   "#b8ceda",
+   "#b8ceda",
+   "#b8ceda"
+  ],
+  "deep_space_gray": [
+   "#62686c",
+   "#62686c",
+   "#62686c"
+  ]
+ },
+ "oneplus_pad_2_pro": {
+  "deep_sea_blue": [
+   "#747d95",
+   "#747d95",
+   "#747d95"
+  ],
+  "glacier_silver": [
+   "#d4d6de",
+   "#d4d6de",
+   "#d4d6de"
+  ]
+ },
+ "galaxy_tab_s6": {
+  "mountain_gray": [
+   "#747f8d",
+   "#747f8d",
+   "#747f8d"
+  ],
+  "cloud_blue": [
+   "#99b3ce",
+   "#99b3ce",
+   "#99b3ce"
+  ],
+  "rose_blush": [
+   "#c3a6a8",
+   "#c3a6a8",
+   "#c3a6a8"
+  ]
+ },
+ "galaxy_tab_s6_lite_2020": {
+  "oxford_gray": [
+   "#687282",
+   "#687282",
+   "#687282"
+  ],
+  "angora_blue": [
+   "#adc4d7",
+   "#adc4d7",
+   "#adc4d7"
+  ],
+  "chiffon_rose": [
+   "#d9b6b4",
+   "#d9b6b4",
+   "#d9b6b4"
+  ]
+ },
+ "galaxy_tab_s6_lite_2022": {
+  "oxford_gray": [
+   "#687282",
+   "#687282",
+   "#687282"
+  ],
+  "angora_blue": [
+   "#adc4d7",
+   "#adc4d7",
+   "#adc4d7"
+  ]
+ },
+ "galaxy_tab_s6_lite_2024": {
+  "oxford_gray": [
+   "#687282",
+   "#687282",
+   "#687282"
+  ],
+  "chiffon_pink": [
+   "#d9b6b4",
+   "#d9b6b4",
+   "#d9b6b4"
+  ],
+  "mint": [
+   "#b8d0c4",
+   "#b8d0c4",
+   "#b8d0c4"
+  ]
+ },
+ "galaxy_tab_s7": {
+  "mystic_black": [
+   "#424851",
+   "#424851",
+   "#424851"
+  ],
+  "mystic_silver": [
+   "#bfc3c4",
+   "#bfc3c4",
+   "#bfc3c4"
+  ],
+  "mystic_bronze": [
+   "#b3948c",
+   "#b3948c",
+   "#b3948c"
+  ],
+  "mystic_navy": [
+   "#445b77",
+   "#445b77",
+   "#445b77"
+  ]
+ },
+ "galaxy_tab_s7_plus": {
+  "mystic_black": [
+   "#424851",
+   "#424851",
+   "#424851"
+  ],
+  "mystic_silver": [
+   "#bfc3c4",
+   "#bfc3c4",
+   "#bfc3c4"
+  ],
+  "mystic_bronze": [
+   "#b3948c",
+   "#b3948c",
+   "#b3948c"
+  ],
+  "mystic_navy": [
+   "#445b77",
+   "#445b77",
+   "#445b77"
+  ]
+ },
+ "galaxy_tab_s7_fe": {
+  "mystic_black": [
+   "#464c55",
+   "#464c55",
+   "#464c55"
+  ],
+  "mystic_silver": [
+   "#c3c6c7",
+   "#c3c6c7",
+   "#c3c6c7"
+  ],
+  "mystic_pink": [
+   "#d5b7b6",
+   "#d5b7b6",
+   "#d5b7b6"
+  ],
+  "mystic_green": [
+   "#a8bfb0",
+   "#a8bfb0",
+   "#a8bfb0"
+  ]
+ },
+ "galaxy_tab_s8": {
+  "graphite": [
+   "#505660",
+   "#505660",
+   "#505660"
+  ],
+  "silver": [
+   "#c0c2c5",
+   "#c0c2c5",
+   "#c0c2c5"
+  ],
+  "pink_gold": [
+   "#cebab6",
+   "#cebab6",
+   "#cebab6"
+  ]
+ },
+ "galaxy_tab_s8_plus": {
+  "graphite": [
+   "#505660",
+   "#505660",
+   "#505660"
+  ],
+  "silver": [
+   "#c0c2c5",
+   "#c0c2c5",
+   "#c0c2c5"
+  ],
+  "pink_gold": [
+   "#cebab6",
+   "#cebab6",
+   "#cebab6"
+  ]
+ },
+ "galaxy_tab_s8_ultra": {
+  "graphite": [
+   "#505660",
+   "#505660",
+   "#505660"
+  ]
+ },
+ "galaxy_tab_s9": {
+  "graphite": [
+   "#62676a",
+   "#62676a",
+   "#62676a"
+  ],
+  "beige": [
+   "#d3cabb",
+   "#d3cabb",
+   "#d3cabb"
+  ]
+ },
+ "galaxy_tab_s9_plus": {
+  "graphite": [
+   "#62676a",
+   "#62676a",
+   "#62676a"
+  ],
+  "beige": [
+   "#d3cabb",
+   "#d3cabb",
+   "#d3cabb"
+  ]
+ },
+ "galaxy_tab_s9_ultra": {
+  "graphite": [
+   "#62676a",
+   "#62676a",
+   "#62676a"
+  ],
+  "beige": [
+   "#d3cabb",
+   "#d3cabb",
+   "#d3cabb"
+  ]
+ },
+ "galaxy_tab_s9_fe": {
+  "gray": [
+   "#737c87",
+   "#737c87",
+   "#737c87"
+  ],
+  "silver": [
+   "#cbd0d3",
+   "#cbd0d3",
+   "#cbd0d3"
+  ],
+  "mint": [
+   "#b7cac0",
+   "#b7cac0",
+   "#b7cac0"
+  ],
+  "lavender": [
+   "#c2bccd",
+   "#c2bccd",
+   "#c2bccd"
+  ]
+ },
+ "galaxy_tab_s9_fe_plus": {
+  "gray": [
+   "#737c87",
+   "#737c87",
+   "#737c87"
+  ],
+  "silver": [
+   "#cbd0d3",
+   "#cbd0d3",
+   "#cbd0d3"
+  ],
+  "mint": [
+   "#b7cac0",
+   "#b7cac0",
+   "#b7cac0"
+  ],
+  "lavender": [
+   "#c2bccd",
+   "#c2bccd",
+   "#c2bccd"
+  ]
+ },
+ "galaxy_tab_s10_plus": {
+  "moonstone_gray": [
+   "#858a91",
+   "#858a91",
+   "#858a91"
+  ],
+  "platinum_silver": [
+   "#cbd0d3",
+   "#cbd0d3",
+   "#cbd0d3"
+  ]
+ },
+ "galaxy_tab_s10_ultra": {
+  "moonstone_gray": [
+   "#858a91",
+   "#858a91",
+   "#858a91"
+  ],
+  "platinum_silver": [
+   "#cbd0d3",
+   "#cbd0d3",
+   "#cbd0d3"
+  ]
+ },
+ "galaxy_tab_s10_fe": {
+  "gray": [
+   "#7f8996",
+   "#7f8996",
+   "#7f8996"
+  ],
+  "silver": [
+   "#ccd1d5",
+   "#ccd1d5",
+   "#ccd1d5"
+  ],
+  "blue": [
+   "#b1c9dc",
+   "#b1c9dc",
+   "#b1c9dc"
+  ]
+ },
+ "galaxy_tab_s10_fe_plus": {
+  "gray": [
+   "#7f8996",
+   "#7f8996",
+   "#7f8996"
+  ],
+  "silver": [
+   "#ccd1d5",
+   "#ccd1d5",
+   "#ccd1d5"
+  ],
+  "blue": [
+   "#b1c9dc",
+   "#b1c9dc",
+   "#b1c9dc"
+  ]
+ },
+ "xiaomi_mi_10": {
+  "coral_green": [
+   "#398e92",
+   "#398e92",
+   "#398e92"
+  ],
+  "twilight_gray": [
+   "#778994",
+   "#778994",
+   "#778994"
+  ]
+ },
+ "xiaomi_mi_10_pro": {
+  "alpine_white": [
+   "#dedbd5",
+   "#dedbd5",
+   "#dedbd5"
+  ],
+  "solstice_gray": [
+   "#49637c",
+   "#49637c",
+   "#49637c"
+  ]
+ },
+ "xiaomi_mi_11": {
+  "midnight_gray": [
+   "#6d747c",
+   "#6d747c",
+   "#6d747c"
+  ],
+  "horizon_blue": [
+   "#9dbde0",
+   "#9dbde0",
+   "#9dbde0"
+  ],
+  "cloud_white": [
+   "#e0e2df",
+   "#e0e2df",
+   "#e0e2df"
+  ]
+ },
+ "xiaomi_mi_11_ultra": {
+  "ceramic_black": [
+   "#33363b",
+   "#33363b",
+   "#33363b"
+  ],
+  "ceramic_white": [
+   "#e4e4df",
+   "#e4e4df",
+   "#e4e4df"
+  ]
+ },
+ "xiaomi_11t": {
+  "meteorite_gray": [
+   "#565961",
+   "#565961",
+   "#565961"
+  ],
+  "moonlight_white": [
+   "#dedfda",
+   "#dedfda",
+   "#dedfda"
+  ],
+  "celestial_blue": [
+   "#abc5e3",
+   "#abc5e3",
+   "#abc5e3"
+  ]
+ },
+ "xiaomi_11t_pro": {
+  "meteorite_gray": [
+   "#565961",
+   "#565961",
+   "#565961"
+  ],
+  "moonlight_white": [
+   "#dedfda",
+   "#dedfda",
+   "#dedfda"
+  ],
+  "celestial_blue": [
+   "#abc5e3",
+   "#abc5e3",
+   "#abc5e3"
+  ]
+ },
+ "xiaomi_12": {
+  "gray": [
+   "#656971",
+   "#656971",
+   "#656971"
+  ],
+  "blue": [
+   "#8ca9b8",
+   "#8ca9b8",
+   "#8ca9b8"
+  ],
+  "purple": [
+   "#bcb6cb",
+   "#bcb6cb",
+   "#bcb6cb"
+  ]
+ },
+ "xiaomi_12_pro": {
+  "gray": [
+   "#656971",
+   "#656971",
+   "#656971"
+  ],
+  "blue": [
+   "#8ca9b8",
+   "#8ca9b8",
+   "#8ca9b8"
+  ],
+  "purple": [
+   "#bcb6cb",
+   "#bcb6cb",
+   "#bcb6cb"
+  ]
+ },
+ "xiaomi_12t": {
+  "black": [
+   "#515964",
+   "#515964",
+   "#515964"
+  ],
+  "silver": [
+   "#adb7c4",
+   "#adb7c4",
+   "#adb7c4"
+  ],
+  "blue": [
+   "#779cb9",
+   "#779cb9",
+   "#779cb9"
+  ]
+ },
+ "xiaomi_12t_pro": {
+  "black": [
+   "#515964",
+   "#515964",
+   "#515964"
+  ],
+  "silver": [
+   "#adb7c4",
+   "#adb7c4",
+   "#adb7c4"
+  ],
+  "blue": [
+   "#779cb9",
+   "#779cb9",
+   "#779cb9"
+  ]
+ },
+ "xiaomi_13": {
+  "black": [
+   "#454b50",
+   "#454b50",
+   "#454b50"
+  ],
+  "white": [
+   "#e4e4e0",
+   "#e4e4e0",
+   "#e4e4e0"
+  ],
+  "flora_green": [
+   "#a4beb0",
+   "#a4beb0",
+   "#a4beb0"
+  ]
+ },
+ "xiaomi_13_pro": {
+  "ceramic_black": [
+   "#474c52",
+   "#474c52",
+   "#474c52"
+  ],
+  "ceramic_white": [
+   "#e1e1df",
+   "#e1e1df",
+   "#e1e1df"
+  ]
+ },
+ "xiaomi_13t": {
+  "black": [
+   "#3e4549",
+   "#3e4549",
+   "#3e4549"
+  ],
+  "meadow_green": [
+   "#a9beb0",
+   "#a9beb0",
+   "#a9beb0"
+  ],
+  "alpine_blue": [
+   "#8badc5",
+   "#8badc5",
+   "#8badc5"
+  ]
+ },
+ "xiaomi_13t_pro": {
+  "black": [
+   "#3e4549",
+   "#3e4549",
+   "#3e4549"
+  ],
+  "meadow_green": [
+   "#a9beb0",
+   "#a9beb0",
+   "#a9beb0"
+  ],
+  "alpine_blue": [
+   "#8badc5",
+   "#8badc5",
+   "#8badc5"
+  ]
+ },
+ "xiaomi_13_ultra": {
+  "black": [
+   "#3e4142",
+   "#3e4142",
+   "#3e4142"
+  ],
+  "olive_green": [
+   "#828b75",
+   "#828b75",
+   "#828b75"
+  ]
+ },
+ "xiaomi_14": {
+  "black": [
+   "#3d4345",
+   "#3d4345",
+   "#3d4345"
+  ],
+  "white": [
+   "#e0e2dc",
+   "#e0e2dc",
+   "#e0e2dc"
+  ],
+  "jade_green": [
+   "#a7c5b4",
+   "#a7c5b4",
+   "#a7c5b4"
+  ]
+ },
+ "xiaomi_15": {
+  "black": [
+   "#3d4345",
+   "#3d4345",
+   "#3d4345"
+  ],
+  "white": [
+   "#e0e2dc",
+   "#e0e2dc",
+   "#e0e2dc"
+  ],
+  "green": [
+   "#a5b997",
+   "#a5b997",
+   "#a5b997"
+  ]
+ },
+ "xiaomi_14t": {
+  "titan_gray": [
+   "#919ba5",
+   "#919ba5",
+   "#919ba5"
+  ],
+  "titan_black": [
+   "#424649",
+   "#424649",
+   "#424649"
+  ],
+  "titan_blue": [
+   "#9ea9bb",
+   "#9ea9bb",
+   "#9ea9bb"
+  ],
+  "lemon_green": [
+   "#c0ccb1",
+   "#c0ccb1",
+   "#c0ccb1"
+  ]
+ },
+ "xiaomi_14t_pro": {
+  "titan_gray": [
+   "#9ca1a7",
+   "#9ca1a7",
+   "#9ca1a7"
+  ],
+  "titan_black": [
+   "#41474b",
+   "#41474b",
+   "#41474b"
+  ],
+  "titan_blue": [
+   "#96a5b6",
+   "#96a5b6",
+   "#96a5b6"
+  ]
+ },
+ "xiaomi_15t": {
+  "black": [
+   "#4d5458",
+   "#4d5458",
+   "#4d5458"
+  ],
+  "gray": [
+   "#aeb7bc",
+   "#aeb7bc",
+   "#aeb7bc"
+  ],
+  "mocha_gold": [
+   "#b9a68e",
+   "#b9a68e",
+   "#b9a68e"
+  ]
+ },
+ "xiaomi_15t_pro": {
+  "black": [
+   "#454b4e",
+   "#454b4e",
+   "#454b4e"
+  ],
+  "gray": [
+   "#b0b9ba",
+   "#b0b9ba",
+   "#b0b9ba"
+  ],
+  "mocha_gold": [
+   "#b6a38d",
+   "#b6a38d",
+   "#b6a38d"
+  ]
+ },
+ "xiaomi_17": {
+  "black": [
+   "#42484b",
+   "#42484b",
+   "#42484b"
+  ],
+  "venture_green": [
+   "#aebea1",
+   "#aebea1",
+   "#aebea1"
+  ],
+  "alpine_pink": [
+   "#dac1ce",
+   "#dac1ce",
+   "#dac1ce"
+  ],
+  "ice_blue": [
+   "#b6d1df",
+   "#b6d1df",
+   "#b6d1df"
+  ]
+ },
+ "xiaomi_17t": {
+  "black": [
+   "#42474d",
+   "#42474d",
+   "#42474d"
+  ],
+  "white": [
+   "#e4e2dd",
+   "#e4e2dd",
+   "#e4e2dd"
+  ],
+  "blue": [
+   "#acbfdd",
+   "#acbfdd",
+   "#acbfdd"
+  ],
+  "purple": [
+   "#b9a4c7",
+   "#b9a4c7",
+   "#b9a4c7"
+  ]
+ },
+ "xiaomi_17t_pro": {
+  "black": [
+   "#41474d",
+   "#41474d",
+   "#41474d"
+  ],
+  "blue": [
+   "#778fb4",
+   "#778fb4",
+   "#778fb4"
+  ],
+  "purple": [
+   "#c5a8d1",
+   "#c5a8d1",
+   "#c5a8d1"
+  ]
+ },
+ "xiaomi_14_ultra": {
+  "black": [
+   "#353938",
+   "#353938",
+   "#353938"
+  ],
+  "white": [
+   "#dcded9",
+   "#dcded9",
+   "#dcded9"
+  ]
+ },
+ "xiaomi_15_ultra": {
+  "black": [
+   "#353938",
+   "#353938",
+   "#353938"
+  ],
+  "white": [
+   "#dcded9",
+   "#dcded9",
+   "#dcded9"
+  ]
+ },
+ "xiaomi_17_ultra": {
+  "black": [
+   "#3b4241",
+   "#3b4241",
+   "#3b4241"
+  ],
+  "white": [
+   "#dcdfd8",
+   "#dcdfd8",
+   "#dcdfd8"
+  ],
+  "starlit_green": [
+   "#83a894",
+   "#83a894",
+   "#83a894"
+  ]
+ },
+ "xiaomi_18_pro_cn": {
+  "black": [
+   "#44474b",
+   "#44474b",
+   "#44474b"
+  ],
+  "white": [
+   "#e5e4e1",
+   "#e5e4e1",
+   "#e5e4e1"
+  ],
+  "star_blue": [
+   "#4145a6",
+   "#4145a6",
+   "#4145a6"
+  ],
+  "ice_peach_pink": [
+   "#e0bac9",
+   "#e0bac9",
+   "#e0bac9"
+  ]
+ },
+ "xiaomi_18_pro_max_cn": {
+  "black": [
+   "#44474b",
+   "#44474b",
+   "#44474b"
+  ],
+  "white": [
+   "#e5e4e1",
+   "#e5e4e1",
+   "#e5e4e1"
+  ],
+  "star_blue": [
+   "#4145a6",
+   "#4145a6",
+   "#4145a6"
+  ],
+  "ice_peach_pink": [
+   "#e0bac9",
+   "#e0bac9",
+   "#e0bac9"
+  ]
+ },
+ "redmi_note_13_5g": {
+  "graphite_black": [
+   "#485452",
+   "#485452",
+   "#485452"
+  ],
+  "arctic_white": [
+   "#dbdfe0",
+   "#dbdfe0",
+   "#dbdfe0"
+  ],
+  "ocean_teal": [
+   "#91b6b1",
+   "#91b6b1",
+   "#91b6b1"
+  ]
+ },
+ "redmi_note_13_pro_5g": {
+  "midnight_black": [
+   "#3f4949",
+   "#3f4949",
+   "#3f4949"
+  ],
+  "aurora_purple": [
+   "#b9b7d0",
+   "#b9b7d0",
+   "#b9b7d0"
+  ],
+  "ocean_teal": [
+   "#90b6b0",
+   "#90b6b0",
+   "#90b6b0"
+  ]
+ },
+ "redmi_note_13_pro_plus_5g": {
+  "midnight_black": [
+   "#404549",
+   "#404549",
+   "#404549"
+  ],
+  "moonlight_white": [
+   "#e1e1db",
+   "#e1e1db",
+   "#e1e1db"
+  ],
+  "aurora_purple": [
+   "#c6bbd5",
+   "#c6bbd5",
+   "#c6bbd5"
+  ]
+ },
+ "redmi_note_14": {
+  "midnight_black": [
+   "#444b4d",
+   "#444b4d",
+   "#444b4d"
+  ],
+  "mist_purple": [
+   "#b3a9ca",
+   "#b3a9ca",
+   "#b3a9ca"
+  ],
+  "lime_green": [
+   "#c1d0a6",
+   "#c1d0a6",
+   "#c1d0a6"
+  ],
+  "ocean_blue": [
+   "#7dadc2",
+   "#7dadc2",
+   "#7dadc2"
+  ]
+ },
+ "redmi_note_14_5g": {
+  "midnight_black": [
+   "#454d4f",
+   "#454d4f",
+   "#454d4f"
+  ],
+  "lavender_purple": [
+   "#b2a2c4",
+   "#b2a2c4",
+   "#b2a2c4"
+  ],
+  "coral_green": [
+   "#84a28e",
+   "#84a28e",
+   "#84a28e"
+  ]
+ },
+ "redmi_note_14_pro": {
+  "midnight_black": [
+   "#454d4d",
+   "#454d4d",
+   "#454d4d"
+  ],
+  "aurora_purple": [
+   "#b5a8cc",
+   "#b5a8cc",
+   "#b5a8cc"
+  ],
+  "ocean_blue": [
+   "#9bbbc7",
+   "#9bbbc7",
+   "#9bbbc7"
+  ]
+ },
+ "redmi_note_14_pro_5g": {
+  "midnight_black": [
+   "#3d4445",
+   "#3d4445",
+   "#3d4445"
+  ],
+  "lavender_purple": [
+   "#bcb0ca",
+   "#bcb0ca",
+   "#bcb0ca"
+  ],
+  "coral_green": [
+   "#a8c7b5",
+   "#a8c7b5",
+   "#a8c7b5"
+  ]
+ },
+ "redmi_note_14_pro_plus_5g": {
+  "midnight_black": [
+   "#3e4649",
+   "#3e4649",
+   "#3e4649"
+  ],
+  "lavender_purple": [
+   "#b8a9c4",
+   "#b8a9c4",
+   "#b8a9c4"
+  ],
+  "frost_blue": [
+   "#b6d1de",
+   "#b6d1de",
+   "#b6d1de"
+  ]
+ },
+ "redmi_note_15": {
+  "black": [
+   "#485256",
+   "#485256",
+   "#485256"
+  ],
+  "glacier_blue": [
+   "#a2bdca",
+   "#a2bdca",
+   "#a2bdca"
+  ],
+  "mist_purple": [
+   "#aaa3cb",
+   "#aaa3cb",
+   "#aaa3cb"
+  ],
+  "mint_green": [
+   "#bdd2c3",
+   "#bdd2c3",
+   "#bdd2c3"
+  ]
+ },
+ "redmi_note_15_5g": {
+  "black": [
+   "#424b50",
+   "#424b50",
+   "#424b50"
+  ],
+  "glacier_blue": [
+   "#a2bfd2",
+   "#a2bfd2",
+   "#a2bfd2"
+  ],
+  "mist_purple": [
+   "#aaa4cd",
+   "#aaa4cd",
+   "#aaa4cd"
+  ]
+ },
+ "redmi_note_15_pro": {
+  "black": [
+   "#414b4d",
+   "#414b4d",
+   "#414b4d"
+  ],
+  "glacier_blue": [
+   "#accbd6",
+   "#accbd6",
+   "#accbd6"
+  ],
+  "titanium": [
+   "#b9b0a1",
+   "#b9b0a1",
+   "#b9b0a1"
+  ]
+ },
+ "redmi_note_15_pro_5g": {
+  "black": [
+   "#414a4e",
+   "#414a4e",
+   "#414a4e"
+  ],
+  "glacier_blue": [
+   "#abc8d4",
+   "#abc8d4",
+   "#abc8d4"
+  ],
+  "titanium": [
+   "#b7afa0",
+   "#b7afa0",
+   "#b7afa0"
+  ],
+  "mist_purple": [
+   "#b0a8cf",
+   "#b0a8cf",
+   "#b0a8cf"
+  ]
+ },
+ "redmi_note_15_pro_plus_5g": {
+  "black": [
+   "#424b50",
+   "#424b50",
+   "#424b50"
+  ],
+  "glacier_blue": [
+   "#b1d0df",
+   "#b1d0df",
+   "#b1d0df"
+  ],
+  "mocha_brown": [
+   "#998573",
+   "#998573",
+   "#998573"
+  ]
+ },
+ "poco_f2_pro": {
+  "cyber_gray": [
+   "#798597",
+   "#798597",
+   "#798597"
+  ],
+  "electric_purple": [
+   "#a98abd",
+   "#a98abd",
+   "#a98abd"
+  ],
+  "phantom_white": [
+   "#dedfd9",
+   "#dedfd9",
+   "#dedfd9"
+  ],
+  "neon_blue": [
+   "#208c9a",
+   "#208c9a",
+   "#208c9a"
+  ]
+ },
+ "poco_f3": {
+  "night_black": [
+   "#464b4f",
+   "#464b4f",
+   "#464b4f"
+  ],
+  "arctic_white": [
+   "#e2e4e0",
+   "#e2e4e0",
+   "#e2e4e0"
+  ],
+  "deep_ocean_blue": [
+   "#378bb8",
+   "#378bb8",
+   "#378bb8"
+  ]
+ },
+ "poco_f4": {
+  "night_black": [
+   "#474e54",
+   "#474e54",
+   "#474e54"
+  ],
+  "moonlight_silver": [
+   "#aeb5c0",
+   "#aeb5c0",
+   "#aeb5c0"
+  ],
+  "nebula_green": [
+   "#8fb4a7",
+   "#8fb4a7",
+   "#8fb4a7"
+  ]
+ },
+ "poco_f4_gt": {
+  "stealth_black": [
+   "#45484f",
+   "#45484f",
+   "#45484f"
+  ],
+  "knight_silver": [
+   "#959ba7",
+   "#959ba7",
+   "#959ba7"
+  ],
+  "cyber_yellow": [
+   "#e7c53c",
+   "#e7c53c",
+   "#e7c53c"
+  ]
+ },
+ "poco_f5": {
+  "black": [
+   "#3f474b",
+   "#3f474b",
+   "#3f474b"
+  ],
+  "white": [
+   "#e0e4df",
+   "#e0e4df",
+   "#e0e4df"
+  ],
+  "blue": [
+   "#829fb8",
+   "#829fb8",
+   "#829fb8"
+  ]
+ },
+ "poco_f5_pro": {
+  "black": [
+   "#363d42",
+   "#363d42",
+   "#363d42"
+  ],
+  "white": [
+   "#e2e1df",
+   "#e2e1df",
+   "#e2e1df"
+  ]
+ },
+ "poco_f6": {
+  "black": [
+   "#41484b",
+   "#41484b",
+   "#41484b"
+  ],
+  "green": [
+   "#a6b9ae",
+   "#a6b9ae",
+   "#a6b9ae"
+  ],
+  "titanium": [
+   "#b6ac9b",
+   "#b6ac9b",
+   "#b6ac9b"
+  ]
+ },
+ "poco_f6_pro": {
+  "black": [
+   "#42494d",
+   "#42494d",
+   "#42494d"
+  ],
+  "white": [
+   "#e0dfdc",
+   "#e0dfdc",
+   "#e0dfdc"
+  ]
+ },
+ "poco_x6_pro": {
+  "black": [
+   "#3e4548",
+   "#3e4548",
+   "#3e4548"
+  ],
+  "gray": [
+   "#adb3b4",
+   "#adb3b4",
+   "#adb3b4"
+  ],
+  "yellow": [
+   "#ddba31",
+   "#ddba31",
+   "#ddba31"
+  ]
+ },
+ "poco_f7": {
+  "black": [
+   "#424a4c",
+   "#424a4c",
+   "#424a4c"
+  ],
+  "silver": [
+   "#bac5c6",
+   "#bac5c6",
+   "#bac5c6"
+  ]
+ },
+ "poco_f7_pro": {
+  "black": [
+   "#41494c",
+   "#41494c",
+   "#41494c"
+  ],
+  "silver": [
+   "#b3bec5",
+   "#b3bec5",
+   "#b3bec5"
+  ],
+  "blue": [
+   "#7f9daf",
+   "#7f9daf",
+   "#7f9daf"
+  ]
+ },
+ "poco_f7_ultra": {
+  "black": [
+   "#404749",
+   "#404749",
+   "#404749"
+  ],
+  "yellow": [
+   "#e2ba29",
+   "#e2ba29",
+   "#e2ba29"
+  ]
+ },
+ "poco_f8_pro": {
+  "black": [
+   "#4a5153",
+   "#4a5153",
+   "#4a5153"
+  ],
+  "titanium_silver": [
+   "#c5c7c4",
+   "#c5c7c4",
+   "#c5c7c4"
+  ],
+  "blue": [
+   "#a0c9ce",
+   "#a0c9ce",
+   "#a0c9ce"
+  ]
+ },
+ "poco_f8_ultra": {
+  "black": [
+   "#444d51",
+   "#444d51",
+   "#444d51"
+  ],
+  "denim_blue": [
+   "#607e98",
+   "#607e98",
+   "#607e98"
+  ]
+ },
+ "poco_x7": {
+  "silver": [
+   "#b7bebb",
+   "#b7bebb",
+   "#b7bebb"
+  ],
+  "green": [
+   "#9aafa0",
+   "#9aafa0",
+   "#9aafa0"
+  ]
+ },
+ "poco_x7_pro": {
+  "black": [
+   "#454e50",
+   "#454e50",
+   "#454e50"
+  ],
+  "green": [
+   "#7faaa0",
+   "#7faaa0",
+   "#7faaa0"
+  ]
+ },
+ "poco_x8_pro": {
+  "black": [
+   "#4a5054",
+   "#4a5054",
+   "#4a5054"
+  ],
+  "mint_green": [
+   "#a8c8b3",
+   "#a8c8b3",
+   "#a8c8b3"
+  ],
+  "white": [
+   "#e0e1da",
+   "#e0e1da",
+   "#e0e1da"
+  ],
+  "yellow": [
+   "#c9b454",
+   "#c9b454",
+   "#c9b454"
+  ]
+ },
+ "poco_x8_pro_max": {
+  "black": [
+   "#444b50",
+   "#444b50",
+   "#444b50"
+  ],
+  "blue": [
+   "#adc9df",
+   "#adc9df",
+   "#adc9df"
+  ],
+  "silver": [
+   "#c6ccc9",
+   "#c6ccc9",
+   "#c6ccc9"
+  ],
+  "orange": [
+   "#d58756",
+   "#d58756",
+   "#d58756"
+  ]
+ },
+ "honor_30_pro": {
+  "midnight_black": [
+   "#464b51",
+   "#464b51",
+   "#464b51"
+  ],
+  "titanium_silver": [
+   "#aaaac7",
+   "#aaaac7",
+   "#aaaac7"
+  ],
+  "emerald_green": [
+   "#579592",
+   "#579592",
+   "#579592"
+  ],
+  "neon_purple": [
+   "#8861b5",
+   "#8861b5",
+   "#8861b5"
+  ]
+ },
+ "honor_magic3_pro_plus": {
+  "ceramic_black": [
+   "#3b3f43",
+   "#3b3f43",
+   "#3b3f43"
+  ],
+  "ceramic_white": [
+   "#dbdcda",
+   "#dbdcda",
+   "#dbdcda"
+  ]
+ },
+ "honor_magic4_pro": {
+  "black": [
+   "#3e484c",
+   "#3e484c",
+   "#3e484c"
+  ],
+  "cyan": [
+   "#75b7b7",
+   "#75b7b7",
+   "#75b7b7"
+  ],
+  "gold": [
+   "#c5bbae",
+   "#c5bbae",
+   "#c5bbae"
+  ]
+ },
+ "honor_magic5": {
+  "black": [
+   "#434b52",
+   "#434b52",
+   "#434b52"
+  ],
+  "blue": [
+   "#8bbada",
+   "#8bbada",
+   "#8bbada"
+  ]
+ },
+ "honor_magic5_pro": {
+  "black": [
+   "#43484d",
+   "#43484d",
+   "#43484d"
+  ],
+  "meadow_green": [
+   "#92b3a3",
+   "#92b3a3",
+   "#92b3a3"
+  ],
+  "purple": [
+   "#b2a1bd",
+   "#b2a1bd",
+   "#b2a1bd"
+  ]
+ },
+ "honor_magic6_pro": {
+  "black": [
+   "#454b4b",
+   "#454b4b",
+   "#454b4b"
+  ],
+  "epi_green": [
+   "#acbfaa",
+   "#acbfaa",
+   "#acbfaa"
+  ]
+ },
+ "honor_magic7": {
+  "black": [
+   "#414a4e",
+   "#414a4e",
+   "#414a4e"
+  ],
+  "moonlight_gray": [
+   "#c2c9cc",
+   "#c2c9cc",
+   "#c2c9cc"
+  ],
+  "breeze_blue": [
+   "#b1d4e3",
+   "#b1d4e3",
+   "#b1d4e3"
+  ]
+ },
+ "honor_magic7_pro": {
+  "black": [
+   "#414a4e",
+   "#414a4e",
+   "#414a4e"
+  ],
+  "moonlight_gray": [
+   "#c2c9cc",
+   "#c2c9cc",
+   "#c2c9cc"
+  ],
+  "breeze_blue": [
+   "#b1d4e3",
+   "#b1d4e3",
+   "#b1d4e3"
+  ]
+ },
+ "honor_magic8_pro": {
+  "black": [
+   "#3b4650",
+   "#3b4650",
+   "#3b4650"
+  ],
+  "sunrise_gold": [
+   "#ddcaaa",
+   "#ddcaaa",
+   "#ddcaaa"
+  ],
+  "sky_cyan": [
+   "#a2c9c9",
+   "#a2c9c9",
+   "#a2c9c9"
+  ]
+ },
+ "honor_90": {
+  "midnight_black": [
+   "#454c4e",
+   "#454c4e",
+   "#454c4e"
+  ],
+  "emerald_green": [
+   "#90b3aa",
+   "#90b3aa",
+   "#90b3aa"
+  ],
+  "peacock_blue": [
+   "#a6d0d3",
+   "#a6d0d3",
+   "#a6d0d3"
+  ]
+ },
+ "honor_200": {
+  "black": [
+   "#43484c",
+   "#43484c",
+   "#43484c"
+  ],
+  "moonlight_white": [
+   "#e1e2df",
+   "#e1e2df",
+   "#e1e2df"
+  ],
+  "coral_pink": [
+   "#dcc0d0",
+   "#dcc0d0",
+   "#dcc0d0"
+  ],
+  "emerald_green": [
+   "#9fbebd",
+   "#9fbebd",
+   "#9fbebd"
+  ]
+ },
+ "honor_200_pro": {
+  "black": [
+   "#41464a",
+   "#41464a",
+   "#41464a"
+  ],
+  "moonlight_white": [
+   "#e0e2dc",
+   "#e0e2dc",
+   "#e0e2dc"
+  ],
+  "ocean_cyan": [
+   "#a5cbc4",
+   "#a5cbc4",
+   "#a5cbc4"
+  ]
+ },
+ "honor_400": {
+  "midnight_black": [
+   "#444a4d",
+   "#444a4d",
+   "#444a4d"
+  ],
+  "desert_gold": [
+   "#d8c9bb",
+   "#d8c9bb",
+   "#d8c9bb"
+  ],
+  "meteor_silver": [
+   "#c1c6cb",
+   "#c1c6cb",
+   "#c1c6cb"
+  ]
+ },
+ "honor_400_pro": {
+  "midnight_black": [
+   "#414a50",
+   "#414a50",
+   "#414a50"
+  ],
+  "lunar_gray": [
+   "#a9afb8",
+   "#a9afb8",
+   "#a9afb8"
+  ],
+  "tidal_blue": [
+   "#aecbe1",
+   "#aecbe1",
+   "#aecbe1"
+  ]
+ },
+ "honor_600": {
+  "black": [
+   "#525657",
+   "#525657",
+   "#525657"
+  ],
+  "golden_white": [
+   "#dfd4c0",
+   "#dfd4c0",
+   "#dfd4c0"
+  ],
+  "orange": [
+   "#e98f50",
+   "#e98f50",
+   "#e98f50"
+  ]
+ },
+ "honor_600_pro": {
+  "black": [
+   "#525657",
+   "#525657",
+   "#525657"
+  ],
+  "golden_white": [
+   "#dfd4c0",
+   "#dfd4c0",
+   "#dfd4c0"
+  ],
+  "orange": [
+   "#e98f50",
+   "#e98f50",
+   "#e98f50"
+  ]
+ },
+ "honor_magic_v2": {
+  "black": [
+   "#42474a",
+   "#42474a",
+   "#42474a"
+  ],
+  "purple": [
+   "#a59bbc",
+   "#a59bbc",
+   "#a59bbc"
+  ]
+ },
+ "honor_magic_v3": {
+  "black": [
+   "#40484b",
+   "#40484b",
+   "#40484b"
+  ],
+  "green": [
+   "#708d81",
+   "#708d81",
+   "#708d81"
+  ],
+  "reddish_brown": [
+   "#997260",
+   "#997260",
+   "#997260"
+  ]
+ },
+ "honor_magic_v5": {
+  "black": [
+   "#42494c",
+   "#42494c",
+   "#42494c"
+  ],
+  "ivory_white": [
+   "#dedacf",
+   "#dedacf",
+   "#dedacf"
+  ],
+  "dawn_gold": [
+   "#c3a579",
+   "#c3a579",
+   "#c3a579"
+  ],
+  "reddish_brown": [
+   "#a4745e",
+   "#a4745e",
+   "#a4745e"
+  ]
+ },
+ "honor_magic_v6": {
+  "black": [
+   "#3f444b",
+   "#3f444b",
+   "#3f444b"
+  ],
+  "white": [
+   "#e0dfda",
+   "#e0dfda",
+   "#e0dfda"
+  ],
+  "red": [
+   "#9e5045",
+   "#9e5045",
+   "#9e5045"
+  ],
+  "gold": [
+   "#c3a778",
+   "#c3a778",
+   "#c3a778"
+  ]
+ },
+ "honor_robot_phone": {
+  "black": [
+   "#465263",
+   "#465263",
+   "#465263"
+  ],
+  "white": [
+   "#dadbdc",
+   "#dadbdc",
+   "#dadbdc"
+  ]
+ },
+ "motorola_edge_plus_2020": {
+  "thunder_gray": [
+   "#536c78",
+   "#536c78",
+   "#536c78"
+  ],
+  "smoky_sangria": [
+   "#764959",
+   "#764959",
+   "#764959"
+  ]
+ },
+ "motorola_edge_20_pro": {
+  "midnight_blue": [
+   "#425970",
+   "#425970",
+   "#425970"
+  ],
+  "iridescent_white": [
+   "#d3d6df",
+   "#d3d6df",
+   "#d3d6df"
+  ]
+ },
+ "motorola_edge_30_ultra": {
+  "interstellar_black": [
+   "#424e56",
+   "#424e56",
+   "#424e56"
+  ],
+  "starlight_white": [
+   "#dcdee0",
+   "#dcdee0",
+   "#dcdee0"
+  ]
+ },
+ "motorola_edge_40_pro": {
+  "interstellar_black": [
+   "#3a4852",
+   "#3a4852",
+   "#3a4852"
+  ],
+  "lunar_blue": [
+   "#a0b5c2",
+   "#a0b5c2",
+   "#a0b5c2"
+  ]
+ },
+ "motorola_edge_50_ultra": {
+  "forest_gray": [
+   "#667b77",
+   "#667b77",
+   "#667b77"
+  ],
+  "peach_fuzz": [
+   "#e8ba9c",
+   "#e8ba9c",
+   "#e8ba9c"
+  ],
+  "nordic_wood": [
+   "#d2c5ab",
+   "#d2c5ab",
+   "#d2c5ab"
+  ]
+ },
+ "motorola_edge_60_pro": {
+  "dazzling_blue": [
+   "#4a56aa",
+   "#4a56aa",
+   "#4a56aa"
+  ],
+  "shadow_green": [
+   "#747b6f",
+   "#747b6f",
+   "#747b6f"
+  ],
+  "sparkling_grape": [
+   "#9e6c8a",
+   "#9e6c8a",
+   "#9e6c8a"
+  ]
+ },
+ "motorola_signature": {
+  "carbon": [
+   "#414f60",
+   "#414f60",
+   "#414f60"
+  ],
+  "martini_olive": [
+   "#8c9376",
+   "#8c9376",
+   "#8c9376"
+  ]
+ },
+ "motorola_edge_70_pro": {
+  "titan": [
+   "#496179",
+   "#496179",
+   "#496179"
+  ],
+  "zinfandel": [
+   "#71506b",
+   "#71506b",
+   "#71506b"
+  ]
+ },
+ "motorola_edge_2026": {
+  "martini_olive": [
+   "#a4a077",
+   "#a4a077",
+   "#a4a077"
+  ]
+ },
+ "motorola_moto_g_stylus_2026": {
+  "lavender_mist": [
+   "#aa8fac",
+   "#aa8fac",
+   "#aa8fac"
+  ],
+  "coal_smoke": [
+   "#6c7380",
+   "#6c7380",
+   "#6c7380"
+  ]
+ },
+ "motorola_moto_g_power_2026": {
+  "evening_blue": [
+   "#536378",
+   "#536378",
+   "#536378"
+  ],
+  "pure_cashmere": [
+   "#bcb5a5",
+   "#bcb5a5",
+   "#bcb5a5"
+  ]
+ },
+ "motorola_razr_fold": {
+  "blackened_blue": [
+   "#344555",
+   "#344555",
+   "#344555"
+  ],
+  "lily_white": [
+   "#d8d6ca",
+   "#d8d6ca",
+   "#d8d6ca"
+  ]
+ },
+ "motorola_razr_5g": {
+  "polished_graphite": [
+   "#57616a",
+   "#57616a",
+   "#57616a"
+  ],
+  "liquid_mercury": [
+   "#bdc4cb",
+   "#bdc4cb",
+   "#bdc4cb"
+  ],
+  "blush_gold": [
+   "#cbb09b",
+   "#cbb09b",
+   "#cbb09b"
+  ]
+ },
+ "motorola_razr_ultra_2026": {
+  "violet_indigo": [
+   "#6855a5",
+   "#6855a5",
+   "#6855a5"
+  ],
+  "cocoa": [
+   "#927963",
+   "#927963",
+   "#927963"
+  ],
+  "orient_blue": [
+   "#477990",
+   "#477990",
+   "#477990"
+  ]
+ },
+ "motorola_razr_plus_2026": {
+  "mountain_view": [
+   "#667d62",
+   "#667d62",
+   "#667d62"
+  ],
+  "cool_white": [
+   "#deded7",
+   "#deded7",
+   "#deded7"
+  ]
+ },
+ "motorola_razr_2026": {
+  "violet_ice": [
+   "#d5c3d6",
+   "#d5c3d6",
+   "#d5c3d6"
+  ],
+  "hematite": [
+   "#7b858b",
+   "#7b858b",
+   "#7b858b"
+  ],
+  "bright_white": [
+   "#e0e1da",
+   "#e0e1da",
+   "#e0e1da"
+  ]
+ },
+ "xiaomi_pad_5": {
+  "cosmic_gray": [
+   "#818892",
+   "#818892",
+   "#818892"
+  ],
+  "pearl_white": [
+   "#dfe1df",
+   "#dfe1df",
+   "#dfe1df"
+  ]
+ },
+ "xiaomi_pad_6": {
+  "gravity_gray": [
+   "#828c98",
+   "#828c98",
+   "#828c98"
+  ],
+  "gold": [
+   "#c9c4ae",
+   "#c9c4ae",
+   "#c9c4ae"
+  ],
+  "mist_blue": [
+   "#b0c4d3",
+   "#b0c4d3",
+   "#b0c4d3"
+  ]
+ },
+ "xiaomi_pad_6s_pro_12_4": {
+  "graphite_gray": [
+   "#777f87",
+   "#777f87",
+   "#777f87"
+  ]
+ },
+ "xiaomi_pad_7": {
+  "gray": [
+   "#8e969b",
+   "#8e969b",
+   "#8e969b"
+  ],
+  "blue": [
+   "#abc1c7",
+   "#abc1c7",
+   "#abc1c7"
+  ],
+  "green": [
+   "#b2c3ae",
+   "#b2c3ae",
+   "#b2c3ae"
+  ]
+ },
+ "xiaomi_pad_7_pro": {
+  "gray": [
+   "#8e969b",
+   "#8e969b",
+   "#8e969b"
+  ],
+  "blue": [
+   "#abc1c7",
+   "#abc1c7",
+   "#abc1c7"
+  ],
+  "green": [
+   "#b2c3ae",
+   "#b2c3ae",
+   "#b2c3ae"
+  ]
+ },
+ "xiaomi_pad_8": {
+  "pine_green": [
+   "#acbfab",
+   "#acbfab",
+   "#acbfab"
+  ],
+  "blue": [
+   "#acbfcd",
+   "#acbfcd",
+   "#acbfcd"
+  ],
+  "gray": [
+   "#929aa4",
+   "#929aa4",
+   "#929aa4"
+  ]
+ },
+ "xiaomi_pad_8_pro": {
+  "pine_green": [
+   "#acbfab",
+   "#acbfab",
+   "#acbfab"
+  ],
+  "blue": [
+   "#acbfcd",
+   "#acbfcd",
+   "#acbfcd"
+  ],
+  "gray": [
+   "#929aa4",
+   "#929aa4",
+   "#929aa4"
+  ]
+ },
+ "xiaomi_pad_mini": {
+  "gray": [
+   "#91939d",
+   "#91939d",
+   "#91939d"
+  ],
+  "purple": [
+   "#c3b7d3",
+   "#c3b7d3",
+   "#c3b7d3"
+  ]
+ },
+ "redmi_pad": {
+  "graphite_gray": [
+   "#929999",
+   "#929999",
+   "#929999"
+  ],
+  "moonlight_silver": [
+   "#c6cbcc",
+   "#c6cbcc",
+   "#c6cbcc"
+  ],
+  "mint_green": [
+   "#b2ccc1",
+   "#b2ccc1",
+   "#b2ccc1"
+  ]
+ },
+ "redmi_pad_se": {
+  "graphite_gray": [
+   "#8d969b",
+   "#8d969b",
+   "#8d969b"
+  ],
+  "mint_green": [
+   "#afc9bd",
+   "#afc9bd",
+   "#afc9bd"
+  ],
+  "lavender_purple": [
+   "#c2b6d2",
+   "#c2b6d2",
+   "#c2b6d2"
+  ]
+ },
+ "redmi_pad_se_8_7": {
+  "graphite_gray": [
+   "#7d8c97",
+   "#7d8c97",
+   "#7d8c97"
+  ],
+  "aurora_green": [
+   "#9cbda7",
+   "#9cbda7",
+   "#9cbda7"
+  ],
+  "sky_blue": [
+   "#9db9cd",
+   "#9db9cd",
+   "#9db9cd"
+  ]
+ },
+ "redmi_pad_pro": {
+  "graphite_gray": [
+   "#87939a",
+   "#87939a",
+   "#87939a"
+  ],
+  "mint_green": [
+   "#c0d6ca",
+   "#c0d6ca",
+   "#c0d6ca"
+  ],
+  "ocean_blue": [
+   "#a7c4d9",
+   "#a7c4d9",
+   "#a7c4d9"
+  ]
+ },
+ "redmi_pad_2": {
+  "graphite_gray": [
+   "#a1a5a9",
+   "#a1a5a9",
+   "#a1a5a9"
+  ],
+  "mint_green": [
+   "#b8cdc0",
+   "#b8cdc0",
+   "#b8cdc0"
+  ],
+  "lavender_purple": [
+   "#c6bfda",
+   "#c6bfda",
+   "#c6bfda"
+  ]
+ },
+ "redmi_pad_2_pro": {
+  "graphite_gray": [
+   "#9097a0",
+   "#9097a0",
+   "#9097a0"
+  ],
+  "silver": [
+   "#c6ccd0",
+   "#c6ccd0",
+   "#c6ccd0"
+  ],
+  "lavender_purple": [
+   "#c5bfdb",
+   "#c5bfdb",
+   "#c5bfdb"
+  ]
+ },
+ "redmi_pad_2_9_7": {
+  "graphite_gray": [
+   "#979eab",
+   "#979eab",
+   "#979eab"
+  ],
+  "silver": [
+   "#ced1d6",
+   "#ced1d6",
+   "#ced1d6"
+  ]
+ },
+ "poco_pad": {
+  "gray": [
+   "#8c98a3",
+   "#8c98a3",
+   "#8c98a3"
+  ],
+  "blue": [
+   "#849fb6",
+   "#849fb6",
+   "#849fb6"
+  ]
+ },
+ "poco_pad_m1": {
+  "gray": [
+   "#8c98a3",
+   "#8c98a3",
+   "#8c98a3"
+  ],
+  "blue": [
+   "#849fb6",
+   "#849fb6",
+   "#849fb6"
+  ]
+ },
+ "poco_pad_x1": {
+  "gray": [
+   "#8c98a3",
+   "#8c98a3",
+   "#8c98a3"
+  ],
+  "blue": [
+   "#849fb6",
+   "#849fb6",
+   "#849fb6"
+  ]
+ },
+ "poco_pad_c1": {
+  "gray": [
+   "#8c98a3",
+   "#8c98a3",
+   "#8c98a3"
+  ],
+  "blue": [
+   "#849fb6",
+   "#849fb6",
+   "#849fb6"
+  ]
+ },
+ "honor_pad_8": {
+  "blue_hour": [
+   "#6d879f",
+   "#6d879f",
+   "#6d879f"
+  ]
+ },
+ "honor_pad_9": {
+  "space_gray": [
+   "#89949c",
+   "#89949c",
+   "#89949c"
+  ],
+  "cyan_lake": [
+   "#a8d1d1",
+   "#a8d1d1",
+   "#a8d1d1"
+  ]
+ },
+ "honor_pad_10": {
+  "space_gray": [
+   "#a5adb2",
+   "#a5adb2",
+   "#a5adb2"
+  ]
+ },
+ "honor_pad_v9": {
+  "gray": [
+   "#a6acb4",
+   "#a6acb4",
+   "#a6acb4"
+  ],
+  "white": [
+   "#e0e2df",
+   "#e0e2df",
+   "#e0e2df"
+  ]
+ },
+ "honor_pad_20": {
+  "space_gray": [
+   "#a0a8af",
+   "#a0a8af",
+   "#a0a8af"
+  ]
+ },
+ "honor_pad_20_pro": {
+  "space_gray": [
+   "#969da5",
+   "#969da5",
+   "#969da5"
+  ]
+ },
+ "honor_magicpad_2": {
+  "black": [
+   "#585d65",
+   "#585d65",
+   "#585d65"
+  ],
+  "moonlight_white": [
+   "#e0e1dc",
+   "#e0e1dc",
+   "#e0e1dc"
+  ]
+ },
+ "honor_magicpad_3": {
+  "starry_gray": [
+   "#a6aaad",
+   "#a6aaad",
+   "#a6aaad"
+  ],
+  "moonlight_white": [
+   "#dfdfdb",
+   "#dfdfdb",
+   "#dfdfdb"
+  ]
+ },
+ "honor_magicpad_4": {
+  "gray": [
+   "#a2a7ac",
+   "#a2a7ac",
+   "#a2a7ac"
+  ],
+  "white": [
+   "#e4e5e0",
+   "#e4e5e0",
+   "#e4e5e0"
+  ]
+ },
+ "motorola_moto_tab_g70": {
+  "modernist_teal": [
+   "#587f8d",
+   "#587f8d",
+   "#587f8d"
+  ]
+ },
+ "motorola_moto_pad_2026": {
+  "bronze_green": [
+   "#7f9675",
+   "#7f9675",
+   "#7f9675"
+  ]
+ },
+ "motorola_edge_30_pro": {
+  "cosmos_blue": [
+   "#526776",
+   "#526776",
+   "#526776"
+  ],
+  "stardust_white": [
+   "#d5d9df",
+   "#d5d9df",
+   "#d5d9df"
+  ]
+ },
+ "motorola_razr_40": {
+  "sage_green": [
+   "#8f9e87",
+   "#8f9e87",
+   "#8f9e87"
+  ],
+  "vanilla_cream": [
+   "#d8ccb4",
+   "#d8ccb4",
+   "#d8ccb4"
+  ],
+  "summer_lilac": [
+   "#b5a7be",
+   "#b5a7be",
+   "#b5a7be"
+  ]
+ },
+ "motorola_razr_40_ultra": {
+  "infinite_black": [
+   "#41464e",
+   "#41464e",
+   "#41464e"
+  ],
+  "glacier_blue": [
+   "#a1bfd5",
+   "#a1bfd5",
+   "#a1bfd5"
+  ],
+  "viva_magenta": [
+   "#b45879",
+   "#b45879",
+   "#b45879"
+  ]
+ },
+ "motorola_razr_50": {
+  "koala_gray": [
+   "#99999b",
+   "#99999b",
+   "#99999b"
+  ],
+  "beach_sand": [
+   "#c9bda9",
+   "#c9bda9",
+   "#c9bda9"
+  ],
+  "spritz_orange": [
+   "#d68a5b",
+   "#d68a5b",
+   "#d68a5b"
+  ]
+ },
+ "motorola_razr_50_ultra": {
+  "midnight_blue": [
+   "#456c9e",
+   "#456c9e",
+   "#456c9e"
+  ],
+  "spring_green": [
+   "#adba98",
+   "#adba98",
+   "#adba98"
+  ],
+  "peach_fuzz": [
+   "#e0b198",
+   "#e0b198",
+   "#e0b198"
+  ],
+  "hot_pink": [
+   "#c47ca0",
+   "#c47ca0",
+   "#c47ca0"
+  ]
+ },
+ "motorola_razr_60": {
+  "gibraltar_sea": [
+   "#476184",
+   "#476184",
+   "#476184"
+  ],
+  "spring_bud": [
+   "#b5c9a8",
+   "#b5c9a8",
+   "#b5c9a8"
+  ],
+  "lightest_sky": [
+   "#d1dee1",
+   "#d1dee1",
+   "#d1dee1"
+  ],
+  "parfait_pink": [
+   "#d6adb8",
+   "#d6adb8",
+   "#d6adb8"
+  ]
+ },
+ "motorola_razr_60_ultra": {
+  "rio_red": [
+   "#a75557",
+   "#a75557",
+   "#a75557"
+  ],
+  "scarab": [
+   "#526b61",
+   "#526b61",
+   "#526b61"
+  ],
+  "mountain_trail": [
+   "#aa9273",
+   "#aa9273",
+   "#aa9273"
+  ],
+  "cabot_cream": [
+   "#d9cfa9",
+   "#d9cfa9",
+   "#d9cfa9"
+  ]
+ },
+ "honor_pad_v6": {
+  "emerald_green": [
+   "#519c91",
+   "#519c91",
+   "#519c91"
+  ],
+  "midnight_black": [
+   "#454a53",
+   "#454a53",
+   "#454a53"
+  ]
+ },
+ "honor_magicpad_13": {
+  "sky_blue": [
+   "#a1c8cb",
+   "#a1c8cb",
+   "#a1c8cb"
+  ],
+  "moonlight_white": [
+   "#dcd7c8",
+   "#dcd7c8",
+   "#dcd7c8"
+  ],
+  "star_gray": [
+   "#8e969e",
+   "#8e969e",
+   "#8e969e"
+  ]
+ },
+ "motorola_edge_70_pro_plus": {
+  "zinfandel": [
+   "#80525f",
+   "#80525f",
+   "#80525f"
+  ],
+  "stormy_sea": [
+   "#748a96",
+   "#748a96",
+   "#748a96"
+  ],
+  "chicory_coffee": [
+   "#766253",
+   "#766253",
+   "#766253"
+  ]
+ },
+ "motorola_edge_70_max": {
+  "dark_shadow": [
+   "#636d70",
+   "#636d70",
+   "#636d70"
+  ],
+  "ice_melt": [
+   "#c3dadd",
+   "#c3dadd",
+   "#c3dadd"
+  ],
+  "aqua_gray": [
+   "#9cbbb4",
+   "#9cbbb4",
+   "#9cbbb4"
+  ]
+ },
+ "motorola_moto_tab_g62": {
+  "frost_blue": [
+   "#8a8da8",
+   "#8a8da8",
+   "#8a8da8"
+  ]
+ },
+ "motorola_moto_pad_60_pro": {
+  "bronze_green": [
+   "#819175",
+   "#819175",
+   "#819175"
+  ]
+ },
+ "motorola_moto_pad_60_neo": {
+  "bronze_green": [
+   "#94a38a",
+   "#94a38a",
+   "#94a38a"
+  ],
+  "malibu_blue": [
+   "#739cbe",
+   "#739cbe",
+   "#739cbe"
+  ]
+ },
+ "motorola_moto_pad_70": {
+  "sea_angel": [
+   "#88c5cd",
+   "#88c5cd",
+   "#88c5cd"
+  ]
+ },
+ "motorola_moto_pad_70_pro": {
+  "titan": [
+   "#57738c",
+   "#57738c",
+   "#57738c"
+  ]
+ },
+ "motorola_moto_pad_70_groove": {
+  "blue_surf": [
+   "#a0c4b8",
+   "#a0c4b8",
+   "#a0c4b8"
+  ]
+ },
+ "xiaomi_17_pro": {
+  "black": [
+   "#353638",
+   "#353638",
+   "#353638"
+  ],
+  "white": [
+   "#dddeda",
+   "#dddeda",
+   "#dddeda"
+  ],
+  "green": [
+   "#77917b",
+   "#77917b",
+   "#77917b"
+  ],
+  "purple": [
+   "#a798be",
+   "#a798be",
+   "#a798be"
+  ]
+ },
+ "xiaomi_17_pro_max": {
+  "black": [
+   "#353638",
+   "#353638",
+   "#353638"
+  ],
+  "white": [
+   "#dddeda",
+   "#dddeda",
+   "#dddeda"
+  ],
+  "green": [
+   "#77917b",
+   "#77917b",
+   "#77917b"
+  ],
+  "purple": [
+   "#a798be",
+   "#a798be",
+   "#a798be"
+  ]
+ },
+ "xiaomi_14_pro": {
+  "black": [
+   "#343738",
+   "#343738",
+   "#343738"
+  ],
+  "white": [
+   "#dadbdd",
+   "#dadbdd",
+   "#dadbdd"
+  ],
+  "green": [
+   "#809c8c",
+   "#809c8c",
+   "#809c8c"
+  ]
+ },
+ "xiaomi_15_pro": {
+  "green": [
+   "#90a99b",
+   "#90a99b",
+   "#90a99b"
+  ],
+  "silver": [
+   "#a4a8a7",
+   "#a4a8a7",
+   "#a4a8a7"
+  ],
+  "white": [
+   "#e0dfd9",
+   "#e0dfd9",
+   "#e0dfd9"
+  ]
+ },
+ "xiaomi_15s_pro": {
+  "black": [
+   "#303438",
+   "#303438",
+   "#303438"
+  ],
+  "blue": [
+   "#638894",
+   "#638894",
+   "#638894"
+  ]
+ },
+ "xiaomi_17_max": {
+  "blue": [
+   "#87a7c3",
+   "#87a7c3",
+   "#87a7c3"
+  ],
+  "white": [
+   "#dfded9",
+   "#dfded9",
+   "#dfded9"
+  ],
+  "black": [
+   "#363839",
+   "#363839",
+   "#363839"
+  ]
+ },
+ "xiaomi_mi_10_ultra": {
+  "black": [
+   "#34383c",
+   "#34383c",
+   "#34383c"
+  ],
+  "silver": [
+   "#aeb7bf",
+   "#aeb7bf",
+   "#aeb7bf"
+  ]
+ },
+ "xiaomi_mi_11_pro": {
+  "green": [
+   "#719e87",
+   "#719e87",
+   "#719e87"
+  ],
+  "purple": [
+   "#aa9ebb",
+   "#aa9ebb",
+   "#aa9ebb"
+  ],
+  "black": [
+   "#36383b",
+   "#36383b",
+   "#36383b"
+  ]
+ },
+ "xiaomi_mix_4": {
+  "black": [
+   "#35383c",
+   "#35383c",
+   "#35383c"
+  ],
+  "white": [
+   "#dededa",
+   "#dededa",
+   "#dededa"
+  ],
+  "gray": [
+   "#849096",
+   "#849096",
+   "#849096"
+  ]
+ },
+ "xiaomi_mix_flip": {
+  "purple": [
+   "#ab9cc6",
+   "#ab9cc6",
+   "#ab9cc6"
+  ],
+  "white": [
+   "#e0deda",
+   "#e0deda",
+   "#e0deda"
+  ],
+  "black": [
+   "#38363e",
+   "#38363e",
+   "#38363e"
+  ]
+ },
+ "xiaomi_mix_fold_4": {
+  "blue": [
+   "#849bab",
+   "#849bab",
+   "#849bab"
+  ],
+  "black": [
+   "#343638",
+   "#343638",
+   "#343638"
+  ],
+  "white": [
+   "#dcdbd6",
+   "#dcdbd6",
+   "#dcdbd6"
+  ]
+ },
+ "xiaomi_pad_7_ultra": {
+  "gray": [
+   "#7f8388",
+   "#7f8388",
+   "#7f8388"
+  ],
+  "silver": [
+   "#c0c3c5",
+   "#c0c3c5",
+   "#c0c3c5"
+  ]
+ },
+ "xiaomi_pad_7s_pro_12_5": {
+  "gray": [
+   "#84878d",
+   "#84878d",
+   "#84878d"
+  ]
+ },
+ "xiaomi_pad_9": {
+  "pink": [
+   "#cdadb8",
+   "#cdadb8",
+   "#cdadb8"
+  ],
+  "green": [
+   "#9eb7ad",
+   "#9eb7ad",
+   "#9eb7ad"
+  ],
+  "silver": [
+   "#bcc0c3",
+   "#bcc0c3",
+   "#bcc0c3"
+  ],
+  "black": [
+   "#44454a",
+   "#44454a",
+   "#44454a"
+  ]
+ },
+ "xiaomi_pad_9_pro_max": {
+  "purple": [
+   "#976180",
+   "#976180",
+   "#976180"
+  ]
+ },
+ "apple_iphone_18_pro_max": {
+  "black": [
+   "#383a40",
+   "#383a40",
+   "#383a40"
+  ],
+  "silver": [
+   "#e4e5e7",
+   "#e4e5e7",
+   "#e4e5e7"
+  ],
+  "glacier": [
+   "#a6c5df",
+   "#a6c5df",
+   "#a6c5df"
+  ],
+  "burgundy": [
+   "#824954",
+   "#824954",
+   "#824954"
+  ]
+ },
+ "apple_iphone_18_pro": {
+  "black": [
+   "#383a40",
+   "#383a40",
+   "#383a40"
+  ],
+  "silver": [
+   "#e4e5e7",
+   "#e4e5e7",
+   "#e4e5e7"
+  ],
+  "glacier": [
+   "#a6c5df",
+   "#a6c5df",
+   "#a6c5df"
+  ],
+  "burgundy": [
+   "#824954",
+   "#824954",
+   "#824954"
+  ]
+ },
+ "apple_iphone_17e": {
+  "black": [
+   "#383a40",
+   "#383a40",
+   "#383a40"
+  ],
+  "white": [
+   "#ecebe7",
+   "#ecebe7",
+   "#ecebe7"
+  ],
+  "soft_pink": [
+   "#edcbd6",
+   "#edcbd6",
+   "#edcbd6"
+  ]
+ },
+ "apple_iphone_17_pro_max": {
+  "silver": [
+   "#e4e5e7",
+   "#e4e5e7",
+   "#e4e5e7"
+  ],
+  "cosmic_orange": [
+   "#e58544",
+   "#e58544",
+   "#e58544"
+  ],
+  "deep_blue": [
+   "#3e5075",
+   "#3e5075",
+   "#3e5075"
+  ]
+ },
+ "apple_iphone_17_pro": {
+  "silver": [
+   "#e4e5e7",
+   "#e4e5e7",
+   "#e4e5e7"
+  ],
+  "cosmic_orange": [
+   "#e58544",
+   "#e58544",
+   "#e58544"
+  ],
+  "deep_blue": [
+   "#3e5075",
+   "#3e5075",
+   "#3e5075"
+  ]
+ },
+ "apple_iphone_17": {
+  "black": [
+   "#383a40",
+   "#383a40",
+   "#383a40"
+  ],
+  "white": [
+   "#ecebe7",
+   "#ecebe7",
+   "#ecebe7"
+  ],
+  "mist_blue": [
+   "#b0c6dc",
+   "#b0c6dc",
+   "#b0c6dc"
+  ],
+  "sage": [
+   "#c2d29f",
+   "#c2d29f",
+   "#c2d29f"
+  ],
+  "lavender": [
+   "#d7c6eb",
+   "#d7c6eb",
+   "#d7c6eb"
+  ]
+ },
+ "apple_iphone_air": {
+  "space_black": [
+   "#33343c",
+   "#33343c",
+   "#33343c"
+  ],
+  "cloud_white": [
+   "#edf0ed",
+   "#edf0ed",
+   "#edf0ed"
+  ],
+  "light_gold": [
+   "#e7dfca",
+   "#e7dfca",
+   "#e7dfca"
+  ],
+  "sky_blue": [
+   "#bad8eb",
+   "#bad8eb",
+   "#bad8eb"
+  ]
+ },
+ "apple_iphone_16e": {
+  "black": [
+   "#383a40",
+   "#383a40",
+   "#383a40"
+  ],
+  "white": [
+   "#ecebe7",
+   "#ecebe7",
+   "#ecebe7"
+  ]
+ },
+ "apple_iphone_16_pro_max": {
+  "black_titanium": [
+   "#484a50",
+   "#484a50",
+   "#484a50"
+  ],
+  "white_titanium": [
+   "#e4e1db",
+   "#e4e1db",
+   "#e4e1db"
+  ],
+  "natural_titanium": [
+   "#b2aaa0",
+   "#b2aaa0",
+   "#b2aaa0"
+  ],
+  "desert_titanium": [
+   "#d6bda5",
+   "#d6bda5",
+   "#d6bda5"
+  ]
+ },
+ "apple_iphone_16_pro": {
+  "black_titanium": [
+   "#484a50",
+   "#484a50",
+   "#484a50"
+  ],
+  "white_titanium": [
+   "#e4e1db",
+   "#e4e1db",
+   "#e4e1db"
+  ],
+  "natural_titanium": [
+   "#b2aaa0",
+   "#b2aaa0",
+   "#b2aaa0"
+  ],
+  "desert_titanium": [
+   "#d6bda5",
+   "#d6bda5",
+   "#d6bda5"
+  ]
+ },
+ "apple_iphone_16_plus": {
+  "black": [
+   "#383a40",
+   "#383a40",
+   "#383a40"
+  ],
+  "white": [
+   "#ecebe7",
+   "#ecebe7",
+   "#ecebe7"
+  ],
+  "pink": [
+   "#edc1cd",
+   "#edc1cd",
+   "#edc1cd"
+  ],
+  "teal": [
+   "#69b6b0",
+   "#69b6b0",
+   "#69b6b0"
+  ],
+  "ultramarine": [
+   "#6570da",
+   "#6570da",
+   "#6570da"
+  ]
+ },
+ "apple_iphone_16": {
+  "black": [
+   "#383a40",
+   "#383a40",
+   "#383a40"
+  ],
+  "white": [
+   "#ecebe7",
+   "#ecebe7",
+   "#ecebe7"
+  ],
+  "pink": [
+   "#edc1cd",
+   "#edc1cd",
+   "#edc1cd"
+  ],
+  "teal": [
+   "#69b6b0",
+   "#69b6b0",
+   "#69b6b0"
+  ],
+  "ultramarine": [
+   "#6570da",
+   "#6570da",
+   "#6570da"
+  ]
+ },
+ "apple_iphone_15_pro_max": {
+  "black_titanium": [
+   "#484a50",
+   "#484a50",
+   "#484a50"
+  ],
+  "white_titanium": [
+   "#e4e1db",
+   "#e4e1db",
+   "#e4e1db"
+  ],
+  "blue_titanium": [
+   "#536680",
+   "#536680",
+   "#536680"
+  ],
+  "natural_titanium": [
+   "#b2aaa0",
+   "#b2aaa0",
+   "#b2aaa0"
+  ]
+ },
+ "apple_iphone_15_pro": {
+  "black_titanium": [
+   "#484a50",
+   "#484a50",
+   "#484a50"
+  ],
+  "white_titanium": [
+   "#e4e1db",
+   "#e4e1db",
+   "#e4e1db"
+  ],
+  "blue_titanium": [
+   "#536680",
+   "#536680",
+   "#536680"
+  ],
+  "natural_titanium": [
+   "#b2aaa0",
+   "#b2aaa0",
+   "#b2aaa0"
+  ]
+ },
+ "apple_iphone_15_plus": {
+  "black": [
+   "#383a40",
+   "#383a40",
+   "#383a40"
+  ],
+  "blue": [
+   "#c4d8e3",
+   "#c4d8e3",
+   "#c4d8e3"
+  ],
+  "green": [
+   "#ccd9c4",
+   "#ccd9c4",
+   "#ccd9c4"
+  ],
+  "yellow": [
+   "#eee2b7",
+   "#eee2b7",
+   "#eee2b7"
+  ],
+  "pink": [
+   "#edc8d1",
+   "#edc8d1",
+   "#edc8d1"
+  ]
+ },
+ "apple_iphone_15": {
+  "black": [
+   "#383a40",
+   "#383a40",
+   "#383a40"
+  ],
+  "blue": [
+   "#c4d8e3",
+   "#c4d8e3",
+   "#c4d8e3"
+  ],
+  "green": [
+   "#ccd9c4",
+   "#ccd9c4",
+   "#ccd9c4"
+  ],
+  "yellow": [
+   "#eee2b7",
+   "#eee2b7",
+   "#eee2b7"
+  ],
+  "pink": [
+   "#edc8d1",
+   "#edc8d1",
+   "#edc8d1"
+  ]
+ },
+ "apple_iphone_14_pro_max": {
+  "silver": [
+   "#e4e5e7",
+   "#e4e5e7",
+   "#e4e5e7"
+  ],
+  "gold": [
+   "#e7ceb3",
+   "#e7ceb3",
+   "#e7ceb3"
+  ],
+  "space_black": [
+   "#33343c",
+   "#33343c",
+   "#33343c"
+  ],
+  "deep_purple": [
+   "#655b7c",
+   "#655b7c",
+   "#655b7c"
+  ]
+ },
+ "apple_iphone_14_pro": {
+  "silver": [
+   "#e4e5e7",
+   "#e4e5e7",
+   "#e4e5e7"
+  ],
+  "gold": [
+   "#e7ceb3",
+   "#e7ceb3",
+   "#e7ceb3"
+  ],
+  "space_black": [
+   "#33343c",
+   "#33343c",
+   "#33343c"
+  ],
+  "deep_purple": [
+   "#655b7c",
+   "#655b7c",
+   "#655b7c"
+  ]
+ },
+ "apple_iphone_14_plus": {
+  "midnight": [
+   "#303d50",
+   "#303d50",
+   "#303d50"
+  ],
+  "starlight": [
+   "#e8e3d8",
+   "#e8e3d8",
+   "#e8e3d8"
+  ],
+  "product_red": [
+   "#cb3346",
+   "#cb3346",
+   "#cb3346"
+  ],
+  "blue": [
+   "#a4c6dd",
+   "#a4c6dd",
+   "#a4c6dd"
+  ],
+  "purple": [
+   "#c7b5e2",
+   "#c7b5e2",
+   "#c7b5e2"
+  ],
+  "yellow": [
+   "#f3dc7a",
+   "#f3dc7a",
+   "#f3dc7a"
+  ]
+ },
+ "apple_iphone_14": {
+  "midnight": [
+   "#303d50",
+   "#303d50",
+   "#303d50"
+  ],
+  "starlight": [
+   "#e8e3d8",
+   "#e8e3d8",
+   "#e8e3d8"
+  ],
+  "product_red": [
+   "#cb3346",
+   "#cb3346",
+   "#cb3346"
+  ],
+  "blue": [
+   "#a4c6dd",
+   "#a4c6dd",
+   "#a4c6dd"
+  ],
+  "purple": [
+   "#c7b5e2",
+   "#c7b5e2",
+   "#c7b5e2"
+  ],
+  "yellow": [
+   "#f3dc7a",
+   "#f3dc7a",
+   "#f3dc7a"
+  ]
+ },
+ "apple_iphone_se_2022": {
+  "product_red": [
+   "#cb3346",
+   "#cb3346",
+   "#cb3346"
+  ],
+  "starlight": [
+   "#e8e3d8",
+   "#e8e3d8",
+   "#e8e3d8"
+  ],
+  "midnight": [
+   "#303d50",
+   "#303d50",
+   "#303d50"
+  ]
+ },
+ "apple_iphone_13_pro_max": {
+  "graphite": [
+   "#64636a",
+   "#64636a",
+   "#64636a"
+  ],
+  "gold": [
+   "#e7ceb3",
+   "#e7ceb3",
+   "#e7ceb3"
+  ],
+  "silver": [
+   "#e4e5e7",
+   "#e4e5e7",
+   "#e4e5e7"
+  ],
+  "sierra_blue": [
+   "#9cb9d1",
+   "#9cb9d1",
+   "#9cb9d1"
+  ],
+  "alpine_green": [
+   "#647e6b",
+   "#647e6b",
+   "#647e6b"
+  ]
+ },
+ "apple_iphone_13_pro": {
+  "graphite": [
+   "#64636a",
+   "#64636a",
+   "#64636a"
+  ],
+  "gold": [
+   "#e7ceb3",
+   "#e7ceb3",
+   "#e7ceb3"
+  ],
+  "silver": [
+   "#e4e5e7",
+   "#e4e5e7",
+   "#e4e5e7"
+  ],
+  "sierra_blue": [
+   "#9cb9d1",
+   "#9cb9d1",
+   "#9cb9d1"
+  ],
+  "alpine_green": [
+   "#647e6b",
+   "#647e6b",
+   "#647e6b"
+  ]
+ },
+ "apple_iphone_13": {
+  "product_red": [
+   "#cb3346",
+   "#cb3346",
+   "#cb3346"
+  ],
+  "starlight": [
+   "#e8e3d8",
+   "#e8e3d8",
+   "#e8e3d8"
+  ],
+  "midnight": [
+   "#303d50",
+   "#303d50",
+   "#303d50"
+  ],
+  "blue": [
+   "#5b92b4",
+   "#5b92b4",
+   "#5b92b4"
+  ],
+  "pink": [
+   "#edc1cd",
+   "#edc1cd",
+   "#edc1cd"
+  ],
+  "green": [
+   "#416b59",
+   "#416b59",
+   "#416b59"
+  ]
+ },
+ "apple_iphone_13_mini": {
+  "product_red": [
+   "#cb3346",
+   "#cb3346",
+   "#cb3346"
+  ],
+  "starlight": [
+   "#e8e3d8",
+   "#e8e3d8",
+   "#e8e3d8"
+  ],
+  "midnight": [
+   "#303d50",
+   "#303d50",
+   "#303d50"
+  ],
+  "blue": [
+   "#5b92b4",
+   "#5b92b4",
+   "#5b92b4"
+  ],
+  "pink": [
+   "#edc1cd",
+   "#edc1cd",
+   "#edc1cd"
+  ],
+  "green": [
+   "#416b59",
+   "#416b59",
+   "#416b59"
+  ]
+ },
+ "apple_iphone_12_pro_max": {
+  "silver": [
+   "#e4e5e7",
+   "#e4e5e7",
+   "#e4e5e7"
+  ],
+  "graphite": [
+   "#64636a",
+   "#64636a",
+   "#64636a"
+  ],
+  "gold": [
+   "#e7ceb3",
+   "#e7ceb3",
+   "#e7ceb3"
+  ],
+  "pacific_blue": [
+   "#426d82",
+   "#426d82",
+   "#426d82"
+  ]
+ },
+ "apple_iphone_12_pro": {
+  "silver": [
+   "#e4e5e7",
+   "#e4e5e7",
+   "#e4e5e7"
+  ],
+  "graphite": [
+   "#64636a",
+   "#64636a",
+   "#64636a"
+  ],
+  "gold": [
+   "#e7ceb3",
+   "#e7ceb3",
+   "#e7ceb3"
+  ],
+  "pacific_blue": [
+   "#426d82",
+   "#426d82",
+   "#426d82"
+  ]
+ },
+ "apple_iphone_12": {
+  "black": [
+   "#383a40",
+   "#383a40",
+   "#383a40"
+  ],
+  "white": [
+   "#ecebe7",
+   "#ecebe7",
+   "#ecebe7"
+  ],
+  "product_red": [
+   "#cb3346",
+   "#cb3346",
+   "#cb3346"
+  ],
+  "green": [
+   "#c0e5d6",
+   "#c0e5d6",
+   "#c0e5d6"
+  ],
+  "blue": [
+   "#316b9c",
+   "#316b9c",
+   "#316b9c"
+  ],
+  "purple": [
+   "#c7b5e2",
+   "#c7b5e2",
+   "#c7b5e2"
+  ]
+ },
+ "apple_iphone_12_mini": {
+  "black": [
+   "#383a40",
+   "#383a40",
+   "#383a40"
+  ],
+  "white": [
+   "#ecebe7",
+   "#ecebe7",
+   "#ecebe7"
+  ],
+  "product_red": [
+   "#cb3346",
+   "#cb3346",
+   "#cb3346"
+  ],
+  "green": [
+   "#c0e5d6",
+   "#c0e5d6",
+   "#c0e5d6"
+  ],
+  "blue": [
+   "#316b9c",
+   "#316b9c",
+   "#316b9c"
+  ],
+  "purple": [
+   "#c7b5e2",
+   "#c7b5e2",
+   "#c7b5e2"
+  ]
+ },
+ "apple_iphone_se_2020": {
+  "white": [
+   "#ecebe7",
+   "#ecebe7",
+   "#ecebe7"
+  ],
+  "black": [
+   "#383a40",
+   "#383a40",
+   "#383a40"
+  ],
+  "product_red": [
+   "#cb3346",
+   "#cb3346",
+   "#cb3346"
+  ]
+ },
+ "apple_iphone_11_pro": {
+  "silver": [
+   "#e4e5e7",
+   "#e4e5e7",
+   "#e4e5e7"
+  ],
+  "space_gray": [
+   "#54545a",
+   "#54545a",
+   "#54545a"
+  ],
+  "gold": [
+   "#e7ceb3",
+   "#e7ceb3",
+   "#e7ceb3"
+  ],
+  "midnight_green": [
+   "#67766c",
+   "#67766c",
+   "#67766c"
+  ]
+ },
+ "apple_iphone_11_pro_max": {
+  "silver": [
+   "#e4e5e7",
+   "#e4e5e7",
+   "#e4e5e7"
+  ],
+  "space_gray": [
+   "#54545a",
+   "#54545a",
+   "#54545a"
+  ],
+  "gold": [
+   "#e7ceb3",
+   "#e7ceb3",
+   "#e7ceb3"
+  ],
+  "midnight_green": [
+   "#67766c",
+   "#67766c",
+   "#67766c"
+  ]
+ },
+ "apple_iphone_11": {
+  "purple": [
+   "#c7b5e2",
+   "#c7b5e2",
+   "#c7b5e2"
+  ],
+  "green": [
+   "#a8d9c1",
+   "#a8d9c1",
+   "#a8d9c1"
+  ],
+  "yellow": [
+   "#f3dc7a",
+   "#f3dc7a",
+   "#f3dc7a"
+  ],
+  "black": [
+   "#383a40",
+   "#383a40",
+   "#383a40"
+  ],
+  "white": [
+   "#ecebe7",
+   "#ecebe7",
+   "#ecebe7"
+  ],
+  "product_red": [
+   "#dd3341",
+   "#dd3341",
+   "#dd3341"
+  ]
+ },
+ "apple_iphone_xs": {
+  "silver": [
+   "#e4e5e7",
+   "#e4e5e7",
+   "#e4e5e7"
+  ],
+  "space_gray": [
+   "#54545a",
+   "#54545a",
+   "#54545a"
+  ],
+  "gold": [
+   "#e7ceb3",
+   "#e7ceb3",
+   "#e7ceb3"
+  ]
+ },
+ "apple_iphone_xs_max": {
+  "silver": [
+   "#e4e5e7",
+   "#e4e5e7",
+   "#e4e5e7"
+  ],
+  "space_gray": [
+   "#54545a",
+   "#54545a",
+   "#54545a"
+  ],
+  "gold": [
+   "#e7ceb3",
+   "#e7ceb3",
+   "#e7ceb3"
+  ]
+ },
+ "apple_iphone_xr": {
+  "black": [
+   "#383a40",
+   "#383a40",
+   "#383a40"
+  ],
+  "white": [
+   "#ecebe7",
+   "#ecebe7",
+   "#ecebe7"
+  ],
+  "blue": [
+   "#79b7db",
+   "#79b7db",
+   "#79b7db"
+  ],
+  "yellow": [
+   "#f3dc7a",
+   "#f3dc7a",
+   "#f3dc7a"
+  ],
+  "coral": [
+   "#f57866",
+   "#f57866",
+   "#f57866"
+  ],
+  "product_red": [
+   "#dd3341",
+   "#dd3341",
+   "#dd3341"
+  ]
+ },
+ "apple_iphone_x": {
+  "silver": [
+   "#e4e5e7",
+   "#e4e5e7",
+   "#e4e5e7"
+  ],
+  "space_gray": [
+   "#54545a",
+   "#54545a",
+   "#54545a"
+  ]
+ },
+ "apple_iphone_duo": {
+  "night_sky": [
+   "#384354",
+   "#384354",
+   "#384354"
+  ],
+  "star_white": [
+   "#e7e8e3",
+   "#e7e8e3",
+   "#e7e8e3"
+  ]
+ },
+ "googlebook_acer_14": {
+  "elemental_blue": [
+   "#283b49",
+   "#283747",
+   "#1b2733"
+  ]
+ },
+ "googlebook_asus_14": {
+  "dusk_ash": [
+   "#696e6e",
+   "#606465",
+   "#4c5051"
+  ]
+ },
+ "googlebook_dell_xps": {
+  "shimmer": [
+   "#b3ac9e",
+   "#ada698",
+   "#8f887a"
+  ],
+  "sky": [
+   "#c8d0d8",
+   "#b8c2cc",
+   "#9aa4b0"
+  ]
+ },
+ "googlebook_hp_14": {
+  "atmospheric_blue": [
+   "#586479",
+   "#515d72",
+   "#404a5c"
+  ]
+ },
+ "googlebook_lenovo_15": {
+  "celestial_white": [
+   "#eef0f2",
+   "#e8eaed",
+   "#dcdfe3"
+  ],
+  "cloud_grey": [
+   "#8e9399",
+   "#7f848a",
+   "#6b7076"
+  ]
+ },
+ "googlebook_emulator": {
+  "titanium_silver": [
+   "#dde1e5",
+   "#d4d8dc",
+   "#b9bec4"
+  ],
+  "obsidian": [
+   "#2c2d31",
+   "#202124",
+   "#17181a"
+  ],
+  "porcelain": [
+   "#f6f7f8",
+   "#f1f3f4",
+   "#dfe2e5"
+  ],
+  "hazel": [
+   "#8a928c",
+   "#808882",
+   "#6a716c"
+  ]
+ }
+}

@@ -82,7 +82,8 @@
     "rail": "rail",
     "bar": "bar",
     "black": "black",
-    "flash": "flash"
+    "flash": "flash",
+    "logo": "logo"
   },
   "finishes": [
     {
@@ -110,6 +111,15 @@
             0.77863
           ],
           "rough": 0.36
+        },
+        "logo": {
+          "rgb": [
+            0.5607843137254902,
+            0.6627450980392157,
+            0.8117647058823529
+          ],
+          "metal": 0.5,
+          "rough": 0.28
         }
       }
     },
@@ -138,6 +148,15 @@
             0.60275
           ],
           "rough": 0.36
+        },
+        "logo": {
+          "rgb": [
+            0.5372549019607843,
+            0.5333333333333333,
+            0.4745098039215686
+          ],
+          "metal": 0.5,
+          "rough": 0.28
         }
       }
     },
@@ -166,6 +185,15 @@
             0.59
           ],
           "rough": 0.36
+        },
+        "logo": {
+          "rgb": [
+            0.7607843137254902,
+            0.5882352941176471,
+            0.6666666666666666
+          ],
+          "metal": 0.5,
+          "rough": 0.28
         }
       }
     },
@@ -194,12 +222,21 @@
             0.35549
           ],
           "rough": 0.36
+        },
+        "logo": {
+          "rgb": [
+            0.5529411764705883,
+            0.5568627450980392,
+            0.5568627450980392
+          ],
+          "metal": 0.5,
+          "rough": 0.28
         }
       }
     }
   ],
-  "glbUrl": "assets/devices/models/pixel-11.0393d166d8ea.glb.gz",
-  "sha256": "0393d166d8ea108164734c89f375166484ae5a8629457a69513731ea6f51bdab",
+  "glbUrl": "assets/devices/models/pixel-11.a1c48e555314.glb.gz",
+  "sha256": "a1c48e5553140e0ab75905c54f46f95591355eae5d63a4ce496ad11644ccd79d",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/pixel-11.json",
@@ -208,7 +245,8 @@
       "screen_resolution": "Google published panel resolution",
       "screen_geometry": "Native resolution aspect preserved; concentric display/body corners and thin symmetric bezels estimated from official front artwork, not a measured CAD outline.",
       "camera_geometry": "Camera capsule proportions estimated from official launch images: edge-to-edge black glass, three optics and in-glass flash. Base protrusion estimated as 60% of previous 3.6 mm baseline per Google thickness reduction; Pro protrusion estimated. HiLight represented in its unlit state. Optical internals illustrative, not manufacturer CAD.",
-      "finishes": "Approximate sRGB colors and roughness, not calibrated measured materials"
+      "finishes": "Approximate sRGB colors and roughness, not calibrated measured materials",
+      "branding": "Google G contour retained from reference artwork. Legacy Pixel4/4a/5/5a lower rear placement (approximately80%height); Pixel6 onward and folds centered on rear/camera leaf. Size, position and finish-tinted material are photo estimates, not manufacturer CAD."
     },
     "sources": [
       "https://support.google.com/pixelphone/answer/7158570?hl=en",

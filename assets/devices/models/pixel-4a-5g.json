@@ -85,7 +85,8 @@
     "button": "button",
     "fingerprint": "fingerprint",
     "black": "black",
-    "flash": "flash"
+    "flash": "flash",
+    "logo": "logo"
   },
   "finishes": [
     {
@@ -125,6 +126,15 @@
             0.19608,
             0.20784
           ]
+        },
+        "logo": {
+          "rgb": [
+            0.4196078431372549,
+            0.4196078431372549,
+            0.4235294117647059
+          ],
+          "metal": 0.5,
+          "rough": 0.28
         }
       }
     },
@@ -165,12 +175,21 @@
             0.82353,
             0.80784
           ]
+        },
+        "logo": {
+          "rgb": [
+            0.5372549019607843,
+            0.5372549019607843,
+            0.5254901960784314
+          ],
+          "metal": 0.5,
+          "rough": 0.28
         }
       }
     }
   ],
-  "glbUrl": "assets/devices/models/pixel-4a-5g.9f3b771ca682.glb.gz",
-  "sha256": "9f3b771ca6829efbad1da4caee342a61c6dbdd1daa1dcc87885c5caf2498661b",
+  "glbUrl": "assets/devices/models/pixel-4a-5g.366e0c98895a.glb.gz",
+  "sha256": "366e0c98895a3c2d26411d4d03172670a025aec5d160cc0785e5b25296a13d1d",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/pixel-4a-5g.json",
@@ -181,7 +200,8 @@
       "camera_geometry": "Model-specific rear housing/lens placement proportioned from reviewed product photography; optical stacks reuse the reviewed Pixel optics and are illustrative",
       "buttons_and_rear_hardware": "Model-specific placement reviewed against product photography",
       "finishes": "Approximate sRGB appearance matched to named Google finishes; not measured material samples",
-      "body_variant": "Sub-6 model, 8.2 mm depth; Verizon mmWave model is 8.5 mm"
+      "body_variant": "Sub-6 model, 8.2 mm depth; Verizon mmWave model is 8.5 mm",
+      "branding": "Google G contour retained from reference artwork. Legacy Pixel4/4a/5/5a lower rear placement (approximately80%height); Pixel6 onward and folds centered on rear/camera leaf. Size, position and finish-tinted material are photo estimates, not manufacturer CAD."
     },
     "sources": [
       "https://support.google.com/pixelphone/answer/16043605?hl=en",

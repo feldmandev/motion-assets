@@ -177,9 +177,9 @@
         },
         "logo": {
           "rgb": [
-            0.5216,
-            0.5373,
-            0.5529
+            0.5490196078431373,
+            0.5607843137254902,
+            0.5647058823529412
           ],
           "metal": 0.65,
           "rough": 0.18
@@ -296,8 +296,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/googlebook-asus-14.ed1ad294231c.glb.gz",
-  "sha256": "ed1ad294231c2ff88267db85c61c58004b79f911cf6bc565c7ca9b518991c851",
+  "glbUrl": "assets/devices/models/googlebook-asus-14.5e16fdef0aa8.glb.gz",
+  "sha256": "5e16fdef0aa83cc0acd088c6dac20f1b9a4bf812748a5990983c40759ab85f6c",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/googlebook-asus-14.json",

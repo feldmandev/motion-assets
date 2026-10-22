@@ -1,4 +1,5 @@
 """Samsung tablet profiles: published chassis/display specs; estimated small geometry."""
+from make_device_branding import apply as apply_branding
 import json
 import sys
 from pathlib import Path
@@ -210,5 +211,6 @@ if __name__=='__main__':
  profiles=[new_profile(key) for key in NEW_MODELS] if '--new' in sys.argv else [profile(row) for row in MODELS]
  for p in profiles:
   correct_rear(p)
+  apply_branding(p)
   (BASE/'profiles'/f'{p["id"]}.json').write_text(json.dumps(p,indent=2)+'\n')
   print(p['id'])

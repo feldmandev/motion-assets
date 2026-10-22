@@ -177,9 +177,9 @@
         },
         "logo": {
           "rgb": [
-            0.5412,
-            0.6,
-            0.702
+            0.5019607843137255,
+            0.5411764705882353,
+            0.6196078431372549
           ],
           "metal": 0.65,
           "rough": 0.18
@@ -296,8 +296,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/googlebook-hp-14.9cd128a7ee21.glb.gz",
-  "sha256": "9cd128a7ee21690b1db4e453486df6efa0df0584162aaeaeec27834319f37c7d",
+  "glbUrl": "assets/devices/models/googlebook-hp-14.2444aa2db2b9.glb.gz",
+  "sha256": "2444aa2db2b9371977d516238aeae899c7f74182010035e00f1f8c348f326ed8",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/googlebook-hp-14.json",

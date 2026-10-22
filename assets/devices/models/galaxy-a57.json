@@ -122,7 +122,9 @@
             0.13,
             0.14,
             0.16
-          ]
+          ],
+          "metal": 0,
+          "rough": 0.3
         }
       }
     },
@@ -160,7 +162,9 @@
             0.13,
             0.14,
             0.16
-          ]
+          ],
+          "metal": 0,
+          "rough": 0.3
         }
       }
     },
@@ -198,7 +202,9 @@
             0.62,
             0.64,
             0.68
-          ]
+          ],
+          "metal": 0,
+          "rough": 0.3
         }
       }
     },
@@ -236,13 +242,15 @@
             0.62,
             0.64,
             0.68
-          ]
+          ],
+          "metal": 0,
+          "rough": 0.3
         }
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-a57.edf238d984e3.glb.gz",
-  "sha256": "edf238d984e37ec76aa6349d6074590f7220f761d607606dc03a2ad5091cec99",
+  "glbUrl": "assets/devices/models/galaxy-a57.7fa20b18e027.glb.gz",
+  "sha256": "7fa20b18e027235a43eddc57f352261325e6ed30c5a6cffa6bdbb84dd1e4408c",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-a57.json",

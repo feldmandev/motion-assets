@@ -2,8 +2,6 @@
   "id": "generic-phone",
   "name": "Generic phone",
   "state": "default",
-  "glbUrl": "assets/devices/models/generic-phone.01778021f7f0.glb.gz",
-  "sha256": "01778021f7f04bff79022ff247645448ec4b0e660d4d6735f38e91929de5b0e0",
   "screens": [
     {
       "node": "Device screen",
@@ -54,5 +52,7 @@
         "description": "Motion generic device artwork and authored screen mapping"
       }
     ]
-  }
+  },
+  "glbUrl": "assets/devices/models/generic-phone.01778021f7f0.glb.gz",
+  "sha256": "01778021f7f04bff79022ff247645448ec4b0e660d4d6735f38e91929de5b0e0"
 }
