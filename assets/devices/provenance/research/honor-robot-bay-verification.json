@@ -1,0 +1,151 @@
+{
+  "id": "honor-robot-phone",
+  "reviewed_at": "2026-10-23T08:49:22.955926+00:00",
+  "result": "PASS: storage-bay z-fighting corrected by a 0.12 mm floor offset",
+  "source_files_changed": [
+    "robot_geometry.py"
+  ],
+  "cause": "Opaque black dock liner rear face was coincident with opaque chassis pocket base at z=2.5 mm. Both face normals point rearward. Competing depth-buffer fragments caused grid/triangle moire as the camera uncovered the bay.",
+  "change": {
+    "node": "Robot recessed dock floor",
+    "center_z_mm_before": 2.56,
+    "center_z_mm_after": 2.44,
+    "thickness_mm": 0.12,
+    "visible_face_z_mm": 2.38,
+    "pocket_base_z_mm": 2.5,
+    "visible_surface_separation_mm": 0.12,
+    "intentional_hidden_contact": "Liner inner face at z=2.5 mm seats on chassis pocket base."
+  },
+  "diagnosis": {
+    "downloaded_public_glb_sha256": "97ddeeea363eaaa0fae138cf0af6dd2d03c159c76367659d8e8142e27104a46f",
+    "published_glb_equal_previous_canonical_white": true,
+    "blend_and_public_glb_depth_normal_probes": "tmp/honor-bay-review/surface-before.json",
+    "live_webgl_reproduction": {
+      "clip_time_seconds": 1.6333333333333335,
+      "progress": 0.4,
+      "finish": "Black",
+      "camera_target": "0.009m 0.058m -0.006m",
+      "camera_orbit": "175deg 75deg 0.14m",
+      "field_of_view": "25deg"
+    },
+    "one_node_browser_experiment": "Moving only glTF floor translation Y rearward by 0.00012 m removed moire in the same paused live public scene. No renderer/material changes."
+  },
+  "invariants": {
+    "public_before_vs_rebuilt_white_binary_buffers_identical": true,
+    "all_json_except_floor_node_translation_identical": true,
+    "binary_buffer_size_bytes": 1787396,
+    "changed_nodes": [
+      {
+        "name": "Robot recessed dock floor",
+        "before": {
+          "mesh": 33,
+          "name": "Robot recessed dock floor",
+          "translation": [
+            0.017500000074505806,
+            0.0025599999353289604,
+            -0.057500001043081284
+          ]
+        },
+        "after": {
+          "mesh": 33,
+          "name": "Robot recessed dock floor",
+          "translation": [
+            0.017500000074505806,
+            0.0024399999529123306,
+            -0.057500001043081284
+          ]
+        }
+      }
+    ],
+    "white_black_geometry_and_animation_binary_identical": true,
+    "native_screen_uvs_textures_materials_and_clip_unchanged": true
+  },
+  "finishes": {
+    "White": {
+      "directory": "[local reference path omitted]",
+      "frames_checked": 121,
+      "unexpected_intersections": 0,
+      "max_attachment_error_mm": 0,
+      "max_glb_transform_component_error": 4.172325134277344e-07,
+      "clip": {
+        "clip": "Robot deploy",
+        "channels": 5,
+        "time_start_seconds": 0.03333333333333333,
+        "time_end_seconds": 4.033333333333333,
+        "motion_duration_seconds": 4.0,
+        "animated_nodes": [
+          "Robot dock shutter",
+          "Robot flip hinge",
+          "Robot optical roll motor",
+          "Robot pan motor",
+          "Robot pitch motor"
+        ],
+        "reimported_frames_checked": 121,
+        "max_transform_component_error": 4.172325134277344e-07
+      },
+      "measured_visible_surface_separation_mm": 0.11999905109405518,
+      "sha256": {
+        "model.glb": "def6d5a5a8c299f15dac15c15a7148967bfb6928cd587e530b87549d2fd31d57",
+        "model.blend": "f6936c9929299b8754b673699258cb02b19e5e1aa806119a24b6ef46ab498fa8",
+        "device.json": "9162a984bc49f78f136a0dc7524b3d7f68269b32b3a3100df57e048359bbcdcb",
+        "frame.svg": "088491c27a42812fa2b54be67f59ba2647e33900a106bf7986cf1b6f4a9e6b63",
+        "robot-verification.json": "11e9ecb24380cce51efdb70c3a27c6c2109b97ce769ff15514758f112366cf2d"
+      }
+    },
+    "Black": {
+      "directory": "[local reference path omitted]",
+      "frames_checked": 121,
+      "unexpected_intersections": 0,
+      "max_attachment_error_mm": 0,
+      "max_glb_transform_component_error": 4.172325134277344e-07,
+      "clip": {
+        "clip": "Robot deploy",
+        "channels": 5,
+        "time_start_seconds": 0.03333333333333333,
+        "time_end_seconds": 4.033333333333333,
+        "motion_duration_seconds": 4.0,
+        "animated_nodes": [
+          "Robot dock shutter",
+          "Robot flip hinge",
+          "Robot optical roll motor",
+          "Robot pan motor",
+          "Robot pitch motor"
+        ],
+        "reimported_frames_checked": 121,
+        "max_transform_component_error": 4.172325134277344e-07
+      },
+      "measured_visible_surface_separation_mm": 0.11999905109405518,
+      "sha256": {
+        "model.glb": "6777c7a2f6ff13468046337dd5c0556c6a0620438b9db33bbcf893d999537f76",
+        "model.blend": "c899b0312c89481ace9eff59f678ed3788e8b5fd014f3bf33fc6a5294e28f8ff",
+        "device.json": "9c5e6afcf857161bc4db210198e69e7261e230580e63a9cded630de3a0295aa5",
+        "frame.svg": "7fd88109b6754bdd9eaac0d107d3be5a236a9cdc2407564b15295c00db9cd80b",
+        "robot-verification.json": "11e9ecb24380cce51efdb70c3a27c6c2109b97ce769ff15514758f112366cf2d"
+      }
+    }
+  },
+  "visual_review": {
+    "blend_and_published_glb_before_pose_frames": [
+      49,
+      85
+    ],
+    "rebuilt_blend_closeup_frames_each_finish": [
+      1,
+      19,
+      49,
+      85
+    ],
+    "closeups_directory": "tmp/honor-bay-review",
+    "webgl_before": "tmp/honor-bay-review/browser-before.png",
+    "webgl_one_node_fix": "tmp/honor-bay-review/browser-after-floor-offset.png",
+    "result": "Smooth bay floor across inspected poses; no triangular/grid artifact on exposed floor."
+  },
+  "limits": [
+    "Collision checks sample 121 integer frames, not continuous swept volume or OEM mechanical certification.",
+    "Browser proof used the exact one-node translation on downloaded v0.1.3 geometry; fresh published-version browser reload is parent integration work.",
+    "Existing full-device pose previews remain historical; new focused bay closeups are in the review directory."
+  ],
+  "log": "tmp/honor-bay-review/review.log",
+  "prior_review": "honor-robot-final-review.json (historical, before this floor fix)",
+  "source_sha256": "1b5bc7f82d82a4bc573619647ad6125c4317404643119779677b5c282dc84cc2"
+}

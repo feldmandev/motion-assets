@@ -50,7 +50,8 @@ def create_robot_arm(profile, root):
         notch = slab('Robot hinge exit tool', 14, 8, 22.5, .8,
                      (17.5, 79.5, -8.75), None, body, .08)
         subtract(shell, notch)
-    slab('Robot recessed dock floor', 30, 42, .12, 3, (17.5, 57.5, 2.56), mats['black'], body, .035)
+    # Seat the liner against the pocket base at z=2.5; its visible face must not be coplanar.
+    slab('Robot recessed dock floor', 30, 42, .12, 3, (17.5, 57.5, 2.44), mats['black'], body, .035)
     for y in [35.8, 79.2]:
         rail = slab('Robot shutter guide rail', 68, .8, 1.2, .35, (0, y, -7.4), mats['rail'], body, .12)
         if y > 70:
