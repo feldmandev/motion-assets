@@ -1,0 +1,178 @@
+{
+  "reviewed_at": "2026-10-23",
+  "review_type": "Independent focused final review",
+  "verdict": "CHANGES_REQUESTED: real same-mesh GPU geometry morph is present, but OnePlus 12 and iPhone 17 Pro fail the seamless flat-endpoint requirement because of layer ordering. Pixel 11 passes the sampled visual poses. Do not declare all F1-F8 closed or all candidates visually accepted.",
+  "source_edits": false,
+  "snapshot": {
+    "gallery_icon_morph.js": {
+      "sha256": "2166547ab991f034e7f339361d807e7ef8e3babaeefa0be7b0422a8d75e65c17",
+      "bytes": 21316
+    },
+    "build_combined_gallery.py": {
+      "sha256": "bbc31c2720537ef158e569cb3291c137f0a652acccd539f1d485d5d8e66f570b",
+      "bytes": 49424
+    },
+    "morph_check.html": {
+      "sha256": "0d9e0070d21dac2d0d3dd42d3325f8532df28977f47591326b4425fd9f2adc9f",
+      "bytes": 66073027,
+      "embeds_exact_current_morph_source": true
+    }
+  },
+  "findings": [
+    {
+      "id": "R1",
+      "prior_finding": "F6",
+      "priority": "P1",
+      "title": "OnePlus 12 side bridge occludes half the circular housing at the handoff",
+      "location": "gallery_icon_morph.js:142,211-212",
+      "reproduction": "Rotate OnePlus 12 / Silky Black, pause render(t=0) after the prepared frame has been revealed. Compare the circular housing in the source artwork with the flat mesh pose; then advance to t=.25.",
+      "observed": "At t=0 the bridge paints over the left part of the circular camera housing, leaving a D-shaped camera panel. By t=.25 the full circle becomes visible as physical depth separates the bridge and housing. This is distinct from the acknowledged glass-2 rectangular-to-circular limitation.",
+      "cause": "The bridge is an extra part, so the generic layer expression gives it layer 3, in front of the housing at layer 2 for the rear-facing start view. The authored SVG paints bridge paths before the bar, so the bar must cover the bridge at their overlap.",
+      "required_change": "Give the bridge an explicit flat depth behind the housing and above the body, preserving the SVG paint order. Recheck t=0 and early poses for this layout.",
+      "evidence": [
+        "morph-final-oneplus12-flat.png",
+        "morph-final-oneplus12-quarter.png"
+      ]
+    },
+    {
+      "id": "R2",
+      "prior_finding": "F6",
+      "priority": "P1",
+      "title": "iPhone 17 Pro logo disappears at the flat endpoint",
+      "location": "gallery_icon_morph.js:137,144,211-212",
+      "reproduction": "Rotate iPhone 17 Pro / Silver, pause t=0 and t=.01, and compare against the original gallery PNG. Advance to t=.5.",
+      "observed": "The source PNG has an Apple logo on the rear insert. The flat mesh has no visible logo at t=0 or t=.01; it is visible by t=.5. The side-by-side screenshot includes an unmodified source-PNG clone on the right for comparison.",
+      "cause": "Rear insert and logo both receive generic layer 3. Measured flat world z is 0.00211375001936177 for Rear_glass and 0.00211375012850114 for both Apple logo components: effectively coplanar, with the rear glass slightly closer to the rear-facing camera. Both materials write depth. Shared multipart bounds do not solve this occlusion.",
+      "required_change": "Give the rear insert and logo distinct ordered flat depths, with the logo in front of the insert. Keep glass, housing, bridge and other overlapping surfaces in authored paint order rather than assigning every extra part layer 3.",
+      "evidence": [
+        "morph-final-iphone17pro-flat-source.png",
+        "morph-final-iphone17pro-half.png"
+      ]
+    }
+  ],
+  "prior_findings": [
+    {
+      "id": "F1",
+      "status": "Resolved in reviewed scope",
+      "evidence": "Lines 81-90 rasterize a cropped fill rectangle with preserveAspectRatio=none and retain the original user-space gradient coordinates. Lines 215-216 use top-down projected UVs. Pixel 11 flat screenshot has correctly oriented gradients without the former transparent-raster black bands. No exhaustive pixel-difference/colorimetry claim."
+    },
+    {
+      "id": "F2",
+      "status": "Resolved by implementation; focused prepared-frame handoff observed",
+      "evidence": "Builder load handler keeps the viewer hidden through preparation and removes state-changing before morph setup. Lines 254,263-276 render the flat pose hidden, await updateComplete plus an actual scene.renderCount increment and no pending render, then reveal the viewer and hide the source together. A full cold-load timing recording was not repeated in this review."
+    },
+    {
+      "id": "F3",
+      "status": "Resolved for sampled Pixel 11; broader contour proof remains bounded",
+      "evidence": "Lines 129-134 construct separate window groups, 164-174 compute per-part hull/radial maps, and 200-204 apply the matching glass map to housing-cutout vertices within 0.15 mm clearance. Pixel 11 t=0,.5,1 shows seated glass without the prior shrinking/clip defect. The worker's 896 matched vertices and larger test suite were supplied context, not independently recounted or rerun."
+    },
+    {
+      "id": "F4",
+      "status": "Substantially addressed for declared layouts; not universal classification",
+      "evidence": "Authored SVG roles replace path-count assumptions for tagged layouts. Lines 137 and 164-165 share one union frame across multipart logos; line 187 excludes Camera Control and selfie geometry from rear-camera classification. Unknown SVG roles and missing required part groups are rejected. Runtime GLB assignment still uses exported names/material slots and fallback detail classification, so this is not an arbitrary-mesh descriptor system. iPhone logo components exist and share bounds, but R2 prevents flat visual acceptance."
+    },
+    {
+      "id": "F5",
+      "status": "Contained by explicit unsupported scope, not implemented as general SVG support",
+      "evidence": "Drawable descendant paths are read outside defs. Lines 5-6,23,54 reject articulated/fold/robot, unsupported/unknown roles, transformed and stroked artwork. Reviewed clipped groups are handled with authored surface layers and body silhouette clamping. Arbitrary transforms, strokes, holes, glyphs and clip semantics are not now generally supported; Nothing/folds/robot/laptops remain outside the accepted morph scope."
+    },
+    {
+      "id": "F6",
+      "status": "Partially resolved; R1 and R2 remain material blockers",
+      "evidence": "Lines 219-234 prepare flat normals and position attributes, interpolate both in the GPU shader and blend source RGB after tonemapping. Original attributes/materials remain the final target. Shadow intensity is continuous oldShadow*p. Observed Pixel clear-cover opacity remains .07 with depthWrite=false. The generic layer expression at line 211 fails overlapping bridge/insert/logo paint order."
+    },
+    {
+      "id": "F7",
+      "status": "Resolved for the three inspected phone poses at the fixed viewport",
+      "evidence": "Lines 114-117 use enclosure/rear-shell bounds rather than camera rims/buttons; lines 240-251 measure PNG alpha-painted bounds and image fit. The viewer retains the stage's fixed dimensions while translating/scaling. Pixel 11, OnePlus 12 and iPhone 17 Pro starts align with their card positions and body scale. iPhone t=1 and restored pose retain the same numeric orbit and visible framing. Resize, mobile and tablet orientation were not independently rechecked."
+    },
+    {
+      "id": "F8",
+      "status": "Resolved for inspected lifecycle; asynchronous cancellation supported by code review",
+      "evidence": "Texture/scene bridges and shader chunk counts are validated; unsupported primitive/material-array cases cancel. Late texture results dispose themselves when ownership has changed. Controls are disabled during morph and restored. All three inspected models restored exact original geometry/material/frustumCulled references. iPhone disposal listeners counted 36 cloned geometries and 36 cloned materials disposed, with zero original-geometry/material disposal events. Texture-load cancellation and other control regressions were not rerun; the worker's supplied results remain separate evidence."
+    }
+  ],
+  "verification": {
+    "environment": "Local isolated morph_check.html on the existing server, own T3 preview tab tab_l_36556e6d-0e5f-476d-886f-73d4ffd49295, 1280x800 desktop viewport",
+    "browser": "Requested product-native T3 preview; no alternate browser or Playwright fallback",
+    "method": "Inspected source and builder. Confirmed the harness embeds the exact current morph source. In browser memory only, replaced the animation tick scheduling with exports of the render closure and owned entries, leaving shader, mapping, preparation and restoration unchanged. Render(t) takes raw timeline t and internally applies quintic easing; t=.25/.75 correspond to geometry progress .103515625/.896484375. Added an original PNG clone only for the iPhone comparison screenshot. No harness file was rewritten.",
+    "models": [
+      {
+        "id": "pixel-11",
+        "finish": "beg",
+        "timeline_samples": [
+          0,
+          0.5,
+          1
+        ],
+        "entries": 24,
+        "visual": "Pass for sampled poses",
+        "exact_reference_restore": true,
+        "camera_controls_restored": true,
+        "evidence": "morph-final-pixel11-flat.png"
+      },
+      {
+        "id": "oneplus-12",
+        "finish": "Silky Black",
+        "timeline_samples": [
+          0,
+          0.25,
+          0.75,
+          1
+        ],
+        "entries": 41,
+        "visual": "Fail flat endpoint: R1; acknowledged glass-2 mismatch also remains",
+        "exact_reference_restore": true,
+        "camera_controls_restored": true
+      },
+      {
+        "id": "iphone-17-pro",
+        "finish": "Silver",
+        "timeline_samples": [
+          0,
+          0.01,
+          0.5,
+          1
+        ],
+        "entries": 36,
+        "visual": "Fail flat endpoint: R2; acknowledged rear-insert-to-full-Rear-glass mapping also remains",
+        "exact_reference_restore": true,
+        "camera_controls_restored": true,
+        "clone_disposal_events": {
+          "geometry": 36,
+          "material": 36
+        },
+        "original_disposal_events": {
+          "geometry": 0,
+          "material": 0
+        },
+        "orbit_before_and_after_restore": "2.705260340591211rad 1.361356816555577rad 0.32156905502480587m",
+        "restored_evidence": "morph-final-iphone17pro-restored.png"
+      }
+    ],
+    "page_checks": {
+      "identity": "Pass: Device gallery / isolated harness",
+      "meaningful_render": "Pass",
+      "framework_error_overlay": "None observed",
+      "captured_runtime_errors_and_unhandled_rejections": [],
+      "interaction": "openDetail Rotate path, prepared handoff, manual paused timeline poses, cancel/restore, close",
+      "cleanup": "Review dialog closed; iconMorph is null"
+    },
+    "not_run": [
+      "No all-17 rerun, full suite, build, regeneration, shared source edits, public repository changes, pushes or release actions.",
+      "No frame-rate benchmark, CAD correctness proof, all-variant visual acceptance, mobile/resize/tablet checks, or universal coverage claim.",
+      "Worker-reported Fold/Robot/Frame/finish/cold/warm/cancel/reduced tests and 17-model finite/restore suite were not independently repeated."
+    ],
+    "review_harness_error": "One inspection expression called unsupported DOMRect.toJSON on an SVG getBBox result. It was corrected to explicit x/y/width/height reads; it did not indicate an application error or alter morph logic."
+  },
+  "limitations": [
+    "57 semantic candidates are not 57 visually accepted models.",
+    "Nothing, articulated folds, robot and laptops remain unsupported by design for this morph.",
+    "iPhone 17 Pro rear-insert artwork maps to the full Rear_glass GLB surface; this is a declared geometric correspondence approximation.",
+    "OnePlus 12 glass-2 artwork is rectangular while the corresponding GLB window is circular; continuous vertex interpolation does not establish exact topology/boundary correspondence.",
+    "The implementation uses one model-viewer renderer and cloned target meshes with GPU position/normal interpolation. Source visibility switches at the rendered flat handoff; there is no visible icon overlay or icon/model opacity crossfade in the inspected bridge. Shader interpolation of surface colors is part of the mesh appearance transition.",
+    "The morph is not live yet; this review does not certify or change the parent's separate stable 0.1.2 publication.",
+    "Reference copies and local/network inputs remain local. No reference assets or network URLs were copied into a public artifact."
+  ],
+  "recommendation": "Keep the geometric bridge and the narrowed support guards. Fix the flat paint-order depths for bridge, insert and logo, then repeat only the affected endpoint/early-pose checks before accepting those layouts. Preserve the explicit geometry-mismatch limitations."
+}

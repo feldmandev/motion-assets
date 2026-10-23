@@ -1,0 +1,304 @@
+{
+  "id": "xiaomi-pad-6",
+  "name": "Xiaomi Pad 6",
+  "state": "default",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        1800,
+        2880
+      ],
+      "size_mm": [
+        148.0817038368885,
+        236.93072613902157
+      ],
+      "center_mm": [
+        0.0,
+        0.0,
+        3.2899997234344482
+      ],
+      "corner_radius_mm": 0.9903630695107921,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0,
+      "frame_bounds_mm": [
+        8.549148081555757,
+        8.509636930489208,
+        148.0817038368885,
+        236.93072613902157
+      ],
+      "frame_screen_px": null,
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "width": 165.18,
+        "height": 253.95,
+        "depth": 6.51,
+        "corner_radius": 9.5,
+        "edge_roll": 0.28,
+        "front_rail_mm": 0.4,
+        "rear_style": "unibody",
+        "corner_radii_mm": [
+          9.5,
+          9.5,
+          9.5,
+          9.5
+        ]
+      },
+      "cutouts": [
+        {
+          "center_mm": [
+            78.31542595922213,
+            0
+          ],
+          "radius_mm": 1.1
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "body_mm": {
+    "width": 165.18,
+    "height": 253.95,
+    "depth": 6.51,
+    "corner_radius": 9.5,
+    "edge_roll": 0.28,
+    "front_rail_mm": 0.4,
+    "rear_style": "unibody",
+    "corner_radii_mm": [
+      9.5,
+      9.5,
+      9.5,
+      9.5
+    ]
+  },
+  "icon_morph": {
+    "windows": 1,
+    "kind": "tablet"
+  },
+  "articulation": null,
+  "robot_motion": null,
+  "panels": [],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/xiaomi-pad-6-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "logo": "logo",
+    "contact": "contact",
+    "lens_rim": "lens_rim",
+    "black": "black",
+    "flash": "flash"
+  },
+  "finishes": [
+    {
+      "name": "Gravity Gray",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.5098039215686274,
+            0.5490196078431373,
+            0.596078431372549
+          ],
+          "metal": 0.65,
+          "rough": 0.43
+        },
+        "rail": {
+          "rgb": [
+            0.5098039215686274,
+            0.5490196078431373,
+            0.596078431372549
+          ],
+          "metal": 0.8,
+          "rough": 0.32
+        },
+        "bar": {
+          "rgb": [
+            0.045,
+            0.05,
+            0.055
+          ],
+          "metal": 0.55,
+          "rough": 0.28
+        },
+        "logo": {
+          "rgb": [
+            0.24470588235294116,
+            0.2635294117647059,
+            0.28611764705882353
+          ],
+          "metal": 0.25,
+          "rough": 0.44
+        },
+        "contact": {
+          "rgb": [
+            0.62,
+            0.64,
+            0.65
+          ],
+          "metal": 0.8,
+          "rough": 0.3
+        },
+        "lens_rim": {
+          "rgb": [
+            0.14,
+            0.16,
+            0.18
+          ],
+          "metal": 0.7,
+          "rough": 0.25
+        }
+      }
+    },
+    {
+      "name": "Gold",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.788235294117647,
+            0.7686274509803922,
+            0.6823529411764706
+          ],
+          "metal": 0.65,
+          "rough": 0.43
+        },
+        "rail": {
+          "rgb": [
+            0.788235294117647,
+            0.7686274509803922,
+            0.6823529411764706
+          ],
+          "metal": 0.8,
+          "rough": 0.32
+        },
+        "bar": {
+          "rgb": [
+            0.045,
+            0.05,
+            0.055
+          ],
+          "metal": 0.55,
+          "rough": 0.28
+        },
+        "logo": {
+          "rgb": [
+            0.37835294117647056,
+            0.3689411764705882,
+            0.3275294117647059
+          ],
+          "metal": 0.25,
+          "rough": 0.44
+        },
+        "contact": {
+          "rgb": [
+            0.62,
+            0.64,
+            0.65
+          ],
+          "metal": 0.8,
+          "rough": 0.3
+        },
+        "lens_rim": {
+          "rgb": [
+            0.14,
+            0.16,
+            0.18
+          ],
+          "metal": 0.7,
+          "rough": 0.25
+        }
+      }
+    },
+    {
+      "name": "Mist Blue",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.6901960784313725,
+            0.7686274509803922,
+            0.8274509803921568
+          ],
+          "metal": 0.65,
+          "rough": 0.43
+        },
+        "rail": {
+          "rgb": [
+            0.6901960784313725,
+            0.7686274509803922,
+            0.8274509803921568
+          ],
+          "metal": 0.8,
+          "rough": 0.32
+        },
+        "bar": {
+          "rgb": [
+            0.045,
+            0.05,
+            0.055
+          ],
+          "metal": 0.55,
+          "rough": 0.28
+        },
+        "logo": {
+          "rgb": [
+            0.3312941176470588,
+            0.3689411764705882,
+            0.39717647058823524
+          ],
+          "metal": 0.25,
+          "rough": 0.44
+        },
+        "contact": {
+          "rgb": [
+            0.62,
+            0.64,
+            0.65
+          ],
+          "metal": 0.8,
+          "rough": 0.3
+        },
+        "lens_rim": {
+          "rgb": [
+            0.14,
+            0.16,
+            0.18
+          ],
+          "metal": 0.7,
+          "rough": 0.25
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/xiaomi-pad-6.b57e1f87009c.glb.gz",
+  "sha256": "b57e1f87009c75316cc85aaf39cd216f8c4f03ef311a4fbaf55b38d55a8c88f5",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/xiaomi-pad-6.json",
+    "accuracy": {
+      "body_dimensions": "Xiaomi official metric enclosure dimensions; no stylized icon body dimensions. Corner radius and edge roll are photoestimates, not OEM CAD.",
+      "screen_geometry": "Official native portrait pixels and full rectangular display diagonal; estimated concentric corner radii and bezel selfie aperture. Pixel aspect preserved exactly.",
+      "camera_geometry": "Official product renders measured in this manifest. Camera width, height, margins and aperture positions are photoestimates; Pad 7 images are oblique and partly occluded. Bump depths 1.4-1.7mm, roll, rings, optics and decorative circles estimated; no OEM CAD claim.",
+      "finishes": "All ten existing icon finishes correspond to official color names. sRGB swatches reused from Documents brand_colors.json; metalness and roughness are visual estimates, not calibrated materials.",
+      "branding": "No Xiaomi entry exists in Documents brand_logos.json. Xiaomi wordmark traced from official Pad 6 rear render, complete letter outlines and counters constrained-triangulated; bottom-to-top in portrait and upright left-to-right in landscape, finish-tinted dark gray. Placement/size estimated.",
+      "omissions": "Ports, speaker grilles, antenna breaks, top-edge power key, small camera inscriptions and microscopic marks omitted. Pad 6 flash represented by a round emitter within its pill-shaped photographic highlight. Reference photographs are research-only and excluded from exports."
+    },
+    "sources": [
+      "https://www.mi.com/global/product/xiaomi-pad-6/specs/",
+      "https://i02.appmifile.com/253_operator_sg/28/06/2023/ce7011d9e5c3e12a3818a2d911c0fb16.png"
+    ]
+  }
+}

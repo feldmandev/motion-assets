@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "release": "v0.1.2",
-  "archive": "motion-assets-models-0.1.2.zip",
+  "release": "v0.1.3",
+  "archive": "motion-assets-models-0.1.3.zip",
   "files": {
     "assets/devices/models/galaxy-a34.e5b550f972d4.glb.gz": {
       "sha256": "e5b550f972d4969daaf339985f4e7e24ae47caec8c154b92df18371d3c91ce81",
@@ -578,6 +578,11 @@
       "bytes": 1001552,
       "glbSha256": "a2444944308046bf16f171dfdff3f53e256f464441a9ac7fd711647751013ee0"
     },
+    "assets/devices/models/honor-robot-phone.d66b6f260f44.glb.gz": {
+      "sha256": "d66b6f260f44f1e499f8edc680ed17d963a954ec6b0c5058c24dd34df497427f",
+      "bytes": 603906,
+      "glbSha256": "97ddeeea363eaaa0fae138cf0af6dd2d03c159c76367659d8e8142e27104a46f"
+    },
     "assets/devices/models/iphone-11-pro-max.991b733635bd.glb.gz": {
       "sha256": "991b733635bdd5cfe771b6e1e38cb6c0b7ad64a3bebcc3f430f465eadefbf8ff",
       "bytes": 625231,
@@ -992,6 +997,26 @@
       "sha256": "7ac57e9688ed9a4ba0ae6fc9e75ca952b87c9d24ff7058a787f727fda4f3e731",
       "bytes": 1297190,
       "glbSha256": "3fd4e353d5b86809f85679ee076532c10613c0c60dc5f68a5ada1e13d22cf84b"
+    },
+    "assets/devices/models/xiaomi-pad-6.b57e1f87009c.glb.gz": {
+      "sha256": "b57e1f87009c75316cc85aaf39cd216f8c4f03ef311a4fbaf55b38d55a8c88f5",
+      "bytes": 378247,
+      "glbSha256": "b6266af4a27b8cb72ea97a9af051824a06c4c84a31b1bdc9f3b44c291cf35668"
+    },
+    "assets/devices/models/xiaomi-pad-6s-pro-12-4.cd35db1ca833.glb.gz": {
+      "sha256": "cd35db1ca83365971c3bea3e764dd21fb844617e3594adaf38257660d7b73b7b",
+      "bytes": 517061,
+      "glbSha256": "1282c7de56c67c3db8ca43072c8073c811f28dd62aded311d7c527ebd6708799"
+    },
+    "assets/devices/models/xiaomi-pad-7-pro.8386824fd086.glb.gz": {
+      "sha256": "8386824fd086349c71ed6784b7868c714dd90103803f434483d7f67af3c0007c",
+      "bytes": 378885,
+      "glbSha256": "22149de01d268a200682c2358570d8c0a98231744ec8264865bbb1bcf32b8aa1"
+    },
+    "assets/devices/models/xiaomi-pad-7.c6d898ddb1f7.glb.gz": {
+      "sha256": "c6d898ddb1f781a22d6053b490a50d83b61a9889b0217c3d8c87cc10f53f88e3",
+      "bytes": 378948,
+      "glbSha256": "e132cb8cef9deff847ed7868e5d2f6cebec866231ae71bee86099c737723fddf"
     }
   }
 }

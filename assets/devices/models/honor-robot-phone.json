@@ -1,0 +1,365 @@
+{
+  "id": "honor-robot-phone",
+  "name": "HONOR Robot Phone (MWC promotional estimate)",
+  "state": "default",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        1260,
+        2750
+      ],
+      "size_mm": [
+        71.47636363636364,
+        156.0
+      ],
+      "center_mm": [
+        0.0,
+        0.0,
+        4.46999979019165
+      ],
+      "corner_radius_mm": 6.1,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0,
+      "frame_bounds_mm": [
+        2.511818181818178,
+        3.9000000000000057,
+        71.47636363636364,
+        156.0
+      ],
+      "frame_screen_px": null,
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "width": 76.5,
+        "height": 163.8,
+        "depth": 8.9,
+        "corner_radius": 8.611818181818178,
+        "edge_roll": 0.55,
+        "front_rail_mm": 0.45,
+        "corner_radii_mm": [
+          8.611818181818178,
+          8.611818181818178,
+          8.611818181818178,
+          8.611818181818178
+        ]
+      },
+      "cutouts": [
+        {
+          "center_mm": [
+            0,
+            73.7
+          ],
+          "radius_mm": 1.25
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "body_mm": {
+    "width": 76.5,
+    "height": 163.8,
+    "depth": 8.9,
+    "corner_radius": 8.611818181818178,
+    "edge_roll": 0.55,
+    "front_rail_mm": 0.45,
+    "corner_radii_mm": [
+      8.611818181818178,
+      8.611818181818178,
+      8.611818181818178,
+      8.611818181818178
+    ]
+  },
+  "icon_morph": {
+    "windows": 0,
+    "kind": "phone"
+  },
+  "articulation": null,
+  "robot_motion": {
+    "animation": "Robot deploy",
+    "fps": 30,
+    "frame_start": 1,
+    "frame_end": 121,
+    "duration_seconds": 4,
+    "stowed_frame": 1,
+    "deployed_frame": 121,
+    "glb_time_start_seconds": 0.03333333333333333,
+    "glb_time_end_seconds": 4.033333333333333,
+    "deployed_progress": 1,
+    "progress": "0 stowed; 1 deployed; reverse same clip to stow",
+    "body_fixed": true,
+    "island_fixed": true,
+    "joints": [
+      {
+        "node": "Robot flip hinge",
+        "parent": "Body",
+        "axis": "X",
+        "local_position_mm": [
+          17.500000074505806,
+          77.50000059604645,
+          -1.500000013038516
+        ]
+      },
+      {
+        "node": "Robot pan motor",
+        "parent": "Robot flip hinge",
+        "axis": "Y",
+        "local_position_mm": [
+          0.0,
+          -5.499999970197678,
+          0.0
+        ]
+      },
+      {
+        "node": "Robot pitch motor",
+        "parent": "Robot pan motor",
+        "axis": "X",
+        "local_position_mm": [
+          0.0,
+          -18.50000023841858,
+          0.0
+        ]
+      },
+      {
+        "node": "Robot optical roll motor",
+        "parent": "Robot pitch motor",
+        "axis": "Z",
+        "local_position_mm": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "shutter_node": "Robot dock shutter",
+    "optical_axis_node": "Robot optical axis",
+    "optical_forward_local": [
+      0,
+      0,
+      -1
+    ],
+    "keyframes": [
+      {
+        "frame": 1,
+        "time_seconds": 0.0,
+        "pose": "stowed",
+        "flip_deg": 0,
+        "pan_deg": 0,
+        "pitch_deg": 0,
+        "roll_deg": 0,
+        "shutter_open": 0
+      },
+      {
+        "frame": 19,
+        "time_seconds": 0.6,
+        "pose": "dock open",
+        "flip_deg": 0,
+        "pan_deg": 0,
+        "pitch_deg": 0,
+        "roll_deg": 0,
+        "shutter_open": 1
+      },
+      {
+        "frame": 40,
+        "time_seconds": 1.3,
+        "pose": "outward clearance",
+        "flip_deg": 65,
+        "pan_deg": 0,
+        "pitch_deg": 0,
+        "roll_deg": 0,
+        "shutter_open": 1
+      },
+      {
+        "frame": 64,
+        "time_seconds": 2.1,
+        "pose": "rising",
+        "flip_deg": 125,
+        "pan_deg": 0,
+        "pitch_deg": 0,
+        "roll_deg": 0,
+        "shutter_open": 1
+      },
+      {
+        "frame": 85,
+        "time_seconds": 2.8,
+        "pose": "deployed neutral",
+        "flip_deg": 180,
+        "pan_deg": 0,
+        "pitch_deg": 0,
+        "roll_deg": 0,
+        "shutter_open": 1
+      },
+      {
+        "frame": 103,
+        "time_seconds": 3.4,
+        "pose": "tracking",
+        "flip_deg": 180,
+        "pan_deg": 28,
+        "pitch_deg": -12,
+        "roll_deg": 10,
+        "shutter_open": 1
+      },
+      {
+        "frame": 121,
+        "time_seconds": 4.0,
+        "pose": "deployed",
+        "flip_deg": 180,
+        "pan_deg": 0,
+        "pitch_deg": 0,
+        "roll_deg": 0,
+        "shutter_open": 1
+      }
+    ],
+    "limitations": "Reconstructed promotional geometry; estimated hidden pivots and clearances, not validated production mechanical envelope."
+  },
+  "panels": [],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/honor-robot-phone-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "logo": "logo",
+    "arm": "arm",
+    "black": "black",
+    "flash": "flash"
+  },
+  "finishes": [
+    {
+      "name": "Black",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.27450980392156865,
+            0.3215686274509804,
+            0.38823529411764707
+          ],
+          "metal": 0.12,
+          "rough": 0.42
+        },
+        "rail": {
+          "rgb": [
+            0.27450980392156865,
+            0.3215686274509804,
+            0.38823529411764707
+          ],
+          "metal": 0.8,
+          "rough": 0.25
+        },
+        "bar": {
+          "rgb": [
+            0.055,
+            0.062,
+            0.08
+          ],
+          "metal": 0.15,
+          "rough": 0.22
+        },
+        "logo": {
+          "rgb": [
+            0.3109803921568628,
+            0.33686274509803926,
+            0.3735294117647059
+          ],
+          "metal": 0.45,
+          "rough": 0.3
+        },
+        "arm": {
+          "rgb": [
+            0.24352941176470588,
+            0.2647058823529412,
+            0.29470588235294115
+          ],
+          "metal": 0.8,
+          "rough": 0.28
+        }
+      }
+    },
+    {
+      "name": "White",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.8549019607843137,
+            0.8588235294117647,
+            0.8627450980392157
+          ],
+          "metal": 0.12,
+          "rough": 0.42
+        },
+        "rail": {
+          "rgb": [
+            0.8549019607843137,
+            0.8588235294117647,
+            0.8627450980392157
+          ],
+          "metal": 0.8,
+          "rough": 0.25
+        },
+        "bar": {
+          "rgb": [
+            0.055,
+            0.062,
+            0.08
+          ],
+          "metal": 0.15,
+          "rough": 0.22
+        },
+        "logo": {
+          "rgb": [
+            0.5129411764705882,
+            0.5152941176470588,
+            0.5176470588235295
+          ],
+          "metal": 0.45,
+          "rough": 0.3
+        },
+        "arm": {
+          "rgb": [
+            0.5047058823529411,
+            0.5064705882352941,
+            0.5082352941176471
+          ],
+          "metal": 0.8,
+          "rough": 0.28
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/honor-robot-phone.d66b6f260f44.glb.gz",
+  "sha256": "d66b6f260f44f1e499f8edc680ed17d963a954ec6b0c5058c24dd34df497427f",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/honor-robot-phone.json",
+    "accuracy": {
+      "body_dimensions": "76.5 x 163.8 x 8.9 mm is an estimated scale, not a published measurement. HONOR global spec page had empty dimension values on 2026-10-23.",
+      "screen_geometry": "71.48 x 156 mm opening, 6.1 mm corners and 1260 x 2750 texture canvas are estimates, not confirmed panel size or native resolution.",
+      "camera_geometry": "Reconstruction of MWC promotional TVC and transparent gimbal render. Top-edge flip anchor, pan base, dogleg side bracket, pitch motor and optical-axis roll stay connected. A recessed rear pocket accommodates the stowed mechanism inside the chassis. Link lengths, hidden axes, cavity depth, bump depths and motor internals are estimated; not OEM CAD.",
+      "motion": "Stowed rear-facing camera swings outward behind body before rising above top edge. Head faces display side when deployed. Shutter clears before flip; tracking angles return to neutral for stow. Timing and clearances are illustrative.",
+      "branding": "HONOR vector outline from Documents brand_logos.json; lower rear placement/size estimated from collection icon. Finish-aware tones use make_device_branding.tone/apply. MWC footage also shows an alpha symbol, omitted to preserve requested collection HONOR branding.",
+      "finishes": "Black/White collection names and existing swatches; approximate reflective arm/rail and satin rear, not calibrated materials.",
+      "omissions": "Hidden actuator gearing, flex cables, seals, production camera specifications, ports and tiny inscriptions omitted. Promotional reference differs from subsequent commercial product; this profile deliberately describes the MWC design."
+    },
+    "sources": [
+      "https://www.honor.com/global/events/honor-robot-phone/",
+      "https://www-file.honor.com/content/dam/honor/common/events/2026/honor-robot-phone-2026/video/video-tvc-pc-all.mp4",
+      "https://www-file.honor.com/content/dam/honor/common/events/2026/honor-robot-phone-2026/imgs/section-gimbal/honorrobotphone-gimbal-phone-1@2x.jpg",
+      "https://www.honor.com/global/phones/honor-robot-phone/spec/",
+      "Documents notes/src/main/assets/device-icons/catalog.json: honor_robot_phone",
+      "Documents brand_colors.json and brand_logos.json"
+    ]
+  }
+}

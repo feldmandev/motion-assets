@@ -1,0 +1,186 @@
+{
+  "id": "xiaomi-pad-6s-pro-12-4",
+  "name": "Xiaomi Pad 6S Pro 12.4",
+  "state": "default",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        2032,
+        3048
+      ],
+      "size_mm": [
+        174.70837380309814,
+        262.06256070464724
+      ],
+      "center_mm": [
+        0.0,
+        0.0,
+        3.1649997234344482
+      ],
+      "corner_radius_mm": 1.6812803523236255,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0,
+      "frame_bounds_mm": [
+        8.435813098450936,
+        8.318719647676375,
+        174.70837380309814,
+        262.06256070464724
+      ],
+      "frame_screen_px": null,
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "width": 191.58,
+        "height": 278.7,
+        "depth": 6.26,
+        "corner_radius": 10.0,
+        "edge_roll": 0.28,
+        "front_rail_mm": 0.4,
+        "rear_style": "unibody",
+        "corner_radii_mm": [
+          10.0,
+          10.0,
+          10.0,
+          10.0
+        ]
+      },
+      "cutouts": [
+        {
+          "center_mm": [
+            91.57209345077455,
+            0
+          ],
+          "radius_mm": 1.1
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "body_mm": {
+    "width": 191.58,
+    "height": 278.7,
+    "depth": 6.26,
+    "corner_radius": 10.0,
+    "edge_roll": 0.28,
+    "front_rail_mm": 0.4,
+    "rear_style": "unibody",
+    "corner_radii_mm": [
+      10.0,
+      10.0,
+      10.0,
+      10.0
+    ]
+  },
+  "icon_morph": {
+    "windows": 1,
+    "kind": "tablet"
+  },
+  "articulation": null,
+  "robot_motion": null,
+  "panels": [],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/xiaomi-pad-6s-pro-12-4-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "logo": "logo",
+    "contact": "contact",
+    "lens_rim": "lens_rim",
+    "black": "black",
+    "flash": "flash"
+  },
+  "finishes": [
+    {
+      "name": "Graphite Gray",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.4666666666666667,
+            0.4980392156862745,
+            0.5294117647058824
+          ],
+          "metal": 0.65,
+          "rough": 0.43
+        },
+        "rail": {
+          "rgb": [
+            0.4666666666666667,
+            0.4980392156862745,
+            0.5294117647058824
+          ],
+          "metal": 0.8,
+          "rough": 0.32
+        },
+        "bar": {
+          "rgb": [
+            0.045,
+            0.05,
+            0.055
+          ],
+          "metal": 0.55,
+          "rough": 0.28
+        },
+        "logo": {
+          "rgb": [
+            0.224,
+            0.23905882352941177,
+            0.2541176470588235
+          ],
+          "metal": 0.25,
+          "rough": 0.44
+        },
+        "contact": {
+          "rgb": [
+            0.62,
+            0.64,
+            0.65
+          ],
+          "metal": 0.8,
+          "rough": 0.3
+        },
+        "lens_rim": {
+          "rgb": [
+            0.14,
+            0.16,
+            0.18
+          ],
+          "metal": 0.7,
+          "rough": 0.25
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/xiaomi-pad-6s-pro-12-4.cd35db1ca833.glb.gz",
+  "sha256": "cd35db1ca83365971c3bea3e764dd21fb844617e3594adaf38257660d7b73b7b",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/xiaomi-pad-6s-pro-12-4.json",
+    "accuracy": {
+      "body_dimensions": "Xiaomi official metric enclosure dimensions; no stylized icon body dimensions. Corner radius and edge roll are photoestimates, not OEM CAD.",
+      "screen_geometry": "Official native portrait pixels and full rectangular display diagonal; estimated concentric corner radii and bezel selfie aperture. Pixel aspect preserved exactly.",
+      "camera_geometry": "Official product renders measured in this manifest. Camera width, height, margins and aperture positions are photoestimates; Pad 7 images are oblique and partly occluded. Bump depths 1.4-1.7mm, roll, rings, optics and decorative circles estimated; no OEM CAD claim.",
+      "finishes": "All ten existing icon finishes correspond to official color names. sRGB swatches reused from Documents brand_colors.json; metalness and roughness are visual estimates, not calibrated materials.",
+      "branding": "No Xiaomi entry exists in Documents brand_logos.json. Xiaomi wordmark traced from official Pad 6 rear render, complete letter outlines and counters constrained-triangulated; bottom-to-top in portrait and upright left-to-right in landscape, finish-tinted dark gray. Placement/size estimated.",
+      "omissions": "Ports, speaker grilles, antenna breaks, top-edge power key, small camera inscriptions and microscopic marks omitted. Pad 6 flash represented by a round emitter within its pill-shaped photographic highlight. Reference photographs are research-only and excluded from exports."
+    },
+    "sources": [
+      "https://www.mi.com/it/product/xiaomi-pad-6s-pro-124/specs/",
+      "https://i02.appmifile.com/577_operator_sg/17/02/2024/375ef404ff6064a17f38bf8cd88f4fbe.png"
+    ]
+  }
+}

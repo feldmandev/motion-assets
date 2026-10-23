@@ -1,0 +1,203 @@
+{
+  "verified_on": "2026-10-23",
+  "readiness": "Ready for local review; provisional photoestimated models, not OEM CAD.",
+  "scope": [
+    "xiaomi-pad-6",
+    "xiaomi-pad-6s-pro-12-4",
+    "xiaomi-pad-7",
+    "xiaomi-pad-7-pro"
+  ],
+  "changes": [
+    "Replaced incomplete unconstrained wordmark triangles with complete constrained triangulation of six official-render letter silhouettes and counters. Source coordinates explicitly X right/Y down for upright landscape view.",
+    "Corrected Pad 6S Pro secondary camera kind from ultrawide to depth without changing optical geometry.",
+    "Refreshed only Xiaomi logo meshes, GLB/Blend assets, rear/rear-angle/finish previews, and associated accuracy metadata."
+  ],
+  "verification": [
+    {
+      "id": "xiaomi-pad-6",
+      "screen_aspect": true,
+      "exported_screen_bounds": true,
+      "enclosure_bounds": true,
+      "camera_clearance_mm": 5.852000000000007,
+      "triangles": 58302,
+      "glb_bytes": 1187436,
+      "gallery_model": "xiaomi_pad_6",
+      "finishes": [
+        "Gravity Gray",
+        "Gold",
+        "Mist Blue"
+      ],
+      "wordmark_triangles": 236,
+      "reference_rasters_embedded": false,
+      "landscape_previews": true,
+      "non_logo_mesh_positions_unchanged": true,
+      "sources": [
+        "https://www.mi.com/global/product/xiaomi-pad-6/specs/",
+        "https://i02.appmifile.com/253_operator_sg/28/06/2023/ce7011d9e5c3e12a3818a2d911c0fb16.png"
+      ],
+      "wordmark_normals_rear_facing": true
+    },
+    {
+      "id": "xiaomi-pad-6s-pro-12-4",
+      "screen_aspect": true,
+      "exported_screen_bounds": true,
+      "enclosure_bounds": true,
+      "camera_clearance_mm": 8.352,
+      "triangles": 75960,
+      "glb_bytes": 1512088,
+      "gallery_model": "xiaomi_pad_6s_pro_12_4",
+      "finishes": [
+        "Graphite Gray"
+      ],
+      "wordmark_triangles": 236,
+      "reference_rasters_embedded": false,
+      "landscape_previews": true,
+      "non_logo_mesh_positions_unchanged": true,
+      "sources": [
+        "https://www.mi.com/it/product/xiaomi-pad-6s-pro-124/specs/",
+        "https://i02.appmifile.com/577_operator_sg/17/02/2024/375ef404ff6064a17f38bf8cd88f4fbe.png"
+      ],
+      "wordmark_normals_rear_facing": true
+    },
+    {
+      "id": "xiaomi-pad-7",
+      "screen_aspect": true,
+      "exported_screen_bounds": true,
+      "enclosure_bounds": true,
+      "camera_clearance_mm": 7.6519999999999975,
+      "triangles": 58808,
+      "glb_bytes": 1206100,
+      "gallery_model": "xiaomi_pad_7",
+      "finishes": [
+        "Gray",
+        "Blue",
+        "Green"
+      ],
+      "wordmark_triangles": 236,
+      "reference_rasters_embedded": false,
+      "landscape_previews": true,
+      "non_logo_mesh_positions_unchanged": true,
+      "sources": [
+        "https://www.mi.com/global/product/xiaomi-pad-7/specs/",
+        "https://i02.appmifile.com/603_operator_sg/28/02/2025/3a1977bd13ab44d01273c6512fab01df.png"
+      ],
+      "wordmark_normals_rear_facing": true
+    },
+    {
+      "id": "xiaomi-pad-7-pro",
+      "screen_aspect": true,
+      "exported_screen_bounds": true,
+      "enclosure_bounds": true,
+      "camera_clearance_mm": 7.6519999999999975,
+      "triangles": 58808,
+      "glb_bytes": 1206108,
+      "gallery_model": "xiaomi_pad_7_pro",
+      "finishes": [
+        "Gray",
+        "Blue",
+        "Green"
+      ],
+      "wordmark_triangles": 236,
+      "reference_rasters_embedded": false,
+      "landscape_previews": true,
+      "non_logo_mesh_positions_unchanged": true,
+      "sources": [
+        "https://www.mi.com/global/product/xiaomi-pad-7-pro/specs/",
+        "https://i02.appmifile.com/149_operator_sg/19/02/2025/5f0e3fbf0973079fc48af2a82819c602.png"
+      ],
+      "wordmark_normals_rear_facing": true
+    }
+  ],
+  "logo_refresh": [
+    {
+      "id": "xiaomi-pad-6",
+      "non_logo_mesh_positions_unchanged": true,
+      "wordmark_triangles": 236
+    },
+    {
+      "id": "xiaomi-pad-6s-pro-12-4",
+      "non_logo_mesh_positions_unchanged": true,
+      "wordmark_triangles": 236
+    },
+    {
+      "id": "xiaomi-pad-7",
+      "non_logo_mesh_positions_unchanged": true,
+      "wordmark_triangles": 236
+    },
+    {
+      "id": "xiaomi-pad-7-pro",
+      "non_logo_mesh_positions_unchanged": true,
+      "wordmark_triangles": 236
+    }
+  ],
+  "accuracy": {
+    "body_dimensions": "Xiaomi official metric enclosure dimensions; no stylized icon body dimensions. Corner radius and edge roll are photoestimates, not OEM CAD.",
+    "screen_geometry": "Official native portrait pixels and full rectangular display diagonal; estimated concentric corner radii and bezel selfie aperture. Pixel aspect preserved exactly.",
+    "camera_geometry": "Official product renders measured in this manifest. Camera width, height, margins and aperture positions are photoestimates; Pad 7 images are oblique and partly occluded. Bump depths 1.4-1.7mm, roll, rings, optics and decorative circles estimated; no OEM CAD claim.",
+    "finishes": "All ten existing icon finishes correspond to official color names. sRGB swatches reused from Documents brand_colors.json; metalness and roughness are visual estimates, not calibrated materials.",
+    "branding": "No Xiaomi entry exists in Documents brand_logos.json. Xiaomi wordmark traced from official Pad 6 rear render, complete letter outlines and counters constrained-triangulated; bottom-to-top in portrait and upright left-to-right in landscape, finish-tinted dark gray. Placement/size estimated.",
+    "omissions": "Ports, speaker grilles, antenna breaks, top-edge power key, small camera inscriptions and microscopic marks omitted. Pad 6 flash represented by a round emitter within its pill-shaped photographic highlight. Reference photographs are research-only and excluded from exports."
+  },
+  "contact_sheet": "research/xiaomi-tablets-final-contact.jpg",
+  "shared_code_modified": false,
+  "gallery_or_public_repository_modified": false,
+  "published": false,
+  "visual_review": {
+    "completed": true,
+    "views": "All four front/rear views and all ten finish previews inspected in final contact sheet; Pad 7 Pro rear inspected at original resolution.",
+    "wordmark": "Complete upright xiaomi wordmark; six letter silhouettes and letter counters retained.",
+    "remaining_limitations": "Small camera geometry and finish materials remain documented photoestimates. Existing omissions are listed in accuracy.omissions."
+  },
+  "blender": {
+    "version": "5.2.2 LTS",
+    "build_hash": "d13f752e3b9c",
+    "refresh_markers": 4,
+    "preview_markers": 4,
+    "normal_quit": true,
+    "warning": "Existing Material.use_nodes/World.use_nodes deprecation warnings; no geometry/export failures."
+  },
+  "files_touched": [
+    "make_xiaomi_tablet_profiles.py",
+    "research/xiaomi-tablet-measurements.json",
+    "research/xiaomi-tablets-final-review.json",
+    "research/xiaomi-tablets-final-contact.jpg",
+    "profiles/xiaomi-pad-6.json",
+    "exports/xiaomi-pad-6/model.blend",
+    "exports/xiaomi-pad-6/model.glb",
+    "exports/xiaomi-pad-6/device.json",
+    "exports/xiaomi-pad-6/rear.png",
+    "exports/xiaomi-pad-6/rear-angle.png",
+    "exports/xiaomi-pad-6/geometry-checks.json",
+    "exports/xiaomi-pad-6/finish-0.png",
+    "exports/xiaomi-pad-6/finish-1.png",
+    "exports/xiaomi-pad-6/finish-2.png",
+    "profiles/xiaomi-pad-6s-pro-12-4.json",
+    "exports/xiaomi-pad-6s-pro-12-4/model.blend",
+    "exports/xiaomi-pad-6s-pro-12-4/model.glb",
+    "exports/xiaomi-pad-6s-pro-12-4/device.json",
+    "exports/xiaomi-pad-6s-pro-12-4/rear.png",
+    "exports/xiaomi-pad-6s-pro-12-4/rear-angle.png",
+    "exports/xiaomi-pad-6s-pro-12-4/geometry-checks.json",
+    "exports/xiaomi-pad-6s-pro-12-4/finish-0.png",
+    "profiles/xiaomi-pad-7.json",
+    "exports/xiaomi-pad-7/model.blend",
+    "exports/xiaomi-pad-7/model.glb",
+    "exports/xiaomi-pad-7/device.json",
+    "exports/xiaomi-pad-7/rear.png",
+    "exports/xiaomi-pad-7/rear-angle.png",
+    "exports/xiaomi-pad-7/geometry-checks.json",
+    "exports/xiaomi-pad-7/finish-0.png",
+    "exports/xiaomi-pad-7/finish-1.png",
+    "exports/xiaomi-pad-7/finish-2.png",
+    "profiles/xiaomi-pad-7-pro.json",
+    "exports/xiaomi-pad-7-pro/model.blend",
+    "exports/xiaomi-pad-7-pro/model.glb",
+    "exports/xiaomi-pad-7-pro/device.json",
+    "exports/xiaomi-pad-7-pro/rear.png",
+    "exports/xiaomi-pad-7-pro/rear-angle.png",
+    "exports/xiaomi-pad-7-pro/geometry-checks.json",
+    "exports/xiaomi-pad-7-pro/finish-0.png",
+    "exports/xiaomi-pad-7-pro/finish-1.png",
+    "exports/xiaomi-pad-7-pro/finish-2.png"
+  ]
+}

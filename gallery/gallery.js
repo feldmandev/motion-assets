@@ -64,4 +64,4 @@ document.querySelector('#shapes input').addEventListener('input', shapes);
 document.querySelectorAll('#fonts input').forEach(input => input.addEventListener('input', fonts));
 document.querySelectorAll('#symbols input,#symbols select').forEach(input => input.addEventListener('input', () => { symbolLimit=160; symbols(); }));
 document.querySelector('#more').addEventListener('click', () => {symbolLimit+=160;symbols();});
-fetch('manifest.json').then(response=>response.json()).then(data=>document.querySelector('#version').textContent=`v${data.version}`);
+fetch('manifest.json', {cache:'no-store'}).then(response=>response.json()).then(data=>document.querySelector('#version').textContent=`v${data.version}`);

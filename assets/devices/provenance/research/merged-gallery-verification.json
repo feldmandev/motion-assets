@@ -1,0 +1,101 @@
+{
+  "verified_on": "2026-10-23",
+  "source_gallery": {
+    "families": 386,
+    "model_controls": 184,
+    "lazy_model_states": 203
+  },
+  "flat_paint_order_fix": {
+    "R1": "OnePlus12 bridge now behind circular housing at t0 and .25; visually inspected",
+    "R2": "iPhone17Pro logo now above rear insert at t0 and .01; visually inspected"
+  },
+  "morph_checks": [
+    {
+      "id": "oneplus-12",
+      "finite_samples": [
+        0,
+        0.25,
+        0.5,
+        0.75,
+        1
+      ],
+      "exact_original_refs_restored": true,
+      "controls_restored": true
+    },
+    {
+      "id": "iphone-17-pro",
+      "finite_samples": [
+        0,
+        0.25,
+        0.5,
+        0.75,
+        1
+      ],
+      "exact_original_refs_restored": true,
+      "controls_restored": true
+    },
+    {
+      "id": "galaxy-s21-ultra",
+      "finite_samples": [
+        0,
+        0.25,
+        0.5,
+        0.75,
+        1
+      ],
+      "exact_original_refs_restored": true,
+      "controls_restored": true
+    },
+    {
+      "id": "galaxy-s24-ultra",
+      "finite_samples": [
+        0,
+        0.25,
+        0.5,
+        0.75,
+        1
+      ],
+      "exact_original_refs_restored": true,
+      "controls_restored": true
+    },
+    {
+      "id": "galaxy-a57",
+      "finite_samples": [
+        0,
+        0.25,
+        0.5,
+        0.75,
+        1
+      ],
+      "exact_original_refs_restored": true,
+      "controls_restored": true
+    }
+  ],
+  "robot_clip_times": [
+    0.03333333333333333,
+    2.033333333333333,
+    4.033333333333333
+  ],
+  "robot_label": "Stow camera at deployed endpoint",
+  "xiaomi_pad7pro": {
+    "loaded": true,
+    "landscape_dimensions_m": [
+      0.25126001238822937,
+      0.17368000507053877,
+      0.008047500027714722
+    ],
+    "finishes": [
+      "Gray",
+      "Blue",
+      "Green"
+    ]
+  },
+  "runtime_errors": [],
+  "limits": [
+    "Semantic candidates are not all visually accepted",
+    "Complex Nothing, articulated/fold, robot and laptop icons retain ordinary Rotate",
+    "Apple17Pro rear-insert maps full rear glass",
+    "OnePlus12 rectangular source glass maps circular model window",
+    "Existing Pixel geometry accuracy under separate official-frame calibration; no new CAD accuracy claim"
+  ]
+}

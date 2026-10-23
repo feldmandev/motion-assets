@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": "0.1.2",
+  "version": "0.1.3",
   "repository": "https://github.com/feldmandev/motion-assets",
   "modules": [
     "shapes",
@@ -33,6 +33,10 @@
       "sha256": "52080bb4c93cb26f74b31495480e31f323738258028d9734548e0458057dccd9",
       "bytes": 502
     },
+    "assets/devices/build_honor_robot.py": {
+      "sha256": "eef5593303aa497d30b6d8fbae71b4e69df2648c2c23e5ea5be8efe74386aa26",
+      "bytes": 794
+    },
     "assets/devices/build_iphones.py": {
       "sha256": "bd6c1b6bef6df755902a279c0c0a37f250c8b8c136ac6d3209131aa05a5d56f7",
       "bytes": 1143
@@ -42,8 +46,8 @@
       "bytes": 11162
     },
     "assets/devices/catalog.json": {
-      "sha256": "47513371ae15c33431993f71562a6b01b3ddbb11abd6fdbc5b09e74ec5b3b246",
-      "bytes": 476170
+      "sha256": "dae5ab84616fcaee49f3aad95ea9db04efcf0a43c31b0177c3997a5105c7247e",
+      "bytes": 6439278
     },
     "assets/devices/fold_centering.js": {
       "sha256": "4a351ae0107277fefe9d510f44f3cc0902f9e187b2efc07d2713b9237c634758",
@@ -569,6 +573,10 @@
       "sha256": "8a1de8b71fa8c30d650524552ed705f3400e99a6c72664497b5b7026b17edce4",
       "bytes": 5493
     },
+    "assets/devices/frames/honor-robot-phone-0.svg": {
+      "sha256": "088491c27a42812fa2b54be67f59ba2647e33900a106bf7986cf1b6f4a9e6b63",
+      "bytes": 5385
+    },
     "assets/devices/frames/iphone-11-0.svg": {
       "sha256": "0deb35b8e16e56b23c13244477435381580a5b8515213cda25ca3d43c159229e",
       "bytes": 7247
@@ -920,6 +928,22 @@
     "assets/devices/frames/pixel-fold-unfolded-1.svg": {
       "sha256": "cbc0f101f38be988189bd94a96e8a5ac7b25e6d91c012260b0407dc61f134a79",
       "bytes": 583900
+    },
+    "assets/devices/frames/xiaomi-pad-6-0.svg": {
+      "sha256": "a2bb649b123a3a00c50dcfc56d0dd999e0715f894c8584b986ff62237fbf5508",
+      "bytes": 5549
+    },
+    "assets/devices/frames/xiaomi-pad-6s-pro-12-4-0.svg": {
+      "sha256": "249d1e2849352727631bce65282e0b9cd5dbfc707b71418779f50d3a4f45e406",
+      "bytes": 5556
+    },
+    "assets/devices/frames/xiaomi-pad-7-0.svg": {
+      "sha256": "090d170dfd62d169b4be9e6918472a6ff5faf68fa8946cf9723e6ce0dd6b6fd3",
+      "bytes": 5557
+    },
+    "assets/devices/frames/xiaomi-pad-7-pro-0.svg": {
+      "sha256": "090d170dfd62d169b4be9e6918472a6ff5faf68fa8946cf9723e6ce0dd6b6fd3",
+      "bytes": 5557
     },
     "assets/devices/generate_keyboard_textures.py": {
       "sha256": "20c6c8c210431ab986afd8068c9fad80b0b6e991f879a84528a6c338b0a18ba4",
@@ -4838,316 +4862,316 @@
       "bytes": 1596
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_a34_awesome_graphite_icon.svg": {
-      "sha256": "05117b7ea333fe5e8b44310814ecc368b25a5849da55bc560a11265711893958",
-      "bytes": 4677
+      "sha256": "34ac869610100e6bedc3fb68d1901aa782910aadc61ff131619542f1f403505d",
+      "bytes": 4932
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_a34_awesome_lime_icon.svg": {
-      "sha256": "b388354c00dd37998c41c4fff2d345b501f3e6b9f65cc6b86ad58a1ddcf079b4",
-      "bytes": 4677
+      "sha256": "5c35a743ae2c7fd5dadcbe469e9cdd7fcb10ddf5bea43914dfc198298c1b9756",
+      "bytes": 4932
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_a34_awesome_silver_icon.svg": {
-      "sha256": "c67344b004f0268ce4300579f2b5a569c1e1aade0c8aa856ae23d1285a5d6408",
-      "bytes": 4677
+      "sha256": "e9eddeb777dfe04e30169b012fba4bea2d231a003e606ffb907acf0bdc4964b1",
+      "bytes": 4932
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_a34_awesome_violet_icon.svg": {
-      "sha256": "8e94c95e50aaef1eb22b7d2c8a21e99fe90950947e3c1ea950062d27b721e417",
-      "bytes": 4677
+      "sha256": "08bf2c10a429573cab07cd564613f92b99853e060f44bdc86fb3c4be275de7bb",
+      "bytes": 4932
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_a34_monochrome_icon.svg": {
       "sha256": "abd55bdc279e1c9ef70fc0439d020982add90201437d91c2c96990a8b2da5dde",
       "bytes": 3697
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_a35_awesome_iceblue_icon.svg": {
-      "sha256": "1c5306e0cb17e5c680273ac7d6dac5b35e50b7e69f0c24fadccd9f4df95d370d",
-      "bytes": 4686
+      "sha256": "316aa6a8918403abffabe766df7feeda4fbb1475b05cbeacc1260d118a4c2423",
+      "bytes": 4941
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_a35_awesome_lemon_icon.svg": {
-      "sha256": "1fe2bbbf0c790a3874df0b6a6726ddd42a6ebe5f16b24c89a1622339f368d633",
-      "bytes": 4686
+      "sha256": "7d64cdce3a2491889960b50bbd2d1614c1814d382559fb120a3ebd8c72fdeee4",
+      "bytes": 4941
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_a35_awesome_lilac_icon.svg": {
-      "sha256": "7bee568eef57cbb58102021edd44d0508743dfc6da4872970bb026b422cbc5bd",
-      "bytes": 4686
+      "sha256": "ff2f66ca4a1d60368b30035ee6c320b8d1db0c612c8d0c150bf54c654f9e5483",
+      "bytes": 4941
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_a35_awesome_navy_icon.svg": {
-      "sha256": "03fbe8128e24c1ec1c106de06cbbf1a28842e74832419dd85f5faf793788a2ce",
-      "bytes": 4686
+      "sha256": "98dd76f37cbb4c2e812918e7650e6d136b470d2682151ae448ed278ad7b159b1",
+      "bytes": 4941
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_a35_monochrome_icon.svg": {
       "sha256": "46b9098fb709e6f09b7a4b3f32681c29cbc6d448f22aa586954e102a1d011dbf",
       "bytes": 3708
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_a36_awesome_black_icon.svg": {
-      "sha256": "2864677e7c2eed71526036f9ee3e7d743d0f24b8f94a793052d90fa473f64ada",
-      "bytes": 4539
+      "sha256": "ee3d5f7e52b3dcbb96223293dfbdad6b4e369762dee8fe8e4af868f58c451eb2",
+      "bytes": 4768
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_a36_awesome_lavender_icon.svg": {
-      "sha256": "d1de76c3a8b296b5974a005eea937b0340c0cff28c13944b6ba114383759327d",
-      "bytes": 4539
+      "sha256": "55766e36cd5b1db7894093f643dda105a011d70af6b8cb86b3b0c127b129807f",
+      "bytes": 4768
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_a36_awesome_lime_icon.svg": {
-      "sha256": "858f1aa07c34a40d703b161a592da8365cc866a0271614eba2b99711822eac48",
-      "bytes": 4539
+      "sha256": "dc0920cef5fc179025deb49e4144d2582c5519d439abc7bb3ae40924a88ff818",
+      "bytes": 4768
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_a36_awesome_white_icon.svg": {
-      "sha256": "81f59d797668846b890385b4d75702a3232e31bc03de3524c45dc7dd405571be",
-      "bytes": 4539
+      "sha256": "ae769264f17af53547e3fd6803576f820668ebe75ea6b0bbc0d688cf2c85c415",
+      "bytes": 4768
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_a36_monochrome_icon.svg": {
       "sha256": "f370be463106dcd21e78ec299560944c9f8f7cd0ac443348e2868b03b40bfa84",
       "bytes": 3648
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_a37_charcoal_icon.svg": {
-      "sha256": "c7e35ee5227b3451c95c628c2f29c93874b9eb75a89735ca2ee9202e1e5da2f0",
-      "bytes": 4532
+      "sha256": "0a9854a892653b46b50c4265c99365bf63bbd7e18c227d4cb07a94693a6b5295",
+      "bytes": 4761
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_a37_graygreen_icon.svg": {
-      "sha256": "a2d97eb425c48bf8c6313c756c2e881b0274d6c8574570db77e0277bec5d740e",
-      "bytes": 4532
+      "sha256": "9ca889aa6fd77e5d127b8062ecf3a3b23da8c66b8d2d0135933f19fdfefcf75f",
+      "bytes": 4761
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_a37_light_violet_icon.svg": {
-      "sha256": "81dbdb8df10d66608ced5b69babfd51366bdad676e0c14c71169d23ab1ff8478",
-      "bytes": 4532
+      "sha256": "29b2f245eee3abecb2ee7c0d0e62323891ee811d048b227cbff6905e6e23993a",
+      "bytes": 4761
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_a37_monochrome_icon.svg": {
       "sha256": "2908b9c6a274e8600b13fa09f2382d9a5d17cd6b68279ab313c53c551a9ca97c",
       "bytes": 3629
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_a37_white_icon.svg": {
-      "sha256": "af0fd6236c0c976cb94239ac2f15a07cb114a3f10dad0840bf13ef966b9516ab",
-      "bytes": 4532
+      "sha256": "f62ba12a71661fc889c606afa9127868323f818c4a2b34937e09396d42e118eb",
+      "bytes": 4761
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_a54_awesome_graphite_icon.svg": {
-      "sha256": "0ea65b02e0a9d6ea03c3f17a745c54f32a1f323fc0a44c5ddc5e4335fdc92819",
-      "bytes": 4668
+      "sha256": "a64299a47183a51e1542bc860e2c1b5bf38039e3c6d107d05d538be3bc239d38",
+      "bytes": 4923
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_a54_awesome_lime_icon.svg": {
-      "sha256": "28cea22de190873d9db4731aa0fd20863f6d14d42660ae9614871600be7d3369",
-      "bytes": 4668
+      "sha256": "809b2fff7086708a8bd250bd99c7c7c427bbebedf4978617c64b4646389f5426",
+      "bytes": 4923
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_a54_awesome_violet_icon.svg": {
-      "sha256": "9d1cd041d9b76edab1c17d3879f303b48250938cbb89c2be1b3f8c9a04a141df",
-      "bytes": 4668
+      "sha256": "6169d56101cbea16ad7da5e40a94fafb19a7f3063c0f99ebe981234889c6c17d",
+      "bytes": 4923
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_a54_awesome_white_icon.svg": {
-      "sha256": "278c11e646d56184111eb466c3e8ad55c11d4458a798974bd5a3c27489893704",
-      "bytes": 4668
+      "sha256": "1ccd9f79025b86525f9606b578436f5358f6430969b7fda17182fee70fd20e71",
+      "bytes": 4923
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_a54_monochrome_icon.svg": {
       "sha256": "684fd99e13c30c0c85fcd5ce5d8b044d95cf7d109f8b10be5e3bfe0341c65bb9",
       "bytes": 3689
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_a55_awesome_iceblue_icon.svg": {
-      "sha256": "946c9d4c2259694964dc762e86e2858e6398866cab1dd4fc73e90ecf19677aa6",
-      "bytes": 4701
+      "sha256": "5e6d72dad4d833bb5312d4e9cfe9c54be8c24415bbe85d6828c5d5b0e097447b",
+      "bytes": 4956
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_a55_awesome_lemon_icon.svg": {
-      "sha256": "5e2e06dd10fe896a7ba4ff7aeb666fe2506088f595bab2b13064db4570fdef2e",
-      "bytes": 4701
+      "sha256": "795f6d2a5f0c5611b575489260df7e59d75045185f4be107136a07c66c7e69f1",
+      "bytes": 4956
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_a55_awesome_lilac_icon.svg": {
-      "sha256": "95e406390d3a00d53dca4aac04777a491b8fb2230b8c594a5d2c9a107943f5e4",
-      "bytes": 4701
+      "sha256": "665f2af001537a1d591fd5fa9ea02ae418a36888ad46d9e0b38dc95c3349a82c",
+      "bytes": 4956
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_a55_awesome_navy_icon.svg": {
-      "sha256": "0e71d69df8b109c51a7e0ef07228717c9dd1fecb7c800000269da473d81c47e7",
-      "bytes": 4701
+      "sha256": "8ffaa76b6ed5ebb06d080e136b4d386e45490050b43c9e2aaf51f335b43873a3",
+      "bytes": 4956
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_a55_monochrome_icon.svg": {
       "sha256": "e78931b359dbae2e862688e6dcbf4dc2ea64c78680f839c1c95f8004ead7b1a4",
       "bytes": 3720
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_a56_awesome_graphite_icon.svg": {
-      "sha256": "f326530a47d6b2bbbf45f687b1130ddbd0a2e154f69b7a41015643e225051fa9",
-      "bytes": 4539
+      "sha256": "a966c8e8ba44d308e346fc4e47d10b2fd8620616ae6ee9cb370ba17cd57be11b",
+      "bytes": 4768
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_a56_awesome_lightgray_icon.svg": {
-      "sha256": "51ff7af352d3210e7e08626d3648fbfab54ac8c7e6eebc8ed9b967594c069ab6",
-      "bytes": 4539
+      "sha256": "63336faeeee7b828f086dca4ed3a145589a25a3ac3c3f1233eab9e45bfddc0a9",
+      "bytes": 4768
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_a56_awesome_olive_icon.svg": {
-      "sha256": "80a6bafd8736631f42487ad4b8c104611f99444d52e16ee9e25871be0139c653",
-      "bytes": 4539
+      "sha256": "cba62debccca6185a82e353b05b5d4e0a92f3eee01548418c79167d030387300",
+      "bytes": 4768
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_a56_awesome_pink_icon.svg": {
-      "sha256": "7fc89b55c73b8db09bf52fedc8f4e2614796d0c5b4e72fe1b21b4cd6920482d5",
-      "bytes": 4539
+      "sha256": "e2d824c5a05e1c2dc2e574e8e190485db1357d3fff68024e6b264520677b13e6",
+      "bytes": 4768
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_a56_monochrome_icon.svg": {
       "sha256": "6ad4e93e2a18581a99573688df0e13a749116267b5da09735afe3d81b8d61619",
       "bytes": 3646
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_a57_gray_icon.svg": {
-      "sha256": "7ed0fba545e31bc095c73fa34df03cf8a025d4a1773e966c31f4cf33ab901599",
-      "bytes": 4526
+      "sha256": "3303a1882187e37ee6d31305d2d73122ac2b0c1758fed62f418697828d6bb376",
+      "bytes": 4755
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_a57_icyblue_icon.svg": {
-      "sha256": "e8cd8b77a05d057f20e462562328660536bfadbe56c508f0c26d12c331f772b2",
-      "bytes": 4526
+      "sha256": "c2e1a52a74e6cf4cf946486d92515feebcd6f9472ec3bf394949f103e213c5a1",
+      "bytes": 4755
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_a57_lilac_icon.svg": {
-      "sha256": "f3c29932b3ec7a8f49319717d7035adf13626dad3f0a91cd85ddb94a2f285972",
-      "bytes": 4526
+      "sha256": "e2d25e77b8eaf4f19a8f6f8f6225fd098611460db77f19386352a26cd9e0edab",
+      "bytes": 4755
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_a57_monochrome_icon.svg": {
       "sha256": "52e778d34bb0e2e43e76e5da184ab8efb53aa70207b292cfe478730e65ec4f45",
       "bytes": 3627
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_a57_navy_icon.svg": {
-      "sha256": "9c50ce81b152592cc6649a80c579ee053fec4ba2afed05653064572ad970bc31",
-      "bytes": 4526
+      "sha256": "11e2a777cc590e7f980d081348c602bb5a8df8c7f02a6ce3b5ebfe8788ea8517",
+      "bytes": 4755
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s10_5g_crown_silver_icon.svg": {
-      "sha256": "cc75123d3312c5c295c52d05dd94d49a1e689a4ef3eaed3397cde71e08b12a33",
-      "bytes": 3449
+      "sha256": "351cb16c521917fc5d368c55d01430c7abc60e80dc6139576afc844a1077d050",
+      "bytes": 3622
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s10_5g_majestic_black_icon.svg": {
-      "sha256": "6aba4ce59d52278f458a385b60a6af3cf4d15bc8d83114c5498a9f1d23f0d1c0",
-      "bytes": 3449
+      "sha256": "b8c5bf7f863b63a0f812c915d04977ecd51e0e6a34db81959fe1ee33611c4a97",
+      "bytes": 3622
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s10_5g_monochrome_icon.svg": {
       "sha256": "b152a0b357ef3124fb7ccc101490b779d3336efbcdd0bb58df528c429b0ecf13",
       "bytes": 3443
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s10_5g_royal_gold_icon.svg": {
-      "sha256": "24091df7d12c09f75a4d85601931dde7cdfa1424dd50adf1270e664e8f36f3ae",
-      "bytes": 3449
+      "sha256": "fc3547d35b985333d13242809aec68ab899a86aaf1e76ebf3350bf8bdd4666d5",
+      "bytes": 3622
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s10_flamingo_pink_icon.svg": {
-      "sha256": "1daf3bafb63ff3fa00ffe21ddb98e9e1b6b47a4d9e69ce110f62983554c79174",
-      "bytes": 3633
+      "sha256": "e354a59196074c823bc1d0771d4728fe2ede097e9aa0f8c8ee3ad8dd32d3099e",
+      "bytes": 3833
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s10_lite_monochrome_icon.svg": {
       "sha256": "33e79d19b521378786cb666cb133e8aba9e2f2d120944d16f047ae1bb6e2f828",
       "bytes": 3630
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s10_lite_prism_black_icon.svg": {
-      "sha256": "51c04f1c6b6490f2091201441a0b7425f87ce45ebe42a251a688f891f0d585f7",
-      "bytes": 4156
+      "sha256": "a791c4ee1382e069420e61279ec453f86d739276b788e678f189b6c645573baf",
+      "bytes": 4358
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s10_lite_prism_blue_icon.svg": {
-      "sha256": "bee59252846fe516bf6dec42be4a08adf27a2866716cb2009a15dab896a4ed69",
-      "bytes": 4156
+      "sha256": "41d1b8bebc6c941e72ed5f2012cac243e7673fa96296159587430ffef55f3146",
+      "bytes": 4358
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s10_lite_prism_white_icon.svg": {
-      "sha256": "bc7ec0e090e1336983b39c54634d83b445893baa9cc456ad74159a1b09a9ddb6",
-      "bytes": 4156
+      "sha256": "1206c1c4d60f549906047e67e5d7a947066b49fe0cd24b03fea9ff55d3e3d877",
+      "bytes": 4358
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s10_monochrome_icon.svg": {
       "sha256": "62c50ac160bbb06bd53ce95f0d8bb2c3e39aef244e4486757d699263f85bc711",
       "bytes": 3622
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s10_plus_ceramic_black_icon.svg": {
-      "sha256": "49c349b3dcc789bcf27225fa7cb3703c41186bbcd3c5a45a4e702618a319481a",
-      "bytes": 3597
+      "sha256": "e333a74272b4d482b0a82df98621a3859ca94c4221601a33848c8653bf42372c",
+      "bytes": 3797
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s10_plus_ceramic_white_icon.svg": {
-      "sha256": "449974f27c92f844cabcb492b1515eed18063648fcd2d4880207fef339802177",
-      "bytes": 3597
+      "sha256": "6d14a61cc013d20d7992ee75f619b01e03622bac4d094124020c0094b5695af4",
+      "bytes": 3797
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s10_plus_flamingo_pink_icon.svg": {
-      "sha256": "87fe916a633962c4cb90dcea4a5b94b2781876e4f72d1c10f4c572c3b6aee929",
-      "bytes": 3597
+      "sha256": "a6a99d37546d3ff8ca46cbbfc546df13e242aa4c366d60b90242e770106fc55d",
+      "bytes": 3797
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s10_plus_monochrome_icon.svg": {
       "sha256": "8dfe24ad4f03abd58ae327862efac331be852ca1321b32399e94b47b9e9291f5",
       "bytes": 3594
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s10_plus_prism_black_icon.svg": {
-      "sha256": "1e00e0bea26008b2da081c2eb0d56dfbfc92d82d29ac652987a851b6b81a2f46",
-      "bytes": 3597
+      "sha256": "d32b13dee7757d2cbe80937dd41c834a2beb659af018df6519c104a9208237d5",
+      "bytes": 3797
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s10_plus_prism_blue_icon.svg": {
-      "sha256": "cf88c2b4e87ea6f7557b85dccd889dea1bf0960fd5a966d06c52d2986c5df287",
-      "bytes": 3597
+      "sha256": "14c1b679276cd12f88088686cb24efdd983feb6720ce46013e10ff4befb34e29",
+      "bytes": 3797
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s10_plus_prism_green_icon.svg": {
-      "sha256": "aa927050112b83cb55a0ab15526ad95dfb50fc5cdf53ab8cc4998afca61abf93",
-      "bytes": 3597
+      "sha256": "ffe3ef87f0194ae4fcfaf0ab1fb0126b4c47af695033eac758a0336e77fffb51",
+      "bytes": 3797
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s10_plus_prism_white_icon.svg": {
-      "sha256": "afb200903c3f38331aa2d779b83fc6a579a5507b618756178cc5924e57fd441c",
-      "bytes": 3597
+      "sha256": "96cb6bb44cb7f11fb898be680039068c3db592028b6aa570b6617a51abec9f02",
+      "bytes": 3797
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s10_prism_black_icon.svg": {
-      "sha256": "82c270e683279f6744b9cb33e581788fe8975d5bf676fa515fdb3ab577948a4c",
-      "bytes": 3633
+      "sha256": "96826478dcce94782670957d4412373c7b282806768732c10801de9d2cd9d11f",
+      "bytes": 3833
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s10_prism_blue_icon.svg": {
-      "sha256": "adebde39aa348be1fad1c796e7e1a42afc7d69b331141952266850a34bd2254d",
-      "bytes": 3633
+      "sha256": "6f7ff0f32d89d17c7f2ec38583accb37fd29e7d863166fcb56abd749b6a23635",
+      "bytes": 3833
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s10_prism_green_icon.svg": {
-      "sha256": "012d02f977f19c8e4cdb39cbfeab1dca01b07cd5f94395eadb9ceadc71cb4fbf",
-      "bytes": 3633
+      "sha256": "bb128bad82e100d5e7e0c854a2abf2d1efc54ea036e6ab30027d4dc367868112",
+      "bytes": 3833
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s10_prism_white_icon.svg": {
-      "sha256": "160ac97220349c4c04d7f51dfa946c68e5241e2d0a15811fe497c03c314cc64b",
-      "bytes": 3633
+      "sha256": "83d2ee2aec72ffa8e87cab91cd9b7b0c952ca8c57d2370a159751be1b0bea93f",
+      "bytes": 3833
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s10e_canary_yellow_icon.svg": {
-      "sha256": "9e8924fff6700290e681fd63851dcca1a31fb2ce0ee1e5d0295792a07cefae66",
-      "bytes": 3452
+      "sha256": "6b38416dbbc8f9fd414a043cc5f66e8a807cae37c9e64929ee0d51a3e620742e",
+      "bytes": 3625
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s10e_flamingo_pink_icon.svg": {
-      "sha256": "be4627613102b9f37521d64c8dee5275101759dfd67df1de22b0e3dce7e2a943",
-      "bytes": 3452
+      "sha256": "29a764db53618446c6a42880906169f340bb4ac59fd51b31c79cc3a3b58c240e",
+      "bytes": 3625
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s10e_monochrome_icon.svg": {
       "sha256": "2b095ea7d4bf86ca350b18db6826ab906c6329b339c9c2b138b8b3a84face497",
       "bytes": 3438
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s10e_prism_black_icon.svg": {
-      "sha256": "beca386f14292856d62fa4b5777cebf002d170f949c9a44252ae000a9c8b951a",
-      "bytes": 3452
+      "sha256": "1805bf7b501d47786c7e6da49edec7f6465616bfb4980cb5d7d735cc8b3213a7",
+      "bytes": 3625
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s10e_prism_blue_icon.svg": {
-      "sha256": "7e7fbf6723ac9d1f9a45a89d80553a059722b3cbcea3c6251dcbf1b7ccf5b4c2",
-      "bytes": 3452
+      "sha256": "22b4ef0be47b97805393747112363b9d483ee2a47efb94f2438b82e58d3a965b",
+      "bytes": 3625
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s10e_prism_green_icon.svg": {
-      "sha256": "a9d102bcd5d3f62c1decee17deb8d353c75048360436840ef64b652f9a9ff841",
-      "bytes": 3452
+      "sha256": "f3f5408fac360f5ee2cef59e8c56636eda5eb5c847286034f3732dd048cc95cc",
+      "bytes": 3625
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s10e_prism_white_icon.svg": {
-      "sha256": "dfd77578c0a814d55ea11dc4c77c28ce204f75f1e5ca6d01625f74869afa162b",
-      "bytes": 3452
+      "sha256": "5a5dfb864e0ec3776f36e0d4551e33a76c564e3c9be5b4d72e382e13bf1e5d36",
+      "bytes": 3625
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s20_cloud_blue_icon.svg": {
-      "sha256": "c46adca8bd12e99695d9074543aca226bf9db79d612ef5bf4f2be339899aaaa7",
-      "bytes": 4169
+      "sha256": "3d72c33d8f6c3656e60d83b23f5290d89587af4813ca06eda724e3ff06b8e3eb",
+      "bytes": 4371
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s20_cloud_pink_icon.svg": {
-      "sha256": "68c89bc26a7a4b743b5de8701671b994737df2cb5852d5936fb014a1f1e25262",
-      "bytes": 4169
+      "sha256": "a04cb0213d2000d957c909f65c9a10250dbadf41ceace60ab19abccd455712ba",
+      "bytes": 4371
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s20_cosmic_gray_icon.svg": {
-      "sha256": "d7384a7fb68ed9ca0157f28e8fbc36f0571c94377fe1f570889fc85f72e7094a",
-      "bytes": 4169
+      "sha256": "7d2dbe95002b61c37b68b5b65161f1ab300c693547a2c24179f67a1c0eb206fb",
+      "bytes": 4371
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s20_fe_cloud_lavender_icon.svg": {
-      "sha256": "2216e13a795224f3c87a7f1ed6dd18814e8f499e782d1e45f300e2ca039637b4",
-      "bytes": 4148
+      "sha256": "15ec7680ace07fdd084b4621f6c866226b3a41a7c64ee616da0a8d19db4f3d44",
+      "bytes": 4350
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s20_fe_cloud_mint_icon.svg": {
-      "sha256": "25b8dfc24db2d36955fb77a144c4dac499f87efab24795c3a9adbead37f77679",
-      "bytes": 4148
+      "sha256": "49e11713d5ad80506afa204286fd49bf399611d79925dc797fb42570a0b6e4c0",
+      "bytes": 4350
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s20_fe_cloud_navy_icon.svg": {
-      "sha256": "1668facd340c6b0ce8a5116fa6e5a3be1c17ef3a83c0a32935fdc5236816013d",
-      "bytes": 4148
+      "sha256": "63a9f8313966e45a6162ddce6d8832e0424732e3c9a7abe481bca6b3bca59781",
+      "bytes": 4350
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s20_fe_cloud_orange_icon.svg": {
-      "sha256": "0e9e24dde76e79d85d8230cd431c5b95f2f35a53673ae7bc0fada57f034b2ed6",
-      "bytes": 4148
+      "sha256": "f22e92c86a10468207f21f5ce2d4347da7acc73f1ff0a595b73aa5ee877334c4",
+      "bytes": 4350
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s20_fe_cloud_red_icon.svg": {
-      "sha256": "d5b1d36fc390f4cfe452930e2d6380b8afb2c7d5a360fc21e09d907a8ed5a2e9",
-      "bytes": 4148
+      "sha256": "ce6d315235feba985b85483c2144c1847cec1c197de6070bcb2235a8b121dfc4",
+      "bytes": 4350
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s20_fe_cloud_white_icon.svg": {
-      "sha256": "f631627581e54c528176157d4fb60d7efe46a3468daf0bef3b4077f327ffd370",
-      "bytes": 4148
+      "sha256": "6b5c615257bc5743bb5e94dcb05655a2195555e4d98f881e2ad406361002e495",
+      "bytes": 4350
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s20_fe_monochrome_icon.svg": {
       "sha256": "01257b348c769950ca3fae44555927a01ac62537d82e8216194fe0f19934fb68",
@@ -5158,920 +5182,920 @@
       "bytes": 3632
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s20_plus_cloud_blue_icon.svg": {
-      "sha256": "7b6b8173973b0d3415a38249957358f426b96966fc64c405582bc3be0d764f17",
-      "bytes": 4451
+      "sha256": "b6882988ae088b14733a6e2dc63b0834e7c2e2cc4d453657c50cfc01e8d88853",
+      "bytes": 4680
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s20_plus_cosmic_black_icon.svg": {
-      "sha256": "ba7d517defbc6ccad911de10b35f4868855bf0d052fd8a1791542d195d023c89",
-      "bytes": 4451
+      "sha256": "056a4c6a04c433b1c674a06ff77ef6ab739b4f9d92ade54267730b6edc62dedb",
+      "bytes": 4680
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s20_plus_cosmic_gray_icon.svg": {
-      "sha256": "1fa6e05e4346d7ed1a15081756f63131abca43bc0e8c314ee9ab8bddeedb5132",
-      "bytes": 4451
+      "sha256": "5d9e6046dd9d02706622450567cd8f6e501f60363b6985d30e423fc49e7ea6a3",
+      "bytes": 4680
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s20_plus_monochrome_icon.svg": {
       "sha256": "c0214bbd721ed3fb0103697c6a025b6cf3aab1630cfaf029373872b7bd788324",
       "bytes": 3732
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s20_ultra_cosmic_black_icon.svg": {
-      "sha256": "ae5e1fac788f45d43ee4bb64e38dd419d0d26209ff6ce4d5129bf52622860e63",
-      "bytes": 4689
+      "sha256": "14ee55da04a446bd2772bc5139f9ddb341dc52685853334610781bae6a217176",
+      "bytes": 4944
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s20_ultra_cosmic_gray_icon.svg": {
-      "sha256": "04930e627ccebbec2de447890b140ffa0b2c6f0132af1e2d6aa66992f721889f",
-      "bytes": 4689
+      "sha256": "b34d1aaefecda662d736aea8184d801dd4d2aefbac372ac54da751d370299965",
+      "bytes": 4944
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s20_ultra_monochrome_icon.svg": {
       "sha256": "4c16a9b8c7f703ade107f16b48f21f6a23fe35999c491ff2c65bd4776bebc589",
       "bytes": 3980
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s21_fe_graphite_icon.svg": {
-      "sha256": "b244e2422247c764f091b1c9450041899b99c06f05c3fd7b88fd7af11a7ca72f",
-      "bytes": 4322
+      "sha256": "fa530e06cca8f8b99b3f6602ee597a0eb9e01c1220f143dff23d45ae8fca29df",
+      "bytes": 4565
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s21_fe_lavender_icon.svg": {
-      "sha256": "3408b5cef4065cde304f2ff2cacfeef913800fab0fcdeb73d088eb500dc866d7",
-      "bytes": 4322
+      "sha256": "e725f81652e4ba0c7a0bcb710bdaf97f0f936e898c335fc50ebcbfdd7dde98a1",
+      "bytes": 4565
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s21_fe_monochrome_icon.svg": {
       "sha256": "ee0b18c2bfe359afd3c4d22f9bca387c1ddec7d043c6aafc020acf4012589d42",
       "bytes": 3839
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s21_fe_olive_icon.svg": {
-      "sha256": "bdbf563ebcdb81e49e97ecee0daa45bbf47510f05d5f4635137f2cdb5c5ce91e",
-      "bytes": 4322
+      "sha256": "a95c333f2f95e83c0982fdcd93396b91ee4e1c02c77b2a93a42635432666bab2",
+      "bytes": 4565
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s21_fe_white_icon.svg": {
-      "sha256": "997ef86965b64a876c16c164b63669af11097dbf2e73dc407f3573738ef6b471",
-      "bytes": 4322
+      "sha256": "dac1f1cd079ccb6d42cf4674dbd67f5161a47c2a71fe4f789c09bafb5316706e",
+      "bytes": 4565
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s21_monochrome_icon.svg": {
       "sha256": "ac791c3641165e41052d51cb315968417682dd9ceda5ab69d6e3f197b23ab2f3",
       "bytes": 3871
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s21_phantom_gray_icon.svg": {
-      "sha256": "1f9db5bfdba858bd88c1ab8bd7f245d692bd9b24e7ac11fcf372132ae4e21c27",
-      "bytes": 4337
+      "sha256": "bdc84fafe39f7bfb26afbc76fc6038adb294f4a157bfdd7d14cea6fefbf57292",
+      "bytes": 4580
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s21_phantom_pink_icon.svg": {
-      "sha256": "5f4b8a491d98742e99a9bab83ea0602d23afec4a7fa9d4ccac7bf8a19190fdd9",
-      "bytes": 4337
+      "sha256": "c377d9488ebcaaa66c04894027e77d678d55366d511a2d01d5c3f97363ca3270",
+      "bytes": 4580
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s21_phantom_violet_icon.svg": {
-      "sha256": "345f7d57f40d21ae31e839790c5afecf2d478a41d1da476af1a9a1086730fca7",
-      "bytes": 4337
+      "sha256": "0e6b313e854cf3b2acf0f9b20bf620f8b377bed3088420672de47f5dbc7d529a",
+      "bytes": 4580
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s21_phantom_white_icon.svg": {
-      "sha256": "fe2123a936aad18be340521b306f30461c10a553a3592a8c3630f4d2ade18ebd",
-      "bytes": 4337
+      "sha256": "a72a0b80d70e152232010c5cbc88229ff205ad885473033a592717bfd7eeb659",
+      "bytes": 4580
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s21_plus_monochrome_icon.svg": {
       "sha256": "85e93fe8c520cf2d9da71430b5760886916096692ef6031495688e75b4e040e2",
       "bytes": 3904
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s21_plus_phantom_black_icon.svg": {
-      "sha256": "85be0015e8dcc9b9fbab6718d6ab855afded0b259e8f564c981888109fd6b42b",
-      "bytes": 4337
+      "sha256": "c827dda1e0c292381b64335480d40437459be729c0d8b536df8dd51294a95355",
+      "bytes": 4580
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s21_plus_phantom_gold_icon.svg": {
-      "sha256": "125cc1445a45ef0a4d9a17e37c790844079bb06fea4d57ef80f9dc28e883f521",
-      "bytes": 4337
+      "sha256": "2a218f038bd39a46d02a2fe34cd2b1a6d6753d0a3287c325479f0ca60ec92095",
+      "bytes": 4580
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s21_plus_phantom_pink_icon.svg": {
-      "sha256": "9b825c30b3b5efe4b37f5e1105c337a5c3bc2e46f491fe329817b24dabca58ff",
-      "bytes": 4337
+      "sha256": "1b28454d28c02d4dd41ee70402d76d064267a5a7e7550c340b03bd20f4c48b16",
+      "bytes": 4580
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s21_plus_phantom_red_icon.svg": {
-      "sha256": "e037727fedeb30a03b6a87fd11811bafec58eb4b26eccaa3dc93230f31bf747d",
-      "bytes": 4337
+      "sha256": "015217ac4ece761419e8170f1388f8fa587f2ba0e8187b8c32a58420178ba94d",
+      "bytes": 4580
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s21_plus_phantom_silver_icon.svg": {
-      "sha256": "ab61ebb87c5043c5f53f31673f0b6382faa6509d8f41199f883d2fad038170a2",
-      "bytes": 4337
+      "sha256": "5b4e6ff9c9385cfe0ead27b0dc43b8ad37b45d8673cffd9208989a7392d62bfd",
+      "bytes": 4580
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s21_plus_phantom_violet_icon.svg": {
-      "sha256": "58da4e95df5da90a8df97a9db369fabb50f17c33d6a75012652622ad96851849",
-      "bytes": 4337
+      "sha256": "9be359fa02f2a860999710da91a185b418d0c905d983ca2471f634fc3804ff64",
+      "bytes": 4580
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s21_ultra_monochrome_icon.svg": {
       "sha256": "6d80b46cdb84a66bc4e9014feabe82448e3a65020b14fdb90a7e0f7f9c0f340d",
       "bytes": 4303
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s21_ultra_phantom_black_icon.svg": {
-      "sha256": "03e82fcbdf03f31f1403da4cbd99b4cfd9c8a87f7d69c148c216b746a3d9313e",
-      "bytes": 5117
+      "sha256": "2a6c779c5c7e93c52dd8a1f4ca5cecc7575c6cb7fc80e114c6ee2ae9b88d028c",
+      "bytes": 5439
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s21_ultra_phantom_brown_icon.svg": {
-      "sha256": "ed6a69ba0fb0bac190761c729e301a962b9cb0af6bf5acb558ee83b3be61ce6b",
-      "bytes": 5117
+      "sha256": "98e7f003ddafeebe595933e7292ba28a7ac83ba98c5fc3c902aaa4ce608098a4",
+      "bytes": 5439
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s21_ultra_phantom_navy_icon.svg": {
-      "sha256": "d55239cdc382df3997e243f86bb9e25495012ad73ad5e0f1727452af0b4900c8",
-      "bytes": 5117
+      "sha256": "f8b60524df67e234f5e311dea9ba739c9a0b69cc46254f664d5fb1901d65715f",
+      "bytes": 5439
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s21_ultra_phantom_silver_icon.svg": {
-      "sha256": "58d7c1f4116a0905c8b9522046c19f48ad462b24c9d7144f5a410f60820840f0",
-      "bytes": 5117
+      "sha256": "6c14f18a5939b407bdc9c75c93401e3576cc24ad0fbfab0580863419ddb22506",
+      "bytes": 5439
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s21_ultra_phantom_titanium_icon.svg": {
-      "sha256": "3c6d98fbafe9f02343b47d02c9635a9bb9e5685c54556f063194b064d8b24f61",
-      "bytes": 5117
+      "sha256": "b17197f480c4baeba1f95d0cfdb80a0c9f8a333a63728f7bc43c4555ec347c13",
+      "bytes": 5439
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s22_bora_purple_icon.svg": {
-      "sha256": "6d8a39651666657ad216077b08f285a55c8498bf1536c3520721a3a8f87eb100",
-      "bytes": 4319
+      "sha256": "682d13e68deaf3e2758614658dc689bd2f29b40a031329db81c450ed52046566",
+      "bytes": 4562
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s22_cream_icon.svg": {
-      "sha256": "4936f4151d88ff7771470abb49d55d8e4526ae4bec1a6b13f178d64fd197abef",
-      "bytes": 4319
+      "sha256": "ef0478eb73984c372688d2b8e6864b7f636cadc5e9d70ef4969e4f0241bfc91a",
+      "bytes": 4562
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s22_graphite_icon.svg": {
-      "sha256": "02f5b6bf4d6a55876ee895adf4521781e8c85975505c25381302fc2a83aabe7e",
-      "bytes": 4319
+      "sha256": "8d79287617a2a99c8e03eab2728a59b712da06dbfe5021f8d7efbbbad3fdc5ee",
+      "bytes": 4562
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s22_green_icon.svg": {
-      "sha256": "e6bad2a55ba5656d478c55634c4fac5c5f0e32f80c13cb16ffdad429cbc107c4",
-      "bytes": 4319
+      "sha256": "506ca72336c1145a533d1167ca07f99543d43fc7ad22b9089368c8fef91f4159",
+      "bytes": 4562
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s22_monochrome_icon.svg": {
       "sha256": "bccb3e844db8540c1cc673f4d5ff98ae33c27a066f9829fc2c24407e8045493f",
       "bytes": 3856
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s22_phantom_black_icon.svg": {
-      "sha256": "1966b692173d028eedc7c0fa494184001dc7c74a8c82f8332ccb212e744068b8",
-      "bytes": 4319
+      "sha256": "6b39830e8aaf7443c2afd36bf2c04750a692d6e9896737b0a12e4d78fdc3581b",
+      "bytes": 4562
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s22_phantom_white_icon.svg": {
-      "sha256": "24efd0203e694425789a4cd1225b4dd10c41a1270e486eb9cfcaf82ebc168dd6",
-      "bytes": 4319
+      "sha256": "7f26246a38cfe71e305fd95ccf74c0f2ecec247390d3449503720b4fc516012a",
+      "bytes": 4562
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s22_pink_gold_icon.svg": {
-      "sha256": "ef9fe135ce3afbd78e747098696d8d1684f5f5b98cf66ef7cccd3be17cdd9fc9",
-      "bytes": 4319
+      "sha256": "25dc373aabc952a816f87cb3eda017874ba00149ad1565ed955bc48ff43e2d3e",
+      "bytes": 4562
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s22_plus_cream_icon.svg": {
-      "sha256": "1ab1d16b4649fb7b32d0513ca31106d15ac166397d9f458f52de5f0bca261797",
-      "bytes": 4361
+      "sha256": "930e73903c8d501a767f08b482b4e6f6ce514b212b037e0c2422ef5d64397bba",
+      "bytes": 4604
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s22_plus_graphite_icon.svg": {
-      "sha256": "caf6d871f3141ee29b3e02e17afc0471c231180334aa6af82428c187083f8759",
-      "bytes": 4361
+      "sha256": "f46d408dec7c8aaaa35963c092ed22cbdae0b69bde150927fc398fee4a01cbc7",
+      "bytes": 4604
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s22_plus_green_icon.svg": {
-      "sha256": "b474dac3373bd45bd9f2de67a2b18741047fe683615641552baf83df3aca8e2f",
-      "bytes": 4361
+      "sha256": "7de722d60267426b0180615d579cc8d791b8658f6945c1fec2f10f69855bf640",
+      "bytes": 4604
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s22_plus_monochrome_icon.svg": {
       "sha256": "b8d9b8b53a88a43a2788928c512f901176061030c6e08f54b662b04f91cf1239",
       "bytes": 3919
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s22_plus_phantom_black_icon.svg": {
-      "sha256": "dc5bcf4236130b11eb0003c0358593b0234978f51e4450a9be31683647cf2a5b",
-      "bytes": 4361
+      "sha256": "f4972313ad3d48b786a49f4f7661b244bb6b1acfc1c39117365ee247e2aa8f55",
+      "bytes": 4604
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s22_plus_phantom_white_icon.svg": {
-      "sha256": "205ba1ba1c927d772b6f0e29c2381ff0cd861784365d50e37b85ab96883ff8f6",
-      "bytes": 4361
+      "sha256": "b608744114f897f51b035b7e79dae698586a4ba7a00235b50876cf9c686b5f67",
+      "bytes": 4604
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s22_plus_pink_gold_icon.svg": {
-      "sha256": "d76c83e5ea9b79290a7938d82402021fe3ba59c46e3bf87a1b48d324599db7f9",
-      "bytes": 4361
+      "sha256": "939a8987b696936d03b75de519c2e715d27117fa24dc9c624449f07d54f5ed87",
+      "bytes": 4604
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s22_plus_sky_blue_icon.svg": {
-      "sha256": "f6467c836c398feca052f5d563ef858f62a217f8e40907d4097705281dfc2b99",
-      "bytes": 4361
+      "sha256": "a6d9f037bd02dd1f83a1c4f53b5625cf87ba440f53d6ed3db1e2d80a97151aa5",
+      "bytes": 4604
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s22_plus_violet_icon.svg": {
-      "sha256": "f844000e94e70f6594d930faa5f0184d6e2defe066fefdcc9f50eaba7b3e9735",
-      "bytes": 4361
+      "sha256": "109b7f49a28749aff6e7cbfbf4070b57bbe2a046ee5059652beccad085218747",
+      "bytes": 4604
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s22_sky_blue_icon.svg": {
-      "sha256": "d2b9fffd84a7589bcf18c5aae139e25b0bd2b1fae6bbe2371f32c7c78128ff0e",
-      "bytes": 4319
+      "sha256": "27fc9e3dd56b618ea1e379300a2ed3af1d0416a46e47fc2c4cf4b26a45bba537",
+      "bytes": 4562
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s22_ultra_burgundy_icon.svg": {
-      "sha256": "3150aa60d49b72425c458f2a70feaef89c34591ae7ca02fa1887633760ccba69",
-      "bytes": 5800
+      "sha256": "8dae35b2ea6083ad80ba24056b9a4f3af34849473473fdb3dd4824b8c1aaffdd",
+      "bytes": 6160
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s22_ultra_graphite_icon.svg": {
-      "sha256": "21af4c2fce83a5174766b3cfc7c205d447cc3f8e21ffbc489113ff8badf73891",
-      "bytes": 5800
+      "sha256": "0609ae0a63e09471f896a71eeac1742eb02d7526d0c9bf2475b9d2cd06d04829",
+      "bytes": 6160
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s22_ultra_green_icon.svg": {
-      "sha256": "4e1dda4fbb836cb30581bbe26b69bb5667d88c07b8e519d1503b7661dab4addd",
-      "bytes": 5800
+      "sha256": "a7f0f37e83b25f6079a5b15bc8e186b0d7ba69603d072cb28d15bc1d3af5264d",
+      "bytes": 6160
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s22_ultra_monochrome_icon.svg": {
       "sha256": "60b85edc47a837e8033dab26992c7b100e5116a76c7c5437d247751dd351cddd",
       "bytes": 4063
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s22_ultra_phantom_black_icon.svg": {
-      "sha256": "3138b5b8180629bbf639b0a042463d5d35e61eaeebd8b77883c9d62bf3069bd7",
-      "bytes": 5800
+      "sha256": "c8cd57ab3494150431e46ee84b22aafd2d1dfb7d8255c9f02a3152c74da9695c",
+      "bytes": 6160
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s22_ultra_phantom_white_icon.svg": {
-      "sha256": "9d38e78d0cd8479be486c503b4acd45b301baa8036e096366b34e7dea38ec72d",
-      "bytes": 5800
+      "sha256": "b5a6d9fb7e4647453ed057fbdf530f6245e8d381b56a999d5addd41e73f80b2a",
+      "bytes": 6160
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s22_ultra_red_icon.svg": {
-      "sha256": "93c4f69368660ff43d3ddbb99a19ad2daced6439e8d0f2bf448060389e5bb3c4",
-      "bytes": 5800
+      "sha256": "0d13ecca67a829245453d482309b73e193d3b0c6cc2738c08d87a7c9dbec3c1c",
+      "bytes": 6160
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s22_ultra_sky_blue_icon.svg": {
-      "sha256": "29db4521046aa2d477fd3682c50d9e383c06a116c454c3eeba18f64eb4ef339e",
-      "bytes": 5800
+      "sha256": "807425554510618358eebafb59170108cf88ae7da66b35ecfed78c8c336ae12f",
+      "bytes": 6160
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s22_violet_icon.svg": {
-      "sha256": "4edbecb16c5bfd905fd5646c3077a154463bc098c8f45e80fa6a9658cb0452ae",
-      "bytes": 4319
+      "sha256": "8e37a74f881be6c9683d45cd0441a70d5caa149b062ca50cfb2646938e1471fd",
+      "bytes": 4562
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s23_cream_icon.svg": {
-      "sha256": "9d717176da6433f98bea5b117e29b3c6b2d57958faf1544ec254b91d3eb3ad50",
-      "bytes": 4695
+      "sha256": "5bb7b8a0856e3f661296dad38e293b481f90ae33fabd619e5f00fb41f395a1ff",
+      "bytes": 4950
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s23_fe_cream_icon.svg": {
-      "sha256": "c9eb98bc94ff5b7a8c37e936198ce613812df7212316ddc957a03ad62b84c6bd",
-      "bytes": 4685
+      "sha256": "5a1137e02ebbdd626bf7af7e444cbb49b95f528bc80fd71c86684a377e7ff10d",
+      "bytes": 4940
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s23_fe_graphite_icon.svg": {
-      "sha256": "c7de4fbfd0eceb23003c5db2d3dfdc4ba189384867df5cf9d61acc336bf22047",
-      "bytes": 4685
+      "sha256": "40c3a1e45699ad11d41e76ed2fe6ea14af7da8dd1046e3421573a54b3e4150c7",
+      "bytes": 4940
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s23_fe_indigo_icon.svg": {
-      "sha256": "59b42ce4fa874377b549da00cb3db53dbd86d47a93d259414ff403d28851ff63",
-      "bytes": 4685
+      "sha256": "3d6a897149ce99684d8ab5707d38805024358ba57d0b7f07054675068badf712",
+      "bytes": 4940
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s23_fe_mint_icon.svg": {
-      "sha256": "9c637d860c78ba7a3685c5d3ccd79f9ec229cf0ec57ca9b77ccfebc3f40684b3",
-      "bytes": 4685
+      "sha256": "d220ea3f6d77f34377d4c759eae31fa18cb06682f2d4b2e5def73f903ff56144",
+      "bytes": 4940
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s23_fe_monochrome_icon.svg": {
       "sha256": "509e2fe228f4a41861462cfc04cac748d0bcf654eeef19e48960522e8a82c56c",
       "bytes": 3694
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s23_fe_purple_icon.svg": {
-      "sha256": "ba4dc6bcb8ecb1ad3adcbd2496c9641bcf7a7f74c557d82758d88dfcb0b7eddd",
-      "bytes": 4685
+      "sha256": "f576380a1d18c2354fa3f9dce6d7c82bc6ba8868d75b4efe125d111ec54e5bb1",
+      "bytes": 4940
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s23_fe_tangerine_icon.svg": {
-      "sha256": "4a526cee5d7845c5ca87a0d52b7fdedf3dc9bc13ba13d6bd3a12ad20cc4f0272",
-      "bytes": 4685
+      "sha256": "0f31365c46d7297fefc7cb88020ea489fd85caef416739843c3ae44b2d73ea75",
+      "bytes": 4940
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s23_graphite_icon.svg": {
-      "sha256": "79a55851c4d57b8643114d0dfe388bdd068a54bdba9548c2d6ad74a888fee36a",
-      "bytes": 4695
+      "sha256": "c43d26ac9476e71ad87985a56cdf532a9a319b8e4c4b47fc516e7383c8d19a22",
+      "bytes": 4950
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s23_green_icon.svg": {
-      "sha256": "ad7f99b8433c26587fe409c84282599fa1da6e15e37f83f9fd4fc276f3310d9e",
-      "bytes": 4695
+      "sha256": "e29e663be8f21ddbdbc5246bf686a149332b21bab88a9740f2b573361cb4ea1e",
+      "bytes": 4950
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s23_lavender_icon.svg": {
-      "sha256": "066a9a64e71013bbc7a11bb5e21ac50ec760058acff68ea984bc2bfd4a14c3ae",
-      "bytes": 4695
+      "sha256": "544f168498b28815326e24862ef6ccf05a800ba54b7ec83ea212969c861ea9ac",
+      "bytes": 4950
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s23_lime_icon.svg": {
-      "sha256": "fbc968a0c2d1cda4815138bbf4a0493dd097a510d12c160ad862c7ada5012d23",
-      "bytes": 4695
+      "sha256": "1e6e286ebf2ef0c7d2ea6cab6182085625e7f940186d76153e7b65ca6eb10a5c",
+      "bytes": 4950
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s23_monochrome_icon.svg": {
       "sha256": "ff5ddbe9dad4757f156ae86841b058227569a1ffb41470eabf5e7c08eda2c417",
       "bytes": 3694
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s23_phantom_black_icon.svg": {
-      "sha256": "e536b2ba9745e83df68c97279de7db2e07b53c64b4c3e03dca1059d95cf24354",
-      "bytes": 4695
+      "sha256": "f457c02704de721a43364bbf7ece513cbfaf7e9f7956ff2b93f2482e97c34a2f",
+      "bytes": 4950
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s23_plus_cream_icon.svg": {
-      "sha256": "e40bcbd56b743dc17fcfc88461f9d4e2dc8e35e6109ef0c307e21fe12500285b",
-      "bytes": 4683
+      "sha256": "1cdbc766c074953e4ca1418c047ad83e012e36a2c71225492f6ad1f31c811219",
+      "bytes": 4938
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s23_plus_graphite_icon.svg": {
-      "sha256": "2295d0f710bcca70f59fb3977b9f9f3705d06dca2fc88c765a6f5563d15a529f",
-      "bytes": 4683
+      "sha256": "7675976dff3baa6b29dde30ae78ef718139bd88a80dd5fa249284bcdddbf82ac",
+      "bytes": 4938
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s23_plus_green_icon.svg": {
-      "sha256": "804624cade63bc2d863455636a4de2d0310f41c6b64f9f9112f0bda1e5863e3b",
-      "bytes": 4683
+      "sha256": "ac57186e799660cba8b8d745856f71ad13f0c7ac6aea54a77bc234b4151b428a",
+      "bytes": 4938
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s23_plus_lavender_icon.svg": {
-      "sha256": "cb6a6e8d39a0f273f69ac58ff9438a687d2d1d90f0e15a1bd3351d4ca4137dbb",
-      "bytes": 4683
+      "sha256": "f4d38618692dc87b9a3fc099d28187ccbbc98cc8a329d1586f07b4fd2405a098",
+      "bytes": 4938
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s23_plus_lime_icon.svg": {
-      "sha256": "572baa4a4c7dd694778e3f8bb54fbaec47f7745f3e9fbb5eafb2a5f61b33d9cf",
-      "bytes": 4683
+      "sha256": "81ceb0a6c0c23d1fff769ef4b77a0d566f8106c59460280982c089dcb130f5a5",
+      "bytes": 4938
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s23_plus_monochrome_icon.svg": {
       "sha256": "d52ebae6700162b507eea0b49c63c685b7541aa9aeda7654dc57a28a5788c34f",
       "bytes": 3692
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s23_plus_phantom_black_icon.svg": {
-      "sha256": "e8241b6ba7755f99b7d6f853f382bfd790a387c70f759839aad7487545522cb9",
-      "bytes": 4683
+      "sha256": "0ba0611ce07b106f30182628f5149da2154744a2653df053ef812d1a1c486067",
+      "bytes": 4938
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s23_ultra_cream_icon.svg": {
-      "sha256": "9914d5dc78ffdb5aeb42c69f0c6e2e06056bc3b8b36fef14840baae109e1c2bb",
-      "bytes": 5852
+      "sha256": "6c0196467fc97cbccfeccd4263b566c1e188f5ceca25709ea0863c6c80594c07",
+      "bytes": 6212
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s23_ultra_graphite_icon.svg": {
-      "sha256": "ed2387b96bbce9043350864d18254f821b06c004c3e04ee1197de3abfdeeebc6",
-      "bytes": 5852
+      "sha256": "11e767d01c99f71e6d4f8164bea1b45c3fa2951c1b21692db06d288d3d74985e",
+      "bytes": 6212
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s23_ultra_green_icon.svg": {
-      "sha256": "a25c4d8c58a6df29201945e99cd551d2e2834434da4a40daf28e56c6bbf48f1a",
-      "bytes": 5852
+      "sha256": "590916d9c7b4d520d9883f783e7ad3172937e0f5ffe77a342c2395bb91d91a2e",
+      "bytes": 6212
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s23_ultra_lavender_icon.svg": {
-      "sha256": "5d9256eeb79f4ed68ac6d14197cb4a0581f33f53ab341f81037cddb51e3764c9",
-      "bytes": 5852
+      "sha256": "c28962125b4260642e77becb00054e2b35abd4a89feb784ebe06dc8ed9f57fee",
+      "bytes": 6212
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s23_ultra_lime_icon.svg": {
-      "sha256": "9abe22e51e75b9f6a15bdb4b5530b025ad8ed22d57d872061ef2076a1d16f81b",
-      "bytes": 5852
+      "sha256": "56ff49ab87d0b338bd92d827690ba02cb2b2f5cf141231dea321a677be021a6a",
+      "bytes": 6212
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s23_ultra_monochrome_icon.svg": {
       "sha256": "5e303bcb141c44b4b6cf8b41e07c977c361b2306b9a2757c74cf56980801b6f0",
       "bytes": 4083
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s23_ultra_phantom_black_icon.svg": {
-      "sha256": "54cca7c171451a037a9212cdd7b968ac85282cb5092f46e5ab1549aa37e501a7",
-      "bytes": 5852
+      "sha256": "fd55f39187654b775ef96a84a78af0c5a945547a7a07e7a0a922ba3339d64cc8",
+      "bytes": 6212
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s23_ultra_red_icon.svg": {
-      "sha256": "8fb765d6f80c374fc85e6955b1f7614e37cc0d7170123152d7f53e53496cc008",
-      "bytes": 5852
+      "sha256": "e10c684e083cb003e06aa1865bc227fe7f4faaab5231594a881f474f131d07a7",
+      "bytes": 6212
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s23_ultra_sky_blue_icon.svg": {
-      "sha256": "2711e330a06e18f1838aa3dbb9fb3a30d695f20006c7880079cc68e21b27f778",
-      "bytes": 5852
+      "sha256": "a995c856485b6efc1f9a3ff862135cb3e4983884a8f5573a7ff27cb449eae279",
+      "bytes": 6212
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s24_amber_yellow_icon.svg": {
-      "sha256": "06beaffd83aac491367d27026a23e6b2c5a1b105e7c9e502a0257d789fcbd019",
-      "bytes": 4695
+      "sha256": "d545befd7a44fadacebea17f565e0179c285e781129f1c8d2438fb5c936dda05",
+      "bytes": 4950
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s24_cobalt_violet_icon.svg": {
-      "sha256": "fdf015c0fa94d9e9815788cf621a8aaa7a96aded0c109e18f660f310da51e3eb",
-      "bytes": 4695
+      "sha256": "1ac33a0e369a3f63f5f0b6451f6f0bc9ea766fe8fc27cbd547e5d20ce5e53f14",
+      "bytes": 4950
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s24_fe_blue_icon.svg": {
-      "sha256": "4ed8578e0a255417f0adf2a71a3340adbfeed2484393dbf38d2cfc4296f19d96",
-      "bytes": 4683
+      "sha256": "a1d432ddc0366a70e57cfb065519f97f655b2d78e2bcbe6eec9a4bd3173d17be",
+      "bytes": 4938
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s24_fe_graphite_icon.svg": {
-      "sha256": "9b4ea7dea608c7dd70afe808bece6b72540620751fa7ad430ca8b39bed5f9c4e",
-      "bytes": 4683
+      "sha256": "56a44cdc7a6ef55dc7e064da0aaba0008068f6575203f47ef6c2f06ce4bc84df",
+      "bytes": 4938
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s24_fe_gray_icon.svg": {
-      "sha256": "256895f3ebfafeb967fddedeb3082b7a45b4a2bbdba30495480c1ad811615ee3",
-      "bytes": 4683
+      "sha256": "ec9d1f86eeb560214215bfda47c0b39ff975fb5587ff5de44effa77c9443f23c",
+      "bytes": 4938
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s24_fe_mint_icon.svg": {
-      "sha256": "5ba897c154f65341becb8a5b627903e0cd1acfe6e2add4e870e7874504048d25",
-      "bytes": 4683
+      "sha256": "923f40bb3c5268d002e3dd9c1afbb0ad46c2d16c11980eedfd4ca12d53d36d18",
+      "bytes": 4938
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s24_fe_monochrome_icon.svg": {
       "sha256": "5a34388612fdb605e87afa19cab3f01d187000330868dc7c60333a35cb02a5fd",
       "bytes": 3690
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s24_fe_yellow_icon.svg": {
-      "sha256": "cda75cd1703458c4da2d059867382c88c3d37436894585c643d769db4a66bb1e",
-      "bytes": 4683
+      "sha256": "03b0795d60b8f23fbb18067137eb43900148d71450566816e0e7d8846cde1c50",
+      "bytes": 4938
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s24_jade_green_icon.svg": {
-      "sha256": "dc6e5e8afe51dbfb2526ac0d414152111e3fd2f6f4e9f98cbc07c6c0bc6c71b8",
-      "bytes": 4695
+      "sha256": "98a9458ebcf1ea848634a4ccd4f8f8b4c52446b1774248cdab7d70910ff3537d",
+      "bytes": 4950
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s24_marble_grey_icon.svg": {
-      "sha256": "2d879c98137cc1e6868f43ac7728adc22f5f4dd711e12a7ad0f135d1dffc2695",
-      "bytes": 4695
+      "sha256": "3bdc2d002632b80660f35d285dd2c4f95ecebcc5bd557d4a318f940e9652d7de",
+      "bytes": 4950
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s24_monochrome_icon.svg": {
       "sha256": "b604c6ae3a4d74f56c266b03f9d14791fc168f74c7a5e39b01b75e4ff3c23869",
       "bytes": 3708
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s24_onyx_black_icon.svg": {
-      "sha256": "a0d6a1f1f19458549b095c02f60a22473fe8401c11d569c7f60f8a8d3d42a6e2",
-      "bytes": 4695
+      "sha256": "0fa5faa98775104b4f2bb0dd2a6afa6c39b9339ec4d0900fb4f82c7075e9829c",
+      "bytes": 4950
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s24_plus_amber_yellow_icon.svg": {
-      "sha256": "eef31a8936b8086f8f0558c1f4c80f75e022f47053ce0a831915e10b00f33436",
-      "bytes": 4695
+      "sha256": "b9d5cfb1e6999f213e7c9786f8827f1fb22e72672effd8d70fd8e1ec2b287bd7",
+      "bytes": 4950
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s24_plus_cobalt_violet_icon.svg": {
-      "sha256": "69e3fb2ebc5a8c6b679b9171dcb905a50d6157e900f5fe72a115df6786321b09",
-      "bytes": 4695
+      "sha256": "2e184f48864248a427f777213ae39d47a2cfb4862e932af756ad8742daa75a10",
+      "bytes": 4950
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s24_plus_jade_green_icon.svg": {
-      "sha256": "2295eb9f035503a1765fe606965f07274fd501d2fea8f09c4ff1da50649e8425",
-      "bytes": 4695
+      "sha256": "e2bd04e737dd8c0a2d61c39f7aea7b461f95b194ae7bb201b74b986d7b9600ed",
+      "bytes": 4950
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s24_plus_marble_grey_icon.svg": {
-      "sha256": "0d2dd2e6121d10bf02b237ffbf2734329e745b9262f02af5527645077cece23f",
-      "bytes": 4695
+      "sha256": "fc60bff26921faa849eaa0e2ae2e4401597cdab07109f26b3fbd82167937f138",
+      "bytes": 4950
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s24_plus_monochrome_icon.svg": {
       "sha256": "90319020a07e86c424e3032afb6688f007be093ea80f49b38eec3db846c343f6",
       "bytes": 3718
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s24_plus_onyx_black_icon.svg": {
-      "sha256": "d9cb12db735c4d74331793b2de498fc622b28c4a60bb78d74dce346eb7565eb6",
-      "bytes": 4695
+      "sha256": "f3c7bb9a48c68ea893041c24862d9b82c8ac040fed34bc503d9e4bc6a3670161",
+      "bytes": 4950
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s24_plus_sandstone_orange_icon.svg": {
-      "sha256": "28b178d13fbf95db0ebbd682063632afd72c2481328526c85c8c2d85fb60c9f1",
-      "bytes": 4695
+      "sha256": "34fbf86e2ea259147e1aad0a002db43c56d6280e7fe937d154014008b538a544",
+      "bytes": 4950
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s24_plus_sapphire_blue_icon.svg": {
-      "sha256": "720042534f485c8c67f27d358d308b7175b5cb3171fb405e38b56caabc589e21",
-      "bytes": 4695
+      "sha256": "568cac3cc5bcebf9fcbe1d4d0488ffe6a687f7dfe9ffc32b41a265fa34952e47",
+      "bytes": 4950
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s24_sandstone_orange_icon.svg": {
-      "sha256": "4eaba40e3dad3a6e890fb461d1b37f95db4c238e58d221b91f240eeb0abe61f2",
-      "bytes": 4695
+      "sha256": "8cc2185a8f16c3bbc68196864fde967b72efab4c24d8386998803b1c895e9907",
+      "bytes": 4950
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s24_sapphire_blue_icon.svg": {
-      "sha256": "2b756d26a0fc6b60db35598f086caa73e546333ad8abd6735055b02df6bd818b",
-      "bytes": 4695
+      "sha256": "d55f6f22cdc82e236a327158bb4af5344978f6561136d303204f95b5432fb71a",
+      "bytes": 4950
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s24_ultra_monochrome_icon.svg": {
       "sha256": "13f7e061f32545fa897a0598dc3a0b8362c37bbc03d082103c58b827ed03530a",
       "bytes": 4095
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s24_ultra_titanium_black_icon.svg": {
-      "sha256": "f91ff2ed504dc5e07ddc6c2b218c9348aa42340ff925c45597605ab6a417aa81",
-      "bytes": 5844
+      "sha256": "17f7cbc755ae4fd350bbd7fccdf6c720a858085b155b7fabe1f9883f291742d5",
+      "bytes": 6204
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s24_ultra_titanium_blue_icon.svg": {
-      "sha256": "5e8cf7f4caaaeb78c083185476c9743521531d3a54c8ca41e8a49ff880668a6c",
-      "bytes": 5844
+      "sha256": "7c7d70f13d0a9f86756712824e72e157cf555fd4c7edd6754ef2cf4736608656",
+      "bytes": 6204
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s24_ultra_titanium_gray_icon.svg": {
-      "sha256": "daf084d975f41918838d048b6b601022bd632a17f0294d1dde0ca86f2bad5a13",
-      "bytes": 5844
+      "sha256": "5a53eddf7d732facbcece1eddd5451efcc3066d8fd6a1de531b312456d3b8a0c",
+      "bytes": 6204
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s24_ultra_titanium_green_icon.svg": {
-      "sha256": "ae6cb1db02367c607b18cbb5de6b33fef06eb7a1879a228f94667620511bb1d5",
-      "bytes": 5844
+      "sha256": "9ed98a77974bccaae22842515f8afe2ebf7ca31e186795c625eab9e7ce0a5266",
+      "bytes": 6204
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s24_ultra_titanium_orange_icon.svg": {
-      "sha256": "57e8a7c3773995412268064260eb537c15b1d90dcf4bdaf368253f3be39f86b2",
-      "bytes": 5844
+      "sha256": "8226e6f9b8016afa60b2841a8f21b0b7e47080ce196987d8c14f758f3fae530f",
+      "bytes": 6204
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s24_ultra_titanium_violet_icon.svg": {
-      "sha256": "b4b8bf26e26fafb12f5b71c1d5fb34983138838425f8aac03c234c770e121ca7",
-      "bytes": 5844
+      "sha256": "e841b74b94f0f35225837ba5f99f3b06fa79db6c8e8ff952e2a9123385c0d172",
+      "bytes": 6204
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s24_ultra_titanium_yellow_icon.svg": {
-      "sha256": "eadb06aaefdbd65b8c50f28fd9d6bfe1b1f7b7a32c916eb487acd3c66a2a182b",
-      "bytes": 5844
+      "sha256": "a3af90841bba33eb21151d3c63d0fd80bffaf1fd0e4c4e54cb32f0644503c12c",
+      "bytes": 6204
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s25_blueblack_icon.svg": {
-      "sha256": "3134bc01fcf86ba11c5ec7ffcd64ccb10c889102932bcf1be90f63655d43bf99",
-      "bytes": 4710
+      "sha256": "f3304f09a404c7eec88c4c34898746d128d474f61d37e11401e5ec881ffee494",
+      "bytes": 4965
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s25_coralred_icon.svg": {
-      "sha256": "757b0dfa76c5b89c45db5b9fccd19e62cfd3594e89bcdf64efbc984bb304d590",
-      "bytes": 4710
+      "sha256": "77e131791bf7767047a127e794b40cc7fd0d8bd6100f07ad24cfb0a70e47996f",
+      "bytes": 4965
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s25_edge_monochrome_icon.svg": {
       "sha256": "6e458057d1203506dda93b1ae797748622a5698d396230bc9e3e1ebf7e07687d",
       "bytes": 3564
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s25_edge_titanium_icyblue_icon.svg": {
-      "sha256": "c3d6028a617e0848e47c53f31f9434d20dbd0fbe0000c47952664fcae1da94a0",
-      "bytes": 4291
+      "sha256": "0fca5846d645653198466080197c0b8d1ef4dc63e5708502f19a67055cf6f869",
+      "bytes": 4494
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s25_edge_titanium_jetblack_icon.svg": {
-      "sha256": "4c88d0b220e83bf7e07dbda77875705943d9aae2f94752bff81c43f990de1c9b",
-      "bytes": 4291
+      "sha256": "5caf506a97e9708d4228dc2df7f58a24cd9128cd5cf7bb180b5587d3efd5b94e",
+      "bytes": 4494
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s25_edge_titanium_silver_icon.svg": {
-      "sha256": "d1ddfa4d5ba4ea6b56060993cfdb821dedc3081ccc9784cfc0297e275ed0191e",
-      "bytes": 4291
+      "sha256": "d7e974e5f97ea1f163811e5bf3f4261b8711bf12a970a8710fb2ae1d7009025b",
+      "bytes": 4494
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s25_fe_icyblue_icon.svg": {
-      "sha256": "14e34826d6a073c2c85f812e97fec12f82366faff6cd73e77bdb426967e7e894",
-      "bytes": 4734
+      "sha256": "9107a01322f493fd5e146729ede9ae5e921947f433cfd11fc6b164ec752faa84",
+      "bytes": 4989
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s25_fe_jetblack_icon.svg": {
-      "sha256": "8ba57fbfd1c473ac2292e35b2160a3a2b076992b3a50fb216a081c9bcadf36a9",
-      "bytes": 4734
+      "sha256": "b932bcea63595a0d64b3d3825584544a478aace4c2dc266f56f6ec020283ba59",
+      "bytes": 4989
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s25_fe_monochrome_icon.svg": {
       "sha256": "f5ef52e491adb76b665c548e11276e5a4afd0f52e9d59ff12609307ffd795e07",
       "bytes": 3693
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s25_fe_navy_icon.svg": {
-      "sha256": "f4b950e2bd8778d6e5794d8377bfbad8c073fbf468fc49a38653af29e7ef4efb",
-      "bytes": 4734
+      "sha256": "dc7a024a5e9f06e031b5dce04ff27cb0548ed2ad893a8e98dd1602f0c7e954a2",
+      "bytes": 4989
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s25_fe_white_icon.svg": {
-      "sha256": "71fd26154eddf9b8a5dfcb925a039b133f67e812b7aa4bdd071574d6ef925634",
-      "bytes": 4734
+      "sha256": "8ddc88a8b351150950f97469e172d414f6f0e93a36054bae05feb5c92b449075",
+      "bytes": 4989
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s25_icyblue_icon.svg": {
-      "sha256": "fded83956e797a3ff7f6b8506f524efd29609b96f919c562e77bce935605905f",
-      "bytes": 4710
+      "sha256": "0fa066ffcaf6a994d62c100328bf61c624151d03ed4c8fe02565597f3af7136a",
+      "bytes": 4965
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s25_mint_icon.svg": {
-      "sha256": "957237264c6cf5075f31091c124b7e4ecb3ed8f1c181b7a8f9fb8c531653a032",
-      "bytes": 4710
+      "sha256": "af9fb7a8b637b07d34c6ab9e4e297bcbd86a31ae89e9832824b0e2dac2bb87ac",
+      "bytes": 4965
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s25_monochrome_icon.svg": {
       "sha256": "42214a3c2d341805c603cd4b1955a13432b143f7f12e09e812c931bd64a8e297",
       "bytes": 3687
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s25_navy_icon.svg": {
-      "sha256": "8631ad1370ec11578f07777fd84bad87ebf6cbf7abc9472aaeccec16f13bb5ee",
-      "bytes": 4710
+      "sha256": "6f36b42b551f479318395b96df6bd2c24aeed33e4d39edd899b2098f3e0c0963",
+      "bytes": 4965
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s25_pinkgold_icon.svg": {
-      "sha256": "0776e8a491ed46245bd6de81d70786345231630c785fc723eb9219c5b02f8cfc",
-      "bytes": 4710
+      "sha256": "eadca043a711a1ed100cf78cf8a234fd7a2dcd7e6b8a9b1134840bb0246e211d",
+      "bytes": 4965
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s25_plus_blueblack_icon.svg": {
-      "sha256": "8aa9897b3322406a6c56da58eb9f4f8c2ac2454f9692e9608a69a1a651a343f9",
-      "bytes": 4678
+      "sha256": "88f48267599c3f5c5a0afa7bc4bec456573fd1956e3155c2443d63311fa6ee97",
+      "bytes": 4933
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s25_plus_coralred_icon.svg": {
-      "sha256": "dcd32300faac4e4e4a97f5ecb5a7cbb700ca3c60bb60a8524f2a0c1dc9347e34",
-      "bytes": 4678
+      "sha256": "47473f81e0db7049df5f86ee69d4faeaea43cb0cb0039ca2d140936ab8d90aa1",
+      "bytes": 4933
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s25_plus_icyblue_icon.svg": {
-      "sha256": "558c8755d4143d7a4ac94cd771f9178a796fb2bf925eec493b5cd00a26a29231",
-      "bytes": 4678
+      "sha256": "662fa2330eddd6980d574b6753b40775647df108c1adba89cd3ffe48044ffb21",
+      "bytes": 4933
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s25_plus_mint_icon.svg": {
-      "sha256": "fa972fa1b0ee8ccd0719a09113373b5072da0bcf2f73a67cb7d61ca59a10a023",
-      "bytes": 4678
+      "sha256": "a232cb0759c30d91315e54f47d3168f8d43ade659f576117be644c755c17ff57",
+      "bytes": 4933
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s25_plus_monochrome_icon.svg": {
       "sha256": "d4122081619f1dee12f5c8ad2e21a5eae5ade225b98f0e879c3bc5c7885733a5",
       "bytes": 3707
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s25_plus_navy_icon.svg": {
-      "sha256": "953c60791a65a5c6dd12b7b84c7eecc0bb4a75a3663399264a4da54101a7657f",
-      "bytes": 4678
+      "sha256": "1587c0238bac27028ae089367d645cdb0c5c420f90fff0f6c9d6acc9260f6400",
+      "bytes": 4933
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s25_plus_pinkgold_icon.svg": {
-      "sha256": "67aeac72fe868101cbecfc84cf4fc7443a94b26cbc08a50a74c1d6909d889b6f",
-      "bytes": 4678
+      "sha256": "0eac2e35af0cf626c729b820d7216a523fa5697b2bbf0b3e2b5d152e64e0e98b",
+      "bytes": 4933
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s25_plus_silver_shadow_icon.svg": {
-      "sha256": "1d55bf7187434dcbc483b6e70b0d0ebc7edc1cda952d474b5d8e07aaa623e242",
-      "bytes": 4678
+      "sha256": "29feabcc5066b68a9c52a2c5cfccba5fd3d48926a369f76ab6caf6e09ea4592a",
+      "bytes": 4933
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s25_silver_shadow_icon.svg": {
-      "sha256": "06f88e913f1987facd2af2f036d39d62898ea68179465c661b8a5ae4746ce808",
-      "bytes": 4710
+      "sha256": "9bc4afe016320f17345385af05c9e09e5975964b616df7a3d9ffb6989fc2049c",
+      "bytes": 4965
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s25_ultra_monochrome_icon.svg": {
       "sha256": "91a9677851b077ed5024bae667274111408068643bb591725dedf42549b428a1",
       "bytes": 4086
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s25_ultra_titanium_black_icon.svg": {
-      "sha256": "b1f11e7bed17e9f1f7cc3cbbc73ed07a992b2da6b6535968029bdd81f6d1a6f9",
-      "bytes": 5891
+      "sha256": "81a2560c88f4966a7d702ddde0c34ea2d4e892b0582916ee84a9d613d40e3548",
+      "bytes": 6251
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s25_ultra_titanium_gray_icon.svg": {
-      "sha256": "a8fd81d4289337ef70b0ae805172d2c0346f34142ff363a3a9d601dfcffc0edf",
-      "bytes": 5891
+      "sha256": "441c2a8f09fcabf51de1e489ad104833b1efb8a02293bb81f0253f45a922bd4c",
+      "bytes": 6251
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s25_ultra_titanium_jadegreen_icon.svg": {
-      "sha256": "a8a3922d6459da34da5380e2a20128a5aa8bf06fcca901d53a8f2ee39a0b251e",
-      "bytes": 5891
+      "sha256": "529e06399efeb31825e9008613af04d91921d611c5953b91d88b81f9e79a31ee",
+      "bytes": 6251
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s25_ultra_titanium_jetblack_icon.svg": {
-      "sha256": "0b0234447653a1a077448c6a3011862dc28123d73ae9652c40a28eb5244a0eeb",
-      "bytes": 5891
+      "sha256": "8bd0f3920eb3bdeaa4f82b3e58894789caa7d0d74b0d2de3862f8ba19972d28d",
+      "bytes": 6251
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s25_ultra_titanium_pinkgold_icon.svg": {
-      "sha256": "76ddb9316188538a74548bdc4959093a04600c036693e56337ee3d50f75149c2",
-      "bytes": 5891
+      "sha256": "843cadfb3d149fd0f810d50417c07fe5d682b8cbb4f30555e9a77915a680d394",
+      "bytes": 6251
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s25_ultra_titanium_silverblue_icon.svg": {
-      "sha256": "f3e538993be62f2fb9bbbd43d0fcf67df0825293b61b51df2e4ff6ce890812b9",
-      "bytes": 5891
+      "sha256": "ff85a4e22e6e3dea8304949aa0f39d0e1b675316c48e49e3b25806cbf950c1f0",
+      "bytes": 6251
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s25_ultra_titanium_whitesilver_icon.svg": {
-      "sha256": "30aacb03a999b92b70b147d8d82b877ea48a0e756a57b98012ec53798dc6dd8b",
-      "bytes": 5891
+      "sha256": "d3aaa919661e65c56932263f1830c37365610ec1804403fb30c999b81ca0e50a",
+      "bytes": 6251
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s26_black_icon.svg": {
-      "sha256": "faaec584d942033d50ebe1cffd069796dea3dacb20f3cc49320210a25b3807d4",
-      "bytes": 4549
+      "sha256": "567350180acaa48cb6e7214f7c24ee161d886c1fbd7614934aed009ea0b50261",
+      "bytes": 4778
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s26_cobalt_violet_icon.svg": {
-      "sha256": "bc34659392d05f438a8007f2441ac39ac1c0d570605bb6934b6ed4dab88824c1",
-      "bytes": 4549
+      "sha256": "211295dda63311fdcb474db43fcce0f6a7dd0f26d272de08a4fd47dbf4af6924",
+      "bytes": 4778
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s26_fe_blueberry_icon.svg": {
-      "sha256": "e0f5a191c86e970f651291a3cb5eaf83c006a2e35325611ac9c50b3a014d5b3f",
-      "bytes": 4586
+      "sha256": "ef1f02b1d1a522af6d7328913bc761280d35d09a75c82ed452b87ea4cfca1e46",
+      "bytes": 4815
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s26_fe_graphite_icon.svg": {
-      "sha256": "1241b0ae285e219d0c999ac9905b916bf46a8a2d42534b0ca7702fff7f9477de",
-      "bytes": 4586
+      "sha256": "5ab7e1f2305705c3aea36293befc2d75a282e2df30d47d79b4ca542ce23cbf76",
+      "bytes": 4815
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s26_fe_monochrome_icon.svg": {
       "sha256": "76678d6a401a8dc8a523724d450cd3fafe1015b6d5609ca94f5fa22ff3e7d45f",
       "bytes": 3639
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s26_fe_pistachio_icon.svg": {
-      "sha256": "4d9999e3bf9a59c8e3725aac84a217bde20b848e6ca7e6be38fd90fb54e2fcf4",
-      "bytes": 4586
+      "sha256": "b816e0c5630b1d19ccc3f1bf963fa1820fabfbf9bf09fbb2dd3585af7aebf83c",
+      "bytes": 4815
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s26_monochrome_icon.svg": {
       "sha256": "ef011dbd4501c9251bd4e6509b38b22b0a73b3648028fc5f50273df2cedc9d56",
       "bytes": 3600
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s26_pink_gold_icon.svg": {
-      "sha256": "b5c2edceebf5141ea01d070699270c6fd4bff9d166aa1506ed31244129374c42",
-      "bytes": 4549
+      "sha256": "6d491692300fff2e0c55adaf8d049e58ddb078a688cb2d433558dbce0180c1bd",
+      "bytes": 4778
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s26_plus_black_icon.svg": {
-      "sha256": "c6d110404dc33a051f6b6b8dd2cf93dad017b500225da7b56c253d2567f8a2d1",
-      "bytes": 4464
+      "sha256": "e1a38e4c226f5b1137f5e48e681963e3c521121da11ab6c19229cd653fe36f1a",
+      "bytes": 4693
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s26_plus_cobalt_violet_icon.svg": {
-      "sha256": "ad87c5df88254676858733663815469f2247d738baa498ae0b7858fd58a3fd0a",
-      "bytes": 4464
+      "sha256": "c77aa210cea010941511409ea8191d3d330e3f841846dc00a5b430713dda312c",
+      "bytes": 4693
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s26_plus_monochrome_icon.svg": {
       "sha256": "1299f89a2de0a1743bc9f158e6c7f4894fa7a406d6f14d642c10c616a45357c7",
       "bytes": 3596
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s26_plus_pink_gold_icon.svg": {
-      "sha256": "11ce14005533a4f3e230a999e21a71a9174ac5a793861c8df3fe7bca614656fb",
-      "bytes": 4464
+      "sha256": "5c976d53004fcbb584ecce678c8bff116dd6d5f30ad5549161f58cf60f4bbe39",
+      "bytes": 4693
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s26_plus_silver_shadow_icon.svg": {
-      "sha256": "c52dc09b2c01478c736b6c05c3229b69a2bc37c61c5f56e4fbae7de4d98e6f16",
-      "bytes": 4464
+      "sha256": "d36c8a9cb310a6ff17935420166eab3aea024f323cc4cbe7fa567ddd108e9dbf",
+      "bytes": 4693
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s26_plus_sky_blue_icon.svg": {
-      "sha256": "a7a46d171ebabeaf54ea5fbefa42ce1fa7251ada6d35343fc2a406aa7740acb1",
-      "bytes": 4464
+      "sha256": "e681deb9e51754aa72f9f9707460b4f504654ec1da328d109f4e454623dbad47",
+      "bytes": 4693
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s26_plus_white_icon.svg": {
-      "sha256": "c214c7efd88a26c3ce9c87b884dd4caba1b2135d6afdc5a5a89cdc1ea476ed02",
-      "bytes": 4464
+      "sha256": "f8037dccd44e44b6daa176685aeb3ae5b3f72c5486c2ad19cc076bf54f20068d",
+      "bytes": 4693
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s26_silver_shadow_icon.svg": {
-      "sha256": "9d875727e7ce5bb979b40bc66f6b93df36436cd0f8db85d2e5bf804a143f459a",
-      "bytes": 4549
+      "sha256": "ef67d2a8d85d32ac194cc54dfa5c7770c7572cacb49e0b362eb657dbaba11453",
+      "bytes": 4778
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s26_sky_blue_icon.svg": {
-      "sha256": "ff122fa30bb716cb5af987212422dadad406d030984a32af973dfc363d72196d",
-      "bytes": 4549
+      "sha256": "2ba327117d51e0d5882234cbdb240019114306760b6aa7dbea19b21847319247",
+      "bytes": 4778
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s26_ultra_black_icon.svg": {
-      "sha256": "1e49338f557631a852f4447d47547a15cd8cd41b706faf6bb38ef484d2a26a7b",
-      "bytes": 5189
+      "sha256": "40fe2fe67ecdb5981114903ac47f3e2daaa036bfa1c2b2df56943fb0fa608033",
+      "bytes": 5471
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s26_ultra_cobalt_violet_icon.svg": {
-      "sha256": "ead50be33bc1b1642f06787e2f5d964f5fdd04686cb49872129bd4380eeca682",
-      "bytes": 5189
+      "sha256": "dc0d3b46ae9c26f5b21cf760f94a5c6195d3c180231e350039ad1d79f314afcf",
+      "bytes": 5471
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s26_ultra_monochrome_icon.svg": {
       "sha256": "95364da8c25ad6009c26deada63002043dc71c62e5d9c028059cc419abf97617",
       "bytes": 3850
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s26_ultra_pink_gold_icon.svg": {
-      "sha256": "0d7cadde8e337d8b398c0d8d0afc78ab77b1cd379db14f2d68fd99f0834c3930",
-      "bytes": 5189
+      "sha256": "a16ba41e5724cd5362c4a9814b5174a0eacb2992ffe4091c5e9619a00d728832",
+      "bytes": 5471
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s26_ultra_silver_shadow_icon.svg": {
-      "sha256": "bf52b8622d7e549124602694eb25384f35f23fdcfec4fd59447996880b1c9a57",
-      "bytes": 5189
+      "sha256": "4616c8ede47bcfc44615ec6e8ec9f2a9543085facd4eaf48346bbd47cb6589eb",
+      "bytes": 5471
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s26_ultra_sky_blue_icon.svg": {
-      "sha256": "c580584e99a22707dd583d85287617bf64c4c34b51e91887298fdb9e3e33110a",
-      "bytes": 5189
+      "sha256": "ab5d254e17b50e12c3e01bce9b9240c92877a6cb9b0e6e3b02004e305aefd8f2",
+      "bytes": 5471
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s26_ultra_white_icon.svg": {
-      "sha256": "03fb8ebbd15165cfc64ec444df9f0ada296b9a23dfdda6453b259ef515d2c3e2",
-      "bytes": 5189
+      "sha256": "d945d0b99b76d864d2122a8420d9d224ee49aaad6fac99e34666d4eea8cb62ed",
+      "bytes": 5471
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s26_white_icon.svg": {
-      "sha256": "5a0e4ea934ae694839840ff5242c4fcb2fa1c9c52fcd0115a2ed058cf94cefcb",
-      "bytes": 4549
+      "sha256": "934788d4743cf565f8b48077d415c4618a9493439e21cffe2221f77ee8a1f5d5",
+      "bytes": 4778
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s6_black_sapphire_icon.svg": {
-      "sha256": "5c9964983a059bc7df44767044d609f50f975e13397de833868e2687b0bd2fd3",
-      "bytes": 3644
+      "sha256": "c2325fc500824342f00c35e773bf128f408bf7274577a82a32e85967b9203eeb",
+      "bytes": 3851
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s6_blue_topaz_icon.svg": {
-      "sha256": "f54a0eb5beb26975166c045f0678f8805e938edc219d7a40efb202503a014df1",
-      "bytes": 3644
+      "sha256": "75bd94d59c0596053a33c99450afb3577c820bd974415bf12fcb5aee40023fc7",
+      "bytes": 3851
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s6_edge_black_sapphire_icon.svg": {
-      "sha256": "5c9964983a059bc7df44767044d609f50f975e13397de833868e2687b0bd2fd3",
-      "bytes": 3644
+      "sha256": "c2325fc500824342f00c35e773bf128f408bf7274577a82a32e85967b9203eeb",
+      "bytes": 3851
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s6_edge_gold_platinum_icon.svg": {
-      "sha256": "e90883d9b8c06e218161be81bbcb27f7c8c4b784ff0f1c769bdff3eee6bc33e2",
-      "bytes": 3644
+      "sha256": "455e2633fd5f0aaef69ce0e6bb9a873da55ccdc097d26b0c5c17b15259e50195",
+      "bytes": 3851
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s6_edge_green_emerald_icon.svg": {
-      "sha256": "46095cfe3a29a2e49263818c5ce04725a14d23260507f81eabd9403f9fe2b9a0",
-      "bytes": 3644
+      "sha256": "7fdb61da096c22686187894e2cd54c62729712093b77a087ca7bce09e5a707bd",
+      "bytes": 3851
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s6_edge_monochrome_icon.svg": {
       "sha256": "0a95cdee47a4580beac17234e34921ca6558da201f35e02a8e95e10ab3c02732",
       "bytes": 3637
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s6_edge_plus_black_sapphire_icon.svg": {
-      "sha256": "9ef07b682071ce2907a142a8f20d2c7d9fee79e3b3f53f9d6d41ddfbffeaed9a",
-      "bytes": 3630
+      "sha256": "e44d2cbfa2fae80ec5a75dc771c01d57bdea74f8634d5aacc8274d6f63386dd7",
+      "bytes": 3837
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s6_edge_plus_gold_platinum_icon.svg": {
-      "sha256": "3810be06210ca2c5296673b9f6b744c22963f1fa4e0f1be1dea27e3f5bf76d7b",
-      "bytes": 3630
+      "sha256": "dae2c334ee2e3ae4817abe8a67d935a633d78728e1c929ad15805e0911ee9874",
+      "bytes": 3837
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s6_edge_plus_monochrome_icon.svg": {
       "sha256": "321170e57256dcf29ac4d2f66efa748b279350cda9e44e239a9514691c8b5232",
       "bytes": 3633
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s6_edge_plus_silver_titanium_icon.svg": {
-      "sha256": "2d8e0a716b7e82b55c58de456492544325b6fb92d83f2ff50fb6103f0d744ef1",
-      "bytes": 3630
+      "sha256": "abd7dda19d13663b0f183e6ea1a4a0f7736d4a502c7cf3e67800930ea04f1281",
+      "bytes": 3837
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s6_edge_plus_white_pearl_icon.svg": {
-      "sha256": "d5bc97c129a074881859a036209ddae822a1089af120668e1dadbd1f6b626a79",
-      "bytes": 3630
+      "sha256": "c9359f3d35ec1d21b302773ac62211608cd9ff859418fb786af5647168c39fa9",
+      "bytes": 3837
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s6_edge_white_pearl_icon.svg": {
-      "sha256": "f6cec5e966b92631f27e29cd727060ba7f742b3df046820d7cc6279deaeae13c",
-      "bytes": 3644
+      "sha256": "9a25cbe8bd076f694fea927fd5ce10c9933e214de01520125782468527fe0841",
+      "bytes": 3851
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s6_gold_platinum_icon.svg": {
-      "sha256": "e90883d9b8c06e218161be81bbcb27f7c8c4b784ff0f1c769bdff3eee6bc33e2",
-      "bytes": 3644
+      "sha256": "455e2633fd5f0aaef69ce0e6bb9a873da55ccdc097d26b0c5c17b15259e50195",
+      "bytes": 3851
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s6_monochrome_icon.svg": {
       "sha256": "221cf750554d7bd1d61a5ab8cfea615205be62e966f5138e1c34501c6bbe22c5",
       "bytes": 3627
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s6_white_pearl_icon.svg": {
-      "sha256": "f6cec5e966b92631f27e29cd727060ba7f742b3df046820d7cc6279deaeae13c",
-      "bytes": 3644
+      "sha256": "9a25cbe8bd076f694fea927fd5ce10c9933e214de01520125782468527fe0841",
+      "bytes": 3851
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s7_black_onyx_icon.svg": {
-      "sha256": "79460c553b3533867775b771b81781884a31a14481137d6a3076dc8350b20ede",
-      "bytes": 3643
+      "sha256": "11e1043257499579038809c8cc24d4f263b104fec48e365b581ce524df7570ab",
+      "bytes": 3850
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s7_edge_black_onyx_icon.svg": {
-      "sha256": "004b000c2d73abd0cba56f3a8578cbac99a13268e28fca610e95fde5c8952609",
-      "bytes": 3623
+      "sha256": "5eda2742618ca5d6d26cee468e2f27e40d7f0eac2b57903dabea3a537e55bc6b",
+      "bytes": 3830
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s7_edge_gold_platinum_icon.svg": {
-      "sha256": "0772e6a5882830c00fde51d0ec41e5a42b3c4638cdc1cfd60ce9d71dcf8a7034",
-      "bytes": 3623
+      "sha256": "5cb835cf1c22fb5b0049f1c0691f53c0c85c7a719f14f70b0eaab05d52137666",
+      "bytes": 3830
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s7_edge_monochrome_icon.svg": {
       "sha256": "aae61ef21bbe1549b0d6ec5d5c5b0e5e401875464bfeefcf6f8f866496414ec4",
       "bytes": 3626
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s7_edge_silver_titanium_icon.svg": {
-      "sha256": "5a3ce356a6608d7cda5c5253f4241e9f73c1a27c239c2a7a967a56d1336c2c23",
-      "bytes": 3623
+      "sha256": "27a751b2cd5049cf14b6aa994ad3e9bc45639c1e16871ae4f217e871c3d9cd40",
+      "bytes": 3830
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s7_edge_white_pearl_icon.svg": {
-      "sha256": "ed8921c109597a7c8aca7c93bd08bcf28db49a0c6b5e57649830a1531efde094",
-      "bytes": 3623
+      "sha256": "ca985cf077653f77dd630841fa944ba5c96cc50667f94c04a2c87aee16b16e97",
+      "bytes": 3830
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s7_gold_platinum_icon.svg": {
-      "sha256": "d23810d858815338bff84719961de6b87fd9840a84971018129710146fc2e0ee",
-      "bytes": 3643
+      "sha256": "80da4c5a516e4afda07bc5bfd08df5a7c47b9d466d4f5ce8826418198556054f",
+      "bytes": 3850
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s7_monochrome_icon.svg": {
       "sha256": "9dceeb1c914c553bd678dfb22732ab55e526d92e85bfbc008ed022cc5ed9071b",
       "bytes": 3630
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s7_silver_titanium_icon.svg": {
-      "sha256": "d519f284c7b9cb2eacc43e0f713e9bf86e5001dacc5831a2142b472e2ebf5178",
-      "bytes": 3643
+      "sha256": "5cb1a1ce9f54a7013f035af8369595f3cc9bafe96b666f53da9dcc1dbea8472e",
+      "bytes": 3850
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s7_white_pearl_icon.svg": {
-      "sha256": "6df6d778e1a11bfd2d48f83ec2dc6b341630e6e5d086401431aadb294456712f",
-      "bytes": 3643
+      "sha256": "bceb919a143629143c73ecdb5339ea052b494c398cbc770aa207ec85d9ad4a69",
+      "bytes": 3850
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s8_arctic_silver_icon.svg": {
-      "sha256": "aaec3fd9ffc37056df8ede5f4e9cb01cd39a1f7b38ababdf06bde1e675c303b6",
-      "bytes": 3825
+      "sha256": "962e1d92bd45888678174bb0de46dc8de35ba54b614bb87ba49e71c96a8b7654",
+      "bytes": 4056
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s8_burgundy_red_icon.svg": {
-      "sha256": "ee869ef75f271c9d2f32557c96f2bb553b25417ab83fc3494ac908ceaa713893",
-      "bytes": 3825
+      "sha256": "94bc6a593c002b32db0b4afdb8f06d7c2c020cd4b3bfdcd7159e05b586ded70b",
+      "bytes": 4056
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s8_coral_blue_icon.svg": {
-      "sha256": "0eb80daeb98ccaadfa5a091e33ca6e84313139357b4715569acc106003cdc254",
-      "bytes": 3825
+      "sha256": "76f066b24fb02476d73e87ae695ce243ee55860f02ccb338ab7283cd36074b5f",
+      "bytes": 4056
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s8_maple_gold_icon.svg": {
-      "sha256": "6d724923ebcd1d19259fdfbfa28940b7a2d2c6619097e892d409ab63a416334b",
-      "bytes": 3825
+      "sha256": "c7defa49e0fb17a317f762898eddb3205bd0c1baadb65c44d0d8cbeaeb394498",
+      "bytes": 4056
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s8_midnight_black_icon.svg": {
-      "sha256": "009a257cf9ae62cb48ef9c4e72850bfd94c9dbacb7d7bcea1ee8ab9bc1f37ce9",
-      "bytes": 3825
+      "sha256": "b8897ae5f9b27502442121184a6239b68e80e95acf6747c657d86c0b6a53a7fb",
+      "bytes": 4056
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s8_monochrome_icon.svg": {
       "sha256": "f2eaca3ceef27c5f4ddab1fe81359fbb77b0be2c8f1bb2072031f933d7c40b6b",
       "bytes": 3811
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s8_orchid_gray_icon.svg": {
-      "sha256": "6d27510cebbd1e1827c35873691db8264e89aa2599683d593c2fe491e5f90260",
-      "bytes": 3825
+      "sha256": "16b93477cc67ead91143ebb57ddbe0e2b5c58257d41df511e18d4c765aa1658e",
+      "bytes": 4056
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s8_plus_arctic_silver_icon.svg": {
-      "sha256": "b708811cef8337fd9805c7fe5d3bcbedf1c35d7a897d87265c4ebd8665a54642",
-      "bytes": 3787
+      "sha256": "dd49ce3b8d1dd5eb2282845b3848782ceec7a14157a3c74d353e80ed351c8439",
+      "bytes": 4018
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s8_plus_coral_blue_icon.svg": {
-      "sha256": "34ad72005d19aaba738128dbfa202e7e2d053b3dae8425388a648738adc3675f",
-      "bytes": 3787
+      "sha256": "a05957259140502b61cef686bbe9d704f8bca2c6cb8cd1a823339bb656be7acd",
+      "bytes": 4018
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s8_plus_maple_gold_icon.svg": {
-      "sha256": "a2994b912ebff161178e58455e18f3aac6168248d3d1c41271d29b66cb413612",
-      "bytes": 3787
+      "sha256": "f6a8ce10aef772349ff05fef52dc3f8891580bd03f5fe0052083a554412dee4b",
+      "bytes": 4018
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s8_plus_midnight_black_icon.svg": {
-      "sha256": "95f19f01b54b4f7a5f223eea6cecb3b816a1f015e5ecf69293162c38dd8c391f",
-      "bytes": 3787
+      "sha256": "510647607b5fff662ec5ef25e68246a1d8f265f5555bf3639523d67897a2c591",
+      "bytes": 4018
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s8_plus_monochrome_icon.svg": {
       "sha256": "e85ef072c5722f152039dd90b321bad9743bb27392575a08e59704b9aa418f6d",
       "bytes": 3791
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s8_plus_orchid_gray_icon.svg": {
-      "sha256": "156b2674e6be1c346d9df61aa2e83b3523070e612a77cca376ff51c7db6d831b",
-      "bytes": 3787
+      "sha256": "0a78c4e7dbb8127fac7dac95f407825dbefaa24dd07f18ec09bacad6300f5e43",
+      "bytes": 4018
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s8_plus_rose_pink_icon.svg": {
-      "sha256": "3695b088026f2deb5ea511e5021b7b3f0a432cfd9f21ef867f0e106359ae27ee",
-      "bytes": 3787
+      "sha256": "592e742144331a7c6c970f4c854cc9a1d51e8de1b8744bbfbca42b69e693877f",
+      "bytes": 4018
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s8_rose_pink_icon.svg": {
-      "sha256": "db1dea33738892afb749c7e6edf31511913c7285c1e3f64a7a677836f56db850",
-      "bytes": 3825
+      "sha256": "b721ebf4755f15333282350cbc932e4abb1a378a9e2f83911a932950fd1324e1",
+      "bytes": 4056
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s9_burgundy_red_icon.svg": {
-      "sha256": "cb6a2678f27981834d6c8a529ea72a33bbf9706004e87d24a523d2b59168e58e",
-      "bytes": 3797
+      "sha256": "b8022a656409a9bdf3fc137b931ac40fa522cbd2c36fa372b5acabdf7a67faaa",
+      "bytes": 4028
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s9_coral_blue_icon.svg": {
-      "sha256": "555a707196e0c6a7f65303dfed139e5ad0e7b0c26e47eafde9933dd210f6e77f",
-      "bytes": 3797
+      "sha256": "09b988252cb56805d893fa88426fedfde3eb194b6f217fe0cbb7aa248fa62bbf",
+      "bytes": 4028
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s9_lilac_purple_icon.svg": {
-      "sha256": "5b9572e4314d10da60724224a64de0570a699a382af8077cd84cff1bb202b879",
-      "bytes": 3797
+      "sha256": "94f0574367fd1bbbfe83790c7ff904f344ba2faf0d3e01e3af46827980231756",
+      "bytes": 4028
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s9_midnight_black_icon.svg": {
-      "sha256": "1a1252fd1ac0e7194d842d06f0ebaab9c8c2242324d995cfd6caf12bb7cdec1c",
-      "bytes": 3797
+      "sha256": "3a1057ce8e9dc319e1757d0cef981e8d64b37638f4a2316291effd6132ebb6ca",
+      "bytes": 4028
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s9_monochrome_icon.svg": {
       "sha256": "d2960ce57ea11894921c88583378c4080ea3db3a45307cb8350ab34cbab8db2d",
       "bytes": 3783
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s9_plus_burgundy_red_icon.svg": {
-      "sha256": "b5f38c73248e2440d6b6b9fb1fdc41ba1cf4db8a39def6807fc805938416f743",
-      "bytes": 3786
+      "sha256": "6c21be6ce9897bf54af2d96673c3450fd36f3985268166d71c4bfe4386dc0c86",
+      "bytes": 4040
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s9_plus_coral_blue_icon.svg": {
-      "sha256": "c06dc261c610ab0f6871ac1c62fae7bf376ab26c8e9bf7a8dc39dbd452e026a6",
-      "bytes": 3786
+      "sha256": "4012836dd6124fcc4b0910addc84e8e2fd3cfbfc068889a01063524f237a47f8",
+      "bytes": 4040
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s9_plus_lilac_purple_icon.svg": {
-      "sha256": "8d6c401fd4fe774e4ac6d3cd0286a4fffc4ea0ce52fca1afe786a8a403a1c482",
-      "bytes": 3786
+      "sha256": "c04ef0903794f586fad957f338c573731e1006b62b59d33d8a29266a31a5626d",
+      "bytes": 4040
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s9_plus_midnight_black_icon.svg": {
-      "sha256": "3094b80b31495f9a74c350399876efde3adf57be265c0729a9bf33e2eab86040",
-      "bytes": 3786
+      "sha256": "5035eb6f1705eb03e5490a8c3af2869ad0c9e545ed7b1dbe36d0289c86fc9444",
+      "bytes": 4040
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s9_plus_monochrome_icon.svg": {
       "sha256": "2bb8532404d1efe531f5387439966e9f74204c47f014c56a4ee9c85fb283290a",
       "bytes": 3784
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s9_plus_sunrise_gold_icon.svg": {
-      "sha256": "175d1a9ada4fc3a73db68d710d6f3733fc01fead6e9a7e647ed494bd1601e24f",
-      "bytes": 3786
+      "sha256": "80a727c7aa0454c0f6c78e8fa4f4332a8b6454c5ad9661ea34b87cd5ef1a48f5",
+      "bytes": 4040
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s9_plus_titanium_gray_icon.svg": {
-      "sha256": "d851638088b8e794363e203379b38ee189ab0b79d2eaad14e0a4f376a262dbd0",
-      "bytes": 3786
+      "sha256": "224fcd7dafc65984d8366872172d93b6548aece545dd5c5b4f26b3d6e7d76a7d",
+      "bytes": 4040
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s9_sunrise_gold_icon.svg": {
-      "sha256": "736c4561a27cbb6e07b84008fccda80251cf6ec60559fca22e0294966ea4ec6b",
-      "bytes": 3797
+      "sha256": "78266d30396cdfd57140c77993597bd9b0e107242bf874ec580a5bfe32f99088",
+      "bytes": 4028
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_s9_titanium_gray_icon.svg": {
-      "sha256": "3ca031af3e5e3ede3dd32922837a7153993f570175700790daab2972b080912a",
-      "bytes": 3797
+      "sha256": "8b587a44790e1a25c44e74afd7c53df09bfa5c923df9ac34e684ec4757fbdb20",
+      "bytes": 4028
     },
     "assets/devices/icons/samsung/phones/ic_galaxy_z_flip3_cream_icon.svg": {
       "sha256": "481540e8c5cb30c8d062badb98f33f0a89b84af0f122c74296cec5dbc3663c1e",
@@ -6334,380 +6358,380 @@
       "bytes": 1419
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_a11_gray_icon.svg": {
-      "sha256": "6befbf1a82336c8b3c440acc841cfaef97b126b15f0f18684b5402ef95e72536",
-      "bytes": 3544
+      "sha256": "11a02e6e60cd24a91511f4b8dd6702a45d3ba295068bd7f22fbd254370cc34ac",
+      "bytes": 3710
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_a11_monochrome_icon.svg": {
       "sha256": "550e62d21344480bc996dc4684aa2d04ef8846be218cb90bb4ddfe28b9bae3cd",
       "bytes": 3343
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_a11_plus_gray_icon.svg": {
-      "sha256": "30129df67b74e7e36111ccc490dfc56239dd5f56a7798ac6065f70952398229c",
-      "bytes": 3531
+      "sha256": "3945d509429843c66e5f01b066a517fa55593bee4622833563ac44ae19d9aa88",
+      "bytes": 3697
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_a11_plus_monochrome_icon.svg": {
       "sha256": "d45360eb8c1756dce19853d60f86cb8e8847058c3943a906402e9292b796a32b",
       "bytes": 3421
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_a11_plus_silver_icon.svg": {
-      "sha256": "7e508a32548ffe6bd2cff23ac3ce257943953a80d94d428c74003ae04c5aa244",
-      "bytes": 3531
+      "sha256": "e5a843ea9412775b98a3fc759912946a8cb2bb7267faf9359ac5256e941843f7",
+      "bytes": 3697
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_a11_silver_icon.svg": {
-      "sha256": "c0b6a53e0244659faf0ba55ff4de5e44561f1df1ccc7bb5b9c7f4b54df62a89a",
-      "bytes": 3544
+      "sha256": "9b5f8e2c3938737b4fc842f55fbd1ab7c2906776c4d988c593b39ee2cd4ddfca",
+      "bytes": 3710
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s10_fe_blue_icon.svg": {
-      "sha256": "2b156b2d0f87e380af892eca140e154622e33d53016da90c36bbb2affe403e0f",
-      "bytes": 3511
+      "sha256": "184b67981470a2c8ba55256c2722af739a06f6bfc013b0e689c44e9002d45fc9",
+      "bytes": 3677
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s10_fe_gray_icon.svg": {
-      "sha256": "e6930f9fbeef7965e023abc6e54cfa70ab400dc1207480b8b688d2e8d6deefdc",
-      "bytes": 3511
+      "sha256": "38c80b32c616c8a007cb8e156ff7047b2da69ae262c7c37b581fd0ffd8bc84b7",
+      "bytes": 3677
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s10_fe_monochrome_icon.svg": {
       "sha256": "184b5da5ca8416eb34b830d2bb56cf458eb51f6d85f3d32d397d98019672e975",
       "bytes": 3396
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s10_fe_plus_blue_icon.svg": {
-      "sha256": "f2956fc287e8c61a4cb33fc70cd4e31b2c7fbc55567b3474b37c29ef74a4b578",
-      "bytes": 3520
+      "sha256": "df25fcdc3e86c1667765be9e403216b1aa40eccf69d2e44e6cc24bb8f8730bf5",
+      "bytes": 3686
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s10_fe_plus_gray_icon.svg": {
-      "sha256": "8dcac19c1b73fe18cecdadcc85f915bbcde780032cd391bb13d0963cc9e16cbd",
-      "bytes": 3520
+      "sha256": "bfd05392913d0714b32e85bd9bde90661430c414a29259b7f5d36d1c3c80e2fa",
+      "bytes": 3686
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s10_fe_plus_monochrome_icon.svg": {
       "sha256": "bfa311e6a2d078c2ffd2d4a966094ee0bc983884342bcaab354093de422bd5c8",
       "bytes": 3424
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s10_fe_plus_silver_icon.svg": {
-      "sha256": "60514b159bd70e3dd424434a0e0e9529f528a949ec1d49d85fc88420634d333f",
-      "bytes": 3520
+      "sha256": "e461738fae40176e93e08a68f83a588cd2dafa6bcce698e37be5e6b6ee81bb44",
+      "bytes": 3686
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s10_fe_silver_icon.svg": {
-      "sha256": "b36959262559943746394b090d56888db3aaee74081ec49c0911f593063f8bff",
-      "bytes": 3511
+      "sha256": "cc9c2867593e99937db544a3634099674a766a809a827408e2b2b5928babdcc5",
+      "bytes": 3677
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s10_lite_coral_red_icon.svg": {
-      "sha256": "9b5d0d1d4c7865f251ae345313bfd900e0c58dd6e782025017d603de215d234c",
-      "bytes": 3512
+      "sha256": "f104558ddfd989730ff1d8537f9da5a1f4b3e45863990a8e43db0a05fbe16ea6",
+      "bytes": 3678
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s10_lite_gray_icon.svg": {
-      "sha256": "55a9c16fe17caf0dbe8b43376faea53e0fb5271d816272862c8ca2dd37f9f720",
-      "bytes": 3512
+      "sha256": "747128428a1113af132d01b0c4067667f47b4c6149cf2451a7892d77b09b5267",
+      "bytes": 3678
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s10_lite_monochrome_icon.svg": {
       "sha256": "31530d5ed135adb3ddb994a264d6cce5074e3b1ddacf3d5899cb99114b282169",
       "bytes": 3404
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s10_lite_silver_icon.svg": {
-      "sha256": "a9beeb8407bb41e5c4366edd7bf75b2c36da2617a0ac30166c6971d6bfff3734",
-      "bytes": 3512
+      "sha256": "0a87a278ce73eae438ea6699a0f82f2f802d4541b2f2a212c563272f8af1b0cd",
+      "bytes": 3678
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s10_plus_monochrome_icon.svg": {
       "sha256": "67e222f53582881108fe6039d3449e167e12af10588d05a2569a14259a6b6d50",
       "bytes": 3997
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s10_plus_moonstone_gray_icon.svg": {
-      "sha256": "e38f5b6afe25958a3a4c3d9fba16f0233e6373a97b6284cfdccf82283dd21e47",
-      "bytes": 4642
+      "sha256": "a0db9293e407f8bc13a4a2e97fe804e607e9a86e994fea75e9ec17d3a0d79f75",
+      "bytes": 5000
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s10_plus_platinum_silver_icon.svg": {
-      "sha256": "d25ccd6f4de3a98933315a09d418ca6c83b6624059afa961bffc6dd98409dcae",
-      "bytes": 4642
+      "sha256": "02d53b051bd5b22f94470dbdcdd21946bf626a2642111c7c789eaac75250305b",
+      "bytes": 5000
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s10_ultra_monochrome_icon.svg": {
       "sha256": "6e8bd7a5a5f62998c0043e5a3b4a320eb27fded96737cb85708d94df0b498ee5",
       "bytes": 3995
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s10_ultra_moonstone_gray_icon.svg": {
-      "sha256": "2b7c073ec0af07b80dad780eb2d8adc2ddff56d71506e01c9b2325847cd7e560",
-      "bytes": 4639
+      "sha256": "56d99cc491b39ffd92f0ae499b7375598ccb2a83d6f511cf4ee2ebf9f6fada24",
+      "bytes": 4997
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s10_ultra_platinum_silver_icon.svg": {
-      "sha256": "cff03c8667b45539b2ea90f8cb3787731185604899b9235955182720d0861a9b",
-      "bytes": 4639
+      "sha256": "ef4ad7d4ec418e6e606d022ff598594bda816d84dc8be791769122a738905b31",
+      "bytes": 4997
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s11_monochrome_icon.svg": {
       "sha256": "a531524347d6f0e21cb8b65937c83f3b94bd778e6c9233f149110a73f6abd380",
       "bytes": 3631
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s11_moonstone_gray_icon.svg": {
-      "sha256": "5caf599679af5c0c2fbffdfa3842991b41111a0e68dd6ce148cea297a084da68",
-      "bytes": 3722
+      "sha256": "df15ce0d1928906bcc49f4aa2209cd3b3c73227763bc25fb5f59e2d9f4303778",
+      "bytes": 3944
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s11_platinum_silver_icon.svg": {
-      "sha256": "8368e8084822a8e90b431e4490c5e6eed00758bd6aa7e410843a221a4c54d6c2",
-      "bytes": 3722
+      "sha256": "42aaa917b2230686fd629e7b537083f1ff7eb92d5f0a23571bb0785dbcb1c643",
+      "bytes": 3944
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s11_ultra_monochrome_icon.svg": {
       "sha256": "a9b6543d6bc6cc7e59271d3e5a2477fd429876e2d24f8af9c2dca2898477972f",
       "bytes": 3814
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s11_ultra_moonstone_gray_icon.svg": {
-      "sha256": "58f839d1ab3c756fd3fd4f035468460b2967cc6300f1e70dec458eb1b382bd52",
-      "bytes": 4245
+      "sha256": "35e4b24f0fb5272d8fae83c937824e0c1573bd821d57f74036e0564d6921eb88",
+      "bytes": 4546
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s11_ultra_platinum_silver_icon.svg": {
-      "sha256": "e53f7ee4f4725d402a82cb9370d9fcda12be446972337535f2a6b3cbddc831a0",
-      "bytes": 4245
+      "sha256": "7a007590264e9f76ad9d13e71b77605ab9bd199282906586df08db665a25a41a",
+      "bytes": 4546
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s12_plus_gray_icon.svg": {
-      "sha256": "55cea577f770057c5ca8941971f6d69e72402a26b61b0a27ce6815939069753f",
-      "bytes": 3711
+      "sha256": "e5218d81157fa6d8effa281a1808611c102d9787327c9aeb9e831312032ec9be",
+      "bytes": 3933
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s12_plus_monochrome_icon.svg": {
       "sha256": "c042a0c91c3f02ed326c814449bf7ac833ac29226b6f048f9f635ed109590bfc",
       "bytes": 3611
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s12_plus_silver_icon.svg": {
-      "sha256": "342307502e743ba2454665470189ad0d04e545cce0282cab355869fcbc385d59",
-      "bytes": 3711
+      "sha256": "8c084499ee17a66e51d8c9edc8638a2da20d6f890afdd9731e020cf733e76f1c",
+      "bytes": 3933
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s12_ultra_gray_icon.svg": {
-      "sha256": "3a4cf3d1e0dbc88b19a86ff506f94db887efcfb16d5b1ac994276e6320b96c02",
-      "bytes": 4244
+      "sha256": "847e134a7abc6b8509a4856251ed6aa77963a7c97bb0362f03a6ed76a680a62c",
+      "bytes": 4545
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s12_ultra_monochrome_icon.svg": {
       "sha256": "6ae41cf80bc75a1388bb590bc8f65d443c172fca2f9ecebc509f0540c92bc4d4",
       "bytes": 3778
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s12_ultra_silver_icon.svg": {
-      "sha256": "f0793e6f025d31c724d9cc2e86f47d48b34b8cd45b0c5c2533ca73fe715c4bb6",
-      "bytes": 4244
+      "sha256": "a9a2994b20dc5c13f50a8935fa8557b3e5214006322ac6e5bec2a833b1bceb3c",
+      "bytes": 4545
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s6_cloud_blue_icon.svg": {
-      "sha256": "8eeca8d5d078c06fdda47f16afd9d767ef2afc90decb5fced445110e191c5d78",
-      "bytes": 3358
+      "sha256": "8c7fc679a73302466dde429f01129beaa0fb21e432aaa566cd624c182037ace0",
+      "bytes": 3516
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s6_lite_2020_angora_blue_icon.svg": {
-      "sha256": "62e231c3fe6d89eeae401eba9a2ff11ad528aa991d2f636649179a7dc66978ef",
-      "bytes": 3586
+      "sha256": "e91ff5a08c95d5963785b147fda89caa59953bb07fe6630395e4176e78df75d2",
+      "bytes": 3774
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s6_lite_2020_chiffon_rose_icon.svg": {
-      "sha256": "54d1df4edf1b79cdb1d27381991b18404c6a508b5e2ad21c630f15cd2804af23",
-      "bytes": 3586
+      "sha256": "3bca8c1fdb9c8b043a1d1b502d82d1932f13d3e9ae2666b4ebc54e77340c9d8a",
+      "bytes": 3774
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s6_lite_2020_monochrome_icon.svg": {
       "sha256": "ecd257bf453ffd8959aade754c0c567341665b4ff595c72de95e25790058754d",
       "bytes": 3457
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s6_lite_2020_oxford_gray_icon.svg": {
-      "sha256": "759a4fef03167dc5118d32ddc0f79f20334a5c63b92615135b20b9fdbd362a66",
-      "bytes": 3586
+      "sha256": "d9f8c7b73724c9bf23a9020653d440f7d5674f457b2b9c2a33cb35ca70f254a2",
+      "bytes": 3774
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s6_lite_2022_angora_blue_icon.svg": {
-      "sha256": "62e231c3fe6d89eeae401eba9a2ff11ad528aa991d2f636649179a7dc66978ef",
-      "bytes": 3586
+      "sha256": "e91ff5a08c95d5963785b147fda89caa59953bb07fe6630395e4176e78df75d2",
+      "bytes": 3774
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s6_lite_2022_monochrome_icon.svg": {
       "sha256": "d9faef36aa7a8a8a1b7e423d3b86f4e55200fec08b5ae3b229cd811f31dbbdb1",
       "bytes": 3457
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s6_lite_2022_oxford_gray_icon.svg": {
-      "sha256": "759a4fef03167dc5118d32ddc0f79f20334a5c63b92615135b20b9fdbd362a66",
-      "bytes": 3586
+      "sha256": "d9f8c7b73724c9bf23a9020653d440f7d5674f457b2b9c2a33cb35ca70f254a2",
+      "bytes": 3774
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s6_lite_2024_chiffon_pink_icon.svg": {
-      "sha256": "54d1df4edf1b79cdb1d27381991b18404c6a508b5e2ad21c630f15cd2804af23",
-      "bytes": 3586
+      "sha256": "3bca8c1fdb9c8b043a1d1b502d82d1932f13d3e9ae2666b4ebc54e77340c9d8a",
+      "bytes": 3774
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s6_lite_2024_mint_icon.svg": {
-      "sha256": "f5c342ea8ecf65648f274309438a16ea95fd59807baf5859985f17a4b9e306b1",
-      "bytes": 3586
+      "sha256": "f87272e6582bc2b2d18fc28c3260d40e50e616c7f0d2deb5a8f60dd01ccad30e",
+      "bytes": 3774
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s6_lite_2024_monochrome_icon.svg": {
       "sha256": "a5d035d412ae18a5995dd48f2f9e95b2e2784b894c3a3ae7a23761fd04f6c657",
       "bytes": 3457
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s6_lite_2024_oxford_gray_icon.svg": {
-      "sha256": "759a4fef03167dc5118d32ddc0f79f20334a5c63b92615135b20b9fdbd362a66",
-      "bytes": 3586
+      "sha256": "d9f8c7b73724c9bf23a9020653d440f7d5674f457b2b9c2a33cb35ca70f254a2",
+      "bytes": 3774
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s6_monochrome_icon.svg": {
       "sha256": "6850df08bbca657e9fc24a8cd977dbab5a02b9431e6784a90bc3071dc11e7160",
       "bytes": 3377
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s6_mountain_gray_icon.svg": {
-      "sha256": "99bbc2cac4ae5c945e3800dfbed5bb5a0eee0fc4cc6d9c2e7921374a801d654b",
-      "bytes": 3358
+      "sha256": "e41a0810df95ad8bbbb9a56866be05381f53f4feb95be7d5f4fda02aace334fe",
+      "bytes": 3516
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s6_rose_blush_icon.svg": {
-      "sha256": "7183c145b04d2128074b97f4458ef60b23e28c802ce9311c8a214396c2e38edb",
-      "bytes": 3358
+      "sha256": "6267c5af296e3dd9e057b2a8ffceba795bea5be8c6826bde10c6374f9d3d088a",
+      "bytes": 3516
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s7_fe_monochrome_icon.svg": {
       "sha256": "28679698434c117aefb2bc3d1ac12e1764caaac8ba6bb5e503a77cf48daaa347",
       "bytes": 3412
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s7_fe_mystic_black_icon.svg": {
-      "sha256": "42db2f264235a9b4e2e4ac5f3a7af3ba94a6f21e9af9a6fb8d6deb0c9dd8e38c",
-      "bytes": 3500
+      "sha256": "6df81780569090f17e0f2cb315212b3b37b643551c104ca2ffe1d174b6b8567f",
+      "bytes": 3666
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s7_fe_mystic_green_icon.svg": {
-      "sha256": "8d975466a30f7552ce68da04b3b032033bb74402a51ca360df66c207e834be78",
-      "bytes": 3500
+      "sha256": "a8bb4eac0749a99e633da54009711b4dc03384a78e4fa1431fad6abf8028b35c",
+      "bytes": 3666
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s7_fe_mystic_pink_icon.svg": {
-      "sha256": "d3dbe61d029121c1635efc45f30860375de0aa2dc7c6db30529b36c9e32d830e",
-      "bytes": 3500
+      "sha256": "c706ef50ca60bc1a98427e39dfd99ca97eeb7c2a739d905f1e9045e2072ed2b4",
+      "bytes": 3666
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s7_fe_mystic_silver_icon.svg": {
-      "sha256": "78a61ce46d5c59e5290c8cb17bc062417194c500e622f6e567b7c4d991c54c59",
-      "bytes": 3500
+      "sha256": "b7166e448098630272d818c92efd96e5cbf57252c015a0f26873a422f5c6245b",
+      "bytes": 3666
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s7_monochrome_icon.svg": {
       "sha256": "b7e17aab6ffdd7803e6af839ffa27f43606852376662de7953f18cae12aadf76",
       "bytes": 3601
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s7_mystic_black_icon.svg": {
-      "sha256": "481616c89507b49c40b19960a29355af2107b6a1e8c9fb39a45c72fd330b2870",
-      "bytes": 3519
+      "sha256": "48955b4f1393bd26f7f65d8ba0273ffc5bdaf9bc0ce2a4a5d19f23ad43b1d72f",
+      "bytes": 3718
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s7_mystic_bronze_icon.svg": {
-      "sha256": "189b8b759c7c6048af8537d2c5dc07e4641c09382de6363c79ff57b194c65a02",
-      "bytes": 3519
+      "sha256": "e219b25b27e58044a3e0e3ba520cc3f20d980273ccf7e5c4f171693f4afde724",
+      "bytes": 3718
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s7_mystic_navy_icon.svg": {
-      "sha256": "2a01e0affd3414a7870f2df6e5c9215abd8038e7c6e6d30c9748f82f1fc3bed8",
-      "bytes": 3519
+      "sha256": "18db6791e88681d13850014686157e2146f467cf223f97227b1a37cd6c513686",
+      "bytes": 3718
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s7_mystic_silver_icon.svg": {
-      "sha256": "a7aae31c5306ec161dc426398ca94dd2e21781132967452acdb304035616ce79",
-      "bytes": 3519
+      "sha256": "0789e4602d58f6ef2098be9f35f10af3ea252046068c25b9a65911bed91c1750",
+      "bytes": 3718
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s7_plus_monochrome_icon.svg": {
       "sha256": "3545949f57224cf5b44427eab9c88f29185d9d75727e560f83ef57339b554bbc",
       "bytes": 3616
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s7_plus_mystic_black_icon.svg": {
-      "sha256": "d46665ef326825bdfebaf4912ffa1de7dbd4fc0b17b89f08158393f62a4401da",
-      "bytes": 3505
+      "sha256": "77b1823cdcf84c099272565682187a8c4a4375bfe42af829eb704f7f5a84c6e6",
+      "bytes": 3704
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s7_plus_mystic_bronze_icon.svg": {
-      "sha256": "4bb2d377ab3e1f7933128fdee910b03da1682a175eeb262b38febcc1a6b9af7c",
-      "bytes": 3505
+      "sha256": "eb2bd63ed863e8ed1a40e153e4388eb9e0030c50a3b0665a9c9f3bbc4e17ec3d",
+      "bytes": 3704
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s7_plus_mystic_navy_icon.svg": {
-      "sha256": "1554b31a93d5132bac6566e56993dba78f4c768730bad5ff87813031062243c2",
-      "bytes": 3505
+      "sha256": "ed7925fd4cd693b316daef17eafb0609ce64e3f432541f5eecd85731d353dbaf",
+      "bytes": 3704
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s7_plus_mystic_silver_icon.svg": {
-      "sha256": "17d68e22a8e004243e30b21aed464349559b59ae0a9e352a9d9c14b9bcde586c",
-      "bytes": 3505
+      "sha256": "8c01205c2775ff4f46bd475a2266280948658d9b70f94624bfcfa3d3c55c2e2a",
+      "bytes": 3704
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s8_graphite_icon.svg": {
-      "sha256": "6882b630b8f8a49dc13d98626aa69562b30e54b7a7d27ffee3657a6d1f5c2495",
-      "bytes": 3518
+      "sha256": "f3d56e7466b9607e011feda5c15684a272c9087ae647de3633c704236b674571",
+      "bytes": 3717
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s8_monochrome_icon.svg": {
       "sha256": "1906fa66426af3502612026850d7c72efb69b182d876377489e1b09880bf70f5",
       "bytes": 3573
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s8_pink_gold_icon.svg": {
-      "sha256": "d8a21ab3d971a8d0823946acc024346cd7699590f0574573a874a8265fbe2760",
-      "bytes": 3518
+      "sha256": "74e948e58c693d987e05a11cbf64a538f0451e24ef3e02d3c17aff955c8a3c94",
+      "bytes": 3717
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s8_plus_graphite_icon.svg": {
-      "sha256": "6939cd3fe4441ff5f5683a6a4e0d87f77d2072bac17e8f8a5b68a7945ef34cb8",
-      "bytes": 3505
+      "sha256": "f5f8165d3985da09123e9227fe21527642a492d3fbd898cde71d6fb7aaaa0ef9",
+      "bytes": 3704
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s8_plus_monochrome_icon.svg": {
       "sha256": "a4e519bfaf0e71ad3c2b573ac8c01c0ea892bd3d990fb58d9a66d5b93cee5ef7",
       "bytes": 3588
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s8_plus_pink_gold_icon.svg": {
-      "sha256": "9f85148bc12f7deb1ff0acb3b89201438640bb70d64ac348a432aba6898bd2ee",
-      "bytes": 3505
+      "sha256": "58f1551580bfed4170619d1206e6fc1c31b41349f17898990f2ea0a447164e4b",
+      "bytes": 3704
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s8_plus_silver_icon.svg": {
-      "sha256": "60b3b37fcdb442149619468d7b9c7da7793292d9f3bac3aedfa96317d4d93429",
-      "bytes": 3505
+      "sha256": "401d6b75101e779d402373cf8f0b51520e2d93a0837c6a3253582fba0e025d77",
+      "bytes": 3704
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s8_silver_icon.svg": {
-      "sha256": "6cb1bdf17f3b373e641b1d6ad3f80602bda6e76f678d8a8c8630417499238334",
-      "bytes": 3518
+      "sha256": "c96f80cd58a66cb5d6376bc4ec5e6ad2f7dd7c44298a5d85be38329fec9139ef",
+      "bytes": 3717
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s8_ultra_graphite_icon.svg": {
-      "sha256": "faa52f0d1e46b09d1605e5c46330b4341b66506894d95fe1e2b68d131317338c",
-      "bytes": 3493
+      "sha256": "c3892bdfd64b2a0f4bfda4e6723c4249033eb822cc798357adb3cc8158f71f21",
+      "bytes": 3692
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s8_ultra_monochrome_icon.svg": {
       "sha256": "629243c0a69385e4619583318dfe7ac468fc1148321b82e9671a3860ac0b2497",
       "bytes": 3597
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s9_beige_icon.svg": {
-      "sha256": "0f95f6289c0c8d589c63870a5554b5bec267bc8de62122895df6756738083154",
-      "bytes": 4062
+      "sha256": "8a1edf51ae61e975bbe897a0d7edf3337df462767034959afa6b0b305834810f",
+      "bytes": 4341
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s9_fe_gray_icon.svg": {
-      "sha256": "39bf192f7f627956ef5a039bc7b440e6d53e944031ba0cfe4e7a73defb3ef051",
-      "bytes": 3510
+      "sha256": "b5e27fea6600cdb71e2086792eaac3600fa9c534adfb33e47515bbeccc1a53cf",
+      "bytes": 3676
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s9_fe_lavender_icon.svg": {
-      "sha256": "3c32b65310714c7c0e6c706d482511edd7f237dd511f3389da52f71978c74487",
-      "bytes": 3510
+      "sha256": "a3e57a056fcf14d6efd0326b35682577343eecacb2dce621c24ea48e5262ca84",
+      "bytes": 3676
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s9_fe_mint_icon.svg": {
-      "sha256": "96b1ca1af64011c596bbb26d9bbb1cc42e6c5c221d69bf26c00a565950f0c488",
-      "bytes": 3510
+      "sha256": "2ae1fa4e7730f827c68446237524d9a2a152f9fac8d3775319ab3474ca63f849",
+      "bytes": 3676
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s9_fe_monochrome_icon.svg": {
       "sha256": "a52a8174b703613ea59ef897f6f8c44a97c0efb4ce6ee72d436f6bd9d07c803c",
       "bytes": 3392
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s9_fe_plus_gray_icon.svg": {
-      "sha256": "4ddfaa233b466640a004bfe2503407fcf98f5bd76a65b8d64b082fae95f1eed2",
-      "bytes": 4080
+      "sha256": "c7251a26d6be493be115ee00bbad723e35bc9f67ffa3cd5187c3a0ffa2429e98",
+      "bytes": 4325
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s9_fe_plus_lavender_icon.svg": {
-      "sha256": "1afc3b60469c01cb28d683409d961dcdc0c7bdbefdb9c73900065f9b7094a102",
-      "bytes": 4080
+      "sha256": "571bda1e76d5948ad12ff6c53940cc67858b88aa76ef21fc58e1ed6070017a22",
+      "bytes": 4325
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s9_fe_plus_mint_icon.svg": {
-      "sha256": "712fa60d7165a07db8a64a087747281bb83dbf7e298991b6e3ed675ab5d21963",
-      "bytes": 4080
+      "sha256": "2d856b7ce3446510047eb6ef0c826f62fd0f0c00a187f2f8078a975cecb85e21",
+      "bytes": 4325
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s9_fe_plus_monochrome_icon.svg": {
       "sha256": "9aaa667582ce0822f1fa71559401cb900506c10d891850ebf9b212a997d05c40",
       "bytes": 3590
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s9_fe_plus_silver_icon.svg": {
-      "sha256": "3e68915d264e75c4e2de5d87171b4aa1f74d0291b8f2b6301d4c25329b3c3e83",
-      "bytes": 4080
+      "sha256": "025c762059dd4e91d4b087a0ed1c8673468f1481cad89d9c135fa93933b593b0",
+      "bytes": 4325
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s9_fe_silver_icon.svg": {
-      "sha256": "1dfb011089e012dd7ac981c369263cef2e40994184e26311d73fd3e2a461bf79",
-      "bytes": 3510
+      "sha256": "77f80bef3aeb143f9992aab22e9424102fcf9d5b23d9e8e7a3d1964fd860812a",
+      "bytes": 3676
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s9_graphite_icon.svg": {
-      "sha256": "983d382c7c46ffa490953e4faa5e77d19495f3a77b7033d2894d343664f77ca2",
-      "bytes": 4062
+      "sha256": "9d64b9d6509508cfb78030c75cdb850d6f3f659f610038ed4d1d884fda198d66",
+      "bytes": 4341
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s9_monochrome_icon.svg": {
       "sha256": "297375dff7ab57df3413815cb580e6974bf504986fb178d52781f2be445f8137",
       "bytes": 3739
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s9_plus_beige_icon.svg": {
-      "sha256": "ad39b1ccc94788196213827eee0c6d67671c875bdb188af75edf7257b2c7f407",
-      "bytes": 4644
+      "sha256": "d8323b25e6dae56fe04981e5cadb497fb1a201419a7bc84771314a7232a490a3",
+      "bytes": 5002
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s9_plus_graphite_icon.svg": {
-      "sha256": "f3b72173ade3cc8b8712280d7a6ba8644abec7a2b2eacf2cc0de5582abcd0876",
-      "bytes": 4644
+      "sha256": "5e25e99584a105f1f87402e120e36ed7998bd15e7646298c700ffc3536df4489",
+      "bytes": 5002
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s9_plus_monochrome_icon.svg": {
       "sha256": "3d4217ab7266657f78a85dc6657410605a51449f3f7f9e3d191e27763546818a",
       "bytes": 3953
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s9_ultra_beige_icon.svg": {
-      "sha256": "568fb862e01ea970d86d9a80f27b5c6c01213a30681e49d5e40747f46f3d61c6",
-      "bytes": 4638
+      "sha256": "8698461d733887c8281a210ea666b8cde6515e5dcd6541e9126c2deedd1d2c64",
+      "bytes": 4996
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s9_ultra_graphite_icon.svg": {
-      "sha256": "3c6d658110e09c2b2ef059a8cd869fd46cb0b122fa5c381cfabfd2ef2b85ae46",
-      "bytes": 4638
+      "sha256": "3fd55d21cdc6c6df4a0117b2180a462b98f22727e74b6ee3c46e49c50f6ff6f4",
+      "bytes": 4996
     },
     "assets/devices/icons/samsung/tablets/ic_galaxy_tab_s9_ultra_monochrome_icon.svg": {
       "sha256": "c4e6edb6d44093778be64f43bb5e876f2ad439dc6fa111343f8e0864683b7fd3",
@@ -7513,6 +7537,10 @@
       "sha256": "a25ab472528be4ea0654c6491d7cb2edc428c7333cfcbc9de0814762561e58ac",
       "bytes": 14761
     },
+    "assets/devices/make_honor_robot_profile.py": {
+      "sha256": "5c2d380f0e6305448d5e71d7b5a59df8dc5c8360ecbb1e3f8389f745630be0f3",
+      "bytes": 5697
+    },
     "assets/devices/make_iphone_profiles.py": {
       "sha256": "6d102ea3f9a848768fa230a0bfa5d41244c8829c9d31a9cfdcbd989ef39a0790",
       "bytes": 23521
@@ -7552,6 +7580,10 @@
     "assets/devices/make_samsung_tablet_profiles.py": {
       "sha256": "13fcc6d101461169ba4d2a6ace3a7d71b6029d5ffafdb8f9e3161480d9c5a64d",
       "bytes": 14457
+    },
+    "assets/devices/make_xiaomi_tablet_profiles.py": {
+      "sha256": "2dedcbdb5080ab9f835a3d922fbfeb6811ea5f8845b352df2d3114924bee867d",
+      "bytes": 5603
     },
     "assets/devices/MODEL_BUILD_NOTES.md": {
       "sha256": "3d65fc25752e257907b9655672379c9a7a0580c8fc8498b5e3dc532b45a802da",
@@ -8017,6 +8049,10 @@
       "sha256": "c2ec8fe1818042fd47268378a2045f8d2fd2a5f038be8fa107a59f5991d90dbf",
       "bytes": 7372
     },
+    "assets/devices/models/honor-robot-phone.json": {
+      "sha256": "1fcc01f345847e7198d2fd1b2e61057b01b093641a605b6bb71a73e3ba7b02f2",
+      "bytes": 10364
+    },
     "assets/devices/models/iphone-11-pro-max.json": {
       "sha256": "f77728aaa110c6a631f0b30b0498dfc62d9904ec4b89ce3a7c41edde946e4a07",
       "bytes": 11745
@@ -8349,9 +8385,25 @@
       "sha256": "b56d730cc43152164efaa49b28250621c1afe5c28609dea309a8002de1add624",
       "bytes": 45245
     },
+    "assets/devices/models/xiaomi-pad-6.json": {
+      "sha256": "4edfca25336786c4473e871737559176d9b54b5c20c20ef6ef19c278940d6e8b",
+      "bytes": 8005
+    },
+    "assets/devices/models/xiaomi-pad-6s-pro-12-4.json": {
+      "sha256": "249bba99718643e3f3813e005c785ab2884282a77e514d1d15fc3759c2b036d4",
+      "bytes": 5594
+    },
+    "assets/devices/models/xiaomi-pad-7-pro.json": {
+      "sha256": "b6fcaffa3587829a71e9f26aa99114d6e29c5d8ebd1932a5ffe7f6e9d3733eca",
+      "bytes": 8031
+    },
+    "assets/devices/models/xiaomi-pad-7.json": {
+      "sha256": "17d54e8af0ef71d2562c45aa8b00ec18c0ab55ed1de24fecafc9f4ac55cbdc59",
+      "bytes": 8007
+    },
     "assets/devices/models-manifest.json": {
-      "sha256": "e608b1de07f778a992cf1771dfb520a59f500514e76ba8b9737c4801cdc43e4d",
-      "bytes": 54045
+      "sha256": "da0213ad9d52469cdf1ccd0306eed5bba4a450a5255a478e73233820a423fad3",
+      "bytes": 55409
     },
     "assets/devices/nothing_geometry.py": {
       "sha256": "e431193f1c606d9805e66c2072b6daa63a486ee06ce3065a54d39d2717958022",
@@ -15285,6 +15337,10 @@
       "sha256": "8f4ba12482afb9e22cfa33ab2cba5e0e0696635843fa2b2861f144e82c349bdf",
       "bytes": 7471
     },
+    "assets/devices/profiles/honor-robot-phone.json": {
+      "sha256": "c3b557ab3b9caf972d36770aa5fea1104a4fcf992892267218a552774e5c3d95",
+      "bytes": 103174
+    },
     "assets/devices/profiles/iphone-11-pro-max.json": {
       "sha256": "0a462917da77f5e1eb4dd1b8fd0d022b0bd8f20485649d0a98204cc4f76e8349",
       "bytes": 12718
@@ -15617,6 +15673,22 @@
       "sha256": "2fc47ea84fb601192bf4fcfe2282e4363212a55d7ac075ef670b0c1a5e08d5db",
       "bytes": 45087
     },
+    "assets/devices/profiles/xiaomi-pad-6.json": {
+      "sha256": "5a100677d188094103b1ae41426a4216caab17290776c4434ee6656bb4250c63",
+      "bytes": 59234
+    },
+    "assets/devices/profiles/xiaomi-pad-6s-pro-12-4.json": {
+      "sha256": "2bc98b35c11991691d6c1407cb169af0bae70f555dedea642e2de1507d45bbc4",
+      "bytes": 57578
+    },
+    "assets/devices/profiles/xiaomi-pad-7-pro.json": {
+      "sha256": "6930b03b17c8e9f1ae55bb6e185259de9a1b9574eb90868161d132008a93f300",
+      "bytes": 60031
+    },
+    "assets/devices/profiles/xiaomi-pad-7.json": {
+      "sha256": "6401045f93713cf78f83565299b791e0a1fa424ddf40a4dc2638a0537ca37818",
+      "bytes": 59972
+    },
     "assets/devices/provenance/APPLE_MODELS.md": {
       "sha256": "4d81d971b6ab7d2243d1e7a9b4160600364776991099a55f35496800deedf3ae",
       "bytes": 6087
@@ -15649,6 +15721,14 @@
       "sha256": "3f67f40cf92f7d357d438772ca7d47d2b13aa9a4eb3eada3e0b54d719218c1fc",
       "bytes": 9428
     },
+    "assets/devices/provenance/icon-recipes/tmp/ref5/annotate_samsung_morph_roles.py": {
+      "sha256": "35e7f177ad88ca8275ad67f5cd3a3b0b0138bb0e6ae1389256a49ad87b44bf8e",
+      "bytes": 10201
+    },
+    "assets/devices/provenance/icon-recipes/tmp/ref5/build_combined_gallery.py": {
+      "sha256": "bbc31c2720537ef158e569cb3291c137f0a652acccd539f1d485d5d8e66f570b",
+      "bytes": 49424
+    },
     "assets/devices/provenance/icon-recipes/tmp/ref5/complete_logo_tones.py": {
       "sha256": "88bdf9e643f74533c4713102603d24b9d59ce69ad90821bde851024f16e48c39",
       "bytes": 6550
@@ -15657,9 +15737,21 @@
       "sha256": "a717f5cd3f3e1cb4484836c6d0f1db466afb3bf37cb78d28fd3a079dd60d4b2c",
       "bytes": 1401
     },
+    "assets/devices/provenance/icon-recipes/tmp/ref5/gallery_icon_morph.js": {
+      "sha256": "1a425ad64559b31938d2d2b6237f090faf2a2eb2be7a36dac394f1118a5183d1",
+      "bytes": 21383
+    },
     "assets/devices/provenance/icon-recipes/tmp/ref5/generate_monochrome.py": {
       "sha256": "342a3340791c0deeae20091c9e79a10f4f21c589c8a247688cc8e787f60ac245",
       "bytes": 11854
+    },
+    "assets/devices/provenance/icon-recipes/tmp/ref5/merged-gallery-verification.json": {
+      "sha256": "4206072ec97279df38546044e45c8315ebd1b520c466f5b3e3718034b6dcc25a",
+      "bytes": 2349
+    },
+    "assets/devices/provenance/icon-recipes/tmp/ref5/morph-final-review.json": {
+      "sha256": "994acea5138f36c7cb316c25d77c29577ec3e230597d45ab6525b9e45e8bbcc3",
+      "bytes": 13165
     },
     "assets/devices/provenance/icon-recipes/tmp/ref5/morph-role-map.json": {
       "sha256": "8b84cb2f7c635d4021d64e88a941957537c7ed7383d1096898e6c82c22c5d4bb",
@@ -15668,6 +15760,14 @@
     "assets/devices/provenance/icon-recipes/tmp/ref5/morph-role-report.json": {
       "sha256": "504117fc5c2ed8cde5c6d178e9c612591b8d656aef5888a42cbdf9b5fdbf00db",
       "bytes": 281477
+    },
+    "assets/devices/provenance/icon-recipes/tmp/ref5/samsung-morph-role-map.json": {
+      "sha256": "38bd456caf6e73a1629bfc648108b2e5a92b58e5385fd706853ef51596aee2b3",
+      "bytes": 1038009
+    },
+    "assets/devices/provenance/icon-recipes/tmp/ref5/samsung-morph-role-report.json": {
+      "sha256": "81dc4858b3e909b429dd86d5681461584360026a9a8db91444d688d7c71cfa15",
+      "bytes": 644572
     },
     "assets/devices/provenance/MONOCHROME.md": {
       "sha256": "9967b7b56b875dfdc380b7ee895d184990587426e233303e91618a3a3405e0af",
@@ -15717,6 +15817,10 @@
       "sha256": "7c02cffdb18b663ca362b20c9754b46da206aae0f383de448b12c76ed32e23f9",
       "bytes": 5822
     },
+    "assets/devices/provenance/research/honor-robot-final-review.json": {
+      "sha256": "8f192c22c0bebc98bd6b3b081284ac5447c618389fa9535c4772009c19e8bec2",
+      "bytes": 10109
+    },
     "assets/devices/provenance/research/iphone-11-14.json": {
       "sha256": "ab071551358946cf0f4e4656319d284c0f5fa52c03841e5c73486c218ce15cbb",
       "bytes": 45222
@@ -15745,9 +15849,17 @@
       "sha256": "69273aca534a25dc70b2cf041796adb49c62663953a81cddd0569b4c9f642136",
       "bytes": 33943
     },
+    "assets/devices/provenance/research/merged-gallery-verification.json": {
+      "sha256": "4206072ec97279df38546044e45c8315ebd1b520c466f5b3e3718034b6dcc25a",
+      "bytes": 2349
+    },
     "assets/devices/provenance/research/model-position-repair.json": {
       "sha256": "2c87d86b68cd5e7daa23903814079b84eba7dfe3b06bdf7bcbaaaca83144921d",
       "bytes": 460
+    },
+    "assets/devices/provenance/research/morph-final-review.json": {
+      "sha256": "994acea5138f36c7cb316c25d77c29577ec3e230597d45ab6525b9e45e8bbcc3",
+      "bytes": 13165
     },
     "assets/devices/provenance/research/morph-role-map.json": {
       "sha256": "8b84cb2f7c635d4021d64e88a941957537c7ed7383d1096898e6c82c22c5d4bb",
@@ -15861,6 +15973,14 @@
       "sha256": "335fda41b3025f47cf5c0a297f9eb358fe7b4acd01a9c563234e4251afee8ade",
       "bytes": 16354
     },
+    "assets/devices/provenance/research/samsung-morph-role-map.json": {
+      "sha256": "38bd456caf6e73a1629bfc648108b2e5a92b58e5385fd706853ef51596aee2b3",
+      "bytes": 1038009
+    },
+    "assets/devices/provenance/research/samsung-morph-role-report.json": {
+      "sha256": "81dc4858b3e909b429dd86d5681461584360026a9a8db91444d688d7c71cfa15",
+      "bytes": 644572
+    },
     "assets/devices/provenance/research/samsung-tablet-rear-measurements.json": {
       "sha256": "c3336a20e67d854f7eb4939cbd4ba274b865083be523d79faf2bd43b3045aee8",
       "bytes": 27846
@@ -15876,6 +15996,14 @@
     "assets/devices/provenance/research/tablet-logo-placement-changes.json": {
       "sha256": "686bfccf1fd3ce1d05e60fa0d7ff59f8bc2c9bb7ed6103e5e8f969cacee6f99b",
       "bytes": 23552
+    },
+    "assets/devices/provenance/research/xiaomi-tablet-measurements.json": {
+      "sha256": "461800304d17827a92a440cdce290fa58477d82c75a0598910eda9e6efd800df",
+      "bytes": 63723
+    },
+    "assets/devices/provenance/research/xiaomi-tablets-final-review.json": {
+      "sha256": "83fde424a53938f12fe2080725bf7a9887dd059ab5d716a8e23ae1e945bbe163",
+      "bytes": 8756
     },
     "assets/devices/provenance/SOURCES.md": {
       "sha256": "b3726e3cbb56611370001596304c7a3813081952454ec7cecf9a9ef8dbc481c5",
@@ -15901,9 +16029,17 @@
       "sha256": "cb48b1888beec15f921d1a0421102fb676f8d7a80ba7499f034f721bbc36157b",
       "bytes": 5568
     },
+    "assets/devices/robot_geometry.py": {
+      "sha256": "4415ac8ad526b66cc2a086ae85eeca0bbcd0e145d1a64111e1ade5a2589d7512",
+      "bytes": 10080
+    },
     "assets/devices/sync_logo_palettes.py": {
       "sha256": "b4c9589d98facb8bf9221c666c0ccef29f14221d0361beb73de492ae89d7b457",
       "bytes": 2349
+    },
+    "assets/devices/verify_honor_robot.py": {
+      "sha256": "054d237f25aa5ed4b4e79ce2517566e52ad87e184d46744676ccd43812dfa845",
+      "bytes": 11051
     },
     "assets/devices/verify_iphones.py": {
       "sha256": "cd3b915f976b06e560fc9a1d7dda55075fd6d0b3b13e911896c4f48d8328f123",

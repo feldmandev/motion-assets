@@ -1,0 +1,193 @@
+{
+  "id": "honor-robot-phone",
+  "reviewed_at": "2026-10-23T10:33:25.118675+03:00",
+  "result": "PASS within stated promotional visualization and sampled collision scope",
+  "framework": "[local reference path omitted]",
+  "changes": [
+    "Moved all 13 existing White files to exports/honor-robot-phone with SHA256 verification; no duplicate White directory.",
+    "Found solid stationary mount overlapping flip foot. Cut a 9.4 mm central slot through mount and lower foundation, retaining side ears and chassis attachment.",
+    "Rebuilt only the two existing robot exports for that geometry fix; refreshed seven poses and deployed-front close-up for each finish.",
+    "Robot wrapper sends default White to profile.stem; Black retains finish suffix. Verifier accepts --output.",
+    "Expanded verification to 16 moving meshes versus nine stationary obstacles, containment probes, physical mount contacts and exact GLB timing."
+  ],
+  "source_files_changed": [
+    "robot_geometry.py",
+    "build_honor_robot.py",
+    "verify_honor_robot.py"
+  ],
+  "source_sha256": {
+    "robot_geometry.py": "259b7498b87617f940e420df1aa5867355975fb4b3b3ddece8f10fabf75b7b68",
+    "build_honor_robot.py": "fd657df55b37b36487f256609d3f5532addbb525d514b242251f6e0f0657b23f",
+    "verify_honor_robot.py": "dfddb6deeb552117dbd2ba71f371cf2383306caefe300c0e8ecbc4a425607bfd",
+    "make_honor_robot_profile.py": "de6e8f2680331e10466057b789d70057506e2439985774e7169bff311a86f1e5",
+    "profiles/honor-robot-phone.json": "c3b557ab3b9caf972d36770aa5fea1104a4fcf992892267218a552774e5c3d95"
+  },
+  "finishes": {
+    "White": {
+      "directory": "[local reference path omitted]",
+      "frames_checked": 121,
+      "reviewed_pose_frames": [
+        1,
+        19,
+        40,
+        64,
+        85,
+        103,
+        121
+      ],
+      "deployed_front_reviewed": true,
+      "unexpected_intersections": 0,
+      "max_attachment_error_mm": 0,
+      "max_link_tip_to_axle_error_mm": 7.679882693323606e-06,
+      "max_glb_matrix_component_error": 4.172325134277344e-07,
+      "mount_contact_chain": {
+        "Aluminum enclosure -> Robot fixed hinge foundation": true,
+        "Robot fixed hinge foundation -> Robot fixed hinge mount": true,
+        "Robot fixed hinge mount -> Robot flip axle": true
+      },
+      "finish_materials_match_metadata": true,
+      "sha256": {
+        "model.glb": "97ddeeea363eaaa0fae138cf0af6dd2d03c159c76367659d8e8142e27104a46f",
+        "model.blend": "f45d58b78ff92440d926afbb48e6ca10ad47459a7e45b09e1e65d46bfdc866fc",
+        "device.json": "9162a984bc49f78f136a0dc7524b3d7f68269b32b3a3100df57e048359bbcdcb",
+        "frame.svg": "088491c27a42812fa2b54be67f59ba2647e33900a106bf7986cf1b6f4a9e6b63",
+        "robot-verification.json": "11e9ecb24380cce51efdb70c3a27c6c2109b97ce769ff15514758f112366cf2d",
+        "robot-pose-001.png": "2a86dd7070766081cda5010a23bbb560cab9a830ff6aadb5622e9a4f4fa63c2a",
+        "robot-pose-019.png": "2c01612676a9f492096e46ac15805882aa677d988018153530b4b066341fdeaf",
+        "robot-pose-040.png": "6d2819631a375094c51b315234adc30fc11c3a6d4c38990ece0d54a65b32d0e3",
+        "robot-pose-064.png": "35ccc8b37f9efaa04e2ceb53f4d59930c5904e027888c478de3b34e972d8546c",
+        "robot-pose-085.png": "1edc2ae21b04a66092ea4f7631aa0aac7f20fc1ca962844a11b7c48db38e0477",
+        "robot-pose-103.png": "fdc757232a36a1c94d8c7e514d989ba8033879f0cba504211f6ebd3ab26a9ce4",
+        "robot-pose-121.png": "977813a5244c07e73fcef0fe933ec62f82dc1ac1a6b38e937541db2364cb6a10",
+        "robot-deployed-front.png": "ea959bc0afcb2ecf773c22d39fe18e25c1ea7cffef85ffa51dd1979cd8b4f8d6"
+      }
+    },
+    "Black": {
+      "directory": "[local reference path omitted]",
+      "frames_checked": 121,
+      "reviewed_pose_frames": [
+        1,
+        19,
+        40,
+        64,
+        85,
+        103,
+        121
+      ],
+      "deployed_front_reviewed": true,
+      "unexpected_intersections": 0,
+      "max_attachment_error_mm": 0,
+      "max_link_tip_to_axle_error_mm": 7.679882693323606e-06,
+      "max_glb_matrix_component_error": 4.172325134277344e-07,
+      "mount_contact_chain": {
+        "Aluminum enclosure -> Robot fixed hinge foundation": true,
+        "Robot fixed hinge foundation -> Robot fixed hinge mount": true,
+        "Robot fixed hinge mount -> Robot flip axle": true
+      },
+      "finish_materials_match_metadata": true,
+      "sha256": {
+        "model.glb": "e4bcf9067f564cafab0eb135842962d86f8efc92a2f4499d83526305578413ac",
+        "model.blend": "563c73c07f91889ece63362b165a899dc222b8bc73d068b4952bd87b4af7e29c",
+        "device.json": "9c5e6afcf857161bc4db210198e69e7261e230580e63a9cded630de3a0295aa5",
+        "frame.svg": "7fd88109b6754bdd9eaac0d107d3be5a236a9cdc2407564b15295c00db9cd80b",
+        "robot-verification.json": "11e9ecb24380cce51efdb70c3a27c6c2109b97ce769ff15514758f112366cf2d",
+        "robot-pose-001.png": "41b988cad01bb85af080d123a6d5a5fab75690a4a6462a0c7650bcceb8b1cc04",
+        "robot-pose-019.png": "3822769d89d91f9f37d31facd43f35b1d0f631fc185991d94b3ec88f6f008db0",
+        "robot-pose-040.png": "9b71839c218f70c5f09761fae7b8281543895230d04e3366599b1a3edabf4022",
+        "robot-pose-064.png": "731f1363f5a3a7a61d40dfd9968600ad61b0164a9c852aae705aa4a3353663a6",
+        "robot-pose-085.png": "0f809ecf33ac364d8025d74264bf53450129d970c8f537858d8b32cb79c52dad",
+        "robot-pose-103.png": "d4eab894f4b8371e3aecdd6db44127907ed5cb9c4025d988229a9c7ff499f7fd",
+        "robot-pose-121.png": "f243aa935336f16682c7fad70fdd61e7763a8d7e07495e4e8bbfbe814df2a965",
+        "robot-deployed-front.png": "1ff9af34e9ac459a85d3c8f3b20b4ea3bbe1e1f91449f7cf589874cb5a9679ec"
+      }
+    }
+  },
+  "finish_geometry_and_animation_binary_identical": true,
+  "motion_contract": {
+    "metadata": "device.json -> robot_motion",
+    "clip": "Robot deploy",
+    "channels": 5,
+    "joints": [
+      "Robot flip hinge",
+      "Robot pan motor",
+      "Robot pitch motor",
+      "Robot optical roll motor"
+    ],
+    "shutter": "Robot dock shutter",
+    "optical_axis": "Robot optical axis",
+    "frames": [
+      1,
+      121
+    ],
+    "fps": 30,
+    "motion_duration_seconds": 4,
+    "glb_sampler_seconds": [
+      0.03333333333333333,
+      4.033333333333333
+    ],
+    "progress_mapping": "glb_time = 1/30 + 4*progress; frame = 1 + 120*progress",
+    "stow": "Reverse the same clip from progress 1 to 0; includes the tracking demonstration in reverse.",
+    "body_and_island_fixed": true,
+    "joint_axes_and_offsets": "Blender-local; use exported clip for GLB playback, which includes coordinate conversion.",
+    "coordinates": "BLEND metres: X right, Y up, front +Z. GLB metres: X right, Y front, Z down.",
+    "finish_contract": "device.json finishes and material_slots; separate Black export shares the device ID, not a second gallery profile."
+  },
+  "measurements_mm": {
+    "estimated_body": [
+      76.5,
+      163.8,
+      8.9
+    ],
+    "cover_center_z": -8,
+    "stowed_casing_and_cover_depth": 12.65,
+    "stowed_mesh_depth_including_screen_offset": 12.67,
+    "foot_slot_width": 9.4,
+    "foot_width": 9,
+    "nominal_side_clearance": 0.2
+  },
+  "collision_scope": "All moving meshes versus enclosure, rear/front glass, island, floor, guides, foundation and mount; surface crossings plus solid-angle containment probes for connected closed meshes. Shutter/guide and axle/support mating contacts excluded. Bearing fits and motor internals are simplified, not OEM mechanical certification.",
+  "intentional_contacts": [
+    "Robot sliding dock cover / Robot shutter guide rails",
+    "Robot flip axle / fixed hinge mount and foundation journals"
+  ],
+  "limitations": [
+    "MWC promotional reconstruction, not OEM CAD or confirmed retail dimensions/kinematics.",
+    "Pocket, hidden pivots, supports, actuator internals and clearances are inferred. Axle journal and shutter guide fits use intentional mating overlaps.",
+    "121 integer frames sampled; no continuous swept-volume, stress, cable routing, motor internals or complete moving-part self-collision certification.",
+    "Body, screen size/resolution and finish materials are estimates; finishes use collection swatches, not calibrated measurements.",
+    "HONOR collection inlay retained; alpha symbol in promotional footage, gearing, cables, seals, ports and small inscriptions omitted."
+  ],
+  "references": {
+    "official_page": "https://www.honor.com/global/events/honor-robot-phone/",
+    "research_record": "research/honor-robot/research.json",
+    "asset_hashes_match": true,
+    "visually_reviewed": [
+      "gimbal.jpg",
+      "video-tvc-pc-all-frames.jpg",
+      "tvc-006.jpg",
+      "tvc-008.jpg",
+      "tvc-121.jpg",
+      "video-motion1-pc-frames.jpg",
+      "video-motion2-pc-frames.jpg"
+    ],
+    "observation": "Sliding shutter, fixed top-edge anchor, outward flip, side dogleg and articulated camera support the reconstructed motion sequence; hidden geometry remains inferred."
+  },
+  "parent_integration_requests": [
+    "Canonical export now matches exports/profile.stem. No shared build.py hook change needed.",
+    "Gallery discovery currently selects Pixel/iPhone/Galaxy/OnePlus profiles, not HONOR. Parent must enroll honor-robot-phone once, using the canonical export.",
+    "Parent gallery integration must pass robot_motion and consume its clip/progress contract, and map robot-pose images or generate the expected standard view/finish thumbnails without rebuilding.",
+    "Do not create a second profile/card for the Black finish. No gallery/public-repository edits or push were performed."
+  ],
+  "logs": [
+    "honor-robot-review-build.log",
+    "honor-robot-review-build-errors.log",
+    "honor-robot-review-stdout.log",
+    "honor-robot-review-stderr.log",
+    "honor-robot-review-black.log",
+    "honor-robot-review-black-errors.log"
+  ],
+  "historical_logs_preserved": [
+    "honor-robot-final2-build.log",
+    "honor-robot-final-verification.log"
+  ]
+}
