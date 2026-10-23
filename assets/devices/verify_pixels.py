@@ -79,11 +79,11 @@ def verify(profile_path):
         names = {node.get('name') for node in gltf['nodes']}
         assert {'Power', 'Volume'} <= names
         assert ('Rear fingerprint' in names) == legacy['fingerprint']
-        if profile['id'] == 'pixel-4':
+        if profile['id'] in ('pixel-4', 'pixel-4-xl'):
             assert sum(name is not None and name.startswith('Inner bezel selfie camera')
-                       for name in names) >= 4
+                       for name in names) == len(profile['bezel_cameras'])
     for index, node in enumerate(gltf['nodes']):
-        if not node.get('name','').startswith('Aluminum enclosure'):
+        if not (node.get('name','').startswith('Aluminum enclosure') or node.get('name') == 'Body | aluminum enclosure'):
             continue
         parent = next(parent for parent in gltf['nodes'] if index in parent.get('children',[]))
         expected = next((panel['body_mm'] for panel in profile.get('panels',[]) if panel['name']==parent['name']),profile['body_mm'])
@@ -92,8 +92,10 @@ def verify(profile_path):
         for axis, dimension in [(0,'width'),(2,'height')]:
             assert abs(bounds['max'][axis]-bounds['min'][axis]-expected[dimension]*.001)<1e-6
         assert abs(bounds['max'][1]-bounds['min'][1]-(expected['depth']-.05)*.001)<1e-6
-    for screen in metadata['screens']:
+    profile_screens = profile.get('screens', [profile['screen']] if 'screen' in profile else [])
+    for screen_index, screen in enumerate(metadata['screens']):
         w, h = screen['size_mm']; px, py = screen['resolution']
+        assert screen['resolution'] == profile_screens[screen_index]['resolution'], 'Native resolution changed'
         assert abs(w/h-px/py) < 1e-10
         if 'Fold' in profile['name'] and screen['node'] == 'Cover screen':
             assert px < py and h > w, (profile['id'], 'cover screen must be portrait')
@@ -131,26 +133,61 @@ def verify(profile_path):
             # GLB Y-up: display height is exported along Z, curvature along Y.
             assert abs(bounds['max'][2]-bounds['min'][2]-h*.001) < 1e-6
             assert 'TEXCOORD_0' in primitive['attributes']
+            if len(node_names) == 1:
+                values = []
+                for attribute, components in [('POSITION',3), ('TEXCOORD_0',2)]:
+                    accessor = gltf['accessors'][primitive['attributes'][attribute]]
+                    view = gltf['bufferViews'][accessor['bufferView']]
+                    start = binary_offset+view.get('byteOffset',0)+accessor.get('byteOffset',0)
+                    values.append([struct.unpack_from('<'+'f'*components,raw,start+i*view.get('byteStride',components*4))
+                                   for i in range(accessor['count'])])
+                positions, uvs = values
+                assert len(positions) == len(uvs)
+                for (x,_,z),(u,v) in zip(positions,uvs):
+                    assert abs(u-(x-bounds['min'][0])/(w*.001)) < 1e-5, 'Screen U mapping stretched'
+                    assert abs(v-(z-bounds['min'][2])/(h*.001)) < 1e-5, 'Screen V mapping stretched'
         if len(node_names) == 1:
             assert abs(widths[0]-w*.001) < 1e-6
         else:
             assert abs(sum(widths)-w*.001) < 1e-6, (profile['id'], 'split screen width changed', widths, w)
-    if 'asset' not in profile and 'panels' not in profile:
-        # Slab enclosure corners are an outward offset of the screen corners. Verify the exported
-        # body metadata uses the local bezel on each side, including slightly off-centre screens.
+    if 'panels' not in profile:
         body = metadata['body_mm']; screen = metadata['screens'][0]
-        w, h = screen['size_mm']; cx, cy = screen['center_mm'][:2]
-        left = body['width']/2 + cx - w/2
-        right = body['width']/2 - cx - w/2
-        top = body['height']/2 - cy - h/2
-        bottom = body['height']/2 + cy - h/2
-        radius = screen['corner_radius_mm']
-        limit = min(body['width'], body['height'])/2
-        expected = [min(limit, radius+bezel) for bezel in
-                    [min(right,bottom), min(right,top), min(left,top), min(left,bottom)]]
-        actual = body.get('corner_radii_mm', [body['corner_radius']]*4)
-        assert max(abs(a-b) for a,b in zip(actual, expected)) < 1e-8, (
-            profile['id'], 'body corners do not follow display + bezel', actual, expected)
+        trace_path = BASE/'research'/'skins'/profile['id']/'trace.json'
+        trace = json.loads(trace_path.read_text()) if trace_path.exists() else None
+        if trace and 'derived_from' not in trace:
+            from shapely.geometry import MultiPoint, Polygon
+            points = trace['body_outline_mm']
+            xs, ys = [p[0] for p in points], [p[1] for p in points]
+            cx, cy = (min(xs)+max(xs))/2, (min(ys)+max(ys))/2
+            expected = Polygon([((x-cx)*body['width']/(max(xs)-min(xs)),
+                                 (y-cy)*body['height']/(max(ys)-min(ys))) for x,y in points]).convex_hull
+            enclosure_name = 'Body | aluminum enclosure' if profile.get('asset') else 'Aluminum enclosure'
+            node = next(node for node in gltf['nodes'] if node.get('name') == enclosure_name)
+            primitive = gltf['meshes'][node['mesh']]['primitives'][0]
+            accessor = gltf['accessors'][primitive['attributes']['POSITION']]
+            view = gltf['bufferViews'][accessor['bufferView']]
+            start = binary_offset+view.get('byteOffset',0)+accessor.get('byteOffset',0)
+            vertices = [struct.unpack_from('<fff',raw,start+i*view.get('byteStride',12))
+                        for i in range(accessor['count'])]
+            actual = MultiPoint([(x*1000,-z*1000) for x,_,z in vertices]).convex_hull
+            # The convex envelope excludes subpixel rail notches. Allow 0.10 mm for the
+            # 320-point perimeter resampling and float32 export, not a different corner shape.
+            error = actual.exterior.hausdorff_distance(expected.exterior)
+            assert error < .10, (profile['id'], 'enclosure differs from official contour (mm)', error)
+        else:
+            # Without a traced chassis, retain the display-plus-bezel fallback check.
+            w, h = screen['size_mm']; cx, cy = screen['center_mm'][:2]
+            left = body['width']/2 + cx - w/2
+            right = body['width']/2 - cx - w/2
+            top = body['height']/2 - cy - h/2
+            bottom = body['height']/2 + cy - h/2
+            radius = screen['corner_radius_mm']
+            limit = min(body['width'], body['height'])/2
+            expected = [min(limit, radius+bezel) for bezel in
+                        [min(right,bottom), min(right,top), min(left,top), min(left,bottom)]]
+            actual = body.get('corner_radii_mm', [body['corner_radius']]*4)
+            assert max(abs(a-b) for a,b in zip(actual, expected)) < 1e-8, (
+                profile['id'], 'body corners do not follow display + bezel', actual, expected)
     if profile.get('articulation'):
         articulation = profile['articulation']
         assert metadata.get('articulation') == articulation

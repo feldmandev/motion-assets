@@ -1,0 +1,1150 @@
+{
+  "status": "Implementation complete; focused parent Blender export and rendered QA pending",
+  "files_modified": [
+    "geometry.py: create_device regular front glass else branch only",
+    "build.py: prepare_screen curved enclosure/glass deformation, support-cap splits and X coordinate only",
+    "profiles/pixel-6-pro.json",
+    "profiles/pixel-7-pro.json",
+    "research/pixel67-curved-front-patch.json"
+  ],
+  "devices": {
+    "pixel-6-pro": {
+      "review_status": "changed; all assigned IDs reviewed",
+      "profile_fields_added": {
+        "front_glass_inset_mm": [
+          0.35,
+          1.25
+        ],
+        "front_roll_top_mm": 0.35
+      },
+      "retained_side_front_roll_mm": 1.6,
+      "retained_back_roll_mm": 3.4,
+      "actual_glb_sha256_before_build": "a1e7e3834822126f40e56017a0698e33cf11c2a02075feb1581283c4afbf2544",
+      "actual_glb_before_build": {
+        "Aluminum enclosure": {
+          "bounds_xyz_mm": [
+            [
+              -37.950001657009125,
+              -4.424999933689833,
+              -81.95000141859055
+            ],
+            [
+              37.950001657009125,
+              4.424999933689833,
+              81.95000141859055
+            ]
+          ],
+          "midsection_right_front_xz_mm": [
+            [
+              36.27270216150329,
+              3.425000002607703
+            ],
+            [
+              37.30197064578533,
+              3.108584089204669
+            ],
+            [
+              36.33944092800159,
+              3.425000002607703
+            ],
+            [
+              37.033263593912125,
+              3.269640728831291
+            ],
+            [
+              37.17157244682312,
+              3.195712808519602
+            ],
+            [
+              36.66214272379875,
+              3.394256578758359
+            ],
+            [
+              35.12616401200355,
+              3.915266533203699
+            ],
+            [
+              37.48137131333351,
+              2.9563710559159517
+            ],
+            [
+              37.94229403138161,
+              1.9818274304270744
+            ],
+            [
+              37.91925683617592,
+              2.137144561856985
+            ],
+            [
+              36.35000064969063,
+              3.425000002607703
+            ],
+            [
+              37.950001657009125,
+              1.825000043027103
+            ],
+            [
+              37.88110613822937,
+              2.2894556168466806
+            ],
+            [
+              37.586815655231476,
+              2.8400293085724115
+            ],
+            [
+              36.96229308843613,
+              3.3032072242349386
+            ],
+            [
+              36.347888914580864,
+              3.425000002607703
+            ],
+            [
+              37.76107355952263,
+              2.5792347732931376
+            ],
+            [
+              37.42320090532303,
+              3.009093925356865
+            ],
+            [
+              37.23891079425812,
+              3.15535138361156
+            ],
+            [
+              36.50682792067528,
+              3.4172956366091967
+            ],
+            [
+              36.888374015688896,
+              3.3296558540314436
+            ],
+            [
+              37.79464028775692,
+              2.508264151401818
+            ],
+            [
+              37.63358294963837,
+              2.7769708540290594
+            ],
+            [
+              36.814454942941666,
+              3.3561044838279486
+            ],
+            [
+              37.82820701599121,
+              2.437293529510498
+            ],
+            [
+              37.72071190178394,
+              2.6465735863894224
+            ],
+            [
+              37.93077543377876,
+              2.0594859961420298
+            ],
+            [
+              37.365030497312546,
+              3.061816794797778
+            ],
+            [
+              37.946147844195366,
+              1.9034137367270887
+            ],
+            [
+              37.534093484282494,
+              2.8982001822441816
+            ],
+            [
+              37.900181487202644,
+              2.213300089351833
+            ],
+            [
+              36.584485322237015,
+              3.405776107683778
+            ],
+            [
+              37.10423409938812,
+              3.2360742334276438
+            ],
+            [
+              36.42841428518295,
+              3.42114781960845
+            ],
+            [
+              37.68035024404526,
+              2.7139123994857073
+            ],
+            [
+              36.73829883337021,
+              3.3751805312931538
+            ],
+            [
+              36.106167285012035,
+              3.425000002607703
+            ],
+            [
+              37.85465657711029,
+              2.3633745731785893
+            ]
+          ]
+        },
+        "Front black glass": {
+          "bounds_xyz_mm": [
+            [
+              -36.4300012588501,
+              1.5719161601737142,
+              -80.43000102043152
+            ],
+            [
+              36.4300012588501,
+              4.449999891221523,
+              80.43000102043152
+            ]
+          ],
+          "midsection_right_front_xz_mm": [
+            [
+              35.62508895993233,
+              3.669101104605943
+            ],
+            [
+              36.13710775971413,
+              3.1571066938340664
+            ],
+            [
+              35.89912690222263,
+              3.360572375498805
+            ],
+            [
+              35.428441486858354,
+              3.8502707528267175
+            ],
+            [
+              35.428441486858354,
+              1.830270796580252
+            ],
+            [
+              35.812683403491974,
+              3.4396752504903816
+            ],
+            [
+              36.199288442730904,
+              3.081338421907276
+            ],
+            [
+              35.416013697264276,
+              1.839807980953605
+            ],
+            [
+              36.06133908033371,
+              3.2192880971706472
+            ],
+            [
+              35.22166200636089,
+              1.9733642206370479
+            ],
+            [
+              36.4300012588501,
+              2.4499999126419425
+            ],
+            [
+              36.4300012588501,
+              2.4399998947046697
+            ],
+            [
+              36.4300012588501,
+              2.429999876767397
+            ],
+            [
+              35.37288251165241,
+              3.891790832955035
+            ],
+            [
+              35.25001033564773,
+              3.9793166541295877
+            ],
+            [
+              36.26146912574768,
+              3.0055701499804854
+            ],
+            [
+              36.26146912574768,
+              1.874429639428854
+            ],
+            [
+              35.39109738609538,
+              1.8588132575265186
+            ],
+            [
+              36.307673901319504,
+              2.9191267385613173
+            ],
+            [
+              36.307673901319504,
+              1.9608730217441916
+            ],
+            [
+              35.71888618171215,
+              3.5543881775481623
+            ],
+            [
+              36.420393735170364,
+              2.3324547219090164
+            ],
+            [
+              36.420393735170364,
+              2.547545067500323
+            ],
+            [
+              36.35387867689133,
+              2.832683327142149
+            ],
+            [
+              36.35387867689133,
+              2.0473164040595293
+            ],
+            [
+              35.42220605125329,
+              3.8550850273699537
+            ],
+            [
+              35.429999232292175,
+              1.8290644511580467
+            ],
+            [
+              35.429999232292175,
+              3.849064407404512
+            ],
+            [
+              36.38233244419098,
+              2.1411129855550826
+            ],
+            [
+              36.38233244419098,
+              2.7388867747504264
+            ],
+            [
+              34.436736370282865,
+              2.144911063040976
+            ],
+            [
+              35.98557040095329,
+              3.281469500507228
+            ],
+            [
+              34.52389119329559,
+              4.188431489521016
+            ],
+            [
+              35.52754409611225,
+              3.7590827560052276
+            ],
+            [
+              36.41078621149063,
+              2.234909567050636
+            ],
+            [
+              36.41078621149063,
+              2.6450902223587036
+            ]
+          ]
+        },
+        "Device screen": {
+          "bounds_xyz_mm": [
+            [
+              -35.8297642924299,
+              3.4849998774006963,
+              -78.36203667102382
+            ],
+            [
+              35.929429843235994,
+              4.484999924898148,
+              77.11621728958562
+            ]
+          ],
+          "midsection_right_front_xz_mm": [
+            [
+              35.33063466198197,
+              3.8599983647597287
+            ],
+            [
+              33.83565182135122,
+              4.446777872127441
+            ],
+            [
+              35.929429843235994,
+              3.4849998774006963
+            ],
+            [
+              34.43444849472144,
+              4.421239449584391
+            ]
+          ]
+        }
+      },
+      "source_urls": {
+        "back.webp": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_6_pro/back.webp",
+        "mask.webp": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_6_pro/mask.webp",
+        "layout": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_6_pro/layout"
+      },
+      "product_sources": [
+        {
+          "id": "pixel6",
+          "url": "https://blog.google/products-and-platforms/devices/pixel/meet-pixel-6-pixel-6-pro/"
+        },
+        {
+          "id": "pixel7",
+          "url": "https://blog.google/products-and-platforms/devices/pixel/design2022/"
+        }
+      ],
+      "seams": [
+        {
+          "edge": "left",
+          "index": 0,
+          "source_interval_px": [
+            423,
+            454
+          ],
+          "source_axis_px": 438.5,
+          "center_axis_mm": 60.0983,
+          "width_mm": 1.5448,
+          "normalized_uv": [
+            0,
+            0.13332319854058985
+          ],
+          "confidence": "low-medium",
+          "material": "polymer, separate nonmetal role; numeric shader remains estimate"
+        },
+        {
+          "edge": "left",
+          "index": 1,
+          "source_interval_px": [
+            2844,
+            2875
+          ],
+          "source_axis_px": 2859.5,
+          "center_axis_mm": -60.5468,
+          "width_mm": 1.5448,
+          "normalized_uv": [
+            0,
+            0.8694131955001521
+          ],
+          "confidence": "low-medium",
+          "material": "polymer, separate nonmetal role; numeric shader remains estimate"
+        },
+        {
+          "edge": "right",
+          "index": 0,
+          "source_interval_px": [
+            420,
+            452
+          ],
+          "source_axis_px": 436.0,
+          "center_axis_mm": 60.2229,
+          "width_mm": 1.5946,
+          "normalized_uv": [
+            1,
+            0.13256308908482822
+          ],
+          "confidence": "medium",
+          "material": "polymer, separate nonmetal role; numeric shader remains estimate"
+        },
+        {
+          "edge": "right",
+          "index": 1,
+          "source_interval_px": [
+            2842,
+            2872
+          ],
+          "source_axis_px": 2857.0,
+          "center_axis_mm": -60.4222,
+          "width_mm": 1.495,
+          "normalized_uv": [
+            1,
+            0.8686530860443904
+          ],
+          "confidence": "medium",
+          "material": "polymer, separate nonmetal role; numeric shader remains estimate"
+        },
+        {
+          "edge": "bottom",
+          "index": 0,
+          "source_interval_px": [
+            921,
+            965
+          ],
+          "source_axis_px": 943.0,
+          "center_axis_mm": 9.138,
+          "width_mm": 2.1971,
+          "normalized_uv": [
+            0.6203947368421052,
+            1
+          ],
+          "confidence": "medium",
+          "material": "polymer, separate nonmetal role; numeric shader remains estimate"
+        }
+      ],
+      "seam_status": "Existing measured data copied for parent integration; no antenna geometry or profile seam schema changed in this patch.",
+      "measurements": {
+        "measured_projected_metal_width_px": {
+          "side": 7,
+          "top": 25
+        },
+        "measured_projected_metal_width_mm": {
+          "side": 0.3495,
+          "top": 1.2458
+        },
+        "boundary_uncertainty_px": 2,
+        "boundary_excludes": "Brighter glass bevel inside metal/glass gasket and all OLED/black border area.",
+        "finish": "Polished metal and curved glass; retain existing rail roughness 0.18 and every finish palette.",
+        "curved_correction_pending_parent": {
+          "side_rail_target_mm": 0.35,
+          "top_rail_target_mm": 1.25,
+          "top_front_roll_estimate_mm": 0.35,
+          "side_roll_depth_mm": "Fit to retained curved-glass side surface, not measurable from this frontal image. Do not apply .35 as a global front roll.",
+          "current_front_roll_mm_retained": 1.6,
+          "current_screen_sag_mm_retained": 1.0,
+          "reason": "Current global glass inset is 1.52 mm, versus independently observed narrower side metal. Side and top boundaries need separate treatment to avoid counting curved glass as rail."
+        }
+      },
+      "checks": {
+        "actual_owned_source_executed_without_Blender": true,
+        "backend": "Numerical mesh containers and polygon-plane splitting; actual source AST executed. Does not validate Blender bmesh runtime.",
+        "enclosure_rear_vertices_exactly_unchanged_before_existing_sag": true,
+        "body_convex_contour_max_error_mm": 0.07922457501824343,
+        "glass_contains_traced_OLED": true,
+        "minimum_projected_glass_OLED_gap_mm": 1.6306148787312102,
+        "projected_glass_bounds_mm": [
+          -37.6,
+          -80.7,
+          37.6,
+          80.7
+        ],
+        "side_center_cross_sections_mm": [
+          {
+            "x_mm": 35.9294314381271,
+            "metal_z_mm": 3.4250000000000003,
+            "glass_z_mm": 3.4500000000000006
+          },
+          {
+            "x_mm": 37.6,
+            "metal_z_mm": 2.822253666568643,
+            "glass_z_mm": 3.43
+          },
+          {
+            "x_mm": 37.550000000000004,
+            "metal_z_mm": 2.8806502513823484,
+            "glass_z_mm": 3.4500000000000006
+          },
+          {
+            "x_mm": 37.4,
+            "metal_z_mm": 3.030121089344644,
+            "glass_z_mm": 3.4500000000000006
+          },
+          {
+            "x_mm": 0,
+            "metal_z_mm": 4.425,
+            "glass_z_mm": 4.45
+          }
+        ],
+        "OLED_edge_sag_mm": 1.0,
+        "support_width_mm": 3.5985413622328775,
+        "OLED_face_centroid_min_glass_clearance_mm": 0.03500000000000014,
+        "front_glass_material": "front_glass",
+        "screen_origin_correction_mm": 0.049832775919732446
+      },
+      "confidence_limits": "Medium for projected material boundaries (+/- ~0.10 mm); low-medium for top fillet and 0.02 mm glass edge radius. Cross-section depths are engineering fits, not manufacturer CAD. Numerical cap triangulation uses Shapely, so parent must check actual Blender triangles and front/oblique render."
+    },
+    "pixel-7-pro": {
+      "review_status": "changed; all assigned IDs reviewed",
+      "profile_fields_added": {
+        "front_glass_inset_mm": [
+          0.6,
+          0.95
+        ],
+        "front_roll_top_mm": 0.35
+      },
+      "retained_side_front_roll_mm": 1.6,
+      "retained_back_roll_mm": 3.2,
+      "actual_glb_sha256_before_build": "160e1369fea4cf43cebe1902f121e11ef20c1145559e2213b238c186da7360c3",
+      "actual_glb_before_build": {
+        "Aluminum enclosure": {
+          "bounds_xyz_mm": [
+            [
+              -38.30000013113022,
+              -4.424999933689833,
+              -81.45000040531158
+            ],
+            [
+              38.30000013113022,
+              4.424999933689833,
+              81.45000040531158
+            ]
+          ],
+          "midsection_right_front_xz_mm": [
+            [
+              38.231104612350464,
+              2.2894556168466806
+            ],
+            [
+              37.93681785464287,
+              2.8400293085724115
+            ],
+            [
+              37.31229528784752,
+              3.3032072242349386
+            ],
+            [
+              38.11107575893402,
+              2.5792347732931376
+            ],
+            [
+              37.77319937944412,
+              3.009093925356865
+            ],
+            [
+              37.58891299366951,
+              3.15535138361156
+            ],
+            [
+              36.85682639479637,
+              3.4172956366091967
+            ],
+            [
+              37.23837621510029,
+              3.3296558540314436
+            ],
+            [
+              38.14464062452316,
+              2.508264151401818
+            ],
+            [
+              37.98358514904976,
+              2.7769708540290594
+            ],
+            [
+              38.178205490112305,
+              2.437293529510498
+            ],
+            [
+              37.16445714235306,
+              3.3561044838279486
+            ],
+            [
+              38.070714101195335,
+              2.6465735863894224
+            ],
+            [
+              38.280775770545006,
+              2.0594859961420298
+            ],
+            [
+              38.29614818096161,
+              1.9034137367270887
+            ],
+            [
+              37.71502897143364,
+              3.061816794797778
+            ],
+            [
+              37.88409382104874,
+              2.8982001822441816
+            ],
+            [
+              38.25017996132374,
+              2.213300089351833
+            ],
+            [
+              36.3839729586635,
+              3.425000002607703
+            ],
+            [
+              36.93448565900326,
+              3.405776107683778
+            ],
+            [
+              37.454236298799515,
+              3.2360742334276438
+            ],
+            [
+              36.77841275930405,
+              3.42114781960845
+            ],
+            [
+              35.1195809223601,
+              3.9155108911084042
+            ],
+            [
+              36.686311470832756,
+              3.425000002607703
+            ],
+            [
+              38.03035244345665,
+              2.7139123994857073
+            ],
+            [
+              37.0883010327816,
+              3.3751805312931538
+            ],
+            [
+              38.204655051231384,
+              2.3633745731785893
+            ],
+            [
+              37.651970982551575,
+              3.108584089204669
+            ],
+            [
+              37.38326579332352,
+              3.269640728831291
+            ],
+            [
+              36.59994357969261,
+              3.425000002607703
+            ],
+            [
+              37.52157464623451,
+              3.195712808519602
+            ],
+            [
+              37.012144923210144,
+              3.394256578758359
+            ],
+            [
+              36.69726137059084,
+              3.425000002607703
+            ],
+            [
+              37.831369787454605,
+              2.9563710559159517
+            ],
+            [
+              38.26925531029701,
+              2.137144561856985
+            ],
+            [
+              38.292296230793,
+              1.9818274304270744
+            ],
+            [
+              38.30000013113022,
+              1.825000043027103
+            ],
+            [
+              36.69999912381172,
+              3.425000002607703
+            ]
+          ]
+        },
+        "Front black glass": {
+          "bounds_xyz_mm": [
+            [
+              -36.77999973297119,
+              1.4492145273834467,
+              -79.93000000715256
+            ],
+            [
+              36.77999973297119,
+              4.449999891221523,
+              79.93000000715256
+            ]
+          ],
+          "midsection_right_front_xz_mm": [
+            [
+              35.52776946266596,
+              3.7679644312630862
+            ],
+            [
+              36.16268187761307,
+              3.3738794081727974
+            ],
+            [
+              36.54928877949715,
+              3.081338421907276
+            ],
+            [
+              36.4113375544548,
+              3.2192880971706472
+            ],
+            [
+              36.77999973297119,
+              2.4499999126419425
+            ],
+            [
+              36.77999973297119,
+              2.4399998947046697
+            ],
+            [
+              36.77999973297119,
+              2.429999876767397
+            ],
+            [
+              35.76907541725662,
+              3.5567624922418024
+            ],
+            [
+              35.70005753918054,
+              3.6193674704851286
+            ],
+            [
+              34.514811925692584,
+              4.063675965604335
+            ],
+            [
+              36.61147132515907,
+              3.0055701499804854
+            ],
+            [
+              36.61147132515907,
+              1.874429639428854
+            ],
+            [
+              36.657676100730896,
+              2.9191267385613173
+            ],
+            [
+              36.657676100730896,
+              1.9608730217441916
+            ],
+            [
+              36.068886518478394,
+              3.4023323005385464
+            ],
+            [
+              36.77039220929146,
+              2.3324547219090164
+            ],
+            [
+              36.77039220929146,
+              2.547545067500323
+            ],
+            [
+              36.70388087630272,
+              2.832683327142149
+            ],
+            [
+              36.70388087630272,
+              2.0473164040595293
+            ],
+            [
+              34.39475919493939,
+              2.0031470196448695
+            ],
+            [
+              35.78000143170357,
+              3.5464171451167203
+            ],
+            [
+              36.73233278095722,
+              2.1411129855550826
+            ],
+            [
+              36.73233278095722,
+              2.7388867747504264
+            ],
+            [
+              36.33556887507439,
+              3.281469500507228
+            ],
+            [
+              35.87754629552364,
+              3.488601169010508
+            ],
+            [
+              36.760784685611725,
+              2.234909567050636
+            ],
+            [
+              36.760784685611725,
+              2.6450902223587036
+            ],
+            [
+              35.77781541051604,
+              3.5484927170023557
+            ],
+            [
+              35.97509115934372,
+              3.4307851929042954
+            ],
+            [
+              36.48710623383522,
+              3.1571066938340664
+            ],
+            [
+              36.24912537634373,
+              3.3276744543400127
+            ]
+          ]
+        },
+        "Device screen": {
+          "bounds_xyz_mm": [
+            [
+              -35.87886318564415,
+              3.4849998774006963,
+              -78.2109342108015
+            ],
+            [
+              35.87886318564415,
+              4.484999924898148,
+              77.26413090131246
+            ]
+          ],
+          "midsection_right_front_xz_mm": [
+            [
+              35.87886318564415,
+              3.4849998774006963
+            ],
+            [
+              34.38390791416168,
+              4.421231700689532
+            ],
+            [
+              35.41984738141398,
+              3.7724634634427368
+            ],
+            [
+              33.92489325375645,
+              4.440811298338913
+            ]
+          ]
+        }
+      },
+      "source_urls": {
+        "back.webp": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_7_pro/back.webp",
+        "mask.webp": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_7_pro/mask.webp",
+        "layout": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_7_pro/layout"
+      },
+      "product_sources": [
+        {
+          "id": "pixel6",
+          "url": "https://blog.google/products-and-platforms/devices/pixel/meet-pixel-6-pixel-6-pro/"
+        },
+        {
+          "id": "pixel7",
+          "url": "https://blog.google/products-and-platforms/devices/pixel/design2022/"
+        }
+      ],
+      "seams": [
+        {
+          "edge": "left",
+          "index": 0,
+          "source_interval_px": [
+            295,
+            316
+          ],
+          "source_axis_px": 305.5,
+          "center_axis_mm": 66.2762,
+          "width_mm": 1.0465,
+          "normalized_uv": [
+            0,
+            0.09314775160599571
+          ],
+          "confidence": "medium",
+          "material": "polymer, separate nonmetal role; numeric shader remains estimate"
+        },
+        {
+          "edge": "left",
+          "index": 1,
+          "source_interval_px": [
+            765,
+            786
+          ],
+          "source_axis_px": 775.5,
+          "center_axis_mm": 42.8553,
+          "width_mm": 1.0465,
+          "normalized_uv": [
+            0,
+            0.2369226063016213
+          ],
+          "confidence": "medium",
+          "material": "polymer, separate nonmetal role; numeric shader remains estimate"
+        },
+        {
+          "edge": "left",
+          "index": 2,
+          "source_interval_px": [
+            2956,
+            2978
+          ],
+          "source_axis_px": 2967.0,
+          "center_axis_mm": -66.351,
+          "width_mm": 1.0963,
+          "normalized_uv": [
+            0,
+            0.9073111043132457
+          ],
+          "confidence": "medium",
+          "material": "polymer, separate nonmetal role; numeric shader remains estimate"
+        },
+        {
+          "edge": "right",
+          "index": 0,
+          "source_interval_px": [
+            292,
+            313
+          ],
+          "source_axis_px": 302.5,
+          "center_axis_mm": 66.4257,
+          "width_mm": 1.0465,
+          "normalized_uv": [
+            1,
+            0.092230039767513
+          ],
+          "confidence": "medium",
+          "material": "polymer, separate nonmetal role; numeric shader remains estimate"
+        },
+        {
+          "edge": "right",
+          "index": 1,
+          "source_interval_px": [
+            765,
+            782
+          ],
+          "source_axis_px": 773.5,
+          "center_axis_mm": 42.955,
+          "width_mm": 0.8471,
+          "normalized_uv": [
+            1,
+            0.23631079840929947
+          ],
+          "confidence": "medium",
+          "material": "polymer, separate nonmetal role; numeric shader remains estimate"
+        },
+        {
+          "edge": "right",
+          "index": 2,
+          "source_interval_px": [
+            2960,
+            2980
+          ],
+          "source_axis_px": 2970.0,
+          "center_axis_mm": -66.5005,
+          "width_mm": 0.9966,
+          "normalized_uv": [
+            1,
+            0.9082288161517283
+          ],
+          "confidence": "medium",
+          "material": "polymer, separate nonmetal role; numeric shader remains estimate"
+        },
+        {
+          "edge": "top",
+          "index": 0,
+          "source_interval_px": [
+            754,
+            780
+          ],
+          "source_axis_px": 767.0,
+          "center_axis_mm": -0.0499,
+          "width_mm": 1.2966,
+          "normalized_uv": [
+            0.4993489583333333,
+            0
+          ],
+          "confidence": "medium",
+          "material": "polymer, separate nonmetal role; numeric shader remains estimate"
+        },
+        {
+          "edge": "bottom",
+          "index": 0,
+          "source_interval_px": [
+            931,
+            959
+          ],
+          "source_axis_px": 945.0,
+          "center_axis_mm": 8.827,
+          "width_mm": 1.3964,
+          "normalized_uv": [
+            0.615234375,
+            1
+          ],
+          "confidence": "low-medium",
+          "material": "polymer, separate nonmetal role; numeric shader remains estimate"
+        }
+      ],
+      "seam_status": "Existing measured data copied for parent integration; no antenna geometry or profile seam schema changed in this patch.",
+      "measurements": {
+        "measured_projected_metal_width_px": {
+          "side": 12,
+          "top": 19
+        },
+        "measured_projected_metal_width_mm": {
+          "side": 0.5984,
+          "top": 0.9468
+        },
+        "boundary_uncertainty_px": 2,
+        "boundary_excludes": "Brighter glass bevel inside metal/glass gasket and all OLED/black border area.",
+        "finish": "High-polished aluminum; retain existing rail roughness 0.18 and finish palettes.",
+        "curved_correction_pending_parent": {
+          "side_rail_target_mm": 0.6,
+          "top_rail_target_mm": 0.95,
+          "top_front_roll_estimate_mm": 0.35,
+          "side_roll_depth_mm": "Fit to retained curved-glass side surface, not measurable from this frontal image. Do not apply .35 as a global front roll.",
+          "current_front_roll_mm_retained": 1.6,
+          "current_screen_sag_mm_retained": 1.0,
+          "reason": "Current global glass inset is 1.52 mm, versus independently observed narrower side metal. Side and top boundaries need separate treatment to avoid counting curved glass as rail."
+        }
+      },
+      "checks": {
+        "actual_owned_source_executed_without_Blender": true,
+        "backend": "Numerical mesh containers and polygon-plane splitting; actual source AST executed. Does not validate Blender bmesh runtime.",
+        "enclosure_rear_vertices_exactly_unchanged_before_existing_sag": true,
+        "body_convex_contour_max_error_mm": 0.07134844239608842,
+        "glass_contains_traced_OLED": true,
+        "minimum_projected_glass_OLED_gap_mm": 1.757216774098747,
+        "projected_glass_bounds_mm": [
+          -37.699999999999996,
+          -80.5,
+          37.699999999999996,
+          80.5
+        ],
+        "side_center_cross_sections_mm": [
+          {
+            "x_mm": 35.87886203732028,
+            "metal_z_mm": 3.4250000000000003,
+            "glass_z_mm": 3.4500000000000006
+          },
+          {
+            "x_mm": 37.699999999999996,
+            "metal_z_mm": 3.0729631803103894,
+            "glass_z_mm": 3.43
+          },
+          {
+            "x_mm": 37.65,
+            "metal_z_mm": 3.1100457076239887,
+            "glass_z_mm": 3.4500000000000006
+          },
+          {
+            "x_mm": 37.49999999999999,
+            "metal_z_mm": 3.208643405078122,
+            "glass_z_mm": 3.4500000000000006
+          },
+          {
+            "x_mm": 0,
+            "metal_z_mm": 4.425,
+            "glass_z_mm": 4.45
+          }
+        ],
+        "OLED_edge_sag_mm": 1.0,
+        "support_width_mm": 3.6167508614677617,
+        "OLED_face_centroid_min_glass_clearance_mm": 0.03500000000000014,
+        "front_glass_material": "front_glass",
+        "screen_origin_correction_mm": 0.0
+      },
+      "confidence_limits": "Medium for projected material boundaries (+/- ~0.10 mm); low-medium for top fillet and 0.02 mm glass edge radius. Cross-section depths are engineering fits, not manufacturer CAD. Numerical cap triangulation uses Shapely, so parent must check actual Blender triangles and front/oblique render."
+    }
+  },
+  "blender_started": false,
+  "generator_instructions": "Preserve body_mm.front_glass_inset_mm=[side,top/bottom] and body_mm.front_roll_top_mm for only these two profiles in make_pixel_profiles.py. Keep edge_roll_mm (back,side-front), front_curve, native screen aspect/UV, traced body/OLED/cutouts, optics and finishes unchanged. Parent owns frame exporter: scalar glass_inset fallback cannot describe the new anisotropic 3D boundary; use the same elliptical erosion if exporting geometric fallback frame.",
+  "support_clearance_math": "The linear support ramp starts one maximum OLED face X-span before the analytic quadratic sag begins. Thus any OLED face with nonzero sag lies fully beyond the ramp start; for each vertex its quadratic drop is no greater than the support ramp. The affine ramp therefore stays below every interpolated OLED triangle. The flat centre is retained. Glass top is additionally 0.035 mm below OLED; aluminum top is 0.060 mm below. The broader underlay ramp is concealed by OLED; at the visible outer glass edge, support and OLED edge both drop exactly 1 mm.",
+  "implementation": "Elliptical erosion of the independent body trace supplies glass and front fillet rings. Enclosure rear half and body silhouette retained. Front metal fillet support radius blends deep side roll to shallow top roll through traced corners. Thin .02 mm cover edge radius avoids treating curved OLED sag as a second 1 mm glass bevel. OLED mesh and its 1 mm parabola sag remain unchanged. Four X-plane cap splits and a linear 1 mm support ramp keep the glass/enclosure under all OLED parabola chords while preserving the flat centre; part-location and screen-centre X offsets are included.",
+  "protected_fields": "No edits to body dimensions, rear components/logos/cameras, side/rear rolls, measured cutouts, screen fit/center/resolution/UV, contours/traces, or family finish palettes; no other profile edited.",
+  "unchanged_assigned_ids": [],
+  "licensing": "No new images downloaded. Existing local reference images remain local. No blanket license claim.",
+  "syntax_validation": {
+    "geometry.py": "passed",
+    "build.py": "passed",
+    "both_profiles_and_report_json": "passed"
+  },
+  "parent_next_step": "Ready for serial focused Pixel 6 Pro / Pixel 7 Pro builds only. Verify actual exported contour <=0.10 mm, native UV/aspect and 1 mm OLED sag, no cap/rail OLED occlusion, glazed front material, antenna continuity and front/oblique render. No Blender process was started by this worker."
+}

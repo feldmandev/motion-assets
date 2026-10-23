@@ -20,7 +20,7 @@
       "center_mm": [
         0.0,
         0.0,
-        4.535
+        4.534999370574951
       ],
       "corner_radius_mm": 8.820508925776489,
       "rotation_deg": [
@@ -46,27 +46,22 @@
         "height": 153.9,
         "width": 73.0,
         "depth": 9.0,
-        "corner_radius": 12.62274421989414,
+        "corner_radius": 12.788878764705881,
+        "front_rail_mm": 1.1,
         "edge_roll": 0.55,
         "front_curve": 0,
         "edge_roll_mm": [
           1.0,
           0.8
-        ],
-        "corner_radii_mm": [
-          12.62274421989414,
-          12.62274421989414,
-          12.62274421989414,
-          12.62274421989414
         ]
       },
       "cutouts": [
         {
           "center_mm": [
-            0,
-            69.14776470588235
+            -0.24141176470588235,
+            67.8970588235294
           ],
-          "radius_mm": 1.5
+          "radius_mm": 2.3536754407862155
         }
       ],
       "uv": "u right, v up; full image maps to [0,1] without cropping",
@@ -77,18 +72,13 @@
     "height": 153.9,
     "width": 73.0,
     "depth": 9.0,
-    "corner_radius": 12.62274421989414,
+    "corner_radius": 12.788878764705881,
+    "front_rail_mm": 1.1,
     "edge_roll": 0.55,
     "front_curve": 0,
     "edge_roll_mm": [
       1.0,
       0.8
-    ],
-    "corner_radii_mm": [
-      12.62274421989414,
-      12.62274421989414,
-      12.62274421989414,
-      12.62274421989414
     ]
   },
   "icon_morph": {
@@ -111,7 +101,8 @@
     "bar": "bar",
     "black": "black",
     "flash": "flash",
-    "logo": "logo"
+    "logo": "logo",
+    "antenna": "antenna"
   },
   "finishes": [
     {
@@ -146,6 +137,13 @@
           ],
           "metal": 0.5,
           "rough": 0.28
+        },
+        "antenna": {
+          "rgb": [
+            0.7098,
+            0.69412,
+            0.83922
+          ]
         }
       }
     },
@@ -181,6 +179,13 @@
           ],
           "metal": 0.5,
           "rough": 0.28
+        },
+        "antenna": {
+          "rgb": [
+            0.80784,
+            0.39216,
+            0.48235
+          ]
         }
       }
     },
@@ -216,6 +221,13 @@
           ],
           "metal": 0.5,
           "rough": 0.26
+        },
+        "antenna": {
+          "rgb": [
+            0.85098,
+            0.86667,
+            0.83922
+          ]
         }
       }
     },
@@ -251,6 +263,13 @@
           ],
           "metal": 0.5,
           "rough": 0.28
+        },
+        "antenna": {
+          "rgb": [
+            0.2,
+            0.22745,
+            0.23922
+          ]
         }
       }
     },
@@ -286,12 +305,19 @@
           ],
           "metal": 0.5,
           "rough": 0.26
+        },
+        "antenna": {
+          "rgb": [
+            0.20392,
+            0.29412,
+            0.56471
+          ]
         }
       }
     }
   ],
-  "glbUrl": "assets/devices/models/pixel-10a.397a152cad9f.glb.gz",
-  "sha256": "397a152cad9fa50490a926ab2dd2cca1832123047950dad59aba5d2e5f74690d",
+  "glbUrl": "assets/devices/models/pixel-10a.bf35a927bbb9.glb.gz",
+  "sha256": "bf35a927bbb98178a8a79706507a1f082d179dc4d3d1d2758e6d350d31773709",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/pixel-10a.json",
@@ -301,7 +327,8 @@
       "screen_geometry": "Screen fit and corner radius measured from Google emulator artwork; native pixel aspect preserved. Skin artwork is a reference, not physical CAD.",
       "camera_geometry": "Housing width, height and top gap scaled from official rear artwork; pixel bounds and uncertainty in camera_measurement. Optical internals remain illustrative. Not measurable from this rear view; model depth remains a visual estimate.",
       "finishes": "Approximate sRGB colors and roughness, not calibrated measured materials",
-      "branding": "Google G contour retained from reference artwork. Legacy Pixel4/4a/5/5a lower rear placement (approximately80%height); Pixel6 onward and folds centered on rear/camera leaf. Size, position and finish-tinted material are photo estimates, not manufacturer CAD."
+      "branding": "Google G contour retained from reference artwork. Legacy Pixel4/4a/5/5a lower rear placement (approximately80%height); Pixel6 onward and folds centered on rear/camera leaf. Size, position and finish-tinted material are photo estimates, not manufacturer CAD.",
+      "antenna_details": "Positions/widths measured individually from Google device artwork; nonmetal surface patches follow the actual enclosure. Hidden depth, RGB and roughness are illustrative; finish tint follows the existing back palette. No universal seam layout or through-cut CAD claim."
     },
     "sources": [
       "https://support.google.com/pixelphone/answer/7158570?hl=en",

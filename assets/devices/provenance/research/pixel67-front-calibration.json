@@ -1,0 +1,2148 @@
+{
+  "as_of": "2026-10-23",
+  "status": "Assigned profile/trace data corrections complete; shared helpers, Blender exports and rendered acceptance remain parent-owned. This report is not final visual acceptance.",
+  "scope": [
+    "pixel-6",
+    "pixel-6-pro",
+    "pixel-6a",
+    "pixel-7",
+    "pixel-7-pro",
+    "pixel-7a"
+  ],
+  "unchanged_entire_profiles": [],
+  "files_modified": [
+    "profiles/pixel-6.json",
+    "profiles/pixel-6-pro.json",
+    "profiles/pixel-6a.json",
+    "research/skins/pixel-6a/trace.json",
+    "profiles/pixel-7.json",
+    "research/skins/pixel-7/trace.json",
+    "profiles/pixel-7-pro.json",
+    "research/skins/pixel-7-pro/trace.json",
+    "profiles/pixel-7a.json",
+    "research/pixel67-front-calibration.json"
+  ],
+  "methods": {
+    "source": "Installed SDK back.webp/mask.webp/layout match all 18 current upstream Git blob IDs. Actual model.glb positions and UV accessors read directly; no stale front.png used.",
+    "contours": "Checked all six existing body and screen outlines against a fresh in-memory half-alpha extraction. Exactly zero boundary distance for every stored outline. Previous representative 6/6Pro/7a measurements reused as corroboration, no replacement circle fits or trace generation.",
+    "rail": "Manual metal/glass gasket picks from raw SDK back.webp and frame.png, corroborated by transverse seam stopping at the gasket. Bright highlight inside that boundary is glass. Straight-side and top widths measured separately; sidewidth is a representative projected width, not a CAD cross-section.",
+    "seams": "Half-open pixel intervals along visible outer metal. Edge picks informed by smoothed intensity transitions, then inspected in enlarged crops. Side axis is y from top; top/bottom axis is x from left. Widths vary with rail projection. Do not infer absent bands or a universal six-band template.",
+    "coordinates": "Front view X right, Y up, origin body center. Side center_axis_mm is Y; top/bottom center_axis_mm is X. Seam mapping uses published dimension per axis; OLED retains one isotropic height-derived scale and original native aspect.",
+    "glb": "glTF local coordinates X right, Y depth/front, Z down; mesh_summary includes node translation in millimetres. Body projected convex hull versus published-W/H-normalized official trace, boundary sampling <=0.10 mm. Earlier <=0.02 mm run agreed to displayed precision. Curved topmost-face X extents alone are not a physical roll-radius measurement.",
+    "uncertainty": "Manual material boundary +/-2 px (~0.10-0.12 mm); high/medium seam endpoint +/-2 px each, low-contrast +/-4 px. Width uncertainty can be twice endpoint uncertainty. SDK artwork is stylized; shader roughness, rail roll depth and optical layer depths are estimates."
+  },
+  "sources": [
+    {
+      "id": "pixel6",
+      "url": "https://blog.google/products-and-platforms/devices/pixel/meet-pixel-6-pixel-6-pro/"
+    },
+    {
+      "id": "pixel6a",
+      "url": "https://blog.google/products-and-platforms/devices/pixel/pixel-6a-io-2022/"
+    },
+    {
+      "id": "pixel7",
+      "url": "https://blog.google/products-and-platforms/devices/pixel/design2022/"
+    },
+    {
+      "id": "pixel7a",
+      "url": "https://blog.google/products-and-platforms/devices/pixel/google-pixel-fold-tablet-7a-design/"
+    },
+    {
+      "id": "specs",
+      "url": "https://support.google.com/pixelphone/answer/7158570?hl=en"
+    }
+  ],
+  "local_photo_sources": [
+    {
+      "page": "https://blog.google/products-and-platforms/devices/pixel/design2022/",
+      "asset_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/google_mbg_event_f22_intro_confo.width-1000.format-webp.webp",
+      "local": "tmp\\pixel67-front-evidence\\pixel7-design.webp",
+      "alt": "Close up of two phones showing the front and back cameras"
+    },
+    {
+      "page": "https://blog.google/products-and-platforms/devices/pixel/meet-pixel-6-pixel-6-pro/",
+      "asset_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Probably_the_best_one_for_the_blo.width-200.format-webp.webp",
+      "local": "tmp\\pixel67-front-evidence\\pixel6-launch.webp",
+      "alt": "Image showing three Pixel phones in a row. Two are facing away so you see the back of the phones featuring their camera bars, and then other is facing forward so you see its screen."
+    }
+  ],
+  "additional_existing_images_inspected": [
+    {
+      "file": "research/images/pixel6portfolio2000.webp",
+      "source_page": "https://blog.google/products-and-platforms/devices/pixel/meet-pixel-6-pixel-6-pro/",
+      "use": "Qualitative matte base versus polished Pro rail and side seam continuity. Oblique rear image; no front width derived."
+    },
+    {
+      "file": "research/images/pixel7a_colors2000.webp",
+      "source_page": "https://blog.google/products-and-platforms/devices/pixel/pixel-7a-io-2023/",
+      "use": "Qualitative rail finish and different side band positions; rear projection, not front metrology."
+    }
+  ],
+  "licensing": "Google imagery and SDK artwork kept local for reference. No claim that all photos, trademarks or derivatives share a redistribution license; no imagery published by this task.",
+  "devices": {
+    "pixel-6": {
+      "review_status": "changed; all assigned front evidence reviewed",
+      "sdk": {
+        "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_6/",
+        "file_urls": {
+          "back.webp": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_6/back.webp",
+          "mask.webp": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_6/mask.webp",
+          "layout": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_6/layout"
+        },
+        "upstream_check": {
+          "back.webp": {
+            "upstream_blob": "a412568027a0add4fc57c42580efa8262068a118",
+            "local_blob": "a412568027a0add4fc57c42580efa8262068a118",
+            "matches": true
+          },
+          "layout": {
+            "upstream_blob": "ae638d344e802d9630499ea1b0d6f1b2aeb0c3e2",
+            "local_blob": "ae638d344e802d9630499ea1b0d6f1b2aeb0c3e2",
+            "matches": true
+          },
+          "mask.webp": {
+            "upstream_blob": "c658b192d586d2f089e49942c2d4bf3e577172ae",
+            "local_blob": "c658b192d586d2f089e49942c2d4bf3e577172ae",
+            "matches": true
+          }
+        },
+        "local": "[local reference path omitted]",
+        "frame_sha256": "030f4f282741ca6735148a64f7d95c36f7e85335dbea88b6903b7cb719ef22bd",
+        "body_bounds_xyxy_px": [
+          0.0,
+          0.0,
+          1203.0,
+          2553.0
+        ],
+        "native_viewport_xywh_px": [
+          60,
+          69,
+          1080,
+          2400
+        ]
+      },
+      "profile_file": "profiles/pixel-6.json",
+      "profile_changes": [
+        {
+          "field": "screen.cutouts",
+          "before": [
+            {
+              "center_mm": [
+                0,
+                70.5475910693302
+              ],
+              "radius_mm": 1.5
+            }
+          ],
+          "after": [
+            {
+              "center_mm": [
+                0.03106149627888758,
+                70.66490403446925
+              ],
+              "radius_mm": 1.9187606497435186
+            }
+          ]
+        },
+        {
+          "field": "body_mm.front_rail_mm",
+          "before": null,
+          "after": 0.6
+        },
+        {
+          "field": "body_mm.edge_roll_mm[1]",
+          "before": 1.0,
+          "after": 0.25
+        }
+      ],
+      "trace_changes": [],
+      "unchanged": "Both traced outlines; published height/width/depth; back roll; all rear cameras, logo contours and finish palettes; native resolution; screen Z; front_curve and OLED edge_curve. 6Pro/7Pro rail and front roll deliberately unchanged pending parent curved helper.",
+      "trace_check": {
+        "body_boundary_hausdorff_mm": 0.0,
+        "screen_boundary_hausdorff_mm": 0.0,
+        "method": "Independently regenerated in memory from SDK half-alpha silhouette/mask and compared in preceding successful computation; zero boundary distance for all six. No contour rewrite.",
+        "islands": [
+          {
+            "bounds_xywh_px": [
+              510,
+              32,
+              61,
+              61
+            ],
+            "area_px": 2997
+          }
+        ],
+        "cutouts": [
+          {
+            "center_mm": [
+              0.03106149627888758,
+              70.66490403446925
+            ],
+            "radius_mm": 1.9187606497435186
+          }
+        ],
+        "existing_cutouts_match": true
+      },
+      "rail": {
+        "measured_projected_metal_width_px": {
+          "side": 10,
+          "top": 9
+        },
+        "measured_projected_metal_width_mm": {
+          "side": 0.6218,
+          "top": 0.5591
+        },
+        "boundary_uncertainty_px": 2,
+        "boundary_excludes": "Brighter glass bevel inside metal/glass gasket and all OLED/black border area.",
+        "finish": "Matte black metal band; retain existing roughness distinction. RGB is an existing approximation, not a newly measured color.",
+        "applied_cross_section_estimate": {
+          "front_rail_mm": 0.6,
+          "front_roll_mm": 0.25,
+          "back_roll_mm_unchanged": 3.4,
+          "nominal_front_metal_landing_mm": 0.35,
+          "confidence": "Medium for projected width, low-medium for depth roll. Isotropic rail field approximates slightly different side/top boundaries; no manufactured CAD claim."
+        }
+      },
+      "seams": [
+        {
+          "edge": "left",
+          "index": 0,
+          "source_interval_px": [
+            326,
+            351
+          ],
+          "source_axis_px": 338.5,
+          "center_axis_mm": 58.2714,
+          "width_mm": 1.5531,
+          "normalized_uv": [
+            0,
+            0.1325891108499804
+          ],
+          "confidence": "medium",
+          "material": "polymer, separate nonmetal role; numeric shader remains estimate"
+        },
+        {
+          "edge": "left",
+          "index": 1,
+          "source_interval_px": [
+            2222,
+            2248
+          ],
+          "source_axis_px": 2235.0,
+          "center_axis_mm": -59.5449,
+          "width_mm": 1.6152,
+          "normalized_uv": [
+            0,
+            0.8754406580493537
+          ],
+          "confidence": "medium",
+          "material": "polymer, separate nonmetal role; numeric shader remains estimate"
+        },
+        {
+          "edge": "right",
+          "index": 0,
+          "source_interval_px": [
+            327,
+            351
+          ],
+          "source_axis_px": 339.0,
+          "center_axis_mm": 58.2403,
+          "width_mm": 1.491,
+          "normalized_uv": [
+            1,
+            0.13278495887191538
+          ],
+          "confidence": "medium",
+          "material": "polymer, separate nonmetal role; numeric shader remains estimate"
+        },
+        {
+          "edge": "right",
+          "index": 1,
+          "source_interval_px": [
+            2222,
+            2248
+          ],
+          "source_axis_px": 2235.0,
+          "center_axis_mm": -59.5449,
+          "width_mm": 1.6152,
+          "normalized_uv": [
+            1,
+            0.8754406580493537
+          ],
+          "confidence": "medium",
+          "material": "polymer, separate nonmetal role; numeric shader remains estimate"
+        }
+      ],
+      "actual_glb_before_rebuild": {
+        "sha256": "0b52b85953a72707490cbcd7f3e53f49ad8ccf4eae178024c99baa2bbfdaa514",
+        "mesh_summary": {
+          "Aluminum enclosure": {
+            "bounds_gltf_xyz_mm": [
+              [
+                -37.39999979734421,
+                -4.424999933689833,
+                -79.30000126361847
+              ],
+              [
+                37.39999979734421,
+                4.424999933689833,
+                79.30000126361847
+              ]
+            ],
+            "materials": [
+              "rail"
+            ]
+          },
+          "Device screen": {
+            "bounds_gltf_xyz_mm": [
+              [
+                -33.639598717854824,
+                4.484999924898148,
+                -75.01351126120426
+              ],
+              [
+                33.453229734732304,
+                4.484999924898148,
+                74.0816663892474
+              ]
+            ],
+            "materials": [
+              "Device screen | replace texture at runtime"
+            ],
+            "uv_bounds": [
+              [
+                0.0,
+                0.0
+              ],
+              [
+                1.0,
+                1.0
+              ]
+            ]
+          },
+          "Device screen | selfie aperture 0": {
+            "bounds_gltf_xyz_mm": [
+              [
+                -1.5931845045997761,
+                4.497499882745615,
+                -72.51351024024189
+              ],
+              [
+                1.406815521477256,
+                4.522499882114062,
+                -69.51351021416485
+              ]
+            ],
+            "materials": [
+              "black"
+            ]
+          },
+          "Front black glass": {
+            "bounds_gltf_xyz_mm": [
+              [
+                -36.44999861717224,
+                4.200000097625889,
+                -78.3500000834465
+              ],
+              [
+                36.44999861717224,
+                4.450000109500252,
+                78.3500000834465
+              ]
+            ],
+            "materials": [
+              "black"
+            ]
+          }
+        },
+        "body_projected_hull_vs_official_max_mm": 0.390541464712857,
+        "front_glass_inset_mm": 0.9500013828277574,
+        "enclosure_front_flat_inset_mm": 0.9999985039234147,
+        "flat_metal_landing_mm": 0,
+        "antenna_nodes": 0
+      },
+      "source_generator_patch": {
+        "profile_fields_to_preserve": [
+          "screen.cutouts",
+          "body_mm.front_rail_mm",
+          "body_mm.edge_roll_mm[1]"
+        ],
+        "trace_field_to_consume": "screen_cutouts_mm",
+        "seam_data_status": "Report only, ready for parent antenna helper; no inactive profile keys added."
+      },
+      "unresolved_seams": "No confident bottom break visible. Top discontinuities near x150 and x1050 bound a broad panel; not two guessed 1.5 mm antenna stripes. Region/physical top construction not inferred.",
+      "verification": {
+        "projected_glass_contains_oled": true,
+        "minimum_projected_glass_to_oled_gap_mm": 3.1293
+      }
+    },
+    "pixel-6-pro": {
+      "review_status": "changed; all assigned front evidence reviewed",
+      "sdk": {
+        "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_6_pro/",
+        "file_urls": {
+          "back.webp": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_6_pro/back.webp",
+          "mask.webp": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_6_pro/mask.webp",
+          "layout": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_6_pro/layout"
+        },
+        "upstream_check": {
+          "back.webp": {
+            "upstream_blob": "e6ac08e58cebe0b36f498f0a63f81ff15ada4909",
+            "local_blob": "e6ac08e58cebe0b36f498f0a63f81ff15ada4909",
+            "matches": true
+          },
+          "layout": {
+            "upstream_blob": "b83dd73a195f2421f384811448611c1ce38f3c90",
+            "local_blob": "b83dd73a195f2421f384811448611c1ce38f3c90",
+            "matches": true
+          },
+          "mask.webp": {
+            "upstream_blob": "f2b7fac697d17a4dd61b78b73e0f93339d58f1f2",
+            "local_blob": "f2b7fac697d17a4dd61b78b73e0f93339d58f1f2",
+            "matches": true
+          }
+        },
+        "local": "[local reference path omitted]",
+        "frame_sha256": "1c75cd59763f32589ae8f53a80f4353530392f4344b8ea4969c218a3e889d7b0",
+        "body_bounds_xyxy_px": [
+          0.0,
+          0.0,
+          1520.0,
+          3289.0
+        ],
+        "native_viewport_xywh_px": [
+          41,
+          72,
+          1440,
+          3120
+        ]
+      },
+      "profile_file": "profiles/pixel-6-pro.json",
+      "profile_changes": [
+        {
+          "field": "screen.cutouts",
+          "before": [
+            {
+              "center_mm": [
+                0,
+                73.73913043478261
+              ],
+              "radius_mm": 1.5
+            }
+          ],
+          "after": [
+            {
+              "center_mm": [
+                0.024916387959866223,
+                74.12625418060202
+              ],
+              "radius_mm": 2.1384141789377504
+            }
+          ]
+        }
+      ],
+      "trace_changes": [],
+      "unchanged": "Both traced outlines; published height/width/depth; back roll; all rear cameras, logo contours and finish palettes; native resolution; screen Z; front_curve and OLED edge_curve. 6Pro/7Pro rail and front roll deliberately unchanged pending parent curved helper.",
+      "trace_check": {
+        "body_boundary_hausdorff_mm": 0.0,
+        "screen_boundary_hausdorff_mm": 0.0,
+        "method": "Independently regenerated in memory from SDK half-alpha silhouette/mask and compared in preceding successful computation; zero boundary distance for all six. No contour rewrite.",
+        "islands": [
+          {
+            "bounds_xywh_px": [
+              678,
+              30,
+              85,
+              85
+            ],
+            "area_px": 5785
+          }
+        ],
+        "cutouts": [
+          {
+            "center_mm": [
+              0.024916387959866223,
+              74.12625418060202
+            ],
+            "radius_mm": 2.1384141789377504
+          }
+        ],
+        "existing_cutouts_match": true
+      },
+      "rail": {
+        "measured_projected_metal_width_px": {
+          "side": 7,
+          "top": 25
+        },
+        "measured_projected_metal_width_mm": {
+          "side": 0.3495,
+          "top": 1.2458
+        },
+        "boundary_uncertainty_px": 2,
+        "boundary_excludes": "Brighter glass bevel inside metal/glass gasket and all OLED/black border area.",
+        "finish": "Polished metal and curved glass; retain existing rail roughness 0.18 and every finish palette.",
+        "curved_correction_pending_parent": {
+          "side_rail_target_mm": 0.35,
+          "top_rail_target_mm": 1.25,
+          "top_front_roll_estimate_mm": 0.35,
+          "side_roll_depth_mm": "Fit to retained curved-glass side surface, not measurable from this frontal image. Do not apply .35 as a global front roll.",
+          "current_front_roll_mm_retained": 1.6,
+          "current_screen_sag_mm_retained": 1.0,
+          "reason": "Current global glass inset is 1.52 mm, versus independently observed narrower side metal. Side and top boundaries need separate treatment to avoid counting curved glass as rail."
+        }
+      },
+      "seams": [
+        {
+          "edge": "left",
+          "index": 0,
+          "source_interval_px": [
+            423,
+            454
+          ],
+          "source_axis_px": 438.5,
+          "center_axis_mm": 60.0983,
+          "width_mm": 1.5448,
+          "normalized_uv": [
+            0,
+            0.13332319854058985
+          ],
+          "confidence": "low-medium",
+          "material": "polymer, separate nonmetal role; numeric shader remains estimate"
+        },
+        {
+          "edge": "left",
+          "index": 1,
+          "source_interval_px": [
+            2844,
+            2875
+          ],
+          "source_axis_px": 2859.5,
+          "center_axis_mm": -60.5468,
+          "width_mm": 1.5448,
+          "normalized_uv": [
+            0,
+            0.8694131955001521
+          ],
+          "confidence": "low-medium",
+          "material": "polymer, separate nonmetal role; numeric shader remains estimate"
+        },
+        {
+          "edge": "right",
+          "index": 0,
+          "source_interval_px": [
+            420,
+            452
+          ],
+          "source_axis_px": 436.0,
+          "center_axis_mm": 60.2229,
+          "width_mm": 1.5946,
+          "normalized_uv": [
+            1,
+            0.13256308908482822
+          ],
+          "confidence": "medium",
+          "material": "polymer, separate nonmetal role; numeric shader remains estimate"
+        },
+        {
+          "edge": "right",
+          "index": 1,
+          "source_interval_px": [
+            2842,
+            2872
+          ],
+          "source_axis_px": 2857.0,
+          "center_axis_mm": -60.4222,
+          "width_mm": 1.495,
+          "normalized_uv": [
+            1,
+            0.8686530860443904
+          ],
+          "confidence": "medium",
+          "material": "polymer, separate nonmetal role; numeric shader remains estimate"
+        },
+        {
+          "edge": "bottom",
+          "index": 0,
+          "source_interval_px": [
+            921,
+            965
+          ],
+          "source_axis_px": 943.0,
+          "center_axis_mm": 9.138,
+          "width_mm": 2.1971,
+          "normalized_uv": [
+            0.6203947368421052,
+            1
+          ],
+          "confidence": "medium",
+          "material": "polymer, separate nonmetal role; numeric shader remains estimate"
+        }
+      ],
+      "actual_glb_before_rebuild": {
+        "sha256": "a1e7e3834822126f40e56017a0698e33cf11c2a02075feb1581283c4afbf2544",
+        "mesh_summary": {
+          "Aluminum enclosure": {
+            "bounds_gltf_xyz_mm": [
+              [
+                -37.950001657009125,
+                -4.424999933689833,
+                -81.95000141859055
+              ],
+              [
+                37.950001657009125,
+                4.424999933689833,
+                81.95000141859055
+              ]
+            ],
+            "materials": [
+              "rail"
+            ]
+          },
+          "Device screen": {
+            "bounds_gltf_xyz_mm": [
+              [
+                -35.8297642924299,
+                3.4849998774006963,
+                -78.36203667102382
+              ],
+              [
+                35.929429843235994,
+                4.484999924898148,
+                77.11621728958562
+              ]
+            ],
+            "materials": [
+              "Device screen | replace texture at runtime"
+            ],
+            "uv_bounds": [
+              [
+                0.0,
+                0.0
+              ],
+              [
+                1.0,
+                1.0
+              ]
+            ]
+          },
+          "Device screen | selfie aperture 0": {
+            "bounds_gltf_xyz_mm": [
+              [
+                -1.450167237635469,
+                4.497499882745615,
+                -75.86203957907856
+              ],
+              [
+                1.549832788441563,
+                4.522499882114062,
+                -72.86203955300152
+              ]
+            ],
+            "materials": [
+              "black"
+            ]
+          },
+          "Front black glass": {
+            "bounds_gltf_xyz_mm": [
+              [
+                -36.4300012588501,
+                1.5719161601737142,
+                -80.43000102043152
+              ],
+              [
+                36.4300012588501,
+                4.449999891221523,
+                80.43000102043152
+              ]
+            ],
+            "materials": [
+              "black"
+            ]
+          }
+        },
+        "body_projected_hull_vs_official_max_mm": 0.16062486690886454,
+        "front_glass_inset_mm": 1.5199987411499052,
+        "enclosure_front_flat_inset_mm": null,
+        "flat_metal_landing_mm": null,
+        "antenna_nodes": 0,
+        "curved_note": "Topmost-vertex flat inset is not a meaningful lateral roll metric for curved models; use full cross-sections during parent integration."
+      },
+      "source_generator_patch": {
+        "profile_fields_to_preserve": [
+          "screen.cutouts"
+        ],
+        "trace_field_to_consume": "screen_cutouts_mm",
+        "seam_data_status": "Report only, ready for parent antenna helper; no inactive profile keys added."
+      },
+      "unresolved_seams": "Top discontinuities near x201 and x1318 bound a broad panel; do not label its full span metal or add narrow seam stripes without top/region-specific reference.",
+      "verification": {
+        "curved_screen_and_body_front_curve_retained": true
+      }
+    },
+    "pixel-6a": {
+      "review_status": "changed; all assigned front evidence reviewed",
+      "sdk": {
+        "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_6a/",
+        "file_urls": {
+          "back.webp": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_6a/back.webp",
+          "mask.webp": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_6a/mask.webp",
+          "layout": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_6a/layout"
+        },
+        "upstream_check": {
+          "back.webp": {
+            "upstream_blob": "924ecc405dc124aab0770b58570a58dc0a39fb82",
+            "local_blob": "924ecc405dc124aab0770b58570a58dc0a39fb82",
+            "matches": true
+          },
+          "layout": {
+            "upstream_blob": "3b21f7dedfacaeaa648848ea095f2acafb62fa76",
+            "local_blob": "3b21f7dedfacaeaa648848ea095f2acafb62fa76",
+            "matches": true
+          },
+          "mask.webp": {
+            "upstream_blob": "eb117c4b0115cf01e6215b7af3c4debfe0f33f11",
+            "local_blob": "eb117c4b0115cf01e6215b7af3c4debfe0f33f11",
+            "matches": true
+          }
+        },
+        "local": "[local reference path omitted]",
+        "frame_sha256": "77c4e0fca4dd5a1383323a6a2012744bd531aac8a723853cb1aa225901e31888",
+        "body_bounds_xyxy_px": [
+          0.0,
+          0.0,
+          1202.0,
+          2555.0
+        ],
+        "native_viewport_xywh_px": [
+          57,
+          69,
+          1080,
+          2400
+        ]
+      },
+      "profile_file": "profiles/pixel-6a.json",
+      "profile_changes": [
+        {
+          "field": "screen.cutouts",
+          "before": [
+            {
+              "center_mm": [
+                0,
+                67.48336594911936
+              ],
+              "radius_mm": 1.5
+            }
+          ],
+          "after": [
+            {
+              "center_mm": [
+                0.05956947162426614,
+                67.5517808219178
+              ],
+              "radius_mm": 1.9088903968883566
+            }
+          ]
+        },
+        {
+          "field": "body_mm.front_rail_mm",
+          "before": null,
+          "after": 0.65
+        },
+        {
+          "field": "body_mm.edge_roll_mm[1]",
+          "before": 0.9,
+          "after": 0.25
+        }
+      ],
+      "trace_changes": [
+        "screen_cutouts_mm"
+      ],
+      "unchanged": "Both traced outlines; published height/width/depth; back roll; all rear cameras, logo contours and finish palettes; native resolution; screen Z; front_curve and OLED edge_curve. 6Pro/7Pro rail and front roll deliberately unchanged pending parent curved helper.",
+      "trace_check": {
+        "body_boundary_hausdorff_mm": 0.0,
+        "screen_boundary_hausdorff_mm": 0.0,
+        "method": "Independently regenerated in memory from SDK half-alpha silhouette/mask and compared in preceding successful computation; zero boundary distance for all six. No contour rewrite.",
+        "islands": [
+          {
+            "bounds_xywh_px": [
+              509,
+              34,
+              64,
+              64
+            ],
+            "area_px": 3226
+          }
+        ],
+        "cutouts": [
+          {
+            "center_mm": [
+              0.05956947162426614,
+              67.5517808219178
+            ],
+            "radius_mm": 1.9088903968883566
+          }
+        ],
+        "existing_cutouts_match": false
+      },
+      "rail": {
+        "measured_projected_metal_width_px": {
+          "side": 11,
+          "top": 9
+        },
+        "measured_projected_metal_width_mm": {
+          "side": 0.6571,
+          "top": 0.5361
+        },
+        "boundary_uncertainty_px": 2,
+        "boundary_excludes": "Brighter glass bevel inside metal/glass gasket and all OLED/black border area.",
+        "finish": "Google describes a metal frame. SDK suggests dark satin metal; exact roughness is not measured. Retain current family finish.",
+        "applied_cross_section_estimate": {
+          "front_rail_mm": 0.65,
+          "front_roll_mm": 0.25,
+          "back_roll_mm_unchanged": 2.8,
+          "nominal_front_metal_landing_mm": 0.4,
+          "confidence": "Medium for projected width, low-medium for depth roll. Isotropic rail field approximates slightly different side/top boundaries; no manufactured CAD claim."
+        }
+      },
+      "seams": [
+        {
+          "edge": "left",
+          "index": 0,
+          "source_interval_px": [
+            303,
+            329
+          ],
+          "source_axis_px": 316.0,
+          "center_axis_mm": 57.276,
+          "width_mm": 1.5488,
+          "normalized_uv": [
+            0,
+            0.12367906066536204
+          ],
+          "confidence": "medium",
+          "material": "polymer, separate nonmetal role; numeric shader remains estimate"
+        },
+        {
+          "edge": "left",
+          "index": 1,
+          "source_interval_px": [
+            2192,
+            2216
+          ],
+          "source_axis_px": 2204.0,
+          "center_axis_mm": -55.1911,
+          "width_mm": 1.4297,
+          "normalized_uv": [
+            0,
+            0.8626223091976517
+          ],
+          "confidence": "medium",
+          "material": "polymer, separate nonmetal role; numeric shader remains estimate"
+        },
+        {
+          "edge": "right",
+          "index": 0,
+          "source_interval_px": [
+            302,
+            329
+          ],
+          "source_axis_px": 315.5,
+          "center_axis_mm": 57.3058,
+          "width_mm": 1.6084,
+          "normalized_uv": [
+            1,
+            0.12348336594911938
+          ],
+          "confidence": "medium",
+          "material": "polymer, separate nonmetal role; numeric shader remains estimate"
+        },
+        {
+          "edge": "right",
+          "index": 1,
+          "source_interval_px": [
+            2192,
+            2218
+          ],
+          "source_axis_px": 2205.0,
+          "center_axis_mm": -55.2507,
+          "width_mm": 1.5488,
+          "normalized_uv": [
+            1,
+            0.863013698630137
+          ],
+          "confidence": "medium",
+          "material": "polymer, separate nonmetal role; numeric shader remains estimate"
+        },
+        {
+          "edge": "top",
+          "index": 0,
+          "source_interval_px": [
+            365,
+            389
+          ],
+          "source_axis_px": 377.0,
+          "center_axis_mm": -13.3804,
+          "width_mm": 1.4336,
+          "normalized_uv": [
+            0.3136439267886855,
+            0
+          ],
+          "confidence": "low-medium",
+          "material": "polymer, separate nonmetal role; numeric shader remains estimate"
+        },
+        {
+          "edge": "top",
+          "index": 1,
+          "source_interval_px": [
+            804,
+            833
+          ],
+          "source_axis_px": 818.5,
+          "center_axis_mm": 12.9921,
+          "width_mm": 1.7323,
+          "normalized_uv": [
+            0.6809484193011647,
+            0
+          ],
+          "confidence": "low-medium",
+          "material": "polymer, separate nonmetal role; numeric shader remains estimate"
+        },
+        {
+          "edge": "bottom",
+          "index": 0,
+          "source_interval_px": [
+            763,
+            788
+          ],
+          "source_axis_px": 775.5,
+          "center_axis_mm": 10.4235,
+          "width_mm": 1.4933,
+          "normalized_uv": [
+            0.6451747088186356,
+            1
+          ],
+          "confidence": "low-medium",
+          "material": "polymer, separate nonmetal role; numeric shader remains estimate"
+        }
+      ],
+      "actual_glb_before_rebuild": {
+        "sha256": "0fdc9ea5bd2da5993ae5c57dcd0b0da966521fd8e7ae64d8d1f837abaa8f9dea",
+        "mesh_summary": {
+          "Aluminum enclosure": {
+            "bounds_gltf_xyz_mm": [
+              [
+                -35.90000048279762,
+                -4.424999933689833,
+                -76.09999924898148
+              ],
+              [
+                35.90000048279762,
+                4.424999933689833,
+                76.09999924898148
+              ]
+            ],
+            "materials": [
+              "rail"
+            ]
+          },
+          "Device screen": {
+            "bounds_gltf_xyz_mm": [
+              [
+                -32.405790814664215,
+                4.484999924898148,
+                -71.98970671743155
+              ],
+              [
+                31.929235032293946,
+                4.484999924898148,
+                70.97702566534281
+              ]
+            ],
+            "materials": [
+              "Device screen | replace texture at runtime"
+            ],
+            "uv_bounds": [
+              [
+                -1.1102230246251565e-16,
+                0.0
+              ],
+              [
+                1.0,
+                1.0
+              ]
+            ]
+          },
+          "Device screen | selfie aperture 0": {
+            "bounds_gltf_xyz_mm": [
+              [
+                -1.7382779042236507,
+                4.497499882745615,
+                -69.48970700614154
+              ],
+              [
+                1.2617221218533814,
+                4.522499882114062,
+                -66.48970698006451
+              ]
+            ],
+            "materials": [
+              "black"
+            ]
+          },
+          "Front black glass": {
+            "bounds_gltf_xyz_mm": [
+              [
+                -35.04500165581703,
+                4.200000097625889,
+                -75.24500042200089
+              ],
+              [
+                35.04500165581703,
+                4.450000109500252,
+                75.24500042200089
+              ]
+            ],
+            "materials": [
+              "black"
+            ]
+          }
+        },
+        "body_projected_hull_vs_official_max_mm": 0.6793489510069801,
+        "front_glass_inset_mm": 0.8549983441829667,
+        "enclosure_front_flat_inset_mm": 0.8999998509883866,
+        "flat_metal_landing_mm": 0,
+        "antenna_nodes": 0
+      },
+      "source_generator_patch": {
+        "profile_fields_to_preserve": [
+          "screen.cutouts",
+          "body_mm.front_rail_mm",
+          "body_mm.edge_roll_mm[1]"
+        ],
+        "trace_field_to_consume": "screen_cutouts_mm",
+        "seam_data_status": "Report only, ready for parent antenna helper; no inactive profile keys added."
+      },
+      "unresolved_seams": "Top/bottom seam intervals are low-contrast SDK observations; use as provisional coordinates pending parent side/top rendering comparison, not physical CAD.",
+      "verification": {
+        "projected_glass_contains_oled": true,
+        "minimum_projected_glass_to_oled_gap_mm": 2.8144
+      }
+    },
+    "pixel-7": {
+      "review_status": "changed; all assigned front evidence reviewed",
+      "sdk": {
+        "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_7/",
+        "file_urls": {
+          "back.webp": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_7/back.webp",
+          "mask.webp": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_7/mask.webp",
+          "layout": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_7/layout"
+        },
+        "upstream_check": {
+          "back.webp": {
+            "upstream_blob": "326bda11b5489ef2526b8f5fe60b0fa744555b41",
+            "local_blob": "326bda11b5489ef2526b8f5fe60b0fa744555b41",
+            "matches": true
+          },
+          "layout": {
+            "upstream_blob": "e6886ea2f219336295e2e7f5f6bd3ff267c7f217",
+            "local_blob": "e6886ea2f219336295e2e7f5f6bd3ff267c7f217",
+            "matches": true
+          },
+          "mask.webp": {
+            "upstream_blob": "5ccbc40407d71853d1ce33bea65fa07d92a76bd7",
+            "local_blob": "5ccbc40407d71853d1ce33bea65fa07d92a76bd7",
+            "matches": true
+          }
+        },
+        "local": "[local reference path omitted]",
+        "frame_sha256": "5f05f759e6fa2997c6a23b27578658e3ad98dd2137262e2d39dfa5f31c43d6ef",
+        "body_bounds_xyxy_px": [
+          1.0,
+          1.0,
+          1193.0,
+          2540.0
+        ],
+        "native_viewport_xywh_px": [
+          59,
+          58,
+          1080,
+          2400
+        ]
+      },
+      "profile_file": "profiles/pixel-7.json",
+      "profile_changes": [
+        {
+          "field": "screen.cutouts",
+          "before": [
+            {
+              "center_mm": [
+                0,
+                69.54076408034659
+              ],
+              "radius_mm": 1.5
+            }
+          ],
+          "after": [
+            {
+              "center_mm": [
+                -0.030641985033477745,
+                69.15896022055927
+              ],
+              "radius_mm": 1.9901356221828759
+            }
+          ]
+        },
+        {
+          "field": "body_mm.front_rail_mm",
+          "before": null,
+          "after": 1.0
+        },
+        {
+          "field": "body_mm.edge_roll_mm[1]",
+          "before": 0.9,
+          "after": 0.35
+        }
+      ],
+      "trace_changes": [
+        "screen_cutouts_mm"
+      ],
+      "unchanged": "Both traced outlines; published height/width/depth; back roll; all rear cameras, logo contours and finish palettes; native resolution; screen Z; front_curve and OLED edge_curve. 6Pro/7Pro rail and front roll deliberately unchanged pending parent curved helper.",
+      "trace_check": {
+        "body_boundary_hausdorff_mm": 0.0,
+        "screen_boundary_hausdorff_mm": 0.0,
+        "method": "Independently regenerated in memory from SDK half-alpha silhouette/mask and compared in preceding successful computation; zero boundary distance for all six. No contour rewrite.",
+        "islands": [
+          {
+            "bounds_xywh_px": [
+              507,
+              39,
+              65,
+              65
+            ],
+            "area_px": 3313
+          }
+        ],
+        "cutouts": [
+          {
+            "center_mm": [
+              -0.030641985033477745,
+              69.15896022055927
+            ],
+            "radius_mm": 1.9901356221828759
+          }
+        ],
+        "existing_cutouts_match": false
+      },
+      "rail": {
+        "measured_projected_metal_width_px": {
+          "side": 17,
+          "top": 14
+        },
+        "measured_projected_metal_width_mm": {
+          "side": 1.044,
+          "top": 0.858
+        },
+        "boundary_uncertainty_px": 2,
+        "boundary_excludes": "Brighter glass bevel inside metal/glass gasket and all OLED/black border area.",
+        "finish": "Zirconia-blasted matte aluminum; retain existing rail roughness 0.36 and finish palettes.",
+        "applied_cross_section_estimate": {
+          "front_rail_mm": 1.0,
+          "front_roll_mm": 0.35,
+          "back_roll_mm_unchanged": 3.0,
+          "nominal_front_metal_landing_mm": 0.65,
+          "confidence": "Medium for projected width, low-medium for depth roll. Isotropic rail field approximates slightly different side/top boundaries; no manufactured CAD claim."
+        }
+      },
+      "seams": [
+        {
+          "edge": "left",
+          "index": 0,
+          "source_interval_px": [
+            213,
+            231
+          ],
+          "source_axis_px": 222.0,
+          "center_axis_mm": 64.2562,
+          "width_mm": 1.1031,
+          "normalized_uv": [
+            0,
+            0.08704214257581724
+          ],
+          "confidence": "medium",
+          "material": "polymer, separate nonmetal role; numeric shader remains estimate"
+        },
+        {
+          "edge": "left",
+          "index": 1,
+          "source_interval_px": [
+            2318,
+            2338
+          ],
+          "source_axis_px": 2328.0,
+          "center_axis_mm": -64.8078,
+          "width_mm": 1.2257,
+          "normalized_uv": [
+            0,
+            0.9165025600630169
+          ],
+          "confidence": "medium",
+          "material": "polymer, separate nonmetal role; numeric shader remains estimate"
+        },
+        {
+          "edge": "right",
+          "index": 0,
+          "source_interval_px": [
+            213,
+            231
+          ],
+          "source_axis_px": 222.0,
+          "center_axis_mm": 64.2562,
+          "width_mm": 1.1031,
+          "normalized_uv": [
+            1,
+            0.08704214257581724
+          ],
+          "confidence": "medium",
+          "material": "polymer, separate nonmetal role; numeric shader remains estimate"
+        },
+        {
+          "edge": "right",
+          "index": 1,
+          "source_interval_px": [
+            2318,
+            2338
+          ],
+          "source_axis_px": 2328.0,
+          "center_axis_mm": -64.8078,
+          "width_mm": 1.2257,
+          "normalized_uv": [
+            1,
+            0.9165025600630169
+          ],
+          "confidence": "medium",
+          "material": "polymer, separate nonmetal role; numeric shader remains estimate"
+        },
+        {
+          "edge": "top",
+          "index": 0,
+          "source_interval_px": [
+            585,
+            610
+          ],
+          "source_axis_px": 597.5,
+          "center_axis_mm": 0.0307,
+          "width_mm": 1.5352,
+          "normalized_uv": [
+            0.5004194630872483,
+            0
+          ],
+          "confidence": "medium",
+          "material": "polymer, separate nonmetal role; numeric shader remains estimate"
+        },
+        {
+          "edge": "bottom",
+          "index": 0,
+          "source_interval_px": [
+            717,
+            743
+          ],
+          "source_axis_px": 730.0,
+          "center_axis_mm": 8.1674,
+          "width_mm": 1.5966,
+          "normalized_uv": [
+            0.6115771812080537,
+            1
+          ],
+          "confidence": "medium",
+          "material": "polymer, separate nonmetal role; numeric shader remains estimate"
+        }
+      ],
+      "actual_glb_before_rebuild": {
+        "sha256": "de7fbb76d0115d025f6c9f17550d37da7481063f16504cb814c7e01bc08c10ff",
+        "mesh_summary": {
+          "Aluminum enclosure": {
+            "bounds_gltf_xyz_mm": [
+              [
+                -36.60000115633011,
+                -4.32500010356307,
+                -77.79999822378159
+              ],
+              [
+                36.60000115633011,
+                4.32500010356307,
+                77.79999822378159
+              ]
+            ],
+            "materials": [
+              "rail"
+            ]
+          },
+          "Device screen": {
+            "bounds_gltf_xyz_mm": [
+              [
+                -32.97077647584956,
+                4.385000094771385,
+                -74.30681167170405
+              ],
+              [
+                33.21591236453969,
+                4.385000094771385,
+                72.7747124619782
+              ]
+            ],
+            "materials": [
+              "Device screen | replace texture at runtime"
+            ],
+            "uv_bounds": [
+              [
+                0.0,
+                0.0
+              ],
+              [
+                1.0,
+                1.0
+              ]
+            ]
+          },
+          "Device screen | selfie aperture 0": {
+            "bounds_gltf_xyz_mm": [
+              [
+                -1.3774320686934516,
+                4.397500052618852,
+                -71.80681522004306
+              ],
+              [
+                1.6225679573835805,
+                4.422500051987299,
+                -68.80681519396603
+              ]
+            ],
+            "materials": [
+              "black"
+            ]
+          },
+          "Front black glass": {
+            "bounds_gltf_xyz_mm": [
+              [
+                -35.74499860405922,
+                4.099999801837839,
+                -76.944999396801
+              ],
+              [
+                35.74499860405922,
+                4.349999813712202,
+                76.944999396801
+              ]
+            ],
+            "materials": [
+              "black"
+            ]
+          }
+        },
+        "body_projected_hull_vs_official_max_mm": 0.3322349840233316,
+        "front_glass_inset_mm": 0.8550013959407821,
+        "enclosure_front_flat_inset_mm": 0.8999991774559035,
+        "flat_metal_landing_mm": 0,
+        "antenna_nodes": 0
+      },
+      "source_generator_patch": {
+        "profile_fields_to_preserve": [
+          "screen.cutouts",
+          "body_mm.front_rail_mm",
+          "body_mm.edge_roll_mm[1]"
+        ],
+        "trace_field_to_consume": "screen_cutouts_mm",
+        "seam_data_status": "Report only, ready for parent antenna helper; no inactive profile keys added."
+      },
+      "verification": {
+        "projected_glass_contains_oled": true,
+        "minimum_projected_glass_to_oled_gap_mm": 2.3226
+      }
+    },
+    "pixel-7-pro": {
+      "review_status": "changed; all assigned front evidence reviewed",
+      "sdk": {
+        "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_7_pro/",
+        "file_urls": {
+          "back.webp": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_7_pro/back.webp",
+          "mask.webp": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_7_pro/mask.webp",
+          "layout": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_7_pro/layout"
+        },
+        "upstream_check": {
+          "back.webp": {
+            "upstream_blob": "4dda83235dfa2117e5a3dcf5830eabbb61918c2f",
+            "local_blob": "4dda83235dfa2117e5a3dcf5830eabbb61918c2f",
+            "matches": true
+          },
+          "layout": {
+            "upstream_blob": "61bf979bac5acab58791d1aaf35fdaace1d2c8f4",
+            "local_blob": "61bf979bac5acab58791d1aaf35fdaace1d2c8f4",
+            "matches": true
+          },
+          "mask.webp": {
+            "upstream_blob": "ba209b060efd161c22359f87c38b6f79e603185f",
+            "local_blob": "ba209b060efd161c22359f87c38b6f79e603185f",
+            "matches": true
+          }
+        },
+        "local": "[local reference path omitted]",
+        "frame_sha256": "a71ccbe741b8d07e87d1a09d30604bfb6b28ec3eb72dfb7e2893683aae24cc16",
+        "body_bounds_xyxy_px": [
+          0.0,
+          1.0,
+          1536.0,
+          3270.0
+        ],
+        "native_viewport_xywh_px": [
+          48,
+          66,
+          1440,
+          3120
+        ]
+      },
+      "profile_file": "profiles/pixel-7-pro.json",
+      "profile_changes": [
+        {
+          "field": "screen.cutouts",
+          "before": [
+            {
+              "center_mm": [
+                0,
+                73.76132190942472
+              ],
+              "radius_mm": 1.5
+            }
+          ],
+          "after": [
+            {
+              "center_mm": [
+                0.0,
+                74.0998164576323
+              ],
+              "radius_mm": 2.0429050813069374
+            }
+          ]
+        },
+        {
+          "field": "screen.fit_box_mm",
+          "before": [
+            71.7796817625459,
+            155.52264381884945
+          ],
+          "after": [
+            71.75772407464056,
+            155.4750688283879
+          ]
+        },
+        {
+          "field": "screen.center_mm[0:2]",
+          "before": [
+            0.0,
+            0.4486230110159119
+          ],
+          "after": [
+            0.0,
+            0.4734016518813093
+          ]
+        }
+      ],
+      "trace_changes": [
+        "screen_cutouts_mm"
+      ],
+      "unchanged": "Both traced outlines; published height/width/depth; back roll; all rear cameras, logo contours and finish palettes; native resolution; screen Z; front_curve and OLED edge_curve. 6Pro/7Pro rail and front roll deliberately unchanged pending parent curved helper.",
+      "trace_check": {
+        "body_boundary_hausdorff_mm": 0.0,
+        "screen_boundary_hausdorff_mm": 0.0,
+        "method": "Independently regenerated in memory from SDK half-alpha silhouette/mask and compared in preceding successful computation; zero boundary distance for all six. No contour rewrite.",
+        "islands": [
+          {
+            "bounds_xywh_px": [
+              679,
+              32,
+              82,
+              82
+            ],
+            "area_px": 5280
+          }
+        ],
+        "cutouts": [
+          {
+            "center_mm": [
+              0.0,
+              74.0998164576323
+            ],
+            "radius_mm": 2.0429050813069374
+          }
+        ],
+        "existing_cutouts_match": false
+      },
+      "rail": {
+        "measured_projected_metal_width_px": {
+          "side": 12,
+          "top": 19
+        },
+        "measured_projected_metal_width_mm": {
+          "side": 0.5984,
+          "top": 0.9468
+        },
+        "boundary_uncertainty_px": 2,
+        "boundary_excludes": "Brighter glass bevel inside metal/glass gasket and all OLED/black border area.",
+        "finish": "High-polished aluminum; retain existing rail roughness 0.18 and finish palettes.",
+        "curved_correction_pending_parent": {
+          "side_rail_target_mm": 0.6,
+          "top_rail_target_mm": 0.95,
+          "top_front_roll_estimate_mm": 0.35,
+          "side_roll_depth_mm": "Fit to retained curved-glass side surface, not measurable from this frontal image. Do not apply .35 as a global front roll.",
+          "current_front_roll_mm_retained": 1.6,
+          "current_screen_sag_mm_retained": 1.0,
+          "reason": "Current global glass inset is 1.52 mm, versus independently observed narrower side metal. Side and top boundaries need separate treatment to avoid counting curved glass as rail."
+        }
+      },
+      "seams": [
+        {
+          "edge": "left",
+          "index": 0,
+          "source_interval_px": [
+            295,
+            316
+          ],
+          "source_axis_px": 305.5,
+          "center_axis_mm": 66.2762,
+          "width_mm": 1.0465,
+          "normalized_uv": [
+            0,
+            0.09314775160599571
+          ],
+          "confidence": "medium",
+          "material": "polymer, separate nonmetal role; numeric shader remains estimate"
+        },
+        {
+          "edge": "left",
+          "index": 1,
+          "source_interval_px": [
+            765,
+            786
+          ],
+          "source_axis_px": 775.5,
+          "center_axis_mm": 42.8553,
+          "width_mm": 1.0465,
+          "normalized_uv": [
+            0,
+            0.2369226063016213
+          ],
+          "confidence": "medium",
+          "material": "polymer, separate nonmetal role; numeric shader remains estimate"
+        },
+        {
+          "edge": "left",
+          "index": 2,
+          "source_interval_px": [
+            2956,
+            2978
+          ],
+          "source_axis_px": 2967.0,
+          "center_axis_mm": -66.351,
+          "width_mm": 1.0963,
+          "normalized_uv": [
+            0,
+            0.9073111043132457
+          ],
+          "confidence": "medium",
+          "material": "polymer, separate nonmetal role; numeric shader remains estimate"
+        },
+        {
+          "edge": "right",
+          "index": 0,
+          "source_interval_px": [
+            292,
+            313
+          ],
+          "source_axis_px": 302.5,
+          "center_axis_mm": 66.4257,
+          "width_mm": 1.0465,
+          "normalized_uv": [
+            1,
+            0.092230039767513
+          ],
+          "confidence": "medium",
+          "material": "polymer, separate nonmetal role; numeric shader remains estimate"
+        },
+        {
+          "edge": "right",
+          "index": 1,
+          "source_interval_px": [
+            765,
+            782
+          ],
+          "source_axis_px": 773.5,
+          "center_axis_mm": 42.955,
+          "width_mm": 0.8471,
+          "normalized_uv": [
+            1,
+            0.23631079840929947
+          ],
+          "confidence": "medium",
+          "material": "polymer, separate nonmetal role; numeric shader remains estimate"
+        },
+        {
+          "edge": "right",
+          "index": 2,
+          "source_interval_px": [
+            2960,
+            2980
+          ],
+          "source_axis_px": 2970.0,
+          "center_axis_mm": -66.5005,
+          "width_mm": 0.9966,
+          "normalized_uv": [
+            1,
+            0.9082288161517283
+          ],
+          "confidence": "medium",
+          "material": "polymer, separate nonmetal role; numeric shader remains estimate"
+        },
+        {
+          "edge": "top",
+          "index": 0,
+          "source_interval_px": [
+            754,
+            780
+          ],
+          "source_axis_px": 767.0,
+          "center_axis_mm": -0.0499,
+          "width_mm": 1.2966,
+          "normalized_uv": [
+            0.4993489583333333,
+            0
+          ],
+          "confidence": "medium",
+          "material": "polymer, separate nonmetal role; numeric shader remains estimate"
+        },
+        {
+          "edge": "bottom",
+          "index": 0,
+          "source_interval_px": [
+            931,
+            959
+          ],
+          "source_axis_px": 945.0,
+          "center_axis_mm": 8.827,
+          "width_mm": 1.3964,
+          "normalized_uv": [
+            0.615234375,
+            1
+          ],
+          "confidence": "low-medium",
+          "material": "polymer, separate nonmetal role; numeric shader remains estimate"
+        }
+      ],
+      "actual_glb_before_rebuild": {
+        "sha256": "160e1369fea4cf43cebe1902f121e11ef20c1145559e2213b238c186da7360c3",
+        "mesh_summary": {
+          "Aluminum enclosure": {
+            "bounds_gltf_xyz_mm": [
+              [
+                -38.30000013113022,
+                -4.424999933689833,
+                -81.45000040531158
+              ],
+              [
+                38.30000013113022,
+                4.424999933689833,
+                81.45000040531158
+              ]
+            ],
+            "materials": [
+              "rail"
+            ]
+          },
+          "Device screen": {
+            "bounds_gltf_xyz_mm": [
+              [
+                -35.87886318564415,
+                3.4849998774006963,
+                -78.2109342108015
+              ],
+              [
+                35.87886318564415,
+                4.484999924898148,
+                77.26413090131246
+              ]
+            ],
+            "materials": [
+              "Device screen | replace texture at runtime"
+            ],
+            "uv_bounds": [
+              [
+                0.0,
+                0.0
+              ],
+              [
+                1.0,
+                1.0
+              ]
+            ]
+          },
+          "Device screen | selfie aperture 0": {
+            "bounds_gltf_xyz_mm": [
+              [
+                -1.500000013038516,
+                4.497499882745615,
+                -75.73472405783832
+              ],
+              [
+                1.500000013038516,
+                4.522499882114062,
+                -72.73472403176129
+              ]
+            ],
+            "materials": [
+              "black"
+            ]
+          },
+          "Front black glass": {
+            "bounds_gltf_xyz_mm": [
+              [
+                -36.77999973297119,
+                1.4492145273834467,
+                -79.93000000715256
+              ],
+              [
+                36.77999973297119,
+                4.449999891221523,
+                79.93000000715256
+              ]
+            ],
+            "materials": [
+              "black"
+            ]
+          }
+        },
+        "body_projected_hull_vs_official_max_mm": 0.14824109208393593,
+        "front_glass_inset_mm": 1.5200002670288058,
+        "enclosure_front_flat_inset_mm": null,
+        "flat_metal_landing_mm": null,
+        "antenna_nodes": 0,
+        "curved_note": "Topmost-vertex flat inset is not a meaningful lateral roll metric for curved models; use full cross-sections during parent integration."
+      },
+      "source_generator_patch": {
+        "profile_fields_to_preserve": [
+          "screen.cutouts",
+          "screen.fit_box_mm",
+          "screen.center_mm[0:2]"
+        ],
+        "trace_field_to_consume": "screen_cutouts_mm",
+        "seam_data_status": "Report only, ready for parent antenna helper; no inactive profile keys added."
+      },
+      "verification": {
+        "curved_screen_and_body_front_curve_retained": true
+      }
+    },
+    "pixel-7a": {
+      "review_status": "changed; all assigned front evidence reviewed",
+      "sdk": {
+        "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_7a/",
+        "file_urls": {
+          "back.webp": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_7a/back.webp",
+          "mask.webp": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_7a/mask.webp",
+          "layout": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_7a/layout"
+        },
+        "upstream_check": {
+          "back.webp": {
+            "upstream_blob": "befac5f982718ac85f436f80f911b71df81a7854",
+            "local_blob": "befac5f982718ac85f436f80f911b71df81a7854",
+            "matches": true
+          },
+          "layout": {
+            "upstream_blob": "8a23a65de5a3cb421dc2eae874a31b02ba35b8ad",
+            "local_blob": "8a23a65de5a3cb421dc2eae874a31b02ba35b8ad",
+            "matches": true
+          },
+          "mask.webp": {
+            "upstream_blob": "a7c8059632b65cda88ce6522bb3017c4288cf0f0",
+            "local_blob": "a7c8059632b65cda88ce6522bb3017c4288cf0f0",
+            "matches": true
+          }
+        },
+        "local": "[local reference path omitted]",
+        "frame_sha256": "e50ee73840f0ce76f0d87053e89a926ee181c5d7ec9af127a9f8077a6346a23d",
+        "body_bounds_xyxy_px": [
+          0.0,
+          0.0,
+          1219.0,
+          2559.0
+        ],
+        "native_viewport_xywh_px": [
+          69,
+          69,
+          1080,
+          2400
+        ]
+      },
+      "profile_file": "profiles/pixel-7a.json",
+      "profile_changes": [
+        {
+          "field": "screen.cutouts",
+          "before": [
+            {
+              "center_mm": [
+                0,
+                67.27784290738569
+              ],
+              "radius_mm": 1.5
+            }
+          ],
+          "after": [
+            {
+              "center_mm": [
+                -0.029699101211410707,
+                67.44665885111371
+              ],
+              "radius_mm": 1.7956221827938992
+            }
+          ]
+        },
+        {
+          "field": "body_mm.front_rail_mm",
+          "before": null,
+          "after": 1.05
+        },
+        {
+          "field": "body_mm.edge_roll_mm[1]",
+          "before": 0.9,
+          "after": 0.35
+        }
+      ],
+      "trace_changes": [],
+      "unchanged": "Both traced outlines; published height/width/depth; back roll; all rear cameras, logo contours and finish palettes; native resolution; screen Z; front_curve and OLED edge_curve. 6Pro/7Pro rail and front roll deliberately unchanged pending parent curved helper.",
+      "trace_check": {
+        "body_boundary_hausdorff_mm": 0.0,
+        "screen_boundary_hausdorff_mm": 0.0,
+        "method": "Independently regenerated in memory from SDK half-alpha silhouette/mask and compared in preceding successful computation; zero boundary distance for all six. No contour rewrite.",
+        "islands": [
+          {
+            "bounds_xywh_px": [
+              509,
+              34,
+              61,
+              61
+            ],
+            "area_px": 2871
+          }
+        ],
+        "cutouts": [
+          {
+            "center_mm": [
+              -0.029699101211410707,
+              67.44665885111371
+            ],
+            "radius_mm": 1.7956221827938992
+          }
+        ],
+        "existing_cutouts_match": true
+      },
+      "rail": {
+        "measured_projected_metal_width_px": {
+          "side": 18,
+          "top": 16
+        },
+        "measured_projected_metal_width_mm": {
+          "side": 1.0765,
+          "top": 0.9504
+        },
+        "boundary_uncertainty_px": 2,
+        "boundary_excludes": "Brighter glass bevel inside metal/glass gasket and all OLED/black border area.",
+        "finish": "Zirconia-blasted aluminum housing; retain existing rail roughness 0.36 and finish palettes.",
+        "applied_cross_section_estimate": {
+          "front_rail_mm": 1.05,
+          "front_roll_mm": 0.35,
+          "back_roll_mm_unchanged": 2.8,
+          "nominal_front_metal_landing_mm": 0.7,
+          "confidence": "Medium for projected width, low-medium for depth roll. Isotropic rail field approximates slightly different side/top boundaries; no manufactured CAD claim."
+        }
+      },
+      "seams": [
+        {
+          "edge": "left",
+          "index": 0,
+          "source_interval_px": [
+            213,
+            230
+          ],
+          "source_axis_px": 221.5,
+          "center_axis_mm": 62.8433,
+          "width_mm": 1.0098,
+          "normalized_uv": [
+            0,
+            0.08655724892536147
+          ],
+          "confidence": "high for artwork interval; medium for physical projection",
+          "material": "polymer, separate nonmetal role; numeric shader remains estimate"
+        },
+        {
+          "edge": "left",
+          "index": 1,
+          "source_interval_px": [
+            510,
+            528
+          ],
+          "source_axis_px": 519.0,
+          "center_axis_mm": 45.1723,
+          "width_mm": 1.0692,
+          "normalized_uv": [
+            0,
+            0.20281359906213364
+          ],
+          "confidence": "high for artwork interval; medium for physical projection",
+          "material": "polymer, separate nonmetal role; numeric shader remains estimate"
+        },
+        {
+          "edge": "left",
+          "index": 2,
+          "source_interval_px": [
+            2197,
+            2223
+          ],
+          "source_axis_px": 2210.0,
+          "center_axis_mm": -55.27,
+          "width_mm": 1.5444,
+          "normalized_uv": [
+            0,
+            0.8636186010160218
+          ],
+          "confidence": "high for artwork interval; medium for physical projection",
+          "material": "polymer, separate nonmetal role; numeric shader remains estimate"
+        },
+        {
+          "edge": "right",
+          "index": 0,
+          "source_interval_px": [
+            213,
+            231
+          ],
+          "source_axis_px": 222.0,
+          "center_axis_mm": 62.8136,
+          "width_mm": 1.0692,
+          "normalized_uv": [
+            1,
+            0.08675263774912075
+          ],
+          "confidence": "high for artwork interval; medium for physical projection",
+          "material": "polymer, separate nonmetal role; numeric shader remains estimate"
+        },
+        {
+          "edge": "right",
+          "index": 1,
+          "source_interval_px": [
+            510,
+            528
+          ],
+          "source_axis_px": 519.0,
+          "center_axis_mm": 45.1723,
+          "width_mm": 1.0692,
+          "normalized_uv": [
+            1,
+            0.20281359906213364
+          ],
+          "confidence": "high for artwork interval; medium for physical projection",
+          "material": "polymer, separate nonmetal role; numeric shader remains estimate"
+        },
+        {
+          "edge": "right",
+          "index": 2,
+          "source_interval_px": [
+            2197,
+            2223
+          ],
+          "source_axis_px": 2210.0,
+          "center_axis_mm": -55.27,
+          "width_mm": 1.5444,
+          "normalized_uv": [
+            1,
+            0.8636186010160218
+          ],
+          "confidence": "high for artwork interval; medium for physical projection",
+          "material": "polymer, separate nonmetal role; numeric shader remains estimate"
+        },
+        {
+          "edge": "top",
+          "index": 0,
+          "source_interval_px": [
+            506,
+            522
+          ],
+          "source_axis_px": 514.0,
+          "center_axis_mm": -5.7112,
+          "width_mm": 0.9568,
+          "normalized_uv": [
+            0.42165709598031176,
+            0
+          ],
+          "confidence": "high for artwork interval; medium for physical projection",
+          "material": "polymer, separate nonmetal role; numeric shader remains estimate"
+        },
+        {
+          "edge": "top",
+          "index": 1,
+          "source_interval_px": [
+            695,
+            712
+          ],
+          "source_axis_px": 703.5,
+          "center_axis_mm": 5.6215,
+          "width_mm": 1.0167,
+          "normalized_uv": [
+            0.5771123872026251,
+            0
+          ],
+          "confidence": "high for artwork interval; medium for physical projection",
+          "material": "polymer, separate nonmetal role; numeric shader remains estimate"
+        },
+        {
+          "edge": "bottom",
+          "index": 0,
+          "source_interval_px": [
+            774,
+            799
+          ],
+          "source_axis_px": 786.5,
+          "center_axis_mm": 10.5852,
+          "width_mm": 1.4951,
+          "normalized_uv": [
+            0.6452009844134536,
+            1
+          ],
+          "confidence": "high for artwork interval; medium for physical projection",
+          "material": "polymer, separate nonmetal role; numeric shader remains estimate"
+        }
+      ],
+      "actual_glb_before_rebuild": {
+        "sha256": "1f2676bdebea9b0455e2df28ed92a8960a5059dfa5d0308c5a29837443c6f732",
+        "mesh_summary": {
+          "Aluminum enclosure": {
+            "bounds_gltf_xyz_mm": [
+              [
+                -36.44999861717224,
+                -4.474999848753214,
+                -75.99999755620956
+              ],
+              [
+                36.44999861717224,
+                4.474999848753214,
+                75.99999755620956
+              ]
+            ],
+            "materials": [
+              "rail"
+            ]
+          },
+          "Device screen": {
+            "bounds_gltf_xyz_mm": [
+              [
+                -32.104727968544466,
+                4.534999839961529,
+                -71.90152304247022
+              ],
+              [
+                32.04532976451446,
+                4.534999839961529,
+                70.65416080877185
+              ]
+            ],
+            "materials": [
+              "Device screen | replace texture at runtime"
+            ],
+            "uv_bounds": [
+              [
+                -1.1102230246251565e-16,
+                0.0
+              ],
+              [
+                1.0,
+                1.0
+              ]
+            ]
+          },
+          "Device screen | selfie aperture 0": {
+            "bounds_gltf_xyz_mm": [
+              [
+                -1.5296991150535177,
+                4.547499797808996,
+                -69.40152193419635
+              ],
+              [
+                1.4703009110235143,
+                4.572499797177443,
+                -66.40152190811932
+              ]
+            ],
+            "materials": [
+              "black"
+            ]
+          },
+          "Front black glass": {
+            "bounds_gltf_xyz_mm": [
+              [
+                -35.59499979019165,
+                4.25000001268927,
+                -75.14499872922897
+              ],
+              [
+                35.59499979019165,
+                4.500000024563633,
+                75.14499872922897
+              ]
+            ],
+            "materials": [
+              "black"
+            ]
+          }
+        },
+        "body_projected_hull_vs_official_max_mm": 0.8663006995298288,
+        "front_glass_inset_mm": 0.8550002098083525,
+        "enclosure_front_flat_inset_mm": 0.9000017166137724,
+        "flat_metal_landing_mm": 0,
+        "antenna_nodes": 0
+      },
+      "source_generator_patch": {
+        "profile_fields_to_preserve": [
+          "screen.cutouts",
+          "body_mm.front_rail_mm",
+          "body_mm.edge_roll_mm[1]"
+        ],
+        "trace_field_to_consume": "screen_cutouts_mm",
+        "seam_data_status": "Report only, ready for parent antenna helper; no inactive profile keys added."
+      },
+      "verification": {
+        "projected_glass_contains_oled": true,
+        "minimum_projected_glass_to_oled_gap_mm": 3.0188
+      }
+    }
+  },
+  "parent_integration": {
+    "generator_patch": "In make_pixel_profiles.py, after SDK-derived screen fitting, preserve the four explicit body_mm.front_rail_mm and edge_roll_mm[1] values listed per device. Read measured screen_cutouts_mm from trace for all six instead of the generated 1.5 mm circle. For 7Pro use trace screen_rect_mm for fit and XY center. Do not regenerate a concentric body outline from screen radius plus bezel; keep independent trace body and OLED contours.",
+    "flat_rails": "Current geometry.py already consumes front_rail_mm and asymmetric edge_roll_mm. Four flat profiles therefore require no new schema for these changes. Keep back-roll unchanged. Reducing front-roll exposes a front metal landing within measured projected metal width. These are provisional cross-section fits pending parent render QA.",
+    "curved_rails": "6Pro/7Pro require distinct lateral and top/bottom metal/glass boundaries; their measured lateral metal is narrower than their top strip. Current max(front_rail_mm, front_roll*.95) and one all-edge slab roll cannot express that. Keep front_curve=1.0 and screen.edge_curve_mm=1.0. Preserve the already exported 1 mm screen Z sag and native UV mapping. Fit the exposed side rail to the curved glass surface height, and a separately shallow top/bottom roll; do not make a high flat ledge adjacent to the lower curved screen edge. Side/top width targets and provisional top roll are recorded per device, not blindly applied to the old scalar API.",
+    "antenna_helper": "Use each device.seams as explicit edge/center_axis_mm/width_mm measurements. Clip polymer patches to the actual exposed enclosure surface, including its rounded front lip, without covering black glass/OLED. Follow actual surface through depth, avoiding buttons/ports. Front artwork does not measure hidden depth extent; inspect side/back references when setting it. No seam data or new material role added to profiles until parent helper schema is finalized.",
+    "antenna_material": "Separate nonmetal polymer from rail. Suggested metal=0, rough=0.60-0.70 are rendering estimates, not Google material numbers. Sample/correlate each finish; do not make all bands white or reuse graphite unchanged on every finish. Keep all existing rail, camera, rear and logo finish values.",
+    "selfie_optics": "Use each measured screen-local cutout center and radius as outer envelope. Replace the current 0.025 mm thick black disk with a layered dark barrel/pupil and curved glass element contained within that envelope. Inner optical proportions/depth are not measurable from alpha mask; initial lens radius 0.40-0.55*cutout radius and recess 0.08-0.18 mm are estimates, requiring parent rendered QA. Use a separate optical glass material; do not lower shared black roughness globally because it also serves camera cavities and front borders. Keep the OLED/hit-test cutout identical to the measured outer hole, and do not expand it for glints.",
+    "acceptance": "Parent rebuilds serially, then runs verify_pixels.py with body contour <=0.10 mm, exact native UV/aspect, measured holes, retained 1 mm Pro screen sag, and before/after front plus oblique renders checking metal/gasket/glass boundaries, seam continuity and recessed optics. Shared helper/export verification not run here."
+  },
+  "verification": {
+    "json_parse": "passed for all six profiles and traces",
+    "all_18_upstream_blobs_match": true,
+    "all_six_existing_contours_exactly_reproduced": true,
+    "all_six_measured_holes_inside_native_screen": true,
+    "native_aspect_and_resolution_preserved": true,
+    "protected_rear_geometry_and_finishes_unchanged": true,
+    "four_flat_glass_projections_contain_original_oled": true,
+    "pro_curvature_preserved": true,
+    "actual_glb_files_read_only": true,
+    "blender_started": false,
+    "exports_rebuilt": false,
+    "rendered_qa": "Parent-owned; not run. Existing exports still show old contours, generic flat selfie disks and zero antenna nodes.",
+    "exact_profile_field_allowlist": "Passed: only reported rail/front-roll, measured cutout, and Pixel7Pro trace-alignment fields differ from captured baseline.",
+    "all_six_glb_and_frame_hashes_unchanged": true
+  }
+}

@@ -8,7 +8,8 @@
     "width": 72,
     "height": 152.8,
     "depth": 8.6,
-    "corner_radius": 11.8
+    "corner_radius": 11.8,
+    "front_rail_mm": 1.3
   },
   "screen": {
     "object": "OLED | uniform 1.8 mm visible bezel",
@@ -29,10 +30,10 @@
     "cutouts": [
       {
         "center_mm": [
-          0,
-          69.51698113207549
+          0.02574123989218329,
+          68.21428571428572
         ],
-        "radius_mm": 1.72
+        "radius_mm": 2.3554040830026333
       }
     ]
   },
@@ -41,7 +42,8 @@
     "screen_resolution": "Published native resolution; ADB may use a lower resolution with the same aspect ratio",
     "screen_geometry": "Screen fit and corner radius measured from Google emulator artwork; native pixel aspect preserved. Skin artwork is a reference, not physical CAD.",
     "camera_geometry": "Original reviewed camera assembly; photo-matched, not manufacturer CAD",
-    "branding": "Google G contour retained from reference artwork. Legacy Pixel4/4a/5/5a lower rear placement (approximately80%height); Pixel6 onward and folds centered on rear/camera leaf. Size, position and finish-tinted material are photo estimates, not manufacturer CAD."
+    "branding": "Google G contour retained from reference artwork. Legacy Pixel4/4a/5/5a lower rear placement (approximately80%height); Pixel6 onward and folds centered on rear/camera leaf. Size, position and finish-tinted material are photo estimates, not manufacturer CAD.",
+    "antenna_details": "Positions/widths measured individually from Google device artwork; nonmetal surface patches follow the actual enclosure. Hidden depth, RGB and roughness are illustrative; finish tint follows the existing back palette. No universal seam layout or through-cut CAD claim."
   },
   "sources": [
     "https://store.google.com/product/pixel_10_pro_specs?hl=en-US"
@@ -183,5 +185,76 @@
     }
   },
   "reference_frame": "research\\skins\\pixel-10-pro\\frame.png",
-  "manufacturer": "Google"
+  "manufacturer": "Google",
+  "rail_details": {
+    "enclosure": "Body | aluminum enclosure",
+    "rail_material": "rail",
+    "materials": {
+      "antenna": {
+        "color_role": "back",
+        "metal": 0,
+        "rough": 0.68
+      },
+      "bar_side": {
+        "color_role": "bar",
+        "finish_role": "rail"
+      }
+    },
+    "antenna_breaks": [
+      {
+        "edge": "left",
+        "center_axis_mm": 51.0191,
+        "width_mm": 1.4415,
+        "id": "left-upper",
+        "material": "antenna"
+      },
+      {
+        "edge": "left",
+        "center_axis_mm": -60.4404,
+        "width_mm": 1.4415,
+        "id": "left-lower",
+        "material": "antenna"
+      },
+      {
+        "edge": "right",
+        "center_axis_mm": 51.0191,
+        "width_mm": 1.4415,
+        "id": "right-upper",
+        "material": "antenna"
+      },
+      {
+        "edge": "right",
+        "center_axis_mm": -60.4404,
+        "width_mm": 1.4415,
+        "id": "right-lower",
+        "material": "antenna"
+      },
+      {
+        "edge": "top",
+        "center_axis_mm": 0.0,
+        "width_mm": 1.44,
+        "id": "top",
+        "material": "antenna"
+      },
+      {
+        "edge": "bottom",
+        "center_axis_mm": 8.5371,
+        "width_mm": 1.44,
+        "id": "bottom",
+        "material": "antenna"
+      }
+    ],
+    "camera_sidewall": {
+      "object": "Camera bar | satin face and rolled shoulder",
+      "face_material": "bar",
+      "material": "bar_side"
+    },
+    "replace_objects": [
+      "Antenna break",
+      "Antenna break.001",
+      "Antenna break.002",
+      "Antenna break.003"
+    ],
+    "replacement_verified_count": 6
+  }
 }

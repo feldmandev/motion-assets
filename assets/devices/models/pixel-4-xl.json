@@ -18,9 +18,9 @@
         146.43123123123124
       ],
       "center_mm": [
-        0.04816816816816817,
-        -2.3602402402402403,
-        4.135
+        0.04816816374659538,
+        -2.3602402210235596,
+        4.134999752044678
       ],
       "corner_radius_mm": 6.664696508962519,
       "rotation_deg": [
@@ -30,8 +30,8 @@
       ],
       "edge_curve_mm": 0,
       "frame_bounds_mm": [
-        2.917087087087083,
-        9.344624624624629,
+        2.9170870826655104,
+        9.344624605407944,
         69.36216216216216,
         146.43123123123124
       ],
@@ -46,7 +46,7 @@
         "height": 160.4,
         "width": 75.1,
         "depth": 8.2,
-        "corner_radius": 9.533615427881434,
+        "corner_radius": 5.0,
         "edge_roll": 0.75,
         "edge_roll_mm": [
           1.75,
@@ -55,12 +55,7 @@
         "front_curve": 0,
         "rear_style": "inset_glass",
         "rear_inset": 0.45,
-        "corner_radii_mm": [
-          9.485447259713267,
-          9.485447259713267,
-          9.581783596049602,
-          9.581783596049602
-        ]
+        "front_rail_mm": 1.1
       },
       "cutouts": [],
       "uv": "u right, v up; full image maps to [0,1] without cropping",
@@ -71,7 +66,7 @@
     "height": 160.4,
     "width": 75.1,
     "depth": 8.2,
-    "corner_radius": 9.533615427881434,
+    "corner_radius": 5.0,
     "edge_roll": 0.75,
     "edge_roll_mm": [
       1.75,
@@ -80,12 +75,7 @@
     "front_curve": 0,
     "rear_style": "inset_glass",
     "rear_inset": 0.45,
-    "corner_radii_mm": [
-      9.485447259713267,
-      9.485447259713267,
-      9.581783596049602,
-      9.581783596049602
-    ]
+    "front_rail_mm": 1.1
   },
   "icon_morph": {
     "windows": 1,
@@ -242,8 +232,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/pixel-4-xl.7f7849f0d481.glb.gz",
-  "sha256": "7f7849f0d481cef7aa22677373d5b82fc4fe1df6254c448c0166f94837769f49",
+  "glbUrl": "assets/devices/models/pixel-4-xl.36e2d4f570a8.glb.gz",
+  "sha256": "36e2d4f570a883c1e30231661889ccc57515c47f6b0562fa26fa54bac67d2c10",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/pixel-4-xl.json",
@@ -254,7 +244,9 @@
       "camera_geometry": "Model-specific rear housing/lens placement proportioned from reviewed product photography; optical stacks reuse the reviewed Pixel optics and are illustrative",
       "buttons_and_rear_hardware": "Model-specific placement reviewed against product photography",
       "finishes": "Approximate sRGB appearance matched to named Google finishes; not measured material samples",
-      "branding": "Google G contour retained from reference artwork. Legacy Pixel4/4a/5/5a lower rear placement (approximately80%height); Pixel6 onward and folds centered on rear/camera leaf. Size, position and finish-tinted material are photo estimates, not manufacturer CAD."
+      "branding": "Google G contour retained from reference artwork. Legacy Pixel4/4a/5/5a lower rear placement (approximately80%height); Pixel6 onward and folds centered on rear/camera leaf. Size, position and finish-tinted material are photo estimates, not manufacturer CAD.",
+      "front_optics": "Visible forehead selfie aperture measured independently in the Google SDK frame; other face-unlock/IR sensors remain behind the black glass, not OLED punch holes. Layered optics and measured adjacent sensor window pending common helper.",
+      "front_rail": "Separate body-to-cover-glass boundary estimate from Google reference; includes the narrow glass gasket, excludes black OLED bezel and reflective cover-glass bevel. See research/pixel45-front-calibration.json."
     },
     "sources": [
       "https://support.google.com/pixelphone/answer/16043605?hl=en",

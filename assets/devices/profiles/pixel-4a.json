@@ -13,7 +13,8 @@
       1.0
     ],
     "front_curve": 0,
-    "rear_style": "unibody"
+    "rear_style": "unibody",
+    "front_rail_mm": 1.25
   },
   "materials": {
     "back": {
@@ -30,8 +31,8 @@
         0.14902,
         0.15686
       ],
-      "metal": 0.08,
-      "rough": 0.52
+      "metal": 0,
+      "rough": 0.58
     },
     "bar": {
       "rgb": [
@@ -201,10 +202,10 @@
     "cutouts": [
       {
         "center_mm": [
-          -26.27,
-          62.74
+          -27.068757539203858,
+          63.48854041013269
         ],
-        "radius_mm": 1.9
+        "radius_mm": 2.1700949394255353
       }
     ]
   },
@@ -292,7 +293,9 @@
     "camera_geometry": "Model-specific rear housing/lens placement proportioned from reviewed product photography; optical stacks reuse the reviewed Pixel optics and are illustrative",
     "buttons_and_rear_hardware": "Model-specific placement reviewed against product photography",
     "finishes": "Approximate sRGB appearance matched to named Google finishes; not measured material samples",
-    "branding": "Google G contour retained from reference artwork. Legacy Pixel4/4a/5/5a lower rear placement (approximately80%height); Pixel6 onward and folds centered on rear/camera leaf. Size, position and finish-tinted material are photo estimates, not manufacturer CAD."
+    "branding": "Google G contour retained from reference artwork. Legacy Pixel4/4a/5/5a lower rear placement (approximately80%height); Pixel6 onward and folds centered on rear/camera leaf. Size, position and finish-tinted material are photo estimates, not manufacturer CAD.",
+    "front_rail": "Separate body-to-cover-glass boundary estimate from Google reference; includes the narrow glass gasket, excludes black OLED bezel and reflective cover-glass bevel. See research/pixel45-front-calibration.json.",
+    "front_optics": "Opaque internal SDK mask component area gives aperture radius and viewport-local center; optical depth/lens stack requires the common helper."
   },
   "sources": [
     "https://support.google.com/pixelphone/answer/16043605?hl=en",

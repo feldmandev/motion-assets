@@ -13,7 +13,8 @@
       0.95
     ],
     "front_curve": 0,
-    "rear_style": "unibody"
+    "rear_style": "unibody",
+    "front_rail_mm": 1.6
   },
   "materials": {
     "back": {
@@ -30,8 +31,8 @@
         0.22745,
         0.19608
       ],
-      "metal": 0.08,
-      "rough": 0.52
+      "metal": 0,
+      "rough": 0.58
     },
     "bar": {
       "rgb": [
@@ -155,10 +156,10 @@
     "cutouts": [
       {
         "center_mm": [
-          -28.04174308916015,
-          68.42609575368922
+          -28.4167,
+          68.8692
         ],
-        "radius_mm": 1.9
+        "radius_mm": 1.8009
       }
     ]
   },
@@ -261,7 +262,9 @@
     "camera_geometry": "Model-specific rear housing/lens placement proportioned from reviewed product photography; optical stacks reuse the reviewed Pixel optics and are illustrative",
     "buttons_and_rear_hardware": "Model-specific placement reviewed against product photography",
     "finishes": "Approximate sRGB appearance matched to named Google finishes; not measured material samples",
-    "branding": "Google G contour retained from reference artwork. Legacy Pixel4/4a/5/5a lower rear placement (approximately80%height); Pixel6 onward and folds centered on rear/camera leaf. Size, position and finish-tinted material are photo estimates, not manufacturer CAD."
+    "branding": "Google G contour retained from reference artwork. Legacy Pixel4/4a/5/5a lower rear placement (approximately80%height); Pixel6 onward and folds centered on rear/camera leaf. Size, position and finish-tinted material are photo estimates, not manufacturer CAD.",
+    "front_optics": "Reference-derived from Google launch orthographic product image (2200x1240), not SDK/CAD; approximately 0.4 mm position uncertainty, 0.2 mm aperture-radius uncertainty.",
+    "front_rail": "Separate body-to-cover-glass boundary estimate from Google reference; includes the narrow glass gasket, excludes black OLED bezel and reflective cover-glass bevel. See research/pixel45-front-calibration.json."
   },
   "sources": [
     "https://support.google.com/pixelphone/answer/16043605?hl=en",

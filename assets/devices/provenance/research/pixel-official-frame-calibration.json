@@ -1,0 +1,1726 @@
+{
+  "date": "2026-10-23",
+  "scope": "Official-art audit plus targeted pending Pixel6-10 source correction. No model rebuild performed in this worker. Pixel11ProXL rim phase is read-only geometry audit; separate worker owns its implementation.",
+  "official_tree_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/",
+  "official_tree_id": "a177e3a2d906ae1715c8974f39eee71be0ca4c8d",
+  "metric_source": "https://support.google.com/pixelphone/answer/7158570?hl=en",
+  "local_sdk": "[local reference path omitted]",
+  "corner_order": [
+    "BR",
+    "TR",
+    "TL",
+    "BL"
+  ],
+  "bezel_order": [
+    "left",
+    "top",
+    "right",
+    "bottom"
+  ],
+  "inventory": [
+    {
+      "id": "pixel-10-pro-fold-folded",
+      "native_resolutions": [
+        [
+          1080,
+          2364
+        ]
+      ],
+      "official_upstream": true,
+      "local_sdk": true,
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_10_pro_fold/closed/",
+      "existing_frame_status": "official SDK layer derivative",
+      "derived_from": null
+    },
+    {
+      "id": "pixel-10-pro-fold-unfolded",
+      "native_resolutions": [
+        [
+          2076,
+          2152
+        ],
+        [
+          1080,
+          2364
+        ]
+      ],
+      "official_upstream": true,
+      "local_sdk": true,
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_10_pro_fold/default/",
+      "existing_frame_status": "official SDK layer derivative",
+      "derived_from": null
+    },
+    {
+      "id": "pixel-10-pro-xl",
+      "native_resolutions": [
+        [
+          1344,
+          2992
+        ]
+      ],
+      "official_upstream": true,
+      "local_sdk": true,
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_10_pro_xl/",
+      "existing_frame_status": "official SDK layer derivative",
+      "derived_from": null
+    },
+    {
+      "id": "pixel-10-pro",
+      "native_resolutions": [
+        [
+          1280,
+          2856
+        ]
+      ],
+      "official_upstream": true,
+      "local_sdk": true,
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_10_pro/",
+      "existing_frame_status": "official SDK layer derivative",
+      "derived_from": null
+    },
+    {
+      "id": "pixel-10",
+      "native_resolutions": [
+        [
+          1080,
+          2424
+        ]
+      ],
+      "official_upstream": true,
+      "local_sdk": true,
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_10/",
+      "existing_frame_status": "official SDK layer derivative",
+      "derived_from": null
+    },
+    {
+      "id": "pixel-10a",
+      "native_resolutions": [
+        [
+          1080,
+          2424
+        ]
+      ],
+      "official_upstream": true,
+      "local_sdk": true,
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_10a/",
+      "existing_frame_status": "official SDK layer derivative",
+      "derived_from": null
+    },
+    {
+      "id": "pixel-11-pro-fold-folded",
+      "native_resolutions": [
+        [
+          1080,
+          2342
+        ]
+      ],
+      "official_upstream": false,
+      "local_sdk": false,
+      "source_url": null,
+      "existing_frame_status": "derived sibling artwork, NOT official model frame",
+      "derived_from": "pixel-10-pro-fold-folded"
+    },
+    {
+      "id": "pixel-11-pro-fold-unfolded",
+      "native_resolutions": [
+        [
+          2076,
+          2152
+        ],
+        [
+          1080,
+          2342
+        ]
+      ],
+      "official_upstream": false,
+      "local_sdk": false,
+      "source_url": null,
+      "existing_frame_status": "no SDK frame; procedural model",
+      "derived_from": null
+    },
+    {
+      "id": "pixel-11-pro-xl",
+      "native_resolutions": [
+        [
+          1344,
+          2992
+        ]
+      ],
+      "official_upstream": false,
+      "local_sdk": false,
+      "source_url": null,
+      "existing_frame_status": "no SDK frame; procedural model",
+      "derived_from": null
+    },
+    {
+      "id": "pixel-11-pro",
+      "native_resolutions": [
+        [
+          1280,
+          2856
+        ]
+      ],
+      "official_upstream": false,
+      "local_sdk": false,
+      "source_url": null,
+      "existing_frame_status": "no SDK frame; procedural model",
+      "derived_from": null
+    },
+    {
+      "id": "pixel-11",
+      "native_resolutions": [
+        [
+          1080,
+          2424
+        ]
+      ],
+      "official_upstream": false,
+      "local_sdk": false,
+      "source_url": null,
+      "existing_frame_status": "no SDK frame; procedural model",
+      "derived_from": null
+    },
+    {
+      "id": "pixel-4-xl",
+      "native_resolutions": [
+        [
+          1440,
+          3040
+        ]
+      ],
+      "official_upstream": true,
+      "local_sdk": true,
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_4_xl/",
+      "existing_frame_status": "official SDK layer derivative",
+      "derived_from": null
+    },
+    {
+      "id": "pixel-4",
+      "native_resolutions": [
+        [
+          1080,
+          2280
+        ]
+      ],
+      "official_upstream": true,
+      "local_sdk": true,
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_4/",
+      "existing_frame_status": "official SDK layer derivative",
+      "derived_from": null
+    },
+    {
+      "id": "pixel-4a-5g",
+      "native_resolutions": [
+        [
+          1080,
+          2340
+        ]
+      ],
+      "official_upstream": true,
+      "local_sdk": false,
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_4a_5g/",
+      "existing_frame_status": "no SDK frame; procedural model",
+      "derived_from": null
+    },
+    {
+      "id": "pixel-4a",
+      "native_resolutions": [
+        [
+          1080,
+          2340
+        ]
+      ],
+      "official_upstream": true,
+      "local_sdk": true,
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_4a/",
+      "existing_frame_status": "official SDK layer derivative",
+      "derived_from": null
+    },
+    {
+      "id": "pixel-5",
+      "native_resolutions": [
+        [
+          1080,
+          2340
+        ]
+      ],
+      "official_upstream": true,
+      "local_sdk": true,
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_5/",
+      "existing_frame_status": "official SDK layer derivative",
+      "derived_from": null
+    },
+    {
+      "id": "pixel-5a",
+      "native_resolutions": [
+        [
+          1080,
+          2400
+        ]
+      ],
+      "official_upstream": false,
+      "local_sdk": false,
+      "source_url": null,
+      "existing_frame_status": "no SDK frame; procedural model",
+      "derived_from": null
+    },
+    {
+      "id": "pixel-6-pro",
+      "native_resolutions": [
+        [
+          1440,
+          3120
+        ]
+      ],
+      "official_upstream": true,
+      "local_sdk": true,
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_6_pro/",
+      "existing_frame_status": "official SDK layer derivative",
+      "derived_from": null
+    },
+    {
+      "id": "pixel-6",
+      "native_resolutions": [
+        [
+          1080,
+          2400
+        ]
+      ],
+      "official_upstream": true,
+      "local_sdk": true,
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_6/",
+      "existing_frame_status": "official SDK layer derivative",
+      "derived_from": null
+    },
+    {
+      "id": "pixel-6a",
+      "native_resolutions": [
+        [
+          1080,
+          2400
+        ]
+      ],
+      "official_upstream": true,
+      "local_sdk": true,
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_6a/",
+      "existing_frame_status": "official SDK layer derivative",
+      "derived_from": null
+    },
+    {
+      "id": "pixel-7-pro",
+      "native_resolutions": [
+        [
+          1440,
+          3120
+        ]
+      ],
+      "official_upstream": true,
+      "local_sdk": true,
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_7_pro/",
+      "existing_frame_status": "official SDK layer derivative",
+      "derived_from": null
+    },
+    {
+      "id": "pixel-7",
+      "native_resolutions": [
+        [
+          1080,
+          2400
+        ]
+      ],
+      "official_upstream": true,
+      "local_sdk": true,
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_7/",
+      "existing_frame_status": "official SDK layer derivative",
+      "derived_from": null
+    },
+    {
+      "id": "pixel-7a",
+      "native_resolutions": [
+        [
+          1080,
+          2400
+        ]
+      ],
+      "official_upstream": true,
+      "local_sdk": true,
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_7a/",
+      "existing_frame_status": "official SDK layer derivative",
+      "derived_from": null
+    },
+    {
+      "id": "pixel-8-pro",
+      "native_resolutions": [
+        [
+          1344,
+          2992
+        ]
+      ],
+      "official_upstream": true,
+      "local_sdk": true,
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_8_pro/",
+      "existing_frame_status": "official SDK layer derivative",
+      "derived_from": null
+    },
+    {
+      "id": "pixel-8",
+      "native_resolutions": [
+        [
+          1080,
+          2400
+        ]
+      ],
+      "official_upstream": true,
+      "local_sdk": true,
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_8/",
+      "existing_frame_status": "official SDK layer derivative",
+      "derived_from": null
+    },
+    {
+      "id": "pixel-8a",
+      "native_resolutions": [
+        [
+          1080,
+          2400
+        ]
+      ],
+      "official_upstream": true,
+      "local_sdk": true,
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_8a/",
+      "existing_frame_status": "official SDK layer derivative",
+      "derived_from": null
+    },
+    {
+      "id": "pixel-9-pro-fold-folded",
+      "native_resolutions": [
+        [
+          1080,
+          2424
+        ]
+      ],
+      "official_upstream": true,
+      "local_sdk": true,
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_9_pro_fold/closed/",
+      "existing_frame_status": "official SDK layer derivative",
+      "derived_from": null
+    },
+    {
+      "id": "pixel-9-pro-fold-unfolded",
+      "native_resolutions": [
+        [
+          2076,
+          2152
+        ],
+        [
+          1080,
+          2424
+        ]
+      ],
+      "official_upstream": true,
+      "local_sdk": true,
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_9_pro_fold/default/",
+      "existing_frame_status": "official SDK layer derivative",
+      "derived_from": null
+    },
+    {
+      "id": "pixel-9-pro-xl",
+      "native_resolutions": [
+        [
+          1344,
+          2992
+        ]
+      ],
+      "official_upstream": true,
+      "local_sdk": true,
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_9_pro_xl/",
+      "existing_frame_status": "official SDK layer derivative",
+      "derived_from": null
+    },
+    {
+      "id": "pixel-9-pro",
+      "native_resolutions": [
+        [
+          1280,
+          2856
+        ]
+      ],
+      "official_upstream": true,
+      "local_sdk": true,
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_9_pro/",
+      "existing_frame_status": "official SDK layer derivative",
+      "derived_from": null
+    },
+    {
+      "id": "pixel-9",
+      "native_resolutions": [
+        [
+          1080,
+          2424
+        ]
+      ],
+      "official_upstream": true,
+      "local_sdk": true,
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_9/",
+      "existing_frame_status": "official SDK layer derivative",
+      "derived_from": null
+    },
+    {
+      "id": "pixel-9a",
+      "native_resolutions": [
+        [
+          1080,
+          2424
+        ]
+      ],
+      "official_upstream": true,
+      "local_sdk": true,
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_9a/",
+      "existing_frame_status": "official SDK layer derivative",
+      "derived_from": null
+    },
+    {
+      "id": "pixel-fold-folded",
+      "native_resolutions": [
+        [
+          1080,
+          2092
+        ]
+      ],
+      "official_upstream": true,
+      "local_sdk": true,
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_fold/closed/",
+      "existing_frame_status": "official SDK layer derivative",
+      "derived_from": null
+    },
+    {
+      "id": "pixel-fold-unfolded",
+      "native_resolutions": [
+        [
+          2208,
+          1840
+        ],
+        [
+          1080,
+          2092
+        ]
+      ],
+      "official_upstream": true,
+      "local_sdk": true,
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_fold/default/",
+      "existing_frame_status": "official SDK layer derivative",
+      "derived_from": null
+    }
+  ],
+  "measurements": {
+    "pixel-6": {
+      "upstream_files": {
+        "back.webp": {
+          "git_blob": "a412568027a0add4fc57c42580efa8262068a118",
+          "local_matches_upstream": true
+        },
+        "layout": {
+          "git_blob": "ae638d344e802d9630499ea1b0d6f1b2aeb0c3e2",
+          "local_matches_upstream": true
+        },
+        "mask.webp": {
+          "git_blob": "c658b192d586d2f089e49942c2d4bf3e577172ae",
+          "local_matches_upstream": true
+        }
+      },
+      "body_mm": [
+        74.8,
+        158.6
+      ],
+      "art_canvas_px": [
+        1209,
+        2553
+      ],
+      "body_bounds_xyxy_px": [
+        0.0,
+        0.0,
+        1203.0,
+        2553.0
+      ],
+      "native_viewport_xywh_px": [
+        60,
+        69,
+        1080,
+        2400
+      ],
+      "viewport_aspect": 0.45,
+      "existing_resolution": [
+        1080,
+        2400
+      ],
+      "native_preserved": true,
+      "body_width_from_height_scale_mm": 74.73396004700352,
+      "body_width_discrepancy_pct": -0.08828870721454551,
+      "mm_per_px_height_anchor": 0.06212299255777516,
+      "bezel_px_LTRB": [
+        60,
+        69,
+        63,
+        84
+      ],
+      "bezel_mm_height_anchor_LTRB": [
+        3.7273795534665095,
+        4.286486486486486,
+        3.9137485311398352,
+        5.218331374853114
+      ],
+      "current_model_bezel_mm_LTRB": [
+        3.760399529964751,
+        4.2864864864864956,
+        3.946768507638076,
+        5.218331374853136
+      ],
+      "official_screen_size_mm": [
+        67.09283196239717,
+        149.0951821386604
+      ],
+      "current_export_screen_size_mm": [
+        67.09283196239717,
+        149.09518213866036
+      ],
+      "profile_screen_size_mm": [
+        67.09283196239717,
+        149.0951821386604
+      ],
+      "official_body_circle_fit_radii_mm": [
+        5.496892876243844,
+        5.364729914287665,
+        5.211201679965499,
+        5.220500401115962
+      ],
+      "official_body_circle_fit_rmse_px": [
+        0.6823019831633355,
+        0.6773951716097021,
+        0.5907596690566362,
+        0.5019030281881838
+      ],
+      "official_screen_circle_fit_radii_mm": [
+        2.1622252241986577,
+        2.1622252241986577,
+        2.1622252241986577,
+        2.1622252241986577
+      ],
+      "official_screen_circle_fit_rmse_px": [
+        0.48418670217868487,
+        0.48418670217868487,
+        0.48418670217868487,
+        0.48418670217868487
+      ],
+      "current_body_circle_radii_mm": [
+        6.049002003639899,
+        6.049002003639899,
+        5.8626330259665735,
+        5.8626330259665735
+      ],
+      "current_body_mean_radius_difference_pct": 11.881400405310828,
+      "nominal_body_contour_hausdorff_mm": 0.3894974592079902,
+      "screen_corner_radius_metadata_mm": 2.1022334960018227,
+      "camera_mask_islands": [
+        {
+          "bounds_px": [
+            510,
+            32,
+            61,
+            61
+          ],
+          "center_in_viewport_px": [
+            540.5,
+            62.5
+          ],
+          "equivalent_radius_mm": 1.9187606497435186
+        }
+      ],
+      "current_cutouts": [
+        {
+          "center_mm": [
+            0,
+            70.5475910693302
+          ],
+          "radius_mm": 1.5
+        }
+      ],
+      "existing_frame_equals_research_frame": true,
+      "research_frame_pixels_different_from_unthresholded_source_composite": 464,
+      "shape_notes": "Circle fits summarize shape only; production must use independent full contours. Hausdorff compares nominal metadata radius polygon to height-anchored trace normalized to published W/H, not measured rendered mesh."
+    },
+    "pixel-6-pro": {
+      "upstream_files": {
+        "back.webp": {
+          "git_blob": "e6ac08e58cebe0b36f498f0a63f81ff15ada4909",
+          "local_matches_upstream": true
+        },
+        "layout": {
+          "git_blob": "b83dd73a195f2421f384811448611c1ce38f3c90",
+          "local_matches_upstream": true
+        },
+        "mask.webp": {
+          "git_blob": "f2b7fac697d17a4dd61b78b73e0f93339d58f1f2",
+          "local_matches_upstream": true
+        }
+      },
+      "body_mm": [
+        75.9,
+        163.9
+      ],
+      "art_canvas_px": [
+        1527,
+        3289
+      ],
+      "body_bounds_xyxy_px": [
+        0.0,
+        0.0,
+        1520.0,
+        3289.0
+      ],
+      "native_viewport_xywh_px": [
+        41,
+        72,
+        1440,
+        3120
+      ],
+      "viewport_aspect": 0.46153846153846156,
+      "existing_resolution": [
+        1440,
+        3120
+      ],
+      "native_preserved": true,
+      "body_width_from_height_scale_mm": 75.74581939799332,
+      "body_width_discrepancy_pct": -0.2031364980325301,
+      "mm_per_px_height_anchor": 0.049832775919732446,
+      "bezel_px_LTRB": [
+        41,
+        72,
+        39,
+        97
+      ],
+      "bezel_mm_height_anchor_LTRB": [
+        2.0431438127090304,
+        3.587959866220736,
+        1.9434782608695653,
+        4.833779264214047
+      ],
+      "current_model_bezel_mm_LTRB": [
+        2.120234113712378,
+        3.587959866220743,
+        2.0205685618729134,
+        4.833779264214044
+      ],
+      "official_screen_size_mm": [
+        71.75919732441473,
+        155.47826086956522
+      ],
+      "current_export_screen_size_mm": [
+        71.75919732441471,
+        155.47826086956522
+      ],
+      "profile_screen_size_mm": [
+        71.75919732441473,
+        155.47826086956522
+      ],
+      "official_body_circle_fit_radii_mm": [
+        5.497487650048119,
+        5.091513369907036,
+        5.243792176031107,
+        5.204420209232949
+      ],
+      "official_body_circle_fit_rmse_px": [
+        0.5340115053021264,
+        1.0927333428787218,
+        0.6766314932282934,
+        0.9150533050526939
+      ],
+      "official_screen_circle_fit_radii_mm": [
+        3.1377138114614187,
+        3.1377138114614187,
+        3.1377138114614187,
+        3.1377138114614187
+      ],
+      "official_screen_circle_fit_rmse_px": [
+        0.4808241078250878,
+        0.4808241078250878,
+        0.4808241078250878,
+        0.4808241078250878
+      ],
+      "current_body_circle_radii_mm": [
+        5.1107301444966815,
+        5.1107301444966815,
+        5.210395696336146,
+        5.210395696336146
+      ],
+      "current_body_mean_radius_difference_pct": -1.8774431572556538,
+      "nominal_body_contour_hausdorff_mm": 0.1611980161587317,
+      "screen_corner_radius_metadata_mm": 3.090161582623768,
+      "camera_mask_islands": [
+        {
+          "bounds_px": [
+            678,
+            30,
+            85,
+            85
+          ],
+          "center_in_viewport_px": [
+            720.5,
+            72.5
+          ],
+          "equivalent_radius_mm": 2.1384141789377504
+        }
+      ],
+      "current_cutouts": [
+        {
+          "center_mm": [
+            0,
+            73.73913043478261
+          ],
+          "radius_mm": 1.5
+        }
+      ],
+      "existing_frame_equals_research_frame": true,
+      "research_frame_pixels_different_from_unthresholded_source_composite": 804,
+      "shape_notes": "Circle fits summarize shape only; production must use independent full contours. Hausdorff compares nominal metadata radius polygon to height-anchored trace normalized to published W/H, not measured rendered mesh."
+    },
+    "pixel-7a": {
+      "upstream_files": {
+        "back.webp": {
+          "git_blob": "befac5f982718ac85f436f80f911b71df81a7854",
+          "local_matches_upstream": true
+        },
+        "layout": {
+          "git_blob": "8a23a65de5a3cb421dc2eae874a31b02ba35b8ad",
+          "local_matches_upstream": true
+        },
+        "mask.webp": {
+          "git_blob": "a7c8059632b65cda88ce6522bb3017c4288cf0f0",
+          "local_matches_upstream": true
+        }
+      },
+      "body_mm": [
+        72.9,
+        152.0
+      ],
+      "art_canvas_px": [
+        1226,
+        2559
+      ],
+      "body_bounds_xyxy_px": [
+        0.0,
+        0.0,
+        1219.0,
+        2559.0
+      ],
+      "native_viewport_xywh_px": [
+        69,
+        69,
+        1080,
+        2400
+      ],
+      "viewport_aspect": 0.45,
+      "existing_resolution": [
+        1080,
+        2400
+      ],
+      "native_preserved": true,
+      "body_width_from_height_scale_mm": 72.4064087534193,
+      "body_width_discrepancy_pct": -0.6770798992876581,
+      "mm_per_px_height_anchor": 0.059398202422821414,
+      "bezel_px_LTRB": [
+        69,
+        69,
+        70,
+        90
+      ],
+      "bezel_mm_height_anchor_LTRB": [
+        4.098475967174678,
+        4.098475967174678,
+        4.157874169597499,
+        5.3458382180539274
+      ],
+      "current_model_bezel_mm_LTRB": [
+        4.345271590465032,
+        4.098475967174679,
+        4.404669792887859,
+        5.345838218053942
+      ],
+      "official_screen_size_mm": [
+        64.15005861664713,
+        142.55568581477138
+      ],
+      "current_export_screen_size_mm": [
+        64.15005861664712,
+        142.55568581477138
+      ],
+      "profile_screen_size_mm": [
+        64.15005861664713,
+        142.55568581477138
+      ],
+      "official_body_circle_fit_radii_mm": [
+        5.311846888948387,
+        5.601575014205868,
+        5.522182598402863,
+        5.3196572086691205
+      ],
+      "official_body_circle_fit_rmse_px": [
+        0.8871593954754077,
+        1.2482323800373394,
+        0.8329976679615057,
+        1.1828729309742685
+      ],
+      "official_screen_circle_fit_radii_mm": [
+        2.7726936658021666,
+        2.7726936658021666,
+        2.7726936658021666,
+        2.7726936658021666
+      ],
+      "official_screen_circle_fit_rmse_px": [
+        0.4785160037817078,
+        0.4785160037817078,
+        0.4785160037817078,
+        0.4785160037817078
+      ],
+      "current_body_circle_radii_mm": [
+        7.12082111808044,
+        6.81462729236726,
+        6.81462729236726,
+        7.061422915657613
+      ],
+      "current_body_mean_radius_difference_pct": 27.838032881027353,
+      "nominal_body_contour_hausdorff_mm": 0.864592478457967,
+      "screen_corner_radius_metadata_mm": 2.7161513251925813,
+      "camera_mask_islands": [
+        {
+          "bounds_px": [
+            509,
+            34,
+            61,
+            61
+          ],
+          "center_in_viewport_px": [
+            539.5,
+            64.5
+          ],
+          "equivalent_radius_mm": 1.7956221827938992
+        }
+      ],
+      "current_cutouts": [
+        {
+          "center_mm": [
+            0,
+            67.27784290738569
+          ],
+          "radius_mm": 1.5
+        }
+      ],
+      "existing_frame_equals_research_frame": true,
+      "research_frame_pixels_different_from_unthresholded_source_composite": 568,
+      "shape_notes": "Circle fits summarize shape only; production must use independent full contours. Hausdorff compares nominal metadata radius polygon to height-anchored trace normalized to published W/H, not measured rendered mesh."
+    },
+    "pixel-8-pro": {
+      "upstream_files": {
+        "back.webp": {
+          "git_blob": "7c19ea182695105987e7bf9edf843146c1797bf3",
+          "local_matches_upstream": true
+        },
+        "layout": {
+          "git_blob": "5cf5b89676cec1e161f3a528dba113e223035054",
+          "local_matches_upstream": true
+        },
+        "mask.webp": {
+          "git_blob": "a636c97fd8cfe8d5a26c30fdac372d45f414f54f",
+          "local_matches_upstream": true
+        }
+      },
+      "body_mm": [
+        76.5,
+        162.6
+      ],
+      "art_canvas_px": [
+        1469,
+        3104
+      ],
+      "body_bounds_xyxy_px": [
+        0.0,
+        0.0,
+        1459.0,
+        3104.0
+      ],
+      "native_viewport_xywh_px": [
+        58,
+        58,
+        1344,
+        2992
+      ],
+      "viewport_aspect": 0.44919786096256686,
+      "existing_resolution": [
+        1344,
+        2992
+      ],
+      "native_preserved": true,
+      "body_width_from_height_scale_mm": 76.42828608247423,
+      "body_width_discrepancy_pct": -0.09374368304022607,
+      "mm_per_px_height_anchor": 0.0523840206185567,
+      "bezel_px_LTRB": [
+        58,
+        58,
+        57,
+        54
+      ],
+      "bezel_mm_height_anchor_LTRB": [
+        3.0382731958762887,
+        3.0382731958762887,
+        2.985889175257732,
+        2.828737113402062
+      ],
+      "current_model_bezel_mm_LTRB": [
+        3.074130154639178,
+        3.038273195876272,
+        3.021746134020617,
+        2.828737113402056
+      ],
+      "official_screen_size_mm": [
+        70.4041237113402,
+        156.73298969072167
+      ],
+      "current_export_screen_size_mm": [
+        70.4041237113402,
+        156.73298969072167
+      ],
+      "profile_screen_size_mm": [
+        70.4041237113402,
+        156.73298969072167
+      ],
+      "official_body_circle_fit_radii_mm": [
+        9.084429946130326,
+        8.76949237702876,
+        8.829883827687363,
+        9.043529331442938
+      ],
+      "official_body_circle_fit_rmse_px": [
+        2.3205332568553234,
+        0.9791972217915015,
+        1.1873797328315416,
+        1.3560527196940368
+      ],
+      "official_screen_circle_fit_radii_mm": [
+        5.592126903244286,
+        5.590373731647108,
+        5.590373731647108,
+        5.592126903244286
+      ],
+      "official_screen_circle_fit_rmse_px": [
+        0.4946092074577422,
+        0.498366256388209,
+        0.498366256388209,
+        0.4946092074577422
+      ],
+      "current_body_circle_radii_mm": [
+        8.384508040469871,
+        8.577517061088432,
+        8.594044122944087,
+        8.384508040469871
+      ],
+      "current_body_mean_radius_difference_pct": -5.001095640627473,
+      "nominal_body_contour_hausdorff_mm": 0.2570177378030924,
+      "screen_corner_radius_metadata_mm": 5.555770927067815,
+      "camera_mask_islands": [
+        {
+          "bounds_px": [
+            631,
+            35,
+            82,
+            82
+          ],
+          "center_in_viewport_px": [
+            672.0,
+            76.0
+          ],
+          "equivalent_radius_mm": 2.112269541383908
+        }
+      ],
+      "current_cutouts": [
+        {
+          "center_mm": [
+            0,
+            74.36649484536083
+          ],
+          "radius_mm": 1.5
+        }
+      ],
+      "existing_frame_equals_research_frame": true,
+      "research_frame_pixels_different_from_unthresholded_source_composite": 0,
+      "shape_notes": "Circle fits summarize shape only; production must use independent full contours. Hausdorff compares nominal metadata radius polygon to height-anchored trace normalized to published W/H, not measured rendered mesh."
+    },
+    "pixel-9-pro": {
+      "upstream_files": {
+        "back.webp": {
+          "git_blob": "9bc7745fa83339eaef9d98eb98269e625b5ad22c",
+          "local_matches_upstream": true
+        },
+        "layout": {
+          "git_blob": "5a85ae1849c77d1be17936b64c2cb0583d1801b8",
+          "local_matches_upstream": true
+        },
+        "mask.webp": {
+          "git_blob": "e6cb1d8a3cff87673a932c4b5229e405c5fac419",
+          "local_matches_upstream": true
+        }
+      },
+      "body_mm": [
+        72.0,
+        152.8
+      ],
+      "art_canvas_px": [
+        1408,
+        2974
+      ],
+      "body_bounds_xyxy_px": [
+        0.0,
+        0.0,
+        1400.0,
+        2974.0
+      ],
+      "native_viewport_xywh_px": [
+        60,
+        61,
+        1280,
+        2856
+      ],
+      "viewport_aspect": 0.4481792717086835,
+      "existing_resolution": [
+        1280,
+        2856
+      ],
+      "native_preserved": true,
+      "body_width_from_height_scale_mm": 71.93006052454608,
+      "body_width_discrepancy_pct": -0.0971381603526722,
+      "mm_per_px_height_anchor": 0.05137861466039005,
+      "bezel_px_LTRB": [
+        60,
+        61,
+        60,
+        57
+      ],
+      "bezel_mm_height_anchor_LTRB": [
+        3.082716879623403,
+        3.1340954942837933,
+        3.082716879623403,
+        2.928581035642233
+      ],
+      "current_model_bezel_mm_LTRB": [
+        3.1176866173503655,
+        3.134095494283798,
+        3.1176866173503655,
+        2.9285810356422246
+      ],
+      "official_screen_size_mm": [
+        65.76462676529927,
+        146.737323470074
+      ],
+      "current_export_screen_size_mm": [
+        65.76462676529927,
+        146.737323470074
+      ],
+      "profile_screen_size_mm": [
+        65.76462676529927,
+        146.737323470074
+      ],
+      "official_body_circle_fit_radii_mm": [
+        12.405040258583199,
+        12.453742635053096,
+        12.500548736726012,
+        12.44790580477395
+      ],
+      "official_body_circle_fit_rmse_px": [
+        1.6500679623987389,
+        2.277952551923332,
+        2.4345721589343867,
+        1.708730697362942
+      ],
+      "official_screen_circle_fit_radii_mm": [
+        9.215326187151987,
+        9.198167908043981,
+        9.215918753156945,
+        9.227988942838989
+      ],
+      "official_screen_circle_fit_rmse_px": [
+        1.4354158712026268,
+        1.3482853857178865,
+        1.4207053676296801,
+        1.5053526175853305
+      ],
+      "current_body_circle_radii_mm": [
+        12.075945710749721,
+        12.265051292457862,
+        12.265051292457862,
+        12.075945710749721
+      ],
+      "current_body_mean_radius_difference_pct": -2.259196628173754,
+      "nominal_body_contour_hausdorff_mm": 0.15480374034020788,
+      "screen_corner_radius_metadata_mm": 9.147364675107497,
+      "camera_mask_islands": [
+        {
+          "bounds_px": [
+            594,
+            55,
+            92,
+            93
+          ],
+          "center_in_viewport_px": [
+            640.0,
+            101.5
+          ],
+          "equivalent_radius_mm": 2.383135175269852
+        }
+      ],
+      "current_cutouts": [
+        {
+          "center_mm": [
+            0,
+            69.368661735037
+          ],
+          "radius_mm": 1.5
+        }
+      ],
+      "existing_frame_equals_research_frame": true,
+      "research_frame_pixels_different_from_unthresholded_source_composite": 990,
+      "shape_notes": "Circle fits summarize shape only; production must use independent full contours. Hausdorff compares nominal metadata radius polygon to height-anchored trace normalized to published W/H, not measured rendered mesh."
+    },
+    "pixel-10-pro": {
+      "upstream_files": {
+        "back.webp": {
+          "git_blob": "0deca1baeaa1e003ddff6402b25e412f8028033e",
+          "local_matches_upstream": true
+        },
+        "layout": {
+          "git_blob": "227753b8a535ba3c450a093fe074b1bbee2b2113",
+          "local_matches_upstream": true
+        },
+        "mask.webp": {
+          "git_blob": "af81431bb3ffe0568d809a3d7245129c5fd04d6d",
+          "local_matches_upstream": true
+        }
+      },
+      "body_mm": [
+        72,
+        152.8
+      ],
+      "art_canvas_px": [
+        1410,
+        2968
+      ],
+      "body_bounds_xyxy_px": [
+        0.0,
+        0.0,
+        1400.0,
+        2968.0
+      ],
+      "native_viewport_xywh_px": [
+        59,
+        60,
+        1280,
+        2856
+      ],
+      "viewport_aspect": 0.4481792717086835,
+      "existing_resolution": [
+        1280,
+        2856
+      ],
+      "native_preserved": true,
+      "body_width_from_height_scale_mm": 72.07547169811322,
+      "body_width_discrepancy_pct": 0.10482180293502896,
+      "mm_per_px_height_anchor": 0.05148247978436658,
+      "bezel_px_LTRB": [
+        59,
+        60,
+        61,
+        52
+      ],
+      "bezel_mm_height_anchor_LTRB": [
+        3.0374663072776285,
+        3.088948787061995,
+        3.1404312668463614,
+        2.677088948787062
+      ],
+      "current_model_bezel_mm_LTRB": [
+        2.9997304617113443,
+        3.0889487731006824,
+        3.1026954142994256,
+        2.677088962748357
+      ],
+      "official_screen_size_mm": [
+        65.89757412398923,
+        147.03396226415097
+      ],
+      "current_export_screen_size_mm": [
+        65.89757412398923,
+        147.03396226415097
+      ],
+      "profile_screen_size_mm": [
+        65.89757412398923,
+        147.03396226415097
+      ],
+      "official_body_circle_fit_radii_mm": [
+        12.507097653878676,
+        12.626113909194773,
+        12.586778900554226,
+        12.4544717075409
+      ],
+      "official_body_circle_fit_rmse_px": [
+        2.0352889078467657,
+        3.259019328781192,
+        3.6232913963745523,
+        2.0197231003565683
+      ],
+      "official_screen_circle_fit_radii_mm": [
+        9.259321190803737,
+        9.252185224605148,
+        9.259321190803737,
+        9.259321190803737
+      ],
+      "official_screen_circle_fit_rmse_px": [
+        0.4335418792197927,
+        0.43514318275292896,
+        0.4335418792197927,
+        0.4335418792197927
+      ],
+      "current_body_circle_radii_mm": [
+        11.8,
+        11.8,
+        11.8,
+        11.8
+      ],
+      "current_body_mean_radius_difference_pct": -5.928239272443592,
+      "nominal_body_contour_hausdorff_mm": 0.24904534668322179,
+      "screen_corner_radius_metadata_mm": 9.257540902964962,
+      "camera_mask_islands": [
+        {
+          "bounds_px": [
+            595,
+            57,
+            91,
+            92
+          ],
+          "center_in_viewport_px": [
+            640.5,
+            103.0
+          ],
+          "equivalent_radius_mm": 2.3554040830026333
+        }
+      ],
+      "current_cutouts": [
+        {
+          "center_mm": [
+            0,
+            69.51698113207549
+          ],
+          "radius_mm": 1.72
+        }
+      ],
+      "existing_frame_equals_research_frame": true,
+      "research_frame_pixels_different_from_unthresholded_source_composite": 2316,
+      "shape_notes": "Circle fits summarize shape only; production must use independent full contours. Hausdorff compares nominal metadata radius polygon to height-anchored trace normalized to published W/H, not measured rendered mesh."
+    },
+    "pixel-fold-folded": {
+      "upstream_files": {
+        "back.webp": {
+          "git_blob": "dcfedff2731e71f9475613c4902e8d9ec8324f1c",
+          "local_matches_upstream": true
+        },
+        "layout": {
+          "git_blob": "69ad5c35deb731d6faabbd82e4b11fa6cd9c4d6a",
+          "local_matches_upstream": true
+        },
+        "mask.webp": {
+          "git_blob": "41ee91f73e2aead04b3845d3393a807f5d2265e1",
+          "local_matches_upstream": true
+        }
+      },
+      "body_mm": [
+        79.5,
+        139.7
+      ],
+      "art_canvas_px": [
+        1268,
+        2233
+      ],
+      "body_bounds_xyxy_px": [
+        0.0,
+        0.0,
+        1261.0,
+        2233.0
+      ],
+      "native_viewport_xywh_px": [
+        116,
+        73,
+        1080,
+        2092
+      ],
+      "viewport_aspect": 0.5162523900573613,
+      "existing_resolution": [
+        1080,
+        2092
+      ],
+      "native_preserved": true,
+      "body_width_from_height_scale_mm": 78.89014778325122,
+      "body_width_discrepancy_pct": -0.7671097066022314,
+      "mm_per_px_height_anchor": 0.0625615763546798,
+      "bezel_px_LTRB": [
+        116,
+        73,
+        65,
+        68
+      ],
+      "bezel_mm_height_anchor_LTRB": [
+        7.257142857142856,
+        4.566995073891625,
+        4.066502463054187,
+        4.254187192118226
+      ],
+      "current_model_bezel_mm_LTRB": [
+        7.562068965517248,
+        4.566995073891633,
+        4.371428571428574,
+        4.2541871921182235
+      ],
+      "official_screen_size_mm": [
+        67.56650246305418,
+        130.87881773399013
+      ],
+      "current_export_screen_size_mm": [
+        67.56650246305418,
+        130.87881773399013
+      ],
+      "profile_screen_size_mm": [
+        67.56650246305418,
+        130.87881773399013
+      ],
+      "official_body_circle_fit_radii_mm": [
+        9.51418051224292,
+        9.671757097128078,
+        2.462133470234806,
+        2.1789537255438263
+      ],
+      "official_body_circle_fit_rmse_px": [
+        1.2137730299447755,
+        2.213289858031236,
+        0.5923848416140378,
+        0.8461811785079913
+      ],
+      "official_screen_circle_fit_radii_mm": [
+        5.753629125777809,
+        5.753629125777809,
+        5.753629125777809,
+        5.753629125777809
+      ],
+      "official_screen_circle_fit_rmse_px": [
+        0.45672317853666544,
+        0.45672317853666544,
+        0.45672317853666544,
+        0.45672317853666544
+      ],
+      "current_body_circle_radii_mm": [
+        9.514176847290639,
+        9.671769458128077,
+        2.462110837438423,
+        2.1789571428571426
+      ],
+      "current_body_mean_radius_difference_pct": -4.414917695871878e-05,
+      "nominal_body_contour_hausdorff_mm": 0.18713728947111044,
+      "screen_corner_radius_metadata_mm": 5.708073709673377,
+      "camera_mask_islands": [
+        {
+          "bounds_px": [
+            505,
+            31,
+            69,
+            69
+          ],
+          "center_in_viewport_px": [
+            539.5,
+            65.5
+          ],
+          "equivalent_radius_mm": 2.1686587791461593
+        }
+      ],
+      "current_cutouts": [
+        {
+          "center_mm": [
+            0,
+            61.439408866995066
+          ],
+          "radius_mm": 1.5
+        }
+      ],
+      "existing_frame_equals_research_frame": true,
+      "research_frame_pixels_different_from_unthresholded_source_composite": 946,
+      "shape_notes": "Circle fits summarize shape only; production must use independent full contours. Hausdorff compares nominal metadata radius polygon to height-anchored trace normalized to published W/H, not measured rendered mesh."
+    },
+    "pixel-fold-unfolded": {
+      "upstream_files": {
+        "back.webp": {
+          "git_blob": "b548bc7bd824c79eee5226b7d586d5bc5349a30a",
+          "local_matches_upstream": true
+        },
+        "layout": {
+          "git_blob": "7d39a5e7e83b707d8842643b9044a83ec6265a98",
+          "local_matches_upstream": true
+        },
+        "mask.webp": {
+          "git_blob": "4926ca227af86b46bb710b0cd44e031934bf3e19",
+          "local_matches_upstream": true
+        }
+      },
+      "body_mm": [
+        158.7,
+        139.7
+      ],
+      "art_canvas_px": [
+        2368,
+        2087
+      ],
+      "body_bounds_xyxy_px": [
+        0.0,
+        0.0,
+        2361.0,
+        2086.0
+      ],
+      "native_viewport_xywh_px": [
+        77,
+        126,
+        2208,
+        1840
+      ],
+      "viewport_aspect": 1.2,
+      "existing_resolution": [
+        2208,
+        1840
+      ],
+      "native_preserved": true,
+      "body_width_from_height_scale_mm": 158.11682646212847,
+      "body_width_discrepancy_pct": -0.3674691479971792,
+      "mm_per_px_height_anchor": 0.06697027804410355,
+      "bezel_px_LTRB": [
+        77,
+        126,
+        76,
+        120
+      ],
+      "bezel_mm_height_anchor_LTRB": [
+        5.156711409395974,
+        8.438255033557047,
+        5.08974113135187,
+        8.036433365292426
+      ],
+      "current_model_bezel_mm_LTRB": [
+        5.448298178331726,
+        8.438255033557049,
+        5.38132790028763,
+        8.036433365292417
+      ],
+      "official_screen_size_mm": [
+        147.87037392138063,
+        123.22531160115052
+      ],
+      "current_export_screen_size_mm": [
+        147.87037392138063,
+        123.22531160115052
+      ],
+      "profile_screen_size_mm": [
+        151.353091265947,
+        126.12757605495584
+      ],
+      "official_body_circle_fit_radii_mm": [
+        9.640699026028672,
+        10.100919194984266,
+        9.617477134951924,
+        9.670340377741553
+      ],
+      "official_body_circle_fit_rmse_px": [
+        1.8843310394362078,
+        2.9025907694567157,
+        1.9913164653182072,
+        1.6259730687032101
+      ],
+      "official_screen_circle_fit_radii_mm": [
+        3.203562210249823,
+        3.203562210249823,
+        3.203562210249823,
+        3.203562210249823
+      ],
+      "official_screen_circle_fit_rmse_px": [
+        0.48573153944011765,
+        0.48573153944011765,
+        0.48573153944011765,
+        0.48573153944011765
+      ],
+      "current_body_circle_radii_mm": [
+        6.567116719823356,
+        6.567116719823356,
+        6.567116719823356,
+        6.567116719823356
+      ],
+      "current_body_mean_radius_difference_pct": -32.69575543310359,
+      "nominal_body_contour_hausdorff_mm": 1.6407999999999987,
+      "screen_corner_radius_metadata_mm": 3.154721969336257,
+      "camera_mask_islands": [],
+      "current_cutouts": [],
+      "existing_frame_equals_research_frame": true,
+      "research_frame_pixels_different_from_unthresholded_source_composite": 341,
+      "shape_notes": "Circle fits summarize shape only; production must use independent full contours. Hausdorff compares nominal metadata radius polygon to height-anchored trace normalized to published W/H, not measured rendered mesh."
+    }
+  },
+  "corrections": [
+    {
+      "file": "build.py",
+      "symbol": "apply_trace, slab branch lines 85-90",
+      "change": "Assign profile.body_outline_mm=fit_outline(trace.body_outline_mm, body.width, body.height) before traced_screen. Keep independent chassis and display contours; do not construct chassis from screen+bezel."
+    },
+    {
+      "file": "build.py",
+      "symbol": "sync_slab_body_corners lines 134-160",
+      "change": "Return when profile already has body_outline_mm. This preserves official slab trace and confines existing fallback to profiles without traced chassis."
+    },
+    {
+      "file": "build.py",
+      "symbol": "prepare_screen curved-screen branch lines 184-214",
+      "change": "Pixel6Pro/7Pro curved mesh currently rebuilds circle from radius and ignores outline_mm; sample traced screen boundary for each row, then apply existing Z curvature. Native viewport/UV mapping stays unchanged."
+    },
+    {
+      "file": "build.py",
+      "symbol": "imported asset branch lines 555-557",
+      "change": "For Pixel10Pro call traced_screen on screen spec rather than attaching only frame_trace. 3D screen then uses traced outline; imported shell still needs separate targeted source correction."
+    },
+    {
+      "file": "../pixel-10-pro-model/source/build_model.py",
+      "symbol": "lines 133-135 body/front/rear glass",
+      "change": "Replace guessed independent circular slab outlines with SDK-derived body/front contours using normalized published72x152.8mm chassis. Body R11.8 is ~5.9% below official fittedR12.54; changing one radius cannot reproduce the full contour. Preserve reviewed camera assembly."
+    },
+    {
+      "file": "research/trace_skins.py",
+      "symbol": "trace frame compositing lines 90-99",
+      "change": "Keep half-alpha threshold for contour measurement only. For production bitmap compose untouched back+mask at layout offset, retaining fractional alpha; current PNG construction zeroes lower-alpha edge pixels. Export original-art frame separately from model-derived mask."
+    },
+    {
+      "file": "research/measure_skins.py",
+      "symbol": "body top/bottom measurement",
+      "change": "Use the same stable multi-column top/bottom measure as trace_skins. Current originalFold single central column intersects hinge notch: top24/bottom2062, versus actual body0..2086; wrong scale yields profile151.353x126.128mm while build uses147.870x123.225mm. Recompute derived profile measurements after unifying bounds."
+    },
+    {
+      "file": "make_legacy_pixel_profiles.py / source acquisition",
+      "symbol": "Pixel4a5G missing local frame",
+      "change": "Official upstream pixel_4a_5g exists, viewport[62,68,1080,2340], canvas1195x2473. Acquire back.webp,mask.webp,layout from recorded upstream; include4a5g as genuine frame-backed model."
+    },
+    {
+      "file": "research/trace_skins.py",
+      "symbol": "DERIVED Pixel11ProFold",
+      "change": "Do not present derived Pixel10Fold bitmap as official Pixel11 artwork. Explicitly label provisional sibling-derived frame, or omit official-art mode for11. No11 or5a entry present in checked upstream artwork tree."
+    }
+  ],
+  "production_2d": {
+    "feasible": true,
+    "mapping": "back.webp at(0,0); viewport from layout part2 x/y and display width/height; foreground mask.webp at same x/y. Screen aperture and camera occlusions come from mask alpha. PNG/SVG wrapper may directly use composited original layers, with the native-resolution screenshot placed at the exact viewport. Keep native dimensions and full-viewport UVs. An SVG containing the PNG is raster artwork, not vector CAD.",
+    "current_state": "All eight representative frame.png exports exactly equal their research PNG; current 3D/front renders differ. Existing research PNG is mildly modified by thresholding, not byte-exact back+mask composition.",
+    "physical_scale": "2D remains in native artwork coordinates. For3D normalize chassis outline to published width,height; scale screen uniformly from published chassis height/artwork body height so native aspect stays exact. Report the residual width mismatch (up to0.77% in representatives) instead of independently stretching screenX/Y.",
+    "missing": "5a and11 family absent from checked tree; no invention of official frames.4a5G exists upstream."
+  },
+  "licensing": {
+    "source": "Google-hosted Android Studio source repository, original device art resources; matched representative local blobs to upstream.",
+    "metadata_license": "device-art.xml explicitly Apache2.0, copyright2025AndroidOpenSourceProject. No asset-specific bitmap license/NOTICE located in artwork directory or repository root during this audit. Do not automatically apply the XML file license to all artwork.",
+    "web_art_license_reference": "https://developer.android.com/license",
+    "web_art_use_reference": "https://developer.android.com/distribute/marketing-tools/device-art-generator",
+    "distinction": "Android Developers page licenses non-documentation site content CC-BY2.5 with attribution and excludes proprietary trademarks/linked content. That page authorizes generated promotional artwork, but is not proof that these separate repository bitmaps inherit CC-BY2.5. Preserve original origin/hash and record bitmap licensing as unresolved pending explicit bundle notice."
+  },
+  "uncertainty": [
+    "Artwork is an official 2D screenshot/emulator frame, not a published mechanical drawing; no claim of exact physical corner radii.",
+    "Equivalent circular radius is descriptive; corner residuals and pixel antialiasing forbid replacing contours with one radius.",
+    "Body width discrepancy is source-art vs published aspect, not permission to alter native viewport dimensions.",
+    "Source full3D depth profiles, front/back edge rolls, rear glass and side optics are not constrained by a flat frame; retain explicit estimate status.",
+    "No full build performed; parent owns targeted recipe changes and representative rebuilds."
+  ],
+  "pixel11_pro_xl_rim_audit": {
+    "source_distinction": "Collection frame.svg is procedural artwork from write_frame, not a Google SDK/official Pixel11 frame. No Pixel11 resource found in checked official Android Studio device-art tree.",
+    "official_product_page": "https://store.google.com/gb/product/pixel_11_pro?hl=en-GB",
+    "official_dimensions_source": "https://store.google.com/gb/product/pixel_11_pro_specs?hl=en-GB",
+    "evidence": [
+      {
+        "local": "research/images/pixel11-pro-polished-edge-official.webp",
+        "url": "https://lh3.googleusercontent.com/AVdp_dXvpaicoxCt5gCLwPX62d53W6sHSd4kyPg2u3s0godFndkHDQfV6rdwHDIzLmH5PUzE4c0ri2yrDSffTKQMJO0N4fyfsPw=w542-h678-rw-nu",
+        "alt": "Close-up of Google Pixel 11 Pro polished gold metal edges",
+        "finding": "Oblique close-up supports distinct polished front ledge and substantial side surface; cannot infer precise orthographic rim mm. Requesting1600px variant returned same542x678 source dimensions."
+      },
+      {
+        "local": "research/images/pixel11-pro-side-rear-official.webp",
+        "url": "https://lh3.googleusercontent.com/ZoBsfFUyAM4Ph2seuYt7EtG37b1YyZKvkl2QPfcSlvNwBJtgSQjPRJjYRTC9tgbss6aR6cz-u5sl2qAYQ7-KZy5dmx31axAWbJk=w1392-h794-rw-nu",
+        "finding": "Downloaded image shows side/rear polished aluminum despite mismatched page alt. Broad flat side and narrow rolled boundary visible; no front viewport calibration."
+      }
+    ],
+    "actual_export_before": {
+      "body_mm": [
+        76.5,
+        162.7,
+        8.5
+      ],
+      "screen_native_px": [
+        1344,
+        2992
+      ],
+      "screen_size_mm": [
+        71.82673796791443,
+        159.9
+      ],
+      "screen_edge_inset_sides_mm": 2.3366310160427872,
+      "screen_edge_inset_top_bottom_mm": 1.4,
+      "front_glass_size_mm": [
+        75.1,
+        161.3,
+        0.25
+      ],
+      "front_glass_outer_inset_mm": 0.7,
+      "svg_device_color_rim_mm": 0.7,
+      "body_front_roll_mm": 0.65,
+      "body_back_roll_mm": 0.65,
+      "body_face_z_mm": 4.225,
+      "glass_face_z_mm": 4.25,
+      "glass_front_edge_roll_mm": 0.08,
+      "oled_face_z_mm": 4.285,
+      "nominal_flat_ledge_mm": 0.05,
+      "glass_edge_x_at_metal_face_z_mm": 37.52785891089109,
+      "visible_flat_ledge_mm": 0.07214108910891,
+      "rolled_fraction_of_nominal_rim_pct": 92.85714285714286,
+      "body_outer_corner_radius_mm": 12.9,
+      "body_front_flat_corner_radius_mm": 12.25,
+      "glass_outer_corner_radius_mm": 12.2,
+      "glass_top_corner_radius_mm": 12.12,
+      "screen_corner_radius_mm": 11.5,
+      "preview_state": "front.png mtime1792264738 precedes model.glb mtime1792672382 by~4.72days; refresh once implementation is rebuilt."
+    },
+    "cause": "SVG fills whole0.7mm rim with uniform device color.3D already exposes0.7mm nominal footprint, but0.65mm is curved metal; only~0.072mm front-facing flat ledge survives glass bevel. Lighting/reflection therefore makes most of rim darker/thinner than flat SVG.",
+    "proposed_after_not_yet_built": {
+      "front_roll_mm": 0.2,
+      "keep_back_roll_mm": 0.65,
+      "keep_glass_inset_mm": 0.7,
+      "nominal_flat_ledge_mm": 0.5,
+      "visible_flat_ledge_mm_approx": 0.52214,
+      "visible_flat_ledge_gain_factor_approx": 7.24,
+      "body_front_flat_corner_radius_mm": 12.7,
+      "keep_native_resolution": true,
+      "keep_screen_size_and_position": true,
+      "keep_black_screen_bezel": true,
+      "note": "Model tuning candidate to match existing collection Frame width, not a measured Google dimension. Final front/oblique renders must validate polished rim; widening black OLED bezel is unnecessary."
+    }
+  },
+  "pending_implementation_state": {
+    "build_py": "Preserves independently traced body and screen; curved-screen row intersections follow actual outline; imported screen trace setup; measured cutout consumption. Changes are unbuilt.",
+    "trace_skins_py": "Opaque internal mask islands measured into screen_cutouts_mm; four representative trace metadata regenerated.",
+    "verify_pixels_py": "Official-trace slab branch now compares exported GLB enclosure convex envelope to published-dimension-normalized trace with0.10mm tolerance; no-trace fallback retains previous concentric check. Syntax passes.",
+    "prefx_glb_contour_error_mm": {
+      "pixel-6": 0.39054146471285234,
+      "pixel-6-pro": 0.14070913122008236,
+      "pixel-7a": 0.866300699529834,
+      "pixel-8-pro": 0.21627060016093003
+    },
+    "prefx_verification": "All four correctly fail new official-contour assertion; unchanged native UV and dimension checks pass before reaching it. No Blender rebuild started."
+  }
+}

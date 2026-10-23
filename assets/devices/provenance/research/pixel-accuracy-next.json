@@ -1,0 +1,25 @@
+{
+  "status": "All34 Pixel states rebuilt and focused verified; gallery publication pending",
+  "official_frame_calibration": "research/pixel-official-frame-calibration.json",
+  "verification": "research/pixel-front-export-verification.json",
+  "scope": "Pixel4–11 slabs/a/Pro/XL and four Fold generations,34 static/articulated states",
+  "changes": [
+    "Independent traced chassis/OLED contours where supported by genuine SDK art",
+    "Measured exposed rim, glazed front cover and per-model antenna surface inserts",
+    "Curved6Pro/7Pro front support and glass",
+    "Improved layered selfie optics within measured/provisional outer masks",
+    "Independently traced cover glass and originalFold inner-screen scale",
+    "Finish-aware new material slots and generator persistence"
+  ],
+  "verified": "Native resolutions/aspect, exported bounds/UVs, official chassis convex contours where available, optical clearance, animation metadata, finite POSITION buffers and antenna node coverage; all34 pass. Front and oblique review renders inspected.",
+  "limitations": [
+    "Photo-fitted material/radius/seam values are estimates, not OEM CAD.",
+    "Pixel11 has no verified SDK frames; XL rim is a Pro-family estimate and XL selfie footprint remains provisional.",
+    "Pixel8a SDK enclosure aspect conflicts with physical references; reviewed physical envelope retained.",
+    "Pixel4a5G SDK art duplicates4a; independent physical contour remains provisional.",
+    "Pixel11Fold cover art is derived from10Fold, marked provisional.",
+    "Optical internals are illustrative; antenna inserts are surface appearance, not through-depth engineering cuts."
+  ],
+  "canonical_exports": "Updated and verified",
+  "published_snapshot": "0.1.5 candidate"
+}

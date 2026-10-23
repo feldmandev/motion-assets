@@ -18,9 +18,9 @@
         142.98544387113114
       ],
       "center_mm": [
-        0,
-        0,
-        4.135
+        0.0,
+        0.0,
+        4.134999752044678
       ],
       "corner_radius_mm": 4.8,
       "rotation_deg": [
@@ -212,8 +212,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/pixel-4a-5g.366e0c98895a.glb.gz",
-  "sha256": "366e0c98895a3c2d26411d4d03172670a025aec5d160cc0785e5b25296a13d1d",
+  "glbUrl": "assets/devices/models/pixel-4a-5g.ccd23166d2ed.glb.gz",
+  "sha256": "ccd23166d2ed6d28bd0b12ad190547be78b37936461b9864ddb9a3d993668ef8",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/pixel-4a-5g.json",

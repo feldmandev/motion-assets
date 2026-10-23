@@ -1,0 +1,318 @@
+{
+  "date": "2026-10-23",
+  "status": "Implementation ready for parent integration and serialized Blender QA; no Blender run, export, render or publication performed.",
+  "scope": [
+    "pixel_imported_front.py",
+    "research/pixel10-imported-front-patch.json"
+  ],
+  "input_sha256": {
+    "pixel_imported_front.py": "1ab95a11edd14563490be3a3da5fe5a92b607909051e1153914300a0b465e240",
+    "research/skins/pixel-10-pro/trace.json": "68fe78eea286083e93a2d949d45568fe6b5a20fcac28ed9cc0988d4c5813e32f",
+    "exports/pixel-10-pro/model.glb": "264cfe3d540945de0c74561327bda2e1b092a7f3df5664a6ae3e9c321bce63a4",
+    "../pixel-10-pro-model/Pixel-10-Pro-Obsidian.blend": "07294fd4a787d8213cb10117c65e087e08da8c57e39fce4c991b91af7e9ed73d",
+    "../pixel-10-pro-model/source/build_model.py": "81d8cab613ec24e73a46ea69554e13174604807c2ab4d6632295f8d1a4c0c5a9",
+    "pixel_front_optics.py": "44fcb0e9eab78a00ba5c206c8e7b0dd9d86d3f8c6723ba2e3067a0b161b43852"
+  },
+  "files_changed": {
+    "pixel_imported_front.py": "New isolated imported Pixel 10 Pro body/front-glass helper. No profile, source BLEND, source generator, shared helper, export or research trace edits.",
+    "research/pixel10-imported-front-patch.json": "This implementation and verification handoff."
+  },
+  "entrypoint": "calibrate_imported_pixel_front(profile, root, trace)",
+  "hook": {
+    "where": "build.py imported-asset branch after load/link and selected finish/logo application; before prepare_screen and before the common seam helper.",
+    "code": "from pixel_imported_front import calibrate_imported_pixel_front\ncalibration = calibrate_imported_pixel_front(profile, root, trace)",
+    "repeat": "Fresh imported asset, once. An explicit root property guards repeat invocation. Print/persist the returned diagnostic dictionary in the parent build log.",
+    "screen": "Keep existing traced_screen/prepare_screen and native OLED UV/aspect logic. No screen/profile mutation here.",
+    "optics": "Use existing enhance_pixel_front_optics(profile) AFTER prepare_screen; this helper leaves both selfie objects unchanged."
+  },
+  "objects_changed": {
+    "Body | aluminum enclosure": {
+      "fields": [
+        "mesh.vertices[*].co.x",
+        "mesh.vertices[*].co.y"
+      ],
+      "method": "Normalize independent SDK body outline to 72 x 152.8 mm; use its convex envelope as in the strict contour acceptance check. Recover old 11.8 mm rounded-rectangle exterior samples from original XY offset and 0.55 mm Z roll; map outward normals to corresponding traced offsets. The 0.004 mm classifier includes Boolean intersections on original 32-segment quarter-circle chords (maximum chord sag 0.003554 mm). Interior cavity vertices do not qualify. Slide only original side/top tangent endpoints to retain published bounds; bottom tangent X is retained to preserve cavity triangle winding. Keep 1% old curvature to avoid collapsing old cap-ear triangles on hull facets; verify final full convex hull against 0.10 mm.",
+      "unchanged": [
+        "vertex Z",
+        "mesh connectivity",
+        "material slots and face assignments",
+        "UV values and loop indices",
+        "object and parent transforms",
+        "8.55 mm enclosure depth",
+        "published 72 x 152.8 x 8.6 mm profile dimensions"
+      ]
+    },
+    "Front glass | cover and equal bezel": {
+      "fields": [
+        "mesh datablock"
+      ],
+      "method": "Use existing traced_ring/slab with body trace inset 1.30 mm, original 0.10 mm edge roll, 0.30 mm depth and material slots. Transplant mesh into existing glass object, remove temporary object.",
+      "target_width_height_mm": [
+        69.4,
+        150.2
+      ],
+      "retained": [
+        "object identity",
+        "parent",
+        "transforms including root Z=4.15 mm",
+        "black material identity",
+        "depth"
+      ]
+    },
+    "root": {
+      "fields": [
+        "custom property pixel_imported_front_calibrated"
+      ],
+      "purpose": "Prevent reapplying a calibration intended for the original imported mesh; transform unchanged."
+    }
+  },
+  "numerical_verification": {
+    "method": "Read current canonical exported GLB accessors directly, convert glTF Y-up metres to root XYZ millimetres, run production _body_positions, then round through float32 metre coordinates. No stale front.png judgments.",
+    "before_full_body_contour_error_mm": 0.24291245154443822,
+    "after_full_body_contour_error_mm": 0.05459852622022244,
+    "full_contour_gate_mm": 0.1,
+    "passes_full_contour_gate_in_numeric_GLb_replay": true,
+    "after_body_bounds_mm": [
+      71.99999690055847,
+      152.79999375343323,
+      8.550000376999378
+    ],
+    "exported_aluminum_vertices": 4528,
+    "changed_aluminum_vertices_after_float32": 2716,
+    "exported_polymer_vertices": 3158,
+    "changed_polymer_exterior_lip_vertices": 76,
+    "unchanged_polymer_vertices": 3082,
+    "max_all_vertex_displacement_mm": 2.533137798309326,
+    "max_displacement_note": "Largest displacement is tangential relocation of an old perimeter tangent endpoint to fit the new corner while retaining bounds; it is not chassis thickness or port movement.",
+    "old_glb_triangle_winding_reversals": 0,
+    "old_glb_new_zero_area_triangles": 0,
+    "triangle_checks": "All existing exported primitive triangles checked using both double-precision root-mm and float32 metre cross products. Ignore only already degenerate old triangles with cross-product magnitude <=1e-12 m^2; all other new cross products retain direction and magnitude >1e-15 m^2.",
+    "glass_offset_contour_error_mm": 0.041893469550096034,
+    "glass_width_height_mm": [
+      69.4,
+      150.2
+    ],
+    "all_glass_rolled_ring_polygons_valid": true,
+    "python_ast_valid": true,
+    "non_target_family_noops_verified": [
+      "pixel-10",
+      "pixel-10-pro-xl",
+      "pixel-10a"
+    ],
+    "caveat": "These are exported vertex/triangle replays, not Blender invocation or final regenerated GLB acceptance. Runtime assertions also test original imported bounds, parents/transforms, unchanged Z/interiors, old mesh triangle winding/areas, final dimensions, and strict 0.10 mm full-body contour. GLB counts include duplicated vertices at material/normal/UV splits and need not equal source BLEND vertex counts."
+  },
+  "speaker_lip_change": {
+    "authorization": "Latest parent clarification permits moving true exterior perimeter vertices shared with cavity edges; cavity interiors and separate speaker/USB/microphone hardware remain fixed.",
+    "measured_region": "Positive-X bottom speaker-adjacent chassis corner, on existing exterior perimeter only.",
+    "old_bounds_mm": [
+      [
+        24.19999986886978,
+        -76.39999687671661,
+        -1.025000005029142
+      ],
+      [
+        26.900000870227814,
+        -76.08390599489212,
+        1.025000005029142
+      ]
+    ],
+    "new_bounds_mm": [
+      [
+        24.19999986886978,
+        -76.34107768535614,
+        -1.025000005029142
+      ],
+      [
+        26.86447650194168,
+        -75.9328082203865,
+        1.025000005029142
+      ]
+    ],
+    "max_displacement_mm": 0.15521764784546424,
+    "exported_polymer_lip_vertices_moved": 76,
+    "interior_fixed": "All other 3082 exported polymer vertices are bit-identical after metre/float32 replay. Separate recessed liners, speaker grille, USB tongue and all hardware objects are never accessed by the helper.",
+    "previous_limitation_resolved": "The earlier 0.15661 mm residual came from freezing this exterior lip. No visible lip is excluded from the final contour calculation; no relaxed contour threshold remains."
+  },
+  "selfie_handoff": {
+    "latest_helper_read": true,
+    "existing_imported_case_confirmed": true,
+    "behavior": "Current pixel_front_optics.py uses measured spec cutout/center, replaces named Selfie camera | black aperture with its shallow stack, and removes Selfie lens coating. Neither is read or changed by this helper.",
+    "measured_reference": {
+      "mask": {
+        "bounds_in_native_viewport_xywh_px": [
+          595,
+          57,
+          91,
+          92
+        ],
+        "area_px": 6576,
+        "center_in_native_viewport_px": [
+          640.5,
+          103.0
+        ]
+      },
+      "screen_local": {
+        "center_mm": [
+          0.02574123989218329,
+          68.21428571428572
+        ],
+        "radius_mm": 2.3554040830026333
+      },
+      "root_center_mm": [
+        -0.02574123989218329,
+        68.00835579514826
+      ],
+      "optical_design": "Outer black well uses measured cutout radius. SDK artwork shows a distinct recessed barrel and inner blue/violet coated pupil; do not render another flat black disk alone.",
+      "inner_optics_manual_measurement": {
+        "barrel_outer_radius_px": 31,
+        "coated_pupil_radius_px": 13,
+        "uncertainty_px": 2,
+        "status": "Visual radial picks from native mask; shader appearance and axial depths remain illustrative. Keep all rings/lenses strictly within measured cutout."
+      },
+      "imported_displacement_mm": [
+        -0.02574123989218329,
+        -0.49164420485174
+      ],
+      "imported_displacement_note": "Source optics currently root(0,68.5); measured root(-0.025741,68.008356), so move0.491644mm DOWN (earlier commentary mistakenly said current optics were below measured center)."
+    },
+    "limit": "Current shared stack internal radii remain its illustrative ratios; this worker makes no measured 13px coated-pupil-fit claim for that separate helper."
+  },
+  "seams": {
+    "implemented_here": false,
+    "owner": "Parent common seam helper",
+    "measured_records": [
+      {
+        "id": "left-upper",
+        "edge": "left",
+        "normalized_uv": [
+          0,
+          0.1661051
+        ],
+        "center_axis_mm": 51.0191,
+        "width_mm": 1.4415,
+        "source_axis_px": 493,
+        "orientation": "transverse to long rail, runs through device depth"
+      },
+      {
+        "id": "left-lower",
+        "edge": "left",
+        "normalized_uv": [
+          0,
+          0.8955526
+        ],
+        "center_axis_mm": -60.4404,
+        "width_mm": 1.4415,
+        "source_axis_px": 2658,
+        "orientation": "transverse to long rail, runs through device depth"
+      },
+      {
+        "id": "right-upper",
+        "edge": "right",
+        "normalized_uv": [
+          1,
+          0.1661051
+        ],
+        "center_axis_mm": 51.0191,
+        "width_mm": 1.4415,
+        "source_axis_px": 493,
+        "orientation": "transverse to long rail, runs through device depth"
+      },
+      {
+        "id": "right-lower",
+        "edge": "right",
+        "normalized_uv": [
+          1,
+          0.8955526
+        ],
+        "center_axis_mm": -60.4404,
+        "width_mm": 1.4415,
+        "source_axis_px": 2658,
+        "orientation": "transverse to long rail, runs through device depth"
+      },
+      {
+        "id": "top",
+        "edge": "top",
+        "normalized_uv": [
+          0.5,
+          0
+        ],
+        "center_axis_mm": 0.0,
+        "width_mm": 1.44,
+        "source_axis_px": 700,
+        "orientation": "transverse to short rail, runs through device depth"
+      },
+      {
+        "id": "bottom",
+        "edge": "bottom",
+        "normalized_uv": [
+          0.6185714,
+          1
+        ],
+        "center_axis_mm": 8.5371,
+        "width_mm": 1.44,
+        "source_axis_px": 866,
+        "orientation": "transverse to short rail, runs through device depth"
+      }
+    ],
+    "integration": "Replace original four imported strips with the six measured polymer seams after chassis calibration; preserve family finishes. Do not leave duplicate strips."
+  },
+  "reviewed_ids": {
+    "pixel-10-pro": "Body/front-glass helper implemented; profile and trace unchanged.",
+    "pixel-10": "Explicit no-op; all files unchanged by this worker.",
+    "pixel-10-pro-xl": "Explicit no-op; all files unchanged by this worker.",
+    "pixel-10a": "Explicit no-op; all files unchanged by this worker."
+  },
+  "source_generator_patch_instructions": {
+    "parent_build_hook": "Use hook above; no source BLEND rebuild needed for this imported-path patch.",
+    "if_parent_later_updates_source_generator": "Construct the independently normalized traced body perimeter before original port Boolean operations; inset the same trace by 1.30 mm for front glass. Preserve enclosure 8.55 mm depth and original rolled Z cross section. Re-review any port Boolean changes. Do not also apply this once-only old-mesh helper to an already corrected source asset."
+  },
+  "parent_proof_plan": [
+    "Load canonical BLEND once and snapshot all objects except body/front glass plus root custom property; compare vertex positions, UVs, material slots and transforms before/after calibration. Selfie pair must still be unchanged at this stage.",
+    "Run helper with provided trace and verify runtime strict hull, triangle and dimension assertions; log returned measurements. Compare all cavity interior vertices and separate bottom hardware to the source, allowing only the documented exterior lip region.",
+    "After prepare_screen and the separate optics/seam helpers, export once. Explicitly measure imported Body | aluminum enclosure against the normalized independent trace at <0.10 mm; the inspected verify_pixels.py contour branch currently excludes profiles with asset, so do not rely on that branch alone for this imported model.",
+    "Verify front glass width/height 69.4/150.2 mm and depth/Z/materials unchanged; verify native 1280x2856 screen UV/aspect and measured aperture registration.",
+    "Check new front, oblique and bottom views for smooth rail roll, tangent/corner continuity, absence of collapsed faces, original cavity detail, family finishes, and unchanged rear optics/logos. No publication before parent QA."
+  ],
+  "sources": {
+    "device_art_directory": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_10_pro/",
+    "native_sdk": "[local reference path omitted]",
+    "upstream_file_verification": {
+      "back.webp": {
+        "git_blob": "0deca1baeaa1e003ddff6402b25e412f8028033e",
+        "matches_upstream": true
+      },
+      "mask.webp": {
+        "git_blob": "af81431bb3ffe0568d809a3d7245129c5fd04d6d",
+        "matches_upstream": true
+      },
+      "layout": {
+        "git_blob": "227753b8a535ba3c450a093fe074b1bbee2b2113",
+        "matches_upstream": true
+      }
+    },
+    "product_specs": "https://store.google.com/product/pixel_10_pro_specs?hl=en-US",
+    "product_images": [
+      {
+        "asset": {
+          "alt": "Pixel 10 Pro and Pro XL from the side to compare the phones' heights and display the phones' thinness",
+          "url": "https://lh3.googleusercontent.com/1zbgSlz9b0GG48o2p73K4WVPdLEp17bKSLQYdXX7pUDnC8UllKB3sWcMthH362Xr23Dck0-VZADtGwJouRELL-vlC3lTbOSbQvl8=s3000-w3000-e365-rw-v0-nu"
+        },
+        "local": "tmp/pixel-rail-audit/pixel10-22.webp"
+      },
+      {
+        "asset": {
+          "alt": "Pixel 10 Pro upside down with one corner touching a liquid surface",
+          "url": "https://lh3.googleusercontent.com/W34c6s1erwHCeN59uI9EFKjJNJijemkgIRMnOwAoRt-RZuuI_g2Lht53Zse6Vrqi-2u8C4HIrAtSOevHs5Ngg4pOWVzRhP0Kgm8=s3000-w3000-e365-rw-v0-nu"
+        },
+        "local": "tmp/pixel-rail-audit/pixel10-44.webp"
+      }
+    ]
+  },
+  "confidence": {
+    "measured_body_and_cutout": "High relative to the matched official SDK artwork and actual current GLB.",
+    "front_rail_inset": "Medium, inherited 1.30 mm straight-section boundary estimate, approximately 2 source pixels uncertainty.",
+    "port_preservation": "Numerically checked on existing GLB and guarded in production helper; actual Blender export pending.",
+    "limits": "Official device artwork and photographs are not manufacturer CAD. No new physical cross-section or lens prescription claim."
+  },
+  "licensing": "References remain local. No photos downloaded by this worker and no blanket redistribution/license claim."
+}

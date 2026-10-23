@@ -1,0 +1,1484 @@
+{
+  "as_of": "2026-10-23",
+  "scope": [
+    "pixel-4",
+    "pixel-4-xl",
+    "pixel-4a",
+    "pixel-4a-5g",
+    "pixel-5",
+    "pixel-5a"
+  ],
+  "status": "Data corrections only; existing GLBs inspected without Blender. Parent rebuild, common optical/glass helpers and rendered QA remain necessary. No final acceptance claim.",
+  "coordinate_conventions": {
+    "profile": "X right, Y up, Z front in mm; cutout center is viewport-local, bezel_cameras are body-local.",
+    "pixel": "Original uncropped SDK frame, X right Y down.",
+    "glb": "trimesh world axes x=profile X, y=profile Z, z=-profile Y. GLB bounds below are converted to profile axes."
+  },
+  "preserved": [
+    "Published body width/height/depth",
+    "Rear camera geometry, logos, buttons and rear details",
+    "Native OLED resolution, UV convention and fit/aspect inputs",
+    "Finish RGBs, Pixel4 black coated rails and color-specific rear glass"
+  ],
+  "sources": {
+    "specifications": "https://support.google.com/pixelphone/answer/16043605?hl=en",
+    "hardware_diagram": "https://support.google.com/pixelphone/answer/7157629?hl=en",
+    "official_art_tree": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/",
+    "official_art_tree_id": "a177e3a2d906ae1715c8974f39eee71be0ca4c8d",
+    "pixel4_product": "https://blog.google/products-and-platforms/devices/pixel/pixel-4/",
+    "pixel5_product": "https://blog.google/intl/en-ca/products/devices-services/pixel-4a-5g-and-pixel-5-pack-5g-and-so/",
+    "pixel5a_product": "https://blog.google/products-and-platforms/devices/pixel/pixel5a-with-5g-new-google-phone/",
+    "pixel5a_photo": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Header_image_ortho_blog.width-2200.format-webp.webp"
+  },
+  "methods": {
+    "body": "Read actual existing model.glb meshes via trimesh. Compare enclosure convex envelope to the independent SDK body contour normalized to published width/height, matching pending 0.10 mm check concept. No stale front.png judgment.",
+    "rail": "Manual pixel-boundary reading on straight left rail away from buttons, with top/bottom/right cross-checks. Separate coated outside, gasket, bright rounded cover-glass bevel and inner black/OLED area. front_rail_mm represents body-to-glass-start including gasket, not OLED bezel thickness. A single inset is a conservative summary of asymmetric shading, not CAD.",
+    "cutout": "4a/5: scipy connected component of opaque SDK mask, excluding edge-touching rounded corners; radius=sqrt(area/pi)*height-anchored mm/pixel. Pixel4: visible forehead camera bounds in each native frame, not a modern centered OLED hole. 5a: threshold max(RGB)<60 inside local camera ROI in official orthographic product image; equivalent-area radius 313 px.",
+    "seams": "Review original frame perimeter strips separately from OLED and screen corner contour. No resolved transverse antenna-insert discontinuities in the assigned SDK frames or the 5a product image. Empty seam lists mean unmeasured, not physical proof of no hidden antenna breaks. Never extrapolate Pixel9/10 seam coordinates."
+  },
+  "licensing": "Downloaded Google product photos and upstream art remain local research evidence. No blanket licensing assertion; no publication or gallery change.",
+  "upstream_4a5g": {
+    "downloaded": true,
+    "directory": "tmp/pixel45/sdk-art/pixel_4a_5g",
+    "url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_4a_5g/",
+    "tree_id": "7db1221d6f94b13a80872a50367176ed1825cae2",
+    "files": {
+      "layout": {
+        "url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_4a_5g/layout?format=TEXT",
+        "sha256_decoded": "b838993582afb1ad87216a73a42f64f3afb0f056689a777cd88f19c1e1c81305"
+      },
+      "back.webp": {
+        "url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_4a_5g/back.webp?format=TEXT",
+        "sha256_decoded": "0e625ed165a3ed1fb1f11df9f13cd0624b8dce74976e8353d56c8d75a95c9ca7"
+      },
+      "mask.webp": {
+        "url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_4a_5g/mask.webp?format=TEXT",
+        "sha256_decoded": "abb352cefba43422c1b36a61b3f2667519959c9f6de705ecc9d6c3f74479b5af"
+      }
+    },
+    "layout_canvas_px": [
+      1195,
+      2473
+    ],
+    "decoded_art_px": [
+      1204,
+      2491
+    ],
+    "viewport_px": [
+      62,
+      68,
+      1080,
+      2340
+    ],
+    "finding": "Both decoded back.webp and mask.webp are byte-identical to installed pixel_4a files. Official origin confirmed, but this is shared artwork and not independent evidence of the physical 4a5G contour, glass boundary or camera aperture. Candidate trace exists only in tmp/pixel45/trace-work; NOT activated under research/skins/pixel-4a-5g. Parent should not simply declare it a calibrated genuine 4a5G body."
+  },
+  "common_helper_handoff": {
+    "front_glass": "Keep profile front_rail_mm independent of OLED bezel. Form glass from the independently traced BODY contour inset by measured glass boundary. Preserve the outer coated rail RGB/finish; separate dark gasket from a rounded reflective cover-glass bevel. Do not recolor that glass highlight as bare aluminum. A dedicated front glass material can use a low roughness illustrative value; do not change shared black used by cavities/ports. Existing global black roughness is 0.5 and cannot express both these surfaces.",
+    "selfie": "Replace the flat disk with an annular dark housing, recessed pupil/curved optical element and one clear coated optical surface. The measured cutout radius is the maximum housing footprint, never the lens pupil radius. 4a/5 equivalent-area mask radius defines outer footprint, not a manufacturer optical prescription. Pixel4 only its visible selfie aperture becomes an optical stack; adjacent measured capsule stays a subdued sensor window. Face-unlock IR/radar hardware stays hidden under the forehead glass. Do not emit three guessed extra visible pupils or a centered punch hole.",
+    "seams": "No measured antenna_breaks activation for these six models. Polymer 4a/4a5G and coated 5/5a must not receive generic bright metal antenna ribbons. Any future seam needs its own edge, source-axis pixel center/width, normalized coordinate, finish and region evidence.",
+    "unresolved": "Pixel4a5G physical front contour and optical aperture remain reference-limited. Pixel5a has an official Google photo but no official SDK body trace; do not reuse Pixel5 or Pixel4a contours and call them official."
+  },
+  "source_generator_patch_instructions": [
+    {
+      "file": "make_legacy_pixel_profiles.py",
+      "symbol": "profiles",
+      "instructions": "After each existing model is assembled, reproduce the exact per-device profile corrections recorded below. Keep make_pixel_profiles.py and common geometry changes with parent. Preserve rear assemblies and finishing colors."
+    },
+    {
+      "file": "make_legacy_pixel_profiles.py",
+      "symbol": "materials",
+      "instructions": "For the four assigned coated/polycarbonate unibody models only, rail visible-surface metallic=0 and roughness=.58 (illustrative, matched to existing back coating); do not change all unibody devices globally or the RGB palette. Pixel4/4XL stay metal=0 rough=.72."
+    },
+    {
+      "file": "make_legacy_pixel_profiles.py",
+      "symbol": "profiles Pixel4/Pixel4XL",
+      "instructions": "Set each measured bezel_cameras list explicitly AFTER deepcopy/XL translations; do not inherit the smaller model camera X coordinate or add the same Y offset. Keep screen.create_cutouts false and screen.cutouts empty."
+    },
+    {
+      "file": "research/trace_skins.py",
+      "symbol": "trace",
+      "instructions": "Existing pending internal-mask component extraction reproduces added screen_cutouts_mm for Pixel4,4XL,4a,5. Empty Pixel4 cutouts are intentional. Do not invoke the full scan in this worker."
+    }
+  ],
+  "devices": {
+    "pixel-4": {
+      "reviewed": true,
+      "profile_file": "profiles/pixel-4.json",
+      "profile_corrections": [
+        {
+          "field": "body_mm.front_rail_mm",
+          "before": null,
+          "after": 1.1
+        },
+        {
+          "field": "bezel_cameras",
+          "before": [
+            [
+              -18.0,
+              66.8,
+              4.13,
+              1.45
+            ],
+            [
+              -8.5,
+              66.8,
+              4.13,
+              0.85
+            ],
+            [
+              9.0,
+              66.8,
+              4.13,
+              0.85
+            ],
+            [
+              19.0,
+              66.8,
+              4.13,
+              1.15
+            ]
+          ],
+          "after": [
+            [
+              -15.3524,
+              68.0102,
+              4.13,
+              1.768
+            ]
+          ]
+        },
+        {
+          "field": "accuracy.front_rail",
+          "before": null,
+          "after": "Separate body-to-cover-glass boundary estimate from Google reference; includes the narrow glass gasket, excludes black OLED bezel and reflective cover-glass bevel. See research/pixel45-front-calibration.json."
+        },
+        {
+          "field": "accuracy.front_optics",
+          "before": null,
+          "after": "Visible forehead selfie aperture measured independently in the Google SDK frame; other face-unlock/IR sensors remain behind the black glass, not OLED punch holes. Layered optics and measured adjacent sensor window pending common helper."
+        }
+      ],
+      "unchanged_fields": [
+        "camera",
+        "rear_logo",
+        "rear_details",
+        "buttons",
+        "finishes",
+        "body_mm.width/height/depth",
+        "screen.resolution/fit_box_mm/center_mm/corner_radius_mm"
+      ],
+      "material_reference": "Google: aluminum frame + matte finish hybrid coating; black rail retained for every finish.",
+      "material_confidence": "High for construction family; roughness and RGB are illustrative, not measured samples.",
+      "rail_boundary": {
+        "ray_y_px": 1249,
+        "body_left_px": 1,
+        "coated_outer_rail_and_rounded_highlight_x_px": [
+          1,
+          17
+        ],
+        "gasket_x_px": [
+          18,
+          19
+        ],
+        "glass_start_x_px_range": [
+          19,
+          23
+        ],
+        "glass_boundary_inset_mm_range": [
+          1.06,
+          1.3
+        ],
+        "selected_front_rail_mm": 1.1,
+        "uncertainty_mm": 0.2
+      },
+      "antenna_seams": {
+        "measured": [],
+        "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_4/",
+        "confidence": "No resolvable seams in available frontal references; locations and widths unknown. This is not an assertion that internal antenna breaks do not exist.",
+        "production_action": "No antenna bands added; do not consume Pixel9/10 generic seam ratios."
+      },
+      "optics": {
+        "profile_cutouts": [],
+        "pixel4_forehead": [
+          [
+            -15.3524,
+            68.0102,
+            4.13,
+            1.768
+          ]
+        ],
+        "depth_status": "Common helper pending: profile/trace data alone cannot replace flat GLB disks.",
+        "adjacent_sensor_window": {
+          "source_box_px": [
+            383,
+            67,
+            410,
+            125
+          ],
+          "body_center_mm": [
+            -11.1091,
+            67.9512
+          ],
+          "size_mm": [
+            1.5912,
+            3.4182
+          ],
+          "shape": "vertical capsule, subdued dark sensor cover; not an additional round selfie lens",
+          "uncertainty_px": 3,
+          "activation": "Parent helper only; not representable by existing bezel_cameras disk tuple."
+        },
+        "visible_selfie_source": {
+          "center_px": [
+            324.5,
+            95
+          ],
+          "outer_radius_px": 30,
+          "uncertainty_px": 3,
+          "visible_inner_glass_radius_px_estimate": 18,
+          "visible_pupil_radius_px_estimate": 10,
+          "limits": "Outer footprint measured; inner radii approximate raster features, optical depth/curvature not recoverable from frontal image."
+        }
+      },
+      "reference": {
+        "url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_4/",
+        "sdk_source": "[local reference path omitted]",
+        "frame": "research/skins/pixel-4/frame.png",
+        "sha256": "5cf6f0e467fe3d379757588c74f02ab77db50351ed9fb12d7569b8dd04239077",
+        "mm_per_px": 0.05893429487179487,
+        "body_bounds_px": [
+          1.0,
+          1.0,
+          1169.0,
+          2497.0
+        ],
+        "screen_bounds_px": [
+          46,
+          146,
+          1080,
+          2280
+        ],
+        "confidence": "High source provenance and raster aperture; approximate physical scale, not enclosure CAD."
+      },
+      "baseline_contour_error_mm": 0.321301,
+      "trace_changes": [
+        {
+          "field": "screen_cutouts_mm",
+          "before": null,
+          "after": []
+        }
+      ],
+      "existing_glb": {
+        "file": "exports/pixel-4/model.glb",
+        "sha256": "f8c23486e1afc13c6c6b42da718972b4edf6aada8e08b64432bb3f7c4fc49249",
+        "nodes": [
+          {
+            "node": "Inner bezel selfie camera.003",
+            "vertices": 258,
+            "bounds_profile_mm": [
+              [
+                17.85,
+                65.65,
+                4.115
+              ],
+              [
+                20.15,
+                67.95,
+                4.145
+              ]
+            ]
+          },
+          {
+            "node": "Inner bezel selfie camera.002",
+            "vertices": 258,
+            "bounds_profile_mm": [
+              [
+                8.15,
+                65.95,
+                4.115
+              ],
+              [
+                9.85,
+                67.65,
+                4.145
+              ]
+            ]
+          },
+          {
+            "node": "Inner bezel selfie camera.001",
+            "vertices": 258,
+            "bounds_profile_mm": [
+              [
+                -9.35,
+                65.95,
+                4.115
+              ],
+              [
+                -7.65,
+                67.65,
+                4.145
+              ]
+            ]
+          },
+          {
+            "node": "Inner bezel selfie camera",
+            "vertices": 258,
+            "bounds_profile_mm": [
+              [
+                -19.45,
+                65.35,
+                4.115
+              ],
+              [
+                -16.55,
+                68.25,
+                4.145
+              ]
+            ]
+          },
+          {
+            "node": "Front black glass",
+            "vertices": 2640,
+            "bounds_profile_mm": [
+              [
+                -33.6875,
+                -72.8375,
+                3.85
+              ],
+              [
+                33.6875,
+                72.8375,
+                4.1
+              ]
+            ]
+          },
+          {
+            "node": "Device screen",
+            "vertices": 400,
+            "bounds_profile_mm": [
+              [
+                -31.76558,
+                -69.36567,
+                4.135
+              ],
+              [
+                31.88345,
+                65.00453,
+                4.135
+              ]
+            ]
+          },
+          {
+            "node": "Aluminum enclosure",
+            "vertices": 3696,
+            "bounds_profile_mm": [
+              [
+                -34.4,
+                -73.55,
+                -4.075
+              ],
+              [
+                34.4,
+                73.55,
+                4.075
+              ]
+            ]
+          }
+        ],
+        "straight_body_to_glass_inset_mm": 0.7125,
+        "antenna_nodes_present": false,
+        "note": "Pre-change exported artifact. Geometry and optical-depth acceptance require parent serial rebuild."
+      }
+    },
+    "pixel-4-xl": {
+      "reviewed": true,
+      "profile_file": "profiles/pixel-4-xl.json",
+      "profile_corrections": [
+        {
+          "field": "body_mm.front_rail_mm",
+          "before": null,
+          "after": 1.1
+        },
+        {
+          "field": "bezel_cameras",
+          "before": [
+            [
+              -18.0,
+              73.45,
+              4.13,
+              1.45
+            ],
+            [
+              -8.5,
+              73.45,
+              4.13,
+              0.85
+            ],
+            [
+              9.0,
+              73.45,
+              4.13,
+              0.85
+            ],
+            [
+              19.0,
+              73.45,
+              4.13,
+              1.15
+            ]
+          ],
+          "after": [
+            [
+              -16.7144,
+              74.1308,
+              4.13,
+              1.8786
+            ]
+          ]
+        },
+        {
+          "field": "accuracy.front_rail",
+          "before": null,
+          "after": "Separate body-to-cover-glass boundary estimate from Google reference; includes the narrow glass gasket, excludes black OLED bezel and reflective cover-glass bevel. See research/pixel45-front-calibration.json."
+        },
+        {
+          "field": "accuracy.front_optics",
+          "before": null,
+          "after": "Visible forehead selfie aperture measured independently in the Google SDK frame; other face-unlock/IR sensors remain behind the black glass, not OLED punch holes. Layered optics and measured adjacent sensor window pending common helper."
+        }
+      ],
+      "unchanged_fields": [
+        "camera",
+        "rear_logo",
+        "rear_details",
+        "buttons",
+        "finishes",
+        "body_mm.width/height/depth",
+        "screen.resolution/fit_box_mm/center_mm/corner_radius_mm"
+      ],
+      "material_reference": "Google: aluminum frame + matte finish hybrid coating; black rail retained for every finish.",
+      "material_confidence": "High for construction family; roughness and RGB are illustrative, not measured samples.",
+      "rail_boundary": {
+        "ray_y_px": 1666,
+        "body_left_px": 1,
+        "coated_outer_rail_and_rounded_highlight_x_px": [
+          1,
+          23
+        ],
+        "gasket_x_px": [
+          24,
+          25
+        ],
+        "glass_start_x_px_range": [
+          25,
+          29
+        ],
+        "glass_boundary_inset_mm_range": [
+          1.16,
+          1.35
+        ],
+        "selected_front_rail_mm": 1.1,
+        "uncertainty_mm": 0.2
+      },
+      "antenna_seams": {
+        "measured": [],
+        "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_4_xl/",
+        "confidence": "No resolvable seams in available frontal references; locations and widths unknown. This is not an assertion that internal antenna breaks do not exist.",
+        "production_action": "No antenna bands added; do not consume Pixel9/10 generic seam ratios."
+      },
+      "optics": {
+        "profile_cutouts": [],
+        "pixel4_forehead": [
+          [
+            -16.7144,
+            74.1308,
+            4.13,
+            1.8786
+          ]
+        ],
+        "depth_status": "Common helper pending: profile/trace data alone cannot replace flat GLB disks.",
+        "adjacent_sensor_window": {
+          "source_box_px": [
+            510,
+            91,
+            546,
+            168
+          ],
+          "body_center_mm": [
+            -12.1384,
+            74.0104
+          ],
+          "size_mm": [
+            1.7341,
+            3.7089
+          ],
+          "shape": "vertical capsule, subdued dark sensor cover; not an additional round selfie lens",
+          "uncertainty_px": 3,
+          "activation": "Parent helper only; not representable by existing bezel_cameras disk tuple."
+        },
+        "visible_selfie_source": {
+          "center_px": [
+            433,
+            127
+          ],
+          "outer_radius_px": 39,
+          "uncertainty_px": 3,
+          "visible_inner_glass_radius_px_estimate": 24,
+          "visible_pupil_radius_px_estimate": 13,
+          "limits": "Outer footprint measured; inner radii approximate raster features, optical depth/curvature not recoverable from frontal image."
+        }
+      },
+      "reference": {
+        "url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_4_xl/",
+        "sdk_source": "[local reference path omitted]",
+        "frame": "research/skins/pixel-4-xl/frame.png",
+        "sha256": "13ad49b39ec10e617a7eb64847fd15d482a2a62589a061e048db351cbecea4ca",
+        "mm_per_px": 0.04816816816816817,
+        "body_bounds_px": [
+          1.0,
+          1.0,
+          1559.0,
+          3331.0
+        ],
+        "screen_bounds_px": [
+          61,
+          195,
+          1440,
+          3040
+        ],
+        "confidence": "High source provenance and raster aperture; approximate physical scale, not enclosure CAD."
+      },
+      "baseline_contour_error_mm": 0.325081,
+      "trace_changes": [
+        {
+          "field": "screen_cutouts_mm",
+          "before": null,
+          "after": []
+        }
+      ],
+      "existing_glb": {
+        "file": "exports/pixel-4-xl/model.glb",
+        "sha256": "5ff5ed53c554c802b59e097bbd7691e132d74f71cd35b435866613a8119c5b8f",
+        "nodes": [
+          {
+            "node": "Inner bezel selfie camera.003",
+            "vertices": 258,
+            "bounds_profile_mm": [
+              [
+                17.85,
+                72.3,
+                4.115
+              ],
+              [
+                20.15,
+                74.6,
+                4.145
+              ]
+            ]
+          },
+          {
+            "node": "Inner bezel selfie camera.002",
+            "vertices": 258,
+            "bounds_profile_mm": [
+              [
+                8.15,
+                72.6,
+                4.115
+              ],
+              [
+                9.85,
+                74.3,
+                4.145
+              ]
+            ]
+          },
+          {
+            "node": "Inner bezel selfie camera.001",
+            "vertices": 258,
+            "bounds_profile_mm": [
+              [
+                -9.35,
+                72.6,
+                4.115
+              ],
+              [
+                -7.65,
+                74.3,
+                4.145
+              ]
+            ]
+          },
+          {
+            "node": "Inner bezel selfie camera",
+            "vertices": 258,
+            "bounds_profile_mm": [
+              [
+                -19.45,
+                72.0,
+                4.115
+              ],
+              [
+                -16.55,
+                74.9,
+                4.145
+              ]
+            ]
+          },
+          {
+            "node": "Front black glass",
+            "vertices": 2640,
+            "bounds_profile_mm": [
+              [
+                -36.8375,
+                -79.4875,
+                3.85
+              ],
+              [
+                36.8375,
+                79.4875,
+                4.1
+              ]
+            ]
+          },
+          {
+            "node": "Device screen",
+            "vertices": 400,
+            "bounds_profile_mm": [
+              [
+                -34.63291,
+                -75.57586,
+                4.135
+              ],
+              [
+                34.72925,
+                70.85538,
+                4.135
+              ]
+            ]
+          },
+          {
+            "node": "Aluminum enclosure",
+            "vertices": 3696,
+            "bounds_profile_mm": [
+              [
+                -37.55,
+                -80.2,
+                -4.075
+              ],
+              [
+                37.55,
+                80.2,
+                4.075
+              ]
+            ]
+          }
+        ],
+        "straight_body_to_glass_inset_mm": 0.7125,
+        "antenna_nodes_present": false,
+        "note": "Pre-change exported artifact. Geometry and optical-depth acceptance require parent serial rebuild."
+      }
+    },
+    "pixel-4a": {
+      "reviewed": true,
+      "profile_file": "profiles/pixel-4a.json",
+      "profile_corrections": [
+        {
+          "field": "body_mm.front_rail_mm",
+          "before": null,
+          "after": 1.25
+        },
+        {
+          "field": "screen.cutouts",
+          "before": [
+            {
+              "center_mm": [
+                -26.27,
+                62.74
+              ],
+              "radius_mm": 1.9
+            }
+          ],
+          "after": [
+            {
+              "center_mm": [
+                -27.068757539203858,
+                63.48854041013269
+              ],
+              "radius_mm": 2.1700949394255353
+            }
+          ]
+        },
+        {
+          "field": "accuracy.front_rail",
+          "before": null,
+          "after": "Separate body-to-cover-glass boundary estimate from Google reference; includes the narrow glass gasket, excludes black OLED bezel and reflective cover-glass bevel. See research/pixel45-front-calibration.json."
+        },
+        {
+          "field": "accuracy.front_optics",
+          "before": null,
+          "after": "Opaque internal SDK mask component area gives aperture radius and viewport-local center; optical depth/lens stack requires the common helper."
+        },
+        {
+          "field": "materials.rail.metal",
+          "before": 0.08,
+          "after": 0
+        },
+        {
+          "field": "materials.rail.rough",
+          "before": 0.52,
+          "after": 0.58
+        }
+      ],
+      "unchanged_fields": [
+        "camera",
+        "rear_logo",
+        "rear_details",
+        "buttons",
+        "finishes",
+        "body_mm.width/height/depth",
+        "screen.resolution/fit_box_mm/center_mm/corner_radius_mm"
+      ],
+      "material_reference": "Google: soft-touch polycarbonate unibody; no exposed aluminum assumption.",
+      "material_confidence": "High for construction family; roughness and RGB are illustrative, not measured samples.",
+      "rail_boundary": {
+        "ray_y_px": 1245,
+        "body_left_px": 1,
+        "coated_outer_rail_x_px": [
+          1,
+          19
+        ],
+        "gasket_x_px": [
+          20,
+          24
+        ],
+        "cover_glass_bevel_x_px": [
+          25,
+          38
+        ],
+        "selected_front_rail_mm": 1.25,
+        "glass_boundary_inset_mm_range": [
+          1.16,
+          1.45
+        ],
+        "uncertainty_mm": 0.2
+      },
+      "antenna_seams": {
+        "measured": [],
+        "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_4a/",
+        "confidence": "No resolvable seams in available frontal references; locations and widths unknown. This is not an assertion that internal antenna breaks do not exist.",
+        "production_action": "No antenna bands added; do not consume Pixel9/10 generic seam ratios."
+      },
+      "optics": {
+        "profile_cutouts": [
+          {
+            "center_mm": [
+              -27.068757539203858,
+              63.48854041013269
+            ],
+            "radius_mm": 2.1700949394255353
+          }
+        ],
+        "pixel4_forehead": null,
+        "depth_status": "Common helper pending: profile/trace data alone cannot replace flat GLB disks."
+      },
+      "reference": {
+        "url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_4a/",
+        "sdk_source": "[local reference path omitted]",
+        "frame": "research/skins/pixel-4a/frame.png",
+        "sha256": "2edd457d69b9282cfb11b67e7b444e4973402ea1add782683276a7f6e691dd86",
+        "mm_per_px": 0.05790108564535585,
+        "body_bounds_px": [
+          1.0,
+          2.0,
+          1196.0,
+          2489.0
+        ],
+        "screen_bounds_px": [
+          62,
+          68,
+          1080,
+          2340
+        ],
+        "confidence": "High source provenance and raster aperture; approximate physical scale, not enclosure CAD."
+      },
+      "baseline_contour_error_mm": 0.384326,
+      "trace_changes": [
+        {
+          "field": "screen_cutouts_mm",
+          "before": null,
+          "after": [
+            {
+              "center_mm": [
+                -27.068757539203858,
+                63.48854041013269
+              ],
+              "radius_mm": 2.1700949394255353
+            }
+          ]
+        }
+      ],
+      "existing_glb": {
+        "file": "exports/pixel-4a/model.glb",
+        "sha256": "23fbea22fa172631c57733347d461ed4b41d7a4f7b9cadb033b43769595eed4e",
+        "nodes": [
+          {
+            "node": "Front black glass",
+            "vertices": 2640,
+            "bounds_profile_mm": [
+              [
+                -33.75,
+                -71.05,
+                3.85
+              ],
+              [
+                33.75,
+                71.05,
+                4.1
+              ]
+            ]
+          },
+          {
+            "node": "Device screen | selfie aperture 0",
+            "vertices": 258,
+            "bounds_profile_mm": [
+              [
+                -27.96735,
+                61.27426,
+                4.1475
+              ],
+              [
+                -24.16735,
+                65.07426,
+                4.1725
+              ]
+            ]
+          },
+          {
+            "node": "Device screen",
+            "vertices": 400,
+            "bounds_profile_mm": [
+              [
+                -31.06393,
+                -67.31001,
+                4.135
+              ],
+              [
+                31.46924,
+                68.17853,
+                4.135
+              ]
+            ]
+          },
+          {
+            "node": "Aluminum enclosure",
+            "vertices": 3696,
+            "bounds_profile_mm": [
+              [
+                -34.7,
+                -72.0,
+                -4.075
+              ],
+              [
+                34.7,
+                72.0,
+                4.075
+              ]
+            ]
+          }
+        ],
+        "straight_body_to_glass_inset_mm": 0.95,
+        "antenna_nodes_present": false,
+        "note": "Pre-change exported artifact. Geometry and optical-depth acceptance require parent serial rebuild."
+      }
+    },
+    "pixel-4a-5g": {
+      "reviewed": true,
+      "profile_file": "profiles/pixel-4a-5g.json",
+      "profile_corrections": [
+        {
+          "field": "materials.rail.metal",
+          "before": 0.08,
+          "after": 0
+        },
+        {
+          "field": "materials.rail.rough",
+          "before": 0.52,
+          "after": 0.58
+        }
+      ],
+      "unchanged_fields": [
+        "camera",
+        "rear_logo",
+        "rear_details",
+        "buttons",
+        "finishes",
+        "body_mm.width/height/depth",
+        "screen.resolution/fit_box_mm/center_mm/corner_radius_mm"
+      ],
+      "material_reference": "Google: soft-touch polycarbonate unibody; no exposed aluminum assumption.",
+      "material_confidence": "High for construction family; roughness and RGB are illustrative, not measured samples.",
+      "rail_boundary": {
+        "status": "UNCHANGED geometry: no independently trustworthy reference-derived boundary; current GLB inset 0.9025 mm remains a seed, not accepted."
+      },
+      "antenna_seams": {
+        "measured": [],
+        "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_4a_5g/",
+        "confidence": "No resolvable seams in available frontal references; locations and widths unknown. This is not an assertion that internal antenna breaks do not exist.",
+        "production_action": "No antenna bands added; do not consume Pixel9/10 generic seam ratios."
+      },
+      "optics": {
+        "profile_cutouts": [
+          {
+            "center_mm": [
+              -27.996640893337954,
+              66.49272193556557
+            ],
+            "radius_mm": 1.9
+          }
+        ],
+        "pixel4_forehead": null,
+        "depth_status": "Common helper pending: profile/trace data alone cannot replace flat GLB disks."
+      },
+      "reference": {
+        "official_shared_art_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_4a_5g/",
+        "confidence": "Physical outline/aperture unaccepted; see upstream_4a5g.",
+        "unchanged_explicit": [
+          "body/front contour",
+          "screen geometry/cutout seed",
+          "front rail width",
+          "finish colors",
+          "antenna geometry"
+        ]
+      },
+      "existing_glb": {
+        "file": "exports/pixel-4a-5g/model.glb",
+        "sha256": "90e5f5a9c4aea48bf62f57ac594be0e0bf0cf493521f4c3d1bf27cb1b1566a92",
+        "nodes": [
+          {
+            "node": "Front black glass",
+            "vertices": 2640,
+            "bounds_profile_mm": [
+              [
+                -36.0975,
+                -76.0475,
+                3.85
+              ],
+              [
+                36.0975,
+                76.0475,
+                4.1
+              ]
+            ]
+          },
+          {
+            "node": "Device screen | selfie aperture 0",
+            "vertices": 258,
+            "bounds_profile_mm": [
+              [
+                -29.89664,
+                64.59272,
+                4.1475
+              ],
+              [
+                -26.09664,
+                68.39272,
+                4.1725
+              ]
+            ]
+          },
+          {
+            "node": "Device screen",
+            "vertices": 132,
+            "bounds_profile_mm": [
+              [
+                -32.99664,
+                -71.49272,
+                4.135
+              ],
+              [
+                32.99664,
+                71.49272,
+                4.135
+              ]
+            ]
+          },
+          {
+            "node": "Aluminum enclosure",
+            "vertices": 3696,
+            "bounds_profile_mm": [
+              [
+                -37.0,
+                -76.95,
+                -4.075
+              ],
+              [
+                37.0,
+                76.95,
+                4.075
+              ]
+            ]
+          }
+        ],
+        "straight_body_to_glass_inset_mm": 0.9025,
+        "antenna_nodes_present": false,
+        "note": "Pre-change exported artifact. Geometry and optical-depth acceptance require parent serial rebuild."
+      }
+    },
+    "pixel-5": {
+      "reviewed": true,
+      "profile_file": "profiles/pixel-5.json",
+      "profile_corrections": [
+        {
+          "field": "body_mm.front_rail_mm",
+          "before": null,
+          "after": 1.2
+        },
+        {
+          "field": "screen.cutouts",
+          "before": [
+            {
+              "center_mm": [
+                -26.58,
+                63.43
+              ],
+              "radius_mm": 1.9
+            }
+          ],
+          "after": [
+            {
+              "center_mm": [
+                -27.343270008084072,
+                64.36635004042037
+              ],
+              "radius_mm": 2.1921025294918093
+            }
+          ]
+        },
+        {
+          "field": "accuracy.front_rail",
+          "before": null,
+          "after": "Separate body-to-cover-glass boundary estimate from Google reference; includes the narrow glass gasket, excludes black OLED bezel and reflective cover-glass bevel. See research/pixel45-front-calibration.json."
+        },
+        {
+          "field": "accuracy.front_optics",
+          "before": null,
+          "after": "Opaque internal SDK mask component area gives aperture radius and viewport-local center; optical depth/lens stack requires the common helper."
+        },
+        {
+          "field": "materials.rail.metal",
+          "before": 0.08,
+          "after": 0
+        },
+        {
+          "field": "materials.rail.rough",
+          "before": 0.52,
+          "after": 0.58
+        }
+      ],
+      "unchanged_fields": [
+        "camera",
+        "rear_logo",
+        "rear_details",
+        "buttons",
+        "finishes",
+        "body_mm.width/height/depth",
+        "screen.resolution/fit_box_mm/center_mm/corner_radius_mm"
+      ],
+      "material_reference": "Google: recycled aluminum enclosure with opaque finish; visible coated surface modeled nonmetallic.",
+      "material_confidence": "High for construction family; roughness and RGB are illustrative, not measured samples.",
+      "rail_boundary": {
+        "ray_y_px": 1237,
+        "body_left_px": 2,
+        "coated_outer_rail_x_px": [
+          2,
+          8
+        ],
+        "gasket_x_px": [
+          9,
+          21
+        ],
+        "cover_glass_bevel_x_px": [
+          22,
+          39
+        ],
+        "selected_front_rail_mm": 1.2,
+        "glass_boundary_inset_mm_range": [
+          1.05,
+          1.29
+        ],
+        "uncertainty_mm": 0.2
+      },
+      "antenna_seams": {
+        "measured": [],
+        "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_5/",
+        "confidence": "No resolvable seams in available frontal references; locations and widths unknown. This is not an assertion that internal antenna breaks do not exist.",
+        "production_action": "No antenna bands added; do not consume Pixel9/10 generic seam ratios."
+      },
+      "optics": {
+        "profile_cutouts": [
+          {
+            "center_mm": [
+              -27.343270008084072,
+              64.36635004042037
+            ],
+            "radius_mm": 2.1921025294918093
+          }
+        ],
+        "pixel4_forehead": null,
+        "depth_status": "Common helper pending: profile/trace data alone cannot replace flat GLB disks."
+      },
+      "reference": {
+        "url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_5/",
+        "sdk_source": "[local reference path omitted]",
+        "frame": "research/skins/pixel-5/frame.png",
+        "sha256": "fb89e61e42bd4c58a92abf52649dcd98815e310a0d54eb477ba902cc573899d3",
+        "mm_per_px": 0.058488278092158445,
+        "body_bounds_px": [
+          2.0,
+          0.0,
+          1204.0,
+          2474.0
+        ],
+        "screen_bounds_px": [
+          60,
+          65,
+          1080,
+          2340
+        ],
+        "confidence": "High source provenance and raster aperture; approximate physical scale, not enclosure CAD."
+      },
+      "baseline_contour_error_mm": 0.183349,
+      "trace_changes": [
+        {
+          "field": "screen_cutouts_mm",
+          "before": null,
+          "after": [
+            {
+              "center_mm": [
+                -27.343270008084072,
+                64.36635004042037
+              ],
+              "radius_mm": 2.1921025294918093
+            }
+          ]
+        }
+      ],
+      "existing_glb": {
+        "file": "exports/pixel-5/model.glb",
+        "sha256": "e88e0b4965ed65e453d9549bdd4736eba46329ef8adefcfc0c5ae6b5d7571938",
+        "nodes": [
+          {
+            "node": "Front black glass",
+            "vertices": 2640,
+            "bounds_profile_mm": [
+              [
+                -34.2975,
+                -71.4475,
+                3.75
+              ],
+              [
+                34.2975,
+                71.4475,
+                4.0
+              ]
+            ]
+          },
+          {
+            "node": "Device screen | selfie aperture 0",
+            "vertices": 258,
+            "bounds_profile_mm": [
+              [
+                -28.65547,
+                61.64698,
+                4.0475
+              ],
+              [
+                -24.85547,
+                65.44698,
+                4.0725
+              ]
+            ]
+          },
+          {
+            "node": "Device screen",
+            "vertices": 400,
+            "bounds_profile_mm": [
+              [
+                -31.75914,
+                -68.31431,
+                4.035
+              ],
+              [
+                31.40821,
+                68.54826,
+                4.035
+              ]
+            ]
+          },
+          {
+            "node": "Aluminum enclosure",
+            "vertices": 3696,
+            "bounds_profile_mm": [
+              [
+                -35.2,
+                -72.35,
+                -3.975
+              ],
+              [
+                35.2,
+                72.35,
+                3.975
+              ]
+            ]
+          }
+        ],
+        "straight_body_to_glass_inset_mm": 0.9025,
+        "antenna_nodes_present": false,
+        "note": "Pre-change exported artifact. Geometry and optical-depth acceptance require parent serial rebuild."
+      }
+    },
+    "pixel-5a": {
+      "reviewed": true,
+      "profile_file": "profiles/pixel-5a.json",
+      "profile_corrections": [
+        {
+          "field": "screen.cutouts",
+          "before": [
+            {
+              "center_mm": [
+                -28.04174308916015,
+                68.42609575368922
+              ],
+              "radius_mm": 1.9
+            }
+          ],
+          "after": [
+            {
+              "center_mm": [
+                -28.4167,
+                68.8692
+              ],
+              "radius_mm": 1.8009
+            }
+          ]
+        },
+        {
+          "field": "body_mm.front_rail_mm",
+          "before": null,
+          "after": 1.6
+        },
+        {
+          "field": "accuracy.front_rail",
+          "before": null,
+          "after": "Separate body-to-cover-glass boundary estimate from Google reference; includes the narrow glass gasket, excludes black OLED bezel and reflective cover-glass bevel. See research/pixel45-front-calibration.json."
+        },
+        {
+          "field": "accuracy.front_optics",
+          "before": null,
+          "after": "Reference-derived from Google launch orthographic product image (2200x1240), not SDK/CAD; approximately 0.4 mm position uncertainty, 0.2 mm aperture-radius uncertainty."
+        },
+        {
+          "field": "materials.rail.metal",
+          "before": 0.08,
+          "after": 0
+        },
+        {
+          "field": "materials.rail.rough",
+          "before": 0.52,
+          "after": 0.58
+        }
+      ],
+      "unchanged_fields": [
+        "camera",
+        "rear_logo",
+        "rear_details",
+        "buttons",
+        "finishes",
+        "body_mm.width/height/depth",
+        "screen.resolution/fit_box_mm/center_mm/corner_radius_mm"
+      ],
+      "material_reference": "Google: premium metal unibody, Mostly Black green undertones; visible coating kept nonmetallic, same existing finish RGB.",
+      "material_confidence": "High for construction family; roughness and RGB are illustrative, not measured samples.",
+      "rail_boundary": {
+        "source": "official product photo, reference-derived",
+        "ray_y_px": 650,
+        "body_front_left_px": 1037,
+        "coated_outer_rail_x_px": [
+          1037,
+          1042
+        ],
+        "gasket_x_px": [
+          1043,
+          1045
+        ],
+        "cover_glass_bevel_x_px": [
+          1046,
+          1049
+        ],
+        "selected_front_rail_mm": 1.6,
+        "glass_boundary_inset_mm_range": [
+          1.26,
+          1.98
+        ],
+        "uncertainty_mm": 0.4,
+        "top_ray_x_px": 1300,
+        "body_top_px": 205,
+        "glass_bevel_top_px": [
+          213,
+          217
+        ]
+      },
+      "antenna_seams": {
+        "measured": [],
+        "source_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Header_image_ortho_blog.width-2200.format-webp.webp",
+        "confidence": "No resolvable seams in available frontal references; locations and widths unknown. This is not an assertion that internal antenna breaks do not exist.",
+        "production_action": "No antenna bands added; do not consume Pixel9/10 generic seam ratios."
+      },
+      "optics": {
+        "profile_cutouts": [
+          {
+            "center_mm": [
+              -28.4167,
+              68.8692
+            ],
+            "radius_mm": 1.8009
+          }
+        ],
+        "pixel4_forehead": null,
+        "depth_status": "Common helper pending: profile/trace data alone cannot replace flat GLB disks."
+      },
+      "reference": {
+        "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Header_image_ortho_blog.width-2200.format-webp.webp",
+        "local": "tmp/pixel45/5a-ortho.webp",
+        "sha256": "4831a87a704c41520abd5005eeec037fa1a5cb0cb77c5cfb7cd33b4be32d9228",
+        "image_size_px": [
+          2200,
+          1240
+        ],
+        "body_front_box_px": [
+          1037,
+          205,
+          1444,
+          1068
+        ],
+        "oled_box_px": [
+          1057,
+          229,
+          1424,
+          1041
+        ],
+        "selfie_opaque_box_px": [
+          1072,
+          244,
+          1093,
+          265
+        ],
+        "opaque_area_px": 313,
+        "confidence": "Reference-derived official photo, NOT SDK art or CAD. Approx 0.4 mm placement and rim uncertainty; 0.2 mm aperture-radius uncertainty. Body contour retained pending better independent evidence."
+      },
+      "existing_glb": {
+        "file": "exports/pixel-5a/model.glb",
+        "sha256": "9595fc546446bd56d9656f30260d42593f78f2ed611f03e0167c83a340aee27d",
+        "nodes": [
+          {
+            "node": "Front black glass",
+            "vertices": 2640,
+            "bounds_profile_mm": [
+              [
+                -35.6975,
+                -77.1975,
+                4.15
+              ],
+              [
+                35.6975,
+                77.1975,
+                4.4
+              ]
+            ]
+          },
+          {
+            "node": "Device screen | selfie aperture 0",
+            "vertices": 258,
+            "bounds_profile_mm": [
+              [
+                -29.94174,
+                66.52609,
+                4.4475
+              ],
+              [
+                -26.14174,
+                70.32609,
+                4.4725
+              ]
+            ]
+          },
+          {
+            "node": "Device screen",
+            "vertices": 132,
+            "bounds_profile_mm": [
+              [
+                -33.04174,
+                -73.4261,
+                4.435
+              ],
+              [
+                33.04174,
+                73.4261,
+                4.435
+              ]
+            ]
+          },
+          {
+            "node": "Aluminum enclosure",
+            "vertices": 3696,
+            "bounds_profile_mm": [
+              [
+                -36.6,
+                -78.1,
+                -4.375
+              ],
+              [
+                36.6,
+                78.1,
+                4.375
+              ]
+            ]
+          }
+        ],
+        "straight_body_to_glass_inset_mm": 0.9025,
+        "antenna_nodes_present": false,
+        "note": "Pre-change exported artifact. Geometry and optical-depth acceptance require parent serial rebuild."
+      }
+    }
+  },
+  "edited_files": [
+    "research/skins/pixel-4/trace.json",
+    "profiles/pixel-4.json",
+    "research/skins/pixel-4-xl/trace.json",
+    "profiles/pixel-4-xl.json",
+    "research/skins/pixel-4a/trace.json",
+    "profiles/pixel-4a.json",
+    "profiles/pixel-4a-5g.json",
+    "research/skins/pixel-5/trace.json",
+    "profiles/pixel-5.json",
+    "profiles/pixel-5a.json",
+    "research/pixel45-front-calibration.json"
+  ],
+  "verification": {
+    "blender_started": false,
+    "builds_run": false,
+    "shared_source_files_edited": false,
+    "public_repo_or_galleries_edited": false,
+    "export_artifacts_modified": false,
+    "acceptance_pending": "Parent common helper implementation, serial model exports, verify_pixels.py, optical depth and front/oblique rendered QA.",
+    "data_checks": [
+      "pixel-4: JSON valid; rear/dimensions/finish colors/native OLED inputs preserved",
+      "pixel-4-xl: JSON valid; rear/dimensions/finish colors/native OLED inputs preserved",
+      "pixel-4a: JSON valid; rear/dimensions/finish colors/native OLED inputs preserved",
+      "pixel-4a-5g: JSON valid; rear/dimensions/finish colors/native OLED inputs preserved",
+      "pixel-5: JSON valid; rear/dimensions/finish colors/native OLED inputs preserved",
+      "pixel-5a: JSON valid; rear/dimensions/finish colors/native OLED inputs preserved"
+    ],
+    "trace_check": "Only screen_cutouts_mm added in the four assigned installed-skin traces; original contour/frame metadata unchanged.",
+    "baseline_glb_hashes_rechecked": true
+  }
+}

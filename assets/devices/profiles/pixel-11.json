@@ -11,8 +11,9 @@
     "front_curve": 0,
     "edge_roll_mm": [
       0.65,
-      0.65
-    ]
+      0.3
+    ],
+    "front_rail_mm": 1.1
   },
   "materials": {
     "back": {
@@ -229,9 +230,9 @@
       {
         "center_mm": [
           0,
-          69.50000000000001
+          68.0
         ],
-        "radius_mm": 1.5
+        "radius_mm": 2.3
       }
     ]
   },
@@ -302,7 +303,10 @@
     "screen_geometry": "Native resolution aspect preserved; concentric display/body corners and thin symmetric bezels estimated from official front artwork, not a measured CAD outline.",
     "camera_geometry": "Camera capsule proportions estimated from official launch images: edge-to-edge black glass, three optics and in-glass flash. Base protrusion estimated as 60% of previous 3.6 mm baseline per Google thickness reduction; Pro protrusion estimated. HiLight represented in its unlit state. Optical internals illustrative, not manufacturer CAD.",
     "finishes": "Approximate sRGB colors and roughness, not calibrated measured materials",
-    "branding": "Google G contour retained from reference artwork. Legacy Pixel4/4a/5/5a lower rear placement (approximately80%height); Pixel6 onward and folds centered on rear/camera leaf. Size, position and finish-tinted material are photo estimates, not manufacturer CAD."
+    "branding": "Google G contour retained from reference artwork. Legacy Pixel4/4a/5/5a lower rear placement (approximately80%height); Pixel6 onward and folds centered on rear/camera leaf. Size, position and finish-tinted material are photo estimates, not manufacturer CAD.",
+    "front_optics": "Outer selfie surround fitted from official product imagery; base diameter4.6mm/Pro4.7mm and top offset8.4mm are provisional photo estimates. Layered optical internals illustrative; OLED fit/UV unchanged.",
+    "front_rail": "Independent metal/glass/OLED layers; 1.10mm nominal metal rim and .30mm front roll are provisional visual fits to official base/Pro art, not SDK or CAD measurements. XL uses a low-confidence Pro-family rim estimate, without an independent XL front contour. Finish-specific satin/polished/matte aluminium retained.",
+    "antenna_details": "Only separately visible breaks fitted from official product video/family artwork; measured positions, widths and uncertainties in pixel11-antenna-reference-completion.json. Missing edges not mirrored; diffuse finish-tinted surface inserts and their depth are illustrative."
   },
   "sources": [
     "https://support.google.com/pixelphone/answer/7158570?hl=en",
@@ -1752,6 +1756,40 @@
           5.040325
         ]
       ]
+    ]
+  },
+  "rail_details": {
+    "enclosure": "Aluminum enclosure",
+    "rail_material": "rail",
+    "materials": {
+      "antenna": {
+        "color_role": "back",
+        "metal": 0,
+        "rough": 0.68
+      }
+    },
+    "antenna_breaks": [
+      {
+        "id": "right-upper",
+        "edge": "right",
+        "center_axis_mm": 51.5,
+        "width_mm": 1.5,
+        "material": "antenna"
+      },
+      {
+        "id": "right-lower",
+        "edge": "right",
+        "center_axis_mm": -61.5,
+        "width_mm": 1.5,
+        "material": "antenna"
+      },
+      {
+        "id": "top",
+        "edge": "top",
+        "center_axis_mm": 8.6,
+        "width_mm": 1.6,
+        "material": "antenna"
+      }
     ]
   }
 }

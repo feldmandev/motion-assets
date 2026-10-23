@@ -1,0 +1,6673 @@
+{
+  "status": "complete_read_only_review; front acceptance still requires parent fixes and new exports",
+  "scope": "Read-only shared-code review of all34 Pixel profiles. Only research/pixel-shared-front-review.json modified. No Blender, profile/trace edits, source edits, exports or publication. Pixel11ProXL roll experiment remains parent-owned.",
+  "summary": {
+    "profiles_reviewed": 34,
+    "profiles_unchanged": 34,
+    "current_exports_pass": 15,
+    "current_exports_fail": 19,
+    "traced_procedural_slabs_replayed": 20,
+    "installed_masks_measured": 27,
+    "installed_traces_missing_cutout_field_at_snapshot": 23,
+    "native_resolution_changes": 0,
+    "note": "Initial commentary counts were off by one; these are the exact final counts. Current exports predate pending shared code; failures are not proof that pending generation fails.",
+    "current_export_native_resolution_mismatches": [],
+    "new_trace_math_max_hull_error_mm": 0.08860306962424512
+  },
+  "findings": [
+    {
+      "id": "SF01",
+      "priority": "P1",
+      "title": "Imported Pixel10Pro bypasses front calibration",
+      "locations": [
+        "build.py:568-569",
+        "build.py:307-309",
+        "../pixel-10-pro-model/source/build_model.py:133-156"
+      ],
+      "affected_ids": [
+        "pixel-10-pro"
+      ],
+      "evidence": {
+        "actual_body_contour_error_mm": 0.24291245154443822,
+        "actual_glass_inset_mm": 0.2,
+        "official_midline_metal_glass_transition_mm": [
+          1.23558,
+          1.39003
+        ],
+        "actual_camera_body_xy_mm": [
+          0,
+          68.499997
+        ],
+        "actual_aperture_radius_mm": 1.71999994,
+        "current_metadata_camera_body_xy_mm": [
+          -0.05148248,
+          69.31105121
+        ],
+        "official_mask_camera_body_xy_mm": [
+          -0.02574124,
+          68.0083558
+        ],
+        "official_mask_aperture_radius_area_mm": 2.35540408
+      },
+      "impact": "Updating the trace changes OLED and metadata, but not imported front glass or the two selfie meshes. The0.20mm rim stays too thin. Camera hit rejection disagrees with the actual physical disk; native UV math is not the cause.",
+      "tiny_proposed_fix": "After traced_screen at build.py:569 and imported object linking, parent front-calibration hook should update only named front-glass mesh and Selfie objects. Align both optical centers to screen center plus measured cutout and aperture radius to measured outer radius. Preserve independently evidenced inner lens size, rear optics, logos, ports, dimensions and materials. Source-generator equivalents are front slab at build_model.py:134 and selfie disks at155-156. front_rail_mm in a profile alone cannot affect this imported branch.",
+      "confidence": "High for GLB geometry/camera mismatch. Medium for artwork material boundary, approximately2px uncertainty; not CAD."
+    },
+    {
+      "id": "SF02",
+      "priority": "P1",
+      "title": "Cutout loader works but most existing traces still omit measured cutouts",
+      "locations": [
+        "build.py:41-42",
+        "research/trace_skins.py:85-99",
+        "research/trace_skins.py:123"
+      ],
+      "evidence": "27 installed masks measured directly;23 matching trace JSONs lacked screen_cutouts_mm at snapshot. Pixel7Pro retained radius1.5 versus measured2.042905mm and localY73.761322 versus74.099816. Pixel10Pro retained radius1.72 versus measured2.355404mm. Per-ID measurements are retained below.",
+      "tiny_proposed_fix": "No new build.py fallback needed. Owning family workers should populate screen_cutouts_mm from installed masks, including[] when no hole, and persist through trace/generator path. Keep coordinates screen-local and native resolution fixed. Parent must separately align imported physical optics.",
+      "confidence": "High; concurrent family workers may already have corrected data after this snapshot."
+    },
+    {
+      "id": "SF03",
+      "priority": "P1",
+      "title": "Tracing alone does not add layered selfie optics or antenna seams",
+      "locations": [
+        "build.py:307-331",
+        "geometry.py:508-509",
+        "geometry.py:567-570"
+      ],
+      "evidence": "Circular procedural cutouts remain a single .025mm black disk placed .025mm above OLED. Current exports have zero antenna-named nodes in33 profiles and four0.7mm-wide side ribbons in Pixel10Pro. Procedural enclosure construction has no seam-material/mesh step; node-name absence alone would not exclude face-assigned seams.",
+      "tiny_proposed_fix": "At existing circular-aperture branch330-331, parent production hook should use measured outer aperture plus separately evidenced smaller optical layers. Apply family-specific rail seam/material detail after curved-front deformation. Do not generalize Pixel9/10 seam positions or optical dimensions across all34.",
+      "confidence": "High for code and existing artifact inventory; internal physical optical dimensions are not established."
+    },
+    {
+      "id": "SF04",
+      "priority": "P2",
+      "title": "Curved Pixel6Pro glass and OLED use different X origins",
+      "locations": [
+        "build.py:209",
+        "build.py:223-225"
+      ],
+      "affected_ids": [
+        "pixel-6-pro"
+      ],
+      "evidence": "OLED x is screen-local; glass/enclosure x is parent-local. Pixel6Pro traced screen cx=.0498327759mm, yielding about.0492mm maximum depth disagreement. Pixel7Pro cx=0 is unaffected.",
+      "tiny_proposed_fix": "At223 change x=abs(vertex.co.x/MM) to x=abs(vertex.co.x/MM-cx) for current parent-centered slab parts. If a curved part ever has nonzero local X translation, include that translation before subtracting cx.",
+      "confidence": "High mathematical mismatch; not a Blender-rendered visual finding."
+    },
+    {
+      "id": "SF05",
+      "priority": "P2",
+      "title": "Original unfolded Fold front camera clips landscape body",
+      "locations": [
+        "build.py:604-606",
+        "build.py:615-617"
+      ],
+      "affected_ids": [
+        "pixel-fold-unfolded"
+      ],
+      "evidence": "Body158.7x139.7mm; camera AUTO fit with landscape output takes ortho_scale139.7mm as width, cropping9.5mm per side. All other assigned body bounds are portrait.",
+      "tiny_proposed_fix": "Set camera_data.sensor_fit='VERTICAL' before height-based ortho_scale at606. Keep all render/native resolutions and UVs unchanged. Alternative AUTO fix is max(body width,body height), but VERTICAL matches existing height convention.",
+      "source_url": "https://docs.blender.org/api/5.0/bpy.types.Camera.html#bpy.types.Camera.sensor_fit",
+      "confidence": "High from source configuration and documented AUTO fit; not rendered. This concerns saved front camera framing, not GLB model scale."
+    },
+    {
+      "id": "SF06",
+      "priority": "P2",
+      "title": "Verifier cannot yet accept all34 fronts",
+      "locations": [
+        "verify_pixels.py:95-117",
+        "verify_pixels.py:138-160",
+        "build.py:725-727"
+      ],
+      "evidence": "Imported Pixel10Pro passes while its measured body error is.2429mm and rail/camera are wrong. Foldables are excluded from contour branch. SDK-frame alpha assertions prove opaque bezel, not colored rail, seam/camera alignment or metal/glass boundary. Fallback SVG hardcodes.7mm inset while geometry uses max(front_rail_mm,.95*front_roll).",
+      "tiny_proposed_fix": "Keep.10mm tolerance. Add imported node lookup for 'Body | aluminum enclosure' and actual contour comparison, as an explicit failing diagnostic until parent settles imported front correction. Fold checks must compare panel-local contours to apply_trace results. Add exported resolution equality to matching profile spec near95 and actual aperture center/radius checks. Verify colored rail against measured boundary and actual glass/enclosure, not alpha or metadata alone.",
+      "confidence": "High. Do not distort reviewed rear/body merely to force the imported check to pass."
+    }
+  ],
+  "accepted_pending_logic": [
+    {
+      "location": "build.py:87-90,129-138",
+      "result": "Correct: independent body contour survives and sync_slab_body_corners returns early. Old pop/comment at159-161 is unreachable for traced profiles, not a regression."
+    },
+    {
+      "location": "build.py:192-210",
+      "result": "Curved6/7Pro now follow traced row intersections. Current trace fit boxes have exact native aspect; no viewport or native-resolution rescaling is needed. Radius controls sampling density, not traced silhouette."
+    },
+    {
+      "location": "build.py:226-235,295-303",
+      "result": "Flat traced UV math is correct. Actual current GLB screens all retain0..1 UV bounds; fold halves partition that range. Imported camera mismatch is object/metadata alignment, not UV mapping."
+    },
+    {
+      "location": "verify_pixels.py:142-160",
+      "result": "Correct contour normalization, glTF X,-Z conversion and tolerance for20 current traced procedural slabs. Pure traced_ring replay has maximum chassis hull error below.10mm. Do not loosen tolerance to accept old exports."
+    }
+  ],
+  "ring_inset_answer": {
+    "answer": "Shapely inward offset does not inflate inner corner radius. Independent chassis is the correct basis, but a uniform body-minus-rail offset is still an assumed glass boundary, not a measurement of outerglass.",
+    "observations": [
+      "All20 replayed traced-slab OLED footprints fit inside generated black-glass footprints.",
+      "Inset resampling differs from exact offset by about.04-.106mm; worst Pixel6a.1057mm. Chassis convex-envelope errors stay below.10mm.",
+      "rail=max(.7,.95*front_roll) often leaves no planar aluminum shelf: visible rim is rolled surface. Lowering roll at constant glass inset can reveal a shelf without changing OLED bezel. Parent owns Pixel11XL experiment.",
+      "geometry.py:64 snaps to nearest existing vertex instead of exact centroid-ray hit; Pixel6Pro ring starts atY16.93mm. Corresponding points show tangential bridging shear up to2.58mm over1.6mm roll, but checked adjacent-ring steps are below.46mm. This is not evidence of gross inner-radius distortion."
+    ],
+    "optional_tiny_fix": "Only if actual shading/seam twist warrants it: geometry.py:64-67 can interpolate from line.project(Point(hx,hy)), using (start_distance+i*line.length/count)%line.length. Preserve polygon offset and bounding-box rescaling. No broad rewrite required.",
+    "limits": "No new corner render. Curved6Pro bright inner artwork band can be glass reflection; do not classify aluminum by luminance alone."
+  },
+  "frame_measurements": [
+    {
+      "id": "pixel-10-pro",
+      "file": "research/skins/pixel-10-pro/frame.png",
+      "row_px": 1484,
+      "body_left_px": 0,
+      "metal_glass_transition_px": [
+        24,
+        27
+      ],
+      "glass_secondary_highlight_px": [
+        28,
+        30
+      ],
+      "black_glass_px": [
+        32,
+        58
+      ],
+      "oled_start_px": 59,
+      "mm_per_px": 0.05148247978436658,
+      "uncertainty_px": 2,
+      "confidence": "medium",
+      "note": "RGB x24=[64,68,82],x26=[0,0,2],x28=[74,74,74],x32=[0,0,0];x60 transparent. OLED opening is not metal boundary."
+    }
+  ],
+  "seam_evidence": {
+    "reference": "research/pixel-rails-material-audit.json",
+    "independently_verified_imported_geometry": "Four side ribbons at parentY+52/-60mm,0.7mm axial width,6.5mm depth coverage; no top/bottom antenna nodes.",
+    "scope": "Family workers own complete seam extraction. No shared or family seam data edited/generalized. Apply final measured seams after curved-front deformation."
+  },
+  "sources": [
+    {
+      "url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/",
+      "access": "Local installed SDK masks/frames read directly. Web tool could not open Pixel6Pro/10Pro directory URLs; upstream binary freshness not independently established."
+    },
+    {
+      "url": "https://store.google.com/product/pixel_10_pro_specs?hl=en-US",
+      "access": "Previously collected project evidence, not newly measured product photography."
+    },
+    {
+      "url": "https://docs.blender.org/api/5.0/bpy.types.Camera.html#bpy.types.Camera.sensor_fit",
+      "access": "Official API documentation browsed for AUTO/HORIZONTAL/VERTICAL camera fit."
+    }
+  ],
+  "verification": {
+    "performed": [
+      "Pure CPython AST execution of trace/outline functions with Shapely; no Blender/bpy.",
+      "Read GLB JSON/BIN positions/UVs for34 exports.",
+      "Ran existing verify_pixels.verify once per assigned profile:15 pass,19 fail at traced chassis assertion.",
+      "Measured27 installed mask.webp interior opaque components.",
+      "Measured Pixel10Pro actual body contour and official-frame metal/glass/OLED scanline."
+    ],
+    "not_performed": [
+      "No Blender build/render or verification of new post-change GLBs.",
+      "No full suite, public/gallery changes or publication.",
+      "No product-photo downloads and no blanket license claim."
+    ],
+    "concurrency_limit": "Data/exports are snapshot evidence. Family workers may update profiles/traces concurrently; parent must verify final merged data and serialized exports."
+  },
+  "profiles": [
+    {
+      "id": "pixel-10-pro-fold-folded",
+      "profile_modified": false,
+      "trace": true,
+      "derived": null,
+      "asset": null,
+      "panels": 2,
+      "screens": [
+        {
+          "object": "Cover screen",
+          "resolution": [
+            1080,
+            2364
+          ],
+          "fit": [
+            67.18076152304609,
+            147.05122244488976
+          ],
+          "actual": [
+            67.18076152304609,
+            147.05122244488976
+          ],
+          "center": [
+            0.2598396793587174,
+            -0.031102204408817634,
+            2.6350000000000002
+          ],
+          "curve": 0,
+          "outline": true,
+          "cutouts": [
+            {
+              "center_mm": [
+                0,
+                69.52561122244488
+              ],
+              "radius_mm": 1.5
+            }
+          ],
+          "create_cutouts": true,
+          "mesh_cutouts": null,
+          "trace_outline": null,
+          "keep_reviewed_corner_shape": null,
+          "mask_cutout_comparison": [
+            {
+              "center_error_mm": 0.8835936555007363,
+              "radius_error_mm": -0.59456184554685
+            }
+          ]
+        }
+      ],
+      "artifact": {
+        "path": "exports\\pixel-10-pro-fold-folded\\model.glb",
+        "mtime": "2026-10-22T15:33:00.340450",
+        "sha256": "7bb11241a4f8b250c11b296acc55429d86068836bdf6a41273eb116f572e2741",
+        "antenna_nodes": [],
+        "screens": [
+          {
+            "name": "Cover screen",
+            "translation": [
+              0.00025983963860198855,
+              0.0026350002735853195,
+              3.1102204957278445e-05
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "rotation": null,
+            "primitives": [
+              {
+                "bounds_mm": [
+                  [
+                    -33.59038010239601,
+                    0,
+                    -73.52560758590698
+                  ],
+                  [
+                    33.59038010239601,
+                    0,
+                    73.52560758590698
+                  ]
+                ],
+                "count": 400,
+                "material": "Device screen | replace texture at runtime",
+                "pbr": {
+                  "baseColorFactor": [
+                    0.006000000052154064,
+                    0.00800000037997961,
+                    0.012000000104308128,
+                    1
+                  ],
+                  "metallicFactor": 0
+                },
+                "uv_bounds": [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    1.0,
+                    1.0
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "current_verify": "pass"
+      },
+      "mask_measurement": {
+        "path": "[local reference path omitted]",
+        "resolution": [
+          1080,
+          2364
+        ],
+        "cutouts": [
+          {
+            "bounds_px": [
+              507,
+              45,
+              574,
+              112
+            ],
+            "center_px": [
+              540.5,
+              78.5
+            ],
+            "center_mm": [
+              0.031102204408817634,
+              68.64256513026052
+            ],
+            "radius_area_mm": 2.09456184554685,
+            "radii_bbox_mm": [
+              2.0838476953907814,
+              2.0838476953907814
+            ],
+            "center_uv": [
+              0.500462962962963,
+              0.9667935702199661
+            ]
+          }
+        ],
+        "trace_has_cutout_field": false
+      },
+      "review_status": "reviewed; profile and trace unchanged by this worker",
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_10_pro_fold/closed/",
+      "profile_sha256_at_finalization": "582767cb044f5047aa221f236b864aaa1c49014303acb9db8623f3c87fc2f947",
+      "trace_sha256_at_finalization": "7f45f1b542a28844438cdd675ecc765bacf4cfcd22f1d50d151649088a463ca9"
+    },
+    {
+      "id": "pixel-10-pro-fold-unfolded",
+      "profile_modified": false,
+      "trace": true,
+      "derived": null,
+      "asset": null,
+      "panels": 2,
+      "screens": [
+        {
+          "object": "Inner screen",
+          "resolution": [
+            2076,
+            2152
+          ],
+          "fit": [
+            142.1867608120035,
+            147.3920564872021
+          ],
+          "actual": [
+            142.1867608120035,
+            147.3920564872021
+          ],
+          "center": [
+            0.13698146513680493,
+            0.0,
+            2.64
+          ],
+          "curve": 0,
+          "outline": true,
+          "cutouts": [
+            {
+              "center_mm": [
+                64.93011152416356,
+                71.29089269612263
+              ],
+              "radius_mm": 1.5
+            }
+          ],
+          "create_cutouts": true,
+          "mesh_cutouts": null,
+          "trace_outline": null,
+          "keep_reviewed_corner_shape": null,
+          "mask_cutout_comparison": [
+            {
+              "center_error_mm": 3.354440050284001,
+              "radius_error_mm": -0.9561085537409721
+            }
+          ]
+        },
+        {
+          "object": "Cover screen",
+          "resolution": [
+            1080,
+            2364
+          ],
+          "fit": [
+            67.18076152304609,
+            147.05122244488976
+          ],
+          "actual": [
+            67.18076152304609,
+            147.05122244488976
+          ],
+          "center": [
+            -0.2598396793587174,
+            -0.031102204408817634,
+            -2.6350000000000002
+          ],
+          "curve": 0,
+          "outline": true,
+          "cutouts": [
+            {
+              "center_mm": [
+                0,
+                69.52561122244488
+              ],
+              "radius_mm": 1.5
+            }
+          ],
+          "create_cutouts": true,
+          "mesh_cutouts": null,
+          "trace_outline": null,
+          "keep_reviewed_corner_shape": null
+        }
+      ],
+      "artifact": {
+        "path": "exports\\pixel-10-pro-fold-unfolded\\model.glb",
+        "mtime": "2026-10-22T15:33:00.750859",
+        "sha256": "2f4c5fca258e4bf28f0e63f7ad96867416f4f5f7b44c3b60eada860f92b6b85e",
+        "antenna_nodes": [],
+        "screens": [
+          {
+            "name": "Inner screen | Camera half",
+            "translation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "rotation": null,
+            "primitives": [
+              {
+                "bounds_mm": [
+                  [
+                    -37.7499982714653,
+                    2.6400000788271427,
+                    -73.69602471590042
+                  ],
+                  [
+                    33.480361104011536,
+                    2.6400000788271427,
+                    73.69602471590042
+                  ]
+                ],
+                "count": 202,
+                "material": "Device screen | replace texture at runtime",
+                "pbr": {
+                  "baseColorFactor": [
+                    0.07,
+                    0.16,
+                    0.22,
+                    1
+                  ],
+                  "metallicFactor": 0
+                },
+                "uv_bounds": [
+                  [
+                    0.49903661012649536,
+                    0.0
+                  ],
+                  [
+                    1.0,
+                    1.0
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Cover screen",
+            "translation": [
+              -0.0002598389983177185,
+              -0.002684999955818057,
+              3.1102204957278445e-05
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "rotation": [
+              0,
+              0,
+              1,
+              4.371138828673793e-08
+            ],
+            "primitives": [
+              {
+                "bounds_mm": [
+                  [
+                    -33.59038010239601,
+                    0,
+                    -73.52560758590698
+                  ],
+                  [
+                    33.59038010239601,
+                    0,
+                    73.52560758590698
+                  ]
+                ],
+                "count": 400,
+                "material": "Device screen | replace texture at runtime.001",
+                "pbr": {
+                  "baseColorFactor": [
+                    0.07,
+                    0.16,
+                    0.22,
+                    1
+                  ],
+                  "metallicFactor": 0
+                },
+                "uv_bounds": [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    1.0,
+                    1.0
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Inner screen | Cover half",
+            "translation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "rotation": null,
+            "primitives": [
+              {
+                "bounds_mm": [
+                  [
+                    -33.20639953017235,
+                    2.6400000788271427,
+                    -73.69602471590042
+                  ],
+                  [
+                    37.7499982714653,
+                    2.6400000788271427,
+                    73.69602471590042
+                  ]
+                ],
+                "count": 202,
+                "material": "Device screen | replace texture at runtime",
+                "pbr": {
+                  "baseColorFactor": [
+                    0.07,
+                    0.16,
+                    0.22,
+                    1
+                  ],
+                  "metallicFactor": 0
+                },
+                "uv_bounds": [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.49903661012649536,
+                    1.0
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "current_verify": "pass"
+      },
+      "mask_measurement": {
+        "path": "[local reference path omitted]",
+        "resolution": [
+          2076,
+          2152
+        ],
+        "cutouts": [
+          {
+            "bounds_px": [
+              1947,
+              48,
+              2019,
+              120
+            ],
+            "center_px": [
+              1983.0,
+              84.0
+            ],
+            "center_mm": [
+              64.72374227714033,
+              67.94280670785524
+            ],
+            "radius_area_mm": 2.456108553740972,
+            "radii_bbox_mm": [
+              2.4656663724624885,
+              2.4656663724624885
+            ],
+            "center_uv": [
+              0.9552023121387283,
+              0.9609665427509294
+            ]
+          }
+        ],
+        "trace_has_cutout_field": false
+      },
+      "review_status": "reviewed; profile and trace unchanged by this worker",
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_10_pro_fold/default/",
+      "profile_sha256_at_finalization": "5fdd2504855f9348020b9604e8167398d87f915f5b21fdb105c88f787e14cc56",
+      "trace_sha256_at_finalization": "ff281079cf860b7f2476b51b4e820c19b2e16d2d97cd4b999bfd42e9fac4123f"
+    },
+    {
+      "id": "pixel-10-pro-xl",
+      "profile_modified": false,
+      "trace": true,
+      "derived": null,
+      "asset": null,
+      "panels": 0,
+      "screens": [
+        {
+          "object": "Device screen",
+          "resolution": [
+            1344,
+            2992
+          ],
+          "fit": [
+            70.5589164785553,
+            157.07758787487907
+          ],
+          "actual": [
+            70.5589164785553,
+            157.07758787487907
+          ],
+          "center": [
+            0.026249596904224445,
+            -0.026249596904224445,
+            4.285
+          ],
+          "curve": 0,
+          "outline": true,
+          "cutouts": [
+            {
+              "center_mm": [
+                0,
+                74.53879393743954
+              ],
+              "radius_mm": 1.5
+            }
+          ],
+          "create_cutouts": true,
+          "mesh_cutouts": null,
+          "trace_outline": null,
+          "keep_reviewed_corner_shape": null,
+          "mask_cutout_comparison": [
+            {
+              "center_error_mm": 1.4599161560786769,
+              "radius_error_mm": -0.8719652266927707
+            }
+          ]
+        }
+      ],
+      "oled_outside_glass_area_mm2": 0.0,
+      "min_oled_glass_boundary_mm": 1.6760962681754012,
+      "roll_mm": 0.75,
+      "glass_inset_mm": 0.7124999999999999,
+      "max_roll_correspondence_mm": 1.5942401446690537,
+      "ring_start0": [
+        38.3,
+        -2.848558428936354
+      ],
+      "ring_start1": [
+        37.55,
+        -2.6784153981662757
+      ],
+      "ring_hausdorff_error_mm": 0.055897867802654745,
+      "inset_shape_error_mm": 0.05153160431827335,
+      "artifact": {
+        "path": "exports\\pixel-10-pro-xl\\model.glb",
+        "mtime": "2026-10-22T15:33:01.027930",
+        "sha256": "fb0caa77cd699e3f43e14037b59fbd67c1dae2b247f8827ed71321ad642915f8",
+        "antenna_nodes": [],
+        "screens": [
+          {
+            "name": "Device screen",
+            "translation": [
+              2.624959779495839e-05,
+              0.0042849997989833355,
+              2.624959779495839e-05
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "rotation": null,
+            "primitives": [
+              {
+                "bounds_mm": [
+                  [
+                    -35.27945652604103,
+                    0,
+                    -78.53879034519196
+                  ],
+                  [
+                    35.27945652604103,
+                    0,
+                    78.53879034519196
+                  ]
+                ],
+                "count": 400,
+                "material": "Device screen | replace texture at runtime",
+                "pbr": {
+                  "baseColorFactor": [
+                    0.006000000052154064,
+                    0.00800000037997961,
+                    0.012000000104308128,
+                    1
+                  ],
+                  "metallicFactor": 0
+                },
+                "uv_bounds": [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    1.0,
+                    1.0
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "current_verify": "AssertionError: ('pixel-10-pro-xl', 'enclosure differs from official contour (mm)', 0.49240538307572473)"
+      },
+      "mask_measurement": {
+        "path": "[local reference path omitted]",
+        "resolution": [
+          1344,
+          2992
+        ],
+        "cutouts": [
+          {
+            "bounds_px": [
+              627,
+              59,
+              717,
+              149
+            ],
+            "center_px": [
+              672.0,
+              104.0
+            ],
+            "center_mm": [
+              0.0,
+              73.07887778136086
+            ],
+            "radius_area_mm": 2.3719652266927707,
+            "radii_bbox_mm": [
+              2.3624637213802,
+              2.3624637213802
+            ],
+            "center_uv": [
+              0.5,
+              0.9652406417112299
+            ]
+          }
+        ],
+        "trace_has_cutout_field": false
+      },
+      "review_status": "reviewed; profile and trace unchanged by this worker",
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_10_pro_xl/",
+      "profile_sha256_at_finalization": "684bb4d1c47c104994ef791b4c556926b80711731f40e279271b0cc2228a7b5d",
+      "trace_sha256_at_finalization": "da44208097c0e385b1b6a3e1b319a17854cb68e33eb591658a75043cd66e9c67"
+    },
+    {
+      "id": "pixel-10-pro",
+      "profile_modified": false,
+      "trace": true,
+      "derived": null,
+      "asset": "../../pixel-10-pro-model/Pixel-10-Pro-Obsidian.blend",
+      "panels": 0,
+      "screens": [
+        {
+          "object": "OLED | uniform 1.8 mm visible bezel",
+          "resolution": [
+            1280,
+            2856
+          ],
+          "fit": [
+            65.89757412398923,
+            147.03396226415097
+          ],
+          "actual": [
+            65.89757412398923,
+            147.03396226415097
+          ],
+          "center": [
+            -0.05148247978436658,
+            -0.20592991913746633,
+            4.3275
+          ],
+          "curve": 0,
+          "outline": true,
+          "cutouts": [
+            {
+              "center_mm": [
+                0,
+                69.51698113207549
+              ],
+              "radius_mm": 1.72
+            }
+          ],
+          "create_cutouts": null,
+          "mesh_cutouts": null,
+          "trace_outline": null,
+          "keep_reviewed_corner_shape": null,
+          "mask_cutout_comparison": [
+            {
+              "center_error_mm": 1.3029497162061296,
+              "radius_error_mm": -0.6354040830026333
+            }
+          ]
+        }
+      ],
+      "artifact": {
+        "path": "exports\\pixel-10-pro\\model.glb",
+        "mtime": "2026-10-23T10:21:06.056614",
+        "sha256": "264cfe3d540945de0c74561327bda2e1b092a7f3df5664a6ae3e9c321bce63a4",
+        "antenna_nodes": [
+          "Antenna break",
+          "Antenna break.001",
+          "Antenna break.002",
+          "Antenna break.003"
+        ],
+        "screens": [
+          {
+            "name": "Device screen",
+            "translation": [
+              -5.148247873876244e-05,
+              0.004327499773353338,
+              0.00020592991495504975
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "rotation": null,
+            "primitives": [
+              {
+                "bounds_mm": [
+                  [
+                    -32.94878825545311,
+                    0,
+                    -73.51697981357574
+                  ],
+                  [
+                    32.94878825545311,
+                    0,
+                    73.51697981357574
+                  ]
+                ],
+                "count": 132,
+                "material": "Device screen | replace texture at runtime",
+                "pbr": {
+                  "baseColorFactor": [
+                    0.006000000052154064,
+                    0.00800000037997961,
+                    0.012000000104308128,
+                    1
+                  ],
+                  "metallicFactor": 0
+                },
+                "uv_bounds": [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    1.0,
+                    1.0
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "front_parts": [
+          {
+            "name": "Antenna break",
+            "translation": [
+              -0.03601500019431114,
+              0,
+              0.05999999865889549
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "rotation": [
+              0,
+              0,
+              -0.7071068286895752,
+              0.7071068286895752
+            ],
+            "primitives": [
+              {
+                "bounds_mm": [
+                  [
+                    -3.2500000670552254,
+                    -0.017500000467407517,
+                    -0.3499999875202775
+                  ],
+                  [
+                    3.2500000670552254,
+                    0.017500000467407517,
+                    0.3499999875202775
+                  ]
+                ],
+                "count": 2640,
+                "material": "Graphite polymer gaskets",
+                "pbr": {
+                  "baseColorFactor": [
+                    0.004400849808007479,
+                    0.004896310158073902,
+                    0.005315043497830629,
+                    1
+                  ],
+                  "metallicFactor": 0,
+                  "roughnessFactor": 0.6800000071525574
+                },
+                "uv_bounds": [
+                  [
+                    -1.0316188792103276e-08,
+                    0.0
+                  ],
+                  [
+                    1.0,
+                    1.0
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Antenna break.001",
+            "translation": [
+              -0.03601500019431114,
+              0,
+              -0.052000001072883606
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "rotation": [
+              0,
+              0,
+              -0.7071068286895752,
+              0.7071068286895752
+            ],
+            "primitives": [
+              {
+                "bounds_mm": [
+                  [
+                    -3.2500000670552254,
+                    -0.017500000467407517,
+                    -0.3499999875202775
+                  ],
+                  [
+                    3.2500000670552254,
+                    0.017500000467407517,
+                    0.3499999875202775
+                  ]
+                ],
+                "count": 2640,
+                "material": "Graphite polymer gaskets",
+                "pbr": {
+                  "baseColorFactor": [
+                    0.004400849808007479,
+                    0.004896310158073902,
+                    0.005315043497830629,
+                    1
+                  ],
+                  "metallicFactor": 0,
+                  "roughnessFactor": 0.6800000071525574
+                },
+                "uv_bounds": [
+                  [
+                    -1.0316188792103276e-08,
+                    0.0
+                  ],
+                  [
+                    1.0,
+                    1.0
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Antenna break.002",
+            "translation": [
+              0.03601500019431114,
+              0,
+              0.05999999865889549
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "rotation": [
+              0,
+              0,
+              -0.7071068286895752,
+              0.7071068286895752
+            ],
+            "primitives": [
+              {
+                "bounds_mm": [
+                  [
+                    -3.2500000670552254,
+                    -0.017500000467407517,
+                    -0.3499999875202775
+                  ],
+                  [
+                    3.2500000670552254,
+                    0.017500000467407517,
+                    0.3499999875202775
+                  ]
+                ],
+                "count": 2640,
+                "material": "Graphite polymer gaskets",
+                "pbr": {
+                  "baseColorFactor": [
+                    0.004400849808007479,
+                    0.004896310158073902,
+                    0.005315043497830629,
+                    1
+                  ],
+                  "metallicFactor": 0,
+                  "roughnessFactor": 0.6800000071525574
+                },
+                "uv_bounds": [
+                  [
+                    -1.0316188792103276e-08,
+                    0.0
+                  ],
+                  [
+                    1.0,
+                    1.0
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Antenna break.003",
+            "translation": [
+              0.03601500019431114,
+              0,
+              -0.052000001072883606
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "rotation": [
+              0,
+              0,
+              -0.7071068286895752,
+              0.7071068286895752
+            ],
+            "primitives": [
+              {
+                "bounds_mm": [
+                  [
+                    -3.2500000670552254,
+                    -0.017500000467407517,
+                    -0.3499999875202775
+                  ],
+                  [
+                    3.2500000670552254,
+                    0.017500000467407517,
+                    0.3499999875202775
+                  ]
+                ],
+                "count": 2640,
+                "material": "Graphite polymer gaskets",
+                "pbr": {
+                  "baseColorFactor": [
+                    0.004400849808007479,
+                    0.004896310158073902,
+                    0.005315043497830629,
+                    1
+                  ],
+                  "metallicFactor": 0,
+                  "roughnessFactor": 0.6800000071525574
+                },
+                "uv_bounds": [
+                  [
+                    -1.0316188792103276e-08,
+                    0.0
+                  ],
+                  [
+                    1.0,
+                    1.0
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Body | aluminum enclosure",
+            "translation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "rotation": null,
+            "primitives": [
+              {
+                "bounds_mm": [
+                  [
+                    -35.999998450279236,
+                    -4.275000188499689,
+                    -76.39999687671661
+                  ],
+                  [
+                    35.999998450279236,
+                    4.275000188499689,
+                    76.39999687671661
+                  ]
+                ],
+                "count": 4528,
+                "material": "Obsidian | polished aluminum",
+                "pbr": {
+                  "baseColorFactor": [
+                    0.3069993257522583,
+                    0.33034372329711914,
+                    0.34239163994789124,
+                    1
+                  ],
+                  "roughnessFactor": 0.1599999964237213
+                },
+                "uv_bounds": [
+                  [
+                    2.1523899107478428e-08,
+                    0.0
+                  ],
+                  [
+                    1.0,
+                    1.0
+                  ]
+                ]
+              },
+              {
+                "bounds_mm": [
+                  [
+                    -22.424999624490738,
+                    -1.025000005029142,
+                    74.79999959468842
+                  ],
+                  [
+                    26.900000870227814,
+                    1.025000005029142,
+                    76.39999687671661
+                  ]
+                ],
+                "count": 3158,
+                "material": "Graphite polymer gaskets",
+                "pbr": {
+                  "baseColorFactor": [
+                    0.004400849808007479,
+                    0.004896310158073902,
+                    0.005315043497830629,
+                    1
+                  ],
+                  "metallicFactor": 0,
+                  "roughnessFactor": 0.6800000071525574
+                },
+                "uv_bounds": [
+                  [
+                    -1.8815873303879016e-08,
+                    0.0
+                  ],
+                  [
+                    1.0,
+                    1.0
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Front glass | cover and equal bezel",
+            "translation": [
+              0,
+              0.004149999935179949,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "rotation": null,
+            "primitives": [
+              {
+                "bounds_mm": [
+                  [
+                    -35.79999879002571,
+                    -0.1500000071246177,
+                    -76.20000094175339
+                  ],
+                  [
+                    35.79999879002571,
+                    0.1500000071246177,
+                    76.20000094175339
+                  ]
+                ],
+                "count": 2640,
+                "material": "Black ceramic screen surround",
+                "pbr": {
+                  "baseColorFactor": [
+                    0.0006965944194234908,
+                    0.0009287925786338747,
+                    0.0013157895300537348,
+                    1
+                  ],
+                  "metallicFactor": 0,
+                  "roughnessFactor": 0.1899999976158142
+                },
+                "uv_bounds": [
+                  [
+                    1.68990830218263e-08,
+                    0.0
+                  ],
+                  [
+                    1.0,
+                    1.0
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Selfie camera | black aperture",
+            "translation": [
+              0,
+              0.00434499979019165,
+              -0.06849999725818634
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "rotation": null,
+            "primitives": [
+              {
+                "bounds_mm": [
+                  [
+                    -1.71999994199723,
+                    -0.01249999968422344,
+                    -1.71999994199723
+                  ],
+                  [
+                    1.71999994199723,
+                    0.01249999968422344,
+                    1.71999994199723
+                  ]
+                ],
+                "count": 386,
+                "material": "Optical aperture | light-absorbing interior",
+                "pbr": {
+                  "baseColorFactor": [
+                    0.00015479876310564578,
+                    0.00030959752621129155,
+                    0.00046439628931693733,
+                    1
+                  ],
+                  "metallicFactor": 0
+                },
+                "uv_bounds": [
+                  [
+                    -7.469207048416138e-07,
+                    0.0
+                  ],
+                  [
+                    1.0,
+                    0.9900000095367432
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Selfie lens coating",
+            "translation": [
+              0,
+              0.004364999942481518,
+              -0.06849999725818634
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "rotation": null,
+            "primitives": [
+              {
+                "bounds_mm": [
+                  [
+                    -1.0000000474974513,
+                    -0.009000000318337698,
+                    -1.0000000474974513
+                  ],
+                  [
+                    1.0000000474974513,
+                    0.009000000318337698,
+                    1.0000000474974513
+                  ]
+                ],
+                "count": 386,
+                "material": "Optical coating | blue violet",
+                "pbr": {
+                  "baseColorFactor": [
+                    0.0024767802096903324,
+                    0.003758403705433011,
+                    0.007850573398172855,
+                    1
+                  ],
+                  "metallicFactor": 0.47999998927116394,
+                  "roughnessFactor": 0.07999999821186066
+                },
+                "uv_bounds": [
+                  [
+                    -7.469207048416138e-07,
+                    0.0
+                  ],
+                  [
+                    1.0,
+                    0.9900000095367432
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "current_verify": "pass",
+        "independent_body_outline_error_mm": 0.24291245154443822
+      },
+      "mask_measurement": {
+        "path": "[local reference path omitted]",
+        "resolution": [
+          1280,
+          2856
+        ],
+        "cutouts": [
+          {
+            "bounds_px": [
+              595,
+              57,
+              686,
+              149
+            ],
+            "center_px": [
+              640.5,
+              103.0
+            ],
+            "center_mm": [
+              0.02574123989218329,
+              68.21428571428572
+            ],
+            "radius_area_mm": 2.3554040830026333,
+            "radii_bbox_mm": [
+              2.3424528301886793,
+              2.368194070080863
+            ],
+            "center_uv": [
+              0.500390625,
+              0.9639355742296919
+            ]
+          }
+        ],
+        "trace_has_cutout_field": false
+      },
+      "review_status": "reviewed; profile and trace unchanged by this worker",
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_10_pro/",
+      "profile_sha256_at_finalization": "9378235fb85e77703ea9785d9e0a6a639a67440051b681fc3fc2b6aa4d4b0bd3",
+      "trace_sha256_at_finalization": "68fe78eea286083e93a2d949d45568fe6b5a20fcac28ed9cc0988d4c5813e32f"
+    },
+    {
+      "id": "pixel-10",
+      "profile_modified": false,
+      "trace": true,
+      "derived": null,
+      "asset": null,
+      "panels": 0,
+      "screens": [
+        {
+          "object": "Device screen",
+          "resolution": [
+            1080,
+            2424
+          ],
+          "fit": [
+            65.09822485207101,
+            146.10934911242606
+          ],
+          "actual": [
+            65.09822485207101,
+            146.10934911242606
+          ],
+          "center": [
+            0.030138067061143987,
+            0.030138067061143987,
+            4.335
+          ],
+          "curve": 0,
+          "outline": true,
+          "cutouts": [
+            {
+              "center_mm": [
+                0,
+                69.05467455621303
+              ],
+              "radius_mm": 1.5
+            }
+          ],
+          "create_cutouts": true,
+          "mesh_cutouts": null,
+          "trace_outline": null,
+          "keep_reviewed_corner_shape": null,
+          "mask_cutout_comparison": [
+            {
+              "center_error_mm": 1.3659065487311313,
+              "radius_error_mm": -0.8410668136961426
+            }
+          ]
+        }
+      ],
+      "oled_outside_glass_area_mm2": 0.0,
+      "min_oled_glass_boundary_mm": 2.4534942929569055,
+      "roll_mm": 0.75,
+      "glass_inset_mm": 0.7124999999999999,
+      "max_roll_correspondence_mm": 1.5933971303498895,
+      "ring_start0": [
+        36.0,
+        -6.284988076839746
+      ],
+      "ring_start1": [
+        35.25,
+        -6.1059857958469435
+      ],
+      "ring_hausdorff_error_mm": 0.06865208844749932,
+      "inset_shape_error_mm": 0.05481643987117823,
+      "artifact": {
+        "path": "exports\\pixel-10\\model.glb",
+        "mtime": "2026-10-22T15:32:59.597183",
+        "sha256": "2d1eb9bff9fa74112171d5a98dccefbe6eaf98c23b5fec10e361d658593f8aa7",
+        "antenna_nodes": [],
+        "screens": [
+          {
+            "name": "Device screen",
+            "translation": [
+              3.0138067813823e-05,
+              0.004335000179708004,
+              -3.0138067813823e-05
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "rotation": null,
+            "primitives": [
+              {
+                "bounds_mm": [
+                  [
+                    -32.549113035202026,
+                    0,
+                    -73.05467128753662
+                  ],
+                  [
+                    32.549113035202026,
+                    0,
+                    73.05467128753662
+                  ]
+                ],
+                "count": 400,
+                "material": "Device screen | replace texture at runtime",
+                "pbr": {
+                  "baseColorFactor": [
+                    0.006000000052154064,
+                    0.00800000037997961,
+                    0.012000000104308128,
+                    1
+                  ],
+                  "metallicFactor": 0
+                },
+                "uv_bounds": [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    1.0,
+                    1.0
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "current_verify": "AssertionError: ('pixel-10', 'enclosure differs from official contour (mm)', 0.13287485288927153)"
+      },
+      "mask_measurement": {
+        "path": "[local reference path omitted]",
+        "resolution": [
+          1080,
+          2424
+        ],
+        "cutouts": [
+          {
+            "bounds_px": [
+              500,
+              50,
+              578,
+              128
+            ],
+            "center_px": [
+              539.0,
+              89.0
+            ],
+            "center_mm": [
+              -0.06027613412228797,
+              67.69009861932939
+            ],
+            "radius_area_mm": 2.3410668136961426,
+            "radii_bbox_mm": [
+              2.350769230769231,
+              2.350769230769231
+            ],
+            "center_uv": [
+              0.49907407407407406,
+              0.9632838283828383
+            ]
+          }
+        ],
+        "trace_has_cutout_field": false
+      },
+      "review_status": "reviewed; profile and trace unchanged by this worker",
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_10/",
+      "profile_sha256_at_finalization": "827ff657a875206db6920eb30603fe58f32639d1a0d60a8b05fd178712cd8351",
+      "trace_sha256_at_finalization": "28d4ee996c08afd574dbd9d31c112223a4dc5a313af286eb69f9576bafd0945f"
+    },
+    {
+      "id": "pixel-10a",
+      "profile_modified": false,
+      "trace": true,
+      "derived": null,
+      "asset": null,
+      "panels": 0,
+      "screens": [
+        {
+          "object": "Device screen",
+          "resolution": [
+            1080,
+            2424
+          ],
+          "fit": [
+            65.18117647058824,
+            146.2955294117647
+          ],
+          "actual": [
+            65.18117647058824,
+            146.2955294117647
+          ],
+          "center": [
+            0.0,
+            0.0,
+            4.535
+          ],
+          "curve": 0,
+          "outline": true,
+          "cutouts": [
+            {
+              "center_mm": [
+                0,
+                69.14776470588235
+              ],
+              "radius_mm": 1.5
+            }
+          ],
+          "create_cutouts": true,
+          "mesh_cutouts": null,
+          "trace_outline": null,
+          "keep_reviewed_corner_shape": null,
+          "mask_cutout_comparison": [
+            {
+              "center_error_mm": 1.2737915230879306,
+              "radius_error_mm": -0.8536754407862155
+            }
+          ]
+        }
+      ],
+      "oled_outside_glass_area_mm2": 0.0,
+      "min_oled_glass_boundary_mm": 2.935640068421293,
+      "roll_mm": 0.8,
+      "glass_inset_mm": 0.76,
+      "max_roll_correspondence_mm": 1.6231450725340264,
+      "ring_start0": [
+        36.5,
+        -6.202517128117413
+      ],
+      "ring_start1": [
+        35.7,
+        -6.015836767333021
+      ],
+      "ring_hausdorff_error_mm": 0.054874084400140924,
+      "inset_shape_error_mm": 0.041638274647698065,
+      "artifact": {
+        "path": "exports\\pixel-10a\\model.glb",
+        "mtime": "2026-10-22T15:33:01.349435",
+        "sha256": "71c93e5e590dbbb4d2954bce388baf7d86a16c013e11ffca8537905b0fa48cc4",
+        "antenna_nodes": [],
+        "screens": [
+          {
+            "name": "Device screen",
+            "translation": [
+              0,
+              0.004534999839961529,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "rotation": null,
+            "primitives": [
+              {
+                "bounds_mm": [
+                  [
+                    -32.5905866920948,
+                    0,
+                    -73.14776629209518
+                  ],
+                  [
+                    32.5905866920948,
+                    0,
+                    73.14776629209518
+                  ]
+                ],
+                "count": 400,
+                "material": "Device screen | replace texture at runtime",
+                "pbr": {
+                  "baseColorFactor": [
+                    0.006000000052154064,
+                    0.00800000037997961,
+                    0.012000000104308128,
+                    1
+                  ],
+                  "metallicFactor": 0
+                },
+                "uv_bounds": [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    1.0,
+                    1.0
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "current_verify": "pass"
+      },
+      "mask_measurement": {
+        "path": "[local reference path omitted]",
+        "resolution": [
+          1080,
+          2424
+        ],
+        "cutouts": [
+          {
+            "bounds_px": [
+              497,
+              48,
+              575,
+              126
+            ],
+            "center_px": [
+              536.0,
+              87.0
+            ],
+            "center_mm": [
+              -0.24141176470588235,
+              67.8970588235294
+            ],
+            "radius_area_mm": 2.3536754407862155,
+            "radii_bbox_mm": [
+              2.353764705882353,
+              2.353764705882353
+            ],
+            "center_uv": [
+              0.4962962962962963,
+              0.9641089108910891
+            ]
+          }
+        ],
+        "trace_has_cutout_field": false
+      },
+      "review_status": "reviewed; profile and trace unchanged by this worker",
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_10a/",
+      "profile_sha256_at_finalization": "a1ae0f20c8061027cf0be69e9c0f75a1ec28db66c6700c0149a6ba3d635cabfa",
+      "trace_sha256_at_finalization": "36bc5d79b23edc087f1120ea552bbb231776051876c516178e5f699a5d5be2d2"
+    },
+    {
+      "id": "pixel-11-pro-fold-folded",
+      "profile_modified": false,
+      "trace": true,
+      "derived": "pixel-10-pro-fold-folded",
+      "asset": null,
+      "panels": 2,
+      "screens": [
+        {
+          "object": "Cover screen",
+          "resolution": [
+            1080,
+            2342
+          ],
+          "fit": [
+            69.72502134927413,
+            151.2
+          ],
+          "actual": [
+            69.72502134927412,
+            151.2
+          ],
+          "center": [
+            0.08158653957116746,
+            -0.031102204408817634,
+            2.535
+          ],
+          "curve": 0,
+          "outline": true,
+          "cutouts": [
+            {
+              "center_mm": [
+                0,
+                69.86328514923413
+              ],
+              "radius_mm": 1.5
+            }
+          ],
+          "create_cutouts": true,
+          "mesh_cutouts": null,
+          "trace_outline": null,
+          "keep_reviewed_corner_shape": null
+        }
+      ],
+      "artifact": {
+        "path": "exports\\pixel-11-pro-fold-folded\\model.glb",
+        "mtime": "2026-10-22T15:33:02.214326",
+        "sha256": "f1e92f6e6fead510033a80ec29998267d55dea3c2627e5c82255d442d7a7575f",
+        "antenna_nodes": [],
+        "screens": [
+          {
+            "name": "Cover screen",
+            "translation": [
+              8.158653508871794e-05,
+              0.002534999744966626,
+              3.1102204957278445e-05
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "rotation": null,
+            "primitives": [
+              {
+                "bounds_mm": [
+                  [
+                    -34.86251085996628,
+                    0,
+                    -75.59999823570251
+                  ],
+                  [
+                    34.86251085996628,
+                    0,
+                    75.59999823570251
+                  ]
+                ],
+                "count": 400,
+                "material": "Device screen | replace texture at runtime",
+                "pbr": {
+                  "baseColorFactor": [
+                    0.006000000052154064,
+                    0.00800000037997961,
+                    0.012000000104308128,
+                    1
+                  ],
+                  "metallicFactor": 0
+                },
+                "uv_bounds": [
+                  [
+                    -1.1102230246251565e-16,
+                    0.0
+                  ],
+                  [
+                    1.0,
+                    1.0
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "current_verify": "pass"
+      },
+      "review_status": "reviewed; profile and trace unchanged by this worker",
+      "source_url": null,
+      "profile_sha256_at_finalization": "d6019c95ef267861a9e6473f3e19ff9dbff82a6d12dc955d531be4b5cf86c97d",
+      "trace_sha256_at_finalization": "26dc76c6e088bfc1ab0d1e43c730dd54a3ddc66cde49904fb27f9f7db6b0a391"
+    },
+    {
+      "id": "pixel-11-pro-fold-unfolded",
+      "profile_modified": false,
+      "trace": false,
+      "derived": null,
+      "asset": null,
+      "panels": 2,
+      "screens": [
+        {
+          "object": "Inner screen",
+          "resolution": [
+            2076,
+            2152
+          ],
+          "fit": [
+            145.86022304832713,
+            151.2
+          ],
+          "actual": [
+            145.86022304832713,
+            151.2
+          ],
+          "center": [
+            0,
+            0,
+            2.54
+          ],
+          "curve": 0,
+          "outline": false,
+          "cutouts": [
+            {
+              "center_mm": [
+                64.93011152416356,
+                69.6
+              ],
+              "radius_mm": 1.5
+            }
+          ],
+          "create_cutouts": true,
+          "mesh_cutouts": null,
+          "trace_outline": null,
+          "keep_reviewed_corner_shape": null
+        },
+        {
+          "object": "Cover screen",
+          "resolution": [
+            1080,
+            2342
+          ],
+          "fit": [
+            69.72502134927413,
+            151.2
+          ],
+          "actual": [
+            69.72502134927412,
+            151.2
+          ],
+          "center": [
+            -0.8,
+            0,
+            -2.535
+          ],
+          "curve": 0,
+          "outline": true,
+          "cutouts": [
+            {
+              "center_mm": [
+                0,
+                69.86328514923413
+              ],
+              "radius_mm": 1.5
+            }
+          ],
+          "create_cutouts": true,
+          "mesh_cutouts": null,
+          "trace_outline": null,
+          "keep_reviewed_corner_shape": null
+        }
+      ],
+      "artifact": {
+        "path": "exports\\pixel-11-pro-fold-unfolded\\model.glb",
+        "mtime": "2026-10-22T15:33:02.573323",
+        "sha256": "75fc82211837bbb99e8667dec53a25e3ad31b37015f1654112cac9029c1d687e",
+        "antenna_nodes": [],
+        "screens": [
+          {
+            "name": "Inner screen | Camera half",
+            "translation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "rotation": null,
+            "primitives": [
+              {
+                "bounds_mm": [
+                  [
+                    -37.7499982714653,
+                    2.5400000158697367,
+                    -75.59999823570251
+                  ],
+                  [
+                    35.18011048436165,
+                    2.5400000158697367,
+                    75.59999823570251
+                  ]
+                ],
+                "count": 68,
+                "material": "Device screen | replace texture at runtime",
+                "pbr": {
+                  "baseColorFactor": [
+                    0.07,
+                    0.16,
+                    0.22,
+                    1
+                  ],
+                  "metallicFactor": 0
+                },
+                "uv_bounds": [
+                  [
+                    0.5,
+                    0.0
+                  ],
+                  [
+                    1.0,
+                    1.0
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Cover screen",
+            "translation": [
+              -0.0007999986410140991,
+              -0.002584999892860651,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "rotation": [
+              0,
+              0,
+              1,
+              4.371138828673793e-08
+            ],
+            "primitives": [
+              {
+                "bounds_mm": [
+                  [
+                    -34.86251085996628,
+                    0,
+                    -75.59999823570251
+                  ],
+                  [
+                    34.86251085996628,
+                    0,
+                    75.59999823570251
+                  ]
+                ],
+                "count": 400,
+                "material": "Device screen | replace texture at runtime.001",
+                "pbr": {
+                  "baseColorFactor": [
+                    0.07,
+                    0.16,
+                    0.22,
+                    1
+                  ],
+                  "metallicFactor": 0
+                },
+                "uv_bounds": [
+                  [
+                    -1.1102230246251565e-16,
+                    0.0
+                  ],
+                  [
+                    1.0,
+                    1.0
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Inner screen | Cover half",
+            "translation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "rotation": null,
+            "primitives": [
+              {
+                "bounds_mm": [
+                  [
+                    -35.18011048436165,
+                    2.5400000158697367,
+                    -75.59999823570251
+                  ],
+                  [
+                    37.7499982714653,
+                    2.5400000158697367,
+                    75.59999823570251
+                  ]
+                ],
+                "count": 68,
+                "material": "Device screen | replace texture at runtime",
+                "pbr": {
+                  "baseColorFactor": [
+                    0.07,
+                    0.16,
+                    0.22,
+                    1
+                  ],
+                  "metallicFactor": 0
+                },
+                "uv_bounds": [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.5,
+                    1.0
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "current_verify": "pass"
+      },
+      "review_status": "reviewed; profile and trace unchanged by this worker",
+      "source_url": null,
+      "profile_sha256_at_finalization": "2d2e93b369cb1cd5203537cf6472e98abeb362a514fa7cfbc96034a245cec170"
+    },
+    {
+      "id": "pixel-11-pro-xl",
+      "profile_modified": false,
+      "trace": false,
+      "derived": null,
+      "asset": null,
+      "panels": 0,
+      "screens": [
+        {
+          "object": "Device screen",
+          "resolution": [
+            1344,
+            2992
+          ],
+          "fit": [
+            71.82673796791443,
+            159.89999999999998
+          ],
+          "actual": [
+            71.82673796791443,
+            159.89999999999995
+          ],
+          "center": [
+            0,
+            0,
+            4.285
+          ],
+          "curve": 0,
+          "outline": false,
+          "cutouts": [
+            {
+              "center_mm": [
+                0,
+                74.85
+              ],
+              "radius_mm": 1.5
+            }
+          ],
+          "create_cutouts": true,
+          "mesh_cutouts": null,
+          "trace_outline": null,
+          "keep_reviewed_corner_shape": null
+        }
+      ],
+      "artifact": {
+        "path": "exports\\pixel-11-pro-xl\\model.glb",
+        "mtime": "2026-10-22T15:33:02.825817",
+        "sha256": "ca400ef1eef9bc38f6cae211c6da56cec10b874c6c070e1e57863f7c477516ef",
+        "antenna_nodes": [],
+        "screens": [
+          {
+            "name": "Device screen",
+            "translation": [
+              0,
+              0.0042849997989833355,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "rotation": null,
+            "primitives": [
+              {
+                "bounds_mm": [
+                  [
+                    -35.9133705496788,
+                    0,
+                    -79.9499973654747
+                  ],
+                  [
+                    35.9133705496788,
+                    0,
+                    79.9499973654747
+                  ]
+                ],
+                "count": 132,
+                "material": "Device screen | replace texture at runtime",
+                "pbr": {
+                  "baseColorFactor": [
+                    0.006000000052154064,
+                    0.00800000037997961,
+                    0.012000000104308128,
+                    1
+                  ],
+                  "metallicFactor": 0
+                },
+                "uv_bounds": [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    1.0,
+                    1.0
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "current_verify": "pass"
+      },
+      "review_status": "reviewed; profile and trace unchanged by this worker",
+      "source_url": null,
+      "profile_sha256_at_finalization": "394431ba1ce02abe077486c4c6f606f70933ff588b1c510173072859b1db03e3"
+    },
+    {
+      "id": "pixel-11-pro",
+      "profile_modified": false,
+      "trace": false,
+      "derived": null,
+      "asset": null,
+      "panels": 0,
+      "screens": [
+        {
+          "object": "Device screen",
+          "resolution": [
+            1280,
+            2856
+          ],
+          "fit": [
+            67.18207282913164,
+            149.89999999999998
+          ],
+          "actual": [
+            67.18207282913164,
+            149.89999999999998
+          ],
+          "center": [
+            0,
+            0,
+            4.235
+          ],
+          "curve": 0,
+          "outline": false,
+          "cutouts": [
+            {
+              "center_mm": [
+                0,
+                69.85
+              ],
+              "radius_mm": 1.5
+            }
+          ],
+          "create_cutouts": true,
+          "mesh_cutouts": null,
+          "trace_outline": null,
+          "keep_reviewed_corner_shape": null
+        }
+      ],
+      "artifact": {
+        "path": "exports\\pixel-11-pro\\model.glb",
+        "mtime": "2026-10-22T15:33:01.816588",
+        "sha256": "a77482ce672d9756c5aebe331b2272ae4e2ea565ddbbb755074309bfe15c547d",
+        "antenna_nodes": [],
+        "screens": [
+          {
+            "name": "Device screen",
+            "translation": [
+              0,
+              0.004234999883919954,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "rotation": null,
+            "primitives": [
+              {
+                "bounds_mm": [
+                  [
+                    -33.59103575348854,
+                    0,
+                    -74.95000213384628
+                  ],
+                  [
+                    33.59103575348854,
+                    0,
+                    74.95000213384628
+                  ]
+                ],
+                "count": 132,
+                "material": "Device screen | replace texture at runtime",
+                "pbr": {
+                  "baseColorFactor": [
+                    0.006000000052154064,
+                    0.00800000037997961,
+                    0.012000000104308128,
+                    1
+                  ],
+                  "metallicFactor": 0
+                },
+                "uv_bounds": [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    1.0,
+                    1.0
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "current_verify": "pass"
+      },
+      "review_status": "reviewed; profile and trace unchanged by this worker",
+      "source_url": null,
+      "profile_sha256_at_finalization": "26415b9ae7ca9b8b20fec04551c87a0bbff8bf3b90f1b86485536bf5ce1ae5c3"
+    },
+    {
+      "id": "pixel-11",
+      "profile_modified": false,
+      "trace": false,
+      "derived": null,
+      "asset": null,
+      "panels": 0,
+      "screens": [
+        {
+          "object": "Device screen",
+          "resolution": [
+            1080,
+            2424
+          ],
+          "fit": [
+            66.47524752475248,
+            149.20000000000002
+          ],
+          "actual": [
+            66.47524752475248,
+            149.20000000000002
+          ],
+          "center": [
+            0,
+            0,
+            4.335
+          ],
+          "curve": 0,
+          "outline": false,
+          "cutouts": [
+            {
+              "center_mm": [
+                0,
+                69.50000000000001
+              ],
+              "radius_mm": 1.5
+            }
+          ],
+          "create_cutouts": true,
+          "mesh_cutouts": null,
+          "trace_outline": null,
+          "keep_reviewed_corner_shape": null
+        }
+      ],
+      "artifact": {
+        "path": "exports\\pixel-11\\model.glb",
+        "mtime": "2026-10-22T15:33:01.584584",
+        "sha256": "7f8960e13ff37fadb31d7c61bdb74035baf0930ca33e1b309d0882ce268a0629",
+        "antenna_nodes": [],
+        "screens": [
+          {
+            "name": "Device screen",
+            "translation": [
+              0,
+              0.004335000179708004,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "rotation": null,
+            "primitives": [
+              {
+                "bounds_mm": [
+                  [
+                    -33.237624913454056,
+                    0,
+                    -74.60000365972519
+                  ],
+                  [
+                    33.237624913454056,
+                    0,
+                    74.60000365972519
+                  ]
+                ],
+                "count": 132,
+                "material": "Device screen | replace texture at runtime",
+                "pbr": {
+                  "baseColorFactor": [
+                    0.006000000052154064,
+                    0.00800000037997961,
+                    0.012000000104308128,
+                    1
+                  ],
+                  "metallicFactor": 0
+                },
+                "uv_bounds": [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    1.0,
+                    1.0
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "current_verify": "pass"
+      },
+      "review_status": "reviewed; profile and trace unchanged by this worker",
+      "source_url": null,
+      "profile_sha256_at_finalization": "49b2a9955c8aaffa5b6070d9355cec106964d7a885e3d22de5e8d600483c34b8"
+    },
+    {
+      "id": "pixel-4-xl",
+      "profile_modified": false,
+      "trace": true,
+      "derived": null,
+      "asset": null,
+      "panels": 0,
+      "screens": [
+        {
+          "object": "Device screen",
+          "resolution": [
+            1440,
+            3040
+          ],
+          "fit": [
+            69.36216216216216,
+            146.43123123123124
+          ],
+          "actual": [
+            69.36216216216216,
+            146.43123123123124
+          ],
+          "center": [
+            0.04816816816816817,
+            -2.3602402402402403,
+            4.135
+          ],
+          "curve": 0,
+          "outline": true,
+          "cutouts": [],
+          "create_cutouts": false,
+          "mesh_cutouts": null,
+          "trace_outline": null,
+          "keep_reviewed_corner_shape": null
+        }
+      ],
+      "oled_outside_glass_area_mm2": 0.0,
+      "min_oled_glass_boundary_mm": 1.939529433158867,
+      "roll_mm": 0.75,
+      "glass_inset_mm": 0.7124999999999999,
+      "max_roll_correspondence_mm": 1.5305266395036106,
+      "ring_start0": [
+        37.52588265863603,
+        1.0597
+      ],
+      "ring_start1": [
+        36.77588265863603,
+        0.8446809639267089
+      ],
+      "ring_hausdorff_error_mm": 0.06935497915781944,
+      "inset_shape_error_mm": 0.09706148447477926,
+      "artifact": {
+        "path": "exports\\pixel-4-xl\\model.glb",
+        "mtime": "2026-10-22T15:33:03.283205",
+        "sha256": "5ff5ed53c554c802b59e097bbd7691e132d74f71cd35b435866613a8119c5b8f",
+        "antenna_nodes": [],
+        "screens": [
+          {
+            "name": "Device screen",
+            "translation": [
+              4.816816726815887e-05,
+              0.004135000053793192,
+              0.0023602403234690428
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "rotation": null,
+            "primitives": [
+              {
+                "bounds_mm": [
+                  [
+                    -34.681081771850586,
+                    0,
+                    -73.21561872959137
+                  ],
+                  [
+                    34.681081771850586,
+                    0,
+                    73.21561872959137
+                  ]
+                ],
+                "count": 400,
+                "material": "Device screen | replace texture at runtime",
+                "pbr": {
+                  "baseColorFactor": [
+                    0.006000000052154064,
+                    0.00800000037997961,
+                    0.012000000104308128,
+                    1
+                  ],
+                  "metallicFactor": 0
+                },
+                "uv_bounds": [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    1.0,
+                    1.0
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "current_verify": "AssertionError: ('pixel-4-xl', 'enclosure differs from official contour (mm)', 0.2812281937178432)"
+      },
+      "mask_measurement": {
+        "path": "[local reference path omitted]",
+        "resolution": [
+          1440,
+          3040
+        ],
+        "cutouts": [],
+        "trace_has_cutout_field": false
+      },
+      "review_status": "reviewed; profile and trace unchanged by this worker",
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_4_xl/",
+      "profile_sha256_at_finalization": "252bc6a348340dc852af361a896ca45501798019fef3d480d14fc27b74493fae",
+      "trace_sha256_at_finalization": "2e5687def9fb19b977980d1ebe2d3f7bea3d48cc39dcedf50395dec2299a81ba"
+    },
+    {
+      "id": "pixel-4",
+      "profile_modified": false,
+      "trace": true,
+      "derived": null,
+      "asset": null,
+      "panels": 0,
+      "screens": [
+        {
+          "object": "Device screen",
+          "resolution": [
+            1080,
+            2280
+          ],
+          "fit": [
+            63.64903846153846,
+            134.3701923076923
+          ],
+          "actual": [
+            63.64903846153845,
+            134.3701923076923
+          ],
+          "center": [
+            0.05893429487179487,
+            -2.1805689102564103,
+            4.135
+          ],
+          "curve": 0,
+          "outline": true,
+          "cutouts": [],
+          "create_cutouts": false,
+          "mesh_cutouts": null,
+          "trace_outline": null,
+          "keep_reviewed_corner_shape": null
+        }
+      ],
+      "oled_outside_glass_area_mm2": 0.0,
+      "min_oled_glass_boundary_mm": 1.6568217986116807,
+      "roll_mm": 0.75,
+      "glass_inset_mm": 0.7124999999999999,
+      "max_roll_correspondence_mm": 1.510093136524749,
+      "ring_start0": [
+        34.37061503416856,
+        0.9429
+      ],
+      "ring_start1": [
+        33.62061503416856,
+        0.7107453869163669
+      ],
+      "ring_hausdorff_error_mm": 0.060772635115763154,
+      "inset_shape_error_mm": 0.08600876088183446,
+      "artifact": {
+        "path": "exports\\pixel-4\\model.glb",
+        "mtime": "2026-10-22T15:33:03.036483",
+        "sha256": "f8c23486e1afc13c6c6b42da718972b4edf6aada8e08b64432bb3f7c4fc49249",
+        "antenna_nodes": [],
+        "screens": [
+          {
+            "name": "Device screen",
+            "translation": [
+              5.893429624848068e-05,
+              0.004135000053793192,
+              0.0021805688738822937
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "rotation": null,
+            "primitives": [
+              {
+                "bounds_mm": [
+                  [
+                    -31.824517995119095,
+                    0,
+                    -67.18509644269943
+                  ],
+                  [
+                    31.824517995119095,
+                    0,
+                    67.18509644269943
+                  ]
+                ],
+                "count": 400,
+                "material": "Device screen | replace texture at runtime",
+                "pbr": {
+                  "baseColorFactor": [
+                    0.006000000052154064,
+                    0.00800000037997961,
+                    0.012000000104308128,
+                    1
+                  ],
+                  "metallicFactor": 0
+                },
+                "uv_bounds": [
+                  [
+                    -1.1102230246251565e-16,
+                    0.0
+                  ],
+                  [
+                    1.0,
+                    1.0
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "current_verify": "AssertionError: ('pixel-4', 'enclosure differs from official contour (mm)', 0.27407741008698144)"
+      },
+      "mask_measurement": {
+        "path": "[local reference path omitted]",
+        "resolution": [
+          1080,
+          2280
+        ],
+        "cutouts": [],
+        "trace_has_cutout_field": false
+      },
+      "review_status": "reviewed; profile and trace unchanged by this worker",
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_4/",
+      "profile_sha256_at_finalization": "eead3b69ff46d6d400d4a3d6f284cfb5a84e3011c6020c42e79513c6a2e0ba4b",
+      "trace_sha256_at_finalization": "ccaa9d500470eefc0c591aa26f85cb4983604cf534299b162c0bf4feeca93bda"
+    },
+    {
+      "id": "pixel-4a-5g",
+      "profile_modified": false,
+      "trace": false,
+      "derived": null,
+      "asset": null,
+      "panels": 0,
+      "screens": [
+        {
+          "object": "Device screen",
+          "resolution": [
+            1080,
+            2340
+          ],
+          "fit": [
+            65.99328178667591,
+            142.98544387113114
+          ],
+          "actual": [
+            65.99328178667591,
+            142.98544387113114
+          ],
+          "center": [
+            0,
+            0,
+            4.135
+          ],
+          "curve": 0,
+          "outline": false,
+          "cutouts": [
+            {
+              "center_mm": [
+                -27.996640893337954,
+                66.49272193556557
+              ],
+              "radius_mm": 1.9
+            }
+          ],
+          "create_cutouts": true,
+          "mesh_cutouts": null,
+          "trace_outline": null,
+          "keep_reviewed_corner_shape": null
+        }
+      ],
+      "artifact": {
+        "path": "exports\\pixel-4a-5g\\model.glb",
+        "mtime": "2026-10-22T15:33:03.700963",
+        "sha256": "90e5f5a9c4aea48bf62f57ac594be0e0bf0cf493521f4c3d1bf27cb1b1566a92",
+        "antenna_nodes": [],
+        "screens": [
+          {
+            "name": "Device screen",
+            "translation": [
+              0,
+              0.004135000053793192,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "rotation": null,
+            "primitives": [
+              {
+                "bounds_mm": [
+                  [
+                    -32.99663960933685,
+                    0,
+                    -71.49272412061691
+                  ],
+                  [
+                    32.99663960933685,
+                    0,
+                    71.49272412061691
+                  ]
+                ],
+                "count": 132,
+                "material": "Device screen | replace texture at runtime",
+                "pbr": {
+                  "baseColorFactor": [
+                    0.006000000052154064,
+                    0.00800000037997961,
+                    0.012000000104308128,
+                    1
+                  ],
+                  "metallicFactor": 0
+                },
+                "uv_bounds": [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    1.0,
+                    1.0
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "current_verify": "pass"
+      },
+      "review_status": "reviewed; profile and trace unchanged by this worker",
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_4a_5g/",
+      "profile_sha256_at_finalization": "b16c44d548ac13b114556e2fa7e13a3a2d847eb5fc9a01f6a1c106a75b7fbe57"
+    },
+    {
+      "id": "pixel-4a",
+      "profile_modified": false,
+      "trace": true,
+      "derived": null,
+      "asset": null,
+      "panels": 0,
+      "screens": [
+        {
+          "object": "Device screen",
+          "resolution": [
+            1080,
+            2340
+          ],
+          "fit": [
+            62.53317249698432,
+            135.48854041013269
+          ],
+          "actual": [
+            62.53317249698432,
+            135.48854041013269
+          ],
+          "center": [
+            0.20265379975874548,
+            0.43425814234016885,
+            4.135
+          ],
+          "curve": 0,
+          "outline": true,
+          "cutouts": [
+            {
+              "center_mm": [
+                -26.27,
+                62.74
+              ],
+              "radius_mm": 1.9
+            }
+          ],
+          "create_cutouts": true,
+          "mesh_cutouts": null,
+          "trace_outline": null,
+          "keep_reviewed_corner_shape": null,
+          "mask_cutout_comparison": [
+            {
+              "center_error_mm": 1.0946809361803194,
+              "radius_error_mm": -0.2700949394255354
+            }
+          ]
+        }
+      ],
+      "oled_outside_glass_area_mm2": 0.0,
+      "min_oled_glass_boundary_mm": 2.25167268996373,
+      "roll_mm": 1.0,
+      "glass_inset_mm": 0.95,
+      "max_roll_correspondence_mm": 1.8162945366438017,
+      "ring_start0": [
+        34.67091273821464,
+        0.9554
+      ],
+      "ring_start1": [
+        33.67091273821464,
+        0.9554
+      ],
+      "ring_hausdorff_error_mm": 0.05999577122824101,
+      "inset_shape_error_mm": 0.05844919461024622,
+      "artifact": {
+        "path": "exports\\pixel-4a\\model.glb",
+        "mtime": "2026-10-22T15:33:03.452716",
+        "sha256": "23fbea22fa172631c57733347d461ed4b41d7a4f7b9cadb033b43769595eed4e",
+        "antenna_nodes": [],
+        "screens": [
+          {
+            "name": "Device screen",
+            "translation": [
+              0.00020265379862394184,
+              0.004135000053793192,
+              -0.00043425813782960176
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "rotation": null,
+            "primitives": [
+              {
+                "bounds_mm": [
+                  [
+                    -31.266584992408752,
+                    0,
+                    -67.74426996707916
+                  ],
+                  [
+                    31.266584992408752,
+                    0,
+                    67.74426996707916
+                  ]
+                ],
+                "count": 400,
+                "material": "Device screen | replace texture at runtime",
+                "pbr": {
+                  "baseColorFactor": [
+                    0.006000000052154064,
+                    0.00800000037997961,
+                    0.012000000104308128,
+                    1
+                  ],
+                  "metallicFactor": 0
+                },
+                "uv_bounds": [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    1.0,
+                    1.0
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "current_verify": "AssertionError: ('pixel-4a', 'enclosure differs from official contour (mm)', 0.3843259904297676)"
+      },
+      "mask_measurement": {
+        "path": "[local reference path omitted]",
+        "resolution": [
+          1080,
+          2340
+        ],
+        "cutouts": [
+          {
+            "bounds_px": [
+              35,
+              36,
+              110,
+              111
+            ],
+            "center_px": [
+              72.5,
+              73.5
+            ],
+            "center_mm": [
+              -27.068757539203858,
+              63.48854041013269
+            ],
+            "radius_area_mm": 2.1700949394255353,
+            "radii_bbox_mm": [
+              2.1712907117008444,
+              2.1712907117008444
+            ],
+            "center_uv": [
+              0.06712962962962964,
+              0.9685897435897436
+            ]
+          }
+        ],
+        "trace_has_cutout_field": false
+      },
+      "review_status": "reviewed; profile and trace unchanged by this worker",
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_4a/",
+      "profile_sha256_at_finalization": "d79fc67cdeb7ba081240ce54530bac7a5cfe6c2064acba7e945ac456e75afe23",
+      "trace_sha256_at_finalization": "faf2992c70ed08757a667866dfe661503d1f233a7062e340e21650b8eff0fc8e"
+    },
+    {
+      "id": "pixel-5",
+      "profile_modified": false,
+      "trace": true,
+      "derived": null,
+      "asset": null,
+      "panels": 0,
+      "screens": [
+        {
+          "object": "Device screen",
+          "resolution": [
+            1080,
+            2340
+          ],
+          "fit": [
+            63.16734033953112,
+            136.86257073565076
+          ],
+          "actual": [
+            63.16734033953112,
+            136.86257073565076
+          ],
+          "center": [
+            -0.17546483427647533,
+            0.11697655618431689,
+            4.035
+          ],
+          "curve": 0,
+          "outline": true,
+          "cutouts": [
+            {
+              "center_mm": [
+                -26.58,
+                63.43
+              ],
+              "radius_mm": 1.9
+            }
+          ],
+          "create_cutouts": true,
+          "mesh_cutouts": null,
+          "trace_outline": null,
+          "keep_reviewed_corner_shape": null,
+          "mask_cutout_comparison": [
+            {
+              "center_error_mm": 1.2080283537383942,
+              "radius_error_mm": -0.29210252949180937
+            }
+          ]
+        }
+      ],
+      "oled_outside_glass_area_mm2": 0.0,
+      "min_oled_glass_boundary_mm": 2.5325373378648814,
+      "roll_mm": 0.95,
+      "glass_inset_mm": 0.9025,
+      "max_roll_correspondence_mm": 1.9694212512963314,
+      "ring_start0": [
+        35.2,
+        -2.2668574446260004
+      ],
+      "ring_start1": [
+        34.25,
+        -1.9565945710026416
+      ],
+      "ring_hausdorff_error_mm": 0.06635681605546849,
+      "inset_shape_error_mm": 0.06296867159790588,
+      "artifact": {
+        "path": "exports\\pixel-5\\model.glb",
+        "mtime": "2026-10-22T15:33:04.250121",
+        "sha256": "e88e0b4965ed65e453d9549bdd4736eba46329ef8adefcfc0c5ae6b5d7571938",
+        "antenna_nodes": [],
+        "screens": [
+          {
+            "name": "Device screen",
+            "translation": [
+              -0.0001754648401401937,
+              0.0040350002236664295,
+              -0.00011697655281750485
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "rotation": null,
+            "primitives": [
+              {
+                "bounds_mm": [
+                  [
+                    -31.583670526742935,
+                    0,
+                    -68.43128800392151
+                  ],
+                  [
+                    31.583670526742935,
+                    0,
+                    68.43128800392151
+                  ]
+                ],
+                "count": 400,
+                "material": "Device screen | replace texture at runtime",
+                "pbr": {
+                  "baseColorFactor": [
+                    0.006000000052154064,
+                    0.00800000037997961,
+                    0.012000000104308128,
+                    1
+                  ],
+                  "metallicFactor": 0
+                },
+                "uv_bounds": [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    1.0,
+                    1.0
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "current_verify": "AssertionError: ('pixel-5', 'enclosure differs from official contour (mm)', 0.13758943957766295)"
+      },
+      "mask_measurement": {
+        "path": "[local reference path omitted]",
+        "resolution": [
+          1080,
+          2340
+        ],
+        "cutouts": [
+          {
+            "bounds_px": [
+              35,
+              32,
+              110,
+              107
+            ],
+            "center_px": [
+              72.5,
+              69.5
+            ],
+            "center_mm": [
+              -27.343270008084072,
+              64.36635004042037
+            ],
+            "radius_area_mm": 2.1921025294918093,
+            "radii_bbox_mm": [
+              2.1933104284559417,
+              2.1933104284559417
+            ],
+            "center_uv": [
+              0.06712962962962964,
+              0.9702991452991453
+            ]
+          }
+        ],
+        "trace_has_cutout_field": false
+      },
+      "review_status": "reviewed; profile and trace unchanged by this worker",
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_5/",
+      "profile_sha256_at_finalization": "54241285e307b01985b2fa560f3a469bafe69bea9f721d1800aff4f3886e2c81",
+      "trace_sha256_at_finalization": "116f3c5d9c8088b09285c316d7ec93f4ca6444921b1eb14f7953c9090094017c"
+    },
+    {
+      "id": "pixel-5a",
+      "profile_modified": false,
+      "trace": false,
+      "derived": null,
+      "asset": null,
+      "panels": 0,
+      "screens": [
+        {
+          "object": "Device screen",
+          "resolution": [
+            1080,
+            2400
+          ],
+          "fit": [
+            66.0834861783203,
+            146.85219150737845
+          ],
+          "actual": [
+            66.0834861783203,
+            146.85219150737845
+          ],
+          "center": [
+            0,
+            0,
+            4.4350000000000005
+          ],
+          "curve": 0,
+          "outline": false,
+          "cutouts": [
+            {
+              "center_mm": [
+                -28.04174308916015,
+                68.42609575368922
+              ],
+              "radius_mm": 1.9
+            }
+          ],
+          "create_cutouts": true,
+          "mesh_cutouts": null,
+          "trace_outline": null,
+          "keep_reviewed_corner_shape": null
+        }
+      ],
+      "artifact": {
+        "path": "exports\\pixel-5a\\model.glb",
+        "mtime": "2026-10-22T15:33:04.612091",
+        "sha256": "9595fc546446bd56d9656f30260d42593f78f2ed611f03e0167c83a340aee27d",
+        "antenna_nodes": [],
+        "screens": [
+          {
+            "name": "Device screen",
+            "translation": [
+              0,
+              0.004435000009834766,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "rotation": null,
+            "primitives": [
+              {
+                "bounds_mm": [
+                  [
+                    -33.04174169898033,
+                    0,
+                    -73.42609763145447
+                  ],
+                  [
+                    33.04174169898033,
+                    0,
+                    73.42609763145447
+                  ]
+                ],
+                "count": 132,
+                "material": "Device screen | replace texture at runtime",
+                "pbr": {
+                  "baseColorFactor": [
+                    0.006000000052154064,
+                    0.00800000037997961,
+                    0.012000000104308128,
+                    1
+                  ],
+                  "metallicFactor": 0
+                },
+                "uv_bounds": [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    1.0,
+                    1.0
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "current_verify": "pass"
+      },
+      "review_status": "reviewed; profile and trace unchanged by this worker",
+      "source_url": null,
+      "profile_sha256_at_finalization": "8f5fdecdb090f3275be4f9b2ebb8cb4a9c0a397b933f40f3123c70e3b363a25e"
+    },
+    {
+      "id": "pixel-6-pro",
+      "profile_modified": false,
+      "trace": true,
+      "derived": null,
+      "asset": null,
+      "panels": 0,
+      "screens": [
+        {
+          "object": "Device screen",
+          "resolution": [
+            1440,
+            3120
+          ],
+          "fit": [
+            71.75919732441473,
+            155.47826086956522
+          ],
+          "actual": [
+            71.75919732441471,
+            155.47826086956522
+          ],
+          "center": [
+            0.049832775919732446,
+            0.6229096989966556,
+            4.485
+          ],
+          "curve": 1.0,
+          "outline": true,
+          "cutouts": [
+            {
+              "center_mm": [
+                0.024916387959866223,
+                74.12625418060202
+              ],
+              "radius_mm": 2.1384141789377504
+            }
+          ],
+          "create_cutouts": true,
+          "mesh_cutouts": null,
+          "trace_outline": null,
+          "keep_reviewed_corner_shape": null,
+          "mask_cutout_comparison": [
+            {
+              "center_error_mm": 0.0,
+              "radius_error_mm": 0.0
+            }
+          ]
+        }
+      ],
+      "oled_outside_glass_area_mm2": 0.0,
+      "min_oled_glass_boundary_mm": 0.37571490662072904,
+      "roll_mm": 1.6,
+      "glass_inset_mm": 1.52,
+      "max_roll_correspondence_mm": 2.5811524995093555,
+      "ring_start0": [
+        37.95,
+        16.933222527400442
+      ],
+      "ring_start1": [
+        36.35,
+        16.388933876991427
+      ],
+      "ring_hausdorff_error_mm": 0.07533023755315298,
+      "inset_shape_error_mm": 0.09172325191329873,
+      "artifact": {
+        "path": "exports\\pixel-6-pro\\model.glb",
+        "mtime": "2026-10-22T15:33:05.195066",
+        "sha256": "a1e7e3834822126f40e56017a0698e33cf11c2a02075feb1581283c4afbf2544",
+        "antenna_nodes": [],
+        "screens": [
+          {
+            "name": "Device screen",
+            "translation": [
+              4.983277540304698e-05,
+              0.004484999924898148,
+              -0.0006229096907190979
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "rotation": null,
+            "primitives": [
+              {
+                "bounds_mm": [
+                  [
+                    -35.87959706783295,
+                    -1.0000000474974513,
+                    -77.73912698030472
+                  ],
+                  [
+                    35.87959706783295,
+                    0,
+                    77.73912698030472
+                  ]
+                ],
+                "count": 8729,
+                "material": "Device screen | replace texture at runtime",
+                "pbr": {
+                  "baseColorFactor": [
+                    0.006000000052154064,
+                    0.00800000037997961,
+                    0.012000000104308128,
+                    1
+                  ],
+                  "metallicFactor": 0
+                },
+                "uv_bounds": [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    1.0,
+                    1.0
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "front_parts": [
+          {
+            "name": "Aluminum enclosure",
+            "translation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "rotation": null,
+            "primitives": [
+              {
+                "bounds_mm": [
+                  [
+                    -37.950001657009125,
+                    -4.424999933689833,
+                    -81.95000141859055
+                  ],
+                  [
+                    37.950001657009125,
+                    4.424999933689833,
+                    81.95000141859055
+                  ]
+                ],
+                "count": 4752,
+                "material": "rail",
+                "pbr": {
+                  "baseColorFactor": [
+                    0.11007871478796005,
+                    0.11824958026409149,
+                    0.12503865361213684,
+                    1
+                  ],
+                  "roughnessFactor": 0.18000000715255737
+                }
+              }
+            ]
+          },
+          {
+            "name": "Device screen | selfie aperture 0",
+            "translation": [
+              4.983277540304698e-05,
+              0.004509999882429838,
+              -0.07436203956604004
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "rotation": null,
+            "primitives": [
+              {
+                "bounds_mm": [
+                  [
+                    -1.500000013038516,
+                    -0.01249999968422344,
+                    -1.500000013038516
+                  ],
+                  [
+                    1.500000013038516,
+                    0.01249999968422344,
+                    1.500000013038516
+                  ]
+                ],
+                "count": 258,
+                "material": "black",
+                "pbr": {
+                  "baseColorFactor": [
+                    0.0005417956854216754,
+                    0.0006965944194234908,
+                    0.0009287925786338747,
+                    1
+                  ],
+                  "metallicFactor": 0,
+                  "roughnessFactor": 0.5
+                },
+                "uv_bounds": [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    1.0,
+                    0.9900000095367432
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Front black glass",
+            "translation": [
+              0,
+              0.00343999988399446,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "rotation": null,
+            "primitives": [
+              {
+                "bounds_mm": [
+                  [
+                    -36.4300012588501,
+                    -1.868083723820746,
+                    -80.43000102043152
+                  ],
+                  [
+                    36.4300012588501,
+                    1.0100000072270632,
+                    80.43000102043152
+                  ]
+                ],
+                "count": 2640,
+                "material": "black",
+                "pbr": {
+                  "baseColorFactor": [
+                    0.0005417956854216754,
+                    0.0006965944194234908,
+                    0.0009287925786338747,
+                    1
+                  ],
+                  "metallicFactor": 0,
+                  "roughnessFactor": 0.5
+                }
+              }
+            ]
+          }
+        ],
+        "current_verify": "AssertionError: ('pixel-6-pro', 'enclosure differs from official contour (mm)', 0.14070913122008236)"
+      },
+      "mask_measurement": {
+        "path": "[local reference path omitted]",
+        "resolution": [
+          1440,
+          3120
+        ],
+        "cutouts": [
+          {
+            "bounds_px": [
+              678,
+              30,
+              763,
+              115
+            ],
+            "center_px": [
+              720.5,
+              72.5
+            ],
+            "center_mm": [
+              0.024916387959866223,
+              74.12625418060202
+            ],
+            "radius_area_mm": 2.1384141789377504,
+            "radii_bbox_mm": [
+              2.117892976588629,
+              2.117892976588629
+            ],
+            "center_uv": [
+              0.5003472222222223,
+              0.9767628205128205
+            ]
+          }
+        ],
+        "trace_has_cutout_field": true
+      },
+      "review_status": "reviewed; profile and trace unchanged by this worker",
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_6_pro/",
+      "profile_sha256_at_finalization": "f335cd33501a8c199173b336693775c31412e5fed120cbf7760bf26ae5dade40",
+      "trace_sha256_at_finalization": "7cc0d156f350198268b2337d01f5ad76b04f8b515e0fbbfafa4acda98733378a",
+      "curved_alignment": {
+        "screen_center_x_mm": 0.049832775919732446,
+        "max_analytic_glass_oled_drop_difference_mm": 0.0492119495307658,
+        "note": "Build line223 uses parent-space x; OLED line209 uses screen-local x."
+      }
+    },
+    {
+      "id": "pixel-6",
+      "profile_modified": false,
+      "trace": true,
+      "derived": null,
+      "asset": null,
+      "panels": 0,
+      "screens": [
+        {
+          "object": "Device screen",
+          "resolution": [
+            1080,
+            2400
+          ],
+          "fit": [
+            67.09283196239717,
+            149.0951821386604
+          ],
+          "actual": [
+            67.09283196239717,
+            149.09518213866036
+          ],
+          "center": [
+            -0.09318448883666275,
+            0.4659224441833137,
+            4.485
+          ],
+          "curve": 0,
+          "outline": true,
+          "cutouts": [
+            {
+              "center_mm": [
+                0.03106149627888758,
+                70.66490403446925
+              ],
+              "radius_mm": 1.9187606497435186
+            }
+          ],
+          "create_cutouts": true,
+          "mesh_cutouts": null,
+          "trace_outline": null,
+          "keep_reviewed_corner_shape": null,
+          "mask_cutout_comparison": [
+            {
+              "center_error_mm": 0.0,
+              "radius_error_mm": 0.0
+            }
+          ]
+        }
+      ],
+      "oled_outside_glass_area_mm2": 0.0,
+      "min_oled_glass_boundary_mm": 2.8103995299647475,
+      "roll_mm": 1.0,
+      "glass_inset_mm": 0.95,
+      "max_roll_correspondence_mm": 1.7268466136647964,
+      "ring_start0": [
+        37.36887253458935,
+        1.2581967207945595
+      ],
+      "ring_start1": [
+        36.36887253458935,
+        1.2581967207945595
+      ],
+      "ring_hausdorff_error_mm": 0.08860306962424512,
+      "inset_shape_error_mm": 0.08278179060136373,
+      "artifact": {
+        "path": "exports\\pixel-6\\model.glb",
+        "mtime": "2026-10-22T15:33:04.867965",
+        "sha256": "0b52b85953a72707490cbcd7f3e53f49ad8ccf4eae178024c99baa2bbfdaa514",
+        "antenna_nodes": [],
+        "screens": [
+          {
+            "name": "Device screen",
+            "translation": [
+              -9.318449156126007e-05,
+              0.004484999924898148,
+              -0.00046592243597842753
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "rotation": null,
+            "primitives": [
+              {
+                "bounds_mm": [
+                  [
+                    -33.546414226293564,
+                    0,
+                    -74.54758882522583
+                  ],
+                  [
+                    33.546414226293564,
+                    0,
+                    74.54758882522583
+                  ]
+                ],
+                "count": 400,
+                "material": "Device screen | replace texture at runtime",
+                "pbr": {
+                  "baseColorFactor": [
+                    0.006000000052154064,
+                    0.00800000037997961,
+                    0.012000000104308128,
+                    1
+                  ],
+                  "metallicFactor": 0
+                },
+                "uv_bounds": [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    1.0,
+                    1.0
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "current_verify": "AssertionError: ('pixel-6', 'enclosure differs from official contour (mm)', 0.39054146471285234)"
+      },
+      "mask_measurement": {
+        "path": "[local reference path omitted]",
+        "resolution": [
+          1080,
+          2400
+        ],
+        "cutouts": [
+          {
+            "bounds_px": [
+              510,
+              32,
+              571,
+              93
+            ],
+            "center_px": [
+              540.5,
+              62.5
+            ],
+            "center_mm": [
+              0.03106149627888758,
+              70.66490403446925
+            ],
+            "radius_area_mm": 1.9187606497435186,
+            "radii_bbox_mm": [
+              1.8947512730121425,
+              1.8947512730121425
+            ],
+            "center_uv": [
+              0.500462962962963,
+              0.9739583333333334
+            ]
+          }
+        ],
+        "trace_has_cutout_field": true
+      },
+      "review_status": "reviewed; profile and trace unchanged by this worker",
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_6/",
+      "profile_sha256_at_finalization": "6f2a1dbad6f5869ffe3e647895be8490ce7af7bb1837b753a53f329769e50c0c",
+      "trace_sha256_at_finalization": "206c3184345fd309d9d5ef8f9200f99382c2a5e62a76b55c73a074840be2d9e8"
+    },
+    {
+      "id": "pixel-6a",
+      "profile_modified": false,
+      "trace": true,
+      "derived": null,
+      "asset": null,
+      "panels": 0,
+      "screens": [
+        {
+          "object": "Device screen",
+          "resolution": [
+            1080,
+            2400
+          ],
+          "fit": [
+            64.33502935420744,
+            142.96673189823872
+          ],
+          "actual": [
+            64.33502935420742,
+            142.96673189823872
+          ],
+          "center": [
+            -0.23827788649706455,
+            0.5063405088062621,
+            4.485
+          ],
+          "curve": 0,
+          "outline": true,
+          "cutouts": [
+            {
+              "center_mm": [
+                0,
+                67.48336594911936
+              ],
+              "radius_mm": 1.5
+            }
+          ],
+          "create_cutouts": true,
+          "mesh_cutouts": null,
+          "trace_outline": null,
+          "keep_reviewed_corner_shape": null,
+          "mask_cutout_comparison": [
+            {
+              "center_error_mm": 0.09071447938240769,
+              "radius_error_mm": -0.4088903968883566
+            }
+          ]
+        }
+      ],
+      "oled_outside_glass_area_mm2": 0.0,
+      "min_oled_glass_boundary_mm": 2.639207436399218,
+      "roll_mm": 0.9,
+      "glass_inset_mm": 0.855,
+      "max_roll_correspondence_mm": 1.5636944045669887,
+      "ring_start0": [
+        35.870117844882735,
+        0.7894545712629701
+      ],
+      "ring_start1": [
+        34.970117844882736,
+        0.7894545712629701
+      ],
+      "ring_hausdorff_error_mm": 0.08337645186851854,
+      "inset_shape_error_mm": 0.10567763713055082,
+      "artifact": {
+        "path": "exports\\pixel-6a\\model.glb",
+        "mtime": "2026-10-22T15:33:05.502076",
+        "sha256": "0fdc9ea5bd2da5993ae5c57dcd0b0da966521fd8e7ae64d8d1f837abaa8f9dea",
+        "antenna_nodes": [],
+        "screens": [
+          {
+            "name": "Device screen",
+            "translation": [
+              -0.00023827789118513465,
+              0.004484999924898148,
+              -0.0005063405260443687
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "rotation": null,
+            "primitives": [
+              {
+                "bounds_mm": [
+                  [
+                    -32.16751292347908,
+                    0,
+                    -71.48336619138718
+                  ],
+                  [
+                    32.16751292347908,
+                    0,
+                    71.48336619138718
+                  ]
+                ],
+                "count": 400,
+                "material": "Device screen | replace texture at runtime",
+                "pbr": {
+                  "baseColorFactor": [
+                    0.006000000052154064,
+                    0.00800000037997961,
+                    0.012000000104308128,
+                    1
+                  ],
+                  "metallicFactor": 0
+                },
+                "uv_bounds": [
+                  [
+                    -1.1102230246251565e-16,
+                    0.0
+                  ],
+                  [
+                    1.0,
+                    1.0
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "current_verify": "AssertionError: ('pixel-6a', 'enclosure differs from official contour (mm)', 0.6793489510069757)"
+      },
+      "mask_measurement": {
+        "path": "[local reference path omitted]",
+        "resolution": [
+          1080,
+          2400
+        ],
+        "cutouts": [
+          {
+            "bounds_px": [
+              509,
+              34,
+              573,
+              98
+            ],
+            "center_px": [
+              541.0,
+              66.0
+            ],
+            "center_mm": [
+              0.05956947162426614,
+              67.5517808219178
+            ],
+            "radius_area_mm": 1.9088903968883566,
+            "radii_bbox_mm": [
+              1.9062230919765164,
+              1.9062230919765164
+            ],
+            "center_uv": [
+              0.5009259259259259,
+              0.9725
+            ]
+          }
+        ],
+        "trace_has_cutout_field": false
+      },
+      "review_status": "reviewed; profile and trace unchanged by this worker",
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_6a/",
+      "profile_sha256_at_finalization": "0a43d951b314652809010cf2221c93b3a36ae4f1e6e106f4ded71c513ea0367f",
+      "trace_sha256_at_finalization": "a5b620ce937e6bbb6cd54b2de680a28e8e6189e36df9784a0405b0c6c5b8b0af"
+    },
+    {
+      "id": "pixel-7-pro",
+      "profile_modified": false,
+      "trace": true,
+      "derived": null,
+      "asset": null,
+      "panels": 0,
+      "screens": [
+        {
+          "object": "Device screen",
+          "resolution": [
+            1440,
+            3120
+          ],
+          "fit": [
+            71.75772407464056,
+            155.4750688283879
+          ],
+          "actual": [
+            71.75772407464056,
+            155.4750688283879
+          ],
+          "center": [
+            0.0,
+            0.4734016518813093,
+            4.485
+          ],
+          "curve": 1.0,
+          "outline": true,
+          "cutouts": [
+            {
+              "center_mm": [
+                0,
+                73.76132190942472
+              ],
+              "radius_mm": 1.5
+            }
+          ],
+          "create_cutouts": true,
+          "mesh_cutouts": null,
+          "trace_outline": null,
+          "keep_reviewed_corner_shape": null,
+          "mask_cutout_comparison": [
+            {
+              "center_error_mm": 0.33849454820757785,
+              "radius_error_mm": -0.5429050813069374
+            }
+          ]
+        }
+      ],
+      "oled_outside_glass_area_mm2": 0.0,
+      "min_oled_glass_boundary_mm": 0.8409708928181594,
+      "roll_mm": 1.6,
+      "glass_inset_mm": 1.52,
+      "max_roll_correspondence_mm": 2.584184944050708,
+      "ring_start0": [
+        38.3,
+        8.2721
+      ],
+      "ring_start1": [
+        36.699999999999996,
+        8.020147446050638
+      ],
+      "ring_hausdorff_error_mm": 0.06847972290061914,
+      "inset_shape_error_mm": 0.08258795390255055,
+      "artifact": {
+        "path": "exports\\pixel-7-pro\\model.glb",
+        "mtime": "2026-10-22T15:33:06.057995",
+        "sha256": "160e1369fea4cf43cebe1902f121e11ef20c1145559e2213b238c186da7360c3",
+        "antenna_nodes": [],
+        "screens": [
+          {
+            "name": "Device screen",
+            "translation": [
+              0,
+              0.004484999924898148,
+              -0.0004734016547445208
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "rotation": null,
+            "primitives": [
+              {
+                "bounds_mm": [
+                  [
+                    -35.87886318564415,
+                    -1.0000000474974513,
+                    -77.73753255605698
+                  ],
+                  [
+                    35.87886318564415,
+                    0,
+                    77.73753255605698
+                  ]
+                ],
+                "count": 8693,
+                "material": "Device screen | replace texture at runtime",
+                "pbr": {
+                  "baseColorFactor": [
+                    0.006000000052154064,
+                    0.00800000037997961,
+                    0.012000000104308128,
+                    1
+                  ],
+                  "metallicFactor": 0
+                },
+                "uv_bounds": [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    1.0,
+                    1.0
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "front_parts": [
+          {
+            "name": "Aluminum enclosure",
+            "translation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "rotation": null,
+            "primitives": [
+              {
+                "bounds_mm": [
+                  [
+                    -38.30000013113022,
+                    -4.424999933689833,
+                    -81.45000040531158
+                  ],
+                  [
+                    38.30000013113022,
+                    4.424999933689833,
+                    81.45000040531158
+                  ]
+                ],
+                "count": 4752,
+                "material": "rail",
+                "pbr": {
+                  "baseColorFactor": [
+                    0.0889815241098404,
+                    0.09920014441013336,
+                    0.10378158092498779,
+                    1
+                  ],
+                  "roughnessFactor": 0.18000000715255737
+                }
+              }
+            ]
+          },
+          {
+            "name": "Device screen | selfie aperture 0",
+            "translation": [
+              0,
+              0.004509999882429838,
+              -0.0742347240447998
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "rotation": null,
+            "primitives": [
+              {
+                "bounds_mm": [
+                  [
+                    -1.500000013038516,
+                    -0.01249999968422344,
+                    -1.500000013038516
+                  ],
+                  [
+                    1.500000013038516,
+                    0.01249999968422344,
+                    1.500000013038516
+                  ]
+                ],
+                "count": 258,
+                "material": "black",
+                "pbr": {
+                  "baseColorFactor": [
+                    0.0005417956854216754,
+                    0.0006965944194234908,
+                    0.0009287925786338747,
+                    1
+                  ],
+                  "metallicFactor": 0,
+                  "roughnessFactor": 0.5
+                },
+                "uv_bounds": [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    1.0,
+                    0.9900000095367432
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Front black glass",
+            "translation": [
+              0,
+              0.00343999988399446,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "rotation": null,
+            "primitives": [
+              {
+                "bounds_mm": [
+                  [
+                    -36.77999973297119,
+                    -1.9907853566110134,
+                    -79.93000000715256
+                  ],
+                  [
+                    36.77999973297119,
+                    1.0100000072270632,
+                    79.93000000715256
+                  ]
+                ],
+                "count": 2640,
+                "material": "black",
+                "pbr": {
+                  "baseColorFactor": [
+                    0.0005417956854216754,
+                    0.0006965944194234908,
+                    0.0009287925786338747,
+                    1
+                  ],
+                  "metallicFactor": 0,
+                  "roughnessFactor": 0.5
+                }
+              }
+            ]
+          }
+        ],
+        "current_verify": "AssertionError: ('pixel-7-pro', 'enclosure differs from official contour (mm)', 0.11316690033988401)"
+      },
+      "mask_measurement": {
+        "path": "[local reference path omitted]",
+        "resolution": [
+          1440,
+          3120
+        ],
+        "cutouts": [
+          {
+            "bounds_px": [
+              679,
+              32,
+              761,
+              114
+            ],
+            "center_px": [
+              720.0,
+              73.0
+            ],
+            "center_mm": [
+              0.0,
+              74.0998164576323
+            ],
+            "radius_area_mm": 2.0429050813069374,
+            "radii_bbox_mm": [
+              2.0431018660140716,
+              2.0431018660140716
+            ],
+            "center_uv": [
+              0.5,
+              0.9766025641025641
+            ]
+          }
+        ],
+        "trace_has_cutout_field": false
+      },
+      "review_status": "reviewed; profile and trace unchanged by this worker",
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_7_pro/",
+      "profile_sha256_at_finalization": "9ce8e3b0e65ec6e31b24990a0ce5fbb3e1c46bddab65e47ace751c5e99f710cf",
+      "trace_sha256_at_finalization": "4e858360509daf392365d401a6cf0d35c36d305fb44b58386dd9bdd025333de9"
+    },
+    {
+      "id": "pixel-7",
+      "profile_modified": false,
+      "trace": true,
+      "derived": null,
+      "asset": null,
+      "panels": 0,
+      "screens": [
+        {
+          "object": "Device screen",
+          "resolution": [
+            1080,
+            2400
+          ],
+          "fit": [
+            66.18668767231193,
+            147.08152816069318
+          ],
+          "actual": [
+            66.18668767231193,
+            147.08152816069318
+          ],
+          "center": [
+            0.12256794013391098,
+            0.7660496258369436,
+            4.385
+          ],
+          "curve": 0,
+          "outline": true,
+          "cutouts": [
+            {
+              "center_mm": [
+                0,
+                69.54076408034659
+              ],
+              "radius_mm": 1.5
+            }
+          ],
+          "create_cutouts": true,
+          "mesh_cutouts": null,
+          "trace_outline": null,
+          "keep_reviewed_corner_shape": null,
+          "mask_cutout_comparison": [
+            {
+              "center_error_mm": 0.3830314851226875,
+              "radius_error_mm": -0.4901356221828759
+            }
+          ]
+        }
+      ],
+      "oled_outside_glass_area_mm2": 0.0,
+      "min_oled_glass_boundary_mm": 2.447873309508662,
+      "roll_mm": 0.9,
+      "glass_inset_mm": 0.855,
+      "max_roll_correspondence_mm": 1.6005992769842043,
+      "ring_start0": [
+        36.6,
+        -7.983770073034925
+      ],
+      "ring_start1": [
+        35.7,
+        -7.7649954208590035
+      ],
+      "ring_hausdorff_error_mm": 0.06988277993701957,
+      "inset_shape_error_mm": 0.06906558944900912,
+      "artifact": {
+        "path": "exports\\pixel-7\\model.glb",
+        "mtime": "2026-10-22T15:33:05.729575",
+        "sha256": "de7fbb76d0115d025f6c9f17550d37da7481063f16504cb814c7e01bc08c10ff",
+        "antenna_nodes": [],
+        "screens": [
+          {
+            "name": "Device screen",
+            "translation": [
+              0.00012256794434506446,
+              0.004385000094771385,
+              -0.0007660496048629284
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "rotation": null,
+            "primitives": [
+              {
+                "bounds_mm": [
+                  [
+                    -33.093344420194626,
+                    0,
+                    -73.54076206684113
+                  ],
+                  [
+                    33.093344420194626,
+                    0,
+                    73.54076206684113
+                  ]
+                ],
+                "count": 400,
+                "material": "Device screen | replace texture at runtime",
+                "pbr": {
+                  "baseColorFactor": [
+                    0.006000000052154064,
+                    0.00800000037997961,
+                    0.012000000104308128,
+                    1
+                  ],
+                  "metallicFactor": 0
+                },
+                "uv_bounds": [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    1.0,
+                    1.0
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "current_verify": "AssertionError: ('pixel-7', 'enclosure differs from official contour (mm)', 0.3322349840233316)"
+      },
+      "mask_measurement": {
+        "path": "[local reference path omitted]",
+        "resolution": [
+          1080,
+          2400
+        ],
+        "cutouts": [
+          {
+            "bounds_px": [
+              507,
+              39,
+              572,
+              104
+            ],
+            "center_px": [
+              539.5,
+              71.5
+            ],
+            "center_mm": [
+              -0.030641985033477745,
+              69.15896022055927
+            ],
+            "radius_area_mm": 1.9901356221828759,
+            "radii_bbox_mm": [
+              1.9917290271760535,
+              1.9917290271760535
+            ],
+            "center_uv": [
+              0.49953703703703706,
+              0.9702083333333333
+            ]
+          }
+        ],
+        "trace_has_cutout_field": false
+      },
+      "review_status": "reviewed; profile and trace unchanged by this worker",
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_7/",
+      "profile_sha256_at_finalization": "81f5003d4bbb6cec51f4ebb3955974907fbfecfe93445541985d1b67aa93b81d",
+      "trace_sha256_at_finalization": "8ba728849eb93df3239a8ff4ef62aaa6fca23b5f502c4c305f432b52d6f2da97"
+    },
+    {
+      "id": "pixel-7a",
+      "profile_modified": false,
+      "trace": true,
+      "derived": null,
+      "asset": null,
+      "panels": 0,
+      "screens": [
+        {
+          "object": "Device screen",
+          "resolution": [
+            1080,
+            2400
+          ],
+          "fit": [
+            64.15005861664713,
+            142.55568581477138
+          ],
+          "actual": [
+            64.15005861664712,
+            142.55568581477138
+          ],
+          "center": [
+            -0.029699101211410707,
+            0.6236811254396248,
+            4.535
+          ],
+          "curve": 0,
+          "outline": true,
+          "cutouts": [
+            {
+              "center_mm": [
+                -0.029699101211410707,
+                67.44665885111371
+              ],
+              "radius_mm": 1.7956221827938992
+            }
+          ],
+          "create_cutouts": true,
+          "mesh_cutouts": null,
+          "trace_outline": null,
+          "keep_reviewed_corner_shape": null,
+          "mask_cutout_comparison": [
+            {
+              "center_error_mm": 0.0,
+              "radius_error_mm": 0.0
+            }
+          ]
+        }
+      ],
+      "oled_outside_glass_area_mm2": 0.0,
+      "min_oled_glass_boundary_mm": 3.2434759671746747,
+      "roll_mm": 0.9,
+      "glass_inset_mm": 0.855,
+      "max_roll_correspondence_mm": 1.8323156898294197,
+      "ring_start0": [
+        36.45,
+        -25.263986449983975
+      ],
+      "ring_start1": [
+        35.550000000000004,
+        -25.06415900617629
+      ],
+      "ring_hausdorff_error_mm": 0.07572065367732941,
+      "inset_shape_error_mm": 0.07229418178562168,
+      "artifact": {
+        "path": "exports\\pixel-7a\\model.glb",
+        "mtime": "2026-10-22T15:33:06.291981",
+        "sha256": "1f2676bdebea9b0455e2df28ed92a8960a5059dfa5d0308c5a29837443c6f732",
+        "antenna_nodes": [],
+        "screens": [
+          {
+            "name": "Device screen",
+            "translation": [
+              -2.96991020150017e-05,
+              0.004534999839961529,
+              -0.000623681116849184
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "rotation": null,
+            "primitives": [
+              {
+                "bounds_mm": [
+                  [
+                    -32.075028866529465,
+                    0,
+                    -71.27784192562103
+                  ],
+                  [
+                    32.075028866529465,
+                    0,
+                    71.27784192562103
+                  ]
+                ],
+                "count": 400,
+                "material": "Device screen | replace texture at runtime",
+                "pbr": {
+                  "baseColorFactor": [
+                    0.006000000052154064,
+                    0.00800000037997961,
+                    0.012000000104308128,
+                    1
+                  ],
+                  "metallicFactor": 0
+                },
+                "uv_bounds": [
+                  [
+                    -1.1102230246251565e-16,
+                    0.0
+                  ],
+                  [
+                    1.0,
+                    1.0
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "current_verify": "AssertionError: ('pixel-7a', 'enclosure differs from official contour (mm)', 0.866300699529834)"
+      },
+      "mask_measurement": {
+        "path": "[local reference path omitted]",
+        "resolution": [
+          1080,
+          2400
+        ],
+        "cutouts": [
+          {
+            "bounds_px": [
+              509,
+              34,
+              570,
+              95
+            ],
+            "center_px": [
+              539.5,
+              64.5
+            ],
+            "center_mm": [
+              -0.029699101211410707,
+              67.44665885111371
+            ],
+            "radius_area_mm": 1.7956221827938992,
+            "radii_bbox_mm": [
+              1.811645173896053,
+              1.811645173896053
+            ],
+            "center_uv": [
+              0.49953703703703706,
+              0.973125
+            ]
+          }
+        ],
+        "trace_has_cutout_field": true
+      },
+      "review_status": "reviewed; profile and trace unchanged by this worker",
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_7a/",
+      "profile_sha256_at_finalization": "a66e1682c75a031bd462c3e970003c388ab3b7a43e1320dc30bfec762b2fd81b",
+      "trace_sha256_at_finalization": "5fdbef69a6b822f9165123c0a68dcdac3baa7e532f8812c71c13e8469fdd6e20"
+    },
+    {
+      "id": "pixel-8-pro",
+      "profile_modified": false,
+      "trace": true,
+      "derived": null,
+      "asset": null,
+      "panels": 0,
+      "screens": [
+        {
+          "object": "Device screen",
+          "resolution": [
+            1344,
+            2992
+          ],
+          "fit": [
+            70.4041237113402,
+            156.73298969072167
+          ],
+          "actual": [
+            70.4041237113402,
+            156.73298969072167
+          ],
+          "center": [
+            0.02619201030927835,
+            -0.1047680412371134,
+            4.4350000000000005
+          ],
+          "curve": 0,
+          "outline": true,
+          "cutouts": [
+            {
+              "center_mm": [
+                0.0,
+                74.38530927835052
+              ],
+              "radius_mm": 2.112269541383908
+            }
+          ],
+          "create_cutouts": true,
+          "mesh_cutouts": null,
+          "trace_outline": null,
+          "keep_reviewed_corner_shape": null,
+          "mask_cutout_comparison": [
+            {
+              "center_error_mm": 0.0,
+              "radius_error_mm": 0.0
+            }
+          ]
+        }
+      ],
+      "oled_outside_glass_area_mm2": 0.0,
+      "min_oled_glass_boundary_mm": 1.7428299759286654,
+      "roll_mm": 0.9,
+      "glass_inset_mm": 0.855,
+      "max_roll_correspondence_mm": 1.6326469120448357,
+      "ring_start0": [
+        38.25,
+        -8.736407711451662
+      ],
+      "ring_start1": [
+        37.35,
+        -8.549128244213724
+      ],
+      "ring_hausdorff_error_mm": 0.058866546637034445,
+      "inset_shape_error_mm": 0.053766319055879926,
+      "artifact": {
+        "path": "exports\\pixel-8-pro\\model.glb",
+        "mtime": "2026-10-22T15:33:06.816282",
+        "sha256": "8178b8068c5d3e208dad4a0afe29fcec9d41a09b6ddb5f8246a6242daa5bd9c1",
+        "antenna_nodes": [],
+        "screens": [
+          {
+            "name": "Device screen",
+            "translation": [
+              2.6192010409431532e-05,
+              0.004435000009834766,
+              0.00010476804163772613
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "rotation": null,
+            "primitives": [
+              {
+                "bounds_mm": [
+                  [
+                    -35.202063620090485,
+                    0,
+                    -78.36649566888809
+                  ],
+                  [
+                    35.202063620090485,
+                    0,
+                    78.36649566888809
+                  ]
+                ],
+                "count": 400,
+                "material": "Device screen | replace texture at runtime",
+                "pbr": {
+                  "baseColorFactor": [
+                    0.006000000052154064,
+                    0.00800000037997961,
+                    0.012000000104308128,
+                    1
+                  ],
+                  "metallicFactor": 0
+                },
+                "uv_bounds": [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    1.0,
+                    1.0
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "current_verify": "AssertionError: ('pixel-8-pro', 'enclosure differs from official contour (mm)', 0.21627060016093003)"
+      },
+      "mask_measurement": {
+        "path": "[local reference path omitted]",
+        "resolution": [
+          1344,
+          2992
+        ],
+        "cutouts": [
+          {
+            "bounds_px": [
+              631,
+              35,
+              713,
+              117
+            ],
+            "center_px": [
+              672.0,
+              76.0
+            ],
+            "center_mm": [
+              0.0,
+              74.38530927835052
+            ],
+            "radius_area_mm": 2.112269541383908,
+            "radii_bbox_mm": [
+              2.1477448453608248,
+              2.1477448453608248
+            ],
+            "center_uv": [
+              0.5,
+              0.9745989304812834
+            ]
+          }
+        ],
+        "trace_has_cutout_field": true
+      },
+      "review_status": "reviewed; profile and trace unchanged by this worker",
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_8_pro/",
+      "profile_sha256_at_finalization": "3d8d5f2057e6b2a0d63087323416b3f4ccfd7eee15a26145376054572e2b767b",
+      "trace_sha256_at_finalization": "5f9b2a5e540d865e73cd545c20369afc11fe3c1162ec60c2439c4b26048941d5"
+    },
+    {
+      "id": "pixel-8",
+      "profile_modified": false,
+      "trace": true,
+      "derived": null,
+      "asset": null,
+      "panels": 0,
+      "screens": [
+        {
+          "object": "Device screen",
+          "resolution": [
+            1080,
+            2400
+          ],
+          "fit": [
+            64.67966573816156,
+            143.73259052924791
+          ],
+          "actual": [
+            64.67966573816156,
+            143.73259052924791
+          ],
+          "center": [
+            -0.029944289693593314,
+            0.08983286908077995,
+            4.485
+          ],
+          "curve": 0,
+          "outline": true,
+          "cutouts": [
+            {
+              "center_mm": [
+                0,
+                67.86629526462396
+              ],
+              "radius_mm": 1.5
+            }
+          ],
+          "create_cutouts": true,
+          "mesh_cutouts": null,
+          "trace_outline": null,
+          "keep_reviewed_corner_shape": null,
+          "mask_cutout_comparison": [
+            {
+              "center_error_mm": 0.0828954102504352,
+              "radius_error_mm": -0.4044855523632971
+            }
+          ]
+        }
+      ],
+      "oled_outside_glass_area_mm2": 0.0,
+      "min_oled_glass_boundary_mm": 1.7017893617498754,
+      "roll_mm": 1.2,
+      "glass_inset_mm": 1.14,
+      "max_roll_correspondence_mm": 2.21848825504545,
+      "ring_start0": [
+        35.4,
+        -2.7704003984844823
+      ],
+      "ring_start1": [
+        34.199999999999996,
+        -2.536499730601783
+      ],
+      "ring_hausdorff_error_mm": 0.0628012632419642,
+      "inset_shape_error_mm": 0.05068499056952864,
+      "artifact": {
+        "path": "exports\\pixel-8\\model.glb",
+        "mtime": "2026-10-22T15:33:06.522661",
+        "sha256": "fdc732916cdf24b09faf3e8f1f8cf6170000d64f75ec27387c9c2c2b00a51127",
+        "antenna_nodes": [],
+        "screens": [
+          {
+            "name": "Device screen",
+            "translation": [
+              -2.9944289053673856e-05,
+              0.004484999924898148,
+              -8.983287261798978e-05
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "rotation": null,
+            "primitives": [
+              {
+                "bounds_mm": [
+                  [
+                    -32.33983367681503,
+                    0,
+                    -71.86629623174667
+                  ],
+                  [
+                    32.33983367681503,
+                    0,
+                    71.86629623174667
+                  ]
+                ],
+                "count": 400,
+                "material": "Device screen | replace texture at runtime",
+                "pbr": {
+                  "baseColorFactor": [
+                    0.006000000052154064,
+                    0.00800000037997961,
+                    0.012000000104308128,
+                    1
+                  ],
+                  "metallicFactor": 0
+                },
+                "uv_bounds": [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    1.0,
+                    1.0
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "current_verify": "AssertionError: ('pixel-8', 'enclosure differs from official contour (mm)', 0.23312448692623106)"
+      },
+      "mask_measurement": {
+        "path": "[local reference path omitted]",
+        "resolution": [
+          1080,
+          2400
+        ],
+        "cutouts": [
+          {
+            "bounds_px": [
+              508,
+              33,
+              573,
+              98
+            ],
+            "center_px": [
+              540.5,
+              65.5
+            ],
+            "center_mm": [
+              0.029944289693593314,
+              67.94359331476323
+            ],
+            "radius_area_mm": 1.904485552363297,
+            "radii_bbox_mm": [
+              1.9463788300835654,
+              1.9463788300835654
+            ],
+            "center_uv": [
+              0.500462962962963,
+              0.9727083333333333
+            ]
+          }
+        ],
+        "trace_has_cutout_field": false
+      },
+      "review_status": "reviewed; profile and trace unchanged by this worker",
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_8/",
+      "profile_sha256_at_finalization": "858f402e47b4171dcac0fa5bc9534b66badbbdf474fe766dbe2814fe79c65f50",
+      "trace_sha256_at_finalization": "9358b9625dc3215650074dd4e106091ecbab106b04def19e56055485cd43728b"
+    },
+    {
+      "id": "pixel-8a",
+      "profile_modified": false,
+      "trace": true,
+      "derived": null,
+      "asset": null,
+      "panels": 0,
+      "screens": [
+        {
+          "object": "Device screen",
+          "resolution": [
+            1080,
+            2400
+          ],
+          "fit": [
+            64.72340425531914,
+            143.82978723404256
+          ],
+          "actual": [
+            64.72340425531914,
+            143.82978723404253
+          ],
+          "center": [
+            0.11985815602836879,
+            0.7191489361702127,
+            4.485
+          ],
+          "curve": 0,
+          "outline": true,
+          "cutouts": [
+            {
+              "center_mm": [
+                0,
+                68.25
+              ],
+              "radius_mm": 1.5
+            }
+          ],
+          "create_cutouts": true,
+          "mesh_cutouts": null,
+          "trace_outline": null,
+          "keep_reviewed_corner_shape": null,
+          "mask_cutout_comparison": [
+            {
+              "center_error_mm": 0.26217895114678735,
+              "radius_error_mm": -0.40577342812854345
+            }
+          ]
+        }
+      ],
+      "oled_outside_glass_area_mm2": 0.0,
+      "min_oled_glass_boundary_mm": 2.2759574468085044,
+      "roll_mm": 1.2,
+      "glass_inset_mm": 1.14,
+      "max_roll_correspondence_mm": 1.9903594651026013,
+      "ring_start0": [
+        36.35,
+        -7.8207
+      ],
+      "ring_start1": [
+        35.15,
+        -7.584293516002824
+      ],
+      "ring_hausdorff_error_mm": 0.07350446111526644,
+      "inset_shape_error_mm": 0.07267534187365073,
+      "artifact": {
+        "path": "exports\\pixel-8a\\model.glb",
+        "mtime": "2026-10-22T15:33:07.058156",
+        "sha256": "eeda043a89aff12195367c397b3a215a9379d1afe2a41476f58e3b02156f0f08",
+        "antenna_nodes": [],
+        "screens": [
+          {
+            "name": "Device screen",
+            "translation": [
+              0.00011985815945081413,
+              0.004484999924898148,
+              -0.0007191489567048848
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "rotation": null,
+            "primitives": [
+              {
+                "bounds_mm": [
+                  [
+                    -32.361701130867004,
+                    0,
+                    -71.91489636898041
+                  ],
+                  [
+                    32.361701130867004,
+                    0,
+                    71.91489636898041
+                  ]
+                ],
+                "count": 400,
+                "material": "Device screen | replace texture at runtime",
+                "pbr": {
+                  "baseColorFactor": [
+                    0.006000000052154064,
+                    0.00800000037997961,
+                    0.012000000104308128,
+                    1
+                  ],
+                  "metallicFactor": 0
+                },
+                "uv_bounds": [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    1.0,
+                    1.0
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "current_verify": "AssertionError: ('pixel-8a', 'enclosure differs from official contour (mm)', 1.4198944875514605)"
+      },
+      "mask_measurement": {
+        "path": "[local reference path omitted]",
+        "resolution": [
+          1080,
+          2400
+        ],
+        "cutouts": [
+          {
+            "bounds_px": [
+              508,
+              33,
+              573,
+              98
+            ],
+            "center_px": [
+              540.5,
+              65.5
+            ],
+            "center_mm": [
+              0.029964539007092197,
+              67.98953900709219
+            ],
+            "radius_area_mm": 1.9057734281285434,
+            "radii_bbox_mm": [
+              1.9476950354609928,
+              1.9476950354609928
+            ],
+            "center_uv": [
+              0.500462962962963,
+              0.9727083333333333
+            ]
+          }
+        ],
+        "trace_has_cutout_field": false
+      },
+      "review_status": "reviewed; profile and trace unchanged by this worker",
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_8a/",
+      "profile_sha256_at_finalization": "e7e3bb47779c5a9688ca7049e5d55d79a4c3f46b3d511cf7d6b3603de329b87b",
+      "trace_sha256_at_finalization": "94e9abd6281c671fde8e4a5035fcb1fa44061a832e92ab8b847dcb6b68e69647"
+    },
+    {
+      "id": "pixel-9-pro-fold-folded",
+      "profile_modified": false,
+      "trace": true,
+      "derived": null,
+      "asset": null,
+      "panels": 2,
+      "screens": [
+        {
+          "object": "Cover screen",
+          "resolution": [
+            1080,
+            2424
+          ],
+          "fit": [
+            65.62881754111197,
+            147.30023492560687
+          ],
+          "actual": [
+            65.62881754111197,
+            147.30023492560687
+          ],
+          "center": [
+            0.672278778386844,
+            -0.30383711824588877,
+            2.585
+          ],
+          "curve": 0,
+          "outline": true,
+          "cutouts": [
+            {
+              "center_mm": [
+                0,
+                69.65011746280344
+              ],
+              "radius_mm": 1.5
+            }
+          ],
+          "create_cutouts": true,
+          "mesh_cutouts": null,
+          "trace_outline": null,
+          "keep_reviewed_corner_shape": null,
+          "mask_cutout_comparison": [
+            {
+              "center_error_mm": 1.134847298355524,
+              "radius_error_mm": -0.9741804754956696
+            }
+          ]
+        }
+      ],
+      "artifact": {
+        "path": "exports\\pixel-9-pro-fold-folded\\model.glb",
+        "mtime": "2026-10-22T15:33:07.887583",
+        "sha256": "e8e6431716957a8f5dade4a8ee794c24fff3f226c05052ca0e7295ee5b262061",
+        "antenna_nodes": [],
+        "screens": [
+          {
+            "name": "Cover screen",
+            "translation": [
+              0.0006722787511534989,
+              0.002584999892860651,
+              0.0003038371214643121
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "rotation": null,
+            "primitives": [
+              {
+                "bounds_mm": [
+                  [
+                    -32.81440958380699,
+                    0,
+                    -73.65011423826218
+                  ],
+                  [
+                    32.81440958380699,
+                    0,
+                    73.65011423826218
+                  ]
+                ],
+                "count": 400,
+                "material": "Device screen | replace texture at runtime",
+                "pbr": {
+                  "baseColorFactor": [
+                    0.006000000052154064,
+                    0.00800000037997961,
+                    0.012000000104308128,
+                    1
+                  ],
+                  "metallicFactor": 0
+                },
+                "uv_bounds": [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    1.0,
+                    1.0
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "current_verify": "pass"
+      },
+      "mask_measurement": {
+        "path": "[local reference path omitted]",
+        "resolution": [
+          1080,
+          2424
+        ],
+        "cutouts": [
+          {
+            "bounds_px": [
+              499,
+              44,
+              581,
+              125
+            ],
+            "center_px": [
+              540.0,
+              84.5
+            ],
+            "center_mm": [
+              0.0,
+              68.51527016444791
+            ],
+            "radius_area_mm": 2.4741804754956696,
+            "radii_bbox_mm": [
+              2.491464369616288,
+              2.4610806577916993
+            ],
+            "center_uv": [
+              0.5,
+              0.9651402640264026
+            ]
+          }
+        ],
+        "trace_has_cutout_field": false
+      },
+      "review_status": "reviewed; profile and trace unchanged by this worker",
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_9_pro_fold/closed/",
+      "profile_sha256_at_finalization": "c0112126a9e400c20a44236b811095de444276d76da4421923f32d4164f10039",
+      "trace_sha256_at_finalization": "17fd067968e3f67bffbdaa373a468b7c59a6c0f2d9ea8a82bf87e4eee0e8fb4d"
+    },
+    {
+      "id": "pixel-9-pro-fold-unfolded",
+      "profile_modified": false,
+      "trace": true,
+      "derived": null,
+      "asset": null,
+      "panels": 2,
+      "screens": [
+        {
+          "object": "Inner screen",
+          "resolution": [
+            2076,
+            2152
+          ],
+          "fit": [
+            141.74887813462385,
+            146.93814342278927
+          ],
+          "actual": [
+            141.74887813462385,
+            146.93814342278927
+          ],
+          "center": [
+            0.0,
+            -0.10241970963484381,
+            2.59
+          ],
+          "curve": 0,
+          "outline": true,
+          "cutouts": [
+            {
+              "center_mm": [
+                63.7724907063197,
+                70.61805183199286
+              ],
+              "radius_mm": 1.5
+            }
+          ],
+          "create_cutouts": true,
+          "mesh_cutouts": null,
+          "trace_outline": null,
+          "keep_reviewed_corner_shape": null,
+          "mask_cutout_comparison": [
+            {
+              "center_error_mm": 2.7506331336888357,
+              "radius_error_mm": -1.0564717619651338
+            }
+          ]
+        },
+        {
+          "object": "Cover screen",
+          "resolution": [
+            1080,
+            2424
+          ],
+          "fit": [
+            65.62881754111197,
+            147.30023492560687
+          ],
+          "actual": [
+            65.62881754111197,
+            147.30023492560687
+          ],
+          "center": [
+            -0.672278778386844,
+            -0.30383711824588877,
+            -2.585
+          ],
+          "curve": 0,
+          "outline": true,
+          "cutouts": [
+            {
+              "center_mm": [
+                0,
+                69.65011746280344
+              ],
+              "radius_mm": 1.5
+            }
+          ],
+          "create_cutouts": true,
+          "mesh_cutouts": null,
+          "trace_outline": null,
+          "keep_reviewed_corner_shape": null
+        }
+      ],
+      "artifact": {
+        "path": "exports\\pixel-9-pro-fold-unfolded\\model.glb",
+        "mtime": "2026-10-22T15:33:08.299136",
+        "sha256": "0d08f41c52fbb9d50a3b6eb01be73128bf3732f790efab1bdf3cee973b94cf19",
+        "antenna_nodes": [],
+        "screens": [
+          {
+            "name": "Inner screen | Camera half",
+            "translation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "rotation": null,
+            "primitives": [
+              {
+                "bounds_mm": [
+                  [
+                    -37.700001150369644,
+                    2.589999930933118,
+                    -73.36664944887161
+                  ],
+                  [
+                    33.17444026470184,
+                    2.589999930933118,
+                    73.57148826122284
+                  ]
+                ],
+                "count": 202,
+                "material": "Device screen | replace texture at runtime",
+                "pbr": {
+                  "baseColorFactor": [
+                    0.07,
+                    0.16,
+                    0.22,
+                    1
+                  ],
+                  "metallicFactor": 0
+                },
+                "uv_bounds": [
+                  [
+                    0.5,
+                    0.0
+                  ],
+                  [
+                    1.0,
+                    1.0
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Cover screen",
+            "translation": [
+              -0.0006722770631313324,
+              -0.002635000040754676,
+              0.0003038371214643121
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "rotation": [
+              0,
+              0,
+              1,
+              4.371138828673793e-08
+            ],
+            "primitives": [
+              {
+                "bounds_mm": [
+                  [
+                    -32.81440958380699,
+                    0,
+                    -73.65011423826218
+                  ],
+                  [
+                    32.81440958380699,
+                    0,
+                    73.65011423826218
+                  ]
+                ],
+                "count": 400,
+                "material": "Device screen | replace texture at runtime.001",
+                "pbr": {
+                  "baseColorFactor": [
+                    0.07,
+                    0.16,
+                    0.22,
+                    1
+                  ],
+                  "metallicFactor": 0
+                },
+                "uv_bounds": [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    1.0,
+                    1.0
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Inner screen | Cover half",
+            "translation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "rotation": null,
+            "primitives": [
+              {
+                "bounds_mm": [
+                  [
+                    -33.17444026470184,
+                    2.589999930933118,
+                    -73.36664944887161
+                  ],
+                  [
+                    37.700001150369644,
+                    2.589999930933118,
+                    73.57148826122284
+                  ]
+                ],
+                "count": 202,
+                "material": "Device screen | replace texture at runtime",
+                "pbr": {
+                  "baseColorFactor": [
+                    0.07,
+                    0.16,
+                    0.22,
+                    1
+                  ],
+                  "metallicFactor": 0
+                },
+                "uv_bounds": [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.5,
+                    1.0
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "current_verify": "pass"
+      },
+      "mask_measurement": {
+        "path": "[local reference path omitted]",
+        "resolution": [
+          2076,
+          2152
+        ],
+        "cutouts": [
+          {
+            "bounds_px": [
+              1951,
+              41,
+              2026,
+              116
+            ],
+            "center_px": [
+              1988.5,
+              78.5
+            ],
+            "center_mm": [
+              64.89995600527936,
+              68.10910690717114
+            ],
+            "radius_area_mm": 2.556471761965134,
+            "radii_bbox_mm": [
+              2.5604927408710956,
+              2.5604927408710956
+            ],
+            "center_uv": [
+              0.9578516377649325,
+              0.9635223048327137
+            ]
+          }
+        ],
+        "trace_has_cutout_field": false
+      },
+      "review_status": "reviewed; profile and trace unchanged by this worker",
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_9_pro_fold/default/",
+      "profile_sha256_at_finalization": "d1c5d6d8264af4f138d42ebd0627214cfc5b916eee0cab7ea663c261a43db3b5",
+      "trace_sha256_at_finalization": "28dea00c806c19575157c0fe21ed3c409aecd09a6f27ad41ca760b7d568c2db8"
+    },
+    {
+      "id": "pixel-9-pro-xl",
+      "profile_modified": false,
+      "trace": true,
+      "derived": null,
+      "asset": null,
+      "panels": 0,
+      "screens": [
+        {
+          "object": "Device screen",
+          "resolution": [
+            1344,
+            2992
+          ],
+          "fit": [
+            70.58167741935485,
+            157.12825806451613
+          ],
+          "actual": [
+            70.58167741935485,
+            157.12825806451613
+          ],
+          "center": [
+            0.0,
+            -0.10503225806451613,
+            4.285
+          ],
+          "curve": 0,
+          "outline": true,
+          "cutouts": [
+            {
+              "center_mm": [
+                0,
+                74.56412903225807
+              ],
+              "radius_mm": 1.5
+            }
+          ],
+          "create_cutouts": true,
+          "mesh_cutouts": null,
+          "trace_outline": null,
+          "keep_reviewed_corner_shape": null,
+          "mask_cutout_comparison": [
+            {
+              "center_error_mm": 1.1465806451612934,
+              "radius_error_mm": -0.9227073479295367
+            }
+          ]
+        }
+      ],
+      "oled_outside_glass_area_mm2": 0.0,
+      "min_oled_glass_boundary_mm": 1.9230490651644672,
+      "roll_mm": 0.75,
+      "glass_inset_mm": 0.7124999999999999,
+      "max_roll_correspondence_mm": 1.6162962528391744,
+      "ring_start0": [
+        38.3,
+        -2.5605636537106458
+      ],
+      "ring_start1": [
+        37.55,
+        -2.3902611213864904
+      ],
+      "ring_hausdorff_error_mm": 0.05548993879990229,
+      "inset_shape_error_mm": 0.04197518308805411,
+      "artifact": {
+        "path": "exports\\pixel-9-pro-xl\\model.glb",
+        "mtime": "2026-10-22T15:33:08.592271",
+        "sha256": "9bbfa7c858f01f0dc59eee4f65fec82672b7793eedf9cecac1848aa5a4d67760",
+        "antenna_nodes": [],
+        "screens": [
+          {
+            "name": "Device screen",
+            "translation": [
+              0,
+              0.0042849997989833355,
+              0.00010503226076252759
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "rotation": null,
+            "primitives": [
+              {
+                "bounds_mm": [
+                  [
+                    -35.29083728790283,
+                    0,
+                    -78.5641297698021
+                  ],
+                  [
+                    35.29083728790283,
+                    0,
+                    78.5641297698021
+                  ]
+                ],
+                "count": 400,
+                "material": "Device screen | replace texture at runtime",
+                "pbr": {
+                  "baseColorFactor": [
+                    0.006000000052154064,
+                    0.00800000037997961,
+                    0.012000000104308128,
+                    1
+                  ],
+                  "metallicFactor": 0
+                },
+                "uv_bounds": [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    1.0,
+                    1.0
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "current_verify": "AssertionError: ('pixel-9-pro-xl', 'enclosure differs from official contour (mm)', 0.15237588368222063)"
+      },
+      "mask_measurement": {
+        "path": "[local reference path omitted]",
+        "resolution": [
+          1344,
+          2992
+        ],
+        "cutouts": [
+          {
+            "bounds_px": [
+              626,
+              52,
+              718,
+              144
+            ],
+            "center_px": [
+              672.0,
+              98.0
+            ],
+            "center_mm": [
+              0.0,
+              73.41754838709677
+            ],
+            "radius_area_mm": 2.4227073479295367,
+            "radii_bbox_mm": [
+              2.415741935483871,
+              2.415741935483871
+            ],
+            "center_uv": [
+              0.5,
+              0.9672459893048129
+            ]
+          }
+        ],
+        "trace_has_cutout_field": false
+      },
+      "review_status": "reviewed; profile and trace unchanged by this worker",
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_9_pro_xl/",
+      "profile_sha256_at_finalization": "650769ff95394e8cfa8d9c1fd7b8005331088376049cdf92fcab5691c3807a96",
+      "trace_sha256_at_finalization": "5fc44d4cf8762beeb7a920f4f9c8e861926287f2be928439123cbed52f280f5a"
+    },
+    {
+      "id": "pixel-9-pro",
+      "profile_modified": false,
+      "trace": true,
+      "derived": null,
+      "asset": null,
+      "panels": 0,
+      "screens": [
+        {
+          "object": "Device screen",
+          "resolution": [
+            1280,
+            2856
+          ],
+          "fit": [
+            65.76462676529927,
+            146.737323470074
+          ],
+          "actual": [
+            65.76462676529927,
+            146.737323470074
+          ],
+          "center": [
+            0.0,
+            -0.1027572293207801,
+            4.285
+          ],
+          "curve": 0,
+          "outline": true,
+          "cutouts": [
+            {
+              "center_mm": [
+                0,
+                69.368661735037
+              ],
+              "radius_mm": 1.5
+            }
+          ],
+          "create_cutouts": true,
+          "mesh_cutouts": null,
+          "trace_outline": null,
+          "keep_reviewed_corner_shape": null,
+          "mask_cutout_comparison": [
+            {
+              "center_error_mm": 1.2149293880295886,
+              "radius_error_mm": -0.8831351752698522
+            }
+          ]
+        }
+      ],
+      "oled_outside_glass_area_mm2": 0.0,
+      "min_oled_glass_boundary_mm": 2.13865929972492,
+      "roll_mm": 0.75,
+      "glass_inset_mm": 0.7124999999999999,
+      "max_roll_correspondence_mm": 1.5400508571005633,
+      "ring_start0": [
+        36.0,
+        -5.948050424711487
+      ],
+      "ring_start1": [
+        35.25,
+        -5.779071037774662
+      ],
+      "ring_hausdorff_error_mm": 0.05221952368360406,
+      "inset_shape_error_mm": 0.04134391938826607,
+      "artifact": {
+        "path": "exports\\pixel-9-pro\\model.glb",
+        "mtime": "2026-10-22T15:33:07.528723",
+        "sha256": "f97f3365260b775d0878544cd6361633924d8bc45c1ebc9cce6a4c24b9c2599e",
+        "antenna_nodes": [],
+        "screens": [
+          {
+            "name": "Device screen",
+            "translation": [
+              0,
+              0.0042849997989833355,
+              0.00010275722888763994
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "rotation": null,
+            "primitives": [
+              {
+                "bounds_mm": [
+                  [
+                    -32.882314175367355,
+                    0,
+                    -73.36866110563278
+                  ],
+                  [
+                    32.882314175367355,
+                    0,
+                    73.36866110563278
+                  ]
+                ],
+                "count": 400,
+                "material": "Device screen | replace texture at runtime",
+                "pbr": {
+                  "baseColorFactor": [
+                    0.006000000052154064,
+                    0.00800000037997961,
+                    0.012000000104308128,
+                    1
+                  ],
+                  "metallicFactor": 0
+                },
+                "uv_bounds": [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    1.0,
+                    1.0
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "front_parts": [
+          {
+            "name": "Aluminum enclosure",
+            "translation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "rotation": null,
+            "primitives": [
+              {
+                "bounds_mm": [
+                  [
+                    -35.999998450279236,
+                    -4.224999807775021,
+                    -76.39999687671661
+                  ],
+                  [
+                    35.999998450279236,
+                    4.224999807775021,
+                    76.39999687671661
+                  ]
+                ],
+                "count": 2640,
+                "material": "rail",
+                "pbr": {
+                  "baseColorFactor": [
+                    0.0889815241098404,
+                    0.09920014441013336,
+                    0.10378158092498779,
+                    1
+                  ],
+                  "roughnessFactor": 0.18000000715255737
+                }
+              }
+            ]
+          },
+          {
+            "name": "Device screen | selfie aperture 0",
+            "translation": [
+              0,
+              0.004310000222176313,
+              -0.06926590204238892
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "rotation": null,
+            "primitives": [
+              {
+                "bounds_mm": [
+                  [
+                    -1.500000013038516,
+                    -0.01249999968422344,
+                    -1.500000013038516
+                  ],
+                  [
+                    1.500000013038516,
+                    0.01249999968422344,
+                    1.500000013038516
+                  ]
+                ],
+                "count": 258,
+                "material": "black",
+                "pbr": {
+                  "baseColorFactor": [
+                    0.0005417956854216754,
+                    0.0006965944194234908,
+                    0.0009287925786338747,
+                    1
+                  ],
+                  "metallicFactor": 0,
+                  "roughnessFactor": 0.5
+                },
+                "uv_bounds": [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    1.0,
+                    0.9900000095367432
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Front black glass",
+            "translation": [
+              0,
+              0.004124999977648258,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "rotation": null,
+            "primitives": [
+              {
+                "bounds_mm": [
+                  [
+                    -35.28749942779541,
+                    -0.1250000059371814,
+                    -75.68749785423279
+                  ],
+                  [
+                    35.28749942779541,
+                    0.1250000059371814,
+                    75.68749785423279
+                  ]
+                ],
+                "count": 2640,
+                "material": "black",
+                "pbr": {
+                  "baseColorFactor": [
+                    0.0005417956854216754,
+                    0.0006965944194234908,
+                    0.0009287925786338747,
+                    1
+                  ],
+                  "metallicFactor": 0,
+                  "roughnessFactor": 0.5
+                }
+              }
+            ]
+          }
+        ],
+        "current_verify": "AssertionError: ('pixel-9-pro', 'enclosure differs from official contour (mm)', 0.10765496920228076)"
+      },
+      "mask_measurement": {
+        "path": "[local reference path omitted]",
+        "resolution": [
+          1280,
+          2856
+        ],
+        "cutouts": [
+          {
+            "bounds_px": [
+              594,
+              55,
+              686,
+              148
+            ],
+            "center_px": [
+              640.0,
+              101.5
+            ],
+            "center_mm": [
+              0.0,
+              68.1537323470074
+            ],
+            "radius_area_mm": 2.383135175269852,
+            "radii_bbox_mm": [
+              2.3634162743779425,
+              2.3891055817081375
+            ],
+            "center_uv": [
+              0.5,
+              0.9644607843137255
+            ]
+          }
+        ],
+        "trace_has_cutout_field": false
+      },
+      "review_status": "reviewed; profile and trace unchanged by this worker",
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_9_pro/",
+      "profile_sha256_at_finalization": "de18ad84c592412a59cd0c50e58cdda2d679dde7729b539c75c9f942b3084259",
+      "trace_sha256_at_finalization": "38bd1b1e2decd73b7bf705fb80223a15027efaa99b987847c7ad2d45610ad778"
+    },
+    {
+      "id": "pixel-9",
+      "profile_modified": false,
+      "trace": true,
+      "derived": null,
+      "asset": null,
+      "panels": 0,
+      "screens": [
+        {
+          "object": "Device screen",
+          "resolution": [
+            1080,
+            2424
+          ],
+          "fit": [
+            65.20110628210193,
+            146.34026076649548
+          ],
+          "actual": [
+            65.20110628210193,
+            146.34026076649545
+          ],
+          "center": [
+            -0.03018569735282497,
+            -0.27167127617542475,
+            4.285
+          ],
+          "curve": 0,
+          "outline": true,
+          "cutouts": [
+            {
+              "center_mm": [
+                0,
+                69.17013038324774
+              ],
+              "radius_mm": 1.5
+            }
+          ],
+          "create_cutouts": true,
+          "mesh_cutouts": null,
+          "trace_outline": null,
+          "keep_reviewed_corner_shape": null,
+          "mask_cutout_comparison": [
+            {
+              "center_error_mm": 1.191939944685899,
+              "radius_error_mm": -0.9235960523438131
+            }
+          ]
+        }
+      ],
+      "oled_outside_glass_area_mm2": 0.0,
+      "min_oled_glass_boundary_mm": 2.088983798079148,
+      "roll_mm": 0.75,
+      "glass_inset_mm": 0.7124999999999999,
+      "max_roll_correspondence_mm": 1.527224710637445,
+      "ring_start0": [
+        36.0,
+        -5.932672557010617
+      ],
+      "ring_start1": [
+        35.25,
+        -5.753314368444149
+      ],
+      "ring_hausdorff_error_mm": 0.05809284533691497,
+      "inset_shape_error_mm": 0.04953751192926377,
+      "artifact": {
+        "path": "exports\\pixel-9\\model.glb",
+        "mtime": "2026-10-22T15:33:07.246652",
+        "sha256": "10d656dfb1285b5efe181af0f7e9a90ba73c98d6ee022b8c65247315b3355ca8",
+        "antenna_nodes": [],
+        "screens": [
+          {
+            "name": "Device screen",
+            "translation": [
+              -3.0185698051354848e-05,
+              0.0042849997989833355,
+              0.0002716712770052254
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "rotation": null,
+            "primitives": [
+              {
+                "bounds_mm": [
+                  [
+                    -32.60055184364319,
+                    0,
+                    -73.17013293504715
+                  ],
+                  [
+                    32.60055184364319,
+                    0,
+                    73.17013293504715
+                  ]
+                ],
+                "count": 400,
+                "material": "Device screen | replace texture at runtime",
+                "pbr": {
+                  "baseColorFactor": [
+                    0.006000000052154064,
+                    0.00800000037997961,
+                    0.012000000104308128,
+                    1
+                  ],
+                  "metallicFactor": 0
+                },
+                "uv_bounds": [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    1.0,
+                    1.0
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "current_verify": "AssertionError: ('pixel-9', 'enclosure differs from official contour (mm)', 0.24632437870937915)"
+      },
+      "mask_measurement": {
+        "path": "[local reference path omitted]",
+        "resolution": [
+          1080,
+          2424
+        ],
+        "cutouts": [
+          {
+            "bounds_px": [
+              500,
+              46,
+              580,
+              126
+            ],
+            "center_px": [
+              540.0,
+              86.0
+            ],
+            "center_mm": [
+              0.0,
+              67.97819043856184
+            ],
+            "radius_area_mm": 2.423596052343813,
+            "radii_bbox_mm": [
+              2.4148557882259976,
+              2.4148557882259976
+            ],
+            "center_uv": [
+              0.5,
+              0.9645214521452146
+            ]
+          }
+        ],
+        "trace_has_cutout_field": false
+      },
+      "review_status": "reviewed; profile and trace unchanged by this worker",
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_9/",
+      "profile_sha256_at_finalization": "83616229d96782055ca27b17bf2070b07d4e789757cbb9d09be2b0805b827c6a",
+      "trace_sha256_at_finalization": "7392d7169de4ee2a05c40199d6079f139c9f51c78e9d4b98562ad9044bc078df"
+    },
+    {
+      "id": "pixel-9a",
+      "profile_modified": false,
+      "trace": true,
+      "derived": null,
+      "asset": null,
+      "panels": 0,
+      "screens": [
+        {
+          "object": "Device screen",
+          "resolution": [
+            1080,
+            2424
+          ],
+          "fit": [
+            65.01011673151751,
+            145.9115953307393
+          ],
+          "actual": [
+            65.01011673151751,
+            145.9115953307393
+          ],
+          "center": [
+            0.030097276264591438,
+            0.0,
+            4.485
+          ],
+          "curve": 0,
+          "outline": true,
+          "cutouts": [
+            {
+              "center_mm": [
+                0,
+                68.95579766536964
+              ],
+              "radius_mm": 1.5
+            }
+          ],
+          "create_cutouts": true,
+          "mesh_cutouts": null,
+          "trace_outline": null,
+          "keep_reviewed_corner_shape": null,
+          "mask_cutout_comparison": [
+            {
+              "center_error_mm": 1.1782701084449705,
+              "radius_error_mm": -0.8738812234101943
+            }
+          ]
+        }
+      ],
+      "oled_outside_glass_area_mm2": 0.0,
+      "min_oled_glass_boundary_mm": 3.2062283917060697,
+      "roll_mm": 0.8,
+      "glass_inset_mm": 0.76,
+      "max_roll_correspondence_mm": 1.628515550767329,
+      "ring_start0": [
+        36.65,
+        -6.246365356155265
+      ],
+      "ring_start1": [
+        35.85,
+        -6.05998962882224
+      ],
+      "ring_hausdorff_error_mm": 0.05970204219576408,
+      "inset_shape_error_mm": 0.047227582454876876,
+      "artifact": {
+        "path": "exports\\pixel-9a\\model.glb",
+        "mtime": "2026-10-22T15:33:08.840921",
+        "sha256": "10b0a968f34bfecc9f6751c3342b3e1a94b3561848f9558eb932241c0c6c6c8c",
+        "antenna_nodes": [],
+        "screens": [
+          {
+            "name": "Device screen",
+            "translation": [
+              3.0097276976448484e-05,
+              0.004484999924898148,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "rotation": null,
+            "primitives": [
+              {
+                "bounds_mm": [
+                  [
+                    -32.505057752132416,
+                    0,
+                    -72.95579463243484
+                  ],
+                  [
+                    32.505057752132416,
+                    0,
+                    72.95579463243484
+                  ]
+                ],
+                "count": 400,
+                "material": "Device screen | replace texture at runtime",
+                "pbr": {
+                  "baseColorFactor": [
+                    0.006000000052154064,
+                    0.00800000037997961,
+                    0.012000000104308128,
+                    1
+                  ],
+                  "metallicFactor": 0
+                },
+                "uv_bounds": [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    1.0,
+                    1.0
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "current_verify": "AssertionError: ('pixel-9a', 'enclosure differs from official contour (mm)', 0.22522986385466195)"
+      },
+      "mask_measurement": {
+        "path": "[local reference path omitted]",
+        "resolution": [
+          1080,
+          2424
+        ],
+        "cutouts": [
+          {
+            "bounds_px": [
+              499,
+              46,
+              579,
+              126
+            ],
+            "center_px": [
+              539.0,
+              86.0
+            ],
+            "center_mm": [
+              -0.060194552529182876,
+              67.77906614785992
+            ],
+            "radius_area_mm": 2.3738812234101943,
+            "radii_bbox_mm": [
+              2.407782101167315,
+              2.407782101167315
+            ],
+            "center_uv": [
+              0.49907407407407406,
+              0.9645214521452146
+            ]
+          }
+        ],
+        "trace_has_cutout_field": false
+      },
+      "review_status": "reviewed; profile and trace unchanged by this worker",
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_9a/",
+      "profile_sha256_at_finalization": "ea94ffbb074860ddf8e69bfe07e6f2533af87b87cbaf619d42977fbeeffe3c38",
+      "trace_sha256_at_finalization": "8b77278dc9ba634e0e34947be43c7f214962b2edbf5174056ab93aad2e650996"
+    },
+    {
+      "id": "pixel-fold-folded",
+      "profile_modified": false,
+      "trace": true,
+      "derived": null,
+      "asset": null,
+      "panels": 2,
+      "screens": [
+        {
+          "object": "Cover screen",
+          "resolution": [
+            1080,
+            2092
+          ],
+          "fit": [
+            67.56650246305418,
+            130.87881773399013
+          ],
+          "actual": [
+            67.56650246305418,
+            130.87881773399013
+          ],
+          "center": [
+            1.2953201970443347,
+            -0.15640394088669948,
+            2.935
+          ],
+          "curve": 0,
+          "outline": true,
+          "cutouts": [
+            {
+              "center_mm": [
+                0,
+                61.439408866995066
+              ],
+              "radius_mm": 1.5
+            }
+          ],
+          "create_cutouts": true,
+          "mesh_cutouts": null,
+          "trace_outline": null,
+          "keep_reviewed_corner_shape": null,
+          "mask_cutout_comparison": [
+            {
+              "center_error_mm": 0.10266475505451389,
+              "radius_error_mm": -0.6686587791461593
+            }
+          ]
+        }
+      ],
+      "artifact": {
+        "path": "exports\\pixel-fold-folded\\model.glb",
+        "mtime": "2026-10-22T15:33:09.247874",
+        "sha256": "1dd5106dc0f19927fb72bcab092a22b6555c24ea2c4387f49c456185265b9e99",
+        "antenna_nodes": [],
+        "screens": [
+          {
+            "name": "Cover screen",
+            "translation": [
+              0.0012953202240169048,
+              0.0029349999967962503,
+              0.00015640394121874124
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "rotation": null,
+            "primitives": [
+              {
+                "bounds_mm": [
+                  [
+                    -33.78324955701828,
+                    0,
+                    -65.43941050767899
+                  ],
+                  [
+                    33.78324955701828,
+                    0,
+                    65.43941050767899
+                  ]
+                ],
+                "count": 400,
+                "material": "Device screen | replace texture at runtime",
+                "pbr": {
+                  "baseColorFactor": [
+                    0.006000000052154064,
+                    0.00800000037997961,
+                    0.012000000104308128,
+                    1
+                  ],
+                  "metallicFactor": 0
+                },
+                "uv_bounds": [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    1.0,
+                    1.0
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "current_verify": "pass"
+      },
+      "mask_measurement": {
+        "path": "[local reference path omitted]",
+        "resolution": [
+          1080,
+          2092
+        ],
+        "cutouts": [
+          {
+            "bounds_px": [
+              505,
+              31,
+              574,
+              100
+            ],
+            "center_px": [
+              539.5,
+              65.5
+            ],
+            "center_mm": [
+              -0.0312807881773399,
+              61.34162561576354
+            ],
+            "radius_area_mm": 2.1686587791461593,
+            "radii_bbox_mm": [
+              2.1583743842364527,
+              2.1583743842364527
+            ],
+            "center_uv": [
+              0.49953703703703706,
+              0.9686902485659656
+            ]
+          }
+        ],
+        "trace_has_cutout_field": false
+      },
+      "review_status": "reviewed; profile and trace unchanged by this worker",
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_fold/closed/",
+      "profile_sha256_at_finalization": "b210ebf8338cc303b64ca87f68cb4146e1ec33963e2555953e73d6e1e397103e",
+      "trace_sha256_at_finalization": "ed9e0db6637c201eeb198adc99fe30290746ad476a96b79f5edfc17eb1046e4c"
+    },
+    {
+      "id": "pixel-fold-unfolded",
+      "profile_modified": false,
+      "trace": true,
+      "derived": null,
+      "asset": null,
+      "panels": 2,
+      "screens": [
+        {
+          "object": "Inner screen",
+          "resolution": [
+            2208,
+            1840
+          ],
+          "fit": [
+            147.87037392138063,
+            123.22531160115052
+          ],
+          "actual": [
+            147.87037392138063,
+            123.22531160115052
+          ],
+          "center": [
+            0.033485139022051774,
+            -0.20091083413231065,
+            2.94
+          ],
+          "curve": 0,
+          "outline": true,
+          "cutouts": [],
+          "create_cutouts": true,
+          "mesh_cutouts": null,
+          "trace_outline": null,
+          "keep_reviewed_corner_shape": null
+        },
+        {
+          "object": "Cover screen",
+          "resolution": [
+            1080,
+            2092
+          ],
+          "fit": [
+            67.56650246305418,
+            130.87881773399013
+          ],
+          "actual": [
+            67.56650246305418,
+            130.87881773399013
+          ],
+          "center": [
+            -1.2953201970443347,
+            -0.15640394088669948,
+            -2.935
+          ],
+          "curve": 0,
+          "outline": true,
+          "cutouts": [
+            {
+              "center_mm": [
+                0,
+                61.439408866995066
+              ],
+              "radius_mm": 1.5
+            }
+          ],
+          "create_cutouts": true,
+          "mesh_cutouts": null,
+          "trace_outline": null,
+          "keep_reviewed_corner_shape": null
+        }
+      ],
+      "artifact": {
+        "path": "exports\\pixel-fold-unfolded\\model.glb",
+        "mtime": "2026-10-22T15:33:09.659550",
+        "sha256": "3fd4e353d5b86809f85679ee076532c10613c0c60dc5f68a5ada1e13d22cf84b",
+        "antenna_nodes": [],
+        "screens": [
+          {
+            "name": "Inner screen | Camera half",
+            "translation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "rotation": null,
+            "primitives": [
+              {
+                "bounds_mm": [
+                  [
+                    -39.82499986886978,
+                    2.940000034868717,
+                    -61.411745846271515
+                  ],
+                  [
+                    34.14367139339447,
+                    2.940000034868717,
+                    61.81356683373451
+                  ]
+                ],
+                "count": 202,
+                "material": "Device screen | replace texture at runtime",
+                "pbr": {
+                  "baseColorFactor": [
+                    0.07,
+                    0.16,
+                    0.22,
+                    1
+                  ],
+                  "metallicFactor": 0
+                },
+                "uv_bounds": [
+                  [
+                    0.4997735619544983,
+                    0.0
+                  ],
+                  [
+                    1.0,
+                    1.0
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Cover screen",
+            "translation": [
+              -0.0012953206896781921,
+              -0.0029849999118596315,
+              0.00015640394121874124
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "rotation": [
+              0,
+              0,
+              1,
+              4.371138828673793e-08
+            ],
+            "primitives": [
+              {
+                "bounds_mm": [
+                  [
+                    -33.78324955701828,
+                    0,
+                    -65.43941050767899
+                  ],
+                  [
+                    33.78324955701828,
+                    0,
+                    65.43941050767899
+                  ]
+                ],
+                "count": 400,
+                "material": "Device screen | replace texture at runtime.001",
+                "pbr": {
+                  "baseColorFactor": [
+                    0.07,
+                    0.16,
+                    0.22,
+                    1
+                  ],
+                  "metallicFactor": 0
+                },
+                "uv_bounds": [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    1.0,
+                    1.0
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Inner screen | Cover half",
+            "translation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "rotation": null,
+            "primitives": [
+              {
+                "bounds_mm": [
+                  [
+                    -34.07670184969902,
+                    2.940000034868717,
+                    -61.411745846271515
+                  ],
+                  [
+                    39.82499986886978,
+                    2.940000034868717,
+                    61.81356683373451
+                  ]
+                ],
+                "count": 202,
+                "material": "Device screen | replace texture at runtime",
+                "pbr": {
+                  "baseColorFactor": [
+                    0.07,
+                    0.16,
+                    0.22,
+                    1
+                  ],
+                  "metallicFactor": 0
+                },
+                "uv_bounds": [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.4997735619544983,
+                    1.0
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "current_verify": "pass"
+      },
+      "mask_measurement": {
+        "path": "[local reference path omitted]",
+        "resolution": [
+          2208,
+          1840
+        ],
+        "cutouts": [],
+        "trace_has_cutout_field": false
+      },
+      "review_status": "reviewed; profile and trace unchanged by this worker",
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_fold/default/",
+      "profile_sha256_at_finalization": "5108e6e6fe4323c25d06450c4641adc9b786ce3a64e625eed52bcf1859bed247",
+      "trace_sha256_at_finalization": "dd3f405737a361382ff76b2973c8dc850d2df3556a016a043d40804d5776024d"
+    }
+  ],
+  "reviewed_at_local": "2026-10-23T12:25:24.531744",
+  "code_fingerprints": {
+    "build.py": "cd5a24c98a1b5c478caf0b0d455563d858d715c0ac54e49808c5d4c2bd404333",
+    "geometry.py": "79ef1f5559bd94e90d860bc83f54799a6c3d62299f854e853a0c22e0ad895599",
+    "verify_pixels.py": "d89acae983662feeb289b46e3f8bb222938c82e0688c695037ed879d9492483f",
+    "research/trace_skins.py": "a2cb6cefefc086df655424175a63ff9c5f379f1ffc42b902aa66f90fe61970b2"
+  }
+}

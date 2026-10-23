@@ -9,6 +9,11 @@
     "corner_radius": 6.457816087821297,
     "edge_roll": 1.6,
     "front_curve": 1.0,
+    "front_glass_inset_mm": [
+      0.6,
+      0.95
+    ],
+    "front_roll_top_mm": 0.35,
     "edge_roll_mm": [
       3.2,
       1.6
@@ -174,12 +179,12 @@
       3120
     ],
     "fit_box_mm": [
-      71.7796817625459,
-      155.52264381884945
+      71.75772407464056,
+      155.4750688283879
     ],
     "center_mm": [
       0.0,
-      0.4486230110159119,
+      0.4734016518813093,
       4.485
     ],
     "corner_radius_mm": 3.7798981028151775,
@@ -188,10 +193,10 @@
     "cutouts": [
       {
         "center_mm": [
-          0,
-          73.76132190942472
+          0.0,
+          74.0998164576323
         ],
-        "radius_mm": 1.5
+        "radius_mm": 2.0429050813069374
       }
     ]
   },
@@ -267,7 +272,8 @@
     "screen_geometry": "Screen fit and corner radius measured from Google emulator artwork; native pixel aspect preserved. Skin artwork is a reference, not physical CAD.",
     "camera_geometry": "Housing width, height and top gap scaled from official rear artwork; pixel bounds and uncertainty in camera_measurement. Optical internals remain illustrative. Not measurable from this rear view; model depth remains a visual estimate.",
     "finishes": "Approximate sRGB colors and roughness, not calibrated measured materials",
-    "branding": "Google G contour retained from reference artwork. Legacy Pixel4/4a/5/5a lower rear placement (approximately80%height); Pixel6 onward and folds centered on rear/camera leaf. Size, position and finish-tinted material are photo estimates, not manufacturer CAD."
+    "branding": "Google G contour retained from reference artwork. Legacy Pixel4/4a/5/5a lower rear placement (approximately80%height); Pixel6 onward and folds centered on rear/camera leaf. Size, position and finish-tinted material are photo estimates, not manufacturer CAD.",
+    "antenna_details": "Positions/widths measured individually from Google device artwork; nonmetal surface patches follow the actual enclosure. Hidden depth, RGB and roughness are illustrative; finish tint follows the existing back palette. No universal seam layout or through-cut CAD claim."
   },
   "sources": [
     "https://support.google.com/pixelphone/answer/7158570?hl=en",
@@ -1736,6 +1742,83 @@
           5.040325
         ]
       ]
+    ]
+  },
+  "rail_details": {
+    "enclosure": "Aluminum enclosure",
+    "rail_material": "rail",
+    "materials": {
+      "antenna": {
+        "color_role": "back",
+        "metal": 0,
+        "rough": 0.68
+      }
+    },
+    "antenna_breaks": [
+      {
+        "edge": "left",
+        "center_axis_mm": 66.2762,
+        "width_mm": 1.0465,
+        "id": "left-1",
+        "material": "antenna",
+        "inset_mm": 0.6
+      },
+      {
+        "edge": "left",
+        "center_axis_mm": 42.8553,
+        "width_mm": 1.0465,
+        "id": "left-2",
+        "material": "antenna",
+        "inset_mm": 0.6
+      },
+      {
+        "edge": "left",
+        "center_axis_mm": -66.351,
+        "width_mm": 1.0963,
+        "id": "left-3",
+        "material": "antenna",
+        "inset_mm": 0.6
+      },
+      {
+        "edge": "right",
+        "center_axis_mm": 66.4257,
+        "width_mm": 1.0465,
+        "id": "right-4",
+        "material": "antenna",
+        "inset_mm": 0.6
+      },
+      {
+        "edge": "right",
+        "center_axis_mm": 42.955,
+        "width_mm": 0.8471,
+        "id": "right-5",
+        "material": "antenna",
+        "inset_mm": 0.6
+      },
+      {
+        "edge": "right",
+        "center_axis_mm": -66.5005,
+        "width_mm": 0.9966,
+        "id": "right-6",
+        "material": "antenna",
+        "inset_mm": 0.6
+      },
+      {
+        "edge": "top",
+        "center_axis_mm": -0.0499,
+        "width_mm": 1.2966,
+        "id": "top-7",
+        "material": "antenna",
+        "inset_mm": 0.95
+      },
+      {
+        "edge": "bottom",
+        "center_axis_mm": 8.827,
+        "width_mm": 1.3964,
+        "id": "bottom-8",
+        "material": "antenna",
+        "inset_mm": 0.95
+      }
     ]
   }
 }

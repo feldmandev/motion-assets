@@ -1,0 +1,12 @@
+{
+  "status": "Final visual reference review before export",
+  "front_rail_mm": 1.1,
+  "front_roll_mm": 0.3,
+  "estimated_flat_shelf_mm": 0.8,
+  "evidence": "pixel11-antenna-reference-completion.json and pixel11-family-front-calibration.json",
+  "base": "Conservative visual fit; apparent rim1.2–1.7mm includes projection/boundary ambiguity.",
+  "pro": "Upper metal envelope.9–1.3mm favors1.10; excludes lower exposed side1.9–2.5mm. Exact boundary uncertain.",
+  "xl": "Low-confidence Pro-family estimate; no independent front-width fit.",
+  "preserved": "OLED/nativeUV/fit/cutouts/rear geometry unchanged from preceding verified batch.",
+  "limits": "Reference highlights do not establish engineering fillet radii; inspect actual glass/OLED corner clearance."
+}

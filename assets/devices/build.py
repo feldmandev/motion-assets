@@ -38,6 +38,8 @@ def traced_screen(spec, trace, keep_center=False):
     """Screen opening from Google's artwork: size/position and, unless opted out, traced corners."""
     x, y, w, h = trace['screen_rect_mm']
     spec['fit_box_mm'] = [w, h]
+    if 'screen_cutouts_mm' in trace:
+        spec['cutouts'] = trace['screen_cutouts_mm']
     if spec.get('trace_outline', True) and not spec.get('keep_reviewed_corner_shape'):
         spec['outline_mm'] = fit_outline(trace['screen_outline_mm'], w, h)
         # Infer the circular arc from the actual traced opening, rather than the old seed radius.
@@ -83,9 +85,8 @@ def apply_trace(profile):
         return
     body = profile['body_mm']
     if 'panels' not in profile:
-        # Slab phones use the skin for the exact display opening. Their enclosure corners are
-        # generated from that opening plus the real bezel below, so the chassis and display stay
-        # visually concentric instead of inheriting two unrelated corner fits from the artwork.
+        # The chassis and display have independent contours in Google's artwork.
+        profile['body_outline_mm'] = fit_outline(trace['body_outline_mm'], body['width'], body['height'])
         traced_screen(profile['screen'], trace)
         return
     profile['body_outline_mm'] = fit_outline(trace['body_outline_mm'], body['width'], body['height'])
@@ -133,7 +134,7 @@ def sync_slab_body_corners(profile):
     local horizontal/vertical bezel rather than assuming one global border width. Imported assets
     and foldables keep their reviewed/model-specific enclosure geometry.
     """
-    if profile.get('manufacturer') == 'Apple' or 'asset' in profile or 'panels' in profile or 'screen' not in profile:
+    if profile.get('manufacturer') == 'Apple' or 'asset' in profile or 'panels' in profile or 'screen' not in profile or profile.get('body_outline_mm'):
         return
     body = profile['body_mm']
     spec = profile['screen']
@@ -188,12 +189,23 @@ def prepare_screen(spec, body, screen_image=None):
         levels = sorted(set([-middle+2*middle*row/96 for row in range(97)]+[
             sign*(middle+radius*math.sin(step*math.pi/64))
             for sign in [-1,1] for step in range(33)]))
+        boundary = spec.get('outline_mm')
+        if boundary:
+            low, high = min(p[1] for p in boundary), max(p[1] for p in boundary)
+            levels = sorted(set([max(low, min(high, y)) for y in levels]+[p[1] for p in boundary]))
         rows = len(levels)-1
         for y in levels:
-            corner_y = max(0, abs(y)-(height/2-radius))
-            extent = width/2-radius + math.sqrt(max(0, radius**2-corner_y**2))
+            if boundary:
+                crossings = [ax+(y-ay)*(bx-ax)/(by-ay)
+                             for (ax, ay), (bx, by) in zip(boundary, boundary[1:]+boundary[:1])
+                             if ay != by and min(ay, by) <= y <= max(ay, by)]
+                left, right = min(crossings), max(crossings)
+            else:
+                corner_y = max(0, abs(y)-(height/2-radius))
+                extent = width/2-radius + math.sqrt(max(0, radius**2-corner_y**2))
+                left, right = -extent, extent
             for column in range(columns+1):
-                x = -extent + 2*extent*column/columns
+                x = left + (right-left)*column/columns
                 drop = curve*max(0, (abs(x)-(width/2-curve*2))/(curve*2))**2
                 points.append((x*MM, y*MM, -drop*MM))
         for row in range(rows):
@@ -202,14 +214,38 @@ def prepare_screen(spec, body, screen_image=None):
                 faces.append((index, index+1, index+columns+2, index+columns+1))
         # The front glass and rail must follow the OLED curve, otherwise their
         # flat faces hide the rolled display edges and create a thick false bezel.
+        support_width = curve*2
+        if body.get('front_glass_inset_mm'):
+            # Include one OLED face span: its interpolation can begin sagging
+            # before the analytic curve starts, especially at traced corners.
+            support_width += max((max(points[i][0] for i in face)-min(points[i][0] for i in face))/MM
+                                 for face in faces)
         for part in screen.parent.children:
             if not part.name.startswith(('Front black glass', 'Aluminum enclosure')):
                 continue
+            if body.get('front_glass_inset_mm'):
+                import bmesh
+                bm = bmesh.new()
+                bm.from_mesh(part.data)
+                # Split the broad caps at the support ramp's four X boundaries;
+                # deforming only the perimeter would also sink the flat centre.
+                for edge in (-width/2, -width/2+support_width, width/2-support_width, width/2):
+                    geom = list(bm.verts)+list(bm.edges)+list(bm.faces)
+                    if part.name.startswith('Aluminum enclosure'):
+                        geom = [item for item in geom if all(v.co.z > 0 for v in
+                                ([item] if isinstance(item, bmesh.types.BMVert) else item.verts))]
+                    bmesh.ops.bisect_plane(bm, geom=geom, dist=1e-9,
+                                          plane_co=((cx+edge)*MM-part.location.x, 0, 0), plane_no=(1, 0, 0))
+                bm.to_mesh(part.data)
+                bm.free()
             for vertex in part.data.vertices:
                 if part.name.startswith('Aluminum enclosure') and vertex.co.z <= 0:
                     continue
-                x = abs(vertex.co.x/MM)
-                drop = curve*min(1, max(0,(x-(width/2-curve*2))/(curve*2)))**2
+                x = abs((vertex.co.x+part.location.x)/MM-cx) if body.get('front_glass_inset_mm') else abs(vertex.co.x/MM)
+                fraction = min(1, max(0,(x-(width/2-support_width))/support_width))
+                # A linear support ramp lies below every OLED parabola chord,
+                # including the narrower rows at its traced corners.
+                drop = curve*(fraction if body.get('front_glass_inset_mm') else fraction**2)
                 vertex.co.z -= drop*MM
     elif spec.get('outline_mm'):
         from geometry import traced_ring
@@ -554,7 +590,7 @@ def build(profile_path, output, screen_image=None, finish=None):
         root = bpy.data.objects[profile['root']]
         trace = load_trace(profile['id'])
         if trace and 'screen' in profile:  # reviewed asset keeps its geometry; frame comes from the skin
-            profile['screen']['frame_trace'] = trace
+            traced_screen(profile['screen'], trace)
         for obj in [root, *root.children_recursive]:
             bpy.context.scene.collection.objects.link(obj)
         for obj in list(bpy.data.objects):
@@ -569,6 +605,9 @@ def build(profile_path, output, screen_image=None, finish=None):
             shader = bpy.data.materials[profile['material_objects']['logo']].node_tree.nodes['Principled BSDF']
             color = profile['finishes'][profile['finish']]['logo']['rgb']
             shader.inputs['Base Color'].default_value = tuple(value/12.92 if value <= .04045 else ((value+.055)/1.055)**2.4 for value in color)+(1,)
+        if profile['id'] == 'pixel-10-pro':
+            from pixel_imported_front import calibrate_imported_pixel_front
+            calibrate_imported_pixel_front(profile, root, trace)
     else:
         from geometry import create_device
         apply_trace(profile)
@@ -585,12 +624,19 @@ def build(profile_path, output, screen_image=None, finish=None):
     screens = []
     for spec in profile.get('screens', [profile['screen']] if 'screen' in profile else []):
         screens.append((spec, *prepare_screen(spec, body, screen_image)))
+    if profile['id'].startswith('pixel-'):
+        from pixel_front_optics import enhance_pixel_front_optics
+        enhance_pixel_front_optics(profile)
+    if profile.get('rail_details'):
+        from pixel_rail_details import apply_pixel_rail_details
+        apply_pixel_rail_details(profile, root)
     configure_fold_animation(profile, root)
     root['device_id'] = profile['id']
     root['accuracy'] = profile['accuracy']['camera_geometry']
 
     camera_data = bpy.data.cameras.new('Device front | orthographic')
     camera_data.type = 'ORTHO'
+    camera_data.sensor_fit = 'VERTICAL'
     camera_data.ortho_scale = body['height']*MM
     camera_data.clip_start = .001
     camera = bpy.data.objects.new('Device front | orthographic', camera_data)
@@ -710,7 +756,9 @@ def write_frame(output, spec, body, left, top, width, height, rail):
             cutouts += f'<circle cx="{cx}" cy="{cy}" r="{cut["radius_mm"]}" fill="#07090c"/>'
     from geometry import outline
     silhouettes = []
-    for inset in (0, .7):
+    front_roll = body.get('edge_roll_mm', [body.get('edge_roll', .55)]*2)[1]
+    glass_inset = max(body.get('front_rail_mm', .7), front_roll*.95)
+    for inset in (0, glass_inset):
         radii = body.get('corner_radii_mm',[body['corner_radius']]*4)
         points = outline(body['width']-2*inset,body['height']-2*inset,[max(.1,r-inset) for r in radii],32)
         path = 'M'+' L'.join(f'{body["width"]/2+x:.5f},{body["height"]/2-y:.5f}' for x,y in points)+' Z'

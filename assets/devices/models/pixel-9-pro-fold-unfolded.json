@@ -1,6 +1,6 @@
 {
   "id": "pixel-9-pro-fold-unfolded",
-  "name": "Pixel 9 Pro Fold · unfolded",
+  "name": "Pixel 9 Pro Fold Â· unfolded",
   "state": "unfolded",
   "screens": [
     {
@@ -58,10 +58,10 @@
       "cutouts": [
         {
           "center_mm": [
-            63.7724907063197,
-            70.61805183199286
+            64.89995600527936,
+            68.10910690717114
           ],
-          "radius_mm": 1.5
+          "radius_mm": 2.556471761965134
         }
       ],
       "uv": "u right, v up; full image maps to [0,1] without cropping",
@@ -122,10 +122,10 @@
       "cutouts": [
         {
           "center_mm": [
-            0,
-            69.65011746280344
+            0.0,
+            68.51527016444791
           ],
-          "radius_mm": 1.5
+          "radius_mm": 2.4741804754956696
         }
       ],
       "uv": "u right, v up; full image maps to [0,1] without cropping",
@@ -194,7 +194,8 @@
           2.0353137039937352,
           13.153564604541893,
           13.153564604541893
-        ]
+        ],
+        "front_rail_mm": 0.84
       },
       "center_mm": [
         -37.699999999999996,
@@ -221,7 +222,8 @@
           13.153564604541893,
           2.0353137039937352,
           2.0353137039937352
-        ]
+        ],
+        "front_rail_mm": 0.84
       },
       "center_mm": [
         37.699999999999996,
@@ -1760,7 +1762,8 @@
     "bar": "bar",
     "black": "black",
     "flash": "flash",
-    "logo": "logo"
+    "logo": "logo",
+    "antenna": "antenna"
   },
   "finishes": [
     {
@@ -1795,6 +1798,13 @@
           ],
           "metal": 0.5,
           "rough": 0.28
+        },
+        "antenna": {
+          "rgb": [
+            0.2,
+            0.22745,
+            0.23922
+          ]
         }
       }
     },
@@ -1830,12 +1840,19 @@
           ],
           "metal": 0.5,
           "rough": 0.28
+        },
+        "antenna": {
+          "rgb": [
+            0.87843,
+            0.87843,
+            0.83529
+          ]
         }
       }
     }
   ],
-  "glbUrl": "assets/devices/models/pixel-9-pro-fold-unfolded.09e22c254a1f.glb.gz",
-  "sha256": "09e22c254a1f4c4034452e4496dc20fc086c43beb02e86b23af4baa35ef144fc",
+  "glbUrl": "assets/devices/models/pixel-9-pro-fold-unfolded.bf8e33aacec9.glb.gz",
+  "sha256": "bf8e33aacec951fbbe4fe58194ab2a0d784d06039a081e5f8acc29faa118f653",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/pixel-9-pro-fold-unfolded.json",
@@ -1846,7 +1863,9 @@
       "camera_geometry": "Provisional photo-informed blockout; shared reviewed optics are illustrative, not device-specific optical prescriptions",
       "finishes": "Approximate sRGB colors and roughness, not calibrated measured materials",
       "hinge": "Animated rigid-panel hinge with a measured open/closed thickness axis; half-angle barrel and hinge leaves remain an estimated mechanism; the flexible OLED is split at the crease.",
-      "branding": "Google G contour retained from reference artwork. Legacy Pixel4/4a/5/5a lower rear placement (approximately80%height); Pixel6 onward and folds centered on rear/camera leaf. Size, position and finish-tinted material are photo estimates, not manufacturer CAD."
+      "branding": "Google G contour retained from reference artwork. Legacy Pixel4/4a/5/5a lower rear placement (approximately80%height); Pixel6 onward and folds centered on rear/camera leaf. Size, position and finish-tinted material are photo estimates, not manufacturer CAD.",
+      "front_rail": "Visible inner-frame metal-to-dark-surround transition sampled independently of the OLED opening in the official SDK artwork. Uniform inset is a front-view approximation; per-edge variation, hinge transitions and antenna inserts are recorded in research/pixel-fold-front-calibration.json. Edge-roll depth and materials are not measured by this image.",
+      "antenna_details": "Visible cover-leaf breaks measured from this family closed Google artwork; root-space coordinates follow the cover leaf and mirror for its rear-facing open pose. Opposite leaf and unresolved hinge-edge bands are not inferred. Depth and finish-tinted polymer are illustrative."
     },
     "sources": [
       "https://support.google.com/pixelphone/answer/7158570?hl=en",

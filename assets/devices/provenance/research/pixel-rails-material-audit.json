@@ -1,0 +1,474 @@
+{
+  "as_of": "2026-10-23",
+  "status": "Opt-in study only. Canonical profiles, source BLENDs and exports are not modified.",
+  "scope": [
+    "pixel-9-pro",
+    "pixel-10-pro"
+  ],
+  "coordinates": {
+    "normalized": "u left-to-right, v top-to-bottom within body bounds in front view; rear photos mirror X.",
+    "mm": "root-local X right, Y up, Z front; published width72mm and height152.8mm.",
+    "uncertainty": "Approximately2px manual edge-picking uncertainty; artwork projection and polymer physical section need not match. Numeric roughness is illustrative, not measured."
+  },
+  "sources": [
+    {
+      "id": "pixel9-design",
+      "url": "https://store.google.com/au/magazine/pixel-9-pro-phones-design-story?hl=en-GB",
+      "observed": "Google designer specifies matte glass back, polished aluminum enclosure, bead-blasted camera face and high-polished sidewalls. Also specifies flat glass.",
+      "quote": "The camera bar features a bead-blasted top surface and high-polished sidewalls"
+    },
+    {
+      "id": "pixel10-product",
+      "url": "https://store.google.com/gb/product/pixel_10_pro?hl=en-GB",
+      "observed": "Google describes silky matte back, polished frame and diamond-cut camera bar. Macro image shows diffuse camera face, narrow polished rim and reflective enclosure."
+    },
+    {
+      "id": "pixel10-specs",
+      "url": "https://store.google.com/product/pixel_10_pro_specs?hl=en-US",
+      "observed": "Victus2 silky matte back and polished-finish aluminum frame. Material identity alone does not determine shader numbers."
+    }
+  ],
+  "code_audit": {
+    "make_pixel_profiles.py": "Pixel9Pro already separates back/rail/bar/black. Rail metal1 rough.18, back nonmetal rough.42, camera bar metal.6 rough.30. Rail RGB is derived from backRGB*.65+.20, an artistic estimate. The single bar role loses the official camera dual finish.",
+    "make_device_branding.py": "Adds logo contours and finish-tinted logo role only. No rail or antenna construction.",
+    "geometry.py": "Separate enclosure, rear glass, front black glass, camera housing and optical layers exist. No procedural antenna API. camera_assembly uses bar role across all housing faces.",
+    "build.py": "Imported Pixel10Pro keeps source materials. --finish updates Base Color only, ignoring metal/rough values. Default source Obsidian RGB differs from --finish Obsidian palette; do not bundle this unrelated palette change into a seam correction.",
+    "pixel10_source": "Four side strips, each0.7mm long-axis width and6.5mm depth coverage, atY+52/-60mm; no top/bottom antenna meshes. Enclosure depth8.55mm. Camera housing also has a black cavity material slot that must be preserved. Existing actual bottom-port recesses must remain.",
+    "current_glb_antenna_nodes": {
+      "pixel-9-pro": 0,
+      "pixel-10-pro": 4
+    },
+    "pixel10_current_shaders": {
+      "rail": {
+        "metal": 1,
+        "rough": 0.16
+      },
+      "back": {
+        "metal": 0,
+        "rough": 0.43
+      },
+      "bar": {
+        "metal": 0.4,
+        "rough": 0.38
+      },
+      "polymer": {
+        "metal": 0,
+        "rough": 0.68
+      }
+    }
+  },
+  "prototype": {
+    "file": "research/prototype_pixel_rails.py",
+    "activation": "blender -b --python research/prototype_pixel_rails.py -- pixel-9-pro --antennas (or pixel-10-pro). No default build hook.",
+    "outputs": "tmp/pixel-rail-audit/<id>/materials-seams-study.blend and study-checks.json. No GLB export.",
+    "materials": "Preserves current camera face and black cavity materials. Copies face RGB into sidewall material using existing polished rail metal/rough values. Pixel9Pro dual finish explicitly specified by Google; Pixel10Pro division inferred from macro image, qualified as a study.",
+    "antennas": "Six model-specific surface patches clipped from copied actual enclosure mesh, preserving existing outline and front/rear edge rolls. 3-micrometre offset avoids coplanar flicker. Replaces four old ribbons in temporary Pixel10Pro scene. This is surface appearance, not through-cut CAD inserts.",
+    "excluded": "No corner/display/lens/port geometry change; no invented mmWave/SIM hardware; no extrapolation to other models/finishes/regions."
+  },
+  "proposed_minimal_api": {
+    "camera": "Optional camera.side_material. After cavity booleans, assign only original exterior housing polygons with non-rear-facing normals to that role; preserve black cavity slots. Separate bar_side role shares barRGB but uses polished rail metal/rough. Opt in Pixel9Pro only initially; imported Pixel10Pro needs equivalent instance assignment.",
+    "antenna": "Optional profile.antenna_breaks explicit edge/center_axis_mm/width_mm/material entries. Clip existing enclosure surface with measured per-model coordinates; no generation ratio or generic bands.",
+    "hook": "If adopted, apply_pixel_rail_details(profile,root) after imported/procedural creation, before parts=[root,*root.children_recursive], prepare_screen, checks and export. Honor explicit imported material metal/rough overrides. No shared files edited by this audit."
+  },
+  "devices": {
+    "pixel-9-pro": {
+      "body_mm": {
+        "width": 72,
+        "height": 152.8,
+        "depth": 8.5
+      },
+      "sdk_reference": {
+        "file": "research/skins/pixel-9-pro/frame.png",
+        "body_bounds_px": [
+          0,
+          0,
+          1400,
+          2974
+        ],
+        "role": "Official installed Google emulator artwork; six seam locations measured separately per model. Not enclosure CAD.",
+        "sha256": "c81473b27da60f38bcddd354cff92cd83cece3e7028f6cb404b3bd2934880338"
+      },
+      "official_images": [
+        {
+          "asset": {
+            "alt": "Pixel 9 Pro and Pixel 9 Pro phones placed on top of its original design sketches",
+            "url": "https://lh3.googleusercontent.com/i52uyB07iOcTbGHHIWYfmi5LZe0osgcxLd3Yjm3d4Dm8csC9ko8KYXaEg6rn2gxpHqALzAzYfAcAGmCaHTJeKLim7m99WzisxYrSAcEM=s3000-w3000-e365-rw-v0-nu"
+          },
+          "local": "tmp/pixel-rail-audit/pixel9-0.webp"
+        },
+        {
+          "asset": {
+            "alt": "Pixel 9 Pro facing back to show its new camera bar design",
+            "url": "https://lh3.googleusercontent.com/iGALxM0OF2TGq-ZqUAaxJPdd8af9FpQjEmb15fZpcb3P-mOGgHoZqYuMXWJfEw9fhG_Tl1h6NffEOQvuON3K8HGkg_bK_xAvkdeVJBQ=s1200-w1200-e365-rw-v0-nu"
+          },
+          "local": "tmp/pixel-rail-audit/pixel9-6.webp"
+        }
+      ],
+      "image_interpretation": "Pixel9 rear render confirms top and upper sides; sketches only design context. Pixel10 side comparison: smaller Pro on left independently supports v~.166/.896 and~1.4mm seam width. Macro confirms top/upper-side seam continuity across rear rail lip; perspective macro is not a metric source.",
+      "seams": [
+        {
+          "id": "left-upper",
+          "edge": "left",
+          "normalized_uv": [
+            0,
+            0.1607263
+          ],
+          "center_axis_mm": 51.841,
+          "width_mm": 1.49,
+          "source_axis_px": 478,
+          "orientation": "transverse to long rail, runs through device depth"
+        },
+        {
+          "id": "left-lower",
+          "edge": "left",
+          "normalized_uv": [
+            0,
+            0.8971083
+          ],
+          "center_axis_mm": -60.6781,
+          "width_mm": 1.49,
+          "source_axis_px": 2668,
+          "orientation": "transverse to long rail, runs through device depth"
+        },
+        {
+          "id": "right-upper",
+          "edge": "right",
+          "normalized_uv": [
+            1,
+            0.1607263
+          ],
+          "center_axis_mm": 51.841,
+          "width_mm": 1.49,
+          "source_axis_px": 478,
+          "orientation": "transverse to long rail, runs through device depth"
+        },
+        {
+          "id": "right-lower",
+          "edge": "right",
+          "normalized_uv": [
+            1,
+            0.8971083
+          ],
+          "center_axis_mm": -60.6781,
+          "width_mm": 1.49,
+          "source_axis_px": 2668,
+          "orientation": "transverse to long rail, runs through device depth"
+        },
+        {
+          "id": "top",
+          "edge": "top",
+          "normalized_uv": [
+            0.5,
+            0
+          ],
+          "center_axis_mm": 0.0,
+          "width_mm": 1.4914,
+          "source_axis_px": 700,
+          "orientation": "transverse to short rail, runs through device depth"
+        },
+        {
+          "id": "bottom",
+          "edge": "bottom",
+          "normalized_uv": [
+            0.6185714,
+            1
+          ],
+          "center_axis_mm": 8.5371,
+          "width_mm": 1.4914,
+          "source_axis_px": 866,
+          "orientation": "transverse to short rail, runs through device depth"
+        }
+      ],
+      "corner_continuity": "All six seams on straight rail portions; metal continues around all four plan-view corner arcs. No evidence for added corner bands. Glass remains separate and continuous.",
+      "current_mesh_evidence": [
+        {
+          "name": "Aluminum enclosure",
+          "materials": [
+            "rail"
+          ],
+          "bounds_mm": [
+            [
+              -36.0,
+              36.0
+            ],
+            [
+              -76.4,
+              76.4
+            ],
+            [
+              -4.225,
+              4.225
+            ]
+          ],
+          "polygons": 2246
+        },
+        {
+          "name": "Camera housing",
+          "materials": [
+            "bar"
+          ],
+          "bounds_mm": [
+            [
+              -32.78,
+              32.78
+            ],
+            [
+              41.04,
+              62.8
+            ],
+            [
+              -7.85,
+              -4.25
+            ]
+          ],
+          "polygons": 2344
+        }
+      ]
+    },
+    "pixel-10-pro": {
+      "body_mm": {
+        "width": 72,
+        "height": 152.8,
+        "depth": 8.6
+      },
+      "sdk_reference": {
+        "file": "research/skins/pixel-10-pro/frame.png",
+        "body_bounds_px": [
+          0,
+          0,
+          1400,
+          2968
+        ],
+        "role": "Official installed Google emulator artwork; six seam locations measured separately per model. Not enclosure CAD.",
+        "sha256": "094bd2e8852b62500e8dcddd7ddea329ea023a7b845a0d5894eb1f1cfc35cfa4"
+      },
+      "official_images": [
+        {
+          "asset": {
+            "alt": "Pixel 10 Pro and Pro XL from the side to compare the phones' heights and display the phones' thinness",
+            "url": "https://lh3.googleusercontent.com/1zbgSlz9b0GG48o2p73K4WVPdLEp17bKSLQYdXX7pUDnC8UllKB3sWcMthH362Xr23Dck0-VZADtGwJouRELL-vlC3lTbOSbQvl8=s3000-w3000-e365-rw-v0-nu"
+          },
+          "local": "tmp/pixel-rail-audit/pixel10-22.webp"
+        },
+        {
+          "asset": {
+            "alt": "Pixel 10 Pro upside down with one corner touching a liquid surface",
+            "url": "https://lh3.googleusercontent.com/W34c6s1erwHCeN59uI9EFKjJNJijemkgIRMnOwAoRt-RZuuI_g2Lht53Zse6Vrqi-2u8C4HIrAtSOevHs5Ngg4pOWVzRhP0Kgm8=s3000-w3000-e365-rw-v0-nu"
+          },
+          "local": "tmp/pixel-rail-audit/pixel10-44.webp"
+        }
+      ],
+      "image_interpretation": "Pixel9 rear render confirms top and upper sides; sketches only design context. Pixel10 side comparison: smaller Pro on left independently supports v~.166/.896 and~1.4mm seam width. Macro confirms top/upper-side seam continuity across rear rail lip; perspective macro is not a metric source.",
+      "seams": [
+        {
+          "id": "left-upper",
+          "edge": "left",
+          "normalized_uv": [
+            0,
+            0.1661051
+          ],
+          "center_axis_mm": 51.0191,
+          "width_mm": 1.4415,
+          "source_axis_px": 493,
+          "orientation": "transverse to long rail, runs through device depth"
+        },
+        {
+          "id": "left-lower",
+          "edge": "left",
+          "normalized_uv": [
+            0,
+            0.8955526
+          ],
+          "center_axis_mm": -60.4404,
+          "width_mm": 1.4415,
+          "source_axis_px": 2658,
+          "orientation": "transverse to long rail, runs through device depth"
+        },
+        {
+          "id": "right-upper",
+          "edge": "right",
+          "normalized_uv": [
+            1,
+            0.1661051
+          ],
+          "center_axis_mm": 51.0191,
+          "width_mm": 1.4415,
+          "source_axis_px": 493,
+          "orientation": "transverse to long rail, runs through device depth"
+        },
+        {
+          "id": "right-lower",
+          "edge": "right",
+          "normalized_uv": [
+            1,
+            0.8955526
+          ],
+          "center_axis_mm": -60.4404,
+          "width_mm": 1.4415,
+          "source_axis_px": 2658,
+          "orientation": "transverse to long rail, runs through device depth"
+        },
+        {
+          "id": "top",
+          "edge": "top",
+          "normalized_uv": [
+            0.5,
+            0
+          ],
+          "center_axis_mm": 0.0,
+          "width_mm": 1.44,
+          "source_axis_px": 700,
+          "orientation": "transverse to short rail, runs through device depth"
+        },
+        {
+          "id": "bottom",
+          "edge": "bottom",
+          "normalized_uv": [
+            0.6185714,
+            1
+          ],
+          "center_axis_mm": 8.5371,
+          "width_mm": 1.44,
+          "source_axis_px": 866,
+          "orientation": "transverse to short rail, runs through device depth"
+        }
+      ],
+      "corner_continuity": "All six seams on straight rail portions; metal continues around all four plan-view corner arcs. No evidence for added corner bands. Glass remains separate and continuous.",
+      "current_mesh_evidence": [
+        {
+          "name": "Antenna break",
+          "materials": [
+            "Graphite polymer gaskets"
+          ],
+          "bounds_mm": [
+            [
+              -36.0325,
+              -35.9975
+            ],
+            [
+              -60.35,
+              -59.65
+            ],
+            [
+              -3.25,
+              3.25
+            ]
+          ],
+          "polygons": 2246
+        },
+        {
+          "name": "Antenna break.001",
+          "materials": [
+            "Graphite polymer gaskets"
+          ],
+          "bounds_mm": [
+            [
+              -36.0325,
+              -35.9975
+            ],
+            [
+              51.65,
+              52.35
+            ],
+            [
+              -3.25,
+              3.25
+            ]
+          ],
+          "polygons": 2246
+        },
+        {
+          "name": "Antenna break.002",
+          "materials": [
+            "Graphite polymer gaskets"
+          ],
+          "bounds_mm": [
+            [
+              35.9975,
+              36.0325
+            ],
+            [
+              -60.35,
+              -59.65
+            ],
+            [
+              -3.25,
+              3.25
+            ]
+          ],
+          "polygons": 2246
+        },
+        {
+          "name": "Antenna break.003",
+          "materials": [
+            "Graphite polymer gaskets"
+          ],
+          "bounds_mm": [
+            [
+              35.9975,
+              36.0325
+            ],
+            [
+              51.65,
+              52.35
+            ],
+            [
+              -3.25,
+              3.25
+            ]
+          ],
+          "polygons": 2246
+        },
+        {
+          "name": "Body | aluminum enclosure",
+          "materials": [
+            "Obsidian | polished aluminum",
+            "Graphite polymer gaskets"
+          ],
+          "bounds_mm": [
+            [
+              -36.0,
+              36.0
+            ],
+            [
+              -76.4,
+              76.4
+            ],
+            [
+              -4.275,
+              4.275
+            ]
+          ],
+          "polygons": 5819
+        },
+        {
+          "name": "Camera bar | satin face and rolled shoulder",
+          "materials": [
+            "Camera bar | satin gunmetal aluminum",
+            "Optical aperture | light-absorbing interior"
+          ],
+          "bounds_mm": [
+            [
+              -32.4,
+              32.4
+            ],
+            [
+              39.7,
+              62.1
+            ],
+            [
+              -7.825,
+              -4.375
+            ]
+          ],
+          "polygons": 3384
+        }
+      ]
+    }
+  },
+  "verification": {
+    "syntax": "python -m py_compile research/prototype_pixel_rails.py passed",
+    "initial_prototype": "First9Pro saved; structural assertion discovered an empty bottom surface in n-gon clipping. Re-run triangulates the copied enclosure before clipping and requires all6patches nonempty. Validation in progress; not integrated.",
+    "canonical_files": "No canonical profile, build/geometry generator, sourceBLEND, gallery orGLB mutated."
+  }
+}

@@ -1,0 +1,2008 @@
+{
+  "as_of_utc": "2026-10-23T09:27:44.806608+00:00",
+  "status": "Implementation ready for parent integration. No Blender process, model build, export or rendered acceptance performed.",
+  "scope": {
+    "created_files": [
+      "pixel_front_optics.py",
+      "research/pixel-front-optics-verification.json"
+    ],
+    "edited_existing_files": [],
+    "all_profiles_and_traces": "unchanged",
+    "rear_optics": "unchanged"
+  },
+  "implementation": {
+    "api": "enhance_pixel_front_optics(profile); explicit call is opt-in, importing module has no Blender or scene side effects",
+    "geometry": "One replacement mesh per known circular aperture object, with three closed components: black well/annular rim, deeper opaque lens, one transmissive coated cover. Four shared front-only materials. Generated disks retain transforms; imported Pixel 10 Pro front disk is explicitly fitted to its measured screen/cutout spec and its separate obsolete front coating object removed. No spheres, new scene objects, screen mesh/UV edits or rear changes.",
+    "bounds": "Radius is taken from runtime screen cutouts (original Fold bezel retains its existing bezel feature radius); depth is measured from the existing disk. All local vertices lie within +/-depth/2 and within radius. Generated aperture centers/parents/transforms/names stay intact. Imported 10 Pro front disk center alone is fitted to the runtime screen spec/cutout; parent and name remain intact.",
+    "depth_limit": "DEPTH IS COMPRESSED AND ILLUSTRATIVE, NOT A PHYSICAL CAMERA WELL. The source screen commonly remains continuous underneath. Existing aperture disk centers are 0.025 mm in front of OLED, thickness 0.025 mm; all new geometry remains 0.0125-0.0375 mm in front of the OLED. No real recess into glass/body or deep optical prescription is claimed.",
+    "relative_depths_in_disk_thickness": {
+      "well_bottom": -0.5,
+      "well_outer_top": 0.5,
+      "annulus_top": 0.38,
+      "well_inner_floor": -0.28,
+      "lens_top": -0.1,
+      "glass_underside": -0.04,
+      "glass_top": 0.06
+    },
+    "sample_for_0_025mm_disk": {
+      "annulus_top_to_lens_top_mm": 0.012,
+      "glass_top_to_lens_top_mm": 0.004,
+      "glass_max_sag_mm": 0.0015
+    },
+    "normal_winding": "Each component has positive signed volume for front_sign +1 and -1. Negative direction mirrors local Z and reverses every face, so top cap normals face the outward camera direction. 64 radial segments; no repeated ring-center vertices or degenerate center quads.",
+    "materials": "well .52 roughness; narrow graphite annulus .12 metallic/.32 roughness; dark violet deeper lens .17 roughness; cover .85 transmission, IOR 1.46, .10 roughness, .25 coat. Color/roughness/IOR are appearance estimates, not measured manufacturer samples.",
+    "gltf_expectations": [
+      "Principled material should export KHR_materials_transmission transmissionFactor=0.85, KHR_materials_ior ior=1.46, and KHR_materials_clearcoat clearcoatFactor=0.25 on Pixel front optics | coated glass, subject to parent exporter validation.",
+      "The other three materials are opaque. Exactly one transmissive component avoids stacking multiple screen-space transmission layers. OPAQUE alphaMode is valid for glTF transmission; no alpha blending is requested.",
+      "No Thin Film inputs or KHR_materials_iridescence are claimed. Violet appearance comes from an estimated dark deeper element through a neutral cover, not a measured interference coating.",
+      "Names do not match build.py coating_for / LENS_COATINGS substrings; existing rear optical post-processing must leave these four materials unchanged. No common rear helper edits required.",
+      "Parent must inspect exported extensions, front-facing normals, grazing-angle reflections, tiny depth separation and visibility in the actual viewer. Geometry-only checks cannot validate transmission or lighting."
+    ],
+    "visibility_contract": "Old aperture mesh is replaced, never left as an opaque disk in front of a hidden stack. Well floor z=screen+.018mm, deeper-lens top z=screen+.0225mm and cover z=screen+.0265mm for the .025mm source disk centered at screen+.025mm; all lie in front of the continuous OLED. For imported 10 Pro, the old Selfie lens coating object is removed after replacement. No native UVs or curved screen Z values change."
+  },
+  "parent_hook": {
+    "file": "build.py (parent-owned; NOT edited)",
+    "exact_location": "Immediately AFTER the complete for spec ... screens.append((spec, *prepare_screen(...))) loop and BEFORE configure_fold_animation(profile, root). Never inside the loop.",
+    "code": "    if profile['id'].startswith('pixel-') and profile.get('pixel_front_optics', False):\n        from pixel_front_optics import enhance_pixel_front_optics\n        enhance_pixel_front_optics(profile)\n    configure_fold_animation(profile, root)",
+    "enable": "Parent can set profile['pixel_front_optics'] = True for a selected QA build or map a parent-owned opt-in CLI flag to that runtime field. No profile JSONs or generators were changed here.",
+    "runtime_trace": "Hook sees cutouts after parent apply_trace/traced_screen and prepare_screen; measured center/radius remain authoritative. No recomputation from screen native aspect or UV needed.",
+    "pixel_4": "Explicitly skipped. Add typed RGB feature mapping only after primary evidence identifies the specific existing forehead feature. Do not treat all four disks as selfie lenses.",
+    "original_fold": "Only pixel-fold-unfolded single existing Inner bezel selfie camera receives bezel detail. Its 0.030mm disk depth is read from the mesh; the inner OLED cutout list remains empty.",
+    "source_generator_patch": "None required for geometry generator or profile generator. Retain create_cutouts and measured cutout data. Parent integrates the one build hook and supplies explicit opt-in.",
+    "imported_pixel_10_pro": "Inspected exports/pixel-10-pro/model.glb before implementing its explicit branch. profile asset is imported and screen.create_cutouts is absent, so normal generated-disk loop skips it. Named source front hardware is handled separately from rear Lens 1/2 stacks. No build.py special case required beyond existing post-screen hook."
+  },
+  "primary_evidence": [
+    {
+      "url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_9/",
+      "tree_id": "ad374e55669266d15446d39c71c1ae3a439a5ff1",
+      "verification": "Fetched Gitiles JSON and base64 blobs directly; local SDK back.webp and mask.webp byte-identical.",
+      "local_directory": "[local reference path omitted]",
+      "back_webp_sha256": "d8ed1bcf314de2c293ee7ba7744349fa9233d24d47798189f9660369cae16f2d",
+      "mask_webp_sha256": "6f4fb00c5147da694c4d0b3c45c0b580db94b81b77528985b6f30e4c944f1ac4",
+      "observed": "Visible black outer camera surround, narrower inner annulus, small violet/blue optical center; inspected actual source artwork crop, not exports/front.png."
+    },
+    {
+      "url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_9/back.webp?format=TEXT",
+      "role": "actual front artwork blob"
+    },
+    {
+      "url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_9/mask.webp?format=TEXT",
+      "role": "actual display-local mask blob"
+    },
+    {
+      "url": "https://blog.google/products-and-platforms/devices/pixel/pixel-4/",
+      "role": "Primary product launch context; fetched. Does not map this repository untyped forehead disks to RGB/IR, so none changed."
+    },
+    {
+      "url": "https://blog.google/products-and-platforms/devices/pixel/google-pixel-fold/",
+      "role": "Primary Fold context; fetched. Existing explicit bezel mesh and profile tuple determine placement; no new image-derived center invented."
+    }
+  ],
+  "pixel9_image_measurement": {
+    "frame_size_px": [
+      1198,
+      2531
+    ],
+    "sampling_center_frame_px": [
+      594,
+      148
+    ],
+    "mm_per_px_from_trace": 0.06037139470564994,
+    "approximate_art_radii_px": {
+      "visible_outer_dark_surround": 31,
+      "inner_annulus": [
+        14,
+        19
+      ],
+      "colored_optic": 10
+    },
+    "method": "Radial RGB sample annuli around [594,148], then 3x inspection of original SDK back.webp camera crop. These are approximate visual transition radii, +/-2px; antialiasing/shading is not a physical glass boundary.",
+    "radial_median_rgb_samples": [
+      {
+        "radius_px": [
+          0,
+          5
+        ],
+        "rgb": [
+          11,
+          2,
+          33
+        ]
+      },
+      {
+        "radius_px": [
+          5,
+          10
+        ],
+        "rgb": [
+          15,
+          9,
+          30
+        ]
+      },
+      {
+        "radius_px": [
+          10,
+          14
+        ],
+        "rgb": [
+          21,
+          23,
+          27
+        ]
+      },
+      {
+        "radius_px": [
+          14,
+          19
+        ],
+        "rgb": [
+          20,
+          20,
+          20
+        ]
+      },
+      {
+        "radius_px": [
+          19,
+          23
+        ],
+        "rgb": [
+          15,
+          15,
+          15
+        ]
+      },
+      {
+        "radius_px": [
+          23,
+          27
+        ],
+        "rgb": [
+          13,
+          13,
+          13
+        ]
+      },
+      {
+        "radius_px": [
+          27,
+          31
+        ],
+        "rgb": [
+          13,
+          13,
+          13
+        ]
+      },
+      {
+        "radius_px": [
+          31,
+          35
+        ],
+        "rgb": [
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "mask_separate_from_optics": {
+      "threshold_alpha": 127,
+      "display_local_bbox_px": [
+        500,
+        46,
+        580,
+        126
+      ],
+      "display_local_centroid_px": [
+        539.4574363025874,
+        85.38415958917638
+      ],
+      "area_px": 5063,
+      "equivalent_radius_px": 40.144774924621665,
+      "equivalent_radius_mm": 2.423596052343813,
+      "frame_display_offset_px": [
+        55,
+        58
+      ],
+      "limit": "Mask reserved blackout is larger than visible artwork surround and its centroid differs from optical highlight center. Do not relabel all mask pixels as optical glass, rail, or a new lens. Parent owns final cutout calibration; helper takes its resulting radius unchanged."
+    },
+    "confidence": "High for source provenance and distinct visual layers. Medium for approximate 2D ratios. Low for physical depth, coatings, or transferring internals across families."
+  },
+  "verification": {
+    "syntax": "PASS compile(source, filename, exec), no Blender imports executed",
+    "pure_geometry": "PASS 20 radius/depth/direction combinations (.35/1.4/1.5/1.9/2.2mm radius, .025/.030mm depth, +/-1 front sign): all undirected edges used exactly twice, positive signed volume, bounds contained, all four slots used. Separate positive volumes and outward front cap normals checked for all three components in both directions.",
+    "mesh_size_per_aperture": {
+      "vertices": 774,
+      "faces": 960
+    },
+    "actual_glb_inspection": "Read existing exports for every Pixel ID; accessor depth vertices and material-independent bounds recorded below. Pixel 9 source aperture has 258 exported position vertices and only two depth levels, +/-0.0125 mm. These are baseline artifacts, not enhanced-build acceptance.",
+    "blender": "NOT started, as instructed",
+    "visual_qa": "NOT run; parent serializes builds and actual-viewer review",
+    "screen_uv": "No screen object/mesh/UV mutation in helper; no UV holes added",
+    "export_materials": "NOT run; glTF extension values above are expectations requiring parent export inspection",
+    "photos": "No downloaded photos saved or republished. Existing SDK artwork read locally; no blanket license claim.",
+    "target_resolution": "PASS original 35 generated/bezel targets and the explicit imported Selfie camera | black aperture all resolve to exact baseline GLB node names. Imported coating is separately confirmed by exact name; 8 Pixel 4/4 XL forehead disks remain excluded.",
+    "baseline_radius_mismatch_ids": [
+      "pixel-10",
+      "pixel-10-pro",
+      "pixel-10-pro-xl",
+      "pixel-10a",
+      "pixel-4a",
+      "pixel-5",
+      "pixel-5a",
+      "pixel-6",
+      "pixel-6-pro",
+      "pixel-6a",
+      "pixel-7",
+      "pixel-7-pro",
+      "pixel-7a"
+    ],
+    "baseline_radius_limit": "13 baseline GLB radii differ from current profile corrections, now including the inspected imported front aperture. These artifacts are not updated-cutout acceptance; parent must rebuild.",
+    "rear_coating_isolation": "PASS AST-read current LENS_COATINGS: none of the four front material names matches an existing rear coating substring.",
+    "imported_radius_geometry": "PASS two additional +/-front-sign geometry cases at current imported radius 2.3554040830026333mm: closed edge topology, positive volume per component, radius containment. Spec-derived .025mm aperture center places disk bottom .0125mm and lens top .0225mm above continuous OLED."
+  },
+  "devices_reviewed": [
+    {
+      "id": "pixel-10-pro-fold-folded",
+      "profile_status": "unchanged",
+      "trace_status": "unchanged",
+      "profile_corrections": [],
+      "seam_changes": "none; delegated optics-only ownership",
+      "opt_in_targets": [
+        {
+          "name": "Cover screen | selfie aperture 0",
+          "radius_mm_from_profile_before_runtime_trace": 1.5,
+          "center_mm_in_screen_spec": [
+            0,
+            69.52561122244488
+          ],
+          "front_sign": 1
+        }
+      ],
+      "baseline_glb": {
+        "path": "exports/pixel-10-pro-fold-folded/model.glb",
+        "exists": true,
+        "modified_utc": "2026-10-22T12:33:00.340450+00:00",
+        "apertures": [
+          {
+            "name": "Cover screen | selfie aperture 0",
+            "radius_mm": 1.5,
+            "depth_mm": 0.025,
+            "local_depth_levels_mm": [
+              -0.0125,
+              0.0125
+            ],
+            "translation_gltf_m": [
+              0.00025983963860198855,
+              0.002659999765455723,
+              -0.06949450820684433
+            ],
+            "status": "baseline flat cylinder; not enhanced or rebuilt"
+          }
+        ]
+      },
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_10_pro_fold/closed/",
+      "source_verification": "URL from calibration inventory; not independently fetched by this optics worker",
+      "confidence_limits": "Exact runtime cutout radius/center/parent retained. Shared internal ratios/materials are illustrative; no family-specific lens prescription measured.",
+      "handling": "replace known generated circular selfie aperture mesh data only when parent explicitly calls helper"
+    },
+    {
+      "id": "pixel-10-pro-fold-unfolded",
+      "profile_status": "unchanged",
+      "trace_status": "unchanged",
+      "profile_corrections": [],
+      "seam_changes": "none; delegated optics-only ownership",
+      "opt_in_targets": [
+        {
+          "name": "Inner screen | selfie aperture 0",
+          "radius_mm_from_profile_before_runtime_trace": 1.5,
+          "center_mm_in_screen_spec": [
+            64.93011152416356,
+            71.29089269612263
+          ],
+          "front_sign": 1
+        },
+        {
+          "name": "Cover screen | selfie aperture 0",
+          "radius_mm_from_profile_before_runtime_trace": 1.5,
+          "center_mm_in_screen_spec": [
+            0,
+            69.52561122244488
+          ],
+          "front_sign": -1
+        }
+      ],
+      "baseline_glb": {
+        "path": "exports/pixel-10-pro-fold-unfolded/model.glb",
+        "exists": true,
+        "modified_utc": "2026-10-22T12:33:00.750859+00:00",
+        "apertures": [
+          {
+            "name": "Inner screen | selfie aperture 0",
+            "radius_mm": 1.5,
+            "depth_mm": 0.025,
+            "local_depth_levels_mm": [
+              -0.0125,
+              0.0125
+            ],
+            "translation_gltf_m": [
+              0.027317091822624207,
+              0.0026650000363588333,
+              -0.07129089534282684
+            ],
+            "status": "baseline flat cylinder; not enhanced or rebuilt"
+          },
+          {
+            "name": "Cover screen | selfie aperture 0",
+            "radius_mm": 1.5,
+            "depth_mm": 0.025,
+            "local_depth_levels_mm": [
+              -0.0125,
+              0.0125
+            ],
+            "translation_gltf_m": [
+              -0.0002598389983177185,
+              -0.0027099999133497477,
+              -0.06949450820684433
+            ],
+            "status": "baseline flat cylinder; not enhanced or rebuilt"
+          }
+        ]
+      },
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_10_pro_fold/default/",
+      "source_verification": "URL from calibration inventory; not independently fetched by this optics worker",
+      "confidence_limits": "Exact runtime cutout radius/center/parent retained. Shared internal ratios/materials are illustrative; no family-specific lens prescription measured.",
+      "handling": "replace known generated circular selfie aperture mesh data only when parent explicitly calls helper"
+    },
+    {
+      "id": "pixel-10-pro-xl",
+      "profile_status": "unchanged",
+      "trace_status": "unchanged",
+      "profile_corrections": [],
+      "seam_changes": "none; delegated optics-only ownership",
+      "opt_in_targets": [
+        {
+          "name": "Device screen | selfie aperture 0",
+          "radius_mm_from_profile_before_runtime_trace": 2.3719652266927707,
+          "center_mm_in_screen_spec": [
+            0.0,
+            73.07887778136086
+          ],
+          "front_sign": 1,
+          "baseline_glb_radius_delta_mm": -0.871965,
+          "baseline_glb_limit": "Existing GLB predates current profile cutout correction. Rebuild required; helper consumes prepared runtime radius, never this baseline GLB radius."
+        }
+      ],
+      "baseline_glb": {
+        "path": "exports/pixel-10-pro-xl/model.glb",
+        "exists": true,
+        "modified_utc": "2026-10-22T12:33:01.027930+00:00",
+        "apertures": [
+          {
+            "name": "Device screen | selfie aperture 0",
+            "radius_mm": 1.5,
+            "depth_mm": 0.025,
+            "local_depth_levels_mm": [
+              -0.0125,
+              0.0125
+            ],
+            "translation_gltf_m": [
+              2.624959779495839e-05,
+              0.004310000222176313,
+              -0.0745125412940979
+            ],
+            "status": "baseline flat cylinder; not enhanced or rebuilt"
+          }
+        ]
+      },
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_10_pro_xl/",
+      "source_verification": "URL from calibration inventory; not independently fetched by this optics worker",
+      "confidence_limits": "Exact runtime cutout radius/center/parent retained. Shared internal ratios/materials are illustrative; no family-specific lens prescription measured.",
+      "handling": "replace known generated circular selfie aperture mesh data only when parent explicitly calls helper"
+    },
+    {
+      "id": "pixel-10-pro",
+      "profile_status": "unchanged",
+      "trace_status": "unchanged",
+      "profile_corrections": [],
+      "seam_changes": "none; delegated optics-only ownership",
+      "opt_in_targets": [
+        {
+          "name": "Selfie camera | black aperture",
+          "radius_mm_from_profile_before_runtime_trace": 2.3554040830026333,
+          "center_mm_in_screen_spec": [
+            0.02574123989218329,
+            68.21428571428572
+          ],
+          "replacement_center_mm_in_body": [
+            -0.02574123989218329,
+            68.00835579514826,
+            4.3525
+          ],
+          "front_sign": 1,
+          "baseline_glb_radius_delta_mm": -0.635404,
+          "baseline_glb_limit": "Imported source aperture was smaller and about 0.49mm higher than current measured spec. Read actual generated spec after screen preparation; do not reuse old source coordinates."
+        }
+      ],
+      "baseline_glb": {
+        "path": "exports/pixel-10-pro/model.glb",
+        "exists": true,
+        "modified_utc": "2026-10-23T07:21:06.056614+00:00",
+        "apertures": [],
+        "imported_front_hardware": [
+          {
+            "name": "Selfie camera | black aperture",
+            "radius_mm": 1.72,
+            "depth_mm": 0.025,
+            "center_blender_mm": [
+              0,
+              68.49999725818634,
+              4.34499979019165
+            ],
+            "local_depth_levels_mm": [
+              -0.01249999968422344,
+              0.01249999968422344
+            ]
+          },
+          {
+            "name": "Selfie lens coating",
+            "radius_mm": 1.0,
+            "depth_mm": 0.018,
+            "center_blender_mm": [
+              0,
+              68.49999725818634,
+              4.364999942481518
+            ],
+            "local_depth_levels_mm": [
+              -0.009000000318337698,
+              0.009000000318337698
+            ]
+          }
+        ]
+      },
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_10_pro/",
+      "source_verification": "URL from calibration inventory; not independently fetched by this optics worker",
+      "confidence_limits": "Current exported imported-asset hardware inspected without Blender. Root-local basis shared by screen, aperture and coating is verified from GLB parent nodes. New center/radius follow measured runtime spec; internal stack depth/materials remain illustrative.",
+      "handling": "Explicit imported front pair: replace Selfie camera | black aperture data, fit center/radius to current screen spec/cutout, remove Selfie lens coating so old coating cannot obscure new lens. No other imported object modified."
+    },
+    {
+      "id": "pixel-10",
+      "profile_status": "unchanged",
+      "trace_status": "unchanged",
+      "profile_corrections": [],
+      "seam_changes": "none; delegated optics-only ownership",
+      "opt_in_targets": [
+        {
+          "name": "Device screen | selfie aperture 0",
+          "radius_mm_from_profile_before_runtime_trace": 2.3410668136961426,
+          "center_mm_in_screen_spec": [
+            -0.06027613412228797,
+            67.69009861932939
+          ],
+          "front_sign": 1,
+          "baseline_glb_radius_delta_mm": -0.841067,
+          "baseline_glb_limit": "Existing GLB predates current profile cutout correction. Rebuild required; helper consumes prepared runtime radius, never this baseline GLB radius."
+        }
+      ],
+      "baseline_glb": {
+        "path": "exports/pixel-10/model.glb",
+        "exists": true,
+        "modified_utc": "2026-10-22T12:32:59.597183+00:00",
+        "apertures": [
+          {
+            "name": "Device screen | selfie aperture 0",
+            "radius_mm": 1.5,
+            "depth_mm": 0.025,
+            "local_depth_levels_mm": [
+              -0.0125,
+              0.0125
+            ],
+            "translation_gltf_m": [
+              3.0138067813823e-05,
+              0.004360000137239695,
+              -0.06908481568098068
+            ],
+            "status": "baseline flat cylinder; not enhanced or rebuilt"
+          }
+        ]
+      },
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_10/",
+      "source_verification": "URL from calibration inventory; not independently fetched by this optics worker",
+      "confidence_limits": "Exact runtime cutout radius/center/parent retained. Shared internal ratios/materials are illustrative; no family-specific lens prescription measured.",
+      "handling": "replace known generated circular selfie aperture mesh data only when parent explicitly calls helper"
+    },
+    {
+      "id": "pixel-10a",
+      "profile_status": "unchanged",
+      "trace_status": "unchanged",
+      "profile_corrections": [],
+      "seam_changes": "none; delegated optics-only ownership",
+      "opt_in_targets": [
+        {
+          "name": "Device screen | selfie aperture 0",
+          "radius_mm_from_profile_before_runtime_trace": 2.3536754407862155,
+          "center_mm_in_screen_spec": [
+            -0.24141176470588235,
+            67.8970588235294
+          ],
+          "front_sign": 1,
+          "baseline_glb_radius_delta_mm": -0.853675,
+          "baseline_glb_limit": "Existing GLB predates current profile cutout correction. Rebuild required; helper consumes prepared runtime radius, never this baseline GLB radius."
+        }
+      ],
+      "baseline_glb": {
+        "path": "exports/pixel-10a/model.glb",
+        "exists": true,
+        "modified_utc": "2026-10-22T12:33:01.349435+00:00",
+        "apertures": [
+          {
+            "name": "Device screen | selfie aperture 0",
+            "radius_mm": 1.5,
+            "depth_mm": 0.025,
+            "local_depth_levels_mm": [
+              -0.0125,
+              0.0125
+            ],
+            "translation_gltf_m": [
+              0,
+              0.004559999797493219,
+              -0.06914776563644409
+            ],
+            "status": "baseline flat cylinder; not enhanced or rebuilt"
+          }
+        ]
+      },
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_10a/",
+      "source_verification": "URL from calibration inventory; not independently fetched by this optics worker",
+      "confidence_limits": "Exact runtime cutout radius/center/parent retained. Shared internal ratios/materials are illustrative; no family-specific lens prescription measured.",
+      "handling": "replace known generated circular selfie aperture mesh data only when parent explicitly calls helper"
+    },
+    {
+      "id": "pixel-11-pro-fold-folded",
+      "profile_status": "unchanged",
+      "trace_status": "unchanged",
+      "profile_corrections": [],
+      "seam_changes": "none; delegated optics-only ownership",
+      "opt_in_targets": [
+        {
+          "name": "Cover screen | selfie aperture 0",
+          "radius_mm_from_profile_before_runtime_trace": 1.5,
+          "center_mm_in_screen_spec": [
+            0,
+            69.86328514923413
+          ],
+          "front_sign": 1
+        }
+      ],
+      "baseline_glb": {
+        "path": "exports/pixel-11-pro-fold-folded/model.glb",
+        "exists": true,
+        "modified_utc": "2026-10-22T12:33:02.214326+00:00",
+        "apertures": [
+          {
+            "name": "Cover screen | selfie aperture 0",
+            "radius_mm": 1.5,
+            "depth_mm": 0.025,
+            "local_depth_levels_mm": [
+              -0.0125,
+              0.0125
+            ],
+            "translation_gltf_m": [
+              8.158653508871794e-05,
+              0.002560000168159604,
+              -0.06983218342065811
+            ],
+            "status": "baseline flat cylinder; not enhanced or rebuilt"
+          }
+        ]
+      },
+      "source_url": null,
+      "source_verification": "URL from calibration inventory; not independently fetched by this optics worker",
+      "confidence_limits": "Exact runtime cutout radius/center/parent retained. Shared internal ratios/materials are illustrative; no family-specific lens prescription measured. No independent official device-art URL recorded for this ID; enabling is a visual approximation, not source acceptance.",
+      "handling": "replace known generated circular selfie aperture mesh data only when parent explicitly calls helper"
+    },
+    {
+      "id": "pixel-11-pro-fold-unfolded",
+      "profile_status": "unchanged",
+      "trace_status": "unchanged",
+      "profile_corrections": [],
+      "seam_changes": "none; delegated optics-only ownership",
+      "opt_in_targets": [
+        {
+          "name": "Inner screen | selfie aperture 0",
+          "radius_mm_from_profile_before_runtime_trace": 1.5,
+          "center_mm_in_screen_spec": [
+            64.93011152416356,
+            69.6
+          ],
+          "front_sign": 1
+        },
+        {
+          "name": "Cover screen | selfie aperture 0",
+          "radius_mm_from_profile_before_runtime_trace": 1.5,
+          "center_mm_in_screen_spec": [
+            0,
+            69.86328514923413
+          ],
+          "front_sign": -1
+        }
+      ],
+      "baseline_glb": {
+        "path": "exports/pixel-11-pro-fold-unfolded/model.glb",
+        "exists": true,
+        "modified_utc": "2026-10-22T12:33:02.573323+00:00",
+        "apertures": [
+          {
+            "name": "Inner screen | selfie aperture 0",
+            "radius_mm": 1.5,
+            "depth_mm": 0.025,
+            "local_depth_levels_mm": [
+              -0.0125,
+              0.0125
+            ],
+            "translation_gltf_m": [
+              0.027180112898349762,
+              0.0025649999734014273,
+              -0.06960000097751617
+            ],
+            "status": "baseline flat cylinder; not enhanced or rebuilt"
+          },
+          {
+            "name": "Cover screen | selfie aperture 0",
+            "radius_mm": 1.5,
+            "depth_mm": 0.025,
+            "local_depth_levels_mm": [
+              -0.0125,
+              0.0125
+            ],
+            "translation_gltf_m": [
+              -0.0007999986410140991,
+              -0.0026100000832229853,
+              -0.06986328214406967
+            ],
+            "status": "baseline flat cylinder; not enhanced or rebuilt"
+          }
+        ]
+      },
+      "source_url": null,
+      "source_verification": "URL from calibration inventory; not independently fetched by this optics worker",
+      "confidence_limits": "Exact runtime cutout radius/center/parent retained. Shared internal ratios/materials are illustrative; no family-specific lens prescription measured. No independent official device-art URL recorded for this ID; enabling is a visual approximation, not source acceptance.",
+      "handling": "replace known generated circular selfie aperture mesh data only when parent explicitly calls helper"
+    },
+    {
+      "id": "pixel-11-pro-xl",
+      "profile_status": "unchanged",
+      "trace_status": "unchanged",
+      "profile_corrections": [],
+      "seam_changes": "none; delegated optics-only ownership",
+      "opt_in_targets": [
+        {
+          "name": "Device screen | selfie aperture 0",
+          "radius_mm_from_profile_before_runtime_trace": 1.5,
+          "center_mm_in_screen_spec": [
+            0,
+            74.85
+          ],
+          "front_sign": 1
+        }
+      ],
+      "baseline_glb": {
+        "path": "exports/pixel-11-pro-xl/model.glb",
+        "exists": true,
+        "modified_utc": "2026-10-22T12:33:02.825817+00:00",
+        "apertures": [
+          {
+            "name": "Device screen | selfie aperture 0",
+            "radius_mm": 1.5,
+            "depth_mm": 0.025,
+            "local_depth_levels_mm": [
+              -0.0125,
+              0.0125
+            ],
+            "translation_gltf_m": [
+              0,
+              0.004310000222176313,
+              -0.07485000044107437
+            ],
+            "status": "baseline flat cylinder; not enhanced or rebuilt"
+          }
+        ]
+      },
+      "source_url": null,
+      "source_verification": "URL from calibration inventory; not independently fetched by this optics worker",
+      "confidence_limits": "Exact runtime cutout radius/center/parent retained. Shared internal ratios/materials are illustrative; no family-specific lens prescription measured. No independent official device-art URL recorded for this ID; enabling is a visual approximation, not source acceptance.",
+      "handling": "replace known generated circular selfie aperture mesh data only when parent explicitly calls helper"
+    },
+    {
+      "id": "pixel-11-pro",
+      "profile_status": "unchanged",
+      "trace_status": "unchanged",
+      "profile_corrections": [],
+      "seam_changes": "none; delegated optics-only ownership",
+      "opt_in_targets": [
+        {
+          "name": "Device screen | selfie aperture 0",
+          "radius_mm_from_profile_before_runtime_trace": 1.5,
+          "center_mm_in_screen_spec": [
+            0,
+            69.85
+          ],
+          "front_sign": 1
+        }
+      ],
+      "baseline_glb": {
+        "path": "exports/pixel-11-pro/model.glb",
+        "exists": true,
+        "modified_utc": "2026-10-22T12:33:01.816588+00:00",
+        "apertures": [
+          {
+            "name": "Device screen | selfie aperture 0",
+            "radius_mm": 1.5,
+            "depth_mm": 0.025,
+            "local_depth_levels_mm": [
+              -0.0125,
+              0.0125
+            ],
+            "translation_gltf_m": [
+              0,
+              0.004259999841451645,
+              -0.06984999775886536
+            ],
+            "status": "baseline flat cylinder; not enhanced or rebuilt"
+          }
+        ]
+      },
+      "source_url": null,
+      "source_verification": "URL from calibration inventory; not independently fetched by this optics worker",
+      "confidence_limits": "Exact runtime cutout radius/center/parent retained. Shared internal ratios/materials are illustrative; no family-specific lens prescription measured. No independent official device-art URL recorded for this ID; enabling is a visual approximation, not source acceptance.",
+      "handling": "replace known generated circular selfie aperture mesh data only when parent explicitly calls helper"
+    },
+    {
+      "id": "pixel-11",
+      "profile_status": "unchanged",
+      "trace_status": "unchanged",
+      "profile_corrections": [],
+      "seam_changes": "none; delegated optics-only ownership",
+      "opt_in_targets": [
+        {
+          "name": "Device screen | selfie aperture 0",
+          "radius_mm_from_profile_before_runtime_trace": 1.5,
+          "center_mm_in_screen_spec": [
+            0,
+            69.50000000000001
+          ],
+          "front_sign": 1
+        }
+      ],
+      "baseline_glb": {
+        "path": "exports/pixel-11/model.glb",
+        "exists": true,
+        "modified_utc": "2026-10-22T12:33:01.584584+00:00",
+        "apertures": [
+          {
+            "name": "Device screen | selfie aperture 0",
+            "radius_mm": 1.5,
+            "depth_mm": 0.025,
+            "local_depth_levels_mm": [
+              -0.0125,
+              0.0125
+            ],
+            "translation_gltf_m": [
+              0,
+              0.004360000137239695,
+              -0.06949999928474426
+            ],
+            "status": "baseline flat cylinder; not enhanced or rebuilt"
+          }
+        ]
+      },
+      "source_url": null,
+      "source_verification": "URL from calibration inventory; not independently fetched by this optics worker",
+      "confidence_limits": "Exact runtime cutout radius/center/parent retained. Shared internal ratios/materials are illustrative; no family-specific lens prescription measured. No independent official device-art URL recorded for this ID; enabling is a visual approximation, not source acceptance.",
+      "handling": "replace known generated circular selfie aperture mesh data only when parent explicitly calls helper"
+    },
+    {
+      "id": "pixel-4-xl",
+      "profile_status": "unchanged",
+      "trace_status": "unchanged",
+      "profile_corrections": [],
+      "seam_changes": "none; delegated optics-only ownership",
+      "opt_in_targets": [],
+      "baseline_glb": {
+        "path": "exports/pixel-4-xl/model.glb",
+        "exists": true,
+        "modified_utc": "2026-10-22T12:33:03.283205+00:00",
+        "apertures": [
+          {
+            "name": "Inner bezel selfie camera",
+            "radius_mm": 1.45,
+            "depth_mm": 0.03,
+            "local_depth_levels_mm": [
+              -0.015,
+              0.015
+            ],
+            "translation_gltf_m": [
+              -0.017999999225139618,
+              0.004129999782890081,
+              -0.0734499990940094
+            ],
+            "status": "baseline flat cylinder; not enhanced or rebuilt"
+          },
+          {
+            "name": "Inner bezel selfie camera.001",
+            "radius_mm": 0.85,
+            "depth_mm": 0.03,
+            "local_depth_levels_mm": [
+              -0.015,
+              0.015
+            ],
+            "translation_gltf_m": [
+              -0.008500000461935997,
+              0.004129999782890081,
+              -0.0734499990940094
+            ],
+            "status": "baseline flat cylinder; not enhanced or rebuilt"
+          },
+          {
+            "name": "Inner bezel selfie camera.002",
+            "radius_mm": 0.85,
+            "depth_mm": 0.03,
+            "local_depth_levels_mm": [
+              -0.015,
+              0.015
+            ],
+            "translation_gltf_m": [
+              0.008999999612569809,
+              0.004129999782890081,
+              -0.0734499990940094
+            ],
+            "status": "baseline flat cylinder; not enhanced or rebuilt"
+          },
+          {
+            "name": "Inner bezel selfie camera.003",
+            "radius_mm": 1.15,
+            "depth_mm": 0.03,
+            "local_depth_levels_mm": [
+              -0.015,
+              0.015
+            ],
+            "translation_gltf_m": [
+              0.01899999938905239,
+              0.004129999782890081,
+              -0.0734499990940094
+            ],
+            "status": "baseline flat cylinder; not enhanced or rebuilt"
+          }
+        ]
+      },
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_4_xl/",
+      "source_verification": "URL from calibration inventory; not independently fetched by this optics worker",
+      "confidence_limits": "Primary Google launch page identifies face-unlock sensors but the existing bezel_cameras tuples have no primary-evidence feature mapping. Do not enhance any by guessing.",
+      "handling": "unchanged even when opted in; four untyped forehead disks cannot be safely classified as RGB versus IR/sensors using their names or radius"
+    },
+    {
+      "id": "pixel-4",
+      "profile_status": "unchanged",
+      "trace_status": "unchanged",
+      "profile_corrections": [],
+      "seam_changes": "none; delegated optics-only ownership",
+      "opt_in_targets": [],
+      "baseline_glb": {
+        "path": "exports/pixel-4/model.glb",
+        "exists": true,
+        "modified_utc": "2026-10-22T12:33:03.036483+00:00",
+        "apertures": [
+          {
+            "name": "Inner bezel selfie camera",
+            "radius_mm": 1.45,
+            "depth_mm": 0.03,
+            "local_depth_levels_mm": [
+              -0.015,
+              0.015
+            ],
+            "translation_gltf_m": [
+              -0.017999999225139618,
+              0.004129999782890081,
+              -0.06679999828338623
+            ],
+            "status": "baseline flat cylinder; not enhanced or rebuilt"
+          },
+          {
+            "name": "Inner bezel selfie camera.001",
+            "radius_mm": 0.85,
+            "depth_mm": 0.03,
+            "local_depth_levels_mm": [
+              -0.015,
+              0.015
+            ],
+            "translation_gltf_m": [
+              -0.008500000461935997,
+              0.004129999782890081,
+              -0.06679999828338623
+            ],
+            "status": "baseline flat cylinder; not enhanced or rebuilt"
+          },
+          {
+            "name": "Inner bezel selfie camera.002",
+            "radius_mm": 0.85,
+            "depth_mm": 0.03,
+            "local_depth_levels_mm": [
+              -0.015,
+              0.015
+            ],
+            "translation_gltf_m": [
+              0.008999999612569809,
+              0.004129999782890081,
+              -0.06679999828338623
+            ],
+            "status": "baseline flat cylinder; not enhanced or rebuilt"
+          },
+          {
+            "name": "Inner bezel selfie camera.003",
+            "radius_mm": 1.15,
+            "depth_mm": 0.03,
+            "local_depth_levels_mm": [
+              -0.015,
+              0.015
+            ],
+            "translation_gltf_m": [
+              0.01899999938905239,
+              0.004129999782890081,
+              -0.06679999828338623
+            ],
+            "status": "baseline flat cylinder; not enhanced or rebuilt"
+          }
+        ]
+      },
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_4/",
+      "source_verification": "URL from calibration inventory; not independently fetched by this optics worker",
+      "confidence_limits": "Primary Google launch page identifies face-unlock sensors but the existing bezel_cameras tuples have no primary-evidence feature mapping. Do not enhance any by guessing.",
+      "handling": "unchanged even when opted in; four untyped forehead disks cannot be safely classified as RGB versus IR/sensors using their names or radius"
+    },
+    {
+      "id": "pixel-4a-5g",
+      "profile_status": "unchanged",
+      "trace_status": "unchanged",
+      "profile_corrections": [],
+      "seam_changes": "none; delegated optics-only ownership",
+      "opt_in_targets": [
+        {
+          "name": "Device screen | selfie aperture 0",
+          "radius_mm_from_profile_before_runtime_trace": 1.9,
+          "center_mm_in_screen_spec": [
+            -27.996640893337954,
+            66.49272193556557
+          ],
+          "front_sign": 1
+        }
+      ],
+      "baseline_glb": {
+        "path": "exports/pixel-4a-5g/model.glb",
+        "exists": true,
+        "modified_utc": "2026-10-22T12:33:03.700963+00:00",
+        "apertures": [
+          {
+            "name": "Device screen | selfie aperture 0",
+            "radius_mm": 1.9,
+            "depth_mm": 0.025,
+            "local_depth_levels_mm": [
+              -0.0125,
+              0.0125
+            ],
+            "translation_gltf_m": [
+              -0.027996640652418137,
+              0.0041600000113248825,
+              -0.0664927214384079
+            ],
+            "status": "baseline flat cylinder; not enhanced or rebuilt"
+          }
+        ]
+      },
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_4a_5g/",
+      "source_verification": "URL from calibration inventory; not independently fetched by this optics worker",
+      "confidence_limits": "Exact runtime cutout radius/center/parent retained. Shared internal ratios/materials are illustrative; no family-specific lens prescription measured.",
+      "handling": "replace known generated circular selfie aperture mesh data only when parent explicitly calls helper"
+    },
+    {
+      "id": "pixel-4a",
+      "profile_status": "unchanged",
+      "trace_status": "unchanged",
+      "profile_corrections": [],
+      "seam_changes": "none; delegated optics-only ownership",
+      "opt_in_targets": [
+        {
+          "name": "Device screen | selfie aperture 0",
+          "radius_mm_from_profile_before_runtime_trace": 2.1700949394255353,
+          "center_mm_in_screen_spec": [
+            -27.068757539203858,
+            63.48854041013269
+          ],
+          "front_sign": 1,
+          "baseline_glb_radius_delta_mm": -0.270095,
+          "baseline_glb_limit": "Existing GLB predates current profile cutout correction. Rebuild required; helper consumes prepared runtime radius, never this baseline GLB radius."
+        }
+      ],
+      "baseline_glb": {
+        "path": "exports/pixel-4a/model.glb",
+        "exists": true,
+        "modified_utc": "2026-10-22T12:33:03.452716+00:00",
+        "apertures": [
+          {
+            "name": "Device screen | selfie aperture 0",
+            "radius_mm": 1.9,
+            "depth_mm": 0.025,
+            "local_depth_levels_mm": [
+              -0.0125,
+              0.0125
+            ],
+            "translation_gltf_m": [
+              -0.026067346334457397,
+              0.0041600000113248825,
+              -0.06317425519227982
+            ],
+            "status": "baseline flat cylinder; not enhanced or rebuilt"
+          }
+        ]
+      },
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_4a/",
+      "source_verification": "URL from calibration inventory; not independently fetched by this optics worker",
+      "confidence_limits": "Exact runtime cutout radius/center/parent retained. Shared internal ratios/materials are illustrative; no family-specific lens prescription measured.",
+      "handling": "replace known generated circular selfie aperture mesh data only when parent explicitly calls helper"
+    },
+    {
+      "id": "pixel-5",
+      "profile_status": "unchanged",
+      "trace_status": "unchanged",
+      "profile_corrections": [],
+      "seam_changes": "none; delegated optics-only ownership",
+      "opt_in_targets": [
+        {
+          "name": "Device screen | selfie aperture 0",
+          "radius_mm_from_profile_before_runtime_trace": 2.1921025294918093,
+          "center_mm_in_screen_spec": [
+            -27.343270008084072,
+            64.36635004042037
+          ],
+          "front_sign": 1,
+          "baseline_glb_radius_delta_mm": -0.292103,
+          "baseline_glb_limit": "Existing GLB predates current profile cutout correction. Rebuild required; helper consumes prepared runtime radius, never this baseline GLB radius."
+        }
+      ],
+      "baseline_glb": {
+        "path": "exports/pixel-5/model.glb",
+        "exists": true,
+        "modified_utc": "2026-10-22T12:33:04.250121+00:00",
+        "apertures": [
+          {
+            "name": "Device screen | selfie aperture 0",
+            "radius_mm": 1.9,
+            "depth_mm": 0.025,
+            "local_depth_levels_mm": [
+              -0.0125,
+              0.0125
+            ],
+            "translation_gltf_m": [
+              -0.02675546519458294,
+              0.00406000018119812,
+              -0.06354697793722153
+            ],
+            "status": "baseline flat cylinder; not enhanced or rebuilt"
+          }
+        ]
+      },
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_5/",
+      "source_verification": "URL from calibration inventory; not independently fetched by this optics worker",
+      "confidence_limits": "Exact runtime cutout radius/center/parent retained. Shared internal ratios/materials are illustrative; no family-specific lens prescription measured.",
+      "handling": "replace known generated circular selfie aperture mesh data only when parent explicitly calls helper"
+    },
+    {
+      "id": "pixel-5a",
+      "profile_status": "unchanged",
+      "trace_status": "unchanged",
+      "profile_corrections": [],
+      "seam_changes": "none; delegated optics-only ownership",
+      "opt_in_targets": [
+        {
+          "name": "Device screen | selfie aperture 0",
+          "radius_mm_from_profile_before_runtime_trace": 1.8009,
+          "center_mm_in_screen_spec": [
+            -28.4167,
+            68.8692
+          ],
+          "front_sign": 1,
+          "baseline_glb_radius_delta_mm": 0.0991,
+          "baseline_glb_limit": "Existing GLB predates current profile cutout correction. Rebuild required; helper consumes prepared runtime radius, never this baseline GLB radius."
+        }
+      ],
+      "baseline_glb": {
+        "path": "exports/pixel-5a/model.glb",
+        "exists": true,
+        "modified_utc": "2026-10-22T12:33:04.612091+00:00",
+        "apertures": [
+          {
+            "name": "Device screen | selfie aperture 0",
+            "radius_mm": 1.9,
+            "depth_mm": 0.025,
+            "local_depth_levels_mm": [
+              -0.0125,
+              0.0125
+            ],
+            "translation_gltf_m": [
+              -0.028041742742061615,
+              0.004459999967366457,
+              -0.06842609494924545
+            ],
+            "status": "baseline flat cylinder; not enhanced or rebuilt"
+          }
+        ]
+      },
+      "source_url": null,
+      "source_verification": "URL from calibration inventory; not independently fetched by this optics worker",
+      "confidence_limits": "Exact runtime cutout radius/center/parent retained. Shared internal ratios/materials are illustrative; no family-specific lens prescription measured. No independent official device-art URL recorded for this ID; enabling is a visual approximation, not source acceptance.",
+      "handling": "replace known generated circular selfie aperture mesh data only when parent explicitly calls helper"
+    },
+    {
+      "id": "pixel-6-pro",
+      "profile_status": "unchanged",
+      "trace_status": "unchanged",
+      "profile_corrections": [],
+      "seam_changes": "none; delegated optics-only ownership",
+      "opt_in_targets": [
+        {
+          "name": "Device screen | selfie aperture 0",
+          "radius_mm_from_profile_before_runtime_trace": 2.1384141789377504,
+          "center_mm_in_screen_spec": [
+            0.024916387959866223,
+            74.12625418060202
+          ],
+          "front_sign": 1,
+          "baseline_glb_radius_delta_mm": -0.638414,
+          "baseline_glb_limit": "Existing GLB predates current profile cutout correction. Rebuild required; helper consumes prepared runtime radius, never this baseline GLB radius."
+        }
+      ],
+      "baseline_glb": {
+        "path": "exports/pixel-6-pro/model.glb",
+        "exists": true,
+        "modified_utc": "2026-10-22T12:33:05.195066+00:00",
+        "apertures": [
+          {
+            "name": "Device screen | selfie aperture 0",
+            "radius_mm": 1.5,
+            "depth_mm": 0.025,
+            "local_depth_levels_mm": [
+              -0.0125,
+              0.0125
+            ],
+            "translation_gltf_m": [
+              4.983277540304698e-05,
+              0.004509999882429838,
+              -0.07436203956604004
+            ],
+            "status": "baseline flat cylinder; not enhanced or rebuilt"
+          }
+        ]
+      },
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_6_pro/",
+      "source_verification": "URL from calibration inventory; not independently fetched by this optics worker",
+      "confidence_limits": "Exact runtime cutout radius/center/parent retained. Shared internal ratios/materials are illustrative; no family-specific lens prescription measured.",
+      "handling": "replace known generated circular selfie aperture mesh data only when parent explicitly calls helper"
+    },
+    {
+      "id": "pixel-6",
+      "profile_status": "unchanged",
+      "trace_status": "unchanged",
+      "profile_corrections": [],
+      "seam_changes": "none; delegated optics-only ownership",
+      "opt_in_targets": [
+        {
+          "name": "Device screen | selfie aperture 0",
+          "radius_mm_from_profile_before_runtime_trace": 1.9187606497435186,
+          "center_mm_in_screen_spec": [
+            0.03106149627888758,
+            70.66490403446925
+          ],
+          "front_sign": 1,
+          "baseline_glb_radius_delta_mm": -0.418761,
+          "baseline_glb_limit": "Existing GLB predates current profile cutout correction. Rebuild required; helper consumes prepared runtime radius, never this baseline GLB radius."
+        }
+      ],
+      "baseline_glb": {
+        "path": "exports/pixel-6/model.glb",
+        "exists": true,
+        "modified_utc": "2026-10-22T12:33:04.867965+00:00",
+        "apertures": [
+          {
+            "name": "Device screen | selfie aperture 0",
+            "radius_mm": 1.5,
+            "depth_mm": 0.025,
+            "local_depth_levels_mm": [
+              -0.0125,
+              0.0125
+            ],
+            "translation_gltf_m": [
+              -9.318449156126007e-05,
+              0.004509999882429838,
+              -0.07101351022720337
+            ],
+            "status": "baseline flat cylinder; not enhanced or rebuilt"
+          }
+        ]
+      },
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_6/",
+      "source_verification": "URL from calibration inventory; not independently fetched by this optics worker",
+      "confidence_limits": "Exact runtime cutout radius/center/parent retained. Shared internal ratios/materials are illustrative; no family-specific lens prescription measured.",
+      "handling": "replace known generated circular selfie aperture mesh data only when parent explicitly calls helper"
+    },
+    {
+      "id": "pixel-6a",
+      "profile_status": "unchanged",
+      "trace_status": "unchanged",
+      "profile_corrections": [],
+      "seam_changes": "none; delegated optics-only ownership",
+      "opt_in_targets": [
+        {
+          "name": "Device screen | selfie aperture 0",
+          "radius_mm_from_profile_before_runtime_trace": 1.9088903968883566,
+          "center_mm_in_screen_spec": [
+            0.05956947162426614,
+            67.5517808219178
+          ],
+          "front_sign": 1,
+          "baseline_glb_radius_delta_mm": -0.40889,
+          "baseline_glb_limit": "Existing GLB predates current profile cutout correction. Rebuild required; helper consumes prepared runtime radius, never this baseline GLB radius."
+        }
+      ],
+      "baseline_glb": {
+        "path": "exports/pixel-6a/model.glb",
+        "exists": true,
+        "modified_utc": "2026-10-22T12:33:05.502076+00:00",
+        "apertures": [
+          {
+            "name": "Device screen | selfie aperture 0",
+            "radius_mm": 1.5,
+            "depth_mm": 0.025,
+            "local_depth_levels_mm": [
+              -0.0125,
+              0.0125
+            ],
+            "translation_gltf_m": [
+              -0.00023827789118513465,
+              0.004509999882429838,
+              -0.06798970699310303
+            ],
+            "status": "baseline flat cylinder; not enhanced or rebuilt"
+          }
+        ]
+      },
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_6a/",
+      "source_verification": "URL from calibration inventory; not independently fetched by this optics worker",
+      "confidence_limits": "Exact runtime cutout radius/center/parent retained. Shared internal ratios/materials are illustrative; no family-specific lens prescription measured.",
+      "handling": "replace known generated circular selfie aperture mesh data only when parent explicitly calls helper"
+    },
+    {
+      "id": "pixel-7-pro",
+      "profile_status": "unchanged",
+      "trace_status": "unchanged",
+      "profile_corrections": [],
+      "seam_changes": "none; delegated optics-only ownership",
+      "opt_in_targets": [
+        {
+          "name": "Device screen | selfie aperture 0",
+          "radius_mm_from_profile_before_runtime_trace": 2.0429050813069374,
+          "center_mm_in_screen_spec": [
+            0.0,
+            74.0998164576323
+          ],
+          "front_sign": 1,
+          "baseline_glb_radius_delta_mm": -0.542905,
+          "baseline_glb_limit": "Existing GLB predates current profile cutout correction. Rebuild required; helper consumes prepared runtime radius, never this baseline GLB radius."
+        }
+      ],
+      "baseline_glb": {
+        "path": "exports/pixel-7-pro/model.glb",
+        "exists": true,
+        "modified_utc": "2026-10-22T12:33:06.057995+00:00",
+        "apertures": [
+          {
+            "name": "Device screen | selfie aperture 0",
+            "radius_mm": 1.5,
+            "depth_mm": 0.025,
+            "local_depth_levels_mm": [
+              -0.0125,
+              0.0125
+            ],
+            "translation_gltf_m": [
+              0,
+              0.004509999882429838,
+              -0.0742347240447998
+            ],
+            "status": "baseline flat cylinder; not enhanced or rebuilt"
+          }
+        ]
+      },
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_7_pro/",
+      "source_verification": "URL from calibration inventory; not independently fetched by this optics worker",
+      "confidence_limits": "Exact runtime cutout radius/center/parent retained. Shared internal ratios/materials are illustrative; no family-specific lens prescription measured.",
+      "handling": "replace known generated circular selfie aperture mesh data only when parent explicitly calls helper"
+    },
+    {
+      "id": "pixel-7",
+      "profile_status": "unchanged",
+      "trace_status": "unchanged",
+      "profile_corrections": [],
+      "seam_changes": "none; delegated optics-only ownership",
+      "opt_in_targets": [
+        {
+          "name": "Device screen | selfie aperture 0",
+          "radius_mm_from_profile_before_runtime_trace": 1.9901356221828759,
+          "center_mm_in_screen_spec": [
+            -0.030641985033477745,
+            69.15896022055927
+          ],
+          "front_sign": 1,
+          "baseline_glb_radius_delta_mm": -0.490136,
+          "baseline_glb_limit": "Existing GLB predates current profile cutout correction. Rebuild required; helper consumes prepared runtime radius, never this baseline GLB radius."
+        }
+      ],
+      "baseline_glb": {
+        "path": "exports/pixel-7/model.glb",
+        "exists": true,
+        "modified_utc": "2026-10-22T12:33:05.729575+00:00",
+        "apertures": [
+          {
+            "name": "Device screen | selfie aperture 0",
+            "radius_mm": 1.5,
+            "depth_mm": 0.025,
+            "local_depth_levels_mm": [
+              -0.0125,
+              0.0125
+            ],
+            "translation_gltf_m": [
+              0.00012256794434506446,
+              0.004410000052303076,
+              -0.07030681520700455
+            ],
+            "status": "baseline flat cylinder; not enhanced or rebuilt"
+          }
+        ]
+      },
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_7/",
+      "source_verification": "URL from calibration inventory; not independently fetched by this optics worker",
+      "confidence_limits": "Exact runtime cutout radius/center/parent retained. Shared internal ratios/materials are illustrative; no family-specific lens prescription measured.",
+      "handling": "replace known generated circular selfie aperture mesh data only when parent explicitly calls helper"
+    },
+    {
+      "id": "pixel-7a",
+      "profile_status": "unchanged",
+      "trace_status": "unchanged",
+      "profile_corrections": [],
+      "seam_changes": "none; delegated optics-only ownership",
+      "opt_in_targets": [
+        {
+          "name": "Device screen | selfie aperture 0",
+          "radius_mm_from_profile_before_runtime_trace": 1.7956221827938992,
+          "center_mm_in_screen_spec": [
+            -0.029699101211410707,
+            67.44665885111371
+          ],
+          "front_sign": 1,
+          "baseline_glb_radius_delta_mm": -0.295622,
+          "baseline_glb_limit": "Existing GLB predates current profile cutout correction. Rebuild required; helper consumes prepared runtime radius, never this baseline GLB radius."
+        }
+      ],
+      "baseline_glb": {
+        "path": "exports/pixel-7a/model.glb",
+        "exists": true,
+        "modified_utc": "2026-10-22T12:33:06.291981+00:00",
+        "apertures": [
+          {
+            "name": "Device screen | selfie aperture 0",
+            "radius_mm": 1.5,
+            "depth_mm": 0.025,
+            "local_depth_levels_mm": [
+              -0.0125,
+              0.0125
+            ],
+            "translation_gltf_m": [
+              -2.96991020150017e-05,
+              0.004559999797493219,
+              -0.06790152192115784
+            ],
+            "status": "baseline flat cylinder; not enhanced or rebuilt"
+          }
+        ]
+      },
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_7a/",
+      "source_verification": "URL from calibration inventory; not independently fetched by this optics worker",
+      "confidence_limits": "Exact runtime cutout radius/center/parent retained. Shared internal ratios/materials are illustrative; no family-specific lens prescription measured.",
+      "handling": "replace known generated circular selfie aperture mesh data only when parent explicitly calls helper"
+    },
+    {
+      "id": "pixel-8-pro",
+      "profile_status": "unchanged",
+      "trace_status": "unchanged",
+      "profile_corrections": [],
+      "seam_changes": "none; delegated optics-only ownership",
+      "opt_in_targets": [
+        {
+          "name": "Device screen | selfie aperture 0",
+          "radius_mm_from_profile_before_runtime_trace": 1.5,
+          "center_mm_in_screen_spec": [
+            0,
+            74.36649484536083
+          ],
+          "front_sign": 1
+        }
+      ],
+      "baseline_glb": {
+        "path": "exports/pixel-8-pro/model.glb",
+        "exists": true,
+        "modified_utc": "2026-10-22T12:33:06.816282+00:00",
+        "apertures": [
+          {
+            "name": "Device screen | selfie aperture 0",
+            "radius_mm": 1.5,
+            "depth_mm": 0.025,
+            "local_depth_levels_mm": [
+              -0.0125,
+              0.0125
+            ],
+            "translation_gltf_m": [
+              2.6192010409431532e-05,
+              0.004459999967366457,
+              -0.07426172494888306
+            ],
+            "status": "baseline flat cylinder; not enhanced or rebuilt"
+          }
+        ]
+      },
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_8_pro/",
+      "source_verification": "URL from calibration inventory; not independently fetched by this optics worker",
+      "confidence_limits": "Exact runtime cutout radius/center/parent retained. Shared internal ratios/materials are illustrative; no family-specific lens prescription measured.",
+      "handling": "replace known generated circular selfie aperture mesh data only when parent explicitly calls helper"
+    },
+    {
+      "id": "pixel-8",
+      "profile_status": "unchanged",
+      "trace_status": "unchanged",
+      "profile_corrections": [],
+      "seam_changes": "none; delegated optics-only ownership",
+      "opt_in_targets": [
+        {
+          "name": "Device screen | selfie aperture 0",
+          "radius_mm_from_profile_before_runtime_trace": 1.5,
+          "center_mm_in_screen_spec": [
+            0,
+            67.86629526462396
+          ],
+          "front_sign": 1
+        }
+      ],
+      "baseline_glb": {
+        "path": "exports/pixel-8/model.glb",
+        "exists": true,
+        "modified_utc": "2026-10-22T12:33:06.522661+00:00",
+        "apertures": [
+          {
+            "name": "Device screen | selfie aperture 0",
+            "radius_mm": 1.5,
+            "depth_mm": 0.025,
+            "local_depth_levels_mm": [
+              -0.0125,
+              0.0125
+            ],
+            "translation_gltf_m": [
+              -2.9944289053673856e-05,
+              0.004509999882429838,
+              -0.06795612722635269
+            ],
+            "status": "baseline flat cylinder; not enhanced or rebuilt"
+          }
+        ]
+      },
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_8/",
+      "source_verification": "URL from calibration inventory; not independently fetched by this optics worker",
+      "confidence_limits": "Exact runtime cutout radius/center/parent retained. Shared internal ratios/materials are illustrative; no family-specific lens prescription measured.",
+      "handling": "replace known generated circular selfie aperture mesh data only when parent explicitly calls helper"
+    },
+    {
+      "id": "pixel-8a",
+      "profile_status": "unchanged",
+      "trace_status": "unchanged",
+      "profile_corrections": [],
+      "seam_changes": "none; delegated optics-only ownership",
+      "opt_in_targets": [
+        {
+          "name": "Device screen | selfie aperture 0",
+          "radius_mm_from_profile_before_runtime_trace": 1.5,
+          "center_mm_in_screen_spec": [
+            0,
+            68.25
+          ],
+          "front_sign": 1
+        }
+      ],
+      "baseline_glb": {
+        "path": "exports/pixel-8a/model.glb",
+        "exists": true,
+        "modified_utc": "2026-10-22T12:33:07.058156+00:00",
+        "apertures": [
+          {
+            "name": "Device screen | selfie aperture 0",
+            "radius_mm": 1.5,
+            "depth_mm": 0.025,
+            "local_depth_levels_mm": [
+              -0.0125,
+              0.0125
+            ],
+            "translation_gltf_m": [
+              0.00011985815945081413,
+              0.004509999882429838,
+              -0.06896914541721344
+            ],
+            "status": "baseline flat cylinder; not enhanced or rebuilt"
+          }
+        ]
+      },
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_8a/",
+      "source_verification": "URL from calibration inventory; not independently fetched by this optics worker",
+      "confidence_limits": "Exact runtime cutout radius/center/parent retained. Shared internal ratios/materials are illustrative; no family-specific lens prescription measured.",
+      "handling": "replace known generated circular selfie aperture mesh data only when parent explicitly calls helper"
+    },
+    {
+      "id": "pixel-9-pro-fold-folded",
+      "profile_status": "unchanged",
+      "trace_status": "unchanged",
+      "profile_corrections": [],
+      "seam_changes": "none; delegated optics-only ownership",
+      "opt_in_targets": [
+        {
+          "name": "Cover screen | selfie aperture 0",
+          "radius_mm_from_profile_before_runtime_trace": 1.5,
+          "center_mm_in_screen_spec": [
+            0,
+            69.65011746280344
+          ],
+          "front_sign": 1
+        }
+      ],
+      "baseline_glb": {
+        "path": "exports/pixel-9-pro-fold-folded/model.glb",
+        "exists": true,
+        "modified_utc": "2026-10-22T12:33:07.887583+00:00",
+        "apertures": [
+          {
+            "name": "Cover screen | selfie aperture 0",
+            "radius_mm": 1.5,
+            "depth_mm": 0.025,
+            "local_depth_levels_mm": [
+              -0.0125,
+              0.0125
+            ],
+            "translation_gltf_m": [
+              0.0006722787511534989,
+              0.0026099998503923416,
+              -0.06934627890586853
+            ],
+            "status": "baseline flat cylinder; not enhanced or rebuilt"
+          }
+        ]
+      },
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_9_pro_fold/closed/",
+      "source_verification": "URL from calibration inventory; not independently fetched by this optics worker",
+      "confidence_limits": "Exact runtime cutout radius/center/parent retained. Shared internal ratios/materials are illustrative; no family-specific lens prescription measured.",
+      "handling": "replace known generated circular selfie aperture mesh data only when parent explicitly calls helper"
+    },
+    {
+      "id": "pixel-9-pro-fold-unfolded",
+      "profile_status": "unchanged",
+      "trace_status": "unchanged",
+      "profile_corrections": [],
+      "seam_changes": "none; delegated optics-only ownership",
+      "opt_in_targets": [
+        {
+          "name": "Inner screen | selfie aperture 0",
+          "radius_mm_from_profile_before_runtime_trace": 1.5,
+          "center_mm_in_screen_spec": [
+            63.7724907063197,
+            70.61805183199286
+          ],
+          "front_sign": 1
+        },
+        {
+          "name": "Cover screen | selfie aperture 0",
+          "radius_mm_from_profile_before_runtime_trace": 1.5,
+          "center_mm_in_screen_spec": [
+            0,
+            69.65011746280344
+          ],
+          "front_sign": -1
+        }
+      ],
+      "baseline_glb": {
+        "path": "exports/pixel-9-pro-fold-unfolded/model.glb",
+        "exists": true,
+        "modified_utc": "2026-10-22T12:33:08.299136+00:00",
+        "apertures": [
+          {
+            "name": "Inner screen | selfie aperture 0",
+            "radius_mm": 1.5,
+            "depth_mm": 0.025,
+            "local_depth_levels_mm": [
+              -0.0125,
+              0.0125
+            ],
+            "translation_gltf_m": [
+              0.026072490960359573,
+              0.0026149998884648085,
+              -0.07051563262939453
+            ],
+            "status": "baseline flat cylinder; not enhanced or rebuilt"
+          },
+          {
+            "name": "Cover screen | selfie aperture 0",
+            "radius_mm": 1.5,
+            "depth_mm": 0.025,
+            "local_depth_levels_mm": [
+              -0.0125,
+              0.0125
+            ],
+            "translation_gltf_m": [
+              -0.0006722770631313324,
+              -0.0026599999982863665,
+              -0.06934627890586853
+            ],
+            "status": "baseline flat cylinder; not enhanced or rebuilt"
+          }
+        ]
+      },
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_9_pro_fold/default/",
+      "source_verification": "URL from calibration inventory; not independently fetched by this optics worker",
+      "confidence_limits": "Exact runtime cutout radius/center/parent retained. Shared internal ratios/materials are illustrative; no family-specific lens prescription measured.",
+      "handling": "replace known generated circular selfie aperture mesh data only when parent explicitly calls helper"
+    },
+    {
+      "id": "pixel-9-pro-xl",
+      "profile_status": "unchanged",
+      "trace_status": "unchanged",
+      "profile_corrections": [],
+      "seam_changes": "none; delegated optics-only ownership",
+      "opt_in_targets": [
+        {
+          "name": "Device screen | selfie aperture 0",
+          "radius_mm_from_profile_before_runtime_trace": 1.5,
+          "center_mm_in_screen_spec": [
+            0,
+            74.56412903225807
+          ],
+          "front_sign": 1
+        }
+      ],
+      "baseline_glb": {
+        "path": "exports/pixel-9-pro-xl/model.glb",
+        "exists": true,
+        "modified_utc": "2026-10-22T12:33:08.592271+00:00",
+        "apertures": [
+          {
+            "name": "Device screen | selfie aperture 0",
+            "radius_mm": 1.5,
+            "depth_mm": 0.025,
+            "local_depth_levels_mm": [
+              -0.0125,
+              0.0125
+            ],
+            "translation_gltf_m": [
+              0,
+              0.004310000222176313,
+              -0.07445909827947617
+            ],
+            "status": "baseline flat cylinder; not enhanced or rebuilt"
+          }
+        ]
+      },
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_9_pro_xl/",
+      "source_verification": "URL from calibration inventory; not independently fetched by this optics worker",
+      "confidence_limits": "Exact runtime cutout radius/center/parent retained. Shared internal ratios/materials are illustrative; no family-specific lens prescription measured.",
+      "handling": "replace known generated circular selfie aperture mesh data only when parent explicitly calls helper"
+    },
+    {
+      "id": "pixel-9-pro",
+      "profile_status": "unchanged",
+      "trace_status": "unchanged",
+      "profile_corrections": [],
+      "seam_changes": "none; delegated optics-only ownership",
+      "opt_in_targets": [
+        {
+          "name": "Device screen | selfie aperture 0",
+          "radius_mm_from_profile_before_runtime_trace": 1.5,
+          "center_mm_in_screen_spec": [
+            0,
+            69.368661735037
+          ],
+          "front_sign": 1
+        }
+      ],
+      "baseline_glb": {
+        "path": "exports/pixel-9-pro/model.glb",
+        "exists": true,
+        "modified_utc": "2026-10-22T12:33:07.528723+00:00",
+        "apertures": [
+          {
+            "name": "Device screen | selfie aperture 0",
+            "radius_mm": 1.5,
+            "depth_mm": 0.025,
+            "local_depth_levels_mm": [
+              -0.0125,
+              0.0125
+            ],
+            "translation_gltf_m": [
+              0,
+              0.004310000222176313,
+              -0.06926590204238892
+            ],
+            "status": "baseline flat cylinder; not enhanced or rebuilt"
+          }
+        ]
+      },
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_9_pro/",
+      "source_verification": "URL from calibration inventory; not independently fetched by this optics worker",
+      "confidence_limits": "Exact runtime cutout radius/center/parent retained. Shared internal ratios/materials are illustrative; no family-specific lens prescription measured.",
+      "handling": "replace known generated circular selfie aperture mesh data only when parent explicitly calls helper"
+    },
+    {
+      "id": "pixel-9",
+      "profile_status": "unchanged",
+      "trace_status": "unchanged",
+      "profile_corrections": [],
+      "seam_changes": "none; delegated optics-only ownership",
+      "opt_in_targets": [
+        {
+          "name": "Device screen | selfie aperture 0",
+          "radius_mm_from_profile_before_runtime_trace": 1.5,
+          "center_mm_in_screen_spec": [
+            0,
+            69.17013038324774
+          ],
+          "front_sign": 1
+        }
+      ],
+      "baseline_glb": {
+        "path": "exports/pixel-9/model.glb",
+        "exists": true,
+        "modified_utc": "2026-10-22T12:33:07.246652+00:00",
+        "apertures": [
+          {
+            "name": "Device screen | selfie aperture 0",
+            "radius_mm": 1.5,
+            "depth_mm": 0.025,
+            "local_depth_levels_mm": [
+              -0.0125,
+              0.0125
+            ],
+            "translation_gltf_m": [
+              -3.0185698051354848e-05,
+              0.004310000222176313,
+              -0.06889846175909042
+            ],
+            "status": "baseline flat cylinder; not enhanced or rebuilt"
+          }
+        ]
+      },
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_9/",
+      "source_verification": "Pixel 9 upstream back.webp and mask.webp byte-verified against installed SDK",
+      "confidence_limits": "Exact runtime cutout radius/center/parent retained. Shared internal ratios/materials are illustrative; no family-specific lens prescription measured.",
+      "handling": "replace known generated circular selfie aperture mesh data only when parent explicitly calls helper"
+    },
+    {
+      "id": "pixel-9a",
+      "profile_status": "unchanged",
+      "trace_status": "unchanged",
+      "profile_corrections": [],
+      "seam_changes": "none; delegated optics-only ownership",
+      "opt_in_targets": [
+        {
+          "name": "Device screen | selfie aperture 0",
+          "radius_mm_from_profile_before_runtime_trace": 1.5,
+          "center_mm_in_screen_spec": [
+            0,
+            68.95579766536964
+          ],
+          "front_sign": 1
+        }
+      ],
+      "baseline_glb": {
+        "path": "exports/pixel-9a/model.glb",
+        "exists": true,
+        "modified_utc": "2026-10-22T12:33:08.840921+00:00",
+        "apertures": [
+          {
+            "name": "Device screen | selfie aperture 0",
+            "radius_mm": 1.5,
+            "depth_mm": 0.025,
+            "local_depth_levels_mm": [
+              -0.0125,
+              0.0125
+            ],
+            "translation_gltf_m": [
+              3.0097276976448484e-05,
+              0.004509999882429838,
+              -0.06895579397678375
+            ],
+            "status": "baseline flat cylinder; not enhanced or rebuilt"
+          }
+        ]
+      },
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_9a/",
+      "source_verification": "URL from calibration inventory; not independently fetched by this optics worker",
+      "confidence_limits": "Exact runtime cutout radius/center/parent retained. Shared internal ratios/materials are illustrative; no family-specific lens prescription measured.",
+      "handling": "replace known generated circular selfie aperture mesh data only when parent explicitly calls helper"
+    },
+    {
+      "id": "pixel-fold-folded",
+      "profile_status": "unchanged",
+      "trace_status": "unchanged",
+      "profile_corrections": [],
+      "seam_changes": "none; delegated optics-only ownership",
+      "opt_in_targets": [
+        {
+          "name": "Cover screen | selfie aperture 0",
+          "radius_mm_from_profile_before_runtime_trace": 1.5,
+          "center_mm_in_screen_spec": [
+            0,
+            61.439408866995066
+          ],
+          "front_sign": 1
+        }
+      ],
+      "baseline_glb": {
+        "path": "exports/pixel-fold-folded/model.glb",
+        "exists": true,
+        "modified_utc": "2026-10-22T12:33:09.247874+00:00",
+        "apertures": [
+          {
+            "name": "Cover screen | selfie aperture 0",
+            "radius_mm": 1.5,
+            "depth_mm": 0.025,
+            "local_depth_levels_mm": [
+              -0.0125,
+              0.0125
+            ],
+            "translation_gltf_m": [
+              0.0012953202240169048,
+              0.002959999954327941,
+              -0.06128300353884697
+            ],
+            "status": "baseline flat cylinder; not enhanced or rebuilt"
+          }
+        ]
+      },
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_fold/closed/",
+      "source_verification": "URL from calibration inventory; not independently fetched by this optics worker",
+      "confidence_limits": "Exact runtime cutout radius/center/parent retained. Shared internal ratios/materials are illustrative; no family-specific lens prescription measured.",
+      "handling": "replace known generated circular selfie aperture mesh data only when parent explicitly calls helper"
+    },
+    {
+      "id": "pixel-fold-unfolded",
+      "profile_status": "unchanged",
+      "trace_status": "unchanged",
+      "profile_corrections": [],
+      "seam_changes": "none; delegated optics-only ownership",
+      "opt_in_targets": [
+        {
+          "name": "Cover screen | selfie aperture 0",
+          "radius_mm_from_profile_before_runtime_trace": 1.5,
+          "center_mm_in_screen_spec": [
+            0,
+            61.439408866995066
+          ],
+          "front_sign": -1
+        },
+        {
+          "name": "Inner bezel selfie camera",
+          "radius_mm_from_profile_before_runtime_trace": 1.4,
+          "center_mm_in_body": [
+            57,
+            66,
+            2.925
+          ],
+          "front_sign": 1
+        }
+      ],
+      "baseline_glb": {
+        "path": "exports/pixel-fold-unfolded/model.glb",
+        "exists": true,
+        "modified_utc": "2026-10-22T12:33:09.659550+00:00",
+        "apertures": [
+          {
+            "name": "Cover screen | selfie aperture 0",
+            "radius_mm": 1.5,
+            "depth_mm": 0.025,
+            "local_depth_levels_mm": [
+              -0.0125,
+              0.0125
+            ],
+            "translation_gltf_m": [
+              -0.0012953206896781921,
+              -0.003010000102221966,
+              -0.06128300353884697
+            ],
+            "status": "baseline flat cylinder; not enhanced or rebuilt"
+          },
+          {
+            "name": "Inner bezel selfie camera",
+            "radius_mm": 1.4,
+            "depth_mm": 0.03,
+            "local_depth_levels_mm": [
+              -0.015,
+              0.015
+            ],
+            "translation_gltf_m": [
+              0.05700000002980232,
+              0.0029249999206513166,
+              -0.06599999964237213
+            ],
+            "status": "baseline flat cylinder; not enhanced or rebuilt"
+          }
+        ]
+      },
+      "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_fold/default/",
+      "source_verification": "URL from calibration inventory; not independently fetched by this optics worker",
+      "confidence_limits": "Exact runtime cutout radius/center/parent retained. Shared internal ratios/materials are illustrative; no family-specific lens prescription measured.",
+      "handling": "cover punch hole plus existing single explicitly named Inner bezel selfie camera; no inner OLED hole added"
+    }
+  ],
+  "imported_pixel10pro_inspection": {
+    "artifact": "exports/pixel-10-pro/model.glb",
+    "method": "Read actual GLB node hierarchy, accessors, front material names and bounds; did not open .blend or start Blender.",
+    "hardware": [
+      {
+        "name": "Selfie camera | black aperture",
+        "radius_mm": 1.72,
+        "depth_mm": 0.025,
+        "center_blender_mm": [
+          0,
+          68.49999725818634,
+          4.34499979019165
+        ],
+        "local_depth_levels_mm": [
+          -0.01249999968422344,
+          0.01249999968422344
+        ]
+      },
+      {
+        "name": "Selfie lens coating",
+        "radius_mm": 1.0,
+        "depth_mm": 0.018,
+        "center_blender_mm": [
+          0,
+          68.49999725818634,
+          4.364999942481518
+        ],
+        "local_depth_levels_mm": [
+          -0.009000000318337698,
+          0.009000000318337698
+        ]
+      }
+    ],
+    "shared_parent": "Device screen, Selfie camera | black aperture and Selfie lens coating are children of Pixel 10 Pro | 152.8 x 72 x 8.6 mm with no additional per-node rotations/scales.",
+    "old_oled_z_mm": 4.3275,
+    "old_black_aperture_front_z_mm": 4.3575,
+    "old_coating_front_z_mm": 4.374,
+    "new_center_mm": [
+      -0.02574123989218329,
+      68.00835579514826,
+      4.3525
+    ],
+    "new_radius_mm": 2.3554040830026333,
+    "new_bottom_oled_clearance_mm": 0.0125,
+    "new_lens_top_oled_clearance_mm": 0.0225,
+    "mutation_scope": [
+      "Replace mesh data of Selfie camera | black aperture.",
+      "Set that front disk location from spec.center_mm + cutout.center_mm, with the same +.025mm clearance used by prepare_screen generated apertures.",
+      "Remove only Selfie lens coating after its replacement; do not hide it behind the new optics."
+    ],
+    "preserved": "Rear hardware/optics, enclosure, logo, finish materials, OLED mesh/UVs/native aspect and curved-screen geometry."
+  }
+}

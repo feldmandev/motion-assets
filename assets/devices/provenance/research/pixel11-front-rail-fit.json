@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-23",
+  "device": "pixel-11-pro-xl",
+  "status": "Focused prototype rendered and visually reviewed; XL-only profile/generator setting applied. Canonical exports not rebuilt.",
+  "scope": "Front enclosure shoulder only. OLED, front black-glass footprint, back roll, published body envelope, rear glass and reviewed camera optics preserved.",
+  "frame_reference": {
+    "path": "exports/pixel-11-pro-xl/frame.svg",
+    "origin": "Procedural companion frame; no official Pixel11 SDK frame in checked upstream",
+    "colored_rim_mm": 0.7,
+    "display_size_mm": [
+      71.82673796791443,
+      159.89999999999995
+    ],
+    "body_radius_mm": 12.90000000000002
+  },
+  "geometry": {
+    "body_mm": {
+      "height": 162.7,
+      "width": 76.5,
+      "depth": 8.5
+    },
+    "enclosure_depth_mm": 8.45,
+    "front_glass_inset_mm": 0.7,
+    "front_glass_face_above_metal_mm": 0.025,
+    "before_front_roll_mm": 0.65,
+    "candidate_front_roll_mm": 0.3,
+    "unchanged_rear_roll_mm": 0.65,
+    "before_flat_front_metal_mm": 0.05,
+    "candidate_flat_front_metal_mm": 0.4,
+    "unchanged_side_display_margin_mm": 2.3366310160427872,
+    "unchanged_top_display_margin_mm": 1.40000000000002
+  },
+  "finding": "Frame and model have the same nominal .70mm rim. The Frame paints it as a flat colored band. The model rolls .65mm of that .70mm band away from the front-facing plane, leaving only .05mm of flat metal; its appearance therefore depends strongly on reflection angle. The glass footprint does not cover the nominal rim. Its slight proud face can shade the edge at oblique angles but is not the principal discrepancy.",
+  "candidate_reason": "Use .30mm front shoulder while retaining the .65mm rear roll and .70mm nominal rim. This leaves a .40mm flat metal ledge and extends the flat sidewall .35mm toward the front without widening body or shrinking OLED. The edge remains filleted; this parameter is a visual-fit estimate, not manufacturer CAD.",
+  "sources": [
+    {
+      "url": "https://blog.google/products-and-platforms/devices/pixel/google-pixel-11-pro-xl/",
+      "observation": "Published front/back base Frost image shows a distinct light metal rim around black display mask; Pro family rear image shows a rolled edge adjoining flat sidewall. These do not establish a precise front fillet radius."
+    },
+    {
+      "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/NFG_Cubs_Frost.width-1200.format-webp.webp",
+      "local": "tmp/pixel11-front-rail/google-pixel11-front-back.webp",
+      "scope": "Base Pixel11 front partially visible, not a ProXL dimensional trace."
+    },
+    {
+      "local": "research/images/Pixel-11ProXL_Family-Shot.webp",
+      "scope": "ProXL family rear/side reference; no unobscured front."
+    }
+  ],
+  "verification": "Run research/prototype_pixel11_front_rail.py for before/after fixed-light front and oblique renders, rear and side checks, source mesh/UV hashes, and bit-identical rear enclosure vertices.",
+  "excluded": "No optical redesign, black OLED bezel widening, antenna extrapolation, finish/material flattening, family-wide build, source or gallery publication.",
+  "verification_result": {
+    "changed_meshes": [
+      "Aluminum enclosure"
+    ],
+    "rear_vertices_exact": true,
+    "all_other_mesh_and_uv_hashes_identical": true,
+    "frame_identical": true,
+    "before_after_front_and_oblique_reviewed": true,
+    "rear_and_side_reviewed": true,
+    "comparison": "tmp/pixel11-front-rail/pixel-11-pro-xl/corner-frame-comparison.png",
+    "blender_exit": "Normal Blender quit and no Python failure; PowerShell wrapper reported1 after a Blender deprecation warning on stderr."
+  },
+  "other_pixel11_slabs": {
+    "pixel-11": {
+      "front_roll_mm": 0.65,
+      "nominal_glass_inset_mm": 0.7,
+      "flat_ledge_mm": 0.05
+    },
+    "pixel-11-pro": {
+      "front_roll_mm": 0.65,
+      "nominal_glass_inset_mm": 0.7,
+      "flat_ledge_mm": 0.05
+    },
+    "finding": "Same parameter-level narrow flat-ledge condition. No change propagated: no matched Pro front render/reference review in this focused prototype."
+  }
+}

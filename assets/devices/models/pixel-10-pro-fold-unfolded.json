@@ -1,6 +1,6 @@
 {
   "id": "pixel-10-pro-fold-unfolded",
-  "name": "Pixel 10 Pro Fold · unfolded",
+  "name": "Pixel 10 Pro Fold Â· unfolded",
   "state": "unfolded",
   "screens": [
     {
@@ -58,10 +58,10 @@
       "cutouts": [
         {
           "center_mm": [
-            64.93011152416356,
-            71.29089269612263
+            64.72374227714033,
+            67.94280670785524
           ],
-          "radius_mm": 1.5
+          "radius_mm": 2.456108553740972
         }
       ],
       "uv": "u right, v up; full image maps to [0,1] without cropping",
@@ -82,9 +82,9 @@
         147.05122244488976
       ],
       "center_mm": [
-        -38.00983967935872,
-        -0.031102204408817634,
-        -2.685
+        -38.00983428955078,
+        -0.031102202832698822,
+        -2.684999704360962
       ],
       "corner_radius_mm": 8.031917300043341,
       "rotation_deg": [
@@ -122,10 +122,10 @@
       "cutouts": [
         {
           "center_mm": [
-            0,
-            69.52561122244488
+            0.031102204408817634,
+            68.64256513026052
           ],
-          "radius_mm": 1.5
+          "radius_mm": 2.09456184554685
         }
       ],
       "uv": "u right, v up; full image maps to [0,1] without cropping",
@@ -194,7 +194,8 @@
           5.581601603206412,
           13.098662284569137,
           13.098662284569137
-        ]
+        ],
+        "front_rail_mm": 0.94
       },
       "center_mm": [
         -37.75,
@@ -221,7 +222,8 @@
           13.098662284569137,
           5.581601603206412,
           5.581601603206412
-        ]
+        ],
+        "front_rail_mm": 0.94
       },
       "center_mm": [
         37.75,
@@ -1760,7 +1762,8 @@
     "bar": "bar",
     "black": "black",
     "flash": "flash",
-    "logo": "logo"
+    "logo": "logo",
+    "antenna": "antenna"
   },
   "finishes": [
     {
@@ -1795,6 +1798,13 @@
           ],
           "metal": 0.5,
           "rough": 0.26
+        },
+        "antenna": {
+          "rgb": [
+            0.58824,
+            0.61176,
+            0.6549
+          ]
         }
       }
     },
@@ -1830,12 +1840,19 @@
           ],
           "metal": 0.5,
           "rough": 0.26
+        },
+        "antenna": {
+          "rgb": [
+            0.7098,
+            0.74118,
+            0.6
+          ]
         }
       }
     }
   ],
-  "glbUrl": "assets/devices/models/pixel-10-pro-fold-unfolded.5b6ab48372a9.glb.gz",
-  "sha256": "5b6ab48372a9e2803dc7a9ee804d0c8c32f9b687a12642ca5a55380c9c131324",
+  "glbUrl": "assets/devices/models/pixel-10-pro-fold-unfolded.45045df13899.glb.gz",
+  "sha256": "45045df13899deaec4cc579e91c38d1c01566ee305a34f803a764a97b9f48627",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/pixel-10-pro-fold-unfolded.json",
@@ -1846,7 +1863,9 @@
       "camera_geometry": "Housing width, height and top gap scaled from official rear artwork; pixel bounds and uncertainty in camera_measurement. Optical internals remain illustrative. Not measurable from this rear view; model depth remains a visual estimate.",
       "finishes": "Approximate sRGB colors and roughness, not calibrated measured materials",
       "hinge": "Animated rigid-panel hinge with a measured open/closed thickness axis; half-angle barrel and hinge leaves remain an estimated mechanism; the flexible OLED is split at the crease.",
-      "branding": "Google G contour retained from reference artwork. Legacy Pixel4/4a/5/5a lower rear placement (approximately80%height); Pixel6 onward and folds centered on rear/camera leaf. Size, position and finish-tinted material are photo estimates, not manufacturer CAD."
+      "branding": "Google G contour retained from reference artwork. Legacy Pixel4/4a/5/5a lower rear placement (approximately80%height); Pixel6 onward and folds centered on rear/camera leaf. Size, position and finish-tinted material are photo estimates, not manufacturer CAD.",
+      "front_rail": "Visible inner-frame metal-to-dark-surround transition sampled independently of the OLED opening in the official SDK artwork. Uniform inset is a front-view approximation; per-edge variation, hinge transitions and antenna inserts are recorded in research/pixel-fold-front-calibration.json. Edge-roll depth and materials are not measured by this image.",
+      "antenna_details": "Visible cover-leaf breaks measured from this family closed Google artwork; root-space coordinates follow the cover leaf and mirror for its rear-facing open pose. Opposite leaf and unresolved hinge-edge bands are not inferred. Depth and finish-tinted polymer are illustrative."
     },
     "sources": [
       "https://support.google.com/pixelphone/answer/7158570?hl=en",

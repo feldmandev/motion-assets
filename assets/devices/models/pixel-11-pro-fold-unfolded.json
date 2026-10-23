@@ -1,6 +1,6 @@
 {
   "id": "pixel-11-pro-fold-unfolded",
-  "name": "Pixel 11 Pro Fold · unfolded",
+  "name": "Pixel 11 Pro Fold Â· unfolded",
   "state": "unfolded",
   "screens": [
     {
@@ -77,9 +77,9 @@
         151.2
       ],
       "center_mm": [
-        -38.55,
-        0,
-        -2.585
+        -37.83158493041992,
+        -0.031102202832698822,
+        -2.5849997997283936
       ],
       "corner_radius_mm": 8.296587580546982,
       "rotation_deg": [
@@ -89,8 +89,8 @@
       ],
       "edge_curve_mm": 0,
       "frame_bounds_mm": [
-        4.237489325362944,
-        2.0,
+        3.519075864934109,
+        2.0311022044088247,
         69.72502134927412,
         151.2
       ],
@@ -1822,15 +1822,15 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/pixel-11-pro-fold-unfolded.08e40400b5c5.glb.gz",
-  "sha256": "08e40400b5c5f07db473459d914e4a95f2663cb9d6c6312c4ed040c236540de7",
+  "glbUrl": "assets/devices/models/pixel-11-pro-fold-unfolded.441f81f181f5.glb.gz",
+  "sha256": "441f81f181f54d8a907228fec9773b20568565b9cda33ffa9acde000eea527e3",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/pixel-11-pro-fold-unfolded.json",
     "accuracy": {
       "body_dimensions": "Google published metric dimensions",
       "screen_resolution": "Google published panel resolution",
-      "screen_geometry": "Photo-informed fit box with exact native pixel aspect; bezels, radii, cutouts and edge curves estimated",
+      "screen_geometry": "Cover artwork is derived from Pixel 10 Pro Fold, not official Pixel 11 artwork; its profile position is synchronized to that derived frame. Inner screen geometry and optics remain provisional. Native pixel aspect preserved; no manufacturing-precision claim.",
       "camera_geometry": "Housing width, height and top gap scaled from official rear artwork; pixel bounds and uncertainty in camera_measurement. Optical internals remain illustrative. Not measurable from this rear view; model depth remains a visual estimate.",
       "finishes": "Approximate sRGB colors and roughness, not calibrated measured materials",
       "hinge": "Animated rigid-panel hinge with a measured open/closed thickness axis; half-angle barrel and hinge leaves remain an estimated mechanism; the flexible OLED is split at the crease.",

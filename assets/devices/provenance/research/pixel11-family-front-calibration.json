@@ -1,0 +1,627 @@
+{
+  "date": "2026-10-23",
+  "scope": [
+    "pixel-11",
+    "pixel-11-pro",
+    "pixel-11-pro-xl"
+  ],
+  "status": "Profile-only shelf correction. No Blender, canonical export rebuild, generator edit or publication. Parent front/oblique batch QA pending.",
+  "acceptance_limits": "Not manufacturer CAD. Exact front radii, complete antenna layouts and independently measured Pro selfie masks remain unverified.",
+  "files_changed": [
+    {
+      "file": "profiles\\pixel-11.json",
+      "sha256_before": "328ad2519650e2d19eaea98ce2080d0b0652773506983a3a25612d798d5276d1",
+      "sha256_after": "49b2a9955c8aaffa5b6070d9355cec106964d7a885e3d22de5e8d600483c34b8",
+      "fields": {
+        "body_mm.edge_roll_mm[1]": [
+          0.65,
+          0.3
+        ],
+        "body_mm.front_rail_mm": [
+          "absent (default .7)",
+          0.7
+        ]
+      },
+      "assertion": "Parsed JSON equals original with exactly these two body fields changed; all other values preserved."
+    },
+    {
+      "file": "profiles\\pixel-11-pro.json",
+      "sha256_before": "9bf4e73de4e5e7505db0af76e5d647728657179732957253638cade937199792",
+      "sha256_after": "26415b9ae7ca9b8b20fec04551c87a0bbff8bf3b90f1b86485536bf5ce1ae5c3",
+      "fields": {
+        "body_mm.edge_roll_mm[1]": [
+          0.65,
+          0.3
+        ],
+        "body_mm.front_rail_mm": [
+          "absent (default .7)",
+          0.7
+        ]
+      },
+      "assertion": "Parsed JSON equals original with exactly these two body fields changed; all other values preserved."
+    },
+    {
+      "file": "research/pixel11-family-front-calibration.json",
+      "fields": "New family measurements and handoff report"
+    }
+  ],
+  "reviewed_unchanged": [
+    "profiles/pixel-11-pro-xl.json: existing [.65,.30] and front_rail_mm=.70 retained."
+  ],
+  "official_frame_inventory": {
+    "sdk": "[local reference path omitted]",
+    "local_check": "No directories matching *11*.",
+    "url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/",
+    "tree": "a177e3a2d906ae1715c8974f39eee71be0ca4c8d",
+    "live_check": "Pixel 10/10 Pro/10 Pro XL/10a and older entries present; no Pixel 11 slabs.",
+    "assigned_frames": "All three exports/frame.svg are procedural companion artwork, NOT official Google SDK frames. No assigned trace.json exists or was created."
+  },
+  "coordinates": {
+    "mm": "Profile X right, Y up, Z front; body-centred. edge_roll_mm=[rear,front].",
+    "photo": "X right, Y down; measured pixel ranges inclusive. Visible left rail in rear photos is device right in front coordinates.",
+    "uncertainty": "Manual material-edge picks about +/-2 px, plus perspective, reflections and compression. Photo estimates are not orthographic CAD coordinates."
+  },
+  "shelf_correction": {
+    "reason": "All canonical GLBs expose nominal .70 mm outside black glass, but .65 mm front shoulder rolls almost all of it away, leaving only .05 mm nominal flat shelf. Set front .30 and retain rear .65 and glass inset .70, leaving .40 mm flat shelf. This extends the side flat .35 mm toward the front without changing body envelope, glass or OLED.",
+    "support": "Official base front image and Pro corner macro distinguish metal lip from black glass/OLED. Same actual geometric defect in all three; existing XL prototype supports directional correction. .30 mm is a visual-fit estimate, NOT a Google measurement.",
+    "confidence": {
+      "actual_mesh_measurements": "High",
+      "direction_of_correction": "Medium",
+      "precise_front_roll": "Low: not a measured physical radius"
+    },
+    "preserve": "Native OLED resolution/aspect/UV/fit, black glass, rear roll, body dimensions, camera assembly, logo and finish palettes. No outline or optical changes in this patch."
+  },
+  "material_audit": {
+    "pixel-11": "Official satin aluminum; retain rail metal1 rough.36 on existing finishes and polished glass back.",
+    "pixel-11-pro": "Official polished Canyon/Olive/Fog versus matte Obsidian; retain existing rail metal1 rough.18 and Obsidian rough.48.",
+    "pixel-11-pro-xl": "Same existing finish-specific values as Pro retained.",
+    "limit": "RGB and roughness are visual estimates, not measured materials. Polymer seams need a separate nonmetallic material; do not flatten every finish or alter reviewed rear cameras."
+  },
+  "source_generator_patch_instructions": {
+    "file": "make_pixel_profiles.py",
+    "function": "pixel11_profiles",
+    "location": "Inspected lines327-332",
+    "parent_change": "Set body_mm.edge_roll_mm=[.65,.30] and body_mm.front_rail_mm=.70 for exactly the three slab rows. Replace current [.65,.65] plus XL-only conditional with these shared slab settings. Keep folds and other generations untouched.",
+    "antennas": "Do not turn the oblique photo fractions below into exact model insert positions. No complete independently measured per-device layouts are available.",
+    "optics": "Parent camera upgrade must distinguish outer mask from lens highlights; current 3mm masks are not measured acceptance references. See selfie audit."
+  },
+  "verification": {
+    "performed": "Read binary GLB POSITION accessors, actual SVG paths/circles and metadata. Inspected local official imagery and measured pixel values. No stale front.png used. Profile JSON equality checked against baseline except exact declared fields.",
+    "pending": "Parent serialized exports, front/oblique/rear render QA, antenna and selfie acceptance.",
+    "final_checks": "PASS: Both changed profile files reverse byte-for-byte to captured original SHA256. Parsed all3 JSONs and report. Preserved screen/camera/logo/material/finish section hashes unchanged; canonical GLB hashes unchanged after study; all3 have rail and cutout audit entries. No Blender/render/build launched.",
+    "glass_plane_method": "Intersect actual front-glass GLB triangle edges with enclosure front-face depth, including glass node translation; subtract maximum glass X from actual front-plane enclosure X. Existing visible shelf about.07214mm versus nominal.05; same unchanged glass gives candidate about.42214mm versus nominal.40."
+  },
+  "prior_evidence": [
+    "research/pixel-official-frame-calibration.json",
+    "research/pixel-rails-material-audit.json",
+    "research/pixel11-front-rail-fit.json",
+    "research/prototype_pixel11_front_rail.py",
+    "tmp/pixel11-front-rail/pixel-11-pro-xl/corner-frame-comparison.png"
+  ],
+  "rights": "Reused existing local official references only. No new download or publication. Official hosting does not establish unrestricted licensing; no blanket license claim.",
+  "sources": [
+    {
+      "id": "base-specs",
+      "url": "https://store.google.com/gb/product/pixel_11_specs?hl=en-GB",
+      "verified": "Live 2026-10-23",
+      "supports": "Published body dimensions, native OLED resolution, satin aluminum. No fillet/seam/selfie mask dimensions."
+    },
+    {
+      "id": "pro-specs",
+      "url": "https://store.google.com/gb/product/pixel_11_pro_specs?hl=en-GB",
+      "verified": "Live 2026-10-23",
+      "supports": "Published Pro/XL dimensions and native OLED; polished aluminum except matte Obsidian. No physical rim, antenna or aperture dimensions."
+    },
+    {
+      "id": "launch",
+      "url": "https://blog.google/products-and-platforms/devices/pixel/google-pixel-11-pro-xl/",
+      "verified": "Live 2026-10-23; article August12,2026",
+      "supports": "Links the three image URLs below; satin base and all-matte Pro Obsidian."
+    },
+    {
+      "id": "base-front",
+      "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/NFG_Cubs_Frost.width-1200.format-webp.webp",
+      "local": "research/images/NFG_Cubs_Frost.webp",
+      "role": "Base Frost near-frontal composition; front left edge partly occluded. Not Pro dimensional evidence.",
+      "sha256": "e34e52d01c14a05c4434e8e343cd58c769aa0f099798061c260b2a3b378ea1fe",
+      "image_size_px": [
+        1200,
+        675
+      ]
+    },
+    {
+      "id": "base-family",
+      "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Pixel_11_Family_Shot.width-1200.format-webp.webp",
+      "local": "research/images/Pixel_11_Family_Shot.webp",
+      "role": "Base oblique rear family; two visible polymer breaks.",
+      "sha256": "76a0e3ee1b12b90cf4a2062bff4eb90f3a804ea7f8ddeb22c1bbd34e05dc3e46",
+      "image_size_px": [
+        1200,
+        1200
+      ]
+    },
+    {
+      "id": "pro-xl-family",
+      "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Pixel-11ProXL_Family-Shot.width-1200.format-webp.webp",
+      "local": "research/images/Pixel-11ProXL_Family-Shot.webp",
+      "role": "Pro XL oblique rear family; not an independently scaled Pro-size/front reference.",
+      "sha256": "9e6c4874d36cb33f59b0bfec71255e41baac439f3fc14217a75b6c6e958f5b64",
+      "image_size_px": [
+        1200,
+        675
+      ]
+    },
+    {
+      "id": "pro-front-corner",
+      "page_url": "https://store.google.com/gb/product/pixel_11_pro?hl=en-GB",
+      "url": "https://lh3.googleusercontent.com/AVdp_dXvpaicoxCt5gCLwPX62d53W6sHSd4kyPg2u3s0godFndkHDQfV6rdwHDIzLmH5PUzE4c0ri2yrDSffTKQMJO0N4fyfsPw=w542-h678-rw-nu",
+      "local": "research/images/pixel11-pro-polished-edge-official.webp",
+      "role": "Previously downloaded Store macro, viewed locally. Distinct colored front lip outside black glass, rounded polished corner. No complete body scale or selfie.",
+      "sha256": "346a55d776604e7721484973cfebb06a99e625f4e3ac003d7b6af18773fc047c",
+      "image_size_px": [
+        542,
+        678
+      ]
+    },
+    {
+      "id": "pro-side",
+      "page_url": "https://store.google.com/gb/product/pixel_11_pro?hl=en-GB",
+      "url": "https://lh3.googleusercontent.com/ZoBsfFUyAM4Ph2seuYt7EtG37b1YyZKvkl2QPfcSlvNwBJtgSQjPRJjYRTC9tgbss6aR6cz-u5sl2qAYQ7-KZy5dmx31axAWbJk=w1392-h794-rw-nu",
+      "local": "research/images/pixel11-pro-side-rear-official.webp",
+      "role": "Previously downloaded Store rear/side macro; a clear diffuse polymer band crosses polished side. Actual file1392x803 despite requested dimensions.",
+      "sha256": "a9a95152caaf019d2e8627a08f62797f9dafc1b6d9cc74b569437337e455263f",
+      "image_size_px": [
+        1392,
+        803
+      ]
+    }
+  ],
+  "source_verification_limit": "Store Pro overview re-fetch hit an inaccessible consent redirect. Existing macro provenance is inherited from pixel-official-frame-calibration.json, not claimed freshly fetched. Specs, launch article and official Android device-art tree were accessible and checked live. All local images viewed.",
+  "rail_boundary_photo_measurements": {
+    "pixel-11": {
+      "source": "base-front",
+      "front_body_vertical_bounds_px": [
+        18,
+        658
+      ],
+      "scale": "Apparent 640px /152.8mm =4.19px/mm; photo estimate.",
+      "right_straight_samples_y_px": [
+        100,
+        400,
+        500
+      ],
+      "right_layers_x_px": {
+        "oled_transition": [
+          850,
+          852
+        ],
+        "black_glass_dark_strip": [
+          852,
+          859
+        ],
+        "colored_transition": [
+          860,
+          860
+        ],
+        "colored_rail_core": [
+          861,
+          865
+        ],
+        "outer_antialias": [
+          866,
+          867
+        ]
+      },
+      "top_sample_x_px": 750,
+      "top_layers_y_px": {
+        "outer_metal_band": [
+          18,
+          22
+        ],
+        "metal_to_black_transition": [
+          23,
+          24
+        ],
+        "black_glass_dark_strip": [
+          24,
+          31
+        ],
+        "oled_transition": [
+          32,
+          33
+        ]
+      },
+      "apparent_metal_plus_boundary_band_mm_range": [
+        1.2,
+        1.7
+      ],
+      "finding": "5-7px colored/reflection band is separate from dark glass and OLED. Does not directly measure flat shelf or fillet. Model .70mm nominal inset is retained, not claimed measured from this photo.",
+      "remaining_discrepancy": "Launch asset apparent body-to-OLED margins exceed current model margins. Left front is partly obscured and composition is not an engineering drawing; preserve reviewed native OLED mapping and flag parent QA rather than force symmetric margins from it."
+    },
+    "pixel-11-pro": {
+      "source": "pro-front-corner",
+      "finding": "Substantial colored lip lies outside black glass and rounds into flat polished side. Supports a flat shelf, but cannot independently establish mm width, fillet radius or full corner contour."
+    },
+    "pixel-11-pro-xl": {
+      "source": "pro-front-corner",
+      "finding": "Pro-family design evidence plus prior rendered XL prototype. No independent official XL orthographic front. Procedural frame is not an official dimensional target."
+    }
+  },
+  "selfie_cutout_audit": {
+    "existing": "All three profiles, procedural SVGs and canonical GLBs use radius1.50mm and a flat black aperture disk. Existing values are estimates, NOT independently measured SDK cutouts.",
+    "pixel-11": {
+      "source": "base-front",
+      "dark_footprint_bounds_px": [
+        706,
+        44,
+        724,
+        63
+      ],
+      "dark_component_area_px": 288,
+      "measurement": "Largest 4-connected RGB max<55 component in ROI x699..732,y38..71. Outer darkness includes optical surround and threshold/compression uncertainty.",
+      "apparent_diameter_mm_range": [
+        4.3,
+        5.0
+      ],
+      "apparent_top_to_center_mm_approx": 8.5,
+      "current_diameter_mm": 3.0,
+      "current_top_to_center_mm": 6.9,
+      "decision": "No optical edit in this shelf patch. Significant mask discrepancy requires parent calibration; do not call existing3mm mask measured. Photo dark surround is not evidence of physical internal lens geometry."
+    },
+    "pixel-11-pro": {
+      "current_diameter_mm": 3.0,
+      "current_top_to_center_mm": 6.5,
+      "limit": "No full front/selfie in inspected Pro references; no independently measured outer aperture. Do not transfer base dimensions."
+    },
+    "pixel-11-pro-xl": {
+      "current_diameter_mm": 3.0,
+      "current_top_to_center_mm": 6.5,
+      "limit": "XL prototype preserved the existing mask, which does not establish accuracy. No full official front/selfie inspected."
+    },
+    "parent_requirement": "Camera internals must fit calibrated outer mask independently from pupils/highlights. All-three measured-mask acceptance remains outstanding; do not treat shelf correction or prior preservation checks as camera calibration."
+  },
+  "antenna_photo_measurements": {
+    "pixel-11": {
+      "source": "base-family",
+      "sample": "Rightmost Frost rear view; image-left/device-right long rail",
+      "sample_x_px": 832,
+      "projected_body_top_bottom_y_px": [
+        187,
+        1001
+      ],
+      "seams": [
+        {
+          "band_y_px": [
+            316,
+            323
+          ],
+          "width_px_approx": 8,
+          "projected_fraction_from_top_approx": 0.16
+        },
+        {
+          "band_y_px": [
+            918,
+            925
+          ],
+          "width_px_approx": 8,
+          "projected_fraction_from_top_approx": 0.9
+        }
+      ],
+      "width_mm_photo_estimate_range": [
+        1.1,
+        1.9
+      ],
+      "method": "8px/814px projected height*152.8mm gives about1.5mm before perspective/bevel uncertainty. Image-space positions are measured; physical widths are photo estimates.",
+      "confidence": "High material breaks visible, medium pixel bands, low physical coordinates.",
+      "action": "No exact Y, mirrored seams or insert meshes added. Opposite rail/top/bottom are not adequately exposed; do not assume a generic six-band layout."
+    },
+    "pixel-11-pro-xl": {
+      "source": "pro-xl-family",
+      "sample": "Rightmost Canyon rear view; image-left/device-right long rail",
+      "sample_x_px": 778,
+      "projected_body_top_bottom_y_px": [
+        31,
+        642
+      ],
+      "seams": [
+        {
+          "band_y_px": [
+            124,
+            128
+          ],
+          "width_px_approx": 5,
+          "projected_fraction_from_top_approx": 0.15
+        },
+        {
+          "band_y_px": [
+            582,
+            588
+          ],
+          "width_px_approx": 7,
+          "projected_fraction_from_top_approx": 0.91,
+          "limit": "Lower boundary blends into curved rail shading; width less certain than upper seam."
+        }
+      ],
+      "width_mm_photo_estimate_range": [
+        1.0,
+        2.2
+      ],
+      "method": "5-7px/611px projected height*162.7mm gives about1.3-1.9mm before projection uncertainty; broad range only.",
+      "top_observation": "Small interruption near image(873,35), near-tangent top edge. Insufficient endpoints for axial position/width, so not entered as a measured third insert.",
+      "confidence": "High long-rail interruptions visible, medium image-space upper band, low physical coordinates/lower width.",
+      "action": "No exact positions, opposite edge, bottom or regional layout inferred."
+    },
+    "pixel-11-pro": {
+      "source": "pro-side",
+      "sample_y_px": 440,
+      "band_x_px": [
+        991,
+        1006
+      ],
+      "width_px_approx": 16,
+      "visible_y_extent_px_approx": [
+        405,
+        483
+      ],
+      "finding": "Diffuse polymer band crosses polished side rail and stops at glass; separate from specular highlight. Only part of phone is shown, strongly oblique.",
+      "absolute_position_mm": null,
+      "absolute_width_mm": null,
+      "confidence": "High material interruption present; medium image-space pick; insufficient physical scale/axial position.",
+      "action": "No precise Pro-size seam geometry. XL fractions are family analogy, never independent Pro measurements. Matched full Pro reference needed."
+    }
+  },
+  "devices": {
+    "pixel-11": {
+      "profile_action": "Front roll .65 to .30; added explicit front_rail_mm .70",
+      "profile_body_mm": {
+        "height": 152.8,
+        "width": 72.0,
+        "depth": 8.6,
+        "corner_radius": 12.3,
+        "edge_roll": 0.55,
+        "front_curve": 0,
+        "edge_roll_mm": [
+          0.65,
+          0.3
+        ],
+        "front_rail_mm": 0.7
+      },
+      "canonical_glb_before": {
+        "path": "exports/pixel-11/model.glb",
+        "sha256": "7f8960e13ff37fadb31d7c61bdb74035baf0930ca33e1b309d0882ce268a0629",
+        "enclosure_width_height_depth_mm": [
+          71.999997,
+          152.799994,
+          8.55
+        ],
+        "glass_width_height_depth_mm": [
+          70.600003,
+          151.4,
+          0.25
+        ],
+        "front_flat_face_x_max_mm": 35.349999,
+        "measured_front_face_inset_from_outer_mm": 0.65,
+        "front_face_depth_mm": 4.275,
+        "glass_outer_inset_mm": 0.699997,
+        "antenna_polymer_seam_nodes_found": [],
+        "glass_x_at_metal_front_plane_mm": 35.277856,
+        "actual_flat_shelf_visible_at_metal_plane_mm": 0.072143
+      },
+      "procedural_frame": {
+        "path": "exports/pixel-11/frame.svg",
+        "nominal_colored_rim_mm": 0.7,
+        "origin": "Procedural, not official SDK",
+        "body_radius_mm_from_export": 12.299999999999997,
+        "oled_size_mm": [
+          66.47524752475248,
+          149.20000000000002
+        ],
+        "native_resolution": [
+          1080,
+          2424
+        ],
+        "body_to_oled_side_top_mm": [
+          2.762376237623762,
+          1.7999999999999972
+        ],
+        "black_glass_to_oled_side_top_mm": [
+          2.062376237623762,
+          1.0999999999999972
+        ]
+      },
+      "candidate_shelf": {
+        "canonical_rear_front_roll_mm": [
+          0.65,
+          0.65
+        ],
+        "canonical_flat_shelf_mm": 0.05,
+        "profile_rear_front_roll_mm": [
+          0.65,
+          0.3
+        ],
+        "profile_nominal_rim_mm": 0.7,
+        "candidate_flat_shelf_mm": 0.4,
+        "gain_mm": 0.35,
+        "note": "Canonical GLB is not rebuilt, including XL. Tiny float accessor error does not change this geometry conclusion.",
+        "estimated_visible_flat_shelf_with_unchanged_glass_mm": 0.422143
+      },
+      "preserved_section_sha256": {
+        "screen": "bd8b5ed30ee17ac5b549581e59636dd418912eb67f61f4e8c7a5dfc5c9d49d83",
+        "camera": "db4c7dba88df28b8f9759713f5bfc1832d58af5c716eb2a69b84cf6a82df1390",
+        "rear_logo": "6ba40af019123c3684acb09204ab69cd398e9d0be3e0931ba053cbc6baba8878",
+        "materials": "b90978a9d26aee9597689605f1fbc86c61ba4ef62613ebc7316a4e62e45d230b",
+        "finishes": "27c321269997af1ddbd84888f5976b3429e0743677933724849035f04d9ce373"
+      },
+      "corner_limit": "Current profile/export radii are procedural and can differ due existing derived concentric corner behavior. Neither was modified; no independent official Pixel11 corner contour is available.",
+      "selfie_limit": "Existing radius1.5mm and placement remain provisional; see selfie_cutout_audit."
+    },
+    "pixel-11-pro": {
+      "profile_action": "Front roll .65 to .30; added explicit front_rail_mm .70",
+      "profile_body_mm": {
+        "height": 152.7,
+        "width": 71.9,
+        "depth": 8.4,
+        "corner_radius": 12.2,
+        "edge_roll": 0.55,
+        "front_curve": 0,
+        "edge_roll_mm": [
+          0.65,
+          0.3
+        ],
+        "front_rail_mm": 0.7
+      },
+      "canonical_glb_before": {
+        "path": "exports/pixel-11-pro/model.glb",
+        "sha256": "a77482ce672d9756c5aebe331b2272ae4e2ea565ddbbb755074309bfe15c547d",
+        "enclosure_width_height_depth_mm": [
+          71.900003,
+          152.700007,
+          8.35
+        ],
+        "glass_width_height_depth_mm": [
+          70.500001,
+          151.299998,
+          0.25
+        ],
+        "front_flat_face_x_max_mm": 35.300002,
+        "measured_front_face_inset_from_outer_mm": 0.65,
+        "front_face_depth_mm": 4.175,
+        "glass_outer_inset_mm": 0.700001,
+        "antenna_polymer_seam_nodes_found": [],
+        "glass_x_at_metal_front_plane_mm": 35.227856,
+        "actual_flat_shelf_visible_at_metal_plane_mm": 0.072146
+      },
+      "procedural_frame": {
+        "path": "exports/pixel-11-pro/frame.svg",
+        "nominal_colored_rim_mm": 0.7,
+        "origin": "Procedural, not official SDK",
+        "body_radius_mm_from_export": 12.100000000000005,
+        "oled_size_mm": [
+          67.18207282913164,
+          149.89999999999998
+        ],
+        "native_resolution": [
+          1280,
+          2856
+        ],
+        "body_to_oled_side_top_mm": [
+          2.358963585434182,
+          1.4000000000000057
+        ],
+        "black_glass_to_oled_side_top_mm": [
+          1.6589635854341822,
+          0.7000000000000057
+        ]
+      },
+      "candidate_shelf": {
+        "canonical_rear_front_roll_mm": [
+          0.65,
+          0.65
+        ],
+        "canonical_flat_shelf_mm": 0.05,
+        "profile_rear_front_roll_mm": [
+          0.65,
+          0.3
+        ],
+        "profile_nominal_rim_mm": 0.7,
+        "candidate_flat_shelf_mm": 0.4,
+        "gain_mm": 0.35,
+        "note": "Canonical GLB is not rebuilt, including XL. Tiny float accessor error does not change this geometry conclusion.",
+        "estimated_visible_flat_shelf_with_unchanged_glass_mm": 0.422146
+      },
+      "preserved_section_sha256": {
+        "screen": "5eadde406f5f28009cdb8649cfe16b851992bdb907c2da969531d9b8dcf85059",
+        "camera": "47f2dc3af3b8ebfbedbdd74447ca868430dd13015413f85c103546a633976716",
+        "rear_logo": "6ba40af019123c3684acb09204ab69cd398e9d0be3e0931ba053cbc6baba8878",
+        "materials": "697617f8e0bcb1a97ac95a078b4c8a3074454539e05b2e7924e78f8fb6c3ee85",
+        "finishes": "67da25ecf995abfe7a50edc4b38494459fd8cc9a04f59d0da81aebcaa7871f60"
+      },
+      "corner_limit": "Current profile/export radii are procedural and can differ due existing derived concentric corner behavior. Neither was modified; no independent official Pixel11 corner contour is available.",
+      "selfie_limit": "Existing radius1.5mm and placement remain provisional; see selfie_cutout_audit."
+    },
+    "pixel-11-pro-xl": {
+      "profile_action": "Unchanged: prior XL setting reviewed",
+      "profile_body_mm": {
+        "height": 162.7,
+        "width": 76.5,
+        "depth": 8.5,
+        "corner_radius": 13.0,
+        "edge_roll": 0.55,
+        "front_curve": 0,
+        "edge_roll_mm": [
+          0.65,
+          0.3
+        ],
+        "front_rail_mm": 0.7
+      },
+      "canonical_glb_before": {
+        "path": "exports/pixel-11-pro-xl/model.glb",
+        "sha256": "ca400ef1eef9bc38f6cae211c6da56cec10b874c6c070e1e57863f7c477516ef",
+        "enclosure_width_height_depth_mm": [
+          76.499999,
+          162.699997,
+          8.45
+        ],
+        "glass_width_height_depth_mm": [
+          75.099997,
+          161.300004,
+          0.25
+        ],
+        "front_flat_face_x_max_mm": 37.599999,
+        "measured_front_face_inset_from_outer_mm": 0.65,
+        "front_face_depth_mm": 4.225,
+        "glass_outer_inset_mm": 0.700001,
+        "antenna_polymer_seam_nodes_found": [],
+        "glass_x_at_metal_front_plane_mm": 37.527857,
+        "actual_flat_shelf_visible_at_metal_plane_mm": 0.072142
+      },
+      "procedural_frame": {
+        "path": "exports/pixel-11-pro-xl/frame.svg",
+        "nominal_colored_rim_mm": 0.7,
+        "origin": "Procedural, not official SDK",
+        "body_radius_mm_from_export": 12.90000000000002,
+        "oled_size_mm": [
+          71.82673796791443,
+          159.89999999999995
+        ],
+        "native_resolution": [
+          1344,
+          2992
+        ],
+        "body_to_oled_side_top_mm": [
+          2.3366310160427872,
+          1.40000000000002
+        ],
+        "black_glass_to_oled_side_top_mm": [
+          1.6366310160427873,
+          0.7000000000000199
+        ]
+      },
+      "candidate_shelf": {
+        "canonical_rear_front_roll_mm": [
+          0.65,
+          0.65
+        ],
+        "canonical_flat_shelf_mm": 0.05,
+        "profile_rear_front_roll_mm": [
+          0.65,
+          0.3
+        ],
+        "profile_nominal_rim_mm": 0.7,
+        "candidate_flat_shelf_mm": 0.4,
+        "gain_mm": 0.35,
+        "note": "Canonical GLB is not rebuilt, including XL. Tiny float accessor error does not change this geometry conclusion.",
+        "estimated_visible_flat_shelf_with_unchanged_glass_mm": 0.422142
+      },
+      "preserved_section_sha256": {
+        "screen": "a9cb915fe318e46042a6e584914f3475a4bc2ce1caa47a8f7f9cdbf9142f7b7f",
+        "camera": "57db6773d9777583db7eca6b5d3885bb05c1b46a64a57258f3f4bf6d0b28c248",
+        "rear_logo": "6ba40af019123c3684acb09204ab69cd398e9d0be3e0931ba053cbc6baba8878",
+        "materials": "697617f8e0bcb1a97ac95a078b4c8a3074454539e05b2e7924e78f8fb6c3ee85",
+        "finishes": "67da25ecf995abfe7a50edc4b38494459fd8cc9a04f59d0da81aebcaa7871f60"
+      },
+      "corner_limit": "Current profile/export radii are procedural and can differ due existing derived concentric corner behavior. Neither was modified; no independent official Pixel11 corner contour is available.",
+      "selfie_limit": "Existing radius1.5mm and placement remain provisional; see selfie_cutout_audit."
+    }
+  }
+}

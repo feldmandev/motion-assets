@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "release": "v0.1.4",
-  "archive": "motion-assets-models-0.1.4.zip",
+  "release": "v0.1.5",
+  "archive": "motion-assets-models-0.1.5.zip",
   "files": {
     "assets/devices/models/galaxy-a34.e5b550f972d4.glb.gz": {
       "sha256": "e5b550f972d4969daaf339985f4e7e24ae47caec8c154b92df18371d3c91ce81",
@@ -823,176 +823,6 @@
       "bytes": 454945,
       "glbSha256": "037d636a6f819998171b81fd6abccee864856485f4e2286a9e12537ffb698376"
     },
-    "assets/devices/models/pixel-10-pro-fold-folded.b35064ab5f23.glb.gz": {
-      "sha256": "b35064ab5f235cb9df517c4636c75288e226c1b37f74505b1c261fa6d06a67be",
-      "bytes": 1159323,
-      "glbSha256": "7bb11241a4f8b250c11b296acc55429d86068836bdf6a41273eb116f572e2741"
-    },
-    "assets/devices/models/pixel-10-pro-fold-unfolded.5b6ab48372a9.glb.gz": {
-      "sha256": "5b6ab48372a9e2803dc7a9ee804d0c8c32f9b687a12642ca5a55380c9c131324",
-      "bytes": 1301140,
-      "glbSha256": "2f4c5fca258e4bf28f0e63f7ad96867416f4f5f7b44c3b60eada860f92b6b85e"
-    },
-    "assets/devices/models/pixel-10-pro-xl.163fc96a1f35.glb.gz": {
-      "sha256": "163fc96a1f35255443b201a5251e850d0c200dead7d09f8afb891a666d483941",
-      "bytes": 669019,
-      "glbSha256": "fb0caa77cd699e3f43e14037b59fbd67c1dae2b247f8827ed71321ad642915f8"
-    },
-    "assets/devices/models/pixel-10-pro.bd4748c1ec31.glb.gz": {
-      "sha256": "bd4748c1ec310a0b7d48cfc4c14d8d7b461d02d3265abadbfe59164a7843834d",
-      "bytes": 1643681,
-      "glbSha256": "264cfe3d540945de0c74561327bda2e1b092a7f3df5664a6ae3e9c321bce63a4"
-    },
-    "assets/devices/models/pixel-10.85dd4182c78c.glb.gz": {
-      "sha256": "85dd4182c78c40c90abedb57d4cef57e59fa8b5ebf77cdf42606bfc7df95efab",
-      "bytes": 666376,
-      "glbSha256": "2d1eb9bff9fa74112171d5a98dccefbe6eaf98c23b5fec10e361d658593f8aa7"
-    },
-    "assets/devices/models/pixel-10a.397a152cad9f.glb.gz": {
-      "sha256": "397a152cad9fa50490a926ab2dd2cca1832123047950dad59aba5d2e5f74690d",
-      "bytes": 560201,
-      "glbSha256": "71c93e5e590dbbb4d2954bce388baf7d86a16c013e11ffca8537905b0fa48cc4"
-    },
-    "assets/devices/models/pixel-11-pro-fold-folded.dfbde6f0d60b.glb.gz": {
-      "sha256": "dfbde6f0d60b2905b86e9c90da690ac12cd911ff454bf378ab2c601f066106d5",
-      "bytes": 1174721,
-      "glbSha256": "f1e92f6e6fead510033a80ec29998267d55dea3c2627e5c82255d442d7a7575f"
-    },
-    "assets/devices/models/pixel-11-pro-fold-unfolded.08e40400b5c5.glb.gz": {
-      "sha256": "08e40400b5c5f07db473459d914e4a95f2663cb9d6c6312c4ed040c236540de7",
-      "bytes": 995202,
-      "glbSha256": "75fc82211837bbb99e8667dec53a25e3ad31b37015f1654112cac9029c1d687e"
-    },
-    "assets/devices/models/pixel-11-pro-xl.2d2527fcb60d.glb.gz": {
-      "sha256": "2d2527fcb60d380c921ea6a138a93fae6d44772ac77a46830816f5ef99a17675",
-      "bytes": 684821,
-      "glbSha256": "ca400ef1eef9bc38f6cae211c6da56cec10b874c6c070e1e57863f7c477516ef"
-    },
-    "assets/devices/models/pixel-11-pro.c5bf7d49ebfa.glb.gz": {
-      "sha256": "c5bf7d49ebfae04a9ce5d658b9b31d266e0026c843c1dc78a47bafc07e264b9d",
-      "bytes": 684441,
-      "glbSha256": "a77482ce672d9756c5aebe331b2272ae4e2ea565ddbbb755074309bfe15c547d"
-    },
-    "assets/devices/models/pixel-11.a1c48e555314.glb.gz": {
-      "sha256": "a1c48e5553140e0ab75905c54f46f95591355eae5d63a4ce496ad11644ccd79d",
-      "bytes": 684451,
-      "glbSha256": "7f8960e13ff37fadb31d7c61bdb74035baf0930ca33e1b309d0882ce268a0629"
-    },
-    "assets/devices/models/pixel-4-xl.7f7849f0d481.glb.gz": {
-      "sha256": "7f7849f0d481cef7aa22677373d5b82fc4fe1df6254c448c0166f94837769f49",
-      "bytes": 574303,
-      "glbSha256": "5ff5ed53c554c802b59e097bbd7691e132d74f71cd35b435866613a8119c5b8f"
-    },
-    "assets/devices/models/pixel-4.b693fdf7fc56.glb.gz": {
-      "sha256": "b693fdf7fc56fe758f060d6930f90be50f52e71d50ddffa9fa5e1df0f0a22d42",
-      "bytes": 573902,
-      "glbSha256": "f8c23486e1afc13c6c6b42da718972b4edf6aada8e08b64432bb3f7c4fc49249"
-    },
-    "assets/devices/models/pixel-4a-5g.366e0c98895a.glb.gz": {
-      "sha256": "366e0c98895a3c2d26411d4d03172670a025aec5d160cc0785e5b25296a13d1d",
-      "bytes": 611179,
-      "glbSha256": "90e5f5a9c4aea48bf62f57ac594be0e0bf0cf493521f4c3d1bf27cb1b1566a92"
-    },
-    "assets/devices/models/pixel-4a.1917c3c3663d.glb.gz": {
-      "sha256": "1917c3c3663df4da73edf71770cd305d3d25703e0e9ac4ebb31c0e3199988cf9",
-      "bytes": 481809,
-      "glbSha256": "23fbea22fa172631c57733347d461ed4b41d7a4f7b9cadb033b43769595eed4e"
-    },
-    "assets/devices/models/pixel-5.e04c07b56999.glb.gz": {
-      "sha256": "e04c07b56999fc9a861ae24b01d4e4bffe46967725d882833be70703086293e6",
-      "bytes": 621412,
-      "glbSha256": "e88e0b4965ed65e453d9549bdd4736eba46329ef8adefcfc0c5ae6b5d7571938"
-    },
-    "assets/devices/models/pixel-5a.42124ee91eb4.glb.gz": {
-      "sha256": "42124ee91eb4426c8f8d4d1c845300ae2a890783db33001fcf41495e2fdf19ca",
-      "bytes": 612009,
-      "glbSha256": "9595fc546446bd56d9656f30260d42593f78f2ed611f03e0167c83a340aee27d"
-    },
-    "assets/devices/models/pixel-6-pro.7facf067765a.glb.gz": {
-      "sha256": "7facf067765a6c5b6799376753c0bba8f4a7a0dcfcdb8b3984ae7ff38d245bdb",
-      "bytes": 1093460,
-      "glbSha256": "a1e7e3834822126f40e56017a0698e33cf11c2a02075feb1581283c4afbf2544"
-    },
-    "assets/devices/models/pixel-6.0e8f0819041c.glb.gz": {
-      "sha256": "0e8f0819041caece38913baaed092d619413be1666295e2f0deddb11fdf9b0fe",
-      "bytes": 864032,
-      "glbSha256": "0b52b85953a72707490cbcd7f3e53f49ad8ccf4eae178024c99baa2bbfdaa514"
-    },
-    "assets/devices/models/pixel-6a.d744cec00c93.glb.gz": {
-      "sha256": "d744cec00c9329719250cdc7be70deed62d0e70d3bab85b0dddbc824a6278563",
-      "bytes": 872367,
-      "glbSha256": "0fdc9ea5bd2da5993ae5c57dcd0b0da966521fd8e7ae64d8d1f837abaa8f9dea"
-    },
-    "assets/devices/models/pixel-7-pro.3d55aee791c6.glb.gz": {
-      "sha256": "3d55aee791c6901d5ce7ee384901ccdd694a57f10c2fd14211d863b50ef320dd",
-      "bytes": 999842,
-      "glbSha256": "160e1369fea4cf43cebe1902f121e11ef20c1145559e2213b238c186da7360c3"
-    },
-    "assets/devices/models/pixel-7.d3cd1570ddea.glb.gz": {
-      "sha256": "d3cd1570ddeac774e8138fcf618aa25ed8782592c31edf585d8672ded110da79",
-      "bytes": 722541,
-      "glbSha256": "de7fbb76d0115d025f6c9f17550d37da7481063f16504cb814c7e01bc08c10ff"
-    },
-    "assets/devices/models/pixel-7a.3f6a70736629.glb.gz": {
-      "sha256": "3f6a7073662902f84cbabd638f8e5021d85b0cf611ecdf207ddf881788946f16",
-      "bytes": 694927,
-      "glbSha256": "1f2676bdebea9b0455e2df28ed92a8960a5059dfa5d0308c5a29837443c6f732"
-    },
-    "assets/devices/models/pixel-8-pro.bb2ee11ef8a6.glb.gz": {
-      "sha256": "bb2ee11ef8a6d8031cd73a67d590ff122290aad2b2c9bd7da4027a4e3732f7d3",
-      "bytes": 865878,
-      "glbSha256": "8178b8068c5d3e208dad4a0afe29fcec9d41a09b6ddb5f8246a6242daa5bd9c1"
-    },
-    "assets/devices/models/pixel-8.368e183a6dfc.glb.gz": {
-      "sha256": "368e183a6dfc8155d431829d01199c8bfca2147e6a2b9601b9ecac3bc7a64768",
-      "bytes": 697274,
-      "glbSha256": "fdc732916cdf24b09faf3e8f1f8cf6170000d64f75ec27387c9c2c2b00a51127"
-    },
-    "assets/devices/models/pixel-8a.f13a2fc8066d.glb.gz": {
-      "sha256": "f13a2fc8066d68abc03b720d810cf0f77dd707009acde9640005dab979a38bde",
-      "bytes": 712012,
-      "glbSha256": "eeda043a89aff12195367c397b3a215a9379d1afe2a41476f58e3b02156f0f08"
-    },
-    "assets/devices/models/pixel-9-pro-fold-folded.4d2af2a7d97a.glb.gz": {
-      "sha256": "4d2af2a7d97aa6d583eb895bcfe2dc40cb0335188ba6f607739634c8fdb81197",
-      "bytes": 1105596,
-      "glbSha256": "e8e6431716957a8f5dade4a8ee794c24fff3f226c05052ca0e7295ee5b262061"
-    },
-    "assets/devices/models/pixel-9-pro-fold-unfolded.09e22c254a1f.glb.gz": {
-      "sha256": "09e22c254a1f4c4034452e4496dc20fc086c43beb02e86b23af4baa35ef144fc",
-      "bytes": 1305949,
-      "glbSha256": "0d08f41c52fbb9d50a3b6eb01be73128bf3732f790efab1bdf3cee973b94cf19"
-    },
-    "assets/devices/models/pixel-9-pro-xl.015509f4c249.glb.gz": {
-      "sha256": "015509f4c249436b45938f9b9824660c4b7968bbf00a811e1bce2609bac899e8",
-      "bytes": 668452,
-      "glbSha256": "9bbfa7c858f01f0dc59eee4f65fec82672b7793eedf9cecac1848aa5a4d67760"
-    },
-    "assets/devices/models/pixel-9-pro.48fae85a0cb8.glb.gz": {
-      "sha256": "48fae85a0cb8a860697246f4c5326e978a297457d97ca3ce93271f5b232b50f2",
-      "bytes": 705832,
-      "glbSha256": "f97f3365260b775d0878544cd6361633924d8bc45c1ebc9cce6a4c24b9c2599e"
-    },
-    "assets/devices/models/pixel-9.897b1e671f1b.glb.gz": {
-      "sha256": "897b1e671f1b4a10c374ab75503320e9ba071cf5bbeb364bd6331219aebc9b58",
-      "bytes": 581455,
-      "glbSha256": "10d656dfb1285b5efe181af0f7e9a90ba73c98d6ee022b8c65247315b3355ca8"
-    },
-    "assets/devices/models/pixel-9a.3b5836fe0916.glb.gz": {
-      "sha256": "3b5836fe091678379a590fd3f4f557baa779bef367cbd4e5220af9bd0276c973",
-      "bytes": 534249,
-      "glbSha256": "10b0a968f34bfecc9f6751c3342b3e1a94b3561848f9558eb932241c0c6c6c8c"
-    },
-    "assets/devices/models/pixel-fold-folded.311ded43d75d.glb.gz": {
-      "sha256": "311ded43d75d6ed153e791c32b6597493252e108b75597913ec35002dc6fa6b6",
-      "bytes": 1144682,
-      "glbSha256": "1dd5106dc0f19927fb72bcab092a22b6555c24ea2c4387f49c456185265b9e99"
-    },
-    "assets/devices/models/pixel-fold-unfolded.7ac57e9688ed.glb.gz": {
-      "sha256": "7ac57e9688ed9a4ba0ae6fc9e75ca952b87c9d24ff7058a787f727fda4f3e731",
-      "bytes": 1297190,
-      "glbSha256": "3fd4e353d5b86809f85679ee076532c10613c0c60dc5f68a5ada1e13d22cf84b"
-    },
     "assets/devices/models/xiaomi-pad-6.b57e1f87009c.glb.gz": {
       "sha256": "b57e1f87009c75316cc85aaf39cd216f8c4f03ef311a4fbaf55b38d55a8c88f5",
       "bytes": 378247,
@@ -1017,6 +847,176 @@
       "sha256": "d0841d32a9d8e19ea66bc7a06d2e45434dd187aa3cb9eb2aeb174587bc90ad10",
       "bytes": 603923,
       "glbSha256": "def6d5a5a8c299f15dac15c15a7148967bfb6928cd587e530b87549d2fd31d57"
+    },
+    "assets/devices/models/pixel-10-pro-fold-folded.1a4edea24333.glb.gz": {
+      "sha256": "1a4edea243333371f2b4622b732f4ba3a37176145e11c51befb7c66f9a17b48d",
+      "bytes": 1134962,
+      "glbSha256": "779fa3e49e4e29b3819a7b89f34094ab84ead1ce89f470349be123d6e1827a83"
+    },
+    "assets/devices/models/pixel-10-pro-fold-unfolded.45045df13899.glb.gz": {
+      "sha256": "45045df13899deaec4cc579e91c38d1c01566ee305a34f803a764a97b9f48627",
+      "bytes": 1239576,
+      "glbSha256": "34f48be37ad199b9dddf1c52ece69642ad78b7327b446d4ecbce641817076752"
+    },
+    "assets/devices/models/pixel-10-pro-xl.f51b5ed567ab.glb.gz": {
+      "sha256": "f51b5ed567ab1e3c6ec444feb2b7ca15650cc53729271cb1632f30c70897cc15",
+      "bytes": 889849,
+      "glbSha256": "6a41daaafc76e6742df17c3a6bce2f59059f9e2578b83f44fce6ea43be64f153"
+    },
+    "assets/devices/models/pixel-10-pro.a2c592c42ee1.glb.gz": {
+      "sha256": "a2c592c42ee161228eb0da0bce095e97d5c00f66b0ec45335d7ee8cccbca12a2",
+      "bytes": 1652769,
+      "glbSha256": "2f341960016f7fc772070f214bd9e3398266e744adbedcc66a149218ed88e6aa"
+    },
+    "assets/devices/models/pixel-10.61da292489e9.glb.gz": {
+      "sha256": "61da292489e92cd35513154c8399e5d9fe40ff16d94ae71df0951294ed408d4c",
+      "bytes": 894479,
+      "glbSha256": "612518ccbe201fa88347fee497f9ce57bf403710b4f5f90c2ddd99175a8c4d65"
+    },
+    "assets/devices/models/pixel-10a.bf35a927bbb9.glb.gz": {
+      "sha256": "bf35a927bbb98178a8a79706507a1f082d179dc4d3d1d2758e6d350d31773709",
+      "bytes": 802453,
+      "glbSha256": "ed56cda310ac3e02b2e3d508135f4e01a08af9b603f6f619e0908d405288e28b"
+    },
+    "assets/devices/models/pixel-11-pro-fold-folded.5bcc16b382aa.glb.gz": {
+      "sha256": "5bcc16b382aa7d8f4344aa5eca9549ee50b7faf479a1b44503a74be76ce62cfb",
+      "bytes": 1183405,
+      "glbSha256": "ea954430bc4d90dded207551e26200b513379a754194f9cdac19ddcfec660a87"
+    },
+    "assets/devices/models/pixel-11-pro-fold-unfolded.441f81f181f5.glb.gz": {
+      "sha256": "441f81f181f54d8a907228fec9773b20568565b9cda33ffa9acde000eea527e3",
+      "bytes": 1020024,
+      "glbSha256": "b3ded9a094d1741e4c8ddd944ce878202a5e111474da4e140f630bf4c33d17ab"
+    },
+    "assets/devices/models/pixel-11-pro-xl.d23103ae7c31.glb.gz": {
+      "sha256": "d23103ae7c31202ebdbde33e0d519ebd5c7fd317b2a205b772491134aaadb599",
+      "bytes": 700933,
+      "glbSha256": "6985d138c88ed27426ba84e10720fd9303e111e04edfefb8cf4faf20abcd7d1a"
+    },
+    "assets/devices/models/pixel-11-pro.d779eb19b204.glb.gz": {
+      "sha256": "d779eb19b204e9c08b1d1e8c6679e7730d0786ffa56dfd9891d4bc0f806332b9",
+      "bytes": 701866,
+      "glbSha256": "07529b2512284754d6ec0a5af3cd0e743e8ce0997e10104b73bb9ae9dfea0ad3"
+    },
+    "assets/devices/models/pixel-11.c3af24268d2d.glb.gz": {
+      "sha256": "c3af24268d2d4dbafb5d4c43d99421eafbb248eab1b51e753ff1bb06ef367120",
+      "bytes": 703863,
+      "glbSha256": "0bb305c7f282991378ba35547163cbc595397174fdb356b01530e91bd8604468"
+    },
+    "assets/devices/models/pixel-4-xl.36e2d4f570a8.glb.gz": {
+      "sha256": "36e2d4f570a883c1e30231661889ccc57515c47f6b0562fa26fa54bac67d2c10",
+      "bytes": 832934,
+      "glbSha256": "474540c3a61824a9371dedf2f67682898ebee0e26a5dab26a4bd259269ab16fc"
+    },
+    "assets/devices/models/pixel-4.ce77c98b1c1e.glb.gz": {
+      "sha256": "ce77c98b1c1ee62b2a6a395570e971358052cc98ecb6071f59b78d09b8722c37",
+      "bytes": 832173,
+      "glbSha256": "aeebea1bdca025fcf3818f39461731e48c96671b15d0421ea97ce4b0949b2f1c"
+    },
+    "assets/devices/models/pixel-4a-5g.ccd23166d2ed.glb.gz": {
+      "sha256": "ccd23166d2ed6d28bd0b12ad190547be78b37936461b9864ddb9a3d993668ef8",
+      "bytes": 623788,
+      "glbSha256": "e5fc7d4e2d4e7419d081ee9bf6c3c029ac9e9a59dc6e9bb5cc50f04849d4ffda"
+    },
+    "assets/devices/models/pixel-4a.96578ea3a9a0.glb.gz": {
+      "sha256": "96578ea3a9a0f8114ab93a5795fe44f95e311ee4856bf7e15be8ac7d69e463d9",
+      "bytes": 735217,
+      "glbSha256": "3e7f70a32c27c82a280d2d78f5e6d9af8c6043418cc65dbe74fa7d9e38adc29c"
+    },
+    "assets/devices/models/pixel-5.c69536464bf0.glb.gz": {
+      "sha256": "c69536464bf002c4db3e2a0e95e636f74937175c0882d5791b71b939beecfeb5",
+      "bytes": 866873,
+      "glbSha256": "65c0baf094315975b46e2e13feb4d4105cc2c74ff8168d3bf9d842ed2de4e28b"
+    },
+    "assets/devices/models/pixel-5a.befe02ce815e.glb.gz": {
+      "sha256": "befe02ce815ef5a8001404d720b95fb7d867320ba8be9f60f3b4d1e579efe893",
+      "bytes": 623864,
+      "glbSha256": "33fc962925341bcc61373078ca7f6661c54b3d1aeb6f5bbd46f7c58647d15c6f"
+    },
+    "assets/devices/models/pixel-6-pro.648974e9a0a9.glb.gz": {
+      "sha256": "648974e9a0a9cea46c85fb4b9e6a37303781a7fd96e7c4c3ad1ec69068140748",
+      "bytes": 1394133,
+      "glbSha256": "0df3d46f11f3611ccf5ea6d6cc7b6da0294035786a6f95e21ac69f7187aae96f"
+    },
+    "assets/devices/models/pixel-6.3309bc67fcc4.glb.gz": {
+      "sha256": "3309bc67fcc4ae15ff16bca9470e3745ae913dd928c2353d7922e8939fce77fb",
+      "bytes": 1074202,
+      "glbSha256": "79da34babd61a9e686e28bd4c3ca4558136528844bf6532a9ed55b40af93a5b4"
+    },
+    "assets/devices/models/pixel-6a.ce06ae4c76ac.glb.gz": {
+      "sha256": "ce06ae4c76acd177700db8cbcdc13d5f4e10c47f8e4186d93824fdfe132b7bd1",
+      "bytes": 1090294,
+      "glbSha256": "f92fe215f226a47bd94833251de0a85e2b1b87237c2767559d58897d793d91d0"
+    },
+    "assets/devices/models/pixel-7-pro.fdb13eb3f7dd.glb.gz": {
+      "sha256": "fdb13eb3f7dd6a98a449ebfa815915de69a819949cb517362f2d5add6f3330e2",
+      "bytes": 1364094,
+      "glbSha256": "712eb4a9f76ba08f5940574138dcc23ef17d08a1c68471f06bc8b67196f5d14f"
+    },
+    "assets/devices/models/pixel-7.2720b94f7d48.glb.gz": {
+      "sha256": "2720b94f7d48a0b37ac4e9a51119d1f5d138719294a9582469207c9710a3069f",
+      "bytes": 939485,
+      "glbSha256": "6c71e5517489228550d6b2496a0bfab1424d19d49fcd8a8c8f938eca171c3d5e"
+    },
+    "assets/devices/models/pixel-7a.8df657bee9eb.glb.gz": {
+      "sha256": "8df657bee9eb6a671a2a28a13ce86f4be3152e7f639d716baff4ee82605a568b",
+      "bytes": 908516,
+      "glbSha256": "a03a3ad45ff9797095ee686ce9814991ce10bb9f328e48dd66a752ed5f94555e"
+    },
+    "assets/devices/models/pixel-8-pro.e6f464c8bbad.glb.gz": {
+      "sha256": "e6f464c8bbad508a1c8402fa6178ac5f9fcc63188525f06e751bcc301d5e359f",
+      "bytes": 1092317,
+      "glbSha256": "764c7a22dffc28019a485cd2f9fad11484ce0bf654f4cf473aadad6d5b196a3b"
+    },
+    "assets/devices/models/pixel-8.8b54c4897b42.glb.gz": {
+      "sha256": "8b54c4897b4241b2b0ba162150c04b11e7dee04b0da574e4ad83239c8f03ec92",
+      "bytes": 957425,
+      "glbSha256": "3192f24af76a9037c8234699d3d33597d09babe2f02cf7fb7a47b88921292077"
+    },
+    "assets/devices/models/pixel-8a.397669b802d5.glb.gz": {
+      "sha256": "397669b802d53b640841cea35d9c364f39e93acc8385d97ddef9773513bd4b53",
+      "bytes": 944694,
+      "glbSha256": "25cadad02f0a0c4b7b5fdefebd987679ae07de026c7ccfc4c04004a3731cceb7"
+    },
+    "assets/devices/models/pixel-9-pro-fold-folded.6a1334a7a90c.glb.gz": {
+      "sha256": "6a1334a7a90ca2a7322732239d2c6e576f19abe59ad2bb83d77d3322f65d632f",
+      "bytes": 1069568,
+      "glbSha256": "603ebc2c0b19beb1f5ca923b6b0761d1dd65514eae2b6f43d9d3ba6e720bd4a2"
+    },
+    "assets/devices/models/pixel-9-pro-fold-unfolded.bf8e33aacec9.glb.gz": {
+      "sha256": "bf8e33aacec951fbbe4fe58194ab2a0d784d06039a081e5f8acc29faa118f653",
+      "bytes": 1283080,
+      "glbSha256": "3f3993f812d67fed96dd3aed8aa16e1179039b62cf31aa2401b31644e5169585"
+    },
+    "assets/devices/models/pixel-9-pro-xl.d4a9022420d1.glb.gz": {
+      "sha256": "d4a9022420d1e25dcc8fa49c7a90f0e63abcd96506ddac832410bb8c8a8a1d88",
+      "bytes": 887450,
+      "glbSha256": "5e84f559a94cbbed9c347a79dad754ed001dba1da1606c8be059c8cf94935cc8"
+    },
+    "assets/devices/models/pixel-9-pro.10cb89273f28.glb.gz": {
+      "sha256": "10cb89273f28a80eb51c8154dd15f13fef68486047ca553adfd18d6fdfa4bf85",
+      "bytes": 930729,
+      "glbSha256": "8427014f7a33523b16a4d799c675ae8650cde2ac324fe2f0f4c72f638dc6089d"
+    },
+    "assets/devices/models/pixel-9.c6cdc7cab96b.glb.gz": {
+      "sha256": "c6cdc7cab96b3c60da2ce7a89f850b22f87d726b568a404c113dd307e2e9a12e",
+      "bytes": 798764,
+      "glbSha256": "e472c9f3a197f371ae936e391e6d97fb5bf0b1370e137563a388a7e5046b3a7f"
+    },
+    "assets/devices/models/pixel-9a.f41a01a41559.glb.gz": {
+      "sha256": "f41a01a41559338bb02fef76aec1217d52d1817f5276d5f39b142da7f8984d28",
+      "bytes": 767985,
+      "glbSha256": "c4858f285dc44e37ca9c8526e9674be9635a218349c4dd63046db4d57889c186"
+    },
+    "assets/devices/models/pixel-fold-folded.fc73fc58d97c.glb.gz": {
+      "sha256": "fc73fc58d97c288175183bee0e61dc5e0bc081688df78239c709ed47949bc9ab",
+      "bytes": 1111601,
+      "glbSha256": "f9e17b775786188d3ff655002982b94e7ab0f5d997a47f7a5a62ca201e4ef3c7"
+    },
+    "assets/devices/models/pixel-fold-unfolded.75716243a14b.glb.gz": {
+      "sha256": "75716243a14baa31d8ce026070ff32b9592859bdd406bc1540caee4ff90a5725",
+      "bytes": 1319731,
+      "glbSha256": "697d7c24ee9a64da777a0b61accda4127cd9e12a2ea67e75b7a207013193407c"
     }
   }
 }

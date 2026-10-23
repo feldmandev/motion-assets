@@ -49,7 +49,7 @@ def traced_ring(points, inset=0.0, count=OUTLINE_POINTS):
 
     Every ring starts on the ray from the centroid along +X, so rings of different insets
     line up vertex-for-vertex and can be bridged into a rolled edge."""
-    from shapely.geometry import LineString, Polygon
+    from shapely.geometry import LineString, Point, Polygon
     poly = Polygon(points).buffer(0)
     if inset:
         poly = poly.buffer(-inset, quad_segs=24, join_style='round')
@@ -61,10 +61,9 @@ def traced_ring(points, inset=0.0, count=OUTLINE_POINTS):
     cx, cy = poly.centroid.x, poly.centroid.y
     hit = LineString([(cx, cy), (cx+1e4, cy)]).intersection(poly.exterior)
     hx, hy = (hit.x, hit.y) if hit.geom_type == 'Point' else (max(hit.geoms, key=lambda p: p.x).x, cy)
-    start = min(range(len(ring)), key=lambda i: math.hypot(ring[i][0]-hx, ring[i][1]-hy))
-    ring = ring[start:]+ring[:start]
     line = LineString(ring+[ring[0]])
-    points = [line.interpolate(i/count, normalized=True).coords[0] for i in range(count)]
+    start = line.project(Point(hx, hy))
+    points = [line.interpolate((start+i*line.length/count) % line.length).coords[0] for i in range(count)]
     # Arc-length samples can miss the outline's extremes by a few hundredths of a millimetre;
     # rescale so the ring keeps the polygon's exact bounding box (published dimensions).
     x0, y0, x1, y1 = poly.bounds
@@ -458,6 +457,11 @@ def create_device(profile):
     mats = {key: material(key, value['rgb'], value.get('metal', 0), value.get('rough', .3))
             for key, value in finish.items()}
     mats['black'].node_tree.nodes['Principled BSDF'].inputs['Specular IOR Level'].default_value = 0
+    if profile['id'].startswith('pixel-'):
+        mats['front_glass'] = material('Pixel front cover glass', finish['black']['rgb'], rough=.16)
+        glass_shader = mats['front_glass'].node_tree.nodes['Principled BSDF']
+        glass_shader.inputs['IOR'].default_value = 1.46
+        glass_shader.inputs['Coat Weight'].default_value = .2
     prototypes = load_optics()
     cover = bpy.data.materials.get('Camera pill | antireflective clear cover')
     # This material is loaded with the optics only when referenced; otherwise construct the same cover.
@@ -528,9 +532,13 @@ def create_device(profile):
         elif cover_screen and cover_screen.get('rotation_deg',[0,0,0])[1]==180:
             sw,sh = cover_screen['fit_box_mm']; border = cover_screen['glass_border_mm']
             sx,sy = cover_screen['center_mm'][:2]
-            glass_pts = traced_ring([(x, y) for x, y in cover_screen['outline_mm']], -border)                 if cover_screen.get('outline_mm') else None
+            # Explicit glass contours are offsets from the screen centre in panel axes;
+            # rear-facing cover profiles already mirror X independently of the OLED.
+            glass_pts = cover_screen.get('glass_outline_mm')
+            if glass_pts is None:
+                glass_pts = traced_ring(cover_screen['outline_mm'], -border) if cover_screen.get('outline_mm') else None
             slab('Rear cover glass',sw+2*border,sh+2*border,.25,cover_screen['corner_radius_mm']+border,
-                 (sx,sy,-depth/2+.1),mats['black'],parent,.08,points=glass_pts)
+                 (sx,sy,-depth/2+.1),mats.get('front_glass',mats['black']),parent,.08,points=glass_pts)
         elif body.get('rear_style') == 'unibody' and not cover_half:
             # Pixel 4a/5/5a use a coated one-piece rear shell instead of the inset
             # glass panel used by the glass-backed Pixels. Keep the shell continuous
@@ -559,15 +567,52 @@ def create_device(profile):
         if cover_screen and cover_screen.get('rotation_deg',[0,0,0])[1]==0:
             sw,sh = cover_screen['fit_box_mm']; border = cover_screen['glass_border_mm']
             sx,sy = cover_screen['center_mm'][:2]
-            glass_pts = traced_ring([(x, y) for x, y in cover_screen['outline_mm']], -border)                 if cover_screen.get('outline_mm') else None
+            glass_pts = cover_screen.get('glass_outline_mm')
+            if glass_pts is None:
+                glass_pts = traced_ring(cover_screen['outline_mm'], -border) if cover_screen.get('outline_mm') else None
             slab('Front black glass',sw+2*border,sh+2*border,glass_depth,cover_screen['corner_radius_mm']+border,
-                 (sx,sy,depth/2-glass_depth/2),mats['black'],parent,.08,points=glass_pts)
+                 (sx,sy,depth/2-glass_depth/2),mats.get('front_glass',mats['black']),parent,.08,points=glass_pts)
         else:
-            # The front glass stops where the front edge starts to roll over.
-            rail = max(body.get('front_rail_mm', .7), front_roll*.95)
-            slab('Front black glass', width-2*rail, height-2*rail, glass_depth, [max(.2,r-rail) for r in radii],
-                 (0, 0, depth/2-glass_depth/2), mats['black'], parent, max(.08, curve),
-                 points=ring(rail) if ring else None)
+            if body.get('front_glass_inset_mm'):
+                from shapely.geometry import Polygon
+                side_inset, top_inset = body['front_glass_inset_mm']
+                contour = pts or outline(width, height, radii)
+
+                def front_ring(rx, ry, amount):
+                    # Elliptical erosion retains the independent body trace while
+                    # allowing narrow side metal and a wider top/bottom strip.
+                    if not amount:
+                        return traced_ring(contour)
+                    shape = Polygon([(x/rx, y/ry) for x, y in contour]).buffer(
+                        -amount, quad_segs=24, join_style='round')
+                    return traced_ring([(x*rx, y*ry) for x, y in shape.exterior.coords])
+
+                # Change only the enclosure's front rings. The side retains its
+                # deep fillet; the top has a shallow fillet and a metal landing.
+                enclosure = next(obj for obj in parent.children if obj.name.startswith('Aluminum enclosure'))
+                top_roll = body['front_roll_top_mm']
+                steps = 16 if front_roll > 1 else 8
+                count = len(front_ring(front_roll, top_roll, 0))
+                start = len(enclosure.data.vertices)-(steps+1)*count
+                for step in range(steps+1):
+                    angle = step/steps*math.pi/2
+                    front = front_ring(front_roll, top_roll, 1-math.cos(angle))
+                    for index, (x, y) in enumerate(front):
+                        ax, ay = front[index-1]; bx, by = front[(index+1)%count]
+                        # Support radius of the elliptical fillet along the normal.
+                        radius = math.hypot(front_roll*(by-ay), top_roll*(bx-ax))/math.hypot(bx-ax, by-ay)
+                        z = (depth-.05)/2-radius*(1-math.sin(angle))
+                        enclosure.data.vertices[start+step*count+index].co = (x*MM, y*MM, z*MM)
+                enclosure.data.update()
+                slab('Front black glass', width-2*side_inset, height-2*top_inset, glass_depth, radii,
+                     (0, 0, depth/2-glass_depth/2), mats.get('front_glass', mats['black']), parent, .02,
+                     points=front_ring(side_inset, top_inset, 1))
+            else:
+                # The front glass stops where the front edge starts to roll over.
+                rail = max(body.get('front_rail_mm', .7), front_roll*.95)
+                slab('Front black glass', width-2*rail, height-2*rail, glass_depth, [max(.2,r-rail) for r in radii],
+                     (0, 0, depth/2-glass_depth/2), mats.get('front_glass', mats['black']), parent, max(.08, curve),
+                     points=ring(rail) if ring else None)
         if 'camera' in panel or 'camera' in profile and len(profile.get('panels', [])) == 0:
             camera_assembly(panel.get('camera', profile.get('camera')), body, mats, parent, prototypes)
         for detail in panel.get('rear_details', profile.get('rear_details', [])):
@@ -681,6 +726,12 @@ def create_device(profile):
                 slab(screen['object'], 1, 1, .01, .1, (0, 0, 0), mats['black'], root, .002)
     for x, y, z, radius in profile.get('bezel_cameras', []):
         disk('Inner bezel selfie camera', x, y, z, radius, .03, mats['black'], root)
+    if profile.get('bezel_windows'):
+        sensor_mat = material('Pixel forehead sensor cover', (.028,.032,.038), rough=.3)
+        for index, window in enumerate(profile['bezel_windows']):
+            w, h, radius = window['size_mm']
+            slab(f'Front sensor window {index}', w, h, .03, radius,
+                 window['center_mm'], sensor_mat, root, .005)
     return root
 
 

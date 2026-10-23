@@ -1,0 +1,641 @@
+{
+  "date": "2026-10-23",
+  "scope": [
+    "pixel-11",
+    "pixel-11-pro",
+    "pixel-11-pro-xl"
+  ],
+  "status": "Read-only follow-up completed: new full-side/full-front Pro video reference; partial base and XL layouts now more complete. Pro camera mask has a provisional independent reference fit. No profiles, shared code, Blender, exports or public repository changed.",
+  "files_written": [
+    "research/pixel11-antenna-reference-completion.json"
+  ],
+  "scratch_only": "Downloaded imagery, page HTML, decoded video frames and inspection crops are local under tmp/pixel11-antenna-reference/. They are research inputs, not gallery/export artifacts.",
+  "prior_report": "research/pixel11-family-front-calibration.json",
+  "coordinates": {
+    "root": "Body centred, X right in front view, Y up, Z front; millimetres. Top/bottom seam positions are X; left/right are Y. No Z-depth extent inferred from these photos.",
+    "source": "Original image x right, y down; inclusive integer pixel bands. Video frames are zero-based at24fps, decoded at native2880x1200.",
+    "formula_side": "Y=H/2-(p-p_top)/(p_bottom-p_top)*H. For horizontal video the source p is image x.",
+    "formula_top_bottom_rear": "X=W*(.5-(x-x_right_device)/(x_left_device-x_right_device)); rear images reverse front-coordinate X.",
+    "uncertainty": "Bounds picks approximately +/-2px (video) and +/-2-3px (photos), plus fit/projection/material-edge uncertainty included in explicit mm ranges. These are provisional reference fits, not manufacturer CAD. Do not round uncertainties away."
+  },
+  "retrieval": {
+    "store_html": "Direct requests GET returned200,4435106bytes; browser text fetch failed on consent. Parsed img alt/src and video source URLs in local pro.html.",
+    "bounded_search": "Inspected official overview, specs and launch HTML plus selected local assets. Found useful source in overview video, so no broad press-asset crawl.",
+    "sdk": "No new SDK art11 claimed; inventory absence is inherited from prior report. No portable Blender scan or Blender launch.",
+    "pro_identity_limit": "Video is explicitly aria-labelled Pixel11Pro on shared Pro/XL page. Scale uses published152.7x71.9mm Pro body. Device size is not independently certified by CAD or per-SKU metadata; confidence medium. Do not relabel the same asset as an independent XL measurement."
+  },
+  "sources": [
+    {
+      "id": "base-front-2000",
+      "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/NFG_Cubs_Frost.width-2000.format-webp.webp",
+      "local": "tmp/pixel11-antenna-reference/base-front-2000.webp",
+      "page_url": "https://blog.google/products-and-platforms/devices/pixel/google-pixel-11-pro-xl/",
+      "role": "Official near-frontal base composition. Requested 2000 variant is actually 1920x1080. Front left is occluded; rear body and its top edge are complete.",
+      "sha256": "4ffadcfca03cd3a6136c2e203939ce02d2286916807fbb946effede2adc5630b"
+    },
+    {
+      "id": "base-family-2000",
+      "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Pixel_11_Family_Shot.width-2000.format-webp.webp",
+      "local": "tmp/pixel11-antenna-reference/base-family-2000.webp",
+      "page_url": "https://blog.google/products-and-platforms/devices/pixel/google-pixel-11-pro-xl/",
+      "role": "2000x2000 rear family; rightmost Frost exposes device-right rail.",
+      "sha256": "28a645a64daf1aca835aef81de3b2853a1f594ce6cad4cada3fcbd8042ac8bd0"
+    },
+    {
+      "id": "xl-family-2000",
+      "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Pixel-11ProXL_Family-Shot.width-2000.format-webp.webp",
+      "local": "tmp/pixel11-antenna-reference/xl-family-2000.webp",
+      "page_url": "https://blog.google/products-and-platforms/devices/pixel/google-pixel-11-pro-xl/",
+      "role": "2000x1125 rear family; filename specifically ProXL. Rightmost Canyon exposes right rail, top, bottom, and one small far-left-rail break.",
+      "sha256": "fb122676dd0944b6f4501d965b727bc128cf48b80012f6942328b0f5d164b1a6"
+    },
+    {
+      "id": "pro-display-video",
+      "url": "https://storage.googleapis.com/mannequin/blobs/abaa23e5-7da0-4a0d-b39a-36cf8ab48ff6.webm",
+      "local": "tmp/pixel11-antenna-reference/video-41.webm",
+      "page_url": "https://store.google.com/gb/product/pixel_11_pro?hl=en-GB",
+      "role": "Freshly extracted HTML video aria-label: Pixel 11 Pro with a crisp, high-quality display screen. 2880x1200, 24fps, 143 decoded frames. Full side rotates into complete front.",
+      "sha256": "5ddc25541dd97cd3eaa3f3b713c19e9a610a7f5a2a5798264a8f8f734ac41b52"
+    },
+    {
+      "id": "pro-full-rear-inspected",
+      "url": "https://lh3.googleusercontent.com/Ed-szEe7z9jmodaK1IemNAPPA1b-iW5eYZQRh2-NrsApMJx86Uvw0lpEJyRF7WkURLgjgOc07EMy4DZdRx_yDK1rHbzxrrtLF_iR=w542-h678-rw-nu",
+      "local": "tmp/pixel11-antenna-reference/pro-73.webp",
+      "page_url": "https://store.google.com/gb/product/pixel_11_pro?hl=en-GB",
+      "role": "Full rear, 542x678. Thin rails offer weaker seam evidence than video. =s0 also returned 542x678; no claimed extra resolution.",
+      "sha256": "c548a38e7323b099cacad901583a5975470b8e7cc033f808d7f2344eb07bc9aa"
+    },
+    {
+      "id": "base-family",
+      "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Pixel_11_Family_Shot.width-1200.format-webp.webp",
+      "local": "research/images/Pixel_11_Family_Shot.webp",
+      "role": "Base oblique rear family; two visible polymer breaks.",
+      "sha256": "76a0e3ee1b12b90cf4a2062bff4eb90f3a804ea7f8ddeb22c1bbd34e05dc3e46",
+      "image_size_px": [
+        1200,
+        1200
+      ]
+    },
+    {
+      "id": "pro-xl-family",
+      "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Pixel-11ProXL_Family-Shot.width-1200.format-webp.webp",
+      "local": "research/images/Pixel-11ProXL_Family-Shot.webp",
+      "role": "Pro XL oblique rear family; not an independently scaled Pro-size/front reference.",
+      "sha256": "9e6c4874d36cb33f59b0bfec71255e41baac439f3fc14217a75b6c6e958f5b64",
+      "image_size_px": [
+        1200,
+        675
+      ]
+    }
+  ],
+  "spec_sources": {
+    "base": "https://store.google.com/gb/product/pixel_11_specs?hl=en-GB",
+    "pro_xl": "https://store.google.com/gb/product/pixel_11_pro_specs?hl=en-GB",
+    "launch": "https://blog.google/products-and-platforms/devices/pixel/google-pixel-11-pro-xl/"
+  },
+  "devices": {
+    "pixel-11": {
+      "reviewed_unchanged": true,
+      "profile": "profiles/pixel-11.json",
+      "visible_seams": [
+        {
+          "id": "right-upper",
+          "edge_in_front_coordinates": "right",
+          "source": "base-family",
+          "source_axis": "y",
+          "band_px_inclusive": [
+            316,
+            323
+          ],
+          "sample": {
+            "x_px": 832
+          },
+          "root_axis": "y",
+          "root_mm": 51.5,
+          "root_uncertainty_plus_minus_mm": 3.0,
+          "projected_band_width_mm_range": [
+            1.1,
+            1.9
+          ],
+          "confidence": "medium",
+          "fit": "Inherited 1200x1200 source picks, re-inspected in larger variant. y0=187,y1=1001,H=152.8. Do not apply these source coordinates to 2000 variant."
+        },
+        {
+          "id": "right-lower",
+          "edge_in_front_coordinates": "right",
+          "source": "base-family",
+          "source_axis": "y",
+          "band_px_inclusive": [
+            918,
+            925
+          ],
+          "sample": {
+            "x_px": 832
+          },
+          "root_axis": "y",
+          "root_mm": -61.5,
+          "root_uncertainty_plus_minus_mm": 3.0,
+          "projected_band_width_mm_range": [
+            1.1,
+            1.9
+          ],
+          "confidence": "medium",
+          "fit": "Same complete long-axis fit as upper, not mirrored."
+        },
+        {
+          "id": "top",
+          "edge_in_front_coordinates": "top",
+          "source": "base-front-2000",
+          "source_axis": "x",
+          "band_px_inclusive": [
+            705,
+            716
+          ],
+          "sample": {
+            "y_px_range": [
+              19,
+              28
+            ]
+          },
+          "root_axis": "x",
+          "root_mm": 8.6,
+          "root_uncertainty_plus_minus_mm": 1.2,
+          "projected_band_width_mm_range": [
+            1.2,
+            2.0
+          ],
+          "confidence": "medium",
+          "fit": "Rear body x523..1016; front-coordinate x sign reverses rear photo. W=72.0; xroot=W*(.5-(710.5-523)/493). Near-frontal fit; seam is the diffuse break in the metal highlight, not the black-glass boundary."
+        }
+      ],
+      "unmeasured_edges": [
+        "left rail: no independent complete band picks",
+        "bottom: complete rear edge is present but interruption too ambiguous to enter"
+      ],
+      "front_mask": {
+        "source": "base-front-2000",
+        "bounds_px_inclusive": [
+          1129,
+          71,
+          1159,
+          101
+        ],
+        "dark_component_area_px": 734,
+        "centroid_px": [
+          1144.03,
+          86.27
+        ],
+        "threshold_method": "Largest4-connected max(RGB)<55 component inside x1110..1179,y60..119; original1920x1080.",
+        "front_body_long_axis_y_px": [
+          30,
+          1052
+        ],
+        "diameter_mm_fit": 4.64,
+        "diameter_mm_range": [
+          4.3,
+          5.0
+        ],
+        "top_to_center_mm_fit": 8.41,
+        "top_to_center_mm_range": [
+          7.8,
+          9.0
+        ],
+        "recommended_provisional_profile_values": {
+          "screen.cutouts[0].radius_mm": 2.3,
+          "screen.cutouts[0].center_mm": [
+            0,
+            68.0
+          ]
+        },
+        "current_values": {
+          "radius_mm": 1.5,
+          "center_mm": [
+            0,
+            69.5
+          ]
+        },
+        "limits": "Photo outer dark surround only; specular point outside surround is excluded. Left front is occluded. Internal lens depths, radii and physical cover aperture are not established."
+      },
+      "rim": "Prior base layer picks distinguish colored metal from dark glass/OLED. Larger version is not enough to establish flat-shelf or fillet dimensions; retain current .30 front roll/.70 nominal rim as provisional."
+    },
+    "pixel-11-pro": {
+      "reviewed_unchanged": true,
+      "profile": "profiles/pixel-11-pro.json",
+      "visible_seams": [
+        {
+          "id": "right-upper",
+          "edge_in_front_coordinates": "right",
+          "source": "pro-display-video",
+          "source_axis": "x",
+          "band_px_inclusive": [
+            648,
+            670
+          ],
+          "sample": {
+            "y_px": 580
+          },
+          "root_axis": "y",
+          "root_mm": 50.9,
+          "root_uncertainty_plus_minus_mm": 1.2,
+          "projected_band_width_mm_range": [
+            1.2,
+            1.7
+          ],
+          "confidence": "medium",
+          "video_frame_zero_based": 0,
+          "time_seconds": 0.0,
+          "fit": "Body long-axis x269..2611; physical top is image left; H=152.7. Buttons independently identify device-right side."
+        },
+        {
+          "id": "right-lower",
+          "edge_in_front_coordinates": "right",
+          "source": "pro-display-video",
+          "source_axis": "x",
+          "band_px_inclusive": [
+            2364,
+            2386
+          ],
+          "sample": {
+            "y_px": 580
+          },
+          "root_axis": "y",
+          "root_mm": -61.0,
+          "root_uncertainty_plus_minus_mm": 1.2,
+          "projected_band_width_mm_range": [
+            1.2,
+            1.7
+          ],
+          "confidence": "medium",
+          "video_frame_zero_based": 0,
+          "time_seconds": 0.0,
+          "fit": "Same complete side fit; separately visible material break."
+        },
+        {
+          "id": "left-upper",
+          "edge_in_front_coordinates": "left",
+          "source": "pro-display-video",
+          "source_axis": "x",
+          "band_px_inclusive": [
+            661,
+            683
+          ],
+          "sample": {
+            "y_px": 1135
+          },
+          "root_axis": "y",
+          "root_mm": 50.6,
+          "root_uncertainty_plus_minus_mm": 1.5,
+          "projected_band_width_mm_range": [
+            1.2,
+            1.8
+          ],
+          "confidence": "medium",
+          "video_frame_zero_based": 90,
+          "time_seconds": 3.75,
+          "fit": "Full front long-axis x281..2599; H=152.7. Image bottom long rail is device left. Band picked independently from opposite side."
+        },
+        {
+          "id": "left-lower",
+          "edge_in_front_coordinates": "left",
+          "source": "pro-display-video",
+          "source_axis": "x",
+          "band_px_inclusive": [
+            2349,
+            2371
+          ],
+          "sample": {
+            "y_px": 1135
+          },
+          "root_axis": "y",
+          "root_mm": -60.6,
+          "root_uncertainty_plus_minus_mm": 1.5,
+          "projected_band_width_mm_range": [
+            1.2,
+            1.8
+          ],
+          "confidence": "medium",
+          "video_frame_zero_based": 90,
+          "time_seconds": 3.75,
+          "fit": "Same full front fit; distinct lower material break, not mirrored."
+        },
+        {
+          "id": "top",
+          "edge_in_front_coordinates": "top",
+          "source": "pro-display-video",
+          "source_axis": "y",
+          "band_px_inclusive": [
+            455,
+            477
+          ],
+          "sample": {
+            "x_px": 290
+          },
+          "root_axis": "x",
+          "root_mm": 8.9,
+          "root_uncertainty_plus_minus_mm": 1.2,
+          "projected_band_width_mm_range": [
+            1.2,
+            1.8
+          ],
+          "confidence": "medium",
+          "video_frame_zero_based": 90,
+          "time_seconds": 3.75,
+          "fit": "Physical top is image left. Across-width projected limits y59..1147, centre603; W=71.9; xroot=(603-466)*71.9/1088=9.05mm; adopt8.9 with tilt/edge uncertainty."
+        },
+        {
+          "id": "bottom",
+          "edge_in_front_coordinates": "bottom",
+          "source": "pro-display-video",
+          "source_axis": "y",
+          "band_px_inclusive": [
+            457,
+            477
+          ],
+          "sample": {
+            "x_px": 2590
+          },
+          "root_axis": "x",
+          "root_mm": 8.9,
+          "root_uncertainty_plus_minus_mm": 1.2,
+          "projected_band_width_mm_range": [
+            1.1,
+            1.8
+          ],
+          "confidence": "medium",
+          "video_frame_zero_based": 90,
+          "time_seconds": 3.75,
+          "fit": "Physical bottom is image right. Independently visible short-edge break at y467; same cross-width fit gives8.99mm. No mirrored geometry inferred."
+        }
+      ],
+      "unmeasured_edges": [],
+      "layout_status": "All four edges have independently visible breaks in same official Pro-labelled video: two right, two left, one top, one bottom. Regional variants and Z extent unverified.",
+      "front_mask": {
+        "source": "pro-display-video",
+        "frame_zero_based": 90,
+        "time_seconds": 3.75,
+        "frame_local": "tmp/pixel11-antenna-reference/video-41-90.png",
+        "bounds_px_inclusive": [
+          373,
+          557,
+          443,
+          628
+        ],
+        "dark_component_area_px": 4024,
+        "centroid_px": [
+          407.96,
+          592.4
+        ],
+        "threshold_method": "Largest4-connected max(RGB)<55 component in x350..479,y520..669. Includes darker optical surround; cyan pupil lies within.",
+        "body_long_axis_x_px": [
+          281,
+          2599
+        ],
+        "pixels_per_mm": 15.180091683038638,
+        "diameter_mm_fit": [
+          4.6771786022433135,
+          4.743054357204486
+        ],
+        "diameter_mm_range": [
+          4.4,
+          5.0
+        ],
+        "top_to_center_mm_fit": 8.363585849870576,
+        "top_to_center_mm_range": [
+          7.7,
+          8.9
+        ],
+        "root_center_y_mm_fit": 67.98641415012942,
+        "recommended_provisional_profile_values": {
+          "screen.cutouts[0].radius_mm": 2.35,
+          "screen.cutouts[0].center_mm": [
+            0,
+            68.0
+          ]
+        },
+        "current_values": {
+          "radius_mm": 1.5,
+          "center_mm": [
+            0,
+            69.85
+          ]
+        },
+        "optical_observation": "Measured surround contains a recessed dark circular optic and small cyan pupil/reflection. Outer mask must bound any parent-built layered optics; do not fill the entire mask with a uniformly bright or flat lens. Internal dimensions/depths are illustrative, not independently measured.",
+        "limits": "Near-frontal animation frame and Pro-labelled product asset, not SDK artifact or calibrated physical camera photo. Keep X0; small apparent cross-axis offset is within pose uncertainty."
+      },
+      "rail_material_boundary": {
+        "source": "pro-display-video",
+        "frame_zero_based": 90,
+        "straight_sample_x_px": 1700,
+        "upper_long_edge_y_layers_px": {
+          "outer_highlight": [
+            58,
+            61
+          ],
+          "inner_metal_highlight": [
+            73,
+            76
+          ],
+          "black_cover_glass_border": [
+            77,
+            101
+          ],
+          "oled_transition": [
+            102,
+            105
+          ],
+          "dark_interval_between_highlights_material_ambiguous": [
+            62,
+            72
+          ]
+        },
+        "lower_long_edge_y_layers_px": {
+          "black_glass_edge": [
+            1084,
+            1113
+          ],
+          "inner_metal_line": [
+            1114,
+            1117
+          ],
+          "dark_reflection": [
+            1118,
+            1124
+          ],
+          "visible_polished_side_and_roll": [
+            1125,
+            1147
+          ]
+        },
+        "projected_upper_metal_envelope_mm_range": [
+          0.9,
+          1.3
+        ],
+        "projected_lower_metal_envelope_mm_range": [
+          1.9,
+          2.5
+        ],
+        "limits": "Metal envelope includes reflections/rail roll and lower exposed side from pose. It is separate from black glass. Do not turn these projected widths into a uniform flat ledge, thicker OLED bezel, or a claimed .70mm engineering measurement. The dark interval between upper highlights is not independently separable into metal reflection versus glass from RGB alone; the reported envelope is a candidate metal/roll boundary span, not a count of bright pixels or guaranteed all-metal shelf."
+      }
+    },
+    "pixel-11-pro-xl": {
+      "reviewed_unchanged": true,
+      "profile": "profiles/pixel-11-pro-xl.json",
+      "visible_seams": [
+        {
+          "id": "right-upper",
+          "edge_in_front_coordinates": "right",
+          "source": "pro-xl-family",
+          "source_axis": "y",
+          "band_px_inclusive": [
+            124,
+            128
+          ],
+          "sample": {
+            "x_px": 778
+          },
+          "root_axis": "y",
+          "root_mm": 56.1,
+          "root_uncertainty_plus_minus_mm": 3.0,
+          "projected_band_width_mm_range": [
+            1.0,
+            2.2
+          ],
+          "confidence": "medium",
+          "fit": "Inherited 1200x675 picks, re-inspected in 2000 variant. y0=31,y1=642,H=162.7. Do not use these pixels on the 2000 variant."
+        },
+        {
+          "id": "right-lower",
+          "edge_in_front_coordinates": "right",
+          "source": "pro-xl-family",
+          "source_axis": "y",
+          "band_px_inclusive": [
+            582,
+            588
+          ],
+          "sample": {
+            "x_px": 778
+          },
+          "root_axis": "y",
+          "root_mm": -66.2,
+          "root_uncertainty_plus_minus_mm": 3.5,
+          "projected_band_width_mm_range": [
+            1.0,
+            2.2
+          ],
+          "confidence": "medium",
+          "fit": "Same fit; lower band boundaries blend into rail shading."
+        },
+        {
+          "id": "top",
+          "edge_in_front_coordinates": "top",
+          "source": "xl-family-2000",
+          "source_axis": "x",
+          "band_px_inclusive": [
+            1452,
+            1459
+          ],
+          "sample": {
+            "y_px_range": [
+              53,
+              61
+            ]
+          },
+          "root_axis": "x",
+          "root_mm": 8.3,
+          "root_uncertainty_plus_minus_mm": 3.0,
+          "projected_band_width_mm_range": [
+            1.0,
+            2.2
+          ],
+          "confidence": "low-to-medium",
+          "fit": "Approx rear-plane width fit: long rear boundaries x1314..1676, W=76.5. Do not use near side outer silhouette x1280 as rear-plane origin: it includes depth/yaw offset. xroot=W*(.5-(1455.5-1314)/362)=8.35. Top-line shear, curvature and yaw covered by +/-3mm."
+        },
+        {
+          "id": "bottom",
+          "edge_in_front_coordinates": "bottom",
+          "source": "xl-family-2000",
+          "source_axis": "x",
+          "band_px_inclusive": [
+            1452,
+            1460
+          ],
+          "sample": {
+            "y_px_range": [
+              1061,
+              1068
+            ]
+          },
+          "root_axis": "x",
+          "root_mm": 8.2,
+          "root_uncertainty_plus_minus_mm": 3.0,
+          "projected_band_width_mm_range": [
+            1.0,
+            2.2
+          ],
+          "confidence": "low-to-medium",
+          "fit": "Separately visible bottom interruption; same approximate rear-plane width fit. No top-to-bottom mirroring."
+        },
+        {
+          "id": "left-lower",
+          "edge_in_front_coordinates": "left",
+          "source": "xl-family-2000",
+          "source_axis": "y",
+          "band_px_inclusive": [
+            955,
+            965
+          ],
+          "sample": {
+            "x_px": 1673
+          },
+          "root_axis": "y",
+          "root_mm": -66.0,
+          "root_uncertainty_plus_minus_mm": 4.0,
+          "projected_band_width_mm_range": [
+            1.0,
+            2.3
+          ],
+          "confidence": "low-to-medium",
+          "fit": "Narrow far edge is visible. Use its own long-axis top/bottom y65..1053, H=162.7; centre960 gives yroot=-66.04. Strong yaw and thin highlight make width/position less certain. Upper break is occluded by camera bar; do not invent it."
+        }
+      ],
+      "unmeasured_edges": [
+        "left upper rail: camera bar occlusion; no measured insert"
+      ],
+      "front_mask": {
+        "current_values": {
+          "radius_mm": 1.5,
+          "center_mm": [
+            0,
+            74.85
+          ]
+        },
+        "recommended_provisional_profile_values": null,
+        "status": "Unresolved. No independently labelled XL full-front mask reference inspected. Do not copy the Pro video fit as an XL measurement."
+      },
+      "rim": "Polished rear/side family art confirms metal and diffuse inserts; exact front metal/glass contour and flat ledge not independently measured."
+    }
+  },
+  "material_finish": {
+    "pixel-11": "Official satin aluminium, polished glass back; preserve finish-specific existing rail values.",
+    "pixel-11-pro_and_xl": "Official polished aluminium for Canyon/Olive/Fog; Obsidian frame is matte. Existing finish-specific metal/roughness should remain.",
+    "seam_material": "Visible bands interrupt aluminium reflections and continue across exposed rail. Model as separate nonmetallic diffuse insert; exact polymer composition, RGB and roughness not manufacturer-measured. Do not apply polished metal shader to seam or a single finish to all variants."
+  },
+  "source_generator_patch_instructions": [
+    "No patch performed. In make_pixel_profiles.py pixel11_profiles(), retain body_mm.edge_roll_mm=[.65,.30] and front_rail_mm=.70; they remain tuning values. Preserve reviewed dimensions, rear assembly/logo, finishes and native OLED fit/UV/aspect.",
+    "For an explicitly provisional front-mask correction, set only pixel-11 screen.cutouts[0] radius_mm2.30 and center_mm[0,68.0], and pixel-11-pro radius_mm2.35 and center_mm[0,68.0]. Record source/ranges in family-specific data. Do not globally change the generic screen() radius or move/rescale OLED. Leave XL mask unresolved rather than laundering family analogy into measurement.",
+    "Parent common seam helper should consume each visible edge record separately. Suggested rounded Pro Y positions right[50.9,-61.0], left[50.6,-60.6]; topX8.9,bottomX8.9. Use about1.45mm band width within reported ranges. Equality of top/bottom is observed, not assumed. Positions must survive generator regeneration; do not hide them solely in exported meshes.",
+    "Base measured subset: rightY[51.5,-61.5], topX8.6. XL measured subset: rightY[56.1,-66.2], topX8.3,bottomX8.2,left-lowerY-66.0. Retain larger photo uncertainties. Do not mirror to missing base/XL edges. Match only visible front-lip/side surfaces; Z extent is not measured.",
+    "Keep metal/glass/OLED boundaries independent. Layered selfie optics must fit the measured surround; no camera internals may exceed mask. Internal lens depth and optical highlight treatment remain illustrative.",
+    "Parent must serially export and inspect fresh actual GLB/front+oblique views against these sources. This research neither approves stale front.png nor certifies rebuilt geometry. No new trace.json: there is no SDK11 artifact to trace."
+  ],
+  "verification": {
+    "report_json": "Parsed with Python json; numeric fields finite; unique seam IDs checked; every device reviewed; profile hashes unchanged during report write.",
+    "profile_sha256_read_only": {
+      "profiles\\pixel-11.json": "49b2a9955c8aaffa5b6070d9355cec106964d7a885e3d22de5e8d600483c34b8",
+      "profiles\\pixel-11-pro.json": "26415b9ae7ca9b8b20fec04551c87a0bbff8bf3b90f1b86485536bf5ce1ae5c3",
+      "profiles\\pixel-11-pro-xl.json": "394431ba1ce02abe077486c4c6f606f70933ff588b1c510173072859b1db03e3"
+    },
+    "not_run": "No Blender, build, export, geometry tests, gallery or public repository operation. No new GLB measurement; prior GLB audit is starting evidence only."
+  },
+  "rights": "Google product imagery is retained locally for reference analysis. No blanket license or redistribution permission asserted; do not package these downloads into galleries/exports by default."
+}

@@ -1,0 +1,3004 @@
+{
+  "as_of": "2026-10-23",
+  "status": "Measured current exported GLBs and installed official SDK frames; targeted data correction only. Parent must rebuild serially and visually accept the resulting metal shelf, seams and optics. No Blender process started.",
+  "scope": [
+    "pixel-8",
+    "pixel-8-pro",
+    "pixel-8a",
+    "pixel-9",
+    "pixel-9-pro",
+    "pixel-9-pro-xl",
+    "pixel-9a"
+  ],
+  "coordinate_system": {
+    "profile": "X right, Y up, Z front, millimetres. Aperture centers are local to the OLED, not body-local.",
+    "gltf": "Actual mesh POSITION accessors decoded; X right, Y front, Z down, metres. Body projection uses [X,-Z]*1000.",
+    "raster": "Pixel-edge coordinates, origin upper left. Seam bounds are [start,end), axis is Y on left/right, X on top/bottom.",
+    "body_scale": "Body contours independently normalized to published W/H, as pending build.apply_trace. OLED and selfie use the single height-anchored trace.mm_per_px to preserve native aspect."
+  },
+  "method": {
+    "rim": "Manually picked narrow dark mechanical gasket between metal shoulder and glossy cover-glass reflection, sampled at side midpoints and top/bottom x=body_width/3. The inner glass reflection is not added to metal. Physical depth/fillet radius is not inferable from a single orthographic raster.",
+    "seams": "Reviewed full rail strips at native resolution. Per-edge half-contrast widths relative to adjacent linearly interpolated metal baseline. Side luminance averages x=3..13 or w-14..w-4; top y=5..17; bottom h-12..h-4. Kept independent left/right results, including half-pixel differences. Widths are raster appearance, not physical insert CAD.",
+    "selfie": "Isolated fully interior alpha>=128 connected component from original installed SDK mask.webp. Pixel-edge bounding-box center, equivalent circular radius sqrt(opaque_area/pi)*trace.mm_per_px. This matches existing 8 Pro method.",
+    "glb": "Decoded POSITION buffers without Blender; actual projected enclosure convex hull compared with normalized trace.body_outline_mm. Flat front shelf measured from enclosure/glass maximum-front-plane X bounds. Does not use front.png or nominal corner_radius metadata.",
+    "uncertainty": "Gasket ±2px normally, ±3px on shaded 8-family bottom edges. Seams ±2px, ±4px for low-contrast Pixel8a. Selfie binary mask ±1px. Artwork and inferred roll are not metrology/CAD."
+  },
+  "primary_sources": [
+    {
+      "url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/",
+      "role": "Google Android Studio device-art originals, each per-model directory and local git-blob matching recorded below."
+    },
+    {
+      "url": "https://support.google.com/pixelphone/answer/7158570?hl=en",
+      "role": "Published body dimensions and native panel resolution."
+    },
+    {
+      "url": "https://blog.google/products-and-platforms/devices/pixel/google-pixel-8-watch-2-buds-pro-design/",
+      "role": "Pixel8 rounded body and Pro polished/base matte material distinction."
+    },
+    {
+      "url": "https://blog.google/products-and-platforms/devices/pixel/pixel-8a-launch/",
+      "role": "Pixel8a rounded edges, matte back, aluminum frame."
+    },
+    {
+      "url": "https://blog.google/products-and-platforms/devices/pixel/google-pixel-9-series-design/",
+      "role": "Pixel9 flat front/back, rounded corners and Pro polished sides."
+    },
+    {
+      "url": "https://store.google.com/au/magazine/pixel-9-pro-phones-design-story?hl=en-GB",
+      "role": "Pixel9Pro dual-finish camera material evidence; existing rear materials left intact."
+    },
+    {
+      "url": "https://blog.google/products-and-platforms/devices/pixel/google-pixel-9a/",
+      "role": "Pixel9a flat profile and rounded edges."
+    }
+  ],
+  "devices": {
+    "pixel-8": {
+      "official_art_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_8/",
+      "upstream_tree_id": "28f670d408576893a9fd60a4e446502955812592",
+      "upstream_error": null,
+      "installed_source": "[local reference path omitted]",
+      "source_files": {
+        "back.webp": {
+          "git_blob": "dcbd351338f2a350db8e0c553d3f35af28f11173",
+          "upstream_git_blob": "dcbd351338f2a350db8e0c553d3f35af28f11173",
+          "matches_upstream": true
+        },
+        "mask.webp": {
+          "git_blob": "0c5ed3228b019217c3526751daf0dc91d1ad06db",
+          "upstream_git_blob": "0c5ed3228b019217c3526751daf0dc91d1ad06db",
+          "matches_upstream": true
+        },
+        "layout": {
+          "git_blob": "b364bd57e5a05776136a68e3379d6cd5dd5ceb1f",
+          "upstream_git_blob": "b364bd57e5a05776136a68e3379d6cd5dd5ceb1f",
+          "matches_upstream": true
+        }
+      },
+      "frame_file": "research/skins/pixel-8/frame.png",
+      "frame_sha256": "d4a593da255772873f96f652006845a3912fe28a1b732f49d1955a8b8feb053a",
+      "body_bounds_xyxy_px": [
+        0.0,
+        0.0,
+        1179.0,
+        2513.0
+      ],
+      "body_outline_points": 458,
+      "oled_outline_points": 248,
+      "native_viewport_xywh_px": [
+        49,
+        55,
+        1080,
+        2400
+      ],
+      "published_body_mm": {
+        "height": 150.5,
+        "width": 70.8,
+        "depth": 8.9,
+        "corner_radius": 9.111328690807799,
+        "edge_roll": 0.55,
+        "front_curve": 0,
+        "edge_roll_mm": [
+          3.0,
+          1.2
+        ]
+      },
+      "height_anchor_mm_per_px": 0.05988857938718663,
+      "art_body_width_discrepancy_pct": -0.27028941032056775,
+      "measured_gasket_insets_LTRB_px": [
+        16.5,
+        24,
+        16.5,
+        10.5
+      ],
+      "measured_gasket_insets_LTRB_mm": [
+        0.9908396946564886,
+        1.4373259052924792,
+        0.9908396946564886,
+        0.6288300835654597
+      ],
+      "current_glb": {
+        "sha256": "fdc732916cdf24b09faf3e8f1f8cf6170000d64f75ec27387c9c2c2b00a51127",
+        "enclosure_bounds_xyz_gltf_mm": [
+          [
+            -35.39999946951866,
+            -4.424999933689833,
+            -75.24999976158142
+          ],
+          [
+            35.39999946951866,
+            4.424999933689833,
+            75.24999976158142
+          ]
+        ],
+        "glass_bounds_xyz_gltf_local_mm": [
+          [
+            -34.26000103354454,
+            -0.1250000059371814,
+            -74.1100013256073
+          ],
+          [
+            34.26000103354454,
+            0.1250000059371814,
+            74.1100013256073
+          ]
+        ],
+        "projected_enclosure_trace_hausdorff_mm": 0.2701301058795809,
+        "side_metal_to_glass_outer_edge_mm": 1.1399989664554582,
+        "side_flat_front_shelf_mm": 0.020001083612442017,
+        "selfie_nodes": [
+          "Device screen | selfie aperture 0"
+        ],
+        "antenna_nodes": [],
+        "projected_OLED_trace_hausdorff_mm": 0.05013392575624613
+      },
+      "selfie": [
+        {
+          "bounds_in_viewport_xyxy_px": [
+            508,
+            33,
+            573,
+            98
+          ],
+          "opaque_area_px": 3177,
+          "center_in_viewport_px": [
+            540.5,
+            65.5
+          ],
+          "center_mm": [
+            0.029944289693593314,
+            67.94359331476323
+          ],
+          "radius_mm": 1.904485552363297
+        }
+      ],
+      "antenna_breaks": [
+        {
+          "edge": "left",
+          "axis_bounds_px": [
+            167,
+            188
+          ],
+          "center_px": 177.5,
+          "width_px": 21,
+          "contrast": -26.54,
+          "id": "left-1",
+          "center_axis_mm": 64.61978,
+          "width_mm": 1.25766,
+          "normalized_uv": [
+            0,
+            0.07063270990847592
+          ],
+          "confidence": "high for raster position; medium for physical width"
+        },
+        {
+          "edge": "left",
+          "axis_bounds_px": [
+            558,
+            578
+          ],
+          "center_px": 568.0,
+          "width_px": 20,
+          "contrast": -22.16,
+          "id": "left-2",
+          "center_axis_mm": 41.23329,
+          "width_mm": 1.19777,
+          "normalized_uv": [
+            0,
+            0.22602467170712295
+          ],
+          "confidence": "high for raster position; medium for physical width"
+        },
+        {
+          "edge": "left",
+          "axis_bounds_px": [
+            2266,
+            2286
+          ],
+          "center_px": 2276.0,
+          "width_px": 20,
+          "contrast": -20.06,
+          "id": "left-3",
+          "center_axis_mm": -61.05641,
+          "width_mm": 1.19777,
+          "normalized_uv": [
+            0,
+            0.9056904098686829
+          ],
+          "confidence": "high for raster position; medium for physical width"
+        },
+        {
+          "edge": "right",
+          "axis_bounds_px": [
+            168,
+            188
+          ],
+          "center_px": 178.0,
+          "width_px": 20,
+          "contrast": -26.63,
+          "id": "right-1",
+          "center_axis_mm": 64.58983,
+          "width_mm": 1.19777,
+          "normalized_uv": [
+            1,
+            0.0708316752884998
+          ],
+          "confidence": "high for raster position; medium for physical width"
+        },
+        {
+          "edge": "right",
+          "axis_bounds_px": [
+            558,
+            578
+          ],
+          "center_px": 568.0,
+          "width_px": 20,
+          "contrast": -21.06,
+          "id": "right-2",
+          "center_axis_mm": 41.23329,
+          "width_mm": 1.19777,
+          "normalized_uv": [
+            1,
+            0.22602467170712295
+          ],
+          "confidence": "high for raster position; medium for physical width"
+        },
+        {
+          "edge": "right",
+          "axis_bounds_px": [
+            2266,
+            2286
+          ],
+          "center_px": 2276.0,
+          "width_px": 20,
+          "contrast": -17.62,
+          "id": "right-3",
+          "center_axis_mm": -61.05641,
+          "width_mm": 1.19777,
+          "normalized_uv": [
+            1,
+            0.9056904098686829
+          ],
+          "confidence": "high for raster position; medium for physical width"
+        },
+        {
+          "edge": "top",
+          "axis_bounds_px": [
+            577,
+            602
+          ],
+          "center_px": 589.5,
+          "width_px": 25,
+          "contrast": -20.62,
+          "id": "top-1",
+          "center_axis_mm": 0.0,
+          "width_mm": 1.50127,
+          "normalized_uv": [
+            0.5,
+            0
+          ],
+          "confidence": "high for raster position; medium for physical width"
+        },
+        {
+          "edge": "bottom",
+          "axis_bounds_px": [
+            710,
+            735
+          ],
+          "center_px": 722.5,
+          "width_px": 25,
+          "contrast": -8.69,
+          "id": "bottom-1",
+          "center_axis_mm": 7.98677,
+          "width_mm": 1.50127,
+          "normalized_uv": [
+            0.6128074639525021,
+            1
+          ],
+          "confidence": "high for raster position; medium for physical width"
+        }
+      ],
+      "correction": {
+        "body_mm.front_rail_mm": 0.99,
+        "body_mm.edge_roll_mm_before": [
+          3.0,
+          1.2
+        ],
+        "body_mm.edge_roll_mm_after": [
+          3.0,
+          0.75
+        ],
+        "roll_basis": "Retain rear roll; on Pixel8 family reduce front roll only enough to leave a modest metal shelf below measured glass gasket. Roll is a visual-fit estimate, not a raster-derived physical fillet.",
+        "screen.cutouts": [
+          {
+            "center_mm": [
+              0.029944289693593314,
+              67.94359331476323
+            ],
+            "radius_mm": 1.904485552363297
+          }
+        ]
+      },
+      "limits": [
+        "Scalar glass inset approximates four independently measured edges; it cannot reproduce top/bottom asymmetry. Use reported edge data if the parent implements separate glass contour.",
+        "Selfie source has distinct outer dark well, inner barrel and colored lens reflection. Radius/center above constrain the whole aperture; lens curvature, depth and refractive index are not measured.",
+        "Existing rear camera geometry, logo, colors, roughness/metalness, body dimensions, native viewport size/aspect and UVs remain untouched."
+      ],
+      "profile_changes": [
+        "body_mm.front_rail_mm",
+        "screen.cutouts",
+        "body_mm.edge_roll_mm[1]"
+      ],
+      "trace_changes": [
+        "screen_cutouts_mm"
+      ],
+      "predicted_side_flat_front_shelf_mm": 0.32,
+      "preserved_material_roles": {
+        "back": {
+          "rgb": [
+            0.2,
+            0.22745,
+            0.23922
+          ],
+          "rough": 0.18
+        },
+        "rail": {
+          "rgb": [
+            0.33,
+            0.34784,
+            0.35549
+          ],
+          "metal": 1,
+          "rough": 0.36
+        },
+        "bar": {
+          "rgb": [
+            0.33,
+            0.34784,
+            0.35549
+          ],
+          "metal": 0.6,
+          "rough": 0.3
+        },
+        "black": {
+          "rgb": [
+            0.007,
+            0.009,
+            0.012
+          ],
+          "rough": 0.5
+        }
+      },
+      "review_status": "Targeted rail/aperture data corrected; independent trace contour is handled by parent pending build change. Requires parent geometry integration, serial export and rendered QA.",
+      "trace_outline_measurements": {
+        "body_raw_bounds_xy_mm": [
+          [
+            -35.3043,
+            -75.2201
+          ],
+          [
+            35.3043,
+            75.25
+          ]
+        ],
+        "body_fitted_bounds_xy_mm": [
+          [
+            -35.4,
+            -75.25
+          ],
+          [
+            35.4,
+            75.25
+          ]
+        ],
+        "OLED_raw_bounds_xy_mm": [
+          [
+            -32.3997,
+            -71.7465
+          ],
+          [
+            32.2799,
+            71.9861
+          ]
+        ],
+        "OLED_centered_fitted_bounds_xy_mm": [
+          [
+            -32.33983286908078,
+            -71.86629526462396
+          ],
+          [
+            32.33983286908078,
+            71.86629526462396
+          ]
+        ],
+        "body_circle_radius_summary_BR_TR_TL_BL_mm": [
+          9.01245733984342,
+          9.159074587996377,
+          9.040998405879087,
+          8.898168489636209
+        ],
+        "OLED_circle_radius_summary_BR_TR_TL_BL_mm": [
+          5.341805337604061,
+          5.341968160207626,
+          5.341968160207632,
+          5.341860787802327
+        ],
+        "note": "Circle summaries are diagnostic; retain full independent trace polygons. No body/screen contour arrays changed by this worker."
+      },
+      "material_review": "Existing satin/matte rail retained; numeric shader is a visual estimate.",
+      "confidence": {
+        "upstream_identity": "high: all three installed files match live official Git blob IDs",
+        "rim_gasket_inset": "medium: ?2px manual boundary picking; shaded bottom up to?3px, scalar median approximation",
+        "front_roll": "visual-fit estimate only",
+        "selfie_outer_aperture": "high for official raster; physical optics not CAD",
+        "body_OLED_contour": "high relative to official SDK raster; still requires parent export QA"
+      },
+      "predicted_side_flat_front_shelf_mm_note": "Analytical prediction rail inset + existing glass top bevel .08 - front roll. Not a rebuilt GLB measurement."
+    },
+    "pixel-8-pro": {
+      "official_art_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_8_pro/",
+      "upstream_tree_id": "3ae339631bbdb48a336caef1d85e20dabcdd3613",
+      "upstream_error": null,
+      "installed_source": "[local reference path omitted]",
+      "source_files": {
+        "back.webp": {
+          "git_blob": "7c19ea182695105987e7bf9edf843146c1797bf3",
+          "upstream_git_blob": "7c19ea182695105987e7bf9edf843146c1797bf3",
+          "matches_upstream": true
+        },
+        "mask.webp": {
+          "git_blob": "a636c97fd8cfe8d5a26c30fdac372d45f414f54f",
+          "upstream_git_blob": "a636c97fd8cfe8d5a26c30fdac372d45f414f54f",
+          "matches_upstream": true
+        },
+        "layout": {
+          "git_blob": "5cf5b89676cec1e161f3a528dba113e223035054",
+          "upstream_git_blob": "5cf5b89676cec1e161f3a528dba113e223035054",
+          "matches_upstream": true
+        }
+      },
+      "frame_file": "research/skins/pixel-8-pro/frame.png",
+      "frame_sha256": "c65587f9a0cdfa534bb668c394d9ccc178dda69ce44832be756857ec8f4260dc",
+      "body_bounds_xyxy_px": [
+        0.0,
+        0.0,
+        1459.0,
+        3104.0
+      ],
+      "body_outline_points": 532,
+      "oled_outline_points": 296,
+      "native_viewport_xywh_px": [
+        58,
+        58,
+        1344,
+        2992
+      ],
+      "published_body_mm": {
+        "height": 162.6,
+        "width": 76.5,
+        "depth": 8.8,
+        "corner_radius": 8.931842203608248,
+        "edge_roll": 0.55,
+        "front_curve": 0,
+        "edge_roll_mm": [
+          2.2,
+          0.9
+        ]
+      },
+      "height_anchor_mm_per_px": 0.0523840206185567,
+      "art_body_width_discrepancy_pct": -0.09374368304022607,
+      "measured_gasket_insets_LTRB_px": [
+        18.5,
+        24,
+        18,
+        11.5
+      ],
+      "measured_gasket_insets_LTRB_mm": [
+        0.9700137080191912,
+        1.2572164948453608,
+        0.9437971213159698,
+        0.602416237113402
+      ],
+      "current_glb": {
+        "sha256": "8178b8068c5d3e208dad4a0afe29fcec9d41a09b6ddb5f8246a6242daa5bd9c1",
+        "enclosure_bounds_xyz_gltf_mm": [
+          [
+            -38.24999928474426,
+            -4.3750000186264515,
+            -81.29999786615372
+          ],
+          [
+            38.24999928474426,
+            4.3750000186264515,
+            81.29999786615372
+          ]
+        ],
+        "glass_bounds_xyz_gltf_local_mm": [
+          [
+            -37.39500045776367,
+            -0.1250000059371814,
+            -80.44499903917313
+          ],
+          [
+            37.39500045776367,
+            0.1250000059371814,
+            80.44499903917313
+          ]
+        ],
+        "projected_enclosure_trace_hausdorff_mm": 0.25465309420696974,
+        "side_metal_to_glass_outer_edge_mm": 0.8549995422363281,
+        "side_flat_front_shelf_mm": 0.03499910235404968,
+        "selfie_nodes": [
+          "Device screen | selfie aperture 0"
+        ],
+        "antenna_nodes": [],
+        "projected_OLED_trace_hausdorff_mm": 0.0655909712505609
+      },
+      "selfie": [
+        {
+          "bounds_in_viewport_xyxy_px": [
+            631,
+            35,
+            713,
+            117
+          ],
+          "opaque_area_px": 5108,
+          "center_in_viewport_px": [
+            672.0,
+            76.0
+          ],
+          "center_mm": [
+            0.0,
+            74.38530927835052
+          ],
+          "radius_mm": 2.112269541383908
+        }
+      ],
+      "antenna_breaks": [
+        {
+          "edge": "left",
+          "axis_bounds_px": [
+            269,
+            289
+          ],
+          "center_px": 279.0,
+          "width_px": 20,
+          "contrast": -11.79,
+          "id": "left-1",
+          "center_axis_mm": 66.68486,
+          "width_mm": 1.04768,
+          "normalized_uv": [
+            0,
+            0.0898840206185567
+          ],
+          "confidence": "high for raster position; medium for physical width"
+        },
+        {
+          "edge": "left",
+          "axis_bounds_px": [
+            731,
+            750
+          ],
+          "center_px": 740.5,
+          "width_px": 19,
+          "contrast": -11.88,
+          "id": "left-2",
+          "center_axis_mm": 42.50963,
+          "width_mm": 0.9953,
+          "normalized_uv": [
+            0,
+            0.23856314432989692
+          ],
+          "confidence": "high for raster position; medium for physical width"
+        },
+        {
+          "edge": "left",
+          "axis_bounds_px": [
+            2821,
+            2841
+          ],
+          "center_px": 2831.0,
+          "width_px": 20,
+          "contrast": -10.01,
+          "id": "left-3",
+          "center_axis_mm": -66.99916,
+          "width_mm": 1.04768,
+          "normalized_uv": [
+            0,
+            0.9120489690721649
+          ],
+          "confidence": "high for raster position; medium for physical width"
+        },
+        {
+          "edge": "right",
+          "axis_bounds_px": [
+            269,
+            289
+          ],
+          "center_px": 279.0,
+          "width_px": 20,
+          "contrast": -13.69,
+          "id": "right-1",
+          "center_axis_mm": 66.68486,
+          "width_mm": 1.04768,
+          "normalized_uv": [
+            1,
+            0.0898840206185567
+          ],
+          "confidence": "high for raster position; medium for physical width"
+        },
+        {
+          "edge": "right",
+          "axis_bounds_px": [
+            731,
+            750
+          ],
+          "center_px": 740.5,
+          "width_px": 19,
+          "contrast": -14.91,
+          "id": "right-2",
+          "center_axis_mm": 42.50963,
+          "width_mm": 0.9953,
+          "normalized_uv": [
+            1,
+            0.23856314432989692
+          ],
+          "confidence": "high for raster position; medium for physical width"
+        },
+        {
+          "edge": "right",
+          "axis_bounds_px": [
+            2822,
+            2841
+          ],
+          "center_px": 2831.5,
+          "width_px": 19,
+          "contrast": -12.63,
+          "id": "right-3",
+          "center_axis_mm": -67.02535,
+          "width_mm": 0.9953,
+          "normalized_uv": [
+            1,
+            0.9122100515463918
+          ],
+          "confidence": "high for raster position; medium for physical width"
+        },
+        {
+          "edge": "top",
+          "axis_bounds_px": [
+            715,
+            744
+          ],
+          "center_px": 729.5,
+          "width_px": 29,
+          "contrast": -14.67,
+          "id": "top-1",
+          "center_axis_mm": 0.0,
+          "width_mm": 1.52056,
+          "normalized_uv": [
+            0.5,
+            0
+          ],
+          "confidence": "high for raster position; medium for physical width"
+        },
+        {
+          "edge": "bottom",
+          "axis_bounds_px": [
+            873,
+            902
+          ],
+          "center_px": 887.5,
+          "width_px": 29,
+          "contrast": -17.32,
+          "id": "bottom-1",
+          "center_axis_mm": 8.28444,
+          "width_mm": 1.52056,
+          "normalized_uv": [
+            0.6082933516106922,
+            1
+          ],
+          "confidence": "high for raster position; medium for physical width"
+        }
+      ],
+      "correction": {
+        "body_mm.front_rail_mm": 0.96,
+        "body_mm.edge_roll_mm_before": [
+          2.2,
+          0.9
+        ],
+        "body_mm.edge_roll_mm_after": [
+          2.2,
+          0.65
+        ],
+        "roll_basis": "Retain rear roll; on Pixel8 family reduce front roll only enough to leave a modest metal shelf below measured glass gasket. Roll is a visual-fit estimate, not a raster-derived physical fillet.",
+        "screen.cutouts": [
+          {
+            "center_mm": [
+              0.0,
+              74.38530927835052
+            ],
+            "radius_mm": 2.112269541383908
+          }
+        ]
+      },
+      "limits": [
+        "Scalar glass inset approximates four independently measured edges; it cannot reproduce top/bottom asymmetry. Use reported edge data if the parent implements separate glass contour.",
+        "Selfie source has distinct outer dark well, inner barrel and colored lens reflection. Radius/center above constrain the whole aperture; lens curvature, depth and refractive index are not measured.",
+        "Existing rear camera geometry, logo, colors, roughness/metalness, body dimensions, native viewport size/aspect and UVs remain untouched."
+      ],
+      "profile_changes": [
+        "body_mm.front_rail_mm",
+        "screen.cutouts",
+        "body_mm.edge_roll_mm[1]"
+      ],
+      "trace_changes": [],
+      "predicted_side_flat_front_shelf_mm": 0.39,
+      "preserved_material_roles": {
+        "back": {
+          "rgb": [
+            0.2,
+            0.22745,
+            0.23922
+          ],
+          "rough": 0.42
+        },
+        "rail": {
+          "rgb": [
+            0.33,
+            0.34784,
+            0.35549
+          ],
+          "metal": 1,
+          "rough": 0.18
+        },
+        "bar": {
+          "rgb": [
+            0.33,
+            0.34784,
+            0.35549
+          ],
+          "metal": 0.6,
+          "rough": 0.3
+        },
+        "black": {
+          "rgb": [
+            0.007,
+            0.009,
+            0.012
+          ],
+          "rough": 0.5
+        }
+      },
+      "review_status": "Targeted rail/aperture data corrected; independent trace contour is handled by parent pending build change. Requires parent geometry integration, serial export and rendered QA.",
+      "trace_outline_measurements": {
+        "body_raw_bounds_xy_mm": [
+          [
+            -38.2141,
+            -81.2738
+          ],
+          [
+            38.2141,
+            81.3
+          ]
+        ],
+        "body_fitted_bounds_xy_mm": [
+          [
+            -38.25,
+            -81.3
+          ],
+          [
+            38.25,
+            81.3
+          ]
+        ],
+        "OLED_raw_bounds_xy_mm": [
+          [
+            -35.2021,
+            -78.4451
+          ],
+          [
+            35.2021,
+            78.2879
+          ]
+        ],
+        "OLED_centered_fitted_bounds_xy_mm": [
+          [
+            -35.2020618556701,
+            -78.36649484536083
+          ],
+          [
+            35.2020618556701,
+            78.36649484536083
+          ]
+        ],
+        "body_circle_radius_summary_BR_TR_TL_BL_mm": [
+          9.051660687631365,
+          8.753530713071394,
+          8.725755243565946,
+          8.950161713913584
+        ],
+        "OLED_circle_radius_summary_BR_TR_TL_BL_mm": [
+          5.5558428833996025,
+          5.555698970736027,
+          5.555698970736027,
+          5.5558428833996025
+        ],
+        "note": "Circle summaries are diagnostic; retain full independent trace polygons. No body/screen contour arrays changed by this worker."
+      },
+      "material_review": "Existing polished rail retained, unlike base8 satin rail.",
+      "confidence": {
+        "upstream_identity": "high: all three installed files match live official Git blob IDs",
+        "rim_gasket_inset": "medium: ?2px manual boundary picking; shaded bottom up to?3px, scalar median approximation",
+        "front_roll": "visual-fit estimate only",
+        "selfie_outer_aperture": "high for official raster; physical optics not CAD",
+        "body_OLED_contour": "high relative to official SDK raster; still requires parent export QA"
+      },
+      "predicted_side_flat_front_shelf_mm_note": "Analytical prediction rail inset + existing glass top bevel .08 - front roll. Not a rebuilt GLB measurement."
+    },
+    "pixel-8a": {
+      "official_art_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_8a/",
+      "upstream_tree_id": "7cd966c87f457376db0c2d289d3be529e0185362",
+      "upstream_error": null,
+      "installed_source": "[local reference path omitted]",
+      "source_files": {
+        "back.webp": {
+          "git_blob": "c4baaa5639c64b595096f0b31f3a08fb095938d1",
+          "upstream_git_blob": "c4baaa5639c64b595096f0b31f3a08fb095938d1",
+          "matches_upstream": true
+        },
+        "mask.webp": {
+          "git_blob": "0c5ed3228b019217c3526751daf0dc91d1ad06db",
+          "upstream_git_blob": "0c5ed3228b019217c3526751daf0dc91d1ad06db",
+          "matches_upstream": true
+        },
+        "layout": {
+          "git_blob": "aafd126ec0d8432b3450c69d8f04a2a2741ed32c",
+          "upstream_git_blob": "aafd126ec0d8432b3450c69d8f04a2a2741ed32c",
+          "matches_upstream": true
+        }
+      },
+      "frame_file": "research/skins/pixel-8a/frame.png",
+      "frame_sha256": "b505905450d8966cd4674156c81e61655473fc4891a5a0b170edac5dec488ac9",
+      "body_bounds_xyxy_px": [
+        0.0,
+        0.0,
+        1190.0,
+        2538.0
+      ],
+      "body_outline_points": 324,
+      "oled_outline_points": 248,
+      "native_viewport_xywh_px": [
+        57,
+        57,
+        1080,
+        2400
+      ],
+      "published_body_mm": {
+        "height": 152.1,
+        "width": 72.7,
+        "depth": 8.9,
+        "corner_radius": 14.0,
+        "edge_roll": 0.55,
+        "front_curve": 0,
+        "edge_roll_mm": [
+          3.0,
+          1.2
+        ]
+      },
+      "height_anchor_mm_per_px": 0.05992907801418439,
+      "art_body_width_discrepancy_pct": -1.9042601968646045,
+      "measured_gasket_insets_LTRB_px": [
+        18,
+        18,
+        18,
+        17
+      ],
+      "measured_gasket_insets_LTRB_mm": [
+        1.0996638655462185,
+        1.078723404255319,
+        1.0996638655462185,
+        1.0187943262411348
+      ],
+      "current_glb": {
+        "sha256": "eeda043a89aff12195367c397b3a215a9379d1afe2a41476f58e3b02156f0f08",
+        "enclosure_bounds_xyz_gltf_mm": [
+          [
+            -36.35000064969063,
+            -4.424999933689833,
+            -76.04999840259552
+          ],
+          [
+            36.35000064969063,
+            4.424999933689833,
+            76.04999840259552
+          ]
+        ],
+        "glass_bounds_xyz_gltf_local_mm": [
+          [
+            -35.20999848842621,
+            -0.1250000059371814,
+            -74.9099999666214
+          ],
+          [
+            35.20999848842621,
+            0.1250000059371814,
+            74.9099999666214
+          ]
+        ],
+        "projected_enclosure_trace_hausdorff_mm": 1.4198944875514605,
+        "side_metal_to_glass_outer_edge_mm": 1.140001511573793,
+        "side_flat_front_shelf_mm": 0.019997358322143555,
+        "selfie_nodes": [
+          "Device screen | selfie aperture 0"
+        ],
+        "antenna_nodes": [],
+        "projected_OLED_trace_hausdorff_mm": 0.050124923831322936
+      },
+      "selfie": [
+        {
+          "bounds_in_viewport_xyxy_px": [
+            508,
+            33,
+            573,
+            98
+          ],
+          "opaque_area_px": 3177,
+          "center_in_viewport_px": [
+            540.5,
+            65.5
+          ],
+          "center_mm": [
+            0.029964539007092197,
+            67.98953900709219
+          ],
+          "radius_mm": 1.9057734281285434
+        }
+      ],
+      "antenna_breaks": [
+        {
+          "edge": "left",
+          "axis_bounds_px": [
+            213,
+            229
+          ],
+          "center_px": 221.0,
+          "width_px": 16,
+          "contrast": 3.79,
+          "id": "left-1",
+          "center_axis_mm": 62.80567,
+          "width_mm": 0.95887,
+          "normalized_uv": [
+            0,
+            0.08707643814026793
+          ],
+          "confidence": "medium-low"
+        },
+        {
+          "edge": "left",
+          "axis_bounds_px": [
+            581,
+            597
+          ],
+          "center_px": 589.0,
+          "width_px": 16,
+          "contrast": 5.87,
+          "id": "left-2",
+          "center_axis_mm": 40.75177,
+          "width_mm": 0.95887,
+          "normalized_uv": [
+            0,
+            0.23207249802994484
+          ],
+          "confidence": "medium-low"
+        },
+        {
+          "edge": "left",
+          "axis_bounds_px": [
+            2321,
+            2336
+          ],
+          "center_px": 2328.5,
+          "width_px": 15,
+          "contrast": 9.13,
+          "id": "left-3",
+          "center_axis_mm": -63.49486,
+          "width_mm": 0.89894,
+          "normalized_uv": [
+            0,
+            0.9174546887312844
+          ],
+          "confidence": "medium-low"
+        },
+        {
+          "edge": "right",
+          "axis_bounds_px": [
+            212,
+            230
+          ],
+          "center_px": 221.0,
+          "width_px": 18,
+          "contrast": 10.37,
+          "id": "right-1",
+          "center_axis_mm": 62.80567,
+          "width_mm": 1.07872,
+          "normalized_uv": [
+            1,
+            0.08707643814026793
+          ],
+          "confidence": "medium-low"
+        },
+        {
+          "edge": "right",
+          "axis_bounds_px": [
+            581,
+            597
+          ],
+          "center_px": 589.0,
+          "width_px": 16,
+          "contrast": 10.17,
+          "id": "right-2",
+          "center_axis_mm": 40.75177,
+          "width_mm": 0.95887,
+          "normalized_uv": [
+            1,
+            0.23207249802994484
+          ],
+          "confidence": "medium-low"
+        },
+        {
+          "edge": "right",
+          "axis_bounds_px": [
+            2320,
+            2336
+          ],
+          "center_px": 2328.0,
+          "width_px": 16,
+          "contrast": 14.77,
+          "id": "right-3",
+          "center_axis_mm": -63.46489,
+          "width_mm": 0.95887,
+          "normalized_uv": [
+            1,
+            0.91725768321513
+          ],
+          "confidence": "medium-low"
+        },
+        {
+          "edge": "top",
+          "axis_bounds_px": [
+            585,
+            608
+          ],
+          "center_px": 596.5,
+          "width_px": 23,
+          "contrast": 8.73,
+          "id": "top-1",
+          "center_axis_mm": 0.09164,
+          "width_mm": 1.40513,
+          "normalized_uv": [
+            0.5012605042016807,
+            0
+          ],
+          "confidence": "medium-low"
+        },
+        {
+          "edge": "bottom",
+          "axis_bounds_px": [
+            716,
+            741
+          ],
+          "center_px": 728.5,
+          "width_px": 25,
+          "contrast": 28.44,
+          "id": "bottom-1",
+          "center_axis_mm": 8.15584,
+          "width_mm": 1.52731,
+          "normalized_uv": [
+            0.6121848739495799,
+            1
+          ],
+          "confidence": "medium-low"
+        }
+      ],
+      "correction": {
+        "body_mm.front_rail_mm": 1.09,
+        "body_mm.edge_roll_mm_before": [
+          3.0,
+          1.2
+        ],
+        "body_mm.edge_roll_mm_after": [
+          3.0,
+          0.85
+        ],
+        "roll_basis": "Retain rear roll; on Pixel8 family reduce front roll only enough to leave a modest metal shelf below measured glass gasket. Roll is a visual-fit estimate, not a raster-derived physical fillet.",
+        "screen.cutouts": [
+          {
+            "center_mm": [
+              0.029964539007092197,
+              67.98953900709219
+            ],
+            "radius_mm": 1.9057734281285434
+          }
+        ]
+      },
+      "limits": [
+        "Scalar glass inset approximates four independently measured edges; it cannot reproduce top/bottom asymmetry. Use reported edge data if the parent implements separate glass contour.",
+        "Selfie source has distinct outer dark well, inner barrel and colored lens reflection. Radius/center above constrain the whole aperture; lens curvature, depth and refractive index are not measured.",
+        "Existing rear camera geometry, logo, colors, roughness/metalness, body dimensions, native viewport size/aspect and UVs remain untouched.",
+        "Official SDK8a art has -1.90% height-anchored body-width discrepancy and Pixel8-identical mask artwork; unusually square upper body corners. Google product imagery is more rounded. Do not call this physical-contour acceptance: parent must separately review8a body/OLED contours against product imagery; no guessed contour replacement supplied here."
+      ],
+      "profile_changes": [
+        "body_mm.front_rail_mm",
+        "screen.cutouts",
+        "body_mm.edge_roll_mm[1]"
+      ],
+      "trace_changes": [
+        "screen_cutouts_mm"
+      ],
+      "predicted_side_flat_front_shelf_mm": 0.32,
+      "preserved_material_roles": {
+        "back": {
+          "rgb": [
+            0.2,
+            0.22745,
+            0.23922
+          ],
+          "rough": 0.42
+        },
+        "rail": {
+          "rgb": [
+            0.33,
+            0.34784,
+            0.35549
+          ],
+          "metal": 1,
+          "rough": 0.36
+        },
+        "bar": {
+          "rgb": [
+            0.33,
+            0.34784,
+            0.35549
+          ],
+          "metal": 0.6,
+          "rough": 0.3
+        },
+        "black": {
+          "rgb": [
+            0.007,
+            0.009,
+            0.012
+          ],
+          "rough": 0.5
+        }
+      },
+      "review_status": "Targeted rail/aperture data corrected; requires parent geometry integration, serial export and rendered QA. Pixel8a silhouette is specifically unresolved.",
+      "trace_outline_measurements": {
+        "body_raw_bounds_xy_mm": [
+          [
+            -35.6578,
+            -76.05
+          ],
+          [
+            35.6578,
+            76.05
+          ]
+        ],
+        "body_fitted_bounds_xy_mm": [
+          [
+            -36.35,
+            -76.05
+          ],
+          [
+            36.35,
+            76.05
+          ]
+        ],
+        "OLED_raw_bounds_xy_mm": [
+          [
+            -32.2718,
+            -71.1658
+          ],
+          [
+            32.4516,
+            72.664
+          ]
+        ],
+        "OLED_centered_fitted_bounds_xy_mm": [
+          [
+            -32.36170212765957,
+            -71.91489361702128
+          ],
+          [
+            32.36170212765957,
+            71.91489361702128
+          ]
+        ],
+        "body_circle_radius_summary_BR_TR_TL_BL_mm": [
+          6.264922144534429,
+          6.124505619264783,
+          6.140197154141943,
+          6.206654287970089
+        ],
+        "OLED_circle_radius_summary_BR_TR_TL_BL_mm": [
+          5.345744615706439,
+          5.345637243087387,
+          5.345637243087387,
+          5.345744615706439
+        ],
+        "note": "Circle summaries are diagnostic; retain full independent trace polygons. No body/screen contour arrays changed by this worker."
+      },
+      "material_review": "Existing satin rail and composite-back finish retained; source photograph confirms aluminum border distinct from black cover glass.",
+      "confidence": {
+        "upstream_identity": "high: all three installed files match live official Git blob IDs",
+        "rim_gasket_inset": "medium: ?2px manual boundary picking; shaded bottom up to?3px, scalar median approximation",
+        "front_roll": "visual-fit estimate only",
+        "selfie_outer_aperture": "high for official raster; physical optics not CAD",
+        "body_OLED_contour": "high relative to official SDK raster; physical acceptance unresolved for8a"
+      },
+      "predicted_side_flat_front_shelf_mm_note": "Analytical prediction rail inset + existing glass top bevel .08 - front roll. Not a rebuilt GLB measurement."
+    },
+    "pixel-9": {
+      "official_art_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_9/",
+      "upstream_tree_id": "ad374e55669266d15446d39c71c1ae3a439a5ff1",
+      "upstream_error": null,
+      "installed_source": "[local reference path omitted]",
+      "source_files": {
+        "back.webp": {
+          "git_blob": "5a2fff3cf2ac19c31dabe4a024e79c8dffe029b9",
+          "upstream_git_blob": "5a2fff3cf2ac19c31dabe4a024e79c8dffe029b9",
+          "matches_upstream": true
+        },
+        "mask.webp": {
+          "git_blob": "02958adbab4f894aa820856bdbdc9844dea06a9d",
+          "upstream_git_blob": "02958adbab4f894aa820856bdbdc9844dea06a9d",
+          "matches_upstream": true
+        },
+        "layout": {
+          "git_blob": "7cb20daf596e4528cd1b51b6b01a1146442c4eda",
+          "upstream_git_blob": "7cb20daf596e4528cd1b51b6b01a1146442c4eda",
+          "matches_upstream": true
+        }
+      },
+      "frame_file": "research/skins/pixel-9/frame.png",
+      "frame_sha256": "ed4054124cdaddde5d44203f146752bd4e0da09e5253a4c2e95430e8c0ef7c57",
+      "body_bounds_xyxy_px": [
+        0.0,
+        0.0,
+        1191.0,
+        2531.0
+      ],
+      "body_outline_points": 602,
+      "oled_outline_points": 434,
+      "native_viewport_xywh_px": [
+        55,
+        58,
+        1080,
+        2424
+      ],
+      "published_body_mm": {
+        "height": 152.8,
+        "width": 72.0,
+        "depth": 8.5,
+        "corner_radius": 12.508137969182142,
+        "edge_roll": 0.55,
+        "front_curve": 0,
+        "edge_roll_mm": [
+          0.75,
+          0.75
+        ]
+      },
+      "height_anchor_mm_per_px": 0.06037139470564994,
+      "art_body_width_discrepancy_pct": -0.13565125773737918,
+      "measured_gasket_insets_LTRB_px": [
+        20,
+        24,
+        20,
+        16
+      ],
+      "measured_gasket_insets_LTRB_mm": [
+        1.2090680100755669,
+        1.4489134729355986,
+        1.2090680100755669,
+        0.9659423152903991
+      ],
+      "current_glb": {
+        "sha256": "10d656dfb1285b5efe181af0f7e9a90ba73c98d6ee022b8c65247315b3355ca8",
+        "enclosure_bounds_xyz_gltf_mm": [
+          [
+            -35.999998450279236,
+            -4.224999807775021,
+            -76.39999687671661
+          ],
+          [
+            35.999998450279236,
+            4.224999807775021,
+            76.39999687671661
+          ]
+        ],
+        "glass_bounds_xyz_gltf_local_mm": [
+          [
+            -35.28749942779541,
+            -0.1250000059371814,
+            -75.68749785423279
+          ],
+          [
+            35.28749942779541,
+            0.1250000059371814,
+            75.68749785423279
+          ]
+        ],
+        "projected_enclosure_trace_hausdorff_mm": 0.24632437870937915,
+        "side_metal_to_glass_outer_edge_mm": 0.7125005722045898,
+        "side_flat_front_shelf_mm": 0.04250183701515198,
+        "selfie_nodes": [
+          "Device screen | selfie aperture 0"
+        ],
+        "antenna_nodes": [],
+        "projected_OLED_trace_hausdorff_mm": 0.05676003357318781
+      },
+      "selfie": [
+        {
+          "bounds_in_viewport_xyxy_px": [
+            500,
+            46,
+            580,
+            126
+          ],
+          "opaque_area_px": 5063,
+          "center_in_viewport_px": [
+            540.0,
+            86.0
+          ],
+          "center_mm": [
+            0.0,
+            67.97819043856184
+          ],
+          "radius_mm": 2.423596052343813
+        }
+      ],
+      "antenna_breaks": [
+        {
+          "edge": "left",
+          "axis_bounds_px": [
+            394,
+            419
+          ],
+          "center_px": 406.5,
+          "width_px": 25,
+          "contrast": -67.55,
+          "id": "left-1",
+          "center_axis_mm": 51.85903,
+          "width_mm": 1.50928,
+          "normalized_uv": [
+            0,
+            0.16060845515606478
+          ],
+          "confidence": "high for raster position; medium for physical width"
+        },
+        {
+          "edge": "left",
+          "axis_bounds_px": [
+            2257,
+            2282
+          ],
+          "center_px": 2269.5,
+          "width_px": 25,
+          "contrast": -76.49,
+          "id": "left-2",
+          "center_axis_mm": -60.61288,
+          "width_mm": 1.50928,
+          "normalized_uv": [
+            0,
+            0.896681153694192
+          ],
+          "confidence": "high for raster position; medium for physical width"
+        },
+        {
+          "edge": "right",
+          "axis_bounds_px": [
+            394,
+            419
+          ],
+          "center_px": 406.5,
+          "width_px": 25,
+          "contrast": -88.81,
+          "id": "right-1",
+          "center_axis_mm": 51.85903,
+          "width_mm": 1.50928,
+          "normalized_uv": [
+            1,
+            0.16060845515606478
+          ],
+          "confidence": "high for raster position; medium for physical width"
+        },
+        {
+          "edge": "right",
+          "axis_bounds_px": [
+            2257,
+            2282
+          ],
+          "center_px": 2269.5,
+          "width_px": 25,
+          "contrast": -77.41,
+          "id": "right-2",
+          "center_axis_mm": -60.61288,
+          "width_mm": 1.50928,
+          "normalized_uv": [
+            1,
+            0.896681153694192
+          ],
+          "confidence": "high for raster position; medium for physical width"
+        },
+        {
+          "edge": "top",
+          "axis_bounds_px": [
+            583,
+            608
+          ],
+          "center_px": 595.5,
+          "width_px": 25,
+          "contrast": -79.6,
+          "id": "top-1",
+          "center_axis_mm": 0.0,
+          "width_mm": 1.51134,
+          "normalized_uv": [
+            0.5,
+            0
+          ],
+          "confidence": "high for raster position; medium for physical width"
+        },
+        {
+          "edge": "bottom",
+          "axis_bounds_px": [
+            724,
+            749
+          ],
+          "center_px": 736.5,
+          "width_px": 25,
+          "contrast": -57.27,
+          "id": "bottom-1",
+          "center_axis_mm": 8.52393,
+          "width_mm": 1.51134,
+          "normalized_uv": [
+            0.6183879093198993,
+            1
+          ],
+          "confidence": "high for raster position; medium for physical width"
+        }
+      ],
+      "correction": {
+        "body_mm.front_rail_mm": 1.21,
+        "body_mm.edge_roll_mm_before": [
+          0.75,
+          0.75
+        ],
+        "body_mm.edge_roll_mm_after": [
+          0.75,
+          0.75
+        ],
+        "roll_basis": "Existing family front roll retained. Measured glass inset alone exposes metal, avoiding an unnecessary cross-section change.",
+        "screen.cutouts": [
+          {
+            "center_mm": [
+              0.0,
+              67.97819043856184
+            ],
+            "radius_mm": 2.423596052343813
+          }
+        ]
+      },
+      "limits": [
+        "Scalar glass inset approximates four independently measured edges; it cannot reproduce top/bottom asymmetry. Use reported edge data if the parent implements separate glass contour.",
+        "Selfie source has distinct outer dark well, inner barrel and colored lens reflection. Radius/center above constrain the whole aperture; lens curvature, depth and refractive index are not measured.",
+        "Existing rear camera geometry, logo, colors, roughness/metalness, body dimensions, native viewport size/aspect and UVs remain untouched."
+      ],
+      "profile_changes": [
+        "body_mm.front_rail_mm",
+        "screen.cutouts"
+      ],
+      "trace_changes": [
+        "screen_cutouts_mm"
+      ],
+      "predicted_side_flat_front_shelf_mm": 0.54,
+      "preserved_material_roles": {
+        "back": {
+          "rgb": [
+            0.2,
+            0.22745,
+            0.23922
+          ],
+          "rough": 0.18
+        },
+        "rail": {
+          "rgb": [
+            0.33,
+            0.34784,
+            0.35549
+          ],
+          "metal": 1,
+          "rough": 0.36
+        },
+        "bar": {
+          "rgb": [
+            0.33,
+            0.34784,
+            0.35549
+          ],
+          "metal": 0.6,
+          "rough": 0.3
+        },
+        "black": {
+          "rgb": [
+            0.007,
+            0.009,
+            0.012
+          ],
+          "rough": 0.5
+        }
+      },
+      "review_status": "Targeted rail/aperture data corrected; independent trace contour is handled by parent pending build change. Requires parent geometry integration, serial export and rendered QA.",
+      "trace_outline_measurements": {
+        "body_raw_bounds_xy_mm": [
+          [
+            -35.9512,
+            -76.3698
+          ],
+          [
+            35.9512,
+            76.4
+          ]
+        ],
+        "body_fitted_bounds_xy_mm": [
+          [
+            -36.0,
+            -76.4
+          ],
+          [
+            36.0,
+            76.4
+          ]
+        ],
+        "OLED_raw_bounds_xy_mm": [
+          [
+            -32.6006,
+            -73.2909
+          ],
+          [
+            32.4798,
+            72.9286
+          ]
+        ],
+        "OLED_centered_fitted_bounds_xy_mm": [
+          [
+            -32.600553141050966,
+            -73.17013038324774
+          ],
+          [
+            32.600553141050966,
+            73.17013038324774
+          ]
+        ],
+        "body_circle_radius_summary_BR_TR_TL_BL_mm": [
+          12.426991048773175,
+          12.33186023549468,
+          12.289026872922438,
+          12.38720150508525
+        ],
+        "OLED_circle_radius_summary_BR_TR_TL_BL_mm": [
+          8.756812518838053,
+          8.950561924555089,
+          8.891094593561583,
+          8.737187871544467
+        ],
+        "note": "Circle summaries are diagnostic; retain full independent trace polygons. No body/screen contour arrays changed by this worker."
+      },
+      "material_review": "Existing satin rail retained, unlike Pro polished rail.",
+      "confidence": {
+        "upstream_identity": "high: all three installed files match live official Git blob IDs",
+        "rim_gasket_inset": "medium: ?2px manual boundary picking; shaded bottom up to?3px, scalar median approximation",
+        "front_roll": "reviewed existing value retained",
+        "selfie_outer_aperture": "high for official raster; physical optics not CAD",
+        "body_OLED_contour": "high relative to official SDK raster; still requires parent export QA"
+      },
+      "predicted_side_flat_front_shelf_mm_note": "Analytical prediction rail inset + existing glass top bevel .08 - front roll. Not a rebuilt GLB measurement."
+    },
+    "pixel-9-pro": {
+      "official_art_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_9_pro/",
+      "upstream_tree_id": "9980cc0d838067d097087c03660ef668906ee3da",
+      "upstream_error": null,
+      "installed_source": "[local reference path omitted]",
+      "source_files": {
+        "back.webp": {
+          "git_blob": "9bc7745fa83339eaef9d98eb98269e625b5ad22c",
+          "upstream_git_blob": "9bc7745fa83339eaef9d98eb98269e625b5ad22c",
+          "matches_upstream": true
+        },
+        "mask.webp": {
+          "git_blob": "e6cb1d8a3cff87673a932c4b5229e405c5fac419",
+          "upstream_git_blob": "e6cb1d8a3cff87673a932c4b5229e405c5fac419",
+          "matches_upstream": true
+        },
+        "layout": {
+          "git_blob": "5a85ae1849c77d1be17936b64c2cb0583d1801b8",
+          "upstream_git_blob": "5a85ae1849c77d1be17936b64c2cb0583d1801b8",
+          "matches_upstream": true
+        }
+      },
+      "frame_file": "research/skins/pixel-9-pro/frame.png",
+      "frame_sha256": "c81473b27da60f38bcddd354cff92cd83cece3e7028f6cb404b3bd2934880338",
+      "body_bounds_xyxy_px": [
+        0.0,
+        0.0,
+        1400.0,
+        2974.0
+      ],
+      "body_outline_points": 708,
+      "oled_outline_points": 512,
+      "native_viewport_xywh_px": [
+        60,
+        61,
+        1280,
+        2856
+      ],
+      "published_body_mm": {
+        "height": 152.8,
+        "width": 72.0,
+        "depth": 8.5,
+        "corner_radius": 12.451825622057836,
+        "edge_roll": 0.55,
+        "front_curve": 0,
+        "edge_roll_mm": [
+          0.75,
+          0.75
+        ]
+      },
+      "height_anchor_mm_per_px": 0.05137861466039005,
+      "art_body_width_discrepancy_pct": -0.0971381603526722,
+      "measured_gasket_insets_LTRB_px": [
+        24,
+        28,
+        23,
+        20
+      ],
+      "measured_gasket_insets_LTRB_mm": [
+        1.2342857142857142,
+        1.4386012104909216,
+        1.1828571428571428,
+        1.0275722932078009
+      ],
+      "current_glb": {
+        "sha256": "f97f3365260b775d0878544cd6361633924d8bc45c1ebc9cce6a4c24b9c2599e",
+        "enclosure_bounds_xyz_gltf_mm": [
+          [
+            -35.999998450279236,
+            -4.224999807775021,
+            -76.39999687671661
+          ],
+          [
+            35.999998450279236,
+            4.224999807775021,
+            76.39999687671661
+          ]
+        ],
+        "glass_bounds_xyz_gltf_local_mm": [
+          [
+            -35.28749942779541,
+            -0.1250000059371814,
+            -75.68749785423279
+          ],
+          [
+            35.28749942779541,
+            0.1250000059371814,
+            75.68749785423279
+          ]
+        ],
+        "projected_enclosure_trace_hausdorff_mm": 0.15287343994452976,
+        "side_metal_to_glass_outer_edge_mm": 0.7125005722045898,
+        "side_flat_front_shelf_mm": 0.04250183701515198,
+        "selfie_nodes": [
+          "Device screen | selfie aperture 0"
+        ],
+        "antenna_nodes": [],
+        "projected_OLED_trace_hausdorff_mm": 0.04872203651022368
+      },
+      "selfie": [
+        {
+          "bounds_in_viewport_xyxy_px": [
+            594,
+            55,
+            686,
+            148
+          ],
+          "opaque_area_px": 6759,
+          "center_in_viewport_px": [
+            640.0,
+            101.5
+          ],
+          "center_mm": [
+            0.0,
+            68.1537323470074
+          ],
+          "radius_mm": 2.383135175269852
+        }
+      ],
+      "antenna_breaks": [
+        {
+          "edge": "left",
+          "axis_bounds_px": [
+            463,
+            493
+          ],
+          "center_px": 478.0,
+          "width_px": 30,
+          "contrast": -53.51,
+          "id": "left-1",
+          "center_axis_mm": 51.84102,
+          "width_mm": 1.54136,
+          "normalized_uv": [
+            0,
+            0.16072629455279086
+          ],
+          "confidence": "high for raster position; medium for physical width"
+        },
+        {
+          "edge": "left",
+          "axis_bounds_px": [
+            2653,
+            2683
+          ],
+          "center_px": 2668.0,
+          "width_px": 30,
+          "contrast": -43.26,
+          "id": "left-2",
+          "center_axis_mm": -60.67814,
+          "width_mm": 1.54136,
+          "normalized_uv": [
+            0,
+            0.8971082716879624
+          ],
+          "confidence": "high for raster position; medium for physical width"
+        },
+        {
+          "edge": "right",
+          "axis_bounds_px": [
+            463,
+            493
+          ],
+          "center_px": 478.0,
+          "width_px": 30,
+          "contrast": -55.56,
+          "id": "right-1",
+          "center_axis_mm": 51.84102,
+          "width_mm": 1.54136,
+          "normalized_uv": [
+            1,
+            0.16072629455279086
+          ],
+          "confidence": "high for raster position; medium for physical width"
+        },
+        {
+          "edge": "right",
+          "axis_bounds_px": [
+            2653,
+            2682
+          ],
+          "center_px": 2667.5,
+          "width_px": 29,
+          "contrast": -57.71,
+          "id": "right-2",
+          "center_axis_mm": -60.65245,
+          "width_mm": 1.48998,
+          "normalized_uv": [
+            1,
+            0.8969401479488904
+          ],
+          "confidence": "high for raster position; medium for physical width"
+        },
+        {
+          "edge": "top",
+          "axis_bounds_px": [
+            686,
+            715
+          ],
+          "center_px": 700.5,
+          "width_px": 29,
+          "contrast": -44.28,
+          "id": "top-1",
+          "center_axis_mm": 0.02571,
+          "width_mm": 1.49143,
+          "normalized_uv": [
+            0.5003571428571428,
+            0
+          ],
+          "confidence": "high for raster position; medium for physical width"
+        },
+        {
+          "edge": "bottom",
+          "axis_bounds_px": [
+            851,
+            881
+          ],
+          "center_px": 866.0,
+          "width_px": 30,
+          "contrast": -34.36,
+          "id": "bottom-1",
+          "center_axis_mm": 8.53714,
+          "width_mm": 1.54286,
+          "normalized_uv": [
+            0.6185714285714285,
+            1
+          ],
+          "confidence": "high for raster position; medium for physical width"
+        }
+      ],
+      "correction": {
+        "body_mm.front_rail_mm": 1.21,
+        "body_mm.edge_roll_mm_before": [
+          0.75,
+          0.75
+        ],
+        "body_mm.edge_roll_mm_after": [
+          0.75,
+          0.75
+        ],
+        "roll_basis": "Existing family front roll retained. Measured glass inset alone exposes metal, avoiding an unnecessary cross-section change.",
+        "screen.cutouts": [
+          {
+            "center_mm": [
+              0.0,
+              68.1537323470074
+            ],
+            "radius_mm": 2.383135175269852
+          }
+        ]
+      },
+      "limits": [
+        "Scalar glass inset approximates four independently measured edges; it cannot reproduce top/bottom asymmetry. Use reported edge data if the parent implements separate glass contour.",
+        "Selfie source has distinct outer dark well, inner barrel and colored lens reflection. Radius/center above constrain the whole aperture; lens curvature, depth and refractive index are not measured.",
+        "Existing rear camera geometry, logo, colors, roughness/metalness, body dimensions, native viewport size/aspect and UVs remain untouched."
+      ],
+      "profile_changes": [
+        "body_mm.front_rail_mm",
+        "screen.cutouts"
+      ],
+      "trace_changes": [
+        "screen_cutouts_mm"
+      ],
+      "predicted_side_flat_front_shelf_mm": 0.54,
+      "preserved_material_roles": {
+        "back": {
+          "rgb": [
+            0.2,
+            0.22745,
+            0.23922
+          ],
+          "rough": 0.42
+        },
+        "rail": {
+          "rgb": [
+            0.33,
+            0.34784,
+            0.35549
+          ],
+          "metal": 1,
+          "rough": 0.18
+        },
+        "bar": {
+          "rgb": [
+            0.33,
+            0.34784,
+            0.35549
+          ],
+          "metal": 0.6,
+          "rough": 0.3
+        },
+        "black": {
+          "rgb": [
+            0.007,
+            0.009,
+            0.012
+          ],
+          "rough": 0.5
+        }
+      },
+      "review_status": "Targeted rail/aperture data corrected; independent trace contour is handled by parent pending build change. Requires parent geometry integration, serial export and rendered QA.",
+      "trace_outline_measurements": {
+        "body_raw_bounds_xy_mm": [
+          [
+            -35.965,
+            -76.3743
+          ],
+          [
+            35.965,
+            76.4
+          ]
+        ],
+        "body_fitted_bounds_xy_mm": [
+          [
+            -36.0,
+            -76.4
+          ],
+          [
+            36.0,
+            76.4
+          ]
+        ],
+        "OLED_raw_bounds_xy_mm": [
+          [
+            -32.908,
+            -73.4457
+          ],
+          [
+            32.8566,
+            73.2916
+          ]
+        ],
+        "OLED_centered_fitted_bounds_xy_mm": [
+          [
+            -32.882313382649635,
+            -73.368661735037
+          ],
+          [
+            32.882313382649635,
+            73.368661735037
+          ]
+        ],
+        "body_circle_radius_summary_BR_TR_TL_BL_mm": [
+          12.383811170440465,
+          12.361958801716721,
+          12.298652549270017,
+          12.326383849066305
+        ],
+        "OLED_circle_radius_summary_BR_TR_TL_BL_mm": [
+          9.141490547098917,
+          9.129073778213154,
+          9.153238803116114,
+          9.162172285715988
+        ],
+        "note": "Circle summaries are diagnostic; retain full independent trace polygons. No body/screen contour arrays changed by this worker."
+      },
+      "material_review": "Existing polished rail and separate matte back retained. Rear camera dual finish is outside this worker correction.",
+      "confidence": {
+        "upstream_identity": "high: all three installed files match live official Git blob IDs",
+        "rim_gasket_inset": "medium: ?2px manual boundary picking; shaded bottom up to?3px, scalar median approximation",
+        "front_roll": "reviewed existing value retained",
+        "selfie_outer_aperture": "high for official raster; physical optics not CAD",
+        "body_OLED_contour": "high relative to official SDK raster; still requires parent export QA"
+      },
+      "predicted_side_flat_front_shelf_mm_note": "Analytical prediction rail inset + existing glass top bevel .08 - front roll. Not a rebuilt GLB measurement."
+    },
+    "pixel-9-pro-xl": {
+      "official_art_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_9_pro_xl/",
+      "upstream_tree_id": "5e77f9c637870c7ff012187a9f078f4a95683cff",
+      "upstream_error": null,
+      "installed_source": "[local reference path omitted]",
+      "source_files": {
+        "back.webp": {
+          "git_blob": "54e897339ce1e3ecfda12e529ba4322a90fd86f4",
+          "upstream_git_blob": "54e897339ce1e3ecfda12e529ba4322a90fd86f4",
+          "matches_upstream": true
+        },
+        "mask.webp": {
+          "git_blob": "1e23beea24e92deffc43c59678acbcffb9e548a6",
+          "upstream_git_blob": "1e23beea24e92deffc43c59678acbcffb9e548a6",
+          "matches_upstream": true
+        },
+        "layout": {
+          "git_blob": "98639efecf7f8fde9f835b275ea9f90549da46c1",
+          "upstream_git_blob": "98639efecf7f8fde9f835b275ea9f90549da46c1",
+          "matches_upstream": true
+        }
+      },
+      "frame_file": "research/skins/pixel-9-pro-xl/frame.png",
+      "frame_sha256": "8f9d1b42822cadf501099517d819fc2ca0642a2f572c528681ae5e1f7b2f9f3a",
+      "body_bounds_xyxy_px": [
+        0.0,
+        0.0,
+        1458.0,
+        3100.0
+      ],
+      "body_outline_points": 690,
+      "oled_outline_points": 506,
+      "native_viewport_xywh_px": [
+        57,
+        56,
+        1344,
+        2992
+      ],
+      "published_body_mm": {
+        "height": 162.8,
+        "width": 76.6,
+        "depth": 8.5,
+        "corner_radius": 12.41248906451613,
+        "edge_roll": 0.55,
+        "front_curve": 0,
+        "edge_roll_mm": [
+          0.75,
+          0.75
+        ]
+      },
+      "height_anchor_mm_per_px": 0.052516129032258066,
+      "art_body_width_discrepancy_pct": -0.04110165922680542,
+      "measured_gasket_insets_LTRB_px": [
+        24,
+        26,
+        22,
+        19
+      ],
+      "measured_gasket_insets_LTRB_mm": [
+        1.2609053497942386,
+        1.3654193548387097,
+        1.155829903978052,
+        0.9978064516129033
+      ],
+      "current_glb": {
+        "sha256": "9bbfa7c858f01f0dc59eee4f65fec82672b7793eedf9cecac1848aa5a4d67760",
+        "enclosure_bounds_xyz_gltf_mm": [
+          [
+            -38.30000013113022,
+            -4.224999807775021,
+            -81.39999955892563
+          ],
+          [
+            38.30000013113022,
+            4.224999807775021,
+            81.39999955892563
+          ]
+        ],
+        "glass_bounds_xyz_gltf_local_mm": [
+          [
+            -37.58750110864639,
+            -0.1250000059371814,
+            -80.6875005364418
+          ],
+          [
+            37.58750110864639,
+            0.1250000059371814,
+            80.6875005364418
+          ]
+        ],
+        "projected_enclosure_trace_hausdorff_mm": 0.18538440829246103,
+        "side_metal_to_glass_outer_edge_mm": 0.7124988913536043,
+        "side_flat_front_shelf_mm": 0.042498111724853516,
+        "selfie_nodes": [
+          "Device screen | selfie aperture 0"
+        ],
+        "antenna_nodes": [],
+        "projected_OLED_trace_hausdorff_mm": 0.04924900285727128
+      },
+      "selfie": [
+        {
+          "bounds_in_viewport_xyxy_px": [
+            626,
+            52,
+            718,
+            144
+          ],
+          "opaque_area_px": 6686,
+          "center_in_viewport_px": [
+            672.0,
+            98.0
+          ],
+          "center_mm": [
+            0.0,
+            73.41754838709677
+          ],
+          "radius_mm": 2.4227073479295367
+        }
+      ],
+      "antenna_breaks": [
+        {
+          "edge": "left",
+          "axis_bounds_px": [
+            454,
+            483
+          ],
+          "center_px": 468.5,
+          "width_px": 29,
+          "contrast": -56.11,
+          "id": "left-1",
+          "center_axis_mm": 56.79619,
+          "width_mm": 1.52297,
+          "normalized_uv": [
+            0,
+            0.1511290322580645
+          ],
+          "confidence": "high for raster position; medium for physical width"
+        },
+        {
+          "edge": "left",
+          "axis_bounds_px": [
+            2787,
+            2815
+          ],
+          "center_px": 2801.0,
+          "width_px": 28,
+          "contrast": -44.89,
+          "id": "left-2",
+          "center_axis_mm": -65.69768,
+          "width_mm": 1.47045,
+          "normalized_uv": [
+            0,
+            0.9035483870967742
+          ],
+          "confidence": "high for raster position; medium for physical width"
+        },
+        {
+          "edge": "right",
+          "axis_bounds_px": [
+            454,
+            483
+          ],
+          "center_px": 468.5,
+          "width_px": 29,
+          "contrast": -63.41,
+          "id": "right-1",
+          "center_axis_mm": 56.79619,
+          "width_mm": 1.52297,
+          "normalized_uv": [
+            1,
+            0.1511290322580645
+          ],
+          "confidence": "high for raster position; medium for physical width"
+        },
+        {
+          "edge": "right",
+          "axis_bounds_px": [
+            2787,
+            2815
+          ],
+          "center_px": 2801.0,
+          "width_px": 28,
+          "contrast": -49.91,
+          "id": "right-2",
+          "center_axis_mm": -65.69768,
+          "width_mm": 1.47045,
+          "normalized_uv": [
+            1,
+            0.9035483870967742
+          ],
+          "confidence": "high for raster position; medium for physical width"
+        },
+        {
+          "edge": "top",
+          "axis_bounds_px": [
+            715,
+            744
+          ],
+          "center_px": 729.5,
+          "width_px": 29,
+          "contrast": -44.27,
+          "id": "top-1",
+          "center_axis_mm": 0.02627,
+          "width_mm": 1.52359,
+          "normalized_uv": [
+            0.5003429355281207,
+            0
+          ],
+          "confidence": "high for raster position; medium for physical width"
+        },
+        {
+          "edge": "bottom",
+          "axis_bounds_px": [
+            877,
+            906
+          ],
+          "center_px": 891.5,
+          "width_px": 29,
+          "contrast": -49.52,
+          "id": "bottom-1",
+          "center_axis_mm": 8.53738,
+          "width_mm": 1.52359,
+          "normalized_uv": [
+            0.6114540466392319,
+            1
+          ],
+          "confidence": "high for raster position; medium for physical width"
+        }
+      ],
+      "correction": {
+        "body_mm.front_rail_mm": 1.21,
+        "body_mm.edge_roll_mm_before": [
+          0.75,
+          0.75
+        ],
+        "body_mm.edge_roll_mm_after": [
+          0.75,
+          0.75
+        ],
+        "roll_basis": "Existing family front roll retained. Measured glass inset alone exposes metal, avoiding an unnecessary cross-section change.",
+        "screen.cutouts": [
+          {
+            "center_mm": [
+              0.0,
+              73.41754838709677
+            ],
+            "radius_mm": 2.4227073479295367
+          }
+        ]
+      },
+      "limits": [
+        "Scalar glass inset approximates four independently measured edges; it cannot reproduce top/bottom asymmetry. Use reported edge data if the parent implements separate glass contour.",
+        "Selfie source has distinct outer dark well, inner barrel and colored lens reflection. Radius/center above constrain the whole aperture; lens curvature, depth and refractive index are not measured.",
+        "Existing rear camera geometry, logo, colors, roughness/metalness, body dimensions, native viewport size/aspect and UVs remain untouched."
+      ],
+      "profile_changes": [
+        "body_mm.front_rail_mm",
+        "screen.cutouts"
+      ],
+      "trace_changes": [
+        "screen_cutouts_mm"
+      ],
+      "predicted_side_flat_front_shelf_mm": 0.54,
+      "preserved_material_roles": {
+        "back": {
+          "rgb": [
+            0.2,
+            0.22745,
+            0.23922
+          ],
+          "rough": 0.42
+        },
+        "rail": {
+          "rgb": [
+            0.33,
+            0.34784,
+            0.35549
+          ],
+          "metal": 1,
+          "rough": 0.18
+        },
+        "bar": {
+          "rgb": [
+            0.33,
+            0.34784,
+            0.35549
+          ],
+          "metal": 0.6,
+          "rough": 0.3
+        },
+        "black": {
+          "rgb": [
+            0.007,
+            0.009,
+            0.012
+          ],
+          "rough": 0.5
+        }
+      },
+      "review_status": "Targeted rail/aperture data corrected; independent trace contour is handled by parent pending build change. Requires parent geometry integration, serial export and rendered QA.",
+      "trace_outline_measurements": {
+        "body_raw_bounds_xy_mm": [
+          [
+            -38.2843,
+            -81.3737
+          ],
+          [
+            38.2843,
+            81.4
+          ]
+        ],
+        "body_fitted_bounds_xy_mm": [
+          [
+            -38.3,
+            -81.4
+          ],
+          [
+            38.3,
+            81.4
+          ]
+        ],
+        "OLED_raw_bounds_xy_mm": [
+          [
+            -35.3171,
+            -78.6429
+          ],
+          [
+            35.2646,
+            78.4854
+          ]
+        ],
+        "OLED_centered_fitted_bounds_xy_mm": [
+          [
+            -35.29083870967742,
+            -78.56412903225807
+          ],
+          [
+            35.29083870967742,
+            78.56412903225807
+          ]
+        ],
+        "body_circle_radius_summary_BR_TR_TL_BL_mm": [
+          12.301824268347715,
+          12.344432887505413,
+          12.296659907402534,
+          12.27609164222126
+        ],
+        "OLED_circle_radius_summary_BR_TR_TL_BL_mm": [
+          9.087124197673088,
+          9.093488580310007,
+          9.1091307509624,
+          9.104679308293198
+        ],
+        "note": "Circle summaries are diagnostic; retain full independent trace polygons. No body/screen contour arrays changed by this worker."
+      },
+      "material_review": "Existing polished Pro-family rail retained; no Pixel9-base material substitution.",
+      "confidence": {
+        "upstream_identity": "high: all three installed files match live official Git blob IDs",
+        "rim_gasket_inset": "medium: ?2px manual boundary picking; shaded bottom up to?3px, scalar median approximation",
+        "front_roll": "reviewed existing value retained",
+        "selfie_outer_aperture": "high for official raster; physical optics not CAD",
+        "body_OLED_contour": "high relative to official SDK raster; still requires parent export QA"
+      },
+      "predicted_side_flat_front_shelf_mm_note": "Analytical prediction rail inset + existing glass top bevel .08 - front roll. Not a rebuilt GLB measurement."
+    },
+    "pixel-9a": {
+      "official_art_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_9a/",
+      "upstream_tree_id": "cd2cb81470458017d0d1c61b6ed61d85879ac703",
+      "upstream_error": null,
+      "installed_source": "[local reference path omitted]",
+      "source_files": {
+        "back.webp": {
+          "git_blob": "d06fbc5884ff0e1ec309f297585f8bc7c9f34be2",
+          "upstream_git_blob": "d06fbc5884ff0e1ec309f297585f8bc7c9f34be2",
+          "matches_upstream": true
+        },
+        "mask.webp": {
+          "git_blob": "a60468b1670bbfd1a0ff426d8d63f690a9705cbb",
+          "upstream_git_blob": "a60468b1670bbfd1a0ff426d8d63f690a9705cbb",
+          "matches_upstream": true
+        },
+        "layout": {
+          "git_blob": "07fa1ed9dcbbe01c9ff0021eb9f013a1fea3b3ec",
+          "upstream_git_blob": "07fa1ed9dcbbe01c9ff0021eb9f013a1fea3b3ec",
+          "matches_upstream": true
+        }
+      },
+      "frame_file": "research/skins/pixel-9a/frame.png",
+      "frame_sha256": "c3dacdf43b86254b0be2a8a70f4de0b4fecdfdc7f69f3b35cc320a9192aea198",
+      "body_bounds_xyxy_px": [
+        0.0,
+        0.0,
+        1217.0,
+        2570.0
+      ],
+      "body_outline_points": 634,
+      "oled_outline_points": 424,
+      "native_viewport_xywh_px": [
+        69,
+        73,
+        1080,
+        2424
+      ],
+      "published_body_mm": {
+        "height": 154.7,
+        "width": 73.3,
+        "depth": 8.9,
+        "corner_radius": 12.84554760700389,
+        "edge_roll": 0.55,
+        "front_curve": 0,
+        "edge_roll_mm": [
+          1.0,
+          0.8
+        ]
+      },
+      "height_anchor_mm_per_px": 0.060194552529182876,
+      "art_body_width_discrepancy_pct": -0.05897622371683342,
+      "measured_gasket_insets_LTRB_px": [
+        21,
+        23,
+        21,
+        20
+      ],
+      "measured_gasket_insets_LTRB_mm": [
+        1.2648315529991783,
+        1.384474708171206,
+        1.2648315529991783,
+        1.2038910505836575
+      ],
+      "current_glb": {
+        "sha256": "10b0a968f34bfecc9f6751c3342b3e1a94b3561848f9558eb932241c0c6c6c8c",
+        "enclosure_bounds_xyz_gltf_mm": [
+          [
+            -36.649998277425766,
+            -4.424999933689833,
+            -77.34999805688858
+          ],
+          [
+            36.649998277425766,
+            4.424999933689833,
+            77.34999805688858
+          ]
+        ],
+        "glass_bounds_xyz_gltf_local_mm": [
+          [
+            -35.89000180363655,
+            -0.1250000059371814,
+            -76.59000158309937
+          ],
+          [
+            35.89000180363655,
+            0.1250000059371814,
+            76.59000158309937
+          ]
+        ],
+        "projected_enclosure_trace_hausdorff_mm": 0.22522986385466195,
+        "side_metal_to_glass_outer_edge_mm": 0.7599981963634477,
+        "side_flat_front_shelf_mm": 0.03999844193458557,
+        "selfie_nodes": [
+          "Device screen | selfie aperture 0"
+        ],
+        "antenna_nodes": [],
+        "projected_OLED_trace_hausdorff_mm": 0.048607675140651306
+      },
+      "selfie": [
+        {
+          "bounds_in_viewport_xyxy_px": [
+            499,
+            46,
+            579,
+            126
+          ],
+          "opaque_area_px": 4886,
+          "center_in_viewport_px": [
+            539.0,
+            86.0
+          ],
+          "center_mm": [
+            -0.060194552529182876,
+            67.77906614785992
+          ],
+          "radius_mm": 2.3738812234101943
+        }
+      ],
+      "antenna_breaks": [
+        {
+          "edge": "left",
+          "axis_bounds_px": [
+            383,
+            408
+          ],
+          "center_px": 395.5,
+          "width_px": 25,
+          "contrast": -41.96,
+          "id": "left-1",
+          "center_axis_mm": 53.54305,
+          "width_mm": 1.50486,
+          "normalized_uv": [
+            0,
+            0.1538910505836576
+          ],
+          "confidence": "high for raster position; medium for physical width"
+        },
+        {
+          "edge": "left",
+          "axis_bounds_px": [
+            2220,
+            2245
+          ],
+          "center_px": 2232.5,
+          "width_px": 25,
+          "contrast": -42.82,
+          "id": "left-2",
+          "center_axis_mm": -57.03434,
+          "width_mm": 1.50486,
+          "normalized_uv": [
+            0,
+            0.8686770428015564
+          ],
+          "confidence": "high for raster position; medium for physical width"
+        },
+        {
+          "edge": "right",
+          "axis_bounds_px": [
+            383,
+            408
+          ],
+          "center_px": 395.5,
+          "width_px": 25,
+          "contrast": -42.34,
+          "id": "right-1",
+          "center_axis_mm": 53.54305,
+          "width_mm": 1.50486,
+          "normalized_uv": [
+            1,
+            0.1538910505836576
+          ],
+          "confidence": "high for raster position; medium for physical width"
+        },
+        {
+          "edge": "right",
+          "axis_bounds_px": [
+            2220,
+            2245
+          ],
+          "center_px": 2232.5,
+          "width_px": 25,
+          "contrast": -43.02,
+          "id": "right-2",
+          "center_axis_mm": -57.03434,
+          "width_mm": 1.50486,
+          "normalized_uv": [
+            1,
+            0.8686770428015564
+          ],
+          "confidence": "high for raster position; medium for physical width"
+        },
+        {
+          "edge": "top",
+          "axis_bounds_px": [
+            516,
+            541
+          ],
+          "center_px": 528.5,
+          "width_px": 25,
+          "contrast": -38.17,
+          "id": "top-1",
+          "center_axis_mm": -4.81841,
+          "width_mm": 1.50575,
+          "normalized_uv": [
+            0.4342645850451931,
+            0
+          ],
+          "confidence": "high for raster position; medium for physical width"
+        },
+        {
+          "edge": "top",
+          "axis_bounds_px": [
+            676,
+            701
+          ],
+          "center_px": 688.5,
+          "width_px": 25,
+          "contrast": -37.61,
+          "id": "top-2",
+          "center_axis_mm": 4.81841,
+          "width_mm": 1.50575,
+          "normalized_uv": [
+            0.565735414954807,
+            0
+          ],
+          "confidence": "high for raster position; medium for physical width"
+        },
+        {
+          "edge": "bottom",
+          "axis_bounds_px": [
+            749,
+            774
+          ],
+          "center_px": 761.5,
+          "width_px": 25,
+          "contrast": -46.17,
+          "id": "bottom-1",
+          "center_axis_mm": 9.2152,
+          "width_mm": 1.50575,
+          "normalized_uv": [
+            0.6257189811010682,
+            1
+          ],
+          "confidence": "high for raster position; medium for physical width"
+        }
+      ],
+      "correction": {
+        "body_mm.front_rail_mm": 1.26,
+        "body_mm.edge_roll_mm_before": [
+          1.0,
+          0.8
+        ],
+        "body_mm.edge_roll_mm_after": [
+          1.0,
+          0.8
+        ],
+        "roll_basis": "Existing family front roll retained. Measured glass inset alone exposes metal, avoiding an unnecessary cross-section change.",
+        "screen.cutouts": [
+          {
+            "center_mm": [
+              -0.060194552529182876,
+              67.77906614785992
+            ],
+            "radius_mm": 2.3738812234101943
+          }
+        ]
+      },
+      "limits": [
+        "Scalar glass inset approximates four independently measured edges; it cannot reproduce top/bottom asymmetry. Use reported edge data if the parent implements separate glass contour.",
+        "Selfie source has distinct outer dark well, inner barrel and colored lens reflection. Radius/center above constrain the whole aperture; lens curvature, depth and refractive index are not measured.",
+        "Existing rear camera geometry, logo, colors, roughness/metalness, body dimensions, native viewport size/aspect and UVs remain untouched."
+      ],
+      "profile_changes": [
+        "body_mm.front_rail_mm",
+        "screen.cutouts"
+      ],
+      "trace_changes": [
+        "screen_cutouts_mm"
+      ],
+      "predicted_side_flat_front_shelf_mm": 0.54,
+      "preserved_material_roles": {
+        "back": {
+          "rgb": [
+            0.2,
+            0.22745,
+            0.23922
+          ],
+          "rough": 0.42
+        },
+        "rail": {
+          "rgb": [
+            0.33,
+            0.34784,
+            0.35549
+          ],
+          "metal": 1,
+          "rough": 0.36
+        },
+        "bar": {
+          "rgb": [
+            0.08235,
+            0.09804,
+            0.11373
+          ],
+          "metal": 0.6,
+          "rough": 0.3
+        },
+        "black": {
+          "rgb": [
+            0.007,
+            0.009,
+            0.012
+          ],
+          "rough": 0.5
+        }
+      },
+      "review_status": "Targeted rail/aperture data corrected; independent trace contour is handled by parent pending build change. Requires parent geometry integration, serial export and rendered QA.",
+      "trace_outline_measurements": {
+        "body_raw_bounds_xy_mm": [
+          [
+            -36.6284,
+            -77.3199
+          ],
+          [
+            36.6284,
+            77.35
+          ]
+        ],
+        "body_fitted_bounds_xy_mm": [
+          [
+            -36.65,
+            -77.35
+          ],
+          [
+            36.65,
+            77.35
+          ]
+        ],
+        "OLED_raw_bounds_xy_mm": [
+          [
+            -32.5051,
+            -72.9257
+          ],
+          [
+            32.5051,
+            72.9859
+          ]
+        ],
+        "OLED_centered_fitted_bounds_xy_mm": [
+          [
+            -32.50505836575876,
+            -72.95579766536964
+          ],
+          [
+            32.50505836575876,
+            72.95579766536964
+          ]
+        ],
+        "body_circle_radius_summary_BR_TR_TL_BL_mm": [
+          12.833301363945445,
+          12.69759733150699,
+          12.57017083983174,
+          12.702335032420457
+        ],
+        "OLED_circle_radius_summary_BR_TR_TL_BL_mm": [
+          8.727384225970198,
+          8.727384225970198,
+          8.727384225970198,
+          8.727384225970198
+        ],
+        "note": "Circle summaries are diagnostic; retain full independent trace polygons. No body/screen contour arrays changed by this worker."
+      },
+      "material_review": "Existing satin rail/composite-back treatment retained. Official four-finish image confirms polymer bands differ visibly from metallic rail.",
+      "confidence": {
+        "upstream_identity": "high: all three installed files match live official Git blob IDs",
+        "rim_gasket_inset": "medium: ?2px manual boundary picking; shaded bottom up to?3px, scalar median approximation",
+        "front_roll": "reviewed existing value retained",
+        "selfie_outer_aperture": "high for official raster; physical optics not CAD",
+        "body_OLED_contour": "high relative to official SDK raster; still requires parent export QA"
+      },
+      "predicted_side_flat_front_shelf_mm_note": "Analytical prediction rail inset + existing glass top bevel .08 - front roll. Not a rebuilt GLB measurement."
+    }
+  },
+  "license": "Downloaded/installed photos and bitmaps remain local. Origin and hashes recorded; no blanket license claim. Existing audit found no per-bitmap license notice; do not infer artwork licensing from adjacent XML.",
+  "inspected_product_images": [
+    {
+      "id": "pixel8",
+      "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/unnamed_or5JZ9H.width-2000.format-webp.webp",
+      "page": "https://blog.google/products-and-platforms/devices/pixel/google-pixel-8-watch-2-buds-pro-design/",
+      "alt": "Various drawing and rendering mockups of the Pixel 8 Pro in black and white colors.",
+      "local": "tmp/pixel89-calibration/pixel8-official.webp",
+      "sha256": "d9064af24fee94d3a5789bb3a3fca92365005cdef8b3ceb26b3633175200f657",
+      "interpretation": "Design mockups/prototypes and material context, not a metric final front. Rear-only images cannot approve front contour."
+    },
+    {
+      "id": "pixel8a",
+      "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Akita_Parent_Onboarding_rk3bl7W.width-2000.format-webp.webp",
+      "page": "https://blog.google/products-and-platforms/devices/pixel/pixel-8a-launch/",
+      "alt": "Image of parent onboarding tool on Pixel 8a.",
+      "local": "tmp/pixel89-calibration/pixel8a-official.webp",
+      "sha256": "75a16423e24944d025b09cf42449429a73f11cefc5345614eccc8ad32a639438",
+      "interpretation": "Hand-held front photograph confirms much rounder8a upper corners than installed SDK art. Perspective and hand occlusion prevent a full metric contour."
+    },
+    {
+      "id": "pixel9",
+      "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/inline_side_by_side_5W2Errq.width-2000.format-webp.webp",
+      "page": "https://blog.google/products-and-platforms/devices/pixel/google-pixel-9-series-design/",
+      "alt": "Two white Pixel phones side by side - one is a Pixel 8 and one is a Pixel 9. The 8, on the left-hand side, has a pill-shaped icon that sits inside a silver band across the back of the phone near the top and houses its camera. The 9 has the same pill-shaped icon that houses the camera but it’s larger and is housed inside a silver bezel, but there isn’t a silver band that stretches across the back of the phone as it does with the 8.",
+      "local": "tmp/pixel89-calibration/pixel9-official.webp",
+      "sha256": "f0d5571b7ebcbc04e4ed02d96fcc0dc72978a40fe383e9c42d84cd46a2edd5f1",
+      "interpretation": "Rear comparison corroborates separate metal perimeter and corner continuity. Not a front-glass metric source."
+    },
+    {
+      "id": "pixel9a",
+      "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/9a_all.width-2000.format-webp.webp",
+      "page": "https://blog.google/products-and-platforms/devices/pixel/google-pixel-9a/",
+      "alt": "Pixel 9a in Obsidian, Porcelain, Peony and Iris",
+      "local": "tmp/pixel89-calibration/pixel9a-official.webp",
+      "sha256": "3b31aeebc349142e75b1cef880598f53794d793afcb8289ea54dd9186d3df417",
+      "interpretation": "Four finishes corroborate satin metal vs polymer antenna bands and rounded shoulder. Perspective prevents exact depth/fillet measurement. Lower seam visible on Iris rail."
+    }
+  ],
+  "exact_files_and_fields_changed": [
+    {
+      "file": "profiles/pixel-8.json",
+      "fields": [
+        "body_mm.front_rail_mm",
+        "screen.cutouts",
+        "body_mm.edge_roll_mm[1]"
+      ]
+    },
+    {
+      "file": "research/skins/pixel-8/trace.json",
+      "fields": [
+        "screen_cutouts_mm"
+      ]
+    },
+    {
+      "file": "profiles/pixel-8-pro.json",
+      "fields": [
+        "body_mm.front_rail_mm",
+        "screen.cutouts",
+        "body_mm.edge_roll_mm[1]"
+      ]
+    },
+    {
+      "file": "profiles/pixel-8a.json",
+      "fields": [
+        "body_mm.front_rail_mm",
+        "screen.cutouts",
+        "body_mm.edge_roll_mm[1]"
+      ]
+    },
+    {
+      "file": "research/skins/pixel-8a/trace.json",
+      "fields": [
+        "screen_cutouts_mm"
+      ]
+    },
+    {
+      "file": "profiles/pixel-9.json",
+      "fields": [
+        "body_mm.front_rail_mm",
+        "screen.cutouts"
+      ]
+    },
+    {
+      "file": "research/skins/pixel-9/trace.json",
+      "fields": [
+        "screen_cutouts_mm"
+      ]
+    },
+    {
+      "file": "profiles/pixel-9-pro.json",
+      "fields": [
+        "body_mm.front_rail_mm",
+        "screen.cutouts"
+      ]
+    },
+    {
+      "file": "research/skins/pixel-9-pro/trace.json",
+      "fields": [
+        "screen_cutouts_mm"
+      ]
+    },
+    {
+      "file": "profiles/pixel-9-pro-xl.json",
+      "fields": [
+        "body_mm.front_rail_mm",
+        "screen.cutouts"
+      ]
+    },
+    {
+      "file": "research/skins/pixel-9-pro-xl/trace.json",
+      "fields": [
+        "screen_cutouts_mm"
+      ]
+    },
+    {
+      "file": "profiles/pixel-9a.json",
+      "fields": [
+        "body_mm.front_rail_mm",
+        "screen.cutouts"
+      ]
+    },
+    {
+      "file": "research/skins/pixel-9a/trace.json",
+      "fields": [
+        "screen_cutouts_mm"
+      ]
+    },
+    {
+      "file": "research/pixel89-front-calibration.json",
+      "fields": [
+        "new report: all seven device measurements, sources, seam coordinates, correction fields, limits and parent generator/helper patch instructions"
+      ]
+    }
+  ],
+  "unchanged_assigned_profiles": [],
+  "unchanged_assigned_trace_files": [
+    "research/skins/pixel-8-pro/trace.json: existing measured selfie cutout already correct"
+  ],
+  "preserved_fields": "All fields outside listed changes, including all trace body/OLED outlines and viewport rectangles. No assigned device left unreviewed. No common generator, geometry, verifier, other profiles, public assets, galleries or GLB/BLEND modified.",
+  "source_generator_patch_instructions": [
+    {
+      "file": "make_pixel_profiles.py",
+      "instruction": "Parent-owned: update only Pixel8/8Pro/8a SIDES front values to .75/.65/.85 while retaining rear values3.0/2.2/3.0. For each assigned model set body.front_rail_mm from devices[id].correction; do not apply a generation-wide recipe. Copy measured screen cutouts from assigned trace after seed screen creation so regeneration does not restore1.5mm placeholders. No other seed geometry/materials change."
+    },
+    {
+      "file": "build.py",
+      "instruction": "Parent-owned existing pending independent trace implementation is required: fit body_outline_mm independently to published dimensions, keep traced OLED outline, preserve height-anchored native screen aspect, load trace.screen_cutouts_mm. Cutout centers are screen-local. Do not derive body corners from OLED+bezel. Leave Pixel8a contour acceptance flagged; its SDK art is not consistent with real product photograph."
+    },
+    {
+      "file": "geometry.py or parent common detail helper",
+      "instruction": "Consume explicit devices[id].antenna_breaks from this report. No uniform six-band template:8/8Pro/8a each8,9/9Pro/9ProXL each6,9a7. Clip patches from actual rolled enclosure, retaining its corner cross-section and front metal shelf; stop at glass gasket and rear body boundary. Each measured band runs transversely across the rail/depth. Treat as surface appearance rather than CAD through-cut. Keep glass continuous and do not add black OLED border."
+    },
+    {
+      "file": "parent common detail helper",
+      "instruction": "Separate nonmetallic antenna polymer from metal rail. Preserve existing family rail shader: satin8/8a/9/9a versus polished8Pro/9Pro/9ProXL, and all reviewed finish RGB values. Google product9a image demonstrates light polymer on light finishes and dark polymer on Obsidian; do not use a single black band for every finish. RGB/roughness are uncalibrated. Keep camera and rear logo roles unchanged in this task."
+    },
+    {
+      "file": "parent common selfie helper",
+      "instruction": "Use measured cutout outer radius and center without alteration. Seat a dark barrel/well and smaller reflective lens inside that aperture, with non-coplanar surfaces and view-dependent reflection. Source raster shows barrel/lens distinctions; internal depth, lens profile and refractive index are visual estimates. Do not place a flat opaque disk above the screen or enlarge the OLED opening to fit arbitrary optics."
+    },
+    {
+      "file": "parent serial export / verify_pixels.py",
+      "instruction": "Run exports only in parent. Recheck actual GLB vs official independent body contour at<=.10mm, native OLED aspect/UV, cutout positions/radii, visible front metal shelf and absence of coplanar seam/lens artifacts. Re-render actual GLB front plus oblique material view. Current GLBs measured in this report are BEFORE this correction; no fresh visual acceptance claimed."
+    }
+  ],
+  "verification": {
+    "focused_checks": [
+      {
+        "id": "pixel-8",
+        "profile_and_trace_json": "valid",
+        "scope_invariance": "passed",
+        "rear_materials_logo_dimensions_resolution": "unchanged",
+        "trace_contours_viewport": "unchanged",
+        "cutout_profile_trace": "equal",
+        "upstream_SDK_blobs": "3/3 match",
+        "GLB": "unchanged",
+        "current_body_contour_error_mm": 0.27013,
+        "current_OLED_contour_error_mm": 0.05013
+      },
+      {
+        "id": "pixel-8-pro",
+        "profile_and_trace_json": "valid",
+        "scope_invariance": "passed",
+        "rear_materials_logo_dimensions_resolution": "unchanged",
+        "trace_contours_viewport": "unchanged",
+        "cutout_profile_trace": "equal",
+        "upstream_SDK_blobs": "3/3 match",
+        "GLB": "unchanged",
+        "current_body_contour_error_mm": 0.25465,
+        "current_OLED_contour_error_mm": 0.06559
+      },
+      {
+        "id": "pixel-8a",
+        "profile_and_trace_json": "valid",
+        "scope_invariance": "passed",
+        "rear_materials_logo_dimensions_resolution": "unchanged",
+        "trace_contours_viewport": "unchanged",
+        "cutout_profile_trace": "equal",
+        "upstream_SDK_blobs": "3/3 match",
+        "GLB": "unchanged",
+        "current_body_contour_error_mm": 1.41989,
+        "current_OLED_contour_error_mm": 0.05012
+      },
+      {
+        "id": "pixel-9",
+        "profile_and_trace_json": "valid",
+        "scope_invariance": "passed",
+        "rear_materials_logo_dimensions_resolution": "unchanged",
+        "trace_contours_viewport": "unchanged",
+        "cutout_profile_trace": "equal",
+        "upstream_SDK_blobs": "3/3 match",
+        "GLB": "unchanged",
+        "current_body_contour_error_mm": 0.24632,
+        "current_OLED_contour_error_mm": 0.05676
+      },
+      {
+        "id": "pixel-9-pro",
+        "profile_and_trace_json": "valid",
+        "scope_invariance": "passed",
+        "rear_materials_logo_dimensions_resolution": "unchanged",
+        "trace_contours_viewport": "unchanged",
+        "cutout_profile_trace": "equal",
+        "upstream_SDK_blobs": "3/3 match",
+        "GLB": "unchanged",
+        "current_body_contour_error_mm": 0.15287,
+        "current_OLED_contour_error_mm": 0.04872
+      },
+      {
+        "id": "pixel-9-pro-xl",
+        "profile_and_trace_json": "valid",
+        "scope_invariance": "passed",
+        "rear_materials_logo_dimensions_resolution": "unchanged",
+        "trace_contours_viewport": "unchanged",
+        "cutout_profile_trace": "equal",
+        "upstream_SDK_blobs": "3/3 match",
+        "GLB": "unchanged",
+        "current_body_contour_error_mm": 0.18538,
+        "current_OLED_contour_error_mm": 0.04925
+      },
+      {
+        "id": "pixel-9a",
+        "profile_and_trace_json": "valid",
+        "scope_invariance": "passed",
+        "rear_materials_logo_dimensions_resolution": "unchanged",
+        "trace_contours_viewport": "unchanged",
+        "cutout_profile_trace": "equal",
+        "upstream_SDK_blobs": "3/3 match",
+        "GLB": "unchanged",
+        "current_body_contour_error_mm": 0.22523,
+        "current_OLED_contour_error_mm": 0.04861
+      }
+    ],
+    "rebuild_and_export": "Not run: explicitly serialized by parent. No Blender started.",
+    "rendered_acceptance": "Not claimed. Existing GLBs were measured before the data patch; measured body contour discrepancies need the parent pending trace fix. Pixel8a physical silhouette remains a separate unresolved source conflict.",
+    "total_measured_antenna_bands": 49,
+    "source_blob_matches": 21,
+    "data_changes_only": "7 profiles, 6 trace.json files, own calibration report. Family-specific measurement scripts/downloaded evidence are local under tmp/pixel89-calibration. No common production helper edit, build, export, gallery or public-repo operation."
+  },
+  "source_availability": {
+    "upstream": "All seven live googlesource directory requests succeeded through urllib and matched installed layout/back/mask blobs. Browser web reader could not open googlesource; terminal HTTP was used.",
+    "product": "Some historical Store8a/9Pro product URLs now redirect to current phone category. Retained original Google Blog photos and direct asset URLs as source evidence; redirects are not treated as old-device evidence."
+  }
+}

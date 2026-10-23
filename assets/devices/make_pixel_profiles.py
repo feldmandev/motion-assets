@@ -265,6 +265,24 @@ def apply_skin_measurements(data, measurements):
             screen['cutouts'][0]['center_mm'][1] = screen['fit_box_mm'][1]/2-4.0
 
 
+def apply_front_measurements(data, measurements):
+    measured = measurements.get(data['id'], {})
+    data['body_mm'].update(measured.get('body_mm', {}))
+    for panel in data.get('panels', []):
+        panel['body_mm'].update(measured.get('panels', {}).get(panel['name'], {}))
+    for role, values in measured.get('materials', {}).items():
+        data.setdefault('materials', {}).setdefault(role, {}).update(values)
+    for spec in data.get('screens', [data['screen']] if 'screen' in data else []):
+        spec.update(copy.deepcopy(measured.get('screens', {}).get(spec.get('node', spec['object']), {})))
+    for name in ('bezel_cameras', 'bezel_windows', 'rail_details'):
+        if name in measured:
+            data[name] = copy.deepcopy(measured[name])
+    for name, roles in measured.get('finishes', {}).items():
+        data['finishes'][name].update(copy.deepcopy(roles))
+    data['accuracy'].update(measured.get('accuracy', {}))
+    data['sources'] = list(dict.fromkeys(data['sources'] + measured.get('sources', [])))
+
+
 def apply_camera_measurements(data, measurements):
     key = data['id'].removesuffix('-folded').removesuffix('-unfolded')
     if key not in measurements or 'asset' in data:
@@ -324,7 +342,9 @@ def pixel11_profiles():
         pro = 'Pro' in name
         source = 'https://store.google.com/gb/product/pixel_11'+('_pro' if pro else '')+'_specs?hl=en-GB'
         data = profile(name, dimensions, resolution, diagonal, colors, [source, launch])
-        data['body_mm']['edge_roll_mm'] = [.65,.65]
+        # The front metal ledge and rear shoulder have distinct cross-sections.
+        data['body_mm']['edge_roll_mm'] = [.65,.30]
+        data['body_mm']['front_rail_mm'] = 1.10
         data['status'] = 'provisional'
         # Rear photo pixel bounds: base body x327..633 y13..664, bar x341..621 y69..173.
         # Pro XL is oblique: height603 px, camera95 px, top gap49 px; horizontal foreshortening.
@@ -543,10 +563,12 @@ def main():
             item['finishes']['Mint'] = mint['finishes']['Mint']
     measurements = json.loads((BASE/'research/skin-measurements.json').read_text())
     camera_measurements = json.loads((BASE/'research/camera-measurements.json').read_text())
+    front_measurements = json.loads((BASE/'research/pixel-front-measurements.json').read_text())
     for item in profiles:
         apply_skin_measurements(item, measurements)
         apply_camera_measurements(item, camera_measurements)
         apply_branding(item)
+        apply_front_measurements(item, front_measurements)
         (BASE/'profiles'/f'{item["id"]}.json').write_text(json.dumps(item, indent=2)+'\n', encoding='utf-8')
     reviewed_path = BASE/'profiles/pixel-10-pro.json'
     reviewed = json.loads(reviewed_path.read_text(encoding='utf-8'))
@@ -558,6 +580,7 @@ def main():
     reviewed['finishes'] = profile('Pixel 10 Pro',[152.8,72,8.6],[1280,2856],6.3,
                                    ['Obsidian','Moonstone','Jade','Porcelain'],[])['finishes']
     apply_branding(reviewed)
+    apply_front_measurements(reviewed, front_measurements)
     reviewed_path.write_text(json.dumps(reviewed, indent=2)+'\n', encoding='utf-8')
     print(f'Wrote {len(profiles)} procedural profiles; kept reviewed Pixel 10 Pro asset profile')
 

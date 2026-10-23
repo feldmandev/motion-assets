@@ -46,8 +46,9 @@
         "front_curve": 0,
         "edge_roll_mm": [
           0.65,
-          0.65
+          0.3
         ],
+        "front_rail_mm": 1.1,
         "corner_radii_mm": [
           12.299999999999997,
           12.299999999999997,
@@ -59,9 +60,9 @@
         {
           "center_mm": [
             0,
-            69.50000000000001
+            68.0
           ],
-          "radius_mm": 1.5
+          "radius_mm": 2.3
         }
       ],
       "uv": "u right, v up; full image maps to [0,1] without cropping",
@@ -77,8 +78,9 @@
     "front_curve": 0,
     "edge_roll_mm": [
       0.65,
-      0.65
+      0.3
     ],
+    "front_rail_mm": 1.1,
     "corner_radii_mm": [
       12.299999999999997,
       12.299999999999997,
@@ -106,7 +108,8 @@
     "bar": "bar",
     "black": "black",
     "flash": "flash",
-    "logo": "logo"
+    "logo": "logo",
+    "antenna": "antenna"
   },
   "finishes": [
     {
@@ -143,6 +146,13 @@
           ],
           "metal": 0.5,
           "rough": 0.28
+        },
+        "antenna": {
+          "rgb": [
+            0.72549,
+            0.72941,
+            0.81176
+          ]
         }
       }
     },
@@ -180,6 +190,13 @@
           ],
           "metal": 0.5,
           "rough": 0.28
+        },
+        "antenna": {
+          "rgb": [
+            0.76863,
+            0.80784,
+            0.61961
+          ]
         }
       }
     },
@@ -217,6 +234,13 @@
           ],
           "metal": 0.5,
           "rough": 0.28
+        },
+        "antenna": {
+          "rgb": [
+            0.85882,
+            0.49412,
+            0.6
+          ]
         }
       }
     },
@@ -254,12 +278,19 @@
           ],
           "metal": 0.5,
           "rough": 0.28
+        },
+        "antenna": {
+          "rgb": [
+            0.2,
+            0.22745,
+            0.23922
+          ]
         }
       }
     }
   ],
-  "glbUrl": "assets/devices/models/pixel-11.a1c48e555314.glb.gz",
-  "sha256": "a1c48e5553140e0ab75905c54f46f95591355eae5d63a4ce496ad11644ccd79d",
+  "glbUrl": "assets/devices/models/pixel-11.c3af24268d2d.glb.gz",
+  "sha256": "c3af24268d2d4dbafb5d4c43d99421eafbb248eab1b51e753ff1bb06ef367120",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/pixel-11.json",
@@ -269,7 +300,10 @@
       "screen_geometry": "Native resolution aspect preserved; concentric display/body corners and thin symmetric bezels estimated from official front artwork, not a measured CAD outline.",
       "camera_geometry": "Camera capsule proportions estimated from official launch images: edge-to-edge black glass, three optics and in-glass flash. Base protrusion estimated as 60% of previous 3.6 mm baseline per Google thickness reduction; Pro protrusion estimated. HiLight represented in its unlit state. Optical internals illustrative, not manufacturer CAD.",
       "finishes": "Approximate sRGB colors and roughness, not calibrated measured materials",
-      "branding": "Google G contour retained from reference artwork. Legacy Pixel4/4a/5/5a lower rear placement (approximately80%height); Pixel6 onward and folds centered on rear/camera leaf. Size, position and finish-tinted material are photo estimates, not manufacturer CAD."
+      "branding": "Google G contour retained from reference artwork. Legacy Pixel4/4a/5/5a lower rear placement (approximately80%height); Pixel6 onward and folds centered on rear/camera leaf. Size, position and finish-tinted material are photo estimates, not manufacturer CAD.",
+      "front_optics": "Outer selfie surround fitted from official product imagery; base diameter4.6mm/Pro4.7mm and top offset8.4mm are provisional photo estimates. Layered optical internals illustrative; OLED fit/UV unchanged.",
+      "front_rail": "Independent metal/glass/OLED layers; 1.10mm nominal metal rim and .30mm front roll are provisional visual fits to official base/Pro art, not SDK or CAD measurements. XL uses a low-confidence Pro-family rim estimate, without an independent XL front contour. Finish-specific satin/polished/matte aluminium retained.",
+      "antenna_details": "Only separately visible breaks fitted from official product video/family artwork; measured positions, widths and uncertainties in pixel11-antenna-reference-completion.json. Missing edges not mirrored; diffuse finish-tinted surface inserts and their depth are illustrative."
     },
     "sources": [
       "https://support.google.com/pixelphone/answer/7158570?hl=en",

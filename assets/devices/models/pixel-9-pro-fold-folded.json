@@ -1,6 +1,6 @@
 {
   "id": "pixel-9-pro-fold-folded",
-  "name": "Pixel 9 Pro Fold · folded",
+  "name": "Pixel 9 Pro Fold Â· folded",
   "state": "folded",
   "screens": [
     {
@@ -18,9 +18,9 @@
         147.30023492560687
       ],
       "center_mm": [
-        0.9722787783868441,
-        -0.30383711824588877,
-        5.285
+        0.9722787141799927,
+        -0.3038370907306671,
+        5.284999847412109
       ],
       "corner_radius_mm": 8.994795161686923,
       "rotation_deg": [
@@ -30,8 +30,8 @@
       ],
       "edge_curve_mm": 0,
       "frame_bounds_mm": [
-        6.707870007830856,
-        4.253719655442453,
+        6.707869943624004,
+        4.253719627927225,
         65.62881754111197,
         147.30023492560687
       ],
@@ -63,10 +63,10 @@
       "cutouts": [
         {
           "center_mm": [
-            0,
-            69.65011746280344
+            0.0,
+            68.51527016444791
           ],
-          "radius_mm": 1.5
+          "radius_mm": 2.4741804754956696
         }
       ],
       "uv": "u right, v up; full image maps to [0,1] without cropping",
@@ -1677,7 +1677,8 @@
     "bar": "bar",
     "black": "black",
     "flash": "flash",
-    "logo": "logo"
+    "logo": "logo",
+    "antenna": "antenna"
   },
   "finishes": [
     {
@@ -1712,6 +1713,13 @@
           ],
           "metal": 0.5,
           "rough": 0.28
+        },
+        "antenna": {
+          "rgb": [
+            0.2,
+            0.22745,
+            0.23922
+          ]
         }
       }
     },
@@ -1747,12 +1755,19 @@
           ],
           "metal": 0.5,
           "rough": 0.28
+        },
+        "antenna": {
+          "rgb": [
+            0.87843,
+            0.87843,
+            0.83529
+          ]
         }
       }
     }
   ],
-  "glbUrl": "assets/devices/models/pixel-9-pro-fold-folded.4d2af2a7d97a.glb.gz",
-  "sha256": "4d2af2a7d97aa6d583eb895bcfe2dc40cb0335188ba6f607739634c8fdb81197",
+  "glbUrl": "assets/devices/models/pixel-9-pro-fold-folded.6a1334a7a90c.glb.gz",
+  "sha256": "6a1334a7a90ca2a7322732239d2c6e576f19abe59ad2bb83d77d3322f65d632f",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/pixel-9-pro-fold-folded.json",
@@ -1763,7 +1778,8 @@
       "camera_geometry": "Provisional photo-informed blockout; shared reviewed optics are illustrative, not device-specific optical prescriptions",
       "finishes": "Approximate sRGB colors and roughness, not calibrated measured materials",
       "hinge": "Static closed companion profile retained for dimensional/reference checks.",
-      "branding": "Google G contour retained from reference artwork. Legacy Pixel4/4a/5/5a lower rear placement (approximately80%height); Pixel6 onward and folds centered on rear/camera leaf. Size, position and finish-tinted material are photo estimates, not manufacturer CAD."
+      "branding": "Google G contour retained from reference artwork. Legacy Pixel4/4a/5/5a lower rear placement (approximately80%height); Pixel6 onward and folds centered on rear/camera leaf. Size, position and finish-tinted material are photo estimates, not manufacturer CAD.",
+      "antenna_details": "Visible cover-leaf breaks measured from this family closed Google artwork; root-space coordinates follow the cover leaf and mirror for its rear-facing open pose. Opposite leaf and unresolved hinge-edge bands are not inferred. Depth and finish-tinted polymer are illustrative."
     },
     "sources": [
       "https://support.google.com/pixelphone/answer/7158570?hl=en",

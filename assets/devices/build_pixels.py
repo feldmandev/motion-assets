@@ -51,11 +51,13 @@ def review(output, finishes=False, cover_only=False, branding_only=False):
     front_lamp.rotation_euler = (-front_lamp.location).to_track_quat('-Z','Y').to_euler()
     camera = scene.camera
     camera.data.type = 'ORTHO'
+    camera.data.sensor_fit = 'AUTO'
     profile = json.loads((BASE/'profiles'/f'{output.name}.json').read_text())
     landscape = profile.get('form_factor') == 'tablet'
     body = json.loads((output/'device.json').read_text())['body_mm']
     camera.data.ortho_scale = max(body['height']*1.13, body['width']*560/480*1.13)*.001
-    views = [('rear', (0,0,-.5)), ('rear-angle', (.19,.07,-.4)), ('front', (0,0,.5))]
+    views = [('rear', (0,0,-.5)), ('rear-angle', (.19,.07,-.4)), ('front', (0,0,.5)),
+             ('front-angle', (.22,0,.5))]
     metadata = json.loads((output/'device.json').read_text())
     cover = next((s for s in metadata['screens'] if s['node']=='Cover screen'),None)
     cover_panel = None
@@ -140,7 +142,7 @@ def review(output, finishes=False, cover_only=False, branding_only=False):
                 obj.hide_render=False
     if finishes:
         profile = json.loads((BASE/'profiles'/f'{output.name}.json').read_text())
-        slots = profile.get('material_objects', {role:role for role in profile.get('materials', {})})
+        slots = metadata.get('material_slots') or profile.get('material_objects', {role:role for role in profile.get('materials', {})})
         location = Vector((.07,.19,-.4) if landscape else (.19,.07,-.4))
         camera.location = location
         camera.data.ortho_scale = max(body['height']*1.13,body['width']*560/480*1.13)*.001
@@ -153,7 +155,7 @@ def review(output, finishes=False, cover_only=False, branding_only=False):
             scene.render.resolution_x, scene.render.resolution_y = (420,300)
             camera.data.ortho_scale = max(body['height'],body['width']*420/300)*1.13*.001
         scene.cycles.samples = 8
-        for index, (finish, settings) in enumerate(profile.get('finishes', {}).items()):
+        for index, (finish, settings) in enumerate((metadata.get('finishes') or profile.get('finishes', {})).items()):
             for role, values in settings.items():
                 material_name = slots.get(role)
                 # A finish can describe a role that this particular model does not instantiate

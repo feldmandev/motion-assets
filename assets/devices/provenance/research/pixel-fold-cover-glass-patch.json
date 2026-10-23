@@ -1,0 +1,1380 @@
+{
+  "date": "2026-10-23",
+  "status": "Independent cover-glass data and two optional geometry branches implemented; no Blender/export/final render acceptance performed.",
+  "scope": [
+    "pixel-fold-folded",
+    "pixel-fold-unfolded",
+    "pixel-9-pro-fold-folded",
+    "pixel-9-pro-fold-unfolded",
+    "pixel-10-pro-fold-folded",
+    "pixel-10-pro-fold-unfolded",
+    "pixel-11-pro-fold-folded",
+    "pixel-11-pro-fold-unfolded"
+  ],
+  "coordinate_convention": {
+    "profiles": "screens[cover].glass_outline_mm contains offsets from that cover screen center_mm, in parent panel X/Y axes (millimetres, +Y up). geometry.slab translates by screen center; it does not rotate these points. Unfolded profiles store X mirrored once, Y unchanged.",
+    "closed_trace": "glass_outline_mm uses the same screen-center-relative +X-right/+Y-up convention as the folded profile. Add trace.screen_rect_mm[:2] to obtain source body-center coordinates. No body normalization, OLED expansion or OLED fitting is applied to the glass.",
+    "pixel_sources": "Original uncropped SDK back.webp pixels, origin top-left. Polygon coordinates refer to selected pixel centers; antialias/interface width limits precision."
+  },
+  "method": {
+    "source_resolution": "Native SDK back.webp, not the small frame.webp thumbnail and not stale front.png.",
+    "candidate": "Original Fold: opaque neutral-color pixels (RGB max-min <=4). 9 Pro Fold: opaque RGB max <=42, to include its dark-gray glass but exclude gray metal. 10 Pro Fold: opaque neutral-color pixels (RGB max-min <=5), preserving glass highlights. Add alpha-clear OLED viewport, clip to earlier independent straight metal/glass stations, 7x7 closing, fill holes, keep largest contour, 3x3 opening, 1.2 px polygon simplification.",
+    "manual_boundary_corrections": "Remove antenna-band/hinge contamination on straight segments. Inspect native top/bottom crops. Digitize shallow speaker recess from its visible interface. Original Fold straight top revised from earlier y20 joint/interface estimate to y25 reflected-glass edge; free side x1236 and bottom2208 remain inside earlier x1240/y2212 interface estimates. 9 Fold bottom seam spur removed and straight base set y2527. These are source-boundary estimates, not pixel-perfect manufactured contours.",
+    "not_used": "No OLED dilation or body-outline anisotropic inset for official 1/9/10 cover-glass contours. No classification of the whole dark rail as glass.",
+    "visual_evidence_local": "tmp/pixel-fold-cover-glass/*-final-top.png and *-final-bottom.png; local research overlays only, not publication assets."
+  },
+  "families": {
+    "pixel-fold": {
+      "source": {
+        "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_fold/closed/back.webp",
+        "source_git_blob": "dcfedff2731e71f9475613c4902e8d9ec8324f1c",
+        "matches_previously_verified_upstream_blob": true,
+        "local_sdk_source": "[local reference path omitted]",
+        "source_sha256": "51844772ad9dbd7af836f5bf9f29c72a82fe78ffcdd4dd286b3134f98ba1e884",
+        "coordinate_space": "glass_outline_mm uses the same screen-center-relative +X-right/+Y-up convention as the folded profile. Add trace.screen_rect_mm[:2] to obtain source body-center coordinates. No body normalization, OLED expansion or OLED fitting is applied to the glass.",
+        "source_outline_px": [
+          [
+            81,
+            25
+          ],
+          [
+            81,
+            2208
+          ],
+          [
+            1110,
+            2208
+          ],
+          [
+            1130,
+            2206
+          ],
+          [
+            1149,
+            2201
+          ],
+          [
+            1172,
+            2192
+          ],
+          [
+            1195,
+            2177
+          ],
+          [
+            1206,
+            2166
+          ],
+          [
+            1216,
+            2152
+          ],
+          [
+            1228,
+            2125
+          ],
+          [
+            1236,
+            2082
+          ],
+          [
+            1236,
+            152
+          ],
+          [
+            1230,
+            111
+          ],
+          [
+            1216,
+            75
+          ],
+          [
+            1211,
+            67
+          ],
+          [
+            1192,
+            48
+          ],
+          [
+            1182,
+            41
+          ],
+          [
+            1160,
+            30
+          ],
+          [
+            1145,
+            25
+          ],
+          [
+            1100,
+            25
+          ],
+          [
+            769,
+            25
+          ],
+          [
+            763,
+            30
+          ],
+          [
+            553,
+            30
+          ],
+          [
+            547,
+            25
+          ]
+        ],
+        "source_bounds_xyxy_px": [
+          81.0,
+          25.0,
+          1236.0,
+          2208.0
+        ],
+        "confidence": "Medium: reviewed artwork material boundary, not manufacturing CAD.",
+        "uncertainty_px": 5,
+        "simplification_px": 1.2,
+        "speaker_recess": "Manually digitized visible top interface; full notch depth subject to 320-point production resampling and shallow slab edge fillet.",
+        "straight_station_delta_LTRB_px": [
+          1.0,
+          5.0,
+          -4.0,
+          -4.0
+        ]
+      },
+      "previous_straight_boundary": {
+        "glass_straight_bounds_xyxy_px": [
+          80,
+          20,
+          1240,
+          2212
+        ],
+        "rail_LTRB_px": [
+          80,
+          20,
+          21,
+          21
+        ],
+        "notes": "The 80 px left extent includes the exposed hinge; the glass highlight continues inside the thin dark interface. Do not mistake the highlight at y25..40 for more exposed aluminum.",
+        "rail_LTRB_mm": [
+          5.0049,
+          1.2512,
+          1.3138,
+          1.3138
+        ],
+        "uncertainty_px": 3,
+        "production_action": "Do not replace glass_border_mm with a thicker uniform black bezel. Common helper needs a separate asymmetric glass outline constrained by these rail/glass stations, source corner contours and the speaker notch. Existing scalar border retained pending helper."
+      },
+      "antenna_seams_unchanged": {
+        "measured": [
+          {
+            "edge": "top",
+            "interval_px": [
+              257,
+              282
+            ],
+            "center_axis_mm": -22.58473,
+            "width_mm": 1.56404,
+            "uncertainty_px": 3,
+            "confidence": "medium: visible polymer-colored break, not depth measurement"
+          },
+          {
+            "edge": "top",
+            "interval_px": [
+              1010,
+              1036
+            ],
+            "center_axis_mm": 24.55542,
+            "width_mm": 1.6266,
+            "uncertainty_px": 3,
+            "confidence": "medium: visible polymer-colored break, not depth measurement"
+          },
+          {
+            "edge": "bottom",
+            "interval_px": [
+              256,
+              279
+            ],
+            "center_axis_mm": -22.70985,
+            "width_mm": 1.43892,
+            "uncertainty_px": 3,
+            "confidence": "medium: visible polymer-colored break, not depth measurement"
+          },
+          {
+            "edge": "bottom",
+            "interval_px": [
+              934,
+              962
+            ],
+            "center_axis_mm": 19.8633,
+            "width_mm": 1.75172,
+            "uncertainty_px": 3,
+            "confidence": "medium: visible polymer-colored break, not depth measurement"
+          },
+          {
+            "edge": "right",
+            "interval_px": [
+              524,
+              544
+            ],
+            "center_axis_mm": 36.44212,
+            "width_mm": 1.25123,
+            "uncertainty_px": 3,
+            "confidence": "medium: visible polymer-colored break, not depth measurement"
+          },
+          {
+            "edge": "right",
+            "interval_px": [
+              1575,
+              1598
+            ],
+            "center_axis_mm": -29.40394,
+            "width_mm": 1.43892,
+            "uncertainty_px": 3,
+            "confidence": "medium: visible polymer-colored break, not depth measurement"
+          }
+        ],
+        "unresolved_edges": [
+          "left"
+        ],
+        "method": "Visual narrow-band change across metal, with RGB median derivative checks in top/bottom or free-side rail strips. Excludes earpiece, hinge notch, panel gaps and buttons. Open 9/10 seams too faint for a reliable independent coordinate extraction.",
+        "production_action": "Use measured cover front bands on Cover half in folded and unfolded profiles, transform with leaf, and clip to actual metal surface. No guessed mirror bands on other leaf. Leave unresolved edges unpopulated.",
+        "cover_reference": "pixel-fold-folded"
+      },
+      "geometry_method": "Independent source glass contour; no OLED/body derived offset.",
+      "selected_glass_straight_bounds_xyxy_px": [
+        81.0,
+        25.0,
+        1236.0,
+        2208.0
+      ],
+      "source_body_to_glass_LTRB_px": [
+        81.0,
+        25.0,
+        25.0,
+        25.0
+      ],
+      "source_body_to_glass_LTRB_mm": [
+        5.067488,
+        1.564039,
+        1.564039,
+        1.564039
+      ],
+      "station_limits": "Straight artwork stations in height-anchored source-body space; independently normalized production body contour can change the rendered landing. Corner widths vary. Reflected glass band included; speaker recess excluded."
+    },
+    "pixel-9-pro-fold": {
+      "source": {
+        "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_9_pro_fold/closed/back.webp",
+        "source_git_blob": "15159620fb49553ef8fdac5fe9f98dead3d58eed",
+        "matches_previously_verified_upstream_blob": true,
+        "local_sdk_source": "[local reference path omitted]",
+        "source_sha256": "1f2c18b68e591ba8d98a019e02919f2b13a9b8e43ae756cd7f9ad865544b13d5",
+        "coordinate_space": "glass_outline_mm uses the same screen-center-relative +X-right/+Y-up convention as the folded profile. Add trace.screen_rect_mm[:2] to obtain source body-center coordinates. No body normalization, OLED expansion or OLED fitting is applied to the glass.",
+        "source_outline_px": [
+          [
+            167,
+            36
+          ],
+          [
+            130,
+            55
+          ],
+          [
+            112,
+            69
+          ],
+          [
+            92,
+            90
+          ],
+          [
+            75,
+            116
+          ],
+          [
+            65,
+            138
+          ],
+          [
+            58,
+            160
+          ],
+          [
+            53,
+            188
+          ],
+          [
+            53,
+            2365
+          ],
+          [
+            57,
+            2389
+          ],
+          [
+            63,
+            2410
+          ],
+          [
+            82,
+            2449
+          ],
+          [
+            92,
+            2463
+          ],
+          [
+            110,
+            2482
+          ],
+          [
+            140,
+            2504
+          ],
+          [
+            158,
+            2513
+          ],
+          [
+            182,
+            2521
+          ],
+          [
+            212,
+            2527
+          ],
+          [
+            1032,
+            2527
+          ],
+          [
+            1064,
+            2525
+          ],
+          [
+            1095,
+            2516
+          ],
+          [
+            1119,
+            2505
+          ],
+          [
+            1144,
+            2488
+          ],
+          [
+            1165,
+            2468
+          ],
+          [
+            1182,
+            2445
+          ],
+          [
+            1194,
+            2422
+          ],
+          [
+            1203,
+            2396
+          ],
+          [
+            1209,
+            2364
+          ],
+          [
+            1211,
+            2338
+          ],
+          [
+            1211,
+            215
+          ],
+          [
+            1207,
+            176
+          ],
+          [
+            1196,
+            136
+          ],
+          [
+            1186,
+            115
+          ],
+          [
+            1165,
+            85
+          ],
+          [
+            1143,
+            64
+          ],
+          [
+            1106,
+            41
+          ],
+          [
+            1078,
+            31
+          ],
+          [
+            1048,
+            25
+          ],
+          [
+            903,
+            25
+          ],
+          [
+            897,
+            28
+          ],
+          [
+            890,
+            34
+          ],
+          [
+            371,
+            34
+          ],
+          [
+            364,
+            29
+          ],
+          [
+            353,
+            25
+          ],
+          [
+            212,
+            25
+          ],
+          [
+            182,
+            31
+          ]
+        ],
+        "source_bounds_xyxy_px": [
+          53.0,
+          25.0,
+          1211.0,
+          2527.0
+        ],
+        "confidence": "Medium: reviewed artwork material boundary, not manufacturing CAD.",
+        "uncertainty_px": 3,
+        "simplification_px": 1.2,
+        "speaker_recess": "Manually digitized visible top interface; full notch depth subject to 320-point production resampling and shallow slab edge fillet.",
+        "straight_station_delta_LTRB_px": [
+          0.0,
+          0.0,
+          -1.0,
+          -2.0
+        ]
+      },
+      "previous_straight_boundary": {
+        "glass_straight_bounds_xyxy_px": [
+          53,
+          25,
+          1212,
+          2529
+        ],
+        "rail_LTRB_px": [
+          53,
+          25,
+          24,
+          25
+        ],
+        "notes": "Dark graphite rail is distinct from black cover glass. Larger hinge-side land and asymmetric top/bottom corner contours; a symmetric OLED expansion cannot reproduce this boundary.",
+        "rail_LTRB_mm": [
+          3.2207,
+          1.5192,
+          1.4584,
+          1.5192
+        ],
+        "uncertainty_px": 3,
+        "production_action": "Do not replace glass_border_mm with a thicker uniform black bezel. Common helper needs a separate asymmetric glass outline constrained by these rail/glass stations, source corner contours and the speaker notch. Existing scalar border retained pending helper."
+      },
+      "antenna_seams_unchanged": {
+        "measured": [
+          {
+            "edge": "top",
+            "interval_px": [
+              184,
+              209
+            ],
+            "center_axis_mm": -25.61347,
+            "width_mm": 1.51919,
+            "uncertainty_px": 3,
+            "confidence": "medium: visible polymer-colored break, not depth measurement"
+          },
+          {
+            "edge": "top",
+            "interval_px": [
+              909,
+              933
+            ],
+            "center_axis_mm": 18.41253,
+            "width_mm": 1.45842,
+            "uncertainty_px": 3,
+            "confidence": "medium: visible polymer-colored break, not depth measurement"
+          },
+          {
+            "edge": "bottom",
+            "interval_px": [
+              184,
+              208
+            ],
+            "center_axis_mm": -25.64385,
+            "width_mm": 1.45842,
+            "uncertainty_px": 3,
+            "confidence": "medium: visible polymer-colored break, not depth measurement"
+          },
+          {
+            "edge": "bottom",
+            "interval_px": [
+              909,
+              933
+            ],
+            "center_axis_mm": 18.41253,
+            "width_mm": 1.45842,
+            "uncertainty_px": 3,
+            "confidence": "medium: visible polymer-colored break, not depth measurement"
+          },
+          {
+            "edge": "right",
+            "interval_px": [
+              660,
+              682
+            ],
+            "center_axis_mm": 36.82506,
+            "width_mm": 1.33688,
+            "uncertainty_px": 3,
+            "confidence": "medium: visible polymer-colored break, not depth measurement"
+          },
+          {
+            "edge": "right",
+            "interval_px": [
+              1873,
+              1895
+            ],
+            "center_axis_mm": -36.88583,
+            "width_mm": 1.33688,
+            "uncertainty_px": 3,
+            "confidence": "medium: visible polymer-colored break, not depth measurement"
+          }
+        ],
+        "unresolved_edges": [
+          "left"
+        ],
+        "method": "Visual narrow-band change across metal, with RGB median derivative checks in top/bottom or free-side rail strips. Excludes earpiece, hinge notch, panel gaps and buttons. Open 9/10 seams too faint for a reliable independent coordinate extraction.",
+        "production_action": "Use measured cover front bands on Cover half in folded and unfolded profiles, transform with leaf, and clip to actual metal surface. No guessed mirror bands on other leaf. Leave unresolved edges unpopulated.",
+        "cover_reference": "pixel-9-pro-fold-folded"
+      },
+      "geometry_method": "Independent source glass contour; no OLED/body derived offset.",
+      "selected_glass_straight_bounds_xyxy_px": [
+        53.0,
+        25.0,
+        1211.0,
+        2527.0
+      ],
+      "source_body_to_glass_LTRB_px": [
+        53.0,
+        25.0,
+        25.0,
+        27.0
+      ],
+      "source_body_to_glass_LTRB_mm": [
+        3.220673,
+        1.519186,
+        1.519186,
+        1.64072
+      ],
+      "station_limits": "Straight artwork stations in height-anchored source-body space; independently normalized production body contour can change the rendered landing. Corner widths vary. Reflected glass band included; speaker recess excluded."
+    },
+    "pixel-10-pro-fold": {
+      "source": {
+        "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_10_pro_fold/closed/back.webp",
+        "source_git_blob": "3e3235ecef16cfc9984c7edbc500f20a239d878b",
+        "matches_previously_verified_upstream_blob": true,
+        "local_sdk_source": "[local reference path omitted]",
+        "source_sha256": "f935d250955e45094202661abc381158f7f54ef7e70f6d6224f03f87d715ac5c",
+        "coordinate_space": "glass_outline_mm uses the same screen-center-relative +X-right/+Y-up convention as the folded profile. Add trace.screen_rect_mm[:2] to obtain source body-center coordinates. No body normalization, OLED expansion or OLED fitting is applied to the glass.",
+        "source_outline_px": [
+          [
+            155,
+            37
+          ],
+          [
+            128,
+            50
+          ],
+          [
+            105,
+            66
+          ],
+          [
+            90,
+            80
+          ],
+          [
+            77,
+            96
+          ],
+          [
+            60,
+            126
+          ],
+          [
+            52,
+            147
+          ],
+          [
+            47,
+            166
+          ],
+          [
+            43,
+            199
+          ],
+          [
+            43,
+            2296
+          ],
+          [
+            48,
+            2333
+          ],
+          [
+            56,
+            2359
+          ],
+          [
+            67,
+            2382
+          ],
+          [
+            79,
+            2401
+          ],
+          [
+            88,
+            2412
+          ],
+          [
+            111,
+            2433
+          ],
+          [
+            131,
+            2446
+          ],
+          [
+            152,
+            2456
+          ],
+          [
+            185,
+            2466
+          ],
+          [
+            209,
+            2470
+          ],
+          [
+            1020,
+            2471
+          ],
+          [
+            1056,
+            2467
+          ],
+          [
+            1089,
+            2458
+          ],
+          [
+            1117,
+            2445
+          ],
+          [
+            1138,
+            2431
+          ],
+          [
+            1162,
+            2408
+          ],
+          [
+            1175,
+            2390
+          ],
+          [
+            1187,
+            2368
+          ],
+          [
+            1198,
+            2336
+          ],
+          [
+            1203,
+            2308
+          ],
+          [
+            1205,
+            2279
+          ],
+          [
+            1205,
+            216
+          ],
+          [
+            1200,
+            168
+          ],
+          [
+            1191,
+            136
+          ],
+          [
+            1182,
+            116
+          ],
+          [
+            1166,
+            91
+          ],
+          [
+            1138,
+            63
+          ],
+          [
+            1117,
+            49
+          ],
+          [
+            1099,
+            40
+          ],
+          [
+            1073,
+            31
+          ],
+          [
+            1049,
+            26
+          ],
+          [
+            802,
+            26
+          ],
+          [
+            795,
+            30
+          ],
+          [
+            789,
+            32
+          ],
+          [
+            457,
+            32
+          ],
+          [
+            450,
+            28
+          ],
+          [
+            445,
+            26
+          ],
+          [
+            195,
+            26
+          ]
+        ],
+        "source_bounds_xyxy_px": [
+          43.0,
+          26.0,
+          1205.0,
+          2471.0
+        ],
+        "confidence": "Medium: reviewed artwork material boundary, not manufacturing CAD.",
+        "uncertainty_px": 3,
+        "simplification_px": 1.2,
+        "speaker_recess": "Manually digitized visible top interface; full notch depth subject to 320-point production resampling and shallow slab edge fillet.",
+        "straight_station_delta_LTRB_px": [
+          1.0,
+          0.0,
+          0.0,
+          -1.0
+        ]
+      },
+      "previous_straight_boundary": {
+        "glass_straight_bounds_xyxy_px": [
+          42,
+          26,
+          1205,
+          2472
+        ],
+        "rail_LTRB_px": [
+          41,
+          26,
+          24,
+          23
+        ],
+        "notes": "Left bound includes a separately visible hinge strip. Pale metal land follows a different contour than the OLED; glass/speaker interface has a local top-center notch.",
+        "rail_LTRB_mm": [
+          2.5504,
+          1.6173,
+          1.4929,
+          1.4307
+        ],
+        "uncertainty_px": 3,
+        "production_action": "Do not replace glass_border_mm with a thicker uniform black bezel. Common helper needs a separate asymmetric glass outline constrained by these rail/glass stations, source corner contours and the speaker notch. Existing scalar border retained pending helper."
+      },
+      "antenna_seams_unchanged": {
+        "measured": [
+          {
+            "edge": "top",
+            "interval_px": [
+              200,
+              224
+            ],
+            "center_axis_mm": -25.06838,
+            "width_mm": 1.49291,
+            "uncertainty_px": 3,
+            "confidence": "medium: visible polymer-colored break, not depth measurement"
+          },
+          {
+            "edge": "top",
+            "interval_px": [
+              911,
+              935
+            ],
+            "center_axis_mm": 19.15896,
+            "width_mm": 1.49291,
+            "uncertainty_px": 3,
+            "confidence": "medium: visible polymer-colored break, not depth measurement"
+          },
+          {
+            "edge": "bottom",
+            "interval_px": [
+              200,
+              224
+            ],
+            "center_axis_mm": -25.06838,
+            "width_mm": 1.49291,
+            "uncertainty_px": 3,
+            "confidence": "medium: visible polymer-colored break, not depth measurement"
+          },
+          {
+            "edge": "bottom",
+            "interval_px": [
+              911,
+              935
+            ],
+            "center_axis_mm": 19.15896,
+            "width_mm": 1.49291,
+            "uncertainty_px": 3,
+            "confidence": "medium: visible polymer-colored break, not depth measurement"
+          },
+          {
+            "edge": "right",
+            "interval_px": [
+              645,
+              666
+            ],
+            "center_axis_mm": 36.82501,
+            "width_mm": 1.30629,
+            "uncertainty_px": 3,
+            "confidence": "medium: visible polymer-colored break, not depth measurement"
+          },
+          {
+            "edge": "right",
+            "interval_px": [
+              1830,
+              1851
+            ],
+            "center_axis_mm": -36.88721,
+            "width_mm": 1.30629,
+            "uncertainty_px": 3,
+            "confidence": "medium: visible polymer-colored break, not depth measurement"
+          }
+        ],
+        "unresolved_edges": [
+          "left"
+        ],
+        "method": "Visual narrow-band change across metal, with RGB median derivative checks in top/bottom or free-side rail strips. Excludes earpiece, hinge notch, panel gaps and buttons. Open 9/10 seams too faint for a reliable independent coordinate extraction.",
+        "production_action": "Use measured cover front bands on Cover half in folded and unfolded profiles, transform with leaf, and clip to actual metal surface. No guessed mirror bands on other leaf. Leave unresolved edges unpopulated.",
+        "cover_reference": "pixel-10-pro-fold-folded"
+      },
+      "geometry_method": "Independent source glass contour; no OLED/body derived offset.",
+      "selected_glass_straight_bounds_xyxy_px": [
+        43.0,
+        26.0,
+        1205.0,
+        2471.0
+      ],
+      "source_body_to_glass_LTRB_px": [
+        42.0,
+        26.0,
+        24.0,
+        24.0
+      ],
+      "source_body_to_glass_LTRB_mm": [
+        2.612585,
+        1.617315,
+        1.492906,
+        1.492906
+      ],
+      "station_limits": "Straight artwork stations in height-anchored source-body space; independently normalized production body contour can change the rendered landing. Corner widths vary. Reflected glass band included; speaker recess excluded."
+    },
+    "pixel-11-pro-fold": {
+      "source": {
+        "derived_from": "pixel-10-pro-fold-folded",
+        "provisional_outward_offset_mm": 0.4,
+        "simplification_mm": 0.015,
+        "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_10_pro_fold/closed/back.webp",
+        "coordinate_space": "glass_outline_mm uses the same screen-center-relative +X-right/+Y-up convention as the folded profile. Add trace.screen_rect_mm[:2] to obtain source body-center coordinates. No body normalization, OLED expansion or OLED fitting is applied to the glass.",
+        "body_x_scale": 0.9949335101917458,
+        "body_y_scale": 1.0,
+        "confidence": "Low/provisional: derived Pixel 10 glass, not official Pixel 11 art.",
+        "limits": "Existing derived body-coordinate transform plus provisional 0.4 mm outward glass offset. An unadjusted Pixel 10 contour intersected 1.4498 mm2 of the retained larger Pixel 11 OLED at corners; the explicit offset keeps the existing OLED covered. This is a sibling-contour estimate, not a measured Pixel 11 rail width. No independent Pixel 11 speaker/antenna/corner evidence."
+      },
+      "antenna_seams_unchanged": {
+        "measured": [],
+        "reason": "No official 11 Fold front reference. Do not silently copy 10 Fold antenna layout; existing derived art may show sibling seams."
+      },
+      "geometry_method": "Explicit sibling-derived contour. No official-11 acceptance."
+    }
+  },
+  "devices": {
+    "pixel-fold-folded": {
+      "reviewed": true,
+      "profile_fields_added": [
+        "/screens/0/glass_outline_mm"
+      ],
+      "trace_fields_added": [
+        "/glass_outline_mm",
+        "/glass_outline_source"
+      ],
+      "contour_points": 24,
+      "glass_width_height_mm": [
+        72.258621,
+        136.571921
+      ],
+      "glass_center_in_panel_mm": [
+        1.451724,
+        -0.0
+      ],
+      "native_oled_contained": true,
+      "oled_outside_area_mm2": 0.0,
+      "oled_to_glass_min_clearance_mm": 2.189655,
+      "artifact_before_patch": {
+        "path": "exports/pixel-fold-folded/model.glb",
+        "sha256": "1dd5106dc0f19927fb72bcab092a22b6555c24ea2c4387f49c456185265b9e99",
+        "node": "Front black glass",
+        "local_accessor_extents_width_depth_height_mm": [
+          71.1665,
+          0.25,
+          134.478822
+        ],
+        "local_translation_m": [
+          0.0012953202240169048,
+          0.0027749997097998857,
+          0.00015640394121874124
+        ],
+        "limits": "Actual existing GLB, not rebuilt. Local glTF X/depth/height axes; parent articulated transforms not evaluated."
+      }
+    },
+    "pixel-fold-unfolded": {
+      "reviewed": true,
+      "profile_fields_added": [
+        "/screens/1/glass_outline_mm"
+      ],
+      "trace_fields_added": [],
+      "contour_points": 24,
+      "glass_width_height_mm": [
+        72.258621,
+        136.571921
+      ],
+      "glass_center_in_panel_mm": [
+        -1.451724,
+        -0.0
+      ],
+      "native_oled_contained": true,
+      "oled_outside_area_mm2": 0.0,
+      "oled_to_glass_min_clearance_mm": 2.189655,
+      "artifact_before_patch": {
+        "path": "exports/pixel-fold-unfolded/model.glb",
+        "sha256": "3fd4e353d5b86809f85679ee076532c10613c0c60dc5f68a5ada1e13d22cf84b",
+        "node": "Rear cover glass",
+        "local_accessor_extents_width_depth_height_mm": [
+          71.1665,
+          0.25,
+          134.478822
+        ],
+        "local_translation_m": [
+          -0.0012953206896781921,
+          -0.00279999990016222,
+          0.00015640394121874124
+        ],
+        "limits": "Actual existing GLB, not rebuilt. Local glTF X/depth/height axes; parent articulated transforms not evaluated."
+      }
+    },
+    "pixel-9-pro-fold-folded": {
+      "reviewed": true,
+      "profile_fields_added": [
+        "/screens/0/glass_outline_mm"
+      ],
+      "trace_fields_added": [
+        "/glass_outline_mm",
+        "/glass_outline_source"
+      ],
+      "contour_points": 46,
+      "glass_width_height_mm": [
+        70.368677,
+        152.040094
+      ],
+      "glass_center_in_panel_mm": [
+        0.550744,
+        0.060767
+      ],
+      "native_oled_contained": true,
+      "oled_outside_area_mm2": 0.0,
+      "oled_to_glass_min_clearance_mm": 2.005325,
+      "artifact_before_patch": {
+        "path": "exports/pixel-9-pro-fold-folded/model.glb",
+        "sha256": "e8e6431716957a8f5dade4a8ee794c24fff3f226c05052ca0e7295ee5b262061",
+        "node": "Front black glass",
+        "local_accessor_extents_width_depth_height_mm": [
+          68.628818,
+          0.25,
+          150.300235
+        ],
+        "local_translation_m": [
+          0.0006722787511534989,
+          0.0024250000715255737,
+          0.0003038371214643121
+        ],
+        "limits": "Actual existing GLB, not rebuilt. Local glTF X/depth/height axes; parent articulated transforms not evaluated."
+      }
+    },
+    "pixel-9-pro-fold-unfolded": {
+      "reviewed": true,
+      "profile_fields_added": [
+        "/screens/1/glass_outline_mm"
+      ],
+      "trace_fields_added": [],
+      "contour_points": 46,
+      "glass_width_height_mm": [
+        70.368677,
+        152.040094
+      ],
+      "glass_center_in_panel_mm": [
+        -0.550744,
+        0.060767
+      ],
+      "native_oled_contained": true,
+      "oled_outside_area_mm2": 0.0,
+      "oled_to_glass_min_clearance_mm": 2.005325,
+      "artifact_before_patch": {
+        "path": "exports/pixel-9-pro-fold-unfolded/model.glb",
+        "sha256": "0d08f41c52fbb9d50a3b6eb01be73128bf3732f790efab1bdf3cee973b94cf19",
+        "node": "Rear cover glass",
+        "local_accessor_extents_width_depth_height_mm": [
+          68.628818,
+          0.25,
+          150.300235
+        ],
+        "local_translation_m": [
+          -0.0006722770631313324,
+          -0.0024500000290572643,
+          0.0003038371214643121
+        ],
+        "limits": "Actual existing GLB, not rebuilt. Local glTF X/depth/height axes; parent articulated transforms not evaluated."
+      }
+    },
+    "pixel-10-pro-fold-folded": {
+      "reviewed": true,
+      "profile_fields_added": [
+        "/screens/0/glass_outline_mm"
+      ],
+      "trace_fields_added": [
+        "/glass_outline_mm",
+        "/glass_outline_source"
+      ],
+      "contour_points": 48,
+      "glass_width_height_mm": [
+        72.281523,
+        152.08978
+      ],
+      "glass_center_in_panel_mm": [
+        0.25984,
+        -0.062204
+      ],
+      "native_oled_contained": true,
+      "oled_outside_area_mm2": 0.0,
+      "oled_to_glass_min_clearance_mm": 2.11495,
+      "artifact_before_patch": {
+        "path": "exports/pixel-10-pro-fold-folded/model.glb",
+        "sha256": "7bb11241a4f8b250c11b296acc55429d86068836bdf6a41273eb116f572e2741",
+        "node": "Front black glass",
+        "local_accessor_extents_width_depth_height_mm": [
+          70.180759,
+          0.25,
+          150.051221
+        ],
+        "local_translation_m": [
+          0.00025983963860198855,
+          0.002474999986588955,
+          3.1102204957278445e-05
+        ],
+        "limits": "Actual existing GLB, not rebuilt. Local glTF X/depth/height axes; parent articulated transforms not evaluated."
+      }
+    },
+    "pixel-10-pro-fold-unfolded": {
+      "reviewed": true,
+      "profile_fields_added": [
+        "/screens/1/glass_outline_mm"
+      ],
+      "trace_fields_added": [],
+      "contour_points": 48,
+      "glass_width_height_mm": [
+        72.281523,
+        152.08978
+      ],
+      "glass_center_in_panel_mm": [
+        -0.25984,
+        -0.062204
+      ],
+      "native_oled_contained": true,
+      "oled_outside_area_mm2": 0.0,
+      "oled_to_glass_min_clearance_mm": 2.11495,
+      "artifact_before_patch": {
+        "path": "exports/pixel-10-pro-fold-unfolded/model.glb",
+        "sha256": "2f4c5fca258e4bf28f0e63f7ad96867416f4f5f7b44c3b60eada860f92b6b85e",
+        "node": "Rear cover glass",
+        "local_accessor_extents_width_depth_height_mm": [
+          70.180759,
+          0.25,
+          150.051221
+        ],
+        "local_translation_m": [
+          -0.0002598389983177185,
+          -0.0024999999441206455,
+          3.1102204957278445e-05
+        ],
+        "limits": "Actual existing GLB, not rebuilt. Local glTF X/depth/height axes; parent articulated transforms not evaluated."
+      }
+    },
+    "pixel-11-pro-fold-folded": {
+      "reviewed": true,
+      "profile_fields_added": [
+        "/screens/0/glass_outline_mm"
+      ],
+      "trace_fields_added": [
+        "/glass_outline_mm",
+        "/glass_outline_source"
+      ],
+      "contour_points": 50,
+      "glass_width_height_mm": [
+        72.715309,
+        152.889779
+      ],
+      "glass_center_in_panel_mm": [
+        0.257003,
+        -0.062204
+      ],
+      "native_oled_contained": true,
+      "oled_outside_area_mm2": 0.0,
+      "oled_to_glass_min_clearance_mm": 0.188258,
+      "artifact_before_patch": {
+        "path": "exports/pixel-11-pro-fold-folded/model.glb",
+        "sha256": "f1e92f6e6fead510033a80ec29998267d55dea3c2627e5c82255d442d7a7575f",
+        "node": "Front black glass",
+        "local_accessor_extents_width_depth_height_mm": [
+          72.72502,
+          0.25,
+          154.200003
+        ],
+        "local_translation_m": [
+          8.158653508871794e-05,
+          0.002374999923631549,
+          3.1102204957278445e-05
+        ],
+        "limits": "Actual existing GLB, not rebuilt. Local glTF X/depth/height axes; parent articulated transforms not evaluated."
+      }
+    },
+    "pixel-11-pro-fold-unfolded": {
+      "reviewed": true,
+      "profile_fields_added": [
+        "/screens/1/glass_outline_mm"
+      ],
+      "trace_fields_added": [],
+      "contour_points": 50,
+      "glass_width_height_mm": [
+        72.715309,
+        152.889779
+      ],
+      "glass_center_in_panel_mm": [
+        -0.257003,
+        -0.062204
+      ],
+      "native_oled_contained": true,
+      "oled_outside_area_mm2": 0.0,
+      "oled_to_glass_min_clearance_mm": 0.188258,
+      "artifact_before_patch": {
+        "path": "exports/pixel-11-pro-fold-unfolded/model.glb",
+        "sha256": "75fc82211837bbb99e8667dec53a25e3ad31b37015f1654112cac9029c1d687e",
+        "node": "Rear cover glass",
+        "local_accessor_extents_width_depth_height_mm": [
+          72.72502,
+          0.25,
+          154.200003
+        ],
+        "local_translation_m": [
+          -0.0007999986410140991,
+          -0.002400000113993883,
+          0
+        ],
+        "limits": "Actual existing GLB, not rebuilt. Local glTF X/depth/height axes; parent articulated transforms not evaluated."
+      }
+    }
+  },
+  "modified_files": [
+    "geometry.py",
+    "research/skins/pixel-fold-folded/trace.json",
+    "profiles/pixel-fold-folded.json",
+    "profiles/pixel-fold-unfolded.json",
+    "research/skins/pixel-9-pro-fold-folded/trace.json",
+    "profiles/pixel-9-pro-fold-folded.json",
+    "profiles/pixel-9-pro-fold-unfolded.json",
+    "research/skins/pixel-10-pro-fold-folded/trace.json",
+    "profiles/pixel-10-pro-fold-folded.json",
+    "profiles/pixel-10-pro-fold-unfolded.json",
+    "research/skins/pixel-11-pro-fold-folded/trace.json",
+    "profiles/pixel-11-pro-fold-folded.json",
+    "profiles/pixel-11-pro-fold-unfolded.json",
+    "research/pixel-fold-cover-glass-patch.json"
+  ],
+  "geometry_fields": [
+    "create_device rear cover_screen rotation Y=180 branch: prefer explicit glass_outline_mm; preserve scalar OLED-expansion fallback and front_glass material.",
+    "create_device front cover_screen rotation Y=0 branch: prefer explicit glass_outline_mm; preserve scalar OLED-expansion fallback; use parent front_glass material when present."
+  ],
+  "unchanged_ids": [],
+  "preserved": [
+    "body dimensions/outlines and edge roll",
+    "hinge/articulation/pivots/panel centers",
+    "rear optics/logos/material definitions/finishes",
+    "screen fit_box_mm/resolution/center/cutouts/native UV and aspect",
+    "inner-front general glass branch",
+    "build.py / make_pixel_profiles.py / verify_pixels.py / common traced_ring",
+    "all exports/public/galleries"
+  ],
+  "source_generator_patch_instructions": [
+    "make_pixel_profiles.py apply_skin_measurements: after existing cover sizing/center calibration, read glass_outline_mm from the closed trace. Assign directly to folded Cover screen, and [[-x,y] for x,y in points] to unfolded Cover screen. Do not pass glass_outline_mm through fit_outline, scale it to fit_box_mm, or expand it by glass_border_mm. Keep center Z and existing mirrored cover placement.",
+    "research/trace_skins.py: retain the independent glass field/metadata when retracing body or OLED; regenerate glass only from reviewed native back.webp material boundary with the method and manual anchors in this report. Keep the shallow speaker recess and exclude antenna seam spurs.",
+    "Pixel 11: carry explicit derived_from metadata; transform the Pixel 10 glass body X by 76.0/76.38701402805611, keep body Y, then subtract the existing Pixel 11 closed trace screen_rect center and apply the documented provisional outward 0.4 mm glass offset (0.015 mm simplification). Do not label this official Pixel 11 evidence.",
+    "No build.py change is needed to consume the profile glass_outline_mm field in the two cover branches; parent owns all shared contour/antenna/optical integration and serialized exports."
+  ],
+  "verification": {
+    "json_parses": true,
+    "geometry_python_syntax": true,
+    "assigned_ids_reviewed": 8,
+    "unchanged_ids": [],
+    "focused_checks": [
+      {
+        "id": "pixel-fold-folded",
+        "profile_existing_fields_unchanged": true,
+        "trace_existing_fields_unchanged": true,
+        "build_trace_preserves_explicit_glass": true,
+        "cover_branch_consumes_exact_profile_points": true,
+        "parent_front_glass_material_used": true,
+        "body_overlap_outside_area_mm2": 0.0
+      },
+      {
+        "id": "pixel-fold-unfolded",
+        "profile_existing_fields_unchanged": true,
+        "trace_existing_fields_unchanged": "not edited",
+        "build_trace_preserves_explicit_glass": true,
+        "cover_branch_consumes_exact_profile_points": true,
+        "parent_front_glass_material_used": true,
+        "body_overlap_outside_area_mm2": 0.0
+      },
+      {
+        "id": "pixel-9-pro-fold-folded",
+        "profile_existing_fields_unchanged": true,
+        "trace_existing_fields_unchanged": true,
+        "build_trace_preserves_explicit_glass": true,
+        "cover_branch_consumes_exact_profile_points": true,
+        "parent_front_glass_material_used": true,
+        "body_overlap_outside_area_mm2": 0.0
+      },
+      {
+        "id": "pixel-9-pro-fold-unfolded",
+        "profile_existing_fields_unchanged": true,
+        "trace_existing_fields_unchanged": "not edited",
+        "build_trace_preserves_explicit_glass": true,
+        "cover_branch_consumes_exact_profile_points": true,
+        "parent_front_glass_material_used": true,
+        "body_overlap_outside_area_mm2": 0.0
+      },
+      {
+        "id": "pixel-10-pro-fold-folded",
+        "profile_existing_fields_unchanged": true,
+        "trace_existing_fields_unchanged": true,
+        "build_trace_preserves_explicit_glass": true,
+        "cover_branch_consumes_exact_profile_points": true,
+        "parent_front_glass_material_used": true,
+        "body_overlap_outside_area_mm2": 0.0
+      },
+      {
+        "id": "pixel-10-pro-fold-unfolded",
+        "profile_existing_fields_unchanged": true,
+        "trace_existing_fields_unchanged": "not edited",
+        "build_trace_preserves_explicit_glass": true,
+        "cover_branch_consumes_exact_profile_points": true,
+        "parent_front_glass_material_used": true,
+        "body_overlap_outside_area_mm2": 0.0
+      },
+      {
+        "id": "pixel-11-pro-fold-folded",
+        "profile_existing_fields_unchanged": true,
+        "trace_existing_fields_unchanged": true,
+        "build_trace_preserves_explicit_glass": true,
+        "cover_branch_consumes_exact_profile_points": true,
+        "parent_front_glass_material_used": true,
+        "body_overlap_outside_area_mm2": 0.0
+      },
+      {
+        "id": "pixel-11-pro-fold-unfolded",
+        "profile_existing_fields_unchanged": true,
+        "trace_existing_fields_unchanged": "not edited",
+        "build_trace_preserves_explicit_glass": true,
+        "cover_branch_consumes_exact_profile_points": true,
+        "parent_front_glass_material_used": true,
+        "body_overlap_outside_area_mm2": 0.0,
+        "body_check_method": "Actual geometry.outline fallback and unchanged panel corner radii; no official open 11 Fold trace."
+      }
+    ],
+    "mirrored_pairs_exact": true,
+    "all_native_oled_contained": true,
+    "geometry_changes_confined_to_two_cover_branches": true,
+    "legacy_cover_fallback_checked": true,
+    "official_local_sources_match_previously_verified_upstream_git_blobs": true,
+    "verification_method": "AST-extracted build trace functions plus exact geometry cover-branch execution with a slab capture; real Shapely polygon containment. No bpy import/Blender invocation. Actual old GLB accessors measured separately.",
+    "blender_started": false,
+    "exports_rebuilt": false,
+    "limits": "Fresh mesh contours, UVs, material rendering, notch fidelity after 320-point slab resampling, folded/open/mid poses and max 0.10 mm artifact/body verification remain parent-owned."
+  },
+  "license": "SDK/Google artwork is reference evidence only. No blanket redistribution/license claim. No product photos downloaded or published in this pass."
+}

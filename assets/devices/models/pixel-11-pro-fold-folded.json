@@ -1,6 +1,6 @@
 {
   "id": "pixel-11-pro-fold-folded",
-  "name": "Pixel 11 Pro Fold · folded",
+  "name": "Pixel 11 Pro Fold Â· folded",
   "state": "folded",
   "screens": [
     {
@@ -18,9 +18,9 @@
         151.2
       ],
       "center_mm": [
-        0.38158653957116745,
-        -0.031102204408817634,
-        5.085
+        0.3815865218639374,
+        -0.031102202832698822,
+        5.0849995613098145
       ],
       "corner_radius_mm": 8.296587580546982,
       "rotation_deg": [
@@ -30,8 +30,8 @@
       ],
       "edge_curve_mm": 0,
       "frame_bounds_mm": [
-        3.519075864934109,
-        2.0311022044088247,
+        3.5190758472268797,
+        2.031102202832699,
         69.72502134927412,
         151.2
       ],
@@ -1745,15 +1745,15 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/pixel-11-pro-fold-folded.dfbde6f0d60b.glb.gz",
-  "sha256": "dfbde6f0d60b2905b86e9c90da690ac12cd911ff454bf378ab2c601f066106d5",
+  "glbUrl": "assets/devices/models/pixel-11-pro-fold-folded.5bcc16b382aa.glb.gz",
+  "sha256": "5bcc16b382aa7d8f4344aa5eca9549ee50b7faf479a1b44503a74be76ce62cfb",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/pixel-11-pro-fold-folded.json",
     "accuracy": {
       "body_dimensions": "Google published metric dimensions",
       "screen_resolution": "Google published panel resolution",
-      "screen_geometry": "Photo-informed fit box with exact native pixel aspect; bezels, radii, cutouts and edge curves estimated",
+      "screen_geometry": "Cover artwork is derived from Pixel 10 Pro Fold, not official Pixel 11 artwork; its profile position is synchronized to that derived frame. Inner screen geometry and optics remain provisional. Native pixel aspect preserved; no manufacturing-precision claim.",
       "camera_geometry": "Housing width, height and top gap scaled from official rear artwork; pixel bounds and uncertainty in camera_measurement. Optical internals remain illustrative. Not measurable from this rear view; model depth remains a visual estimate.",
       "finishes": "Approximate sRGB colors and roughness, not calibrated measured materials",
       "hinge": "Static closed companion profile retained for dimensional/reference checks.",

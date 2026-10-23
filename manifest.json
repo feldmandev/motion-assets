@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": "0.1.4",
+  "version": "0.1.5",
   "repository": "https://github.com/feldmandev/motion-assets",
   "modules": [
     "shapes",
@@ -26,8 +26,8 @@
       "bytes": 42415
     },
     "assets/devices/build.py": {
-      "sha256": "93c9149255f7d9d996e3a6c54a7c608c62f7b269c09756daf0aafc06472e7dd7",
-      "bytes": 41761
+      "sha256": "9d916055859113feb9eb9a7816ef858fcf82de4fc6d86ea651412eaba85bb90c",
+      "bytes": 44827
     },
     "assets/devices/build_googlebooks.py": {
       "sha256": "52080bb4c93cb26f74b31495480e31f323738258028d9734548e0458057dccd9",
@@ -42,8 +42,8 @@
       "bytes": 1143
     },
     "assets/devices/build_pixels.py": {
-      "sha256": "0805bd8b55a8ac30754258f35c868a1f61243f73a20d3246eea44c136072f9e8",
-      "bytes": 11162
+      "sha256": "6f8ad286194382e8621ed06dde645bfc451e0cbf84069b151377b1a91502f20b",
+      "bytes": 11306
     },
     "assets/devices/catalog.json": {
       "sha256": "dae5ab84616fcaee49f3aad95ea9db04efcf0a43c31b0177c3997a5105c7247e",
@@ -806,19 +806,19 @@
       "bytes": 405575
     },
     "assets/devices/frames/pixel-11-0.svg": {
-      "sha256": "cc146f0ccf70ee6491110363b6ceac6e377f2b76a4ad2b1fe383ffbac20e4aba",
-      "bytes": 5434
+      "sha256": "63421d3bb42e99ef2bc92dbfa065742f6273107e10dd991e4e2d61729f056b30",
+      "bytes": 5433
     },
     "assets/devices/frames/pixel-11-pro-0.svg": {
-      "sha256": "3419fed860ea61543ed96d465a0fa061b251dcf919f196dacd7faff07d2cabb1",
-      "bytes": 5416
+      "sha256": "f087aef29eead6730ebb4ae9511b6d12c22e72f7e19e23f2cdbaed93169efc7e",
+      "bytes": 5431
     },
     "assets/devices/frames/pixel-11-pro-fold-folded-0.svg": {
       "sha256": "e1628f1b6d23a4d75a61c2ed38a6939a07b87b85d6c3b015348f60e22ef2528d",
       "bytes": 320811
     },
     "assets/devices/frames/pixel-11-pro-fold-unfolded-0.svg": {
-      "sha256": "72c28ca08d7a4b2d1ba899b65b7507ba619563edc912e308f3254c36586f5748",
+      "sha256": "12fea78af7b0b52eede517347689851a16296253e42052ac0115e06784a2633f",
       "bytes": 5552
     },
     "assets/devices/frames/pixel-11-pro-fold-unfolded-1.svg": {
@@ -826,8 +826,8 @@
       "bytes": 320811
     },
     "assets/devices/frames/pixel-11-pro-xl-0.svg": {
-      "sha256": "fbdeed5a59733eac06575cc30675f1c5c98cfe3c92f518260fea246bc9f6f7f8",
-      "bytes": 5423
+      "sha256": "646a8724208f16a4bebb735f40f23d33a5882056079d607c9710662e8649088c",
+      "bytes": 5427
     },
     "assets/devices/frames/pixel-4-0.svg": {
       "sha256": "befe217ca6fd9e26c115aab88b1eb0b2c3ab898103ed20555477f4d1630ea20c",
@@ -842,7 +842,7 @@
       "bytes": 343563
     },
     "assets/devices/frames/pixel-4a-5g-0.svg": {
-      "sha256": "e615ab8d55bd93028bf9240227c78d98ae205659a6104b8d621580de72466a8e",
+      "sha256": "5d400a7168a1278890e66c69f8b442c39876626f599d5b79f65af9f2a4a9e473",
       "bytes": 5409
     },
     "assets/devices/frames/pixel-5-0.svg": {
@@ -850,8 +850,8 @@
       "bytes": 393479
     },
     "assets/devices/frames/pixel-5a-0.svg": {
-      "sha256": "480c349aa66b2f6985af43d448898436a8902a401662f56ebd3392fd0fd959fa",
-      "bytes": 5407
+      "sha256": "b062cf95105e8dce14b32452570524bce5462b2de59b4e9441394116d51b49ce",
+      "bytes": 5411
     },
     "assets/devices/frames/pixel-6-0.svg": {
       "sha256": "e93525b773c82df353310d8fb0c46a72c243e880bdc41d55d83bbaef27105499",
@@ -950,8 +950,8 @@
       "bytes": 8398
     },
     "assets/devices/geometry.py": {
-      "sha256": "79ef1f5559bd94e90d860bc83f54799a6c3d62299f854e853a0c22e0ad895599",
-      "bytes": 69493
+      "sha256": "0850bc6bf6ee4179c711877e699faa9c5db227851e6a30a26f2072f9e71c32e4",
+      "bytes": 72856
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_11_black_icon.svg": {
       "sha256": "327185703fdd20e3bf500fdc45042940639279fce8914243859566c5b71e5e47",
@@ -7546,8 +7546,8 @@
       "bytes": 23521
     },
     "assets/devices/make_legacy_pixel_profiles.py": {
-      "sha256": "d6a9853cdbde86e97ef9e9bd1fc2c71600d130dbe58ea81c43fc0351a91b1a53",
-      "bytes": 15451
+      "sha256": "dd2589406cec401aa787b28682f5372cd89347ad04225fa424b96a63494ce38c",
+      "bytes": 15669
     },
     "assets/devices/make_nothing_profiles.py": {
       "sha256": "48f84835d8267550e5964ea91c903fa5d66cdb671027d0f5e04d725a2c9e1427",
@@ -7558,8 +7558,8 @@
       "bytes": 14051
     },
     "assets/devices/make_pixel_profiles.py": {
-      "sha256": "47d40ea0c03bc9cd25d67b33edba4c13f9d1b32452ca7bb1ad27f41b0da7a112",
-      "bytes": 33674
+      "sha256": "0870a13fdb51163531792646426f04534f9aa101f7e454ea8fa11eb318c25f49",
+      "bytes": 35069
     },
     "assets/devices/make_review.py": {
       "sha256": "a205f934a3d6d6331bc56cb74696911db31862cfd926fc78146f5256c2b00f1e",
@@ -8250,140 +8250,140 @@
       "bytes": 4568
     },
     "assets/devices/models/pixel-10-pro-fold-folded.json": {
-      "sha256": "01ee701ac8459888ca51769f30737e6a49797ac3e89cfec6f201d27175d582aa",
-      "bytes": 43407
+      "sha256": "3af2decd764bb78fdeaf2a73bab226f37b0930b94638e30600f7bde94bf54823",
+      "bytes": 44029
     },
     "assets/devices/models/pixel-10-pro-fold-unfolded.json": {
-      "sha256": "58a53495858f4c86698e6b335f37f33e67ba497021664d85189b142f063f3dd7",
-      "bytes": 45597
+      "sha256": "713e5ac20e081d0b853995724a91788f3d9e8e526f06669c0fa03c33c0d35bd8",
+      "bytes": 46685
     },
     "assets/devices/models/pixel-10-pro-xl.json": {
-      "sha256": "a9232af7cea928553e876ca0c7b9e1f1b2eab3fe914c93bde423ddf976fec277",
-      "bytes": 6720
+      "sha256": "facfdd23fb9ab9ea53983833bf6a4597c058c738ee2c2e9a37f1efa824980480",
+      "bytes": 7342
     },
     "assets/devices/models/pixel-10-pro.json": {
-      "sha256": "5ab7653444b39624c616244da6bb78d7e6dfcfa4bd7475f932a440663d1b0d91",
-      "bytes": 5836
+      "sha256": "6b1718271d964ecb0edaaff2930f2d3da712414be7ae97afb105195640e797b2",
+      "bytes": 7324
     },
     "assets/devices/models/pixel-10.json": {
-      "sha256": "c0fad2d4fcd9eeead8959de7fe89d9498ec0ab80435d504a20e7adafb488a09a",
-      "bytes": 6530
+      "sha256": "a640b69ae25089035fdd503c51a4155e184cdfd85dbbb4ef5e0a6ba77ce0c09f",
+      "bytes": 7186
     },
     "assets/devices/models/pixel-10a.json": {
-      "sha256": "072459570a2a606af0c3fe9e01a443a5238593263f5560244079038926a2d648",
-      "bytes": 7250
+      "sha256": "c1983e70247d860204929626931df08325cf5714bb4c7148510b1075aa59863c",
+      "bytes": 8037
     },
     "assets/devices/models/pixel-11-pro-fold-folded.json": {
-      "sha256": "3d1b2b0c2cfbc0730176282adf2264a5adf12cab735c8da483cdb107fb30608d",
-      "bytes": 42827
+      "sha256": "45a00095120c39036218f024a0e072fd691acd29b7b0a8e16edaec08208c50bd",
+      "bytes": 42995
     },
     "assets/devices/models/pixel-11-pro-fold-unfolded.json": {
-      "sha256": "96b524f9bf7f028d2ced17a3cf7c760d7b21d3161b414c2ff35631f90a1c8cc3",
-      "bytes": 44817
+      "sha256": "8b2e2ca26009fd4807166c7855d37ab42ed74d4a278b6aaf5b5d1005e5f8c2c7",
+      "bytes": 45033
     },
     "assets/devices/models/pixel-11-pro-xl.json": {
-      "sha256": "0f859f734876f86ab51aa0374a2ace545f16723484a1ca7cc9d4f82e1fc03752",
-      "bytes": 6936
+      "sha256": "b92fc9fcc6f0eb6314d3464ca4c92b03ce7b09e6a533272de08d9fe19491338e",
+      "bytes": 8181
     },
     "assets/devices/models/pixel-11-pro.json": {
-      "sha256": "93ab52c47c94d919f03aacdf4e1753b37f508754c60847dda6d51b8c49a4ab6d",
-      "bytes": 6932
+      "sha256": "dfd86fe53d603cd793695d7bc773b2c1334420809e0a090fc7ff1ba94823175a",
+      "bytes": 8407
     },
     "assets/devices/models/pixel-11.json": {
-      "sha256": "82430aa17b2fa6a2eb9046197b36e61d00feb49be2b94ea1e34797c2e88a91b6",
-      "bytes": 6918
+      "sha256": "c1bc389ed02cd80db997908aa6173e01c7b542c891a9bfeb6e8ef2b8a6c9f6cb",
+      "bytes": 8378
     },
     "assets/devices/models/pixel-4-xl.json": {
-      "sha256": "d271d3e29335e1b8d41bcfc57373a51ca9ca56472cff8fb1fff2d58d2022325b",
-      "bytes": 6536
+      "sha256": "b11c98c2de77f2fcc77cff17cb41bce670cd1881bf802431ad3eadf99794e62d",
+      "bytes": 6777
     },
     "assets/devices/models/pixel-4.json": {
-      "sha256": "52fd4748d7d36ee891bd140fe0a53ab0d7c920315de69ecbce9e37886a40e058",
-      "bytes": 6519
+      "sha256": "456f77373298529188c5f42b542d968bc20eec1208af6573687e90be132875f8",
+      "bytes": 6757
     },
     "assets/devices/models/pixel-4a-5g.json": {
-      "sha256": "8aafb2c70927c64a3cd5961db781f23918735b4619ce3f3eaf50c53d77558c37",
-      "bytes": 5906
+      "sha256": "5631f12135c51cbb53dae8c375c8d2a14209dab8b837aaf75916ccdc0d42e32f",
+      "bytes": 5922
     },
     "assets/devices/models/pixel-4a.json": {
-      "sha256": "f8b5af5b9f7c874d636eeaa0bd8f60b4484aac90c0a5f6bf37170f65fa43c146",
-      "bytes": 5965
+      "sha256": "ab4d35f0398f0f454adeff926aeb63cae8bc730e75d40a6bc17f1a38afb880b6",
+      "bytes": 6154
     },
     "assets/devices/models/pixel-5.json": {
-      "sha256": "45032c8376827ae9320ac5b08f695cb70056ff5f92ae76c2c1e6edaa6f4ff09b",
-      "bytes": 5921
+      "sha256": "a81d41e74128e7a856c440f5425096e8974c0be3acb72cf9866a82a20f1b7793",
+      "bytes": 6103
     },
     "assets/devices/models/pixel-5a.json": {
-      "sha256": "5a40af8de01487b04cc761feacafe58c793a211a3cef8829ab82d7ce9e824e80",
-      "bytes": 4989
+      "sha256": "6e9b58e20b9507a3ce6ffd745574ba85807b2c28df4df1d0dc1dc64167940918",
+      "bytes": 5461
     },
     "assets/devices/models/pixel-6-pro.json": {
-      "sha256": "9d39c96f93bf151604e012ad456face6c1e6612bda1a11d3798f1a3c5122e727",
-      "bytes": 6434
+      "sha256": "62dfdee8ac00dcb597e456923132477fa7eb8cec864b2258882f63e888817617",
+      "bytes": 7109
     },
     "assets/devices/models/pixel-6.json": {
-      "sha256": "4268f4f7d9aeda86fcd0fb68f8beb6c068dd5cd2f5db19a0dc3418386554bc62",
-      "bytes": 6295
+      "sha256": "d6e48172b166609ab30e9e0c54856b249307e239ebcd9f0cfe612a3460656970",
+      "bytes": 6818
     },
     "assets/devices/models/pixel-6a.json": {
-      "sha256": "222aced6db76a1aa3abb3b50d9da310963e05f1f34a8d249cae99a75c142b287",
-      "bytes": 6261
+      "sha256": "4632c763201b7afe8f46e42032db7f6962d6b1d712d306bade6de77888f23ab8",
+      "bytes": 6789
     },
     "assets/devices/models/pixel-7-pro.json": {
-      "sha256": "b4ccee47653506a1ec14629beb257839ce5680b23531767d9ac485ed861be7eb",
-      "bytes": 5977
+      "sha256": "88ec7e672dfa52cb998aabdae8c847950823e354933b370df9148eb66089b558",
+      "bytes": 6634
     },
     "assets/devices/models/pixel-7.json": {
-      "sha256": "e68d70f0e3617542d3623d996bd4cc5f907af6e6fcafa0476836e933fecb2814",
-      "bytes": 5861
+      "sha256": "472c69dac02374c54c31d5002e2e2173297c800f16793315bcd5c69c34c3d899",
+      "bytes": 6386
     },
     "assets/devices/models/pixel-7a.json": {
-      "sha256": "fa4582b69ce3c55d871acda94493532590086b23f9252b65c83f28a6707b2d99",
-      "bytes": 6572
+      "sha256": "10eb340bf38fa616285bebb6db6b01e78d7328b11958813c13d4edfaedcc9c07",
+      "bytes": 7234
     },
     "assets/devices/models/pixel-8-pro.json": {
-      "sha256": "f07936fc33b89a67ce760e15d9e1afecf9dc1e39d3fde50aa3438eeafbac99ac",
-      "bytes": 6475
+      "sha256": "d9d1a585d38a5305a15e86b5f29bae4e8e627f84a4bb77c31d76c4faaea42e4f",
+      "bytes": 7107
     },
     "assets/devices/models/pixel-8.json": {
-      "sha256": "ac6abc2999f2eb818f0ba7926b3abe81b6645d729779c01aade80b4ccf55b023",
-      "bytes": 6464
+      "sha256": "34a3e2cd83ef0f2fd57cbd62aab3ea5be69f89ed7b2dc9090153cd78a3a0197c",
+      "bytes": 7118
     },
     "assets/devices/models/pixel-8a.json": {
-      "sha256": "93522d9fb60a365f034a2ba0231767b8fb3c6d0a01ad516663875ff2c70a09fe",
-      "bytes": 6412
+      "sha256": "6820efcb4d800578361c30395949a498f7b135736f92ca99d4b9b858bad255f0",
+      "bytes": 7055
     },
     "assets/devices/models/pixel-9-pro-fold-folded.json": {
-      "sha256": "0675a9a5c1b5b894f7d806fb92a891955fb0014ad2c03adb6a8af8c6cbd76f10",
-      "bytes": 43267
+      "sha256": "95c31a8e0fb54704ba7ef0d1b08e9913263a256cc12686ba85ad7adedec942ea",
+      "bytes": 43889
     },
     "assets/devices/models/pixel-9-pro-fold-unfolded.json": {
-      "sha256": "6d160165c463669c318494e04edba7cc3ec650ff1f39704b80065e4d57e41c77",
-      "bytes": 45511
+      "sha256": "63da8bbca10ca77f5144a0421f3fab14eeb5c7b0dd5ffd701fea83b83876d9b2",
+      "bytes": 46575
     },
     "assets/devices/models/pixel-9-pro-xl.json": {
-      "sha256": "635f48621bf5c36e3770191d2d9e1fbbe36558be5afbf962d02bfcc86f09c46a",
-      "bytes": 6616
+      "sha256": "9aba815d8a83a38cb7d395d0cc2ec1b2557a3b9a4923f8ceda8a4b841027ee87",
+      "bytes": 7245
     },
     "assets/devices/models/pixel-9-pro.json": {
-      "sha256": "27ca4dd4760090739b8b61529d9dde843aeeaf0828bc463a0d32822dfe11af85",
-      "bytes": 6590
+      "sha256": "b0e7ad5e5d29f70bc62b5b7adb4d3f24e3c62f676d15096690b7ef7a83bfc4d2",
+      "bytes": 7780
     },
     "assets/devices/models/pixel-9.json": {
-      "sha256": "89f974f0106ea60468b7c06d67ef54befe4e0ab61cd7cb5ce62a22d885d9ddad",
-      "bytes": 6596
+      "sha256": "9e0ad810261c478c57392ee136f68dd7f09531b52f658dae662f729f796d57be",
+      "bytes": 7229
     },
     "assets/devices/models/pixel-9a.json": {
-      "sha256": "450b03a6a44080776f0a99fc34aabfb5a0bb927acd9116c09e4399c6d86d1eb2",
-      "bytes": 6585
+      "sha256": "e6e36ea845a32ddab753622492cda922f3a00e69af79a999ed02bc54bf536046",
+      "bytes": 7238
     },
     "assets/devices/models/pixel-fold-folded.json": {
-      "sha256": "55f9d6fe06b01fed42cb0ad5854cd94e954f2d8b760e51d1cab864b94aca9ee8",
-      "bytes": 43243
+      "sha256": "919d743b12923f41d438c316de20a5ddd7027669a2f4bf45f98b8727d386f93f",
+      "bytes": 43882
     },
     "assets/devices/models/pixel-fold-unfolded.json": {
-      "sha256": "b56d730cc43152164efaa49b28250621c1afe5c28609dea309a8002de1add624",
-      "bytes": 45245
+      "sha256": "2dae362bfd57f00b9a9c75d965508b7f46c18844711ad01e1f35c5cf59fc31a8",
+      "bytes": 46321
     },
     "assets/devices/models/xiaomi-pad-6.json": {
       "sha256": "4edfca25336786c4473e871737559176d9b54b5c20c20ef6ef19c278940d6e8b",
@@ -8402,8 +8402,8 @@
       "bytes": 8007
     },
     "assets/devices/models-manifest.json": {
-      "sha256": "56c6f7c41aa9f5881a96681d91e7cbde1a6ffaa1be65c4a2160fbfaaea0b4130",
-      "bytes": 55409
+      "sha256": "4b22c59eb0e7b9be0a62af960786f12096697682591857bee1a86ecbe6ca36ff",
+      "bytes": 55414
     },
     "assets/devices/nothing_geometry.py": {
       "sha256": "e431193f1c606d9805e66c2072b6daa63a486ee06ce3065a54d39d2717958022",
@@ -15538,140 +15538,140 @@
       "bytes": 8864
     },
     "assets/devices/profiles/pixel-10-pro-fold-folded.json": {
-      "sha256": "f94b311bac068357d3b10be769cb26786563132b7eee5b63d70d2d958bd42039",
-      "bytes": 43446
+      "sha256": "4e41a4b1dabc502bc8d3c146022008b041aa96a49470d693a7583cd35260ed9b",
+      "bytes": 48784
     },
     "assets/devices/profiles/pixel-10-pro-fold-unfolded.json": {
-      "sha256": "f27817f80ac37dfccb433fb42f5a53a4732b1860dca06ccaf3ed5b46a78210e2",
-      "bytes": 45366
+      "sha256": "cf221eebe61c1c3ef9a90aff6f3d86749d79df80564c70b4ca5e749a09b89e89",
+      "bytes": 51145
     },
     "assets/devices/profiles/pixel-10-pro-xl.json": {
-      "sha256": "0073a45eb95067f301f3c1b60f026333da34ede6eb91831e5c41a588feaaaa9c",
-      "bytes": 36582
+      "sha256": "a24b11e19eac01d59b3509c5566ff6f5137639eb2e49d818711935c6b581199d",
+      "bytes": 38176
     },
     "assets/devices/profiles/pixel-10-pro.json": {
-      "sha256": "b6d18ca45cecc1257e5ab21f5a3a9d5731addbb4da4941cebad34998603df053",
-      "bytes": 4206
+      "sha256": "b8aed1011076db8d368f27f9724b322130286b3f3a4ee7ea19a3a239cd1da7a5",
+      "bytes": 6259
     },
     "assets/devices/profiles/pixel-10.json": {
-      "sha256": "2c6d5e0f2430434b2d98098a4a6a7e6525b086575797768c25d45c2a6b57b27f",
-      "bytes": 36038
+      "sha256": "fdb2ab45524767d82c0e7dc3036b9614fb50e5cc21df7afb3baec53fa1b3fc38",
+      "bytes": 37653
     },
     "assets/devices/profiles/pixel-10a.json": {
-      "sha256": "ec1ef101177d991b535a07b60ae23aa27a64ffb39efcb5930a06c65d950d49fc",
-      "bytes": 36417
+      "sha256": "49b20f66aeea0a1b7b84a86faa7944430a265b719f3c9d337980722a3c4e1e5e",
+      "bytes": 38026
     },
     "assets/devices/profiles/pixel-11-pro-fold-folded.json": {
-      "sha256": "cbeff5df3342022dc04b0ed39b548f47457e926dca800d0485024d8b7f58fcef",
-      "bytes": 42838
+      "sha256": "9fe0d5b729d0200232ba31ea81ace4b2d6a485de0b1620ebb1f39e4358b1cccb",
+      "bytes": 46599
     },
     "assets/devices/profiles/pixel-11-pro-fold-unfolded.json": {
-      "sha256": "2a8caf37c6ae3c07ef7037938cdd60da2e39a995508eb0fd7838909f007d8367",
-      "bytes": 44557
+      "sha256": "19303123e361e0ea588d2ab0623e0582d7c2c3cc34fbd2c736f59236e59e2bc6",
+      "bytes": 48354
     },
     "assets/devices/profiles/pixel-11-pro-xl.json": {
-      "sha256": "72ed2b93c1def45922a70f52a4581b94d64ef042562383abe8af6a0f4b132479",
-      "bytes": 35907
+      "sha256": "799aa9b09d9967cc47e44137633e6959224112e4a316d9e663ecbcabeaa3c1df",
+      "bytes": 37639
     },
     "assets/devices/profiles/pixel-11-pro.json": {
-      "sha256": "9bf4e73de4e5e7505db0af76e5d647728657179732957253638cade937199792",
-      "bytes": 35952
+      "sha256": "d635ccc528eb9f3908932d99ef73192cb400fb5d1ced950ee1c631cca14af4a8",
+      "bytes": 38077
     },
     "assets/devices/profiles/pixel-11.json": {
-      "sha256": "328ad2519650e2d19eaea98ce2080d0b0652773506983a3a25612d798d5276d1",
-      "bytes": 35880
+      "sha256": "f3ec24707d0eb2fa3e198889ce475d6dbc9e479e4217d9cb2a5c7801bba6058b",
+      "bytes": 37502
     },
     "assets/devices/profiles/pixel-4-xl.json": {
-      "sha256": "92d9299348ce27ef5c4bd889a02683968fc634d4577f1f98a0d39841682ad2e8",
-      "bytes": 36891
+      "sha256": "dab2d69656f5fc877c5840ac6b71a1d935b975ef3b43b012a3742680026f7c22",
+      "bytes": 37422
     },
     "assets/devices/profiles/pixel-4.json": {
-      "sha256": "b334cd108ce124dd49bef9841bacc15462ec742999a0d20e33eebe892272d2ac",
-      "bytes": 36792
+      "sha256": "f4ad3172efd14d46913784a2b5fab12b90bef5ce88bf9b0ed098bfcee5e50a52",
+      "bytes": 37325
     },
     "assets/devices/profiles/pixel-4a-5g.json": {
-      "sha256": "0035eb80d2597f5b971e50ccd1c5b1a142dff69e888463db52773b3f96428a1a",
-      "bytes": 36228
-    },
-    "assets/devices/profiles/pixel-4a.json": {
-      "sha256": "cd485e43d19a6fc3c7e9200961399a3309e540709df6c4054315bf03e08f1191",
-      "bytes": 36028
-    },
-    "assets/devices/profiles/pixel-5.json": {
-      "sha256": "b5c5987f65507c2bde8530051be13f83406f5ae6ee3dc9dcc3552f96bcbd65f5",
-      "bytes": 36199
-    },
-    "assets/devices/profiles/pixel-5a.json": {
-      "sha256": "809bd3f6201012676d557463b80f5a73def64ae7bed7fb9b15c3e9ef0a6f01f3",
-      "bytes": 35468
-    },
-    "assets/devices/profiles/pixel-6-pro.json": {
-      "sha256": "f335cd33501a8c199173b336693775c31412e5fed120cbf7760bf26ae5dade40",
-      "bytes": 36084
-    },
-    "assets/devices/profiles/pixel-6.json": {
-      "sha256": "6f2a1dbad6f5869ffe3e647895be8490ce7af7bb1837b753a53f329769e50c0c",
-      "bytes": 35193
-    },
-    "assets/devices/profiles/pixel-6a.json": {
-      "sha256": "0a43d951b314652809010cf2221c93b3a36ae4f1e6e106f4ded71c513ea0367f",
-      "bytes": 35212
-    },
-    "assets/devices/profiles/pixel-7-pro.json": {
-      "sha256": "9ce8e3b0e65ec6e31b24990a0ce5fbb3e1c46bddab65e47ace751c5e99f710cf",
-      "bytes": 35645
-    },
-    "assets/devices/profiles/pixel-7.json": {
-      "sha256": "81f5003d4bbb6cec51f4ebb3955974907fbfecfe93445541985d1b67aa93b81d",
-      "bytes": 34645
-    },
-    "assets/devices/profiles/pixel-7a.json": {
-      "sha256": "a66e1682c75a031bd462c3e970003c388ab3b7a43e1320dc30bfec762b2fd81b",
-      "bytes": 35859
-    },
-    "assets/devices/profiles/pixel-8-pro.json": {
-      "sha256": "3d8d5f2057e6b2a0d63087323416b3f4ccfd7eee15a26145376054572e2b767b",
-      "bytes": 35419
-    },
-    "assets/devices/profiles/pixel-8.json": {
-      "sha256": "858f402e47b4171dcac0fa5bc9534b66badbbdf474fe766dbe2814fe79c65f50",
-      "bytes": 35122
-    },
-    "assets/devices/profiles/pixel-8a.json": {
-      "sha256": "e7e3bb47779c5a9688ca7049e5d55d79a4c3f46b3d511cf7d6b3603de329b87b",
-      "bytes": 34966
-    },
-    "assets/devices/profiles/pixel-9-pro-fold-folded.json": {
-      "sha256": "9be15a1e3a9c452b284149bbcb73b2be075b7e8f2891f926f566bbac5b9a7db4",
-      "bytes": 42747
-    },
-    "assets/devices/profiles/pixel-9-pro-fold-unfolded.json": {
-      "sha256": "97bb715fb0315221244e80a8889e5ace27285b6ae3b74aaf3187cef9016ba407",
-      "bytes": 44664
-    },
-    "assets/devices/profiles/pixel-9-pro-xl.json": {
-      "sha256": "650769ff95394e8cfa8d9c1fd7b8005331088376049cdf92fcab5691c3807a96",
+      "sha256": "b16c44d548ac13b114556e2fa7e13a3a2d847eb5fc9a01f6a1c106a75b7fbe57",
       "bytes": 36225
     },
+    "assets/devices/profiles/pixel-4a.json": {
+      "sha256": "d79fc67cdeb7ba081240ce54530bac7a5cfe6c2064acba7e945ac456e75afe23",
+      "bytes": 36490
+    },
+    "assets/devices/profiles/pixel-5.json": {
+      "sha256": "54241285e307b01985b2fa560f3a469bafe69bea9f721d1800aff4f3886e2c81",
+      "bytes": 36660
+    },
+    "assets/devices/profiles/pixel-5a.json": {
+      "sha256": "8f5fdecdb090f3275be4f9b2ebb8cb4a9c0a397b933f40f3123c70e3b363a25e",
+      "bytes": 35899
+    },
+    "assets/devices/profiles/pixel-6-pro.json": {
+      "sha256": "39be23c7cb7534c7bfbecbc55c91ac94b42a28126dd9cd02bb06e65115004854",
+      "bytes": 37737
+    },
+    "assets/devices/profiles/pixel-6.json": {
+      "sha256": "f5fcafbe3f2413080bc1ca27b57185639fe9df90cd6ee7b77b144ee82feb5d3d",
+      "bytes": 36476
+    },
+    "assets/devices/profiles/pixel-6a.json": {
+      "sha256": "8157be12dfa80b1fcde41f83b1501a53aca48d1e0a2cc5e5343e5805c0f407b9",
+      "bytes": 36990
+    },
+    "assets/devices/profiles/pixel-7-pro.json": {
+      "sha256": "8d9df87ce390a853aa3778b733dcfd51278887f763ad0900a0887f0f2a876850",
+      "bytes": 37848
+    },
+    "assets/devices/profiles/pixel-7.json": {
+      "sha256": "6fbafbee23b577ca2681828b12c37475993aee4e8f76803d7b42f673b4de9f9f",
+      "bytes": 36260
+    },
+    "assets/devices/profiles/pixel-7a.json": {
+      "sha256": "4d3c36f7641d4091305b9c4fea7a9997f886e479f4cd2f4cf0db3cdc1927c60f",
+      "bytes": 37967
+    },
+    "assets/devices/profiles/pixel-8-pro.json": {
+      "sha256": "47f48d90aca352e8b06d61b25408fe91584957ad09a767a3438319d9c8e28ec5",
+      "bytes": 37357
+    },
+    "assets/devices/profiles/pixel-8.json": {
+      "sha256": "f89e15261a78c2c0984f01f4b65e95b45d74e69c21ab7cc5c29714b1bb122291",
+      "bytes": 37080
+    },
+    "assets/devices/profiles/pixel-8a.json": {
+      "sha256": "ddf498bcad86924b2dcd4a974f40e3634cdb26bab7277f576effa4ecd8da753c",
+      "bytes": 36941
+    },
+    "assets/devices/profiles/pixel-9-pro-fold-folded.json": {
+      "sha256": "1e42e633dc43860596bcb216be7a13405d64b8845adad6b8655c8cdb01a77e55",
+      "bytes": 47923
+    },
+    "assets/devices/profiles/pixel-9-pro-fold-unfolded.json": {
+      "sha256": "fd67e21c8e6c5fe6de5d477d372044dce500a9485b556912b2613aca36c6e54c",
+      "bytes": 50285
+    },
+    "assets/devices/profiles/pixel-9-pro-xl.json": {
+      "sha256": "9ecf7abab6c78dc8130cd70f459755401869fa0b6e8ccaab239fdbc2865b7e5a",
+      "bytes": 37834
+    },
     "assets/devices/profiles/pixel-9-pro.json": {
-      "sha256": "de18ad84c592412a59cd0c50e58cdda2d679dde7729b539c75c9f942b3084259",
-      "bytes": 36142
+      "sha256": "9877b52b9f80fcc99a783914381322372be7de0393d30e21d2cd2b22743aff1e",
+      "bytes": 37973
     },
     "assets/devices/profiles/pixel-9.json": {
-      "sha256": "83616229d96782055ca27b17bf2070b07d4e789757cbb9d09be2b0805b827c6a",
-      "bytes": 35828
+      "sha256": "239087b0eba2f09d1020b9a6ed2e4e91eeeab9df175c3b5b847cb9c56e928146",
+      "bytes": 37432
     },
     "assets/devices/profiles/pixel-9a.json": {
-      "sha256": "ea94ffbb074860ddf8e69bfe07e6f2533af87b87cbaf619d42977fbeeffe3c38",
-      "bytes": 36147
+      "sha256": "5b1c0a32d0223f60e96fad6e3cf21d600830ba358466116e09cc15b3a52e00e4",
+      "bytes": 37938
     },
     "assets/devices/profiles/pixel-fold-folded.json": {
-      "sha256": "a74313bee04f3ac7af4bacaf58801c5fd16929bbe694efff385bda8adf81e692",
-      "bytes": 43295
+      "sha256": "41bf7f0273b9f766734d435605f484e17e8b35fe956689951f9cb15b96d48743",
+      "bytes": 46915
     },
     "assets/devices/profiles/pixel-fold-unfolded.json": {
-      "sha256": "2fc47ea84fb601192bf4fcfe2282e4363212a55d7ac075ef670b0c1a5e08d5db",
-      "bytes": 45087
+      "sha256": "bc9036d43366a8b37e8cba1a866c6fe6cb7845884bb46fd739ccffb56c187dca",
+      "bytes": 49204
     },
     "assets/devices/profiles/xiaomi-pad-6.json": {
       "sha256": "5a100677d188094103b1ae41426a4216caab17290776c4434ee6656bb4250c63",
@@ -16046,8 +16046,8 @@
       "bytes": 10267
     },
     "assets/devices/verify_pixels.py": {
-      "sha256": "5f980f266a25ee3519128f485c26c578be408e18b0ab0167b65a7316390ccc8a",
-      "bytes": 17374
+      "sha256": "e082650fb86f8af5186587e9b559157e7aaa9ab6ff3b8694dbf0fb0ad5ae97fe",
+      "bytes": 20323
     },
     "assets/devices/verify_samsung.py": {
       "sha256": "2e9ca5ed6555cc357f351768ad8bb577083eb2e81d7eaf06764e101bad97ab84",
@@ -16440,6 +16440,98 @@
     "assets/devices/provenance/research/honor-robot-bay-verification.json": {
       "sha256": "53600a56ee55fbd5a6e888d2771ee8a27fd44e67e89e010cf967779f2012cc3d",
       "bytes": 6344
+    },
+    "assets/devices/provenance/research/pixel11-front-rail-fit.json": {
+      "sha256": "adaf352e38aab41b2fa0ba8eca56f0965ad8879ff94f61095b34186520c7d9b7",
+      "bytes": 4191
+    },
+    "assets/devices/provenance/research/pixel-accuracy-next.json": {
+      "sha256": "c7a96b1e267a041f566e568afcc865448615d7b99487bc466d016508d5bb768c",
+      "bytes": 1778
+    },
+    "assets/devices/provenance/research/pixel-fold-front-calibration.json": {
+      "sha256": "7f1ec2a3e9b5bc5b8b21614036bfe725b655a2dfc9ede996ed29a3b4ebe6e38d",
+      "bytes": 261945
+    },
+    "assets/devices/provenance/research/pixel-front-optics-verification.json": {
+      "sha256": "9280d12d5e5a6c5d4e657494365cda125270af335cb21b0c9aaa3a24aea7650f",
+      "bytes": 86232
+    },
+    "assets/devices/provenance/research/pixel-rail-details-production.json": {
+      "sha256": "a65be5145b3dd3f82b3911b61385efb4fb205c0c8da304799dc270cd2f059438",
+      "bytes": 27816
+    },
+    "assets/devices/provenance/research/pixel67-curved-front-patch.json": {
+      "sha256": "cdde469e6b4b7c6b4bca2fbe2a2689cee9656582dcd46d37dc7ba31fe581cb7e",
+      "bytes": 35990
+    },
+    "assets/devices/provenance/research/pixel-official-frame-calibration.json": {
+      "sha256": "bf17a0212a491fd7d3fdc8ac5d706472690b7ae3d8dcc4ad1ac5851de72c8160",
+      "bytes": 56549
+    },
+    "assets/devices/provenance/research/pixel-front-export-verification.json": {
+      "sha256": "e360b29984dd918aedd765883eb219c9cd498903b451129ed06edcdd7cafcec6",
+      "bytes": 14523
+    },
+    "assets/devices/provenance/research/pixel-shared-front-review.json": {
+      "sha256": "ee29a748bab6682135cf02a083e4b3f78a198d1439c1bbcd6c85f076e23c3446",
+      "bytes": 199337
+    },
+    "assets/devices/provenance/research/pixel45-front-calibration.json": {
+      "sha256": "b1c71b9cecb0477adfe0df688aa41ce87628af552e573b6c9361601d3d07f650",
+      "bytes": 50744
+    },
+    "assets/devices/provenance/research/pixel-front-measurements.json": {
+      "sha256": "8516aa18d4889d9d52f4224bf761e1f12dae77ddf2ec2624325c0daf246ae67b",
+      "bytes": 109286
+    },
+    "assets/devices/pixel_rail_details.py": {
+      "sha256": "eb104f588845795a4494cc88665baed315c7b70f677031b8f9c00ea78c1a66a3",
+      "bytes": 8268
+    },
+    "assets/devices/provenance/research/pixel-fold-cover-glass-patch.json": {
+      "sha256": "dea6b6434e427da92714e8aa43ef41e59e69a107b4b9fe57bdbe38c84084ac0c",
+      "bytes": 45415
+    },
+    "assets/devices/provenance/research/pixel89-front-calibration.json": {
+      "sha256": "66405980aaaa585bf58b8bd11e91eb3eb75af2ca847e8952feef28c275bd359d",
+      "bytes": 98717
+    },
+    "assets/devices/provenance/research/pixel67-front-calibration.json": {
+      "sha256": "4b11caf033ef4738a2b3c5d4bdad3c56f09eedf667fdcff1e8d8d5fc38798c4e",
+      "bytes": 76774
+    },
+    "assets/devices/provenance/research/pixel10-imported-front-patch.json": {
+      "sha256": "c4202c04912c4b77c252590596ec8436d1c68b26dafaf12b881f09141f42a366",
+      "bytes": 16305
+    },
+    "assets/devices/provenance/research/pixel10-front-calibration.json": {
+      "sha256": "80d51002841d31fc9bc5bddec25d439aedd6f6cefa7b5716739d1bde358157ae",
+      "bytes": 50656
+    },
+    "assets/devices/pixel_imported_front.py": {
+      "sha256": "ecff95a0aa16411062df84532324ae52dad269c57bf9d17cae46c8f95570634e",
+      "bytes": 8523
+    },
+    "assets/devices/provenance/research/pixel11-family-front-calibration.json": {
+      "sha256": "f060acb236b921ded42647e82ce7133661a55b1bc460b27a83e1cb794563ad1d",
+      "bytes": 27801
+    },
+    "assets/devices/pixel_front_optics.py": {
+      "sha256": "e6208997017156bce939cf5f68216f8cbe74249631f95deced1662c3720fdf3c",
+      "bytes": 6523
+    },
+    "assets/devices/provenance/research/pixel11-front-rim-final-review.json": {
+      "sha256": "45240dcc8b602fc393b2a767b7ff84afda036e9cbbee5616a25d82dac301617d",
+      "bytes": 781
+    },
+    "assets/devices/provenance/research/pixel11-antenna-reference-completion.json": {
+      "sha256": "006240adcb568b659715cd5068f55b090e67a6504224c87e4d5034080a0abe1b",
+      "bytes": 27102
+    },
+    "assets/devices/provenance/research/pixel-rails-material-audit.json": {
+      "sha256": "74abe6c48f0951b0ff0df0bddb606d0629f1b971a882aaaa818c4776eae54553",
+      "bytes": 17309
     }
   }
 }

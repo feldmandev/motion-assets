@@ -140,7 +140,9 @@
     "camera_geometry": "Provisional photo-informed blockout; shared reviewed optics are illustrative, not device-specific optical prescriptions",
     "finishes": "Approximate sRGB colors and roughness, not calibrated measured materials",
     "hinge": "Animated rigid-panel hinge with a measured open/closed thickness axis; half-angle barrel and hinge leaves remain an estimated mechanism; the flexible OLED is split at the crease.",
-    "branding": "Google G contour retained from reference artwork. Legacy Pixel4/4a/5/5a lower rear placement (approximately80%height); Pixel6 onward and folds centered on rear/camera leaf. Size, position and finish-tinted material are photo estimates, not manufacturer CAD."
+    "branding": "Google G contour retained from reference artwork. Legacy Pixel4/4a/5/5a lower rear placement (approximately80%height); Pixel6 onward and folds centered on rear/camera leaf. Size, position and finish-tinted material are photo estimates, not manufacturer CAD.",
+    "front_rail": "Visible inner-frame metal-to-dark-surround transition sampled independently of the OLED opening in the official SDK artwork. Uniform inset is a front-view approximation; per-edge variation, hinge transitions and antenna inserts are recorded in research/pixel-fold-front-calibration.json. Edge-roll depth and materials are not measured by this image.",
+    "antenna_details": "Visible cover-leaf breaks measured from this family closed Google artwork; root-space coordinates follow the cover leaf and mirror for its rear-facing open pose. Opposite leaf and unresolved hinge-edge bands are not inferred. Depth and finish-tinted polymer are illustrative."
   },
   "sources": [
     "https://support.google.com/pixelphone/answer/7158570?hl=en",
@@ -170,7 +172,8 @@
           2.0353137039937352,
           13.153564604541893,
           13.153564604541893
-        ]
+        ],
+        "front_rail_mm": 0.84
       },
       "center_mm": [
         -37.699999999999996,
@@ -197,7 +200,8 @@
           13.153564604541893,
           2.0353137039937352,
           2.0353137039937352
-        ]
+        ],
+        "front_rail_mm": 0.84
       },
       "center_mm": [
         37.699999999999996,
@@ -1773,12 +1777,12 @@
         2152
       ],
       "fit_box_mm": [
-        143.9656836461126,
-        149.23610366398572
+        141.74887813462385,
+        146.93814342278927
       ],
       "center_mm": [
         0.0,
-        -0.06934763181411975,
+        -0.10241970963484381,
         2.59
       ],
       "corner_radius_mm": 8.338567292225202,
@@ -1787,10 +1791,10 @@
       "cutouts": [
         {
           "center_mm": [
-            63.7724907063197,
-            70.61805183199286
+            64.89995600527936,
+            68.10910690717114
           ],
-          "radius_mm": 1.5
+          "radius_mm": 2.556471761965134
         }
       ],
       "foldable_surface": true
@@ -1818,10 +1822,10 @@
       "cutouts": [
         {
           "center_mm": [
-            0,
-            69.65011746280344
+            0.0,
+            68.51527016444791
           ],
-          "radius_mm": 1.5
+          "radius_mm": 2.4741804754956696
         }
       ],
       "rotation_deg": [
@@ -1849,9 +1853,256 @@
       ],
       "glass_border_mm": 1.5,
       "frame_glass_border_mm": 1.5,
-      "foldable_surface": true
+      "foldable_surface": true,
+      "glass_outline_mm": [
+        [
+          28.37838684,
+          75.71620987
+        ],
+        [
+          30.62678152,
+          74.56162882
+        ],
+        [
+          31.72059514,
+          73.71088489
+        ],
+        [
+          32.93594362,
+          72.43476899
+        ],
+        [
+          33.96898982,
+          70.85481597
+        ],
+        [
+          34.57666406,
+          69.51793265
+        ],
+        [
+          35.00203602,
+          68.18104933
+        ],
+        [
+          35.30587314,
+          66.47956147
+        ],
+        [
+          35.30587314,
+          -65.81111981
+        ],
+        [
+          35.06280345,
+          -67.26953798
+        ],
+        [
+          34.6981989,
+          -68.54565388
+        ],
+        [
+          33.54361785,
+          -70.9155834
+        ],
+        [
+          32.93594362,
+          -71.76632733
+        ],
+        [
+          31.84212999,
+          -72.92090838
+        ],
+        [
+          30.01910728,
+          -74.2577917
+        ],
+        [
+          28.92529366,
+          -74.80469851
+        ],
+        [
+          27.46687549,
+          -75.2908379
+        ],
+        [
+          25.64385278,
+          -75.65544244
+        ],
+        [
+          -24.18543461,
+          -75.65544244
+        ],
+        [
+          -26.12999217,
+          -75.5339076
+        ],
+        [
+          -28.0137823,
+          -74.98700078
+        ],
+        [
+          -29.47220047,
+          -74.31855912
+        ],
+        [
+          -30.99138606,
+          -73.28551292
+        ],
+        [
+          -32.26750196,
+          -72.07016445
+        ],
+        [
+          -33.30054816,
+          -70.6725137
+        ],
+        [
+          -34.02975724,
+          -69.27486296
+        ],
+        [
+          -34.57666406,
+          -67.69490995
+        ],
+        [
+          -34.9412686,
+          -65.75035239
+        ],
+        [
+          -35.06280345,
+          -64.17039937
+        ],
+        [
+          -35.06280345,
+          64.83884103
+        ],
+        [
+          -34.81973375,
+          67.20877056
+        ],
+        [
+          -34.15129209,
+          69.6394675
+        ],
+        [
+          -33.54361785,
+          70.9155834
+        ],
+        [
+          -32.26750196,
+          72.73860611
+        ],
+        [
+          -30.93061864,
+          74.014722
+        ],
+        [
+          -28.68222396,
+          75.41237275
+        ],
+        [
+          -26.9807361,
+          76.02004699
+        ],
+        [
+          -25.15771339,
+          76.38465153
+        ],
+        [
+          -16.34643696,
+          76.38465153
+        ],
+        [
+          -15.98183242,
+          76.20234926
+        ],
+        [
+          -15.55646045,
+          75.83774471
+        ],
+        [
+          15.98183242,
+          75.83774471
+        ],
+        [
+          16.40720439,
+          76.14158183
+        ],
+        [
+          17.07564605,
+          76.38465153
+        ],
+        [
+          25.64385278,
+          76.38465153
+        ],
+        [
+          27.46687549,
+          76.02004699
+        ]
+      ]
     }
   ],
   "reference_frame": "research\\skins\\pixel-9-pro-fold-unfolded\\frame.png",
-  "manufacturer": "Google"
+  "manufacturer": "Google",
+  "rail_details": {
+    "enclosure": "Aluminum enclosure",
+    "rail_material": "rail",
+    "materials": {
+      "antenna": {
+        "color_role": "back",
+        "metal": 0,
+        "rough": 0.68
+      }
+    },
+    "antenna_breaks": [
+      {
+        "id": "cover-top-1",
+        "edge": "top",
+        "center_axis_mm": -12.191746644771953,
+        "width_mm": 1.5129493744786977,
+        "inset_mm": 1.5192,
+        "material": "antenna"
+      },
+      {
+        "id": "cover-top-2",
+        "edge": "top",
+        "center_axis_mm": -56.03689383557702,
+        "width_mm": 1.452429009358423,
+        "inset_mm": 1.5192,
+        "material": "antenna"
+      },
+      {
+        "id": "cover-bottom-3",
+        "edge": "bottom",
+        "center_axis_mm": -12.161491441672496,
+        "width_mm": 1.452429009358423,
+        "inset_mm": 1.5192,
+        "material": "antenna"
+      },
+      {
+        "id": "cover-bottom-4",
+        "edge": "bottom",
+        "center_axis_mm": -56.03689383557702,
+        "width_mm": 1.452429009358423,
+        "inset_mm": 1.5192,
+        "material": "antenna"
+      },
+      {
+        "id": "cover-left-5",
+        "edge": "left",
+        "center_axis_mm": 36.82506,
+        "width_mm": 1.33688,
+        "inset_mm": 1.4584,
+        "material": "antenna"
+      },
+      {
+        "id": "cover-left-6",
+        "edge": "left",
+        "center_axis_mm": -36.88583,
+        "width_mm": 1.33688,
+        "inset_mm": 1.4584,
+        "material": "antenna"
+      }
+    ]
+  }
 }

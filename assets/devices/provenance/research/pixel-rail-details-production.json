@@ -1,0 +1,722 @@
+{
+  "date": "2026-10-23",
+  "status": "Helper ready for parent integration; no Blender execution, build hook, canonical profile edits, or export acceptance in this worker.",
+  "owned_files": [
+    "pixel_rail_details.py",
+    "research/pixel-rail-details-production.json"
+  ],
+  "entry_point": "apply_pixel_rail_details(profile, root)",
+  "contract": {
+    "activation": "Only explicit profile.rail_details; absent/empty returns applied:false without scene/profile mutation. No generation/family defaults and no automatic reading of this report.",
+    "coordinates": "All center_axis_mm values and clipping axes are root-local mm: X right, Y up, Z front. Side seams measure Y; top/bottom seams measure X. Fold leaf data must be transformed into this same bind-pose root coordinate system.",
+    "rail_details": {
+      "enclosure": "Exact default enclosure object name; optional if every seam supplies enclosure.",
+      "rail_material": "Existing material role used to select only aluminum faces. Non-aluminum port/cavity faces are excluded.",
+      "materials": "Map of new role to {color_role:<existing role>, optional finish_role:<existing role>, optional metal/rough}. Clone current selected source material; finish_role copies only metallic/roughness. Existing profile.materials[role] and selected finishes[role] can override rgb/metal/rough.",
+      "antenna_breaks": "Explicit array of {id, edge:left|right|top|bottom, center_axis_mm, width_mm, material:<new role>, optional inset_mm, optional enclosure:<exact override>}. IDs unique across leaves. inset_mm inherits measured body_mm.front_rail_mm when omitted; override for per-leaf/per-edge clipping. It is the plan-view aluminum edge-to-inner clipping limit, not through-depth seam width.",
+      "replace_objects": "Optional exact object names; no prefix deletion. replacement_verified_count must match the full measured seam count. Every replacement mesh must be nonempty before these old objects are deleted.",
+      "camera_sidewall": "Optional {object:<exact housing>, face_material:<existing role>, material:<new role>}. Assign only original face-role polygons whose root-space normals have abs(Z)<.9999. Retain both planar caps and all other cavity materials."
+    },
+    "parenting": "Each patch mesh is in root space, parented to source enclosure.parent (or root), with matrix_basis=parent.matrix_world.inverted() @ root.matrix_world at bind pose. It follows that leaf during Fold animation; no root-parented frozen patches.",
+    "geometry": "Evaluate each distinct enclosure once. Triangulate before half-space clipping; copy aluminum-only faces, including rolled lip, offset outward 0.003mm to avoid coplanar flicker. Surface appearance only; no through-cut CAD claim.",
+    "runtime_finish": "Helper adds actual created names to in-memory profile.material_objects and adds each new role to finish palettes by copying color_role rgb only when absent. Explicit per-finish role rgb wins. Parent gallery builder must consume exported material_slots and finishes.",
+    "return": "{applied, antenna_breaks:[{id,polygons}], removed_objects, optional camera_sidewall_polygons}; unsupported returns {applied:false,reason}.",
+    "call_order": "After imported/procedural enclosure creation AND all prepare_screen calls (curved screens deform the enclosure), before save/export/metadata. Add new meshes to final export parts (build.py already recomputes parts before GLB export). Fold pose must be the same bind pose used for measured root-space data.",
+    "rim_profile": "body_mm.front_rail_mm is the measured exposed aluminum width; existing body_mm.edge_roll_mm describes chassis roll. Parent constructs that rim profile. Helper uses front_rail_mm only as the antenna clipping inset default; no body/black-glass/OLED geometry changes here."
+  },
+  "parent_patch_instructions": [
+    "Parent owns build.py: import helper and call it once at the stated hook; retain returned counts for serialized Blender QA.",
+    "Family profile/generator owners add only their evidence-backed rail_details. This worker edits no profile or generator. The two candidate additions below are explicit opt-ins, not defaults.",
+    "For procedural profiles, generator must preserve materials/finish overrides and rail_details across regeneration. For imported Pixel10Pro, preserve source ports, enclosure cavity material slots and all unrelated objects; only the four exact listed strip objects may be replaced.",
+    "Before acceptance: parent builds serially, checks all measured patches nonempty and bounds within 0.003mm offset, compares actual front lip/metal-to-glass boundary to SDK artwork, checks alternate finishes and Fold leaf animation if opted in. Camera cavity slot indices and port geometry must remain unchanged.",
+    "Exposed aluminum width remains family profile/body-front-glass work. This helper does not widen black OLED bezels, move optics, alter rear cameras/logos/body dimensions, or change native OLED aspect/UV."
+  ],
+  "sources": [
+    {
+      "id": "pixel9-design",
+      "url": "https://store.google.com/au/magazine/pixel-9-pro-phones-design-story?hl=en-GB",
+      "observed": "Google designer specifies matte glass back, polished aluminum enclosure, bead-blasted camera face and high-polished sidewalls. Also specifies flat glass.",
+      "quote": "The camera bar features a bead-blasted top surface and high-polished sidewalls"
+    },
+    {
+      "id": "pixel10-product",
+      "url": "https://store.google.com/gb/product/pixel_10_pro?hl=en-GB",
+      "observed": "Google describes silky matte back, polished frame and diamond-cut camera bar. Macro image shows diffuse camera face, narrow polished rim and reflective enclosure."
+    },
+    {
+      "id": "pixel10-specs",
+      "url": "https://store.google.com/product/pixel_10_pro_specs?hl=en-US",
+      "observed": "Victus2 silky matte back and polished-finish aluminum frame. Material identity alone does not determine shader numbers."
+    },
+    {
+      "id": "device-art-tree",
+      "url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/",
+      "observed": "Official Google Android Studio device-art tree. Installed SDK frame derivatives used for measured seams; art is not manufacturer CAD."
+    }
+  ],
+  "confidence_limits": [
+    "Seam centers/widths come from independent per-model SDK art measurements in the prior audit; checked against current frame hashes. Approximately +/-2px manual selection (about 0.10mm); artwork projection is not physical section/CAD.",
+    "Rim inner boundary below is a local scanline interpretation of bright rolled aluminum vs dark cover glass, separate from the transparent OLED opening. Not a global contour fit. About +/-2px boundary uncertainty.",
+    "Polymer metal=0 rough=.68 is a rendering estimate; default color_role=back is finish-aware but not a measured polymer color. Family owners may supply explicit antenna rgb by finish. No fixed universal black/white and no calibrated roughness claim.",
+    "Pixel9Pro camera dual finish is explicit in Google design story (independently found by web search this run). Pixel10Pro polished frame/diamond-cut bar is explicit, but diffuse face vs reflective sidewall division remains a qualified official-photo interpretation. No camera dual finish proposed for other families.",
+    "Independent current-GLB triangle clipping below validates nonempty candidates without Blender. It does not validate bmesh execution, shading, port visibility or rendered acceptance. The old saved prototype check contains an empty bottom patch and is not final verification.",
+    "Downloaded official reference photos already in tmp/pixel-rail-audit remain local. No redistribution or blanket license claim."
+  ],
+  "devices": {
+    "pixel-9-pro": {
+      "profile_status": "Unchanged; candidate profile.rail_details supplied below for family-owner review.",
+      "candidate_profile_rail_details": {
+        "enclosure": "Aluminum enclosure",
+        "rail_material": "rail",
+        "materials": {
+          "antenna": {
+            "color_role": "back",
+            "metal": 0,
+            "rough": 0.68
+          },
+          "bar_side": {
+            "color_role": "bar",
+            "finish_role": "rail"
+          }
+        },
+        "antenna_breaks": [
+          {
+            "id": "left-upper",
+            "edge": "left",
+            "center_axis_mm": 51.841,
+            "width_mm": 1.49,
+            "inset_mm": 1.2343,
+            "material": "antenna"
+          },
+          {
+            "id": "left-lower",
+            "edge": "left",
+            "center_axis_mm": -60.6781,
+            "width_mm": 1.49,
+            "inset_mm": 1.2343,
+            "material": "antenna"
+          },
+          {
+            "id": "right-upper",
+            "edge": "right",
+            "center_axis_mm": 51.841,
+            "width_mm": 1.49,
+            "inset_mm": 1.2343,
+            "material": "antenna"
+          },
+          {
+            "id": "right-lower",
+            "edge": "right",
+            "center_axis_mm": -60.6781,
+            "width_mm": 1.49,
+            "inset_mm": 1.2343,
+            "material": "antenna"
+          },
+          {
+            "id": "top",
+            "edge": "top",
+            "center_axis_mm": 0.0,
+            "width_mm": 1.4914,
+            "inset_mm": 1.2343,
+            "material": "antenna"
+          },
+          {
+            "id": "bottom",
+            "edge": "bottom",
+            "center_axis_mm": 8.5371,
+            "width_mm": 1.4914,
+            "inset_mm": 1.2343,
+            "material": "antenna"
+          }
+        ],
+        "camera_sidewall": {
+          "object": "Camera housing",
+          "face_material": "bar",
+          "material": "bar_side"
+        }
+      },
+      "measured_seam_evidence": [
+        {
+          "id": "left-upper",
+          "edge": "left",
+          "normalized_uv": [
+            0,
+            0.1607263
+          ],
+          "center_axis_mm": 51.841,
+          "width_mm": 1.49,
+          "source_axis_px": 478,
+          "orientation": "transverse to long rail, runs through device depth"
+        },
+        {
+          "id": "left-lower",
+          "edge": "left",
+          "normalized_uv": [
+            0,
+            0.8971083
+          ],
+          "center_axis_mm": -60.6781,
+          "width_mm": 1.49,
+          "source_axis_px": 2668,
+          "orientation": "transverse to long rail, runs through device depth"
+        },
+        {
+          "id": "right-upper",
+          "edge": "right",
+          "normalized_uv": [
+            1,
+            0.1607263
+          ],
+          "center_axis_mm": 51.841,
+          "width_mm": 1.49,
+          "source_axis_px": 478,
+          "orientation": "transverse to long rail, runs through device depth"
+        },
+        {
+          "id": "right-lower",
+          "edge": "right",
+          "normalized_uv": [
+            1,
+            0.8971083
+          ],
+          "center_axis_mm": -60.6781,
+          "width_mm": 1.49,
+          "source_axis_px": 2668,
+          "orientation": "transverse to long rail, runs through device depth"
+        },
+        {
+          "id": "top",
+          "edge": "top",
+          "normalized_uv": [
+            0.5,
+            0
+          ],
+          "center_axis_mm": 0.0,
+          "width_mm": 1.4914,
+          "source_axis_px": 700,
+          "orientation": "transverse to short rail, runs through device depth"
+        },
+        {
+          "id": "bottom",
+          "edge": "bottom",
+          "normalized_uv": [
+            0.6185714,
+            1
+          ],
+          "center_axis_mm": 8.5371,
+          "width_mm": 1.4914,
+          "source_axis_px": 866,
+          "orientation": "transverse to short rail, runs through device depth"
+        }
+      ],
+      "official_frame": {
+        "file": "research/skins/pixel-9-pro/frame.png",
+        "size_px": [
+          1408,
+          2974
+        ],
+        "sha256": "c81473b27da60f38bcddd354cff92cd83cece3e7028f6cb404b3bd2934880338",
+        "matches_prior_audit": true,
+        "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_9_pro/"
+      },
+      "metal_glass_scanline": {
+        "row_px": 1000,
+        "outer_edge_px": 0,
+        "inner_metal_boundary_px_approx": 24,
+        "rim_mm_approx": 1.2343,
+        "black_cover_glass_until_oled_px": 60,
+        "method": "Separate shaded aluminum roll from dark cover glass; narrow specular lines at x26/28 are glass edge highlights, not OLED boundaries. inset_mm uses this interpreted aluminum transition, +/-2px."
+      },
+      "current_glb": {
+        "file": "exports/pixel-9-pro/model.glb",
+        "sha256": "f97f3365260b775d0878544cd6361633924d8bc45c1ebc9cce6a4c24b9c2599e",
+        "enclosure": "Aluminum enclosure",
+        "enclosure_bounds_root_mm": [
+          [
+            -35.999998,
+            35.999998
+          ],
+          [
+            -76.399997,
+            76.399997
+          ],
+          [
+            -4.225,
+            4.225
+          ]
+        ],
+        "front_glass_halfwidth_mm": 35.287499,
+        "enclosure_to_glass_plan_gap_per_side_mm": 0.712499,
+        "gap_limit": "Bounding-box plan gap, not full visible lip width; rail roll and glass overlap affect visibility. Direct GLB measurement; no front.png used.",
+        "existing_antenna_nodes": []
+      },
+      "independent_triangle_clip_check": [
+        {
+          "id": "left-upper",
+          "surviving_glb_triangles": 42,
+          "bounds_mm_before_offset": [
+            [
+              -35.999998,
+              -34.765698
+            ],
+            [
+              51.096,
+              52.586
+            ],
+            [
+              -4.225,
+              4.225
+            ]
+          ]
+        },
+        {
+          "id": "left-lower",
+          "surviving_glb_triangles": 43,
+          "bounds_mm_before_offset": [
+            [
+              -35.999998,
+              -34.765698
+            ],
+            [
+              -61.4231,
+              -59.9331
+            ],
+            [
+              -4.225,
+              4.225
+            ]
+          ]
+        },
+        {
+          "id": "right-upper",
+          "surviving_glb_triangles": 42,
+          "bounds_mm_before_offset": [
+            [
+              34.765698,
+              35.999998
+            ],
+            [
+              51.096,
+              52.586
+            ],
+            [
+              -4.225,
+              4.225
+            ]
+          ]
+        },
+        {
+          "id": "right-lower",
+          "surviving_glb_triangles": 43,
+          "bounds_mm_before_offset": [
+            [
+              34.765698,
+              35.999998
+            ],
+            [
+              -61.4231,
+              -59.9331
+            ],
+            [
+              -4.225,
+              4.225
+            ]
+          ]
+        },
+        {
+          "id": "top",
+          "surviving_glb_triangles": 42,
+          "bounds_mm_before_offset": [
+            [
+              -0.7457,
+              0.7457
+            ],
+            [
+              75.165697,
+              76.399997
+            ],
+            [
+              -4.225,
+              4.225
+            ]
+          ]
+        },
+        {
+          "id": "bottom",
+          "surviving_glb_triangles": 43,
+          "bounds_mm_before_offset": [
+            [
+              7.7914,
+              9.2828
+            ],
+            [
+              -76.399997,
+              -75.165697
+            ],
+            [
+              -4.225,
+              4.225
+            ]
+          ]
+        }
+      ],
+      "official_images_local_only": [
+        {
+          "asset": {
+            "alt": "Pixel 9 Pro and Pixel 9 Pro phones placed on top of its original design sketches",
+            "url": "https://lh3.googleusercontent.com/i52uyB07iOcTbGHHIWYfmi5LZe0osgcxLd3Yjm3d4Dm8csC9ko8KYXaEg6rn2gxpHqALzAzYfAcAGmCaHTJeKLim7m99WzisxYrSAcEM=s3000-w3000-e365-rw-v0-nu"
+          },
+          "local": "tmp/pixel-rail-audit/pixel9-0.webp"
+        },
+        {
+          "asset": {
+            "alt": "Pixel 9 Pro facing back to show its new camera bar design",
+            "url": "https://lh3.googleusercontent.com/iGALxM0OF2TGq-ZqUAaxJPdd8af9FpQjEmb15fZpcb3P-mOGgHoZqYuMXWJfEw9fhG_Tl1h6NffEOQvuON3K8HGkg_bK_xAvkdeVJBQ=s1200-w1200-e365-rw-v0-nu"
+          },
+          "local": "tmp/pixel-rail-audit/pixel9-6.webp"
+        }
+      ],
+      "camera_finish_confidence": "High for material division; numerical shaders remain estimates."
+    },
+    "pixel-10-pro": {
+      "profile_status": "Unchanged; candidate profile.rail_details supplied below for family-owner review.",
+      "candidate_profile_rail_details": {
+        "enclosure": "Body | aluminum enclosure",
+        "rail_material": "rail",
+        "materials": {
+          "antenna": {
+            "color_role": "back",
+            "metal": 0,
+            "rough": 0.68
+          },
+          "bar_side": {
+            "color_role": "bar",
+            "finish_role": "rail"
+          }
+        },
+        "antenna_breaks": [
+          {
+            "id": "left-upper",
+            "edge": "left",
+            "center_axis_mm": 51.0191,
+            "width_mm": 1.4415,
+            "inset_mm": 1.3371,
+            "material": "antenna"
+          },
+          {
+            "id": "left-lower",
+            "edge": "left",
+            "center_axis_mm": -60.4404,
+            "width_mm": 1.4415,
+            "inset_mm": 1.3371,
+            "material": "antenna"
+          },
+          {
+            "id": "right-upper",
+            "edge": "right",
+            "center_axis_mm": 51.0191,
+            "width_mm": 1.4415,
+            "inset_mm": 1.3371,
+            "material": "antenna"
+          },
+          {
+            "id": "right-lower",
+            "edge": "right",
+            "center_axis_mm": -60.4404,
+            "width_mm": 1.4415,
+            "inset_mm": 1.3371,
+            "material": "antenna"
+          },
+          {
+            "id": "top",
+            "edge": "top",
+            "center_axis_mm": 0.0,
+            "width_mm": 1.44,
+            "inset_mm": 1.3371,
+            "material": "antenna"
+          },
+          {
+            "id": "bottom",
+            "edge": "bottom",
+            "center_axis_mm": 8.5371,
+            "width_mm": 1.44,
+            "inset_mm": 1.3371,
+            "material": "antenna"
+          }
+        ],
+        "camera_sidewall": {
+          "object": "Camera bar | satin face and rolled shoulder",
+          "face_material": "bar",
+          "material": "bar_side"
+        },
+        "replace_objects": [
+          "Antenna break",
+          "Antenna break.001",
+          "Antenna break.002",
+          "Antenna break.003"
+        ],
+        "replacement_verified_count": 6
+      },
+      "measured_seam_evidence": [
+        {
+          "id": "left-upper",
+          "edge": "left",
+          "normalized_uv": [
+            0,
+            0.1661051
+          ],
+          "center_axis_mm": 51.0191,
+          "width_mm": 1.4415,
+          "source_axis_px": 493,
+          "orientation": "transverse to long rail, runs through device depth"
+        },
+        {
+          "id": "left-lower",
+          "edge": "left",
+          "normalized_uv": [
+            0,
+            0.8955526
+          ],
+          "center_axis_mm": -60.4404,
+          "width_mm": 1.4415,
+          "source_axis_px": 2658,
+          "orientation": "transverse to long rail, runs through device depth"
+        },
+        {
+          "id": "right-upper",
+          "edge": "right",
+          "normalized_uv": [
+            1,
+            0.1661051
+          ],
+          "center_axis_mm": 51.0191,
+          "width_mm": 1.4415,
+          "source_axis_px": 493,
+          "orientation": "transverse to long rail, runs through device depth"
+        },
+        {
+          "id": "right-lower",
+          "edge": "right",
+          "normalized_uv": [
+            1,
+            0.8955526
+          ],
+          "center_axis_mm": -60.4404,
+          "width_mm": 1.4415,
+          "source_axis_px": 2658,
+          "orientation": "transverse to long rail, runs through device depth"
+        },
+        {
+          "id": "top",
+          "edge": "top",
+          "normalized_uv": [
+            0.5,
+            0
+          ],
+          "center_axis_mm": 0.0,
+          "width_mm": 1.44,
+          "source_axis_px": 700,
+          "orientation": "transverse to short rail, runs through device depth"
+        },
+        {
+          "id": "bottom",
+          "edge": "bottom",
+          "normalized_uv": [
+            0.6185714,
+            1
+          ],
+          "center_axis_mm": 8.5371,
+          "width_mm": 1.44,
+          "source_axis_px": 866,
+          "orientation": "transverse to short rail, runs through device depth"
+        }
+      ],
+      "official_frame": {
+        "file": "research/skins/pixel-10-pro/frame.png",
+        "size_px": [
+          1410,
+          2968
+        ],
+        "sha256": "094bd2e8852b62500e8dcddd7ddea329ea023a7b845a0d5894eb1f1cfc35cfa4",
+        "matches_prior_audit": true,
+        "source_url": "https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-main/artwork/resources/device-art-resources/pixel_10_pro/"
+      },
+      "metal_glass_scanline": {
+        "row_px": 1000,
+        "outer_edge_px": 0,
+        "inner_metal_boundary_px_approx": 26,
+        "rim_mm_approx": 1.3371,
+        "black_cover_glass_until_oled_px": 59,
+        "method": "Separate shaded aluminum roll from dark cover glass; narrow specular lines at x26/28 are glass edge highlights, not OLED boundaries. inset_mm uses this interpreted aluminum transition, +/-2px."
+      },
+      "current_glb": {
+        "file": "exports/pixel-10-pro/model.glb",
+        "sha256": "264cfe3d540945de0c74561327bda2e1b092a7f3df5664a6ae3e9c321bce63a4",
+        "enclosure": "Body | aluminum enclosure",
+        "enclosure_bounds_root_mm": [
+          [
+            -35.999998,
+            35.999998
+          ],
+          [
+            -76.399997,
+            76.399997
+          ],
+          [
+            -4.275,
+            4.275
+          ]
+        ],
+        "front_glass_halfwidth_mm": 35.799999,
+        "enclosure_to_glass_plan_gap_per_side_mm": 0.2,
+        "gap_limit": "Bounding-box plan gap, not full visible lip width; rail roll and glass overlap affect visibility. Direct GLB measurement; no front.png used.",
+        "existing_antenna_nodes": [
+          "Antenna break",
+          "Antenna break.001",
+          "Antenna break.002",
+          "Antenna break.003"
+        ]
+      },
+      "independent_triangle_clip_check": [
+        {
+          "id": "left-upper",
+          "surviving_glb_triangles": 41,
+          "bounds_mm_before_offset": [
+            [
+              -35.999998,
+              -34.662898
+            ],
+            [
+              50.29835,
+              51.73985
+            ],
+            [
+              -4.275,
+              4.275
+            ]
+          ]
+        },
+        {
+          "id": "left-lower",
+          "surviving_glb_triangles": 44,
+          "bounds_mm_before_offset": [
+            [
+              -35.999998,
+              -34.662898
+            ],
+            [
+              -61.16115,
+              -59.71965
+            ],
+            [
+              -4.275,
+              4.275
+            ]
+          ]
+        },
+        {
+          "id": "right-upper",
+          "surviving_glb_triangles": 44,
+          "bounds_mm_before_offset": [
+            [
+              34.662898,
+              35.999998
+            ],
+            [
+              50.29835,
+              51.73985
+            ],
+            [
+              -4.275,
+              4.275
+            ]
+          ]
+        },
+        {
+          "id": "right-lower",
+          "surviving_glb_triangles": 42,
+          "bounds_mm_before_offset": [
+            [
+              34.662898,
+              35.999998
+            ],
+            [
+              -61.16115,
+              -59.71965
+            ],
+            [
+              -4.275,
+              4.275
+            ]
+          ]
+        },
+        {
+          "id": "top",
+          "surviving_glb_triangles": 42,
+          "bounds_mm_before_offset": [
+            [
+              -0.72,
+              0.72
+            ],
+            [
+              75.062897,
+              76.399997
+            ],
+            [
+              -4.275,
+              4.275
+            ]
+          ]
+        },
+        {
+          "id": "bottom",
+          "surviving_glb_triangles": 172,
+          "bounds_mm_before_offset": [
+            [
+              7.8171,
+              9.2571
+            ],
+            [
+              -76.399997,
+              -75.062897
+            ],
+            [
+              -4.275,
+              4.275
+            ]
+          ]
+        }
+      ],
+      "official_images_local_only": [
+        {
+          "asset": {
+            "alt": "Pixel 10 Pro and Pro XL from the side to compare the phones' heights and display the phones' thinness",
+            "url": "https://lh3.googleusercontent.com/1zbgSlz9b0GG48o2p73K4WVPdLEp17bKSLQYdXX7pUDnC8UllKB3sWcMthH362Xr23Dck0-VZADtGwJouRELL-vlC3lTbOSbQvl8=s3000-w3000-e365-rw-v0-nu"
+          },
+          "local": "tmp/pixel-rail-audit/pixel10-22.webp"
+        },
+        {
+          "asset": {
+            "alt": "Pixel 10 Pro upside down with one corner touching a liquid surface",
+            "url": "https://lh3.googleusercontent.com/W34c6s1erwHCeN59uI9EFKjJNJijemkgIRMnOwAoRt-RZuuI_g2Lht53Zse6Vrqi-2u8C4HIrAtSOevHs5Ngg4pOWVzRhP0Kgm8=s3000-w3000-e365-rw-v0-nu"
+          },
+          "local": "tmp/pixel-rail-audit/pixel10-44.webp"
+        }
+      ],
+      "camera_finish_confidence": "Medium; sidewall division inferred from official macro, not explicitly specified as bead-blasted/high-polished."
+    }
+  },
+  "unchanged_profiles": [
+    "pixel-9-pro",
+    "pixel-10-pro"
+  ],
+  "other_profiles": "No other profile was opted in or modified. Other family workers own their measured seam data; no 9/10 geometry or material division is extrapolated.",
+  "verification": {
+    "syntax": "AST parse passed; no Blender launched.",
+    "blender": "Not run by instruction; parent owns serialized builds.",
+    "exports": "No BLEND/GLB/source assets/gallery files changed.",
+    "focused_checks": "Inline checks passed: valid JSON contract; absent/empty rail_details returns applied:false without profile mutation or Blender API access; both frame hashes match audit; all 12 independently clipped current-GLB candidates nonempty.",
+    "fold_binding": "Code implements source-parent bind transform exactly as requested. Animation/runtime Blender verification remains pending with parent; no Fold seam measurements are invented here.",
+    "seam_inset_contract": "Focused source-expression checks passed: omitted inset_mm inherits body_mm.front_rail_mm; explicit inset_mm wins; original seam entry is not mutated."
+  }
+}
