@@ -1,0 +1,22 @@
+{
+  "oneplus-12": {
+    "gallery_model": "oneplus_12",
+    "source_gallery_status": "legacy Documents generator ID; absent from current source gallery"
+  },
+  "oneplus-12r": {
+    "gallery_model": "oneplus_12r",
+    "source_gallery_status": "legacy Documents generator ID; absent from current source gallery"
+  },
+  "oneplus-11": {
+    "gallery_model": "oneplus_11",
+    "source_gallery_status": "legacy Documents generator ID; absent from current source gallery"
+  },
+  "oneplus-11r": {
+    "gallery_model": "oneplus_11r",
+    "source_gallery_status": "no matching existing source gallery entry found; parent must add/confirm oneplus_11r"
+  },
+  "oneplus-pad-lite": {
+    "gallery_model": "oneplus_pad_lite",
+    "source_gallery_status": "present in Documents gallery"
+  }
+}

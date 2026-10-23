@@ -1,0 +1,255 @@
+{
+  "id": "nothing-phone-3",
+  "name": "Nothing Phone (3)",
+  "state": "default",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        1260,
+        2800
+      ],
+      "size_mm": [
+        69.52316290369028,
+        154.49591756375617
+      ],
+      "center_mm": [
+        0.0,
+        0.0,
+        4.529999732971191
+      ],
+      "corner_radius_mm": 6.966581451845137,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0,
+      "frame_bounds_mm": [
+        3.033418548154863,
+        3.0520412181219143,
+        69.52316290369028,
+        154.49591756375617
+      ],
+      "frame_screen_px": null,
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "width": 75.59,
+        "height": 160.6,
+        "depth": 8.99,
+        "corner_radius": 10.0,
+        "edge_roll": 0.28,
+        "front_rail_mm": 0.4,
+        "corner_radii_mm": [
+          10.0,
+          10.0,
+          10.0,
+          10.0
+        ]
+      },
+      "cutouts": [
+        {
+          "center_mm": [
+            0,
+            74.1
+          ],
+          "radius_mm": 1.4
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "body_mm": {
+    "width": 75.59,
+    "height": 160.6,
+    "depth": 8.99,
+    "corner_radius": 10.0,
+    "edge_roll": 0.28,
+    "front_rail_mm": 0.4,
+    "corner_radii_mm": [
+      10.0,
+      10.0,
+      10.0,
+      10.0
+    ]
+  },
+  "icon_morph": {
+    "windows": 3,
+    "kind": "phone"
+  },
+  "articulation": null,
+  "robot_motion": null,
+  "panels": [],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/nothing-phone-3-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "logo": "logo",
+    "decor": "decor",
+    "seam": "seam",
+    "glyph": "glyph",
+    "black": "black",
+    "flash": "flash",
+    "red": "red",
+    "matrix": "matrix"
+  },
+  "finishes": [
+    {
+      "name": "White",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.8941176470588236,
+            0.8941176470588236,
+            0.8862745098039215
+          ],
+          "rough": 0.36
+        },
+        "rail": {
+          "rgb": [
+            0.8627450980392157,
+            0.8627450980392157,
+            0.8627450980392157
+          ],
+          "metal": 0.65,
+          "rough": 0.29
+        },
+        "bar": {
+          "rgb": [
+            0.09,
+            0.1,
+            0.11
+          ],
+          "metal": 0.35,
+          "rough": 0.28
+        },
+        "logo": {
+          "rgb": [
+            0.5364705882352941,
+            0.5364705882352941,
+            0.5317647058823529
+          ],
+          "rough": 0.45
+        },
+        "decor": {
+          "rgb": [
+            0.8494117647058823,
+            0.8494117647058823,
+            0.8419607843137255
+          ],
+          "rough": 0.5
+        },
+        "seam": {
+          "rgb": [
+            0.7689411764705882,
+            0.7689411764705882,
+            0.7621960784313725
+          ],
+          "rough": 0.55
+        },
+        "glyph": {
+          "rgb": [
+            0.94,
+            0.94,
+            0.89
+          ],
+          "rough": 0.38
+        }
+      }
+    },
+    {
+      "name": "Black",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.25098039215686274,
+            0.24705882352941178,
+            0.27058823529411763
+          ],
+          "rough": 0.36
+        },
+        "rail": {
+          "rgb": [
+            0.30196078431372547,
+            0.2980392156862745,
+            0.3176470588235294
+          ],
+          "metal": 0.65,
+          "rough": 0.29
+        },
+        "bar": {
+          "rgb": [
+            0.09,
+            0.1,
+            0.11
+          ],
+          "metal": 0.35,
+          "rough": 0.28
+        },
+        "logo": {
+          "rgb": [
+            0.29803921568627456,
+            0.2958823529411765,
+            0.3088235294117647
+          ],
+          "rough": 0.45
+        },
+        "decor": {
+          "rgb": [
+            0.26603921568627453,
+            0.2618823529411765,
+            0.2868235294117647
+          ],
+          "rough": 0.5
+        },
+        "seam": {
+          "rgb": [
+            0.21584313725490195,
+            0.21247058823529413,
+            0.23270588235294115
+          ],
+          "rough": 0.55
+        },
+        "glyph": {
+          "rgb": [
+            0.75,
+            0.77,
+            0.76
+          ],
+          "rough": 0.38
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/nothing-phone-3.e33a7650d7c5.glb.gz",
+  "sha256": "e33a7650d7c5685884f0b78d6fafae8e2a866c1f2aae8934fc82d3bbdd0d4de3",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/nothing-phone-3.json",
+    "accuracy": {
+      "body_dimensions": "Official metric chassis dimensions. Radius and edge roll photoestimated; not OEM CAD.",
+      "screen_geometry": "Official full-rectangle diagonal and native pixel aspect. Centered punch hole, bezels and corner radius photoestimated.",
+      "camera_geometry": "Camera centers and outer clear windows fitted to front-on official rear render. Bumps, optical internals, glass and rings approximate; not manufacturer CAD.",
+      "glyphs": "Photo-fitted physical strip paths and widths, unlit diffuse surfaces. Phone 3 Matrix is a simplified inactive circular dot array; Phone 4a six white zones plus red indicator. No invented lit symbols.",
+      "finishes": "Official finish names; existing Documents sRGB palette, finish-tinted logo retained via make_device_branding. Uncalibrated PBR approximation.",
+      "branding": "Restrained reconstructed dot-matrix NOTHING mark, estimated size and position; tiny regulatory text omitted.",
+      "omissions": "Transparent internals reduced to low-contrast plates, coil traces and fasteners. Ports, antenna seams, microscopic circuits, actual translucency and programmable Glyph lighting omitted."
+    },
+    "sources": [
+      "https://nothing.tech/products/phone-3",
+      "https://cdn.shopify.com/s/files/1/0376/5420/0459/files/0000s_0011_Phone-3-white.png"
+    ]
+  }
+}

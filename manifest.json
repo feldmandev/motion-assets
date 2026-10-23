@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": "0.1.1",
+  "version": "0.1.2",
   "repository": "https://github.com/feldmandev/motion-assets",
   "modules": [
     "shapes",
@@ -26,24 +26,24 @@
       "bytes": 42415
     },
     "assets/devices/build.py": {
-      "sha256": "b8f286890519dbd158a06156e3c2653e52d0e8073c530497b40cf21603d3316c",
-      "bytes": 41133
+      "sha256": "93c9149255f7d9d996e3a6c54a7c608c62f7b269c09756daf0aafc06472e7dd7",
+      "bytes": 41761
     },
     "assets/devices/build_googlebooks.py": {
-      "sha256": "aec7a1a2a3744a5f124983e3d01d8d78dcbf58c4a9d0e8a949971d7ccc51fdd3",
-      "bytes": 487
+      "sha256": "52080bb4c93cb26f74b31495480e31f323738258028d9734548e0458057dccd9",
+      "bytes": 502
     },
     "assets/devices/build_iphones.py": {
-      "sha256": "03c80bfc0098ef64a5c818375b5bbb780ad4a094104578ca53c2453ad39a8462",
-      "bytes": 1117
+      "sha256": "bd6c1b6bef6df755902a279c0c0a37f250c8b8c136ac6d3209131aa05a5d56f7",
+      "bytes": 1143
     },
     "assets/devices/build_pixels.py": {
       "sha256": "0805bd8b55a8ac30754258f35c868a1f61243f73a20d3246eea44c136072f9e8",
       "bytes": 11162
     },
     "assets/devices/catalog.json": {
-      "sha256": "7c167dced0a617e77331b5300d7ac8a4136f090a02653d26904171b81cfda2c6",
-      "bytes": 472246
+      "sha256": "47513371ae15c33431993f71562a6b01b3ddbb11abd6fdbc5b09e74ec5b3b246",
+      "bytes": 476170
     },
     "assets/devices/fold_centering.js": {
       "sha256": "4a351ae0107277fefe9d510f44f3cc0902f9e187b2efc07d2713b9237c634758",
@@ -378,40 +378,40 @@
       "bytes": 5195
     },
     "assets/devices/frames/galaxy-z-flip5-folded-0.svg": {
-      "sha256": "265354b2e0645764c00cd571bdbf94abccd2a2752eb722fce038b738ea0b53f8",
-      "bytes": 7104
+      "sha256": "3f2315ec4b9f5252e5fc3abf9d28d2ddf098a853b72600d854e6913032e5d8c9",
+      "bytes": 8187
     },
     "assets/devices/frames/galaxy-z-flip5-unfolded-0.svg": {
       "sha256": "769a50d39d6d74890a0f2dae03d68d32ff51913a34b0e7c66aba98d3ac6e3429",
       "bytes": 5396
     },
     "assets/devices/frames/galaxy-z-flip5-unfolded-1.svg": {
-      "sha256": "265354b2e0645764c00cd571bdbf94abccd2a2752eb722fce038b738ea0b53f8",
-      "bytes": 7104
+      "sha256": "3f2315ec4b9f5252e5fc3abf9d28d2ddf098a853b72600d854e6913032e5d8c9",
+      "bytes": 8187
     },
     "assets/devices/frames/galaxy-z-flip6-folded-0.svg": {
-      "sha256": "d8d7e501632a622fe346b6f81329390859ecdd5e3659cde1f1b7caf37807ecd6",
-      "bytes": 7104
+      "sha256": "3317db0eaf2810cfbe36c83a74b43ebab8254ce5643a9fd6d90b5d40d88f7a6d",
+      "bytes": 8187
     },
     "assets/devices/frames/galaxy-z-flip6-unfolded-0.svg": {
       "sha256": "c8feb8b5b25f706f1e13cb04e43f9c6f164b9a566fe3f3dabc6936147ae183f6",
       "bytes": 5396
     },
     "assets/devices/frames/galaxy-z-flip6-unfolded-1.svg": {
-      "sha256": "d8d7e501632a622fe346b6f81329390859ecdd5e3659cde1f1b7caf37807ecd6",
-      "bytes": 7104
+      "sha256": "3317db0eaf2810cfbe36c83a74b43ebab8254ce5643a9fd6d90b5d40d88f7a6d",
+      "bytes": 8187
     },
     "assets/devices/frames/galaxy-z-flip7-fe-folded-0.svg": {
-      "sha256": "f59ff0c8f1a8e7f2e233a5b72c3607fc792529bd754c902fb719d3fbbb6fdbc8",
-      "bytes": 7104
+      "sha256": "12c8d24a445c81a1cb9cbbde39b72d9e4918dd4619fb09199d71114a2ab76c65",
+      "bytes": 8187
     },
     "assets/devices/frames/galaxy-z-flip7-fe-unfolded-0.svg": {
       "sha256": "25fe2861f15330ca50ecb466bf0622d2d2a83043c25bf0b220ddf61e4d06fc27",
       "bytes": 5396
     },
     "assets/devices/frames/galaxy-z-flip7-fe-unfolded-1.svg": {
-      "sha256": "f59ff0c8f1a8e7f2e233a5b72c3607fc792529bd754c902fb719d3fbbb6fdbc8",
-      "bytes": 7104
+      "sha256": "12c8d24a445c81a1cb9cbbde39b72d9e4918dd4619fb09199d71114a2ab76c65",
+      "bytes": 8187
     },
     "assets/devices/frames/galaxy-z-flip7-folded-0.svg": {
       "sha256": "0723d7828a9f9f24ade5e757bee73d6569a5a496983a837e145007ed9fa9d6eb",
@@ -705,29 +705,69 @@
       "sha256": "3ec038a299808bd3ce8292e9602fa2e692492f93deaadfe3d2c9b33a22838743",
       "bytes": 5416
     },
-    "assets/devices/frames/oneplus-13-0.svg": {
-      "sha256": "bff5c782dbdf77fdf70b40309d5867c313b52e696fb5f4149166d96ee30ed48b",
-      "bytes": 5407
+    "assets/devices/frames/nothing-phone-2-0.svg": {
+      "sha256": "6ca70c98aec62730e43deee2457c70b2efe23ac35f0d8c4388b499ff6764bfac",
+      "bytes": 5418
     },
-    "assets/devices/frames/oneplus-13r-0.svg": {
-      "sha256": "db4ca26d9361f95f1360a9ac8fdd3f84a2ca5f79b6cbd499ca150dd89ee4a47d",
+    "assets/devices/frames/nothing-phone-3-0.svg": {
+      "sha256": "c76a1f39985117b650731b97abe9cdbeb3bbe2b5a523965e21ddb4ed61d81fa0",
+      "bytes": 5421
+    },
+    "assets/devices/frames/nothing-phone-3a-0.svg": {
+      "sha256": "165aa3548b2e0ed2ce724e2bae7fee7993f827a1bab56a1d6c023a5a56f3e4a0",
       "bytes": 5408
     },
+    "assets/devices/frames/nothing-phone-3a-pro-0.svg": {
+      "sha256": "1da438cc090291dcdef657535dd4772f1c0ef4a905508ca30ea8f8d0b24cd23c",
+      "bytes": 5408
+    },
+    "assets/devices/frames/nothing-phone-4a-0.svg": {
+      "sha256": "0ac6d84a20e7fb4efdd5e1a18febfa659395c9f992a89a1b4faa6fff84cc53ec",
+      "bytes": 5425
+    },
+    "assets/devices/frames/oneplus-11-0.svg": {
+      "sha256": "8e1fcec395262b4ed692273881ecec1d1cf676ffeea2ecac4e49fc3b36c21f50",
+      "bytes": 5410
+    },
+    "assets/devices/frames/oneplus-11r-0.svg": {
+      "sha256": "7fce11e7127d39a1ab0547517a7b60d46e0b5f0216404618d7426ac90794d309",
+      "bytes": 5412
+    },
+    "assets/devices/frames/oneplus-12-0.svg": {
+      "sha256": "de72d0cf521800f90316984ebe9cc2d03fca73cff0a58a2401ba1dd44ff35122",
+      "bytes": 5412
+    },
+    "assets/devices/frames/oneplus-12r-0.svg": {
+      "sha256": "8daecb36c9853325586ba4e6a3a876b5e192271f26ff5974e01368bc319d455b",
+      "bytes": 5413
+    },
+    "assets/devices/frames/oneplus-13-0.svg": {
+      "sha256": "6f931cb32fd80f357696f9f3dec7688daa1fec85247971a50d903d8fb6f0136d",
+      "bytes": 5411
+    },
+    "assets/devices/frames/oneplus-13r-0.svg": {
+      "sha256": "00c8befc3c1218f41d11832df483ef340f9f0075f487a1754b32a6d981c90870",
+      "bytes": 5412
+    },
     "assets/devices/frames/oneplus-pad-0.svg": {
-      "sha256": "8762b6365e203dc60f2829540823da1a498097231adb6fc5b8a924eaa9b734f5",
-      "bytes": 5558
+      "sha256": "0e7ca632ececf58da05eabb2d8aa919a22c7fb6b923d7c714345e4acad844c8d",
+      "bytes": 5562
     },
     "assets/devices/frames/oneplus-pad-2-0.svg": {
-      "sha256": "eee83abdfaef04d9d45cff62cdfdad20282f937f73c7df6324d0da2e146f6984",
-      "bytes": 5550
+      "sha256": "3937dc145eb07428b323b525ada03dc9982a82805d90b606d2e3dd5df17d7bc7",
+      "bytes": 5554
     },
     "assets/devices/frames/oneplus-pad-3-0.svg": {
-      "sha256": "503c365fca7acc7df353388a80fed67b941395d638a38cca299a6431a5495a98",
-      "bytes": 5551
+      "sha256": "e1e8cc8c75bdf50877ca59372ae96f47c83bf4f13b2af67f238be41ac3162d2a",
+      "bytes": 5555
     },
     "assets/devices/frames/oneplus-pad-go-0.svg": {
-      "sha256": "ac93b99fac6a46e949ef4942c683977eebf0b1232691c79b4f2c4d2001538339",
-      "bytes": 5551
+      "sha256": "926face551252586948f9ef7d243ddb880160cfc2941f3ae7a0a37b934ef6049",
+      "bytes": 5555
+    },
+    "assets/devices/frames/oneplus-pad-lite-0.svg": {
+      "sha256": "4a6fa86440c33de3fa05f337e5ae12b0fd506b79a0161e4bbb606f3c5d64473f",
+      "bytes": 5531
     },
     "assets/devices/frames/pixel-10-0.svg": {
       "sha256": "ad774b55da3172ee67933faa7108692c498e94d156dd5da74fe1ab0dcab92050",
@@ -882,812 +922,812 @@
       "bytes": 583900
     },
     "assets/devices/generate_keyboard_textures.py": {
-      "sha256": "5c7ef5053d5a0fff1b6caea37d723acc4ce3451cfe3f019a229c7a0db83e58ed",
-      "bytes": 8185
+      "sha256": "20c6c8c210431ab986afd8068c9fad80b0b6e991f879a84528a6c338b0a18ba4",
+      "bytes": 8398
     },
     "assets/devices/geometry.py": {
-      "sha256": "05393ec9bb011d9291db1978916d379e818ea0d916bd9f40d497a9924212737f",
-      "bytes": 68575
+      "sha256": "79ef1f5559bd94e90d860bc83f54799a6c3d62299f854e853a0c22e0ad895599",
+      "bytes": 69493
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_11_black_icon.svg": {
-      "sha256": "e0b943ce6e5f3a961e9c90d8bbb8ac9cf1b92a07a57d81e6f4aa81f2a7b5cd5e",
-      "bytes": 2570
+      "sha256": "327185703fdd20e3bf500fdc45042940639279fce8914243859566c5b71e5e47",
+      "bytes": 2787
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_11_green_icon.svg": {
-      "sha256": "911604346e6625d3303de34330f134791993340b0fecfbecefd44498c58e0451",
-      "bytes": 2570
+      "sha256": "0aa6f0d279a135433e0ea78f7c722e015f73f42afdebf0877bd9e4066e89fd37",
+      "bytes": 2787
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_11_monochrome_icon.svg": {
       "sha256": "b28cd245e014202218f7c968587a62ec3224162e4e5bb2146762a388b7b71c86",
       "bytes": 2302
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_11_pro_gold_icon.svg": {
-      "sha256": "0da092b0a5918e9452d568dd7c79d69e185eba45749cfee45cd71361c73af1cf",
-      "bytes": 2887
+      "sha256": "308f6acbbed7c91090e7d9de7c0c470c6ce7f0bbfa76290063612992d7220201",
+      "bytes": 3130
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_11_pro_max_gold_icon.svg": {
-      "sha256": "0da092b0a5918e9452d568dd7c79d69e185eba45749cfee45cd71361c73af1cf",
-      "bytes": 2887
+      "sha256": "308f6acbbed7c91090e7d9de7c0c470c6ce7f0bbfa76290063612992d7220201",
+      "bytes": 3130
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_11_pro_max_midnight_green_icon.svg": {
-      "sha256": "cb8874ea8246f190f28e594fdc4e335a8433e19f7634cd9e1c1bb79557da7c10",
-      "bytes": 2887
+      "sha256": "e81e4cd5209cd668b46fb12cb95d962ed4e577aea797ece7fba550f5be2290d4",
+      "bytes": 3130
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_11_pro_max_monochrome_icon.svg": {
       "sha256": "6159800ead0ffd18b024165200cfe53c4b6f67901a88b95bcf01c258fc030fe0",
       "bytes": 2453
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_11_pro_max_silver_icon.svg": {
-      "sha256": "56132c6822099367b46577a63fe2c97f1e1671bd02da1bd25cd957475d5ac399",
-      "bytes": 2887
+      "sha256": "7ee91dba428c676f8679bb67a75dc9bda313af9357f70116d27aa79e204921ff",
+      "bytes": 3130
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_11_pro_max_space_gray_icon.svg": {
-      "sha256": "cfedb8c361454045232ade640e64cdc3b1982a262f6b749642b5e51c956552f3",
-      "bytes": 2887
+      "sha256": "e178b2cf8029f5b0de3862b4f84ce09cf5ba44846b98a6ba393937b3013155ce",
+      "bytes": 3130
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_11_pro_midnight_green_icon.svg": {
-      "sha256": "cb8874ea8246f190f28e594fdc4e335a8433e19f7634cd9e1c1bb79557da7c10",
-      "bytes": 2887
+      "sha256": "e81e4cd5209cd668b46fb12cb95d962ed4e577aea797ece7fba550f5be2290d4",
+      "bytes": 3130
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_11_pro_monochrome_icon.svg": {
       "sha256": "1509550a1a9bf1fff3591054c02dac8558937597bd9387ebe57433568ac63d11",
       "bytes": 2437
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_11_pro_silver_icon.svg": {
-      "sha256": "56132c6822099367b46577a63fe2c97f1e1671bd02da1bd25cd957475d5ac399",
-      "bytes": 2887
+      "sha256": "7ee91dba428c676f8679bb67a75dc9bda313af9357f70116d27aa79e204921ff",
+      "bytes": 3130
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_11_pro_space_gray_icon.svg": {
-      "sha256": "cfedb8c361454045232ade640e64cdc3b1982a262f6b749642b5e51c956552f3",
-      "bytes": 2887
+      "sha256": "e178b2cf8029f5b0de3862b4f84ce09cf5ba44846b98a6ba393937b3013155ce",
+      "bytes": 3130
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_11_product_red_icon.svg": {
-      "sha256": "eae7af9785b92249bfeb5ad0fd4000a14b8220e1ac834cdfbb709ef410b7018b",
-      "bytes": 2570
+      "sha256": "cd9453e3f3f9efcfd6eea2082469201ed68f2caa78e9e00027923b16de60a749",
+      "bytes": 2787
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_11_purple_icon.svg": {
-      "sha256": "f0ed8ffd4b6f95609b774c33ec91239048316aced1d2f4f0f7c8e896bed6dfe7",
-      "bytes": 2570
+      "sha256": "d6834e2d5dcf4d47a958b6a11b611d18fc452ed22c633035540975350882b3c8",
+      "bytes": 2787
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_11_white_icon.svg": {
-      "sha256": "5da7a92d5e7ff7bcc3853e70e5d40a3057577dd90c15226430653c6f683ef10c",
-      "bytes": 2570
+      "sha256": "c715e0e3671bbb6cd4cfeeee899b9556546d6e634dc9b082459089fc3887c56e",
+      "bytes": 2787
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_11_yellow_icon.svg": {
-      "sha256": "1f0f180453e8ce942ac282c475e87456f924963222ec4519c3367dc2effcd663",
-      "bytes": 2570
+      "sha256": "7ffc088c3ac7797d2f032f3239e45cd0541d71364bf44688045136bb5dc3355a",
+      "bytes": 2787
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_12_black_icon.svg": {
-      "sha256": "e0b943ce6e5f3a961e9c90d8bbb8ac9cf1b92a07a57d81e6f4aa81f2a7b5cd5e",
-      "bytes": 2570
+      "sha256": "327185703fdd20e3bf500fdc45042940639279fce8914243859566c5b71e5e47",
+      "bytes": 2787
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_12_blue_icon.svg": {
-      "sha256": "9cc020d238f1da60d62ebe3f0abe8f71f6ec82a32ff1ac5ab2ba59b8586ada25",
-      "bytes": 2570
+      "sha256": "e33d8c98f67506d678bb2cfc67e874b1470c8dfb8b445d724f59d7cffa27379f",
+      "bytes": 2787
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_12_green_icon.svg": {
-      "sha256": "5399e166e487076991c68265be3f713cc517f05e5c56691936288b3d3b115383",
-      "bytes": 2570
+      "sha256": "dbe1df7ff018c697953b18fb1aa163866af879f98aa05888c7d8b5a20c37a5be",
+      "bytes": 2787
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_12_mini_black_icon.svg": {
-      "sha256": "e0b943ce6e5f3a961e9c90d8bbb8ac9cf1b92a07a57d81e6f4aa81f2a7b5cd5e",
-      "bytes": 2570
+      "sha256": "327185703fdd20e3bf500fdc45042940639279fce8914243859566c5b71e5e47",
+      "bytes": 2787
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_12_mini_blue_icon.svg": {
-      "sha256": "9cc020d238f1da60d62ebe3f0abe8f71f6ec82a32ff1ac5ab2ba59b8586ada25",
-      "bytes": 2570
+      "sha256": "e33d8c98f67506d678bb2cfc67e874b1470c8dfb8b445d724f59d7cffa27379f",
+      "bytes": 2787
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_12_mini_green_icon.svg": {
-      "sha256": "5399e166e487076991c68265be3f713cc517f05e5c56691936288b3d3b115383",
-      "bytes": 2570
+      "sha256": "dbe1df7ff018c697953b18fb1aa163866af879f98aa05888c7d8b5a20c37a5be",
+      "bytes": 2787
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_12_mini_monochrome_icon.svg": {
       "sha256": "4b44958511cea9076503cfaf556cce480e250272a2eb3bb79c0b8f6b4ab63021",
       "bytes": 2318
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_12_mini_product_red_icon.svg": {
-      "sha256": "5cd32c954721bf075937244cd98a69229fc2e9df1662aa246746b5d4f85c3ee6",
-      "bytes": 2570
+      "sha256": "17de99fdcc0593ef549285a610f5baa174caad38d75c1735077bbc2bf17c21fe",
+      "bytes": 2787
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_12_mini_purple_icon.svg": {
-      "sha256": "f0ed8ffd4b6f95609b774c33ec91239048316aced1d2f4f0f7c8e896bed6dfe7",
-      "bytes": 2570
+      "sha256": "d6834e2d5dcf4d47a958b6a11b611d18fc452ed22c633035540975350882b3c8",
+      "bytes": 2787
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_12_mini_white_icon.svg": {
-      "sha256": "5da7a92d5e7ff7bcc3853e70e5d40a3057577dd90c15226430653c6f683ef10c",
-      "bytes": 2570
+      "sha256": "c715e0e3671bbb6cd4cfeeee899b9556546d6e634dc9b082459089fc3887c56e",
+      "bytes": 2787
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_12_monochrome_icon.svg": {
       "sha256": "2b4f8190982c7d371cb49a1156f7664dc6182e1a4ca6857e8f640b8d062e0944",
       "bytes": 2298
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_12_pro_gold_icon.svg": {
-      "sha256": "6f998e3b3bff974e773a8d650b81820d035b8817d59eff4313a2e0366928177d",
-      "bytes": 3253
+      "sha256": "0e20ce79f444772d2a02a7e76464c49b2273ae244a14d528edaea242a9a61269",
+      "bytes": 3523
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_12_pro_graphite_icon.svg": {
-      "sha256": "a46b245c7512eb85a0f3995304787682f47faa63b152315666baea4627aa3da2",
-      "bytes": 3253
+      "sha256": "d37696297a589ffafa53bc49f1b9553a22c85a5b1cfc69ba9c661d3110f8dab3",
+      "bytes": 3523
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_12_pro_max_gold_icon.svg": {
-      "sha256": "6f998e3b3bff974e773a8d650b81820d035b8817d59eff4313a2e0366928177d",
-      "bytes": 3253
+      "sha256": "0e20ce79f444772d2a02a7e76464c49b2273ae244a14d528edaea242a9a61269",
+      "bytes": 3523
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_12_pro_max_graphite_icon.svg": {
-      "sha256": "a46b245c7512eb85a0f3995304787682f47faa63b152315666baea4627aa3da2",
-      "bytes": 3253
+      "sha256": "d37696297a589ffafa53bc49f1b9553a22c85a5b1cfc69ba9c661d3110f8dab3",
+      "bytes": 3523
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_12_pro_max_monochrome_icon.svg": {
       "sha256": "9bc556b9bcfd0bfbbcb07b9e786086ba1974690fa23e7ed994fb15bc0bc94a49",
       "bytes": 2625
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_12_pro_max_pacific_blue_icon.svg": {
-      "sha256": "060ed329b061fafbcb437a5d9dcdf1adbb4075515f1368ee93cb1216fe190e22",
-      "bytes": 3253
+      "sha256": "0075cdc393a2bf9c2f01ec6468f9e5dd89bb620656f514442bb87403b266f472",
+      "bytes": 3523
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_12_pro_max_silver_icon.svg": {
-      "sha256": "24379bb7f0748fa4cc271b8cf6a88b3f8a5039210ab2450899dc628db250f6ec",
-      "bytes": 3253
+      "sha256": "ac9e22b1a6995709b2e41259426455f8bc3c4777f73e185f58d4d6938d0a323b",
+      "bytes": 3523
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_12_pro_monochrome_icon.svg": {
       "sha256": "31bbcdcd0da4e56ffc54bb6efab2965a461b8901a4b6b5f9115326d69c970f62",
       "bytes": 2609
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_12_pro_pacific_blue_icon.svg": {
-      "sha256": "060ed329b061fafbcb437a5d9dcdf1adbb4075515f1368ee93cb1216fe190e22",
-      "bytes": 3253
+      "sha256": "0075cdc393a2bf9c2f01ec6468f9e5dd89bb620656f514442bb87403b266f472",
+      "bytes": 3523
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_12_pro_silver_icon.svg": {
-      "sha256": "24379bb7f0748fa4cc271b8cf6a88b3f8a5039210ab2450899dc628db250f6ec",
-      "bytes": 3253
+      "sha256": "ac9e22b1a6995709b2e41259426455f8bc3c4777f73e185f58d4d6938d0a323b",
+      "bytes": 3523
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_12_product_red_icon.svg": {
-      "sha256": "5cd32c954721bf075937244cd98a69229fc2e9df1662aa246746b5d4f85c3ee6",
-      "bytes": 2570
+      "sha256": "17de99fdcc0593ef549285a610f5baa174caad38d75c1735077bbc2bf17c21fe",
+      "bytes": 2787
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_12_purple_icon.svg": {
-      "sha256": "f0ed8ffd4b6f95609b774c33ec91239048316aced1d2f4f0f7c8e896bed6dfe7",
-      "bytes": 2570
+      "sha256": "d6834e2d5dcf4d47a958b6a11b611d18fc452ed22c633035540975350882b3c8",
+      "bytes": 2787
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_12_white_icon.svg": {
-      "sha256": "5da7a92d5e7ff7bcc3853e70e5d40a3057577dd90c15226430653c6f683ef10c",
-      "bytes": 2570
+      "sha256": "c715e0e3671bbb6cd4cfeeee899b9556546d6e634dc9b082459089fc3887c56e",
+      "bytes": 2787
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_13_blue_icon.svg": {
-      "sha256": "5a25deb0004bb34a72904f6b216d26f91e36cdd2ed41c1725be8d362405936e1",
-      "bytes": 2564
+      "sha256": "51efec31164424123f68d8993cdea2de808520f9861e557d69bf3ed129bdcb44",
+      "bytes": 2781
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_13_green_icon.svg": {
-      "sha256": "74d08b2ebe06344d4390c8ffc9c930ac8f3c0a869a5dff1bb008509a57787417",
-      "bytes": 2564
+      "sha256": "1ef592d557e03cba85c6f6c91ae5e2ec8ae985b211279c18ab3507181f973bc2",
+      "bytes": 2781
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_13_midnight_icon.svg": {
-      "sha256": "25b9cc0da5a4973231a5653552874a49ca942e6f793cb2c5b926b0811dfe64c8",
-      "bytes": 2564
+      "sha256": "9cc27b25ff1c63232c6816ce062e8f69b77daa7c4406673a5c0b9b5ba2b22a00",
+      "bytes": 2781
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_13_mini_blue_icon.svg": {
-      "sha256": "5a25deb0004bb34a72904f6b216d26f91e36cdd2ed41c1725be8d362405936e1",
-      "bytes": 2564
+      "sha256": "51efec31164424123f68d8993cdea2de808520f9861e557d69bf3ed129bdcb44",
+      "bytes": 2781
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_13_mini_green_icon.svg": {
-      "sha256": "74d08b2ebe06344d4390c8ffc9c930ac8f3c0a869a5dff1bb008509a57787417",
-      "bytes": 2564
+      "sha256": "1ef592d557e03cba85c6f6c91ae5e2ec8ae985b211279c18ab3507181f973bc2",
+      "bytes": 2781
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_13_mini_midnight_icon.svg": {
-      "sha256": "25b9cc0da5a4973231a5653552874a49ca942e6f793cb2c5b926b0811dfe64c8",
-      "bytes": 2564
+      "sha256": "9cc27b25ff1c63232c6816ce062e8f69b77daa7c4406673a5c0b9b5ba2b22a00",
+      "bytes": 2781
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_13_mini_monochrome_icon.svg": {
       "sha256": "50dc7447b5e4a1bb4d2d9283c24a3aad4fe927e598f5d756b758c7cce312dcc1",
       "bytes": 2332
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_13_mini_pink_icon.svg": {
-      "sha256": "1d2a9e7832b8515ab4f9839a99ae027df73f8caacab4c70b4a41578bda59017e",
-      "bytes": 2564
+      "sha256": "e5d7e86dc462720689ac53980a52c5c25a5be1d8fb0176bb4d78f0125c11b1d5",
+      "bytes": 2781
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_13_mini_product_red_icon.svg": {
-      "sha256": "283d35c6fc25259ab889183afd8c4743a8ad934ed975df4020fa0e3afad386fd",
-      "bytes": 2564
+      "sha256": "28ef09cd79b49a1e9b59c30eedb359c919cf9416a58af205a811d5b919404c33",
+      "bytes": 2781
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_13_mini_starlight_icon.svg": {
-      "sha256": "7961e8fd59828b528a1798e3ddc83c8a28a64f58e9f74b4c0fd99b45c8259dc5",
-      "bytes": 2564
+      "sha256": "7e85a5bede027d06b82ddc08d8d58104468f34835c3cb90bf9819606f1e717dd",
+      "bytes": 2781
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_13_monochrome_icon.svg": {
       "sha256": "a8271753b63c8c4da139d187b3eb87016f2ca155e4a3aaf2d34afdb969bbf288",
       "bytes": 2312
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_13_pink_icon.svg": {
-      "sha256": "1d2a9e7832b8515ab4f9839a99ae027df73f8caacab4c70b4a41578bda59017e",
-      "bytes": 2564
+      "sha256": "e5d7e86dc462720689ac53980a52c5c25a5be1d8fb0176bb4d78f0125c11b1d5",
+      "bytes": 2781
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_13_pro_alpine_green_icon.svg": {
-      "sha256": "51cfd8ddb1d3c04730dc1318b6befd35a4ca7a9aa23f6e94c88ad0e4f3fa9d47",
-      "bytes": 3223
+      "sha256": "94ae7eac47133c47f44bd252c8af1533cbb48c966384f26dc4f184bbe0798e54",
+      "bytes": 3493
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_13_pro_gold_icon.svg": {
-      "sha256": "c54d090727e7ccf37eee4f796f28624ac41c768dd4008c1d1ce664dd0ca9cd20",
-      "bytes": 3223
+      "sha256": "7401c7e08260564601b5736fe824bdb17e4e7e28d42112b41cd89ca3fbae45e1",
+      "bytes": 3493
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_13_pro_graphite_icon.svg": {
-      "sha256": "f8f1f332043af000be24c037d4d93b02773f88fdb2497484434c5eb942ae2272",
-      "bytes": 3223
+      "sha256": "e0564f723996f0352c88fe8b7eac0d900b9936a19f3964894451b958273bf06a",
+      "bytes": 3493
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_13_pro_max_alpine_green_icon.svg": {
-      "sha256": "51cfd8ddb1d3c04730dc1318b6befd35a4ca7a9aa23f6e94c88ad0e4f3fa9d47",
-      "bytes": 3223
+      "sha256": "94ae7eac47133c47f44bd252c8af1533cbb48c966384f26dc4f184bbe0798e54",
+      "bytes": 3493
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_13_pro_max_gold_icon.svg": {
-      "sha256": "c54d090727e7ccf37eee4f796f28624ac41c768dd4008c1d1ce664dd0ca9cd20",
-      "bytes": 3223
+      "sha256": "7401c7e08260564601b5736fe824bdb17e4e7e28d42112b41cd89ca3fbae45e1",
+      "bytes": 3493
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_13_pro_max_graphite_icon.svg": {
-      "sha256": "f8f1f332043af000be24c037d4d93b02773f88fdb2497484434c5eb942ae2272",
-      "bytes": 3223
+      "sha256": "e0564f723996f0352c88fe8b7eac0d900b9936a19f3964894451b958273bf06a",
+      "bytes": 3493
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_13_pro_max_monochrome_icon.svg": {
       "sha256": "189b3dade78ad14b647a518f6801e4b563ef492bef015f35a76e0bf46fb7ad75",
       "bytes": 2597
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_13_pro_max_sierra_blue_icon.svg": {
-      "sha256": "2779e10c1b6b855ec45240afe392f4215abf700fe61fb780c1f20361bf8d7299",
-      "bytes": 3223
+      "sha256": "2ddc20ea076693bfd347d239e24d3495b1a4ddde692d76145d48c107366052a8",
+      "bytes": 3493
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_13_pro_max_silver_icon.svg": {
-      "sha256": "eb746d9822a8316a9f241369baeb6b4b90d505753afa52a6957cf54f0866f2ee",
-      "bytes": 3223
+      "sha256": "befe2f733570b64fa6ea0aff19cab55eaaa9a21d6cb87252cd8d36399de4910a",
+      "bytes": 3493
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_13_pro_monochrome_icon.svg": {
       "sha256": "6cb0d67037588be21a05ba483edc83a8ab6165f4622dd799af2ab1d85eeb4501",
       "bytes": 2581
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_13_pro_sierra_blue_icon.svg": {
-      "sha256": "2779e10c1b6b855ec45240afe392f4215abf700fe61fb780c1f20361bf8d7299",
-      "bytes": 3223
+      "sha256": "2ddc20ea076693bfd347d239e24d3495b1a4ddde692d76145d48c107366052a8",
+      "bytes": 3493
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_13_pro_silver_icon.svg": {
-      "sha256": "eb746d9822a8316a9f241369baeb6b4b90d505753afa52a6957cf54f0866f2ee",
-      "bytes": 3223
+      "sha256": "befe2f733570b64fa6ea0aff19cab55eaaa9a21d6cb87252cd8d36399de4910a",
+      "bytes": 3493
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_13_product_red_icon.svg": {
-      "sha256": "283d35c6fc25259ab889183afd8c4743a8ad934ed975df4020fa0e3afad386fd",
-      "bytes": 2564
+      "sha256": "28ef09cd79b49a1e9b59c30eedb359c919cf9416a58af205a811d5b919404c33",
+      "bytes": 2781
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_13_starlight_icon.svg": {
-      "sha256": "7961e8fd59828b528a1798e3ddc83c8a28a64f58e9f74b4c0fd99b45c8259dc5",
-      "bytes": 2564
+      "sha256": "7e85a5bede027d06b82ddc08d8d58104468f34835c3cb90bf9819606f1e717dd",
+      "bytes": 2781
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_14_blue_icon.svg": {
-      "sha256": "c9a7363af15181f166b23f3a85e34ebef7e6b9fd0fdcde7a17db86989b2bc83d",
-      "bytes": 2564
+      "sha256": "5d2db7e0aea3e5707c6a59d4f5ab12c6b690f9fa8db2d4a708342467208159cd",
+      "bytes": 2781
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_14_midnight_icon.svg": {
-      "sha256": "25b9cc0da5a4973231a5653552874a49ca942e6f793cb2c5b926b0811dfe64c8",
-      "bytes": 2564
+      "sha256": "9cc27b25ff1c63232c6816ce062e8f69b77daa7c4406673a5c0b9b5ba2b22a00",
+      "bytes": 2781
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_14_monochrome_icon.svg": {
       "sha256": "e7b6e3618948b837c96dcb232c24fbf95e36657a4e24d3c464cbbf056447f828",
       "bytes": 2312
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_14_plus_blue_icon.svg": {
-      "sha256": "c9a7363af15181f166b23f3a85e34ebef7e6b9fd0fdcde7a17db86989b2bc83d",
-      "bytes": 2564
+      "sha256": "5d2db7e0aea3e5707c6a59d4f5ab12c6b690f9fa8db2d4a708342467208159cd",
+      "bytes": 2781
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_14_plus_midnight_icon.svg": {
-      "sha256": "25b9cc0da5a4973231a5653552874a49ca942e6f793cb2c5b926b0811dfe64c8",
-      "bytes": 2564
+      "sha256": "9cc27b25ff1c63232c6816ce062e8f69b77daa7c4406673a5c0b9b5ba2b22a00",
+      "bytes": 2781
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_14_plus_monochrome_icon.svg": {
       "sha256": "3b48a34c0055c8da9756babe87af0668ae10f33b33ead2107484261d9831c2f6",
       "bytes": 2332
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_14_plus_product_red_icon.svg": {
-      "sha256": "283d35c6fc25259ab889183afd8c4743a8ad934ed975df4020fa0e3afad386fd",
-      "bytes": 2564
+      "sha256": "28ef09cd79b49a1e9b59c30eedb359c919cf9416a58af205a811d5b919404c33",
+      "bytes": 2781
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_14_plus_purple_icon.svg": {
-      "sha256": "70c7a7d68088e808eaa540c76db7399ab419b42713ae4729f3dda5fe43ac0604",
-      "bytes": 2564
+      "sha256": "7c5a598f9352d6826d9126b5f23ac402acded8801cffe7e6f9665e73a0c42bea",
+      "bytes": 2781
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_14_plus_starlight_icon.svg": {
-      "sha256": "7961e8fd59828b528a1798e3ddc83c8a28a64f58e9f74b4c0fd99b45c8259dc5",
-      "bytes": 2564
+      "sha256": "7e85a5bede027d06b82ddc08d8d58104468f34835c3cb90bf9819606f1e717dd",
+      "bytes": 2781
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_14_plus_yellow_icon.svg": {
-      "sha256": "382913ad0266cd090c91aed48efd29654cc85bce5bb19ab48bef6afbfcf10351",
-      "bytes": 2564
+      "sha256": "8416602cb618a72c0c4a39e75f75473c8d3ba53f580b0b402d30ac8f346400e4",
+      "bytes": 2781
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_14_pro_deep_purple_icon.svg": {
-      "sha256": "e1ddf7d4bcc58cb58e1ae53eb8b50afbac2297d8242d5a6bdb2e8a838a9a7aee",
-      "bytes": 3223
+      "sha256": "a1046d581d899fc04a4ee9a0b024fe172aab86d50b79aa9510ceb2f269a32bac",
+      "bytes": 3493
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_14_pro_gold_icon.svg": {
-      "sha256": "c54d090727e7ccf37eee4f796f28624ac41c768dd4008c1d1ce664dd0ca9cd20",
-      "bytes": 3223
+      "sha256": "7401c7e08260564601b5736fe824bdb17e4e7e28d42112b41cd89ca3fbae45e1",
+      "bytes": 3493
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_14_pro_max_deep_purple_icon.svg": {
-      "sha256": "e1ddf7d4bcc58cb58e1ae53eb8b50afbac2297d8242d5a6bdb2e8a838a9a7aee",
-      "bytes": 3223
+      "sha256": "a1046d581d899fc04a4ee9a0b024fe172aab86d50b79aa9510ceb2f269a32bac",
+      "bytes": 3493
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_14_pro_max_gold_icon.svg": {
-      "sha256": "c54d090727e7ccf37eee4f796f28624ac41c768dd4008c1d1ce664dd0ca9cd20",
-      "bytes": 3223
+      "sha256": "7401c7e08260564601b5736fe824bdb17e4e7e28d42112b41cd89ca3fbae45e1",
+      "bytes": 3493
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_14_pro_max_monochrome_icon.svg": {
       "sha256": "c99428ee3819a727e76709a57ab3e71e7e52123805365582714ea66cb307c5e4",
       "bytes": 2605
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_14_pro_max_silver_icon.svg": {
-      "sha256": "eb746d9822a8316a9f241369baeb6b4b90d505753afa52a6957cf54f0866f2ee",
-      "bytes": 3223
+      "sha256": "befe2f733570b64fa6ea0aff19cab55eaaa9a21d6cb87252cd8d36399de4910a",
+      "bytes": 3493
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_14_pro_max_space_black_icon.svg": {
-      "sha256": "c60fffb0007a3123d0475c5064d8403c1dcbd3df979b0c0de05cae499676c99b",
-      "bytes": 3223
+      "sha256": "53ef2b17edada578664bbf67ea61dea6f53bd3c4b9e865ad2d56a909deb852a3",
+      "bytes": 3493
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_14_pro_monochrome_icon.svg": {
       "sha256": "6111d6f8293eec1fb229dab0b93e192893e1d51d41ca30eccb1396164a4acfc8",
       "bytes": 2589
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_14_pro_silver_icon.svg": {
-      "sha256": "eb746d9822a8316a9f241369baeb6b4b90d505753afa52a6957cf54f0866f2ee",
-      "bytes": 3223
+      "sha256": "befe2f733570b64fa6ea0aff19cab55eaaa9a21d6cb87252cd8d36399de4910a",
+      "bytes": 3493
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_14_pro_space_black_icon.svg": {
-      "sha256": "c60fffb0007a3123d0475c5064d8403c1dcbd3df979b0c0de05cae499676c99b",
-      "bytes": 3223
+      "sha256": "53ef2b17edada578664bbf67ea61dea6f53bd3c4b9e865ad2d56a909deb852a3",
+      "bytes": 3493
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_14_product_red_icon.svg": {
-      "sha256": "283d35c6fc25259ab889183afd8c4743a8ad934ed975df4020fa0e3afad386fd",
-      "bytes": 2564
+      "sha256": "28ef09cd79b49a1e9b59c30eedb359c919cf9416a58af205a811d5b919404c33",
+      "bytes": 2781
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_14_purple_icon.svg": {
-      "sha256": "70c7a7d68088e808eaa540c76db7399ab419b42713ae4729f3dda5fe43ac0604",
-      "bytes": 2564
+      "sha256": "7c5a598f9352d6826d9126b5f23ac402acded8801cffe7e6f9665e73a0c42bea",
+      "bytes": 2781
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_14_starlight_icon.svg": {
-      "sha256": "7961e8fd59828b528a1798e3ddc83c8a28a64f58e9f74b4c0fd99b45c8259dc5",
-      "bytes": 2564
+      "sha256": "7e85a5bede027d06b82ddc08d8d58104468f34835c3cb90bf9819606f1e717dd",
+      "bytes": 2781
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_14_yellow_icon.svg": {
-      "sha256": "382913ad0266cd090c91aed48efd29654cc85bce5bb19ab48bef6afbfcf10351",
-      "bytes": 2564
+      "sha256": "8416602cb618a72c0c4a39e75f75473c8d3ba53f580b0b402d30ac8f346400e4",
+      "bytes": 2781
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_15_black_icon.svg": {
-      "sha256": "c8b57d331c3bc2053fa4e737b98cc8fc7448f52dd8e0526f37a4a11b75e3e0c4",
-      "bytes": 2564
+      "sha256": "2278b3f7100b840008b85e7453b3d88cd714f36f47b37b109df106f04795c04a",
+      "bytes": 2781
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_15_blue_icon.svg": {
-      "sha256": "f7e5332a921cc30a39df7e9c99b51c230312bbbd1d85f58221639c5f3ef0694d",
-      "bytes": 2564
+      "sha256": "f750baffbd62d348f36dbbf3e3706227c721f9b14518ff17514c94d9ebe67502",
+      "bytes": 2781
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_15_green_icon.svg": {
-      "sha256": "0f08da18b2b79f9e7800589b037189a11808383fa7f0d1eb1e00580eff9bf3da",
-      "bytes": 2564
+      "sha256": "d31faa732737f4647ba61f3bb20bf303af1fc3635022866a80f6eb4726bec703",
+      "bytes": 2781
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_15_monochrome_icon.svg": {
       "sha256": "671c946c2401d2697df9fc07dd95ae33ca55ef3e674ebe24a6d7134230172b5c",
       "bytes": 2300
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_15_pink_icon.svg": {
-      "sha256": "1d00ec5ec26743b3bfcbeb90f245d9c7e1d7a03bfb58d6ca29086e0b5fccde57",
-      "bytes": 2564
+      "sha256": "a11e99960c873f1007f80c67f6866b98c5ea7cbeb7544418dadf9409cd410b95",
+      "bytes": 2781
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_15_plus_black_icon.svg": {
-      "sha256": "c8b57d331c3bc2053fa4e737b98cc8fc7448f52dd8e0526f37a4a11b75e3e0c4",
-      "bytes": 2564
+      "sha256": "2278b3f7100b840008b85e7453b3d88cd714f36f47b37b109df106f04795c04a",
+      "bytes": 2781
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_15_plus_blue_icon.svg": {
-      "sha256": "f7e5332a921cc30a39df7e9c99b51c230312bbbd1d85f58221639c5f3ef0694d",
-      "bytes": 2564
+      "sha256": "f750baffbd62d348f36dbbf3e3706227c721f9b14518ff17514c94d9ebe67502",
+      "bytes": 2781
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_15_plus_green_icon.svg": {
-      "sha256": "0f08da18b2b79f9e7800589b037189a11808383fa7f0d1eb1e00580eff9bf3da",
-      "bytes": 2564
+      "sha256": "d31faa732737f4647ba61f3bb20bf303af1fc3635022866a80f6eb4726bec703",
+      "bytes": 2781
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_15_plus_monochrome_icon.svg": {
       "sha256": "7c61b975c281c59e0b7796c8f9971a0f8027d67ddee03636ce2efa12bacb9ee3",
       "bytes": 2320
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_15_plus_pink_icon.svg": {
-      "sha256": "1d00ec5ec26743b3bfcbeb90f245d9c7e1d7a03bfb58d6ca29086e0b5fccde57",
-      "bytes": 2564
+      "sha256": "a11e99960c873f1007f80c67f6866b98c5ea7cbeb7544418dadf9409cd410b95",
+      "bytes": 2781
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_15_plus_yellow_icon.svg": {
-      "sha256": "7bfb2d61818e4415320b29615ec54c3bb1c1650f4ea03f576ea1475c98d24a71",
-      "bytes": 2564
+      "sha256": "3eac87d264c09e6ea937d0c9b25507fc265fd8af3dcb09211b2f62a3e417be69",
+      "bytes": 2781
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_15_pro_black_titanium_icon.svg": {
-      "sha256": "0b6e864d37c6240380ba59483e07d929cef78a3a2498043e5c017720c0aa66db",
-      "bytes": 3223
+      "sha256": "51bd57056ef5c86f1653796d7c31ad178a6e39c36f8bb3d6a5a21208cd7a14d8",
+      "bytes": 3493
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_15_pro_blue_titanium_icon.svg": {
-      "sha256": "460f2bb85c0e657cb4ee4015ab588a2b513a2e82daaf2c8e87b55bcaf2db1736",
-      "bytes": 3223
+      "sha256": "d181993fe4dc3753a78c120890745871120474a3ba5a9fbc1f54092405fbbf48",
+      "bytes": 3493
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_15_pro_max_black_titanium_icon.svg": {
-      "sha256": "0b6e864d37c6240380ba59483e07d929cef78a3a2498043e5c017720c0aa66db",
-      "bytes": 3223
+      "sha256": "51bd57056ef5c86f1653796d7c31ad178a6e39c36f8bb3d6a5a21208cd7a14d8",
+      "bytes": 3493
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_15_pro_max_blue_titanium_icon.svg": {
-      "sha256": "460f2bb85c0e657cb4ee4015ab588a2b513a2e82daaf2c8e87b55bcaf2db1736",
-      "bytes": 3223
+      "sha256": "d181993fe4dc3753a78c120890745871120474a3ba5a9fbc1f54092405fbbf48",
+      "bytes": 3493
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_15_pro_max_monochrome_icon.svg": {
       "sha256": "a1467746a1756283f235e81ba06ebd384fcce02021f4ebeb20f3015458a6d6ef",
       "bytes": 2637
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_15_pro_max_natural_titanium_icon.svg": {
-      "sha256": "45745534c5f951690d22ca24a9507e8c8c3442ac2c1c432c99327d5d74331006",
-      "bytes": 3223
+      "sha256": "5f8fa5928d957c1cb8dfc15cd43fec0a05e87b121ded0464c04545adce8f192d",
+      "bytes": 3493
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_15_pro_max_white_titanium_icon.svg": {
-      "sha256": "f6c83447af6e4f077a99ab8ebdb0ceee9857aad6765f58213b3e15f73e981ac5",
-      "bytes": 3223
+      "sha256": "c418918ca1ca4e2d67b3925acd18078b2a5435a25e29c673a2e90f0066331de5",
+      "bytes": 3493
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_15_pro_monochrome_icon.svg": {
       "sha256": "6518d3565b0362823d70b97a59f862f9383934789cc258a8ab538caba7858644",
       "bytes": 2621
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_15_pro_natural_titanium_icon.svg": {
-      "sha256": "45745534c5f951690d22ca24a9507e8c8c3442ac2c1c432c99327d5d74331006",
-      "bytes": 3223
+      "sha256": "5f8fa5928d957c1cb8dfc15cd43fec0a05e87b121ded0464c04545adce8f192d",
+      "bytes": 3493
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_15_pro_white_titanium_icon.svg": {
-      "sha256": "f6c83447af6e4f077a99ab8ebdb0ceee9857aad6765f58213b3e15f73e981ac5",
-      "bytes": 3223
+      "sha256": "c418918ca1ca4e2d67b3925acd18078b2a5435a25e29c673a2e90f0066331de5",
+      "bytes": 3493
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_15_yellow_icon.svg": {
-      "sha256": "7bfb2d61818e4415320b29615ec54c3bb1c1650f4ea03f576ea1475c98d24a71",
-      "bytes": 2564
+      "sha256": "3eac87d264c09e6ea937d0c9b25507fc265fd8af3dcb09211b2f62a3e417be69",
+      "bytes": 2781
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_16_black_icon.svg": {
-      "sha256": "89ffd04465f30a754b0dc29255ffb4449077632be06737eb59ffc85d650a9989",
-      "bytes": 2544
+      "sha256": "1f208a744a71fe98999fe403cfe40e18b60b70f8f75a0d23d3aff3772cfcaaba",
+      "bytes": 2761
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_16_monochrome_icon.svg": {
       "sha256": "f9c3c656ae8d25123ceea21295fa7e735881095637cdf5e0f94ea7c2a49b52af",
       "bytes": 2274
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_16_pink_icon.svg": {
-      "sha256": "fcac43fb220d77828aa25de1675bf2f22f1b4cc765cca34045818dc3c7b5b62d",
-      "bytes": 2544
+      "sha256": "8433641b7647f122212f93c6f657bf0fb76cf16e5dee2eb6f76e1f618bfbf670",
+      "bytes": 2761
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_16_plus_black_icon.svg": {
-      "sha256": "f8af123598112437cd604499f0bba167948922a8cb7b500856551768a6df54e3",
-      "bytes": 2549
+      "sha256": "814c58c4673861ea0e64c471ccf697a88de8b2cfc5b9b49120546a25948cc0df",
+      "bytes": 2766
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_16_plus_monochrome_icon.svg": {
       "sha256": "547028296451bed2677febbdc927b13c2e2d6042c1eef61a335b9e13c7e9155f",
       "bytes": 2299
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_16_plus_pink_icon.svg": {
-      "sha256": "6396d5c3ff1a26db5d8d2df2ba512426ade076da11e5593c4b4befd5f704e399",
-      "bytes": 2549
+      "sha256": "4fdf4a9b25af07e0107e7a67a4006632fbf63e5e5d8731a8525805d29d164f28",
+      "bytes": 2766
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_16_plus_teal_icon.svg": {
-      "sha256": "93c34480dc99d994ae8e1e6030e96a928ea0e60522b6aea70a62ca6dde5262ae",
-      "bytes": 2549
+      "sha256": "88c716f68c5ca7b464f85fe527eea9cf0fa32396b92b67de64e94defa23db481",
+      "bytes": 2766
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_16_plus_ultramarine_icon.svg": {
-      "sha256": "24c524c41f9f759c6f19aa9829060bbe7401b58d07e5357acfd9e7cd3df10363",
-      "bytes": 2549
+      "sha256": "7e069cb079531e8bb125954b0f1c9e0a35ee3f20861d75aec0e28e636300a975",
+      "bytes": 2766
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_16_plus_white_icon.svg": {
-      "sha256": "d46ba9ff65e96201e0da2db4fc7b82c8ef2664f22f16010eb37a2f4e9aa9f076",
-      "bytes": 2549
+      "sha256": "3061853567b30d3c0401724802078e75597a8e67510752a9ad730e1c1606a793",
+      "bytes": 2766
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_16_pro_black_titanium_icon.svg": {
-      "sha256": "c3a7a8aea2dd1fbba102a4793ff3e76e5f26f866563689fa0cb2c1d0b1a967ed",
-      "bytes": 3227
+      "sha256": "d9b0026eb7046e32d1cffec0d9033ef9466a5e40aab8009beb794cf955d56e5c",
+      "bytes": 3497
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_16_pro_desert_titanium_icon.svg": {
-      "sha256": "d0ef0380b8048231106eb748a193184d736f06e4c3bd654acb8b0e0faf66eab8",
-      "bytes": 3227
+      "sha256": "ab26591fc8bf93cedd1e4f1a75c9490c55be225dbfbbb241b1516eb9fb166016",
+      "bytes": 3497
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_16_pro_max_black_titanium_icon.svg": {
-      "sha256": "0363a29a7febe5fd8c60c04b4e0482334b2975c41da508b537f54e570ea95afc",
-      "bytes": 3217
+      "sha256": "b9a9397a5d49e139b5e9f0f20d94927c2d126c5b80a80ebe7af0fde94969aeda",
+      "bytes": 3487
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_16_pro_max_desert_titanium_icon.svg": {
-      "sha256": "e6927419970221132e2f3fc0a1ab9787fb3c5fd0f54683f620fb9b5ff8de2d91",
-      "bytes": 3217
+      "sha256": "ecad476bd7404f1d0246fca65ec492fbe9331ffe9f5ce8413d2ee670b5ef0ac5",
+      "bytes": 3487
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_16_pro_max_monochrome_icon.svg": {
       "sha256": "cf81dba021ed00d00a50157f618702faa9fb387e8be8b8ea9cb99c374e37425d",
       "bytes": 2631
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_16_pro_max_natural_titanium_icon.svg": {
-      "sha256": "bb7471f66613c8b43ffbe8d5e6a8d4f6f2de8992e9af484e6930fccd50513954",
-      "bytes": 3217
+      "sha256": "faf82b3976d76320a513198eaa1f2d4f3e7f382766d0db01897f9bc3ac649e22",
+      "bytes": 3487
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_16_pro_max_white_titanium_icon.svg": {
-      "sha256": "9bcd71dfd698606acbca55043fc305d56f1456655e2918c564ec47b9cfa0682c",
-      "bytes": 3217
+      "sha256": "4828a369100ed8eba48b29c67e2c853ffeb0d8746b558d18478a59bd7f9135f6",
+      "bytes": 3487
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_16_pro_monochrome_icon.svg": {
       "sha256": "72a3d8127a40f8b54e217035fc55b0e26df73e0d51cd023041e2f495090fcc2a",
       "bytes": 2625
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_16_pro_natural_titanium_icon.svg": {
-      "sha256": "2f4aa2ce4c3fc090ea7216f74bc3e6bf925c68afb032cda9b93b9b75f57f2b5d",
-      "bytes": 3227
+      "sha256": "9757aa212e9f1ed7bebc39e7a67d304ce7026eac51e5360af5d0011338dbef48",
+      "bytes": 3497
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_16_pro_white_titanium_icon.svg": {
-      "sha256": "a56db473f4619669361ff278c8a1841a94ec95c5647ef73000981589dd13fb94",
-      "bytes": 3227
+      "sha256": "3186800c95a5cf33db6dc110370d365f36424868330c2ebb8f4a24dab5c9184e",
+      "bytes": 3497
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_16_teal_icon.svg": {
-      "sha256": "f807339a1c0a8c278c0284c4cb495efe1c047fb22747c1d12a27d5f6b90c384a",
-      "bytes": 2544
+      "sha256": "85859ff32d9090ec129f8a46e9d3a63dea1a09a093e866a0e4f112bc4f5e85d1",
+      "bytes": 2761
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_16_ultramarine_icon.svg": {
-      "sha256": "16680c18c39b6e30d8ccff0f3bde50eb6e91e92358a62cc16a956ca3f1365fd0",
-      "bytes": 2544
+      "sha256": "c94b8280862ba5ce6d472a58209ec0884a92885875c00b53baa4fd532c3d1ea7",
+      "bytes": 2761
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_16_white_icon.svg": {
-      "sha256": "6202e44c6dc566f0a10f07afa2e235492b81d01efbea53ec4bacd92799d93013",
-      "bytes": 2544
+      "sha256": "7126e993d33eb2520c34baf9130dc79a4d087bc1f7601cfab181481c5fa2ec62",
+      "bytes": 2761
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_16e_black_icon.svg": {
-      "sha256": "5f57e79560fff7da5d62ba28b0332ce0d714cf9b7bfe2f9ae30613e2d2e3c977",
-      "bytes": 1919
+      "sha256": "5af158af4a0ea7ff638fafcc973f9994d7292f07f81c0827d5709637bb870377",
+      "bytes": 2088
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_16e_monochrome_icon.svg": {
       "sha256": "5f9b324c979de0c426c0c0eb48736a7734c9c2095566358c1881ac8175d704a9",
       "bytes": 1978
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_16e_white_icon.svg": {
-      "sha256": "6eeb8fee2e50ed948d8153cd3c7435e98e2a51abe8da330af8694448c6e99043",
-      "bytes": 1919
+      "sha256": "b4ec2ed7cb6f05394ce2f4628d8357d6d0f6e83b2c94a94d25c24c172e843744",
+      "bytes": 2088
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_17_black_icon.svg": {
-      "sha256": "f8af123598112437cd604499f0bba167948922a8cb7b500856551768a6df54e3",
-      "bytes": 2549
+      "sha256": "814c58c4673861ea0e64c471ccf697a88de8b2cfc5b9b49120546a25948cc0df",
+      "bytes": 2766
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_17_lavender_icon.svg": {
-      "sha256": "071101c09a117620d915d67c909e33430cb4d6c80bf07c6a77df93f6a9fa99b1",
-      "bytes": 2549
+      "sha256": "efc6d116bb05c4f3c6d8b4e380d615f695a9714d06da27a3158e4c0c49d91f88",
+      "bytes": 2766
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_17_mist_blue_icon.svg": {
-      "sha256": "d13f2f8c47098ca14e48cedda08cab1c83379b7f67d0892160a82fd671ac8ba7",
-      "bytes": 2549
+      "sha256": "7e409da8ec1378f9da4c69f56b4cb909d21379c6f3d8fac458f1dc7af3f2ec48",
+      "bytes": 2766
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_17_monochrome_icon.svg": {
       "sha256": "878e0e7768e1b7965776b359cf976fde6e54e9c02dac6b0927af10b0842db106",
       "bytes": 2279
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_17_pro_cosmic_orange_icon.svg": {
-      "sha256": "5cdbf2ea626e51bf14bfe0bd85e4f32183e2650818a380c53702691b88e25d47",
-      "bytes": 3599
+      "sha256": "fbe59e35b1fa8472af8cad9a53bb49425ef1ce24c5f44268d9b1e7f9ab9ebac2",
+      "bytes": 3899
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_17_pro_deep_blue_icon.svg": {
-      "sha256": "0ebb3cf0ec68d3e64b93ade788277eae5fe64f0b0956a2fe9c148a600a321b93",
-      "bytes": 3599
+      "sha256": "b95fd3dceca5fb50df59d3ec8b269fa9aa949738f68eeee512490e00db013f30",
+      "bytes": 3899
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_17_pro_max_cosmic_orange_icon.svg": {
-      "sha256": "226ab7a3e4e5a52169dde7fe6b3a0b028e08234b4dc260f2240ae4f31736c8da",
-      "bytes": 3592
+      "sha256": "71492ccf6123dc0c5570825cb9b522850173cdd687e079e04dbc11d0d94f9085",
+      "bytes": 3892
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_17_pro_max_deep_blue_icon.svg": {
-      "sha256": "cc26b9d1d79b25244d9f656b5e2d1de9b54c6df158f72feb2b18ce20c32bcdfb",
-      "bytes": 3592
+      "sha256": "c7b5a07693b4001ab3bf8075e9795f19e5486997e19b52852f6102dfca88011f",
+      "bytes": 3892
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_17_pro_max_monochrome_icon.svg": {
       "sha256": "392323d1980ef3c14d9a7c07fec666031dd74b043967aae3608a6a6762366cc5",
       "bytes": 2830
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_17_pro_max_silver_icon.svg": {
-      "sha256": "18cd38c52cb6e9de5f3b555f6f165e679ddfff6ad6991de350c496e9d3237f7d",
-      "bytes": 3592
+      "sha256": "fd09a2f85fecf7a7d817be32a87977f6304a1d8cebce39ef4f73907ddf434d72",
+      "bytes": 3892
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_17_pro_monochrome_icon.svg": {
       "sha256": "10125c0adb64e34b950d8b6b113b2e2f673ed84c5b1681af825c639f1807511a",
       "bytes": 2821
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_17_pro_silver_icon.svg": {
-      "sha256": "ef52a70e7317e3836984ef66fa9f71270b5436f2091e46787ceb6bab1588f978",
-      "bytes": 3599
+      "sha256": "e007d15de0c20b1d499fb1b46558b7dd9883e56891ceedc2caea005fd4a9bdd3",
+      "bytes": 3899
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_17_sage_icon.svg": {
-      "sha256": "8dbf4180dd283788100ea5c2750f777d24f8fbfa7a12c56d42b5c64b3c1ff182",
-      "bytes": 2549
+      "sha256": "abfd025b88ba88f61a6f8122c773831965eb50cfdf4f944279ad44623c021a39",
+      "bytes": 2766
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_17_white_icon.svg": {
-      "sha256": "d46ba9ff65e96201e0da2db4fc7b82c8ef2664f22f16010eb37a2f4e9aa9f076",
-      "bytes": 2549
+      "sha256": "3061853567b30d3c0401724802078e75597a8e67510752a9ad730e1c1606a793",
+      "bytes": 2766
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_17e_black_icon.svg": {
-      "sha256": "5f57e79560fff7da5d62ba28b0332ce0d714cf9b7bfe2f9ae30613e2d2e3c977",
-      "bytes": 1919
+      "sha256": "5af158af4a0ea7ff638fafcc973f9994d7292f07f81c0827d5709637bb870377",
+      "bytes": 2088
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_17e_monochrome_icon.svg": {
       "sha256": "fe5ab6c3e891e96dc2391b19fc214d0a7e55b2bf8a0632ea6142c701f261c23e",
       "bytes": 1978
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_17e_soft_pink_icon.svg": {
-      "sha256": "8d86fbc955d4958b8be227551b5ffbce8bcd33fc174f65390a2b1b9dda0dff02",
-      "bytes": 1919
+      "sha256": "468eb5ea3286fef2bae7668ff138271b942a463806b2135250abcbb5998f3ec3",
+      "bytes": 2088
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_17e_white_icon.svg": {
-      "sha256": "6eeb8fee2e50ed948d8153cd3c7435e98e2a51abe8da330af8694448c6e99043",
-      "bytes": 1919
+      "sha256": "b4ec2ed7cb6f05394ce2f4628d8357d6d0f6e83b2c94a94d25c24c172e843744",
+      "bytes": 2088
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_18_pro_black_icon.svg": {
-      "sha256": "294e4d583863de5142a7a5d8f88b63e6e2710f7adbc87c4c9f7b338405854e23",
-      "bytes": 3229
+      "sha256": "9215ed2a73c5441885fad65076e11e9c5b645d7b2f00cb17618eb31a6afb56d6",
+      "bytes": 3499
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_18_pro_burgundy_icon.svg": {
-      "sha256": "8cabfc184561d684930359812994f4034fa8a6a0ed833b98f7a1f1580e55c7a1",
-      "bytes": 3229
+      "sha256": "70ca9c68e228a969e387347d1b42d65c5edf5dbaa7fa0c66cca0a31daf259258",
+      "bytes": 3499
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_18_pro_glacier_icon.svg": {
-      "sha256": "bbf39237f7dcba8848149f093c5e1003750cdecd6d1970ad8ce88986de1e44f4",
-      "bytes": 3229
+      "sha256": "6da80ea594b127758e6696a7ba849b2c19e495d36b1e9fcc50cf4b7e79d2d56e",
+      "bytes": 3499
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_18_pro_max_black_icon.svg": {
-      "sha256": "a1a9c193d47ed5dffc81b504d03377e1ac9eb676820ceee15f357e572c610936",
-      "bytes": 3231
+      "sha256": "023aba3f150bdaa0c02404e23ececf974f91530d3c18abd6e664ce1dab88e353",
+      "bytes": 3501
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_18_pro_max_burgundy_icon.svg": {
-      "sha256": "01a2a7806f99b9735fe3541fb4336a880c105713d5381971de13fcb8e03bc0c4",
-      "bytes": 3231
+      "sha256": "bf4d9164760dca2e6f8490d28d05ad60294dadc271fb6056f85a8bd14bc177b2",
+      "bytes": 3501
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_18_pro_max_glacier_icon.svg": {
-      "sha256": "1a432ee8f8a0cc05d55633618af16725b811769729ab1c3ea1f7e838a376f042",
-      "bytes": 3231
+      "sha256": "daf196b6a02a81d75d65dca4b3d62671784c8afac160163ff0f42c560f4b01dd",
+      "bytes": 3501
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_18_pro_max_monochrome_icon.svg": {
       "sha256": "9a1b71d1bb80b0ab7f1c9993c4828743690ed7544b6d30a3b817fb147e25c26b",
       "bytes": 2604
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_18_pro_max_silver_icon.svg": {
-      "sha256": "b6fbf947f86748081f708a79e39ce9ed73b03dc4735d8011eac365cbaba5b05f",
-      "bytes": 3231
+      "sha256": "1fb21c86b18524279e51b1c4071cc8dd13fe09bdbcfc358638c3b8b07530e5a6",
+      "bytes": 3501
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_18_pro_monochrome_icon.svg": {
       "sha256": "06562f2bfe780ab04d18534b0679ef20370246030f51b276805488f0d4edbcc0",
       "bytes": 2586
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_18_pro_silver_icon.svg": {
-      "sha256": "9aec97258ef75e6f8cca72cb9e706de43394e15417e42afc6366689c79f5e3d4",
-      "bytes": 3229
+      "sha256": "bdc75b6f14de8a6a6f2faad317909afff61c6038aba7773083abf3f1aa3dee71",
+      "bytes": 3499
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_air_cloud_white_icon.svg": {
-      "sha256": "47a0b86f58122e4c79c920cd1b6a19a3ca010950fc5ab0c435866e83be54382c",
-      "bytes": 2324
+      "sha256": "1314864fcba7f02d783122e38e984ec3283a8a39af4190d686ca4f749e7f8166",
+      "bytes": 2515
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_air_light_gold_icon.svg": {
-      "sha256": "89e7e84484efb71a2088cdbfcd4ab8c7977240010124776e561994540695d36d",
-      "bytes": 2324
+      "sha256": "321c64bad72fec19b11e70e510ef5bcb820bb5ae0c201475ae7a123d40004398",
+      "bytes": 2515
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_air_monochrome_icon.svg": {
       "sha256": "fea890c02c16375412fc03ad3a49e871da939462cc64155fbd25fb88e988bf42",
       "bytes": 2269
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_air_sky_blue_icon.svg": {
-      "sha256": "1fe36c6c8d6ea867d91bddfb9389c58294583245d42c5972a7a836879714f4e6",
-      "bytes": 2324
+      "sha256": "2caa131473918ed0e3d91af240044c641fefed1300019e84304f9b5040113de3",
+      "bytes": 2515
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_air_space_black_icon.svg": {
-      "sha256": "5425c87f8282e344942a28aa3abc2dad2cae19e8fad1cc520eeedd0e390c5e1d",
-      "bytes": 2324
+      "sha256": "ebb02d95da48dad03950df00d47ba41eb24d8e7c2dce350b039f04ab9303e620",
+      "bytes": 2515
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_duo_monochrome_icon.svg": {
       "sha256": "59cb58c3b3601c18b743a0012a1bf1d39456b5ea96df1cdc4fe769801912c79e",
       "bytes": 2560
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_duo_night_sky_icon.svg": {
-      "sha256": "f2049c95d61befa896895b847226dd0a5815aca1b2328c595c3548bb30610ae0",
-      "bytes": 2812
+      "sha256": "bb1144cedf42f479ccd49089d8282a3681dbced9a951f929c7a826951d1a7549",
+      "bytes": 3105
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_duo_star_white_icon.svg": {
-      "sha256": "0f6b98f181365f71d4de5b0a3fb59b6bed0bfa79274a1b3926f22ac45e01a00e",
-      "bytes": 2812
+      "sha256": "e6e3775a2ce683d8a6a5afa722bb5d4a1419e179183432b0673ac3876ecf7cf1",
+      "bytes": 3105
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_se_2020_black_icon.svg": {
-      "sha256": "5c729ebff9c00ac14f6b4293de73f4cb5069185a4d7f83dced454700abac431c",
-      "bytes": 1934
+      "sha256": "05152958a53f1d3d5a35fcd8e53977415955254a44576f36f444f963acdb4bd8",
+      "bytes": 2155
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_se_2020_monochrome_icon.svg": {
       "sha256": "8607f5f8fbf712ab9f6974c9e8271bd1293a210a0da8837d22b7ebcedc776806",
       "bytes": 2009
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_se_2020_product_red_icon.svg": {
-      "sha256": "01f3e1bd8ff9a29bb724cb3f1da67166a3aed432d2972cf4dd75110174e4116a",
-      "bytes": 1934
+      "sha256": "850872d6c1e59c66ae9de94bf2a09e169de500e7338094f55575eca866de76b3",
+      "bytes": 2155
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_se_2020_white_icon.svg": {
-      "sha256": "f0d3ea96dd7e6cf4e2b16b2eb610ea1a6403a30a2346bc146166c72c38323572",
-      "bytes": 1934
+      "sha256": "1f0fa97dfcd2af300ce2841ef9e4b8c94ca6accc18a5e8404bb949bd29444efc",
+      "bytes": 2155
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_se_2022_midnight_icon.svg": {
-      "sha256": "b850a63d39f46c26288fa4214d2955173fe0d94e20b0df578a5e244e5db8c00a",
-      "bytes": 1934
+      "sha256": "689f69f6072a46c057e9dc81642f68c00942fe664622702f52ecaeed0b008c95",
+      "bytes": 2155
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_se_2022_monochrome_icon.svg": {
       "sha256": "beff2edc95a384d9a8ffc4652c405e88dec5db8d7d1c157cba7925905c7d6c58",
       "bytes": 2025
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_se_2022_product_red_icon.svg": {
-      "sha256": "89797af3d03ad58481388dbc60d630f0d8737fa080ea1b6642f9adf2b5590602",
-      "bytes": 1934
+      "sha256": "db4e125535dcaa893555b97dea5a833d42b8b837525ab2f2a4baf563511473b4",
+      "bytes": 2155
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_se_2022_starlight_icon.svg": {
-      "sha256": "e597bf30dc448b0fdbbafdb426a5b35879e007ad6843f57f8f14e4df9f94e7c9",
-      "bytes": 1934
+      "sha256": "c67d72a27cb3d4cb001825de75781b49509143fc4df7ed2dc69028545727fd2e",
+      "bytes": 2155
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_x_monochrome_icon.svg": {
       "sha256": "3626f041d6106dc46190c386fb141f16ea74e1a9e6027bb99a3294d237ee9c72",
       "bytes": 2068
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_x_silver_icon.svg": {
-      "sha256": "923476c84931d7ee2fd07f77ab399fcc7674272f850a424bca4a04c13dc0b3c4",
-      "bytes": 2014
+      "sha256": "14544e7f550b71e3dcf79a7bcc3446941e9495b8ee3a2d6b4046bfd907cf6b6f",
+      "bytes": 2235
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_x_space_gray_icon.svg": {
-      "sha256": "f95b16bcc98efc5f9cfd2a7c8b27a56b2da7d88b33918d695f5f0ec668f51df4",
-      "bytes": 2014
+      "sha256": "9e1ee57b488b7c7d5fc60441c1317175abfb70170869d7d725501c6216713a94",
+      "bytes": 2235
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_xr_black_icon.svg": {
-      "sha256": "bc5928bfffcf3d4f0a9b14a794420cb6aaae85d949e834094e884228da7215ee",
-      "bytes": 1922
+      "sha256": "5f884baa33c9f9fcad0ba72e5a0e662afa41baa005facbaadab72cf919d49c1d",
+      "bytes": 2143
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_xr_blue_icon.svg": {
-      "sha256": "0eaf68466e8c3061bf141c6592286f2bb194fd34f0ba6449b715d8fd092853cb",
-      "bytes": 1922
+      "sha256": "976a1381b403af9c15f39e847b94496503e273b15634c1087c5c1479a920d9db",
+      "bytes": 2143
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_xr_coral_icon.svg": {
-      "sha256": "f60f833d2176d07f9feac6e5e673f3d0f70fefa6f67d451e868ee6e607d1a768",
-      "bytes": 1922
+      "sha256": "b4212bab300304fcd8d9b1997e79b6bfda9e8bd29ea4eb3239fac61d8b05ceae",
+      "bytes": 2143
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_xr_monochrome_icon.svg": {
       "sha256": "f95755ed82ff35001d5759146aa6f90e0ac607d7c94269714ad98f1175cd973a",
       "bytes": 1977
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_xr_product_red_icon.svg": {
-      "sha256": "e0f1d2e74ca225b37a7d21b270f19d799f370bdc95df50de6d7686d3b0570c91",
-      "bytes": 1922
+      "sha256": "a55c62d3110d1fa0d7267162d8f011776c87f19ca1aa83ea1f4bcc5b0c4ce0a9",
+      "bytes": 2143
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_xr_white_icon.svg": {
-      "sha256": "69a3c76fc115f7ccd2193c6b565db9bd3d2a2bb5aa107d00f45f859e6a511004",
-      "bytes": 1922
+      "sha256": "3b5ae326c26ca31a042be524c898fb29a8d9675ffaed55669a04fb19b21822a2",
+      "bytes": 2143
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_xr_yellow_icon.svg": {
-      "sha256": "d76a83cf55b1cdf03097a3ee28cd752b7338a6e441aedc074a219b86bf9a8959",
-      "bytes": 1922
+      "sha256": "5086ff583aa12f43eac43fb40f666f5cbb278d20e94d809ee56a781ab8ed07d0",
+      "bytes": 2143
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_xs_gold_icon.svg": {
-      "sha256": "f958dbdabe1ab5ba58d05928e7c45c32f2837ff016569e04f0130228ee989cb0",
-      "bytes": 2014
+      "sha256": "1c8d17ec9654b1f7148e6f4176ed51b6a1a1fd064eece2ea236726dd11a099c7",
+      "bytes": 2235
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_xs_max_gold_icon.svg": {
-      "sha256": "f958dbdabe1ab5ba58d05928e7c45c32f2837ff016569e04f0130228ee989cb0",
-      "bytes": 2014
+      "sha256": "1c8d17ec9654b1f7148e6f4176ed51b6a1a1fd064eece2ea236726dd11a099c7",
+      "bytes": 2235
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_xs_max_monochrome_icon.svg": {
       "sha256": "127b3399a29c2c83ceaf4b90d7bb9f99e5e16eab2142c44252ab764aa5de37a7",
       "bytes": 2088
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_xs_max_silver_icon.svg": {
-      "sha256": "923476c84931d7ee2fd07f77ab399fcc7674272f850a424bca4a04c13dc0b3c4",
-      "bytes": 2014
+      "sha256": "14544e7f550b71e3dcf79a7bcc3446941e9495b8ee3a2d6b4046bfd907cf6b6f",
+      "bytes": 2235
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_xs_max_space_gray_icon.svg": {
-      "sha256": "f95b16bcc98efc5f9cfd2a7c8b27a56b2da7d88b33918d695f5f0ec668f51df4",
-      "bytes": 2014
+      "sha256": "9e1ee57b488b7c7d5fc60441c1317175abfb70170869d7d725501c6216713a94",
+      "bytes": 2235
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_xs_monochrome_icon.svg": {
       "sha256": "c62440e61f0671b69525f9097e8baa53bfbfc6a6adfdbe0ba48f2d488708da70",
       "bytes": 2072
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_xs_silver_icon.svg": {
-      "sha256": "923476c84931d7ee2fd07f77ab399fcc7674272f850a424bca4a04c13dc0b3c4",
-      "bytes": 2014
+      "sha256": "14544e7f550b71e3dcf79a7bcc3446941e9495b8ee3a2d6b4046bfd907cf6b6f",
+      "bytes": 2235
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_xs_space_gray_icon.svg": {
-      "sha256": "f95b16bcc98efc5f9cfd2a7c8b27a56b2da7d88b33918d695f5f0ec668f51df4",
-      "bytes": 2014
+      "sha256": "9e1ee57b488b7c7d5fc60441c1317175abfb70170869d7d725501c6216713a94",
+      "bytes": 2235
     },
     "assets/devices/icons/generic/laptops/ic_generic_googlebook_titanium_silver_icon.svg": {
       "sha256": "4c4b6daee75a92715f161830027b260f45f3817d948bc86f8b326380633da780",
@@ -1994,20 +2034,20 @@
       "bytes": 17505
     },
     "assets/devices/icons/honor/phones/ic_honor_magic_v3_black_icon.svg": {
-      "sha256": "ed8ee10e9b63b1fd573de367b72f1175b8d8e9134db0f34fc26f6014000329f1",
-      "bytes": 17096
+      "sha256": "cafe1bb261b6d95a5347812e7de205dde0f2ea61a967b524b6c537bf16e35876",
+      "bytes": 17335
     },
     "assets/devices/icons/honor/phones/ic_honor_magic_v3_green_icon.svg": {
-      "sha256": "7060247e53efde0993a371268a3235206b9c4fcdf931c31c1542861a7a5f0423",
-      "bytes": 17096
+      "sha256": "00018753299c18c99ce03354156ba2336e990c61cebdfe312fa5d5b690994d07",
+      "bytes": 17335
     },
     "assets/devices/icons/honor/phones/ic_honor_magic_v3_monochrome_icon.svg": {
-      "sha256": "930b1b6c4713180de24a82ebad999795ccad1e4215138d750819368bd1de7535",
-      "bytes": 16400
+      "sha256": "ac7ad4cea209cb3d10d288029791a6cecf6e4f1f53341eca6898c7a4453d5b43",
+      "bytes": 16539
     },
     "assets/devices/icons/honor/phones/ic_honor_magic_v3_reddish_brown_icon.svg": {
-      "sha256": "97b7627125d554dab8cf24a5c6d81fda2f94761ffb6453f07dce3f75006a2321",
-      "bytes": 17096
+      "sha256": "7974a62514ee3a2a9d0b76e72de4e42045efeac85679c781502338fe883d8ec6",
+      "bytes": 17335
     },
     "assets/devices/icons/honor/phones/ic_honor_magic_v5_black_icon.svg": {
       "sha256": "28eec69a2e71609dd65fce0caa790e146547f6e1a66d0533e99a5021476adae4",
@@ -2658,16 +2698,16 @@
       "bytes": 3918
     },
     "assets/devices/icons/nothing/phones/ic_nothing_phone_2_dark_gray_icon.svg": {
-      "sha256": "eb76d99460a8f641833cf70a14c25ccb5538af047ef2812276a4b2a528824a70",
-      "bytes": 6202
+      "sha256": "abe9b53307172ad3dbab811094867c0b2df1ef2120f3ba50a2d7bd14cf4fd688",
+      "bytes": 6268
     },
     "assets/devices/icons/nothing/phones/ic_nothing_phone_2_monochrome_icon.svg": {
-      "sha256": "99709e24eb3e9b63436e27b0f803fafcac8173781e8fbfa1ae885a83a0bb0e5c",
-      "bytes": 5363
+      "sha256": "b3a5ca0f082c383a6e08dd79df828e9ba0584d2074053b1888b8ba3df0349b10",
+      "bytes": 5429
     },
     "assets/devices/icons/nothing/phones/ic_nothing_phone_2_white_icon.svg": {
-      "sha256": "f6057b3ff54620fc71a335e84ca05c1eb68fdf5211c2224a34a66c0ffe534619",
-      "bytes": 6202
+      "sha256": "39923508b8ddeec37e2f637064654c7d8c59b0db095fe8ad2937caafbbddc8b5",
+      "bytes": 6268
     },
     "assets/devices/icons/nothing/phones/ic_nothing_phone_2a_black_icon.svg": {
       "sha256": "4a6a7fb93e8d403b8f09173f672d2e1b2732e57ac5173c432176d73b3f52fbe1",
@@ -2702,24 +2742,24 @@
       "bytes": 3946
     },
     "assets/devices/icons/nothing/phones/ic_nothing_phone_3_black_icon.svg": {
-      "sha256": "4d66aef1934b870a21e504c6e10e83aecd726db2560dbf1406519f6f9788e86e",
-      "bytes": 48230
+      "sha256": "653d1c86260d586dfaadd7987b7792fcaa649c484df85cbae7f7f324c67b52e7",
+      "bytes": 48214
     },
     "assets/devices/icons/nothing/phones/ic_nothing_phone_3_monochrome_icon.svg": {
       "sha256": "e565b698a656ff4649bb85e5d434a450cedbd852046433a4dd0fba8ae21aeac1",
       "bytes": 46066
     },
     "assets/devices/icons/nothing/phones/ic_nothing_phone_3_white_icon.svg": {
-      "sha256": "e76c63da922823b0fc4af2c58ea9149b89c1a3e9ba6072add8ec964289788c6a",
-      "bytes": 48230
+      "sha256": "f63580211cc6aa18552d355f121849ae030aedaffdce23a11ca0aa7c3052289d",
+      "bytes": 48214
     },
     "assets/devices/icons/nothing/phones/ic_nothing_phone_3a_black_icon.svg": {
-      "sha256": "dcc7d04c3fba6690cdb1ad9e4186d5e9722d8d7d350240cd0aa41adaf479a3d9",
-      "bytes": 4656
+      "sha256": "4c9de7afeb6049794be47c1c7ce328bf5d5c82f5dfbfd8e8cdccac9851ea0ad5",
+      "bytes": 4790
     },
     "assets/devices/icons/nothing/phones/ic_nothing_phone_3a_blue_icon.svg": {
-      "sha256": "a84a3d48055eefddb6cce1ab923784d527799959f849143b53ccdac4a794f98a",
-      "bytes": 4656
+      "sha256": "574f06b291bb9d2ef3188e27d23427ae9799b991f8b10583e9084e574659785f",
+      "bytes": 4790
     },
     "assets/devices/icons/nothing/phones/ic_nothing_phone_3a_lite_black_icon.svg": {
       "sha256": "41a828a24fd379b0da33c7ef46f133ae6aba68d6c1c6b7e2ed3c28d9ad610bc7",
@@ -2738,40 +2778,40 @@
       "bytes": 4458
     },
     "assets/devices/icons/nothing/phones/ic_nothing_phone_3a_monochrome_icon.svg": {
-      "sha256": "86d8bfdbabdd0569740782146bdb025f5510124bcba577f7486e89f078a4ad17",
-      "bytes": 2586
+      "sha256": "e644f8fbb6bedf464a6d8d1ea30b79213be5640ba1743881af7beb49bca17619",
+      "bytes": 2746
     },
     "assets/devices/icons/nothing/phones/ic_nothing_phone_3a_pro_black_icon.svg": {
-      "sha256": "0e97920c54c890e46194d82688592f8094f1573ef59cae2c5e2788cd2b61152d",
-      "bytes": 5943
+      "sha256": "7933e81514083d6334eab86da5728a5c79e13f368fa9aeeb5c3448f40275553b",
+      "bytes": 5720
     },
     "assets/devices/icons/nothing/phones/ic_nothing_phone_3a_pro_grey_icon.svg": {
-      "sha256": "70c316234b28a5651b1cc7bb42cfc145fd3febbf50330d7b198797c276185960",
-      "bytes": 5943
+      "sha256": "b23a40acf9c15f9586ba203beb68f5f545d93d99a345107c18ead205f451adb4",
+      "bytes": 5720
     },
     "assets/devices/icons/nothing/phones/ic_nothing_phone_3a_pro_monochrome_icon.svg": {
-      "sha256": "d8ce2c29cd850ed7b060ecbfc96502fc878b9200f60a4e4e4e572c7cb5da359f",
-      "bytes": 3146
+      "sha256": "c24e0f988bf4d10fd4a643205a99325be1691f0ee51c2b03fe08a42aff368112",
+      "bytes": 3144
     },
     "assets/devices/icons/nothing/phones/ic_nothing_phone_3a_white_icon.svg": {
-      "sha256": "d15028702684b409fe2d09eeb77315a2adc8e1f924fc4eab5c8e8c10b023de7a",
-      "bytes": 4656
+      "sha256": "b4202693f5b60bf053432455a4bc9d7e2c6c1d3e2239c46ba5713435f48cd2f8",
+      "bytes": 4790
     },
     "assets/devices/icons/nothing/phones/ic_nothing_phone_4a_black_icon.svg": {
-      "sha256": "c97baac835f404bed4241f42337260655fc14fd4b1b75f09f9e20675359f7b17",
-      "bytes": 4493
+      "sha256": "64ec125ec7a30617fe69ec686cc5a93273e13e5c71236735c6063109df3f43d1",
+      "bytes": 4139
     },
     "assets/devices/icons/nothing/phones/ic_nothing_phone_4a_blue_icon.svg": {
-      "sha256": "8ead197fe360161034c1e658317b31c94e409795a5ef6d0b00606a80bba095ff",
-      "bytes": 4493
+      "sha256": "2b422e1d6dac5f9b6300fef19afb41c93ed038e0bd50379ddb25bce076f67602",
+      "bytes": 4139
     },
     "assets/devices/icons/nothing/phones/ic_nothing_phone_4a_monochrome_icon.svg": {
-      "sha256": "6b49fabe9d024e657738de46bca8d90d8349f9a0c3c87db4873da24ad10ea341",
-      "bytes": 3032
+      "sha256": "3c6b5b63970b8b1b9dbb38dba987b40e04004ebb1dc81237bd9492b3e8c582ec",
+      "bytes": 2855
     },
     "assets/devices/icons/nothing/phones/ic_nothing_phone_4a_pink_icon.svg": {
-      "sha256": "d55796fb891f12e5cce67db322bc211e2d1929ae7b6ef4b4299670e202d91b01",
-      "bytes": 4493
+      "sha256": "f3e179561f3d6a77e6ef39b39990d6b5126dda761f1ec1be83da410580e5a05b",
+      "bytes": 4139
     },
     "assets/devices/icons/nothing/phones/ic_nothing_phone_4a_pro_black_icon.svg": {
       "sha256": "e82d3222268421cbd6f3aeaf4062892712516d0d02b25f17b4176f8acdf5f582",
@@ -2790,8 +2830,8 @@
       "bytes": 15195
     },
     "assets/devices/icons/nothing/phones/ic_nothing_phone_4a_white_icon.svg": {
-      "sha256": "5d83a4cc1caae47532fa0fde2055fc1e166ed2802afe69bb533ea725a58d4558",
-      "bytes": 4493
+      "sha256": "e9ad55b167cf2ac342af9e165e5c91c1e0e148a68afe779639aea7d0ce36265b",
+      "bytes": 4139
     },
     "assets/devices/icons/nothing/phones/ic_nothing_phone_4b_black_icon.svg": {
       "sha256": "595cc749e4739ff6c21a1b335cacd721271c371060e9dee6bc2f96fadbdb2b22",
@@ -2809,197 +2849,245 @@
       "sha256": "cb117a2506d4b60931b1e7439c22e906ad5273963c9904759ad70f3d6bb62c7f",
       "bytes": 3865
     },
+    "assets/devices/icons/oneplus/phones/ic_oneplus_11_eternal_green_icon.svg": {
+      "sha256": "fe3d8eb5aa9fa385e8f3195cf57b1d185c361c18f3c15a61c3abd243711bce98",
+      "bytes": 4858
+    },
+    "assets/devices/icons/oneplus/phones/ic_oneplus_11_monochrome_icon.svg": {
+      "sha256": "93047365fe9a9e5976b81649fb3c740a1a3f1848c65475055558bf64dcd06a3d",
+      "bytes": 2256
+    },
+    "assets/devices/icons/oneplus/phones/ic_oneplus_11_titan_black_icon.svg": {
+      "sha256": "63709574180e9cd69d8bccb500e1f5ff63c93f70534de3168882880acd3b005d",
+      "bytes": 4858
+    },
+    "assets/devices/icons/oneplus/phones/ic_oneplus_11r_galactic_silver_icon.svg": {
+      "sha256": "9dbe72f3c3e1edfac43a97e3c289e32386e55bafc411a544babb29820f87af72",
+      "bytes": 4837
+    },
+    "assets/devices/icons/oneplus/phones/ic_oneplus_11r_monochrome_icon.svg": {
+      "sha256": "422420678fab17e405c615f378df9c5db01322bb94a89f6ddb7c8d372bf359e2",
+      "bytes": 2277
+    },
+    "assets/devices/icons/oneplus/phones/ic_oneplus_11r_sonic_black_icon.svg": {
+      "sha256": "044c0459df2c91b4ea717b6656349d5bd15a1c03b13da621bf0fb5f8affc1e77",
+      "bytes": 4837
+    },
+    "assets/devices/icons/oneplus/phones/ic_oneplus_12_flowy_emerald_icon.svg": {
+      "sha256": "e6dbf60a3f1a0c39b031cb0740c2865c625a6362887e6025ee75670da8aa24b9",
+      "bytes": 6265
+    },
+    "assets/devices/icons/oneplus/phones/ic_oneplus_12_monochrome_icon.svg": {
+      "sha256": "304e4650a5bb711fac3240b25632c8a42134aa3c788fed72bbccb7af9264436a",
+      "bytes": 2798
+    },
+    "assets/devices/icons/oneplus/phones/ic_oneplus_12_silky_black_icon.svg": {
+      "sha256": "0254cb33c190f06619dd84560f4ed45383177a3033c2dd9c8fc7b1986b769f34",
+      "bytes": 6265
+    },
+    "assets/devices/icons/oneplus/phones/ic_oneplus_12r_cool_blue_icon.svg": {
+      "sha256": "dee863ca726625e677158d2cb37594ca1851ac112d0e18eef5d38b5950726299",
+      "bytes": 5365
+    },
+    "assets/devices/icons/oneplus/phones/ic_oneplus_12r_iron_gray_icon.svg": {
+      "sha256": "4287de63fd581f753faf16a9057e2cd4d557604f91cec209768dd3cdacebf5f3",
+      "bytes": 5365
+    },
+    "assets/devices/icons/oneplus/phones/ic_oneplus_12r_monochrome_icon.svg": {
+      "sha256": "0acec6833fd84550b1078078192eda6a4fcb970cac4d9c859ed4cfefc89e0040",
+      "bytes": 2350
+    },
     "assets/devices/icons/oneplus/phones/ic_oneplus_13_arctic_dawn_icon.svg": {
-      "sha256": "606e815588357e4f2d0a7c12b710895511c3a87ebed0340f511d2f5431d746e8",
-      "bytes": 3351
+      "sha256": "11d6e334b4343d1588e0f9ea8066f5211da9ce9024233fdb12ee403741417a02",
+      "bytes": 3647
     },
     "assets/devices/icons/oneplus/phones/ic_oneplus_13_black_eclipse_icon.svg": {
-      "sha256": "bff12bc522b488b0ab127b1cc3ad19698c741316053b455dee24832f1c5a4b70",
-      "bytes": 3351
+      "sha256": "ff1429ba3d85c993c18a14dbd97344d656b873034ccd92bb09e3fad2f1bf2218",
+      "bytes": 3647
     },
     "assets/devices/icons/oneplus/phones/ic_oneplus_13_midnight_ocean_icon.svg": {
-      "sha256": "e55efb67753858da88fc43649eeb884d068744774b2e6b024b9998bb405d189e",
-      "bytes": 3351
+      "sha256": "f739f33c2ee3cff5e06ee3162b06027eebd9367de237a012320f365bb1f090b0",
+      "bytes": 3647
     },
     "assets/devices/icons/oneplus/phones/ic_oneplus_13_monochrome_icon.svg": {
       "sha256": "4c741b83926e41d446040fa12faa0d5a4923e82575d556291bd4f7ae20e2459a",
       "bytes": 2327
     },
     "assets/devices/icons/oneplus/phones/ic_oneplus_13r_astral_trail_icon.svg": {
-      "sha256": "4d980b1783f3892a7c4e2010290c10ba447d80fe0f077ce740a3835ca91e3698",
-      "bytes": 3359
+      "sha256": "c0d4cdc104476e95fb83e9760744dd76e0ba3029e41a5aa37831db3fb02d41b9",
+      "bytes": 3655
     },
     "assets/devices/icons/oneplus/phones/ic_oneplus_13r_monochrome_icon.svg": {
       "sha256": "038cc02136814d906856451a1b4ec45aa04994793bbf8bdf950455d360239f04",
       "bytes": 2343
     },
     "assets/devices/icons/oneplus/phones/ic_oneplus_13r_nebula_noir_icon.svg": {
-      "sha256": "250ac75d1da3a9f39c8bbf6eeddc2ae621bbd647b7d9d8322aa8f5b6337a4b0c",
-      "bytes": 3359
+      "sha256": "835e54250ab1fc189371f22cd59fb424e198fb71c60dc0f0f08227c0e99a7471",
+      "bytes": 3655
     },
     "assets/devices/icons/oneplus/phones/ic_oneplus_15_infinite_black_icon.svg": {
-      "sha256": "9d90d70255ee8897f3f65e47bf21c4d3a73fce7cb61c5eca9d7c6b7f7d7ac48b",
-      "bytes": 3089
+      "sha256": "d2d4d3c5fca246eeb451e589c1f87f1b444b5a0f9b28bb16292c5814e652bcdd",
+      "bytes": 3454
     },
     "assets/devices/icons/oneplus/phones/ic_oneplus_15_monochrome_icon.svg": {
       "sha256": "974d0c46ab5873ed92eb5f29745071f83240de0243f832e20abdb2d6dc7a4555",
       "bytes": 2269
     },
     "assets/devices/icons/oneplus/phones/ic_oneplus_15_sand_storm_icon.svg": {
-      "sha256": "369f8dec9631e77b966359060b41591de4d69d991fd949677a5e0e4dc701e981",
-      "bytes": 3089
+      "sha256": "635fec18ce593e6eaadb49d17174725652e7161e32a85c97e2414d87ba227550",
+      "bytes": 3454
     },
     "assets/devices/icons/oneplus/phones/ic_oneplus_15_ultra_violet_icon.svg": {
-      "sha256": "4bc143ade354193551a0121bfbfcbb3627c952e2f10fe0e7fbd71eec4ca06d83",
-      "bytes": 3089
+      "sha256": "0ff10720c857e7d9e4c1c5174faa33b5d14731537a9402bea4d696c819c4f1a2",
+      "bytes": 3454
     },
     "assets/devices/icons/oneplus/phones/ic_oneplus_15r_charcoal_black_icon.svg": {
-      "sha256": "20beb28ca14af5306acbd5621675ba9b4eaf1dcb8b631b0280190a2ee8558b8a",
-      "bytes": 2127
+      "sha256": "7f7e4c3899762b9a630c96d1249b80d7be5e75ccbbb3bca10a0bab996e3169c9",
+      "bytes": 2384
     },
     "assets/devices/icons/oneplus/phones/ic_oneplus_15r_electric_violet_icon.svg": {
-      "sha256": "0cd3b54aa3bb177d85212a83061e835ac464ae1ce6fad579b9f5714c448b5287",
-      "bytes": 2127
+      "sha256": "4b6ae287773d98d9259b425c0a9fff8c0cc88b6a067a33fd1ad5c60553d10400",
+      "bytes": 2384
     },
     "assets/devices/icons/oneplus/phones/ic_oneplus_15r_mint_breeze_icon.svg": {
-      "sha256": "530e9aecc0c304df13ef7d20bf024e112d6b82e524ca758cca51d68455378fe3",
-      "bytes": 2127
+      "sha256": "906616cce08ffb5a8c6634216651033b7b9de81ba2e5696277a66e563b2b07e1",
+      "bytes": 2384
     },
     "assets/devices/icons/oneplus/phones/ic_oneplus_15r_monochrome_icon.svg": {
       "sha256": "61cdbf97baaa4867d623139db6f91bbdafd90cf122a045db24bacf4501680848",
       "bytes": 2053
     },
     "assets/devices/icons/oneplus/phones/ic_oneplus_15t_brown_icon.svg": {
-      "sha256": "6b0e39678cc8257ee0f9cf935bb2da8c4bc07a9bb028b213e9244c93c90b7321",
-      "bytes": 2853
+      "sha256": "a6f379c09362c9f83154a0e9f4ba66bc142396a499957099d9bddb0e26d184a6",
+      "bytes": 3182
     },
     "assets/devices/icons/oneplus/phones/ic_oneplus_15t_green_icon.svg": {
-      "sha256": "2d49a56dfb05f3192f359b514daf3c57177546d951425b1e5e4dca24a446c928",
-      "bytes": 2853
+      "sha256": "eee260522af4a1ee6c63eb45bcce972171cad9289348a84ff75d0b2a2c71b84e",
+      "bytes": 3182
     },
     "assets/devices/icons/oneplus/phones/ic_oneplus_15t_monochrome_icon.svg": {
       "sha256": "3dc1596047a797ee6644b0f021db5b7754914670e9dfe250b1a527ec99a97747",
       "bytes": 2190
     },
     "assets/devices/icons/oneplus/phones/ic_oneplus_15t_white_icon.svg": {
-      "sha256": "96607e3bd4013a77a41890b9f475d050c1dc7699f8d43cc9cc25cf85e9f9305e",
-      "bytes": 2853
+      "sha256": "35f7763a6cae87c0b76777e65949b93d5aab38490d89e88136716b1731a02caf",
+      "bytes": 3182
     },
     "assets/devices/icons/oneplus/phones/ic_oneplus_16_monochrome_icon.svg": {
       "sha256": "e2c760790373d9f412d14202de443027b0aef196a67f09584030cd109baaa984",
       "bytes": 2560
     },
     "assets/devices/icons/oneplus/phones/ic_oneplus_16_teaser_black_icon.svg": {
-      "sha256": "fb38d1d57decd34a0ae6656a9d8bf1199020e1a0d1b62ac28ea23f85fbc628f8",
-      "bytes": 3383
+      "sha256": "23932d338936dc8be77c95e33e09c91874b0dc944fc0aaf83b01e6cf4370324b",
+      "bytes": 3748
     },
     "assets/devices/icons/oneplus/phones/ic_oneplus_16_teaser_peach_icon.svg": {
-      "sha256": "9ccf85c7f2b07ad12ef8d7a57fdf998c57c3dd352f292ed318c1120f48a27224",
-      "bytes": 3383
+      "sha256": "fa8f3d22f1725fae672e4840750676395a93934927f7ed13614aadf271a6ee9b",
+      "bytes": 3748
     },
     "assets/devices/icons/oneplus/phones/ic_oneplus_16_teaser_silver_icon.svg": {
-      "sha256": "e5ea074ec61abd2cca88ce37c2d1d5aaa5d34d98c38aebdc425b6e43a2ddd82a",
-      "bytes": 3383
+      "sha256": "2bab2dcf23b3d3cb3b93154e241b0c1712c94ed9a65782c63b8778d75761222f",
+      "bytes": 3748
     },
     "assets/devices/icons/oneplus/phones/ic_oneplus_nord_5_dry_ice_icon.svg": {
-      "sha256": "0bdc69b23fde4a425d57d019e7e69b15f464335d36d7dd8db5280298dc741876",
-      "bytes": 3057
+      "sha256": "2a63f3f2b8d5bbc8b735115fc3707cf3b437bb4eae65cfbd3ebbe0f2693e0b79",
+      "bytes": 3422
     },
     "assets/devices/icons/oneplus/phones/ic_oneplus_nord_5_marble_sands_icon.svg": {
-      "sha256": "ebab25f0a83aa82daf8af9282a9ad174520f648a3e418316fbbd197a6ab9e0c2",
-      "bytes": 3057
+      "sha256": "edcfc61364dd91c38891320ec1711ca6b2e0c5e5ac190db6d262d002c18bff37",
+      "bytes": 3422
     },
     "assets/devices/icons/oneplus/phones/ic_oneplus_nord_5_monochrome_icon.svg": {
       "sha256": "5950106f6178f7e92c21a0194409c427a75f4823739108bde594a5c77d8f4b9b",
       "bytes": 2079
     },
     "assets/devices/icons/oneplus/phones/ic_oneplus_nord_5_phantom_grey_icon.svg": {
-      "sha256": "1aef287f4dacc011e08338d734075a0658894079ecca866214119c99e1c9879f",
-      "bytes": 3057
+      "sha256": "82be6c5a8225fa486c57640f175d416a895bab1768f6938811606f82427a9825",
+      "bytes": 3422
     },
     "assets/devices/icons/oneplus/phones/ic_oneplus_nord_6_fresh_mint_icon.svg": {
-      "sha256": "c58c25302259e9f1d9a7f7d1a09e1a5446e298bf0c3fca467a449608ea09271f",
-      "bytes": 3137
+      "sha256": "ec82413fe0fb511ad4a5074f54c727d859e665d30d668c3c7b74ec38439455ed",
+      "bytes": 3538
     },
     "assets/devices/icons/oneplus/phones/ic_oneplus_nord_6_monochrome_icon.svg": {
       "sha256": "d3956912c65a4e58849cfbdb0721b391fff22790767954d01a869372c479e2b8",
       "bytes": 2327
     },
     "assets/devices/icons/oneplus/phones/ic_oneplus_nord_6_pitch_black_icon.svg": {
-      "sha256": "860e6b3c118975854cf722879076579ff2e1220ad5c01f9d6ebf1de3454f9f78",
-      "bytes": 3137
+      "sha256": "58dcf786c55366126695177c5c9a3202b8c4c2037d1dd0ed8beb216cb5008ad4",
+      "bytes": 3538
     },
     "assets/devices/icons/oneplus/phones/ic_oneplus_nord_6_quick_silver_icon.svg": {
-      "sha256": "c17aa96437400ca00f6b01500655ebacaf92c3db53274748cc3198a483642cc4",
-      "bytes": 3137
+      "sha256": "21836710875be2e5b0c61a5fdd1e9cd5e04aafe8e145723da21658eca0ef7050",
+      "bytes": 3538
     },
     "assets/devices/icons/oneplus/phones/ic_oneplus_nord_ce6_blue_icon.svg": {
-      "sha256": "f1b487352d089653f232166bc10baea7429cec3f76c48e2e5f5bd83f01b6e4da",
-      "bytes": 3053
+      "sha256": "eceaa5065d1e1f1b1ec1e059cd447828fb6f9a63c4927032bc7363e5626b4aa2",
+      "bytes": 3418
     },
     "assets/devices/icons/oneplus/phones/ic_oneplus_nord_ce6_lite_hyper_black_icon.svg": {
-      "sha256": "19042452376526079c5edfbdc0baad0367ee4a2ae4ac10f444e8fb6c76da5a3f",
-      "bytes": 3840
+      "sha256": "cda6314bfa28fbed3a1388aa3433aa2ef47d68b5113282066539596904b7dabb",
+      "bytes": 4313
     },
     "assets/devices/icons/oneplus/phones/ic_oneplus_nord_ce6_lite_monochrome_icon.svg": {
       "sha256": "38529613552c71f9d5defd33724d150caed6a6f9e0b62b1e5b23fc0ea1fbbf04",
       "bytes": 2697
     },
     "assets/devices/icons/oneplus/phones/ic_oneplus_nord_ce6_lite_vivid_mint_icon.svg": {
-      "sha256": "a7ad96e9d690f8dec283f7ea39b68ffeeb21feaca91f33a64cfc70c51d6c725e",
-      "bytes": 3840
+      "sha256": "ed6dfe5e7175e299defc6f314ed6102dceff0a12dbc9ac70f5f1024418a75c85",
+      "bytes": 4313
     },
     "assets/devices/icons/oneplus/phones/ic_oneplus_nord_ce6_lunar_pearl_icon.svg": {
-      "sha256": "03612a9c2d6318be3861b32732172569987463d35e8213556730e733cdae211a",
-      "bytes": 3053
+      "sha256": "0eeac34150807e0dfb4a49994937857b8437e58b1fbcf3ff5cc2def42e3ad705",
+      "bytes": 3418
     },
     "assets/devices/icons/oneplus/phones/ic_oneplus_nord_ce6_monochrome_icon.svg": {
       "sha256": "3b0df2f7d14ce4b5cb5b59b84aba602186c05ce7b6991fbe7b0c0196e9c39ff8",
       "bytes": 2237
     },
     "assets/devices/icons/oneplus/phones/ic_oneplus_nord_ce6_pitch_black_icon.svg": {
-      "sha256": "bc8d4af9e2c70c6ed70999a6559b1ee1722b02d5fffeb395ab3213b28a63a821",
-      "bytes": 3053
+      "sha256": "4244f3c1a75d3df64afe62908745d1ba15bf63dfa16677c4b5f556fcba3b90d4",
+      "bytes": 3418
     },
     "assets/devices/icons/oneplus/tablets/ic_oneplus_pad_2025_cn_deep_space_gray_icon.svg": {
-      "sha256": "676501f20676f4f0a1972f919046cf3a55e7810ebe8ae3920d349700317725fe",
-      "bytes": 2099
+      "sha256": "81360b14519303dcfe1ce20d4013170477d5ee439f4d78e83822e15f957607e1",
+      "bytes": 2356
     },
     "assets/devices/icons/oneplus/tablets/ic_oneplus_pad_2025_cn_monochrome_icon.svg": {
       "sha256": "8b8b33a4570b1fa2a7a4fa345dbbc86eb0101be4a90606937e764afa83932592",
       "bytes": 2004
     },
     "assets/devices/icons/oneplus/tablets/ic_oneplus_pad_2025_cn_tundra_green_icon.svg": {
-      "sha256": "9cc522ded3d5a368bd1b72c9e2973eebb5f0f18fb77a5d1f8fad8fc3caefc436",
-      "bytes": 2099
+      "sha256": "9c379a7efea9f74a88e47c7a923a19f1a831c097474faa7cf23deddb07e6629a",
+      "bytes": 2356
     },
     "assets/devices/icons/oneplus/tablets/ic_oneplus_pad_2_2025_cn_deep_space_gray_icon.svg": {
-      "sha256": "ee2fe95fd816ee655ef7527dcfdfa968bec29195b9d8923a6e2127ef63cb3de4",
-      "bytes": 1817
+      "sha256": "61672cafe4fe8211212d073ef8ce034bd9afc68c381aec2fc0cdc1552744ac8c",
+      "bytes": 2038
     },
     "assets/devices/icons/oneplus/tablets/ic_oneplus_pad_2_2025_cn_monochrome_icon.svg": {
       "sha256": "286675ab71a494b25dce9f2f98985e6808c6e5e1f18baa5909ba4c0b2e922c38",
       "bytes": 1906
     },
     "assets/devices/icons/oneplus/tablets/ic_oneplus_pad_2_2025_cn_sky_blue_icon.svg": {
-      "sha256": "2d45ba43c54514d166c2a5d174d389242b02a3d4af4a3142d8dd2927033858ea",
-      "bytes": 1817
+      "sha256": "7d1a35d6426633010d8c694a7f1bece13408c88805ed3d0babe381e73c95e7c0",
+      "bytes": 2038
     },
     "assets/devices/icons/oneplus/tablets/ic_oneplus_pad_2_monochrome_icon.svg": {
       "sha256": "0d9f4d404107dded192c984897b4975168e91cbbde32d117fef951819d9778cd",
       "bytes": 1945
     },
     "assets/devices/icons/oneplus/tablets/ic_oneplus_pad_2_nimbus_gray_icon.svg": {
-      "sha256": "b6f61ef596a6ef5cc1cba314009b3ec14aba2035f0774adb08729fcc36a9c479",
-      "bytes": 2264
+      "sha256": "bf2a32e43b4686ade0e8a0ead1c3d4ce9e861bc0d92f23025ee42bb630a57628",
+      "bytes": 2426
     },
     "assets/devices/icons/oneplus/tablets/ic_oneplus_pad_2_pro_deep_sea_blue_icon.svg": {
-      "sha256": "c96a4f3be14c5c97a8951e25a85079cc8142246df74a17c20923a7eb11c5f47a",
-      "bytes": 1824
+      "sha256": "b1885c55c88e30144870b0a01590955251010f168a2d7d769909472bf434acc1",
+      "bytes": 2045
     },
     "assets/devices/icons/oneplus/tablets/ic_oneplus_pad_2_pro_glacier_silver_icon.svg": {
-      "sha256": "9c44ad6e33bcc08b2f7f62fcdae6b2798a8ecc0c109d5350e2d694f9fe3f4d3c",
-      "bytes": 1824
+      "sha256": "831304418974a941531e086544b13a4605b128f6bfca8cafda2eb526af869a00",
+      "bytes": 2045
     },
     "assets/devices/icons/oneplus/tablets/ic_oneplus_pad_2_pro_monochrome_icon.svg": {
       "sha256": "18353e3ee4f51889a1e6b90d4261251d2fc714064a4d1b2e28954ff1e092433f",
@@ -3010,60 +3098,60 @@
       "bytes": 2173
     },
     "assets/devices/icons/oneplus/tablets/ic_oneplus_pad_3_pro_dune_glow_icon.svg": {
-      "sha256": "0dd33fef057fd08fa4cb52cefeda07e9c2f83ef21d9a27221ac785b9794ee0a3",
-      "bytes": 2497
+      "sha256": "0cdf70cd65cd8db634748c8ff557c0d503958c66077c843f33a30ed8e340af41",
+      "bytes": 2790
     },
     "assets/devices/icons/oneplus/tablets/ic_oneplus_pad_3_pro_monochrome_icon.svg": {
       "sha256": "135190c263481982360ef45ddcaf625721a09c02fbb8e6aee143aed7459fcc92",
       "bytes": 2186
     },
     "assets/devices/icons/oneplus/tablets/ic_oneplus_pad_3_pro_sage_mist_icon.svg": {
-      "sha256": "a37cc1b613f1b6f40cd348f0f29cbee763c83fcf206bb0ad7148fd04eca1b507",
-      "bytes": 2497
+      "sha256": "13fdeafce8f68ee6a70d9eb8c6b835aef3cc8c28a223bccb1936f0e09c17fb80",
+      "bytes": 2790
     },
     "assets/devices/icons/oneplus/tablets/ic_oneplus_pad_3_storm_blue_icon.svg": {
-      "sha256": "80d474665f622de72fd4944af91d4b2d5c0fc9aff67723a89b55111beb1b3f55",
-      "bytes": 2494
+      "sha256": "39bf63de5618fdc3b835893f66a3f9fee8184cbd95c9461004a3ac9384c600b6",
+      "bytes": 2712
     },
     "assets/devices/icons/oneplus/tablets/ic_oneplus_pad_4_dune_glow_icon.svg": {
-      "sha256": "8ce018ef8c49c7906efe641fd613b5c9ba47081e4eabe43ca5a8566da8b58574",
-      "bytes": 2496
+      "sha256": "308ff5c4a68ec96a7af0c61f238ffa81b1549fd52ddc64708d51b1c1802ddb27",
+      "bytes": 2789
     },
     "assets/devices/icons/oneplus/tablets/ic_oneplus_pad_4_monochrome_icon.svg": {
       "sha256": "1cdead4c1350a5dd6806d1d8bea5f9914d1ae4702a4bca89c051f728e2d1227c",
       "bytes": 2170
     },
     "assets/devices/icons/oneplus/tablets/ic_oneplus_pad_4_sage_mist_icon.svg": {
-      "sha256": "3989c8d65e9be1473b8a69b986235c2e903b03f525621abb49b9e6ef292e975a",
-      "bytes": 2496
+      "sha256": "279d17b6b331e9f58d3cd8acb7afe65d4241e6f255e136e27168e7b4a164f359",
+      "bytes": 2789
     },
     "assets/devices/icons/oneplus/tablets/ic_oneplus_pad_go_2_lavender_drift_icon.svg": {
-      "sha256": "900696070367a3d59998d0f0fe5e80bd81df2c41f848c7d4159012564723e787",
-      "bytes": 2259
+      "sha256": "6c6aa046004cf0c1f69b318cbe2466b2e797fdb6f20ac2400f614c3270ad84ce",
+      "bytes": 2480
     },
     "assets/devices/icons/oneplus/tablets/ic_oneplus_pad_go_2_monochrome_icon.svg": {
       "sha256": "67e25903d9e912195c18f0daf948665acca2263bed10631c90587f4d2878e57f",
       "bytes": 1974
     },
     "assets/devices/icons/oneplus/tablets/ic_oneplus_pad_go_2_shadow_black_icon.svg": {
-      "sha256": "8a5fb662306e8defa9ebb3763c16405d577c2bb7afe85d5f16ae6266636dc6b4",
-      "bytes": 2259
+      "sha256": "7f695c98a4089062b8e25bbc220becc16a69345769f47c27824aa9a7a41a4a75",
+      "bytes": 2480
     },
     "assets/devices/icons/oneplus/tablets/ic_oneplus_pad_go_monochrome_icon.svg": {
       "sha256": "d308f70d4cb17def570b5688274cd24c1570627e5a4053c05ffccb47b6aa02c3",
       "bytes": 2112
     },
     "assets/devices/icons/oneplus/tablets/ic_oneplus_pad_go_twin_mint_icon.svg": {
-      "sha256": "16846cad18591acc8fe090fbe10a31dfbf319bcc40bb4414600919c7eacbccf2",
-      "bytes": 2566
+      "sha256": "74bb55a76ea1fc71dbe2f2541455efed00867f7e00767bff4cd7be99f433f5a8",
+      "bytes": 2756
     },
     "assets/devices/icons/oneplus/tablets/ic_oneplus_pad_halo_green_icon.svg": {
-      "sha256": "fd859c7fcd0445f408f64394cf756593b85d8cb49c1af30b4c057b6492c5fcee",
-      "bytes": 2275
+      "sha256": "f076a81879ad4d402aa162bb3a1bcbd57cdcda83de70e1b39e9aaa5bfe398035",
+      "bytes": 2437
     },
     "assets/devices/icons/oneplus/tablets/ic_oneplus_pad_lite_aero_blue_icon.svg": {
-      "sha256": "60528028008cb0cf0a7870ea8c1c24255c8419be5bf840edeed5a102105e2d05",
-      "bytes": 2265
+      "sha256": "129bd12e389b5944237d998547b66f2e2ad7cbd6ea9b7c8fb7c83356c107af82",
+      "bytes": 2427
     },
     "assets/devices/icons/oneplus/tablets/ic_oneplus_pad_lite_monochrome_icon.svg": {
       "sha256": "8339dc95da09ea1ee5359cec69f4d65d59ebfe41c99a0f4bd928b5c6c4d9ae7b",
@@ -3074,16 +3162,16 @@
       "bytes": 1942
     },
     "assets/devices/icons/oneplus/tablets/ic_oneplus_pad_pro_khaki_green_icon.svg": {
-      "sha256": "d5df78273d72df3f4d9195d537e73a60be8d5009f9c452be926d9b4cdfb239f1",
-      "bytes": 2264
+      "sha256": "ea543a9e197f2d3d443c984f33329fd278c48adc1704001b9a9c650ba525acb2",
+      "bytes": 2485
     },
     "assets/devices/icons/oneplus/tablets/ic_oneplus_pad_pro_monochrome_icon.svg": {
       "sha256": "16b037238b636abd337267e671d8823a22bdecdd16f593160512ec1d0e3ff7e7",
       "bytes": 1949
     },
     "assets/devices/icons/oneplus/tablets/ic_oneplus_pad_pro_space_gray_icon.svg": {
-      "sha256": "230dc84c7faf6a7f9b99a3d402dc3b5c4ef78ab38feba6941d78c597f6b3c66b",
-      "bytes": 2264
+      "sha256": "fe43ecc372638c291097d57de17231015ecf507805d579c5a5ba7fd736c24ccb",
+      "bytes": 2485
     },
     "assets/devices/icons/oppo/phones/ic_oppo_find_n5_cosmic_black_icon.svg": {
       "sha256": "ae76f3ff0adf393da01b421703f6706386b566806da39cd39d45a32ccec88498",
@@ -7418,12 +7506,12 @@
       "bytes": 1738
     },
     "assets/devices/make_device_branding.py": {
-      "sha256": "2c7f4f77a7f818caf5ba317678d5bb42b4b198c893d0638b365e848230990d71",
-      "bytes": 4400
+      "sha256": "f068d434a441d2aa8b33627ad5ae6bd840fcc04b3005a7f5bffc4ca25ff45cef",
+      "bytes": 4479
     },
     "assets/devices/make_googlebook_profiles.py": {
-      "sha256": "6a949dce24432760d4451c1c6d8b1cee274812a09fd974430588cf0108bb2eaf",
-      "bytes": 14336
+      "sha256": "a25ab472528be4ea0654c6491d7cb2edc428c7333cfcbc9de0814762561e58ac",
+      "bytes": 14761
     },
     "assets/devices/make_iphone_profiles.py": {
       "sha256": "6d102ea3f9a848768fa230a0bfa5d41244c8829c9d31a9cfdcbd989ef39a0790",
@@ -7433,9 +7521,13 @@
       "sha256": "d6a9853cdbde86e97ef9e9bd1fc2c71600d130dbe58ea81c43fc0351a91b1a53",
       "bytes": 15451
     },
+    "assets/devices/make_nothing_profiles.py": {
+      "sha256": "48f84835d8267550e5964ea91c903fa5d66cdb671027d0f5e04d725a2c9e1427",
+      "bytes": 13122
+    },
     "assets/devices/make_oneplus_profiles.py": {
-      "sha256": "fca986451e3445b2f348ee0e72bc1c4f5bd3f60a1d4f53de1a85ecebaed5d483",
-      "bytes": 8399
+      "sha256": "4a0cf2a179bcdfa73478be16085a543b1426c4cd6e4e145723bed60a72413cb2",
+      "bytes": 14051
     },
     "assets/devices/make_pixel_profiles.py": {
       "sha256": "47d40ea0c03bc9cd25d67b33edba4c13f9d1b32452ca7bb1ad27f41b0da7a112",
@@ -7446,12 +7538,12 @@
       "bytes": 13055
     },
     "assets/devices/make_samsung_fold_profiles.py": {
-      "sha256": "3c47ea04d6475e76e338edabeddc6720193973537d2f94b16e8b9e38d4d78ebd",
-      "bytes": 20165
+      "sha256": "6d905a3880a16f4483a657d75981485a4a558a7506247d8f1c40c16c654ba0ed",
+      "bytes": 21251
     },
     "assets/devices/make_samsung_legacy_profiles.py": {
-      "sha256": "b0292c9b1c50bc5aaac327acc38985953245d21977505ce0b59f0a9fcce57c4c",
-      "bytes": 29315
+      "sha256": "6b49de11e205c6359011807a68efa49f267f27e0515dc2c21391506a704c89d6",
+      "bytes": 29795
     },
     "assets/devices/make_samsung_profiles.py": {
       "sha256": "4bb5aade2aa097ab1b68bb2180d08736bf4896206ee22782b3aca4958fba9466",
@@ -7466,428 +7558,428 @@
       "bytes": 1165
     },
     "assets/devices/models/galaxy-a34.json": {
-      "sha256": "a8d77fbabf206ceb885de5a65144ed0911f4081cfd5e4c48ddffe11606984901",
-      "bytes": 7387
+      "sha256": "428da6e6de208e85556113f41fbf74990160a615feacb0e8f7a8cae7a54ff69a",
+      "bytes": 7849
     },
     "assets/devices/models/galaxy-a35.json": {
-      "sha256": "d53470a02422502019936c8e33e17e16eab36c5999ca97ca3a90ae861b383a36",
-      "bytes": 7327
+      "sha256": "fa0b6f9265fd649c1ecfd4667748a12fe20f6fabb098353fa7914f73c39719e1",
+      "bytes": 7782
     },
     "assets/devices/models/galaxy-a36.json": {
-      "sha256": "92b678114961adedc7bedf24f400fc2cd3a71d67710ad3361bca141fa55e9233",
-      "bytes": 7150
+      "sha256": "d819fa87b302e434460f54531423be7a5a853ae50fb688504724d1e29e4e6f01",
+      "bytes": 7612
     },
     "assets/devices/models/galaxy-a37.json": {
-      "sha256": "17c442c680035acb29e75639b8e2f45318e3597f381e270a8cab445a48f24b51",
-      "bytes": 6951
+      "sha256": "a89dff3738ed7c63d8054454334648ef0b80aa2de60f6e8b5d51f91c590a2449",
+      "bytes": 7413
     },
     "assets/devices/models/galaxy-a54.json": {
-      "sha256": "9836813abe96a026e61733db03796969a468e83b12b8be363cc9234515f5f41e",
-      "bytes": 7299
+      "sha256": "ffad63a25290bd1826f6f09798968492e1ab160f8b0ac5adf79a131b655044d3",
+      "bytes": 7756
     },
     "assets/devices/models/galaxy-a55.json": {
-      "sha256": "41b82c9e39a421f6e0513cf2b4efe5fdd6b74d9fbc5af39138621af93479f4a3",
-      "bytes": 7305
+      "sha256": "23f5bd1b016acd7048562bab52faf514bbd4400b54e0f9434596577977bbd9eb",
+      "bytes": 7767
     },
     "assets/devices/models/galaxy-a56.json": {
-      "sha256": "18d12bbd169b32975403f409aed505b34e6c5a88789d7436825fc312000a17d4",
-      "bytes": 7146
+      "sha256": "e831e297a9fef38eabc8614e5ac045147b18ac43fb8518f1917dee1c5536d8b2",
+      "bytes": 7608
     },
     "assets/devices/models/galaxy-a57.json": {
-      "sha256": "49a2cd6afcf3056515c5f7cd3ff9206877d7add031079bcee2c79f753991ab61",
-      "bytes": 6944
+      "sha256": "61f6443fa494c4324449c23f4710a43b81ed1bba5934ad73e3e3c39f54856d23",
+      "bytes": 7406
     },
     "assets/devices/models/galaxy-s10-5g.json": {
-      "sha256": "f1f4114c9da4b102f4a2c85093626d107fc819c902c30a1b6954d98fdd8a1831",
-      "bytes": 6349
+      "sha256": "f448bd7de6b64fcb00b7dd8bb2132bd01517711f968b937d3847159a0731a115",
+      "bytes": 6807
     },
     "assets/devices/models/galaxy-s10-lite.json": {
-      "sha256": "8f9e7911052ae886a95ebd0e84c5af9b9528613ee23cf0cc46398f16c16b8b66",
-      "bytes": 6295
+      "sha256": "ed4065d3e00a4e4f0b0b0e937bf92deb75ad2fd914b61d5c1a3b60be9fa7ff38",
+      "bytes": 6752
     },
     "assets/devices/models/galaxy-s10-plus.json": {
-      "sha256": "33e742ec10381cef7e82d5dbc8ed7e545eed23a58d4f4c52202748766119fd86",
-      "bytes": 9787
+      "sha256": "8c24cd3429e34dbbd94814b9c3764cfef09a8cbbd582b2592aa9defffcbcb8a4",
+      "bytes": 10249
     },
     "assets/devices/models/galaxy-s10.json": {
-      "sha256": "8006855e947f010f1df20e7a9f346a6655354b029f3900fc6157abffa3086016",
-      "bytes": 7982
+      "sha256": "4147fac76f9f6e70088004e5fe43fc517d4d1fb0cbb877fb60ed93882751276e",
+      "bytes": 8444
     },
     "assets/devices/models/galaxy-s10e.json": {
-      "sha256": "cd7180ca95322aa684ecd5695d60c3d4e4a96387dd00f61fae2dc102ced6f94c",
-      "bytes": 8846
+      "sha256": "6f18805929d042e7bbdf21d45dd18257073c11bf6759c5fe4d219869884f5f9b",
+      "bytes": 9303
     },
     "assets/devices/models/galaxy-s20-fe.json": {
-      "sha256": "f378b67c5a677fb10f25545a1eb9111d10f6d101cba74e553ae503048a891f1f",
-      "bytes": 8836
+      "sha256": "dc7558f6b6ba141945cc51261228f7da9314997d8527bcd020092d616d10736d",
+      "bytes": 9298
     },
     "assets/devices/models/galaxy-s20-plus.json": {
-      "sha256": "29122abbc300fd5851a7dac5d5154637b143c269d1691381a76888bab82787cc",
-      "bytes": 6219
+      "sha256": "1706f8af489897603a9a8d35a27af6a473bae48768a916e2a1f69ea251e4d1e6",
+      "bytes": 6671
     },
     "assets/devices/models/galaxy-s20-ultra.json": {
-      "sha256": "2ce88d75688f6793c74bdbea7a38fd4cbdc5d137ced04aa216329b39ff7d0276",
-      "bytes": 5378
+      "sha256": "878b28246eb9347e979874d9efa1eb001bce6608225e5cfa61036abe0af7a919",
+      "bytes": 5838
     },
     "assets/devices/models/galaxy-s20.json": {
-      "sha256": "4d81fc683cff221cd068be110a2812514b342284321e04c117d4545618ee00b3",
-      "bytes": 6199
+      "sha256": "b962dfa29bfb4dd087d234c6d77936ecce70c85c554af974eeb80d1101172d52",
+      "bytes": 6661
     },
     "assets/devices/models/galaxy-s21-fe.json": {
-      "sha256": "e743c5b3a621308d3d03c6b6d3e751b3f5838029eb1ed932c3a83ca31b35df65",
-      "bytes": 7268
+      "sha256": "cff5e7d1fa40e2ed8b2b2a02b24bdb8d0c02ce2093c617ebd103967f3781a528",
+      "bytes": 7725
     },
     "assets/devices/models/galaxy-s21-plus.json": {
-      "sha256": "adee2ca1ecce20f36b3fd56dc57d94e835040985437bd0825e691b2d4ca78a76",
-      "bytes": 8969
+      "sha256": "65a00a7b43c48b79a33aded96816f4d99fc43a0df96e0758280a81565de67ef8",
+      "bytes": 9431
     },
     "assets/devices/models/galaxy-s21-ultra.json": {
-      "sha256": "c55b5d433c627ba051a7b1cc4e6e6329409dddaff512981ca8baa4ef681f280b",
-      "bytes": 8223
+      "sha256": "81dab336680f732b266431a0d39fc14992d43bf3b066cc8ff075c587c1270fd3",
+      "bytes": 8680
     },
     "assets/devices/models/galaxy-s21.json": {
-      "sha256": "d57731fd37d381c9555b6166ce2c0381d047c79b2894c528093816d423512978",
-      "bytes": 7217
+      "sha256": "4e27326671823318282c1b84dfb7bfff47c600f45ff8a444f28bf367698c6e6b",
+      "bytes": 7679
     },
     "assets/devices/models/galaxy-s22-plus.json": {
-      "sha256": "5026cf3b4a93ce17dc4ef6552f183d651cf97b00f2ea01f093b33dab604c0583",
-      "bytes": 10890
+      "sha256": "0615032ed4e8740924926fc0583107c675541b0a72fa92764da2473f9f318914",
+      "bytes": 11347
     },
     "assets/devices/models/galaxy-s22-ultra.json": {
-      "sha256": "e9df57b0d50ad7281b76f6bd5c6e12823e3d45005b5dfe3404170606054e91c7",
-      "bytes": 10030
+      "sha256": "dcc6e104ad89eb10de2cc54e024e7d7566d7e7e95a74fdb81bb2fac19782cc15",
+      "bytes": 10492
     },
     "assets/devices/models/galaxy-s22.json": {
-      "sha256": "d48b38db64b92f5e4593a602aab2c82f1d6ca01e17df2284e013e3bf7818ad93",
-      "bytes": 11771
+      "sha256": "ad1417cf013582353edbff65968aaa065ed40826ddcd3fd3290c719c2076df13",
+      "bytes": 12231
     },
     "assets/devices/models/galaxy-s23-fe.json": {
-      "sha256": "38e6dea59f62e966617e5d4a5f5c6057d76eb1bac7010fe648b5ff4b9504a2bc",
-      "bytes": 9050
+      "sha256": "479c3b98890959d8a1905d0a7560a4157fa6235c28545e4519b0625d8bf7987d",
+      "bytes": 9505
     },
     "assets/devices/models/galaxy-s23-plus.json": {
-      "sha256": "7376a3018c98b28e8b8d40caad0b461e2226e4ce69f1fc531612b890811c2b6c",
-      "bytes": 9039
+      "sha256": "6d6c591dbd79771e73d335f586513218b3f5beb8664a81eb6f89067d6e36ef2d",
+      "bytes": 9501
     },
     "assets/devices/models/galaxy-s23-ultra.json": {
-      "sha256": "c5c92f0210066ed790b6db0177a9f51935ece575dda97ab899e329e91b321a58",
-      "bytes": 10827
+      "sha256": "e85543768324fc1d90887468bac39b1d37369adc63c2dca27465d2aae8c7c294",
+      "bytes": 11289
     },
     "assets/devices/models/galaxy-s23.json": {
-      "sha256": "69d051dc2a67f37fdf3c108657d5b24df1653c31f2c328370e3cc254241e1c6e",
-      "bytes": 9006
+      "sha256": "4d53a4a23f1aff5daeacfd3dc21b87e4e0d11c461ba96099b6cb034ec4bf4e77",
+      "bytes": 9468
     },
     "assets/devices/models/galaxy-s24-fe.json": {
-      "sha256": "ad8c74afe3f4af838cfc91d679daefbce399537383a21b2e997fe86c9c400045",
-      "bytes": 8225
+      "sha256": "3110fe83e60cf1ac3f441fded9036728a2393455408ab0affe6be40c0445a6a6",
+      "bytes": 8678
     },
     "assets/devices/models/galaxy-s24-plus.json": {
-      "sha256": "7a8add0d9b528e29bd79b42fd999635dc935cba4843c4bd058bcf4da6bd5a8ea",
-      "bytes": 8818
+      "sha256": "f2458686d4c5e675ffae123ba72023455c7dff65aa2eb2b434309fd4e0d3e42f",
+      "bytes": 9206
     },
     "assets/devices/models/galaxy-s24-ultra.json": {
-      "sha256": "a4083ed8a15d1d407a2efd8c1995b9d6efa050c4f65cb8ee59eb399ae49773c4",
-      "bytes": 8952
+      "sha256": "d227cd7f583a3e917fe5c6c73d8c3015878ec8f164b447f37f8455d5e481ffa1",
+      "bytes": 9408
     },
     "assets/devices/models/galaxy-s24.json": {
-      "sha256": "2f567b9ba1ce8a3b774718526b6982e4de4afdcf29fc8059ca3e35fe88f4e0fd",
-      "bytes": 8785
+      "sha256": "6949a91adc2dbbd83a885222a5b8cd3f2cde1e396e20d2a2fc10a39d68eb50be",
+      "bytes": 9171
     },
     "assets/devices/models/galaxy-s25-edge.json": {
-      "sha256": "13ba0e23ca3ed918e0b0b68da474f841b30e77bcc03c0b93e7cf02e77dfe1667",
-      "bytes": 6423
+      "sha256": "1269346ff0fbcc6c293598ca078bf8a5f2748c106feefcd7c4ccb928a9b15f69",
+      "bytes": 6880
     },
     "assets/devices/models/galaxy-s25-fe.json": {
-      "sha256": "8300c00139fbd8a133f30756e21fc21c08b72ad956abbac7aa7501ec9546c825",
-      "bytes": 7260
+      "sha256": "2bb4e8f11480bc9b7a0e4955ca8a1fdb7b65330e455d3d90319521921ebedcbe",
+      "bytes": 7722
     },
     "assets/devices/models/galaxy-s25-plus.json": {
-      "sha256": "5f5e0744eb33adc57f8985f1dce00f1bf296c4de6abb2a3ee66cf1f7abe99da0",
-      "bytes": 8767
+      "sha256": "73cb9b7fa5c342c33f972b3f1e00eaf87460a789a01662e0339050cf164911a6",
+      "bytes": 9155
     },
     "assets/devices/models/galaxy-s25-ultra.json": {
-      "sha256": "c7147fe70d2fe9e72c9559dce934b9ec8689059850cc827605b42c6fb39f98ad",
-      "bytes": 8828
+      "sha256": "b5300bfdb99636376218b763549129415a9195cdde0ea1d17ebdb4e9ef4c8a9b",
+      "bytes": 9216
     },
     "assets/devices/models/galaxy-s25.json": {
-      "sha256": "da4eb016620f30f3409b7ffd1fc4fceac69deb88db42af5da89fff5eac1c1470",
-      "bytes": 8757
+      "sha256": "af64c7c528e8ea9e8ccb61cc97f9a5d704fc5ab3ae146782cef4f29e098ecc78",
+      "bytes": 9145
     },
     "assets/devices/models/galaxy-s26-fe.json": {
-      "sha256": "66206cc1cd477dcd4d4ddc8e50d64f78d7873b4db55c194fd7a28446182cb124",
-      "bytes": 6499
+      "sha256": "e881c8f632b6ba38a5f62149937cba2fbd89afd3ea287b1011d202fbc21987e9",
+      "bytes": 6961
     },
     "assets/devices/models/galaxy-s26-plus.json": {
-      "sha256": "c2d97ff4d2aaccf756986186961f32fe36b1066fad2446fc3a99db25c97242ca",
-      "bytes": 8030
+      "sha256": "49064a83a424cd674d07ce763fe444e116cb07ef54f7f6bdc0a6e0937a49531c",
+      "bytes": 8418
     },
     "assets/devices/models/galaxy-s26-ultra.json": {
-      "sha256": "68655eaf8fd81570c06a070b9be81c05943c87fcc0bb79139d5ab4fef7676e51",
-      "bytes": 8066
+      "sha256": "32f705f4ae71509463db0addb5b4cda5aa5a56e64b0d62117d091610968af45f",
+      "bytes": 8454
     },
     "assets/devices/models/galaxy-s26.json": {
-      "sha256": "7c73719190dd4693f335e311d92007a7800d7542ac4089e7c3dbc6469b913b26",
-      "bytes": 8013
+      "sha256": "4d88e52be33043e3111969f7ebd243e7340eac34d9dc0ff7eaed32220bd50ff4",
+      "bytes": 8401
     },
     "assets/devices/models/galaxy-s6-edge-plus.json": {
-      "sha256": "a78a18f7ed58ba8524a7e412c3521a88c05c9268c86e159c32ed035fab9bced2",
-      "bytes": 7660
+      "sha256": "73e4f53a8e2e1fbe1d7b578be0b2c2fc1b8fa83620b28c43a5a9b8ceead07cb4",
+      "bytes": 7964
     },
     "assets/devices/models/galaxy-s6-edge.json": {
-      "sha256": "e7c18522732ed87480723ef474814fc117b9300966bed326ccec1d43e5639cf6",
-      "bytes": 7675
+      "sha256": "b8e23998fe16f366ce434d98ad139b9f50726f03e9c9b17f33db937ade9bb2ad",
+      "bytes": 7977
     },
     "assets/devices/models/galaxy-s6.json": {
-      "sha256": "e16fd6d578d531971794bfa1d4b6ce6345bc0485aa47f0bd80a5d59acba15f1f",
-      "bytes": 7614
+      "sha256": "05e6b8f08461c99ea3cf847b77dc840a49b2568a6e428a4bd408300d2f386065",
+      "bytes": 7918
     },
     "assets/devices/models/galaxy-s7-edge.json": {
-      "sha256": "9ac164712cbc93cdaaa89782bda240c18ebe7a66c07ea2245096c105a71c8296",
-      "bytes": 7627
+      "sha256": "f376b8c30d61fb126ab87cd31c950268415bff4a22257c6f0db509eed07d32f7",
+      "bytes": 7931
     },
     "assets/devices/models/galaxy-s7.json": {
-      "sha256": "fc2a905e4b9b650661efb6c816693a42d40957171eaf987fc299dbbaf4d7594a",
-      "bytes": 7599
+      "sha256": "6f5a962831ab22222bdf40288da4a32e232950caadc23cb0d560b92d686b4655",
+      "bytes": 7903
     },
     "assets/devices/models/galaxy-s8-plus.json": {
-      "sha256": "1de048ae30fdcf22fa3b970345ffa9b377a3e61c82222e22ede0014213876114",
-      "bytes": 8485
+      "sha256": "fffb05b2b4ad1992c523c2e549a468e2a998f79905e8b2fe66c8e79cebdaf9d1",
+      "bytes": 8790
     },
     "assets/devices/models/galaxy-s8.json": {
-      "sha256": "06c1d7c23e23db8a3424e937cd84d6779ecd392b9a49efb3b9d753ee2651ef67",
-      "bytes": 9325
+      "sha256": "f627f3e8a494d5941ed66c7b1cd3854bdf2a43f81fb4eca0734ca064507287ee",
+      "bytes": 9628
     },
     "assets/devices/models/galaxy-s9-plus.json": {
-      "sha256": "ecc3ec569e03611e85f88e63607630c4d36f69a7b5883e08527fe6ea7d9b1671",
-      "bytes": 8511
+      "sha256": "4c5206f7b0d3f0a3364af7714b06416ff83781aadbc204a5976f126b14c2edee",
+      "bytes": 8816
     },
     "assets/devices/models/galaxy-s9.json": {
-      "sha256": "aa437923fc4c227cb1f96e4029bc8ca5fc2148e5f6738b5c6ffe8f293373c0cd",
-      "bytes": 8489
+      "sha256": "50de842ee800acf730f626dc885e7ac83afd4eed57c5edc67012b6c0efc56eef",
+      "bytes": 8794
     },
     "assets/devices/models/galaxy-tab-a11-plus.json": {
-      "sha256": "725d479ec7d44061e5871ef3e7f6bf93e1ddd2b9a9381f948961d9306739d69f",
-      "bytes": 6255
+      "sha256": "415252066771f4a36815becb8e327eba612f2ccd382100b77c07308cfdbb9057",
+      "bytes": 6664
     },
     "assets/devices/models/galaxy-tab-a11.json": {
-      "sha256": "47c7f7307133c1770123d2d14c81b007eaf5f53cac93283a5891cf1ed9e5e177",
-      "bytes": 6225
+      "sha256": "43ccface23617f2d8759e121bb19331035a1300884df8044a9adc630a7e7d533",
+      "bytes": 6625
     },
     "assets/devices/models/galaxy-tab-s10-fe-plus.json": {
-      "sha256": "68ff9e75b43340ef6d6c07da161652a37c3197fd706e15b5a5384fa465f698aa",
-      "bytes": 7577
+      "sha256": "7a503810b81cfa6ed5e83f874d9393477c74e3e5b15dccfe62096e84de477447",
+      "bytes": 7929
     },
     "assets/devices/models/galaxy-tab-s10-fe.json": {
-      "sha256": "1faf53403771ea0f4b4338eea08df735699e499fa4714257c2338244f1cfc983",
-      "bytes": 7615
+      "sha256": "d4c0323c3347500ab2084b5be9c41b2a81c68be2aac577e04610a1bf05be2264",
+      "bytes": 8022
     },
     "assets/devices/models/galaxy-tab-s10-lite.json": {
-      "sha256": "25662c243d534054f71fd2ef8a67016340d0ce07ddf7d4d9c42f64943a64e34e",
-      "bytes": 7632
+      "sha256": "d1786ff54a38ef1abfcceda94935e482296da4e55855689a23342645f9fab41e",
+      "bytes": 8041
     },
     "assets/devices/models/galaxy-tab-s10-plus.json": {
-      "sha256": "45438bcd905d924bc79b874c7437b5cb49f6046a69fff5a6f2392b861d481675",
-      "bytes": 6110
+      "sha256": "7477aac41de0e6e9cd4c914b344c519c4a44a34350ccff1debffd84dccb3dc9f",
+      "bytes": 6519
     },
     "assets/devices/models/galaxy-tab-s10-ultra.json": {
-      "sha256": "f727514e7cce948d80138f54888976f9c1581810d4a6623096cfa8f69b730176",
-      "bytes": 6207
+      "sha256": "1c3a9db2e7ad14212e615810a91cb96a3bd8f9427782d19ee04935e3fa8c86ff",
+      "bytes": 6611
     },
     "assets/devices/models/galaxy-tab-s11-ultra.json": {
-      "sha256": "475a73a2bfb10cac0ed6addaebe0927cfaf025864b1c832871bf43f8491cf9dc",
-      "bytes": 6367
+      "sha256": "8e06d1cb69a73688ceb7fe6d1b187a9daa277ebf4e19c30f116c6a2527b8dd0e",
+      "bytes": 6771
     },
     "assets/devices/models/galaxy-tab-s11.json": {
-      "sha256": "1ca99d8d214bdee91829cb7193a65bb961de5ad76fc3390157d5e72dee65fbb1",
-      "bytes": 6250
+      "sha256": "b0fd11d82cccd1602870d8bbe473d6d5de6cdc156a3e4f2c9e18dd858ec5b954",
+      "bytes": 6659
     },
     "assets/devices/models/galaxy-tab-s12-plus.json": {
-      "sha256": "aec72a59a0286d9d269d2d38c0ee449edbf94c2bd13e2d8d307ad0c48caa4ce1",
-      "bytes": 6420
+      "sha256": "e09d8404d92fb79326171095eba0082ee6d8bc8b317b4894b1297520f42cb278",
+      "bytes": 6769
     },
     "assets/devices/models/galaxy-tab-s12-ultra.json": {
-      "sha256": "0a7fd4d130d3f9bd68fcb9986003fee54b89d10a078b4ea8391f81c848a26e0c",
-      "bytes": 6363
+      "sha256": "8d2847622f402c83d4d1c9c96f7d625683de596c322e63d20cc817996c992fef",
+      "bytes": 6717
     },
     "assets/devices/models/galaxy-tab-s6-lite-2020.json": {
-      "sha256": "c3e911a39f48c0c907f07349623e59e759f5ce590f7da2b2e5fe8e243d7a8d70",
-      "bytes": 7557
+      "sha256": "84ad6a48e86a6d0fdc00092a7b530c00f794667d6df6320b307e45f20bc1f454",
+      "bytes": 7909
     },
     "assets/devices/models/galaxy-tab-s6-lite-2022.json": {
-      "sha256": "b8c7b2c19204f9ec317c17acfcd9fa466ac0ff8d90108dcd2cdc408ef727ed06",
-      "bytes": 6349
+      "sha256": "129c38802a15f43a4cf4b46ef691e698303cc6c7f64299913b25f14c4aa72272",
+      "bytes": 6701
     },
     "assets/devices/models/galaxy-tab-s6-lite-2024.json": {
-      "sha256": "c57a6b63c7f5488f1a04489705b6ca4536ad6efbd54386e4efb2774d10b76fda",
-      "bytes": 7599
+      "sha256": "e5379cb68c42eec613dcf394996c69a8746259ece232fa777f0261e3a9ac5ee3",
+      "bytes": 7951
     },
     "assets/devices/models/galaxy-tab-s6.json": {
-      "sha256": "a893a403284600f207acd992cb394507ea96f89fbdf259f9ec19567f9539d9b3",
-      "bytes": 7387
+      "sha256": "334f9a839c73a4a19842d0bf3921b4943d3a7da287174a01293002c2448c39e0",
+      "bytes": 7741
     },
     "assets/devices/models/galaxy-tab-s7-fe.json": {
-      "sha256": "2f85ea4bf28e24092ad243b6dc0de5f4466e1dc1eb115295ffa227e3639f6863",
-      "bytes": 8693
+      "sha256": "c073f714598134e44ae35d13a904dfdff9df720aa494064a6ba33e9e109ae20a",
+      "bytes": 9040
     },
     "assets/devices/models/galaxy-tab-s7-plus.json": {
-      "sha256": "f5add1ceadf26b202bc3be91cea1a10b2ed9de7d5856d22347f7d19d1ac376f9",
-      "bytes": 8779
+      "sha256": "e684096e79296a86ff91fbe3c0e2699dd2c9460a3e58ffa5d4d38bff2171d5ed",
+      "bytes": 9124
     },
     "assets/devices/models/galaxy-tab-s7.json": {
-      "sha256": "24d2241645e4597020cc45130f26e285b8a3c820ef714a9448f91d6827deb264",
-      "bytes": 8876
+      "sha256": "be4eea5de15085ed9cc76a490ec0747426afc238d833c86565cb38f22b22fe1f",
+      "bytes": 9230
     },
     "assets/devices/models/galaxy-tab-s8-plus.json": {
-      "sha256": "918e5ac4a3f1cac0918cc85b3c102a64febd303d5f7be8772b7274f1865c385f",
-      "bytes": 7530
+      "sha256": "48e29c208a9e5b219fb9d97bb7a7f505ce7523115ab49692e76a23f3bbc8efc8",
+      "bytes": 7875
     },
     "assets/devices/models/galaxy-tab-s8-ultra.json": {
-      "sha256": "82524e3f50de69df9a21a1da8daab02507dcaea8b50d0696378e3848b1cf3d42",
-      "bytes": 5200
+      "sha256": "5c38bd9d81949eb3a52ad4ceffdd9ac9646a8b60b243b5cb96bc5adf6f1b5d92",
+      "bytes": 5549
     },
     "assets/devices/models/galaxy-tab-s8.json": {
-      "sha256": "405c210540dee08f8f7eebb38f20e74451e158607caa32836b6b7b63c239f28f",
-      "bytes": 7592
+      "sha256": "f2ebaa15c8f9a58da29f9e9b086a6ce3b00c339c3cb1036a9695507fcf6ba9df",
+      "bytes": 7946
     },
     "assets/devices/models/galaxy-tab-s9-fe-plus.json": {
-      "sha256": "e4ea92b610d434f452f606d5540d48f475fc3fbb44339e804b94dcc430d8c457",
-      "bytes": 8883
+      "sha256": "5e9cbc681f7b7bc841cd4ab478373906f71d01babee032c2c7bb9f59b000b8db",
+      "bytes": 9232
     },
     "assets/devices/models/galaxy-tab-s9-fe.json": {
-      "sha256": "7dfc948cffd86feaa4165b6b45012f878ee6a5936ec8169a2f27d057c06ce188",
-      "bytes": 8886
+      "sha256": "9bc80d8c8a00b9baccc3facdb66ff4de0cb24495b3ab4a30355d6de206f4ac9b",
+      "bytes": 9295
     },
     "assets/devices/models/galaxy-tab-s9-plus.json": {
-      "sha256": "e038869be0d09f513c5cbb68606ed2a196e500ecd64abfd5af1d237d7604a709",
-      "bytes": 6265
+      "sha256": "bce4c791ca7570efe2d0866cc1ca2f93b61ced6530c79dc94a492bef9ff6b8c6",
+      "bytes": 6674
     },
     "assets/devices/models/galaxy-tab-s9-ultra.json": {
-      "sha256": "84663d678b6a8423a9ae036d1d34200fdd4047bd771f589eb696ed67c20f9ad3",
-      "bytes": 6357
+      "sha256": "d57041d3625ee852b6779f057922ae508a95297d33e0a7facf61cbb793161ad5",
+      "bytes": 6761
     },
     "assets/devices/models/galaxy-tab-s9.json": {
-      "sha256": "e7085ee666cb630327e3505f970b46233d67793090a09b6686261a6343267032",
-      "bytes": 6208
+      "sha256": "1a2abac82b8c7ef78b543d67f43fcd85f26a078406735c0daf73740d340d6db1",
+      "bytes": 6617
     },
     "assets/devices/models/galaxy-z-flip3-folded.json": {
-      "sha256": "11bcd2485cb67ad142c1b54972c096b521613d8ca13fcb8a2f833901207f3321",
-      "bytes": 12959
+      "sha256": "43b77ffa0242398a6c039592e266f194af5e00b429c44cf5415fe4626459bd1a",
+      "bytes": 13266
     },
     "assets/devices/models/galaxy-z-flip3-unfolded.json": {
-      "sha256": "c5afee05319c8d7bb6e9a58fe70d9aaa0135fd4cdb3a65c8283fd0caa78c6ea3",
-      "bytes": 15732
+      "sha256": "30a7db9cfd1976a5438e4b022023c31f57ee1907f809e7b2eff10c82dc905a90",
+      "bytes": 16039
     },
     "assets/devices/models/galaxy-z-flip4-folded.json": {
-      "sha256": "637c2580a24f1e07b9d50e5d5aa8821107c1dde573cf499e4797e1b667834561",
-      "bytes": 10220
+      "sha256": "121d58d04ce3f0e76249cc7733e7d2b7c084c9176f468fd829a0cb16e52886f6",
+      "bytes": 10527
     },
     "assets/devices/models/galaxy-z-flip4-unfolded.json": {
-      "sha256": "97a3dec0b32ce51db8b30f87ce2b586f9aa6889c29981ab260b74f669454f20b",
-      "bytes": 12991
+      "sha256": "2e85c9e4b8e29df758defdd6d06ce665aab93e1c9d1f2fa65d87630905ef438a",
+      "bytes": 13298
     },
     "assets/devices/models/galaxy-z-flip5-folded.json": {
-      "sha256": "534e7c1cdd8d6f0252af1fd0464160ed45884b45ffbc12cc27485e1329be1b76",
-      "bytes": 13802
+      "sha256": "64ad826fb32cf13df8452df1f43c7db0616420c73d1d465304a2fb294ebeeb68",
+      "bytes": 14449
     },
     "assets/devices/models/galaxy-z-flip5-unfolded.json": {
-      "sha256": "7c4a28c7f1adb710ad21414b7cc26518f611f65d6d4c735b0920d1af8871db43",
-      "bytes": 16561
+      "sha256": "2afddbcc8f83a996e99e57f40acbb222ed247bca8301eb122b5fc8671eacacbc",
+      "bytes": 17221
     },
     "assets/devices/models/galaxy-z-flip6-folded.json": {
-      "sha256": "c06a1e0688a6cc96a4e99588ea72ee864ee519e0894c87edc815615a365016a7",
-      "bytes": 12772
+      "sha256": "cd9e01fc07ee67e074af4def2a6270363814e6d1c617beed1058d8670a9a013b",
+      "bytes": 13419
     },
     "assets/devices/models/galaxy-z-flip6-unfolded.json": {
-      "sha256": "1982c13843d91c3d7d24862607e85247e269e19bbc7ae8cf73538fd891c4bdb2",
-      "bytes": 15531
+      "sha256": "dc0b4e7c60782ebdb3ab935fc845f09b06fbf83f1cbc68808cb634a3694286bd",
+      "bytes": 16191
     },
     "assets/devices/models/galaxy-z-flip7-fe-folded.json": {
-      "sha256": "d8b0ffe7555af81170607c3119ab0d986afea962a3b13d0b98968d26415ded9f",
-      "bytes": 8448
+      "sha256": "c45b770d63437ad34dea411679d123979edf4961e8c68eb971b887114d1af491",
+      "bytes": 9095
     },
     "assets/devices/models/galaxy-z-flip7-fe-unfolded.json": {
-      "sha256": "3ccbc0f4da76bf60ae72ba04782e878ce36fe35adf40cb5c69d39618572e363c",
-      "bytes": 11213
+      "sha256": "988e5693d04b57fc4cf7aa2c42774946f03984603994401af8287758c89e9a00",
+      "bytes": 11873
     },
     "assets/devices/models/galaxy-z-flip7-folded.json": {
-      "sha256": "57f87ea4c5b3aab4bb1355080cb370cc497c5494cfd27627d3ab0e5217f53d6b",
-      "bytes": 10785
+      "sha256": "35473c3c866442f70198a2d7a448e7e49c72a58283721efb78ca1c7a604edd7d",
+      "bytes": 11092
     },
     "assets/devices/models/galaxy-z-flip7-unfolded.json": {
-      "sha256": "66059bda0a8ae8766736fa336454806ddd27e7cfd47e8a44de27d82dbfe8b446",
-      "bytes": 13547
+      "sha256": "01a369fd8d47a2bb7ba9a6e6584c1211d26532c5dee86463e2088260533c00da",
+      "bytes": 13854
     },
     "assets/devices/models/galaxy-z-flip8-folded.json": {
-      "sha256": "e152d195cec2633d3f958b8a2662563c5b7626adf72ea4f1cbf86d6daa17356c",
-      "bytes": 10733
+      "sha256": "55d60136ab8b7669e5a286ec2b776d7dce92a4af371738c4d272522cf6bd9497",
+      "bytes": 11040
     },
     "assets/devices/models/galaxy-z-flip8-unfolded.json": {
-      "sha256": "c6c06d048896808132040d93f9d406407b15bebd6ec43eff398bebb938e87015",
-      "bytes": 13479
+      "sha256": "cef7f161088c7eb460c2e0ce1c6da38f41fb615b09be9d41b5cbbd0bedc5d94e",
+      "bytes": 13786
     },
     "assets/devices/models/galaxy-z-fold3-folded.json": {
-      "sha256": "f5da8b9d784f420af7226242ef50476b80034562788bacc3369f56c894a3471f",
-      "bytes": 75904
+      "sha256": "d1728c97e4dbb3c1642568d861cdd8741838fb037fef57e10fbe8d45ceb4fdc7",
+      "bytes": 76212
     },
     "assets/devices/models/galaxy-z-fold3-unfolded.json": {
-      "sha256": "fea2a33b71a1f05c1ea729da7cb4190f6d6590884dae2828cb55f6419fec85bc",
-      "bytes": 78541
+      "sha256": "6af003af68d5abb10cc249060e1acd73f1e025689a347e18a3bb50a1bf939dc8",
+      "bytes": 78849
     },
     "assets/devices/models/galaxy-z-fold4-folded.json": {
-      "sha256": "dfb04cd8521ad783a5ed07abe360bb2201c34b4b617e518b17fd92722b5afc7e",
-      "bytes": 76591
+      "sha256": "2641e8f3ffff22a29c9e471dd101de58e2cda543507cfd00950e5e9c816be590",
+      "bytes": 76899
     },
     "assets/devices/models/galaxy-z-fold4-unfolded.json": {
-      "sha256": "69eef56a744edb8ffc9620ff13fb6b1a8f5e210113a607f3d146089cc83aab7c",
-      "bytes": 79219
+      "sha256": "59ded24aa7ab1228aa9b61cb3902f3012e54ff8195b2bc5efc2abd3598cc76f2",
+      "bytes": 79527
     },
     "assets/devices/models/galaxy-z-fold5-folded.json": {
-      "sha256": "77af47839dbabaeca91ba4b51ebca7dbf5f6d2201e37c2f4d06cc28e59de6aac",
-      "bytes": 78141
+      "sha256": "70081572f402c660085546451dd59e12790ce9697b2fc03484a0f3349e4156d5",
+      "bytes": 78449
     },
     "assets/devices/models/galaxy-z-fold5-unfolded.json": {
-      "sha256": "a50baa2c34fa0a85426f9a5940e51729d9354f56194a72508b6d06555b1a8453",
-      "bytes": 80793
+      "sha256": "dfe8b246042c3dae5f90ae72e10f8825968b6a109c5f6379811940c3c8e8ca54",
+      "bytes": 81101
     },
     "assets/devices/models/galaxy-z-fold6-folded.json": {
-      "sha256": "cf9110e58425f9e8e6332e7628f4cb96eb92872b2fdc78ba0e3a83a4d9569a0b",
-      "bytes": 77933
+      "sha256": "4c5ef043973d1f37bd1b7d235d1d11e1fde928ca8713e658baddbd6ecca49878",
+      "bytes": 78241
     },
     "assets/devices/models/galaxy-z-fold6-unfolded.json": {
-      "sha256": "fb938916da07c212f20ef447e77567b08bd99328bfad050759f830a1b6be36c8",
-      "bytes": 80586
+      "sha256": "9dbe530e2354f2212111bb8da5dd5d3581c4ce21043aada9830202e6e27bc294",
+      "bytes": 80894
     },
     "assets/devices/models/galaxy-z-fold7-folded.json": {
-      "sha256": "dd3e7e10c60c83e72af6673c38ac0f566b32a092dbc5c06f3ea8bd3eb23cf316",
-      "bytes": 77435
+      "sha256": "a157492424ca1d713de1d8f1da514beffc1832962a831f72f80fc959e29b139e",
+      "bytes": 77742
     },
     "assets/devices/models/galaxy-z-fold7-unfolded.json": {
-      "sha256": "4467462aa06f437b0070e1ef3b93ddb71a987dfbd582573c4a449e6b243c5317",
-      "bytes": 80201
+      "sha256": "3e46767fbf11e31fd6546ef644966e9f62bc3cfc5c587a0b82d80e4a65137150",
+      "bytes": 80509
     },
     "assets/devices/models/galaxy-z-fold8-folded.json": {
-      "sha256": "99ac5f39872acf6aa14d125fc45ad704bfb5f42649bcc69670a93ca753f93f09",
-      "bytes": 77157
+      "sha256": "fdb1c7bff073218e6b1dd4cb29c0b9cdbfed65516c25bc58c8cc607e07d721e0",
+      "bytes": 77464
     },
     "assets/devices/models/galaxy-z-fold8-ultra-folded.json": {
-      "sha256": "58c9658131641383e61c985727a0e9b3f590aebf4ca63829aefb2292012a620d",
-      "bytes": 77397
+      "sha256": "daebac5ffb3f84374ac5805be807a429e0856ea4d9213d9165bfb0631ce3503f",
+      "bytes": 77704
     },
     "assets/devices/models/galaxy-z-fold8-ultra-unfolded.json": {
-      "sha256": "4007738c372152289ec63207b13b23e52a3497d2a28369eb8a08c4665d29e688",
-      "bytes": 80216
+      "sha256": "e219427c74e2c04c1fecd005722bbe53a09d61be77f58eee0721271661771eaf",
+      "bytes": 80524
     },
     "assets/devices/models/galaxy-z-fold8-unfolded.json": {
-      "sha256": "a8baab534bfd9534639fc052be652e501fe38baeeee542973656aa0ce587165d",
-      "bytes": 79942
+      "sha256": "358a9d119ed638d95f45d7b33f56e2a9964de191e50cb2f8fcf33ae090136586",
+      "bytes": 80250
     },
     "assets/devices/models/galaxy-z-trifold-folded.json": {
-      "sha256": "eb5264f42d4a75cae75bddb2336a6122cf9ad115cc2f179c2e4828eb7b61df1b",
-      "bytes": 8432
+      "sha256": "ad314dbc4618f797b528bf44d2a9fe1bc4f2e4871d19d36dd39a0c8ffa0b132f",
+      "bytes": 8740
     },
     "assets/devices/models/galaxy-z-trifold-unfolded.json": {
-      "sha256": "31cb568e1ae45902345df6bc0e0b7821d3c2608c87458c1ab09483e92150de3b",
-      "bytes": 11823
+      "sha256": "496cdd99d9fb7a529b1b0a9a1ff1ff713ed5a352db4fd615dbde2d080912515d",
+      "bytes": 12131
     },
     "assets/devices/models/generic-pc.json": {
       "sha256": "0cdacf3ae9af9cdfd84283ab469a32c9362b2f7a44c101b89b2bb6b9dd082bbb",
@@ -7902,324 +7994,368 @@
       "bytes": 1339
     },
     "assets/devices/models/googlebook-acer-14.json": {
-      "sha256": "7d7d1d0da368763496cdb1732d981cd715e649b662a255c0d2040a92f16fbc13",
-      "bytes": 6869
+      "sha256": "1662afa7bbf79d73f11cb5c52d7b24d69ccf0bd7566f37154d7e0a37e5303150",
+      "bytes": 7206
     },
     "assets/devices/models/googlebook-asus-14.json": {
-      "sha256": "2c784cd3477b0a49a17355a92a8ae20c0e2432d0d67f5d1dd466378b35792327",
-      "bytes": 6857
+      "sha256": "f74960304a0422e8dedaed5fcaf7091acc7a789c62c3d7fad9fde4ce03a774cf",
+      "bytes": 7194
     },
     "assets/devices/models/googlebook-dell-xps.json": {
-      "sha256": "9598b0347d91877441d52185ed20d70471cd71c14e18076b4a52bb5ab78caa28",
-      "bytes": 7860
+      "sha256": "a5fe7e35e973d2259ab581f60a98fea0bce0e5ba1478eb99c732acb0d30692d3",
+      "bytes": 8198
     },
     "assets/devices/models/googlebook-emulator.json": {
-      "sha256": "3eada0fd18c5dcc36a8888ea27832ae45226eed1dc60a4ada33f74afacb04c1f",
-      "bytes": 7939
+      "sha256": "c11b35f6f1abf18d680308d422ab5ad13628e487b630516e9981458f2528e66b",
+      "bytes": 8276
     },
     "assets/devices/models/googlebook-hp-14.json": {
-      "sha256": "fa445c9770e99e8342235dc98f345bf5e2a7e5f9149175220a78837593fdb44e",
-      "bytes": 6865
+      "sha256": "16c5179e9d9e6e606dca41d1731e3ce17cfd3b24fecb09b25e969722198679e1",
+      "bytes": 7202
     },
     "assets/devices/models/googlebook-lenovo-15.json": {
-      "sha256": "961e737987de75ce3ccd9cb879aaf28755f4618c5f5521a83b693da8b4334df6",
-      "bytes": 6979
+      "sha256": "c2ec8fe1818042fd47268378a2045f8d2fd2a5f038be8fa107a59f5991d90dbf",
+      "bytes": 7372
     },
     "assets/devices/models/iphone-11-pro-max.json": {
-      "sha256": "3c08d6c0ae6f87769fb5fe1bafb0a9cdaf4a91a549c960641fe94a870e1ad3d6",
-      "bytes": 11468
+      "sha256": "f77728aaa110c6a631f0b30b0498dfc62d9904ec4b89ce3a7c41edde946e4a07",
+      "bytes": 11745
     },
     "assets/devices/models/iphone-11-pro.json": {
-      "sha256": "41efd66cd517002e316cef72c9d20b1f91df9fa194294cf91ba75247203c84a4",
-      "bytes": 11446
+      "sha256": "c3770d4c528bee82d0c84947313254f2b45db0f7d59e82fc97c0ce63d59b6ff8",
+      "bytes": 11723
     },
     "assets/devices/models/iphone-11.json": {
-      "sha256": "9555c2868de118918d2f05349689c8689e032bc3b48b11231e6916819d105087",
-      "bytes": 12781
+      "sha256": "1d0485a4ef188b8e02cd80eeec58dd9fea55d03c9596c80b1f03b3206f337578",
+      "bytes": 13059
     },
     "assets/devices/models/iphone-12-mini.json": {
-      "sha256": "6706733b9254ad179a0f0d203305a4e2ded6db5c42bea31d8918831edfca7ccc",
-      "bytes": 12880
+      "sha256": "6bc216c0d309ea94c2548ebc89311de373d333a8ed20a7460fe52883bd90846d",
+      "bytes": 13157
     },
     "assets/devices/models/iphone-12-pro-max.json": {
-      "sha256": "77ad7852f729b47b09249e5a627dec8b2586f2fda2b4435d20ad8c0651a04f2b",
-      "bytes": 11370
+      "sha256": "7698180034f7b64ae09b1d6cd5c8ffff3ba522e4145c4b2e7341f0561a7f304a",
+      "bytes": 11648
     },
     "assets/devices/models/iphone-12-pro.json": {
-      "sha256": "d93bb1a2a3798845186cca6efa01658a0e43297349ff42c66721540729e8a515",
-      "bytes": 11343
+      "sha256": "bb8f7d1aa201f448aad5fb2ec48d1a406fec59b893c8f90f77ee0abc6c01f26c",
+      "bytes": 11621
     },
     "assets/devices/models/iphone-12.json": {
-      "sha256": "1fcbbb4e2a1a3634c96175bddad0122bf2e294362452b0216ec83e64a90d340b",
-      "bytes": 12849
+      "sha256": "43c56bde0e1146cdb4738dc1a93170caf3d747797e91b068e49473afb09ecdc5",
+      "bytes": 13127
     },
     "assets/devices/models/iphone-13-mini.json": {
-      "sha256": "1c90e9fdc5185df07701e9c88569b4a843a2d4d337f28622ed502f22963eab5f",
-      "bytes": 12866
+      "sha256": "fdbd1c2106e8ee3015623bc2951488c735fa81af1ac819b98d37f98712fa30b2",
+      "bytes": 13143
     },
     "assets/devices/models/iphone-13-pro-max.json": {
-      "sha256": "f818a3b811a4afc335386c2fe5a36c74c2a82178822c819007c41507fed92732",
-      "bytes": 12111
+      "sha256": "030c199cdd246fcbe518199f80a9ff0045903f8eb1218eeb01e79a066b40c128",
+      "bytes": 12389
     },
     "assets/devices/models/iphone-13-pro.json": {
-      "sha256": "6503540a893f00863febc5701d66bf6c7e1d3ec7e59450fab7b996459b0ed983",
-      "bytes": 12084
+      "sha256": "9a13e265ae0e87efd6a1f380195dd1fb7e04915a2a911d1a956f8d785e5b9402",
+      "bytes": 12362
     },
     "assets/devices/models/iphone-13.json": {
-      "sha256": "d7461728512a9989acdd1130c72ce07f9f8239ab4e0cfaac6e80796b542b9b43",
-      "bytes": 12834
+      "sha256": "2075479078c7197ebc21e4fedfa13a02afd57d9a63f5ca200c839d3f3ded213c",
+      "bytes": 13111
     },
     "assets/devices/models/iphone-14-plus.json": {
-      "sha256": "d94801fbbf1df78443da236fa87cd90d5a8c8df5b184c61ce67d9b00d1430c45",
-      "bytes": 12817
+      "sha256": "852130eacc7a79411a24408b8f31847e9ca977c58b59caf1472f2e59c0efbf1a",
+      "bytes": 13094
     },
     "assets/devices/models/iphone-14-pro-max.json": {
-      "sha256": "1ba881449e5a57252b7ca131791b03d49f51e7e92f24c107f2dbc902bc739c70",
-      "bytes": 5956
+      "sha256": "610cfe3dd51e14cf2fd126cf9846874aabb18da8f2903c457eb901c724505ae9",
+      "bytes": 6234
     },
     "assets/devices/models/iphone-14-pro.json": {
-      "sha256": "f8e93acb2c7e33aa1315d8c6bec6661c3280f1b62d7474ee6715077c2f524986",
-      "bytes": 5934
+      "sha256": "1a1285bb219f6ad0d57e10f7ef6426eae698d7503986fd18224e1863f527b0e8",
+      "bytes": 6212
     },
     "assets/devices/models/iphone-14.json": {
-      "sha256": "f591e7fbce2e1e810908d1dca7ddfcb6eea7371cc7f194df6c7fb5101e222d0b",
-      "bytes": 12784
+      "sha256": "06f9ab146484b3afdd7097665e5ced704dbffd1e70c0b8dac652434087f2a3c1",
+      "bytes": 13061
     },
     "assets/devices/models/iphone-15-plus.json": {
-      "sha256": "675df531fc4d23f1c2745d59d858fb8d19cc2df32af259d2e3081986a7ddcc41",
-      "bytes": 6683
+      "sha256": "2b1d30bae696437386207a9af181e8d03a93b4882983dbc8e853761dc243be63",
+      "bytes": 6958
     },
     "assets/devices/models/iphone-15-pro-max.json": {
-      "sha256": "4508db6a4ec9524ddd52a757c2faf19ab373e6f7d7e3279b36a8ff6ed99cd4aa",
-      "bytes": 5963
+      "sha256": "30b481be55317fe270ada3621af5d088b6c9938c8b021ced9bf069943e5b53b0",
+      "bytes": 6239
     },
     "assets/devices/models/iphone-15-pro.json": {
-      "sha256": "02e997a75310d3c16eb0be03ed9a63850fbb04fccb7b91ecf7cfb035d15443bc",
-      "bytes": 5949
+      "sha256": "d014f444222eb7cc17efbe9997c1fcd7b8658c78d986a5cc60a3f7cd69d9cf15",
+      "bytes": 6225
     },
     "assets/devices/models/iphone-15.json": {
-      "sha256": "80fa1879c0fcfc1b612e5607c665af032632cbafb6e97a043c75c9526e8f3920",
-      "bytes": 6651
+      "sha256": "4fab70b666339b52fd9ccb18ab94a8f2ef7fd4ded8d29ddcdffbac3b07e4b9f3",
+      "bytes": 6926
     },
     "assets/devices/models/iphone-16-plus.json": {
-      "sha256": "feceb18891e8ac2be3469c2232a96572b0dbd56cb8b2b5c3b339a37f915d4488",
-      "bytes": 6717
+      "sha256": "ddd3c97002fbab5d7b7070e23f127522d075e0309ced80dcf1b3600b3d75c584",
+      "bytes": 6992
     },
     "assets/devices/models/iphone-16-pro-max.json": {
-      "sha256": "56f8d68ce55a0205732a0a11fa50562d92e3c9a1025941f82d817198469b6867",
-      "bytes": 5959
+      "sha256": "22fb1dcd3564d3429104d7e56ca326b3231e679c302624af11d3308a9dc9b4a8",
+      "bytes": 6235
     },
     "assets/devices/models/iphone-16-pro.json": {
-      "sha256": "6f57adef831c35e7001709cb89367d07bada4f4985105fbbe9d1466e256f9c47",
-      "bytes": 5935
+      "sha256": "bfe3a719863ae34a06a344d868b6d360bace019d6877bd4050397546913b1ada",
+      "bytes": 6211
     },
     "assets/devices/models/iphone-16.json": {
-      "sha256": "fd7544f0ad8af60363e7576fa98fe7731391a42599d9138eb8c9b2c8b072106a",
-      "bytes": 6685
+      "sha256": "5bad81b1e990d2e778e7e2dc95d285515778592e4e8534434f3a2daca03a713d",
+      "bytes": 6960
     },
     "assets/devices/models/iphone-16e.json": {
-      "sha256": "05e1dc15e07ee1677d7aa51863521ffdc1aa9ce6ec197d5ed42d8adfc18f0911",
-      "bytes": 9775
+      "sha256": "88204968b4d887639299ab8e3aeacd7b0cfcaecd594de4524495357779a60a2a",
+      "bytes": 10050
     },
     "assets/devices/models/iphone-17-pro-max.json": {
-      "sha256": "08b702f5066cdd347c7adee2794f165ab76c2c4fcb2f845f79479d69894bb81d",
-      "bytes": 5218
+      "sha256": "2445b9c59ce297073ee134a7e44ea47141b7f19d9bd5f7369d64da993e6dc3cf",
+      "bytes": 5494
     },
     "assets/devices/models/iphone-17-pro.json": {
-      "sha256": "88fde9ded8ca9dabb7c09e86f3ba6d046ac6fa57c6e0df34b2ea9b9d5fa4a167",
-      "bytes": 5179
+      "sha256": "8a1ee90dacf5bfcdd6509d6a5e5fa274366af8ad32c966dee7487f6e2da8adb2",
+      "bytes": 5455
     },
     "assets/devices/models/iphone-17.json": {
-      "sha256": "66fe3edddae8e6226111fa5ec5500669fdbc6d905a8c6e4c0975b14d53ee9c1c",
-      "bytes": 6686
+      "sha256": "93bdcb0840b2caadae58f86e33faba2529a25f1a0384adec02d9356ffca28e4b",
+      "bytes": 6962
     },
     "assets/devices/models/iphone-17e.json": {
-      "sha256": "466c3cd1528bb36b8d47287c969fd0bd95f7f7c7f016f2b5ba35eb0379cd807c",
-      "bytes": 10548
+      "sha256": "3055f9679e262e4ec68673aa08760b7890cf66ab19a96f3765e0b93c40871e39",
+      "bytes": 10823
     },
     "assets/devices/models/iphone-18-pro-max.json": {
-      "sha256": "21f866d96a9135add93fd35bb2bb137b48d77dc7fbae54214f3cd6e0b8106ead",
-      "bytes": 5980
+      "sha256": "0a06f27c2331484fc77d1f1065d847feaed10a4ed27701001f60d696a7bd5689",
+      "bytes": 6256
     },
     "assets/devices/models/iphone-18-pro.json": {
-      "sha256": "28dfd446371dae9b4db1dc9191599408cfe16577c5e770676af024cc1dabea5a",
-      "bytes": 5949
+      "sha256": "1af3353c5367d7337914d7f8ed75841ae3a02d73e75072195ae2cc95b2cafb76",
+      "bytes": 6225
     },
     "assets/devices/models/iphone-air.json": {
-      "sha256": "f6b7f2adddfd1b959604767060a7c63fb0b70291f25e4d227c37744c1f120031",
-      "bytes": 5927
+      "sha256": "f0dd30d1b9f2b6cd5fc98c0ca578f754c7efa4a796ee297fa36bd86a705f198f",
+      "bytes": 6204
     },
     "assets/devices/models/iphone-duo-folded.json": {
-      "sha256": "2feb1e8c024b92cc51fcd256733977c5d757d05e778c3b4c3ed27199cbe0fed8",
-      "bytes": 8804
+      "sha256": "7a774631274c785bbc8b90b80406f4e922fd2d76db0409ffe435da1d8e48620b",
+      "bytes": 9077
     },
     "assets/devices/models/iphone-duo-unfolded.json": {
-      "sha256": "8b719a4dd1f732c1662b882eff80fd26d777f7c812c196cbbc9292a9fb905480",
-      "bytes": 10671
+      "sha256": "7b2325b61438bce7758db9ff0a3cfe3eaf7248442606fd26523754b863bfce52",
+      "bytes": 10944
+    },
+    "assets/devices/models/nothing-phone-2.json": {
+      "sha256": "6e4d58a91812843cebc8ec7ce9861feb1a164b78fde5ffb99e56a042d5f1a7c7",
+      "bytes": 6723
+    },
+    "assets/devices/models/nothing-phone-3.json": {
+      "sha256": "1d61502866d80af1114b6facc55576457dfeca2b5b07d61746472398ac7e1a7b",
+      "bytes": 6683
+    },
+    "assets/devices/models/nothing-phone-3a-pro.json": {
+      "sha256": "91b5c7b0b08eeb883b410439f27585afebd45745b761147a44036ec4dbc28799",
+      "bytes": 6844
+    },
+    "assets/devices/models/nothing-phone-3a.json": {
+      "sha256": "d8ea10ac602ccc15937c12909439182f9a768b5281bcae9e1a80464d02c28452",
+      "bytes": 8066
+    },
+    "assets/devices/models/nothing-phone-4a.json": {
+      "sha256": "302ff08ee9fe79633ae3410d5a9125304ac7cc52764691498069d3a3bc3722f6",
+      "bytes": 9835
+    },
+    "assets/devices/models/oneplus-11.json": {
+      "sha256": "d4016c4b4348c29b9a91b4e0cfb7e4cad72016fc16849a0ce27eee8b0138deb4",
+      "bytes": 5772
+    },
+    "assets/devices/models/oneplus-11r.json": {
+      "sha256": "a2e9593bc72d847aac8b17e3255743a7ea6c5a58c5ee68654bccc725a88c3f32",
+      "bytes": 5811
+    },
+    "assets/devices/models/oneplus-12.json": {
+      "sha256": "11a3e45c763045b660e64c4ac21a30b4aa3bacd74268b422c124849d9b16096e",
+      "bytes": 5825
+    },
+    "assets/devices/models/oneplus-12r.json": {
+      "sha256": "4a903c2ef9c07a24c69946308be2fd5dbf266515dd09ce4318d69c5aed03a9b6",
+      "bytes": 5830
     },
     "assets/devices/models/oneplus-13.json": {
-      "sha256": "cd5238f68a2daa1002ef5b37e7e04a6b40aef67600b54ad890ca8c52fb601871",
-      "bytes": 6071
+      "sha256": "9e2292a0a9474d8ed048176212657719cade38fc20c43ff5ed70c99167e446bf",
+      "bytes": 6656
     },
     "assets/devices/models/oneplus-13r.json": {
-      "sha256": "ca9ea1e9702b076ccfc40a0d8cc0202b1c48594125f7d4a52cdf36f6ebb45a15",
-      "bytes": 5161
+      "sha256": "40e3554c7d0b6468e699fb1340f387520efd3572f8731434360ea9ad41c78772",
+      "bytes": 5693
     },
     "assets/devices/models/oneplus-pad-2.json": {
-      "sha256": "afb3710ed45966757dab7b1a0a0147ecbd86563dec12324d219687a5232bc8e5",
-      "bytes": 4102
+      "sha256": "7609e65e8b076aca94f10e5ed0dc5417e682dc3c7a29176c26c46c5f4879df26",
+      "bytes": 4596
     },
     "assets/devices/models/oneplus-pad-3.json": {
-      "sha256": "08a21d59861835e6b09a2acccbf0056eb3525e30fc6a015cff2f81257b4276ee",
-      "bytes": 4066
+      "sha256": "31c3360978a2f9e592fd5924d1abd5ce75ac029b6dd4e337b9b741a6c2385ba3",
+      "bytes": 4560
     },
     "assets/devices/models/oneplus-pad-go.json": {
-      "sha256": "d88b32c52009d0f19e75fd8423921ab4a2f58dfbaf370a426f8fda94c47a4c57",
-      "bytes": 4146
+      "sha256": "0139161862e250492e15d7e156959e5f8fb0bea67834c79cf97e46af3849068c",
+      "bytes": 4711
+    },
+    "assets/devices/models/oneplus-pad-lite.json": {
+      "sha256": "6d0836f37d88bb3ef0c098376fc6b86e5a80e789a2ea3146c8736d039b4dd42a",
+      "bytes": 4823
     },
     "assets/devices/models/oneplus-pad.json": {
-      "sha256": "1166d7ece887bab16c8b3131000a90727567780b7d54e89d0591ffd9db74bb91",
-      "bytes": 4073
+      "sha256": "a3fee3107e2160731aba8aa33c46d6e534975f907b14c258cc0f51fbdcb3bec8",
+      "bytes": 4568
     },
     "assets/devices/models/pixel-10-pro-fold-folded.json": {
-      "sha256": "abc91f69e1432efa63bf8005cb27ec03c391a6186e0c74d86cdaa571fc29a3cd",
-      "bytes": 42954
+      "sha256": "01ee701ac8459888ca51769f30737e6a49797ac3e89cfec6f201d27175d582aa",
+      "bytes": 43407
     },
     "assets/devices/models/pixel-10-pro-fold-unfolded.json": {
-      "sha256": "52d7aaaec912996f78bf6fc54dd8739ec1f4668f7faf72ff6936a22005308bee",
-      "bytes": 45283
+      "sha256": "58a53495858f4c86698e6b335f37f33e67ba497021664d85189b142f063f3dd7",
+      "bytes": 45597
     },
     "assets/devices/models/pixel-10-pro-xl.json": {
-      "sha256": "b12bb4849417c059f0a3b17e558cea0371622b694ba670713b09052f1c242775",
-      "bytes": 6265
+      "sha256": "a9232af7cea928553e876ca0c7b9e1f1b2eab3fe914c93bde423ddf976fec277",
+      "bytes": 6720
     },
     "assets/devices/models/pixel-10-pro.json": {
-      "sha256": "1d4372dae60c08d4220d958e55f2608b7dea22d81f99f305790d9cd3411f37b9",
-      "bytes": 5629
+      "sha256": "5ab7653444b39624c616244da6bb78d7e6dfcfa4bd7475f932a440663d1b0d91",
+      "bytes": 5836
     },
     "assets/devices/models/pixel-10.json": {
-      "sha256": "76bc6a2a432769d89b2cc699c102f0d6f78ecf831afa13cd4802ddbe60903ff3",
-      "bytes": 6081
+      "sha256": "c0fad2d4fcd9eeead8959de7fe89d9498ec0ab80435d504a20e7adafb488a09a",
+      "bytes": 6530
     },
     "assets/devices/models/pixel-10a.json": {
-      "sha256": "8dd2c754d52526720651abe2cd36b11ae52219d506e8c8b4564acf7e8c1fefe6",
-      "bytes": 6802
+      "sha256": "072459570a2a606af0c3fe9e01a443a5238593263f5560244079038926a2d648",
+      "bytes": 7250
     },
     "assets/devices/models/pixel-11-pro-fold-folded.json": {
-      "sha256": "529d9d829de0484e8a6863d93f471a59c30d2c9968d5a223de5081419e8db1b9",
-      "bytes": 42443
+      "sha256": "3d1b2b0c2cfbc0730176282adf2264a5adf12cab735c8da483cdb107fb30608d",
+      "bytes": 42827
     },
     "assets/devices/models/pixel-11-pro-fold-unfolded.json": {
-      "sha256": "26e4256098f7f82886436e77993eaada8c0d25424ba04065e9495d4ea188d4b3",
-      "bytes": 44516
+      "sha256": "96b524f9bf7f028d2ced17a3cf7c760d7b21d3161b414c2ff35631f90a1c8cc3",
+      "bytes": 44817
     },
     "assets/devices/models/pixel-11-pro-xl.json": {
-      "sha256": "473fde309f5846499f7af1987a95266c00b305d603c1b9868842204b649f4712",
-      "bytes": 6486
+      "sha256": "0f859f734876f86ab51aa0374a2ace545f16723484a1ca7cc9d4f82e1fc03752",
+      "bytes": 6936
     },
     "assets/devices/models/pixel-11-pro.json": {
-      "sha256": "0382f8ad7045c8683f489c574312238f66110c2cca8b619d7847431f0271c343",
-      "bytes": 6477
+      "sha256": "93ab52c47c94d919f03aacdf4e1753b37f508754c60847dda6d51b8c49a4ab6d",
+      "bytes": 6932
     },
     "assets/devices/models/pixel-11.json": {
-      "sha256": "391b6b3f6fa93f5fc4a775fea886ce075650972f9720aeee6045efeb54c04584",
-      "bytes": 6463
+      "sha256": "82430aa17b2fa6a2eb9046197b36e61d00feb49be2b94ea1e34797c2e88a91b6",
+      "bytes": 6918
     },
     "assets/devices/models/pixel-4-xl.json": {
-      "sha256": "0a9b7a6c90427071ac4c5b8208ca143b611743c01697f4bc62ea0cf0143537e6",
-      "bytes": 6027
+      "sha256": "d271d3e29335e1b8d41bcfc57373a51ca9ca56472cff8fb1fff2d58d2022325b",
+      "bytes": 6536
     },
     "assets/devices/models/pixel-4.json": {
-      "sha256": "f6bd2747480cb1d4dc802cdc79b6aecd5247189a7223cddfa6f849494e73cde4",
-      "bytes": 6010
+      "sha256": "52fd4748d7d36ee891bd140fe0a53ab0d7c920315de69ecbce9e37886a40e058",
+      "bytes": 6519
     },
     "assets/devices/models/pixel-4a-5g.json": {
-      "sha256": "4632020306877067650deec10d1876c3cd2962e6e10da1ee5111a692b1f41865",
-      "bytes": 5426
+      "sha256": "8aafb2c70927c64a3cd5961db781f23918735b4619ce3f3eaf50c53d77558c37",
+      "bytes": 5906
     },
     "assets/devices/models/pixel-4a.json": {
-      "sha256": "2675eaddd42961e49f867ffe1661be4263108c2978bcd0b8ec75e9a6bc87c883",
-      "bytes": 5488
+      "sha256": "f8b5af5b9f7c874d636eeaa0bd8f60b4484aac90c0a5f6bf37170f65fa43c146",
+      "bytes": 5965
     },
     "assets/devices/models/pixel-5.json": {
-      "sha256": "333a8974d822f39626376cbe8baf10222ecd64f80b042afeb3e1e899a8305813",
-      "bytes": 5441
+      "sha256": "45032c8376827ae9320ac5b08f695cb70056ff5f92ae76c2c1e6edaa6f4ff09b",
+      "bytes": 5921
     },
     "assets/devices/models/pixel-5a.json": {
-      "sha256": "caa72dc6dc8fdeaf6065317fa4d7dfcbed13d68361f3ec31759fddffa90db76d",
-      "bytes": 4509
+      "sha256": "5a40af8de01487b04cc761feacafe58c793a211a3cef8829ab82d7ce9e824e80",
+      "bytes": 4989
     },
     "assets/devices/models/pixel-6-pro.json": {
-      "sha256": "cd5e0ab600f0aa56da63cfded9e2883e8aa913f62b3e4ca4bde8d797dc168357",
-      "bytes": 5983
+      "sha256": "9d39c96f93bf151604e012ad456face6c1e6612bda1a11d3798f1a3c5122e727",
+      "bytes": 6434
     },
     "assets/devices/models/pixel-6.json": {
-      "sha256": "c9632dab68f5ed913adebd8f2cc352ea0e6331a7bbcf2aadd3e62a73907582f2",
-      "bytes": 5845
+      "sha256": "4268f4f7d9aeda86fcd0fb68f8beb6c068dd5cd2f5db19a0dc3418386554bc62",
+      "bytes": 6295
     },
     "assets/devices/models/pixel-6a.json": {
-      "sha256": "00e9991d785188233d51363e815ced179a4be6acb71751a1e96eb6262ea3cc51",
-      "bytes": 5814
+      "sha256": "222aced6db76a1aa3abb3b50d9da310963e05f1f34a8d249cae99a75c142b287",
+      "bytes": 6261
     },
     "assets/devices/models/pixel-7-pro.json": {
-      "sha256": "ca2c6727f50512cea06523a7d498ddb09f30458d55dcbbf343a15e27851058c2",
-      "bytes": 5528
+      "sha256": "b4ccee47653506a1ec14629beb257839ce5680b23531767d9ac485ed861be7eb",
+      "bytes": 5977
     },
     "assets/devices/models/pixel-7.json": {
-      "sha256": "cf125e14f70a64b17b24afb01f58a266f4faa10c90c3c917a3693e38a2e405a0",
-      "bytes": 5412
+      "sha256": "e68d70f0e3617542d3623d996bd4cc5f907af6e6fcafa0476836e933fecb2814",
+      "bytes": 5861
     },
     "assets/devices/models/pixel-7a.json": {
-      "sha256": "97effe109c54bc18e678612a2de8bed661e1ae41ce8a590ceebbb7877d16c627",
-      "bytes": 6127
+      "sha256": "fa4582b69ce3c55d871acda94493532590086b23f9252b65c83f28a6707b2d99",
+      "bytes": 6572
     },
     "assets/devices/models/pixel-8-pro.json": {
-      "sha256": "1cafc7264464a325a28fd3c94ae9f90e3cc82b62ee4a24f8d8e26b6f6813a704",
-      "bytes": 6027
+      "sha256": "f07936fc33b89a67ce760e15d9e1afecf9dc1e39d3fde50aa3438eeafbac99ac",
+      "bytes": 6475
     },
     "assets/devices/models/pixel-8.json": {
-      "sha256": "fcc13edf401d4f9791e2bb4e5d89a9abe1564568e0c6e3344f8551ee2ef7060b",
-      "bytes": 6016
+      "sha256": "ac6abc2999f2eb818f0ba7926b3abe81b6645d729779c01aade80b4ccf55b023",
+      "bytes": 6464
     },
     "assets/devices/models/pixel-8a.json": {
-      "sha256": "9f4f7a9a11f0330a3c2f234b2df0451a7e20d9872064006b5ea10b6aabe86490",
-      "bytes": 5964
+      "sha256": "93522d9fb60a365f034a2ba0231767b8fb3c6d0a01ad516663875ff2c70a09fe",
+      "bytes": 6412
     },
     "assets/devices/models/pixel-9-pro-fold-folded.json": {
-      "sha256": "0da3691b426e47cdea5e55107efbad7b34f9876b8d8c41d9630b073a29c77179",
-      "bytes": 42812
+      "sha256": "0675a9a5c1b5b894f7d806fb92a891955fb0014ad2c03adb6a8af8c6cbd76f10",
+      "bytes": 43267
     },
     "assets/devices/models/pixel-9-pro-fold-unfolded.json": {
-      "sha256": "a7d6b82dda15fa3097c63e899407ef66965162cdc08ad705b9df9cf49ce08abf",
-      "bytes": 45196
+      "sha256": "6d160165c463669c318494e04edba7cc3ec650ff1f39704b80065e4d57e41c77",
+      "bytes": 45511
     },
     "assets/devices/models/pixel-9-pro-xl.json": {
-      "sha256": "c0e56e81810bcef702811d93ec85d01d37c81b2271471dcf2d45ee3890175a45",
-      "bytes": 6161
+      "sha256": "635f48621bf5c36e3770191d2d9e1fbbe36558be5afbf962d02bfcc86f09c46a",
+      "bytes": 6616
     },
     "assets/devices/models/pixel-9-pro.json": {
-      "sha256": "150e37c0f281cf1e33295fae1018b2c2d3340f1610264a2a5c82c092f548b3a9",
-      "bytes": 6135
+      "sha256": "27ca4dd4760090739b8b61529d9dde843aeeaf0828bc463a0d32822dfe11af85",
+      "bytes": 6590
     },
     "assets/devices/models/pixel-9.json": {
-      "sha256": "ab7074590d70510e640f0b58b45cdc7bd0d84960b1c656f69a245cc046a6eaa2",
-      "bytes": 6141
+      "sha256": "89f974f0106ea60468b7c06d67ef54befe4e0ab61cd7cb5ce62a22d885d9ddad",
+      "bytes": 6596
     },
     "assets/devices/models/pixel-9a.json": {
-      "sha256": "7ee892d54f29a3a02837ae4406098b0c4764521478bf9fcef96311fcb876a9b7",
-      "bytes": 6135
+      "sha256": "450b03a6a44080776f0a99fc34aabfb5a0bb927acd9116c09e4399c6d86d1eb2",
+      "bytes": 6585
     },
     "assets/devices/models/pixel-fold-folded.json": {
-      "sha256": "e44427514134cac50a1c678afece2b9db41afe4c1347a12b7bb1720a6d9a6861",
-      "bytes": 42791
+      "sha256": "55f9d6fe06b01fed42cb0ad5854cd94e954f2d8b760e51d1cab864b94aca9ee8",
+      "bytes": 43243
     },
     "assets/devices/models/pixel-fold-unfolded.json": {
-      "sha256": "f71e0e02748ba7b15680f9a1a7e7c584df1f437d2fdde03077cda3650d81bee5",
-      "bytes": 44931
+      "sha256": "b56d730cc43152164efaa49b28250621c1afe5c28609dea309a8002de1add624",
+      "bytes": 45245
     },
     "assets/devices/models-manifest.json": {
-      "sha256": "eea4288d60b8022f5041efbde3633420d742e1547d88e052aae783d994db8611",
-      "bytes": 51326
+      "sha256": "e608b1de07f778a992cf1771dfb520a59f500514e76ba8b9737c4801cdc43e4d",
+      "bytes": 54045
+    },
+    "assets/devices/nothing_geometry.py": {
+      "sha256": "e431193f1c606d9805e66c2072b6daa63a486ee06ce3065a54d39d2717958022",
+      "bytes": 2092
     },
     "assets/devices/previews/apple_iphone_11_black.png": {
       "sha256": "b7acdb81b8be719b02424439faa0e6e238202292bbb1f1dc6d614c089a8b967a",
@@ -11246,20 +11382,20 @@
       "bytes": 5116
     },
     "assets/devices/previews/honor_magic_v3_black.png": {
-      "sha256": "e9d4f008eb9513df1d577d40aadb497fa3095f532add2110d765093f32176a17",
-      "bytes": 9437
+      "sha256": "2565ec80ee4cd994094f8c373873865675abd81c595dcabce726dcad2c064d63",
+      "bytes": 7593
     },
     "assets/devices/previews/honor_magic_v3_green.png": {
-      "sha256": "7d56899dc1c3e04492f3ffa5bdb1e36a8740cbc77368b62769b10cc2dcf49652",
-      "bytes": 9360
+      "sha256": "3aa3847ddc90d57f3386e81bdfd50e3b18ab115104f46643fc538a6ecf9b6697",
+      "bytes": 7574
     },
     "assets/devices/previews/honor_magic_v3_monochrome.png": {
-      "sha256": "2dfb7358e5f24520a493f2fa06626c7ea30e0c621106d92212923da254fa4297",
-      "bytes": 3892
+      "sha256": "096e9ccf4b65b3eaf3eb1d663d45735870bd7c54592ab7b18c1d31bcf6cc2acb",
+      "bytes": 3491
     },
     "assets/devices/previews/honor_magic_v3_reddish_brown.png": {
-      "sha256": "c437667f41dc61badf0f671c4a1a0dfb09c638a70ae21c2328703236b3950f97",
-      "bytes": 9554
+      "sha256": "21dd6a83076c7ab5461b5536feac4487a023958f26d6abeb96328dc41f1ba7a0",
+      "bytes": 7597
     },
     "assets/devices/previews/honor_magic_v5_black.png": {
       "sha256": "3d1e28acbb2e6eee31b422833b5e55ce3e1e289fe7338730d3152d0b49d8a9ec",
@@ -11910,16 +12046,16 @@
       "bytes": 12615
     },
     "assets/devices/previews/nothing_phone_2_dark_gray.png": {
-      "sha256": "71d4060a76609148f53e67b53f739ca436c193e309708c35a34dafed52edbd32",
-      "bytes": 17299
+      "sha256": "1bb634afccac92829e64ce2ce65ee3d64948e7e73bb2aab48dfcae674054b017",
+      "bytes": 17627
     },
     "assets/devices/previews/nothing_phone_2_monochrome.png": {
       "sha256": "2080f3e752f5f4c8c419f6c8a9c8b8041f408bbd0156a900dc0e75527ad148af",
       "bytes": 6158
     },
     "assets/devices/previews/nothing_phone_2_white.png": {
-      "sha256": "99ded3bb82004e3e4b259d55dea452cf94576baac989d5efbc3de4f2376798d8",
-      "bytes": 13026
+      "sha256": "8f940ff7360a404bcbbec5fb6c7270870fe98abde36bde8e38854a7dc6ebb02c",
+      "bytes": 13228
     },
     "assets/devices/previews/nothing_phone_2a_black.png": {
       "sha256": "06a048b882b96edfe1d45c7b407bc7b78524bd29df86929df1079f98b6db5f1b",
@@ -11954,24 +12090,24 @@
       "bytes": 11539
     },
     "assets/devices/previews/nothing_phone_3_black.png": {
-      "sha256": "81da938a1fd64008d504eac4932d2e6eb1306dd2e93a8e9a978611fbfb5c3444",
-      "bytes": 11804
+      "sha256": "3aade22302b609c897b8632ca0bd28a6a997137b20d8ad2088f9c825275abe25",
+      "bytes": 11993
     },
     "assets/devices/previews/nothing_phone_3_monochrome.png": {
       "sha256": "f7c598fab10244e3176af87b3f0d1c760a371340de55da5017721690174e6d4e",
       "bytes": 3655
     },
     "assets/devices/previews/nothing_phone_3_white.png": {
-      "sha256": "214e07824dc923697915cca1cec1412ebbac0e5afc1884e395e989d8d3cdf1b4",
-      "bytes": 12086
+      "sha256": "b98104e4032edcc80e98065e04d3257cc1898a561bad60243af8cdcdc7a7d2fb",
+      "bytes": 12600
     },
     "assets/devices/previews/nothing_phone_3a_black.png": {
-      "sha256": "858430f357dd9a24504e8d170be11982b2645c278e93c6e1874ddb46c9ee6754",
-      "bytes": 13491
+      "sha256": "bbda14cc22bf32d38255785f25abcabeb32b314393198aab714047e708ae0a83",
+      "bytes": 13082
     },
     "assets/devices/previews/nothing_phone_3a_blue.png": {
-      "sha256": "f3bfb3f7ef3cb76fd7f734b15194ea0c400485ec44be035ac45069c8311f3b00",
-      "bytes": 14762
+      "sha256": "289d1842dc9c9c9aa83d46acc77846b8e3cecb287a208a541733cf152dae9873",
+      "bytes": 14576
     },
     "assets/devices/previews/nothing_phone_3a_lite_black.png": {
       "sha256": "b2f858121e51984292c3354e16f39327ef2a62419ac7c41d1d53f2389e210e9a",
@@ -11994,36 +12130,36 @@
       "bytes": 4806
     },
     "assets/devices/previews/nothing_phone_3a_pro_black.png": {
-      "sha256": "1001c7af47fa771167610c12e6e5b5e4ccaf3a1b9846b35360ca6d5490992f93",
-      "bytes": 14595
+      "sha256": "f403af466242b676b9a7a68a7923fb73e7761ce502167362ee5dfb4db696f8fe",
+      "bytes": 13594
     },
     "assets/devices/previews/nothing_phone_3a_pro_grey.png": {
-      "sha256": "1dda1a128b6a0ed5319530e611491e2b236e70a94a2c4d7a56d163cbb0d41935",
-      "bytes": 14828
+      "sha256": "7d8133b44576f22184d33269d549b64328bdd2bcafac43dd5afc53fbe0aec2ba",
+      "bytes": 13903
     },
     "assets/devices/previews/nothing_phone_3a_pro_monochrome.png": {
       "sha256": "71549fd30010946f551221338e96c768d713e377a443583ed0b589fda4a20217",
       "bytes": 5157
     },
     "assets/devices/previews/nothing_phone_3a_white.png": {
-      "sha256": "0a79bb93b231b2639becab076990246ab6a21047d8e0e06876d606370b33dc57",
-      "bytes": 13061
+      "sha256": "0224e085b33e5ea000ba5101d856d054aa3e98237f03b5b05295cd9d10a5d460",
+      "bytes": 13080
     },
     "assets/devices/previews/nothing_phone_4a_black.png": {
-      "sha256": "88f871a1e93c44a65f8ded51a60350dbe5df14d202c5cbcc4e470e80520f060a",
-      "bytes": 15275
+      "sha256": "97fc961a1ed9fd9dba2e64a6ccdb189be9a75c2930cbe26aabc52237f47e54e5",
+      "bytes": 13079
     },
     "assets/devices/previews/nothing_phone_4a_blue.png": {
-      "sha256": "1653459233355f37bd1006fbd71ab144fde58e98b76d876c74e90e3135b7b2ce",
-      "bytes": 15038
+      "sha256": "6dea610c2645c22a0ed90bbd5f857c511473134c5b1a333fe1fc45ecac97bb60",
+      "bytes": 13854
     },
     "assets/devices/previews/nothing_phone_4a_monochrome.png": {
       "sha256": "75123c2526513e96ab016ebe73e03da7aa983383447291a5b87698cabd881021",
       "bytes": 3328
     },
     "assets/devices/previews/nothing_phone_4a_pink.png": {
-      "sha256": "23a88241994d4804167b3854d7d45cd6873cf88fbf85d6722660d1b95cbecff0",
-      "bytes": 14726
+      "sha256": "9a89218a03b8a16ada87f406d525e4417c3f78ff055bca33475faf81474faed5",
+      "bytes": 14083
     },
     "assets/devices/previews/nothing_phone_4a_pro_black.png": {
       "sha256": "215901d660b40b42e221310870b3aff360867e70f2d96b67dfce29ee227da546",
@@ -12042,8 +12178,8 @@
       "bytes": 14369
     },
     "assets/devices/previews/nothing_phone_4a_white.png": {
-      "sha256": "4b6e4fc939774ab0c431bd84fea11e9013fee5d500c349a684f0ba8f866f11db",
-      "bytes": 13743
+      "sha256": "c41fe117357612a0104996d1ce87f24a1b823cdec0e3d4198a918bf50dba642c",
+      "bytes": 12279
     },
     "assets/devices/previews/nothing_phone_4b_black.png": {
       "sha256": "5891e58fbcefd9f42d572a31692418da38dd85d0ec8ddd47857a8d8f2afebcda",
@@ -12060,6 +12196,38 @@
     "assets/devices/previews/nothing_phone_4b_white.png": {
       "sha256": "f1e34a618a144691a9f1a04e71fa9322f433d07e677740327e60b9f575a321f2",
       "bytes": 6869
+    },
+    "assets/devices/previews/oneplus_11_eternal_green.png": {
+      "sha256": "ffbf3d2b7e27a355bf900b20d5fe77350a01db0fd8e7d35677c7431986c26282",
+      "bytes": 8321
+    },
+    "assets/devices/previews/oneplus_11_titan_black.png": {
+      "sha256": "6f2a3d1b0aec14a014cdd80d0f529e13a2d8c2c7b085f99832984e923eafcf63",
+      "bytes": 7962
+    },
+    "assets/devices/previews/oneplus_11r_galactic_silver.png": {
+      "sha256": "c54f91a55575e95885f6e7d2d6258b2fb2dabae2303edf66fc1021ded9bdbe2d",
+      "bytes": 8754
+    },
+    "assets/devices/previews/oneplus_11r_sonic_black.png": {
+      "sha256": "8932a39c773d432399c5eb8abe9a7281a1a13d1a6b280d4568d2c74bf0b2f235",
+      "bytes": 8204
+    },
+    "assets/devices/previews/oneplus_12_flowy_emerald.png": {
+      "sha256": "32cdef957e5a8ab6c091842d5610b24b565c7bc66642d1855c6cca09d4cea15d",
+      "bytes": 9606
+    },
+    "assets/devices/previews/oneplus_12_silky_black.png": {
+      "sha256": "04a0a308ffdd1151287403c3bbd209e9ae201239c3ac7f027a974286bbffe64f",
+      "bytes": 8770
+    },
+    "assets/devices/previews/oneplus_12r_cool_blue.png": {
+      "sha256": "7f0c5ada769c5333343f7e9c1a1f7eac6bed008e84edf7f69b0c0e3d33b28264",
+      "bytes": 9574
+    },
+    "assets/devices/previews/oneplus_12r_iron_gray.png": {
+      "sha256": "118199673b84cb8c27d269623f933f2b8fa6d7a1c61f7991fc7dc9abacf6c748",
+      "bytes": 8539
     },
     "assets/devices/previews/oneplus_13_arctic_dawn.png": {
       "sha256": "55a8686fbbbcb396af00ae3df40cdd2e65c2809c73df53c39cb0bcb8166dd888",
@@ -14978,44 +15146,44 @@
       "bytes": 68838
     },
     "assets/devices/profiles/galaxy-z-flip5-folded.json": {
-      "sha256": "a790b5671befce4e986e7ca11a11afe485052d3519e492a02867c198ac0799a1",
-      "bytes": 74677
+      "sha256": "210ea651fc51e487d84b6fdcaef33534d359552f38e20383393e1f1276e6b0de",
+      "bytes": 77698
     },
     "assets/devices/profiles/galaxy-z-flip5-unfolded.json": {
-      "sha256": "c4bd0a618ab9bb0d11c63713e5627daa409ab9555653d4907369063219cf8370",
-      "bytes": 76531
+      "sha256": "7ef3b254762a3d42e4c2ea1d23ec79935eb34460f69f192e1aca559a633bf693",
+      "bytes": 79552
     },
     "assets/devices/profiles/galaxy-z-flip6-folded.json": {
-      "sha256": "6ccd059aca22faef909c41c8461dacb22a93dff88d0bc4d11dd4dd4d35d732fe",
-      "bytes": 73645
+      "sha256": "d7a4c39cb2cd2b11dfd976757f8774605967f737a61fad041f34af52a8ee1786",
+      "bytes": 76666
     },
     "assets/devices/profiles/galaxy-z-flip6-unfolded.json": {
-      "sha256": "52960d6830aedacbe8f5784a27d7c0f150fb5acc976b24c18d49c18537b4d092",
-      "bytes": 75499
+      "sha256": "c8e4382130ebdea2f2086fe9b6c1186538792481277d1e856f47aae48cc5d263",
+      "bytes": 78520
     },
     "assets/devices/profiles/galaxy-z-flip7-fe-folded.json": {
-      "sha256": "d22cb4f482c18f551240f82a584c82fab4998bf23426299c2a7622048d9fb397",
-      "bytes": 70013
+      "sha256": "f1a1242320182590dc711dcc2c922e1be732f65d9dda9d552fc6c71de1337da7",
+      "bytes": 73034
     },
     "assets/devices/profiles/galaxy-z-flip7-fe-unfolded.json": {
-      "sha256": "3893f0141960a0db78d99afbba34bfa78fff0186ebef5e7101c312d301cf03d0",
-      "bytes": 71870
+      "sha256": "dc442760f419fffe388097fb5415f2fee51255fed594aa55db7ec82f83cd8caf",
+      "bytes": 74891
     },
     "assets/devices/profiles/galaxy-z-flip7-folded.json": {
-      "sha256": "c3bcc1b05545eb2afb7bac946228efb5ef889860c9c722041e8d46704bc770b9",
-      "bytes": 67502
+      "sha256": "b4b9f035186ccf63857d1a3a27c1d4e3eae4128bb567ca804dabe1497e6493e6",
+      "bytes": 67531
     },
     "assets/devices/profiles/galaxy-z-flip7-unfolded.json": {
-      "sha256": "9216a8d6324e9d016455a4b2ead1cadc208782192d07adcf0e0d13ecc6376376",
-      "bytes": 69375
+      "sha256": "37a471cc4dec85a5b4483fbc772c539406fd0c7da7a58b47091e120f8f438ad0",
+      "bytes": 69404
     },
     "assets/devices/profiles/galaxy-z-flip8-folded.json": {
-      "sha256": "c3e86d3a104e747b8940be9c7184a97a2c9e743cef315942e5d09cdc2c229720",
-      "bytes": 67466
+      "sha256": "0e8aec752aa11a9e956784a89eb33519078fe66fd00de1651d7bd1933b333c7f",
+      "bytes": 67495
     },
     "assets/devices/profiles/galaxy-z-flip8-unfolded.json": {
-      "sha256": "ad8688f203cdc146cd71dbdc6c9ea58e1d4f38e791395db801cc6d5faf413ba6",
-      "bytes": 69309
+      "sha256": "dbe5ca6819679858b6cfce9b655bb1eb7f57f209dd66526bd9fccc4c6675802c",
+      "bytes": 69338
     },
     "assets/devices/profiles/galaxy-z-fold3-folded.json": {
       "sha256": "2eaca7c4496fd8147fdd1ca2d3fdc989f61695a61407ff85c3d986ead26b4276",
@@ -15249,29 +15417,69 @@
       "sha256": "99052069b6353455341ee70dec20f84ce12420de709ef1c5442a5c954a1028e1",
       "bytes": 10317
     },
+    "assets/devices/profiles/nothing-phone-2.json": {
+      "sha256": "826ea99a0473c5a6f796491f99798d5cca082a5b8d2f37d0b14e601774f8280a",
+      "bytes": 166121
+    },
+    "assets/devices/profiles/nothing-phone-3.json": {
+      "sha256": "1a912423261d78580e8895666b01f5b97f6f59de14a9780b58ad63a6db2e3761",
+      "bytes": 34137
+    },
+    "assets/devices/profiles/nothing-phone-3a-pro.json": {
+      "sha256": "1f8bb1376872ca0b2744773851a30645b87602a3a3fd920c35b267335327d4b9",
+      "bytes": 54527
+    },
+    "assets/devices/profiles/nothing-phone-3a.json": {
+      "sha256": "b96e138350287076e0b7eaac40badeaca6fb4a7258da334e22210fab8ac11584",
+      "bytes": 55476
+    },
+    "assets/devices/profiles/nothing-phone-4a.json": {
+      "sha256": "9bbd5e337073188c46a1e1329459ac3009692c5c40057254acc98b3a3e3695e6",
+      "bytes": 37898
+    },
+    "assets/devices/profiles/oneplus-11.json": {
+      "sha256": "55320adb2cb86ee49f51bd06f4f0558ea14dd40f03c042bf125edc32da2f6617",
+      "bytes": 11813
+    },
+    "assets/devices/profiles/oneplus-11r.json": {
+      "sha256": "a3036ab73578f69dc878dacf2f6e1916106938d79c81f39f4439f11f8cfb0941",
+      "bytes": 11856
+    },
+    "assets/devices/profiles/oneplus-12.json": {
+      "sha256": "85cf78c5a9616a21518eba19c7168b6561cf59347148a4306e7c6aa6f7d93eda",
+      "bytes": 12033
+    },
+    "assets/devices/profiles/oneplus-12r.json": {
+      "sha256": "03c40b6e271942c5ddd3e03f379515e852c29db5529d5039594028fcd5d93e0d",
+      "bytes": 12040
+    },
     "assets/devices/profiles/oneplus-13.json": {
-      "sha256": "fccffc1a041dabb0dc88d2059b5ec605749bba1f954f3ac286bc9de312066754",
-      "bytes": 11461
+      "sha256": "961edc1a1a5dcfe29e5338736301fd31b4ee66beeed0ed76143589d41267850a",
+      "bytes": 12037
     },
     "assets/devices/profiles/oneplus-13r.json": {
-      "sha256": "666b377f5541eed4f17946183e1901f8f89890df417d910f12ec965d04b0d5c2",
-      "bytes": 10804
+      "sha256": "299e395f6d58fcce24e4612b346c3a3d694d83cc3fdedcd77fb8242beaa503a6",
+      "bytes": 11333
     },
     "assets/devices/profiles/oneplus-pad-2.json": {
-      "sha256": "e90800038470056e41764c1a403128c24335aa6509dd8237ceb1aaf597c2abb6",
-      "bytes": 8472
+      "sha256": "ce41ef435f16de067130a7c910af0f0b6424ded9cdd6110170ed8cfe6126c6ca",
+      "bytes": 8897
     },
     "assets/devices/profiles/oneplus-pad-3.json": {
-      "sha256": "45fc9eee5d39add32f7591eaf490dfb9973b7c9f2019713eb2894c68a2c423da",
-      "bytes": 8479
+      "sha256": "9f05d09932f366b00b86071c06f57e687c564f6748f923fa5e0bb5eda262168a",
+      "bytes": 8910
     },
     "assets/devices/profiles/oneplus-pad-go.json": {
-      "sha256": "d2ba983e7797a5168039ff92db7b39e5354ec702a152677cd55ca8095b5176d7",
-      "bytes": 8677
+      "sha256": "84ff95e1b0a273d5d12ff3ee0bb8eb4c6284b5ddc6ab8c8c025e9c5427580ddc",
+      "bytes": 9118
+    },
+    "assets/devices/profiles/oneplus-pad-lite.json": {
+      "sha256": "1dbd88d46515b28f44d3e42fb9f79490efd561aa7d54d319b3fe8faad36640cd",
+      "bytes": 9494
     },
     "assets/devices/profiles/oneplus-pad.json": {
-      "sha256": "0bfea0a19c4ad9d7cd9f560f74eb4b75fb00402620c1414b9de43ca5c2080a26",
-      "bytes": 8439
+      "sha256": "94ecd97ea642a726c51cfca5e4eb11a5a071aab2c2ecde6ec5c33b679ea9788b",
+      "bytes": 8864
     },
     "assets/devices/profiles/pixel-10-pro-fold-folded.json": {
       "sha256": "f94b311bac068357d3b10be769cb26786563132b7eee5b63d70d2d958bd42039",
@@ -15413,6 +15621,10 @@
       "sha256": "4d81d971b6ab7d2243d1e7a9b4160600364776991099a55f35496800deedf3ae",
       "bytes": 6087
     },
+    "assets/devices/provenance/HONOR_MAGIC_V3.md": {
+      "sha256": "dbcc46685973de74ebe13eacfe72b074fc38ddca58da2b3ebc432b1a5775d235",
+      "bytes": 2784
+    },
     "assets/devices/provenance/icon-recipes/brand_colors.json": {
       "sha256": "d017a23e52980aebc3cfcb557c453c1c9ad43467b9af5895e8718a6c1b6243a7",
       "bytes": 57150
@@ -15422,8 +15634,8 @@
       "bytes": 42415
     },
     "assets/devices/provenance/icon-recipes/generate_brand_svgs.py": {
-      "sha256": "2b59cf7bea3badfd8a9e637e93d95d200a5b0922b942df6d30917f62c96bb9f3",
-      "bytes": 93724
+      "sha256": "94327bae19aa8c74ea07890b8e7c2738c2836f33ed5421af615d3f697e94b09c",
+      "bytes": 97538
     },
     "assets/devices/provenance/icon-recipes/generate_galaxy_s25_s26_svgs.py": {
       "sha256": "06e9f7362f6a13bbe18dc0687b429fb4caaed78acc0c0b15a09a77c7b19620ed",
@@ -15433,6 +15645,10 @@
       "sha256": "fc89be2e733eddef6d1fb57a43be92fd33acb3f066f98bf1754c673cdc6fd1ae",
       "bytes": 22613
     },
+    "assets/devices/provenance/icon-recipes/tmp/ref5/annotate_morph_roles.py": {
+      "sha256": "3f67f40cf92f7d357d438772ca7d47d2b13aa9a4eb3eada3e0b54d719218c1fc",
+      "bytes": 9428
+    },
     "assets/devices/provenance/icon-recipes/tmp/ref5/complete_logo_tones.py": {
       "sha256": "88bdf9e643f74533c4713102603d24b9d59ce69ad90821bde851024f16e48c39",
       "bytes": 6550
@@ -15440,6 +15656,18 @@
     "assets/devices/provenance/icon-recipes/tmp/ref5/fix_tablet_logos.py": {
       "sha256": "a717f5cd3f3e1cb4484836c6d0f1db466afb3bf37cb78d28fd3a079dd60d4b2c",
       "bytes": 1401
+    },
+    "assets/devices/provenance/icon-recipes/tmp/ref5/generate_monochrome.py": {
+      "sha256": "342a3340791c0deeae20091c9e79a10f4f21c589c8a247688cc8e787f60ac245",
+      "bytes": 11854
+    },
+    "assets/devices/provenance/icon-recipes/tmp/ref5/morph-role-map.json": {
+      "sha256": "8b84cb2f7c635d4021d64e88a941957537c7ed7383d1096898e6c82c22c5d4bb",
+      "bytes": 106363
+    },
+    "assets/devices/provenance/icon-recipes/tmp/ref5/morph-role-report.json": {
+      "sha256": "504117fc5c2ed8cde5c6d178e9c612591b8d656aef5888a42cbdf9b5fdbf00db",
+      "bytes": 281477
     },
     "assets/devices/provenance/MONOCHROME.md": {
       "sha256": "9967b7b56b875dfdc380b7ee895d184990587426e233303e91618a3a3405e0af",
@@ -15458,32 +15686,36 @@
       "bytes": 2370
     },
     "assets/devices/provenance/research/branding-browser-verification.json": {
-      "sha256": "db6d135e9852f896a91fdd3fb49645a956316f1cdf9f69e3f293e8c3b800803e",
-      "bytes": 2108
+      "sha256": "7e7a3d6bf0e4b33bfcf4e52841319b5d15e8712165a542abb97b6aa3020f043b",
+      "bytes": 2209
     },
     "assets/devices/provenance/research/branding-final-ids.json": {
-      "sha256": "04ee5adcf5f3507b3d5a2d1ba897035038501ce567f26e2d06537f5da7e5baa4",
-      "bytes": 3952
+      "sha256": "144462e650fc63f459bd42d499950f9bea16e16e0bc2fecfe03acc954cd8b1c3",
+      "bytes": 4139
     },
     "assets/devices/provenance/research/branding-model-verification.json": {
-      "sha256": "6021623ec6fc08e10d829ec4dc1c6f5340ab14418f2d36d14b5cebe131ee54f6",
-      "bytes": 24425
+      "sha256": "3d0044bb40ac8b8e22b998caa5d7beba387928f7e6d283cda06d3149f085792f",
+      "bytes": 25543
     },
     "assets/devices/provenance/research/branding-refresh-ids.json": {
-      "sha256": "419aec7b17c146a1bf210fdec308a6577bf6ae90b03803b520e0e88c3fcd59d7",
-      "bytes": 3348
+      "sha256": "58598216ff2b5aa65ff18647a815fd5585508cbe097dc11d0cff5c522a5342e6",
+      "bytes": 3513
     },
     "assets/devices/provenance/research/branding-style-ids.json": {
-      "sha256": "9f71042a24e88a61bca3d6af72e16612dc906bd51dad0cb825f934748696ed63",
-      "bytes": 2858
+      "sha256": "c0c3f4feeccf04db514e06e4aebc50015d11b72c7e8f338d2d8f1190f582d97a",
+      "bytes": 2995
     },
     "assets/devices/provenance/research/camera-measurements.json": {
       "sha256": "ff5966a83631d3eaee3db495e94ad33a8a44f5ffe580724f0243ac4fc938aa29",
       "bytes": 8389
     },
     "assets/devices/provenance/research/device-logo-palettes.json": {
-      "sha256": "6f1c740d78e0f74e523eb00f968dea0b15ce0c1b9aa037e40521b06cc13fe3da",
-      "bytes": 23566
+      "sha256": "ea1a50138ebe2a7d4007ffa70bc9a4cbfd2a061965edd521b11a5e72d4669436",
+      "bytes": 24573
+    },
+    "assets/devices/provenance/research/flip-cover-independent-review.json": {
+      "sha256": "7c02cffdb18b663ca362b20c9754b46da206aae0f383de448b12c76ed32e23f9",
+      "bytes": 5822
     },
     "assets/devices/provenance/research/iphone-11-14.json": {
       "sha256": "ab071551358946cf0f4e4656319d284c0f5fa52c03841e5c73486c218ce15cbb",
@@ -15513,13 +15745,73 @@
       "sha256": "69273aca534a25dc70b2cf041796adb49c62663953a81cddd0569b4c9f642136",
       "bytes": 33943
     },
+    "assets/devices/provenance/research/model-position-repair.json": {
+      "sha256": "2c87d86b68cd5e7daa23903814079b84eba7dfe3b06bdf7bcbaaaca83144921d",
+      "bytes": 460
+    },
+    "assets/devices/provenance/research/morph-role-map.json": {
+      "sha256": "8b84cb2f7c635d4021d64e88a941957537c7ed7383d1096898e6c82c22c5d4bb",
+      "bytes": 106363
+    },
+    "assets/devices/provenance/research/morph-role-report.json": {
+      "sha256": "504117fc5c2ed8cde5c6d178e9c612591b8d656aef5888a42cbdf9b5fdbf00db",
+      "bytes": 281477
+    },
+    "assets/devices/provenance/research/nothing-art-resolutions.json": {
+      "sha256": "a8b63baca0bca811755562079406c0d2ff1d41de5f9ec4c754aa5c2e3bd020ff",
+      "bytes": 250
+    },
+    "assets/devices/provenance/research/nothing-measurements.json": {
+      "sha256": "f0b38e2ade9e8c4982e06b332590dbf32d74e78a37df985c03117420167d7edb",
+      "bytes": 207606
+    },
+    "assets/devices/provenance/research/nothing-svg-independent-review.json": {
+      "sha256": "0f981ba3fff7df8a511a1ad4ec5658001ac24c4c3d952423b8a024d30d682939",
+      "bytes": 6521
+    },
+    "assets/devices/provenance/research/nothing-svg-references.json": {
+      "sha256": "08c62d1e7aa17325950934f464fbaa7a1a39c77bb3da4e5270e2626c861cdf4d",
+      "bytes": 3224
+    },
+    "assets/devices/provenance/research/nothing-svg-resolution-checks.json": {
+      "sha256": "396c57b200f6fe56b1268b2eea346df66f05394be30f405c67a0c23c65ff633c",
+      "bytes": 182
+    },
+    "assets/devices/provenance/research/nothing-svg-verification.json": {
+      "sha256": "84201d06e9847070fa682533365ca42bf39881f7b35d2d92a6d8e7b45429824d",
+      "bytes": 5505
+    },
+    "assets/devices/provenance/research/nothing-verification.json": {
+      "sha256": "4a9e36048160107e6eda07c4079a03775ed2b4479ee4db01869e553a6cf1f2b1",
+      "bytes": 1162
+    },
+    "assets/devices/provenance/research/oneplus-focused-handoff.json": {
+      "sha256": "c37cd8bcb38f6a63f67dfe049fad509c02f6947b680f4c03c5106505e8751ec1",
+      "bytes": 4254
+    },
+    "assets/devices/provenance/research/oneplus-focused-mapping.json": {
+      "sha256": "871897613b66583200429d92a446de7694da7b3422e85c21a74a89ed2f80b2f8",
+      "bytes": 798
+    },
+    "assets/devices/provenance/research/oneplus-focused-measurements.json": {
+      "sha256": "84563747aeaa774b1c00527ac4b3ce4dc1cfcf9dc15a9746346b179e4c4d2015",
+      "bytes": 3154
+    },
+    "assets/devices/provenance/research/oneplus-focused-preserved-sha256.json": {
+      "sha256": "81baf57d673f6caf568dd2b7020e6f541d35ba8a70639bdbc142223208288caa",
+      "bytes": 8302
+    },
+    "assets/devices/provenance/research/oneplus-focused-verification.json": {
+      "sha256": "2d4b187039dcd246f55579528cb6badf493f0d511e3c4a4d5796e00390c9fe29",
+      "bytes": 1166
+    },
     "assets/devices/provenance/research/oneplus-model-measurements.json": {
-      "sha256": "4cfd1699440d8e9c70739abd7356609dc2f3ac77941690522475107d72ad9819",
-      "bytes": 2137
+      "sha256": "620e6d2a1ff841a1caa6a5863727efb39e0c40e3671216e7c7739d822ad5f674",
+      "bytes": 2231
     },
     "assets/devices/provenance/research/oneplus-model-verification.json": {
-      "sha256": "370d0747ff7b506248b2c3905a83f0728712d2962c467480d2bfab4e6ce08b68",
-      "bytes": 1296
+      "sha256": "6dc34f217a4306a559878a75a7de6debd860c963c5cb6315f05e49eb6b52ced9",
+      "bytes": 1352
     },
     "assets/devices/provenance/research/pixel-11.json": {
       "sha256": "25fab1df9f00841141447bd6d9f68e379a13cf783d00437faa3d546a8347d3ae",
@@ -15586,8 +15878,8 @@
       "bytes": 23552
     },
     "assets/devices/provenance/SOURCES.md": {
-      "sha256": "704ab3ba0993884d4b6420fb3589540848c897f193348bb6ede45c13104fe8df",
-      "bytes": 4840
+      "sha256": "b3726e3cbb56611370001596304c7a3813081952454ec7cecf9a9ef8dbc481c5",
+      "bytes": 5984
     },
     "assets/devices/provenance/vendor_extractions/nothing/SOURCES.txt": {
       "sha256": "69c11d5a15cc4b8c13114045db52fb329c484115418b9b5af8d7e4704d12cd2d",
@@ -15598,24 +15890,24 @@
       "bytes": 14080
     },
     "assets/devices/refresh_branding.py": {
-      "sha256": "67581b0d2e5b362b845b2f01ad3470a8122c17ac0d3c1a736b025040c355ad25",
-      "bytes": 5130
+      "sha256": "e3eedf4fe89c01406c31c4a0225cdacfd6923681026d036d70e9567cdd51f5ab",
+      "bytes": 5213
     },
     "assets/devices/refresh_branding_previews.py": {
-      "sha256": "aba012af4a2e8f6002072d91d606b4020321f830a5cf195d1ddc4e8e2c2121ed",
-      "bytes": 370
+      "sha256": "88eca6968386ead75b30b276fb81a77f1bc35efb28101b7655fd77e65990076d",
+      "bytes": 379
     },
     "assets/devices/review_viewer.js": {
       "sha256": "cb48b1888beec15f921d1a0421102fb676f8d7a80ba7499f034f721bbc36157b",
       "bytes": 5568
     },
     "assets/devices/sync_logo_palettes.py": {
-      "sha256": "c9997dcbf73067624b508f278653fb85cc1018cc4e1fd56c88a7b69b9c33a859",
-      "bytes": 2318
+      "sha256": "b4c9589d98facb8bf9221c666c0ccef29f14221d0361beb73de492ae89d7b457",
+      "bytes": 2349
     },
     "assets/devices/verify_iphones.py": {
-      "sha256": "c4c751b86c33d66530f4cfe71942cabdd918ef48d1ed2e5491bd632cdeccc880",
-      "bytes": 10072
+      "sha256": "cd3b915f976b06e560fc9a1d7dda55075fd6d0b3b13e911896c4f48d8328f123",
+      "bytes": 10267
     },
     "assets/devices/verify_pixels.py": {
       "sha256": "5f980f266a25ee3519128f485c26c578be408e18b0ab0167b65a7316390ccc8a",

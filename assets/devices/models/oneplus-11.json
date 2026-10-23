@@ -1,0 +1,224 @@
+{
+  "id": "oneplus-11",
+  "name": "OnePlus 11",
+  "state": "default",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        1440,
+        3216
+      ],
+      "size_mm": [
+        69.54656464502516,
+        155.32066104055616
+      ],
+      "center_mm": [
+        0.0,
+        0.0,
+        4.299999713897705
+      ],
+      "corner_radius_mm": 5.723282322512581,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0.7,
+      "frame_bounds_mm": [
+        2.2767176774874187,
+        3.889669479721917,
+        69.54656464502516,
+        155.32066104055616
+      ],
+      "frame_screen_px": null,
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "width": 74.1,
+        "height": 163.1,
+        "depth": 8.53,
+        "corner_radius": 8.0,
+        "edge_roll": 1.2,
+        "front_rail_mm": 0.4,
+        "front_curve": 0.7,
+        "corner_radii_mm": [
+          8.0,
+          8.0,
+          8.0,
+          8.0
+        ]
+      },
+      "cutouts": [
+        {
+          "center_mm": [
+            -29.049999999999997,
+            75.35
+          ],
+          "radius_mm": 1.35
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "body_mm": {
+    "width": 74.1,
+    "height": 163.1,
+    "depth": 8.53,
+    "corner_radius": 8.0,
+    "edge_roll": 1.2,
+    "front_rail_mm": 0.4,
+    "front_curve": 0.7,
+    "corner_radii_mm": [
+      8.0,
+      8.0,
+      8.0,
+      8.0
+    ]
+  },
+  "icon_morph": {
+    "windows": 4,
+    "kind": "phone"
+  },
+  "articulation": null,
+  "robot_motion": null,
+  "panels": [],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/oneplus-11-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "logo": "logo",
+    "band": "band",
+    "black": "black",
+    "flash": "flash"
+  },
+  "finishes": [
+    {
+      "name": "Titan Black",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.08235294117647059,
+            0.08627450980392157,
+            0.09411764705882353
+          ],
+          "metal": 0.15,
+          "rough": 0.4
+        },
+        "rail": {
+          "rgb": [
+            0.08235294117647059,
+            0.08627450980392157,
+            0.09411764705882353
+          ],
+          "metal": 0.8,
+          "rough": 0.3
+        },
+        "bar": {
+          "rgb": [
+            0.035,
+            0.04,
+            0.045
+          ],
+          "metal": 0.75,
+          "rough": 0.3
+        },
+        "logo": {
+          "rgb": [
+            0.2235294117647059,
+            0.22941176470588234,
+            0.2411764705882353
+          ],
+          "rough": 0.45
+        },
+        "band": {
+          "rgb": [
+            0.09388235294117646,
+            0.09835294117647057,
+            0.10729411764705882
+          ],
+          "metal": 0.5,
+          "rough": 0.35
+        }
+      }
+    },
+    {
+      "name": "Eternal Green",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.10196078431372549,
+            0.17254901960784313,
+            0.1450980392156863
+          ],
+          "metal": 0.15,
+          "rough": 0.4
+        },
+        "rail": {
+          "rgb": [
+            0.10196078431372549,
+            0.17254901960784313,
+            0.1450980392156863
+          ],
+          "metal": 0.8,
+          "rough": 0.3
+        },
+        "bar": {
+          "rgb": [
+            0.035,
+            0.04,
+            0.045
+          ],
+          "metal": 0.75,
+          "rough": 0.3
+        },
+        "logo": {
+          "rgb": [
+            0.2529411764705882,
+            0.35882352941176465,
+            0.3176470588235294
+          ],
+          "rough": 0.45
+        },
+        "band": {
+          "rgb": [
+            0.11623529411764705,
+            0.19670588235294115,
+            0.16541176470588234
+          ],
+          "metal": 0.5,
+          "rough": 0.35
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/oneplus-11.649deb84d8f4.glb.gz",
+  "sha256": "649deb84d8f46a2f1bc1660c9322bfcced9fdc6d8e7c22e799d2d3aa8979689a",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/oneplus-11.json",
+    "accuracy": {
+      "body_dimensions": "Official metric chassis dimensions. Corner radii and edge rolls are photoestimates, not measured CAD.",
+      "screen_geometry": "Published full diagonal and native pixel aspect; concentric estimated corners. Bezel camera estimated from product render.",
+      "camera_geometry": "Official rear-render fit, measurements below. Bump depth, roll, glass and optical internals illustrative; not OEM CAD.",
+      "finishes": "Official finish names, approximate existing collection sRGB swatches; not calibrated physical materials.",
+      "omissions": "Ports, speaker holes, alert slider, antenna seams and microscopic inscriptions omitted.",
+      "branding": "OnePlus contour from Documents brand_logos.json; finish-tinted mark, size/placement photoestimated from official rear render; make_device_branding applied before export."
+    },
+    "sources": [
+      "https://www.oneplus.com/us/11/specs",
+      "https://oasis.opstatics.com/content/dam/oasis/page/2023/na/oneplus-11/specs/green-img.png"
+    ]
+  }
+}

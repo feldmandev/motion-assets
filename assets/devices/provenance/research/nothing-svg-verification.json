@@ -1,0 +1,246 @@
+{
+  "changed": [
+    "device_icons_svg\\nothing\\phones\\ic_nothing_phone_3a_white_icon.svg",
+    "device_icons_svg\\nothing\\phones\\ic_nothing_phone_3a_blue_icon.svg",
+    "device_icons_svg\\nothing\\phones\\ic_nothing_phone_3a_black_icon.svg",
+    "device_icons_svg\\nothing\\phones\\ic_nothing_phone_3a_pro_grey_icon.svg",
+    "device_icons_svg\\nothing\\phones\\ic_nothing_phone_3a_pro_black_icon.svg",
+    "device_icons_svg\\nothing\\phones\\ic_nothing_phone_4a_white_icon.svg",
+    "device_icons_svg\\nothing\\phones\\ic_nothing_phone_4a_pink_icon.svg",
+    "device_icons_svg\\nothing\\phones\\ic_nothing_phone_4a_blue_icon.svg",
+    "device_icons_svg\\nothing\\phones\\ic_nothing_phone_4a_black_icon.svg",
+    "device_icons_svg\\nothing\\phones\\ic_nothing_phone_3a_monochrome_icon.svg",
+    "device_icons_svg\\nothing\\phones\\ic_nothing_phone_3a_pro_monochrome_icon.svg",
+    "device_icons_svg\\nothing\\phones\\ic_nothing_phone_4a_monochrome_icon.svg"
+  ],
+  "render_checks": [
+    {
+      "file": "ic_nothing_phone_2_white_icon.svg",
+      "alpha_bbox_864": [
+        312,
+        232,
+        552,
+        632
+      ],
+      "opaque_pixels": 24756
+    },
+    {
+      "file": "ic_nothing_phone_2_dark_gray_icon.svg",
+      "alpha_bbox_864": [
+        312,
+        232,
+        552,
+        632
+      ],
+      "opaque_pixels": 24756
+    },
+    {
+      "file": "ic_nothing_phone_3_white_icon.svg",
+      "alpha_bbox_864": [
+        312,
+        232,
+        552,
+        632
+      ],
+      "opaque_pixels": 24756
+    },
+    {
+      "file": "ic_nothing_phone_3_black_icon.svg",
+      "alpha_bbox_864": [
+        312,
+        232,
+        552,
+        632
+      ],
+      "opaque_pixels": 24756
+    },
+    {
+      "file": "ic_nothing_phone_3a_white_icon.svg",
+      "alpha_bbox_864": [
+        312,
+        232,
+        552,
+        632
+      ],
+      "opaque_pixels": 24756
+    },
+    {
+      "file": "ic_nothing_phone_3a_blue_icon.svg",
+      "alpha_bbox_864": [
+        312,
+        232,
+        552,
+        632
+      ],
+      "opaque_pixels": 24756
+    },
+    {
+      "file": "ic_nothing_phone_3a_black_icon.svg",
+      "alpha_bbox_864": [
+        312,
+        232,
+        552,
+        632
+      ],
+      "opaque_pixels": 24756
+    },
+    {
+      "file": "ic_nothing_phone_3a_pro_grey_icon.svg",
+      "alpha_bbox_864": [
+        312,
+        232,
+        552,
+        632
+      ],
+      "opaque_pixels": 24756
+    },
+    {
+      "file": "ic_nothing_phone_3a_pro_black_icon.svg",
+      "alpha_bbox_864": [
+        312,
+        232,
+        552,
+        632
+      ],
+      "opaque_pixels": 24756
+    },
+    {
+      "file": "ic_nothing_phone_4a_white_icon.svg",
+      "alpha_bbox_864": [
+        312,
+        232,
+        552,
+        632
+      ],
+      "opaque_pixels": 24756
+    },
+    {
+      "file": "ic_nothing_phone_4a_pink_icon.svg",
+      "alpha_bbox_864": [
+        312,
+        232,
+        552,
+        632
+      ],
+      "opaque_pixels": 24756
+    },
+    {
+      "file": "ic_nothing_phone_4a_blue_icon.svg",
+      "alpha_bbox_864": [
+        312,
+        232,
+        552,
+        632
+      ],
+      "opaque_pixels": 24756
+    },
+    {
+      "file": "ic_nothing_phone_4a_black_icon.svg",
+      "alpha_bbox_864": [
+        312,
+        232,
+        552,
+        632
+      ],
+      "opaque_pixels": 24756
+    },
+    {
+      "file": "ic_nothing_phone_2_monochrome_icon.svg",
+      "alpha_bbox_864": [
+        312,
+        232,
+        552,
+        632
+      ],
+      "opaque_pixels": 18431
+    },
+    {
+      "file": "ic_nothing_phone_3_monochrome_icon.svg",
+      "alpha_bbox_864": [
+        312,
+        232,
+        552,
+        632
+      ],
+      "opaque_pixels": 21515
+    },
+    {
+      "file": "ic_nothing_phone_3a_monochrome_icon.svg",
+      "alpha_bbox_864": [
+        312,
+        232,
+        552,
+        632
+      ],
+      "opaque_pixels": 20463
+    },
+    {
+      "file": "ic_nothing_phone_3a_pro_monochrome_icon.svg",
+      "alpha_bbox_864": [
+        312,
+        232,
+        552,
+        632
+      ],
+      "opaque_pixels": 20583
+    },
+    {
+      "file": "ic_nothing_phone_4a_monochrome_icon.svg",
+      "alpha_bbox_864": [
+        312,
+        232,
+        552,
+        632
+      ],
+      "opaque_pixels": 21723
+    },
+    {
+      "file": "ic_nothing_phone_3a_lite_black_icon.svg",
+      "alpha_bbox_864": [
+        312,
+        232,
+        552,
+        632
+      ],
+      "opaque_pixels": 24756
+    },
+    {
+      "file": "ic_nothing_phone_3a_lite_blue_icon.svg",
+      "alpha_bbox_864": [
+        312,
+        232,
+        552,
+        632
+      ],
+      "opaque_pixels": 24756
+    },
+    {
+      "file": "ic_nothing_phone_3a_lite_monochrome_icon.svg",
+      "alpha_bbox_864": [
+        312,
+        232,
+        552,
+        632
+      ],
+      "opaque_pixels": 23463
+    },
+    {
+      "file": "ic_nothing_phone_3a_lite_white_icon.svg",
+      "alpha_bbox_864": [
+        312,
+        232,
+        552,
+        632
+      ],
+      "opaque_pixels": 24756
+    }
+  ],
+  "models": [
+    "nothing_phone_2",
+    "nothing_phone_3",
+    "nothing_phone_3a",
+    "nothing_phone_3a_pro",
+    "nothing_phone_4a"
+  ],
+  "unmodified_validated": "nothing_phone_3a_lite (all four SVGs); no blank or opaque rectangular background"
+}

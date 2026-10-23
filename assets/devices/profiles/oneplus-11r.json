@@ -1,0 +1,554 @@
+{
+  "id": "oneplus-11r",
+  "name": "OnePlus 11R",
+  "manufacturer": "OnePlus",
+  "form_factor": "phone",
+  "status": "provisional",
+  "finish": "Sonic Black",
+  "body_mm": {
+    "width": 74.3,
+    "height": 163.4,
+    "depth": 8.7,
+    "corner_radius": 8,
+    "edge_roll": 1.2,
+    "front_rail_mm": 0.4,
+    "front_curve": 0.7
+  },
+  "materials": {
+    "back": {
+      "rgb": [
+        0.15294117647058825,
+        0.1607843137254902,
+        0.17647058823529413
+      ],
+      "metal": 0.15,
+      "rough": 0.4
+    },
+    "rail": {
+      "rgb": [
+        0.15294117647058825,
+        0.1607843137254902,
+        0.17647058823529413
+      ],
+      "metal": 0.8,
+      "rough": 0.3
+    },
+    "bar": {
+      "rgb": [
+        0.035,
+        0.04,
+        0.045
+      ],
+      "metal": 0.75,
+      "rough": 0.3
+    },
+    "logo": {
+      "rgb": [
+        0.3294117647058824,
+        0.3411764705882353,
+        0.3647058823529412
+      ],
+      "rough": 0.45
+    },
+    "band": {
+      "rgb": [
+        0.1743529411764706,
+        0.18329411764705883,
+        0.2011764705882353
+      ],
+      "metal": 0.5,
+      "rough": 0.35
+    },
+    "black": {
+      "rgb": [
+        0.008,
+        0.011,
+        0.016
+      ],
+      "rough": 0.4
+    },
+    "flash": {
+      "rgb": [
+        0.85,
+        0.84,
+        0.76
+      ],
+      "rough": 0.4
+    }
+  },
+  "finishes": {
+    "Sonic Black": {
+      "back": {
+        "rgb": [
+          0.15294117647058825,
+          0.1607843137254902,
+          0.17647058823529413
+        ],
+        "metal": 0.15,
+        "rough": 0.4
+      },
+      "rail": {
+        "rgb": [
+          0.15294117647058825,
+          0.1607843137254902,
+          0.17647058823529413
+        ],
+        "metal": 0.8,
+        "rough": 0.3
+      },
+      "bar": {
+        "rgb": [
+          0.035,
+          0.04,
+          0.045
+        ],
+        "metal": 0.75,
+        "rough": 0.3
+      },
+      "logo": {
+        "rgb": [
+          0.3294117647058824,
+          0.3411764705882353,
+          0.3647058823529412
+        ],
+        "rough": 0.45
+      },
+      "band": {
+        "rgb": [
+          0.1743529411764706,
+          0.18329411764705883,
+          0.2011764705882353
+        ],
+        "metal": 0.5,
+        "rough": 0.35
+      }
+    },
+    "Galactic Silver": {
+      "back": {
+        "rgb": [
+          0.7294117647058823,
+          0.7843137254901961,
+          0.8156862745098039
+        ],
+        "metal": 0.15,
+        "rough": 0.4
+      },
+      "rail": {
+        "rgb": [
+          0.7294117647058823,
+          0.7843137254901961,
+          0.8156862745098039
+        ],
+        "metal": 0.8,
+        "rough": 0.3
+      },
+      "bar": {
+        "rgb": [
+          0.035,
+          0.04,
+          0.045
+        ],
+        "metal": 0.75,
+        "rough": 0.3
+      },
+      "logo": {
+        "rgb": [
+          0.4376470588235294,
+          0.47058823529411764,
+          0.4894117647058823
+        ],
+        "rough": 0.45
+      },
+      "band": {
+        "rgb": [
+          0.8315294117647057,
+          0.8941176470588235,
+          0.9298823529411764
+        ],
+        "metal": 0.5,
+        "rough": 0.35
+      }
+    }
+  },
+  "screen": {
+    "object": "Device screen",
+    "node": "Device screen",
+    "panel": "Body",
+    "resolution": [
+      1240,
+      2772
+    ],
+    "fit_box_mm": [
+      69.90569132910437,
+      156.27304545506234
+    ],
+    "center_mm": [
+      0,
+      0,
+      4.385
+    ],
+    "corner_radius_mm": 5.802845664552187,
+    "create_cutouts": true,
+    "cutouts": [
+      {
+        "center_mm": [
+          0,
+          75.5
+        ],
+        "radius_mm": 1.35
+      }
+    ],
+    "edge_curve_mm": 0.7
+  },
+  "camera": {
+    "center_mm": [
+      11.966487455197129,
+      49.098088410991636
+    ],
+    "size_mm": [
+      46.85304659498208,
+      46.85304659498208,
+      23.42652329749104
+    ],
+    "bump_mm": 2.0,
+    "roll_mm": 0.35,
+    "integrated_plateau": true,
+    "skip_source_pupil": true,
+    "optical_bump_mm": 0.15,
+    "lens_ring_mm": 0.22,
+    "windows": [
+      [
+        20.360991636798087,
+        57.88303464755078,
+        13.275029868578256,
+        13.275029868578256,
+        6.637514934289128
+      ],
+      [
+        2.59587813620071,
+        57.88303464755078,
+        13.275029868578256,
+        13.275029868578256,
+        6.637514934289128
+      ],
+      [
+        20.360991636798087,
+        40.70358422939068,
+        13.275029868578256,
+        13.275029868578256,
+        6.637514934289128
+      ],
+      [
+        2.59587813620071,
+        40.70358422939068,
+        13.275029868578256,
+        13.275029868578256,
+        6.637514934289128
+      ]
+    ],
+    "lenses": [
+      {
+        "kind": "main",
+        "center_mm": [
+          20.360991636798087,
+          57.88303464755078
+        ],
+        "radius_mm": 3.053256869772999,
+        "window": 0
+      },
+      {
+        "kind": "ultrawide",
+        "center_mm": [
+          2.59587813620071,
+          57.88303464755078
+        ],
+        "radius_mm": 3.053256869772999,
+        "window": 1
+      },
+      {
+        "kind": "ultrawide",
+        "center_mm": [
+          20.360991636798087,
+          40.70358422939068
+        ],
+        "radius_mm": 3.053256869772999,
+        "window": 2
+      }
+    ],
+    "flash": [
+      [
+        2.59587813620071,
+        40.70358422939068,
+        2.522255675029869
+      ]
+    ],
+    "flash_offset_mm": 0.25,
+    "sensors": [],
+    "sensor_surface": "camera"
+  },
+  "buttons": [
+    {
+      "name": "Power",
+      "side": "right",
+      "center_y_mm": 37.7,
+      "length_mm": 10,
+      "width_mm": 2,
+      "thickness_mm": 0.3,
+      "radius_mm": 0.8
+    },
+    {
+      "name": "Volume",
+      "side": "left",
+      "center_y_mm": 58.7,
+      "length_mm": 18,
+      "width_mm": 2,
+      "thickness_mm": 0.3,
+      "radius_mm": 0.8
+    }
+  ],
+  "rear_logo": {
+    "kind": "oneplus",
+    "surface_offset_mm": 0.08,
+    "center_mm": [
+      7.105427357601002e-15,
+      -2.049820788530468
+    ],
+    "contours_mm": [
+      [
+        [
+          4.413600000000001,
+          -1.840861016949153
+        ],
+        [
+          3.3864,
+          -1.8504610169491527
+        ],
+        [
+          3.3768,
+          -3.4068610169491524
+        ],
+        [
+          1.8203999999999994,
+          -3.4164610169491527
+        ],
+        [
+          1.8299999999999996,
+          -4.423261016949152
+        ],
+        [
+          3.3864,
+          -4.434061016949153
+        ],
+        [
+          3.3972,
+          -5.989261016949153
+        ],
+        [
+          4.3932,
+          -5.989261016949153
+        ],
+        [
+          4.4232000000000005,
+          -5.959261016949153
+        ],
+        [
+          4.434000000000001,
+          -4.423261016949152
+        ],
+        [
+          5.990399999999999,
+          -4.413661016949153
+        ],
+        [
+          5.9796,
+          -3.4068610169491524
+        ],
+        [
+          4.4232000000000005,
+          -3.3960610169491527
+        ],
+        [
+          4.413600000000001,
+          -1.840861016949153
+        ]
+      ],
+      [
+        [
+          4.3932,
+          5.969938983050847
+        ],
+        [
+          -5.9796000000000005,
+          5.969938983050847
+        ],
+        [
+          -6.009600000000001,
+          5.938738983050847
+        ],
+        [
+          -6.009600000000001,
+          -4.413661016949153
+        ],
+        [
+          0.7631999999999999,
+          -4.413661016949153
+        ],
+        [
+          0.7523999999999997,
+          -3.4068610169491524
+        ],
+        [
+          -4.972799999999999,
+          -3.3960610169491527
+        ],
+        [
+          -4.9632,
+          4.931938983050847
+        ],
+        [
+          3.3768,
+          4.931938983050847
+        ],
+        [
+          3.3864,
+          -0.7728610169491528
+        ],
+        [
+          4.413600000000001,
+          -0.782461016949153
+        ],
+        [
+          4.4028,
+          5.918338983050848
+        ],
+        [
+          4.4232000000000005,
+          5.938738983050847
+        ],
+        [
+          4.3932,
+          5.969938983050847
+        ]
+      ],
+      [
+        [
+          0.7523999999999997,
+          3.3659389830508477
+        ],
+        [
+          -2.3495999999999997,
+          3.3563389830508474
+        ],
+        [
+          -2.3495999999999997,
+          2.3591389830508467
+        ],
+        [
+          -1.3428,
+          2.3495389830508477
+        ],
+        [
+          -1.3116,
+          2.318338983050847
+        ],
+        [
+          -1.3116,
+          -0.7728610169491528
+        ],
+        [
+          -2.3495999999999997,
+          -0.7932610169491532
+        ],
+        [
+          -2.3388,
+          -1.8204610169491526
+        ],
+        [
+          -0.29520000000000013,
+          -1.8096610169491532
+        ],
+        [
+          -0.29520000000000013,
+          2.318338983050847
+        ],
+        [
+          -0.26400000000000023,
+          2.3495389830508477
+        ],
+        [
+          0.7320000000000007,
+          2.3495389830508477
+        ],
+        [
+          0.7523999999999997,
+          2.3291389830508473
+        ],
+        [
+          0.7523999999999997,
+          3.3659389830508477
+        ]
+      ]
+    ]
+  },
+  "accuracy": {
+    "body_dimensions": "Official metric chassis dimensions. Corner radii and edge rolls are photoestimates, not measured CAD. Standard glass 8.70 mm chassis; thicker Solar Red variant excluded.",
+    "screen_geometry": "Published full diagonal and native pixel aspect; concentric estimated corners. Bezel camera estimated from product render.",
+    "camera_geometry": "Official rear-render fit, measurements below. Bump depth, roll, glass and optical internals illustrative; not OEM CAD.",
+    "finishes": "Official finish names, approximate existing collection sRGB swatches; not calibrated physical materials.",
+    "omissions": "Ports, speaker holes, alert slider, antenna seams and microscopic inscriptions omitted.",
+    "branding": "OnePlus contour from Documents brand_logos.json; finish-tinted mark, size/placement photoestimated from official rear render; make_device_branding applied before export."
+  },
+  "sources": [
+    "https://www.oneplus.in/11r/specs",
+    "https://oasis.opstatics.com/content/dam/oasis/page/2023/in/oneplus-10t/specs/10r-blue.png"
+  ],
+  "rear_reference": {
+    "reference": "research/oneplus/11r.png",
+    "body_bounds_px": [
+      205,
+      121,
+      585.594247246022,
+      958
+    ],
+    "housing_bounds_px": [
+      214,
+      168,
+      454,
+      408
+    ],
+    "lens_centers_px": [
+      [
+        291,
+        243
+      ],
+      [
+        382,
+        243
+      ],
+      [
+        291,
+        331
+      ]
+    ],
+    "scale_mm_per_px": 0.195221027479092,
+    "uncertainty_mm": 0.9,
+    "note": "Rear width inferred from published aspect because front overlaps it. Circular dial and side bridge photoestimated; bump/roll/radii not measured."
+  },
+  "gallery_model": "oneplus_11r",
+  "rear_details": [
+    {
+      "name": "Camera dial side bridge",
+      "center_mm": [
+        24.208243727598564,
+        49.098088410991636
+      ],
+      "size_mm": [
+        24.483512544802867,
+        46.85304659498208,
+        1
+      ],
+      "depth_mm": 1.4,
+      "material": "bar"
+    }
+  ]
+}

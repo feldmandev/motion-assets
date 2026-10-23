@@ -1,0 +1,47 @@
+[
+  {
+    "id": "oneplus-12",
+    "screen_aspect": true,
+    "exported_screen_bounds": true,
+    "enclosure_bounds": true,
+    "camera_clearance_mm": 2.87636906663539,
+    "triangles": 187888,
+    "glb_bytes": 3360096
+  },
+  {
+    "id": "oneplus-12r",
+    "screen_aspect": true,
+    "exported_screen_bounds": true,
+    "enclosure_bounds": true,
+    "camera_clearance_mm": 3.302081523809524,
+    "triangles": 189344,
+    "glb_bytes": 3332284
+  },
+  {
+    "id": "oneplus-11",
+    "screen_aspect": true,
+    "exported_screen_bounds": true,
+    "enclosure_bounds": true,
+    "camera_clearance_mm": 3.409218186157517,
+    "triangles": 189094,
+    "glb_bytes": 3323708
+  },
+  {
+    "id": "oneplus-11r",
+    "screen_aspect": true,
+    "exported_screen_bounds": true,
+    "enclosure_bounds": true,
+    "camera_clearance_mm": 3.523192927120669,
+    "triangles": 189068,
+    "glb_bytes": 3322760
+  },
+  {
+    "id": "oneplus-pad-lite",
+    "screen_aspect": true,
+    "exported_screen_bounds": true,
+    "enclosure_bounds": true,
+    "camera_clearance_mm": 6.353999999999999,
+    "triangles": 70775,
+    "glb_bytes": 1265336
+  }
+]

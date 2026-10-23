@@ -1,0 +1,14 @@
+{
+  "published_payloads_audited": 188,
+  "invalid_models": [
+    "pixel-10-pro"
+  ],
+  "action": "Re-exported Pixel 10 Pro from the retained reviewed source Blender scene.",
+  "final_position_max_abs_m": 0.07639999687671661,
+  "final_triangles": 235948,
+  "checks": [
+    "All POSITION vertices finite and within declared bounds",
+    "Native screen aspect, UV/export bounds and enclosure verifier passed"
+  ],
+  "source_scene_unchanged": true
+}

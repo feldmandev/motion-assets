@@ -73,7 +73,30 @@
       "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
     }
   ],
+  "body_mm": {
+    "height": 152.0,
+    "width": 72.9,
+    "depth": 9.0,
+    "corner_radius": 6.952874654618143,
+    "edge_roll": 0.55,
+    "front_curve": 0,
+    "edge_roll_mm": [
+      2.8,
+      0.9
+    ],
+    "corner_radii_mm": [
+      7.12082111808044,
+      6.81462729236726,
+      6.81462729236726,
+      7.061422915657613
+    ]
+  },
+  "icon_morph": {
+    "windows": 1,
+    "kind": null
+  },
   "articulation": null,
+  "robot_motion": null,
   "panels": [],
   "frames": [
     {

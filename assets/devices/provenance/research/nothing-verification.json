@@ -1,0 +1,47 @@
+[
+  {
+    "id": "nothing-phone-2",
+    "screen_aspect": true,
+    "exported_screen_bounds": true,
+    "enclosure_bounds": true,
+    "camera_clearance_mm": 3.27978,
+    "triangles": 129138,
+    "glb_bytes": 2848464
+  },
+  {
+    "id": "nothing-phone-3",
+    "screen_aspect": true,
+    "exported_screen_bounds": true,
+    "enclosure_bounds": true,
+    "camera_clearance_mm": 2.920795738206422,
+    "triangles": 166172,
+    "glb_bytes": 3051504
+  },
+  {
+    "id": "nothing-phone-3a",
+    "screen_aspect": true,
+    "exported_screen_bounds": true,
+    "enclosure_bounds": true,
+    "camera_clearance_mm": 2.0824,
+    "triangles": 173657,
+    "glb_bytes": 3263144
+  },
+  {
+    "id": "nothing-phone-3a-pro",
+    "screen_aspect": true,
+    "exported_screen_bounds": true,
+    "enclosure_bounds": true,
+    "camera_clearance_mm": 2.49888,
+    "triangles": 172388,
+    "glb_bytes": 3235344
+  },
+  {
+    "id": "nothing-phone-4a",
+    "screen_aspect": true,
+    "exported_screen_bounds": true,
+    "enclosure_bounds": true,
+    "camera_clearance_mm": 1.3975975646893861,
+    "triangles": 197434,
+    "glb_bytes": 3503148
+  }
+]

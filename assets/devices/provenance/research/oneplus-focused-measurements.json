@@ -1,0 +1,156 @@
+{
+  "12": {
+    "reference": "research/oneplus/12.png",
+    "body_bounds_px": [
+      200,
+      122,
+      585.6895922093731,
+      958
+    ],
+    "housing_bounds_px": [
+      210,
+      170,
+      488,
+      448
+    ],
+    "lens_centers_px": [
+      [
+        298,
+        260
+      ],
+      [
+        397,
+        260
+      ],
+      [
+        298,
+        357
+      ]
+    ],
+    "scale_mm_per_px": 0.19653110047846892,
+    "uncertainty_mm": 0.9,
+    "note": "Rear width inferred from published aspect because front overlaps it. Circular dial and side bridge photoestimated; bump/roll/radii not measured."
+  },
+  "12r": {
+    "reference": "research/oneplus/12r.png",
+    "body_bounds_px": [
+      200,
+      120,
+      587.3361910593999,
+      960
+    ],
+    "housing_bounds_px": [
+      213,
+      172,
+      466,
+      423
+    ],
+    "lens_centers_px": [
+      [
+        295,
+        250
+      ],
+      [
+        384,
+        250
+      ],
+      [
+        295,
+        341
+      ]
+    ],
+    "scale_mm_per_px": 0.1944047619047619,
+    "uncertainty_mm": 0.9,
+    "note": "Rear width inferred from published aspect because front overlaps it. Circular dial and side bridge photoestimated; bump/roll/radii not measured."
+  },
+  "11": {
+    "reference": "research/oneplus/11.png",
+    "body_bounds_px": [
+      201,
+      121,
+      581.722256284488,
+      959
+    ],
+    "housing_bounds_px": [
+      214,
+      170,
+      460,
+      406
+    ],
+    "lens_centers_px": [
+      [
+        294,
+        243
+      ],
+      [
+        392,
+        243
+      ],
+      [
+        294,
+        328
+      ]
+    ],
+    "scale_mm_per_px": 0.19463007159904533,
+    "uncertainty_mm": 0.9,
+    "note": "Rear width inferred from published aspect because front overlaps it. Circular dial and side bridge photoestimated; bump/roll/radii not measured."
+  },
+  "11r": {
+    "reference": "research/oneplus/11r.png",
+    "body_bounds_px": [
+      205,
+      121,
+      585.594247246022,
+      958
+    ],
+    "housing_bounds_px": [
+      214,
+      168,
+      454,
+      408
+    ],
+    "lens_centers_px": [
+      [
+        291,
+        243
+      ],
+      [
+        382,
+        243
+      ],
+      [
+        291,
+        331
+      ]
+    ],
+    "scale_mm_per_px": 0.195221027479092,
+    "uncertainty_mm": 0.9,
+    "note": "Rear width inferred from published aspect because front overlaps it. Circular dial and side bridge photoestimated; bump/roll/radii not measured."
+  },
+  "pad-lite": {
+    "reference": "research/oneplus/pad-lite.png",
+    "orientation": "landscape",
+    "housing_size_mm": [
+      21,
+      21
+    ],
+    "center_normalized": [
+      0.5,
+      0.12
+    ],
+    "uncertainty_mm": 1.2,
+    "note": "Official composite: lower rear obscured by front; metric width gives scale. Single camera centered on long edge; no flash. Depth and radii estimated.",
+    "body_bounds_px": [
+      133,
+      150,
+      946,
+      681
+    ],
+    "housing_bounds_px": [
+      506,
+      179,
+      574,
+      247
+    ]
+  }
+}

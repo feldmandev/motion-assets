@@ -29,10 +29,11 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--icons", type=Path, required=True)
     parser.add_argument("--models", type=Path, required=True)
+    parser.add_argument("--gallery", type=Path, help="Import a reviewed gallery snapshot while source work continues")
     args = parser.parse_args()
     target = ROOT / "assets/devices"
     version = json.loads((ROOT / "package.json").read_text())["version"]
-    text = (args.icons / "gallery.html").read_text(encoding="utf-8")
+    text = (args.gallery or args.icons / "gallery.html").read_text(encoding="utf-8")
     start = text.index("const devices=") + len("const devices=")
     devices, length = json.JSONDecoder().raw_decode(text[start:])
     source_catalog = json.loads((args.icons.parent / "tmp/ref5/all_phones/catalog.json").read_text(encoding="utf-8"))
@@ -64,24 +65,37 @@ def main():
             variant["svg"] = (target / "icons" / source.relative_to(args.icons)).relative_to(ROOT).as_posix()
             variant["preview"] = preview.relative_to(ROOT).as_posix()
     model_files = {}
+    previous_manifest = target / "models-manifest.json"
+    previous_files = json.loads(previous_manifest.read_text())["files"] if previous_manifest.exists() else {}
     profile_cache = {path.stem: public_json(json.loads(path.read_text(encoding="utf-8"))) for path in (args.models / "profiles").glob("*.json")}
     # Generic models are authored in this library, outside the vendor framework.
     for path in (target / "profiles").glob("generic-*.json"):
         profile_cache[path.stem] = json.loads(path.read_text(encoding="utf-8"))
     for path in sorted((args.icons / "model_data").glob("*.js")):
+        if not path.stem.startswith('generic-') and path.stem not in profile_cache:
+            continue
         script = path.read_text(encoding="utf-8")
         start = script.index("={", script.index("window.__DEVICE_MODEL_DATA__[")) + 1
         data, _ = json.JSONDecoder().raw_decode(script[start:])
         glb = base64.b64decode(data.pop("glb"))
         if glb[:4] != b"glTF":
             raise ValueError(f"Invalid GLB: {path.name}")
-        compressed = gzip.compress(glb, compresslevel=9, mtime=0)
+        glb_digest = hashlib.sha256(glb).hexdigest()
+        previous = target / "models" / (data['id'] + ".json")
+        previous_url = json.loads(previous.read_text()).get('glbUrl') if previous.exists() else None
+        cached = ROOT / previous_url if previous_url else None
+        if cached and cached.exists() and previous_files.get(previous_url, {}).get('glbSha256') == glb_digest:
+            compressed = cached.read_bytes()
+            if hashlib.sha256(compressed).hexdigest() != previous_files[previous_url]['sha256']:
+                raise ValueError(f"Cached model integrity check failed: {data['id']}")
+        else:
+            compressed = gzip.compress(glb, compresslevel=9, mtime=0)
         digest = hashlib.sha256(compressed).hexdigest()
         payload = target / "models" / f"{data['id']}.{digest[:12]}.glb.gz"
         payload.parent.mkdir(parents=True, exist_ok=True)
         payload.write_bytes(compressed)
         relative = payload.relative_to(ROOT).as_posix()
-        model_files[relative] = {"sha256": digest, "bytes": len(compressed), "glbSha256": hashlib.sha256(glb).hexdigest()}
+        model_files[relative] = {"sha256": digest, "bytes": len(compressed), "glbSha256": glb_digest}
         data["glbUrl"] = relative
         data["sha256"] = digest
         matches = [key for key in profile_cache if data["id"] == key or data["id"].startswith(key + "-")]

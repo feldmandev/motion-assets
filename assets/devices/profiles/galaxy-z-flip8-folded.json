@@ -472,7 +472,8 @@
         0,
         -1
       ],
-      "glass_border_mm": 0.6
+      "glass_border_mm": 0.6,
+      "mesh_cutouts": true
     }
   ],
   "static_hinges": [

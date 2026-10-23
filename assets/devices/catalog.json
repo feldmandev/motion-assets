@@ -5414,6 +5414,114 @@
     "license": "LicenseRef-Device-Artwork"
   },
   {
+    "model": "oneplus_11",
+    "brand": "oneplus",
+    "kind": "phone",
+    "label": "OnePlus 11",
+    "provisional": false,
+    "variants": [
+      {
+        "color": "titan_black",
+        "svg": "assets/devices/icons/oneplus/phones/ic_oneplus_11_titan_black_icon.svg",
+        "preview": "assets/devices/previews/oneplus_11_titan_black.png"
+      },
+      {
+        "color": "eternal_green",
+        "svg": "assets/devices/icons/oneplus/phones/ic_oneplus_11_eternal_green_icon.svg",
+        "preview": "assets/devices/previews/oneplus_11_eternal_green.png"
+      }
+    ],
+    "model3d": {
+      "states": {
+        "default": "oneplus-11"
+      },
+      "hasFrame": true
+    },
+    "provenance": "drawn-from-references",
+    "license": "LicenseRef-Device-Artwork"
+  },
+  {
+    "model": "oneplus_11r",
+    "brand": "oneplus",
+    "kind": "phone",
+    "label": "OnePlus 11r",
+    "provisional": false,
+    "variants": [
+      {
+        "color": "galactic_silver",
+        "svg": "assets/devices/icons/oneplus/phones/ic_oneplus_11r_galactic_silver_icon.svg",
+        "preview": "assets/devices/previews/oneplus_11r_galactic_silver.png"
+      },
+      {
+        "color": "sonic_black",
+        "svg": "assets/devices/icons/oneplus/phones/ic_oneplus_11r_sonic_black_icon.svg",
+        "preview": "assets/devices/previews/oneplus_11r_sonic_black.png"
+      }
+    ],
+    "model3d": {
+      "states": {
+        "default": "oneplus-11r"
+      },
+      "hasFrame": true
+    },
+    "provenance": "drawn-from-references",
+    "license": "LicenseRef-Device-Artwork"
+  },
+  {
+    "model": "oneplus_12",
+    "brand": "oneplus",
+    "kind": "phone",
+    "label": "OnePlus 12",
+    "provisional": false,
+    "variants": [
+      {
+        "color": "silky_black",
+        "svg": "assets/devices/icons/oneplus/phones/ic_oneplus_12_silky_black_icon.svg",
+        "preview": "assets/devices/previews/oneplus_12_silky_black.png"
+      },
+      {
+        "color": "flowy_emerald",
+        "svg": "assets/devices/icons/oneplus/phones/ic_oneplus_12_flowy_emerald_icon.svg",
+        "preview": "assets/devices/previews/oneplus_12_flowy_emerald.png"
+      }
+    ],
+    "model3d": {
+      "states": {
+        "default": "oneplus-12"
+      },
+      "hasFrame": true
+    },
+    "provenance": "drawn-from-references",
+    "license": "LicenseRef-Device-Artwork"
+  },
+  {
+    "model": "oneplus_12r",
+    "brand": "oneplus",
+    "kind": "phone",
+    "label": "OnePlus 12r",
+    "provisional": false,
+    "variants": [
+      {
+        "color": "iron_gray",
+        "svg": "assets/devices/icons/oneplus/phones/ic_oneplus_12r_iron_gray_icon.svg",
+        "preview": "assets/devices/previews/oneplus_12r_iron_gray.png"
+      },
+      {
+        "color": "cool_blue",
+        "svg": "assets/devices/icons/oneplus/phones/ic_oneplus_12r_cool_blue_icon.svg",
+        "preview": "assets/devices/previews/oneplus_12r_cool_blue.png"
+      }
+    ],
+    "model3d": {
+      "states": {
+        "default": "oneplus-12r"
+      },
+      "hasFrame": true
+    },
+    "provenance": "drawn-from-references",
+    "license": "LicenseRef-Device-Artwork"
+  },
+  {
     "model": "oneplus_13",
     "brand": "oneplus",
     "kind": "phone",
@@ -6007,6 +6115,12 @@
         "preview": "assets/devices/previews/oneplus_pad_lite_monochrome.png"
       }
     ],
+    "model3d": {
+      "states": {
+        "default": "oneplus-pad-lite"
+      },
+      "hasFrame": true
+    },
     "provenance": "drawn-from-references",
     "license": "LicenseRef-Device-Artwork"
   },
@@ -6680,6 +6794,12 @@
         "preview": "assets/devices/previews/nothing_phone_2_monochrome.png"
       }
     ],
+    "model3d": {
+      "states": {
+        "default": "nothing-phone-2"
+      },
+      "hasFrame": true
+    },
     "provenance": "drawn-from-references",
     "license": "LicenseRef-Device-Artwork"
   },
@@ -6768,6 +6888,12 @@
         "preview": "assets/devices/previews/nothing_phone_3_monochrome.png"
       }
     ],
+    "model3d": {
+      "states": {
+        "default": "nothing-phone-3"
+      },
+      "hasFrame": true
+    },
     "provenance": "drawn-from-references",
     "license": "LicenseRef-Device-Artwork"
   },
@@ -6799,6 +6925,12 @@
         "preview": "assets/devices/previews/nothing_phone_3a_monochrome.png"
       }
     ],
+    "model3d": {
+      "states": {
+        "default": "nothing-phone-3a"
+      },
+      "hasFrame": true
+    },
     "provenance": "drawn-from-references",
     "license": "LicenseRef-Device-Artwork"
   },
@@ -6856,6 +6988,12 @@
         "preview": "assets/devices/previews/nothing_phone_3a_pro_monochrome.png"
       }
     ],
+    "model3d": {
+      "states": {
+        "default": "nothing-phone-3a-pro"
+      },
+      "hasFrame": true
+    },
     "provenance": "drawn-from-references",
     "license": "LicenseRef-Device-Artwork"
   },
@@ -6892,6 +7030,12 @@
         "preview": "assets/devices/previews/nothing_phone_4a_monochrome.png"
       }
     ],
+    "model3d": {
+      "states": {
+        "default": "nothing-phone-4a"
+      },
+      "hasFrame": true
+    },
     "provenance": "drawn-from-references",
     "license": "LicenseRef-Device-Artwork"
   },

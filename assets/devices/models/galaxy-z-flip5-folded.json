@@ -19,10 +19,10 @@
       ],
       "center_mm": [
         0.0,
-        -0.3750002682209015,
-        7.690000057220459
+        3.424999475479126,
+        7.690000534057617
       ],
-      "corner_radius_mm": 5,
+      "corner_radius_mm": 3.2,
       "rotation_deg": [
         0,
         0,
@@ -31,7 +31,7 @@
       "edge_curve_mm": 0,
       "frame_bounds_mm": [
         6.004946546952578,
-        12.440416690445172,
+        16.24041669044517,
         59.89010690609485,
         62.21916661910965
       ],
@@ -54,7 +54,24 @@
       "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
     }
   ],
+  "body_mm": {
+    "width": 71.9,
+    "height": 85.1,
+    "depth": 15.1,
+    "corner_radius": 8.5,
+    "edge_roll_mm": [
+      0.25,
+      0.2
+    ],
+    "front_rail_mm": 0.45,
+    "rear_inset": 0.45
+  },
+  "icon_morph": {
+    "windows": 0,
+    "kind": "phone"
+  },
   "articulation": null,
+  "robot_motion": null,
   "panels": [
     {
       "name": "Cover half",
@@ -529,15 +546,15 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-z-flip5-folded.e0f789075ba5.glb.gz",
-  "sha256": "e0f789075ba51591f0de3d281db53bdcb543d370e175c92174b91b226afc5bbf",
+  "glbUrl": "assets/devices/models/galaxy-z-flip5-folded.1ffee1ff06c3.glb.gz",
+  "sha256": "1ffee1ff06c3ce477c13b9a8ba19d9dc217ed09a836973659f69e957c9e4e06e",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-z-flip5-folded.json",
     "accuracy": {
       "body_dimensions": "Published Samsung chassis dimensions excluding camera modules. Historical Fold3/4 and Flip3/4 thickness range retained in published_spec; closed wedge angle inferred from that range.",
       "screen_resolution": "Published native panel pixels; orientation follows portrait cover/inner in the physical open chassis. ADB feed maps through full native UVs.",
-      "screen_geometry": "Active full rectangle from published diagonal/native aspect, fitted within chassis. Rounded corners, bezels, cover folder contour, camera cutouts are photo estimates; not CAD.",
+      "screen_geometry": "Active full rectangle from published diagonal/native aspect, fitted within chassis. Rounded corners, bezels, cover folder contour, camera cutouts are photo estimates; not CAD. Folder recess and placement estimated from Samsung lit FlexWindow photograph (Main1.gif, frame 20); Flip6/7 FE share the same panel envelope. Shallow S transition and camera clearance retained in mesh and frame.",
       "camera_geometry": "Lens and flash centres/diameters from source icon measurements of Samsung artwork. Samsung-specific individual rings/capsule, no Pixel bar. Protrusions and optical internals are estimates.",
       "finishes": "Official standard and online-exclusive finish names; approximate sampled sRGB. Bespoke combinations and special editions excluded.",
       "hinge": "Rigid articulated panels with physically positioned axes; external barrel dimensions/curves estimated. Internal multi-link and flexible OLED bend not simulated.",
@@ -546,6 +563,7 @@
     },
     "sources": [
       "https://api.samsungmobilepress.com/press-releases/samsung-galaxy-z-flip5-and-galaxy-z-fold5-delivering-flexibility-and-versatility-without-compromise",
+      "https://news.samsung.com/global/flexing-new-possibilities-how-to-make-the-most-of-your-galaxy-z-flip5-with-flex-window",
       "https://api.samsungmobilepress.com/media-assets/galaxy-z-flip5"
     ]
   }

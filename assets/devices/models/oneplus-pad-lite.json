@@ -1,0 +1,173 @@
+{
+  "id": "oneplus-pad-lite",
+  "name": "OnePlus Pad Lite",
+  "state": "default",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        1200,
+        1920
+      ],
+      "size_mm": [
+        148.0817038368885,
+        236.93072613902157
+      ],
+      "center_mm": [
+        0.0,
+        0.0,
+        3.7299997806549072
+      ],
+      "corner_radius_mm": 1,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0,
+      "frame_bounds_mm": [
+        9.189148081555757,
+        8.989636930489212,
+        148.0817038368885,
+        236.93072613902157
+      ],
+      "frame_screen_px": null,
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "width": 166.46,
+        "height": 254.91,
+        "depth": 7.39,
+        "corner_radius": 9.989636930489212,
+        "edge_roll": 0.3,
+        "front_rail_mm": 0.4,
+        "corner_radii_mm": [
+          9.989636930489212,
+          9.989636930489212,
+          9.989636930489212,
+          9.989636930489212
+        ]
+      },
+      "cutouts": [
+        {
+          "center_mm": [
+            -78.63542595922212,
+            0
+          ],
+          "radius_mm": 1.2
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "body_mm": {
+    "width": 166.46,
+    "height": 254.91,
+    "depth": 7.39,
+    "corner_radius": 9.989636930489212,
+    "edge_roll": 0.3,
+    "front_rail_mm": 0.4,
+    "corner_radii_mm": [
+      9.989636930489212,
+      9.989636930489212,
+      9.989636930489212,
+      9.989636930489212
+    ]
+  },
+  "icon_morph": {
+    "windows": 1,
+    "kind": "tablet"
+  },
+  "articulation": null,
+  "robot_motion": null,
+  "panels": [],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/oneplus-pad-lite-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "logo": "logo",
+    "band": "band",
+    "black": "black",
+    "flash": "flash"
+  },
+  "finishes": [
+    {
+      "name": "Aero Blue",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.6352941176470588,
+            0.7058823529411765,
+            0.7450980392156863
+          ],
+          "metal": 0.6,
+          "rough": 0.4
+        },
+        "rail": {
+          "rgb": [
+            0.6352941176470588,
+            0.7058823529411765,
+            0.7450980392156863
+          ],
+          "metal": 0.8,
+          "rough": 0.3
+        },
+        "bar": {
+          "rgb": [
+            0.5209411764705881,
+            0.5788235294117647,
+            0.6109803921568627
+          ],
+          "metal": 0.75,
+          "rough": 0.3
+        },
+        "logo": {
+          "rgb": [
+            0.3811764705882353,
+            0.4235294117647059,
+            0.4470588235294118
+          ],
+          "rough": 0.45
+        },
+        "band": {
+          "rgb": [
+            0.724235294117647,
+            0.8047058823529412,
+            0.8494117647058823
+          ],
+          "metal": 0.5,
+          "rough": 0.35
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/oneplus-pad-lite.7616dfc7e8b8.glb.gz",
+  "sha256": "7616dfc7e8b89c457c20090e0cb886e8c5ac8624b6dcbf589d461bbc67cf223b",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/oneplus-pad-lite.json",
+    "accuracy": {
+      "body_dimensions": "Official metric chassis dimensions. Corner radii and edge rolls are photoestimates, not measured CAD.",
+      "screen_geometry": "Published full diagonal and native pixel aspect; concentric estimated corners. Bezel camera estimated from product render.",
+      "camera_geometry": "Official rear-render fit, measurements below. Bump depth, roll, glass and optical internals illustrative; not OEM CAD.",
+      "finishes": "Official finish names, approximate existing collection sRGB swatches; not calibrated physical materials.",
+      "omissions": "Ports, speaker holes, alert slider, antenna seams and microscopic inscriptions omitted.",
+      "branding": "OnePlus contour from Documents brand_logos.json; finish-tinted mark, size/placement photoestimated from official rear render; make_device_branding applied before export."
+    },
+    "sources": [
+      "https://www.oneplus.com/uk/oneplus-pad-lite/specs",
+      "https://www.oneplus.com/content/dam/oneplus/2025/specs/pad-lite/images/Aero_Blue.png"
+    ]
+  }
+}

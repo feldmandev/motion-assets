@@ -1,0 +1,224 @@
+{
+  "id": "oneplus-12r",
+  "name": "OnePlus 12R",
+  "state": "default",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        1264,
+        2780
+      ],
+      "size_mm": [
+        71.27882691699992,
+        156.76830603580677
+      ],
+      "center_mm": [
+        0.0,
+        0.0,
+        4.434999942779541
+      ],
+      "corner_radius_mm": 6.4894134584999605,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0.7,
+      "frame_bounds_mm": [
+        2.0105865415000395,
+        3.265846982096619,
+        71.27882691699992,
+        156.76830603580677
+      ],
+      "frame_screen_px": null,
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "width": 75.3,
+        "height": 163.3,
+        "depth": 8.8,
+        "corner_radius": 8.5,
+        "edge_roll": 1.2,
+        "front_rail_mm": 0.4,
+        "front_curve": 0.7,
+        "corner_radii_mm": [
+          8.5,
+          8.5,
+          8.5,
+          8.5
+        ]
+      },
+      "cutouts": [
+        {
+          "center_mm": [
+            0,
+            75.45
+          ],
+          "radius_mm": 1.35
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "body_mm": {
+    "width": 75.3,
+    "height": 163.3,
+    "depth": 8.8,
+    "corner_radius": 8.5,
+    "edge_roll": 1.2,
+    "front_rail_mm": 0.4,
+    "front_curve": 0.7,
+    "corner_radii_mm": [
+      8.5,
+      8.5,
+      8.5,
+      8.5
+    ]
+  },
+  "icon_morph": {
+    "windows": 4,
+    "kind": "phone"
+  },
+  "articulation": null,
+  "robot_motion": null,
+  "panels": [],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/oneplus-12r-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "logo": "logo",
+    "band": "band",
+    "black": "black",
+    "flash": "flash"
+  },
+  "finishes": [
+    {
+      "name": "Iron Gray",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.16862745098039217,
+            0.17647058823529413,
+            0.19215686274509805
+          ],
+          "metal": 0.15,
+          "rough": 0.4
+        },
+        "rail": {
+          "rgb": [
+            0.16862745098039217,
+            0.17647058823529413,
+            0.19215686274509805
+          ],
+          "metal": 0.8,
+          "rough": 0.3
+        },
+        "bar": {
+          "rgb": [
+            0.13827450980392156,
+            0.14470588235294118,
+            0.15756862745098038
+          ],
+          "metal": 0.75,
+          "rough": 0.3
+        },
+        "logo": {
+          "rgb": [
+            0.3529411764705882,
+            0.3647058823529412,
+            0.3882352941176471
+          ],
+          "rough": 0.45
+        },
+        "band": {
+          "rgb": [
+            0.19223529411764706,
+            0.2011764705882353,
+            0.21905882352941175
+          ],
+          "metal": 0.5,
+          "rough": 0.35
+        }
+      }
+    },
+    {
+      "name": "Cool Blue",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.2784313725490196,
+            0.4392156862745098,
+            0.5490196078431373
+          ],
+          "metal": 0.15,
+          "rough": 0.4
+        },
+        "rail": {
+          "rgb": [
+            0.2784313725490196,
+            0.4392156862745098,
+            0.5490196078431373
+          ],
+          "metal": 0.8,
+          "rough": 0.3
+        },
+        "bar": {
+          "rgb": [
+            0.22831372549019607,
+            0.360156862745098,
+            0.45019607843137255
+          ],
+          "metal": 0.75,
+          "rough": 0.3
+        },
+        "logo": {
+          "rgb": [
+            0.5176470588235295,
+            0.7588235294117647,
+            0.9235294117647059
+          ],
+          "rough": 0.45
+        },
+        "band": {
+          "rgb": [
+            0.31741176470588234,
+            0.5007058823529411,
+            0.6258823529411764
+          ],
+          "metal": 0.5,
+          "rough": 0.35
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/oneplus-12r.d3d0f6789e0d.glb.gz",
+  "sha256": "d3d0f6789e0dfa864acb6072a28c31a280ebb6e52d95797b68fa6bf10ca5dcd0",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/oneplus-12r.json",
+    "accuracy": {
+      "body_dimensions": "Official metric chassis dimensions. Corner radii and edge rolls are photoestimates, not measured CAD.",
+      "screen_geometry": "Published full diagonal and native pixel aspect; concentric estimated corners. Bezel camera estimated from product render.",
+      "camera_geometry": "Official rear-render fit, measurements below. Bump depth, roll, glass and optical internals illustrative; not OEM CAD.",
+      "finishes": "Official finish names, approximate existing collection sRGB swatches; not calibrated physical materials.",
+      "omissions": "Ports, speaker holes, alert slider, antenna seams and microscopic inscriptions omitted.",
+      "branding": "OnePlus contour from Documents brand_logos.json; finish-tinted mark, size/placement photoestimated from official rear render; make_device_branding applied before export."
+    },
+    "sources": [
+      "https://www.oneplus.com/my/12r/specs",
+      "https://oasis.opstatics.com/content/dam/oasis/page/2024/global/product/aston/aston_blue.png"
+    ]
+  }
+}

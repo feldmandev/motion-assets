@@ -1,0 +1,82 @@
+{
+  "status": "pass",
+  "summary": "No material bug or false camera-clearance, native-UV, or current-mesh completeness claim found. No rebuilds, rerenders, source edits, or publication performed.",
+  "scope": {
+    "reviewed_source": [
+      "make_samsung_fold_profiles.py",
+      "geometry.py",
+      "build.py"
+    ],
+    "glb_exports": 30,
+    "distinct_samsung_models": 15,
+    "changed_exports": 10,
+    "method": "Decoded GLB POSITION/TEXCOORD_0/index buffers, unioned actual cover triangles, transformed actual camera rim/cover/flash vertices through node hierarchies into screen space, checked projected hull clearance and normal separation. Independently compared triangle union to profile polygon minus apertures; inspected SVG XML and existing images."
+  },
+  "findings": [],
+  "pass": [
+    {
+      "check": "Actual hardware clearance",
+      "evidence": "All 14 Flip exports have zero projected cover-screen overlap with camera rims, optical covers, and flash. Minimum gaps: Flip3 6.302791 mm; Flip4 6.216291 mm; Flip5 1.245025 mm; Flip6/7 FE 0.555323 mm; Flip7/8 camera rims 0.349893 mm and flash 0.249923 mm. Fold/TriFold hardware belongs to other leaves: unfolded projections are separate; folded projections overlap only across chassis depth, with at least 9.114999 mm normal separation."
+    },
+    {
+      "check": "Current concave triangulation and apertures",
+      "location": "geometry.py:77",
+      "evidence": "All six folder exports contain 398 screen triangles and no holes; all four full-screen Flip7/8 exports contain 520 triangles and three hardware holes. Independent surface-minus-triangle-union comparison of the helper has at most 1.86e-14 mm2 missing area for these inputs. Actual changed GLB meshes differ from expected polygons by less than 0.000222 mm2 symmetric area, consistent with float32 precision."
+    },
+    {
+      "check": "Native UV mapping",
+      "location": "build.py:284",
+      "evidence": "All 30 GLB cover meshes match the full fit_box_mm UV rectangle, accounting for glTF V inversion. Maximum absolute UV error below 5.3e-8; no remapping to the folder's inset edge or camera holes."
+    },
+    {
+      "check": "Frame correspondence",
+      "location": "build.py:697",
+      "evidence": "All ten changed SVGs match their declared opening dimensions and profile cutout centers/radii. Folder SVG polygons exactly represent outline_mm; mesh resampling difference is recorded below."
+    },
+    {
+      "check": "Optional-branch scope",
+      "location": "build.py:221",
+      "evidence": "Profile scan found mesh_cutouts enabled only for the ten intended Flip5/6/7 FE/7/8 cover screens. None uses edge_curve_mm or split object_parts; the false branch bypasses the helper. Existing Flip3/4, Fold and TriFold GLBs retain complete original cover surfaces within float32 precision."
+    },
+    {
+      "check": "Existing visual evidence and official sources",
+      "evidence": "Inspected Flip5-folded and Flip7-folded cover-front.png plus cover-check-closed.png. Samsung Flip5 Main1.gif frame 20 visibly supports a shallow S recess; Samsung Flip7 press images support a full cover surrounding two cameras and flash. Existing sample evidence shows unobstructed hardware."
+    },
+    {
+      "check": "Worker verification claims",
+      "evidence": "The reported 398/520 triangle counts, hardware-hole counts, clearances and native UV claims were independently confirmed for the relevant exports. Current results support safety of all 15 Samsung model cover layouts; historical performance of the worker's claimed checks is not independently provable."
+    }
+  ],
+  "concerns": [],
+  "limitations": [
+    {
+      "location": "build.py:214",
+      "detail": "Folder mesh uses a 400-point resampling, while build.py:725 emits the original outline into SVG. Measured maximum boundary separation is 0.0481521 mm (about 0.58 native pixel). Correspondence is approximate, not bit-for-bit; no material visual defect found."
+    },
+    {
+      "location": "geometry.py:85",
+      "detail": "The helper uses unconstrained Delaunay triangulation filtered by polygon coverage. Completeness was verified for every currently enabled input, not established for arbitrary future concave shapes. Flat circular-aperture use only was reviewed; combinations with curved/split screens or noncircular cutouts were not exercised."
+    },
+    {
+      "location": "make_samsung_fold_profiles.py:221",
+      "detail": "Samsung photos support topology and general appearance, not CAD-accurate contour, bezel, camera positions or corner radii. Flip6/7 FE reuse of the Flip5 envelope and Flip8 visual accuracy were not independently traced against separate official imagery."
+    },
+    {
+      "detail": "No rebuilds, rerenders, runtime/gallery checks, material/finish validation, or full articulation sweep. Existing screenshots were inspected as supplied; actual exported GLB geometry was independently inspected. No prior baseline snapshots were available to prove byte-for-byte absence of unrelated changes."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://news.samsung.com/global/flexing-new-possibilities-how-to-make-the-most-of-your-galaxy-z-flip5-with-flex-window",
+      "visual": "Main1.gif frame 20 and Main5.jpg"
+    },
+    {
+      "url": "https://img.global.news.samsung.com/global/wp-content/uploads/2023/08/Galaxy-Z-Flip5-Flex-Window_Main1.gif",
+      "visual": "Downloaded original GIF into memory and inspected frame 20 via temporary PNG."
+    },
+    {
+      "url": "https://www.samsungmobilepress.com/articles/samsung-galaxy-z-flip7-a-pocket-sized-ai-powerhouse-with-a-new-edge-to-edge-flexwindow",
+      "visual": "Inspected official hero and multi-device FlexWindow photographs."
+    }
+  ]
+}

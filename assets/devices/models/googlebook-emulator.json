@@ -63,6 +63,23 @@
       "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
     }
   ],
+  "body_mm": {
+    "width": 312.0,
+    "height": 218.0,
+    "depth": 4.8,
+    "base_depth_mm": 8.0,
+    "closed_depth_mm": 12.8,
+    "corner_radius": 6.5,
+    "edge_roll_mm": [
+      0.55,
+      0.45
+    ],
+    "front_curve": 0
+  },
+  "icon_morph": {
+    "windows": 0,
+    "kind": "laptop"
+  },
   "articulation": {
     "animation": "Fold",
     "axis": "X",
@@ -86,6 +103,7 @@
       "depth": 218.0
     }
   },
+  "robot_motion": null,
   "panels": [
     {
       "name": "Lid",

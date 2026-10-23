@@ -121,6 +121,22 @@
       "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
     }
   ],
+  "body_mm": {
+    "width": 143.2,
+    "height": 158.4,
+    "depth": 4.1,
+    "corner_radius": 7.0,
+    "edge_roll_mm": [
+      0.25,
+      0.2
+    ],
+    "front_rail_mm": 0.45,
+    "rear_inset": 0.45
+  },
+  "icon_morph": {
+    "windows": 0,
+    "kind": "phone"
+  },
   "articulation": {
     "animation": "Fold",
     "axis": "Y",
@@ -180,6 +196,7 @@
       }
     ]
   },
+  "robot_motion": null,
   "panels": [
     {
       "name": "Cover half",

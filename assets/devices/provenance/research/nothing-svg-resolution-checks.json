@@ -1,0 +1,11 @@
+{
+  "N1_upper_left_arc_degrees": [
+    199,
+    238
+  ],
+  "N2_left_pair_plus_separate_right_window": true,
+  "N3_alpha_samples": {
+    "segment": 0,
+    "gap": 255
+  }
+}

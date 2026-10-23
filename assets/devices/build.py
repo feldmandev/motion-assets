@@ -218,6 +218,9 @@ def prepare_screen(spec, body, screen_image=None):
     else:
         points = screen_outline(width, height, radius)
         faces = [tuple(range(len(points)))]
+    if spec.get('mesh_cutouts'):
+        from geometry import screen_mesh_with_cutouts
+        points, faces = screen_mesh_with_cutouts(points, spec['cutouts'])
     material = bpy.data.materials.new('Device screen | replace texture at runtime')
     material.use_nodes = True
     shader = material.node_tree.nodes['Principled BSDF']
@@ -571,6 +574,12 @@ def build(profile_path, output, screen_image=None, finish=None):
         apply_trace(profile)
         sync_slab_body_corners(profile)
         root = create_device(profile)
+    if profile.get('robot_arm'):
+        from robot_geometry import create_robot_arm
+        create_robot_arm(profile, root)
+    if profile.get('nothing_glyphs'):
+        from nothing_geometry import create_glyphs
+        create_glyphs(profile, root)
     parts = [root, *root.children_recursive]
     body = profile['body_mm']
     screens = []
@@ -623,6 +632,7 @@ def build(profile_path, output, screen_image=None, finish=None):
     for obj in parts:
         obj.select_set(True)
     bpy.ops.export_scene.gltf(filepath=str(output/'model.glb'), export_format='GLB',
+                              export_animation_mode='NLA_TRACKS' if profile.get('robot_arm') else 'ACTIONS',
                               use_selection=True, export_extras=True, export_yup=True)
     add_glb_iridescence(output/'model.glb', foldable=bool(profile.get('articulation')))
 
@@ -678,6 +688,8 @@ def build(profile_path, output, screen_image=None, finish=None):
         metadata['camera_measurement'] = profile['camera_measurement']
     if profile.get('articulation'):
         metadata['articulation'] = profile['articulation']
+    if profile.get('robot_motion'):
+        metadata['robot_motion'] = profile['robot_motion']
     (output/'device.json').write_text(json.dumps(metadata, indent=2)+'\n', encoding='utf-8')
     print(json.dumps(metadata['checks']))
 

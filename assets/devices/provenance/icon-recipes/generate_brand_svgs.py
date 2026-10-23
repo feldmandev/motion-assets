@@ -17,6 +17,22 @@ from generate_galaxy_svgs import GLASS_TINT, Doc, body_fill, flash, lens
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 COLORS = json.load(open(os.path.join(ROOT, "brand_colors.json")))
+COLORS["oneplus_11r"] = {
+    "galactic_silver": ("#d8e6ec", "#bac8d0", "#8eabb9"),
+    "sonic_black": ("#41464e", "#27292d", "#181b22"),
+}
+COLORS["oneplus_11"] = {
+    "titan_black": ("#282a2e", "#151618", "#1e2023"),
+    "eternal_green": ("#2e4a3e", "#1a2c25", "#20362d"),
+}
+COLORS["oneplus_12"] = {
+    "silky_black": ("#26282b", "#18191b", "#1c1e20"),
+    "flowy_emerald": ("#2d524a", "#1c3630", "#1e3b35"),
+}
+COLORS["oneplus_12r"] = {
+    "iron_gray": ("#4a4d52", "#2b2d31", "#33363b"),
+    "cool_blue": ("#7aa6c2", "#47708c", "#436f8c"),
+}
 
 
 # element helpers (all coordinates in W = body width; y from the top of the back)
@@ -148,10 +164,10 @@ PHONES = {
         arc(.50, .46, .435, 198, 250), arc(.50, .46, .435, -22, 22), arc(.50, .46, .435, 137, 157), redsq(.94, .855, grey=True)]),
     "nothing_phone_3": dict(camera_width=28, finish="nothing", aspect=75.6/160.6, r=0.15, el=[("3_back",), circ(.14, .19, .18, "dark"), peri(.14, .19, .09, .075), circ(.505, .175, .27, "body"), fl(.505, .19, .045), matrix(.81, .19, .29, "circle", 25),
         ln(.20, .47, .17, "metal"), ln(.505, .47, .17, "metal"), redsq(.39, .565)]),
-    "nothing_phone_3a": dict(camera_width=28, finish="nothing", aspect=77.5/163.5, r=0.15, el=[("3a_back",), circ(.5, .465, .76, "body"), pill(.205, .34, .795, .59, "metal"), pill(.245, .365, .755, .565, "dark"),
-        ln(.335, .465, .15), ln(.50, .465, .09), ln(.675, .465, .15), fl(.43, .21, .04), arc(.5, .465, .435, 198, 250), arc(.5, .465, .435, -15, 30), arc(.5, .465, .435, 134, 155), redsq(.93, .88)]),
+    "nothing_phone_3a": dict(camera_width=28, finish="nothing", aspect=77.5/163.5, r=0.15, el=[("3a_back",), circ(.5, .465, .76, "body"), pill(.205, .34, .795, .59, "metal"), pill(.245, .365, .56, .565, "dark"), circ(.675, .465, .20, "dark"),
+        ln(.335, .465, .15), ln(.50, .465, .09), fl(.43, .21, .04), arc(.5, .465, .435, 199, 238), arc(.5, .465, .435, -10, 30), arc(.5, .465, .435, 134, 155), redsq(.93, .88)]),
     "nothing_phone_3a_pro": dict(camera_width=28, finish="nothing", aspect=77.5/163.5, r=0.15, el=[("3a_back",), circ(.5, .465, .72, "metal"), circ(.5, .465, .69, "body"), ln(.34, .30, .115), ln(.34, .49, .13),
-        mod(.47, .405, .66, .615, .22, "dark"), peri(.565, .51, .115, .125), circ(.515, .23, .125, "dark"), fl(.515, .23, .065), arc(.5, .465, .435, 198, 250), arc(.5, .465, .435, -15, 30), arc(.5, .465, .435, 134, 155), redsq(.93, .88, grey=True)]),
+        mod(.47, .405, .66, .615, .22, "dark"), peri(.565, .51, .115, .125), circ(.515, .23, .125, "dark"), fl(.515, .23, .065), arc(.5, .465, .435, 199, 238), arc(.5, .465, .435, -10, 30), arc(.5, .465, .435, 134, 155), redsq(.93, .88, grey=True)]),
     "nothing_phone_3a_lite": dict(camera_width=26, finish="nothing", aspect=78/164, r=0.15, el=[("3a_lite_back",), ln(.14, .135, .155, "metal"), ln(.36, .205, .125, "metal"), ln(.14, .42, .155, "metal"), fl(.355, .375, .035), redsq(.95, .30),
         screw(.92, .09), screw(.045, .595), screw(.94, .595), screw(.045, 1.92), led(.90, 1.96, .045)]),
     "nothing_phone_4a": dict(camera_width=30, finish="nothing", aspect=77.6/164, r=0.15, el=[("4a_back",), pill(.17, .16, .83, .54, "camera"), pill(.225, .21, .795, .49, "camera_metal"),
@@ -174,6 +190,22 @@ PHONES = {
         pill(.14, .13, .335, .54, "dark"), ln(.235, .245, .145), ln(.235, .445, .145), pill(.405, .265, .52, .455, "dark"), fl(.463, .325, .055)]),
     "oneplus_13": dict(logo_fills={'#1e2d4a': '#6b7da6'}, camera_width=30, aspect=76.5/162.9, logo=("oneplus", .5, .52, .16), r=0.15, el=[circ(.37, .39, .65, "metal")] + quad(.37, .39, .115, .145)[:3] + [circ(.485, .505, .18, "dark"), fl(.485, .505, .05)]),
     "oneplus_13r": dict(camera_width=30, aspect=75.8/161.7, logo=("oneplus", .5, .52, .16), r=0.15, el=[circ(.37, .39, .61, "metal")] + quad(.37, .39, .115, .145)[:3] + [circ(.485, .505, .18, "dark"), fl(.485, .505, .06)]),
+    # Official 11R rear fit: device-models/research/oneplus-focused-measurements.json.
+    "oneplus_11r": dict(logo_fills={"#bac8d0": "#70787d", "#27292d": "#54575d"}, camera_width=30, aspect=74.3/163.4, logo=("oneplus", .5, .5125, .162), r=.15,
+        el=[mod(0, .1235, .339, .7545, .035, "metal"), circ(.339, .439, .631, "metal"), circ(.339, .439, .60, "camera_dark"),
+            ln(.226, .321, .179), ln(.465, .321, .179), ln(.226, .552, .179), circ(.465, .552, .179, "dark"), fl(.465, .552, .068)]),
+    # Same measured rear-reference set and shared stylization as the 11R above.
+    "oneplus_11": dict(logo_fills={"#151618": "#393a3e", "#1a2c25": "#405b51"}, camera_width=29, aspect=74.1/163.1, logo=("oneplus", .5, .5, .162), r=.15,
+        el=[mod(0, .116, .357, .762, .035, "metal"), circ(.357, .439, .646, "metal"), circ(.357, .439, .615, "camera_dark"),
+            ln(.244, .320, .173), ln(.502, .320, .173), ln(.244, .544, .173), circ(.502, .544, .173, "dark"), fl(.502, .544, .066)]),
+    "oneplus_12": dict(logo_fills={"#18191b": "#3e3f42", "#1c3630": "#446a62"}, camera_width=28, aspect=75.8/164.3, logo=("oneplus", .5, .5359, .1583), r=.15,
+        el=[mod(0, .1245, .386, .8455, .035, "metal"), circ(.386, .485, .721, "metal"), circ(.386, .485, .69, "body"),
+            ln(.254, .358, .192), ln(.511, .358, .192), circ(.254, .609, .192, "metal"), peri(.254, .609, .115, .13),
+            circ(.511, .609, .192, "dark"), dot(.511, .609, .026, "#aeb4b6"), fl(.117, .176, .042)]),
+    "oneplus_12r": dict(logo_fills={"#2b2d31": "#5a5d63", "#47708c": "#84c2ec"}, camera_width=29, aspect=75.3/163.3, logo=("oneplus", .5, .5119, .1594), r=.15,
+        el=[mod(0, .1315, .360, .7845, .035, "metal"), circ(.360, .458, .653, "metal"), circ(.360, .458, .622, "body"),
+            ln(.245, .336, .165), ln(.475, .336, .165), ln(.245, .571, .165), circ(.475, .571, .165, "dark"),
+            dot(.475, .571, .027, "#aeb4b6"), fl(.116, .181, .043)]),
     "oneplus_nord_6": dict(camera_width=30, aspect=77.5/162.5, logo=("oneplus", .5, .52, .17), r=0.155, el=[mod(.095, .065, .59, .595, .23, "body"),
         ln(.22, .22, .18), ln(.22, .47, .18), circ(.46, .21, .14, "dark"), fl(.46, .21, .065), dot(.46, .48, .10, "#1b1c1f")]),
     "oneplus_nord_5": dict(camera_width=30, aspect=77/163.4, logo=("oneplus", .5, .52, .17), r=0.15, el=[pill(.095, .065, .32, .72, "metal"), pill(.115, .085, .30, .70, "camera_dark"),
@@ -302,7 +334,7 @@ PHONES = {
     'honor_600': dict(logo=('honor', 0.5, 0.85, 0.25), r=.145, aspect=.6, el=[mod(.075, .075, .925, .61, .23, "body"), ln(.235, .225, .18), ln(.235, .45, .18), fl(.445, .25, .055), circ(.445, .425, .075, "dark")]),
     'honor_600_pro': dict(logo=('honor', 0.5, 0.85, 0.25), r=.145, aspect=.6, el=[mod(.075, .075, .925, .61, .23, "body"), ln(.235, .225, .18), ln(.235, .45, .18), ln(.45, .345, .18), fl(.80, .22, .055), circ(.80, .46, .075, "dark")]),
     'honor_magic_v2': dict(logo=('honor', 0.5, 0.85, 0.25), r=.145, aspect=.6, width=27, el=[mod(.07, .07, .49, .83, .13, "metal"), mod(.095, .095, .465, .81, .11, "dark"), ln(.255, .23, .17), ln(.255, .45, .17), ln(.255, .67, .17), fl(.41, .65, .05)]),
-    'honor_magic_v3': dict(logo=('honor', 0.5, 0.85, 0.25), r=.145, aspect=.6, width=27, el=[honor_cam('v3', .5, .46, .78), peri(.62, .31, .15, .14), ln(.345, .61, .17), ln(.655, .61, .17), fl(.5, .61, .05)]),
+    'honor_magic_v3': dict(logo=('honor', 0.5, 0.85, 0.25), r=.145, aspect=.6, width=27, el=[honor_cam('v3', .5, .396, .594), peri(.591, .282, .114, .107), ln(.382, .510, .129), ln(.618, .510, .129), fl(.5, .510, .038)]),
     'honor_magic_v5': dict(logo=('honor', 0.5, 0.85, 0.25), r=.145, aspect=.6, width=27, el=[honor_cam('v5', .5, .46, .84), peri(.63, .30, .17, .145), ln(.34, .61, .175), ln(.66, .61, .175), fl(.5, .61, .055)]),
     'honor_magic_v6': dict(logo=('honor', 0.5, 0.85, 0.25), r=.145, aspect=.6, width=27, el=[honor_cam('v6', .5, .46, .84), peri(.64, .32, .17, .145), ln(.34, .35, .16), ln(.35, .62, .17), fl(.55, .61, .055)]),
     'honor_robot_phone': dict(logo=('honor', 0.5, 0.85, 0.25), r=.145, aspect=.6, el=[mod(.065, .07, .935, .66, .19, "dark"), mod(.115, .11, .465, .61, .18, "metal"), peri(.29, .42, .22, .21), ln(.62, .27, .12), ln(.62, .50, .11), fl(.81, .27, .055)]),
@@ -519,12 +551,20 @@ def draw_elements(doc, els, X0, Y0, k, top, mid, bot, body_width=None, camera_wi
             if style in ("v3", "v5"):
                 # HONOR calls both V3 and V5 housings an octagonal dome. V5's is broader
                 # and softer, with a thicker jewellery-like rim in the official renders.
-                cut = r * (.34 if style == "v3" else .27)
+                cut = r * (.58 if style == "v3" else .27)
                 pts = [(x-r+cut, y-r), (x+r-cut, y-r), (x+r, y-r+cut), (x+r, y+r-cut),
                        (x+r-cut, y+r), (x-r+cut, y+r), (x-r, y+r-cut), (x-r, y-r+cut)]
                 outer = "M" + "L".join(f"{f(px)},{f(py)}" for px, py in pts) + "Z"
+                if style == "v3":
+                    # Official rear render: ~.66 body width; deep diagonal cuts with soft joins.
+                    outer = ""
+                    for i, (px, py) in enumerate(pts):
+                        ax, ay = pts[i - 1]
+                        bx, by = pts[(i + 1) % len(pts)]
+                        outer += f"{'M' if i == 0 else 'L'}{f(px + (ax - px) * .2)},{f(py + (ay - py) * .2)}Q{f(px)},{f(py)} {f(px + (bx - px) * .2)},{f(py + (by - py) * .2)}"
+                    outer += "Z"
                 doc.add(outer, metal)
-                inset = size * (.075 if style == "v3" else .065)
+                inset = size * .065
                 ir = r - inset
                 if style == "v3":
                     # Magic V3: faceted/octagonal metal jewellery around a circular black glass disk.
@@ -632,13 +672,13 @@ def nothing_element(doc, e, X0, Y0, k, top, mid, bot):
         else:
             glyph_path('M.335,.163A.13,.13 0 0 0 .075,.163V.27')
             glyph_path('M.075,.325V.378A.13,.13 0 0 0 .335,.378V.33')
-            for d in ('M.075,.73Q.18,.615 .34,.575',
-                      'M.40,.56Q.69,.50 .925,.73',
-                      'M.075,.80V1.10',
-                      'M.075,1.16Q.24,1.35 .46,1.38',
-                      'M.53,1.38Q.76,1.35 .925,1.16',
-                      'M.925,.95V1.10'):
-                glyph_path(d)
+            for d in ('M.075,.73C.15,.64 .24,.59 .34,.565',
+                      'M.40,.55C.60,.51 .79,.59 .925,.73',
+                      'M.075,.79V1.08',
+                      'M.075,1.15C.17,1.28 .31,1.37 .46,1.38',
+                      'M.53,1.38C.69,1.37 .83,1.29 .925,1.16',
+                      'M.925,.94V1.09'):
+                glyph_path(d, .055)
             glyph_path('M.67,.28L.75,.19')
             glyph_path('M.79,.145L.86,.065')
         glyph_path('M.5,1.45V1.56')
@@ -653,11 +693,11 @@ def nothing_element(doc, e, X0, Y0, k, top, mid, bot):
             raw(doc, f'<path d="M.09,1.04H.62C.99,1.04 .99,1.51 .62,1.51H.40L.23,1.70V2.03" fill="none" stroke="{contour}" stroke-width=".07" stroke-linecap="round" stroke-linejoin="round"/>')
         elif kind == "3_back":
             # Asymmetric upper tiles, centre spine and semicircular coil on the right.
-            raw(doc, f'<path d="M.06,.12Q.06,.055 .14,.055H.25Q.34,.055 .34,.16Q.34,.25 .23,.31L.16,.335H.06Z" fill="{bright}"/>'
-                     f'<path d="M.36,.665H.665V1.555H.36Z" fill="{bright}"/>'
-                     f'<path d="M.67,.37C.84,.37 .97,.50 .97,.67C.97,.84 .84,.965 .67,.965Z" fill="{bright}"/>'
+            raw(doc, '<path d="M.06,.12Q.06,.055 .14,.055H.25Q.34,.055 .34,.16Q.34,.25 .23,.31L.16,.335H.06Z" fill="none"/>'
+                     '<path d="M.36,.665H.665V1.555H.36Z" fill="none"/>'
+                     '<path d="M.67,.37C.84,.37 .97,.50 .97,.67C.97,.84 .84,.965 .67,.965Z" fill="none"/>'
                      '<path d="M.06,.36H.955M.67,.05V.36M.36,.36V1.855M.665,.37V1.555" fill="none"/>'
-                     f'<path d="{rounded_rect(.395, 1.89, .24, .22, .065)}" fill="{bright}"/>')
+                     f'<path d="{rounded_rect(.395, 1.89, .24, .22, .065)}" fill="none"/>')
         else:
             # Visible accessory screws have metal rims and diagonal slots.
             for x, y in ((.36, .04), (.055, .60), (.955, .60), (.055, 1.95)):
@@ -671,9 +711,8 @@ def nothing_element(doc, e, X0, Y0, k, top, mid, bot):
         edge = mix(mid, "#000000", .12)
         raw(doc, f'<g transform="translate({f(X0)} {f(Y0)}) scale({k})" stroke="{edge}" stroke-width=".012">')
         if kind == "3a_back":
-            # Two restrained wiring contours instead of filled ribbon shapes.
-            contour = doc.lin(0, 1, 0, 2, [(0, mix(mid, top, .18)), (1, mix(mid, bot, .12))])
-            raw(doc, f'<path d="M.12,1.08H.60Q.85,1.08 .85,1.32V1.57M.41,1.23V1.62Q.41,1.79 .62,1.79H.70" fill="none" stroke="{contour}" stroke-width=".055" stroke-linecap="round" stroke-linejoin="round"/>')
+            # Wiring boundaries stay quiet; only the three camera arcs are Glyph lights.
+            raw(doc, '<path d="M.12,1.03H.60Q.85,1.03 .85,1.32V1.57M.48,1.29V1.62Q.48,1.79 .68,1.79H.73" fill="none" stroke-width=".018" stroke-linejoin="round"/>')
         elif kind == "3a_lite_back":
             panel_fill = doc.lin(0, .335, 0, 1.765, [(0, mix(mid, top, .18)), (1, mix(mid, bot, .25))])
             raw(doc, f'<path d="{rounded_rect(.27, .335, .68, 1.43, .11)}" fill="{panel_fill}"/>'
@@ -683,14 +722,11 @@ def nothing_element(doc, e, X0, Y0, k, top, mid, bot):
             raw(doc, f'<path d="{circle(.15, 2.00, .085)}" fill="{bright}"/>')
         raw(doc, '</g>')
     elif kind == "4a_back":
-        # Only the two prominent lower-back contours; omit the small chassis details.
+        # Fitted to the official lower cover: a broad shoulder and narrow lower stem.
         main = "M.10,.99Q.10,.79 .25,.79H.65Q.91,.79 .91,1.02V1.91Q.91,2.02 .79,2.02H.56Q.39,2.02 .39,1.86V1.45Q.39,1.33 .26,1.26L.18,1.21Q.10,1.17 .10,1.06Z"
-        bright = doc.lin(0, .8, 1, 1.9,
-                         [(0, mix(top, "#ffffff", .18)), (1, mix(bot, "#000000", .08))])
         edge = mix(mid, "#000000", .12)
         raw(doc, f'<g transform="translate({f(X0)} {f(Y0)}) scale({k})">'
-                 f'<path d="{main}" fill="{bright}" stroke="{edge}" stroke-width=".012"/>'
-                 f'<path d="{rounded_rect(.54, 1.28, .23, .58, .05)}" fill="none" stroke="{edge}" stroke-width=".012"/>'
+                 f'<path d="{main}" fill="none" stroke="{edge}" stroke-width=".012"/>'
                  '</g>')
     elif kind == "arc":
         _, cx, cy, r, a0, a1 = e
@@ -719,7 +755,7 @@ def nothing_element(doc, e, X0, Y0, k, top, mid, bot):
         _, x, y0, y1, n, red_last, width = e
         bw = width * k * 1.25
         (xa, ya), (_, yb) = P(x, y0), P(x, y1)
-        doc.add(rounded_rect(xa - bw / 2 - .12, ya - .12, bw + .24, yb - ya + .24, bw / 2), edge)
+        raw(doc, f'<path data-detail="glyph-backing" d="{rounded_rect(xa - bw / 2 - .12, ya - .12, bw + .24, yb - ya + .24, bw / 2)}" fill="{edge}"/>')
         gap = .18
         sh = (yb - ya - gap * (n - 1)) / n
         for i in range(n):

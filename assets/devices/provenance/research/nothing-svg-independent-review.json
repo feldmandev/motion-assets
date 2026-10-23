@@ -1,0 +1,57 @@
+{
+  "scope": "Independent read-only review of Nothing Phone 2, 3, 3a, 3a Pro and 4a; 3a Lite decoding only. Only this report was written; no generator, SVG, PNG or gallery changes.",
+  "result": "3 specific remaining inaccuracies; no broad redesign requested",
+  "references": "tmp/ref5/nothing-svg-review/references.json and its official product PNGs; contact-sheet.png; official Phone 2 rear image https://cdn.shopifycdn.net/s/files/1/0692/5988/6904/files/BA_ALAK_200.1001.png?v=1688611423 linked from https://checkout-eu.nothing.tech/pages/phone-2; official Glyph map https://github.com/Nothing-Developer-Programme/Glyph-Developer-Kit/blob/main/README.md",
+  "findings": [
+    {
+      "id": "N1",
+      "severity": "medium",
+      "models": [
+        "nothing_phone_3a",
+        "nothing_phone_3a_pro"
+      ],
+      "variants": "all colors and monochrome",
+      "issue": "Upper-left Glyph arc is rotated approximately 10-12 degrees clockwise from the official rear images, moving its upper endpoint too far toward the top center.",
+      "evidence": "PHONES uses arc(.5, .465, .435, 211, 250) for both models. In the 2048x2048 official PNGs, bright pixels in this strip span approximately 197-239 degrees about the camera center (1024, 535), including rounded caps; their midpoint is approximately 218-219 degrees versus the SVG centerline midpoint 230.5. The official right strip spans approximately -14 to 32 degrees and lower-left 133 to 154, close to the current -10..30 and 134..155. The supplied references.json upper-left angle estimate repeats the generator value and should not override the photograph.",
+      "location": "generate_brand_svgs.py: PHONES nothing_phone_3a / nothing_phone_3a_pro; corresponding SVG upper-left paths begin M43.56,35.75 and end 49.83,30.57",
+      "targeted_action": "Rotate only the shared upper-left arc about 10-12 degrees counterclockwise, fitting endpoints visually while retaining its thick stroke and three-strip layout."
+    },
+    {
+      "id": "N2",
+      "severity": "medium",
+      "models": [
+        "nothing_phone_3a"
+      ],
+      "variants": "white, blue, black and monochrome",
+      "issue": "The camera glass is one uninterrupted capsule, losing the separate round right camera window visible in the official rear image.",
+      "evidence": "phone-3a-official.png shows a black capsule around the left two cameras plus a separate black circular window on the right inside the common metal island. Current SVGs use pill(.245, .365, .755, .565, 'dark'); the enclosed lens elements are skipped by draw_elements, leaving one continuous glass shape in the contact sheet and monochrome. The analogous left-pair/right-circle separation is already retained in the current 4a artwork.",
+      "location": "generate_brand_svgs.py: PHONES nothing_phone_3a; device_icons_svg/nothing/phones/ic_nothing_phone_3a_*_icon.svg",
+      "targeted_action": "Retain the common island, but split its black glass into a left capsule and separate right circle. Internal lens reflections or additional camera detail are unnecessary."
+    },
+    {
+      "id": "N3",
+      "severity": "medium",
+      "models": [
+        "nothing_phone_4a"
+      ],
+      "variants": "monochrome only; remaining inconsistency, not established as a new regression",
+      "issue": "The seven-part Glyph bar collapses into one uninterrupted transparent capsule in monochrome.",
+      "evidence": "The official PNG and all four color SVGs show six white segments and a red final indicator. The monochrome mask paints the full backing capsule black at x=66.09..68.01, y=36.23..46.22, then paints all seven contained segments black. This erases every gap. Live browser canvas sampling at x=67.05 gives alpha=0 both in the first segment (y=37) and its gap (y=37.68), corroborating the continuous bar in the contact sheet.",
+      "location": "device_icons_svg/nothing/phones/ic_nothing_phone_4a_monochrome_icon.svg: phone-cutouts mask, final eight paths",
+      "targeted_action": "Preserve the gaps between seven monochrome apertures with a Nothing-specific correction; no other generator changes are needed."
+    }
+  ],
+  "passes": {
+    "style": "Shared 30x50 wider silhouettes, rounded corners, richer gradients and restrained rear contours are appropriate. No CAD proportions, screws, fine wiring or extra decorative panels requested.",
+    "phone_2": "Two vertical cameras and their halo remain legible; coil has six separate rounded sections, split diagonal light and bottom stem/dot. No remaining angular-coil or base-shape issue found.",
+    "phone_3": "Asymmetric three-camera layout, top-right circular Matrix, subtle center seams and right semicircle match the source at the intended abstraction. The bright filled center column is absent. Monochrome intentionally simplifies the Matrix to a disk.",
+    "phone_3a_pro": "Circular island, two left round cameras, upper flash and lower-right periscope are correctly distinguished. No additional camera-detail demand.",
+    "phone_4a_bottom": "Broad upper shoulder transitions into the right lower stem as in the official cover; invented inset lower rectangle is absent. Omitting small embossed features is appropriate.",
+    "variant_geometry": "All 13 colored SVGs have identical geometry within each model; finish gradients remain present. All 18 scoped SVGs plus all four unchanged 3a Lite SVGs parse and render locally at 864x864 with nonempty bounds (312,232,552,632). The 18 scoped SVGs also return HTTP 200 and parse as XML live.",
+    "3a_lite_previews": "All four existing PNGs in tmp/ref5/all_phones decode locally with Pillow and live with Image.decode(): black 8528 bytes, blue 10611, monochrome 2445, white 8032; each 140x180, HTTP 200, image/png. Live base URL http://127.0.0.1:8769/tmp/ref5/all_phones/. No broken URL issue; assets unchanged by this review."
+  },
+  "limits": [
+    "No pre-correction SVG/generator snapshot was supplied, so historical finish/logo preservation cannot be independently proven. Current scoped SVGs contain no evenodd logo postpass paths, and their PHONES entries have no logo spec; this is not reported as missing branding. Existing gradients are intact. Do not alter finish-aware branding or add an official wordmark as part of these corrections.",
+    "Findings identify current residual inaccuracies, not necessarily regressions introduced by the worker. No build, gallery rebuild, full test suite or code modification was performed."
+  ]
+}

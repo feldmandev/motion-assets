@@ -104,18 +104,23 @@ def screen(name, resolution, diagonal, dimensions, center, radius, panel):
 
 
 def folder_outline(width,height,radius):
-    points = [[-width/2,-height/2],[width/2,-height/2],[width/2,height/2],
-              [width*.10,height/2],[width*.10,height*.25],[-width/2,height*.25]]
-    rounded = []
-    for i,p in enumerate(points):
-        prev,nxt = points[i-1],points[(i+1)%len(points)]
-        r = min(radius,math.dist(prev,p)*.45,math.dist(nxt,p)*.45)
-        before = [v+(u-v)*r/math.dist(prev,p) for u,v in zip(prev,p)]
-        after = [v+(u-v)*r/math.dist(nxt,p) for u,v in zip(nxt,p)]
-        for step in range(9):
-            t = step/8
-            rounded.append([(1-t)**2*a+2*t*(1-t)*v+t*t*b for a,v,b in zip(before,p,after)])
-    return rounded
+    # Samsung's lit FlexWindow photograph (Main1.gif, frame 20): the recess is
+    # ~10% of the bounding height, joined by a shallow S, not a square step.
+    x,y,r = width/2,height/2,min(radius,3.2)
+    notch = height*.39
+    points = [[-x,-y+r]]
+    def curve(a,b,end):
+        start = points[-1]
+        for step in range(1,17):
+            t = step/16; u = 1-t
+            points.append([u**3*s+3*u*u*t*c+3*u*t*t*d+t**3*e for s,c,d,e in zip(start,a,b,end)])
+    curve([-x,-y],[-x,-y],[ -x+r,-y])
+    points.append([x-r,-y]); curve([x,-y],[x,-y],[x,-y+r])
+    points.append([x,y-r]); curve([x,y],[x,y],[x-r,y])
+    points.append([width*.12,y])
+    curve([width*.025,y],[width*.015,notch],[ -width*.08,notch])
+    points.append([-x+r,notch]); curve([-x,notch],[-x,notch],[-x,notch-r])
+    return points
 
 
 def camera(key, panel_body):
@@ -209,10 +214,16 @@ def two_panel(key, state):
         cover['glass_border_mm'] = .6
         if style=='folder':
             cover['frame_use_outline'] = True
-            # Native framebuffer bounding rectangle; opaque upper-left camera exclusion.
+            cover['center_mm'][1] = -4.8
+            cover['corner_radius_mm'] = 3.2
+            cover['mesh_cutouts'] = True
+            data['sources'].append('https://news.samsung.com/global/flexing-new-possibilities-how-to-make-the-most-of-your-galaxy-z-flip5-with-flex-window')
+            data['accuracy']['screen_geometry'] += ' Folder recess and placement estimated from Samsung lit FlexWindow photograph (Main1.gif, frame 20); Flip6/7 FE share the same panel envelope. Shallow S transition and camera clearance retained in mesh and frame.'
+            # Full native UV rectangle; the edge recess excludes cameras and flash.
             sw,sh = cover['fit_box_mm']
             cover['outline_mm'] = folder_outline(sw,sh,cover['corner_radius_mm'])
         elif style=='full':
+            cover['mesh_cutouts'] = True
             camera_panel['camera']['flash_offset_mm'] = .17
             # Rear-view X reverses at the cover screen's Y=180° mapping.
             cover['cutouts'] = [{'center_mm':[-p[0]-cover['center_mm'][0],p[1]-cover['center_mm'][1]],'radius_mm':d/2+.35}

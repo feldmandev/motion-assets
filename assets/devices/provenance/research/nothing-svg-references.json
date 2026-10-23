@@ -1,0 +1,108 @@
+{
+  "official_product_images": {
+    "phone-3": "https://cdn.shopify.com/s/files/1/0376/5420/0459/files/0000s_0011_Phone-3-white.png?v=1753434595",
+    "phone-3a": "https://cdn.shopify.com/s/files/1/0585/2479/5086/files/0000s_0004_Phone-3a-white.png?v=1753757233",
+    "phone-3a-pro": "https://cdn.shopify.com/s/files/1/0585/2479/5086/files/0000s_0009_Phone-3a-Pro-grey.png?v=1753757345",
+    "phone-4a": "https://cdn.shopify.com/s/files/1/0376/5420/0459/files/Phone-4a-White.png?v=1771948069"
+  },
+  "rear_detail_comparison": "../nothing-source-detail.jpg",
+  "rear_detail_crops": "../backs/nothing_phone_*.png",
+  "note": "Existing rear crops are GSM-style product reference images; official product PNGs downloaded separately. Coordinates in generate_brand_svgs.py PHONES are stylized estimates, not CAD. Preserve source accuracy and finish-aware make_device_branding.",
+  "measurements": {
+    "phone-2": {
+      "body_mm": [
+        76.4,
+        162.1
+      ],
+      "camera_centers_W": [
+        [
+          0.205,
+          0.175
+        ],
+        [
+          0.205,
+          0.405
+        ]
+      ],
+      "coil": "clipped round sides; split top arc, separate left/right verticals and split lower arc; no angular polygon corners"
+    },
+    "phone-3": {
+      "body_mm": [
+        75.6,
+        160.6
+      ],
+      "camera_centers_W": [
+        [
+          0.14,
+          0.19
+        ],
+        [
+          0.2,
+          0.47
+        ],
+        [
+          0.505,
+          0.47
+        ]
+      ],
+      "matrix": {
+        "center_W": [
+          0.81,
+          0.19
+        ],
+        "diameter_W": 0.29
+      },
+      "rear": "thin asymmetric panel seams, right semicircle; no bright filled center column"
+    },
+    "phone-3a": {
+      "body_mm": [
+        77.5,
+        163.5
+      ],
+      "camera_center_W": [
+        0.5,
+        0.465
+      ],
+      "glyphs": {
+        "center_W": [
+          0.5,
+          0.465
+        ],
+        "radius_W": 0.435,
+        "angle_degrees_clockwise_from_right": [
+          [
+            211,
+            250
+          ],
+          [
+            -10,
+            30
+          ],
+          [
+            134,
+            155
+          ]
+        ]
+      }
+    },
+    "phone-3a-pro": {
+      "body_mm": [
+        77.5,
+        163.5
+      ],
+      "camera_disc_W": 0.72,
+      "glyphs": "same three separate outer arcs as 3a; periscope square in lower right of disc"
+    },
+    "phone-4a": {
+      "body_mm": [
+        77.6,
+        164
+      ],
+      "rear": "large rounded upper shoulder tapering into narrow right lower stem; restrained outline, no inset invented lower rectangle",
+      "glyph": "7 vertical segments at upper right, final segment red"
+    }
+  },
+  "official_phone2_reference": "https://in.nothing.tech/pages/phone-2",
+  "official_glyph_map": "https://github.com/Nothing-Developer-Programme/Glyph-Developer-Kit/blob/main/README.md",
+  "glyph_map_notes": "Phone (3a)/(3a) Pro share three strips; Phone (2) coil has six separately controlled sections. Phone (4a): six white controllable zones plus red indicator, not seven white zones."
+}

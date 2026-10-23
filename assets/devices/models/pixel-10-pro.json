@@ -18,9 +18,9 @@
         147.03396226415097
       ],
       "center_mm": [
-        -0.05148247978436658,
-        -0.20592991913746633,
-        4.3275
+        -0.05148247629404068,
+        -0.20592990517616272,
+        4.3274993896484375
       ],
       "corner_radius_mm": 9.257540902964962,
       "rotation_deg": [
@@ -30,8 +30,8 @@
       ],
       "edge_curve_mm": 0,
       "frame_bounds_mm": [
-        2.9997304582210162,
-        3.0889487870619803,
+        2.9997304617113443,
+        3.0889487731006824,
         65.89757412398923,
         147.03396226415097
       ],
@@ -61,7 +61,18 @@
       "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
     }
   ],
+  "body_mm": {
+    "width": 72,
+    "height": 152.8,
+    "depth": 8.6,
+    "corner_radius": 11.8
+  },
+  "icon_morph": {
+    "windows": 0,
+    "kind": null
+  },
   "articulation": null,
+  "robot_motion": null,
   "panels": [],
   "frames": [
     {
@@ -218,8 +229,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/pixel-10-pro.d68f8ceec1f5.glb.gz",
-  "sha256": "d68f8ceec1f507d842b19b4cf2d3a0eb1191ee402e89e878233cb1f793011123",
+  "glbUrl": "assets/devices/models/pixel-10-pro.bd4748c1ec31.glb.gz",
+  "sha256": "bd4748c1ec310a0b7d48cfc4c14d8d7b461d02d3265abadbfe59164a7843834d",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/pixel-10-pro.json",

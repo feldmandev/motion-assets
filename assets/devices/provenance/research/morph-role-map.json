@@ -1,0 +1,4417 @@
+{
+  "version": 1,
+  "path_index": "Zero-based drawable path document order, excluding defs. All definition paths are explicitly unsupported definition-path.",
+  "coordinate_contract": {
+    "phone": "profile rear-view u = 0.5 - x/body.width; v = 0.5 - y/body.height. Positive model X is LEFT in the back view.",
+    "oneplus_tablet": "Portrait chassis rotated to landscape: u = 0.5 + y/body.height; v = 0.5 - x/body.width; matches make_oneplus_profiles.py xy(u,v).",
+    "icon": "Existing stylized geometry; source PHONES lens y uses camera_width, not normalized physical body height. Camera indices verified by spatial assignment after the back-view transform."
+  },
+  "notes": [
+    "flash-rim-0 has no separate mesh: composite backing on camera/body/cover support; Flash 0 remains diffuser.",
+    "Camera index evidence uses actual SVG path bounds and profile camera.windows. Identity assignment is the unique minimum squared-distance assignment after back-view transform.",
+    "Definition paths are explicitly unsupported definition-path. No drawable fill=none stroke exists in this reviewed batch; new strokes require a dedicated stroke_roles entry.",
+    "Artwork uses stylized proportions, so normalized source/profile positions may differ; metadata does not correct geometry."
+  ],
+  "models": {
+    "apple_iphone_11": {
+      "profile": "profiles/iphone-11.json",
+      "geometry_sha256": [
+        "c14880cb4934a625ac3d3b04d1b4bc4906d97d386c4c519ea05c8d17c22a2cd6"
+      ],
+      "roles": [
+        "body",
+        "logo",
+        "bar",
+        "glass-0",
+        "glass-1",
+        "flash-rim-0",
+        "flash-0"
+      ],
+      "stroke_roles": {},
+      "unsupported": {},
+      "source_spec": "PHONES[apple_iphone_11]",
+      "notes": [],
+      "coordinate_sha256": "6ee55671db2ad5de5b904190f0276b5739f643304af59e537cb0cb6d35b2ee5d",
+      "export": "exports/iphone-11/model.glb",
+      "mesh_targets": {
+        "body": [
+          "Aluminum enclosure",
+          "Rear glass"
+        ],
+        "logo": [
+          "Apple logo | 0",
+          "Apple logo | 1"
+        ],
+        "bar": [
+          "Camera housing"
+        ],
+        "glass-0": [
+          "Black optical backing 0",
+          "Optical well 0"
+        ],
+        "glass-1": [
+          "Black optical backing 1",
+          "Optical well 1"
+        ],
+        "flash-rim-0": [],
+        "flash-0": [
+          "Flash 0"
+        ]
+      },
+      "camera_index_evidence": [
+        {
+          "window": 0,
+          "path": 3,
+          "source_uv": [
+            0.215,
+            0.129
+          ],
+          "profile_xy_mm": [
+            25.38,
+            62.975
+          ],
+          "profile_back_uv": [
+            0.16482,
+            0.0827
+          ]
+        },
+        {
+          "window": 1,
+          "path": 4,
+          "source_uv": [
+            0.215,
+            0.252
+          ],
+          "profile_xy_mm": [
+            25.38,
+            48.695
+          ],
+          "profile_back_uv": [
+            0.16482,
+            0.17732
+          ]
+        }
+      ]
+    },
+    "apple_iphone_11_pro": {
+      "profile": "profiles/iphone-11-pro.json",
+      "geometry_sha256": [
+        "503e57e4142442dd92f102203474d64df1f48993da45c595b577da2d3c680e6d"
+      ],
+      "roles": [
+        "body",
+        "logo",
+        "bar",
+        "glass-0",
+        "glass-1",
+        "glass-2",
+        "flash-rim-0",
+        "flash-0"
+      ],
+      "stroke_roles": {},
+      "unsupported": {},
+      "source_spec": "PHONES[apple_iphone_11_pro]",
+      "notes": [],
+      "coordinate_sha256": "a0688e8a16c76f9b9ee983a3bef9fea44371b7cc7215208a30d4708adb704b35",
+      "export": "exports/iphone-11-pro/model.glb",
+      "mesh_targets": {
+        "body": [
+          "Aluminum enclosure",
+          "Rear glass"
+        ],
+        "logo": [
+          "Apple logo | 0",
+          "Apple logo | 1"
+        ],
+        "bar": [
+          "Camera housing"
+        ],
+        "glass-0": [
+          "Black optical backing 0",
+          "Optical well 0"
+        ],
+        "glass-1": [
+          "Black optical backing 1",
+          "Optical well 1"
+        ],
+        "glass-2": [
+          "Black optical backing 2",
+          "Optical well 2"
+        ],
+        "flash-rim-0": [],
+        "flash-0": [
+          "Flash 0"
+        ]
+      },
+      "camera_index_evidence": [
+        {
+          "window": 0,
+          "path": 3,
+          "source_uv": [
+            0.20983,
+            0.126
+          ],
+          "profile_xy_mm": [
+            23.64,
+            59.955
+          ],
+          "profile_back_uv": [
+            0.16872,
+            0.08362
+          ]
+        },
+        {
+          "window": 1,
+          "path": 4,
+          "source_uv": [
+            0.20983,
+            0.261
+          ],
+          "profile_xy_mm": [
+            23.64,
+            44.935
+          ],
+          "profile_back_uv": [
+            0.16872,
+            0.18793
+          ]
+        },
+        {
+          "window": 2,
+          "path": 5,
+          "source_uv": [
+            0.42983,
+            0.1934
+          ],
+          "profile_xy_mm": [
+            10.64,
+            52.445
+          ],
+          "profile_back_uv": [
+            0.3509,
+            0.13577
+          ]
+        }
+      ]
+    },
+    "apple_iphone_11_pro_max": {
+      "profile": "profiles/iphone-11-pro-max.json",
+      "geometry_sha256": [
+        "503e57e4142442dd92f102203474d64df1f48993da45c595b577da2d3c680e6d"
+      ],
+      "roles": [
+        "body",
+        "logo",
+        "bar",
+        "glass-0",
+        "glass-1",
+        "glass-2",
+        "flash-rim-0",
+        "flash-0"
+      ],
+      "stroke_roles": {},
+      "unsupported": {},
+      "source_spec": "PHONES[apple_iphone_11_pro_max]",
+      "notes": [],
+      "coordinate_sha256": "52e9b6396385eb3c21ee5edacf95436a035dad517c58de1c5eb8c1ccbe0cf506",
+      "export": "exports/iphone-11-pro-max/model.glb",
+      "mesh_targets": {
+        "body": [
+          "Aluminum enclosure",
+          "Rear glass"
+        ],
+        "logo": [
+          "Apple logo | 0",
+          "Apple logo | 1"
+        ],
+        "bar": [
+          "Camera housing"
+        ],
+        "glass-0": [
+          "Black optical backing 0",
+          "Optical well 0"
+        ],
+        "glass-1": [
+          "Black optical backing 1",
+          "Optical well 1"
+        ],
+        "glass-2": [
+          "Black optical backing 2",
+          "Optical well 2"
+        ],
+        "flash-rim-0": [],
+        "flash-0": [
+          "Flash 0"
+        ]
+      },
+      "camera_index_evidence": [
+        {
+          "window": 0,
+          "path": 3,
+          "source_uv": [
+            0.20983,
+            0.126
+          ],
+          "profile_xy_mm": [
+            26.88,
+            66.935
+          ],
+          "profile_back_uv": [
+            0.15468,
+            0.07623
+          ]
+        },
+        {
+          "window": 1,
+          "path": 4,
+          "source_uv": [
+            0.20983,
+            0.261
+          ],
+          "profile_xy_mm": [
+            26.88,
+            51.915
+          ],
+          "profile_back_uv": [
+            0.15468,
+            0.17132
+          ]
+        },
+        {
+          "window": 2,
+          "path": 5,
+          "source_uv": [
+            0.42983,
+            0.1934
+          ],
+          "profile_xy_mm": [
+            13.88,
+            59.425
+          ],
+          "profile_back_uv": [
+            0.32169,
+            0.12377
+          ]
+        }
+      ]
+    },
+    "apple_iphone_12": {
+      "profile": "profiles/iphone-12.json",
+      "geometry_sha256": [
+        "c14880cb4934a625ac3d3b04d1b4bc4906d97d386c4c519ea05c8d17c22a2cd6"
+      ],
+      "roles": [
+        "body",
+        "logo",
+        "bar",
+        "glass-0",
+        "glass-1",
+        "flash-rim-0",
+        "flash-0"
+      ],
+      "stroke_roles": {},
+      "unsupported": {},
+      "source_spec": "PHONES[apple_iphone_12]",
+      "notes": [],
+      "coordinate_sha256": "586530b813422ea98b061a496e9de6214a75888dac7ed82b7f2f21af9812a7fb",
+      "export": "exports/iphone-12/model.glb",
+      "mesh_targets": {
+        "body": [
+          "Aluminum enclosure",
+          "Rear glass"
+        ],
+        "logo": [
+          "Apple logo | 0",
+          "Apple logo | 1"
+        ],
+        "bar": [
+          "Camera housing"
+        ],
+        "glass-0": [
+          "Black optical backing 0",
+          "Optical well 0"
+        ],
+        "glass-1": [
+          "Black optical backing 1",
+          "Optical well 1"
+        ],
+        "flash-rim-0": [],
+        "flash-0": [
+          "Flash 0"
+        ]
+      },
+      "camera_index_evidence": [
+        {
+          "window": 0,
+          "path": 3,
+          "source_uv": [
+            0.215,
+            0.129
+          ],
+          "profile_xy_mm": [
+            23.03,
+            60.625
+          ],
+          "profile_back_uv": [
+            0.17799,
+            0.08677
+          ]
+        },
+        {
+          "window": 1,
+          "path": 4,
+          "source_uv": [
+            0.215,
+            0.252
+          ],
+          "profile_xy_mm": [
+            23.03,
+            46.345
+          ],
+          "profile_back_uv": [
+            0.17799,
+            0.1841
+          ]
+        }
+      ]
+    },
+    "apple_iphone_12_mini": {
+      "profile": "profiles/iphone-12-mini.json",
+      "geometry_sha256": [
+        "c14880cb4934a625ac3d3b04d1b4bc4906d97d386c4c519ea05c8d17c22a2cd6"
+      ],
+      "roles": [
+        "body",
+        "logo",
+        "bar",
+        "glass-0",
+        "glass-1",
+        "flash-rim-0",
+        "flash-0"
+      ],
+      "stroke_roles": {},
+      "unsupported": {},
+      "source_spec": "PHONES[apple_iphone_12_mini]",
+      "notes": [],
+      "coordinate_sha256": "42681a19e43c84d7f1c4701ae49678b46fbc70a9504b8ca6e27d236366cde71b",
+      "export": "exports/iphone-12-mini/model.glb",
+      "mesh_targets": {
+        "body": [
+          "Aluminum enclosure",
+          "Rear glass"
+        ],
+        "logo": [
+          "Apple logo | 0",
+          "Apple logo | 1"
+        ],
+        "bar": [
+          "Camera housing"
+        ],
+        "glass-0": [
+          "Black optical backing 0",
+          "Optical well 0"
+        ],
+        "glass-1": [
+          "Black optical backing 1",
+          "Optical well 1"
+        ],
+        "flash-rim-0": [],
+        "flash-0": [
+          "Flash 0"
+        ]
+      },
+      "camera_index_evidence": [
+        {
+          "window": 0,
+          "path": 3,
+          "source_uv": [
+            0.215,
+            0.129
+          ],
+          "profile_xy_mm": [
+            21.435,
+            55.08
+          ],
+          "profile_back_uv": [
+            0.16617,
+            0.08114
+          ]
+        },
+        {
+          "window": 1,
+          "path": 4,
+          "source_uv": [
+            0.215,
+            0.252
+          ],
+          "profile_xy_mm": [
+            21.435,
+            40.8
+          ],
+          "profile_back_uv": [
+            0.16617,
+            0.18973
+          ]
+        }
+      ]
+    },
+    "apple_iphone_12_pro": {
+      "profile": "profiles/iphone-12-pro.json",
+      "geometry_sha256": [
+        "26f652fab1e47d64f6f1242839c02a209517f1b29a348dcd8b6c4a62f8306c74"
+      ],
+      "roles": [
+        "body",
+        "logo",
+        "bar",
+        "glass-0",
+        "glass-1",
+        "glass-2",
+        "flash-rim-0",
+        "flash-0",
+        "sensor-0"
+      ],
+      "stroke_roles": {},
+      "unsupported": {},
+      "source_spec": "PHONES[apple_iphone_12_pro]",
+      "notes": [],
+      "coordinate_sha256": "c12829af088b4d5cc318d6bedc79f6a04ffb0d688968de5bae79208c154b31a7",
+      "export": "exports/iphone-12-pro/model.glb",
+      "mesh_targets": {
+        "body": [
+          "Aluminum enclosure",
+          "Rear glass"
+        ],
+        "logo": [
+          "Apple logo | 0",
+          "Apple logo | 1"
+        ],
+        "bar": [
+          "Camera housing"
+        ],
+        "glass-0": [
+          "Black optical backing 0",
+          "Optical well 0"
+        ],
+        "glass-1": [
+          "Black optical backing 1",
+          "Optical well 1"
+        ],
+        "glass-2": [
+          "Black optical backing 2",
+          "Optical well 2"
+        ],
+        "flash-rim-0": [],
+        "flash-0": [
+          "Flash 0"
+        ],
+        "sensor-0": [
+          "Rear sensor 0"
+        ]
+      },
+      "camera_index_evidence": [
+        {
+          "window": 0,
+          "path": 3,
+          "source_uv": [
+            0.20983,
+            0.126
+          ],
+          "profile_xy_mm": [
+            23.6,
+            61.195
+          ],
+          "profile_back_uv": [
+            0.17002,
+            0.08288
+          ]
+        },
+        {
+          "window": 1,
+          "path": 4,
+          "source_uv": [
+            0.20983,
+            0.261
+          ],
+          "profile_xy_mm": [
+            23.6,
+            45.775
+          ],
+          "profile_back_uv": [
+            0.17002,
+            0.18799
+          ]
+        },
+        {
+          "window": 2,
+          "path": 5,
+          "source_uv": [
+            0.42983,
+            0.1934
+          ],
+          "profile_xy_mm": [
+            10.25,
+            53.485
+          ],
+          "profile_back_uv": [
+            0.35668,
+            0.13544
+          ]
+        }
+      ]
+    },
+    "apple_iphone_12_pro_max": {
+      "profile": "profiles/iphone-12-pro-max.json",
+      "geometry_sha256": [
+        "26f652fab1e47d64f6f1242839c02a209517f1b29a348dcd8b6c4a62f8306c74"
+      ],
+      "roles": [
+        "body",
+        "logo",
+        "bar",
+        "glass-0",
+        "glass-1",
+        "glass-2",
+        "flash-rim-0",
+        "flash-0",
+        "sensor-0"
+      ],
+      "stroke_roles": {},
+      "unsupported": {},
+      "source_spec": "PHONES[apple_iphone_12_pro_max]",
+      "notes": [],
+      "coordinate_sha256": "2703f42e8fe84374e9d2cbce4f2724b367180da0d7d70ae33b8d57a4aa4be451",
+      "export": "exports/iphone-12-pro-max/model.glb",
+      "mesh_targets": {
+        "body": [
+          "Aluminum enclosure",
+          "Rear glass"
+        ],
+        "logo": [
+          "Apple logo | 0",
+          "Apple logo | 1"
+        ],
+        "bar": [
+          "Camera housing"
+        ],
+        "glass-0": [
+          "Black optical backing 0",
+          "Optical well 0"
+        ],
+        "glass-1": [
+          "Black optical backing 1",
+          "Optical well 1"
+        ],
+        "glass-2": [
+          "Black optical backing 2",
+          "Optical well 2"
+        ],
+        "flash-rim-0": [],
+        "flash-0": [
+          "Flash 0"
+        ],
+        "sensor-0": [
+          "Rear sensor 0"
+        ]
+      },
+      "camera_index_evidence": [
+        {
+          "window": 0,
+          "path": 3,
+          "source_uv": [
+            0.20983,
+            0.126
+          ],
+          "profile_xy_mm": [
+            25.605,
+            66.99
+          ],
+          "profile_back_uv": [
+            0.17203,
+            0.0835
+          ]
+        },
+        {
+          "window": 1,
+          "path": 4,
+          "source_uv": [
+            0.20983,
+            0.261
+          ],
+          "profile_xy_mm": [
+            25.605,
+            49.52
+          ],
+          "profile_back_uv": [
+            0.17203,
+            0.19212
+          ]
+        },
+        {
+          "window": 2,
+          "path": 5,
+          "source_uv": [
+            0.42983,
+            0.1934
+          ],
+          "profile_xy_mm": [
+            10.475,
+            58.26
+          ],
+          "profile_back_uv": [
+            0.36583,
+            0.13778
+          ]
+        }
+      ]
+    },
+    "apple_iphone_13": {
+      "profile": "profiles/iphone-13.json",
+      "geometry_sha256": [
+        "ff392d358865497d3804b369ed7b575db2dd9f0c8487a1ef13fafed2920a6ecd"
+      ],
+      "roles": [
+        "body",
+        "logo",
+        "bar",
+        "glass-0",
+        "glass-1",
+        "flash-rim-0",
+        "flash-0"
+      ],
+      "stroke_roles": {},
+      "unsupported": {},
+      "source_spec": "PHONES[apple_iphone_13]",
+      "notes": [],
+      "coordinate_sha256": "5b8244c14a6ae765b18238626f369c2e8572695c3c5ffd9b083b26fd41ace16f",
+      "export": "exports/iphone-13/model.glb",
+      "mesh_targets": {
+        "body": [
+          "Aluminum enclosure",
+          "Rear glass"
+        ],
+        "logo": [
+          "Apple logo | 0",
+          "Apple logo | 1"
+        ],
+        "bar": [
+          "Camera housing"
+        ],
+        "glass-0": [
+          "Black optical backing 0",
+          "Optical well 0"
+        ],
+        "glass-1": [
+          "Black optical backing 1",
+          "Optical well 1"
+        ],
+        "flash-rim-0": [],
+        "flash-0": [
+          "Flash 0"
+        ]
+      },
+      "camera_index_evidence": [
+        {
+          "window": 0,
+          "path": 3,
+          "source_uv": [
+            0.22,
+            0.132
+          ],
+          "profile_xy_mm": [
+            23.88,
+            61.47
+          ],
+          "profile_back_uv": [
+            0.16611,
+            0.08098
+          ]
+        },
+        {
+          "window": 1,
+          "path": 4,
+          "source_uv": [
+            0.4,
+            0.24
+          ],
+          "profile_xy_mm": [
+            11.52,
+            49.11
+          ],
+          "profile_back_uv": [
+            0.33893,
+            0.16524
+          ]
+        }
+      ]
+    },
+    "apple_iphone_13_mini": {
+      "profile": "profiles/iphone-13-mini.json",
+      "geometry_sha256": [
+        "ff392d358865497d3804b369ed7b575db2dd9f0c8487a1ef13fafed2920a6ecd"
+      ],
+      "roles": [
+        "body",
+        "logo",
+        "bar",
+        "glass-0",
+        "glass-1",
+        "flash-rim-0",
+        "flash-0"
+      ],
+      "stroke_roles": {},
+      "unsupported": {},
+      "source_spec": "PHONES[apple_iphone_13_mini]",
+      "notes": [],
+      "coordinate_sha256": "817be26d3f7c21865f8be38f75255a1cab3390f3977dabcffa51cdf76778e24c",
+      "export": "exports/iphone-13-mini/model.glb",
+      "mesh_targets": {
+        "body": [
+          "Aluminum enclosure",
+          "Rear glass"
+        ],
+        "logo": [
+          "Apple logo | 0",
+          "Apple logo | 1"
+        ],
+        "bar": [
+          "Camera housing"
+        ],
+        "glass-0": [
+          "Black optical backing 0",
+          "Optical well 0"
+        ],
+        "glass-1": [
+          "Black optical backing 1",
+          "Optical well 1"
+        ],
+        "flash-rim-0": [],
+        "flash-0": [
+          "Flash 0"
+        ]
+      },
+      "camera_index_evidence": [
+        {
+          "window": 0,
+          "path": 3,
+          "source_uv": [
+            0.22,
+            0.132
+          ],
+          "profile_xy_mm": [
+            21.155,
+            54.8
+          ],
+          "profile_back_uv": [
+            0.17053,
+            0.08327
+          ]
+        },
+        {
+          "window": 1,
+          "path": 4,
+          "source_uv": [
+            0.4,
+            0.24
+          ],
+          "profile_xy_mm": [
+            8.895,
+            42.54
+          ],
+          "profile_back_uv": [
+            0.36147,
+            0.1765
+          ]
+        }
+      ]
+    },
+    "apple_iphone_13_pro": {
+      "profile": "profiles/iphone-13-pro.json",
+      "geometry_sha256": [
+        "bc2f1eca176e7ac166c010d942d7ef3e8703f9a3c886384900883df23821011f"
+      ],
+      "roles": [
+        "body",
+        "logo",
+        "bar",
+        "glass-0",
+        "glass-1",
+        "glass-2",
+        "flash-rim-0",
+        "flash-0",
+        "sensor-0"
+      ],
+      "stroke_roles": {},
+      "unsupported": {},
+      "source_spec": "PHONES[apple_iphone_13_pro]",
+      "notes": [],
+      "coordinate_sha256": "f857e7260074132bd8faa285a0f77581cadb9e89b3f7cf98e95b2651c3379bb6",
+      "export": "exports/iphone-13-pro/model.glb",
+      "mesh_targets": {
+        "body": [
+          "Aluminum enclosure",
+          "Rear glass"
+        ],
+        "logo": [
+          "Apple logo | 0",
+          "Apple logo | 1"
+        ],
+        "bar": [
+          "Camera housing"
+        ],
+        "glass-0": [
+          "Black optical backing 0",
+          "Optical well 0"
+        ],
+        "glass-1": [
+          "Black optical backing 1",
+          "Optical well 1"
+        ],
+        "glass-2": [
+          "Black optical backing 2",
+          "Optical well 2"
+        ],
+        "flash-rim-0": [],
+        "flash-0": [
+          "Flash 0"
+        ],
+        "sensor-0": [
+          "Rear sensor 0"
+        ]
+      },
+      "camera_index_evidence": [
+        {
+          "window": 0,
+          "path": 3,
+          "source_uv": [
+            0.23,
+            0.138
+          ],
+          "profile_xy_mm": [
+            22.33,
+            59.925
+          ],
+          "profile_back_uv": [
+            0.18778,
+            0.09154
+          ]
+        },
+        {
+          "window": 1,
+          "path": 4,
+          "source_uv": [
+            0.23,
+            0.291
+          ],
+          "profile_xy_mm": [
+            22.33,
+            42.005
+          ],
+          "profile_back_uv": [
+            0.18778,
+            0.21369
+          ]
+        },
+        {
+          "window": 2,
+          "path": 5,
+          "source_uv": [
+            0.49,
+            0.2146
+          ],
+          "profile_xy_mm": [
+            5.68,
+            50.965
+          ],
+          "profile_back_uv": [
+            0.42058,
+            0.15261
+          ]
+        }
+      ]
+    },
+    "apple_iphone_13_pro_max": {
+      "profile": "profiles/iphone-13-pro-max.json",
+      "geometry_sha256": [
+        "bc2f1eca176e7ac166c010d942d7ef3e8703f9a3c886384900883df23821011f"
+      ],
+      "roles": [
+        "body",
+        "logo",
+        "bar",
+        "glass-0",
+        "glass-1",
+        "glass-2",
+        "flash-rim-0",
+        "flash-0",
+        "sensor-0"
+      ],
+      "stroke_roles": {},
+      "unsupported": {},
+      "source_spec": "PHONES[apple_iphone_13_pro_max]",
+      "notes": [],
+      "coordinate_sha256": "99082b46f7b394651d3c2eff432e2ffbdce3259fa824e3d9134e275b053a4a8c",
+      "export": "exports/iphone-13-pro-max/model.glb",
+      "mesh_targets": {
+        "body": [
+          "Aluminum enclosure",
+          "Rear glass"
+        ],
+        "logo": [
+          "Apple logo | 0",
+          "Apple logo | 1"
+        ],
+        "bar": [
+          "Camera housing"
+        ],
+        "glass-0": [
+          "Black optical backing 0",
+          "Optical well 0"
+        ],
+        "glass-1": [
+          "Black optical backing 1",
+          "Optical well 1"
+        ],
+        "glass-2": [
+          "Black optical backing 2",
+          "Optical well 2"
+        ],
+        "flash-rim-0": [],
+        "flash-0": [
+          "Flash 0"
+        ],
+        "sensor-0": [
+          "Rear sensor 0"
+        ]
+      },
+      "camera_index_evidence": [
+        {
+          "window": 0,
+          "path": 3,
+          "source_uv": [
+            0.23,
+            0.138
+          ],
+          "profile_xy_mm": [
+            25.605,
+            66.99
+          ],
+          "profile_back_uv": [
+            0.17203,
+            0.0835
+          ]
+        },
+        {
+          "window": 1,
+          "path": 4,
+          "source_uv": [
+            0.23,
+            0.291
+          ],
+          "profile_xy_mm": [
+            25.605,
+            49.07
+          ],
+          "profile_back_uv": [
+            0.17203,
+            0.19491
+          ]
+        },
+        {
+          "window": 2,
+          "path": 5,
+          "source_uv": [
+            0.49,
+            0.2146
+          ],
+          "profile_xy_mm": [
+            8.955,
+            58.03
+          ],
+          "profile_back_uv": [
+            0.3853,
+            0.13921
+          ]
+        }
+      ]
+    },
+    "apple_iphone_14": {
+      "profile": "profiles/iphone-14.json",
+      "geometry_sha256": [
+        "ff392d358865497d3804b369ed7b575db2dd9f0c8487a1ef13fafed2920a6ecd"
+      ],
+      "roles": [
+        "body",
+        "logo",
+        "bar",
+        "glass-0",
+        "glass-1",
+        "flash-rim-0",
+        "flash-0"
+      ],
+      "stroke_roles": {},
+      "unsupported": {},
+      "source_spec": "PHONES[apple_iphone_14]",
+      "notes": [],
+      "coordinate_sha256": "ab3b48d3bfb76bb08ce5bdac98b856914507dcf10d2c5009c4eb90a712201046",
+      "export": "exports/iphone-14/model.glb",
+      "mesh_targets": {
+        "body": [
+          "Aluminum enclosure",
+          "Rear glass"
+        ],
+        "logo": [
+          "Apple logo | 0",
+          "Apple logo | 1"
+        ],
+        "bar": [
+          "Camera housing"
+        ],
+        "glass-0": [
+          "Black optical backing 0",
+          "Optical well 0"
+        ],
+        "glass-1": [
+          "Black optical backing 1",
+          "Optical well 1"
+        ],
+        "flash-rim-0": [],
+        "flash-0": [
+          "Flash 0"
+        ]
+      },
+      "camera_index_evidence": [
+        {
+          "window": 0,
+          "path": 3,
+          "source_uv": [
+            0.22,
+            0.132
+          ],
+          "profile_xy_mm": [
+            23.88,
+            61.475
+          ],
+          "profile_back_uv": [
+            0.16611,
+            0.08098
+          ]
+        },
+        {
+          "window": 1,
+          "path": 4,
+          "source_uv": [
+            0.4,
+            0.24
+          ],
+          "profile_xy_mm": [
+            11.13,
+            48.725
+          ],
+          "profile_back_uv": [
+            0.34438,
+            0.16788
+          ]
+        }
+      ]
+    },
+    "apple_iphone_14_plus": {
+      "profile": "profiles/iphone-14-plus.json",
+      "geometry_sha256": [
+        "ff392d358865497d3804b369ed7b575db2dd9f0c8487a1ef13fafed2920a6ecd"
+      ],
+      "roles": [
+        "body",
+        "logo",
+        "bar",
+        "glass-0",
+        "glass-1",
+        "flash-rim-0",
+        "flash-0"
+      ],
+      "stroke_roles": {},
+      "unsupported": {},
+      "source_spec": "PHONES[apple_iphone_14_plus]",
+      "notes": [],
+      "coordinate_sha256": "d1edcf70f406848eeac6a52feab1a7bebc2bb34a35b54bd4cb686b1157647757",
+      "export": "exports/iphone-14-plus/model.glb",
+      "mesh_targets": {
+        "body": [
+          "Aluminum enclosure",
+          "Rear glass"
+        ],
+        "logo": [
+          "Apple logo | 0",
+          "Apple logo | 1"
+        ],
+        "bar": [
+          "Camera housing"
+        ],
+        "glass-0": [
+          "Black optical backing 0",
+          "Optical well 0"
+        ],
+        "glass-1": [
+          "Black optical backing 1",
+          "Optical well 1"
+        ],
+        "flash-rim-0": [],
+        "flash-0": [
+          "Flash 0"
+        ]
+      },
+      "camera_index_evidence": [
+        {
+          "window": 0,
+          "path": 3,
+          "source_uv": [
+            0.22,
+            0.132
+          ],
+          "profile_xy_mm": [
+            26.485,
+            67.87
+          ],
+          "profile_back_uv": [
+            0.16075,
+            0.07803
+          ]
+        },
+        {
+          "window": 1,
+          "path": 4,
+          "source_uv": [
+            0.4,
+            0.24
+          ],
+          "profile_xy_mm": [
+            13.735,
+            55.12
+          ],
+          "profile_back_uv": [
+            0.32407,
+            0.1573
+          ]
+        }
+      ]
+    },
+    "apple_iphone_14_pro": {
+      "profile": "profiles/iphone-14-pro.json",
+      "geometry_sha256": [
+        "bc2f1eca176e7ac166c010d942d7ef3e8703f9a3c886384900883df23821011f"
+      ],
+      "roles": [
+        "body",
+        "logo",
+        "bar",
+        "glass-0",
+        "glass-1",
+        "glass-2",
+        "flash-rim-0",
+        "flash-0",
+        "sensor-0"
+      ],
+      "stroke_roles": {},
+      "unsupported": {},
+      "source_spec": "PHONES[apple_iphone_14_pro]",
+      "notes": [],
+      "coordinate_sha256": "254b8213706d81ac925f541e826f6b526387f3d76fde74691f434f253ab0d6df",
+      "export": "exports/iphone-14-pro/model.glb",
+      "mesh_targets": {
+        "body": [
+          "Aluminum enclosure",
+          "Rear glass"
+        ],
+        "logo": [
+          "Apple logo | 0",
+          "Apple logo | 1"
+        ],
+        "bar": [
+          "Camera housing"
+        ],
+        "glass-0": [
+          "Black optical backing 0",
+          "Optical well 0"
+        ],
+        "glass-1": [
+          "Black optical backing 1",
+          "Optical well 1"
+        ],
+        "glass-2": [
+          "Black optical backing 2",
+          "Optical well 2"
+        ],
+        "flash-rim-0": [],
+        "flash-0": [
+          "Flash 0"
+        ],
+        "sensor-0": [
+          "Rear sensor 0"
+        ]
+      },
+      "camera_index_evidence": [
+        {
+          "window": 0,
+          "path": 3,
+          "source_uv": [
+            0.23,
+            0.138
+          ],
+          "profile_xy_mm": [
+            21.445,
+            59.45
+          ],
+          "profile_back_uv": [
+            0.19986,
+            0.09684
+          ]
+        },
+        {
+          "window": 1,
+          "path": 4,
+          "source_uv": [
+            0.23,
+            0.291
+          ],
+          "profile_xy_mm": [
+            21.445,
+            40.21
+          ],
+          "profile_back_uv": [
+            0.19986,
+            0.22732
+          ]
+        },
+        {
+          "window": 2,
+          "path": 5,
+          "source_uv": [
+            0.49,
+            0.2146
+          ],
+          "profile_xy_mm": [
+            3.605,
+            49.83
+          ],
+          "profile_back_uv": [
+            0.44955,
+            0.16208
+          ]
+        }
+      ]
+    },
+    "apple_iphone_14_pro_max": {
+      "profile": "profiles/iphone-14-pro-max.json",
+      "geometry_sha256": [
+        "bc2f1eca176e7ac166c010d942d7ef3e8703f9a3c886384900883df23821011f"
+      ],
+      "roles": [
+        "body",
+        "logo",
+        "bar",
+        "glass-0",
+        "glass-1",
+        "glass-2",
+        "flash-rim-0",
+        "flash-0",
+        "sensor-0"
+      ],
+      "stroke_roles": {},
+      "unsupported": {},
+      "source_spec": "PHONES[apple_iphone_14_pro_max]",
+      "notes": [],
+      "coordinate_sha256": "b9ea4a6a5ca01ce26af23bbe0550eda713091476b5077abf70a0489a230aade4",
+      "export": "exports/iphone-14-pro-max/model.glb",
+      "mesh_targets": {
+        "body": [
+          "Aluminum enclosure",
+          "Rear glass"
+        ],
+        "logo": [
+          "Apple logo | 0",
+          "Apple logo | 1"
+        ],
+        "bar": [
+          "Camera housing"
+        ],
+        "glass-0": [
+          "Black optical backing 0",
+          "Optical well 0"
+        ],
+        "glass-1": [
+          "Black optical backing 1",
+          "Optical well 1"
+        ],
+        "glass-2": [
+          "Black optical backing 2",
+          "Optical well 2"
+        ],
+        "flash-rim-0": [],
+        "flash-0": [
+          "Flash 0"
+        ],
+        "sensor-0": [
+          "Rear sensor 0"
+        ]
+      },
+      "camera_index_evidence": [
+        {
+          "window": 0,
+          "path": 3,
+          "source_uv": [
+            0.23,
+            0.138
+          ],
+          "profile_xy_mm": [
+            24.51,
+            66.075
+          ],
+          "profile_back_uv": [
+            0.18407,
+            0.08886
+          ]
+        },
+        {
+          "window": 1,
+          "path": 4,
+          "source_uv": [
+            0.23,
+            0.291
+          ],
+          "profile_xy_mm": [
+            24.51,
+            46.835
+          ],
+          "profile_back_uv": [
+            0.18407,
+            0.20857
+          ]
+        },
+        {
+          "window": 2,
+          "path": 5,
+          "source_uv": [
+            0.49,
+            0.2146
+          ],
+          "profile_xy_mm": [
+            6.67,
+            56.455
+          ],
+          "profile_back_uv": [
+            0.41402,
+            0.14872
+          ]
+        }
+      ]
+    },
+    "apple_iphone_15": {
+      "profile": "profiles/iphone-15.json",
+      "geometry_sha256": [
+        "ff392d358865497d3804b369ed7b575db2dd9f0c8487a1ef13fafed2920a6ecd"
+      ],
+      "roles": [
+        "body",
+        "logo",
+        "bar",
+        "glass-0",
+        "glass-1",
+        "flash-rim-0",
+        "flash-0"
+      ],
+      "stroke_roles": {},
+      "unsupported": {},
+      "source_spec": "PHONES[apple_iphone_15]",
+      "notes": [],
+      "coordinate_sha256": "ecc34e4d47e5058f9f49ad44bd00c23ae5d9935e3a276813379a578341a5f350",
+      "export": "exports/iphone-15/model.glb",
+      "mesh_targets": {
+        "body": [
+          "Aluminum enclosure",
+          "Rear glass"
+        ],
+        "logo": [
+          "Apple logo | 0",
+          "Apple logo | 1"
+        ],
+        "bar": [
+          "Camera housing"
+        ],
+        "glass-0": [
+          "Black optical backing 0",
+          "Optical well 0"
+        ],
+        "glass-1": [
+          "Black optical backing 1",
+          "Optical well 1"
+        ],
+        "flash-rim-0": [],
+        "flash-0": [
+          "Flash 0"
+        ]
+      },
+      "camera_index_evidence": [
+        {
+          "window": 0,
+          "path": 3,
+          "source_uv": [
+            0.22,
+            0.132
+          ],
+          "profile_xy_mm": [
+            23.07,
+            61.07
+          ],
+          "profile_back_uv": [
+            0.17779,
+            0.08625
+          ]
+        },
+        {
+          "window": 1,
+          "path": 4,
+          "source_uv": [
+            0.4,
+            0.24
+          ],
+          "profile_xy_mm": [
+            10.16,
+            48.16
+          ],
+          "profile_back_uv": [
+            0.3581,
+            0.17371
+          ]
+        }
+      ]
+    },
+    "apple_iphone_15_plus": {
+      "profile": "profiles/iphone-15-plus.json",
+      "geometry_sha256": [
+        "ff392d358865497d3804b369ed7b575db2dd9f0c8487a1ef13fafed2920a6ecd"
+      ],
+      "roles": [
+        "body",
+        "logo",
+        "bar",
+        "glass-0",
+        "glass-1",
+        "flash-rim-0",
+        "flash-0"
+      ],
+      "stroke_roles": {},
+      "unsupported": {},
+      "source_spec": "PHONES[apple_iphone_15_plus]",
+      "notes": [],
+      "coordinate_sha256": "7914b37c9f520729614ea22960943d0d64c10e5189f9235e9d8f79f8e250d075",
+      "export": "exports/iphone-15-plus/model.glb",
+      "mesh_targets": {
+        "body": [
+          "Aluminum enclosure",
+          "Rear glass"
+        ],
+        "logo": [
+          "Apple logo | 0",
+          "Apple logo | 1"
+        ],
+        "bar": [
+          "Camera housing"
+        ],
+        "glass-0": [
+          "Black optical backing 0",
+          "Optical well 0"
+        ],
+        "glass-1": [
+          "Black optical backing 1",
+          "Optical well 1"
+        ],
+        "flash-rim-0": [],
+        "flash-0": [
+          "Flash 0"
+        ]
+      },
+      "camera_index_evidence": [
+        {
+          "window": 0,
+          "path": 3,
+          "source_uv": [
+            0.22,
+            0.132
+          ],
+          "profile_xy_mm": [
+            26.17,
+            67.72
+          ],
+          "profile_back_uv": [
+            0.16362,
+            0.07912
+          ]
+        },
+        {
+          "window": 1,
+          "path": 4,
+          "source_uv": [
+            0.4,
+            0.24
+          ],
+          "profile_xy_mm": [
+            13.26,
+            54.81
+          ],
+          "profile_back_uv": [
+            0.32956,
+            0.15935
+          ]
+        }
+      ]
+    },
+    "apple_iphone_15_pro": {
+      "profile": "profiles/iphone-15-pro.json",
+      "geometry_sha256": [
+        "bc2f1eca176e7ac166c010d942d7ef3e8703f9a3c886384900883df23821011f"
+      ],
+      "roles": [
+        "body",
+        "logo",
+        "bar",
+        "glass-0",
+        "glass-1",
+        "glass-2",
+        "flash-rim-0",
+        "flash-0",
+        "sensor-0"
+      ],
+      "stroke_roles": {},
+      "unsupported": {},
+      "source_spec": "PHONES[apple_iphone_15_pro]",
+      "notes": [],
+      "coordinate_sha256": "9f5c4d9f38739449f25eec148effa36bb24d29f97a9be1ea1552a241e5dd6648",
+      "export": "exports/iphone-15-pro/model.glb",
+      "mesh_targets": {
+        "body": [
+          "Aluminum enclosure",
+          "Rear glass"
+        ],
+        "logo": [
+          "Apple logo | 0",
+          "Apple logo | 1"
+        ],
+        "bar": [
+          "Camera housing"
+        ],
+        "glass-0": [
+          "Black optical backing 0",
+          "Optical well 0"
+        ],
+        "glass-1": [
+          "Black optical backing 1",
+          "Optical well 1"
+        ],
+        "glass-2": [
+          "Black optical backing 2",
+          "Optical well 2"
+        ],
+        "flash-rim-0": [],
+        "flash-0": [
+          "Flash 0"
+        ],
+        "sensor-0": [
+          "Rear sensor 0"
+        ]
+      },
+      "camera_index_evidence": [
+        {
+          "window": 0,
+          "path": 3,
+          "source_uv": [
+            0.23,
+            0.138
+          ],
+          "profile_xy_mm": [
+            21.13,
+            59.13
+          ],
+          "profile_back_uv": [
+            0.20071,
+            0.09666
+          ]
+        },
+        {
+          "window": 1,
+          "path": 4,
+          "source_uv": [
+            0.23,
+            0.291
+          ],
+          "profile_xy_mm": [
+            21.13,
+            39.89
+          ],
+          "profile_back_uv": [
+            0.20071,
+            0.2279
+          ]
+        },
+        {
+          "window": 2,
+          "path": 5,
+          "source_uv": [
+            0.49,
+            0.2146
+          ],
+          "profile_xy_mm": [
+            3.14,
+            49.51
+          ],
+          "profile_back_uv": [
+            0.45552,
+            0.16228
+          ]
+        }
+      ]
+    },
+    "apple_iphone_15_pro_max": {
+      "profile": "profiles/iphone-15-pro-max.json",
+      "geometry_sha256": [
+        "bc2f1eca176e7ac166c010d942d7ef3e8703f9a3c886384900883df23821011f"
+      ],
+      "roles": [
+        "body",
+        "logo",
+        "bar",
+        "glass-0",
+        "glass-1",
+        "glass-2",
+        "flash-rim-0",
+        "flash-0",
+        "sensor-0"
+      ],
+      "stroke_roles": {},
+      "unsupported": {},
+      "source_spec": "PHONES[apple_iphone_15_pro_max]",
+      "notes": [],
+      "coordinate_sha256": "a4476eee0e3c597bccf013b90389bf4a30fcf2fe355249135933edf4ae82871b",
+      "export": "exports/iphone-15-pro-max/model.glb",
+      "mesh_targets": {
+        "body": [
+          "Aluminum enclosure",
+          "Rear glass"
+        ],
+        "logo": [
+          "Apple logo | 0",
+          "Apple logo | 1"
+        ],
+        "bar": [
+          "Camera housing"
+        ],
+        "glass-0": [
+          "Black optical backing 0",
+          "Optical well 0"
+        ],
+        "glass-1": [
+          "Black optical backing 1",
+          "Optical well 1"
+        ],
+        "glass-2": [
+          "Black optical backing 2",
+          "Optical well 2"
+        ],
+        "flash-rim-0": [],
+        "flash-0": [
+          "Flash 0"
+        ],
+        "sensor-0": [
+          "Rear sensor 0"
+        ]
+      },
+      "camera_index_evidence": [
+        {
+          "window": 0,
+          "path": 3,
+          "source_uv": [
+            0.23,
+            0.138
+          ],
+          "profile_xy_mm": [
+            24.18,
+            65.78
+          ],
+          "profile_back_uv": [
+            0.18475,
+            0.08862
+          ]
+        },
+        {
+          "window": 1,
+          "path": 4,
+          "source_uv": [
+            0.23,
+            0.291
+          ],
+          "profile_xy_mm": [
+            24.18,
+            46.54
+          ],
+          "profile_back_uv": [
+            0.18475,
+            0.20894
+          ]
+        },
+        {
+          "window": 2,
+          "path": 5,
+          "source_uv": [
+            0.49,
+            0.2146
+          ],
+          "profile_xy_mm": [
+            6.19,
+            56.16
+          ],
+          "profile_back_uv": [
+            0.4193,
+            0.14878
+          ]
+        }
+      ]
+    },
+    "apple_iphone_16": {
+      "profile": "profiles/iphone-16.json",
+      "geometry_sha256": [
+        "1e1646ac2377ef7c82701d9aa89266d259c5a77a88974913e20f224ab8d292ff"
+      ],
+      "roles": [
+        "body",
+        "logo",
+        "bar",
+        "glass-0",
+        "glass-1",
+        "flash-rim-0",
+        "flash-0"
+      ],
+      "stroke_roles": {},
+      "unsupported": {},
+      "source_spec": "PHONES[apple_iphone_16]",
+      "notes": [],
+      "coordinate_sha256": "384b44842825e377545a64d830e54bf744349755d16c6398e7cd33ac37cd88db",
+      "export": "exports/iphone-16/model.glb",
+      "mesh_targets": {
+        "body": [
+          "Aluminum enclosure",
+          "Rear glass"
+        ],
+        "logo": [
+          "Apple logo | 0",
+          "Apple logo | 1"
+        ],
+        "bar": [
+          "Camera housing"
+        ],
+        "glass-0": [
+          "Black optical backing 0",
+          "Optical well 0"
+        ],
+        "glass-1": [
+          "Black optical backing 1",
+          "Optical well 1"
+        ],
+        "flash-rim-0": [],
+        "flash-0": [
+          "Flash 0"
+        ]
+      },
+      "camera_index_evidence": [
+        {
+          "window": 0,
+          "path": 3,
+          "source_uv": [
+            0.21,
+            0.126
+          ],
+          "profile_xy_mm": [
+            22.18,
+            60.18
+          ],
+          "profile_back_uv": [
+            0.19022,
+            0.09228
+          ]
+        },
+        {
+          "window": 1,
+          "path": 4,
+          "source_uv": [
+            0.21,
+            0.258
+          ],
+          "profile_xy_mm": [
+            22.18,
+            42.46
+          ],
+          "profile_back_uv": [
+            0.19022,
+            0.21233
+          ]
+        }
+      ]
+    },
+    "apple_iphone_16_plus": {
+      "profile": "profiles/iphone-16-plus.json",
+      "geometry_sha256": [
+        "14fed4abca03dc199122c5d6f1b535127be22e4d37c1262472d9f070f19dd643"
+      ],
+      "roles": [
+        "body",
+        "logo",
+        "bar",
+        "glass-0",
+        "glass-1",
+        "flash-rim-0",
+        "flash-0"
+      ],
+      "stroke_roles": {},
+      "unsupported": {},
+      "source_spec": "PHONES[apple_iphone_16_plus]",
+      "notes": [],
+      "coordinate_sha256": "33d8ec0ad3a848a798de20b07ac215ed436f34d691069b413c398b1fea8ffacc",
+      "export": "exports/iphone-16-plus/model.glb",
+      "mesh_targets": {
+        "body": [
+          "Aluminum enclosure",
+          "Rear glass"
+        ],
+        "logo": [
+          "Apple logo | 0",
+          "Apple logo | 1"
+        ],
+        "bar": [
+          "Camera housing"
+        ],
+        "glass-0": [
+          "Black optical backing 0",
+          "Optical well 0"
+        ],
+        "glass-1": [
+          "Black optical backing 1",
+          "Optical well 1"
+        ],
+        "flash-rim-0": [],
+        "flash-0": [
+          "Flash 0"
+        ]
+      },
+      "camera_index_evidence": [
+        {
+          "window": 0,
+          "path": 3,
+          "source_uv": [
+            0.21,
+            0.126
+          ],
+          "profile_xy_mm": [
+            25.28,
+            66.83
+          ],
+          "profile_back_uv": [
+            0.17506,
+            0.08465
+          ]
+        },
+        {
+          "window": 1,
+          "path": 4,
+          "source_uv": [
+            0.21,
+            0.258
+          ],
+          "profile_xy_mm": [
+            25.28,
+            49.11
+          ],
+          "profile_back_uv": [
+            0.17506,
+            0.19478
+          ]
+        }
+      ]
+    },
+    "apple_iphone_16_pro": {
+      "profile": "profiles/iphone-16-pro.json",
+      "geometry_sha256": [
+        "2e9af86135f2aa93684067bc515f2fdae60a5aa13ba26226445eaa3d493080fc"
+      ],
+      "roles": [
+        "body",
+        "logo",
+        "bar",
+        "glass-0",
+        "glass-1",
+        "glass-2",
+        "flash-rim-0",
+        "flash-0",
+        "sensor-0"
+      ],
+      "stroke_roles": {},
+      "unsupported": {},
+      "source_spec": "PHONES[apple_iphone_16_pro]",
+      "notes": [],
+      "coordinate_sha256": "daa3700eb8a87a4fcfa14ad9783f67f4713da121cd6471461325bf7b81ba03f7",
+      "export": "exports/iphone-16-pro/model.glb",
+      "mesh_targets": {
+        "body": [
+          "Aluminum enclosure",
+          "Rear glass"
+        ],
+        "logo": [
+          "Apple logo | 0",
+          "Apple logo | 1"
+        ],
+        "bar": [
+          "Camera housing"
+        ],
+        "glass-0": [
+          "Black optical backing 0",
+          "Optical well 0"
+        ],
+        "glass-1": [
+          "Black optical backing 1",
+          "Optical well 1"
+        ],
+        "glass-2": [
+          "Black optical backing 2",
+          "Optical well 2"
+        ],
+        "flash-rim-0": [],
+        "flash-0": [
+          "Flash 0"
+        ],
+        "sensor-0": [
+          "Rear sensor 0"
+        ]
+      },
+      "camera_index_evidence": [
+        {
+          "window": 0,
+          "path": 3,
+          "source_uv": [
+            0.23,
+            0.138
+          ],
+          "profile_xy_mm": [
+            21.58,
+            60.63
+          ],
+          "profile_back_uv": [
+            0.19818,
+            0.09472
+          ]
+        },
+        {
+          "window": 1,
+          "path": 4,
+          "source_uv": [
+            0.23,
+            0.291
+          ],
+          "profile_xy_mm": [
+            21.58,
+            41.39
+          ],
+          "profile_back_uv": [
+            0.19818,
+            0.22333
+          ]
+        },
+        {
+          "window": 2,
+          "path": 5,
+          "source_uv": [
+            0.49,
+            0.2146
+          ],
+          "profile_xy_mm": [
+            3.59,
+            51.01
+          ],
+          "profile_back_uv": [
+            0.44979,
+            0.15902
+          ]
+        }
+      ]
+    },
+    "apple_iphone_16_pro_max": {
+      "profile": "profiles/iphone-16-pro-max.json",
+      "geometry_sha256": [
+        "ceb1b94a0dae2d5fada1b94d826625212db842c588916d9160bec9ede0efb8bc"
+      ],
+      "roles": [
+        "body",
+        "logo",
+        "bar",
+        "glass-0",
+        "glass-1",
+        "glass-2",
+        "flash-rim-0",
+        "flash-0",
+        "sensor-0"
+      ],
+      "stroke_roles": {},
+      "unsupported": {},
+      "source_spec": "PHONES[apple_iphone_16_pro_max]",
+      "notes": [],
+      "coordinate_sha256": "bdfbb755b3d44781dbb4d355734bb3b8fba1c4979dc1cf7632259ce4cd1477f4",
+      "export": "exports/iphone-16-pro-max/model.glb",
+      "mesh_targets": {
+        "body": [
+          "Aluminum enclosure",
+          "Rear glass"
+        ],
+        "logo": [
+          "Apple logo | 0",
+          "Apple logo | 1"
+        ],
+        "bar": [
+          "Camera housing"
+        ],
+        "glass-0": [
+          "Black optical backing 0",
+          "Optical well 0"
+        ],
+        "glass-1": [
+          "Black optical backing 1",
+          "Optical well 1"
+        ],
+        "glass-2": [
+          "Black optical backing 2",
+          "Optical well 2"
+        ],
+        "flash-rim-0": [],
+        "flash-0": [
+          "Flash 0"
+        ],
+        "sensor-0": [
+          "Rear sensor 0"
+        ]
+      },
+      "camera_index_evidence": [
+        {
+          "window": 0,
+          "path": 3,
+          "source_uv": [
+            0.23,
+            0.138
+          ],
+          "profile_xy_mm": [
+            24.63,
+            67.33
+          ],
+          "profile_back_uv": [
+            0.1826,
+            0.08693
+          ]
+        },
+        {
+          "window": 1,
+          "path": 4,
+          "source_uv": [
+            0.23,
+            0.291
+          ],
+          "profile_xy_mm": [
+            24.63,
+            48.09
+          ],
+          "profile_back_uv": [
+            0.1826,
+            0.20497
+          ]
+        },
+        {
+          "window": 2,
+          "path": 5,
+          "source_uv": [
+            0.49,
+            0.2146
+          ],
+          "profile_xy_mm": [
+            6.64,
+            57.71
+          ],
+          "profile_back_uv": [
+            0.41443,
+            0.14595
+          ]
+        }
+      ]
+    },
+    "apple_iphone_16e": {
+      "profile": "profiles/iphone-16e.json",
+      "geometry_sha256": [
+        "8551e03d5c5214f5ff58ed1f09ed09200cfe45ce76183e8a3f2d8f7e24572af8"
+      ],
+      "roles": [
+        "body",
+        "logo",
+        "glass-0",
+        "flash-rim-0",
+        "flash-0"
+      ],
+      "stroke_roles": {},
+      "unsupported": {},
+      "source_spec": "PHONES[apple_iphone_16e]",
+      "notes": [],
+      "coordinate_sha256": "5f8733ec7163688050595412ea093e5dc0247439c1d140a0915b78e4711dcca4",
+      "export": "exports/iphone-16e/model.glb",
+      "mesh_targets": {
+        "body": [
+          "Aluminum enclosure",
+          "Rear glass"
+        ],
+        "logo": [
+          "Apple logo | 0",
+          "Apple logo | 1"
+        ],
+        "glass-0": [
+          "Black optical backing 0",
+          "Optical well 0"
+        ],
+        "flash-rim-0": [],
+        "flash-0": [
+          "Flash 0"
+        ]
+      },
+      "camera_index_evidence": [
+        {
+          "window": 0,
+          "path": 2,
+          "source_uv": [
+            0.19517,
+            0.102
+          ],
+          "profile_xy_mm": [
+            22.43,
+            60.03
+          ],
+          "profile_back_uv": [
+            0.18629,
+            0.0908
+          ]
+        }
+      ]
+    },
+    "apple_iphone_17": {
+      "profile": "profiles/iphone-17.json",
+      "geometry_sha256": [
+        "14fed4abca03dc199122c5d6f1b535127be22e4d37c1262472d9f070f19dd643"
+      ],
+      "roles": [
+        "body",
+        "logo",
+        "bar",
+        "glass-0",
+        "glass-1",
+        "flash-rim-0",
+        "flash-0"
+      ],
+      "stroke_roles": {},
+      "unsupported": {},
+      "source_spec": "PHONES[apple_iphone_17]",
+      "notes": [],
+      "coordinate_sha256": "22260eac593b8ed1b433979125874e8acef17f24ca38a9f8da0069655dd9faf8",
+      "export": "exports/iphone-17/model.glb",
+      "mesh_targets": {
+        "body": [
+          "Aluminum enclosure",
+          "Rear glass"
+        ],
+        "logo": [
+          "Apple logo | 0",
+          "Apple logo | 1"
+        ],
+        "bar": [
+          "Camera housing"
+        ],
+        "glass-0": [
+          "Black optical backing 0",
+          "Optical well 0"
+        ],
+        "glass-1": [
+          "Black optical backing 1",
+          "Optical well 1"
+        ],
+        "flash-rim-0": [],
+        "flash-0": [
+          "Flash 0"
+        ]
+      },
+      "camera_index_evidence": [
+        {
+          "window": 0,
+          "path": 3,
+          "source_uv": [
+            0.21,
+            0.126
+          ],
+          "profile_xy_mm": [
+            22.13,
+            61.18
+          ],
+          "profile_back_uv": [
+            0.19049,
+            0.09104
+          ]
+        },
+        {
+          "window": 1,
+          "path": 4,
+          "source_uv": [
+            0.21,
+            0.258
+          ],
+          "profile_xy_mm": [
+            22.13,
+            43.46
+          ],
+          "profile_back_uv": [
+            0.19049,
+            0.20949
+          ]
+        }
+      ]
+    },
+    "apple_iphone_17_pro": {
+      "profile": "profiles/iphone-17-pro.json",
+      "geometry_sha256": [
+        "6d51469169ec3012cb7883d1cf7204c0805cf76f239b67b90ecfac19f04a45c3"
+      ],
+      "roles": [
+        "body",
+        "rear-insert",
+        "logo",
+        "bar",
+        "glass-0",
+        "glass-1",
+        "glass-2",
+        "flash-rim-0",
+        "flash-0",
+        "sensor-0"
+      ],
+      "stroke_roles": {},
+      "unsupported": {},
+      "source_spec": "PHONES[apple_iphone_17_pro]",
+      "notes": [
+        "rear-insert targets full Rear glass; body targets enclosure. No separately bounded rear-insert mesh exists: insert silhouette differs from target silhouette."
+      ],
+      "coordinate_sha256": "2565f7c1136e11ae913c69c6adefdda7698813bac4d660dee4b9532fb444ef14",
+      "export": "exports/iphone-17-pro/model.glb",
+      "mesh_targets": {
+        "body": [
+          "Aluminum enclosure"
+        ],
+        "rear-insert": [
+          "Rear glass"
+        ],
+        "logo": [
+          "Apple logo | 0",
+          "Apple logo | 1"
+        ],
+        "bar": [
+          "Camera housing"
+        ],
+        "glass-0": [
+          "Black optical backing 0",
+          "Optical well 0"
+        ],
+        "glass-1": [
+          "Black optical backing 1",
+          "Optical well 1"
+        ],
+        "glass-2": [
+          "Black optical backing 2",
+          "Optical well 2"
+        ],
+        "flash-rim-0": [],
+        "flash-0": [
+          "Flash 0"
+        ],
+        "sensor-0": [
+          "Rear sensor 0"
+        ]
+      },
+      "camera_index_evidence": [
+        {
+          "window": 0,
+          "path": 4,
+          "source_uv": [
+            0.23,
+            0.129
+          ],
+          "profile_xy_mm": [
+            21.58,
+            60.63
+          ],
+          "profile_back_uv": [
+            0.19986,
+            0.0958
+          ]
+        },
+        {
+          "window": 1,
+          "path": 5,
+          "source_uv": [
+            0.23,
+            0.282
+          ],
+          "profile_xy_mm": [
+            21.58,
+            41.39
+          ],
+          "profile_back_uv": [
+            0.19986,
+            0.22407
+          ]
+        },
+        {
+          "window": 2,
+          "path": 6,
+          "source_uv": [
+            0.46517,
+            0.2054
+          ],
+          "profile_xy_mm": [
+            3.59,
+            51.01
+          ],
+          "profile_back_uv": [
+            0.45007,
+            0.15993
+          ]
+        }
+      ]
+    },
+    "apple_iphone_17_pro_max": {
+      "profile": "profiles/iphone-17-pro-max.json",
+      "geometry_sha256": [
+        "824542e931aca4f6a7d23f9ee88ada8f8614145d4bf3df97a26c91c533ef6f09"
+      ],
+      "roles": [
+        "body",
+        "rear-insert",
+        "logo",
+        "bar",
+        "glass-0",
+        "glass-1",
+        "glass-2",
+        "flash-rim-0",
+        "flash-0",
+        "sensor-0"
+      ],
+      "stroke_roles": {},
+      "unsupported": {},
+      "source_spec": "PHONES[apple_iphone_17_pro_max]",
+      "notes": [
+        "rear-insert targets full Rear glass; body targets enclosure. No separately bounded rear-insert mesh exists: insert silhouette differs from target silhouette."
+      ],
+      "coordinate_sha256": "16b6c454edc126f1cb80e685b3ac0377770d8454302f9cab72cedbd67ae24309",
+      "export": "exports/iphone-17-pro-max/model.glb",
+      "mesh_targets": {
+        "body": [
+          "Aluminum enclosure"
+        ],
+        "rear-insert": [
+          "Rear glass"
+        ],
+        "logo": [
+          "Apple logo | 0",
+          "Apple logo | 1"
+        ],
+        "bar": [
+          "Camera housing"
+        ],
+        "glass-0": [
+          "Black optical backing 0",
+          "Optical well 0"
+        ],
+        "glass-1": [
+          "Black optical backing 1",
+          "Optical well 1"
+        ],
+        "glass-2": [
+          "Black optical backing 2",
+          "Optical well 2"
+        ],
+        "flash-rim-0": [],
+        "flash-0": [
+          "Flash 0"
+        ],
+        "sensor-0": [
+          "Rear sensor 0"
+        ]
+      },
+      "camera_index_evidence": [
+        {
+          "window": 0,
+          "path": 4,
+          "source_uv": [
+            0.23,
+            0.129
+          ],
+          "profile_xy_mm": [
+            24.63,
+            67.33
+          ],
+          "profile_back_uv": [
+            0.18423,
+            0.08794
+          ]
+        },
+        {
+          "window": 1,
+          "path": 5,
+          "source_uv": [
+            0.23,
+            0.282
+          ],
+          "profile_xy_mm": [
+            24.63,
+            48.09
+          ],
+          "profile_back_uv": [
+            0.18423,
+            0.20569
+          ]
+        },
+        {
+          "window": 2,
+          "path": 6,
+          "source_uv": [
+            0.46517,
+            0.2054
+          ],
+          "profile_xy_mm": [
+            6.64,
+            57.71
+          ],
+          "profile_back_uv": [
+            0.41487,
+            0.14682
+          ]
+        }
+      ]
+    },
+    "apple_iphone_17e": {
+      "profile": "profiles/iphone-17e.json",
+      "geometry_sha256": [
+        "8551e03d5c5214f5ff58ed1f09ed09200cfe45ce76183e8a3f2d8f7e24572af8"
+      ],
+      "roles": [
+        "body",
+        "logo",
+        "glass-0",
+        "flash-rim-0",
+        "flash-0"
+      ],
+      "stroke_roles": {},
+      "unsupported": {},
+      "source_spec": "PHONES[apple_iphone_17e]",
+      "notes": [],
+      "coordinate_sha256": "5f8733ec7163688050595412ea093e5dc0247439c1d140a0915b78e4711dcca4",
+      "export": "exports/iphone-17e/model.glb",
+      "mesh_targets": {
+        "body": [
+          "Aluminum enclosure",
+          "Rear glass"
+        ],
+        "logo": [
+          "Apple logo | 0",
+          "Apple logo | 1"
+        ],
+        "glass-0": [
+          "Black optical backing 0",
+          "Optical well 0"
+        ],
+        "flash-rim-0": [],
+        "flash-0": [
+          "Flash 0"
+        ]
+      },
+      "camera_index_evidence": [
+        {
+          "window": 0,
+          "path": 2,
+          "source_uv": [
+            0.19517,
+            0.102
+          ],
+          "profile_xy_mm": [
+            22.43,
+            60.03
+          ],
+          "profile_back_uv": [
+            0.18629,
+            0.0908
+          ]
+        }
+      ]
+    },
+    "apple_iphone_18_pro": {
+      "profile": "profiles/iphone-18-pro.json",
+      "geometry_sha256": [
+        "aec0362add04a94c83b80420b53e1333687bbed03e1f28d27e0c9aedecbe02f7"
+      ],
+      "roles": [
+        "body",
+        "logo",
+        "bar",
+        "glass-0",
+        "glass-1",
+        "glass-2",
+        "flash-rim-0",
+        "flash-0",
+        "sensor-0"
+      ],
+      "stroke_roles": {},
+      "unsupported": {},
+      "source_spec": "PHONES[apple_iphone_18_pro]",
+      "notes": [],
+      "coordinate_sha256": "71316d36b3817e569abd18edcc041efa90dbc48b89b8640148fa1e3f974fb088",
+      "export": "exports/iphone-18-pro/model.glb",
+      "mesh_targets": {
+        "body": [
+          "Aluminum enclosure",
+          "Rear glass"
+        ],
+        "logo": [
+          "Apple logo | 0",
+          "Apple logo | 1"
+        ],
+        "bar": [
+          "Camera housing"
+        ],
+        "glass-0": [
+          "Black optical backing 0",
+          "Optical well 0"
+        ],
+        "glass-1": [
+          "Black optical backing 1",
+          "Optical well 1"
+        ],
+        "glass-2": [
+          "Black optical backing 2",
+          "Optical well 2"
+        ],
+        "flash-rim-0": [],
+        "flash-0": [
+          "Flash 0"
+        ],
+        "sensor-0": [
+          "Rear sensor 0"
+        ]
+      },
+      "camera_index_evidence": [
+        {
+          "window": 0,
+          "path": 3,
+          "source_uv": [
+            0.23,
+            0.129
+          ],
+          "profile_xy_mm": [
+            21.58,
+            60.63
+          ],
+          "profile_back_uv": [
+            0.19986,
+            0.0958
+          ]
+        },
+        {
+          "window": 1,
+          "path": 4,
+          "source_uv": [
+            0.23,
+            0.282
+          ],
+          "profile_xy_mm": [
+            21.58,
+            41.39
+          ],
+          "profile_back_uv": [
+            0.19986,
+            0.22407
+          ]
+        },
+        {
+          "window": 2,
+          "path": 5,
+          "source_uv": [
+            0.46517,
+            0.2054
+          ],
+          "profile_xy_mm": [
+            3.46,
+            51.01
+          ],
+          "profile_back_uv": [
+            0.45188,
+            0.15993
+          ]
+        }
+      ]
+    },
+    "apple_iphone_18_pro_max": {
+      "profile": "profiles/iphone-18-pro-max.json",
+      "geometry_sha256": [
+        "148da5cf883123625ad928856e064ee5b63c4f2239852b02267ff5a04dd6c129"
+      ],
+      "roles": [
+        "body",
+        "logo",
+        "bar",
+        "glass-0",
+        "glass-1",
+        "glass-2",
+        "flash-rim-0",
+        "flash-0",
+        "sensor-0"
+      ],
+      "stroke_roles": {},
+      "unsupported": {},
+      "source_spec": "PHONES[apple_iphone_18_pro_max]",
+      "notes": [],
+      "coordinate_sha256": "2db344732845fe80fac693212a4405cff8501cd59370bb2cac39ca33bdaa71d4",
+      "export": "exports/iphone-18-pro-max/model.glb",
+      "mesh_targets": {
+        "body": [
+          "Aluminum enclosure",
+          "Rear glass"
+        ],
+        "logo": [
+          "Apple logo | 0",
+          "Apple logo | 1"
+        ],
+        "bar": [
+          "Camera housing"
+        ],
+        "glass-0": [
+          "Black optical backing 0",
+          "Optical well 0"
+        ],
+        "glass-1": [
+          "Black optical backing 1",
+          "Optical well 1"
+        ],
+        "glass-2": [
+          "Black optical backing 2",
+          "Optical well 2"
+        ],
+        "flash-rim-0": [],
+        "flash-0": [
+          "Flash 0"
+        ],
+        "sensor-0": [
+          "Rear sensor 0"
+        ]
+      },
+      "camera_index_evidence": [
+        {
+          "window": 0,
+          "path": 3,
+          "source_uv": [
+            0.23,
+            0.129
+          ],
+          "profile_xy_mm": [
+            24.63,
+            67.33
+          ],
+          "profile_back_uv": [
+            0.18423,
+            0.08794
+          ]
+        },
+        {
+          "window": 1,
+          "path": 4,
+          "source_uv": [
+            0.23,
+            0.282
+          ],
+          "profile_xy_mm": [
+            24.63,
+            48.09
+          ],
+          "profile_back_uv": [
+            0.18423,
+            0.20569
+          ]
+        },
+        {
+          "window": 2,
+          "path": 5,
+          "source_uv": [
+            0.46517,
+            0.2054
+          ],
+          "profile_xy_mm": [
+            6.51,
+            57.71
+          ],
+          "profile_back_uv": [
+            0.41654,
+            0.14682
+          ]
+        }
+      ]
+    },
+    "apple_iphone_air": {
+      "profile": "profiles/iphone-air.json",
+      "geometry_sha256": [
+        "843c299d133f03649aaa965367ce4e58f72055296f902717433496a499c6d6be"
+      ],
+      "roles": [
+        "body",
+        "logo",
+        "bar",
+        "glass-0",
+        "flash-rim-0",
+        "flash-0"
+      ],
+      "stroke_roles": {},
+      "unsupported": {},
+      "source_spec": "PHONES[apple_iphone_air]",
+      "notes": [],
+      "coordinate_sha256": "69d006792560c37518f3735477f2d175bfacf03626d2e48da36b9fe204694e90",
+      "export": "exports/iphone-air/model.glb",
+      "mesh_targets": {
+        "body": [
+          "Aluminum enclosure",
+          "Rear glass"
+        ],
+        "logo": [
+          "Apple logo | 0",
+          "Apple logo | 1"
+        ],
+        "bar": [
+          "Camera housing"
+        ],
+        "glass-0": [
+          "Black optical backing 0",
+          "Optical well 0"
+        ],
+        "flash-rim-0": [],
+        "flash-0": [
+          "Flash 0"
+        ]
+      },
+      "camera_index_evidence": [
+        {
+          "window": 0,
+          "path": 3,
+          "source_uv": [
+            0.225,
+            0.141
+          ],
+          "profile_xy_mm": [
+            21.06,
+            61.81
+          ],
+          "profile_back_uv": [
+            0.21807,
+            0.10429
+          ]
+        }
+      ]
+    },
+    "apple_iphone_duo": {
+      "profile": null,
+      "geometry_sha256": [
+        "2451cd222b223439a65692f623e2efbf6aa6404f84eba7c83ed0702659ef4c94"
+      ],
+      "roles": [
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile"
+      ],
+      "stroke_roles": {},
+      "unsupported": {
+        "no-profile": "No matching standard camera profile/export in this batch; do not infer roles from path count. Duo has folded/unfolded profiles with a different panel schema, requiring separate mapping."
+      },
+      "source_spec": "PHONES[apple_iphone_duo]",
+      "notes": []
+    },
+    "apple_iphone_se_2020": {
+      "profile": null,
+      "geometry_sha256": [
+        "2c58d924c17654a3ee0b2af6388b1fd05ecabba406b585e68845576df75f2c27"
+      ],
+      "roles": [
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile"
+      ],
+      "stroke_roles": {},
+      "unsupported": {
+        "no-profile": "No matching profile/export in device-models; do not infer targets from path count."
+      },
+      "source_spec": "PHONES[apple_iphone_se_2020]",
+      "notes": []
+    },
+    "apple_iphone_se_2022": {
+      "profile": null,
+      "geometry_sha256": [
+        "2c58d924c17654a3ee0b2af6388b1fd05ecabba406b585e68845576df75f2c27"
+      ],
+      "roles": [
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile"
+      ],
+      "stroke_roles": {},
+      "unsupported": {
+        "no-profile": "No matching profile/export in device-models; do not infer targets from path count."
+      },
+      "source_spec": "PHONES[apple_iphone_se_2022]",
+      "notes": []
+    },
+    "apple_iphone_x": {
+      "profile": null,
+      "geometry_sha256": [
+        "533870a210e06b022102253cd565010dff089db209e4cb132d7ed4169b86a917"
+      ],
+      "roles": [
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile"
+      ],
+      "stroke_roles": {},
+      "unsupported": {
+        "no-profile": "No matching profile/export in device-models; do not infer targets from path count."
+      },
+      "source_spec": "PHONES[apple_iphone_x]",
+      "notes": []
+    },
+    "apple_iphone_xr": {
+      "profile": null,
+      "geometry_sha256": [
+        "713d8dd0687c282c8c65679be152e05197e4d4075bf24a8276e7dccbffc337b6"
+      ],
+      "roles": [
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile"
+      ],
+      "stroke_roles": {},
+      "unsupported": {
+        "no-profile": "No matching profile/export in device-models; do not infer targets from path count."
+      },
+      "source_spec": "PHONES[apple_iphone_xr]",
+      "notes": []
+    },
+    "apple_iphone_xs": {
+      "profile": null,
+      "geometry_sha256": [
+        "533870a210e06b022102253cd565010dff089db209e4cb132d7ed4169b86a917"
+      ],
+      "roles": [
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile"
+      ],
+      "stroke_roles": {},
+      "unsupported": {
+        "no-profile": "No matching profile/export in device-models; do not infer targets from path count."
+      },
+      "source_spec": "PHONES[apple_iphone_xs]",
+      "notes": []
+    },
+    "apple_iphone_xs_max": {
+      "profile": null,
+      "geometry_sha256": [
+        "533870a210e06b022102253cd565010dff089db209e4cb132d7ed4169b86a917"
+      ],
+      "roles": [
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile"
+      ],
+      "stroke_roles": {},
+      "unsupported": {
+        "no-profile": "No matching profile/export in device-models; do not infer targets from path count."
+      },
+      "source_spec": "PHONES[apple_iphone_xs_max]",
+      "notes": []
+    },
+    "oneplus_11": {
+      "profile": "profiles/oneplus-11.json",
+      "geometry_sha256": [
+        "f50004c93dc73f15fe6ae68315b16ba751040e942110e178cfee0a9335d68812"
+      ],
+      "roles": [
+        "body",
+        "logo",
+        "bridge",
+        "bridge",
+        "bar",
+        "bar-fill",
+        "bar-fill",
+        "glass-0",
+        "glass-1",
+        "glass-2",
+        "glass-3",
+        "flash-rim-0",
+        "flash-0"
+      ],
+      "stroke_roles": {},
+      "unsupported": {},
+      "source_spec": "PHONES[oneplus_11]",
+      "notes": [],
+      "coordinate_sha256": "e47d6a3204e7762e461c5bfff4f2a67bc740a3a32a8cb3e91e0e96c0376a5edb",
+      "export": "exports/oneplus-11/model.glb",
+      "mesh_targets": {
+        "body": [
+          "Aluminum enclosure",
+          "Rear glass"
+        ],
+        "logo": [
+          "OnePlus logo | 0",
+          "OnePlus logo | 1",
+          "OnePlus logo | 2"
+        ],
+        "bridge": [
+          "Camera dial side bridge"
+        ],
+        "bar": [
+          "Camera housing"
+        ],
+        "bar-fill": [
+          "Camera housing"
+        ],
+        "glass-0": [
+          "Black optical backing 0",
+          "Continuous camera cover 0",
+          "Optical well 0"
+        ],
+        "glass-1": [
+          "Black optical backing 1",
+          "Continuous camera cover 1",
+          "Optical well 1"
+        ],
+        "glass-2": [
+          "Black optical backing 2",
+          "Continuous camera cover 2",
+          "Optical well 2"
+        ],
+        "glass-3": [
+          "Black optical backing 3",
+          "Continuous camera cover 3",
+          "Optical well 3"
+        ],
+        "flash-rim-0": [],
+        "flash-0": [
+          "Flash 0"
+        ]
+      },
+      "camera_index_evidence": [
+        {
+          "window": 0,
+          "path": 7,
+          "source_uv": [
+            0.244,
+            0.1856
+          ],
+          "profile_xy_mm": [
+            18.9494,
+            57.80513
+          ],
+          "profile_back_uv": [
+            0.24427,
+            0.14558
+          ]
+        },
+        {
+          "window": 1,
+          "path": 8,
+          "source_uv": [
+            0.502,
+            0.1856
+          ],
+          "profile_xy_mm": [
+            -0.12434,
+            57.80513
+          ],
+          "profile_back_uv": [
+            0.50168,
+            0.14558
+          ]
+        },
+        {
+          "window": 2,
+          "path": 9,
+          "source_uv": [
+            0.244,
+            0.3156
+          ],
+          "profile_xy_mm": [
+            18.9494,
+            41.26158
+          ],
+          "profile_back_uv": [
+            0.24427,
+            0.24702
+          ]
+        },
+        {
+          "window": 3,
+          "path": 10,
+          "source_uv": [
+            0.502,
+            0.3155
+          ],
+          "profile_xy_mm": [
+            -0.12434,
+            41.26158
+          ],
+          "profile_back_uv": [
+            0.50168,
+            0.24702
+          ]
+        }
+      ]
+    },
+    "oneplus_11r": {
+      "profile": "profiles/oneplus-11r.json",
+      "geometry_sha256": [
+        "ae99e80357a85c4862cd6a11e33b4e280e03eaad558e9b1a28894c3a5dd7fd10"
+      ],
+      "roles": [
+        "body",
+        "logo",
+        "bridge",
+        "bridge",
+        "bar",
+        "bar-fill",
+        "bar-fill",
+        "glass-0",
+        "glass-1",
+        "glass-2",
+        "glass-3",
+        "flash-rim-0",
+        "flash-0"
+      ],
+      "stroke_roles": {},
+      "unsupported": {},
+      "source_spec": "PHONES[oneplus_11r]",
+      "notes": [],
+      "coordinate_sha256": "db047ab513982f5573976dd487461f48192db38d11d5b450842c5f6c78ef3bc4",
+      "export": "exports/oneplus-11r/model.glb",
+      "mesh_targets": {
+        "body": [
+          "Aluminum enclosure",
+          "Rear glass"
+        ],
+        "logo": [
+          "OnePlus logo | 0",
+          "OnePlus logo | 1",
+          "OnePlus logo | 2"
+        ],
+        "bridge": [
+          "Camera dial side bridge"
+        ],
+        "bar": [
+          "Camera housing"
+        ],
+        "bar-fill": [
+          "Camera housing"
+        ],
+        "glass-0": [
+          "Black optical backing 0",
+          "Continuous camera cover 0",
+          "Optical well 0"
+        ],
+        "glass-1": [
+          "Black optical backing 1",
+          "Continuous camera cover 1",
+          "Optical well 1"
+        ],
+        "glass-2": [
+          "Black optical backing 2",
+          "Continuous camera cover 2",
+          "Optical well 2"
+        ],
+        "glass-3": [
+          "Black optical backing 3",
+          "Continuous camera cover 3",
+          "Optical well 3"
+        ],
+        "flash-rim-0": [],
+        "flash-0": [
+          "Flash 0"
+        ]
+      },
+      "camera_index_evidence": [
+        {
+          "window": 0,
+          "path": 7,
+          "source_uv": [
+            0.226,
+            0.1926
+          ],
+          "profile_xy_mm": [
+            20.36099,
+            57.88303
+          ],
+          "profile_back_uv": [
+            0.22596,
+            0.14576
+          ]
+        },
+        {
+          "window": 1,
+          "path": 8,
+          "source_uv": [
+            0.46517,
+            0.1926
+          ],
+          "profile_xy_mm": [
+            2.59588,
+            57.88303
+          ],
+          "profile_back_uv": [
+            0.46506,
+            0.14576
+          ]
+        },
+        {
+          "window": 2,
+          "path": 9,
+          "source_uv": [
+            0.226,
+            0.3312
+          ],
+          "profile_xy_mm": [
+            20.36099,
+            40.70358
+          ],
+          "profile_back_uv": [
+            0.22596,
+            0.2509
+          ]
+        },
+        {
+          "window": 3,
+          "path": 10,
+          "source_uv": [
+            0.46517,
+            0.3313
+          ],
+          "profile_xy_mm": [
+            2.59588,
+            40.70358
+          ],
+          "profile_back_uv": [
+            0.46506,
+            0.2509
+          ]
+        }
+      ]
+    },
+    "oneplus_12": {
+      "profile": "profiles/oneplus-12.json",
+      "geometry_sha256": [
+        "c3a696464c3d79a2189610f47c26ec6b0615e713626f34f931f52e9bffb0f3e4"
+      ],
+      "roles": [
+        "body",
+        "logo",
+        "bridge",
+        "bridge",
+        "bar",
+        "bar-fill",
+        "bar-fill",
+        "bar-fill",
+        "glass-0",
+        "glass-1",
+        "ring-2",
+        "ring-2",
+        "glass-2",
+        "glass-3",
+        "sensor-0",
+        "flash-rim-0",
+        "flash-0"
+      ],
+      "stroke_roles": {},
+      "unsupported": {},
+      "source_spec": "PHONES[oneplus_12]",
+      "notes": [
+        "Two independently drawn metal paths form ring-2 around rectangular glass-2; profile window 2 is circular with rectangular periscope internals. Composite ring layers; preserve source aperture aspect."
+      ],
+      "coordinate_sha256": "88c9c74adfda0a70565450cb161134bcc5b950657ef1b17f67648bf6afb5a091",
+      "export": "exports/oneplus-12/model.glb",
+      "mesh_targets": {
+        "body": [
+          "Aluminum enclosure",
+          "Rear glass"
+        ],
+        "logo": [
+          "OnePlus logo | 0",
+          "OnePlus logo | 1",
+          "OnePlus logo | 2"
+        ],
+        "bridge": [
+          "Camera dial side bridge"
+        ],
+        "bar": [
+          "Camera housing"
+        ],
+        "bar-fill": [
+          "Camera housing"
+        ],
+        "glass-0": [
+          "Black optical backing 0",
+          "Continuous camera cover 0",
+          "Optical well 0"
+        ],
+        "glass-1": [
+          "Black optical backing 1",
+          "Continuous camera cover 1",
+          "Optical well 1"
+        ],
+        "ring-2": [
+          "Camera lens rim 2"
+        ],
+        "glass-2": [
+          "Black optical backing 2",
+          "Continuous camera cover 2",
+          "Optical well 2"
+        ],
+        "glass-3": [
+          "Black optical backing 3",
+          "Continuous camera cover 3",
+          "Optical well 3"
+        ],
+        "sensor-0": [
+          "Rear sensor 0"
+        ],
+        "flash-rim-0": [],
+        "flash-0": [
+          "Flash 0"
+        ]
+      },
+      "camera_index_evidence": [
+        {
+          "window": 0,
+          "path": 8,
+          "source_uv": [
+            0.254,
+            0.2004
+          ],
+          "profile_xy_mm": [
+            18.63995,
+            55.02871
+          ],
+          "profile_back_uv": [
+            0.25409,
+            0.16507
+          ]
+        },
+        {
+          "window": 1,
+          "path": 9,
+          "source_uv": [
+            0.511,
+            0.2004
+          ],
+          "profile_xy_mm": [
+            -0.81663,
+            55.02871
+          ],
+          "profile_back_uv": [
+            0.51077,
+            0.16507
+          ]
+        },
+        {
+          "window": 2,
+          "path": 12,
+          "source_uv": [
+            0.254,
+            0.341
+          ],
+          "profile_xy_mm": [
+            18.63995,
+            35.96519
+          ],
+          "profile_back_uv": [
+            0.25409,
+            0.2811
+          ]
+        },
+        {
+          "window": 3,
+          "path": 13,
+          "source_uv": [
+            0.511,
+            0.341
+          ],
+          "profile_xy_mm": [
+            -0.81663,
+            35.96519
+          ],
+          "profile_back_uv": [
+            0.51077,
+            0.2811
+          ]
+        }
+      ]
+    },
+    "oneplus_12r": {
+      "profile": "profiles/oneplus-12r.json",
+      "geometry_sha256": [
+        "707b7450c2ddf77e3d688a40d87eceb5de246acfd60fbb3cf7490b1a2880ee1a"
+      ],
+      "roles": [
+        "body",
+        "logo",
+        "bridge",
+        "bridge",
+        "bar",
+        "bar-fill",
+        "bar-fill",
+        "bar-fill",
+        "glass-0",
+        "glass-1",
+        "glass-2",
+        "glass-3",
+        "sensor-0",
+        "flash-rim-0",
+        "flash-0"
+      ],
+      "stroke_roles": {},
+      "unsupported": {},
+      "source_spec": "PHONES[oneplus_12r]",
+      "notes": [],
+      "coordinate_sha256": "73b56f865401fcb3e8b38ceb36610f0483dbc199ce02dc932c87db932d002bb1",
+      "export": "exports/oneplus-12r/model.glb",
+      "mesh_targets": {
+        "body": [
+          "Aluminum enclosure",
+          "Rear glass"
+        ],
+        "logo": [
+          "OnePlus logo | 0",
+          "OnePlus logo | 1",
+          "OnePlus logo | 2"
+        ],
+        "bridge": [
+          "Camera dial side bridge"
+        ],
+        "bar": [
+          "Camera housing"
+        ],
+        "bar-fill": [
+          "Camera housing"
+        ],
+        "glass-0": [
+          "Black optical backing 0",
+          "Continuous camera cover 0",
+          "Optical well 0"
+        ],
+        "glass-1": [
+          "Black optical backing 1",
+          "Continuous camera cover 1",
+          "Optical well 1"
+        ],
+        "glass-2": [
+          "Black optical backing 2",
+          "Continuous camera cover 2",
+          "Optical well 2"
+        ],
+        "glass-3": [
+          "Black optical backing 3",
+          "Continuous camera cover 3",
+          "Optical well 3"
+        ],
+        "sensor-0": [
+          "Rear sensor 0"
+        ],
+        "flash-rim-0": [],
+        "flash-0": [
+          "Flash 0"
+        ]
+      },
+      "camera_index_evidence": [
+        {
+          "window": 0,
+          "path": 8,
+          "source_uv": [
+            0.245,
+            0.1948
+          ],
+          "profile_xy_mm": [
+            19.18155,
+            56.37738
+          ],
+          "profile_back_uv": [
+            0.24526,
+            0.15476
+          ]
+        },
+        {
+          "window": 1,
+          "path": 9,
+          "source_uv": [
+            0.475,
+            0.1948
+          ],
+          "profile_xy_mm": [
+            1.87952,
+            56.37738
+          ],
+          "profile_back_uv": [
+            0.47504,
+            0.15476
+          ]
+        },
+        {
+          "window": 2,
+          "path": 10,
+          "source_uv": [
+            0.245,
+            0.3312
+          ],
+          "profile_xy_mm": [
+            19.18155,
+            38.68655
+          ],
+          "profile_back_uv": [
+            0.24526,
+            0.2631
+          ]
+        },
+        {
+          "window": 3,
+          "path": 11,
+          "source_uv": [
+            0.475,
+            0.3312
+          ],
+          "profile_xy_mm": [
+            1.87952,
+            38.68655
+          ],
+          "profile_back_uv": [
+            0.47504,
+            0.2631
+          ]
+        }
+      ]
+    },
+    "oneplus_13": {
+      "profile": "profiles/oneplus-13.json",
+      "geometry_sha256": [
+        "08169110420edbc3225e4ede1f6e0a5aed7f71d696ba132880bd9f08455213c9"
+      ],
+      "roles": [
+        "body",
+        "logo",
+        "bar",
+        "bar-fill",
+        "glass-0",
+        "glass-1",
+        "glass-2",
+        "glass-3",
+        "flash-rim-0",
+        "flash-0"
+      ],
+      "stroke_roles": {},
+      "unsupported": {},
+      "source_spec": "PHONES[oneplus_13]",
+      "notes": [],
+      "coordinate_sha256": "820325d3584cac19f88d1d0d236933ec74d16163110c2815091243fdf905bd62",
+      "export": "exports/oneplus-13/model.glb",
+      "mesh_targets": {
+        "body": [
+          "Aluminum enclosure",
+          "Rear glass"
+        ],
+        "logo": [
+          "OnePlus logo | 0",
+          "OnePlus logo | 1",
+          "OnePlus logo | 2"
+        ],
+        "bar": [
+          "Camera housing"
+        ],
+        "bar-fill": [
+          "Camera housing"
+        ],
+        "glass-0": [
+          "Black optical backing 0",
+          "Continuous camera cover 0",
+          "Optical well 0"
+        ],
+        "glass-1": [
+          "Black optical backing 1",
+          "Continuous camera cover 1",
+          "Optical well 1"
+        ],
+        "glass-2": [
+          "Black optical backing 2",
+          "Continuous camera cover 2",
+          "Optical well 2"
+        ],
+        "glass-3": [
+          "Black optical backing 3",
+          "Continuous camera cover 3",
+          "Optical well 3"
+        ],
+        "flash-rim-0": [],
+        "flash-0": [
+          "Flash 0"
+        ]
+      },
+      "camera_index_evidence": [
+        {
+          "window": 0,
+          "path": 4,
+          "source_uv": [
+            0.255,
+            0.165
+          ],
+          "profile_xy_mm": [
+            17.30571,
+            56.23929
+          ],
+          "profile_back_uv": [
+            0.27378,
+            0.15476
+          ]
+        },
+        {
+          "window": 1,
+          "path": 5,
+          "source_uv": [
+            0.485,
+            0.165
+          ],
+          "profile_xy_mm": [
+            -0.72964,
+            56.23929
+          ],
+          "profile_back_uv": [
+            0.50954,
+            0.15476
+          ]
+        },
+        {
+          "window": 2,
+          "path": 6,
+          "source_uv": [
+            0.255,
+            0.303
+          ],
+          "profile_xy_mm": [
+            17.30571,
+            38.01
+          ],
+          "profile_back_uv": [
+            0.27378,
+            0.26667
+          ]
+        },
+        {
+          "window": 3,
+          "path": 7,
+          "source_uv": [
+            0.485,
+            0.303
+          ],
+          "profile_xy_mm": [
+            -0.72964,
+            38.01
+          ],
+          "profile_back_uv": [
+            0.50954,
+            0.26667
+          ]
+        }
+      ]
+    },
+    "oneplus_13r": {
+      "profile": "profiles/oneplus-13r.json",
+      "geometry_sha256": [
+        "a498a44b762c9c3c1e03337a41096b4a399c52c26c739668fb555798fdf1acd2"
+      ],
+      "roles": [
+        "body",
+        "logo",
+        "bar",
+        "bar-fill",
+        "glass-0",
+        "glass-1",
+        "glass-2",
+        "glass-3",
+        "flash-rim-0",
+        "flash-0"
+      ],
+      "stroke_roles": {},
+      "unsupported": {},
+      "source_spec": "PHONES[oneplus_13r]",
+      "notes": [],
+      "coordinate_sha256": "bed3bb93a4b92fff3199710a010a5f8c58011cf9f4b5c18fe68664c0caddd046",
+      "export": "exports/oneplus-13r/model.glb",
+      "mesh_targets": {
+        "body": [
+          "Aluminum enclosure",
+          "Rear glass"
+        ],
+        "logo": [
+          "OnePlus logo | 0",
+          "OnePlus logo | 1",
+          "OnePlus logo | 2"
+        ],
+        "bar": [
+          "Camera housing"
+        ],
+        "bar-fill": [
+          "Camera housing"
+        ],
+        "glass-0": [
+          "Black optical backing 0",
+          "Continuous camera cover 0",
+          "Optical well 0"
+        ],
+        "glass-1": [
+          "Black optical backing 1",
+          "Continuous camera cover 1",
+          "Optical well 1"
+        ],
+        "glass-2": [
+          "Black optical backing 2",
+          "Continuous camera cover 2",
+          "Optical well 2"
+        ],
+        "glass-3": [
+          "Black optical backing 3",
+          "Continuous camera cover 3",
+          "Optical well 3"
+        ],
+        "flash-rim-0": [],
+        "flash-0": [
+          "Flash 0"
+        ]
+      },
+      "camera_index_evidence": [
+        {
+          "window": 0,
+          "path": 4,
+          "source_uv": [
+            0.255,
+            0.165
+          ],
+          "profile_xy_mm": [
+            18.2416,
+            59.07157
+          ],
+          "profile_back_uv": [
+            0.25935,
+            0.13468
+          ]
+        },
+        {
+          "window": 1,
+          "path": 5,
+          "source_uv": [
+            0.485,
+            0.165
+          ],
+          "profile_xy_mm": [
+            0.89595,
+            59.07157
+          ],
+          "profile_back_uv": [
+            0.48818,
+            0.13468
+          ]
+        },
+        {
+          "window": 2,
+          "path": 6,
+          "source_uv": [
+            0.255,
+            0.303
+          ],
+          "profile_xy_mm": [
+            18.2416,
+            42.30411
+          ],
+          "profile_back_uv": [
+            0.25935,
+            0.23838
+          ]
+        },
+        {
+          "window": 3,
+          "path": 7,
+          "source_uv": [
+            0.485,
+            0.303
+          ],
+          "profile_xy_mm": [
+            0.89595,
+            42.30411
+          ],
+          "profile_back_uv": [
+            0.48818,
+            0.23838
+          ]
+        }
+      ]
+    },
+    "oneplus_15": {
+      "profile": null,
+      "geometry_sha256": [
+        "745f5f345a0d7b3a7399b2c52d7464a76b046497cc4718bf53aaf72169ca0546"
+      ],
+      "roles": [
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile"
+      ],
+      "stroke_roles": {},
+      "unsupported": {
+        "no-profile": "No matching profile/export in device-models; do not infer targets from path count."
+      },
+      "source_spec": "PHONES[oneplus_15]",
+      "notes": []
+    },
+    "oneplus_15r": {
+      "profile": null,
+      "geometry_sha256": [
+        "08085785dcdee57e9a0cc03a8d9ceb99c288b142c572cc0a6616944c082afa60"
+      ],
+      "roles": [
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile"
+      ],
+      "stroke_roles": {},
+      "unsupported": {
+        "no-profile": "No matching profile/export in device-models; do not infer targets from path count."
+      },
+      "source_spec": "PHONES[oneplus_15r]",
+      "notes": []
+    },
+    "oneplus_15t": {
+      "profile": null,
+      "geometry_sha256": [
+        "480b22b066952f23cd10a22c9c328f88e9982d2e683352a1d92b4d6f43084a43"
+      ],
+      "roles": [
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile"
+      ],
+      "stroke_roles": {},
+      "unsupported": {
+        "no-profile": "No matching profile/export in device-models; do not infer targets from path count."
+      },
+      "source_spec": "PHONES[oneplus_15t]",
+      "notes": []
+    },
+    "oneplus_16": {
+      "profile": null,
+      "geometry_sha256": [
+        "f1df1e919c8d9104c236bd3751fb443ee26dd2f9ccc6221ae762ae629b841cb3"
+      ],
+      "roles": [
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile"
+      ],
+      "stroke_roles": {},
+      "unsupported": {
+        "no-profile": "No matching profile/export in device-models; do not infer targets from path count."
+      },
+      "source_spec": "PHONES[oneplus_16]",
+      "notes": []
+    },
+    "oneplus_nord_5": {
+      "profile": null,
+      "geometry_sha256": [
+        "7f4bd7cf991700c9054e4efadbe56d2609cf1e34f7e81b03d95268d9702e57c2"
+      ],
+      "roles": [
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile"
+      ],
+      "stroke_roles": {},
+      "unsupported": {
+        "no-profile": "No matching profile/export in device-models; do not infer targets from path count."
+      },
+      "source_spec": "PHONES[oneplus_nord_5]",
+      "notes": []
+    },
+    "oneplus_nord_6": {
+      "profile": null,
+      "geometry_sha256": [
+        "fcc99aa8117f44685c6d88b0dc26c43bcbf5b97bfa720ad393c0498f518189b3"
+      ],
+      "roles": [
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile"
+      ],
+      "stroke_roles": {},
+      "unsupported": {
+        "no-profile": "No matching profile/export in device-models; do not infer targets from path count."
+      },
+      "source_spec": "PHONES[oneplus_nord_6]",
+      "notes": []
+    },
+    "oneplus_nord_ce6": {
+      "profile": null,
+      "geometry_sha256": [
+        "9f836db0cab0484f998f3e70ea3a4895ef2fb71c2ce6e9d9ff14fdc67849409a"
+      ],
+      "roles": [
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile"
+      ],
+      "stroke_roles": {},
+      "unsupported": {
+        "no-profile": "No matching profile/export in device-models; do not infer targets from path count."
+      },
+      "source_spec": "PHONES[oneplus_nord_ce6]",
+      "notes": []
+    },
+    "oneplus_nord_ce6_lite": {
+      "profile": null,
+      "geometry_sha256": [
+        "0e46e7caaa448a83a5f128eea34bef6548ef8829edfdf306b3d58fb8a1184bf9"
+      ],
+      "roles": [
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile"
+      ],
+      "stroke_roles": {},
+      "unsupported": {
+        "no-profile": "No matching profile/export in device-models; do not infer targets from path count."
+      },
+      "source_spec": "PHONES[oneplus_nord_ce6_lite]",
+      "notes": []
+    },
+    "oneplus_pad": {
+      "profile": "profiles/oneplus-pad.json",
+      "geometry_sha256": [
+        "0b03ff5ed83e627026ef379572124efd6648998d43a57f8ff04f634a43ed4256"
+      ],
+      "roles": [
+        "body",
+        "logo",
+        "bar",
+        "bar-fill",
+        "glass-0"
+      ],
+      "stroke_roles": {},
+      "unsupported": {},
+      "source_spec": "TABLETS[oneplus_pad]",
+      "notes": [],
+      "coordinate_sha256": "7c35e033ae1661baaaf68de382a34ed6796edb9c68ddf753cd49088f8e27d572",
+      "export": "exports/oneplus-pad/model.glb",
+      "mesh_targets": {
+        "body": [
+          "Aluminum enclosure",
+          "Rear glass"
+        ],
+        "logo": [
+          "OnePlus logo | 0",
+          "OnePlus logo | 1",
+          "OnePlus logo | 2"
+        ],
+        "bar": [
+          "Camera housing"
+        ],
+        "bar-fill": [
+          "Camera housing"
+        ],
+        "glass-0": [
+          "Black optical backing 0",
+          "Continuous camera cover 0",
+          "Optical well 0"
+        ]
+      },
+      "camera_index_evidence": [
+        {
+          "window": 0,
+          "path": 4,
+          "source_uv": [
+            0.5,
+            0.13626
+          ],
+          "profile_xy_mm": [
+            73.49108,
+            0.0
+          ],
+          "profile_back_uv": [
+            0.5,
+            0.112
+          ]
+        }
+      ]
+    },
+    "oneplus_pad_2": {
+      "profile": "profiles/oneplus-pad-2.json",
+      "geometry_sha256": [
+        "6cb5699573b1b0c3eda9e1f5fd809f82f0202bb39eaf091503183d3ba2a08867"
+      ],
+      "roles": [
+        "body",
+        "logo",
+        "bar",
+        "bar-fill",
+        "glass-0"
+      ],
+      "stroke_roles": {},
+      "unsupported": {},
+      "source_spec": "TABLETS[oneplus_pad_2]",
+      "notes": [],
+      "coordinate_sha256": "f9d3be28e4342c320f23b11ed544b479d795e80c54c94199b8fb5f26835919d4",
+      "export": "exports/oneplus-pad-2/model.glb",
+      "mesh_targets": {
+        "body": [
+          "Aluminum enclosure",
+          "Rear glass"
+        ],
+        "logo": [
+          "OnePlus logo | 0",
+          "OnePlus logo | 1",
+          "OnePlus logo | 2"
+        ],
+        "bar": [
+          "Camera housing"
+        ],
+        "bar-fill": [
+          "Camera housing"
+        ],
+        "glass-0": [
+          "Black optical backing 0",
+          "Continuous camera cover 0",
+          "Optical well 0"
+        ]
+      },
+      "camera_index_evidence": [
+        {
+          "window": 0,
+          "path": 4,
+          "source_uv": [
+            0.5,
+            0.13084
+          ],
+          "profile_xy_mm": [
+            75.68328,
+            0.0
+          ],
+          "profile_back_uv": [
+            0.5,
+            0.112
+          ]
+        }
+      ]
+    },
+    "oneplus_pad_2025_cn": {
+      "profile": null,
+      "geometry_sha256": [
+        "5a83de7c06f5886dbd41c35abb46c20ab1339346442add039ff163c0db139022"
+      ],
+      "roles": [
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile"
+      ],
+      "stroke_roles": {},
+      "unsupported": {
+        "no-profile": "No matching profile/export in device-models; do not infer targets from path count."
+      },
+      "source_spec": "TABLETS[oneplus_pad_2025_cn]",
+      "notes": []
+    },
+    "oneplus_pad_2_2025_cn": {
+      "profile": null,
+      "geometry_sha256": [
+        "65aeca4cbabfa12ccd3d8c3669f8bb3073fc44a9d30a883a1a2cfd96dbc578a4"
+      ],
+      "roles": [
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile"
+      ],
+      "stroke_roles": {},
+      "unsupported": {
+        "no-profile": "No matching profile/export in device-models; do not infer targets from path count."
+      },
+      "source_spec": "TABLETS[oneplus_pad_2_2025_cn]",
+      "notes": []
+    },
+    "oneplus_pad_2_pro": {
+      "profile": null,
+      "geometry_sha256": [
+        "53b363fb96bcfa852c6546cf2e61bc771103fadaf1f1a4da26d016b882b86440"
+      ],
+      "roles": [
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile"
+      ],
+      "stroke_roles": {},
+      "unsupported": {
+        "no-profile": "No matching profile/export in device-models; do not infer targets from path count."
+      },
+      "source_spec": "TABLETS[oneplus_pad_2_pro]",
+      "notes": []
+    },
+    "oneplus_pad_3": {
+      "profile": "profiles/oneplus-pad-3.json",
+      "geometry_sha256": [
+        "0d5476175627ad699dcfeb0f6b84d4c19c6fe89a27fd39d0aa637f3282b92134"
+      ],
+      "roles": [
+        "body",
+        "logo",
+        "bar",
+        "bar-fill",
+        "glass-0",
+        "flash-rim-0",
+        "flash-0"
+      ],
+      "stroke_roles": {},
+      "unsupported": {},
+      "source_spec": "TABLETS[oneplus_pad_3]",
+      "notes": [],
+      "coordinate_sha256": "1e58b7360a52dbdab2e40b23347c10f19e853b15fcc6d319b1f18f317ab005ab",
+      "export": "exports/oneplus-pad-3/model.glb",
+      "mesh_targets": {
+        "body": [
+          "Aluminum enclosure",
+          "Rear glass"
+        ],
+        "logo": [
+          "OnePlus logo | 0",
+          "OnePlus logo | 1",
+          "OnePlus logo | 2"
+        ],
+        "bar": [
+          "Camera housing"
+        ],
+        "bar-fill": [
+          "Camera housing"
+        ],
+        "glass-0": [
+          "Black optical backing 0",
+          "Continuous camera cover 0",
+          "Optical well 0"
+        ],
+        "flash-rim-0": [],
+        "flash-0": [
+          "Flash 0"
+        ]
+      },
+      "camera_index_evidence": [
+        {
+          "window": 0,
+          "path": 4,
+          "source_uv": [
+            0.93989,
+            0.07868
+          ],
+          "profile_xy_mm": [
+            88.68618,
+            127.4284
+          ],
+          "profile_back_uv": [
+            0.94,
+            0.077
+          ]
+        }
+      ]
+    },
+    "oneplus_pad_3_pro": {
+      "profile": null,
+      "geometry_sha256": [
+        "85f9a062235f08d8dddfa3952908d4d7926e66d123bb77d8f22660d60d89e0f0"
+      ],
+      "roles": [
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile"
+      ],
+      "stroke_roles": {},
+      "unsupported": {
+        "no-profile": "No matching profile/export in device-models; do not infer targets from path count."
+      },
+      "source_spec": "TABLETS[oneplus_pad_3_pro]",
+      "notes": []
+    },
+    "oneplus_pad_4": {
+      "profile": null,
+      "geometry_sha256": [
+        "1ce8e7e16d3839627d3edc2ca5f392486a58b8a224099ae655e2c7a92ab89703"
+      ],
+      "roles": [
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile"
+      ],
+      "stroke_roles": {},
+      "unsupported": {
+        "no-profile": "No matching profile/export in device-models; do not infer targets from path count."
+      },
+      "source_spec": "TABLETS[oneplus_pad_4]",
+      "notes": []
+    },
+    "oneplus_pad_go": {
+      "profile": "profiles/oneplus-pad-go.json",
+      "geometry_sha256": [
+        "a7a7db60f4d1dcb56eb1718ab0387e653486b9335836510a6d518efb7ea27e89"
+      ],
+      "roles": [
+        "body",
+        "logo",
+        "rear-band",
+        "bar",
+        "bar-fill",
+        "glass-0"
+      ],
+      "stroke_roles": {},
+      "unsupported": {},
+      "source_spec": "TABLETS[oneplus_pad_go]",
+      "notes": [],
+      "coordinate_sha256": "6fc77c2528bad2b974e3d218d39fe9433f8d7a0a038084f5cd00f8419ddf946d",
+      "export": "exports/oneplus-pad-go/model.glb",
+      "mesh_targets": {
+        "body": [
+          "Aluminum enclosure",
+          "Rear glass"
+        ],
+        "logo": [
+          "OnePlus logo | 0",
+          "OnePlus logo | 1",
+          "OnePlus logo | 2"
+        ],
+        "rear-band": [
+          "Upper contrasting rear band"
+        ],
+        "bar": [
+          "Camera housing"
+        ],
+        "bar-fill": [
+          "Camera housing"
+        ],
+        "glass-0": [
+          "Black optical backing 0",
+          "Continuous camera cover 0",
+          "Optical well 0"
+        ]
+      },
+      "camera_index_evidence": [
+        {
+          "window": 0,
+          "path": 5,
+          "source_uv": [
+            0.5,
+            0.11534
+          ],
+          "profile_xy_mm": [
+            76.72032,
+            0.0
+          ],
+          "profile_back_uv": [
+            0.5,
+            0.092
+          ]
+        }
+      ]
+    },
+    "oneplus_pad_go_2": {
+      "profile": null,
+      "geometry_sha256": [
+        "662b75fe163fe338b9a2aca0f0aaf58464ec70ff372b5963b206ec0f7a2f372d"
+      ],
+      "roles": [
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile"
+      ],
+      "stroke_roles": {},
+      "unsupported": {
+        "no-profile": "No matching profile/export in device-models; do not infer targets from path count."
+      },
+      "source_spec": "TABLETS[oneplus_pad_go_2]",
+      "notes": []
+    },
+    "oneplus_pad_lite": {
+      "profile": "profiles/oneplus-pad-lite.json",
+      "geometry_sha256": [
+        "c2f638de21ecbad2f02151a8fb1d2e508d5cd02451093fb026c66caeda24a208"
+      ],
+      "roles": [
+        "body",
+        "logo",
+        "bar",
+        "bar-fill",
+        "glass-0"
+      ],
+      "stroke_roles": {},
+      "unsupported": {},
+      "source_spec": "TABLETS[oneplus_pad_lite]",
+      "notes": [],
+      "coordinate_sha256": "44e73f47da99b61f5922c7f45fa91f13b7c4d95fc867ad79b2535bcbb56852a8",
+      "export": "exports/oneplus-pad-lite/model.glb",
+      "mesh_targets": {
+        "body": [
+          "Aluminum enclosure",
+          "Rear glass"
+        ],
+        "logo": [
+          "OnePlus logo | 0",
+          "OnePlus logo | 1",
+          "OnePlus logo | 2"
+        ],
+        "bar": [
+          "Camera housing"
+        ],
+        "bar-fill": [
+          "Camera housing"
+        ],
+        "glass-0": [
+          "Black optical backing 0",
+          "Continuous camera cover 0",
+          "Optical well 0"
+        ]
+      },
+      "camera_index_evidence": [
+        {
+          "window": 0,
+          "path": 4,
+          "source_uv": [
+            0.5,
+            0.10719
+          ],
+          "profile_xy_mm": [
+            63.2548,
+            0.0
+          ],
+          "profile_back_uv": [
+            0.5,
+            0.12
+          ]
+        }
+      ]
+    },
+    "oneplus_pad_pro": {
+      "profile": null,
+      "geometry_sha256": [
+        "6cb5699573b1b0c3eda9e1f5fd809f82f0202bb39eaf091503183d3ba2a08867"
+      ],
+      "roles": [
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile",
+        "!no-profile"
+      ],
+      "stroke_roles": {},
+      "unsupported": {
+        "no-profile": "No matching profile/export in device-models; do not infer targets from path count."
+      },
+      "source_spec": "TABLETS[oneplus_pad_pro]",
+      "notes": []
+    }
+  }
+}

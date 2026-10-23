@@ -132,6 +132,22 @@
       "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
     }
   ],
+  "body_mm": {
+    "height": 155.2,
+    "width": 150.2,
+    "depth": 5.1,
+    "corner_radius": 10.674819660411082,
+    "edge_roll": 0.45,
+    "front_curve": 0,
+    "edge_roll_mm": [
+      0.75,
+      0.75
+    ]
+  },
+  "icon_morph": {
+    "windows": 0,
+    "kind": null
+  },
   "articulation": {
     "animation": "Fold",
     "axis": "Y",
@@ -158,6 +174,7 @@
     },
     "companion_profile": "pixel-9-pro-fold-folded"
   },
+  "robot_motion": null,
   "panels": [
     {
       "name": "Cover half",

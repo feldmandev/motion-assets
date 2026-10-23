@@ -1,0 +1,256 @@
+{
+  "id": "nothing-phone-3a-pro",
+  "name": "Nothing Phone (3a) Pro",
+  "state": "default",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        1080,
+        2392
+      ],
+      "size_mm": [
+        70.76158528880538,
+        156.7238074174282
+      ],
+      "center_mm": [
+        0.0,
+        0.0,
+        4.230000019073486
+      ],
+      "corner_radius_mm": 6.43079264440269,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0,
+      "frame_bounds_mm": [
+        3.369207355597311,
+        3.39809629128591,
+        70.76158528880538,
+        156.7238074174282
+      ],
+      "frame_screen_px": null,
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "width": 77.5,
+        "height": 163.52,
+        "depth": 8.39,
+        "corner_radius": 9.8,
+        "edge_roll": 0.28,
+        "front_rail_mm": 0.4,
+        "corner_radii_mm": [
+          9.8,
+          9.8,
+          9.8,
+          9.8
+        ]
+      },
+      "cutouts": [
+        {
+          "center_mm": [
+            0,
+            75.56
+          ],
+          "radius_mm": 1.4
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "body_mm": {
+    "width": 77.5,
+    "height": 163.52,
+    "depth": 8.39,
+    "corner_radius": 9.8,
+    "edge_roll": 0.28,
+    "front_rail_mm": 0.4,
+    "corner_radii_mm": [
+      9.8,
+      9.8,
+      9.8,
+      9.8
+    ]
+  },
+  "icon_morph": {
+    "windows": 3,
+    "kind": "phone"
+  },
+  "articulation": null,
+  "robot_motion": null,
+  "panels": [],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/nothing-phone-3a-pro-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "logo": "logo",
+    "decor": "decor",
+    "seam": "seam",
+    "glyph": "glyph",
+    "black": "black",
+    "flash": "flash",
+    "red": "red",
+    "matrix": "matrix"
+  },
+  "finishes": [
+    {
+      "name": "Grey",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.4666666666666667,
+            0.48627450980392156,
+            0.5019607843137255
+          ],
+          "rough": 0.36
+        },
+        "rail": {
+          "rgb": [
+            0.5254901960784314,
+            0.5450980392156862,
+            0.5607843137254902
+          ],
+          "metal": 0.2,
+          "rough": 0.29
+        },
+        "bar": {
+          "rgb": [
+            0.5254901960784314,
+            0.5450980392156862,
+            0.5607843137254902
+          ],
+          "metal": 0.35,
+          "rough": 0.28
+        },
+        "logo": {
+          "rgb": [
+            0.27999999999999997,
+            0.2917647058823529,
+            0.30117647058823527
+          ],
+          "rough": 0.45
+        },
+        "decor": {
+          "rgb": [
+            0.4946666666666667,
+            0.5154509803921569,
+            0.5320784313725491
+          ],
+          "rough": 0.5
+        },
+        "seam": {
+          "rgb": [
+            0.4013333333333333,
+            0.4181960784313725,
+            0.4316862745098039
+          ],
+          "rough": 0.55
+        },
+        "glyph": {
+          "rgb": [
+            0.75,
+            0.77,
+            0.76
+          ],
+          "rough": 0.38
+        }
+      }
+    },
+    {
+      "name": "Black",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.13725490196078433,
+            0.16862745098039217,
+            0.1803921568627451
+          ],
+          "rough": 0.36
+        },
+        "rail": {
+          "rgb": [
+            0.1803921568627451,
+            0.21176470588235294,
+            0.2235294117647059
+          ],
+          "metal": 0.2,
+          "rough": 0.29
+        },
+        "bar": {
+          "rgb": [
+            0.1803921568627451,
+            0.21176470588235294,
+            0.2235294117647059
+          ],
+          "metal": 0.35,
+          "rough": 0.28
+        },
+        "logo": {
+          "rgb": [
+            0.23549019607843139,
+            0.2527450980392157,
+            0.2592156862745098
+          ],
+          "rough": 0.45
+        },
+        "decor": {
+          "rgb": [
+            0.1454901960784314,
+            0.1787450980392157,
+            0.1912156862745098
+          ],
+          "rough": 0.5
+        },
+        "seam": {
+          "rgb": [
+            0.11803921568627451,
+            0.14501960784313725,
+            0.15513725490196079
+          ],
+          "rough": 0.55
+        },
+        "glyph": {
+          "rgb": [
+            0.75,
+            0.77,
+            0.76
+          ],
+          "rough": 0.38
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/nothing-phone-3a-pro.13a2f99f9212.glb.gz",
+  "sha256": "13a2f99f9212f68c9c8ee6da06cc0b27b413c6f9a0d7267ed258c74753f13f97",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/nothing-phone-3a-pro.json",
+    "accuracy": {
+      "body_dimensions": "Official metric chassis dimensions. Radius and edge roll photoestimated; not OEM CAD.",
+      "screen_geometry": "Official full-rectangle diagonal and native pixel aspect. Centered punch hole, bezels and corner radius photoestimated.",
+      "camera_geometry": "Camera centers and outer clear windows fitted to front-on official rear render. Bumps, optical internals, glass and rings approximate; not manufacturer CAD.",
+      "glyphs": "Photo-fitted physical strip paths and widths, unlit diffuse surfaces. Phone 3 Matrix is a simplified inactive circular dot array; Phone 4a six white zones plus red indicator. No invented lit symbols.",
+      "finishes": "Official finish names; existing Documents sRGB palette, finish-tinted logo retained via make_device_branding. Uncalibrated PBR approximation.",
+      "branding": "Restrained reconstructed dot-matrix NOTHING mark, estimated size and position; tiny regulatory text omitted.",
+      "omissions": "Transparent internals reduced to low-contrast plates, coil traces and fasteners. Ports, antenna seams, microscopic circuits, actual translucency and programmable Glyph lighting omitted."
+    },
+    "sources": [
+      "https://nothing.tech/products/phone-3a-pro",
+      "https://cdn.shopify.com/s/files/1/0584/8216/3908/files/0000s_0009_Phone-3a-Pro-grey.png",
+      "https://nl.nothing.tech/products/phone-3a-pro"
+    ]
+  }
+}

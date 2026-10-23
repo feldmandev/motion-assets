@@ -1,0 +1,112 @@
+{
+  "owned": [
+    "make_oneplus_profiles.py",
+    "profiles\\oneplus-12.json",
+    "profiles\\oneplus-12r.json",
+    "profiles\\oneplus-11.json",
+    "profiles\\oneplus-11r.json",
+    "profiles\\oneplus-pad-lite.json",
+    "exports\\oneplus-12",
+    "exports\\oneplus-12r",
+    "exports\\oneplus-11",
+    "exports\\oneplus-11r",
+    "exports\\oneplus-pad-lite",
+    "research/oneplus/12.png",
+    "research/oneplus/12r.png",
+    "research/oneplus/11.png",
+    "research/oneplus/11r.png",
+    "research/oneplus/pad-lite.png",
+    "research/oneplus/pad-lite-specs.html",
+    "research/oneplus/new-source-contact.jpg",
+    "research/oneplus/phone-sources.jpg",
+    "research/oneplus-focused-*.json",
+    "research/oneplus-focused-*.jpg",
+    "oneplus-focused-*.log"
+  ],
+  "gallery_mapping": {
+    "oneplus-12": {
+      "gallery_model": "oneplus_12",
+      "source_gallery_status": "legacy Documents generator ID; absent from current source gallery"
+    },
+    "oneplus-12r": {
+      "gallery_model": "oneplus_12r",
+      "source_gallery_status": "legacy Documents generator ID; absent from current source gallery"
+    },
+    "oneplus-11": {
+      "gallery_model": "oneplus_11",
+      "source_gallery_status": "legacy Documents generator ID; absent from current source gallery"
+    },
+    "oneplus-11r": {
+      "gallery_model": "oneplus_11r",
+      "source_gallery_status": "no matching existing source gallery entry found; parent must add/confirm oneplus_11r"
+    },
+    "oneplus-pad-lite": {
+      "gallery_model": "oneplus_pad_lite",
+      "source_gallery_status": "present in Documents gallery"
+    }
+  },
+  "verification": [
+    {
+      "id": "oneplus-12",
+      "screen_aspect": true,
+      "exported_screen_bounds": true,
+      "enclosure_bounds": true,
+      "camera_clearance_mm": 2.87636906663539,
+      "triangles": 187888,
+      "glb_bytes": 3360096
+    },
+    {
+      "id": "oneplus-12r",
+      "screen_aspect": true,
+      "exported_screen_bounds": true,
+      "enclosure_bounds": true,
+      "camera_clearance_mm": 3.302081523809524,
+      "triangles": 189344,
+      "glb_bytes": 3332284
+    },
+    {
+      "id": "oneplus-11",
+      "screen_aspect": true,
+      "exported_screen_bounds": true,
+      "enclosure_bounds": true,
+      "camera_clearance_mm": 3.409218186157517,
+      "triangles": 189094,
+      "glb_bytes": 3323708
+    },
+    {
+      "id": "oneplus-11r",
+      "screen_aspect": true,
+      "exported_screen_bounds": true,
+      "enclosure_bounds": true,
+      "camera_clearance_mm": 3.523192927120669,
+      "triangles": 189068,
+      "glb_bytes": 3322760
+    },
+    {
+      "id": "oneplus-pad-lite",
+      "screen_aspect": true,
+      "exported_screen_bounds": true,
+      "enclosure_bounds": true,
+      "camera_clearance_mm": 6.353999999999999,
+      "triangles": 70775,
+      "glb_bytes": 1265336
+    }
+  ],
+  "visual_inspection": [
+    "rear",
+    "rear-angle",
+    "front",
+    "alternate finish previews",
+    "research/oneplus-focused-contact.jpg",
+    "research/oneplus-focused-front-finishes.jpg"
+  ],
+  "preservation": "SHA-256 comparison: all 77 existing-six profile/export and geometry.py/make_device_branding.py files unchanged. Existing six not regenerated.",
+  "limitations": [
+    "11R: no source gallery entry found; oneplus_11r requires parent confirmation/addition. 12/12R/11 use legacy generator IDs absent from current Documents gallery.",
+    "Radii, protrusions/rolls, edge bow, bridge, optical internals, logo placement and material tones are photoestimates, not OEM CAD. Ports, speaker holes, alert slider, antenna seams and microscopic inscriptions omitted.",
+    "Core finishes only; regional special finishes excluded. 11R uses standard 8.70 mm glass chassis, excluding thicker Solar Red.",
+    "Pad Lite composite obscures lower rear; logo placement estimated. Official 11R specs page links an image with legacy 10r-blue filename.",
+    "Existing review code emitted World.use_nodes Blender 6.0 deprecation warning; all renders finished and artifacts pass verification.",
+    "No geometry.py, branding helper, public motion-assets, gallery, build payload or app edits; no push."
+  ]
+}

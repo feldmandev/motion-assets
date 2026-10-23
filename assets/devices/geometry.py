@@ -74,6 +74,28 @@ def traced_ring(points, inset=0.0, count=OUTLINE_POINTS):
     return [((x-mx)*sx+(x0+x1)/2, (y-my)*sy+(y0+y1)/2) for x, y in points]
 
 
+def screen_mesh_with_cutouts(points, cutouts):
+    """Triangulate a flat screen in metres, excluding profile apertures in millimetres."""
+    from shapely.geometry import Point, Polygon
+    from shapely.ops import triangulate
+    surface = Polygon([(x/MM, y/MM) for x, y, _ in points])
+    for cutout in cutouts:
+        surface = surface.difference(Point(*cutout['center_mm']).buffer(cutout['radius_mm'], quad_segs=32))
+    vertices, faces, indices = [], [], {}
+    for triangle in triangulate(surface):
+        if not surface.covers(triangle):
+            continue
+        face = []
+        for x, y in list(triangle.exterior.coords)[:3]:
+            key = (x, y)
+            if key not in indices:
+                indices[key] = len(vertices)
+                vertices.append((x*MM, y*MM, 0))
+            face.append(indices[key])
+        faces.append(tuple(face))
+    return vertices, faces
+
+
 def slab(name, width, height, depth, radius, center, mat, parent, roll=.12, points=None):
     """Rounded-edge slab. With `points` (traced outline in the parent's mm coordinates,
     already relative to `center`), the outline replaces the width/height/radius rectangle."""

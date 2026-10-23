@@ -76,7 +76,24 @@
       "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
     }
   ],
+  "body_mm": {
+    "width": 75.2,
+    "height": 85.5,
+    "depth": 13.7,
+    "corner_radius": 9.5,
+    "edge_roll_mm": [
+      0.25,
+      0.2
+    ],
+    "front_rail_mm": 0.45,
+    "rear_inset": 0.45
+  },
+  "icon_morph": {
+    "windows": 0,
+    "kind": "phone"
+  },
   "articulation": null,
+  "robot_motion": null,
   "panels": [
     {
       "name": "Cover half",
@@ -391,8 +408,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-z-flip7-folded.5d0683452e7f.glb.gz",
-  "sha256": "5d0683452e7fbd8f1b1eb998be8ae4c4d7d7b2cb4a7861ec1f4a47b0c7e0ebb9",
+  "glbUrl": "assets/devices/models/galaxy-z-flip7-folded.f709fec455b4.glb.gz",
+  "sha256": "f709fec455b47ccedc610e10d29a2e472c785c92743fcbeedab22fc16a9de1e1",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-z-flip7-folded.json",

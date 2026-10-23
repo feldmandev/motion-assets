@@ -1,0 +1,383 @@
+{
+  "id": "nothing-phone-4a",
+  "name": "Nothing Phone (4a)",
+  "state": "default",
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        1224,
+        2720
+      ],
+      "size_mm": [
+        70.66972181214693,
+        157.04382624921539
+      ],
+      "center_mm": [
+        0.0,
+        0.0,
+        4.309999942779541
+      ],
+      "corner_radius_mm": 7.121913124607701,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0,
+      "frame_bounds_mm": [
+        3.3901390939265355,
+        3.378086875392313,
+        70.66972181214693,
+        157.04382624921539
+      ],
+      "frame_screen_px": null,
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "width": 77.45,
+        "height": 163.8,
+        "depth": 8.55,
+        "corner_radius": 10.500000000000014,
+        "edge_roll": 0.28,
+        "front_rail_mm": 0.4,
+        "corner_radii_mm": [
+          10.500000000000014,
+          10.500000000000014,
+          10.500000000000014,
+          10.500000000000014
+        ]
+      },
+      "cutouts": [
+        {
+          "center_mm": [
+            0,
+            75.7
+          ],
+          "radius_mm": 1.4
+        }
+      ],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "body_mm": {
+    "width": 77.45,
+    "height": 163.8,
+    "depth": 8.55,
+    "corner_radius": 10.500000000000014,
+    "edge_roll": 0.28,
+    "front_rail_mm": 0.4,
+    "corner_radii_mm": [
+      10.500000000000014,
+      10.500000000000014,
+      10.500000000000014,
+      10.500000000000014
+    ]
+  },
+  "icon_morph": {
+    "windows": 3,
+    "kind": "phone"
+  },
+  "articulation": null,
+  "robot_motion": null,
+  "panels": [],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/nothing-phone-4a-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "bar": "bar",
+    "logo": "logo",
+    "decor": "decor",
+    "seam": "seam",
+    "glyph": "glyph",
+    "black": "black",
+    "flash": "flash",
+    "red": "red",
+    "matrix": "matrix"
+  },
+  "finishes": [
+    {
+      "name": "White",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.8549019607843137,
+            0.8862745098039215,
+            0.8941176470588236
+          ],
+          "rough": 0.36
+        },
+        "rail": {
+          "rgb": [
+            0.6901960784313725,
+            0.7215686274509804,
+            0.7333333333333333
+          ],
+          "metal": 0.2,
+          "rough": 0.29
+        },
+        "bar": {
+          "rgb": [
+            0.6901960784313725,
+            0.7215686274509804,
+            0.7333333333333333
+          ],
+          "metal": 0.35,
+          "rough": 0.28
+        },
+        "logo": {
+          "rgb": [
+            0.5129411764705882,
+            0.5317647058823529,
+            0.5364705882352941
+          ],
+          "rough": 0.45
+        },
+        "decor": {
+          "rgb": [
+            0.812156862745098,
+            0.8419607843137255,
+            0.8494117647058823
+          ],
+          "rough": 0.5
+        },
+        "seam": {
+          "rgb": [
+            0.7352156862745097,
+            0.7621960784313725,
+            0.7689411764705882
+          ],
+          "rough": 0.55
+        },
+        "glyph": {
+          "rgb": [
+            0.94,
+            0.94,
+            0.89
+          ],
+          "rough": 0.38
+        }
+      }
+    },
+    {
+      "name": "Pink",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.8666666666666667,
+            0.792156862745098,
+            0.807843137254902
+          ],
+          "rough": 0.36
+        },
+        "rail": {
+          "rgb": [
+            0.6862745098039216,
+            0.6235294117647059,
+            0.6313725490196078
+          ],
+          "metal": 0.2,
+          "rough": 0.29
+        },
+        "bar": {
+          "rgb": [
+            0.6862745098039216,
+            0.6235294117647059,
+            0.6313725490196078
+          ],
+          "metal": 0.35,
+          "rough": 0.28
+        },
+        "logo": {
+          "rgb": [
+            0.52,
+            0.47529411764705876,
+            0.48470588235294115
+          ],
+          "rough": 0.45
+        },
+        "decor": {
+          "rgb": [
+            0.8233333333333334,
+            0.752549019607843,
+            0.7674509803921569
+          ],
+          "rough": 0.5
+        },
+        "seam": {
+          "rgb": [
+            0.7453333333333333,
+            0.6812549019607843,
+            0.6947450980392157
+          ],
+          "rough": 0.55
+        },
+        "glyph": {
+          "rgb": [
+            0.94,
+            0.94,
+            0.89
+          ],
+          "rough": 0.38
+        }
+      }
+    },
+    {
+      "name": "Blue",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.5019607843137255,
+            0.7686274509803922,
+            0.8588235294117647
+          ],
+          "rough": 0.36
+        },
+        "rail": {
+          "rgb": [
+            0.4196078431372549,
+            0.6274509803921569,
+            0.7058823529411765
+          ],
+          "metal": 0.2,
+          "rough": 0.29
+        },
+        "bar": {
+          "rgb": [
+            0.4196078431372549,
+            0.6274509803921569,
+            0.7058823529411765
+          ],
+          "metal": 0.35,
+          "rough": 0.28
+        },
+        "logo": {
+          "rgb": [
+            0.30117647058823527,
+            0.4611764705882353,
+            0.5152941176470588
+          ],
+          "rough": 0.45
+        },
+        "decor": {
+          "rgb": [
+            0.47686274509803916,
+            0.7301960784313726,
+            0.8158823529411764
+          ],
+          "rough": 0.5
+        },
+        "seam": {
+          "rgb": [
+            0.4316862745098039,
+            0.6610196078431373,
+            0.7385882352941175
+          ],
+          "rough": 0.55
+        },
+        "glyph": {
+          "rgb": [
+            0.94,
+            0.94,
+            0.89
+          ],
+          "rough": 0.38
+        }
+      }
+    },
+    {
+      "name": "Black",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.20784313725490197,
+            0.2901960784313726,
+            0.3568627450980392
+          ],
+          "rough": 0.36
+        },
+        "rail": {
+          "rgb": [
+            0.15294117647058825,
+            0.20392156862745098,
+            0.24705882352941178
+          ],
+          "metal": 0.2,
+          "rough": 0.29
+        },
+        "bar": {
+          "rgb": [
+            0.15294117647058825,
+            0.20392156862745098,
+            0.24705882352941178
+          ],
+          "metal": 0.35,
+          "rough": 0.28
+        },
+        "logo": {
+          "rgb": [
+            0.2743137254901961,
+            0.31960784313725493,
+            0.3562745098039216
+          ],
+          "rough": 0.45
+        },
+        "decor": {
+          "rgb": [
+            0.2203137254901961,
+            0.3076078431372549,
+            0.3782745098039216
+          ],
+          "rough": 0.5
+        },
+        "seam": {
+          "rgb": [
+            0.1787450980392157,
+            0.2495686274509804,
+            0.30690196078431375
+          ],
+          "rough": 0.55
+        },
+        "glyph": {
+          "rgb": [
+            0.75,
+            0.77,
+            0.76
+          ],
+          "rough": 0.38
+        }
+      }
+    }
+  ],
+  "glbUrl": "assets/devices/models/nothing-phone-4a.20bd6f6c6fca.glb.gz",
+  "sha256": "20bd6f6c6fcaf9c9b4611ea808ff66e59a31a078bd0b8d88a0f099af9bb7f7f9",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/nothing-phone-4a.json",
+    "accuracy": {
+      "body_dimensions": "Official metric chassis dimensions. Radius and edge roll photoestimated; not OEM CAD.",
+      "screen_geometry": "Official full-rectangle diagonal and native pixel aspect. Centered punch hole, bezels and corner radius photoestimated.",
+      "camera_geometry": "Camera centers and outer clear windows fitted to front-on official rear render. Bumps, optical internals, glass and rings approximate; not manufacturer CAD.",
+      "glyphs": "Photo-fitted physical strip paths and widths, unlit diffuse surfaces. Phone 3 Matrix is a simplified inactive circular dot array; Phone 4a six white zones plus red indicator. No invented lit symbols.",
+      "finishes": "Official finish names; existing Documents sRGB palette, finish-tinted logo retained via make_device_branding. Uncalibrated PBR approximation.",
+      "branding": "Restrained reconstructed dot-matrix NOTHING mark, estimated size and position; tiny regulatory text omitted.",
+      "omissions": "Transparent internals reduced to low-contrast plates, coil traces and fasteners. Ports, antenna seams, microscopic circuits, actual translucency and programmable Glyph lighting omitted."
+    },
+    "sources": [
+      "https://nothing.tech/products/phone-4a",
+      "https://cdn.shopify.com/s/files/1/0376/5420/0459/files/Phone-4a-White.png",
+      "https://support.nothing.tech/hc/en-us/categories/40129777015569-Nothing-Phone-4a",
+      "https://prtimes.jp/main/html/rd/p/000000054.000082566.html"
+    ]
+  }
+}
