@@ -13,7 +13,13 @@
       0.75,
       0.75
     ],
-    "front_rail_mm": 1.21
+    "front_rail_mm": 1.21,
+    "front_glass_insets_mm": [
+      1.2342857142857142,
+      1.4386012104909216,
+      1.1828571428571428,
+      1.0275722932078009
+    ]
   },
   "materials": {
     "back": {
@@ -300,7 +306,8 @@
     "camera_geometry": "Housing width, height and top gap scaled from official rear artwork; pixel bounds and uncertainty in camera_measurement. Optical internals remain illustrative. Not measurable from this rear view; model depth remains a visual estimate.",
     "finishes": "Approximate sRGB colors and roughness, not calibrated measured materials",
     "branding": "Google G contour retained from reference artwork. Legacy Pixel4/4a/5/5a lower rear placement (approximately80%height); Pixel6 onward and folds centered on rear/camera leaf. Size, position and finish-tinted material are photo estimates, not manufacturer CAD.",
-    "antenna_details": "Positions/widths measured individually from Google device artwork; nonmetal surface patches follow the actual enclosure. Hidden depth, RGB and roughness are illustrative; finish tint follows the existing back palette. No universal seam layout or through-cut CAD claim."
+    "antenna_details": "Positions/widths measured individually from Google device artwork; nonmetal surface patches follow the actual enclosure. Hidden depth, RGB and roughness are illustrative; finish tint follows the existing back palette. No universal seam layout or through-cut CAD claim.",
+    "front_glass": "Independent left/top/right/bottom gasket widths measured from Google SDK artwork; elliptical contour offset interpolates corners, not manufacturer CAD."
   },
   "sources": [
     "https://support.google.com/pixelphone/answer/7158570?hl=en",
@@ -1791,42 +1798,48 @@
         "center_axis_mm": 51.84102,
         "width_mm": 1.54136,
         "id": "left-1",
-        "material": "antenna"
+        "material": "antenna",
+        "inset_mm": 1.2342857142857142
       },
       {
         "edge": "left",
         "center_axis_mm": -60.67814,
         "width_mm": 1.54136,
         "id": "left-2",
-        "material": "antenna"
+        "material": "antenna",
+        "inset_mm": 1.2342857142857142
       },
       {
         "edge": "right",
         "center_axis_mm": 51.84102,
         "width_mm": 1.54136,
         "id": "right-1",
-        "material": "antenna"
+        "material": "antenna",
+        "inset_mm": 1.1828571428571428
       },
       {
         "edge": "right",
         "center_axis_mm": -60.65245,
         "width_mm": 1.48998,
         "id": "right-2",
-        "material": "antenna"
+        "material": "antenna",
+        "inset_mm": 1.1828571428571428
       },
       {
         "edge": "top",
         "center_axis_mm": 0.02571,
         "width_mm": 1.49143,
         "id": "top-1",
-        "material": "antenna"
+        "material": "antenna",
+        "inset_mm": 1.4386012104909216
       },
       {
         "edge": "bottom",
         "center_axis_mm": 8.53714,
         "width_mm": 1.54286,
         "id": "bottom-1",
-        "material": "antenna"
+        "material": "antenna",
+        "inset_mm": 1.0275722932078009
       }
     ],
     "camera_sidewall": {

@@ -14,15 +14,15 @@
         2856
       ],
       "size_mm": [
-        67.18207282913164,
-        149.89999999999998
+        65.74789915966386,
+        146.7
       ],
       "center_mm": [
         0.0,
         0.0,
         4.234999656677246
       ],
-      "corner_radius_mm": 10.7,
+      "corner_radius_mm": 8.9,
       "rotation_deg": [
         0,
         0,
@@ -30,10 +30,10 @@
       ],
       "edge_curve_mm": 0,
       "frame_bounds_mm": [
-        2.358963585434182,
-        1.4000000000000057,
-        67.18207282913164,
-        149.89999999999998
+        3.076050420168073,
+        3.0,
+        65.74789915966386,
+        146.7
       ],
       "frame_screen_px": null,
       "frame_file": "frame.svg",
@@ -41,7 +41,7 @@
         "height": 152.7,
         "width": 71.9,
         "depth": 8.4,
-        "corner_radius": 12.100000000000005,
+        "corner_radius": 11.9,
         "edge_roll": 0.55,
         "front_curve": 0,
         "edge_roll_mm": [
@@ -50,10 +50,10 @@
         ],
         "front_rail_mm": 1.1,
         "corner_radii_mm": [
-          12.100000000000005,
-          12.100000000000005,
-          12.100000000000005,
-          12.100000000000005
+          11.9,
+          11.9,
+          11.9,
+          11.9
         ]
       },
       "cutouts": [
@@ -73,7 +73,7 @@
     "height": 152.7,
     "width": 71.9,
     "depth": 8.4,
-    "corner_radius": 12.100000000000005,
+    "corner_radius": 11.9,
     "edge_roll": 0.55,
     "front_curve": 0,
     "edge_roll_mm": [
@@ -82,10 +82,10 @@
     ],
     "front_rail_mm": 1.1,
     "corner_radii_mm": [
-      12.100000000000005,
-      12.100000000000005,
-      12.100000000000005,
-      12.100000000000005
+      11.9,
+      11.9,
+      11.9,
+      11.9
     ]
   },
   "icon_morph": {
@@ -289,8 +289,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/pixel-11-pro.d779eb19b204.glb.gz",
-  "sha256": "d779eb19b204e9c08b1d1e8c6679e7730d0786ffa56dfd9891d4bc0f806332b9",
+  "glbUrl": "assets/devices/models/pixel-11-pro.f04be44b5a07.glb.gz",
+  "sha256": "f04be44b5a077f236091eb4f9baaed75e0fc7953735536521550234d76c9ebc5",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/pixel-11-pro.json",
@@ -303,7 +303,8 @@
       "branding": "Google G contour retained from reference artwork. Legacy Pixel4/4a/5/5a lower rear placement (approximately80%height); Pixel6 onward and folds centered on rear/camera leaf. Size, position and finish-tinted material are photo estimates, not manufacturer CAD.",
       "front_optics": "Outer selfie surround fitted from official product imagery; base diameter4.6mm/Pro4.7mm and top offset8.4mm are provisional photo estimates. Layered optical internals illustrative; OLED fit/UV unchanged.",
       "front_rail": "Independent metal/glass/OLED layers; 1.10mm nominal metal rim and .30mm front roll are provisional visual fits to official base/Pro art, not SDK or CAD measurements. XL uses a low-confidence Pro-family rim estimate, without an independent XL front contour. Finish-specific satin/polished/matte aluminium retained.",
-      "antenna_details": "Only separately visible breaks fitted from official product video/family artwork; measured positions, widths and uncertainties in pixel11-antenna-reference-completion.json. Missing edges not mirrored; diffuse finish-tinted surface inserts and their depth are illustrative."
+      "antenna_details": "Only separately visible breaks fitted from official product video/family artwork; measured positions, widths and uncertainties in pixel11-antenna-reference-completion.json. Missing edges not mirrored; diffuse finish-tinted surface inserts and their depth are illustrative.",
+      "front_screen": "Front OLED extent and corner fit measured from official promotional front imagery; projection uncertainty approximately 0.5 mm; not CAD."
     },
     "sources": [
       "https://support.google.com/pixelphone/answer/7158570?hl=en",

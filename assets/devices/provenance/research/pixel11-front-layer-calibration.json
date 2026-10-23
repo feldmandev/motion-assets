@@ -1,0 +1,222 @@
+{
+  "profile": "pixel-11-pro",
+  "read_only": true,
+  "source": "tmp/pixel11-antenna-reference/video-41-90.png",
+  "source_inspected": true,
+  "model_front_inspected": "exports/pixel-11-pro/front.png",
+  "method": "Measured original 2880x1200 frame pixels. Largest connected RGB R>40,G>20 component isolates displayed wallpaper from bright rail; threshold excludes dark wallpaper patches but preserves top corners and long extent. Body long-axis manually confirmed on straight short-edge sections. No new downloaded references or Blender runs.",
+  "pixels": {
+    "body_long_axis": [
+      282,
+      2598
+    ],
+    "oled_bounds": [
+      326,
+      101,
+      2552,
+      1087
+    ],
+    "oled_straight_short_edge_left": [
+      327,
+      331
+    ],
+    "oled_straight_short_edge_right": [
+      2549,
+      2552
+    ],
+    "upper_inner_metal_y": [
+      73,
+      76
+    ],
+    "upper_oled_y": [
+      101,
+      104
+    ],
+    "lower_oled_y": [
+      1084,
+      1087
+    ],
+    "lower_inner_metal_y": [
+      1114,
+      1117
+    ]
+  },
+  "calibration": {
+    "body_height_mm": 152.7,
+    "long_axis_pixels_per_mm": 15.166994106090375,
+    "oled_height_fit_mm": 146.70012953367873,
+    "native_aspect": 2.23125,
+    "native_width_fit_mm": 65.74795721397366
+  },
+  "corner_fit": {
+    "sample_rows": [
+      108,
+      234
+    ],
+    "left_ellipse": [
+      462.54397303,
+      239.23196826,
+      131.64357729,
+      1.03386848
+    ],
+    "right_ellipse_mirrored_x": [
+      462.55998839,
+      239.14963981,
+      131.67755941,
+      1.03334916
+    ],
+    "rms_px": [
+      0.2743,
+      0.266
+    ],
+    "long_axis_radius_mm": [
+      8.6722,
+      8.6744
+    ],
+    "qualification": "The y/x ratio 1.033 is not a calibrated pose transform; this may combine noncircular authored curvature and slight perspective. Fit demonstrates current 10.7mm circular corner is substantially rounder than the source. Do not claim precise OEM circular radius."
+  },
+  "recommendation": {
+    "screen.fit_box_mm": [
+      65.74789916,
+      146.7
+    ],
+    "screen.corner_radius_mm": 8.9,
+    "body_mm.front_rail_mm": "retain1.10 pending separate material/geometry analysis",
+    "screen.center_mm": "retain x/y0; small vertical image projection offset is explained by tilt/exposed bottom side",
+    "screen.cutouts": "retain reviewed4.7mm surround/topoffset8.4mm",
+    "confidence": "medium photo-derived display fit; medium-low exact circular corner",
+    "ranges_mm": {
+      "oled_height": [
+        146.2,
+        147.2
+      ],
+      "oled_width_native": [
+        65.52,
+        65.97
+      ],
+      "corner_radius": [
+        8.5,
+        9.3
+      ]
+    }
+  },
+  "effect_mm": {
+    "current_oled_height": 149.9,
+    "current_top_body_to_oled": 1.4,
+    "current_top_black_glass": 0.3,
+    "recommended_top_body_to_oled": 3.0,
+    "recommended_top_black_glass": 1.9,
+    "current_side_black_glass": 1.2589635854,
+    "recommended_side_black_glass": 1.97605
+  },
+  "limits": [
+    "Single near-frontal Pro-labelled official promotional frame, not SDK/CAD. Lower projected metal includes sidewall and must not set flat ledge width.",
+    "Do not propagate these exact dimensions/radius to base or XL without their front reference.",
+    "sync_slab_body_corners may recompute outer corner from new display radius; inspect actual generated silhouette and preserve independently supported body shape rather than treating concentricity as evidence.",
+    "Native resolution ratio and UV mapping retained; viewport physical fit intentionally changes."
+  ],
+  "outer_corner_fit": {
+    "upper_left_ellipse": [
+      460.76388607,
+      238.84371159,
+      174.67298494,
+      1.01677989
+    ],
+    "rms_px": 0.2996,
+    "long_axis_radius_mm": 11.5167,
+    "recommendation_mm": 11.7,
+    "confidence": "medium-low: outer highlight contour, slight pose; circle radius11.5..12.0 plausible. Automatic new OLED8.9 + short-end3.0 gap yields11.9, within visual estimate; existing12.2 somewhat rounder."
+  },
+  "base_independent_audit": {
+    "source": "tmp/pixel11-antenna-reference/base-front-2000.webp",
+    "source_size": [
+      1920,
+      1080
+    ],
+    "model_front_inspected": "exports/pixel-11/front.png",
+    "pixels": {
+      "body_y": [
+        28,
+        1054
+      ],
+      "oled_y": [
+        51,
+        1029
+      ],
+      "right_oled_x": 1362,
+      "right_outer_x": 1384
+    },
+    "fit": {
+      "body_height_mm": 152.8,
+      "oled_height_mm": 145.6514619883041,
+      "native_width_mm": 64.89421573736321,
+      "upper_right_oled_circle_px": [
+        615.72474419,
+        108.57980398,
+        57.96519968
+      ],
+      "upper_right_oled_fit_rms_px": 0.2843,
+      "oled_radius_mm": 8.63,
+      "upper_right_outer_circle_px": [
+        616.46885894,
+        109.41261251,
+        80.89094368
+      ],
+      "outer_rms_px": 0.3071,
+      "outer_radius_mm": 12.0469
+    },
+    "recommendation": {
+      "screen.fit_box_mm": [
+        65.04950495,
+        146.0
+      ],
+      "screen.corner_radius_mm": 8.8,
+      "body_corner_radius_mm": 12.0,
+      "front_rail_mm": "retain1.10",
+      "confidence": "medium; near-frontal official render with left side occluded, independent top/bottom/right and upper-right curves visible",
+      "range_mm": {
+        "height": [
+          145.5,
+          146.5
+        ],
+        "oled_radius": [
+          8.4,
+          9.1
+        ],
+        "outer_radius": [
+          11.7,
+          12.4
+        ]
+      }
+    },
+    "qualification": "Native width inferred from measured height, not measured through occluded left edge. Slight perspective/render aliasing prevents precise CAD claim."
+  },
+  "xl_audit": {
+    "sources_inspected": [
+      "tmp/pixel11-antenna-reference/pro-candidates.jpg",
+      "tmp/pixel11-antenna-reference/xl-family-2000.webp",
+      "exports/pixel-11-pro-xl/front.png"
+    ],
+    "conclusion": "No independent labelled XL front reference available in inspected local assets. Current rendered top border visibly near-zero, like Pro. Family-based correction could be explicit low-confidence estimate but is not a measurement. Avoid assigning measured Pro scale/radius/selfie aperture directly."
+  },
+  "applied": {
+    "pixel-11": {
+      "oled_height_mm": 146.0,
+      "oled_corner_mm": 8.8
+    },
+    "pixel-11-pro": {
+      "oled_height_mm": 146.7,
+      "oled_corner_mm": 8.9
+    },
+    "pixel-11-pro-xl": {
+      "oled_height_mm": 156.7,
+      "oled_corner_mm": 9.3,
+      "basis": "Pro-family estimate; no independent XL front reference"
+    }
+  },
+  "sources": [
+    "https://store.google.com/gb/product/pixel_11_pro?hl=en-GB",
+    "https://storage.googleapis.com/mannequin/blobs/abaa23e5-7da0-4a0d-b39a-36cf8ab48ff6.webm"
+  ],
+  "related_reference_manifest": "pixel11-antenna-reference-completion.json"
+}

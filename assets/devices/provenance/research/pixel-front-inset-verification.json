@@ -1,0 +1,152 @@
+[
+  {
+    "id": "pixel-11-pro-xl",
+    "insets_LTRB_mm": [
+      1.1,
+      1.1,
+      1.1,
+      1.1
+    ],
+    "glass_contains_oled": true,
+    "cap_contains_oled": true,
+    "minimum_glass_margin_mm": 1.9000000000000055,
+    "minimum_cap_margin_mm": 1.8200000000000076,
+    "outside_glass_area_mm2": 0.0,
+    "persistence_idempotent": true
+  },
+  {
+    "id": "pixel-11-pro",
+    "insets_LTRB_mm": [
+      1.1,
+      1.1,
+      1.1,
+      1.1
+    ],
+    "glass_contains_oled": true,
+    "cap_contains_oled": true,
+    "minimum_glass_margin_mm": 1.9000000000000057,
+    "minimum_cap_margin_mm": 1.8200000000000074,
+    "outside_glass_area_mm2": 0.0,
+    "persistence_idempotent": true
+  },
+  {
+    "id": "pixel-11",
+    "insets_LTRB_mm": [
+      1.1,
+      1.1,
+      1.1,
+      1.1
+    ],
+    "glass_contains_oled": true,
+    "cap_contains_oled": true,
+    "minimum_glass_margin_mm": 2.3000000000000114,
+    "minimum_cap_margin_mm": 2.220000000000013,
+    "outside_glass_area_mm2": 0.0,
+    "persistence_idempotent": true
+  },
+  {
+    "id": "pixel-8-pro",
+    "insets_LTRB_mm": [
+      0.9700137080191912,
+      1.2572164948453608,
+      0.9437971213159698,
+      0.602416237113402
+    ],
+    "glass_contains_oled": true,
+    "cap_contains_oled": true,
+    "minimum_glass_margin_mm": 1.7125871714597658,
+    "minimum_cap_margin_mm": 1.6325884889921105,
+    "outside_glass_area_mm2": 0.0,
+    "persistence_idempotent": true
+  },
+  {
+    "id": "pixel-8",
+    "insets_LTRB_mm": [
+      0.9908396946564886,
+      1.4373259052924792,
+      0.9908396946564886,
+      0.6288300835654597
+    ],
+    "glass_contains_oled": true,
+    "cap_contains_oled": true,
+    "minimum_glass_margin_mm": 1.591244553682799,
+    "minimum_cap_margin_mm": 1.511248829855383,
+    "outside_glass_area_mm2": 0.0,
+    "persistence_idempotent": true
+  },
+  {
+    "id": "pixel-8a",
+    "insets_LTRB_mm": [
+      1.0996638655462185,
+      1.078723404255319,
+      1.0996638655462185,
+      1.0187943262411348
+    ],
+    "glass_contains_oled": true,
+    "cap_contains_oled": true,
+    "minimum_glass_margin_mm": 2.3372340425531917,
+    "minimum_cap_margin_mm": 2.2572340425531934,
+    "outside_glass_area_mm2": 0.0,
+    "persistence_idempotent": true
+  },
+  {
+    "id": "pixel-9-pro-xl",
+    "insets_LTRB_mm": [
+      1.2609053497942386,
+      1.3654193548387097,
+      1.155829903978052,
+      0.9978064516129033
+    ],
+    "glass_contains_oled": true,
+    "cap_contains_oled": true,
+    "minimum_glass_margin_mm": 1.460826398768436,
+    "minimum_cap_margin_mm": 1.3808523360428824,
+    "outside_glass_area_mm2": 0.0,
+    "persistence_idempotent": true
+  },
+  {
+    "id": "pixel-9-pro",
+    "insets_LTRB_mm": [
+      1.2342857142857142,
+      1.4386012104909216,
+      1.1828571428571428,
+      1.0275722932078009
+    ],
+    "glass_contains_oled": true,
+    "cap_contains_oled": true,
+    "minimum_glass_margin_mm": 1.6216591885659815,
+    "minimum_cap_margin_mm": 1.541659188565988,
+    "outside_glass_area_mm2": 0.0,
+    "persistence_idempotent": true
+  },
+  {
+    "id": "pixel-9",
+    "insets_LTRB_mm": [
+      1.2090680100755669,
+      1.4489134729355986,
+      1.2090680100755669,
+      0.9659423152903991
+    ],
+    "glass_contains_oled": true,
+    "cap_contains_oled": true,
+    "minimum_glass_margin_mm": 1.8434948381899845,
+    "minimum_cap_margin_mm": 1.763498227765306,
+    "outside_glass_area_mm2": 0.0,
+    "persistence_idempotent": true
+  },
+  {
+    "id": "pixel-9a",
+    "insets_LTRB_mm": [
+      1.2648315529991783,
+      1.384474708171206,
+      1.2648315529991783,
+      1.2038910505836575
+    ],
+    "glass_contains_oled": true,
+    "cap_contains_oled": true,
+    "minimum_glass_margin_mm": 2.7000432287039513,
+    "minimum_cap_margin_mm": 2.6200482546491624,
+    "outside_glass_area_mm2": 0.0,
+    "persistence_idempotent": true
+  }
+]

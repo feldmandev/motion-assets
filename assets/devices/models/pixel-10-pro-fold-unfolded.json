@@ -1,6 +1,6 @@
 {
   "id": "pixel-10-pro-fold-unfolded",
-  "name": "Pixel 10 Pro Fold Â· unfolded",
+  "name": "Pixel 10 Pro Fold Ã‚Â· unfolded",
   "state": "unfolded",
   "screens": [
     {
@@ -1851,8 +1851,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/pixel-10-pro-fold-unfolded.45045df13899.glb.gz",
-  "sha256": "45045df13899deaec4cc579e91c38d1c01566ee305a34f803a764a97b9f48627",
+  "glbUrl": "assets/devices/models/pixel-10-pro-fold-unfolded.aef8d4710bc5.glb.gz",
+  "sha256": "aef8d4710bc55b45cf74397217acff0c307dc4a70cf27fb6955e25043460e184",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/pixel-10-pro-fold-unfolded.json",

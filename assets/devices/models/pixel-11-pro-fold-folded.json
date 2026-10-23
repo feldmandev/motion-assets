@@ -1,6 +1,6 @@
 {
   "id": "pixel-11-pro-fold-folded",
-  "name": "Pixel 11 Pro Fold Â· folded",
+  "name": "Pixel 11 Pro Fold Ã‚Â· folded",
   "state": "folded",
   "screens": [
     {
@@ -1745,8 +1745,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/pixel-11-pro-fold-folded.5bcc16b382aa.glb.gz",
-  "sha256": "5bcc16b382aa7d8f4344aa5eca9549ee50b7faf479a1b44503a74be76ce62cfb",
+  "glbUrl": "assets/devices/models/pixel-11-pro-fold-folded.49ea0b62572a.glb.gz",
+  "sha256": "49ea0b62572a7170704e357974bbc6c7158fa42a4b7b482672b407d1a18596b2",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/pixel-11-pro-fold-folded.json",

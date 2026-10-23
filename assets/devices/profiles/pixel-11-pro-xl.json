@@ -215,15 +215,15 @@
       2992
     ],
     "fit_box_mm": [
-      71.82673796791443,
-      159.89999999999998
+      70.38930481283423,
+      156.7
     ],
     "center_mm": [
       0,
       0,
       4.285
     ],
-    "corner_radius_mm": 11.5,
+    "corner_radius_mm": 9.3,
     "edge_curve_mm": 0,
     "create_cutouts": true,
     "cutouts": [
@@ -305,7 +305,8 @@
     "finishes": "Approximate sRGB colors and roughness, not calibrated measured materials",
     "branding": "Google G contour retained from reference artwork. Legacy Pixel4/4a/5/5a lower rear placement (approximately80%height); Pixel6 onward and folds centered on rear/camera leaf. Size, position and finish-tinted material are photo estimates, not manufacturer CAD.",
     "front_rail": "Independent metal/glass/OLED layers; 1.10mm nominal metal rim and .30mm front roll are provisional visual fits to official base/Pro art, not SDK or CAD measurements. XL uses a low-confidence Pro-family rim estimate, without an independent XL front contour. Finish-specific satin/polished/matte aluminium retained.",
-    "antenna_details": "Only separately visible breaks fitted from official product video/family artwork; measured positions, widths and uncertainties in pixel11-antenna-reference-completion.json. Missing edges not mirrored; diffuse finish-tinted surface inserts and their depth are illustrative."
+    "antenna_details": "Only separately visible breaks fitted from official product video/family artwork; measured positions, widths and uncertainties in pixel11-antenna-reference-completion.json. Missing edges not mirrored; diffuse finish-tinted surface inserts and their depth are illustrative.",
+    "front_screen": "Pro-family front border and corner estimate; no independently labelled XL front image available. OLED fit preserves native aspect; not measured XL geometry."
   },
   "sources": [
     "https://support.google.com/pixelphone/answer/7158570?hl=en",

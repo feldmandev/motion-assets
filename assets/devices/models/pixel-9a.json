@@ -53,7 +53,13 @@
           1.0,
           0.8
         ],
-        "front_rail_mm": 1.26
+        "front_rail_mm": 1.26,
+        "front_glass_insets_mm": [
+          1.2648315529991783,
+          1.384474708171206,
+          1.2648315529991783,
+          1.2038910505836575
+        ]
       },
       "cutouts": [
         {
@@ -79,7 +85,13 @@
       1.0,
       0.8
     ],
-    "front_rail_mm": 1.26
+    "front_rail_mm": 1.26,
+    "front_glass_insets_mm": [
+      1.2648315529991783,
+      1.384474708171206,
+      1.2648315529991783,
+      1.2038910505836575
+    ]
   },
   "icon_morph": {
     "windows": 1,
@@ -274,8 +286,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/pixel-9a.f41a01a41559.glb.gz",
-  "sha256": "f41a01a41559338bb02fef76aec1217d52d1817f5276d5f39b142da7f8984d28",
+  "glbUrl": "assets/devices/models/pixel-9a.20f53d247905.glb.gz",
+  "sha256": "20f53d2479059055890d2f71a92d6112322cfbb31dbd6b090cf0ed7d21f63614",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/pixel-9a.json",
@@ -286,7 +298,8 @@
       "camera_geometry": "Housing width, height and top gap scaled from official rear artwork; pixel bounds and uncertainty in camera_measurement. Optical internals remain illustrative. Side profile: 81 px body thickness represents 8.9 mm; approximately 5 px camera protrusion.",
       "finishes": "Approximate sRGB colors and roughness, not calibrated measured materials",
       "branding": "Google G contour retained from reference artwork. Legacy Pixel4/4a/5/5a lower rear placement (approximately80%height); Pixel6 onward and folds centered on rear/camera leaf. Size, position and finish-tinted material are photo estimates, not manufacturer CAD.",
-      "antenna_details": "Positions/widths measured individually from Google device artwork; nonmetal surface patches follow the actual enclosure. Hidden depth, RGB and roughness are illustrative; finish tint follows the existing back palette. No universal seam layout or through-cut CAD claim."
+      "antenna_details": "Positions/widths measured individually from Google device artwork; nonmetal surface patches follow the actual enclosure. Hidden depth, RGB and roughness are illustrative; finish tint follows the existing back palette. No universal seam layout or through-cut CAD claim.",
+      "front_glass": "Independent left/top/right/bottom gasket widths measured from Google SDK artwork; elliptical contour offset interpolates corners, not manufacturer CAD."
     },
     "sources": [
       "https://support.google.com/pixelphone/answer/7158570?hl=en",

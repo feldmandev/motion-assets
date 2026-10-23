@@ -610,9 +610,20 @@ def create_device(profile):
             else:
                 # The front glass stops where the front edge starts to roll over.
                 rail = max(body.get('front_rail_mm', .7), front_roll*.95)
+                glass_points = ring(rail) if ring else None
+                if body.get('front_glass_insets_mm'):
+                    from shapely.geometry import Polygon
+                    left, top, right, bottom = body['front_glass_insets_mm']
+                    rx, ry = (left+right)/2, (top+bottom)/2
+                    contour = pts or outline(width, height, radii)
+                    # Offset the independent chassis contour by the measured side
+                    # and end widths, retaining the asymmetric glass placement.
+                    shape = Polygon([(x/rx, y/ry) for x,y in contour]).buffer(-1, quad_segs=24)
+                    glass_points = [(x*rx+(left-right)/2, y*ry+(bottom-top)/2)
+                                    for x,y in shape.exterior.coords]
                 slab('Front black glass', width-2*rail, height-2*rail, glass_depth, [max(.2,r-rail) for r in radii],
                      (0, 0, depth/2-glass_depth/2), mats.get('front_glass', mats['black']), parent, max(.08, curve),
-                     points=ring(rail) if ring else None)
+                     points=glass_points)
         if 'camera' in panel or 'camera' in profile and len(profile.get('panels', [])) == 0:
             camera_assembly(panel.get('camera', profile.get('camera')), body, mats, parent, prototypes)
         for detail in panel.get('rear_details', profile.get('rear_details', [])):

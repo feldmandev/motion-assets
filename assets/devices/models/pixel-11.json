@@ -14,15 +14,15 @@
         2424
       ],
       "size_mm": [
-        66.47524752475248,
-        149.20000000000002
+        65.04950495049505,
+        146.0
       ],
       "center_mm": [
         0.0,
         0.0,
         4.335000038146973
       ],
-      "corner_radius_mm": 10.5,
+      "corner_radius_mm": 8.8,
       "rotation_deg": [
         0,
         0,
@@ -30,10 +30,10 @@
       ],
       "edge_curve_mm": 0,
       "frame_bounds_mm": [
-        2.762376237623762,
-        1.7999999999999972,
-        66.47524752475248,
-        149.20000000000002
+        3.4752475247524757,
+        3.4000000000000057,
+        65.04950495049505,
+        146.0
       ],
       "frame_screen_px": null,
       "frame_file": "frame.svg",
@@ -41,7 +41,7 @@
         "height": 152.8,
         "width": 72.0,
         "depth": 8.6,
-        "corner_radius": 12.299999999999997,
+        "corner_radius": 12.200000000000006,
         "edge_roll": 0.55,
         "front_curve": 0,
         "edge_roll_mm": [
@@ -50,10 +50,10 @@
         ],
         "front_rail_mm": 1.1,
         "corner_radii_mm": [
-          12.299999999999997,
-          12.299999999999997,
-          12.299999999999997,
-          12.299999999999997
+          12.200000000000006,
+          12.200000000000006,
+          12.200000000000006,
+          12.200000000000006
         ]
       },
       "cutouts": [
@@ -73,7 +73,7 @@
     "height": 152.8,
     "width": 72.0,
     "depth": 8.6,
-    "corner_radius": 12.299999999999997,
+    "corner_radius": 12.200000000000006,
     "edge_roll": 0.55,
     "front_curve": 0,
     "edge_roll_mm": [
@@ -82,10 +82,10 @@
     ],
     "front_rail_mm": 1.1,
     "corner_radii_mm": [
-      12.299999999999997,
-      12.299999999999997,
-      12.299999999999997,
-      12.299999999999997
+      12.200000000000006,
+      12.200000000000006,
+      12.200000000000006,
+      12.200000000000006
     ]
   },
   "icon_morph": {
@@ -289,8 +289,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/pixel-11.c3af24268d2d.glb.gz",
-  "sha256": "c3af24268d2d4dbafb5d4c43d99421eafbb248eab1b51e753ff1bb06ef367120",
+  "glbUrl": "assets/devices/models/pixel-11.4e8914e449cd.glb.gz",
+  "sha256": "4e8914e449cd793af8f4dece51010d5a2f8a2ab5fbc9f0704be9f7f0d291cdbc",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/pixel-11.json",
@@ -303,7 +303,8 @@
       "branding": "Google G contour retained from reference artwork. Legacy Pixel4/4a/5/5a lower rear placement (approximately80%height); Pixel6 onward and folds centered on rear/camera leaf. Size, position and finish-tinted material are photo estimates, not manufacturer CAD.",
       "front_optics": "Outer selfie surround fitted from official product imagery; base diameter4.6mm/Pro4.7mm and top offset8.4mm are provisional photo estimates. Layered optical internals illustrative; OLED fit/UV unchanged.",
       "front_rail": "Independent metal/glass/OLED layers; 1.10mm nominal metal rim and .30mm front roll are provisional visual fits to official base/Pro art, not SDK or CAD measurements. XL uses a low-confidence Pro-family rim estimate, without an independent XL front contour. Finish-specific satin/polished/matte aluminium retained.",
-      "antenna_details": "Only separately visible breaks fitted from official product video/family artwork; measured positions, widths and uncertainties in pixel11-antenna-reference-completion.json. Missing edges not mirrored; diffuse finish-tinted surface inserts and their depth are illustrative."
+      "antenna_details": "Only separately visible breaks fitted from official product video/family artwork; measured positions, widths and uncertainties in pixel11-antenna-reference-completion.json. Missing edges not mirrored; diffuse finish-tinted surface inserts and their depth are illustrative.",
+      "front_screen": "Front OLED extent and corner fit measured from official promotional front imagery; projection uncertainty approximately 0.5 mm; not CAD."
     },
     "sources": [
       "https://support.google.com/pixelphone/answer/7158570?hl=en",

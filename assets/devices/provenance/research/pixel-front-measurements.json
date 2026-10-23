@@ -1587,8 +1587,8 @@
     "screens": {
       "Device screen": {
         "fit_box_mm": [
-          71.82673796791443,
-          159.89999999999998
+          70.38930481283423,
+          156.7
         ],
         "center_mm": [
           0,
@@ -1603,12 +1603,14 @@
             ],
             "radius_mm": 1.5
           }
-        ]
+        ],
+        "corner_radius_mm": 9.3
       }
     },
     "accuracy": {
       "front_rail": "Independent metal/glass/OLED layers; 1.10mm nominal metal rim and .30mm front roll are provisional visual fits to official base/Pro art, not SDK or CAD measurements. XL uses a low-confidence Pro-family rim estimate, without an independent XL front contour. Finish-specific satin/polished/matte aluminium retained.",
-      "antenna_details": "Only separately visible breaks fitted from official product video/family artwork; measured positions, widths and uncertainties in pixel11-antenna-reference-completion.json. Missing edges not mirrored; diffuse finish-tinted surface inserts and their depth are illustrative."
+      "antenna_details": "Only separately visible breaks fitted from official product video/family artwork; measured positions, widths and uncertainties in pixel11-antenna-reference-completion.json. Missing edges not mirrored; diffuse finish-tinted surface inserts and their depth are illustrative.",
+      "front_screen": "Pro-family front border and corner estimate; no independently labelled XL front image available. OLED fit preserves native aspect; not measured XL geometry."
     },
     "rail_details": {
       "enclosure": "Aluminum enclosure",
@@ -1671,8 +1673,8 @@
     "screens": {
       "Device screen": {
         "fit_box_mm": [
-          67.18207282913164,
-          149.89999999999998
+          65.74789915966386,
+          146.7
         ],
         "center_mm": [
           0,
@@ -1687,13 +1689,15 @@
             ],
             "radius_mm": 2.35
           }
-        ]
+        ],
+        "corner_radius_mm": 8.9
       }
     },
     "accuracy": {
       "front_optics": "Outer selfie surround fitted from official product imagery; base diameter4.6mm/Pro4.7mm and top offset8.4mm are provisional photo estimates. Layered optical internals illustrative; OLED fit/UV unchanged.",
       "front_rail": "Independent metal/glass/OLED layers; 1.10mm nominal metal rim and .30mm front roll are provisional visual fits to official base/Pro art, not SDK or CAD measurements. XL uses a low-confidence Pro-family rim estimate, without an independent XL front contour. Finish-specific satin/polished/matte aluminium retained.",
-      "antenna_details": "Only separately visible breaks fitted from official product video/family artwork; measured positions, widths and uncertainties in pixel11-antenna-reference-completion.json. Missing edges not mirrored; diffuse finish-tinted surface inserts and their depth are illustrative."
+      "antenna_details": "Only separately visible breaks fitted from official product video/family artwork; measured positions, widths and uncertainties in pixel11-antenna-reference-completion.json. Missing edges not mirrored; diffuse finish-tinted surface inserts and their depth are illustrative.",
+      "front_screen": "Front OLED extent and corner fit measured from official promotional front imagery; projection uncertainty approximately 0.5 mm; not CAD."
     },
     "rail_details": {
       "enclosure": "Aluminum enclosure",
@@ -1763,8 +1767,8 @@
     "screens": {
       "Device screen": {
         "fit_box_mm": [
-          66.47524752475248,
-          149.20000000000002
+          65.04950495049505,
+          146.0
         ],
         "center_mm": [
           0,
@@ -1779,13 +1783,15 @@
             ],
             "radius_mm": 2.3
           }
-        ]
+        ],
+        "corner_radius_mm": 8.8
       }
     },
     "accuracy": {
       "front_optics": "Outer selfie surround fitted from official product imagery; base diameter4.6mm/Pro4.7mm and top offset8.4mm are provisional photo estimates. Layered optical internals illustrative; OLED fit/UV unchanged.",
       "front_rail": "Independent metal/glass/OLED layers; 1.10mm nominal metal rim and .30mm front roll are provisional visual fits to official base/Pro art, not SDK or CAD measurements. XL uses a low-confidence Pro-family rim estimate, without an independent XL front contour. Finish-specific satin/polished/matte aluminium retained.",
-      "antenna_details": "Only separately visible breaks fitted from official product video/family artwork; measured positions, widths and uncertainties in pixel11-antenna-reference-completion.json. Missing edges not mirrored; diffuse finish-tinted surface inserts and their depth are illustrative."
+      "antenna_details": "Only separately visible breaks fitted from official product video/family artwork; measured positions, widths and uncertainties in pixel11-antenna-reference-completion.json. Missing edges not mirrored; diffuse finish-tinted surface inserts and their depth are illustrative.",
+      "front_screen": "Front OLED extent and corner fit measured from official promotional front imagery; projection uncertainty approximately 0.5 mm; not CAD."
     },
     "rail_details": {
       "enclosure": "Aluminum enclosure",
@@ -2687,7 +2693,13 @@
         2.2,
         0.65
       ],
-      "front_rail_mm": 0.96
+      "front_rail_mm": 0.96,
+      "front_glass_insets_mm": [
+        0.9700137080191912,
+        1.2572164948453608,
+        0.9437971213159698,
+        0.602416237113402
+      ]
     },
     "screens": {
       "Device screen": {
@@ -2712,7 +2724,8 @@
       }
     },
     "accuracy": {
-      "antenna_details": "Positions/widths measured individually from Google device artwork; nonmetal surface patches follow the actual enclosure. Hidden depth, RGB and roughness are illustrative; finish tint follows the existing back palette. No universal seam layout or through-cut CAD claim."
+      "antenna_details": "Positions/widths measured individually from Google device artwork; nonmetal surface patches follow the actual enclosure. Hidden depth, RGB and roughness are illustrative; finish tint follows the existing back palette. No universal seam layout or through-cut CAD claim.",
+      "front_glass": "Independent left/top/right/bottom gasket widths measured from Google SDK artwork; elliptical contour offset interpolates corners, not manufacturer CAD."
     },
     "rail_details": {
       "enclosure": "Aluminum enclosure",
@@ -2730,56 +2743,64 @@
           "center_axis_mm": 66.68486,
           "width_mm": 1.04768,
           "id": "left-1",
-          "material": "antenna"
+          "material": "antenna",
+          "inset_mm": 0.9700137080191912
         },
         {
           "edge": "left",
           "center_axis_mm": 42.50963,
           "width_mm": 0.9953,
           "id": "left-2",
-          "material": "antenna"
+          "material": "antenna",
+          "inset_mm": 0.9700137080191912
         },
         {
           "edge": "left",
           "center_axis_mm": -66.99916,
           "width_mm": 1.04768,
           "id": "left-3",
-          "material": "antenna"
+          "material": "antenna",
+          "inset_mm": 0.9700137080191912
         },
         {
           "edge": "right",
           "center_axis_mm": 66.68486,
           "width_mm": 1.04768,
           "id": "right-1",
-          "material": "antenna"
+          "material": "antenna",
+          "inset_mm": 0.9437971213159698
         },
         {
           "edge": "right",
           "center_axis_mm": 42.50963,
           "width_mm": 0.9953,
           "id": "right-2",
-          "material": "antenna"
+          "material": "antenna",
+          "inset_mm": 0.9437971213159698
         },
         {
           "edge": "right",
           "center_axis_mm": -67.02535,
           "width_mm": 0.9953,
           "id": "right-3",
-          "material": "antenna"
+          "material": "antenna",
+          "inset_mm": 0.9437971213159698
         },
         {
           "edge": "top",
           "center_axis_mm": 0.0,
           "width_mm": 1.52056,
           "id": "top-1",
-          "material": "antenna"
+          "material": "antenna",
+          "inset_mm": 1.2572164948453608
         },
         {
           "edge": "bottom",
           "center_axis_mm": 8.28444,
           "width_mm": 1.52056,
           "id": "bottom-1",
-          "material": "antenna"
+          "material": "antenna",
+          "inset_mm": 0.602416237113402
         }
       ]
     }
@@ -2791,7 +2812,13 @@
         3.0,
         0.75
       ],
-      "front_rail_mm": 0.99
+      "front_rail_mm": 0.99,
+      "front_glass_insets_mm": [
+        0.9908396946564886,
+        1.4373259052924792,
+        0.9908396946564886,
+        0.6288300835654597
+      ]
     },
     "screens": {
       "Device screen": {
@@ -2816,7 +2843,8 @@
       }
     },
     "accuracy": {
-      "antenna_details": "Positions/widths measured individually from Google device artwork; nonmetal surface patches follow the actual enclosure. Hidden depth, RGB and roughness are illustrative; finish tint follows the existing back palette. No universal seam layout or through-cut CAD claim."
+      "antenna_details": "Positions/widths measured individually from Google device artwork; nonmetal surface patches follow the actual enclosure. Hidden depth, RGB and roughness are illustrative; finish tint follows the existing back palette. No universal seam layout or through-cut CAD claim.",
+      "front_glass": "Independent left/top/right/bottom gasket widths measured from Google SDK artwork; elliptical contour offset interpolates corners, not manufacturer CAD."
     },
     "rail_details": {
       "enclosure": "Aluminum enclosure",
@@ -2834,56 +2862,64 @@
           "center_axis_mm": 64.61978,
           "width_mm": 1.25766,
           "id": "left-1",
-          "material": "antenna"
+          "material": "antenna",
+          "inset_mm": 0.9908396946564886
         },
         {
           "edge": "left",
           "center_axis_mm": 41.23329,
           "width_mm": 1.19777,
           "id": "left-2",
-          "material": "antenna"
+          "material": "antenna",
+          "inset_mm": 0.9908396946564886
         },
         {
           "edge": "left",
           "center_axis_mm": -61.05641,
           "width_mm": 1.19777,
           "id": "left-3",
-          "material": "antenna"
+          "material": "antenna",
+          "inset_mm": 0.9908396946564886
         },
         {
           "edge": "right",
           "center_axis_mm": 64.58983,
           "width_mm": 1.19777,
           "id": "right-1",
-          "material": "antenna"
+          "material": "antenna",
+          "inset_mm": 0.9908396946564886
         },
         {
           "edge": "right",
           "center_axis_mm": 41.23329,
           "width_mm": 1.19777,
           "id": "right-2",
-          "material": "antenna"
+          "material": "antenna",
+          "inset_mm": 0.9908396946564886
         },
         {
           "edge": "right",
           "center_axis_mm": -61.05641,
           "width_mm": 1.19777,
           "id": "right-3",
-          "material": "antenna"
+          "material": "antenna",
+          "inset_mm": 0.9908396946564886
         },
         {
           "edge": "top",
           "center_axis_mm": 0.0,
           "width_mm": 1.50127,
           "id": "top-1",
-          "material": "antenna"
+          "material": "antenna",
+          "inset_mm": 1.4373259052924792
         },
         {
           "edge": "bottom",
           "center_axis_mm": 7.98677,
           "width_mm": 1.50127,
           "id": "bottom-1",
-          "material": "antenna"
+          "material": "antenna",
+          "inset_mm": 0.6288300835654597
         }
       ]
     }
@@ -2895,7 +2931,13 @@
         3.0,
         0.85
       ],
-      "front_rail_mm": 1.09
+      "front_rail_mm": 1.09,
+      "front_glass_insets_mm": [
+        1.0996638655462185,
+        1.078723404255319,
+        1.0996638655462185,
+        1.0187943262411348
+      ]
     },
     "screens": {
       "Device screen": {
@@ -2920,7 +2962,8 @@
       }
     },
     "accuracy": {
-      "antenna_details": "Positions/widths measured individually from Google device artwork; nonmetal surface patches follow the actual enclosure. Hidden depth, RGB and roughness are illustrative; finish tint follows the existing back palette. No universal seam layout or through-cut CAD claim."
+      "antenna_details": "Positions/widths measured individually from Google device artwork; nonmetal surface patches follow the actual enclosure. Hidden depth, RGB and roughness are illustrative; finish tint follows the existing back palette. No universal seam layout or through-cut CAD claim.",
+      "front_glass": "Independent left/top/right/bottom gasket widths measured from Google SDK artwork; elliptical contour offset interpolates corners, not manufacturer CAD."
     },
     "rail_details": {
       "enclosure": "Aluminum enclosure",
@@ -2938,56 +2981,64 @@
           "center_axis_mm": 62.80567,
           "width_mm": 0.95887,
           "id": "left-1",
-          "material": "antenna"
+          "material": "antenna",
+          "inset_mm": 1.0996638655462185
         },
         {
           "edge": "left",
           "center_axis_mm": 40.75177,
           "width_mm": 0.95887,
           "id": "left-2",
-          "material": "antenna"
+          "material": "antenna",
+          "inset_mm": 1.0996638655462185
         },
         {
           "edge": "left",
           "center_axis_mm": -63.49486,
           "width_mm": 0.89894,
           "id": "left-3",
-          "material": "antenna"
+          "material": "antenna",
+          "inset_mm": 1.0996638655462185
         },
         {
           "edge": "right",
           "center_axis_mm": 62.80567,
           "width_mm": 1.07872,
           "id": "right-1",
-          "material": "antenna"
+          "material": "antenna",
+          "inset_mm": 1.0996638655462185
         },
         {
           "edge": "right",
           "center_axis_mm": 40.75177,
           "width_mm": 0.95887,
           "id": "right-2",
-          "material": "antenna"
+          "material": "antenna",
+          "inset_mm": 1.0996638655462185
         },
         {
           "edge": "right",
           "center_axis_mm": -63.46489,
           "width_mm": 0.95887,
           "id": "right-3",
-          "material": "antenna"
+          "material": "antenna",
+          "inset_mm": 1.0996638655462185
         },
         {
           "edge": "top",
           "center_axis_mm": 0.09164,
           "width_mm": 1.40513,
           "id": "top-1",
-          "material": "antenna"
+          "material": "antenna",
+          "inset_mm": 1.078723404255319
         },
         {
           "edge": "bottom",
           "center_axis_mm": 8.15584,
           "width_mm": 1.52731,
           "id": "bottom-1",
-          "material": "antenna"
+          "material": "antenna",
+          "inset_mm": 1.0187943262411348
         }
       ]
     }
@@ -3637,7 +3688,13 @@
         0.75,
         0.75
       ],
-      "front_rail_mm": 1.21
+      "front_rail_mm": 1.21,
+      "front_glass_insets_mm": [
+        1.2609053497942386,
+        1.3654193548387097,
+        1.155829903978052,
+        0.9978064516129033
+      ]
     },
     "screens": {
       "Device screen": {
@@ -3662,7 +3719,8 @@
       }
     },
     "accuracy": {
-      "antenna_details": "Positions/widths measured individually from Google device artwork; nonmetal surface patches follow the actual enclosure. Hidden depth, RGB and roughness are illustrative; finish tint follows the existing back palette. No universal seam layout or through-cut CAD claim."
+      "antenna_details": "Positions/widths measured individually from Google device artwork; nonmetal surface patches follow the actual enclosure. Hidden depth, RGB and roughness are illustrative; finish tint follows the existing back palette. No universal seam layout or through-cut CAD claim.",
+      "front_glass": "Independent left/top/right/bottom gasket widths measured from Google SDK artwork; elliptical contour offset interpolates corners, not manufacturer CAD."
     },
     "rail_details": {
       "enclosure": "Aluminum enclosure",
@@ -3680,42 +3738,48 @@
           "center_axis_mm": 56.79619,
           "width_mm": 1.52297,
           "id": "left-1",
-          "material": "antenna"
+          "material": "antenna",
+          "inset_mm": 1.2609053497942386
         },
         {
           "edge": "left",
           "center_axis_mm": -65.69768,
           "width_mm": 1.47045,
           "id": "left-2",
-          "material": "antenna"
+          "material": "antenna",
+          "inset_mm": 1.2609053497942386
         },
         {
           "edge": "right",
           "center_axis_mm": 56.79619,
           "width_mm": 1.52297,
           "id": "right-1",
-          "material": "antenna"
+          "material": "antenna",
+          "inset_mm": 1.155829903978052
         },
         {
           "edge": "right",
           "center_axis_mm": -65.69768,
           "width_mm": 1.47045,
           "id": "right-2",
-          "material": "antenna"
+          "material": "antenna",
+          "inset_mm": 1.155829903978052
         },
         {
           "edge": "top",
           "center_axis_mm": 0.02627,
           "width_mm": 1.52359,
           "id": "top-1",
-          "material": "antenna"
+          "material": "antenna",
+          "inset_mm": 1.3654193548387097
         },
         {
           "edge": "bottom",
           "center_axis_mm": 8.53738,
           "width_mm": 1.52359,
           "id": "bottom-1",
-          "material": "antenna"
+          "material": "antenna",
+          "inset_mm": 0.9978064516129033
         }
       ]
     }
@@ -3727,7 +3791,13 @@
         0.75,
         0.75
       ],
-      "front_rail_mm": 1.21
+      "front_rail_mm": 1.21,
+      "front_glass_insets_mm": [
+        1.2342857142857142,
+        1.4386012104909216,
+        1.1828571428571428,
+        1.0275722932078009
+      ]
     },
     "screens": {
       "Device screen": {
@@ -3752,7 +3822,8 @@
       }
     },
     "accuracy": {
-      "antenna_details": "Positions/widths measured individually from Google device artwork; nonmetal surface patches follow the actual enclosure. Hidden depth, RGB and roughness are illustrative; finish tint follows the existing back palette. No universal seam layout or through-cut CAD claim."
+      "antenna_details": "Positions/widths measured individually from Google device artwork; nonmetal surface patches follow the actual enclosure. Hidden depth, RGB and roughness are illustrative; finish tint follows the existing back palette. No universal seam layout or through-cut CAD claim.",
+      "front_glass": "Independent left/top/right/bottom gasket widths measured from Google SDK artwork; elliptical contour offset interpolates corners, not manufacturer CAD."
     },
     "rail_details": {
       "enclosure": "Aluminum enclosure",
@@ -3774,42 +3845,48 @@
           "center_axis_mm": 51.84102,
           "width_mm": 1.54136,
           "id": "left-1",
-          "material": "antenna"
+          "material": "antenna",
+          "inset_mm": 1.2342857142857142
         },
         {
           "edge": "left",
           "center_axis_mm": -60.67814,
           "width_mm": 1.54136,
           "id": "left-2",
-          "material": "antenna"
+          "material": "antenna",
+          "inset_mm": 1.2342857142857142
         },
         {
           "edge": "right",
           "center_axis_mm": 51.84102,
           "width_mm": 1.54136,
           "id": "right-1",
-          "material": "antenna"
+          "material": "antenna",
+          "inset_mm": 1.1828571428571428
         },
         {
           "edge": "right",
           "center_axis_mm": -60.65245,
           "width_mm": 1.48998,
           "id": "right-2",
-          "material": "antenna"
+          "material": "antenna",
+          "inset_mm": 1.1828571428571428
         },
         {
           "edge": "top",
           "center_axis_mm": 0.02571,
           "width_mm": 1.49143,
           "id": "top-1",
-          "material": "antenna"
+          "material": "antenna",
+          "inset_mm": 1.4386012104909216
         },
         {
           "edge": "bottom",
           "center_axis_mm": 8.53714,
           "width_mm": 1.54286,
           "id": "bottom-1",
-          "material": "antenna"
+          "material": "antenna",
+          "inset_mm": 1.0275722932078009
         }
       ],
       "camera_sidewall": {
@@ -3826,7 +3903,13 @@
         0.75,
         0.75
       ],
-      "front_rail_mm": 1.21
+      "front_rail_mm": 1.21,
+      "front_glass_insets_mm": [
+        1.2090680100755669,
+        1.4489134729355986,
+        1.2090680100755669,
+        0.9659423152903991
+      ]
     },
     "screens": {
       "Device screen": {
@@ -3851,7 +3934,8 @@
       }
     },
     "accuracy": {
-      "antenna_details": "Positions/widths measured individually from Google device artwork; nonmetal surface patches follow the actual enclosure. Hidden depth, RGB and roughness are illustrative; finish tint follows the existing back palette. No universal seam layout or through-cut CAD claim."
+      "antenna_details": "Positions/widths measured individually from Google device artwork; nonmetal surface patches follow the actual enclosure. Hidden depth, RGB and roughness are illustrative; finish tint follows the existing back palette. No universal seam layout or through-cut CAD claim.",
+      "front_glass": "Independent left/top/right/bottom gasket widths measured from Google SDK artwork; elliptical contour offset interpolates corners, not manufacturer CAD."
     },
     "rail_details": {
       "enclosure": "Aluminum enclosure",
@@ -3869,42 +3953,48 @@
           "center_axis_mm": 51.85903,
           "width_mm": 1.50928,
           "id": "left-1",
-          "material": "antenna"
+          "material": "antenna",
+          "inset_mm": 1.2090680100755669
         },
         {
           "edge": "left",
           "center_axis_mm": -60.61288,
           "width_mm": 1.50928,
           "id": "left-2",
-          "material": "antenna"
+          "material": "antenna",
+          "inset_mm": 1.2090680100755669
         },
         {
           "edge": "right",
           "center_axis_mm": 51.85903,
           "width_mm": 1.50928,
           "id": "right-1",
-          "material": "antenna"
+          "material": "antenna",
+          "inset_mm": 1.2090680100755669
         },
         {
           "edge": "right",
           "center_axis_mm": -60.61288,
           "width_mm": 1.50928,
           "id": "right-2",
-          "material": "antenna"
+          "material": "antenna",
+          "inset_mm": 1.2090680100755669
         },
         {
           "edge": "top",
           "center_axis_mm": 0.0,
           "width_mm": 1.51134,
           "id": "top-1",
-          "material": "antenna"
+          "material": "antenna",
+          "inset_mm": 1.4489134729355986
         },
         {
           "edge": "bottom",
           "center_axis_mm": 8.52393,
           "width_mm": 1.51134,
           "id": "bottom-1",
-          "material": "antenna"
+          "material": "antenna",
+          "inset_mm": 0.9659423152903991
         }
       ]
     }
@@ -3916,7 +4006,13 @@
         1.0,
         0.8
       ],
-      "front_rail_mm": 1.26
+      "front_rail_mm": 1.26,
+      "front_glass_insets_mm": [
+        1.2648315529991783,
+        1.384474708171206,
+        1.2648315529991783,
+        1.2038910505836575
+      ]
     },
     "screens": {
       "Device screen": {
@@ -3941,7 +4037,8 @@
       }
     },
     "accuracy": {
-      "antenna_details": "Positions/widths measured individually from Google device artwork; nonmetal surface patches follow the actual enclosure. Hidden depth, RGB and roughness are illustrative; finish tint follows the existing back palette. No universal seam layout or through-cut CAD claim."
+      "antenna_details": "Positions/widths measured individually from Google device artwork; nonmetal surface patches follow the actual enclosure. Hidden depth, RGB and roughness are illustrative; finish tint follows the existing back palette. No universal seam layout or through-cut CAD claim.",
+      "front_glass": "Independent left/top/right/bottom gasket widths measured from Google SDK artwork; elliptical contour offset interpolates corners, not manufacturer CAD."
     },
     "rail_details": {
       "enclosure": "Aluminum enclosure",
@@ -3959,49 +4056,56 @@
           "center_axis_mm": 53.54305,
           "width_mm": 1.50486,
           "id": "left-1",
-          "material": "antenna"
+          "material": "antenna",
+          "inset_mm": 1.2648315529991783
         },
         {
           "edge": "left",
           "center_axis_mm": -57.03434,
           "width_mm": 1.50486,
           "id": "left-2",
-          "material": "antenna"
+          "material": "antenna",
+          "inset_mm": 1.2648315529991783
         },
         {
           "edge": "right",
           "center_axis_mm": 53.54305,
           "width_mm": 1.50486,
           "id": "right-1",
-          "material": "antenna"
+          "material": "antenna",
+          "inset_mm": 1.2648315529991783
         },
         {
           "edge": "right",
           "center_axis_mm": -57.03434,
           "width_mm": 1.50486,
           "id": "right-2",
-          "material": "antenna"
+          "material": "antenna",
+          "inset_mm": 1.2648315529991783
         },
         {
           "edge": "top",
           "center_axis_mm": -4.81841,
           "width_mm": 1.50575,
           "id": "top-1",
-          "material": "antenna"
+          "material": "antenna",
+          "inset_mm": 1.384474708171206
         },
         {
           "edge": "top",
           "center_axis_mm": 4.81841,
           "width_mm": 1.50575,
           "id": "top-2",
-          "material": "antenna"
+          "material": "antenna",
+          "inset_mm": 1.384474708171206
         },
         {
           "edge": "bottom",
           "center_axis_mm": 9.2152,
           "width_mm": 1.50575,
           "id": "bottom-1",
-          "material": "antenna"
+          "material": "antenna",
+          "inset_mm": 1.2038910505836575
         }
       ]
     }

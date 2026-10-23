@@ -104,6 +104,10 @@ def enhance_pixel_front_optics(profile):
         mat = bpy.data.materials.get(full_name)
         if mat is None:
             mat = material(full_name, rgb, metal, rough)
+            if name in ('well', 'annulus'):
+                # These are the absorbing aperture and barrel, not cover glass.
+                # Default dielectric reflection washed the whole camera hole gray.
+                mat.node_tree.nodes['Principled BSDF'].inputs['Specular IOR Level'].default_value = .05
             if name == 'coated glass':
                 shader = mat.node_tree.nodes['Principled BSDF']
                 shader.inputs['Transmission Weight'].default_value = .85
