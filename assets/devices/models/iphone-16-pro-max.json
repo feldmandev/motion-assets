@@ -240,8 +240,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/iphone-16-pro-max.9bc94670c46c.glb.gz",
-  "sha256": "9bc94670c46c2f6fe097ac06a9ba6e5d87df105f24ad105a03f738f9363878f1",
+  "glbUrl": "assets/devices/models/iphone-16-pro-max.6415abe8b88b.glb.gz",
+  "sha256": "6415abe8b88bc2405b5bd818a63ebb53cb2995657ad29962af6ed08827c0be8a",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/iphone-16-pro-max.json",

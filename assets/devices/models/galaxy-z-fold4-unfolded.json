@@ -3122,7 +3122,7 @@
             0.768156862745098
           ],
           "metal": 0.85,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -3162,7 +3162,7 @@
             0.3404705882352941
           ],
           "metal": 0.85,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -3202,7 +3202,7 @@
             0.31474509803921563
           ],
           "metal": 0.85,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -3242,7 +3242,7 @@
             0.29545098039215684
           ],
           "metal": 0.85,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -3265,8 +3265,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-z-fold4-unfolded.26e124197bce.glb.gz",
-  "sha256": "26e124197bce3732d11d7a64ab3fa8b0b604a6e0d4fbaa1f0237454ec2ca89a3",
+  "glbUrl": "assets/devices/models/galaxy-z-fold4-unfolded.28f6957172ee.glb.gz",
+  "sha256": "28f6957172ee281ab53406156bfcbf7b92fb8bae51d6b1635f475104c6688586",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-z-fold4-unfolded.json",

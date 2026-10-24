@@ -246,8 +246,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/pixel-7-pro.b7c0b754620e.glb.gz",
-  "sha256": "b7c0b754620e92379ba1bfe8ad0f9359c2007257511a08be8a898806fba83665",
+  "glbUrl": "assets/devices/models/pixel-7-pro.91c2a991ae67.glb.gz",
+  "sha256": "91c2a991ae67104641721acff33b00911020dfb65371d698bf3478f9129e7fd5",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/pixel-7-pro.json",

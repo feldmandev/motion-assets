@@ -268,8 +268,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/pixel-6-pro.c42d8553ce75.glb.gz",
-  "sha256": "c42d8553ce75d1a5b6e53d78f521362a62a6e55770eb050967f83f1462958e17",
+  "glbUrl": "assets/devices/models/pixel-6-pro.890f0f58c2dc.glb.gz",
+  "sha256": "890f0f58c2dc0867d3694bbd66b2b967b2acbea6b1e475be271e7582d1e8a24b",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/pixel-6-pro.json",

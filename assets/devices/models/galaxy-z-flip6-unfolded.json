@@ -360,7 +360,7 @@
             0.572
           ],
           "metal": 0.85,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -400,7 +400,7 @@
             0.5848627450980391
           ],
           "metal": 0.85,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -440,7 +440,7 @@
             0.8581960784313725
           ],
           "metal": 0.85,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -480,7 +480,7 @@
             0.7906666666666666
           ],
           "metal": 0.85,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -520,7 +520,7 @@
             0.2311372549019608
           ],
           "metal": 0.85,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -560,7 +560,7 @@
             0.8356862745098038
           ],
           "metal": 0.85,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -600,7 +600,7 @@
             0.552705882352941
           ],
           "metal": 0.85,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -623,8 +623,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-z-flip6-unfolded.1100d990d037.glb.gz",
-  "sha256": "1100d990d0375b0a0dc0be5fb1eeff59f7179ef186f51a072e4a4d9043365c7c",
+  "glbUrl": "assets/devices/models/galaxy-z-flip6-unfolded.3f3951537fb4.glb.gz",
+  "sha256": "3f3951537fb413f793ff62dfa27c1bf8f5dbe3abc1274b3527dd9c72a0c2b481",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-z-flip6-unfolded.json",

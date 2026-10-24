@@ -129,7 +129,7 @@
             0.5517647058823529
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -169,7 +169,7 @@
             0.7958823529411765
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -209,7 +209,7 @@
             0.751764705882353
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -232,8 +232,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-s20.26735b25eb90.glb.gz",
-  "sha256": "26735b25eb9003a2680a6de76f7c585553677e4f48dbfe9a23e676aee77cc878",
+  "glbUrl": "assets/devices/models/galaxy-s20.fbc2ee024950.glb.gz",
+  "sha256": "fbc2ee0249501b7e3b5bd4db6f594a9e049b481be4c8a31926dc242c844a3db7",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-s20.json",

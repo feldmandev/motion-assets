@@ -3122,7 +3122,7 @@
             0.7713725490196077
           ],
           "metal": 0.85,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -3162,7 +3162,7 @@
             0.6266666666666666
           ],
           "metal": 0.85,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -3202,7 +3202,7 @@
             0.1700392156862745
           ],
           "metal": 0.85,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -3242,7 +3242,7 @@
             0.5237647058823529
           ],
           "metal": 0.85,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -3282,7 +3282,7 @@
             0.5462745098039216
           ],
           "metal": 0.85,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -3305,8 +3305,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-z-fold5-unfolded.23524236c7f7.glb.gz",
-  "sha256": "23524236c7f7d56641d5022b4b271a87041eb455656535b825d63c9a2582b14c",
+  "glbUrl": "assets/devices/models/galaxy-z-fold5-unfolded.9a7537148140.glb.gz",
+  "sha256": "9a75371481404080306823f0606569447d81c38596d56100f9f44308e2c057b4",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-z-fold5-unfolded.json",

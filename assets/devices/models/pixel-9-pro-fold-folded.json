@@ -1770,8 +1770,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/pixel-9-pro-fold-folded.2b7cfde8c148.glb.gz",
-  "sha256": "2b7cfde8c1483c8c4aa3d55790702add5f3edffdc8523aa00e445d389bae4e09",
+  "glbUrl": "assets/devices/models/pixel-9-pro-fold-folded.46b25ecf5582.glb.gz",
+  "sha256": "46b25ecf55820bdc9e01fbe860fb8eb5da5de0a19c8404da6576649b050e35e5",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/pixel-9-pro-fold-folded.json",

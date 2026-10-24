@@ -243,7 +243,7 @@
             0.8517647058823529
           ],
           "metal": 0.85,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -283,7 +283,7 @@
             0.18933333333333333
           ],
           "metal": 0.85,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -306,8 +306,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-z-flip7-fe-folded.231bff302deb.glb.gz",
-  "sha256": "231bff302deb972eb2c8136f6f86f9bc4c6ce6269dda09747ce538022a523a30",
+  "glbUrl": "assets/devices/models/galaxy-z-flip7-fe-folded.340bf98f6efa.glb.gz",
+  "sha256": "340bf98f6efa67817ee8c1d42435d60fe51a885d865ee3e4faca8e2dbdab9fc1",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-z-flip7-fe-folded.json",

@@ -129,7 +129,7 @@
             0.5517647058823529
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -169,7 +169,7 @@
             0.2811764705882353
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -192,8 +192,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-s20-ultra.b67bb9bebe9b.glb.gz",
-  "sha256": "b67bb9bebe9bc00cd400840ab606a16f267f932f6decd386686da1849e0d9a25",
+  "glbUrl": "assets/devices/models/galaxy-s20-ultra.aad0e3ff12a9.glb.gz",
+  "sha256": "aad0e3ff12a96b5075579a78d4ec6f0758da9964653416e3e367a17408fcc94e",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-s20-ultra.json",

@@ -129,7 +129,7 @@
             0.7605882352941177
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -169,7 +169,7 @@
             0.8017647058823529
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -209,7 +209,7 @@
             0.2752941176470588
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -232,8 +232,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-s25-edge.d7c08d8bdb1d.glb.gz",
-  "sha256": "d7c08d8bdb1d6074b7f86ae834d8154aa76c8c424c698b58f70c934dba79018b",
+  "glbUrl": "assets/devices/models/galaxy-s25-edge.dd827ada980f.glb.gz",
+  "sha256": "dd827ada980f4042a1873833bdabb0210b0e8da33d13829eb261c0a8b31de956",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-s25-edge.json",

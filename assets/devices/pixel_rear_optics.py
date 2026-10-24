@@ -140,12 +140,12 @@ def _rear_materials():
         # Crisp dark gunmetal chamfered outer bezel ring
         'anodized_rim': _make_material(
             'Optical outer rim | original satin highlight',
-            (0.065, 0.072, 0.086), metallic=0.90, roughness=0.18, specular=0.70, coat=0.30
+            (0.003, 0.0035, 0.004), metallic=0, roughness=0.42, specular=0.03, coat=0
         ),
         # Machined inner barrel wall (deep dark anodized aluminum)
         'dark_barrel': _make_material(
             'Optical barrel | dark machined inner walls',
-            (0.007, 0.009, 0.014), metallic=0.58, roughness=0.26, specular=0.45
+            (0.003, 0.0035, 0.004), metallic=0.2, roughness=0.4, specular=0.12
         ),
         # Concentric stepped baffle ridge lips that catch crisp thin metallic rim highlights
         'baffle_ridge': _make_material(
@@ -165,9 +165,8 @@ def _rear_materials():
         # Deep optical pupil / curved sapphire-coated sensor core with angle-dependent cyan/magenta sheen
         'deep_pupil': _make_material(
             'Pixel rear optics | deep sensor pupil',
-            (0.015, 0.055, 0.14), metallic=0.25, roughness=0.016, ior=1.72,
-            specular=0.95, coat=1.0, coat_rough=0.008,
-            emission_rgb=(0.03, 0.14, 0.34), emission_strength=0.08
+            (0.0008, 0.0008, 0.001), metallic=0.05, roughness=0.55, ior=1.72,
+            specular=0.015, coat=0
         ),
         # Outer & inner coated optical glass elements with multi-stop angle-dependent AR color shift
         'lens1_el1': _make_material(
@@ -232,6 +231,13 @@ def _rear_materials():
 
 def _revolved_mesh(name, cx, cy, rings, materials, parent, steps=STEPS):
     """Build a revolved mesh around (cx, cy) with outward normals facing -Z."""
+    if 'glass element' in name:
+        apex = min(z for radius, z in rings)
+        curvature = .55 if 'element 2' in name else .45
+        rings = [(radius, apex+(z-apex)*curvature) for radius, z in rings]
+    elif 'recessed barrel' in name:
+        rings = [rings[i] for i in [0, 1, 3, 4, 11, 15, 18]]
+        materials = [materials[i] for i in [0, 2, 3, 7, 14, 17]]
     vertices = []
     faces = []
     face_mats = []

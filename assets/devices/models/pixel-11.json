@@ -128,7 +128,7 @@
             0.75823,
             0.77863
           ],
-          "rough": 0.36
+          "rough": 0.23399999999999999
         },
         "bar": {
           "rgb": [
@@ -174,7 +174,7 @@
             0.7251,
             0.60275
           ],
-          "rough": 0.36
+          "rough": 0.23399999999999999
         },
         "bar": {
           "rgb": [
@@ -220,7 +220,7 @@
             0.52118,
             0.59
           ],
-          "rough": 0.36
+          "rough": 0.23399999999999999
         },
         "bar": {
           "rgb": [
@@ -266,7 +266,7 @@
             0.34784,
             0.35549
           ],
-          "rough": 0.36
+          "rough": 0.23399999999999999
         },
         "bar": {
           "rgb": [
@@ -297,8 +297,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/pixel-11.bdd95cb3ff23.glb.gz",
-  "sha256": "bdd95cb3ff233cea2172bb2091cdc30fbebff7c71c155c14586257c2e0410b02",
+  "glbUrl": "assets/devices/models/pixel-11.f8daddf8488a.glb.gz",
+  "sha256": "f8daddf8488a43cb9290da98ae16e621362e1bbbb27067a6580e9ba1ed6ececf",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/pixel-11.json",

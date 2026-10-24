@@ -110,7 +110,7 @@
             0.8488235294117646
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -158,7 +158,7 @@
             0.32823529411764707
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -206,7 +206,7 @@
             0.5870588235294117
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -254,7 +254,7 @@
             0.7400000000000001
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -285,8 +285,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-s6.ca8d40ae1e40.glb.gz",
-  "sha256": "ca8d40ae1e403a9692bddd14adf9bb43cc8fbec906262cbb66add82f506a7cc2",
+  "glbUrl": "assets/devices/models/galaxy-s6.d913709b1617.glb.gz",
+  "sha256": "d913709b1617d2e40e77e4b913769a6c91972dff69c47d2a0f2ba8de9e8a1afa",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-s6.json",

@@ -133,7 +133,7 @@
             0.7694117647058824
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -173,7 +173,7 @@
             0.7929411764705883
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -213,7 +213,7 @@
             0.6547058823529411
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -253,7 +253,7 @@
             0.26941176470588235
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -276,8 +276,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-a34.dc7e782ecc87.glb.gz",
-  "sha256": "dc7e782ecc87087e0017351b65760f996215d26ea82fd7a506a2236846d5e9ed",
+  "glbUrl": "assets/devices/models/galaxy-a34.84cc9a16e330.glb.gz",
+  "sha256": "84cc9a16e330bcbafc68051b5ef705da16690f0bd6a02fcd16a13759145b9f72",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-a34.json",

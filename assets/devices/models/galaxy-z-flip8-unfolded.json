@@ -382,7 +382,7 @@
             0.8131764705882353
           ],
           "metal": 0.85,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -422,7 +422,7 @@
             0.8839215686274509
           ],
           "metal": 0.85,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -462,7 +462,7 @@
             0.8196078431372549
           ],
           "metal": 0.85,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -502,7 +502,7 @@
             0.36619607843137253
           ],
           "metal": 0.85,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -525,8 +525,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-z-flip8-unfolded.4c8475c27aad.glb.gz",
-  "sha256": "4c8475c27aada8d9217f8f878acfb4afe15f2897160f94b57f3dd2e8a37cc4fc",
+  "glbUrl": "assets/devices/models/galaxy-z-flip8-unfolded.fbe2ae53c3d7.glb.gz",
+  "sha256": "fbe2ae53c3d7721dc34f78af70e9af9abcc9efb8ca27ae62e4e2d6cbd738fd87",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-z-flip8-unfolded.json",

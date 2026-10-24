@@ -240,8 +240,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/iphone-air.af82f1badb85.glb.gz",
-  "sha256": "af82f1badb85ca1893eea207287638ed65e7f60cc963f0afabb8b7a609eb5b99",
+  "glbUrl": "assets/devices/models/iphone-air.8634a72ca4b4.glb.gz",
+  "sha256": "8634a72ca4b40eeb436d63d1cc0a29d06fffdef74fbf1ccaeac76788557779bd",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/iphone-air.json",

@@ -257,7 +257,7 @@
             0.38823529411764707
           ],
           "metal": 0.8,
-          "rough": 0.25
+          "rough": 0.1625
         },
         "bar": {
           "rgb": [
@@ -307,7 +307,7 @@
             0.8627450980392157
           ],
           "metal": 0.8,
-          "rough": 0.25
+          "rough": 0.1625
         },
         "bar": {
           "rgb": [
@@ -339,8 +339,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/honor-robot-phone.673e08c6323f.glb.gz",
-  "sha256": "673e08c6323fd97073fcd3a8d03a6fe3730692fb4a6ad15ff7b90f131458e2ba",
+  "glbUrl": "assets/devices/models/honor-robot-phone.580a56866bf3.glb.gz",
+  "sha256": "580a56866bf37eb69317b1a2c80c3ee5e814769fe7db7891189888b0b9c0796b",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/honor-robot-phone.json",

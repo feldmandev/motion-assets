@@ -123,7 +123,7 @@
             0.09411764705882353
           ],
           "metal": 0.8,
-          "rough": 0.3
+          "rough": 0.195
         },
         "bar": {
           "rgb": [
@@ -172,7 +172,7 @@
             0.1450980392156863
           ],
           "metal": 0.8,
-          "rough": 0.3
+          "rough": 0.195
         },
         "bar": {
           "rgb": [
@@ -203,8 +203,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/oneplus-11.f80a7e6e68aa.glb.gz",
-  "sha256": "f80a7e6e68aad2151a35c7579b996bef7634600088ef762ea4abd609b946e03c",
+  "glbUrl": "assets/devices/models/oneplus-11.3466aa935089.glb.gz",
+  "sha256": "3466aa935089ee984c07c79581216a50693f13a39095556ff05b8d3997144f3e",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/oneplus-11.json",

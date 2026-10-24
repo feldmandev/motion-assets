@@ -127,7 +127,7 @@
             0.7462745098039216
           ],
           "metal": 0.8,
-          "rough": 0.3
+          "rough": 0.195
         },
         "bar": {
           "rgb": [
@@ -360,8 +360,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-s25-ultra.1b615e6d1262.glb.gz",
-  "sha256": "1b615e6d12628ab317caee0b250e4814e47b17a38c0e79adc96f6ae54ecac3de",
+  "glbUrl": "assets/devices/models/galaxy-s25-ultra.1c6b5f6ec8b6.glb.gz",
+  "sha256": "1c6b5f6ec8b60f0f5c816cccaea88f3ccb91334e5f34cf1239b19f9395663160",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-s25-ultra.json",

@@ -129,7 +129,7 @@
             0.7576470588235295
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -169,7 +169,7 @@
             0.4282352941176471
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -209,7 +209,7 @@
             0.2988235294117647
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -232,8 +232,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-s26-fe.6891b86f30eb.glb.gz",
-  "sha256": "6891b86f30ebadbf1c567d4e813ba08931cd62b6c4e2b73bbddad9d26b8e8bfc",
+  "glbUrl": "assets/devices/models/galaxy-s26-fe.a1624a6d17be.glb.gz",
+  "sha256": "a1624a6d17becef85d309ef076c07bde40e32e243d4eda740c1bff3f4f0fd559",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-s26-fe.json",

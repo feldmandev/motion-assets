@@ -127,7 +127,7 @@
             0.31019607843137254
           ],
           "metal": 0.8,
-          "rough": 0.3
+          "rough": 0.195
         },
         "bar": {
           "rgb": [
@@ -360,8 +360,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-s24-plus.f4b75d25bd2e.glb.gz",
-  "sha256": "f4b75d25bd2e2c6d601b5259eec1bdc80436a7fc8753cd7022ba73e4c7ab82b7",
+  "glbUrl": "assets/devices/models/galaxy-s24-plus.4ead52e00b9a.glb.gz",
+  "sha256": "4ead52e00b9adcad2250e67d112e04ee6ee1a5fdd00796ca495fddcb48857aea",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-s24-plus.json",

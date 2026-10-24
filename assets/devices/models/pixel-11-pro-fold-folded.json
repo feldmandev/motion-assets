@@ -1745,8 +1745,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/pixel-11-pro-fold-folded.ae85750a1c17.glb.gz",
-  "sha256": "ae85750a1c17f00ae1c94ccd71ccb68bd8d1f7fc66bccedae7aa6ee558b022cb",
+  "glbUrl": "assets/devices/models/pixel-11-pro-fold-folded.51cf9fb69764.glb.gz",
+  "sha256": "51cf9fb697645ffe87a6cfb219d6ecf878900f1e4eca29bbebe4f72da28a8fbb",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/pixel-11-pro-fold-folded.json",

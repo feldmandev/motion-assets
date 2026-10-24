@@ -294,8 +294,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/pixel-9a.d77287ce73c7.glb.gz",
-  "sha256": "d77287ce73c702f2db34ef36156aabfddf2f236951ca4f4f8f45a771515b8670",
+  "glbUrl": "assets/devices/models/pixel-9a.387916213ac2.glb.gz",
+  "sha256": "387916213ac2d203736b7e4eb1f1162c2b98166608c406f9f0c13e3875e17729",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/pixel-9a.json",

@@ -183,7 +183,12 @@ def profile(model, dimensions, resolution, diagonal, colors, sources):
     for color in colors:
         back = rgb(COLORS[color])
         rail = [round(value*.65+.20, 5) for value in back]
+        if model == 'Pixel 10' and color == 'Indigo':
+            back = rgb('#3186ff')
+            rail = rgb('#3279f9')
         bar = rgb('#15191d') if generation == 6 or model=='Pixel 9a' else rail
+        if model == 'Pixel 10' and color == 'Indigo':
+            bar = [82.5/255, 117.5/255, 251.5/255]
         finishes[color] = {'back': {'rgb': back}, 'rail': {'rgb': rail}, 'bar': {'rgb': bar}}
         if generation == 6:
             upper = {'Stormy Black':'#707375','Kinda Coral':'#e7947e','Sorta Seafoam':'#e3e9b6',

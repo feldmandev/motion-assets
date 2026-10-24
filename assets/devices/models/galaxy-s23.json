@@ -129,7 +129,7 @@
             0.2458823529411765
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -169,7 +169,7 @@
             0.3635294117647059
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -209,7 +209,7 @@
             0.8076470588235294
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -249,7 +249,7 @@
             0.8164705882352942
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -289,7 +289,7 @@
             0.6752941176470588
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -329,7 +329,7 @@
             0.4547058823529412
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -352,8 +352,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-s23.affc42936ae4.glb.gz",
-  "sha256": "affc42936ae45767cc08582ce72e8beea12d2332ce4a6a94365d453f40f29bec",
+  "glbUrl": "assets/devices/models/galaxy-s23.b9851403ff1c.glb.gz",
+  "sha256": "b9851403ff1c1ad623a64f55de059ca8eabf83def111154ebfb0fc31915cfad4",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-s23.json",

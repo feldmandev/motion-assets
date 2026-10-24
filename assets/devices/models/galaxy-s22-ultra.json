@@ -129,7 +129,7 @@
             0.34294117647058825
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -169,7 +169,7 @@
             0.3635294117647059
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -209,7 +209,7 @@
             0.24882352941176472
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -249,7 +249,7 @@
             0.8547058823529411
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -289,7 +289,7 @@
             0.4429411764705883
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -329,7 +329,7 @@
             0.7752941176470588
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -369,7 +369,7 @@
             0.25764705882352945
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -392,8 +392,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-s22-ultra.da3a23e81357.glb.gz",
-  "sha256": "da3a23e81357f89519c49b599b8de4cb4baa8a37191fe6647665fadaf266b248",
+  "glbUrl": "assets/devices/models/galaxy-s22-ultra.2beba678e3f8.glb.gz",
+  "sha256": "2beba678e3f85163166aeb62b4626f4c06bec481c90b97be1ccb377f69ca86c0",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-s22-ultra.json",

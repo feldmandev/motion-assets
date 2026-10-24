@@ -133,7 +133,7 @@
             0.8252941176470588
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -173,7 +173,7 @@
             0.3164705882352941
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -213,7 +213,7 @@
             0.5958823529411764
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -253,7 +253,7 @@
             0.7635294117647059
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -293,7 +293,7 @@
             0.5929411764705882
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -333,7 +333,7 @@
             0.7958823529411765
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -373,7 +373,7 @@
             0.2547058823529412
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -396,8 +396,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-s10-plus.4e565920e961.glb.gz",
-  "sha256": "4e565920e961e96ed916d347b3f3704c6cc5598ca0abe560bfb973d9c99f956a",
+  "glbUrl": "assets/devices/models/galaxy-s10-plus.c8cdde818438.glb.gz",
+  "sha256": "c8cdde818438bf2147d75a606b2f106f6088a8e73f248d70e4cb7510e90aafd5",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-s10-plus.json",

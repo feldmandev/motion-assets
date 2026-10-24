@@ -409,8 +409,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/iphone-duo-unfolded.a89c0531c5cd.glb.gz",
-  "sha256": "a89c0531c5cd441d498bde90a89467515af80f2766e5183780f7190fb6161c72",
+  "glbUrl": "assets/devices/models/iphone-duo-unfolded.f03f7cb12b1f.glb.gz",
+  "sha256": "f03f7cb12b1f7c95c5e7203864b640d4901040bfda523fc9044d7a91fbc2c52f",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/iphone-duo-unfolded.json",

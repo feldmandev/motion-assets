@@ -205,8 +205,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/iphone-17-pro-max.e65012bfc76b.glb.gz",
-  "sha256": "e65012bfc76b30d6940fe48805266c654276e5681945b1b2be9381fe7547e1c1",
+  "glbUrl": "assets/devices/models/iphone-17-pro-max.fc1d793ad6a3.glb.gz",
+  "sha256": "fc1d793ad6a3cda6410ff6ab4029d29145d996344464e8fb51da298cd1e58e19",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/iphone-17-pro-max.json",

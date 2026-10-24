@@ -129,7 +129,7 @@
             0.8017647058823529
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -169,7 +169,7 @@
             0.6282352941176471
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -209,7 +209,7 @@
             0.8488235294117646
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -249,7 +249,7 @@
             0.7429411764705883
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -289,7 +289,7 @@
             0.32823529411764707
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -312,8 +312,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-s24-fe.61b73e572789.glb.gz",
-  "sha256": "61b73e57278913e86b6e90e71b0dfc74eaa100a5bc1b6c0907c95857ef9be418",
+  "glbUrl": "assets/devices/models/galaxy-s24-fe.664feef7e130.glb.gz",
+  "sha256": "664feef7e130b4a7dc010fc71c869034fe3db1daf399530e360560d52c41469b",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-s24-fe.json",

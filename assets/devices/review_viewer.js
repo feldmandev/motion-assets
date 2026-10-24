@@ -63,11 +63,12 @@ function applyViewerFinish(){
   for(const [role,settings] of Object.entries(finish.materials)){
     const material=viewer.model.materials.find(m=>m.name===activeDevice.slots[role]);
     const linear=settings.rgb.map(v=>v<=.04045?v/12.92:((v+.055)/1.055)**2.4);
-    if(material){material.pbrMetallicRoughness.setBaseColorFactor([...linear,1]);if(settings.rough!==undefined)material.pbrMetallicRoughness.setRoughnessFactor(settings.rough);}
+    if(material){material.pbrMetallicRoughness.setBaseColorFactor([...linear,1]);if(settings.rough!==undefined)material.pbrMetallicRoughness.setRoughnessFactor(role==='rail'?Math.max(.1,Math.min(.25,settings.rough*.65)):settings.rough);}
   }
 }
 viewer.addEventListener('load',async()=>{
   applyViewerFinish();
+  await applyCameraCoatings(viewer);
   if(activeDevice?.articulation){
     viewer.animationName=activeDevice.articulation.animation;
     viewer.pause();

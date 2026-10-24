@@ -129,7 +129,7 @@
             0.8490196078431373
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -169,7 +169,7 @@
             0.18823529411764706
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -209,7 +209,7 @@
             0.18823529411764706
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -249,7 +249,7 @@
             0.18823529411764706
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -289,7 +289,7 @@
             0.18823529411764706
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -312,8 +312,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-s21-ultra.1571f6904ad7.glb.gz",
-  "sha256": "1571f6904ad7eb0ea487254d63f16dc4ed8c2b21c00dc799a5804933d9fdf4d0",
+  "glbUrl": "assets/devices/models/galaxy-s21-ultra.ad7882518558.glb.gz",
+  "sha256": "ad788251855851570565e6751f79fc817fbfd139af9a3b90d62ea89ccf70a6ff",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-s21-ultra.json",

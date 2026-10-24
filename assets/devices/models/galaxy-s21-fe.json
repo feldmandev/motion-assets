@@ -129,7 +129,7 @@
             0.3164705882352941
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -169,7 +169,7 @@
             0.5958823529411764
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -209,7 +209,7 @@
             0.7370588235294118
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -249,7 +249,7 @@
             0.8517647058823529
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -272,8 +272,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-s21-fe.2051836b591d.glb.gz",
-  "sha256": "2051836b591da98fdc0dcd0571dfa592b7d841d6fc9e30b1911a0d959131b233",
+  "glbUrl": "assets/devices/models/galaxy-s21-fe.641e17d90a4a.glb.gz",
+  "sha256": "641e17d90a4a1b0ebaa4631dfd69af7740857109fa1b937f66e65de02dfaf0d6",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-s21-fe.json",

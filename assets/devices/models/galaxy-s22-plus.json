@@ -129,7 +129,7 @@
             0.8999999999999999
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -169,7 +169,7 @@
             0.18823529411764706
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -209,7 +209,7 @@
             0.34588235294117653
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -249,7 +249,7 @@
             0.6607843137254902
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -289,7 +289,7 @@
             0.18823529411764706
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -329,7 +329,7 @@
             0.8999999999999999
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -369,7 +369,7 @@
             0.8999999999999999
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -409,7 +409,7 @@
             0.6607843137254902
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -432,8 +432,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-s22-plus.849b54f08093.glb.gz",
-  "sha256": "849b54f08093db5f52d5e80fb26af7cc26dd6633a661ecabc8d38f4cf1e539b0",
+  "glbUrl": "assets/devices/models/galaxy-s22-plus.adf7fb5d7b61.glb.gz",
+  "sha256": "adf7fb5d7b610694cc38e002cddaa3bd243b815b772fcac3ed58fcde1e308570",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-s22-plus.json",

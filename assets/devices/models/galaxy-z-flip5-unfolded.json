@@ -360,7 +360,7 @@
             0.8581960784313725
           ],
           "metal": 0.85,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -400,7 +400,7 @@
             0.8646274509803921
           ],
           "metal": 0.85,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -440,7 +440,7 @@
             0.28901960784313724
           ],
           "metal": 0.85,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -480,7 +480,7 @@
             0.8228235294117646
           ],
           "metal": 0.85,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -520,7 +520,7 @@
             0.5237647058823529
           ],
           "metal": 0.85,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -560,7 +560,7 @@
             0.6234509803921567
           ],
           "metal": 0.85,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -600,7 +600,7 @@
             0.41764705882352937
           ],
           "metal": 0.85,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -640,7 +640,7 @@
             0.46266666666666667
           ],
           "metal": 0.85,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -663,8 +663,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-z-flip5-unfolded.a003d3ca02fc.glb.gz",
-  "sha256": "a003d3ca02fc309fa79735b26d50abc4980c8eecae011555ec3ac331cd3560c5",
+  "glbUrl": "assets/devices/models/galaxy-z-flip5-unfolded.5d085e27bae3.glb.gz",
+  "sha256": "5d085e27bae3efa4902f5324342a130005cf3d23a9809097b21803c039fd582b",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-z-flip5-unfolded.json",

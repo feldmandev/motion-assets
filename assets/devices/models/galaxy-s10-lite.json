@@ -129,7 +129,7 @@
             0.8311764705882353
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -169,7 +169,7 @@
             0.3164705882352941
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -209,7 +209,7 @@
             0.69
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -232,8 +232,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-s10-lite.78c8c06524be.glb.gz",
-  "sha256": "78c8c06524beef20d9a1021b40fafd0e33093c94153d1c30f2a3adb4832bec28",
+  "glbUrl": "assets/devices/models/galaxy-s10-lite.5e149f0aa2aa.glb.gz",
+  "sha256": "5e149f0aa2aa0f9da3b17203b3c7652a324e7ee68fc7001b0fc4e716ec5d666f",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-s10-lite.json",

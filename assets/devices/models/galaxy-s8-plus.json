@@ -109,7 +109,7 @@
             0.25176470588235295
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -149,7 +149,7 @@
             0.6635294117647058
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -189,7 +189,7 @@
             0.7223529411764706
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -229,7 +229,7 @@
             0.7370588235294118
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -269,7 +269,7 @@
             0.6252941176470589
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -309,7 +309,7 @@
             0.7194117647058824
           ],
           "metal": 0.8,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -332,8 +332,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-s8-plus.10585f37cfa8.glb.gz",
-  "sha256": "10585f37cfa894ae45f20fe5578a2cc47e93865a625c1e177a4eee7364fb7cbf",
+  "glbUrl": "assets/devices/models/galaxy-s8-plus.09b4290ec0df.glb.gz",
+  "sha256": "09b4290ec0dfcf0c6a79b2e8ae88b8bb7ee710b2dde747ea46389f73828e834b",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-s8-plus.json",

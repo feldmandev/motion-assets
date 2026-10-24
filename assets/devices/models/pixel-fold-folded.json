@@ -1770,8 +1770,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/pixel-fold-folded.90bf2ac3016c.glb.gz",
-  "sha256": "90bf2ac3016cd96b31e0d5a0f25f3aa6eea44863f7b4697fe1f615dc60e662a1",
+  "glbUrl": "assets/devices/models/pixel-fold-folded.9e028f2f60d6.glb.gz",
+  "sha256": "9e028f2f60d6a81a35b273fba8be02e914c989c22735bf9b2a2ad9422a496325",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/pixel-fold-folded.json",

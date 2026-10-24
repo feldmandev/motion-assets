@@ -121,7 +121,7 @@
             0.8941176470588236
           ],
           "metal": 0.8,
-          "rough": 0.3
+          "rough": 0.195
         },
         "bar": {
           "rgb": [
@@ -171,7 +171,7 @@
             0.2901960784313726
           ],
           "metal": 0.8,
-          "rough": 0.3
+          "rough": 0.195
         },
         "bar": {
           "rgb": [
@@ -221,7 +221,7 @@
             0.12941176470588237
           ],
           "metal": 0.8,
-          "rough": 0.3
+          "rough": 0.195
         },
         "bar": {
           "rgb": [
@@ -253,8 +253,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/oneplus-13.e77e5dda7181.glb.gz",
-  "sha256": "e77e5dda718130955aa9335f78e1957d5ece49bc7de658332d0f245aa4084d97",
+  "glbUrl": "assets/devices/models/oneplus-13.413b2946f19f.glb.gz",
+  "sha256": "413b2946f19f292723e5646dd6925843953ec488a9b39fa0fec54b1146952485",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/oneplus-13.json",

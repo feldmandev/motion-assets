@@ -243,7 +243,7 @@
             0.8131764705882353
           ],
           "metal": 0.85,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -283,7 +283,7 @@
             0.7617254901960784
           ],
           "metal": 0.85,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -323,7 +323,7 @@
             0.7392156862745097
           ],
           "metal": 0.85,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -363,7 +363,7 @@
             0.3179607843137255
           ],
           "metal": 0.85,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -386,8 +386,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-z-flip4-folded.5b998e3cac12.glb.gz",
-  "sha256": "5b998e3cac1234f09a909770f695ef97c702eeee195a308ac794e71bc6aadb43",
+  "glbUrl": "assets/devices/models/galaxy-z-flip4-folded.8065005274da.glb.gz",
+  "sha256": "8065005274da837ae79b4582600714a4246a6b7334c5176245b309f1ea019c8a",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-z-flip4-folded.json",

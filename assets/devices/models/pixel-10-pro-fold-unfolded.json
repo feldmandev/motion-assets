@@ -1855,8 +1855,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/pixel-10-pro-fold-unfolded.d01035b05d87.glb.gz",
-  "sha256": "d01035b05d8784f8d687f55bb2073586e75ad7b665938755d8aeeec616ebc5bf",
+  "glbUrl": "assets/devices/models/pixel-10-pro-fold-unfolded.de7c5da9564e.glb.gz",
+  "sha256": "de7c5da9564e88b4a072758dd2aaabe29c7186b6a7bcbef6930091b888e4e84d",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/pixel-10-pro-fold-unfolded.json",

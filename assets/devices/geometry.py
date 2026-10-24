@@ -304,7 +304,7 @@ def clone_optics(prototypes, kind, x, y, face_z, radius, bump, parent, index,
         obj.scale = (1, 1, 1)
         for vertex, original in zip(obj.data.vertices, prototype.data.vertices):
             # Unlinked source barrels retain local transforms but have stale world matrices.
-            source_matrix = prototype.matrix_basis if skip_source_pupil else prototype.matrix_world
+            source_matrix = prototype.matrix_basis
             point = source_matrix @ original.co - anchor
             vertex.co = (point.x*xy_scale+x*MM, point.y*xy_scale+y*MM,
                          point.z*(bump/3.6)+face_z*MM)

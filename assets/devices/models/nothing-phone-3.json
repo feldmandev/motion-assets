@@ -124,7 +124,7 @@
             0.8627450980392157
           ],
           "metal": 0.65,
-          "rough": 0.29
+          "rough": 0.1885
         },
         "bar": {
           "rgb": [
@@ -187,7 +187,7 @@
             0.3176470588235294
           ],
           "metal": 0.65,
-          "rough": 0.29
+          "rough": 0.1885
         },
         "bar": {
           "rgb": [
@@ -233,8 +233,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/nothing-phone-3.e5a1c65b353a.glb.gz",
-  "sha256": "e5a1c65b353a522b5527efb7ccb692c271519fefd5896aa44692654412c9e2b1",
+  "glbUrl": "assets/devices/models/nothing-phone-3.ab2f0d707118.glb.gz",
+  "sha256": "ab2f0d707118f870730f4ccba792d59723fc2e26f46788703121edafe02e9a09",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/nothing-phone-3.json",

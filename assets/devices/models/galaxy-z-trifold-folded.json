@@ -285,7 +285,7 @@
             0.1636078431372549
           ],
           "metal": 0.85,
-          "rough": 0.27
+          "rough": 0.17550000000000002
         },
         "bar": {
           "rgb": [
@@ -308,8 +308,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-z-trifold-folded.581560aa21b3.glb.gz",
-  "sha256": "581560aa21b34b358d92189d66c234148353f6fdd197f2a6587a23f04d5feaf3",
+  "glbUrl": "assets/devices/models/galaxy-z-trifold-folded.48029fa3ed87.glb.gz",
+  "sha256": "48029fa3ed871835a369da0ad3c940281f46732c33a8239a0ec910d99c51c4dd",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-z-trifold-folded.json",

@@ -532,8 +532,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/iphone-13-mini.b72fda2e84fb.glb.gz",
-  "sha256": "b72fda2e84fb2a7ecb5c140726ea9c5dfded9bd99ebdb2972eced80038669ed6",
+  "glbUrl": "assets/devices/models/iphone-13-mini.860a240e1b63.glb.gz",
+  "sha256": "860a240e1b63a0243fdc25fa519e1ce3661f4b4439eea66f3d44ab31b383d852",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/iphone-13-mini.json",
