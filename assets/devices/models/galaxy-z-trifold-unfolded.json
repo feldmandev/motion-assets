@@ -448,8 +448,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-z-trifold-unfolded.6cbaa6d12e1e.glb.gz",
-  "sha256": "6cbaa6d12e1e1062d859997be06854069d037d284c2ffd194087c96beb17aaa0",
+  "glbUrl": "assets/devices/models/galaxy-z-trifold-unfolded.b6e3aa6aab21.glb.gz",
+  "sha256": "b6e3aa6aab2130469043280da85b65a80c4666f9cec4b912777bd0aa3b0517c3",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-z-trifold-unfolded.json",

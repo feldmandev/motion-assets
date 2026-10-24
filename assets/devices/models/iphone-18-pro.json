@@ -240,8 +240,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/iphone-18-pro.8c01b033c31d.glb.gz",
-  "sha256": "8c01b033c31d63d8d2b7e1d0060cf55c5de584f79d7805bdb5b2d2dcbc1e5e20",
+  "glbUrl": "assets/devices/models/iphone-18-pro.8ef612f40f76.glb.gz",
+  "sha256": "8ef612f40f768f34ccc8aed87fbef39d47a8316e4e1d4433530607f769a306da",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/iphone-18-pro.json",

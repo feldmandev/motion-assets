@@ -1822,8 +1822,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/pixel-11-pro-fold-unfolded.2d916815c84f.glb.gz",
-  "sha256": "2d916815c84fe8469945bf60538a17022505316919f4c3fe3b4659cbfa48cae3",
+  "glbUrl": "assets/devices/models/pixel-11-pro-fold-unfolded.b07cddde9db1.glb.gz",
+  "sha256": "b07cddde9db1b4fc0b329b356b26b39a36eb4270655f3ae57d9dd86f054674b2",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/pixel-11-pro-fold-unfolded.json",

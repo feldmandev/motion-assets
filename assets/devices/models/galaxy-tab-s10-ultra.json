@@ -224,8 +224,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-tab-s10-ultra.dbc4fdd3e22d.glb.gz",
-  "sha256": "dbc4fdd3e22de6c59a4316849b0a155f79b52e9c92167458c4e71418e2d1ce20",
+  "glbUrl": "assets/devices/models/galaxy-tab-s10-ultra.67bca42f2fe3.glb.gz",
+  "sha256": "67bca42f2fe3e235ec41d3eadff5e764bbf9cdeaa212f95ebb06a3906a8f4b8b",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-tab-s10-ultra.json",

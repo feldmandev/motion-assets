@@ -532,8 +532,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/iphone-12-mini.76e15eddeb73.glb.gz",
-  "sha256": "76e15eddeb73c0025c825355fe542fc2687d225ce4b41e5fe9706399feafbe7a",
+  "glbUrl": "assets/devices/models/iphone-12-mini.59502bab7961.glb.gz",
+  "sha256": "59502bab79610ab7d3ea7ac9020e864efadae7511889cc329d92013c0c62a27e",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/iphone-12-mini.json",

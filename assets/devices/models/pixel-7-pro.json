@@ -148,10 +148,12 @@
         },
         "antenna": {
           "rgb": [
-            0.2,
-            0.22745,
-            0.23922
-          ]
+            0.33,
+            0.34784,
+            0.35549
+          ],
+          "rough": 0.68,
+          "metal": 0
         }
       }
     },
@@ -190,10 +192,12 @@
         },
         "antenna": {
           "rgb": [
-            0.90196,
-            0.90196,
-            0.87451
-          ]
+            0.78627,
+            0.78627,
+            0.76843
+          ],
+          "rough": 0.68,
+          "metal": 0
         }
       }
     },
@@ -232,16 +236,18 @@
         },
         "antenna": {
           "rgb": [
-            0.61961,
-            0.66275,
-            0.61176
-          ]
+            0.60275,
+            0.63079,
+            0.59764
+          ],
+          "rough": 0.68,
+          "metal": 0
         }
       }
     }
   ],
-  "glbUrl": "assets/devices/models/pixel-7-pro.82f09705519e.glb.gz",
-  "sha256": "82f09705519e0a7ee252fdc2beb2bb4dd7bc9d4f653d7e5c9a4a439bebc18a38",
+  "glbUrl": "assets/devices/models/pixel-7-pro.b7f330423a6c.glb.gz",
+  "sha256": "b7f330423a6c9641345d110842f1b57c4cf82c50ed19b26e80818155d2cb49a5",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/pixel-7-pro.json",

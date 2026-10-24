@@ -1716,10 +1716,12 @@
         },
         "antenna": {
           "rgb": [
-            0.2,
-            0.22745,
-            0.23922
-          ]
+            0.33,
+            0.34784,
+            0.35549
+          ],
+          "rough": 0.68,
+          "metal": 0
         }
       }
     },
@@ -1758,16 +1760,18 @@
         },
         "antenna": {
           "rgb": [
-            0.87843,
-            0.87843,
-            0.83529
-          ]
+            0.77098,
+            0.77098,
+            0.74294
+          ],
+          "rough": 0.68,
+          "metal": 0
         }
       }
     }
   ],
-  "glbUrl": "assets/devices/models/pixel-fold-folded.3b8c17daa89b.glb.gz",
-  "sha256": "3b8c17daa89b64dc8c248ad50c4049ff23d5fa6be6e3661a1648a44d41adc019",
+  "glbUrl": "assets/devices/models/pixel-fold-folded.0dfd13d0f0ab.glb.gz",
+  "sha256": "0dfd13d0f0ab222ce0ad2aae01872d15d2848f1fb38465e39d4f66e215a78728",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/pixel-fold-folded.json",

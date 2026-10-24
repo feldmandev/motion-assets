@@ -332,8 +332,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-s8-plus.200131172c87.glb.gz",
-  "sha256": "200131172c87cf4785b4e2430dc7bd2b69963ebd0a86bc8843cd787341facec8",
+  "glbUrl": "assets/devices/models/galaxy-s8-plus.461e004d0beb.glb.gz",
+  "sha256": "461e004d0bebd101b00d97b61f36fe7fc4b5da8acb7a1a8f5694fd55d734ae04",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-s8-plus.json",

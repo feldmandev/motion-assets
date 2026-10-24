@@ -105,6 +105,15 @@
         ],
         "metal": 0.5,
         "rough": 0.28
+      },
+      "antenna": {
+        "rgb": [
+          0.33,
+          0.34784,
+          0.35549
+        ],
+        "rough": 0.68,
+        "metal": 0
       }
     },
     "Porcelain": {
@@ -137,6 +146,15 @@
         ],
         "metal": 0.5,
         "rough": 0.28
+      },
+      "antenna": {
+        "rgb": [
+          0.77098,
+          0.77098,
+          0.74294
+        ],
+        "rough": 0.68,
+        "metal": 0
       }
     },
     "Bay": {
@@ -169,6 +187,15 @@
         ],
         "metal": 0.5,
         "rough": 0.28
+      },
+      "antenna": {
+        "rgb": [
+          0.56961,
+          0.65627,
+          0.75314
+        ],
+        "rough": 0.68,
+        "metal": 0
       }
     },
     "Mint": {
@@ -201,6 +228,15 @@
         ],
         "metal": 0.5,
         "rough": 0.26
+      },
+      "antenna": {
+        "rgb": [
+          0.69961,
+          0.76843,
+          0.72255
+        ],
+        "rough": 0.68,
+        "metal": 0
       }
     }
   },
@@ -1762,7 +1798,7 @@
     "rail_material": "rail",
     "materials": {
       "antenna": {
-        "color_role": "back",
+        "color_role": "rail",
         "metal": 0,
         "rough": 0.68
       }

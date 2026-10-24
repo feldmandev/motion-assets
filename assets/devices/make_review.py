@@ -79,7 +79,7 @@ for(const brand of new Set(devices.map(d=>d.manufacturer))){const family=documen
 __VIEWER_CODE__
 </script></body></html>'''
     filename = 'review-preview.html' if '--linked' in sys.argv else 'review.html'
-    (BASE/filename).write_text(html.replace('__DATA__',json.dumps(devices)).replace('__MODEL_VIEWER__',(BASE/'vendor/model-viewer.min.js').read_text(encoding='utf-8').replace('</script', '<\\/script')).replace('__ENVIRONMENT__',base64.b64encode((BASE.parent/'pixel-10-pro-model/source/studio_small_09_1k.hdr').read_bytes()).decode()).replace('__VIEWER_CODE__',(BASE/'fold_centering.js').read_text(encoding='utf-8')+'\n'+(BASE/'review_viewer.js').read_text(encoding='utf-8')),encoding='utf-8')
+    (BASE/filename).write_text(html.replace('__DATA__',json.dumps(devices)).replace('__MODEL_VIEWER__',(BASE/'vendor/model-viewer.min.js').read_text(encoding='utf-8').replace('</script', '<\\/script')).replace('__ENVIRONMENT__',base64.b64encode((BASE/'textures/studio-balanced.hdr').read_bytes()).decode()).replace('__VIEWER_CODE__',(BASE/'fold_centering.js').read_text(encoding='utf-8')+'\n'+(BASE/'review_viewer.js').read_text(encoding='utf-8')),encoding='utf-8')
     print(f'Wrote review.html: {len(devices)} profiles')
 
 

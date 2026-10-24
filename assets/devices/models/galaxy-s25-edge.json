@@ -232,8 +232,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-s25-edge.73435838e19d.glb.gz",
-  "sha256": "73435838e19d99d3c8ebacb3aaf42db2d958bc4807aa78b909b2bf51f297fb9a",
+  "glbUrl": "assets/devices/models/galaxy-s25-edge.cabbe0a72fbd.glb.gz",
+  "sha256": "cabbe0a72fbd1544d75ff8f0fb9cd4e666b757cbf00cd154ae80f0aeeca031c8",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-s25-edge.json",

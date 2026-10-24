@@ -334,8 +334,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/iphone-duo-folded.fd96c4fcd0c9.glb.gz",
-  "sha256": "fd96c4fcd0c9d16aae6a9838f12ae4fbae62788e65cfa062756ca50effa21e87",
+  "glbUrl": "assets/devices/models/iphone-duo-folded.8d2de5b4789c.glb.gz",
+  "sha256": "8d2de5b4789c883b0d997427af5c14f99af155e9fa81832088a759ba1f81b5df",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/iphone-duo-folded.json",

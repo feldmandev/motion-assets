@@ -283,7 +283,7 @@ def load_optics():
 
 
 def clone_optics(prototypes, kind, x, y, face_z, radius, bump, parent, index,
-                 skip_source_pupil=False):
+                 skip_source_pupil=True):
     prefix = 'Telephoto |' if kind == 'periscope' else 'Lens 2 |' if kind == 'main' else 'Lens 1 |'
     anchor = Vector((-6.1 if kind == 'periscope' else 7 if kind == 'main' else 22.4, 50.9, -7.89))*MM
     reference_radius = 5.5 if kind == 'main' else 3.8
@@ -381,7 +381,7 @@ def camera_assembly(spec, body, materials, parent, prototypes):
             else:
                 clone_optics(prototypes, lens['kind'], lx, ly, window_optical_z, lr,
                              max(spec.get('optical_bump_mm', 0), .8), parent, index,
-                             skip_source_pupil=spec.get('skip_source_pupil', False))
+                             skip_source_pupil=spec.get('skip_source_pupil', True))
         cover_depth = spec.get('cover_depth_mm', .10)
         if not spec.get('local_pupil'):
             slab(f'Continuous camera cover {number}', ww-.1, wh-.1, cover_depth, max(.05, wr-.05),

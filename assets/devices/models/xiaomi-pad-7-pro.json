@@ -283,8 +283,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/xiaomi-pad-7-pro.7765ac7dc6c4.glb.gz",
-  "sha256": "7765ac7dc6c437c8b4277352fca726ff8626ac241b9b617a166f117c571bce85",
+  "glbUrl": "assets/devices/models/xiaomi-pad-7-pro.a9efd0c9f68c.glb.gz",
+  "sha256": "a9efd0c9f68ca52b2e31cf93155491682c0436cfbd7bbfc165cc12d8ac4805f1",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/xiaomi-pad-7-pro.json",

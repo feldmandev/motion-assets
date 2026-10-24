@@ -360,8 +360,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-s24-ultra.5f492ccca024.glb.gz",
-  "sha256": "5f492ccca024ed0bcca942b179d156791256ad44f86ef49b2c3bdbd33a46c418",
+  "glbUrl": "assets/devices/models/galaxy-s24-ultra.870904295319.glb.gz",
+  "sha256": "870904295319df744b603c6ef7d35711ed0d4e1bc76ea99e527656afe45660df",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-s24-ultra.json",

@@ -1,6 +1,6 @@
 {
   "id": "pixel-fold-unfolded",
-  "name": "Pixel Fold · unfolded",
+  "name": "Pixel Fold \u00b7 unfolded",
   "finish": "Obsidian",
   "body_mm": {
     "height": 139.7,
@@ -98,6 +98,15 @@
         ],
         "metal": 0.5,
         "rough": 0.28
+      },
+      "antenna": {
+        "rgb": [
+          0.33,
+          0.34784,
+          0.35549
+        ],
+        "rough": 0.68,
+        "metal": 0
       }
     },
     "Porcelain": {
@@ -130,6 +139,15 @@
         ],
         "metal": 0.5,
         "rough": 0.28
+      },
+      "antenna": {
+        "rgb": [
+          0.77098,
+          0.77098,
+          0.74294
+        ],
+        "rough": 0.68,
+        "metal": 0
       }
     }
   },
@@ -1979,7 +1997,7 @@
     "rail_material": "rail",
     "materials": {
       "antenna": {
-        "color_role": "back",
+        "color_role": "rail",
         "metal": 0,
         "rough": 0.68
       }

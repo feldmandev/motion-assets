@@ -1716,10 +1716,12 @@
         },
         "antenna": {
           "rgb": [
-            0.58824,
-            0.61176,
-            0.6549
-          ]
+            0.58236,
+            0.59764,
+            0.62569
+          ],
+          "rough": 0.68,
+          "metal": 0
         }
       }
     },
@@ -1758,16 +1760,18 @@
         },
         "antenna": {
           "rgb": [
-            0.7098,
-            0.74118,
-            0.6
-          ]
+            0.66137,
+            0.68177,
+            0.59
+          ],
+          "rough": 0.68,
+          "metal": 0
         }
       }
     }
   ],
-  "glbUrl": "assets/devices/models/pixel-10-pro-fold-folded.5b3f7aa2d311.glb.gz",
-  "sha256": "5b3f7aa2d311fb04d6ec9c40eb4a25ea379819c685ffe37a58ca23c221941d50",
+  "glbUrl": "assets/devices/models/pixel-10-pro-fold-folded.8f39fd84cac8.glb.gz",
+  "sha256": "8f39fd84cac80bc54ffdbb61bfda7d5e735924aab78107c820030f4d089e64da",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/pixel-10-pro-fold-folded.json",

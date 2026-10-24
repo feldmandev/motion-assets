@@ -532,8 +532,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/iphone-11.fe3007e44cf4.glb.gz",
-  "sha256": "fe3007e44cf44f20150ea332cbac36e1831ec6dbcb047b71b82f32061ae25cde",
+  "glbUrl": "assets/devices/models/iphone-11.1c419b023025.glb.gz",
+  "sha256": "1c419b02302509dc0aeeea4d36dc1e5dd79ba9d32eaa6c2a86b120fff1409051",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/iphone-11.json",

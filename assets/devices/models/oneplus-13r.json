@@ -203,8 +203,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/oneplus-13r.b24617b7820d.glb.gz",
-  "sha256": "b24617b7820de30eaeb1fe99e11c584333a2b6411b8a5dd843a06de413e0bf95",
+  "glbUrl": "assets/devices/models/oneplus-13r.4db29fb94524.glb.gz",
+  "sha256": "4db29fb94524d48cad00e9be8401bda9e3860c8cfda310302365a2fdc4fd59d4",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/oneplus-13r.json",

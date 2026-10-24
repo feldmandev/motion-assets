@@ -99,6 +99,15 @@
         ],
         "metal": 0.5,
         "rough": 0.28
+      },
+      "antenna": {
+        "rgb": [
+          0.37334,
+          0.39118,
+          0.38863
+        ],
+        "rough": 0.68,
+        "metal": 0
       }
     },
     "Snow": {
@@ -131,6 +140,15 @@
         ],
         "metal": 0.5,
         "rough": 0.28
+      },
+      "antenna": {
+        "rgb": [
+          0.78627,
+          0.78627,
+          0.76843
+        ],
+        "rough": 0.68,
+        "metal": 0
       }
     },
     "Sea": {
@@ -163,6 +181,15 @@
         ],
         "metal": 0.5,
         "rough": 0.28
+      },
+      "antenna": {
+        "rgb": [
+          0.63079,
+          0.71236,
+          0.77608
+        ],
+        "rough": 0.68,
+        "metal": 0
       }
     },
     "Coral": {
@@ -195,6 +222,15 @@
         ],
         "metal": 0.5,
         "rough": 0.28
+      },
+      "antenna": {
+        "rgb": [
+          0.82196,
+          0.51098,
+          0.46
+        ],
+        "rough": 0.68,
+        "metal": 0
       }
     }
   },
@@ -1761,7 +1797,7 @@
     "rail_material": "rail",
     "materials": {
       "antenna": {
-        "color_role": "back",
+        "color_role": "rail",
         "metal": 0,
         "rough": 0.68
       }

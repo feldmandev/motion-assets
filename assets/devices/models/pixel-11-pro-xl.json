@@ -78,7 +78,7 @@
     "front_curve": 0,
     "edge_roll_mm": [
       0.65,
-      0.3
+      0.65
     ],
     "front_rail_mm": 1.1,
     "corner_radii_mm": [
@@ -149,10 +149,12 @@
         },
         "antenna": {
           "rgb": [
-            0.91373,
-            0.58039,
-            0.5098
-          ]
+            0.79392,
+            0.57725,
+            0.53137
+          ],
+          "rough": 0.68,
+          "metal": 0
         }
       }
     },
@@ -193,10 +195,12 @@
         },
         "antenna": {
           "rgb": [
-            0.55294,
-            0.58039,
-            0.4902
-          ]
+            0.55941,
+            0.57725,
+            0.51863
+          ],
+          "rough": 0.68,
+          "metal": 0
         }
       }
     },
@@ -237,10 +241,12 @@
         },
         "antenna": {
           "rgb": [
-            0.79608,
-            0.83922,
-            0.80784
-          ]
+            0.75314,
+            0.76334,
+            0.74549
+          ],
+          "rough": 0.68,
+          "metal": 0
         }
       }
     },
@@ -281,16 +287,18 @@
         },
         "antenna": {
           "rgb": [
-            0.2,
-            0.22745,
-            0.23922
-          ]
+            0.33,
+            0.34784,
+            0.35549
+          ],
+          "rough": 0.68,
+          "metal": 0
         }
       }
     }
   ],
-  "glbUrl": "assets/devices/models/pixel-11-pro-xl.d1b1a2dc034f.glb.gz",
-  "sha256": "d1b1a2dc034fdd75a498f73f7efc26843a17087b2e9b57b6ae79cd213049b6e5",
+  "glbUrl": "assets/devices/models/pixel-11-pro-xl.b6aa6114d60a.glb.gz",
+  "sha256": "b6aa6114d60a928aa6b6f125e3fb887775d2cb5af58d8a14f970ff44fef5b01b",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/pixel-11-pro-xl.json",

@@ -240,8 +240,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/iphone-18-pro-max.ea4676509553.glb.gz",
-  "sha256": "ea4676509553a7a1f3dde68c92d3ea5da06518eb87172705be3158f924bafce9",
+  "glbUrl": "assets/devices/models/iphone-18-pro-max.c7cba0ee1482.glb.gz",
+  "sha256": "c7cba0ee148289ffa1cc4542dc143c99178b3e93b5718a0ff81b48ad74ec5d12",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/iphone-18-pro-max.json",

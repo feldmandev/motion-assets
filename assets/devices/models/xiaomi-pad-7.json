@@ -283,8 +283,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/xiaomi-pad-7.2bafff1f31e1.glb.gz",
-  "sha256": "2bafff1f31e10e53ce3108b2934d2603d41e34b8a0d0e2ace75505be49b09a80",
+  "glbUrl": "assets/devices/models/xiaomi-pad-7.9aa35a5ac495.glb.gz",
+  "sha256": "9aa35a5ac495f211bc20c515f7231912cd8072fd1b35d554418772e2e14fa0ba",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/xiaomi-pad-7.json",

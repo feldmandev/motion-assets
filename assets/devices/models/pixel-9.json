@@ -152,10 +152,12 @@
         },
         "antenna": {
           "rgb": [
-            0.2,
-            0.22745,
-            0.23922
-          ]
+            0.33,
+            0.34784,
+            0.35549
+          ],
+          "rough": 0.68,
+          "metal": 0
         }
       }
     },
@@ -194,10 +196,12 @@
         },
         "antenna": {
           "rgb": [
-            0.87843,
-            0.87843,
-            0.83529
-          ]
+            0.77098,
+            0.77098,
+            0.74294
+          ],
+          "rough": 0.68,
+          "metal": 0
         }
       }
     },
@@ -236,10 +240,12 @@
         },
         "antenna": {
           "rgb": [
-            0.70196,
-            0.78824,
-            0.69412
-          ]
+            0.65627,
+            0.71236,
+            0.65118
+          ],
+          "rough": 0.68,
+          "metal": 0
         }
       }
     },
@@ -278,16 +284,18 @@
         },
         "antenna": {
           "rgb": [
-            0.93725,
-            0.68627,
-            0.74902
-          ]
+            0.80921,
+            0.64608,
+            0.68686
+          ],
+          "rough": 0.68,
+          "metal": 0
         }
       }
     }
   ],
-  "glbUrl": "assets/devices/models/pixel-9.3ec55586ea58.glb.gz",
-  "sha256": "69d3875400a015ceaa67bd6b81e67ae4aa095401ba62c228ee55bd4a2eca0af9",
+  "glbUrl": "assets/devices/models/pixel-9.557bddcbaa19.glb.gz",
+  "sha256": "557bddcbaa19c9c92e10e2baebbfdee76fff67c3979c2a7c3cba681171e33025",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/pixel-9.json",

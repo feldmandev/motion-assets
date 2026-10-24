@@ -11,7 +11,7 @@
     "front_curve": 0,
     "edge_roll_mm": [
       0.65,
-      0.3
+      0.65
     ],
     "front_rail_mm": 1.1
   },
@@ -101,6 +101,15 @@
         ],
         "metal": 0.5,
         "rough": 0.28
+      },
+      "antenna": {
+        "rgb": [
+          0.69961,
+          0.75823,
+          0.77863
+        ],
+        "rough": 0.68,
+        "metal": 0
       }
     },
     "Pistachio": {
@@ -135,6 +144,15 @@
         ],
         "metal": 0.5,
         "rough": 0.28
+      },
+      "antenna": {
+        "rgb": [
+          0.69961,
+          0.7251,
+          0.60275
+        ],
+        "rough": 0.68,
+        "metal": 0
       }
     },
     "Hibiscus": {
@@ -169,6 +187,15 @@
         ],
         "metal": 0.5,
         "rough": 0.28
+      },
+      "antenna": {
+        "rgb": [
+          0.75823,
+          0.52118,
+          0.59
+        ],
+        "rough": 0.68,
+        "metal": 0
       }
     },
     "Obsidian": {
@@ -203,6 +230,15 @@
         ],
         "metal": 0.5,
         "rough": 0.28
+      },
+      "antenna": {
+        "rgb": [
+          0.33,
+          0.34784,
+          0.35549
+        ],
+        "rough": 0.68,
+        "metal": 0
       }
     }
   },
@@ -1764,7 +1800,7 @@
     "rail_material": "rail",
     "materials": {
       "antenna": {
-        "color_role": "back",
+        "color_role": "rail",
         "metal": 0,
         "rough": 0.68
       }

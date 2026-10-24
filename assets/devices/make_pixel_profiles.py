@@ -282,6 +282,8 @@ def apply_front_measurements(data, measurements):
             data[name] = copy.deepcopy(measured[name])
     for name, roles in measured.get('finishes', {}).items():
         data['finishes'][name].update(copy.deepcopy(roles))
+    if 'antenna' in data.get('rail_details', {}).get('materials', {}):
+        data['rail_details']['materials']['antenna']['color_role'] = 'rail'
     data['accuracy'].update(measured.get('accuracy', {}))
     data['sources'] = list(dict.fromkeys(data['sources'] + measured.get('sources', [])))
 
@@ -346,7 +348,7 @@ def pixel11_profiles():
         source = 'https://store.google.com/gb/product/pixel_11'+('_pro' if pro else '')+'_specs?hl=en-GB'
         data = profile(name, dimensions, resolution, diagonal, colors, [source, launch])
         # The front metal ledge and rear shoulder have distinct cross-sections.
-        data['body_mm']['edge_roll_mm'] = [.65,.30]
+        data['body_mm']['edge_roll_mm'] = [.65,.65]
         data['body_mm']['front_rail_mm'] = 1.10
         data['status'] = 'provisional'
         # Rear photo pixel bounds: base body x327..633 y13..664, bar x341..621 y69..173.

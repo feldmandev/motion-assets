@@ -85,6 +85,15 @@
         ],
         "metal": 0.5,
         "rough": 0.28
+      },
+      "antenna": {
+        "rgb": [
+          0.33,
+          0.34784,
+          0.35549
+        ],
+        "rough": 0.68,
+        "metal": 0
       }
     },
     "Moonstone": {
@@ -117,6 +126,15 @@
         ],
         "metal": 0.5,
         "rough": 0.28
+      },
+      "antenna": {
+        "rgb": [
+          0.58236,
+          0.59764,
+          0.62569
+        ],
+        "rough": 0.68,
+        "metal": 0
       }
     },
     "Jade": {
@@ -149,6 +167,15 @@
         ],
         "metal": 0.5,
         "rough": 0.28
+      },
+      "antenna": {
+        "rgb": [
+          0.66137,
+          0.68177,
+          0.59
+        ],
+        "rough": 0.68,
+        "metal": 0
       }
     },
     "Porcelain": {
@@ -181,6 +208,15 @@
         ],
         "metal": 0.5,
         "rough": 0.28
+      },
+      "antenna": {
+        "rgb": [
+          0.77098,
+          0.77098,
+          0.74294
+        ],
+        "rough": 0.68,
+        "metal": 0
       }
     }
   },
@@ -191,7 +227,7 @@
     "rail_material": "rail",
     "materials": {
       "antenna": {
-        "color_role": "back",
+        "color_role": "rail",
         "metal": 0,
         "rough": 0.68
       },

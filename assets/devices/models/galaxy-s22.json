@@ -472,8 +472,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-s22.7ae34c045e97.glb.gz",
-  "sha256": "7ae34c045e97d3a40cba331dac1e714732d806fa02a653563372762acfc6d993",
+  "glbUrl": "assets/devices/models/galaxy-s22.0c72cb55985e.glb.gz",
+  "sha256": "0c72cb55985e68ef61384f2f7ed6ce76858eaf91bdbce3ec9931cc0a944dee6b",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-s22.json",

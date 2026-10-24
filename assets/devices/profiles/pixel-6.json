@@ -114,6 +114,15 @@
         ],
         "metal": 0.5,
         "rough": 0.28
+      },
+      "antenna": {
+        "rgb": [
+          0.36569,
+          0.37843,
+          0.38863
+        ],
+        "rough": 0.68,
+        "metal": 0
       }
     },
     "Kinda Coral": {
@@ -153,6 +162,15 @@
         ],
         "metal": 0.5,
         "rough": 0.28
+      },
+      "antenna": {
+        "rgb": [
+          0.80412,
+          0.65882,
+          0.60275
+        ],
+        "rough": 0.68,
+        "metal": 0
       }
     },
     "Sorta Seafoam": {
@@ -192,6 +210,15 @@
         ],
         "metal": 0.5,
         "rough": 0.28
+      },
+      "antenna": {
+        "rgb": [
+          0.68941,
+          0.73784,
+          0.7098
+        ],
+        "rough": 0.68,
+        "metal": 0
       }
     }
   },
@@ -1738,7 +1765,7 @@
     "rail_material": "rail",
     "materials": {
       "antenna": {
-        "color_role": "back",
+        "color_role": "rail",
         "metal": 0,
         "rough": 0.68
       }

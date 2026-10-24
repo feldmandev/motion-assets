@@ -99,6 +99,15 @@
         ],
         "metal": 0.5,
         "rough": 0.28
+      },
+      "antenna": {
+        "rgb": [
+          0.33,
+          0.34784,
+          0.35549
+        ],
+        "rough": 0.68,
+        "metal": 0
       }
     },
     "Snow": {
@@ -131,6 +140,15 @@
         ],
         "metal": 0.5,
         "rough": 0.28
+      },
+      "antenna": {
+        "rgb": [
+          0.78627,
+          0.78627,
+          0.76843
+        ],
+        "rough": 0.68,
+        "metal": 0
       }
     },
     "Lemongrass": {
@@ -163,6 +181,15 @@
         ],
         "metal": 0.5,
         "rough": 0.28
+      },
+      "antenna": {
+        "rgb": [
+          0.76079,
+          0.78627,
+          0.65627
+        ],
+        "rough": 0.68,
+        "metal": 0
       }
     }
   },
@@ -1707,7 +1734,7 @@
     "rail_material": "rail",
     "materials": {
       "antenna": {
-        "color_role": "back",
+        "color_role": "rail",
         "metal": 0,
         "rough": 0.68
       }

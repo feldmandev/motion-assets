@@ -10,8 +10,8 @@ from pathlib import Path
 BASE = Path(__file__).resolve().parent
 ASSETS = BASE / 'textures' / 'optics'
 IMAGES = {name: (ASSETS / name).read_bytes() for name in (
-    'flash-diffuser.png', 'flash-diffuser-normal.png', 'front-specular-mask.png')}
-REVISION = 'catalog-optics-2-' + hashlib.sha256(b''.join(IMAGES.values())).hexdigest()[:12]
+    'flash-diffuser.png', 'flash-diffuser-normal.png', 'front-specular-mask.png', 'coating-thickness.png')}
+REVISION = 'catalog-optics-3-' + hashlib.sha256(b''.join(IMAGES.values())).hexdigest()[:12]
 
 
 def role(name):
@@ -208,8 +208,9 @@ def apply_glb(path, backup_dir=None):
             pbr.update(baseColorFactor=[.001, .001, .0015, 1] if aperture else [1, 1, 1, 1],
                        metallicFactor=0, roughnessFactor=.09 if aperture else .045)
             ext['KHR_materials_ior'] = {'ior': 1.5}
-            ext['KHR_materials_iridescence'] = {'iridescenceFactor': .45, 'iridescenceIor': 1.38,
-                'iridescenceThicknessMinimum': 103., 'iridescenceThicknessMaximum': 114.}
+            ext['KHR_materials_iridescence'] = {'iridescenceFactor': .9, 'iridescenceIor': 1.45,
+                'iridescenceThicknessMinimum': 150., 'iridescenceThicknessMaximum': 235.,
+                'iridescenceThicknessTexture': texture('coating-thickness.png')}
             ext['KHR_materials_specular'] = {'specularFactor': .5, 'specularColorFactor': [.434, .405, 1.]}
             if aperture:
                 ext.pop('KHR_materials_transmission', None)
@@ -221,7 +222,7 @@ def apply_glb(path, backup_dir=None):
         extensions.update(ext)
     for mesh in document.get('meshes', []):
         for primitive in mesh['primitives']:
-            if primitive.get('material') in flash_indices:
+            if primitive.get('material') in flash_indices or role(materials[primitive.get('material', 0)].get('name', '')) in ('outer', 'front'):
                 project_uv(primitive)
     if geometry_signature(document, binary) != original_geometry or document.get('nodes') != original_nodes:
         raise AssertionError('Optical update altered geometry or articulation')

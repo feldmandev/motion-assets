@@ -312,8 +312,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-s10.bee7b47acb1c.glb.gz",
-  "sha256": "bee7b47acb1c7f9f77648a3c7ec55b78b1d6a8f6c93cd085aef9a0cbcb751fc4",
+  "glbUrl": "assets/devices/models/galaxy-s10.1bec722b29b3.glb.gz",
+  "sha256": "1bec722b29b3981fc180b9431c0c58dda8c9669f7b565fc76e79f479ee204f57",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-s10.json",

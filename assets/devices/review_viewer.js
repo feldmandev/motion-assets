@@ -76,7 +76,7 @@ viewer.addEventListener('load',async()=>{
   }
   // Raster transmission cannot resolve the nested lens glass behind this cover.
   // A thin alpha surface keeps the black backing and optics visible in WebGL.
-  for(const material of viewer.model.materials.filter(m=>/clear.*cover|cover.*clear/i.test(m.name))){
+  if(!viewer.originalGltfJson?.asset?.extras?.opticsTreatment)for(const material of viewer.model.materials.filter(m=>/clear.*cover|cover.*clear/i.test(m.name))){
     material.setTransmissionFactor(0);
     material.setAlphaMode('BLEND');
     material.pbrMetallicRoughness.setBaseColorFactor([.02,.025,.03,.07]);

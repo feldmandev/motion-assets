@@ -1,6 +1,6 @@
 {
   "id": "pixel-10-pro-fold-folded",
-  "name": "Pixel 10 Pro Fold · folded",
+  "name": "Pixel 10 Pro Fold \u00b7 folded",
   "finish": "Moonstone",
   "body_mm": {
     "height": 155.2,
@@ -104,6 +104,15 @@
         ],
         "metal": 0.5,
         "rough": 0.26
+      },
+      "antenna": {
+        "rgb": [
+          0.58236,
+          0.59764,
+          0.62569
+        ],
+        "rough": 0.68,
+        "metal": 0
       }
     },
     "Jade": {
@@ -136,6 +145,15 @@
         ],
         "metal": 0.5,
         "rough": 0.26
+      },
+      "antenna": {
+        "rgb": [
+          0.66137,
+          0.68177,
+          0.59
+        ],
+        "rough": 0.68,
+        "metal": 0
       }
     }
   },
@@ -2000,7 +2018,7 @@
     "rail_material": "rail",
     "materials": {
       "antenna": {
-        "color_role": "back",
+        "color_role": "rail",
         "metal": 0,
         "rough": 0.68
       }

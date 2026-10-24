@@ -99,6 +99,15 @@
         ],
         "metal": 0.5,
         "rough": 0.28
+      },
+      "antenna": {
+        "rgb": [
+          0.66137,
+          0.65118,
+          0.74549
+        ],
+        "rough": 0.68,
+        "metal": 0
       }
     },
     "Berry": {
@@ -131,6 +140,15 @@
         ],
         "metal": 0.5,
         "rough": 0.28
+      },
+      "antenna": {
+        "rgb": [
+          0.7251,
+          0.4549,
+          0.51353
+        ],
+        "rough": 0.68,
+        "metal": 0
       }
     },
     "Fog": {
@@ -163,6 +181,15 @@
         ],
         "metal": 0.5,
         "rough": 0.26
+      },
+      "antenna": {
+        "rgb": [
+          0.75314,
+          0.76334,
+          0.74549
+        ],
+        "rough": 0.68,
+        "metal": 0
       }
     },
     "Obsidian": {
@@ -195,6 +222,15 @@
         ],
         "metal": 0.5,
         "rough": 0.28
+      },
+      "antenna": {
+        "rgb": [
+          0.33,
+          0.34784,
+          0.35549
+        ],
+        "rough": 0.68,
+        "metal": 0
       }
     },
     "Isai Blue": {
@@ -227,6 +263,15 @@
         ],
         "metal": 0.5,
         "rough": 0.26
+      },
+      "antenna": {
+        "rgb": [
+          0.33255,
+          0.39118,
+          0.56706
+        ],
+        "rough": 0.68,
+        "metal": 0
       }
     }
   },
@@ -1794,7 +1839,7 @@
     "rail_material": "rail",
     "materials": {
       "antenna": {
-        "color_role": "back",
+        "color_role": "rail",
         "metal": 0,
         "rough": 0.68
       }

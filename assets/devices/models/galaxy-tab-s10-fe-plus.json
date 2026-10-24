@@ -278,8 +278,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-tab-s10-fe-plus.47a8bb9a4f9a.glb.gz",
-  "sha256": "47a8bb9a4f9a273ee635e3b9631ca44b758e09c239d5d6096209f819f2a84999",
+  "glbUrl": "assets/devices/models/galaxy-tab-s10-fe-plus.76663b1ec82d.glb.gz",
+  "sha256": "76663b1ec82dc4b69f69d3fe6b3e18471dbc50fd368e4ffcc209c68d01ce5e02",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-tab-s10-fe-plus.json",

@@ -240,8 +240,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/iphone-14-pro-max.2d00dbf62d74.glb.gz",
-  "sha256": "2d00dbf62d7434d18870d63e6b1e6df03bca80b7812d9b39de670d597fc0eb2d",
+  "glbUrl": "assets/devices/models/iphone-14-pro-max.4e24cbeba7b8.glb.gz",
+  "sha256": "4e24cbeba7b86ffc22a5bff0266531b8a9cf0181189ce89b3d7ae120e45fb0dd",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/iphone-14-pro-max.json",

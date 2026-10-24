@@ -152,10 +152,12 @@
         },
         "antenna": {
           "rgb": [
-            0.2,
-            0.22745,
-            0.23922
-          ]
+            0.33,
+            0.34784,
+            0.35549
+          ],
+          "rough": 0.68,
+          "metal": 0
         }
       }
     },
@@ -194,10 +196,12 @@
         },
         "antenna": {
           "rgb": [
-            0.87843,
-            0.87843,
-            0.83529
-          ]
+            0.77098,
+            0.77098,
+            0.74294
+          ],
+          "rough": 0.68,
+          "metal": 0
         }
       }
     },
@@ -236,10 +240,12 @@
         },
         "antenna": {
           "rgb": [
-            0.56863,
-            0.70196,
-            0.85098
-          ]
+            0.56961,
+            0.65627,
+            0.75314
+          ],
+          "rough": 0.68,
+          "metal": 0
         }
       }
     },
@@ -278,16 +284,18 @@
         },
         "antenna": {
           "rgb": [
-            0.65882,
-            0.78039,
-            0.50588
-          ]
+            0.62823,
+            0.70725,
+            0.52882
+          ],
+          "rough": 0.68,
+          "metal": 0
         }
       }
     }
   ],
-  "glbUrl": "assets/devices/models/pixel-8a.a20188e50900.glb.gz",
-  "sha256": "a20188e509003a0460c5a6e46bbf11811109bb830b15eae4c8f75a2780add03b",
+  "glbUrl": "assets/devices/models/pixel-8a.adc17382d626.glb.gz",
+  "sha256": "adc17382d626866f6f6d0aa63fe5cca3184ba39b061ee01ac28c928ea361b78e",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/pixel-8a.json",
