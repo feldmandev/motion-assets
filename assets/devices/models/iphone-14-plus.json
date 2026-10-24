@@ -532,8 +532,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/iphone-14-plus.abdf5865f9b6.glb.gz",
-  "sha256": "abdf5865f9b64891004e5add77dabdc35d0da4e4a16990f8e49575a67ed35e50",
+  "glbUrl": "assets/devices/models/iphone-14-plus.82dc178e3f3f.glb.gz",
+  "sha256": "82dc178e3f3fddd219ed8ab08e346c18410d61f43fb40e12716745464fb0d6af",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/iphone-14-plus.json",

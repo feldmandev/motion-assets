@@ -1,6 +1,6 @@
 {
   "id": "iphone-duo-unfolded",
-  "name": "iPhone Duo · unfolded",
+  "name": "iPhone Duo Â· unfolded",
   "state": "unfolded",
   "screens": [
     {
@@ -409,8 +409,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/iphone-duo-unfolded.de8abcba1106.glb.gz",
-  "sha256": "de8abcba1106c4d3658072b26429fd912a6c3f3af24bad8d04080f909d728253",
+  "glbUrl": "assets/devices/models/iphone-duo-unfolded.d606dd8b04d6.glb.gz",
+  "sha256": "d606dd8b04d6b4447b168abd695427d4fffcb5b7bf855566ae5c64eebdba209a",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/iphone-duo-unfolded.json",

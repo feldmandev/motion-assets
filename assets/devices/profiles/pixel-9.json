@@ -281,7 +281,8 @@
         52.64,
         2.0
       ]
-    ]
+    ],
+    "skip_source_pupil": true
   },
   "accuracy": {
     "body_dimensions": "Google published metric dimensions",

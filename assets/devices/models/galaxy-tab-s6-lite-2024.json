@@ -278,8 +278,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-tab-s6-lite-2024.dd2fdbb94d22.glb.gz",
-  "sha256": "dd2fdbb94d224cd19595c04bbce089c830713ff6042274d59d4855b7af5161d1",
+  "glbUrl": "assets/devices/models/galaxy-tab-s6-lite-2024.065845b2045b.glb.gz",
+  "sha256": "065845b2045b00548fe1706c7c5765c965af6012ceee71bc7233c19c597aa371",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-tab-s6-lite-2024.json",

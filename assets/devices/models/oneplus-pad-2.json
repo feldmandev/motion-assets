@@ -153,8 +153,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/oneplus-pad-2.14b93616135a.glb.gz",
-  "sha256": "14b93616135a8c55e4e8e2cc67f75cc951ad5ddaeb1b7585a1e774e0af6d7146",
+  "glbUrl": "assets/devices/models/oneplus-pad-2.4d9c8937cc5e.glb.gz",
+  "sha256": "4d9c8937cc5e516fa4e0c93cabb9578fbfa0550fb83aa283c48cf96506f54bed",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/oneplus-pad-2.json",

@@ -1,6 +1,6 @@
 {
   "id": "pixel-9-pro-fold-folded",
-  "name": "Pixel 9 Pro Fold Ã‚Â· folded",
+  "name": "Pixel 9 Pro Fold Ãƒâ€šÃ‚Â· folded",
   "state": "folded",
   "screens": [
     {
@@ -1766,8 +1766,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/pixel-9-pro-fold-folded.f48913a74a73.glb.gz",
-  "sha256": "f48913a74a73ef149ca5b00999c8d97ac734e140c8ca1486941d861494a3622e",
+  "glbUrl": "assets/devices/models/pixel-9-pro-fold-folded.8bf77ebec243.glb.gz",
+  "sha256": "8bf77ebec243172d5285201869fdad5480c272567a2c2c9bcefcd7e44640b679",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/pixel-9-pro-fold-folded.json",

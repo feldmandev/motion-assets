@@ -462,8 +462,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/iphone-11-pro-max.991b733635bd.glb.gz",
-  "sha256": "991b733635bdd5cfe771b6e1e38cb6c0b7ad64a3bebcc3f430f465eadefbf8ff",
+  "glbUrl": "assets/devices/models/iphone-11-pro-max.0ba5e44fe579.glb.gz",
+  "sha256": "0ba5e44fe579f757f92d67f819b4c3fbadffb16ee36dffbfc2a1d7e4812e56e3",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/iphone-11-pro-max.json",

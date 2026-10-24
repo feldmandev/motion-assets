@@ -198,9 +198,12 @@ def profile(model, dimensions, resolution, diagonal, colors, sources):
             'flash': {'rgb': [.85,.84,.77], 'rough': .33}}
     if generation == 6:
         mats['upper'] = {'rgb': finishes[chosen]['upper']['rgb'], 'rough': .18}
+    camera_spec = camera(model, body)
+    if model == 'Pixel 9':
+        camera_spec['skip_source_pupil'] = True
     return {'id': model.lower().replace(' ', '-'), 'name': model, 'finish': chosen,
             'body_mm': body, 'materials': mats, 'finishes': finishes,
-            'screen': screen(model, body, resolution, diagonal), 'camera': camera(model, body),
+            'screen': screen(model, body, resolution, diagonal), 'camera': camera_spec,
             'accuracy': {'body_dimensions': 'Google published metric dimensions',
                          'screen_resolution': 'Google published panel resolution',
                          'screen_geometry': 'Photo-informed fit box with exact native pixel aspect; bezels, radii, cutouts and edge curves estimated',

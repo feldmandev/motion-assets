@@ -232,8 +232,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-s20-plus.b89848c793ae.glb.gz",
-  "sha256": "b89848c793ae93520c8fd82ca6d9833b86adadd5929832c9881ef1967cd47585",
+  "glbUrl": "assets/devices/models/galaxy-s20-plus.82c390338c84.glb.gz",
+  "sha256": "82c390338c84e41243b31cfd0819102aa1ee80676524dab12d595b6e16f1f395",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-s20-plus.json",

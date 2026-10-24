@@ -1,6 +1,6 @@
 {
   "id": "galaxy-z-flip6-unfolded",
-  "name": "Galaxy Z Flip6 · unfolded",
+  "name": "Galaxy Z Flip6 Â· unfolded",
   "state": "unfolded",
   "screens": [
     {
@@ -623,8 +623,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-z-flip6-unfolded.d1c47425cf2c.glb.gz",
-  "sha256": "d1c47425cf2cba801e68960cf8fe6be9ba2406b72073321d92b248c7330f9e04",
+  "glbUrl": "assets/devices/models/galaxy-z-flip6-unfolded.6afc0643df32.glb.gz",
+  "sha256": "6afc0643df32da3b936d00d9f0c82327f76f9cab0c436802186e78ac3c90235c",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-z-flip6-unfolded.json",

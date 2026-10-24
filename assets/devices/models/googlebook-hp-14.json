@@ -314,8 +314,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/googlebook-hp-14.2444aa2db2b9.glb.gz",
-  "sha256": "2444aa2db2b9371977d516238aeae899c7f74182010035e00f1f8c348f326ed8",
+  "glbUrl": "assets/devices/models/googlebook-hp-14.7c5876e62922.glb.gz",
+  "sha256": "7c5876e62922c3646d38f560c71d15c4c19c9f39d99c294f1b8c24313c3c58fc",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/googlebook-hp-14.json",

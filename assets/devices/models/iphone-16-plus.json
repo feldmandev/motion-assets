@@ -275,8 +275,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/iphone-16-plus.bdc258bc8b71.glb.gz",
-  "sha256": "bdc258bc8b7169875d47943be66bbff11506ea23f02b844558db64b8eabbfb77",
+  "glbUrl": "assets/devices/models/iphone-16-plus.d8aff5703f2d.glb.gz",
+  "sha256": "d8aff5703f2d99946d4f1ee1e9b99f799f1209ca2c8d0ca4075c218e0e5b25c6",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/iphone-16-plus.json",

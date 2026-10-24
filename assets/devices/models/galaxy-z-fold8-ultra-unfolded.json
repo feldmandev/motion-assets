@@ -1,6 +1,6 @@
 {
   "id": "galaxy-z-fold8-ultra-unfolded",
-  "name": "Galaxy Z Fold8 Ultra · unfolded",
+  "name": "Galaxy Z Fold8 Ultra Â· unfolded",
   "state": "unfolded",
   "screens": [
     {
@@ -3273,8 +3273,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-z-fold8-ultra-unfolded.8d383f9a9501.glb.gz",
-  "sha256": "8d383f9a95012cdc1555d850208a690e819a478f9416ed14f77f3aefb0692f33",
+  "glbUrl": "assets/devices/models/galaxy-z-fold8-ultra-unfolded.ddbbffd7d162.glb.gz",
+  "sha256": "ddbbffd7d162bfebed880739b27f360da35595265cc5b700335b84967d3a4f6f",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-z-fold8-ultra-unfolded.json",

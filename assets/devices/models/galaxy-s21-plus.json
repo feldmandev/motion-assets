@@ -352,8 +352,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-s21-plus.0bf575524975.glb.gz",
-  "sha256": "0bf575524975b600ccc932a0f9af8e504e0d20b3e991a87b80ccd89193d2e6eb",
+  "glbUrl": "assets/devices/models/galaxy-s21-plus.ce11a8681345.glb.gz",
+  "sha256": "ce11a8681345ad20b8cf6dbdc3587fc08bcdf243bbced6ee05d6845cde6b81ab",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-s21-plus.json",

@@ -275,8 +275,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/iphone-15-plus.22f098abb8be.glb.gz",
-  "sha256": "22f098abb8bed1c15f9c46f63cafab9f25884009269b1a8492d5503f00c0b61b",
+  "glbUrl": "assets/devices/models/iphone-15-plus.821a4eac9585.glb.gz",
+  "sha256": "821a4eac958516de5989ff36f16fd7ea0aab23853315c973af626f4267c3a7e9",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/iphone-15-plus.json",

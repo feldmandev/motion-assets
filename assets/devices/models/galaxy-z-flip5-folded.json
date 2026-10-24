@@ -1,6 +1,6 @@
 {
   "id": "galaxy-z-flip5-folded",
-  "name": "Galaxy Z Flip5 · folded",
+  "name": "Galaxy Z Flip5 Â· folded",
   "state": "folded",
   "screens": [
     {
@@ -546,8 +546,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-z-flip5-folded.1ffee1ff06c3.glb.gz",
-  "sha256": "1ffee1ff06c3ce477c13b9a8ba19d9dc217ed09a836973659f69e957c9e4e06e",
+  "glbUrl": "assets/devices/models/galaxy-z-flip5-folded.57d89bf4802d.glb.gz",
+  "sha256": "57d89bf4802d24aa51087507ccb2bbc66721b621ef095dbd6c89d63e6f465a2e",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-z-flip5-folded.json",

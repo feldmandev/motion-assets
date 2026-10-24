@@ -1,6 +1,6 @@
 {
   "id": "galaxy-z-trifold-folded",
-  "name": "Galaxy Z TriFold · folded",
+  "name": "Galaxy Z TriFold Â· folded",
   "state": "folded",
   "screens": [
     {
@@ -308,8 +308,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-z-trifold-folded.911a963628c3.glb.gz",
-  "sha256": "911a963628c35ab66e22df04cad601f37f37a93ad51f5aa0d342d4f56d24775b",
+  "glbUrl": "assets/devices/models/galaxy-z-trifold-folded.fecfdc051627.glb.gz",
+  "sha256": "fecfdc0516275a41ea15bb0d8bd941b2038e3565b79a12fb972604c87d2ec234",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-z-trifold-folded.json",

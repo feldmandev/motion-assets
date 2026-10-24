@@ -1,6 +1,6 @@
 {
   "id": "galaxy-z-flip7-folded",
-  "name": "Galaxy Z Flip7 · folded",
+  "name": "Galaxy Z Flip7 Â· folded",
   "state": "folded",
   "screens": [
     {
@@ -408,8 +408,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-z-flip7-folded.f709fec455b4.glb.gz",
-  "sha256": "f709fec455b47ccedc610e10d29a2e472c785c92743fcbeedab22fc16a9de1e1",
+  "glbUrl": "assets/devices/models/galaxy-z-flip7-folded.e657daba7555.glb.gz",
+  "sha256": "e657daba7555020a285c00f58c49438f8aa98ddf6a4d0307d4eee02bcfc7c428",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-z-flip7-folded.json",

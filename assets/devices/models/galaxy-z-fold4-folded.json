@@ -1,6 +1,6 @@
 {
   "id": "galaxy-z-fold4-folded",
-  "name": "Galaxy Z Fold4 · folded",
+  "name": "Galaxy Z Fold4 Â· folded",
   "state": "folded",
   "screens": [
     {
@@ -3156,8 +3156,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-z-fold4-folded.e14a75fa91dc.glb.gz",
-  "sha256": "e14a75fa91dc36cd2aaa81bcb3750b341fec0df587c6521f420fb6a7a09724e3",
+  "glbUrl": "assets/devices/models/galaxy-z-fold4-folded.c539f50911e4.glb.gz",
+  "sha256": "c539f50911e4b810c2cf367ca876dcf09e8ab3df477034bbf2e1136aa533f797",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-z-fold4-folded.json",

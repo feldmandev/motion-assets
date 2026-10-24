@@ -427,8 +427,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/iphone-17e.d626ab3bb77a.glb.gz",
-  "sha256": "d626ab3bb77a1ff3878dbfd337f3b9214983d71fba9d8c00a6b0ddebb667762f",
+  "glbUrl": "assets/devices/models/iphone-17e.52a1adf21272.glb.gz",
+  "sha256": "52a1adf21272857b10a196b628fe7f5f2fef863c30c5634fbaab39354858bf56",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/iphone-17e.json",

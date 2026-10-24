@@ -325,8 +325,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-s26-ultra.cad231385709.glb.gz",
-  "sha256": "cad23138570951965f0dacf98d53c1eed1f101dec7a0103c2d36c7c21ad7cda2",
+  "glbUrl": "assets/devices/models/galaxy-s26-ultra.a22d44e46f55.glb.gz",
+  "sha256": "a22d44e46f55089ca4b9c06497a00eb0ec581a00b38674343de79018c7dc836a",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-s26-ultra.json",

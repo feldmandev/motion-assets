@@ -1,6 +1,6 @@
 {
   "id": "pixel-11-pro-fold-unfolded",
-  "name": "Pixel 11 Pro Fold Ã‚Â· unfolded",
+  "name": "Pixel 11 Pro Fold Ãƒâ€šÃ‚Â· unfolded",
   "state": "unfolded",
   "screens": [
     {
@@ -1822,8 +1822,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/pixel-11-pro-fold-unfolded.c55ac8996f91.glb.gz",
-  "sha256": "c55ac8996f91e4efeb975c938101abd6fb1d9a28e862765a0d4da60d6c074865",
+  "glbUrl": "assets/devices/models/pixel-11-pro-fold-unfolded.15e42104c31e.glb.gz",
+  "sha256": "15e42104c31e037d9a26807de0fd08c00e8f6f94ce743be927c8447ca85608d9",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/pixel-11-pro-fold-unfolded.json",

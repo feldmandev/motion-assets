@@ -165,8 +165,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/xiaomi-pad-6s-pro-12-4.cd35db1ca833.glb.gz",
-  "sha256": "cd35db1ca83365971c3bea3e764dd21fb844617e3594adaf38257660d7b73b7b",
+  "glbUrl": "assets/devices/models/xiaomi-pad-6s-pro-12-4.4fcb4b9372b1.glb.gz",
+  "sha256": "4fcb4b9372b1a54d4c6ee01b7c04767c1bde8799569165e33235e37960c3204b",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/xiaomi-pad-6s-pro-12-4.json",

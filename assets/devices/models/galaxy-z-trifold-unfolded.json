@@ -1,6 +1,6 @@
 {
   "id": "galaxy-z-trifold-unfolded",
-  "name": "Galaxy Z TriFold · unfolded",
+  "name": "Galaxy Z TriFold Â· unfolded",
   "state": "unfolded",
   "screens": [
     {
@@ -448,8 +448,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-z-trifold-unfolded.8ea728d6ee19.glb.gz",
-  "sha256": "8ea728d6ee19b98edc1d2387bf27b97d149f2dde1ac3d34f4a6b338db863b8cd",
+  "glbUrl": "assets/devices/models/galaxy-z-trifold-unfolded.6cbaa6d12e1e.glb.gz",
+  "sha256": "6cbaa6d12e1e1062d859997be06854069d037d284c2ffd194087c96beb17aaa0",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-z-trifold-unfolded.json",

@@ -379,7 +379,8 @@ LENS_COATINGS = [
     # name, Blender film thickness nm, Blender film IOR, GLB role
     ('element 1 coating', 320.0, 1.70, 'outer'),      # outer lens surface: AR sheen
     ('element 2 coating', 165.0, 1.72, 'inner'),
-    ('curved internal optical coating', 165.0, 1.72, 'inner'),
+    ('curved internal optical coating', 320.0, 1.70, 'outer'),
+    ('internal prism optic', 165.0, 1.72, 'inner'),
     ('Continuous clear optical cover', 0.0, 1.22, 'cover'),   # clear cover glass
     ('antireflective clear cover', 0.0, 1.22, 'cover'),
 ]
@@ -389,7 +390,7 @@ LENS_COATINGS = [
 # carrying a partial-strength iridescent reflection (blue-violet head-on, warm at grazing angles,
 # tuned by screenshots of the real viewer); the inner element is dark glossy glass seen through
 # it, and the cover glass is invisible.
-GLB_OUTER_IRIDESCENCE = {'iridescenceFactor': .45, 'iridescenceIor': 1.6,
+GLB_OUTER_IRIDESCENCE = {'iridescenceFactor': .28, 'iridescenceIor': 1.6,
                          'iridescenceThicknessMinimum': 360.0, 'iridescenceThicknessMaximum': 360.0}
 
 
@@ -416,6 +417,9 @@ def add_glb_iridescence(path, foldable=False):
     raw = path.read_bytes()
     json_len, _ = struct.unpack_from('<II', raw, 12)
     gltf = json.loads(raw[20:20+json_len])
+    from optics import REVISION
+    if gltf.get('asset', {}).get('extras', {}).get('opticsTreatment', {}).get('revision') == REVISION:
+        return 0
     changed = 0
     for mat in gltf.get('materials', []):
         if foldable and mat.get('name', '').startswith('Device screen |'):
@@ -438,7 +442,7 @@ def add_glb_iridescence(path, foldable=False):
             ext.pop(key, None)
         mat.pop('alphaMode', None)
         if role == 'outer':
-            mat['pbrMetallicRoughness'] = {'baseColorFactor': [.4, .42, .46, 1], 'metallicFactor': 0,
+            mat['pbrMetallicRoughness'] = {'baseColorFactor': [.05, .09, .18, 1], 'metallicFactor': 0,
                                            'roughnessFactor': 0}
             ext['KHR_materials_transmission'] = {'transmissionFactor': 1}
             ext['KHR_materials_ior'] = {'ior': 1.5}
@@ -452,6 +456,8 @@ def add_glb_iridescence(path, foldable=False):
             mat['alphaMode'] = 'BLEND'
         changed += 1
     if not changed:
+        from optics import apply_glb
+        apply_glb(path, BASE/'.optics-backup')
         return 0
     used = gltf.setdefault('extensionsUsed', [])
     for name in ('KHR_materials_iridescence', *(['KHR_materials_unlit'] if foldable else [])):
@@ -462,6 +468,8 @@ def add_glb_iridescence(path, foldable=False):
     rest = raw[20+json_len:]
     total = 12+8+len(data)+len(rest)
     path.write_bytes(struct.pack('<III', 0x46546C67, 2, total)+struct.pack('<II', len(data), 0x4E4F534A)+data+rest)
+    from optics import apply_glb
+    apply_glb(path, BASE/'.optics-backup')
     return changed
 
 
@@ -627,6 +635,8 @@ def build(profile_path, output, screen_image=None, finish=None):
     if profile['id'].startswith('pixel-'):
         from pixel_front_optics import enhance_pixel_front_optics
         enhance_pixel_front_optics(profile)
+        from pixel_rear_optics import enhance_pixel_rear_optics
+        enhance_pixel_rear_optics(profile)
     if profile.get('rail_details'):
         from pixel_rail_details import apply_pixel_rail_details
         apply_pixel_rail_details(profile, root)
@@ -658,6 +668,8 @@ def build(profile_path, output, screen_image=None, finish=None):
         if image.source == 'FILE' and image.users:
             image.pack()
     apply_lens_coatings()
+    from optics import apply_blender
+    apply_blender()
     bpy.ops.wm.save_as_mainfile(filepath=str(output/'model.blend'))
 
     # GLB cannot represent Cycles RGB dispersion / layered shader closures.

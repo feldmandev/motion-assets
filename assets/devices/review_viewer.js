@@ -48,9 +48,14 @@ async function openViewer(device,index){
   await customElements.whenDefined('model-viewer');
   customElements.get('model-viewer').minimumRenderScale=1;
   if(modelUrl) URL.revokeObjectURL(modelUrl);
-  const bytes=Uint8Array.from(atob(device.glb),c=>c.charCodeAt(0));
-  modelUrl=URL.createObjectURL(new Blob([bytes],{type:'model/gltf-binary'}));
-  viewer.src=modelUrl;
+  if(device.glb){
+    const bytes=Uint8Array.from(atob(device.glb),c=>c.charCodeAt(0));
+    modelUrl=URL.createObjectURL(new Blob([bytes],{type:'model/gltf-binary'}));
+    viewer.src=modelUrl;
+  }else{
+    modelUrl=null;
+    viewer.src=device.glb_url;
+  }
 }
 function applyViewerFinish(){
   if(!viewer.model||!activeDevice) return;

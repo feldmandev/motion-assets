@@ -352,8 +352,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-s23-plus.dcd26a4f2bfa.glb.gz",
-  "sha256": "dcd26a4f2bfa875a9006d3f5a91ae142023aa7b0d004527031ef0ec40ff787b6",
+  "glbUrl": "assets/devices/models/galaxy-s23-plus.007f145705a2.glb.gz",
+  "sha256": "007f145705a26feb9b78cf675709842284cfe63478f61bce9e633975628026f7",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-s23-plus.json",

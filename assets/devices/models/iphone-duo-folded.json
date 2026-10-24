@@ -1,6 +1,6 @@
 {
   "id": "iphone-duo-folded",
-  "name": "iPhone Duo · folded",
+  "name": "iPhone Duo Â· folded",
   "state": "folded",
   "screens": [
     {
@@ -334,8 +334,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/iphone-duo-folded.68ec9b53799a.glb.gz",
-  "sha256": "68ec9b53799a476b08e244dee75997c84b2f00c32d85697cea7e6fdba8c8af75",
+  "glbUrl": "assets/devices/models/iphone-duo-folded.fd96c4fcd0c9.glb.gz",
+  "sha256": "fd96c4fcd0c9d16aae6a9838f12ae4fbae62788e65cfa062756ca50effa21e87",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/iphone-duo-folded.json",

@@ -1,6 +1,6 @@
 {
   "id": "pixel-fold-unfolded",
-  "name": "Pixel Fold Ã‚Â· unfolded",
+  "name": "Pixel Fold Ãƒâ€šÃ‚Â· unfolded",
   "state": "unfolded",
   "screens": [
     {
@@ -1842,8 +1842,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/pixel-fold-unfolded.29e048678a15.glb.gz",
-  "sha256": "29e048678a15b003ec8716b679455357c63c7fe884e25e3af7b9bbdb2108cbaf",
+  "glbUrl": "assets/devices/models/pixel-fold-unfolded.47b38b7e2493.glb.gz",
+  "sha256": "47b38b7e249300f1e4f8f6353f4a372e88d1df4225928d72a9e870781e1ba536",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/pixel-fold-unfolded.json",

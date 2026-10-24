@@ -8,12 +8,16 @@ import gzip
 import hashlib
 import json
 import math
+import sys
 from pathlib import Path
 import xml.etree.ElementTree as ET
 
 import numpy as np
 import trimesh
 from catalog import ROOT, write_json
+
+sys.path.insert(0, str(ROOT/'assets/devices'))
+from optics import apply_glb
 
 
 def rounded(width, height, depth, radius, name, color, y=0, z=0):
@@ -74,6 +78,11 @@ def main():
                 lens.apply_translation([camera_x * .001, 0, 0])
                 scene.add_geometry(lens, node_name=f"Lens {index + 1}")
         glb = scene.export(file_type="glb")
+        optical_export = ROOT/'build/generic-optics'/model_id/'model.glb'
+        optical_export.parent.mkdir(parents=True, exist_ok=True)
+        optical_export.write_bytes(glb)
+        apply_glb(optical_export, ROOT/'build/optics-backups')
+        glb = optical_export.read_bytes()
         packed = gzip.compress(glb, compresslevel=9, mtime=0)
         digest = hashlib.sha256(packed).hexdigest()
         payload = folder / "models" / f"{model_id}.{digest[:12]}.glb.gz"

@@ -1,6 +1,6 @@
 {
   "id": "galaxy-z-fold3-unfolded",
-  "name": "Galaxy Z Fold3 · unfolded",
+  "name": "Galaxy Z Fold3 Â· unfolded",
   "state": "unfolded",
   "screens": [
     {
@@ -3225,8 +3225,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-z-fold3-unfolded.7fc88f12e54f.glb.gz",
-  "sha256": "7fc88f12e54fe1c2bc37c2ae62bdde1484e81ac994c6421e67735b98cbc2e979",
+  "glbUrl": "assets/devices/models/galaxy-z-fold3-unfolded.a27ba2bf73f7.glb.gz",
+  "sha256": "a27ba2bf73f7a9f8698d980bcd1f6412e20ef637902f1628cf15df27148949ca",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-z-fold3-unfolded.json",

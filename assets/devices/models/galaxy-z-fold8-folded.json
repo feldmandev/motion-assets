@@ -1,6 +1,6 @@
 {
   "id": "galaxy-z-fold8-folded",
-  "name": "Galaxy Z Fold8 · folded",
+  "name": "Galaxy Z Fold8 Â· folded",
   "state": "folded",
   "screens": [
     {
@@ -3140,8 +3140,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-z-fold8-folded.3ee5bc92ddd2.glb.gz",
-  "sha256": "3ee5bc92ddd26d82f63f8be8e92eb27169dcc68852c34c9cc0100d6a4950b99c",
+  "glbUrl": "assets/devices/models/galaxy-z-fold8-folded.5189c39deafb.glb.gz",
+  "sha256": "5189c39deafb4996a94806462cba6ebf21986cf47c4e90f3faea1e74975297c8",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-z-fold8-folded.json",
