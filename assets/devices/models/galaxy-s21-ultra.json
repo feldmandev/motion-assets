@@ -312,8 +312,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-s21-ultra.7cac5e8d8756.glb.gz",
-  "sha256": "7cac5e8d8756238f5d69ef5adc0a4cf406bcc6293ac3ecf0294a76c0b4b4ad3d",
+  "glbUrl": "assets/devices/models/galaxy-s21-ultra.1571f6904ad7.glb.gz",
+  "sha256": "1571f6904ad7eb0ea487254d63f16dc4ed8c2b21c00dc799a5804933d9fdf4d0",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-s21-ultra.json",

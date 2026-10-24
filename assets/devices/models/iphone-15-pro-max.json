@@ -240,8 +240,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/iphone-15-pro-max.c0e6b993e280.glb.gz",
-  "sha256": "c0e6b993e280498144818e309bd8d8e65db58e093550f11a1d54069643cd2559",
+  "glbUrl": "assets/devices/models/iphone-15-pro-max.54b03dbdca32.glb.gz",
+  "sha256": "54b03dbdca32b1838f66702288c583f62cbfb8d64f69217a1383fb6fd741b037",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/iphone-15-pro-max.json",

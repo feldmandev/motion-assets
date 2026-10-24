@@ -232,8 +232,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-s10-lite.7c2d7b090d13.glb.gz",
-  "sha256": "7c2d7b090d13c12bccfd2110abf608364ba5c521d235c7bc522d1bd9023d30a4",
+  "glbUrl": "assets/devices/models/galaxy-s10-lite.78c8c06524be.glb.gz",
+  "sha256": "78c8c06524beef20d9a1021b40fafd0e33093c94153d1c30f2a3adb4832bec28",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-s10-lite.json",

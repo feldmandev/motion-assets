@@ -352,8 +352,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-s23-fe.1f45305f9e4d.glb.gz",
-  "sha256": "1f45305f9e4d84e93a9d3b7677bf336b17fe89d38f50cbbbcd44049715ecb4f1",
+  "glbUrl": "assets/devices/models/galaxy-s23-fe.6493ff4c1202.glb.gz",
+  "sha256": "6493ff4c120231bea4d0c47f71f475fd3d4f92663799fd5d659abd419825bd7c",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-s23-fe.json",

@@ -282,8 +282,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/pixel-10-pro-xl.289c406f1fcc.glb.gz",
-  "sha256": "289c406f1fcc7922e762a56500b2be7c4971ae4190a31d91076effb4ef71f125",
+  "glbUrl": "assets/devices/models/pixel-10-pro-xl.85157f6b0df2.glb.gz",
+  "sha256": "85157f6b0df22632f6a45208952aafcc03159cbaef9f52c49d88fa8e5a68d8b8",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/pixel-10-pro-xl.json",

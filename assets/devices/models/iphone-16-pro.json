@@ -240,8 +240,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/iphone-16-pro.69dbf1467128.glb.gz",
-  "sha256": "69dbf14671280b6316e1d7b5426d07931990cab8152efd0dad6df7a9ddf31f44",
+  "glbUrl": "assets/devices/models/iphone-16-pro.ce264175973c.glb.gz",
+  "sha256": "ce264175973c2d47e9088ccba14e1f587a6cd913acb596cc675e93819bf4430d",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/iphone-16-pro.json",

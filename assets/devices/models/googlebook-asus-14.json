@@ -314,8 +314,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/googlebook-asus-14.a620608c6574.glb.gz",
-  "sha256": "a620608c6574c91071fcb165892b7f5124869cbb93a71601a328cd922626da1c",
+  "glbUrl": "assets/devices/models/googlebook-asus-14.73a243f19e41.glb.gz",
+  "sha256": "73a243f19e415a5388e165ac5e0136ff2989ec4a16c9436ea21d596bd87357a4",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/googlebook-asus-14.json",

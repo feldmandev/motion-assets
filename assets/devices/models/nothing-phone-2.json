@@ -233,8 +233,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/nothing-phone-2.c180ba64ad7f.glb.gz",
-  "sha256": "c180ba64ad7f2457183d03da564cd1f2c4c372789a6ccda7d54450921c037e09",
+  "glbUrl": "assets/devices/models/nothing-phone-2.ccd88f8f008d.glb.gz",
+  "sha256": "ccd88f8f008d4117cebc76a7d2ac01d088e1ecf66c9bb511631d1405435ca37d",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/nothing-phone-2.json",

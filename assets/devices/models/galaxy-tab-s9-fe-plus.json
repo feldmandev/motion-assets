@@ -336,8 +336,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-tab-s9-fe-plus.2cd5a67c381f.glb.gz",
-  "sha256": "2cd5a67c381f9c1e6d2f294ab9e9e3eb166ba2908cb4f6d6120c2c1273d9dd57",
+  "glbUrl": "assets/devices/models/galaxy-tab-s9-fe-plus.c9938372bdf0.glb.gz",
+  "sha256": "c9938372bdf089549093665d66043b773d72ae9592038674e8c89cba34bd2143",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-tab-s9-fe-plus.json",

@@ -297,8 +297,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/pixel-11-pro-xl.b6aa6114d60a.glb.gz",
-  "sha256": "b6aa6114d60a928aa6b6f125e3fb887775d2cb5af58d8a14f970ff44fef5b01b",
+  "glbUrl": "assets/devices/models/pixel-11-pro-xl.73d26cec762b.glb.gz",
+  "sha256": "73d26cec762b9fbeaf8f49a4cef461cb2a495b70e64e835bed978e3c97765142",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/pixel-11-pro-xl.json",

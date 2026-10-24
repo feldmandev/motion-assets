@@ -278,8 +278,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-tab-s10-lite.fde412009211.glb.gz",
-  "sha256": "fde4120092117af761f45ad60a505ec7253a7d1ff77120a955e06f47be84d897",
+  "glbUrl": "assets/devices/models/galaxy-tab-s10-lite.0a4e3f6c5424.glb.gz",
+  "sha256": "0a4e3f6c542496c1254e44eafb811662a2f94c8953c4cff254795488ed74dfed",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-tab-s10-lite.json",

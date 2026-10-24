@@ -240,8 +240,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/iphone-15-pro.a70fe9e6615b.glb.gz",
-  "sha256": "a70fe9e6615b4e39d97789c19c5b670a18cad586c9957735cbefcd9097c559f2",
+  "glbUrl": "assets/devices/models/iphone-15-pro.608db36cf748.glb.gz",
+  "sha256": "608db36cf7484a5c81487818db57881f601cae2408d8e4b639abcf00b8bb1764",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/iphone-15-pro.json",

@@ -372,8 +372,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-s8.bad7245c9973.glb.gz",
-  "sha256": "bad7245c9973c96456cf470b8f146d116b222b7f685c9744aff01f412899108e",
+  "glbUrl": "assets/devices/models/galaxy-s8.4d9c70c7bba6.glb.gz",
+  "sha256": "4d9c70c7bba60a58335d6974c5e2be19e71064b8fd5f950268d825b255f51d72",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-s8.json",

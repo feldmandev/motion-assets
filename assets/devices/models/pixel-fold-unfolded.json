@@ -1846,8 +1846,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/pixel-fold-unfolded.26fb4232260d.glb.gz",
-  "sha256": "26fb4232260d777d0aa6b3f5344f52317eb61a4c4d9233928b6a458d3144ad6f",
+  "glbUrl": "assets/devices/models/pixel-fold-unfolded.9ee5c1f58a28.glb.gz",
+  "sha256": "9ee5c1f58a2859e8e5a79004bb53abbe36b6e04c58e4af9e0fb126cbcd265c11",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/pixel-fold-unfolded.json",

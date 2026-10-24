@@ -1770,8 +1770,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/pixel-10-pro-fold-folded.8f39fd84cac8.glb.gz",
-  "sha256": "8f39fd84cac80bc54ffdbb61bfda7d5e735924aab78107c820030f4d089e64da",
+  "glbUrl": "assets/devices/models/pixel-10-pro-fold-folded.813589c62ccb.glb.gz",
+  "sha256": "813589c62ccb293e1a9e25b5d281b019f2dca767c209b51e4e29bd7ea7ea86eb",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/pixel-10-pro-fold-folded.json",

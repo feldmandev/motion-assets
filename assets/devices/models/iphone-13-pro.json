@@ -497,8 +497,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/iphone-13-pro.4c738569a4fa.glb.gz",
-  "sha256": "4c738569a4fa3f3e73c152696bff947c5b07389264d26cda11d17da5a0ed5335",
+  "glbUrl": "assets/devices/models/iphone-13-pro.42486ddb0d06.glb.gz",
+  "sha256": "42486ddb0d06cfaa2b2b4f57758c9121e3196caad59d7a9054672a510c6e553c",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/iphone-13-pro.json",

@@ -272,8 +272,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-a57.29fece357bca.glb.gz",
-  "sha256": "29fece357bca00c6c6b87567fc7df5f4095c7a9202a4d7b40ec533ae8f924560",
+  "glbUrl": "assets/devices/models/galaxy-a57.38cc19527c05.glb.gz",
+  "sha256": "38cc19527c05d5cb4010d0857d2302d45b25292e8616d032222d9359e26dd432",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-a57.json",

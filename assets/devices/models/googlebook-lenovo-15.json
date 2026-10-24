@@ -322,8 +322,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/googlebook-lenovo-15.282b2fe7034d.glb.gz",
-  "sha256": "282b2fe7034d4b7e5be29fec010cefebb7af39e6f99dbd80b93c6c6443b137e0",
+  "glbUrl": "assets/devices/models/googlebook-lenovo-15.bca043577f62.glb.gz",
+  "sha256": "bca043577f621903dd9dc893c5eca86ee446bacaa078c112d772e62e914df052",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/googlebook-lenovo-15.json",
