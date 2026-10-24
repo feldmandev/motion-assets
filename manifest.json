@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": "0.1.6",
+  "version": "0.1.7",
   "repository": "https://github.com/feldmandev/motion-assets",
   "modules": [
     "shapes",
@@ -16,6 +16,10 @@
     "ATTRIBUTION.md": {
       "sha256": "f0bf38b3fb6bbd9b3a777e57736f51ff4527d4d70eb86a2a0eb246c2032996f5",
       "bytes": 1677
+    },
+    "assets/devices/MODEL_BUILD_NOTES.md": {
+      "sha256": "3d65fc25752e257907b9655672379c9a7a0580c8fc8498b5e3dc532b45a802da",
+      "bytes": 1165
     },
     "assets/devices/brand_colors.json": {
       "sha256": "d017a23e52980aebc3cfcb557c453c1c9ad43467b9af5895e8718a6c1b6243a7",
@@ -7585,10 +7589,6 @@
       "sha256": "2dedcbdb5080ab9f835a3d922fbfeb6811ea5f8845b352df2d3114924bee867d",
       "bytes": 5603
     },
-    "assets/devices/MODEL_BUILD_NOTES.md": {
-      "sha256": "3d65fc25752e257907b9655672379c9a7a0580c8fc8498b5e3dc532b45a802da",
-      "bytes": 1165
-    },
     "assets/devices/models/galaxy-a34.json": {
       "sha256": "428da6e6de208e85556113f41fbf74990160a615feacb0e8f7a8cae7a54ff69a",
       "bytes": 7849
@@ -8408,6 +8408,18 @@
     "assets/devices/nothing_geometry.py": {
       "sha256": "e431193f1c606d9805e66c2072b6daa63a486ee06ce3065a54d39d2717958022",
       "bytes": 2092
+    },
+    "assets/devices/pixel_front_optics.py": {
+      "sha256": "699200dbb9289f17f5ad14277abf147304980fe05a80e94f3e4620fb0d7defc5",
+      "bytes": 6838
+    },
+    "assets/devices/pixel_imported_front.py": {
+      "sha256": "ecff95a0aa16411062df84532324ae52dad269c57bf9d17cae46c8f95570634e",
+      "bytes": 8523
+    },
+    "assets/devices/pixel_rail_details.py": {
+      "sha256": "eb104f588845795a4494cc88665baed315c7b70f677031b8f9c00ea78c1a66a3",
+      "bytes": 8268
     },
     "assets/devices/previews/apple_iphone_11_black.png": {
       "sha256": "b7acdb81b8be719b02424439faa0e6e238202292bbb1f1dc6d614c089a8b967a",
@@ -15697,6 +15709,26 @@
       "sha256": "dbcc46685973de74ebe13eacfe72b074fc38ddca58da2b3ebc432b1a5775d235",
       "bytes": 2784
     },
+    "assets/devices/provenance/MONOCHROME.md": {
+      "sha256": "9967b7b56b875dfdc380b7ee895d184990587426e233303e91618a3a3405e0af",
+      "bytes": 1810
+    },
+    "assets/devices/provenance/NEW_BRANDS.md": {
+      "sha256": "9550377dbb6a1fa263ed82278224f631dbd963aa97c98ef2ea989d6bc4a1d8a4",
+      "bytes": 22388
+    },
+    "assets/devices/provenance/OLDER_MODELS.md": {
+      "sha256": "246f58a7a02a5558739f4bbe8f54404d4f0384884577e291ec340a2c2c25a4d0",
+      "bytes": 4715
+    },
+    "assets/devices/provenance/RADIUS_STYLE_NOTES.txt": {
+      "sha256": "1045c23232847680eba135cf3bfe1e4aee2850a2ee3f2b6cfa4649dbcbd77ad1",
+      "bytes": 2370
+    },
+    "assets/devices/provenance/SOURCES.md": {
+      "sha256": "b3726e3cbb56611370001596304c7a3813081952454ec7cecf9a9ef8dbc481c5",
+      "bytes": 5984
+    },
     "assets/devices/provenance/icon-recipes/brand_colors.json": {
       "sha256": "d017a23e52980aebc3cfcb557c453c1c9ad43467b9af5895e8718a6c1b6243a7",
       "bytes": 57150
@@ -15769,22 +15801,6 @@
       "sha256": "81dc4858b3e909b429dd86d5681461584360026a9a8db91444d688d7c71cfa15",
       "bytes": 644572
     },
-    "assets/devices/provenance/MONOCHROME.md": {
-      "sha256": "9967b7b56b875dfdc380b7ee895d184990587426e233303e91618a3a3405e0af",
-      "bytes": 1810
-    },
-    "assets/devices/provenance/NEW_BRANDS.md": {
-      "sha256": "9550377dbb6a1fa263ed82278224f631dbd963aa97c98ef2ea989d6bc4a1d8a4",
-      "bytes": 22388
-    },
-    "assets/devices/provenance/OLDER_MODELS.md": {
-      "sha256": "246f58a7a02a5558739f4bbe8f54404d4f0384884577e291ec340a2c2c25a4d0",
-      "bytes": 4715
-    },
-    "assets/devices/provenance/RADIUS_STYLE_NOTES.txt": {
-      "sha256": "1045c23232847680eba135cf3bfe1e4aee2850a2ee3f2b6cfa4649dbcbd77ad1",
-      "bytes": 2370
-    },
     "assets/devices/provenance/research/branding-browser-verification.json": {
       "sha256": "7e7a3d6bf0e4b33bfcf4e52841319b5d15e8712165a542abb97b6aa3020f043b",
       "bytes": 2209
@@ -15816,6 +15832,10 @@
     "assets/devices/provenance/research/flip-cover-independent-review.json": {
       "sha256": "7c02cffdb18b663ca362b20c9754b46da206aae0f383de448b12c76ed32e23f9",
       "bytes": 5822
+    },
+    "assets/devices/provenance/research/honor-robot-bay-verification.json": {
+      "sha256": "53600a56ee55fbd5a6e888d2771ee8a27fd44e67e89e010cf967779f2012cc3d",
+      "bytes": 6344
     },
     "assets/devices/provenance/research/honor-robot-final-review.json": {
       "sha256": "8f192c22c0bebc98bd6b3b081284ac5447c618389fa9535c4772009c19e8bec2",
@@ -15937,9 +15957,97 @@
       "sha256": "ecaa4eca5924d7fbebf31db902845a93e19461045e51dd601b101d96c3e2d733",
       "bytes": 9623
     },
+    "assets/devices/provenance/research/pixel-accuracy-next.json": {
+      "sha256": "c7a96b1e267a041f566e568afcc865448615d7b99487bc466d016508d5bb768c",
+      "bytes": 1778
+    },
+    "assets/devices/provenance/research/pixel-fold-cover-glass-patch.json": {
+      "sha256": "dea6b6434e427da92714e8aa43ef41e59e69a107b4b9fe57bdbe38c84084ac0c",
+      "bytes": 45415
+    },
+    "assets/devices/provenance/research/pixel-fold-front-calibration.json": {
+      "sha256": "7f1ec2a3e9b5bc5b8b21614036bfe725b655a2dfc9ede996ed29a3b4ebe6e38d",
+      "bytes": 261945
+    },
     "assets/devices/provenance/research/pixel-fold.json": {
       "sha256": "826cbe64a108ce6eea9ffe22cacff2903d70a5b73dc2c668a46e45f09796158a",
       "bytes": 10514
+    },
+    "assets/devices/provenance/research/pixel-front-export-verification.json": {
+      "sha256": "032f8d782e9b4669b2f70620304a4ac280cc818929146b430d1d5d01a7fde024",
+      "bytes": 14523
+    },
+    "assets/devices/provenance/research/pixel-front-inset-verification.json": {
+      "sha256": "1a9630c3afd9227e1f9f78feccc526d6bc435475c18755b24c80c28a366788fd",
+      "bytes": 3976
+    },
+    "assets/devices/provenance/research/pixel-front-measurements.json": {
+      "sha256": "db22e5136ddd094e50049227a6f5069fc51cae7b907c6b940efdf427178c4de4",
+      "bytes": 114307
+    },
+    "assets/devices/provenance/research/pixel-front-optics-verification.json": {
+      "sha256": "9280d12d5e5a6c5d4e657494365cda125270af335cb21b0c9aaa3a24aea7650f",
+      "bytes": 86232
+    },
+    "assets/devices/provenance/research/pixel-official-frame-calibration.json": {
+      "sha256": "bf17a0212a491fd7d3fdc8ac5d706472690b7ae3d8dcc4ad1ac5851de72c8160",
+      "bytes": 56549
+    },
+    "assets/devices/provenance/research/pixel-rail-details-production.json": {
+      "sha256": "a65be5145b3dd3f82b3911b61385efb4fb205c0c8da304799dc270cd2f059438",
+      "bytes": 27816
+    },
+    "assets/devices/provenance/research/pixel-rails-material-audit.json": {
+      "sha256": "74abe6c48f0951b0ff0df0bddb606d0629f1b971a882aaaa818c4776eae54553",
+      "bytes": 17309
+    },
+    "assets/devices/provenance/research/pixel-shared-front-review.json": {
+      "sha256": "ee29a748bab6682135cf02a083e4b3f78a198d1439c1bbcd6c85f076e23c3446",
+      "bytes": 199337
+    },
+    "assets/devices/provenance/research/pixel10-front-calibration.json": {
+      "sha256": "80d51002841d31fc9bc5bddec25d439aedd6f6cefa7b5716739d1bde358157ae",
+      "bytes": 50656
+    },
+    "assets/devices/provenance/research/pixel10-imported-front-patch.json": {
+      "sha256": "c4202c04912c4b77c252590596ec8436d1c68b26dafaf12b881f09141f42a366",
+      "bytes": 16305
+    },
+    "assets/devices/provenance/research/pixel11-antenna-reference-completion.json": {
+      "sha256": "006240adcb568b659715cd5068f55b090e67a6504224c87e4d5034080a0abe1b",
+      "bytes": 27102
+    },
+    "assets/devices/provenance/research/pixel11-family-front-calibration.json": {
+      "sha256": "f060acb236b921ded42647e82ce7133661a55b1bc460b27a83e1cb794563ad1d",
+      "bytes": 27801
+    },
+    "assets/devices/provenance/research/pixel11-front-layer-calibration.json": {
+      "sha256": "f8650bd1a1a5a6a68ebc71fe695e555cbe9a0b801a0f7c8e541472831565e53b",
+      "bytes": 7011
+    },
+    "assets/devices/provenance/research/pixel11-front-rail-fit.json": {
+      "sha256": "adaf352e38aab41b2fa0ba8eca56f0965ad8879ff94f61095b34186520c7d9b7",
+      "bytes": 4191
+    },
+    "assets/devices/provenance/research/pixel11-front-rim-final-review.json": {
+      "sha256": "45240dcc8b602fc393b2a767b7ff84afda036e9cbbee5616a25d82dac301617d",
+      "bytes": 781
+    },
+    "assets/devices/provenance/research/pixel45-front-calibration.json": {
+      "sha256": "b1c71b9cecb0477adfe0df688aa41ce87628af552e573b6c9361601d3d07f650",
+      "bytes": 50744
+    },
+    "assets/devices/provenance/research/pixel67-curved-front-patch.json": {
+      "sha256": "cdde469e6b4b7c6b4bca2fbe2a2689cee9656582dcd46d37dc7ba31fe581cb7e",
+      "bytes": 35990
+    },
+    "assets/devices/provenance/research/pixel67-front-calibration.json": {
+      "sha256": "4b11caf033ef4738a2b3c5d4bdad3c56f09eedf667fdcff1e8d8d5fc38798c4e",
+      "bytes": 76774
+    },
+    "assets/devices/provenance/research/pixel89-front-calibration.json": {
+      "sha256": "66405980aaaa585bf58b8bd11e91eb3eb75af2ca847e8952feef28c275bd359d",
+      "bytes": 98717
     },
     "assets/devices/provenance/research/samsung-fold-export-checks.json": {
       "sha256": "7a979793df2370a7176904f69ea5a7180e74b95e1c3a4fd56601857f4e656fe5",
@@ -16005,10 +16113,6 @@
       "sha256": "83fde424a53938f12fe2080725bf7a9887dd059ab5d716a8e23ae1e945bbe163",
       "bytes": 8756
     },
-    "assets/devices/provenance/SOURCES.md": {
-      "sha256": "b3726e3cbb56611370001596304c7a3813081952454ec7cecf9a9ef8dbc481c5",
-      "bytes": 5984
-    },
     "assets/devices/provenance/vendor_extractions/nothing/SOURCES.txt": {
       "sha256": "69c11d5a15cc4b8c13114045db52fb329c484115418b9b5af8d7e4704d12cd2d",
       "bytes": 1091
@@ -16053,10 +16157,6 @@
       "sha256": "2e9ca5ed6555cc357f351768ad8bb577083eb2e81d7eaf06764e101bad97ab84",
       "bytes": 2788
     },
-    "assets/fonts/catalog.json": {
-      "sha256": "f350e2808f76cf3c4552f9428b06528f0086ab0dfcf1bf0c8b3bd4eb76166f69",
-      "bytes": 2122
-    },
     "assets/fonts/FeldmanFont.ttf": {
       "sha256": "bf5285b24bb4d7d42c0331352e755ea3bab66652e8930c92a38baf6fabd01292",
       "bytes": 4886308
@@ -16081,13 +16181,17 @@
       "sha256": "021c30b19da6630fe7a034f24e57dd47fb7244f4f353b1c509014c9fbec62a37",
       "bytes": 1947096
     },
-    "assets/fonts/merge_fonts.py": {
-      "sha256": "702e3375f825fdbc72aed2d34905d76bb24565e02a86ce5ef3a210276f0677b5",
-      "bytes": 28037
-    },
     "assets/fonts/OFL.txt": {
       "sha256": "5c7964370b4014e85db78d9ef2f7aa4051d0e3eadb7d19118d609c63a3001faf",
       "bytes": 4473
+    },
+    "assets/fonts/catalog.json": {
+      "sha256": "88fbe7a5ecb7673f259bf625bdd5b042bc4740abf190f62483a5ae9d260e27fb",
+      "bytes": 2012
+    },
+    "assets/fonts/merge_fonts.py": {
+      "sha256": "702e3375f825fdbc72aed2d34905d76bb24565e02a86ce5ef3a210276f0677b5",
+      "bytes": 28037
     },
     "assets/shapes/1024/12-sided cookie.svg": {
       "sha256": "7ae71f26ca96998cb5117a4abe5068bfcde78a277a06f574997b7890a5a2c1e6",
@@ -16229,13 +16333,13 @@
       "sha256": "9443c2d4c4eb9ac20f540a873e4633dafc2e5f9e74a23cccb9d2502c0ab52622",
       "bytes": 1303
     },
-    "assets/shapes/catalog.json": {
-      "sha256": "f70a7692bbfb3553ae8a82d7a63374ca74402a4f4747e5d6fe23a783e47a105f",
-      "bytes": 44553
-    },
     "assets/shapes/NOTICE.md": {
       "sha256": "5f60fc5fabf3adc750208a7a2abe2bfa658d68b18e8d9bf77ab585454637d3aa",
       "bytes": 631
+    },
+    "assets/shapes/catalog.json": {
+      "sha256": "60c17f7f9dea3d57e5293c3b9ae5b36a6dfa55854cb62f1fc5fcf70905b2e33f",
+      "bytes": 44201
     },
     "assets/shapes/original/12-sided cookie.svg": {
       "sha256": "5a9b096ad7d194880925e8b6cf6cfca61cd965cffe169274e6da37b3e70f28ff",
@@ -16378,56 +16482,56 @@
       "bytes": 1172
     },
     "assets/symbols/catalog.json": {
-      "sha256": "977394fc51a6ea713c708d1ff9d86d6341c6e4b797ee3082d0de65e524487ddc",
-      "bytes": 380562
+      "sha256": "63215b261ceb479d2bfa93647914e05b636bff2ac3984509d2bb8d9f4ec2fcce",
+      "bytes": 380871
     },
     "assets/symbols/material_symbols_outlined.codepoints": {
-      "sha256": "0c9dae3ed678a81549c3be046bc8045335e5f57f2cbe2287360fbf0c2cc1355f",
-      "bytes": 79354
+      "sha256": "a7404d9e5a1b63f496cf05ace45d386075886b5a7f123fba9f29527cb6006fde",
+      "bytes": 79421
     },
     "assets/symbols/material_symbols_outlined.ttf": {
-      "sha256": "77ff1c20896afc6f1abf7d57fc408234dfd021ab050b63e0442e71d6c9f0d6b8",
-      "bytes": 10729540
+      "sha256": "f7837ba8573d9a7a74931618ced8307bc81f96d49af296bf6c8052c772ed5282",
+      "bytes": 10744832
     },
     "assets/symbols/material_symbols_outlined.woff2": {
-      "sha256": "9590d3b04f72cd30cb882910b1365ba806ce06428686303945ef096166c9639f",
-      "bytes": 4001508
+      "sha256": "6c63cfcb6f761361fc41748353989ab38157c0fce7d267f45b2d6677774ee585",
+      "bytes": 3998908
     },
     "assets/symbols/material_symbols_rounded.codepoints": {
-      "sha256": "0c9dae3ed678a81549c3be046bc8045335e5f57f2cbe2287360fbf0c2cc1355f",
-      "bytes": 79354
+      "sha256": "a7404d9e5a1b63f496cf05ace45d386075886b5a7f123fba9f29527cb6006fde",
+      "bytes": 79421
     },
     "assets/symbols/material_symbols_rounded.ttf": {
-      "sha256": "32e4011709e055596eb8d2dd0f7cb547b47c1d40ac9ecb8fad54f7f7eac202e7",
-      "bytes": 15213604
+      "sha256": "7e74e36533ccee12c2b81e75bfcf3ccf123d3bb7e7e46d65d94445f23db0c97c",
+      "bytes": 15235612
     },
     "assets/symbols/material_symbols_rounded.woff2": {
-      "sha256": "a10b730522c82c747d214f55d942813724f34670071a4dbcdb33b481ff46489f",
-      "bytes": 5400376
+      "sha256": "238c72e59af0714acea60a9ddba5f8ffb4bf523a0e2620638966cc0b13484400",
+      "bytes": 5401312
     },
     "assets/symbols/material_symbols_sharp.codepoints": {
-      "sha256": "0c9dae3ed678a81549c3be046bc8045335e5f57f2cbe2287360fbf0c2cc1355f",
-      "bytes": 79354
+      "sha256": "a7404d9e5a1b63f496cf05ace45d386075886b5a7f123fba9f29527cb6006fde",
+      "bytes": 79421
     },
     "assets/symbols/material_symbols_sharp.ttf": {
-      "sha256": "d0738765ddc91294f1959a6d23ceb2980947f1d1dbe810226387c9240130fa03",
-      "bytes": 8903572
+      "sha256": "1fd72f99ec1f44ec461c74f99341c1dcfa8c140d7087a2902e747d4ee01e379b",
+      "bytes": 8918100
     },
     "assets/symbols/material_symbols_sharp.woff2": {
-      "sha256": "e99ee1371bc3506c767a110e04917cd60355ef87917074ae07d6879c1c55286e",
-      "bytes": 3532640
+      "sha256": "5f59adb0593ad20a4ae401fcfdfa41ac08d5d8c8f6926ddc8eebdcf338acd0de",
+      "bytes": 3539116
     },
     "assets/symbols/upstream.json": {
-      "sha256": "42ecb6add39d96501489effa59fbfd8b20736531fc80d95aed6bd41b86e88c06",
+      "sha256": "fb456f378a5dcf2ad21163ccef1be96fe913a3444f0c79b22c0227220cdf7ced",
       "bytes": 104
     },
     "integrations/android/MotionIcons.kt": {
-      "sha256": "d1e9b60778700b6b85bcc6764d247778b69064931f994847fc967721fbb9c99e",
-      "bytes": 334609
+      "sha256": "abcd278d0c798d4a6561da7034988b7ca7914d4a1277de00e4ee8e2dcdf4f082",
+      "bytes": 334858
     },
     "integrations/android/MotionSymbols.kt": {
-      "sha256": "b7dbb321605dec18fa69639f4037c9a6e40ab189dcca4cfff6cdf41471577450",
-      "bytes": 282354
+      "sha256": "5895feb40fe6ea98bb1f17748269acc84b1c3a78ec881bf2c7d5fea8528a857b",
+      "bytes": 282581
     },
     "integrations/update-motion-assets.yml": {
       "sha256": "12650a1d37336379b7a623c49c7de53f290019cb7034d1d062071ac542d835a2",
@@ -16436,110 +16540,6 @@
     "LICENSES/Apache-2.0.txt": {
       "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
       "bytes": 11357
-    },
-    "assets/devices/provenance/research/honor-robot-bay-verification.json": {
-      "sha256": "53600a56ee55fbd5a6e888d2771ee8a27fd44e67e89e010cf967779f2012cc3d",
-      "bytes": 6344
-    },
-    "assets/devices/provenance/research/pixel11-front-rail-fit.json": {
-      "sha256": "adaf352e38aab41b2fa0ba8eca56f0965ad8879ff94f61095b34186520c7d9b7",
-      "bytes": 4191
-    },
-    "assets/devices/provenance/research/pixel-accuracy-next.json": {
-      "sha256": "c7a96b1e267a041f566e568afcc865448615d7b99487bc466d016508d5bb768c",
-      "bytes": 1778
-    },
-    "assets/devices/provenance/research/pixel-fold-front-calibration.json": {
-      "sha256": "7f1ec2a3e9b5bc5b8b21614036bfe725b655a2dfc9ede996ed29a3b4ebe6e38d",
-      "bytes": 261945
-    },
-    "assets/devices/provenance/research/pixel-front-optics-verification.json": {
-      "sha256": "9280d12d5e5a6c5d4e657494365cda125270af335cb21b0c9aaa3a24aea7650f",
-      "bytes": 86232
-    },
-    "assets/devices/provenance/research/pixel-rail-details-production.json": {
-      "sha256": "a65be5145b3dd3f82b3911b61385efb4fb205c0c8da304799dc270cd2f059438",
-      "bytes": 27816
-    },
-    "assets/devices/provenance/research/pixel67-curved-front-patch.json": {
-      "sha256": "cdde469e6b4b7c6b4bca2fbe2a2689cee9656582dcd46d37dc7ba31fe581cb7e",
-      "bytes": 35990
-    },
-    "assets/devices/provenance/research/pixel-official-frame-calibration.json": {
-      "sha256": "bf17a0212a491fd7d3fdc8ac5d706472690b7ae3d8dcc4ad1ac5851de72c8160",
-      "bytes": 56549
-    },
-    "assets/devices/provenance/research/pixel-front-export-verification.json": {
-      "sha256": "032f8d782e9b4669b2f70620304a4ac280cc818929146b430d1d5d01a7fde024",
-      "bytes": 14523
-    },
-    "assets/devices/provenance/research/pixel-shared-front-review.json": {
-      "sha256": "ee29a748bab6682135cf02a083e4b3f78a198d1439c1bbcd6c85f076e23c3446",
-      "bytes": 199337
-    },
-    "assets/devices/provenance/research/pixel45-front-calibration.json": {
-      "sha256": "b1c71b9cecb0477adfe0df688aa41ce87628af552e573b6c9361601d3d07f650",
-      "bytes": 50744
-    },
-    "assets/devices/provenance/research/pixel-front-measurements.json": {
-      "sha256": "db22e5136ddd094e50049227a6f5069fc51cae7b907c6b940efdf427178c4de4",
-      "bytes": 114307
-    },
-    "assets/devices/pixel_rail_details.py": {
-      "sha256": "eb104f588845795a4494cc88665baed315c7b70f677031b8f9c00ea78c1a66a3",
-      "bytes": 8268
-    },
-    "assets/devices/provenance/research/pixel-fold-cover-glass-patch.json": {
-      "sha256": "dea6b6434e427da92714e8aa43ef41e59e69a107b4b9fe57bdbe38c84084ac0c",
-      "bytes": 45415
-    },
-    "assets/devices/provenance/research/pixel89-front-calibration.json": {
-      "sha256": "66405980aaaa585bf58b8bd11e91eb3eb75af2ca847e8952feef28c275bd359d",
-      "bytes": 98717
-    },
-    "assets/devices/provenance/research/pixel67-front-calibration.json": {
-      "sha256": "4b11caf033ef4738a2b3c5d4bdad3c56f09eedf667fdcff1e8d8d5fc38798c4e",
-      "bytes": 76774
-    },
-    "assets/devices/provenance/research/pixel10-imported-front-patch.json": {
-      "sha256": "c4202c04912c4b77c252590596ec8436d1c68b26dafaf12b881f09141f42a366",
-      "bytes": 16305
-    },
-    "assets/devices/provenance/research/pixel10-front-calibration.json": {
-      "sha256": "80d51002841d31fc9bc5bddec25d439aedd6f6cefa7b5716739d1bde358157ae",
-      "bytes": 50656
-    },
-    "assets/devices/pixel_imported_front.py": {
-      "sha256": "ecff95a0aa16411062df84532324ae52dad269c57bf9d17cae46c8f95570634e",
-      "bytes": 8523
-    },
-    "assets/devices/provenance/research/pixel11-family-front-calibration.json": {
-      "sha256": "f060acb236b921ded42647e82ce7133661a55b1bc460b27a83e1cb794563ad1d",
-      "bytes": 27801
-    },
-    "assets/devices/pixel_front_optics.py": {
-      "sha256": "699200dbb9289f17f5ad14277abf147304980fe05a80e94f3e4620fb0d7defc5",
-      "bytes": 6838
-    },
-    "assets/devices/provenance/research/pixel11-front-rim-final-review.json": {
-      "sha256": "45240dcc8b602fc393b2a767b7ff84afda036e9cbbee5616a25d82dac301617d",
-      "bytes": 781
-    },
-    "assets/devices/provenance/research/pixel11-antenna-reference-completion.json": {
-      "sha256": "006240adcb568b659715cd5068f55b090e67a6504224c87e4d5034080a0abe1b",
-      "bytes": 27102
-    },
-    "assets/devices/provenance/research/pixel-rails-material-audit.json": {
-      "sha256": "74abe6c48f0951b0ff0df0bddb606d0629f1b971a882aaaa818c4776eae54553",
-      "bytes": 17309
-    },
-    "assets/devices/provenance/research/pixel11-front-layer-calibration.json": {
-      "sha256": "f8650bd1a1a5a6a68ebc71fe695e555cbe9a0b801a0f7c8e541472831565e53b",
-      "bytes": 7011
-    },
-    "assets/devices/provenance/research/pixel-front-inset-verification.json": {
-      "sha256": "1a9630c3afd9227e1f9f78feccc526d6bc435475c18755b24c80c28a366788fd",
-      "bytes": 3976
     }
   }
 }
