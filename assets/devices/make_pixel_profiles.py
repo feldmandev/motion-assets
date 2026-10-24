@@ -413,7 +413,7 @@ def main():
         for state in ['folded', 'unfolded']:
             data = profile('Pixel 9 Pro', [dimensions[state][key] for key in ['height','width','depth']],
                            [1080,2424], 6.3, item['colors'], item['official_refs'])
-            data.update(id=name.lower().replace(' ', '-')+'-'+state, name=name+' · '+state,
+            data.update(id=name.lower().replace(' ', '-')+'-'+state, name=name+' Â· '+state,
                         state=state, status='provisional')
             data.pop('camera'); data.pop('screen')
             envelope = data['body_mm']
@@ -471,7 +471,7 @@ def main():
                     'lenses':[lens('ultrawide',cam_x-10,cam_y+9,3.0),
                               lens('main',cam_x+9,cam_y-9,4.2,1),
                               lens('telephoto',cam_x-6,cam_y-9,3.1,1)],
-                    'flash':[[cam_x+10,cam_y+9,3.1]]}
+                    'flash':[[cam_x+10,cam_y+9,3.1]], 'skip_source_pupil':True}
             hinge_x = -envelope['width']/2+1 if state == 'folded' else 0
             open_gap = max(0, envelope['width']-2*panel_width) if state == 'unfolded' else .6
             fixed_right = open_gap/2+panel_width

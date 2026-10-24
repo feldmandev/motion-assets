@@ -1,6 +1,6 @@
 {
   "id": "pixel-11-pro-fold-unfolded",
-  "name": "Pixel 11 Pro Fold · unfolded",
+  "name": "Pixel 11 Pro Fold \u00b7 unfolded",
   "finish": "Obsidian",
   "body_mm": {
     "height": 155.2,
@@ -266,7 +266,8 @@
             63.7178947368421,
             3.1
           ]
-        ]
+        ],
+        "skip_source_pupil": true
       },
       "rear_logo": {
         "kind": "google_g",

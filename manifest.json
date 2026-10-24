@@ -7558,8 +7558,8 @@
       "bytes": 14051
     },
     "assets/devices/make_pixel_profiles.py": {
-      "sha256": "c96d108f1c43b492d008a95804c33c660e4efc2899279b27a9e782e4a7462629",
-      "bytes": 35177
+      "sha256": "5d8aae25d7d13ef2d8e8803e8035384261f677e6d3a5f0bf877dbddb956fbf5c",
+      "bytes": 35205
     },
     "assets/devices/make_review.py": {
       "sha256": "a813c016712903340fdcf0279ffd08d6f89e76ac8bf9706aeb713f41818148a2",
@@ -8274,12 +8274,12 @@
       "bytes": 8037
     },
     "assets/devices/models/pixel-11-pro-fold-folded.json": {
-      "sha256": "0aa548fcee3ca66dd6250daac07c5a67f9b655c7cdd73c66622d4804138430b3",
-      "bytes": 43011
+      "sha256": "1fe80c4f64aa8ec11a99b226a37c3056af4ac7b9daa9de9042db7dd6b8414a31",
+      "bytes": 43035
     },
     "assets/devices/models/pixel-11-pro-fold-unfolded.json": {
-      "sha256": "fe1726ce475a303a944b67eae0d4e74e58c1ba7f07f3b60f6a73e2a4207282e9",
-      "bytes": 45049
+      "sha256": "b5c9dca75fcc98e30bcd179ac00a21f6eed607cd7558e42c3a4513b7c69ddee7",
+      "bytes": 45073
     },
     "assets/devices/models/pixel-11-pro-xl.json": {
       "sha256": "e81d8fa47877f9cd91016a599c698f432a10e9972fa34ee5ff00441d1bdaad58",
@@ -8402,7 +8402,7 @@
       "bytes": 8007
     },
     "assets/devices/models-manifest.json": {
-      "sha256": "cd7a3799de7be2e177ef023b3d748d7e9c20beeae62c8d73e8dd4a4fc62e2c92",
+      "sha256": "80dca381f4ed51d064eaeeb899037051c68c7234e4776d188c4f8c3509e12377",
       "bytes": 55472
     },
     "assets/devices/nothing_geometry.py": {
@@ -15562,12 +15562,12 @@
       "bytes": 38026
     },
     "assets/devices/profiles/pixel-11-pro-fold-folded.json": {
-      "sha256": "9fe0d5b729d0200232ba31ea81ace4b2d6a485de0b1620ebb1f39e4358b1cccb",
-      "bytes": 46599
+      "sha256": "c6fc332abe0dc1f013288706adde72613ec30867d2408b4a51630fbd3c99d112",
+      "bytes": 46639
     },
     "assets/devices/profiles/pixel-11-pro-fold-unfolded.json": {
-      "sha256": "19303123e361e0ea588d2ab0623e0582d7c2c3cc34fbd2c736f59236e59e2bc6",
-      "bytes": 48354
+      "sha256": "d02586a12bcae50e766aa29ef70b330fbb0613a6ff56ab1575bf9834ccf6c01d",
+      "bytes": 48394
     },
     "assets/devices/profiles/pixel-11-pro-xl.json": {
       "sha256": "ef6fd769d179dab81248db1e837f0c91dd2d14fdebe6f3aa2611e65f56c1ae3a",
