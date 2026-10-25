@@ -23,13 +23,14 @@
     "branding": "Existing Apple vector contour retains its 0.814036673 width/height ratio, including separate leaf.",
     "reviews": "Chip-only variants with identical physical dimensions, display, port layout and palette reuse canonical PNG review images; each GLB retains its own device identity.",
     "webgl_surfaces": "Actual display opening in the black cover, recessed keyboard and trackpad pockets, and recessed perforated speaker sheets avoid nearly coplanar overlaps in browser depth buffers.",
-    "intake_finish": "Compact mini intake fins use charcoal polymer with dielectric highlights; connector cavities remain absorbing black. The gallery provides an underside inspection view."
+    "intake_finish": "Compact mini fins and Studio circular foot/intake use charcoal polymer with dielectric highlights. Studio has a tapered perforated band with open holes; pitch, taper and hole dimensions are visual estimates. The gallery provides an underside inspection view."
   },
   "limitations": [
     "These procedural models are not Apple CAD or dimensional metrology.",
     "US keyboard artwork is representative; ISO/JIS key arrangements and functional Touch Bar content are not modeled.",
     "Neo keycaps are finish-tinted and its trackpad is described as mechanical Multi-Touch; force mechanics are not simulated.",
     "Neo right side speaker slit is supported by a close-up. The inferred left slit is omitted because the proposed coordinates overlap documented USB-C sockets.",
-    "Socket shells are recessed and recognizable; connector pinouts and internal board assemblies are illustrative."
+    "Socket shells are recessed and recognizable; connector pinouts and internal board assemblies are illustrative.",
+    "Studio intake band is a reference-based approximation of Apple's bottom perforations, not an exact manufacturing hole count or CAD contour. Reference: https://www.apple.com/cf/newsroom/2022/03/apple-unveils-all-new-mac-studio-and-studio-display/"
   ]
 }

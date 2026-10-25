@@ -2,8 +2,8 @@
   "id": "mac-studio-m1-ultra",
   "name": "Mac Studio (M1 Ultra, 2022)",
   "state": "default",
-  "glbUrl": "assets/devices/models/mac-studio-m1-ultra.950ba57cf56b.glb.gz",
-  "sha256": "950ba57cf56bb9e204bf72f652e0d38f54dffd8e84c6ee986441b55c3bd2403a",
+  "glbUrl": "assets/devices/models/mac-studio-m1-ultra.515d56bb6215.glb.gz",
+  "sha256": "515d56bb62150a00b983e05b0bc2730ac4605a3bcf48bfe4474ba1ff48412ea6",
   "body_mm": {
     "width": 197,
     "height": 95,

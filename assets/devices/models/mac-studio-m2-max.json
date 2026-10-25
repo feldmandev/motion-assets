@@ -2,8 +2,8 @@
   "id": "mac-studio-m2-max",
   "name": "Mac Studio (M2 Max, 2023)",
   "state": "default",
-  "glbUrl": "assets/devices/models/mac-studio-m2-max.9b745fcd79b1.glb.gz",
-  "sha256": "9b745fcd79b1c02a4622fff695946848d21dde3193ac0f28fa8d9de04dc7c3ed",
+  "glbUrl": "assets/devices/models/mac-studio-m2-max.5ffb188700bd.glb.gz",
+  "sha256": "5ffb188700bd35f6440e4538019ecbbee197284a66d83f69a54af007b9d226d8",
   "body_mm": {
     "width": 197,
     "height": 95,

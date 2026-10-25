@@ -2,8 +2,8 @@
   "id": "mac-studio-m5-max",
   "name": "Mac Studio (M5 Max, 2026)",
   "state": "default",
-  "glbUrl": "assets/devices/models/mac-studio-m5-max.14bbcf7345dd.glb.gz",
-  "sha256": "14bbcf7345dd139318d623866040983f4ed00fa15fa51bd2118b6939bb97ea37",
+  "glbUrl": "assets/devices/models/mac-studio-m5-max.191d5928481d.glb.gz",
+  "sha256": "191d5928481dc319245b8dc4ef8fd2ad8ecc67c3ad6b4aded5022dee4ad7f132",
   "body_mm": {
     "width": 197,
     "height": 95,

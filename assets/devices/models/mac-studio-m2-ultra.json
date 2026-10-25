@@ -2,8 +2,8 @@
   "id": "mac-studio-m2-ultra",
   "name": "Mac Studio (M2 Ultra, 2023)",
   "state": "default",
-  "glbUrl": "assets/devices/models/mac-studio-m2-ultra.48a0dcd0ded7.glb.gz",
-  "sha256": "48a0dcd0ded783f07638132fe6f7a6dc3c1d2a9691bbdb1322873af41cdd832c",
+  "glbUrl": "assets/devices/models/mac-studio-m2-ultra.72eb52dbaadb.glb.gz",
+  "sha256": "72eb52dbaadba8ae6bc10c9cfb915290ece672d0da42da6ac373217b8fc39b2f",
   "body_mm": {
     "width": 197,
     "height": 95,

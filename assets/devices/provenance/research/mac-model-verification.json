@@ -101,13 +101,13 @@
       "flat_front_normal_error": 1.3435885637402833e-07
     },
     "mac-studio-m1-max": {
-      "finite_position_vertices": 117049,
+      "finite_position_vertices": 149211,
       "sockets": 14,
       "apple_mark_parts": 2,
       "apple_mark_aspect": 0.8140366650475631,
       "enclosure_xyz_mm": [
         196.99999690055847,
-        95.00003143448396,
+        95.00003062833119,
         197.0000348972426
       ],
       "envelope_error_mm": 3.489724261385163e-05,
@@ -115,13 +115,13 @@
       "flat_front_normal_error": 1.3435885637402833e-07
     },
     "mac-studio-m1-ultra": {
-      "finite_position_vertices": 117049,
+      "finite_position_vertices": 149211,
       "sockets": 14,
       "apple_mark_parts": 2,
       "apple_mark_aspect": 0.8140366650475631,
       "enclosure_xyz_mm": [
         196.99999690055847,
-        95.00003143448396,
+        95.00003062833119,
         197.0000348972426
       ],
       "envelope_error_mm": 3.489724261385163e-05,
@@ -129,13 +129,13 @@
       "flat_front_normal_error": 1.3435885637402833e-07
     },
     "mac-studio-m2-max": {
-      "finite_position_vertices": 117049,
+      "finite_position_vertices": 149211,
       "sockets": 14,
       "apple_mark_parts": 2,
       "apple_mark_aspect": 0.8140366650475631,
       "enclosure_xyz_mm": [
         196.99999690055847,
-        95.00003143448396,
+        95.00003062833119,
         197.0000348972426
       ],
       "envelope_error_mm": 3.489724261385163e-05,
@@ -143,13 +143,13 @@
       "flat_front_normal_error": 1.3435885637402833e-07
     },
     "mac-studio-m2-ultra": {
-      "finite_position_vertices": 117049,
+      "finite_position_vertices": 149211,
       "sockets": 14,
       "apple_mark_parts": 2,
       "apple_mark_aspect": 0.8140366650475631,
       "enclosure_xyz_mm": [
         196.99999690055847,
-        95.00003143448396,
+        95.00003062833119,
         197.0000348972426
       ],
       "envelope_error_mm": 3.489724261385163e-05,
@@ -157,13 +157,13 @@
       "flat_front_normal_error": 1.3435885637402833e-07
     },
     "mac-studio-m3-ultra": {
-      "finite_position_vertices": 117049,
+      "finite_position_vertices": 149211,
       "sockets": 14,
       "apple_mark_parts": 2,
       "apple_mark_aspect": 0.8140366650475631,
       "enclosure_xyz_mm": [
         196.99999690055847,
-        95.00003143448396,
+        95.00003062833119,
         197.0000348972426
       ],
       "envelope_error_mm": 3.489724261385163e-05,
@@ -171,13 +171,13 @@
       "flat_front_normal_error": 1.3435885637402833e-07
     },
     "mac-studio-m4-max": {
-      "finite_position_vertices": 117049,
+      "finite_position_vertices": 149211,
       "sockets": 14,
       "apple_mark_parts": 2,
       "apple_mark_aspect": 0.8140366650475631,
       "enclosure_xyz_mm": [
         196.99999690055847,
-        95.00003143448396,
+        95.00003062833119,
         197.0000348972426
       ],
       "envelope_error_mm": 3.489724261385163e-05,
@@ -185,13 +185,13 @@
       "flat_front_normal_error": 1.3435885637402833e-07
     },
     "mac-studio-m5-max": {
-      "finite_position_vertices": 117049,
+      "finite_position_vertices": 149211,
       "sockets": 14,
       "apple_mark_parts": 2,
       "apple_mark_aspect": 0.8140366650475631,
       "enclosure_xyz_mm": [
         196.99999690055847,
-        95.00003143448396,
+        95.00003062833119,
         197.0000348972426
       ],
       "envelope_error_mm": 3.489724261385163e-05,
@@ -199,13 +199,13 @@
       "flat_front_normal_error": 1.3435885637402833e-07
     },
     "mac-studio-m5-ultra": {
-      "finite_position_vertices": 117049,
+      "finite_position_vertices": 149211,
       "sockets": 14,
       "apple_mark_parts": 2,
       "apple_mark_aspect": 0.8140366650475631,
       "enclosure_xyz_mm": [
         196.99999690055847,
-        95.00003143448396,
+        95.00003062833119,
         197.0000348972426
       ],
       "envelope_error_mm": 3.489724261385163e-05,

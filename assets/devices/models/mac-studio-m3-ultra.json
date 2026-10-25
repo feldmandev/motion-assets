@@ -2,8 +2,8 @@
   "id": "mac-studio-m3-ultra",
   "name": "Mac Studio (M3 Ultra, 2025)",
   "state": "default",
-  "glbUrl": "assets/devices/models/mac-studio-m3-ultra.d13786cdac8c.glb.gz",
-  "sha256": "d13786cdac8cef272ee9ecc4c9cc486c69e262941b412c97e75be24d19b18c83",
+  "glbUrl": "assets/devices/models/mac-studio-m3-ultra.07326e66ba99.glb.gz",
+  "sha256": "07326e66ba9915d6b132ded316f0a4c4a11727ad84ee113683853ad9697e6a7a",
   "body_mm": {
     "width": 197,
     "height": 95,

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "release": "v0.1.12",
-  "archive": "motion-assets-models-0.1.12.zip",
+  "release": "v0.1.13",
+  "archive": "motion-assets-models-0.1.13.zip",
   "files": {
     "assets/devices/models/galaxy-a34.b343a058b447.glb.gz": {
       "sha256": "b343a058b4471152319e5e2cc1178abdb42ec8336286a8824aab49a33d055777",
@@ -1053,45 +1053,45 @@
       "bytes": 1564176,
       "glbSha256": "5f7ba7476d34fafacff2ed748b20a289d41bef1a03345ca54398c34012f55d39"
     },
-    "assets/devices/models/mac-studio-m1-max.47ddbd92be35.glb.gz": {
-      "sha256": "47ddbd92be3538feb6f0c589c738a35d9341b25ab2b65886e11b149b487f1add",
-      "bytes": 1125677,
-      "glbSha256": "0746706248722af8955a034c6b8ae6080076c0f7a5fce910821e95d779599360"
+    "assets/devices/models/mac-studio-m1-max.ecc3bc8dbc1a.glb.gz": {
+      "sha256": "ecc3bc8dbc1a7520ed64af610e8a9cee6f303e9d86db8e8308307556a9bbddfd",
+      "bytes": 1559927,
+      "glbSha256": "a3f39f539192c4e43f9f0baa516a17802d57a8a0f67f7a3cd61ba30b03d948bf"
     },
-    "assets/devices/models/mac-studio-m1-ultra.950ba57cf56b.glb.gz": {
-      "sha256": "950ba57cf56bb9e204bf72f652e0d38f54dffd8e84c6ee986441b55c3bd2403a",
-      "bytes": 1125688,
-      "glbSha256": "d2e610301c125065e4344b86593f7586f2ec95961d12152531bc2f2fa8481f1c"
+    "assets/devices/models/mac-studio-m1-ultra.515d56bb6215.glb.gz": {
+      "sha256": "515d56bb62150a00b983e05b0bc2730ac4605a3bcf48bfe4474ba1ff48412ea6",
+      "bytes": 1559947,
+      "glbSha256": "cbe14c112fdee91dcfd4eab349f66d5ad00722fa2b2666cd803f3ab4a5694f54"
     },
-    "assets/devices/models/mac-studio-m2-max.9b745fcd79b1.glb.gz": {
-      "sha256": "9b745fcd79b1c02a4622fff695946848d21dde3193ac0f28fa8d9de04dc7c3ed",
-      "bytes": 1125650,
-      "glbSha256": "b710c4112f157cf416bf9ad183c05bf4718199f817165d51876ac18bf93f5d66"
+    "assets/devices/models/mac-studio-m2-max.5ffb188700bd.glb.gz": {
+      "sha256": "5ffb188700bd35f6440e4538019ecbbee197284a66d83f69a54af007b9d226d8",
+      "bytes": 1559930,
+      "glbSha256": "229e9547a86cf03670e1e0ace8ee66804e8b45e3567650128516fee14f876a72"
     },
-    "assets/devices/models/mac-studio-m2-ultra.48a0dcd0ded7.glb.gz": {
-      "sha256": "48a0dcd0ded783f07638132fe6f7a6dc3c1d2a9691bbdb1322873af41cdd832c",
-      "bytes": 1125672,
-      "glbSha256": "9686429857ac6849e0d9684fc530fa3de4f24a550264185256fe343ad0ff4962"
+    "assets/devices/models/mac-studio-m2-ultra.72eb52dbaadb.glb.gz": {
+      "sha256": "72eb52dbaadba8ae6bc10c9cfb915290ece672d0da42da6ac373217b8fc39b2f",
+      "bytes": 1559931,
+      "glbSha256": "2b795f307276c60fd6b21b756d5705a8dbf303fa2f7cf6f0ade186b163a00dd3"
     },
-    "assets/devices/models/mac-studio-m4-max.0bdabeeab7ea.glb.gz": {
-      "sha256": "0bdabeeab7eab6a4faeec933c079245de991d543746f79cca43f4815a90528ac",
-      "bytes": 1125683,
-      "glbSha256": "d03c65de32d0f9d659d26f14437471dfa8d75280ccd67f0bbe8c48c1eb671018"
+    "assets/devices/models/mac-studio-m4-max.50ef836acd4f.glb.gz": {
+      "sha256": "50ef836acd4f788c38c11c86fdc6cbada151c253123f66f249f85873273fe30b",
+      "bytes": 1559948,
+      "glbSha256": "7d7ffd14588197cf4d993f462d1da25d6a0dc4563f26dde0ceb26890f1296e5d"
     },
-    "assets/devices/models/mac-studio-m3-ultra.d13786cdac8c.glb.gz": {
-      "sha256": "d13786cdac8cef272ee9ecc4c9cc486c69e262941b412c97e75be24d19b18c83",
-      "bytes": 1125678,
-      "glbSha256": "fb30ec39076d78b05652d1586770dc5861ffb871094c52c9d890d538339b44c4"
+    "assets/devices/models/mac-studio-m3-ultra.07326e66ba99.glb.gz": {
+      "sha256": "07326e66ba9915d6b132ded316f0a4c4a11727ad84ee113683853ad9697e6a7a",
+      "bytes": 1559947,
+      "glbSha256": "1208e12b2df77dd53fff6c9696e4bc23fc55cff3c2a434644a755b95d19ab2e7"
     },
-    "assets/devices/models/mac-studio-m5-max.14bbcf7345dd.glb.gz": {
-      "sha256": "14bbcf7345dd139318d623866040983f4ed00fa15fa51bd2118b6939bb97ea37",
-      "bytes": 1125685,
-      "glbSha256": "0e35ffea35f733af2e8588f644e0278d303c2f372b6b3bfac4004527017c9857"
+    "assets/devices/models/mac-studio-m5-max.191d5928481d.glb.gz": {
+      "sha256": "191d5928481dc319245b8dc4ef8fd2ad8ecc67c3ad6b4aded5022dee4ad7f132",
+      "bytes": 1559943,
+      "glbSha256": "6e8bbf829cdb136017233d8f8146005fb5d5441dab61a4337c12aab73332d561"
     },
-    "assets/devices/models/mac-studio-m5-ultra.de2f3ea47d5a.glb.gz": {
-      "sha256": "de2f3ea47d5a1bbb349b8befbac74b9d29efe2925b3ef02aa29850088602441f",
-      "bytes": 1125665,
-      "glbSha256": "89a2e707340628584fe9ce10d460d27be48e4b6bdc354ef3fec42871485e9624"
+    "assets/devices/models/mac-studio-m5-ultra.3492c8fe9034.glb.gz": {
+      "sha256": "3492c8fe90347b5577093646d588b417bb5f725b9c927de66ea698cf8881e1b1",
+      "bytes": 1559943,
+      "glbSha256": "29934aae1f89e5ea6ec498fb6b983ae84e669a8a1a6c72bd80f3ae86f75f45a8"
     },
     "assets/devices/models/macbook-air-13-m1.96c21ab22090.glb.gz": {
       "sha256": "96c21ab22090f772ac659dd9d611b90351ae6937915140b465030122ef1eb7f3",

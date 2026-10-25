@@ -52,7 +52,7 @@ def svg(device, chassis, color, monochrome=False):
     if device['kind'] == 'pc':
         dims = device['dimensions_mm']
         height = max(15, min(42, 84 * dims['height']/dims['width']))
-        front_only = device['family']=='mac-mini'
+        front_only = device['family'] in ('mac-mini', 'mac-studio')
         y = (54 if front_only else 58)-height/2
         shell = rect(12,y,84,height,1.5) if front_only else f'M12,{y-15}Q12,{y-22} 19,{y-22}H89Q96,{y-22} 96,{y-15}V{y+height-4}Q96,{y+height+2} 90,{y+height+2}H18Q12,{y+height+2} 12,{y+height-4}Z'
         parts.append(path(shell, 'url(#metal)'))
@@ -90,7 +90,11 @@ def svg(device, chassis, color, monochrome=False):
             for x in range(23, 87, 3):
                 bottom_x = 54+(x-54)*.88
                 fin = f'M{x},{y+height+1}H{x+.55}L{bottom_x+.55},{y+height+3.5}H{bottom_x}Z' if front_only else rect(x,y+height+1.3,.7,1.8,.3)
-                parts.append(path(fin, '#596168'))
+                if device['family']=='mac-studio':
+                    for row in range(2):
+                        parts.append(path(rect(x, y+height+1.0+row*1.4, .8, .6, .3), '#70777c'))
+                else:
+                    parts.append(path(fin, '#596168'))
     else:
         profile = json.loads((MODELS/'profiles'/f'{device["id"]}.json').read_text())
         lid = next(panel['body_mm'] for panel in profile['panels'] if panel['name']=='Lid')

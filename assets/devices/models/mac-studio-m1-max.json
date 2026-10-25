@@ -2,8 +2,8 @@
   "id": "mac-studio-m1-max",
   "name": "Mac Studio (M1 Max, 2022)",
   "state": "default",
-  "glbUrl": "assets/devices/models/mac-studio-m1-max.47ddbd92be35.glb.gz",
-  "sha256": "47ddbd92be3538feb6f0c589c738a35d9341b25ab2b65886e11b149b487f1add",
+  "glbUrl": "assets/devices/models/mac-studio-m1-max.ecc3bc8dbc1a.glb.gz",
+  "sha256": "ecc3bc8dbc1a7520ed64af610e8a9cee6f303e9d86db8e8308307556a9bbddfd",
   "body_mm": {
     "width": 197,
     "height": 95,

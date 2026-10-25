@@ -2,8 +2,8 @@
   "id": "mac-studio-m5-ultra",
   "name": "Mac Studio (M5 Ultra, 2026)",
   "state": "default",
-  "glbUrl": "assets/devices/models/mac-studio-m5-ultra.de2f3ea47d5a.glb.gz",
-  "sha256": "de2f3ea47d5a1bbb349b8befbac74b9d29efe2925b3ef02aa29850088602441f",
+  "glbUrl": "assets/devices/models/mac-studio-m5-ultra.3492c8fe9034.glb.gz",
+  "sha256": "3492c8fe90347b5577093646d588b417bb5f725b9c927de66ea698cf8881e1b1",
   "body_mm": {
     "width": 197,
     "height": 95,

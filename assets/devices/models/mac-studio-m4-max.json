@@ -2,8 +2,8 @@
   "id": "mac-studio-m4-max",
   "name": "Mac Studio (M4 Max, 2025)",
   "state": "default",
-  "glbUrl": "assets/devices/models/mac-studio-m4-max.0bdabeeab7ea.glb.gz",
-  "sha256": "0bdabeeab7eab6a4faeec933c079245de991d543746f79cca43f4815a90528ac",
+  "glbUrl": "assets/devices/models/mac-studio-m4-max.50ef836acd4f.glb.gz",
+  "sha256": "50ef836acd4f788c38c11c86fdc6cbada151c253123f66f249f85873273fe30b",
   "body_mm": {
     "width": 197,
     "height": 95,

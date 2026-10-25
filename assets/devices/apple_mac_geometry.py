@@ -112,6 +112,32 @@ def _desktop(profile, root, mats):
             fin = _slab_xz('Intake fin', 1.0, 8.0, 4.0, .25,
                            (54*math.sin(angle), -h/2+base_h/2, 54*math.cos(angle)), base_polymer, root, .15)
             fin.rotation_euler[1] = angle
+    elif studio:
+        _cylinder('Mac Studio circular bottom foot', 85, base_h,
+                  (0, -h/2+base_h/2, 0), base_polymer, root)
+        # Perforated, tapered intake around the circular foot; dimensions are estimated.
+        vertices, faces = [], []
+        for row in range(6):
+            for col in range(360):
+                start = len(vertices)
+                for inner in (False, True):
+                    for i in range(8):
+                        angle = i*math.pi/4
+                        co, si = math.cos(angle), math.sin(angle)
+                        dx, dy = ((.32*co, .32*si) if inner else
+                                  (.5*co/max(abs(co),abs(si)), .5*si/max(abs(co),abs(si))))
+                        t = (col+.5+dx+(row%2)*.5)*2*math.pi/360
+                        v = (row+.5+dy)/6
+                        radius = 88+6*v
+                        vertices.append((radius*math.sin(t)*MM, (-h/2+1+6*v)*MM,
+                                         radius*math.cos(t)*MM))
+                faces.extend((start+i,start+(i+1)%8,start+8+(i+1)%8,start+8+i) for i in range(8))
+        mesh = bpy.data.meshes.new('Mac Studio perforated bottom intake')
+        mesh.from_pydata(vertices, [], faces)
+        mesh.materials.append(base_polymer)
+        intake = bpy.data.objects.new(mesh.name, mesh)
+        bpy.context.scene.collection.objects.link(intake)
+        intake.parent = root
     else:
         _slab_xz('Mac rubber bottom foot', w-14, d-14, base_h, 28,
                  (0, -h/2+base_h/2, 0), mats['black'], root, .5)

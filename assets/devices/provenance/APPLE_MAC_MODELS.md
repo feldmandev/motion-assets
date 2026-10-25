@@ -6,8 +6,8 @@ The source catalogue contains 50 entries across 12 physical chassis designs, che
 against Apple's model identification and technical specification pages on 2026-10-25.
 
 Canonical artwork: apple/pcs and apple/laptops. Each official finish has an SVG and
-PNG, plus a tintable monochrome version. Mac mini icons show only the front;
-Mac Studio icons show the top and front. MacBook icons show an open display and a
+PNG, plus a tintable monochrome version. Mac mini and Mac Studio icons show only
+the front. MacBook icons show an open display and a
 keyboard projected into the deck's perspective. Logos appear on the actual visible
 branded surface, rather than being added to the front of a MacBook display.
 

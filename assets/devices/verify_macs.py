@@ -76,8 +76,11 @@ def verify(path):
     if spec['kind']=='pc':
         enclosure=points(named['Mac aluminum enclosure'])
         foot_name='Mac mini recessed circular foot' if dims['width']<150 else 'Mac rubber bottom foot'
+        if spec['family']=='mac-studio':foot_name='Mac Studio circular bottom foot'
         foot=points(named[foot_name])
         total=np.r_[enclosure,foot]
+        if spec['family']=='mac-studio':
+            total=np.r_[total,points(named['Mac Studio perforated bottom intake'])]
         actual=np.ptp(total,axis=0)
         expected=np.array([dims['width'],dims['height'],dims['depth']])
         error=float(np.max(np.abs(actual-expected)))
