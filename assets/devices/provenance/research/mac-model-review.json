@@ -1,0 +1,404 @@
+{
+  "as_of": "2026-10-25",
+  "scope": "Apple silicon Mac mini, Mac Studio, MacBook Air/Pro and later MacBook Neo; distinct chip/size families retain their published identity even when physical geometry is shared.",
+  "families": 50,
+  "family_counts": {
+    "mac-mini": 7,
+    "mac-studio": 8,
+    "macbook-air": 9,
+    "macbook-pro": 25,
+    "macbook-neo": 1
+  },
+  "physical_chassis_count": 12,
+  "representative_renders": {
+    "mac-mini-2020": {
+      "profile": "mac-mini-m1",
+      "front": "exports/mac-mini-m1/front.png",
+      "front_angle": "exports/mac-mini-m1/front-angle.png",
+      "rear": "exports/mac-mini-m1/rear.png"
+    },
+    "mac-mini-2023": {
+      "profile": "mac-mini-m2",
+      "front": "exports/mac-mini-m2/front.png",
+      "front_angle": "exports/mac-mini-m2/front-angle.png",
+      "rear": "exports/mac-mini-m2/rear.png"
+    },
+    "mac-mini-2024": {
+      "profile": "mac-mini-m4",
+      "front": "exports/mac-mini-m4/front.png",
+      "front_angle": "exports/mac-mini-m4/front-angle.png",
+      "rear": "exports/mac-mini-m4/rear.png"
+    },
+    "mac-studio-2022": {
+      "profile": "mac-studio-m1-max",
+      "front": "exports/mac-studio-m1-max/front.png",
+      "front_angle": "exports/mac-studio-m1-max/front-angle.png",
+      "rear": "exports/mac-studio-m1-max/rear.png"
+    },
+    "macbook-air-13-wedge": {
+      "profile": "macbook-air-13-m1",
+      "front": "exports/macbook-air-13-m1/front.png",
+      "front_angle": "exports/macbook-air-13-m1/front-angle.png",
+      "rear": "exports/macbook-air-13-m1/rear.png",
+      "closed": "exports/macbook-air-13-m1/closed.png"
+    },
+    "macbook-air-13-flat": {
+      "profile": "macbook-air-13-m2",
+      "front": "exports/macbook-air-13-m2/front.png",
+      "front_angle": "exports/macbook-air-13-m2/front-angle.png",
+      "rear": "exports/macbook-air-13-m2/rear.png",
+      "closed": "exports/macbook-air-13-m2/closed.png"
+    },
+    "macbook-air-15-flat": {
+      "profile": "macbook-air-15-m2",
+      "front": "exports/macbook-air-15-m2/front.png",
+      "front_angle": "exports/macbook-air-15-m2/front-angle.png",
+      "rear": "exports/macbook-air-15-m2/rear.png",
+      "closed": "exports/macbook-air-15-m2/closed.png"
+    },
+    "macbook-pro-13-touchbar": {
+      "profile": "macbook-pro-13-m1",
+      "front": "exports/macbook-pro-13-m1/front.png",
+      "front_angle": "exports/macbook-pro-13-m1/front-angle.png",
+      "rear": "exports/macbook-pro-13-m1/rear.png",
+      "closed": "exports/macbook-pro-13-m1/closed.png"
+    },
+    "macbook-pro-14-notch": {
+      "profile": "macbook-pro-14-m1-pro",
+      "front": "exports/macbook-pro-14-m1-pro/front.png",
+      "front_angle": "exports/macbook-pro-14-m1-pro/front-angle.png",
+      "rear": "exports/macbook-pro-14-m1-pro/rear.png",
+      "closed": "exports/macbook-pro-14-m1-pro/closed.png"
+    },
+    "macbook-pro-16-notch": {
+      "profile": "macbook-pro-16-m1-pro",
+      "front": "exports/macbook-pro-16-m1-pro/front.png",
+      "front_angle": "exports/macbook-pro-16-m1-pro/front-angle.png",
+      "rear": "exports/macbook-pro-16-m1-pro/rear.png",
+      "closed": "exports/macbook-pro-16-m1-pro/closed.png"
+    },
+    "macbook-pro-14-m3-base": {
+      "profile": "macbook-pro-14-m3",
+      "front": "exports/macbook-pro-14-m3/front.png",
+      "front_angle": "exports/macbook-pro-14-m3/front-angle.png",
+      "rear": "exports/macbook-pro-14-m3/rear.png",
+      "closed": "exports/macbook-pro-14-m3/closed.png"
+    },
+    "macbook-neo-13": {
+      "profile": "macbook-neo-a18-pro",
+      "front": "exports/macbook-neo-a18-pro/front.png",
+      "front_angle": "exports/macbook-neo-a18-pro/front-angle.png",
+      "rear": "exports/macbook-neo-a18-pro/rear.png",
+      "closed": "exports/macbook-neo-a18-pro/closed.png"
+    }
+  },
+  "contact_sheet": "mac-model-review-contact.jpg",
+  "front_corrections": [
+    "Lid height is independently photo-fitted rather than equated to the published keyboard-base depth.",
+    "Hinge Z datum shifts by the lid/base depth difference, keeping the closed front edges aligned.",
+    "OLED size preserves native pixel-density-derived extent and aspect.",
+    "Only upper OLED corners are rounded on modern notched MacBooks and Neo; lower corners remain square.",
+    "Notch widths fit primary front artwork; high-density 4096-point sampling limits exported contour error.",
+    "Screen frame uses lid-local center coordinates; opening stays within lid bounds.",
+    "Legacy Air and 13-inch Pro have approximate sans-serif, finish-tinted bottom-bezel wordmarks; modern notched models omit them.",
+    "Hinge shroud is recessed to avoid the closed lid; absorbing aperture barrels and machined planar socket faces avoid broad false reflections."
+  ],
+  "desktop_corrections": [
+    "Top Apple mark preserves the source contour aspect.",
+    "Physical recessed socket openings retain separate dark backs and connector tongues.",
+    "Studio exhaust is a perforated aluminum sheet rather than generic vertical ribs.",
+    "Legacy mini rear vent ribs use black material; compact mini has a recessed foot, radial intake and bottom power button."
+  ],
+  "camera_residuals": {
+    "macbook-air-13-m1": {
+      "source_centroid_px": [
+        470.46,
+        20.56
+      ],
+      "photo_estimated_above_oled_mm": 5.12,
+      "model_above_oled_mm": 4.2,
+      "residual_mm": 0.92
+    },
+    "macbook-pro-13-m1": {
+      "source_centroid_px": [
+        376.59,
+        15.33
+      ],
+      "photo_estimated_above_oled_mm": 6.0,
+      "model_above_oled_mm": 4.2,
+      "residual_mm": 1.8,
+      "confidence": "lower: projective front render and constrained lid envelope"
+    },
+    "macbook-neo-a18-pro": {
+      "source_centroid_px": [
+        499.49,
+        264.84
+      ],
+      "photo_estimated_above_oled_mm": 4.35,
+      "model_above_oled_mm": 4.2,
+      "residual_mm": 0.15
+    }
+  },
+  "limitations": [
+    "Published dimensions, native resolutions, port inventory and finish names are primary-source-backed.",
+    "Lid heights and bezel/notch contours are photo fits with roughly0.5?1.5mm projection/sampling uncertainty; Pro13 retains published closed depth because unconstrained homography exceeded that envelope.",
+    "Exact engineering fillets, ports/vent internals, keyboard/trackpad mechanisms, optical prescriptions and finish roughness remain illustrative.",
+    "Camera positions retain small explicit photo-fit residuals, including the lower-confidence13-inchPro estimate; this review does not claim camera CAD accuracy.",
+    "Only the photo-confirmed right Neo speaker slit is modeled; the uncertain left counterpart was not invented.",
+    "Downloaded Apple reference photos remain local references; source manifests contain their URLs."
+  ],
+  "verification_report": "mac-model-verification.json",
+  "front_calibration": "mac-model-front-calibration.json",
+  "artifact_inventory": {
+    "mac-mini-m1": {
+      "glb": true,
+      "metadata": true,
+      "front_render": true
+    },
+    "mac-mini-m2": {
+      "glb": true,
+      "metadata": true,
+      "front_render": true
+    },
+    "mac-mini-m2-pro": {
+      "glb": true,
+      "metadata": true,
+      "front_render": true
+    },
+    "mac-mini-m4": {
+      "glb": true,
+      "metadata": true,
+      "front_render": true
+    },
+    "mac-mini-m4-pro": {
+      "glb": true,
+      "metadata": true,
+      "front_render": true
+    },
+    "mac-mini-m6": {
+      "glb": true,
+      "metadata": true,
+      "front_render": true
+    },
+    "mac-mini-m5-pro": {
+      "glb": true,
+      "metadata": true,
+      "front_render": true
+    },
+    "mac-studio-m1-max": {
+      "glb": true,
+      "metadata": true,
+      "front_render": true
+    },
+    "mac-studio-m1-ultra": {
+      "glb": true,
+      "metadata": true,
+      "front_render": true
+    },
+    "mac-studio-m2-max": {
+      "glb": true,
+      "metadata": true,
+      "front_render": true
+    },
+    "mac-studio-m2-ultra": {
+      "glb": true,
+      "metadata": true,
+      "front_render": true
+    },
+    "mac-studio-m4-max": {
+      "glb": true,
+      "metadata": true,
+      "front_render": true
+    },
+    "mac-studio-m3-ultra": {
+      "glb": true,
+      "metadata": true,
+      "front_render": true
+    },
+    "mac-studio-m5-max": {
+      "glb": true,
+      "metadata": true,
+      "front_render": true
+    },
+    "mac-studio-m5-ultra": {
+      "glb": true,
+      "metadata": true,
+      "front_render": true
+    },
+    "macbook-air-13-m1": {
+      "glb": true,
+      "metadata": true,
+      "front_render": true
+    },
+    "macbook-air-13-m2": {
+      "glb": true,
+      "metadata": true,
+      "front_render": true
+    },
+    "macbook-air-15-m2": {
+      "glb": true,
+      "metadata": true,
+      "front_render": true
+    },
+    "macbook-air-13-m3": {
+      "glb": true,
+      "metadata": true,
+      "front_render": true
+    },
+    "macbook-air-15-m3": {
+      "glb": true,
+      "metadata": true,
+      "front_render": true
+    },
+    "macbook-air-13-m4": {
+      "glb": true,
+      "metadata": true,
+      "front_render": true
+    },
+    "macbook-air-15-m4": {
+      "glb": true,
+      "metadata": true,
+      "front_render": true
+    },
+    "macbook-air-13-m5": {
+      "glb": true,
+      "metadata": true,
+      "front_render": true
+    },
+    "macbook-air-15-m5": {
+      "glb": true,
+      "metadata": true,
+      "front_render": true
+    },
+    "macbook-pro-13-m1": {
+      "glb": true,
+      "metadata": true,
+      "front_render": true
+    },
+    "macbook-pro-13-m2": {
+      "glb": true,
+      "metadata": true,
+      "front_render": true
+    },
+    "macbook-pro-14-m1-pro": {
+      "glb": true,
+      "metadata": true,
+      "front_render": true
+    },
+    "macbook-pro-14-m1-max": {
+      "glb": true,
+      "metadata": true,
+      "front_render": true
+    },
+    "macbook-pro-16-m1-pro": {
+      "glb": true,
+      "metadata": true,
+      "front_render": true
+    },
+    "macbook-pro-16-m1-max": {
+      "glb": true,
+      "metadata": true,
+      "front_render": true
+    },
+    "macbook-pro-14-m2-pro": {
+      "glb": true,
+      "metadata": true,
+      "front_render": true
+    },
+    "macbook-pro-14-m2-max": {
+      "glb": true,
+      "metadata": true,
+      "front_render": true
+    },
+    "macbook-pro-16-m2-pro": {
+      "glb": true,
+      "metadata": true,
+      "front_render": true
+    },
+    "macbook-pro-16-m2-max": {
+      "glb": true,
+      "metadata": true,
+      "front_render": true
+    },
+    "macbook-pro-14-m3-pro": {
+      "glb": true,
+      "metadata": true,
+      "front_render": true
+    },
+    "macbook-pro-14-m3-max": {
+      "glb": true,
+      "metadata": true,
+      "front_render": true
+    },
+    "macbook-pro-16-m3-pro": {
+      "glb": true,
+      "metadata": true,
+      "front_render": true
+    },
+    "macbook-pro-16-m3-max": {
+      "glb": true,
+      "metadata": true,
+      "front_render": true
+    },
+    "macbook-pro-14-m4-pro": {
+      "glb": true,
+      "metadata": true,
+      "front_render": true
+    },
+    "macbook-pro-14-m4-max": {
+      "glb": true,
+      "metadata": true,
+      "front_render": true
+    },
+    "macbook-pro-16-m4-pro": {
+      "glb": true,
+      "metadata": true,
+      "front_render": true
+    },
+    "macbook-pro-16-m4-max": {
+      "glb": true,
+      "metadata": true,
+      "front_render": true
+    },
+    "macbook-pro-14-m5-pro": {
+      "glb": true,
+      "metadata": true,
+      "front_render": true
+    },
+    "macbook-pro-14-m5-max": {
+      "glb": true,
+      "metadata": true,
+      "front_render": true
+    },
+    "macbook-pro-16-m5-pro": {
+      "glb": true,
+      "metadata": true,
+      "front_render": true
+    },
+    "macbook-pro-16-m5-max": {
+      "glb": true,
+      "metadata": true,
+      "front_render": true
+    },
+    "macbook-pro-14-m3": {
+      "glb": true,
+      "metadata": true,
+      "front_render": true
+    },
+    "macbook-pro-14-m4": {
+      "glb": true,
+      "metadata": true,
+      "front_render": true
+    },
+    "macbook-pro-14-m5": {
+      "glb": true,
+      "metadata": true,
+      "front_render": true
+    },
+    "macbook-neo-a18-pro": {
+      "glb": true,
+      "metadata": true,
+      "front_render": true
+    }
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "mac-mini-m5-pro",
+  "name": "Mac mini (M5 Pro, 2026)",
+  "state": "default",
+  "glbUrl": "assets/devices/models/mac-mini-m5-pro.34ac3bf34418.glb.gz",
+  "sha256": "34ac3bf34418ac8745fd59d0773b2b6e69b9f549c7328a00d41ad778a914aee4",
+  "body_mm": {
+    "width": 127,
+    "height": 50,
+    "depth": 127,
+    "corner_radius": 18,
+    "edge_roll_mm": [
+      1.1,
+      1.1
+    ]
+  },
+  "screens": [],
+  "frames": [],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "trackpad": "trackpad",
+    "logo": "logo",
+    "keycap": "keycap",
+    "black": "black",
+    "flash": "flash"
+  },
+  "articulation": null,
+  "panels": [],
+  "icon_morph": {
+    "kind": "pc",
+    "windows": 0
+  },
+  "finishes": [
+    {
+      "name": "Silver",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.78431,
+            0.79216,
+            0.80784
+          ],
+          "metal": 0.8,
+          "rough": 0.33
+        },
+        "rail": {
+          "rgb": [
+            0.78431,
+            0.79216,
+            0.80784
+          ],
+          "metal": 0.8,
+          "rough": 0.28
+        },
+        "trackpad": {
+          "rgb": [
+            0.7529375999999999,
+            0.7604736,
+            0.7755264
+          ],
+          "metal": 0.15,
+          "rough": 0.34
+        },
+        "logo": {
+          "rgb": [
+            0.18823439999999997,
+            0.1901184,
+            0.1938816
+          ],
+          "metal": 0.55,
+          "rough": 0.19
+        },
+        "keycap": {
+          "rgb": [
+            1,
+            1,
+            1
+          ],
+          "rough": 0.42
+        }
+      }
+    }
+  ],
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/mac-mini-m5-pro.json",
+    "accuracy": {
+      "body_dimensions": "Published Apple width, depth and closed height; physical envelope is recorded in apple_mac.dimensions_mm.",
+      "camera_geometry": "Camera aperture, port placement, socket internals and vent depths are illustrative photo estimates.",
+      "screen_geometry": "Native resolution and physical display extent from published pixel density; rounded corners and notch dimensions estimated from product imagery.",
+      "finishes": "Official finish names; approximate sRGB aluminum, glass and finish-toned reflective Apple inlays.",
+      "branding": "Apple vector contour on the centered top desktop face or exterior laptop lid; no Apple mark on the laptop display bezel.",
+      "detail_geometry": "Published port types/count; socket size, curved enclosure sections, keyboard layout, grille, feet and split lid/base thickness estimated."
+    },
+    "sources": [
+      "https://support.apple.com/en-us/128108",
+      "https://support.apple.com/en-us/102852"
+    ]
+  }
+}

@@ -1,0 +1,721 @@
+{
+  "id": "macbook-pro-16-m1-pro",
+  "name": "MacBook Pro 16-inch (M1 Pro, 2021)",
+  "manufacturer": "Apple",
+  "form_factor": "laptop",
+  "body_mm": {
+    "width": 355.7,
+    "height": 240.6,
+    "depth": 4.5,
+    "base_depth_mm": 11.700000000000001,
+    "base_length_mm": 248.1,
+    "closed_depth_mm": 16.8,
+    "corner_radius": 12,
+    "edge_roll_mm": [
+      0.35,
+      0.2
+    ]
+  },
+  "finish": "Silver",
+  "finishes": {
+    "Silver": {
+      "back": {
+        "rgb": [
+          0.78431,
+          0.79216,
+          0.80784
+        ],
+        "metal": 0.8,
+        "rough": 0.33
+      },
+      "rail": {
+        "rgb": [
+          0.78431,
+          0.79216,
+          0.80784
+        ],
+        "metal": 0.8,
+        "rough": 0.28
+      },
+      "trackpad": {
+        "rgb": [
+          0.7529375999999999,
+          0.7604736,
+          0.7755264
+        ],
+        "metal": 0.15,
+        "rough": 0.34
+      },
+      "logo": {
+        "rgb": [
+          0.18823439999999997,
+          0.1901184,
+          0.1938816
+        ],
+        "metal": 0.55,
+        "rough": 0.19
+      },
+      "keycap": {
+        "rgb": [
+          1,
+          1,
+          1
+        ],
+        "rough": 0.42
+      }
+    },
+    "Space Gray": {
+      "back": {
+        "rgb": [
+          0.46667,
+          0.47451,
+          0.50196
+        ],
+        "metal": 0.8,
+        "rough": 0.33
+      },
+      "rail": {
+        "rgb": [
+          0.46667,
+          0.47451,
+          0.50196
+        ],
+        "metal": 0.8,
+        "rough": 0.28
+      },
+      "trackpad": {
+        "rgb": [
+          0.44800319999999993,
+          0.4555296,
+          0.48188159999999997
+        ],
+        "metal": 0.15,
+        "rough": 0.34
+      },
+      "logo": {
+        "rgb": [
+          0.11200079999999998,
+          0.1138824,
+          0.12047039999999999
+        ],
+        "metal": 0.55,
+        "rough": 0.19
+      },
+      "keycap": {
+        "rgb": [
+          1,
+          1,
+          1
+        ],
+        "rough": 0.42
+      }
+    }
+  },
+  "materials": {
+    "back": {
+      "rgb": [
+        0.78431,
+        0.79216,
+        0.80784
+      ],
+      "metal": 0.8,
+      "rough": 0.33
+    },
+    "rail": {
+      "rgb": [
+        0.78431,
+        0.79216,
+        0.80784
+      ],
+      "metal": 0.8,
+      "rough": 0.28
+    },
+    "trackpad": {
+      "rgb": [
+        0.7529375999999999,
+        0.7604736,
+        0.7755264
+      ],
+      "metal": 0.15,
+      "rough": 0.34
+    },
+    "logo": {
+      "rgb": [
+        0.18823439999999997,
+        0.1901184,
+        0.1938816
+      ],
+      "metal": 0.55,
+      "rough": 0.19
+    },
+    "keycap": {
+      "rgb": [
+        1,
+        1,
+        1
+      ],
+      "rough": 0.42
+    },
+    "black": {
+      "rgb": [
+        0.008,
+        0.009,
+        0.012
+      ],
+      "rough": 0.45
+    },
+    "flash": {
+      "rgb": [
+        0.88,
+        0.9,
+        0.87
+      ],
+      "rough": 0.3
+    }
+  },
+  "status": "published specifications; illustrative geometry",
+  "apple_mac": {
+    "dimensions_mm": {
+      "width": 355.7,
+      "depth": 248.1,
+      "height": 16.8
+    },
+    "ports": {
+      "left": [
+        {
+          "type": "magsafe",
+          "u": 0.86,
+          "v": 0.48,
+          "width_mm": 16.5,
+          "height_mm": 3
+        },
+        {
+          "type": "usb_c",
+          "u": 0.78,
+          "v": 0.48,
+          "width_mm": 8.4,
+          "height_mm": 2.7,
+          "protocol": "Thunderbolt 4"
+        },
+        {
+          "type": "usb_c",
+          "u": 0.72,
+          "v": 0.48,
+          "width_mm": 8.4,
+          "height_mm": 2.7,
+          "protocol": "Thunderbolt 4"
+        },
+        {
+          "type": "audio",
+          "u": 0.67,
+          "v": 0.48,
+          "width_mm": 3.5,
+          "height_mm": 3.5
+        }
+      ],
+      "right": [
+        {
+          "type": "sdxc",
+          "u": 0.68,
+          "v": 0.48,
+          "width_mm": 28,
+          "height_mm": 2
+        },
+        {
+          "type": "usb_c",
+          "u": 0.78,
+          "v": 0.48,
+          "width_mm": 8.4,
+          "height_mm": 2.7,
+          "protocol": "Thunderbolt 4"
+        },
+        {
+          "type": "hdmi",
+          "u": 0.86,
+          "v": 0.48,
+          "width_mm": 14,
+          "height_mm": 4.8
+        }
+      ]
+    },
+    "shape": "flat-rounded",
+    "corner_radius_mm": 12,
+    "lid_depth_mm": 4.5,
+    "display": {
+      "resolution": [
+        3456,
+        2234
+      ],
+      "diagonal_in": 16.2,
+      "width_mm": 345.6,
+      "height_mm": 223.4,
+      "notch": true,
+      "physical_size_basis": "native pixel count / published pixels per inch; full rectangular extent before corner/notch clipping",
+      "corner_radius_mm": 5.5,
+      "notch_width_mm": 37.0,
+      "notch_height_mm": 6.5
+    },
+    "keyboard": "black-keyboard-well-full-height-function-row",
+    "speaker_grilles": "beside-keyboard",
+    "top_logo_width_mm": 45,
+    "kind": "laptop",
+    "family": "macbook-pro",
+    "chassis_id": "macbook-pro-16-notch",
+    "touchbar": false,
+    "notch": true,
+    "lid_height_mm": 240.6,
+    "hinge_offset_mm": 7.5,
+    "camera_below_screen_top_mm": 2.0,
+    "screen_center_y_mm": 3.4999999999999947
+  },
+  "sources": [
+    "https://support.apple.com/en-us/111901",
+    "https://support.apple.com/en-us/108052",
+    "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111901_mbp16-gray.png"
+  ],
+  "accuracy": {
+    "body_dimensions": "Published Apple width, depth and closed height; physical envelope is recorded in apple_mac.dimensions_mm.",
+    "camera_geometry": "Camera aperture, port placement, socket internals and vent depths are illustrative photo estimates.",
+    "screen_geometry": "Native resolution and physical display extent from published pixel density; rounded corners and notch dimensions estimated from product imagery.",
+    "finishes": "Official finish names; approximate sRGB aluminum, glass and finish-toned reflective Apple inlays.",
+    "branding": "Apple vector contour on the centered top desktop face or exterior laptop lid; no Apple mark on the laptop display bezel.",
+    "detail_geometry": "Published port types/count; socket size, curved enclosure sections, keyboard layout, grille, feet and split lid/base thickness estimated.",
+    "hinge": "One rigid X-axis clamshell joint; 0.6 mm clearance above base; opens/closes lid without changing screen UVs. Hinge mechanism illustrative.",
+    "front_frame": "Independent lid height, display placement and notch width fitted to primary Apple front artwork; base footprint and native OLED aspect retained. Photo estimates, not CAD."
+  },
+  "panels": [
+    {
+      "name": "Lid",
+      "center_mm": [
+        0,
+        120.89999999999999,
+        5.25
+      ],
+      "body_mm": {
+        "width": 355.7,
+        "height": 240.6,
+        "depth": 4.5,
+        "corner_radius": 12
+      },
+      "buttons": false
+    },
+    {
+      "name": "Base",
+      "center_mm": [
+        0,
+        -5.8500000000000005,
+        124.05
+      ],
+      "body_mm": {
+        "width": 355.7,
+        "height": 11.700000000000001,
+        "depth": 248.1,
+        "corner_radius": 12
+      },
+      "buttons": false
+    }
+  ],
+  "screen": {
+    "object": "Device screen",
+    "node": "Device screen",
+    "panel": "Lid",
+    "resolution": [
+      3456,
+      2234
+    ],
+    "fit_box_mm": [
+      345.6,
+      223.4
+    ],
+    "center_mm": [
+      0,
+      3.4999999999999947,
+      2.39
+    ],
+    "frame_center_mm": [
+      0,
+      3.4999999999999947
+    ],
+    "corner_radius_mm": 5.5,
+    "create_cutouts": false,
+    "cutouts": [],
+    "corner_radii_mm": [
+      0,
+      5.5,
+      5.5,
+      0
+    ],
+    "outline_mm": [
+      [
+        -172.8,
+        -111.7
+      ],
+      [
+        -172.8,
+        -106.2
+      ],
+      [
+        -172.8,
+        0.0
+      ],
+      [
+        -172.8,
+        106.2
+      ],
+      [
+        -172.78822407781234,
+        106.5597172107658
+      ],
+      [
+        -172.75294673755596,
+        106.91789405721029
+      ],
+      [
+        -172.69431904221778,
+        107.27299677108871
+      ],
+      [
+        -172.6125920445899,
+        107.62350474806387
+      ],
+      [
+        -172.5081157122231,
+        107.96791705916739
+      ],
+      [
+        -172.3813374288121,
+        108.304758878008
+      ],
+      [
+        -172.2328000784298,
+        108.6325877962045
+      ],
+      [
+        -172.06313972081443,
+        108.95
+      ],
+      [
+        -171.873082867664,
+        109.25563628160782
+      ],
+      [
+        -171.6634433716018,
+        109.54818785954797
+      ],
+      [
+        -171.4351189411344,
+        109.82640198305039
+      ],
+      [
+        -171.18908729652603,
+        110.08908729652602
+      ],
+      [
+        -170.9264019830504,
+        110.33511894113438
+      ],
+      [
+        -170.648187859548,
+        110.56344337160179
+      ],
+      [
+        -170.35563628160781,
+        110.773082867664
+      ],
+      [
+        -170.05,
+        110.96313972081441
+      ],
+      [
+        -169.7325877962045,
+        111.1328000784298
+      ],
+      [
+        -169.404758878008,
+        111.28133742881208
+      ],
+      [
+        -169.0679170591674,
+        111.40811571222308
+      ],
+      [
+        -168.72350474806387,
+        111.51259204458988
+      ],
+      [
+        -168.3729967710887,
+        111.59431904221778
+      ],
+      [
+        -168.0178940572103,
+        111.65294673755596
+      ],
+      [
+        -167.6597172107658,
+        111.68822407781232
+      ],
+      [
+        -167.3,
+        111.7
+      ],
+      [
+        -18.5,
+        111.7
+      ],
+      [
+        -18.5,
+        106.3
+      ],
+      [
+        -18.49058934751119,
+        106.15642118855794
+      ],
+      [
+        -18.462518408917973,
+        106.01529905038723
+      ],
+      [
+        -18.416267485762415,
+        105.8790482243984
+      ],
+      [
+        -18.352627944162883,
+        105.75
+      ],
+      [
+        -18.272688674320356,
+        105.63036242809041
+      ],
+      [
+        -18.1778174593052,
+        105.5221825406948
+      ],
+      [
+        -18.069637571909592,
+        105.42731132567964
+      ],
+      [
+        -17.95,
+        105.34737205583711
+      ],
+      [
+        -17.820951775601596,
+        105.28373251423758
+      ],
+      [
+        -17.684700949612772,
+        105.23748159108202
+      ],
+      [
+        -17.543578811442057,
+        105.2094106524888
+      ],
+      [
+        -17.4,
+        105.2
+      ],
+      [
+        17.4,
+        105.2
+      ],
+      [
+        17.543578811442057,
+        105.2094106524888
+      ],
+      [
+        17.684700949612772,
+        105.23748159108202
+      ],
+      [
+        17.820951775601596,
+        105.28373251423758
+      ],
+      [
+        17.95,
+        105.34737205583711
+      ],
+      [
+        18.069637571909592,
+        105.42731132567964
+      ],
+      [
+        18.1778174593052,
+        105.5221825406948
+      ],
+      [
+        18.272688674320356,
+        105.63036242809041
+      ],
+      [
+        18.35262794416288,
+        105.75
+      ],
+      [
+        18.416267485762415,
+        105.8790482243984
+      ],
+      [
+        18.462518408917973,
+        106.01529905038723
+      ],
+      [
+        18.49058934751119,
+        106.15642118855794
+      ],
+      [
+        18.5,
+        106.3
+      ],
+      [
+        18.5,
+        111.7
+      ],
+      [
+        167.3,
+        111.7
+      ],
+      [
+        167.6597172107658,
+        111.68822407781232
+      ],
+      [
+        168.0178940572103,
+        111.65294673755596
+      ],
+      [
+        168.3729967710887,
+        111.59431904221778
+      ],
+      [
+        168.72350474806387,
+        111.51259204458988
+      ],
+      [
+        169.0679170591674,
+        111.40811571222308
+      ],
+      [
+        169.404758878008,
+        111.28133742881208
+      ],
+      [
+        169.7325877962045,
+        111.1328000784298
+      ],
+      [
+        170.05,
+        110.96313972081441
+      ],
+      [
+        170.35563628160781,
+        110.773082867664
+      ],
+      [
+        170.648187859548,
+        110.56344337160179
+      ],
+      [
+        170.9264019830504,
+        110.33511894113438
+      ],
+      [
+        171.18908729652603,
+        110.08908729652602
+      ],
+      [
+        171.4351189411344,
+        109.82640198305037
+      ],
+      [
+        171.6634433716018,
+        109.54818785954797
+      ],
+      [
+        171.873082867664,
+        109.25563628160782
+      ],
+      [
+        172.06313972081443,
+        108.95
+      ],
+      [
+        172.2328000784298,
+        108.6325877962045
+      ],
+      [
+        172.3813374288121,
+        108.304758878008
+      ],
+      [
+        172.5081157122231,
+        107.96791705916739
+      ],
+      [
+        172.6125920445899,
+        107.62350474806387
+      ],
+      [
+        172.69431904221778,
+        107.27299677108871
+      ],
+      [
+        172.75294673755596,
+        106.91789405721029
+      ],
+      [
+        172.78822407781234,
+        106.55971721076578
+      ],
+      [
+        172.8,
+        106.2
+      ],
+      [
+        172.8,
+        0.0
+      ],
+      [
+        172.8,
+        -106.2
+      ],
+      [
+        172.8,
+        -111.7
+      ],
+      [
+        167.3,
+        -111.7
+      ],
+      [
+        -167.3,
+        -111.7
+      ]
+    ],
+    "outline_samples": 4096,
+    "mesh_cutouts": true,
+    "frame_use_outline": true
+  },
+  "articulation": {
+    "animation": "Fold",
+    "axis": "X",
+    "axis_mm": [
+      0,
+      0.6,
+      7.5
+    ],
+    "moving_panel": "Lid",
+    "fixed_panel": "Base",
+    "pivots": {
+      "Lid": "Fold pivot | Lid",
+      "Base": "Fold pivot | Base"
+    },
+    "open_degrees": 0,
+    "closed_degrees": 90,
+    "duration_seconds": 1,
+    "closed_body_mm": {
+      "width": 355.7,
+      "height": 16.8,
+      "depth": 248.1
+    }
+  }
+}

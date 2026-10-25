@@ -1,0 +1,243 @@
+{
+  "id": "mac-mini-m1",
+  "name": "Mac mini (M1, 2020)",
+  "manufacturer": "Apple",
+  "form_factor": "pc",
+  "body_mm": {
+    "width": 197,
+    "height": 36,
+    "depth": 197,
+    "corner_radius": 25,
+    "edge_roll_mm": [
+      1.1,
+      1.1
+    ]
+  },
+  "finish": "Silver",
+  "finishes": {
+    "Silver": {
+      "back": {
+        "rgb": [
+          0.78431,
+          0.79216,
+          0.80784
+        ],
+        "metal": 0.8,
+        "rough": 0.33
+      },
+      "rail": {
+        "rgb": [
+          0.78431,
+          0.79216,
+          0.80784
+        ],
+        "metal": 0.8,
+        "rough": 0.28
+      },
+      "trackpad": {
+        "rgb": [
+          0.7529375999999999,
+          0.7604736,
+          0.7755264
+        ],
+        "metal": 0.15,
+        "rough": 0.34
+      },
+      "logo": {
+        "rgb": [
+          0.18823439999999997,
+          0.1901184,
+          0.1938816
+        ],
+        "metal": 0.55,
+        "rough": 0.19
+      },
+      "keycap": {
+        "rgb": [
+          1,
+          1,
+          1
+        ],
+        "rough": 0.42
+      }
+    }
+  },
+  "materials": {
+    "back": {
+      "rgb": [
+        0.78431,
+        0.79216,
+        0.80784
+      ],
+      "metal": 0.8,
+      "rough": 0.33
+    },
+    "rail": {
+      "rgb": [
+        0.78431,
+        0.79216,
+        0.80784
+      ],
+      "metal": 0.8,
+      "rough": 0.28
+    },
+    "trackpad": {
+      "rgb": [
+        0.7529375999999999,
+        0.7604736,
+        0.7755264
+      ],
+      "metal": 0.15,
+      "rough": 0.34
+    },
+    "logo": {
+      "rgb": [
+        0.18823439999999997,
+        0.1901184,
+        0.1938816
+      ],
+      "metal": 0.55,
+      "rough": 0.19
+    },
+    "keycap": {
+      "rgb": [
+        1,
+        1,
+        1
+      ],
+      "rough": 0.42
+    },
+    "black": {
+      "rgb": [
+        0.008,
+        0.009,
+        0.012
+      ],
+      "rough": 0.45
+    },
+    "flash": {
+      "rgb": [
+        0.88,
+        0.9,
+        0.87
+      ],
+      "rough": 0.3
+    }
+  },
+  "status": "published specifications; illustrative geometry",
+  "apple_mac": {
+    "dimensions_mm": {
+      "width": 197,
+      "depth": 197,
+      "height": 36
+    },
+    "ports": {
+      "front": [
+        {
+          "type": "led",
+          "u": 0.825,
+          "v": 0.6,
+          "width_mm": 1.3,
+          "height_mm": 1.3
+        }
+      ],
+      "rear": [
+        {
+          "type": "power_button",
+          "u": 0.04,
+          "v": 0.42,
+          "width_mm": 7,
+          "height_mm": 7
+        },
+        {
+          "type": "power_inlet",
+          "u": 0.14,
+          "v": 0.42,
+          "width_mm": 17,
+          "height_mm": 8
+        },
+        {
+          "type": "ethernet",
+          "u": 0.24,
+          "v": 0.42,
+          "width_mm": 16,
+          "height_mm": 13.5
+        },
+        {
+          "type": "usb_c",
+          "u": 0.405,
+          "v": 0.42,
+          "width_mm": 8.4,
+          "height_mm": 2.7,
+          "protocol": "Thunderbolt 3"
+        },
+        {
+          "type": "usb_c",
+          "u": 0.485,
+          "v": 0.42,
+          "width_mm": 8.4,
+          "height_mm": 2.7,
+          "protocol": "Thunderbolt 3"
+        },
+        {
+          "type": "hdmi",
+          "u": 0.58,
+          "v": 0.42,
+          "width_mm": 14,
+          "height_mm": 4.8
+        },
+        {
+          "type": "usb_a",
+          "u": 0.765,
+          "v": 0.42,
+          "width_mm": 13,
+          "height_mm": 5
+        },
+        {
+          "type": "usb_a",
+          "u": 0.86,
+          "v": 0.42,
+          "width_mm": 13,
+          "height_mm": 5
+        },
+        {
+          "type": "audio",
+          "u": 0.815,
+          "v": 0.78,
+          "width_mm": 3.5,
+          "height_mm": 3.5
+        }
+      ]
+    },
+    "corner_radius_mm": 25,
+    "base_foot_height_mm": 2.0,
+    "top_logo_width_mm": 45,
+    "shape": "rounded-square",
+    "rear_vent": {
+      "u": 0.52,
+      "v": 0.8,
+      "width_mm": 75,
+      "height_mm": 8,
+      "kind": "horizontal-slotted-recess"
+    },
+    "rear_insert": "black inset panel; horizontal USB-C/USB-A openings above exhaust, headphone below USB-A group",
+    "kind": "pc",
+    "family": "mac-mini",
+    "chassis_id": "mac-mini-2020",
+    "touchbar": false,
+    "notch": false
+  },
+  "sources": [
+    "https://support.apple.com/en-us/111894",
+    "https://support.apple.com/en-us/102852"
+  ],
+  "accuracy": {
+    "body_dimensions": "Published Apple width, depth and closed height; physical envelope is recorded in apple_mac.dimensions_mm.",
+    "camera_geometry": "Camera aperture, port placement, socket internals and vent depths are illustrative photo estimates.",
+    "screen_geometry": "Native resolution and physical display extent from published pixel density; rounded corners and notch dimensions estimated from product imagery.",
+    "finishes": "Official finish names; approximate sRGB aluminum, glass and finish-toned reflective Apple inlays.",
+    "branding": "Apple vector contour on the centered top desktop face or exterior laptop lid; no Apple mark on the laptop display bezel.",
+    "detail_geometry": "Published port types/count; socket size, curved enclosure sections, keyboard layout, grille, feet and split lid/base thickness estimated."
+  },
+  "screens": []
+}

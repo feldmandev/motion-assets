@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": "0.1.11",
+  "version": "0.1.12",
   "repository": "https://github.com/feldmandev/motion-assets",
   "modules": [
     "shapes",
@@ -26,8 +26,8 @@
       "bytes": 42415
     },
     "assets/devices/build.py": {
-      "sha256": "29947d969c4935f9fa633ce221ddc86ea70fc9c9e8ac4ba25ecddbcece13d4fe",
-      "bytes": 47119
+      "sha256": "7b1390d3aec824b994fb163899d8d794c2b6e7d2a0d01bba3bb38bf12600011e",
+      "bytes": 47148
     },
     "assets/devices/build_googlebooks.py": {
       "sha256": "52080bb4c93cb26f74b31495480e31f323738258028d9734548e0458057dccd9",
@@ -46,8 +46,8 @@
       "bytes": 11306
     },
     "assets/devices/catalog.json": {
-      "sha256": "dae5ab84616fcaee49f3aad95ea9db04efcf0a43c31b0177c3997a5105c7247e",
-      "bytes": 6439278
+      "sha256": "88a90fee7aa2912f9f89eff4611d55b5d14038421c33600db9bc425a63171c75",
+      "bytes": 8145218
     },
     "assets/devices/fold_centering.js": {
       "sha256": "4a351ae0107277fefe9d510f44f3cc0902f9e187b2efc07d2713b9237c634758",
@@ -950,8 +950,8 @@
       "bytes": 8398
     },
     "assets/devices/geometry.py": {
-      "sha256": "d42bfd53a5bafbd4c4eb4564d44212407792bd05194887fd92167995c3ee3dcd",
-      "bytes": 73582
+      "sha256": "4f0b97e36fdcda32151cdb52029326fa8daaf4b2a5cfbaf25d43e28413fa6bb0",
+      "bytes": 73729
     },
     "assets/devices/icons/apple/phones/ic_apple_iphone_11_black_icon.svg": {
       "sha256": "327185703fdd20e3bf500fdc45042940639279fce8914243859566c5b71e5e47",
@@ -8402,8 +8402,8 @@
       "bytes": 8007
     },
     "assets/devices/models-manifest.json": {
-      "sha256": "feecb2f1acb9f794bd196621c7738d84ec3cc7f3671dbc03ee3fda04233d8c76",
-      "bytes": 55489
+      "sha256": "14651f239e1b32509998c7aa7613f070cd8c57a99488811fd69431b0da44d5d7",
+      "bytes": 69285
     },
     "assets/devices/nothing_geometry.py": {
       "sha256": "e431193f1c606d9805e66c2072b6daa63a486ee06ce3065a54d39d2717958022",
@@ -16584,6 +16584,2450 @@
     "assets/devices/camera_coatings.js": {
       "sha256": "c01fad526626340d1264bb2bb728f1bc171ac44e99d43fc880660f7bb55c7e99",
       "bytes": 2961
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m1_pro_space_gray_icon.svg": {
+      "sha256": "5e7caf317a998c343beac121333f007470794f46a8089ee100b73d8db62df670",
+      "bytes": 16739
+    },
+    "assets/devices/previews/apple_macbook_air_15_m3_monochrome.png": {
+      "sha256": "c78950faca4803fe5158c084cf935c913e18a3a00c63520c1af1b6f2312169b3",
+      "bytes": 1392
+    },
+    "assets/devices/previews/apple_macbook_pro_14_m3_max_silver.png": {
+      "sha256": "8b5e873aeb54b76536b9cbfcd239c97b053e726f70c13ea4d778c6b49115b87d",
+      "bytes": 7914
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_15_m5_starlight_icon.png": {
+      "sha256": "387980b1c5cd860ed92dde526726d0998cee6963adb3cf1c6429218e76fdcdc7",
+      "bytes": 32065
+    },
+    "assets/devices/previews/apple_mac_mini_m2_silver.png": {
+      "sha256": "f2ccb9f028c984957ecb6065613dbebe5dd6047cea9b088eaaa142a40394c8d9",
+      "bytes": 1769
+    },
+    "assets/devices/frames/macbook-air-13-m2-0.svg": {
+      "sha256": "4f33ad1290003a056a27bfb1121174df859366cf6bc852d1e8b077109822bb54",
+      "bytes": 8367
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_16_m1_pro_monochrome_icon.png": {
+      "sha256": "e6ad5d9f1b5c623435f368c63c9aa17738678310e3a808c3e1c0c6ff6c8ec3ac",
+      "bytes": 3438
+    },
+    "assets/devices/profiles/mac-studio-m2-max.json": {
+      "sha256": "8cb714e1212fc3be1b26f7de58d0c53f702930ecaab540e4eb946bb2316e6617",
+      "bytes": 6593
+    },
+    "assets/devices/previews/apple_macbook_air_13_m5_monochrome.png": {
+      "sha256": "524977bbf1ee6c43c2cd17cf745a248bc6779a65fd4ce429c170256858269cbe",
+      "bytes": 1393
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_15_m3_monochrome_icon.png": {
+      "sha256": "c961e3efca9d1e3023549b617d8cff786c8817450baf7a02c220877720c03e1f",
+      "bytes": 3415
+    },
+    "assets/devices/previews/apple_macbook_air_13_m2_space_gray.png": {
+      "sha256": "380b3ae010ca2f8b5b6390d9fffd142dbb3938ceee6096793f8554a1934d9699",
+      "bytes": 7983
+    },
+    "assets/devices/frames/macbook-air-15-m4-0.svg": {
+      "sha256": "4f11cfc1bf908d6b9c6b7f18bf454395d3202f260c0343feed9f41db87b5f3ce",
+      "bytes": 8456
+    },
+    "assets/devices/previews/apple_mac_mini_m5_pro_monochrome.png": {
+      "sha256": "9d549b9cc5ab6b1c8c440c86160c2ac5e96da65e44d9632deb2ccb7d27b67a0c",
+      "bytes": 931
+    },
+    "assets/devices/models/mac-mini-m2.json": {
+      "sha256": "d0a14d7de5bfd1a439351af880072ccc48594d1ef86ba8dcc2e0787d90dbf53c",
+      "bytes": 2843
+    },
+    "assets/devices/icons/apple/pcs/ic_apple_mac_studio_m2_max_silver_icon.png": {
+      "sha256": "761026f2f3bff535686698cbf4849064ad02ad5ad242dc4e11fb7f46276b15f5",
+      "bytes": 16599
+    },
+    "assets/devices/frames/macbook-pro-13-m2-0.svg": {
+      "sha256": "4265e102c12b125462fcc2d456ad86b517a7626421854afa9a1533cc5a44c71d",
+      "bytes": 5454
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_13_m5_midnight_icon.svg": {
+      "sha256": "444d4cb15a58a1152c09bf7e87944eabe8a5bb8819f5a57ae60e6e672f291105",
+      "bytes": 16682
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_neo_a18_pro_citrus_icon.svg": {
+      "sha256": "05ab0742b9c290df832aa35d31f1d4d48ac197e72ecb6157b58332f9f4d5d44d",
+      "bytes": 16215
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m4_space_black_icon.png": {
+      "sha256": "2ee61022a7a3fe04ffaac1d37fda4518153d48f8e2aff1eaff368695c615562d",
+      "bytes": 34093
+    },
+    "assets/devices/models/macbook-pro-13-m1.json": {
+      "sha256": "8f2d2f4a74ff7de237ea196296077c85e114e7097ebf4705c36895be5b424d37",
+      "bytes": 7379
+    },
+    "assets/devices/previews/apple_macbook_air_15_m3_space_gray.png": {
+      "sha256": "e9ff619a64596e963822ee745915d097020bd591f76a093f89e5e4718bb79c1e",
+      "bytes": 7996
+    },
+    "assets/devices/icons/apple/pcs/ic_apple_mac_studio_m5_ultra_silver_icon.png": {
+      "sha256": "761026f2f3bff535686698cbf4849064ad02ad5ad242dc4e11fb7f46276b15f5",
+      "bytes": 16599
+    },
+    "assets/devices/models/macbook-pro-16-m1-pro.json": {
+      "sha256": "e9059b333a5e8fd35e3a28aebd8cb66fa0bf0cb82d5bb2e9af16338f19e893c8",
+      "bytes": 6825
+    },
+    "assets/devices/profiles/macbook-pro-16-m3-pro.json": {
+      "sha256": "482b3297f1275f2f6239ccdd84ad83024500adf77a6a16665b5b511cdec3dfc8",
+      "bytes": 14583
+    },
+    "assets/devices/previews/apple_mac_studio_m4_max_monochrome.png": {
+      "sha256": "3cef4ea64cee3bbc86cc86f820e226ae1fecb215503e149ec2ec50260bbbf085",
+      "bytes": 1476
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_15_m2_silver_icon.png": {
+      "sha256": "d6d42a19286ef35fdd0db26f65a87342690dabcab04d504a30f4563f2bdb26bd",
+      "bytes": 31420
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_16_m5_max_monochrome_icon.svg": {
+      "sha256": "6b50655e71a24741cc2becca34dd1272ae5d86d6345c1b2ebd1473a0485fc542",
+      "bytes": 2286
+    },
+    "assets/devices/profiles/mac-mini-m4.json": {
+      "sha256": "c2c6b08133bbaaf1410c23115260e7ffcca76785899ef389b6003c2a4008470a",
+      "bytes": 5763
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_16_m1_max_monochrome_icon.svg": {
+      "sha256": "d6277b03f3d1a2becdf7cf4c6e7ec8bc736746316cc68819f5184f567f7e4cb8",
+      "bytes": 2286
+    },
+    "assets/devices/frames/macbook-pro-14-m1-pro-0.svg": {
+      "sha256": "821dec0a0512ba0b523cc571798958783991cfe4c87b45e456103779035d051f",
+      "bytes": 8275
+    },
+    "assets/devices/previews/apple_macbook_air_13_m3_silver.png": {
+      "sha256": "18ac899127d63875c97f1659c64da5c88fbdc5a3b2aba27627cf95c23b271329",
+      "bytes": 7904
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_13_m3_midnight_icon.svg": {
+      "sha256": "acd74d74f64df84cb5414b614b9219bf1d7737c30a3984596962fb5762d254eb",
+      "bytes": 16682
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_13_m1_monochrome_icon.svg": {
+      "sha256": "631a8d7bce4f90a366cda648122ff03813e6f69d8aea85cc11433a0e0db309e0",
+      "bytes": 1816
+    },
+    "assets/devices/models/mac-studio-m5-ultra.json": {
+      "sha256": "88e86a739d0ebcdd02b3f4a76555f41240363d28857fce782d502bc753e06dd1",
+      "bytes": 2873
+    },
+    "assets/devices/apple_mac_geometry.py": {
+      "sha256": "ead98aa66508c2117dead97c541c96f2587e5d00d84643c6cb0f3bcadee8fdd8",
+      "bytes": 17931
+    },
+    "assets/devices/previews/apple_macbook_air_15_m3_starlight.png": {
+      "sha256": "98639bafd83a2e2779e987cf86d45e46da3c3d17aaea13559a1ac0c00239fa92",
+      "bytes": 8083
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_15_m3_midnight_icon.png": {
+      "sha256": "54322f3795ef8f677832a53e2edf58e6c3db638b5f5eff45a05d0c9264e04b28",
+      "bytes": 33692
+    },
+    "assets/devices/frames/macbook-pro-14-m5-0.svg": {
+      "sha256": "821dec0a0512ba0b523cc571798958783991cfe4c87b45e456103779035d051f",
+      "bytes": 8275
+    },
+    "assets/devices/textures/mac-keyboard-neo.png": {
+      "sha256": "e19b2ccaec98b8eedf3594a161855c9a651a86e3d86bd5409c9d8a0b17dcca64",
+      "bytes": 20078
+    },
+    "assets/devices/previews/apple_macbook_air_13_m2_starlight.png": {
+      "sha256": "b2dce4b126bd6abbf66f0d6b1aec7867ed801630452dd8a51885a45273c97c7a",
+      "bytes": 8016
+    },
+    "assets/devices/previews/apple_macbook_pro_16_m5_max_monochrome.png": {
+      "sha256": "140b81efe5c52d84c5f070e8fa8d126f558036e8f598894e6869ee32000ebd97",
+      "bytes": 1415
+    },
+    "assets/devices/icons/apple/pcs/ic_apple_mac_mini_m2_pro_monochrome_icon.png": {
+      "sha256": "ccc56a96d4183a051e33687a712deb5bf6d4f9f6dab0288b418e11ab3f66d795",
+      "bytes": 1966
+    },
+    "assets/devices/icons/apple/pcs/ic_apple_mac_studio_m1_ultra_silver_icon.png": {
+      "sha256": "761026f2f3bff535686698cbf4849064ad02ad5ad242dc4e11fb7f46276b15f5",
+      "bytes": 16599
+    },
+    "assets/devices/previews/apple_macbook_air_13_m3_starlight.png": {
+      "sha256": "b2dce4b126bd6abbf66f0d6b1aec7867ed801630452dd8a51885a45273c97c7a",
+      "bytes": 8016
+    },
+    "assets/devices/profiles/mac-mini-m4-pro.json": {
+      "sha256": "a44cd66bf57755274f803580048c568b00244a4e30a823fddd0850a3743b2c79",
+      "bytes": 5771
+    },
+    "assets/devices/previews/apple_mac_mini_m4_silver.png": {
+      "sha256": "f4acb1c842fed0d59b1bc4fc416dc6863e82b76feed692bd9c6b658418460c06",
+      "bytes": 4971
+    },
+    "assets/devices/previews/apple_mac_studio_m2_ultra_monochrome.png": {
+      "sha256": "3cef4ea64cee3bbc86cc86f820e226ae1fecb215503e149ec2ec50260bbbf085",
+      "bytes": 1476
+    },
+    "assets/devices/icons/apple/pcs/ic_apple_mac_mini_m2_silver_icon.png": {
+      "sha256": "ed049d36efa825189250e038749bd319e0ef56e566264a703f24fc4f2581be6d",
+      "bytes": 6130
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_15_m3_space_gray_icon.png": {
+      "sha256": "203de44a3590f6e3d526473977b7229206b886293d4f9c78d5b2c70c3a7cd88c",
+      "bytes": 32913
+    },
+    "assets/devices/previews/apple_macbook_pro_16_m4_max_monochrome.png": {
+      "sha256": "140b81efe5c52d84c5f070e8fa8d126f558036e8f598894e6869ee32000ebd97",
+      "bytes": 1415
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_16_m3_pro_monochrome_icon.png": {
+      "sha256": "e6ad5d9f1b5c623435f368c63c9aa17738678310e3a808c3e1c0c6ff6c8ec3ac",
+      "bytes": 3438
+    },
+    "assets/devices/previews/apple_macbook_pro_14_m3_pro_monochrome.png": {
+      "sha256": "81268ee65b660345fc72c0245c1ce945eb7d286ec8f3cf9efa543a16b6c531a8",
+      "bytes": 1417
+    },
+    "assets/devices/previews/apple_macbook_pro_14_m5_pro_monochrome.png": {
+      "sha256": "81268ee65b660345fc72c0245c1ce945eb7d286ec8f3cf9efa543a16b6c531a8",
+      "bytes": 1417
+    },
+    "assets/devices/models/macbook-pro-14-m4-pro.json": {
+      "sha256": "9f7331de09d6dff95cb2da75390bf46b3c015a6dff32ac5c8b4b143fe77c08b2",
+      "bytes": 6905
+    },
+    "assets/devices/frames/macbook-pro-14-m3-max-0.svg": {
+      "sha256": "821dec0a0512ba0b523cc571798958783991cfe4c87b45e456103779035d051f",
+      "bytes": 8275
+    },
+    "assets/devices/icons/apple/pcs/ic_apple_mac_mini_m5_pro_silver_icon.png": {
+      "sha256": "560624bb85731e63479354260de875d5cf7be548a98a85757dd73ea4c45ea6a8",
+      "bytes": 12658
+    },
+    "assets/devices/previews/apple_macbook_pro_13_m2_silver.png": {
+      "sha256": "8d369862597fab25bdc0a74c2a1609445525e5e6e5bc166a00b9e7204203c8df",
+      "bytes": 7538
+    },
+    "assets/devices/icons/apple/pcs/ic_apple_mac_studio_m5_max_silver_icon.svg": {
+      "sha256": "55a5aacce82abb29052aa3abf9aa091f1c9a7d278f0bf59e0dba63588f5411eb",
+      "bytes": 11179
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_13_m1_silver_icon.svg": {
+      "sha256": "495fda081cde993aba969db589f65a7cfe6358be68485501167490cf15646cb5",
+      "bytes": 16210
+    },
+    "assets/devices/previews/apple_macbook_air_15_m5_monochrome.png": {
+      "sha256": "c78950faca4803fe5158c084cf935c913e18a3a00c63520c1af1b6f2312169b3",
+      "bytes": 1392
+    },
+    "assets/devices/models/macbook-pro-14-m3-max.json": {
+      "sha256": "c4f1ae1723a4ac186d77929fbb5631e862b4e5dfd273a0f3a44f6de4ac0d5979",
+      "bytes": 6905
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m5_pro_space_black_icon.png": {
+      "sha256": "2ee61022a7a3fe04ffaac1d37fda4518153d48f8e2aff1eaff368695c615562d",
+      "bytes": 34093
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_16_m3_max_monochrome_icon.png": {
+      "sha256": "e6ad5d9f1b5c623435f368c63c9aa17738678310e3a808c3e1c0c6ff6c8ec3ac",
+      "bytes": 3438
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_16_m1_max_monochrome_icon.png": {
+      "sha256": "e6ad5d9f1b5c623435f368c63c9aa17738678310e3a808c3e1c0c6ff6c8ec3ac",
+      "bytes": 3438
+    },
+    "assets/devices/models/mac-studio-m1-max.json": {
+      "sha256": "4c32a34546ccde90373c7de55ffa6cc869a32cf4d2405075694b62b71ae56598",
+      "bytes": 2865
+    },
+    "assets/devices/previews/apple_macbook_neo_a18_pro_citrus.png": {
+      "sha256": "71d07ea2ddbafe04285cd5d5968282af5b61ede43fc02f9a8830f7bdeb6bc6f4",
+      "bytes": 8141
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_13_m2_silver_icon.svg": {
+      "sha256": "b7719099cd118ced98badf81fe58101c03fb70c54c9bd60cf0ee210c281c6947",
+      "bytes": 16428
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m1_pro_monochrome_icon.png": {
+      "sha256": "eff0005e702cbcb9397ab24e2ee5a971469054dd9dd5c9fca80a3ba0b4f95739",
+      "bytes": 3341
+    },
+    "assets/devices/previews/apple_macbook_air_13_m3_space_gray.png": {
+      "sha256": "380b3ae010ca2f8b5b6390d9fffd142dbb3938ceee6096793f8554a1934d9699",
+      "bytes": 7983
+    },
+    "assets/devices/profiles/macbook-neo-a18-pro.json": {
+      "sha256": "5a76f98dcba4cdab1cd26fc7b101f03b941dbdba5923b0f14e399d74c684cfd9",
+      "bytes": 14791
+    },
+    "assets/devices/previews/apple_macbook_air_15_m2_space_gray.png": {
+      "sha256": "e9ff619a64596e963822ee745915d097020bd591f76a093f89e5e4718bb79c1e",
+      "bytes": 7996
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_15_m4_silver_icon.svg": {
+      "sha256": "fd3c306e5763bdea6def08ae5b1c27cd4ee7d85581d5e16e7b57d15e5425fe10",
+      "bytes": 16677
+    },
+    "assets/devices/previews/apple_macbook_air_15_m5_sky_blue.png": {
+      "sha256": "ca940de2f179b786679a67c9dc51443d025e53adeedd00355d3942339b35ae83",
+      "bytes": 7984
+    },
+    "assets/devices/models/macbook-air-13-m1.json": {
+      "sha256": "afe0d45436c9b7ad7c11023937ae7d42dc67968d2e817a87dc0907a733f6b7d2",
+      "bytes": 8545
+    },
+    "assets/devices/previews/apple_macbook_air_13_m1_silver.png": {
+      "sha256": "31bf6c4f5f42c2dbd25e548e889451fa62dee1cb26677dfaa672fd129fa6263d",
+      "bytes": 7615
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_13_m3_space_gray_icon.png": {
+      "sha256": "de8750f222c2374cf467cc01b0bd1740d2d09879d060cb5ab029672366dac3de",
+      "bytes": 33668
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_16_m4_pro_monochrome_icon.svg": {
+      "sha256": "699f36e7f26d16f4433608f27ef009a756d3b93ab758857f008cd583bcbede31",
+      "bytes": 2286
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_16_m2_max_space_gray_icon.svg": {
+      "sha256": "4407b332914b862b60b5933912ec1406a52af583e91984b300d9c59df86696d3",
+      "bytes": 16756
+    },
+    "assets/devices/previews/apple_macbook_pro_16_m2_pro_silver.png": {
+      "sha256": "07066ebd014579e06ea478dc06140358b0a4651079a7251dcb42fa682e711f45",
+      "bytes": 7933
+    },
+    "assets/devices/frames/macbook-pro-16-m2-pro-0.svg": {
+      "sha256": "6238ec07dfe77d77ef63291db39b6dc2e6b0f6d548bdb1ea238128d86fd891e7",
+      "bytes": 8252
+    },
+    "assets/devices/previews/apple_macbook_pro_16_m5_pro_space_black.png": {
+      "sha256": "3616977ee3c970d72038bc4a37ccf9afe88c8988f2dc31cbdad651abfc2c74d4",
+      "bytes": 7898
+    },
+    "assets/devices/icons/apple/pcs/ic_apple_mac_mini_m4_pro_monochrome_icon.svg": {
+      "sha256": "037bb492921bd1d25b05e952f6215a20f3884ee5c2576d6078075e2ae7080a70",
+      "bytes": 1925
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_13_m1_space_gray_icon.svg": {
+      "sha256": "6a0b32733ae44d0ca4d8bd1d365cf81748e01c534b4d5122d6024f2ec9500cdb",
+      "bytes": 16214
+    },
+    "assets/devices/previews/apple_macbook_air_13_m4_midnight.png": {
+      "sha256": "9118bc9a574c94f4b4b3259724403697153faa909db040e5cd775ba7301e10fa",
+      "bytes": 7931
+    },
+    "assets/devices/previews/apple_macbook_air_13_m3_monochrome.png": {
+      "sha256": "524977bbf1ee6c43c2cd17cf745a248bc6779a65fd4ce429c170256858269cbe",
+      "bytes": 1393
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m3_max_space_black_icon.png": {
+      "sha256": "2ee61022a7a3fe04ffaac1d37fda4518153d48f8e2aff1eaff368695c615562d",
+      "bytes": 34093
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_16_m4_pro_monochrome_icon.png": {
+      "sha256": "e6ad5d9f1b5c623435f368c63c9aa17738678310e3a808c3e1c0c6ff6c8ec3ac",
+      "bytes": 3438
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_13_m4_midnight_icon.png": {
+      "sha256": "abf40bb74367a8c0bac55682eaf7708233dd04d284e3f97fdb868328f6de1d4a",
+      "bytes": 34098
+    },
+    "assets/devices/previews/apple_macbook_pro_16_m1_pro_silver.png": {
+      "sha256": "07066ebd014579e06ea478dc06140358b0a4651079a7251dcb42fa682e711f45",
+      "bytes": 7933
+    },
+    "assets/devices/previews/apple_macbook_air_15_m4_sky_blue.png": {
+      "sha256": "ca940de2f179b786679a67c9dc51443d025e53adeedd00355d3942339b35ae83",
+      "bytes": 7984
+    },
+    "assets/devices/previews/apple_macbook_pro_14_m3_space_gray.png": {
+      "sha256": "67855eee5f4ea26b6e6b917208ce923a443f5246891c0aa23383f8160f286e73",
+      "bytes": 8057
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_13_m4_silver_icon.png": {
+      "sha256": "310b387ea3c3b89996a4294d024a9c604b7979a7fd513f667bc14557ef46eaf1",
+      "bytes": 31962
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m5_pro_space_black_icon.svg": {
+      "sha256": "c5a35c917ec26de9c1a393196735d29ed1e07fce3d68af06e7348817379e0671",
+      "bytes": 16740
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_15_m5_starlight_icon.svg": {
+      "sha256": "4153638105ada4632ca115582145aaad34387fb034012099060d79637b77d940",
+      "bytes": 16680
+    },
+    "assets/devices/previews/apple_macbook_air_13_m1_monochrome.png": {
+      "sha256": "35d048873caeb82e66cdf92ec66d9517f46ff80b28ec9885b1cafc8eb99f6601",
+      "bytes": 1384
+    },
+    "assets/devices/icons/apple/pcs/ic_apple_mac_mini_m2_monochrome_icon.svg": {
+      "sha256": "8f1649fe3481f329e995ea02416fc921c2f962eeb86099c81c4d5b24d046d020",
+      "bytes": 1225
+    },
+    "assets/devices/previews/apple_macbook_air_13_m4_starlight.png": {
+      "sha256": "b2dce4b126bd6abbf66f0d6b1aec7867ed801630452dd8a51885a45273c97c7a",
+      "bytes": 8016
+    },
+    "assets/devices/previews/apple_macbook_pro_14_m1_max_monochrome.png": {
+      "sha256": "81268ee65b660345fc72c0245c1ce945eb7d286ec8f3cf9efa543a16b6c531a8",
+      "bytes": 1417
+    },
+    "assets/devices/previews/apple_macbook_air_13_m2_silver.png": {
+      "sha256": "18ac899127d63875c97f1659c64da5c88fbdc5a3b2aba27627cf95c23b271329",
+      "bytes": 7904
+    },
+    "assets/devices/previews/apple_mac_studio_m4_max_silver.png": {
+      "sha256": "cc6a0a03c56be59a20f03682892add19e436e08e59d5118b23fd6aceba0adb24",
+      "bytes": 6114
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_16_m3_pro_space_black_icon.png": {
+      "sha256": "de335654ba224c2a797788f34e34ff76bc8f20a373775aaae7c06920d479039d",
+      "bytes": 32921
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_13_m3_silver_icon.png": {
+      "sha256": "310b387ea3c3b89996a4294d024a9c604b7979a7fd513f667bc14557ef46eaf1",
+      "bytes": 31962
+    },
+    "assets/devices/profiles/mac-studio-m1-ultra.json": {
+      "sha256": "751cc6b31a7a1a5ca60a77b319e66b1d9ec1121e01053b53ef1a0a257d5e2bf4",
+      "bytes": 6613
+    },
+    "assets/devices/previews/apple_macbook_air_13_m2_midnight.png": {
+      "sha256": "9118bc9a574c94f4b4b3259724403697153faa909db040e5cd775ba7301e10fa",
+      "bytes": 7931
+    },
+    "assets/devices/models/mac-studio-m5-max.json": {
+      "sha256": "57bf1dd0e4cafeb03a27cc8393e08fc2fc71d0a3e94c602bdb2f23076762fee4",
+      "bytes": 2865
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_16_m4_pro_silver_icon.png": {
+      "sha256": "36dc2015caa4df6b54cddf7c1a53dfcc5b34a9981e5aa65ea7058fb34bcd58cd",
+      "bytes": 31199
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_13_m2_starlight_icon.png": {
+      "sha256": "46aa2576698f6890d5bb3357ee26d1f3db1e454f7c74eadc975374c25ddbb125",
+      "bytes": 32601
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_13_m5_midnight_icon.png": {
+      "sha256": "abf40bb74367a8c0bac55682eaf7708233dd04d284e3f97fdb868328f6de1d4a",
+      "bytes": 34098
+    },
+    "assets/devices/frames/macbook-pro-16-m1-max-0.svg": {
+      "sha256": "6238ec07dfe77d77ef63291db39b6dc2e6b0f6d548bdb1ea238128d86fd891e7",
+      "bytes": 8252
+    },
+    "assets/devices/profiles/macbook-pro-14-m2-pro.json": {
+      "sha256": "28efec39c2be851e38b4a52d525d85716e119f0539ee07edce5de2318f08e084",
+      "bytes": 14826
+    },
+    "assets/devices/previews/apple_macbook_pro_13_m2_monochrome.png": {
+      "sha256": "83af233ae69565047daba2c8d81747dc971ab564142bd2e127fb53c9f91d1b16",
+      "bytes": 1305
+    },
+    "assets/devices/models/macbook-pro-14-m4-max.json": {
+      "sha256": "7aa279e66e3526c850d4ae4c39f44c2ceca7e078457d55e9c3bbc91d53f6e237",
+      "bytes": 6905
+    },
+    "assets/devices/previews/apple_mac_mini_m2_pro_silver.png": {
+      "sha256": "f2ccb9f028c984957ecb6065613dbebe5dd6047cea9b088eaaa142a40394c8d9",
+      "bytes": 1769
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_13_m2_monochrome_icon.svg": {
+      "sha256": "14732dee238d1fe2783526151233a46848394643396300328a464f12c1623af9",
+      "bytes": 2281
+    },
+    "assets/devices/models/macbook-air-13-m5.json": {
+      "sha256": "0d3f8844200de05a211a4f954d192a476c0f9582d08608bd9cb2336e8b0be6a5",
+      "bytes": 8753
+    },
+    "assets/devices/previews/apple_macbook_pro_16_m3_pro_monochrome.png": {
+      "sha256": "140b81efe5c52d84c5f070e8fa8d126f558036e8f598894e6869ee32000ebd97",
+      "bytes": 1415
+    },
+    "assets/devices/profiles/macbook-pro-14-m3.json": {
+      "sha256": "1f65750569878ccae73b24016d411c33aa40f948a73bedc93736009e58479bee",
+      "bytes": 14629
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m3_max_monochrome_icon.svg": {
+      "sha256": "226298e95071cb8c7d74ef3fa72205a42decef28e46f0606aa2649447361e8ed",
+      "bytes": 2283
+    },
+    "assets/devices/models/macbook-pro-14-m1-pro.json": {
+      "sha256": "c7fa3c0b2c28ef4749074b0d05a23e146cb70fd1c469576ab594cf0ad3f72c3a",
+      "bytes": 6865
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_13_m4_sky_blue_icon.png": {
+      "sha256": "f5c3930a78e742bef642a10b557ca84ccdd04bcfb8085dd732fa6619bc63ca4d",
+      "bytes": 32775
+    },
+    "assets/devices/previews/apple_macbook_air_15_m5_silver.png": {
+      "sha256": "efcfce43faa76dea269cc585deb637b23e24baf2b073fd58c0223496ca3907b3",
+      "bytes": 7935
+    },
+    "assets/devices/icons/apple/pcs/ic_apple_mac_mini_m2_monochrome_icon.png": {
+      "sha256": "ccc56a96d4183a051e33687a712deb5bf6d4f9f6dab0288b418e11ab3f66d795",
+      "bytes": 1966
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m3_monochrome_icon.png": {
+      "sha256": "eff0005e702cbcb9397ab24e2ee5a971469054dd9dd5c9fca80a3ba0b4f95739",
+      "bytes": 3341
+    },
+    "assets/devices/previews/apple_mac_studio_m5_ultra_silver.png": {
+      "sha256": "cc6a0a03c56be59a20f03682892add19e436e08e59d5118b23fd6aceba0adb24",
+      "bytes": 6114
+    },
+    "assets/devices/provenance/research/mac-model-review.json": {
+      "sha256": "217984f447ad610aa20189c4ae16f1202090c6323bcd48fc3988ddbd1539a22a",
+      "bytes": 12548
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m4_pro_monochrome_icon.png": {
+      "sha256": "eff0005e702cbcb9397ab24e2ee5a971469054dd9dd5c9fca80a3ba0b4f95739",
+      "bytes": 3341
+    },
+    "assets/devices/previews/apple_macbook_pro_16_m3_max_silver.png": {
+      "sha256": "07066ebd014579e06ea478dc06140358b0a4651079a7251dcb42fa682e711f45",
+      "bytes": 7933
+    },
+    "assets/devices/models/mac-mini-m6.json": {
+      "sha256": "c639f0b3af194fa0811644ab4c177e68137267975b03958b4b9113262c16f804",
+      "bytes": 2841
+    },
+    "assets/devices/profiles/macbook-pro-14-m5.json": {
+      "sha256": "bf5eb1be5198f3d1de09fe9fa2ab125939dcd006d9e1f28d6c28c6e200d32aa7",
+      "bytes": 14809
+    },
+    "assets/devices/icons/apple/pcs/ic_apple_mac_mini_m6_monochrome_icon.png": {
+      "sha256": "f1f02e9aa3040537248f0d5ff14958598facb265c019e76d8881665b3b07ec12",
+      "bytes": 2451
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_16_m2_pro_silver_icon.svg": {
+      "sha256": "1cf7558e711449e792a199e708164d7bbe6bcd0eaac02586d1babb4d836bd93a",
+      "bytes": 16752
+    },
+    "assets/devices/frames/macbook-air-13-m3-0.svg": {
+      "sha256": "4f33ad1290003a056a27bfb1121174df859366cf6bc852d1e8b077109822bb54",
+      "bytes": 8367
+    },
+    "assets/devices/previews/apple_mac_studio_m5_max_silver.png": {
+      "sha256": "cc6a0a03c56be59a20f03682892add19e436e08e59d5118b23fd6aceba0adb24",
+      "bytes": 6114
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m5_space_black_icon.png": {
+      "sha256": "2ee61022a7a3fe04ffaac1d37fda4518153d48f8e2aff1eaff368695c615562d",
+      "bytes": 34093
+    },
+    "assets/devices/icons/apple/pcs/ic_apple_mac_mini_m6_monochrome_icon.svg": {
+      "sha256": "e5b46a7860f45f38eef95962b799a95f586d38b31eabd8944197fe2e5d673e97",
+      "bytes": 1921
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m5_max_monochrome_icon.png": {
+      "sha256": "eff0005e702cbcb9397ab24e2ee5a971469054dd9dd5c9fca80a3ba0b4f95739",
+      "bytes": 3341
+    },
+    "assets/devices/previews/apple_macbook_pro_14_m2_max_monochrome.png": {
+      "sha256": "81268ee65b660345fc72c0245c1ce945eb7d286ec8f3cf9efa543a16b6c531a8",
+      "bytes": 1417
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m4_max_space_black_icon.svg": {
+      "sha256": "4636feb0460a321d98d6ffeaaea5a5c39cdb6a6b6e9b164d21480dafa156aca0",
+      "bytes": 16740
+    },
+    "assets/devices/frames/macbook-air-15-m3-0.svg": {
+      "sha256": "4f11cfc1bf908d6b9c6b7f18bf454395d3202f260c0343feed9f41db87b5f3ce",
+      "bytes": 8456
+    },
+    "assets/devices/frames/macbook-pro-14-m4-pro-0.svg": {
+      "sha256": "821dec0a0512ba0b523cc571798958783991cfe4c87b45e456103779035d051f",
+      "bytes": 8275
+    },
+    "assets/devices/frames/macbook-pro-16-m3-pro-0.svg": {
+      "sha256": "6238ec07dfe77d77ef63291db39b6dc2e6b0f6d548bdb1ea238128d86fd891e7",
+      "bytes": 8252
+    },
+    "assets/devices/frames/macbook-pro-16-m1-pro-0.svg": {
+      "sha256": "6238ec07dfe77d77ef63291db39b6dc2e6b0f6d548bdb1ea238128d86fd891e7",
+      "bytes": 8252
+    },
+    "assets/devices/frames/macbook-pro-16-m5-max-0.svg": {
+      "sha256": "6238ec07dfe77d77ef63291db39b6dc2e6b0f6d548bdb1ea238128d86fd891e7",
+      "bytes": 8252
+    },
+    "assets/devices/profiles/mac-studio-m5-ultra.json": {
+      "sha256": "404035c1ecaa0191b53fbffc577281a220331031e6c35482ca6f9a9bdc451a45",
+      "bytes": 6613
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_15_m4_monochrome_icon.svg": {
+      "sha256": "3c6f7be7dc9c6fbe41ec4729d0306602bc312482ccb21d4da68a9b976a29629a",
+      "bytes": 2291
+    },
+    "assets/devices/previews/apple_mac_mini_m6_monochrome.png": {
+      "sha256": "9d549b9cc5ab6b1c8c440c86160c2ac5e96da65e44d9632deb2ccb7d27b67a0c",
+      "bytes": 931
+    },
+    "assets/devices/previews/apple_macbook_pro_16_m4_pro_space_black.png": {
+      "sha256": "3616977ee3c970d72038bc4a37ccf9afe88c8988f2dc31cbdad651abfc2c74d4",
+      "bytes": 7898
+    },
+    "assets/devices/models/macbook-pro-14-m1-max.json": {
+      "sha256": "72288e3db4fa1d610b8b30d1b0a802e1619e21f091d5e9b99e6f956f16451d9a",
+      "bytes": 6865
+    },
+    "assets/devices/previews/apple_macbook_pro_14_m5_max_silver.png": {
+      "sha256": "8b5e873aeb54b76536b9cbfcd239c97b053e726f70c13ea4d778c6b49115b87d",
+      "bytes": 7914
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_neo_a18_pro_blush_icon.svg": {
+      "sha256": "0f4160bdb0c0b26e462b38904e213c673e3ad6b276ca22fe6e1f5823697c57b6",
+      "bytes": 16214
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_13_m2_silver_icon.svg": {
+      "sha256": "319cd20bdeaccac23b4380a79de08402a1c74c0e852d14f6cd5cfd61dab78a45",
+      "bytes": 16680
+    },
+    "assets/devices/previews/apple_macbook_pro_13_m1_monochrome.png": {
+      "sha256": "83af233ae69565047daba2c8d81747dc971ab564142bd2e127fb53c9f91d1b16",
+      "bytes": 1305
+    },
+    "assets/devices/models/macbook-pro-14-m2-max.json": {
+      "sha256": "a5144553432908379b62233313f6a242fb4bb4ef682d3f52494607b6d10d57c0",
+      "bytes": 6914
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_15_m3_midnight_icon.svg": {
+      "sha256": "3db368c44d3ee67f5b35a0351d0f67915ed746801e6565f140b2113323b574cc",
+      "bytes": 16679
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_13_m3_midnight_icon.png": {
+      "sha256": "abf40bb74367a8c0bac55682eaf7708233dd04d284e3f97fdb868328f6de1d4a",
+      "bytes": 34098
+    },
+    "assets/devices/icons/apple/pcs/ic_apple_mac_mini_m4_monochrome_icon.png": {
+      "sha256": "f1f02e9aa3040537248f0d5ff14958598facb265c019e76d8881665b3b07ec12",
+      "bytes": 2451
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_15_m5_midnight_icon.svg": {
+      "sha256": "b08c8b9ac1d649d9de3371fc43efd809326e8c64aa2bb0585ce79baf975ae7eb",
+      "bytes": 16679
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_15_m4_monochrome_icon.png": {
+      "sha256": "c961e3efca9d1e3023549b617d8cff786c8817450baf7a02c220877720c03e1f",
+      "bytes": 3415
+    },
+    "assets/devices/previews/apple_mac_studio_m1_ultra_silver.png": {
+      "sha256": "cc6a0a03c56be59a20f03682892add19e436e08e59d5118b23fd6aceba0adb24",
+      "bytes": 6114
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_13_m1_monochrome_icon.png": {
+      "sha256": "3cb0b30f740b4f8f40e3559db6aa4a23ce55bc4f83f43bb153d5a6c55e342db1",
+      "bytes": 3139
+    },
+    "assets/devices/profiles/macbook-pro-16-m2-pro.json": {
+      "sha256": "804c0d7d8d0bfdc930688a389ef49162d97ed0b3aed0f0b81513be1fedbd4426",
+      "bytes": 14592
+    },
+    "assets/devices/icons/apple/pcs/ic_apple_mac_studio_m2_ultra_silver_icon.svg": {
+      "sha256": "5b57e789ee45722b39253afad33b028852488efcaf778ed1a6bb646e679c5c6c",
+      "bytes": 11181
+    },
+    "assets/devices/previews/apple_macbook_pro_14_m4_monochrome.png": {
+      "sha256": "81268ee65b660345fc72c0245c1ce945eb7d286ec8f3cf9efa543a16b6c531a8",
+      "bytes": 1417
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m5_space_black_icon.svg": {
+      "sha256": "08692f7612924bb234ad19df338c31909e611b9257b82214c007e1b9e485ea7b",
+      "bytes": 16736
+    },
+    "assets/devices/profiles/mac-mini-m6.json": {
+      "sha256": "8817d036171d7f35e7c43c6c4d554e07c06c7d5e508761b7e185d0ad508c8a47",
+      "bytes": 5763
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m4_pro_monochrome_icon.svg": {
+      "sha256": "69748dd0f1da8c9315521f63b4edb64815b3aef55a3140b29fdafd1a4d425531",
+      "bytes": 2283
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_13_m3_monochrome_icon.svg": {
+      "sha256": "f0cbf446b48d91d308f6d17e19372da48050109b8fe2fb6d959c6f07847cfec5",
+      "bytes": 2281
+    },
+    "assets/devices/previews/apple_macbook_air_15_m4_silver.png": {
+      "sha256": "efcfce43faa76dea269cc585deb637b23e24baf2b073fd58c0223496ca3907b3",
+      "bytes": 7935
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m4_pro_space_black_icon.svg": {
+      "sha256": "f2737eab80f075240fafa260ea1ebbede60bbed09706dc7a8d0141448be5b313",
+      "bytes": 16740
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_16_m3_pro_silver_icon.png": {
+      "sha256": "36dc2015caa4df6b54cddf7c1a53dfcc5b34a9981e5aa65ea7058fb34bcd58cd",
+      "bytes": 31199
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_15_m4_silver_icon.png": {
+      "sha256": "d6d42a19286ef35fdd0db26f65a87342690dabcab04d504a30f4563f2bdb26bd",
+      "bytes": 31420
+    },
+    "assets/devices/provenance/research/mac-model-verification.json": {
+      "sha256": "994d45c1bb4d7a20a60976006a8dff7185e03f41fba26d53a177f1d42bd3ac29",
+      "bytes": 30072
+    },
+    "assets/devices/previews/apple_macbook_air_13_m2_monochrome.png": {
+      "sha256": "524977bbf1ee6c43c2cd17cf745a248bc6779a65fd4ce429c170256858269cbe",
+      "bytes": 1393
+    },
+    "assets/devices/previews/apple_macbook_pro_16_m1_pro_monochrome.png": {
+      "sha256": "140b81efe5c52d84c5f070e8fa8d126f558036e8f598894e6869ee32000ebd97",
+      "bytes": 1415
+    },
+    "assets/devices/previews/apple_macbook_pro_16_m2_max_space_gray.png": {
+      "sha256": "5aa19b449f4580773a42ffe46a584280f2dcde95ed3a63f5b660ceceaca92ab1",
+      "bytes": 7954
+    },
+    "assets/devices/profiles/macbook-pro-14-m4-max.json": {
+      "sha256": "fb2d31f7d07aa55a02d99473a0495f21d6d4a0025f6c78fc940b014881a411d9",
+      "bytes": 14817
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_13_m1_silver_icon.png": {
+      "sha256": "e2ddbc4b954887e1e0b9aa9b0c27f6183da3e54ccabf23cbb50e9e323dff32aa",
+      "bytes": 28015
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_13_m3_starlight_icon.svg": {
+      "sha256": "8bf62bc95802c5f7fc5c7f8b917c7f43c4648717174218f089c533c05a31b637",
+      "bytes": 16683
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_15_m3_starlight_icon.svg": {
+      "sha256": "43506e15218f2a04d980ecca7f2f04077896ee8d11c32cf3397a561eb6f456ce",
+      "bytes": 16680
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m5_pro_monochrome_icon.png": {
+      "sha256": "eff0005e702cbcb9397ab24e2ee5a971469054dd9dd5c9fca80a3ba0b4f95739",
+      "bytes": 3341
+    },
+    "assets/devices/icons/apple/pcs/ic_apple_mac_mini_m2_pro_monochrome_icon.svg": {
+      "sha256": "d1b1a9d7124a8d26f4b4fbf24ec9d15f37404edfb8e8b489934d49d71e2bd7c7",
+      "bytes": 1229
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_13_m4_starlight_icon.svg": {
+      "sha256": "60cc0f22eefce03a45d63d91b11decdc51fbddcc53284255057e2dc932dd7637",
+      "bytes": 16683
+    },
+    "assets/devices/provenance/research/mac-model-front-calibration.json": {
+      "sha256": "249633cc79b7f5ea5eaecbcd1f621af19e46ed7aa003c06efd7d579bbcb6a88a",
+      "bytes": 7042
+    },
+    "assets/devices/models/mac-studio-m2-max.json": {
+      "sha256": "d90ea559e2972b8c40e8172a2fc9a275655ebf13a55a662a28c8b0b714e27a8e",
+      "bytes": 2865
+    },
+    "assets/devices/previews/apple_macbook_pro_16_m4_pro_monochrome.png": {
+      "sha256": "140b81efe5c52d84c5f070e8fa8d126f558036e8f598894e6869ee32000ebd97",
+      "bytes": 1415
+    },
+    "assets/devices/previews/apple_macbook_pro_14_m4_max_monochrome.png": {
+      "sha256": "81268ee65b660345fc72c0245c1ce945eb7d286ec8f3cf9efa543a16b6c531a8",
+      "bytes": 1417
+    },
+    "assets/devices/profiles/macbook-air-13-m5.json": {
+      "sha256": "545815f63d32792c6afff34e5a345bc5e7488e24b8f85d96faa1a49393bd78a4",
+      "bytes": 15941
+    },
+    "assets/devices/profiles/macbook-pro-14-m2-max.json": {
+      "sha256": "588467498c464f8e8cceeec604d3af1844db9b564167bfd10c10db4585822907",
+      "bytes": 14826
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m5_silver_icon.png": {
+      "sha256": "d4132b89e3fa9f760d0ec6472f7f92b2c716a377336f3adac55e65cbbc039c00",
+      "bytes": 32367
+    },
+    "assets/devices/frames/macbook-pro-14-m3-0.svg": {
+      "sha256": "821dec0a0512ba0b523cc571798958783991cfe4c87b45e456103779035d051f",
+      "bytes": 8275
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_15_m3_space_gray_icon.svg": {
+      "sha256": "e45e40f81837b783bb72c0b1290997de477bcc4adb23d9fda385ac46b6ae3993",
+      "bytes": 16681
+    },
+    "assets/devices/icons/apple/pcs/ic_apple_mac_mini_m2_pro_silver_icon.png": {
+      "sha256": "ed049d36efa825189250e038749bd319e0ef56e566264a703f24fc4f2581be6d",
+      "bytes": 6130
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m4_monochrome_icon.svg": {
+      "sha256": "0370a250eacb175de7de9dcdfade89ed7a3db886a1d6ec9461467f09086c8eda",
+      "bytes": 2279
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_13_m2_monochrome_icon.png": {
+      "sha256": "060d4ec16a6306e6d3df21322a974cf3e007f160d946f2ec4bd83732eb888bc6",
+      "bytes": 3325
+    },
+    "assets/devices/models/macbook-pro-14-m5-max.json": {
+      "sha256": "b3bdd8ef18e6c6800e7d032aa5ace8afe0a58b76cfad06362e1e5e7d1456c981",
+      "bytes": 6905
+    },
+    "assets/devices/icons/apple/pcs/ic_apple_mac_studio_m1_max_monochrome_icon.png": {
+      "sha256": "867f3d90f6299df035a765803cb784a6cfcd5c4f6d284ea5e2a766cf62db0e8e",
+      "bytes": 3172
+    },
+    "assets/devices/profiles/mac-studio-m1-max.json": {
+      "sha256": "49fc2ac87e0b1ca55e99bbf41ca537ad59b2b35864a0d4df6b32f71df73a2806",
+      "bytes": 6593
+    },
+    "assets/devices/previews/apple_macbook_pro_14_m3_max_monochrome.png": {
+      "sha256": "81268ee65b660345fc72c0245c1ce945eb7d286ec8f3cf9efa543a16b6c531a8",
+      "bytes": 1417
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_16_m1_max_space_gray_icon.svg": {
+      "sha256": "3addc17db5bfafad735483bc428a85bd3a84b2244a2a76911389290f007b2787",
+      "bytes": 16756
+    },
+    "assets/devices/previews/apple_macbook_pro_16_m1_pro_space_gray.png": {
+      "sha256": "5aa19b449f4580773a42ffe46a584280f2dcde95ed3a63f5b660ceceaca92ab1",
+      "bytes": 7954
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_13_m1_silver_icon.svg": {
+      "sha256": "7152f8e4778a41e033d0517309debb75e26e5b54d4ac55ac1e60bb04037b559a",
+      "bytes": 16428
+    },
+    "assets/devices/models/mac-mini-m2-pro.json": {
+      "sha256": "8619bfcea52141ccd20c22c8bc710654e0132aa2f19745ad879ec0aa9606e2c8",
+      "bytes": 2859
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m1_pro_space_gray_icon.png": {
+      "sha256": "07d288cc9ae74458cfa33632261d32c02e378d9065d8f928baa37ce49591fb53",
+      "bytes": 34085
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m3_space_gray_icon.svg": {
+      "sha256": "588ef7c1c6bbe89b70b782e029c627b91ba563dcb7e23270599a8494e739369a",
+      "bytes": 16735
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_16_m2_max_silver_icon.png": {
+      "sha256": "36dc2015caa4df6b54cddf7c1a53dfcc5b34a9981e5aa65ea7058fb34bcd58cd",
+      "bytes": 31199
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_16_m1_pro_monochrome_icon.svg": {
+      "sha256": "4c60656789661eea7632bd42eee4e139d6e09bd263e3f2b789d67fc587451845",
+      "bytes": 2286
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_13_m1_gold_icon.png": {
+      "sha256": "ec1dc014e5bb6d056bd3ef0d5bf242bac331383f6ea6b6cd1f77a00380cf6d7c",
+      "bytes": 28775
+    },
+    "assets/devices/previews/apple_macbook_neo_a18_pro_silver.png": {
+      "sha256": "4795a938f50b8fbd66a781756fd7b8387d59b0269479876d40015e04c354a835",
+      "bytes": 7919
+    },
+    "assets/devices/previews/apple_mac_studio_m1_max_silver.png": {
+      "sha256": "cc6a0a03c56be59a20f03682892add19e436e08e59d5118b23fd6aceba0adb24",
+      "bytes": 6114
+    },
+    "assets/devices/profiles/mac-studio-m2-ultra.json": {
+      "sha256": "c060824ece879a1fc78b9d1d77945f02a2c3d0f8b291aa85748ab15771df713a",
+      "bytes": 6613
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_15_m5_monochrome_icon.png": {
+      "sha256": "c961e3efca9d1e3023549b617d8cff786c8817450baf7a02c220877720c03e1f",
+      "bytes": 3415
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_16_m5_max_silver_icon.png": {
+      "sha256": "36dc2015caa4df6b54cddf7c1a53dfcc5b34a9981e5aa65ea7058fb34bcd58cd",
+      "bytes": 31199
+    },
+    "assets/devices/frames/macbook-neo-a18-pro-0.svg": {
+      "sha256": "8f356320fce7a5297b069a51ea344da684223bd304519df2de780367e5036cf3",
+      "bytes": 7346
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_13_m2_silver_icon.png": {
+      "sha256": "310b387ea3c3b89996a4294d024a9c604b7979a7fd513f667bc14557ef46eaf1",
+      "bytes": 31962
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_13_m2_midnight_icon.png": {
+      "sha256": "abf40bb74367a8c0bac55682eaf7708233dd04d284e3f97fdb868328f6de1d4a",
+      "bytes": 34098
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_16_m2_max_space_gray_icon.png": {
+      "sha256": "f8b056cc713205fcca0d37bde3291267ff842024a5a10beeba86673cce7759e6",
+      "bytes": 33047
+    },
+    "assets/devices/models/macbook-air-13-m4.json": {
+      "sha256": "08733c357609a6d0923447b0c10634e37d0b8fad5b0fcbc2de28fa3158a3e763",
+      "bytes": 8753
+    },
+    "assets/devices/profiles/macbook-pro-13-m1.json": {
+      "sha256": "23e72a72b28db73261ee8d95e67d31b996796457f7a82cc0665552db2f06b817",
+      "bytes": 8333
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_16_m5_pro_silver_icon.png": {
+      "sha256": "36dc2015caa4df6b54cddf7c1a53dfcc5b34a9981e5aa65ea7058fb34bcd58cd",
+      "bytes": 31199
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_16_m5_max_silver_icon.svg": {
+      "sha256": "762d8913f23206dbc12092d98110f3867d1eaeb5d1c52d6ca8067cfabc4bba28",
+      "bytes": 16752
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_neo_a18_pro_indigo_icon.svg": {
+      "sha256": "1c781f2b0cfb83f089a405faa7cd14a4c75587bcbd404a639a2f005241e09a4f",
+      "bytes": 16215
+    },
+    "assets/devices/icons/apple/pcs/ic_apple_mac_mini_m4_silver_icon.png": {
+      "sha256": "560624bb85731e63479354260de875d5cf7be548a98a85757dd73ea4c45ea6a8",
+      "bytes": 12658
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_13_m1_silver_icon.png": {
+      "sha256": "86a5f5f998e9ece599942e2640aa07c7e2726dac09dd9054f3ba715f1a121986",
+      "bytes": 27647
+    },
+    "assets/devices/models/mac-mini-m1.json": {
+      "sha256": "398586b3bbdebe601dd665b9c6fe30429b342260d8a88f7364db5eafbf6bb689",
+      "bytes": 2841
+    },
+    "assets/devices/previews/apple_macbook_pro_16_m3_pro_silver.png": {
+      "sha256": "07066ebd014579e06ea478dc06140358b0a4651079a7251dcb42fa682e711f45",
+      "bytes": 7933
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_13_m1_monochrome_icon.png": {
+      "sha256": "03f0d3591d0b0ba4e254164f50185d441e222f2f97955d838f5c372b5f9289f7",
+      "bytes": 3381
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_16_m3_max_silver_icon.png": {
+      "sha256": "36dc2015caa4df6b54cddf7c1a53dfcc5b34a9981e5aa65ea7058fb34bcd58cd",
+      "bytes": 31199
+    },
+    "assets/devices/previews/apple_macbook_pro_16_m5_max_silver.png": {
+      "sha256": "07066ebd014579e06ea478dc06140358b0a4651079a7251dcb42fa682e711f45",
+      "bytes": 7933
+    },
+    "assets/devices/icons/apple/pcs/ic_apple_mac_mini_m5_pro_silver_icon.svg": {
+      "sha256": "0f88188430b4544fde8961c0d30b50d4e69b4da7b4d2f8ce7f503ea71dad523b",
+      "bytes": 5232
+    },
+    "assets/devices/models/mac-mini-m4-pro.json": {
+      "sha256": "98e126508c47188f0a629820be5875791f123f45ffe97b5d199b14103c34a42a",
+      "bytes": 2857
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_16_m4_max_silver_icon.png": {
+      "sha256": "36dc2015caa4df6b54cddf7c1a53dfcc5b34a9981e5aa65ea7058fb34bcd58cd",
+      "bytes": 31199
+    },
+    "assets/devices/previews/apple_macbook_pro_16_m4_max_silver.png": {
+      "sha256": "07066ebd014579e06ea478dc06140358b0a4651079a7251dcb42fa682e711f45",
+      "bytes": 7933
+    },
+    "assets/devices/frames/macbook-pro-16-m3-max-0.svg": {
+      "sha256": "6238ec07dfe77d77ef63291db39b6dc2e6b0f6d548bdb1ea238128d86fd891e7",
+      "bytes": 8252
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_13_m2_space_gray_icon.png": {
+      "sha256": "e7b003f1879d44abde4f0bcf9e245fb1996a905a8683ae00f1fad9d77e7965b9",
+      "bytes": 29386
+    },
+    "assets/devices/models/mac-studio-m1-ultra.json": {
+      "sha256": "1e44149b43e6c5185de8424052c16b7fc5db5be5d1b03b55329145e8550a79e5",
+      "bytes": 2873
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_15_m2_midnight_icon.png": {
+      "sha256": "54322f3795ef8f677832a53e2edf58e6c3db638b5f5eff45a05d0c9264e04b28",
+      "bytes": 33692
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m2_pro_monochrome_icon.svg": {
+      "sha256": "bb1fbc2bdb1cc080084a4f7b16dbbad3976fa72401f16efbce62b365d84e54ff",
+      "bytes": 2283
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_15_m4_sky_blue_icon.svg": {
+      "sha256": "4a8e4861d2fe09da1a63c687febdab44bb7befc3e10800c9a76154431450a930",
+      "bytes": 16679
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_16_m2_max_monochrome_icon.png": {
+      "sha256": "e6ad5d9f1b5c623435f368c63c9aa17738678310e3a808c3e1c0c6ff6c8ec3ac",
+      "bytes": 3438
+    },
+    "assets/devices/models/macbook-pro-16-m5-max.json": {
+      "sha256": "005e528438fed65d248cf0db9bcdab3dc41f6e9aec11f9f850c1c38fb1c1b081",
+      "bytes": 6865
+    },
+    "assets/devices/models/macbook-pro-16-m2-max.json": {
+      "sha256": "ea5b80b783c94f6962300e4c514cde553d858b1894801338240cbd459f7f53a5",
+      "bytes": 6874
+    },
+    "assets/devices/profiles/mac-mini-m1.json": {
+      "sha256": "fff992b57964441aecd1a64dcbbca06900d6350219e06df4fa0c872de1dbb14f",
+      "bytes": 5505
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_15_m2_starlight_icon.png": {
+      "sha256": "387980b1c5cd860ed92dde526726d0998cee6963adb3cf1c6429218e76fdcdc7",
+      "bytes": 32065
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_13_m5_starlight_icon.svg": {
+      "sha256": "ae2ef6e3a8bc5c6f0eb6df643fbad61d48ea28f3b4553e967a694e3f5268e65f",
+      "bytes": 16683
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_13_m2_monochrome_icon.svg": {
+      "sha256": "c909be347f1463a9e7e76d3ae741d0d58ad3a2149b0c5a3b4185bd7076f2fcbf",
+      "bytes": 1816
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_16_m5_pro_monochrome_icon.png": {
+      "sha256": "e6ad5d9f1b5c623435f368c63c9aa17738678310e3a808c3e1c0c6ff6c8ec3ac",
+      "bytes": 3438
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_neo_a18_pro_blush_icon.png": {
+      "sha256": "fa7eca4ec61e01c6643837df923b1acbdd8a9c8a3345f57d7dabf29b36c56101",
+      "bytes": 26853
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_13_m4_monochrome_icon.svg": {
+      "sha256": "3fcc0b85d37999baa940e61fe7538a6360c10dbb971c17097b4597c948dda193",
+      "bytes": 2281
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_16_m5_pro_monochrome_icon.svg": {
+      "sha256": "29b5822192beaa243b5ae81ad6e6df2a68f024a9e7182498f123c651e104b122",
+      "bytes": 2286
+    },
+    "assets/devices/previews/apple_macbook_air_15_m2_starlight.png": {
+      "sha256": "98639bafd83a2e2779e987cf86d45e46da3c3d17aaea13559a1ac0c00239fa92",
+      "bytes": 8083
+    },
+    "assets/devices/profiles/macbook-pro-16-m1-pro.json": {
+      "sha256": "f578819fc44d75078051c49e43da8dd0504e897e6d9af4da4f174cfdcafecc9e",
+      "bytes": 14545
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m2_pro_space_gray_icon.svg": {
+      "sha256": "3590c9975e207069d321ea95f2400f23aa30897ff1fa6aae8dc2cb486dc7270f",
+      "bytes": 16739
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m3_pro_silver_icon.svg": {
+      "sha256": "a96de6fa273487a46207ff1da187a7fd83c713e4280c8838e47dc5889969297e",
+      "bytes": 16735
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_16_m5_max_space_black_icon.png": {
+      "sha256": "de335654ba224c2a797788f34e34ff76bc8f20a373775aaae7c06920d479039d",
+      "bytes": 32921
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m5_pro_monochrome_icon.svg": {
+      "sha256": "c1703b5582dbe45892c968b371492dab64b7ed61e89dc63137469432e865882e",
+      "bytes": 2283
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m3_max_space_black_icon.svg": {
+      "sha256": "0d98719a14c29e0a7a402a6a06c403c2e48e5d93b6f0dd351eb13d153183bc4e",
+      "bytes": 16740
+    },
+    "assets/devices/provenance/research/apple-mac-catalog.json": {
+      "sha256": "8c52bbc35948fc5867562cd35b016ba84f0fc1095392464be2f08dae180c7348",
+      "bytes": 187880
+    },
+    "assets/devices/previews/apple_macbook_pro_16_m3_pro_space_black.png": {
+      "sha256": "3616977ee3c970d72038bc4a37ccf9afe88c8988f2dc31cbdad651abfc2c74d4",
+      "bytes": 7898
+    },
+    "assets/devices/icons/apple/pcs/ic_apple_mac_studio_m1_max_monochrome_icon.svg": {
+      "sha256": "234248f140b3fb5aa47da1769b41cc7caeafe55ffa3fa428d397e36606a6dacd",
+      "bytes": 3452
+    },
+    "assets/devices/previews/apple_macbook_air_13_m4_silver.png": {
+      "sha256": "18ac899127d63875c97f1659c64da5c88fbdc5a3b2aba27627cf95c23b271329",
+      "bytes": 7904
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_15_m5_silver_icon.png": {
+      "sha256": "d6d42a19286ef35fdd0db26f65a87342690dabcab04d504a30f4563f2bdb26bd",
+      "bytes": 31420
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_15_m4_starlight_icon.png": {
+      "sha256": "387980b1c5cd860ed92dde526726d0998cee6963adb3cf1c6429218e76fdcdc7",
+      "bytes": 32065
+    },
+    "assets/devices/profiles/macbook-pro-16-m1-max.json": {
+      "sha256": "4793a18f651abd399c67b0f4c1de52defe8de5e6269203b6e6571d64d0812f91",
+      "bytes": 14545
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_16_m1_pro_space_gray_icon.svg": {
+      "sha256": "c685a3c35e74560cd9ac2b298187cf5667280c9b50614856e5aa604cb7b0efca",
+      "bytes": 16756
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m2_max_silver_icon.png": {
+      "sha256": "d4132b89e3fa9f760d0ec6472f7f92b2c716a377336f3adac55e65cbbc039c00",
+      "bytes": 32367
+    },
+    "assets/devices/previews/apple_macbook_pro_14_m2_max_silver.png": {
+      "sha256": "8b5e873aeb54b76536b9cbfcd239c97b053e726f70c13ea4d778c6b49115b87d",
+      "bytes": 7914
+    },
+    "assets/devices/models/macbook-pro-14-m3-pro.json": {
+      "sha256": "5c20ffa8b768979fc108cc6f6497d16db55ccdd4937e0b84042152ad8531f4e4",
+      "bytes": 6905
+    },
+    "assets/devices/previews/apple_macbook_air_15_m3_silver.png": {
+      "sha256": "efcfce43faa76dea269cc585deb637b23e24baf2b073fd58c0223496ca3907b3",
+      "bytes": 7935
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m1_max_space_gray_icon.png": {
+      "sha256": "07d288cc9ae74458cfa33632261d32c02e378d9065d8f928baa37ce49591fb53",
+      "bytes": 34085
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_13_m3_starlight_icon.png": {
+      "sha256": "46aa2576698f6890d5bb3357ee26d1f3db1e454f7c74eadc975374c25ddbb125",
+      "bytes": 32601
+    },
+    "assets/devices/previews/apple_macbook_pro_14_m1_pro_monochrome.png": {
+      "sha256": "81268ee65b660345fc72c0245c1ce945eb7d286ec8f3cf9efa543a16b6c531a8",
+      "bytes": 1417
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_16_m1_pro_silver_icon.png": {
+      "sha256": "36dc2015caa4df6b54cddf7c1a53dfcc5b34a9981e5aa65ea7058fb34bcd58cd",
+      "bytes": 31199
+    },
+    "assets/devices/icons/apple/pcs/ic_apple_mac_studio_m5_ultra_silver_icon.svg": {
+      "sha256": "22039353eed083cc640dc75d6471622c71be69480d62c95a15c007cfdf0c3c99",
+      "bytes": 11181
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m5_max_monochrome_icon.svg": {
+      "sha256": "bb609f8560a9b646ea04e9fec05a0b08f21c62a62f7f4fd9faa53d0eb77f557b",
+      "bytes": 2283
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m4_silver_icon.png": {
+      "sha256": "d4132b89e3fa9f760d0ec6472f7f92b2c716a377336f3adac55e65cbbc039c00",
+      "bytes": 32367
+    },
+    "assets/devices/frames/macbook-pro-14-m5-pro-0.svg": {
+      "sha256": "821dec0a0512ba0b523cc571798958783991cfe4c87b45e456103779035d051f",
+      "bytes": 8275
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_13_m2_starlight_icon.svg": {
+      "sha256": "875b050d425fb43b14dce35fd698712397ee91955561703f4a3fe699cb0b8c0d",
+      "bytes": 16683
+    },
+    "assets/devices/models/macbook-air-13-m2.json": {
+      "sha256": "838cddc7b59206d312b820492bd88eba58d2e2e0322eeb8b08e9eae471316abd",
+      "bytes": 8776
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_13_m4_midnight_icon.svg": {
+      "sha256": "b9391e323139ba50e8bb3215cb72b36f9b34c69d7e9c96af91351ee2ea6d6adf",
+      "bytes": 16682
+    },
+    "assets/devices/icons/apple/pcs/ic_apple_mac_mini_m4_pro_silver_icon.svg": {
+      "sha256": "2bf80595617e4ae96eed9a6bc0bd7b2a9779c6c6770d9842a33798c7034175e5",
+      "bytes": 5232
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m3_pro_monochrome_icon.svg": {
+      "sha256": "873907042c644aa417ef7ecb4edbea63d6cc44257090aa0b899fcc587b357937",
+      "bytes": 2283
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m3_max_silver_icon.png": {
+      "sha256": "d4132b89e3fa9f760d0ec6472f7f92b2c716a377336f3adac55e65cbbc039c00",
+      "bytes": 32367
+    },
+    "assets/devices/icons/apple/pcs/ic_apple_mac_studio_m2_ultra_monochrome_icon.svg": {
+      "sha256": "7e8cf4a75599e945b25dd15718b568313dba019f90f2bd01951e1ccaf74f7e47",
+      "bytes": 3454
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_16_m2_max_monochrome_icon.svg": {
+      "sha256": "e17ecd57fe36d4d2f042b08d1d6a92d2b1d316c008176dea2248582b53d23e10",
+      "bytes": 2286
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_15_m3_starlight_icon.png": {
+      "sha256": "387980b1c5cd860ed92dde526726d0998cee6963adb3cf1c6429218e76fdcdc7",
+      "bytes": 32065
+    },
+    "assets/devices/profiles/macbook-pro-16-m4-pro.json": {
+      "sha256": "a999c5be563fb58729fc7a39d141764c03829bfaaa5e72ce91742c79149f82b1",
+      "bytes": 14583
+    },
+    "assets/devices/verify_macs.py": {
+      "sha256": "be39cc628c0ee9a505d97bff3100418164e0b7cff0d5738ed8e49bc3d7980d30",
+      "bytes": 10407
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_15_m4_midnight_icon.png": {
+      "sha256": "54322f3795ef8f677832a53e2edf58e6c3db638b5f5eff45a05d0c9264e04b28",
+      "bytes": 33692
+    },
+    "assets/devices/icons/apple/pcs/ic_apple_mac_mini_m4_silver_icon.svg": {
+      "sha256": "4b58f72b68f8b38c75eab210c5b19887c1c85714b447568156904b6dca17c1b2",
+      "bytes": 5228
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m4_max_monochrome_icon.svg": {
+      "sha256": "8b920af5bdec2d4e9fd29044d9afe54413fb651d67d847159037d47632c1c23a",
+      "bytes": 2283
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_13_m5_sky_blue_icon.svg": {
+      "sha256": "4788130fbe548670aba0e19af9ea76e324eb990ac11b4c715407251f71f32b4d",
+      "bytes": 16682
+    },
+    "assets/devices/previews/apple_macbook_pro_16_m4_max_space_black.png": {
+      "sha256": "3616977ee3c970d72038bc4a37ccf9afe88c8988f2dc31cbdad651abfc2c74d4",
+      "bytes": 7898
+    },
+    "assets/devices/previews/apple_macbook_pro_14_m5_space_black.png": {
+      "sha256": "2c0df4f9c3b83c4e3c7db32f3918a108de939b3535cb4e2c9420ceb7d2eeeedf",
+      "bytes": 8003
+    },
+    "assets/devices/previews/apple_macbook_pro_14_m1_max_silver.png": {
+      "sha256": "8b5e873aeb54b76536b9cbfcd239c97b053e726f70c13ea4d778c6b49115b87d",
+      "bytes": 7914
+    },
+    "assets/devices/models/macbook-pro-16-m1-max.json": {
+      "sha256": "b7ce2dd508015706a1239a7e920301a26bcb89b2bde56b9310f4f17353f4c71a",
+      "bytes": 6825
+    },
+    "assets/devices/models/macbook-pro-14-m5-pro.json": {
+      "sha256": "21df288a8f0e1c3ac9272eba7a7632a714f8f704d14b07238b8133de68109b61",
+      "bytes": 6905
+    },
+    "assets/devices/previews/apple_mac_mini_m4_monochrome.png": {
+      "sha256": "9d549b9cc5ab6b1c8c440c86160c2ac5e96da65e44d9632deb2ccb7d27b67a0c",
+      "bytes": 931
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_13_m1_monochrome_icon.svg": {
+      "sha256": "3c69afb7dc68cef39331726cc33607d7dc04c4caad698b7ee515e4d7c8cc956b",
+      "bytes": 1822
+    },
+    "assets/devices/previews/apple_mac_studio_m1_ultra_monochrome.png": {
+      "sha256": "3cef4ea64cee3bbc86cc86f820e226ae1fecb215503e149ec2ec50260bbbf085",
+      "bytes": 1476
+    },
+    "assets/devices/models/macbook-pro-16-m5-pro.json": {
+      "sha256": "426be70a2235c650e000ef97bb73e7fc0f77fe6ea7b1a1dd5dc2d0b3671678ab",
+      "bytes": 6865
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_neo_a18_pro_citrus_icon.png": {
+      "sha256": "016a3c3845040b9ab5f620d5473581dc81088282a837843f2e968bbb4dd8f269",
+      "bytes": 27004
+    },
+    "assets/devices/icons/apple/pcs/ic_apple_mac_studio_m2_max_monochrome_icon.png": {
+      "sha256": "867f3d90f6299df035a765803cb784a6cfcd5c4f6d284ea5e2a766cf62db0e8e",
+      "bytes": 3172
+    },
+    "assets/devices/previews/apple_macbook_pro_16_m3_max_space_black.png": {
+      "sha256": "3616977ee3c970d72038bc4a37ccf9afe88c8988f2dc31cbdad651abfc2c74d4",
+      "bytes": 7898
+    },
+    "assets/devices/previews/apple_mac_mini_m1_silver.png": {
+      "sha256": "57ede00cd483e1164ae6c9dd4042d89db50d59d4df85e2103e5d78d7d9f482cf",
+      "bytes": 1765
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_16_m1_max_space_gray_icon.png": {
+      "sha256": "f8b056cc713205fcca0d37bde3291267ff842024a5a10beeba86673cce7759e6",
+      "bytes": 33047
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_15_m4_sky_blue_icon.png": {
+      "sha256": "a94a3c4a3829792ec86ddbde96c6398131b8a7783fa38a5990fc77bd5509fd2c",
+      "bytes": 32257
+    },
+    "assets/devices/previews/apple_mac_mini_m2_monochrome.png": {
+      "sha256": "511363bb1398faa03943f2d99cfac8df615f727e8eecd808b82ddbb0c0b7a852",
+      "bytes": 437
+    },
+    "assets/devices/frames/macbook-air-15-m2-0.svg": {
+      "sha256": "4f11cfc1bf908d6b9c6b7f18bf454395d3202f260c0343feed9f41db87b5f3ce",
+      "bytes": 8456
+    },
+    "assets/devices/previews/apple_macbook_air_13_m5_midnight.png": {
+      "sha256": "9118bc9a574c94f4b4b3259724403697153faa909db040e5cd775ba7301e10fa",
+      "bytes": 7931
+    },
+    "assets/devices/previews/apple_macbook_pro_14_m3_monochrome.png": {
+      "sha256": "81268ee65b660345fc72c0245c1ce945eb7d286ec8f3cf9efa543a16b6c531a8",
+      "bytes": 1417
+    },
+    "assets/devices/profiles/macbook-pro-14-m3-max.json": {
+      "sha256": "c0e90b9c9008bdce00f036b4502cec5689315b14f17b904f380e2e8e51904c0d",
+      "bytes": 14817
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_16_m3_max_space_black_icon.png": {
+      "sha256": "de335654ba224c2a797788f34e34ff76bc8f20a373775aaae7c06920d479039d",
+      "bytes": 32921
+    },
+    "assets/devices/previews/apple_macbook_pro_14_m4_silver.png": {
+      "sha256": "8b5e873aeb54b76536b9cbfcd239c97b053e726f70c13ea4d778c6b49115b87d",
+      "bytes": 7914
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_16_m4_max_space_black_icon.png": {
+      "sha256": "de335654ba224c2a797788f34e34ff76bc8f20a373775aaae7c06920d479039d",
+      "bytes": 32921
+    },
+    "assets/devices/previews/apple_macbook_air_13_m1_gold.png": {
+      "sha256": "e9f25c00d0744a1ca9631c8fde9931e3621143b31a8c9b2ce28dcefcc4b1083b",
+      "bytes": 7683
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m2_max_monochrome_icon.png": {
+      "sha256": "eff0005e702cbcb9397ab24e2ee5a971469054dd9dd5c9fca80a3ba0b4f95739",
+      "bytes": 3341
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m4_max_monochrome_icon.png": {
+      "sha256": "eff0005e702cbcb9397ab24e2ee5a971469054dd9dd5c9fca80a3ba0b4f95739",
+      "bytes": 3341
+    },
+    "assets/devices/profiles/macbook-air-15-m4.json": {
+      "sha256": "88b88765b71c5c588fa339c911a623b59df426d7ada096febb9e1ddf748013f5",
+      "bytes": 16036
+    },
+    "assets/devices/previews/apple_macbook_pro_14_m3_max_space_black.png": {
+      "sha256": "2c0df4f9c3b83c4e3c7db32f3918a108de939b3535cb4e2c9420ceb7d2eeeedf",
+      "bytes": 8003
+    },
+    "assets/devices/previews/apple_mac_studio_m3_ultra_silver.png": {
+      "sha256": "cc6a0a03c56be59a20f03682892add19e436e08e59d5118b23fd6aceba0adb24",
+      "bytes": 6114
+    },
+    "assets/devices/models/mac-studio-m4-max.json": {
+      "sha256": "bfffee34423eba76a6ce26e5f903a95960d37e171c5081f1c9ab7933a63d58dd",
+      "bytes": 2865
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_15_m5_monochrome_icon.svg": {
+      "sha256": "527fe2a4f8b5295166d55bd9ac2ac953a724ef90f371159f06173f3e0054eb5e",
+      "bytes": 2291
+    },
+    "assets/devices/previews/apple_macbook_pro_16_m2_max_monochrome.png": {
+      "sha256": "140b81efe5c52d84c5f070e8fa8d126f558036e8f598894e6869ee32000ebd97",
+      "bytes": 1415
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_15_m5_midnight_icon.png": {
+      "sha256": "54322f3795ef8f677832a53e2edf58e6c3db638b5f5eff45a05d0c9264e04b28",
+      "bytes": 33692
+    },
+    "assets/devices/previews/apple_macbook_pro_14_m5_pro_space_black.png": {
+      "sha256": "2c0df4f9c3b83c4e3c7db32f3918a108de939b3535cb4e2c9420ceb7d2eeeedf",
+      "bytes": 8003
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_16_m1_pro_space_gray_icon.png": {
+      "sha256": "f8b056cc713205fcca0d37bde3291267ff842024a5a10beeba86673cce7759e6",
+      "bytes": 33047
+    },
+    "assets/devices/previews/apple_macbook_air_15_m3_midnight.png": {
+      "sha256": "faa6ef73ff2db53cced9c582813d3b86a8c77d987cdb6a9fac8696ba358a9de0",
+      "bytes": 8058
+    },
+    "assets/devices/previews/apple_macbook_pro_14_m4_max_silver.png": {
+      "sha256": "8b5e873aeb54b76536b9cbfcd239c97b053e726f70c13ea4d778c6b49115b87d",
+      "bytes": 7914
+    },
+    "assets/devices/previews/apple_macbook_pro_14_m1_pro_silver.png": {
+      "sha256": "8b5e873aeb54b76536b9cbfcd239c97b053e726f70c13ea4d778c6b49115b87d",
+      "bytes": 7914
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m4_max_space_black_icon.png": {
+      "sha256": "2ee61022a7a3fe04ffaac1d37fda4518153d48f8e2aff1eaff368695c615562d",
+      "bytes": 34093
+    },
+    "assets/devices/previews/apple_macbook_pro_14_m3_pro_space_black.png": {
+      "sha256": "2c0df4f9c3b83c4e3c7db32f3918a108de939b3535cb4e2c9420ceb7d2eeeedf",
+      "bytes": 8003
+    },
+    "assets/devices/previews/apple_macbook_pro_14_m5_max_space_black.png": {
+      "sha256": "2c0df4f9c3b83c4e3c7db32f3918a108de939b3535cb4e2c9420ceb7d2eeeedf",
+      "bytes": 8003
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_16_m5_pro_silver_icon.svg": {
+      "sha256": "1704097813d830862156e34c9182e6aa2247fd1e5afd54fd9b2d566689c742b1",
+      "bytes": 16752
+    },
+    "assets/devices/profiles/macbook-air-13-m1.json": {
+      "sha256": "5664876ecdaecd1929ced98b1536a9cc618dda5ed5b4a26d481d665942dae42b",
+      "bytes": 9413
+    },
+    "assets/devices/profiles/macbook-air-13-m4.json": {
+      "sha256": "14fc4666335452e129079db489eccae20ef71e1ab11120cd003385eca78ec07b",
+      "bytes": 15941
+    },
+    "assets/devices/icons/apple/pcs/ic_apple_mac_studio_m1_ultra_silver_icon.svg": {
+      "sha256": "06af36d70eb104f7757aa13f35f8ea2d635d8fa43ef337dddd1fa39dd549f2f9",
+      "bytes": 11181
+    },
+    "assets/devices/icons/apple/pcs/ic_apple_mac_mini_m1_silver_icon.png": {
+      "sha256": "a8523dfc21085c0197b33a450bd41d8654d841e6134f1cbd168c3b2d5c113068",
+      "bytes": 6298
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_13_m2_space_gray_icon.svg": {
+      "sha256": "4749da3e80cb2f51a0e13c78c33690df6f9f98e1a107075d8e0903da8652a2dd",
+      "bytes": 16684
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_15_m2_midnight_icon.svg": {
+      "sha256": "565b9ad167d03c5c795cd9e4720725e9f0754915f38355afd3c792f6cf94e177",
+      "bytes": 16679
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m2_pro_silver_icon.png": {
+      "sha256": "d4132b89e3fa9f760d0ec6472f7f92b2c716a377336f3adac55e65cbbc039c00",
+      "bytes": 32367
+    },
+    "assets/devices/profiles/mac-studio-m3-ultra.json": {
+      "sha256": "af2cb88c852e4e75b1d96e68fad3ccd0840b96265ac95cee0037cceab90d9397",
+      "bytes": 6613
+    },
+    "assets/devices/previews/apple_macbook_air_13_m1_space_gray.png": {
+      "sha256": "f244542a4cdc46ea737fde72e874c950743646a3a79e7ebd01e5a58f0dfdb97d",
+      "bytes": 7633
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_15_m3_silver_icon.svg": {
+      "sha256": "1e1fe6abb400a35e27722dcdd201dd6e14e00e689615c553915e8b5539f127de",
+      "bytes": 16677
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m3_max_silver_icon.svg": {
+      "sha256": "09c95613a93daa4feb4a4871b58e54399bba882d01afc5f640ca35178a925031",
+      "bytes": 16735
+    },
+    "assets/devices/previews/apple_mac_mini_m2_pro_monochrome.png": {
+      "sha256": "511363bb1398faa03943f2d99cfac8df615f727e8eecd808b82ddbb0c0b7a852",
+      "bytes": 437
+    },
+    "assets/devices/profiles/mac-mini-m2.json": {
+      "sha256": "5ee75bb44c023e0f8ee903e977dbf47f2217738eca3e0138b2c4d7c6d134b23e",
+      "bytes": 5509
+    },
+    "assets/devices/icons/apple/pcs/ic_apple_mac_studio_m1_ultra_monochrome_icon.svg": {
+      "sha256": "573589bfee9de0c8568bd942539addb22f648aa1de94549d5345658bc0424b6d",
+      "bytes": 3454
+    },
+    "assets/devices/profiles/macbook-pro-13-m2.json": {
+      "sha256": "9c76edfd2c2bb64e9a734acca4c5dbba891b4328b8c32423223bd8868d404a44",
+      "bytes": 8380
+    },
+    "assets/devices/provenance/research/mac-model-accuracy.json": {
+      "sha256": "b51a297b443dcb25d9e8e2a946e08e0dd2dc62c018fd9e91fc2c629a3f8990dc",
+      "bytes": 2815
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_15_m5_sky_blue_icon.svg": {
+      "sha256": "b7875c9fafbfd1cd3b12503dc0bb0f484443b5c724527f4c90fab56b503523df",
+      "bytes": 16679
+    },
+    "assets/devices/previews/apple_macbook_pro_14_m2_pro_monochrome.png": {
+      "sha256": "81268ee65b660345fc72c0245c1ce945eb7d286ec8f3cf9efa543a16b6c531a8",
+      "bytes": 1417
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m1_max_space_gray_icon.svg": {
+      "sha256": "705abc011e1168c79cc5abb02dc3709ad09fdb279bbb08e2b87236c47531d825",
+      "bytes": 16739
+    },
+    "assets/devices/icons/apple/pcs/ic_apple_mac_mini_m4_monochrome_icon.svg": {
+      "sha256": "e8744f6dbd45f105e429d3fd04275f9889dad8172a5a9ddf7b97913ae9840df6",
+      "bytes": 1921
+    },
+    "assets/devices/previews/apple_mac_studio_m5_max_monochrome.png": {
+      "sha256": "3cef4ea64cee3bbc86cc86f820e226ae1fecb215503e149ec2ec50260bbbf085",
+      "bytes": 1476
+    },
+    "assets/devices/previews/apple_macbook_pro_14_m4_max_space_black.png": {
+      "sha256": "2c0df4f9c3b83c4e3c7db32f3918a108de939b3535cb4e2c9420ceb7d2eeeedf",
+      "bytes": 8003
+    },
+    "assets/devices/frames/macbook-pro-16-m5-pro-0.svg": {
+      "sha256": "6238ec07dfe77d77ef63291db39b6dc2e6b0f6d548bdb1ea238128d86fd891e7",
+      "bytes": 8252
+    },
+    "assets/devices/previews/apple_macbook_pro_14_m2_pro_space_gray.png": {
+      "sha256": "67855eee5f4ea26b6e6b917208ce923a443f5246891c0aa23383f8160f286e73",
+      "bytes": 8057
+    },
+    "assets/devices/icons/apple/pcs/ic_apple_mac_mini_m2_silver_icon.svg": {
+      "sha256": "b1830bdc70159755ba0f10433d43e7240791a43a0cf1fe3258826561a70660c3",
+      "bytes": 1549
+    },
+    "assets/devices/profiles/macbook-pro-14-m4-pro.json": {
+      "sha256": "b8f7bbcd0631baf5426caf0a6e719a7a2b4b1d4b628b272d2fcb7f0d3b031830",
+      "bytes": 14817
+    },
+    "assets/devices/frames/macbook-pro-14-m4-0.svg": {
+      "sha256": "821dec0a0512ba0b523cc571798958783991cfe4c87b45e456103779035d051f",
+      "bytes": 8275
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_16_m5_max_monochrome_icon.png": {
+      "sha256": "e6ad5d9f1b5c623435f368c63c9aa17738678310e3a808c3e1c0c6ff6c8ec3ac",
+      "bytes": 3438
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_15_m2_monochrome_icon.png": {
+      "sha256": "c961e3efca9d1e3023549b617d8cff786c8817450baf7a02c220877720c03e1f",
+      "bytes": 3415
+    },
+    "assets/devices/previews/apple_mac_mini_m6_silver.png": {
+      "sha256": "f4acb1c842fed0d59b1bc4fc416dc6863e82b76feed692bd9c6b658418460c06",
+      "bytes": 4971
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_16_m2_max_silver_icon.svg": {
+      "sha256": "fc9ab0dea9332d7419c3699b9621a609e1cd6e415db7041ca5a54aef2d0c1e82",
+      "bytes": 16752
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m5_max_space_black_icon.svg": {
+      "sha256": "936a11ce2871ddcfcc2fd2b259d3cfcba7a09d416c3c65a794ff262210c23a40",
+      "bytes": 16740
+    },
+    "assets/devices/models/macbook-pro-16-m3-max.json": {
+      "sha256": "be14146440223a377b291dc932942d0a92f3446455303221334bdee56890cc46",
+      "bytes": 6865
+    },
+    "assets/devices/previews/apple_mac_mini_m5_pro_silver.png": {
+      "sha256": "f4acb1c842fed0d59b1bc4fc416dc6863e82b76feed692bd9c6b658418460c06",
+      "bytes": 4971
+    },
+    "assets/devices/icons/apple/pcs/ic_apple_mac_mini_m6_silver_icon.svg": {
+      "sha256": "bc2dd1aee49bb4ce4f183f929949234392581baeec8deb3d0dea9b49741f6fa2",
+      "bytes": 5228
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m1_max_silver_icon.png": {
+      "sha256": "d4132b89e3fa9f760d0ec6472f7f92b2c716a377336f3adac55e65cbbc039c00",
+      "bytes": 32367
+    },
+    "assets/devices/previews/apple_macbook_pro_14_m5_max_monochrome.png": {
+      "sha256": "81268ee65b660345fc72c0245c1ce945eb7d286ec8f3cf9efa543a16b6c531a8",
+      "bytes": 1417
+    },
+    "assets/devices/frames/macbook-air-13-m4-0.svg": {
+      "sha256": "4f33ad1290003a056a27bfb1121174df859366cf6bc852d1e8b077109822bb54",
+      "bytes": 8367
+    },
+    "assets/devices/profiles/macbook-pro-14-m1-pro.json": {
+      "sha256": "5886f68847efc67c541eb543b02e769ac38500ff1324137962b61d019b6b7706",
+      "bytes": 14779
+    },
+    "assets/devices/previews/apple_macbook_air_15_m2_midnight.png": {
+      "sha256": "faa6ef73ff2db53cced9c582813d3b86a8c77d987cdb6a9fac8696ba358a9de0",
+      "bytes": 8058
+    },
+    "assets/devices/make_mac_profiles.py": {
+      "sha256": "dc968e3eab3003d1d021d1d78656e89f931fd71e523615bc9c2fd0ef956de333",
+      "bytes": 8918
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_15_m5_sky_blue_icon.png": {
+      "sha256": "a94a3c4a3829792ec86ddbde96c6398131b8a7783fa38a5990fc77bd5509fd2c",
+      "bytes": 32257
+    },
+    "assets/devices/icons/apple/pcs/ic_apple_mac_studio_m1_ultra_monochrome_icon.png": {
+      "sha256": "867f3d90f6299df035a765803cb784a6cfcd5c4f6d284ea5e2a766cf62db0e8e",
+      "bytes": 3172
+    },
+    "assets/devices/icons/apple/pcs/ic_apple_mac_studio_m5_ultra_monochrome_icon.svg": {
+      "sha256": "3dd8e2603497c866cd62412a9ef81ba2c8e252ca7fa13ff17a418dedb89876fb",
+      "bytes": 3454
+    },
+    "assets/devices/profiles/macbook-pro-14-m1-max.json": {
+      "sha256": "e05a90ea548af65bda9f3d0b32b130e1a9200e7d29c87bfe7834161730c1a125",
+      "bytes": 14779
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_13_m2_space_gray_icon.svg": {
+      "sha256": "13da75ce055f3d415852c5e20448bd0ed35e553b944335a5a06a54dd9e2540f9",
+      "bytes": 16432
+    },
+    "assets/devices/models/macbook-pro-16-m4-max.json": {
+      "sha256": "c1ea39800d69e5d26032d2f035648a7fdfca7ff1206f3bab6a72219cd310821d",
+      "bytes": 6865
+    },
+    "assets/devices/previews/apple_macbook_pro_14_m5_pro_silver.png": {
+      "sha256": "8b5e873aeb54b76536b9cbfcd239c97b053e726f70c13ea4d778c6b49115b87d",
+      "bytes": 7914
+    },
+    "assets/devices/previews/apple_mac_studio_m2_max_silver.png": {
+      "sha256": "cc6a0a03c56be59a20f03682892add19e436e08e59d5118b23fd6aceba0adb24",
+      "bytes": 6114
+    },
+    "assets/devices/previews/apple_macbook_air_15_m2_silver.png": {
+      "sha256": "efcfce43faa76dea269cc585deb637b23e24baf2b073fd58c0223496ca3907b3",
+      "bytes": 7935
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m1_pro_monochrome_icon.svg": {
+      "sha256": "95c58e65d3bb639fa7f2986b80beed52570ca5e02087602363956d694f310a40",
+      "bytes": 2283
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_16_m1_max_silver_icon.svg": {
+      "sha256": "9e1b9603cefb43c6a27b8a6109fc164b4237f63bb0606913b030e0ce0b861b9a",
+      "bytes": 16752
+    },
+    "assets/devices/previews/apple_macbook_pro_14_m3_silver.png": {
+      "sha256": "8b5e873aeb54b76536b9cbfcd239c97b053e726f70c13ea4d778c6b49115b87d",
+      "bytes": 7914
+    },
+    "assets/devices/models/macbook-air-13-m3.json": {
+      "sha256": "33077ec237d4cd8e50c358ac99be60a21691d2fad6b24d32ffe7bcad5e227ba8",
+      "bytes": 8776
+    },
+    "assets/devices/icons/apple/pcs/ic_apple_mac_mini_m4_pro_monochrome_icon.png": {
+      "sha256": "f1f02e9aa3040537248f0d5ff14958598facb265c019e76d8881665b3b07ec12",
+      "bytes": 2451
+    },
+    "assets/devices/icons/apple/pcs/ic_apple_mac_studio_m5_max_monochrome_icon.png": {
+      "sha256": "867f3d90f6299df035a765803cb784a6cfcd5c4f6d284ea5e2a766cf62db0e8e",
+      "bytes": 3172
+    },
+    "assets/devices/previews/apple_macbook_pro_16_m5_max_space_black.png": {
+      "sha256": "3616977ee3c970d72038bc4a37ccf9afe88c8988f2dc31cbdad651abfc2c74d4",
+      "bytes": 7898
+    },
+    "assets/devices/previews/apple_macbook_pro_13_m2_space_gray.png": {
+      "sha256": "639df8ff2d83211fedfcae038535c57d6b0adcf7c85988e0d7b3b165f4076e6d",
+      "bytes": 7609
+    },
+    "assets/devices/previews/apple_macbook_pro_16_m2_max_silver.png": {
+      "sha256": "07066ebd014579e06ea478dc06140358b0a4651079a7251dcb42fa682e711f45",
+      "bytes": 7933
+    },
+    "assets/devices/previews/apple_mac_mini_m4_pro_monochrome.png": {
+      "sha256": "9d549b9cc5ab6b1c8c440c86160c2ac5e96da65e44d9632deb2ccb7d27b67a0c",
+      "bytes": 931
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_13_m3_monochrome_icon.png": {
+      "sha256": "060d4ec16a6306e6d3df21322a974cf3e007f160d946f2ec4bd83732eb888bc6",
+      "bytes": 3325
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_13_m4_monochrome_icon.png": {
+      "sha256": "060d4ec16a6306e6d3df21322a974cf3e007f160d946f2ec4bd83732eb888bc6",
+      "bytes": 3325
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_16_m1_max_silver_icon.png": {
+      "sha256": "36dc2015caa4df6b54cddf7c1a53dfcc5b34a9981e5aa65ea7058fb34bcd58cd",
+      "bytes": 31199
+    },
+    "assets/devices/models/macbook-air-15-m4.json": {
+      "sha256": "e5fe735f808305aa9fcb8bc414e82663da1f9f4e8fca6f6bea80ba33c5cbdae9",
+      "bytes": 8752
+    },
+    "assets/devices/profiles/macbook-pro-16-m3-max.json": {
+      "sha256": "8bbacb7e82511e08e7a72373a0c46ba3734c34fa6bd8efe57e1f0d1bb209fe45",
+      "bytes": 14583
+    },
+    "assets/devices/previews/apple_macbook_air_13_m5_starlight.png": {
+      "sha256": "b2dce4b126bd6abbf66f0d6b1aec7867ed801630452dd8a51885a45273c97c7a",
+      "bytes": 8016
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m5_max_silver_icon.png": {
+      "sha256": "d4132b89e3fa9f760d0ec6472f7f92b2c716a377336f3adac55e65cbbc039c00",
+      "bytes": 32367
+    },
+    "assets/devices/profiles/macbook-air-13-m3.json": {
+      "sha256": "b7f2faa655dfbe994f7eb1e7befad36989aacb6216261623e80201a918493844",
+      "bytes": 15964
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_13_m5_starlight_icon.png": {
+      "sha256": "46aa2576698f6890d5bb3357ee26d1f3db1e454f7c74eadc975374c25ddbb125",
+      "bytes": 32601
+    },
+    "assets/devices/models/macbook-air-15-m5.json": {
+      "sha256": "ced8690442bfde42b887ebcf9e594a8f0e7ad2e95e0da97a3114135ad48dba7a",
+      "bytes": 8752
+    },
+    "assets/devices/icons/apple/pcs/ic_apple_mac_studio_m5_max_monochrome_icon.svg": {
+      "sha256": "454e55867d57ffaafb305b21909d996234256693f0f887c166befbf92582cd9b",
+      "bytes": 3452
+    },
+    "assets/devices/previews/apple_macbook_pro_14_m2_max_space_gray.png": {
+      "sha256": "67855eee5f4ea26b6e6b917208ce923a443f5246891c0aa23383f8160f286e73",
+      "bytes": 8057
+    },
+    "assets/devices/previews/apple_macbook_neo_a18_pro_indigo.png": {
+      "sha256": "6a784f33a94aa70db49fd7675edb8e946e72e22f51e82ff5ffa2eb27da65e243",
+      "bytes": 8320
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m1_pro_silver_icon.png": {
+      "sha256": "d4132b89e3fa9f760d0ec6472f7f92b2c716a377336f3adac55e65cbbc039c00",
+      "bytes": 32367
+    },
+    "assets/devices/models/mac-mini-m5-pro.json": {
+      "sha256": "72c4e6475e23f946bb23d40d9929f3a4d6b280ac5a63d7b54c49bc1c6b89f690",
+      "bytes": 2857
+    },
+    "assets/devices/previews/apple_macbook_air_13_m4_sky_blue.png": {
+      "sha256": "e568e1fcd7099bd148575e60f1f50d0deea0fbd6b1757db9409869ac72203bb8",
+      "bytes": 7981
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m2_pro_silver_icon.svg": {
+      "sha256": "cfe4bc1fc03bf86906d326a57f559ac88cb4bc59019cb45c43d983d91841deeb",
+      "bytes": 16735
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m3_pro_space_black_icon.png": {
+      "sha256": "2ee61022a7a3fe04ffaac1d37fda4518153d48f8e2aff1eaff368695c615562d",
+      "bytes": 34093
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_16_m1_pro_silver_icon.svg": {
+      "sha256": "6432b1ab53c38c87e830fef2eb1fda51f766c22bd0e569a39e5e23d8ba91bdf6",
+      "bytes": 16752
+    },
+    "assets/devices/previews/apple_macbook_pro_14_m1_pro_space_gray.png": {
+      "sha256": "67855eee5f4ea26b6e6b917208ce923a443f5246891c0aa23383f8160f286e73",
+      "bytes": 8057
+    },
+    "assets/devices/icons/apple/pcs/ic_apple_mac_studio_m4_max_silver_icon.png": {
+      "sha256": "761026f2f3bff535686698cbf4849064ad02ad5ad242dc4e11fb7f46276b15f5",
+      "bytes": 16599
+    },
+    "assets/devices/profiles/macbook-pro-16-m4-max.json": {
+      "sha256": "592e2b15492a2da648d222d472505fbfc8bc0490dd512d5dca7ab33c407a68bc",
+      "bytes": 14583
+    },
+    "assets/devices/icons/apple/pcs/ic_apple_mac_mini_m1_silver_icon.svg": {
+      "sha256": "af618bdfc8c41d0e4053f9eafae039cf7907b1e47f99b6bd036f7bcdc8a9c2c9",
+      "bytes": 1527
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_16_m3_pro_silver_icon.svg": {
+      "sha256": "090cfa4d380028f714664eb38462ad519ba8e94deaf3dcefd44775a3e97732b4",
+      "bytes": 16752
+    },
+    "assets/devices/icons/apple/pcs/ic_apple_mac_studio_m3_ultra_monochrome_icon.svg": {
+      "sha256": "247fc96e1d6002173963e5f4e8761f1a482a0f0fb93378c2a30310e21695be64",
+      "bytes": 3454
+    },
+    "assets/devices/icons/apple/pcs/ic_apple_mac_studio_m3_ultra_monochrome_icon.png": {
+      "sha256": "867f3d90f6299df035a765803cb784a6cfcd5c4f6d284ea5e2a766cf62db0e8e",
+      "bytes": 3172
+    },
+    "assets/devices/textures/mac-keyboard-function.png": {
+      "sha256": "97e31c22ec13eb1fd4133eefa4b05d7153f41a8b5f11f4bac8f4bc56d3ced953",
+      "bytes": 19797
+    },
+    "assets/devices/textures/mac-keyboard-touchbar.png": {
+      "sha256": "949b5074d1ac492c0f4806b2d795d944e1620f3339772bb916784f3bb590a932",
+      "bytes": 16973
+    },
+    "assets/devices/models/macbook-pro-13-m2.json": {
+      "sha256": "8001acc29f1c5e12cd6419b8d2eb1b306fef31f6ff4cdb69e8b252179e883075",
+      "bytes": 7428
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_16_m4_max_monochrome_icon.svg": {
+      "sha256": "6b0838cbdc61d5912a82cfb673921d6bab17f1e5d34bd8e27e2b2a966dfe1ede",
+      "bytes": 2286
+    },
+    "assets/devices/icons/apple/pcs/ic_apple_mac_mini_m1_monochrome_icon.svg": {
+      "sha256": "b9b47af8ce30c6be9d6aad0804bde4799e4e191a5c725ff44a77adc2bcae330a",
+      "bytes": 1159
+    },
+    "assets/devices/previews/apple_mac_studio_m2_max_monochrome.png": {
+      "sha256": "3cef4ea64cee3bbc86cc86f820e226ae1fecb215503e149ec2ec50260bbbf085",
+      "bytes": 1476
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_16_m4_pro_silver_icon.svg": {
+      "sha256": "8df1d829d25a6140caccbb754f6e3700551e99ff2fa95993e34b8e9aa2a284ad",
+      "bytes": 16752
+    },
+    "assets/devices/profiles/macbook-pro-14-m5-max.json": {
+      "sha256": "2e05025e9e141f2a38e30e3b74e5d08eb246ba7acc539e82f7cf726f14656cb0",
+      "bytes": 14817
+    },
+    "assets/devices/previews/apple_macbook_pro_13_m1_space_gray.png": {
+      "sha256": "639df8ff2d83211fedfcae038535c57d6b0adcf7c85988e0d7b3b165f4076e6d",
+      "bytes": 7609
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_15_m3_monochrome_icon.svg": {
+      "sha256": "867f0f20f227b53d316db3d84475d25370adfea5212358403f7c3d9bc915ee1d",
+      "bytes": 2291
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_16_m4_max_silver_icon.svg": {
+      "sha256": "6c8824627e4a52bd5af778b0d73a478f4e33f54ccf03091fe81d3a46a87db717",
+      "bytes": 16752
+    },
+    "assets/devices/previews/apple_macbook_pro_14_m1_max_space_gray.png": {
+      "sha256": "67855eee5f4ea26b6e6b917208ce923a443f5246891c0aa23383f8160f286e73",
+      "bytes": 8057
+    },
+    "assets/devices/previews/apple_mac_studio_m1_max_monochrome.png": {
+      "sha256": "3cef4ea64cee3bbc86cc86f820e226ae1fecb215503e149ec2ec50260bbbf085",
+      "bytes": 1476
+    },
+    "assets/devices/provenance/build_mac_icons.py": {
+      "sha256": "79a61eed9767d8fbc42fa699083f855f6a1dd740c0ba529fd245a502e86ce0db",
+      "bytes": 10488
+    },
+    "assets/devices/icons/apple/pcs/ic_apple_mac_studio_m5_ultra_monochrome_icon.png": {
+      "sha256": "867f3d90f6299df035a765803cb784a6cfcd5c4f6d284ea5e2a766cf62db0e8e",
+      "bytes": 3172
+    },
+    "assets/devices/previews/apple_macbook_pro_14_m2_pro_silver.png": {
+      "sha256": "8b5e873aeb54b76536b9cbfcd239c97b053e726f70c13ea4d778c6b49115b87d",
+      "bytes": 7914
+    },
+    "assets/devices/models/macbook-pro-14-m4.json": {
+      "sha256": "e5bc662c4a17f8f2234e4313ced635ec99b80b885a005e18849cbe3b2d78e458",
+      "bytes": 6885
+    },
+    "assets/devices/icons/apple/pcs/ic_apple_mac_studio_m1_max_silver_icon.png": {
+      "sha256": "761026f2f3bff535686698cbf4849064ad02ad5ad242dc4e11fb7f46276b15f5",
+      "bytes": 16599
+    },
+    "assets/devices/previews/apple_macbook_air_15_m5_starlight.png": {
+      "sha256": "98639bafd83a2e2779e987cf86d45e46da3c3d17aaea13559a1ac0c00239fa92",
+      "bytes": 8083
+    },
+    "assets/devices/models/macbook-pro-14-m2-pro.json": {
+      "sha256": "b03ea84e469ee2877c4b81f2663547e201e3d37175f3c81d84e1a212ce5d8d0e",
+      "bytes": 6914
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m2_max_space_gray_icon.svg": {
+      "sha256": "b90004f9dbb7e1ee6de30ab50cdd0b9b901ec1560d333d20ad6bc73364ede152",
+      "bytes": 16739
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_16_m2_pro_monochrome_icon.png": {
+      "sha256": "e6ad5d9f1b5c623435f368c63c9aa17738678310e3a808c3e1c0c6ff6c8ec3ac",
+      "bytes": 3438
+    },
+    "assets/devices/previews/apple_macbook_neo_a18_pro_monochrome.png": {
+      "sha256": "d5b6ca808d1c19e30fcdb3f3673434eb993f72844359addff4c2130d622d2023",
+      "bytes": 1419
+    },
+    "assets/devices/icons/apple/pcs/ic_apple_mac_studio_m4_max_silver_icon.svg": {
+      "sha256": "753249665d439d93c23bd0fd0a368daca0097415c91350b2ffeb4bd15ff1cfe8",
+      "bytes": 11179
+    },
+    "assets/devices/previews/apple_macbook_pro_16_m2_pro_monochrome.png": {
+      "sha256": "140b81efe5c52d84c5f070e8fa8d126f558036e8f598894e6869ee32000ebd97",
+      "bytes": 1415
+    },
+    "assets/devices/previews/apple_macbook_pro_16_m1_max_space_gray.png": {
+      "sha256": "5aa19b449f4580773a42ffe46a584280f2dcde95ed3a63f5b660ceceaca92ab1",
+      "bytes": 7954
+    },
+    "assets/devices/frames/macbook-pro-14-m2-pro-0.svg": {
+      "sha256": "821dec0a0512ba0b523cc571798958783991cfe4c87b45e456103779035d051f",
+      "bytes": 8275
+    },
+    "assets/devices/profiles/macbook-pro-14-m4.json": {
+      "sha256": "8c38e8abb8716b80352bb1af6419c04b7250726e86bee39fa4de64a20edaafb7",
+      "bytes": 14809
+    },
+    "assets/devices/icons/apple/pcs/ic_apple_mac_studio_m4_max_monochrome_icon.png": {
+      "sha256": "867f3d90f6299df035a765803cb784a6cfcd5c4f6d284ea5e2a766cf62db0e8e",
+      "bytes": 3172
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_15_m5_silver_icon.svg": {
+      "sha256": "ff194e10bb5ec200ee0b65ba1ee61dd40c4770c1297850e6d6a6bdd6522b1308",
+      "bytes": 16677
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_13_m1_space_gray_icon.svg": {
+      "sha256": "ebacfe272be9e9516108016f37f3da5983c3c33c5a20460ae7a102703fcea017",
+      "bytes": 16432
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_13_m2_monochrome_icon.png": {
+      "sha256": "3cb0b30f740b4f8f40e3559db6aa4a23ce55bc4f83f43bb153d5a6c55e342db1",
+      "bytes": 3139
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m2_max_silver_icon.svg": {
+      "sha256": "5b2cde1d2d8e06bdde9277cee1fa6fa04773e8aed6beaee6a7b8b2ce20a631f7",
+      "bytes": 16735
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_16_m3_pro_space_black_icon.svg": {
+      "sha256": "b8d465b181db5109dcc257b7a1edf96221372bee0d549fe1cc5d5edf107784eb",
+      "bytes": 16757
+    },
+    "assets/devices/icons/apple/pcs/ic_apple_mac_studio_m3_ultra_silver_icon.png": {
+      "sha256": "761026f2f3bff535686698cbf4849064ad02ad5ad242dc4e11fb7f46276b15f5",
+      "bytes": 16599
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_16_m2_pro_silver_icon.png": {
+      "sha256": "36dc2015caa4df6b54cddf7c1a53dfcc5b34a9981e5aa65ea7058fb34bcd58cd",
+      "bytes": 31199
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_16_m3_max_space_black_icon.svg": {
+      "sha256": "98b684f34b00b8edec6da88653b22bb34320887c364e653984486db28a1f2f05",
+      "bytes": 16757
+    },
+    "assets/devices/icons/apple/pcs/ic_apple_mac_mini_m2_pro_silver_icon.svg": {
+      "sha256": "9a88c82446d5ca61f59a7a7d24f8819799012ed83ee9db2fe852a7cc9a4b5614",
+      "bytes": 1553
+    },
+    "assets/devices/profiles/macbook-pro-16-m2-max.json": {
+      "sha256": "32b189ad3a3296fc07f25d2ff958e5356cdcd74b63829f548cf9bdf3d31d96a0",
+      "bytes": 14592
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m5_max_silver_icon.svg": {
+      "sha256": "37af7ee787036d359c97d383fb5e04264fea3f9eae89a482d7747ec9c5b8a33c",
+      "bytes": 16735
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_13_m4_sky_blue_icon.svg": {
+      "sha256": "c2810e7e7c607b09ab2f89ab5f00b52b7a09a37f6f80c788c0b198539a1d4686",
+      "bytes": 16682
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m5_pro_silver_icon.svg": {
+      "sha256": "45e88ed5d89757673f90534703e8405f4e4e80baa28913e5fed7082cb92f04e5",
+      "bytes": 16735
+    },
+    "assets/devices/provenance/APPLE_MAC_MODELS.md": {
+      "sha256": "7cd0b670cd2d0b0c98443a848a8cc7836f48536f58c63323bb3950e23fe9b3c2",
+      "bytes": 1671
+    },
+    "assets/devices/profiles/macbook-pro-14-m3-pro.json": {
+      "sha256": "4afd2a47bb8fb9252157496ab13c19486a587e84ff44c7b9691a93fcd438851f",
+      "bytes": 14817
+    },
+    "assets/devices/profiles/macbook-air-15-m5.json": {
+      "sha256": "efa31485c4e526269aa9b30dcd8995de2795bf588e4ab80d0eca2680f6b56703",
+      "bytes": 16036
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_neo_a18_pro_silver_icon.png": {
+      "sha256": "783ced2dfa29614ff0ac407e7ee44abc88f580df517cd26e818983eeb1541842",
+      "bytes": 25975
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_neo_a18_pro_silver_icon.svg": {
+      "sha256": "f90e58760b8c12ef3d8111648b74a565a1f630b1a2bb9fca9fd9bba4ca0cdb87",
+      "bytes": 16215
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_13_m1_space_gray_icon.png": {
+      "sha256": "2fc08faf1118e18bbb692e0bd0e9d858c2adf0df9ebbdedf32c81078bc2f7ca3",
+      "bytes": 29225
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m2_pro_monochrome_icon.png": {
+      "sha256": "eff0005e702cbcb9397ab24e2ee5a971469054dd9dd5c9fca80a3ba0b4f95739",
+      "bytes": 3341
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_15_m3_silver_icon.png": {
+      "sha256": "d6d42a19286ef35fdd0db26f65a87342690dabcab04d504a30f4563f2bdb26bd",
+      "bytes": 31420
+    },
+    "assets/devices/profiles/macbook-pro-16-m5-max.json": {
+      "sha256": "24f2c024d65d9a6ee643821cdf0378efc7640a4b1e865c79827fc8eb088abac6",
+      "bytes": 14583
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_16_m2_pro_space_gray_icon.png": {
+      "sha256": "f8b056cc713205fcca0d37bde3291267ff842024a5a10beeba86673cce7759e6",
+      "bytes": 33047
+    },
+    "assets/devices/previews/apple_macbook_pro_16_m4_pro_silver.png": {
+      "sha256": "07066ebd014579e06ea478dc06140358b0a4651079a7251dcb42fa682e711f45",
+      "bytes": 7933
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_16_m4_pro_space_black_icon.svg": {
+      "sha256": "000f34f17f3fde16e7c8c2d797d36b6090634c5e251edf8edab84913199b8047",
+      "bytes": 16757
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_15_m2_starlight_icon.svg": {
+      "sha256": "32850994876c529043ae52fa94c6eb1bda7f51e5140240943b3ec99313fd1739",
+      "bytes": 16680
+    },
+    "assets/devices/profiles/macbook-air-15-m3.json": {
+      "sha256": "657533502e87174a0a26746c1b51a0ed85dc2ad682a390cbedb5bee1772c9c42",
+      "bytes": 16012
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m3_max_monochrome_icon.png": {
+      "sha256": "eff0005e702cbcb9397ab24e2ee5a971469054dd9dd5c9fca80a3ba0b4f95739",
+      "bytes": 3341
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m5_max_space_black_icon.png": {
+      "sha256": "2ee61022a7a3fe04ffaac1d37fda4518153d48f8e2aff1eaff368695c615562d",
+      "bytes": 34093
+    },
+    "assets/devices/previews/apple_macbook_pro_14_m5_silver.png": {
+      "sha256": "8b5e873aeb54b76536b9cbfcd239c97b053e726f70c13ea4d778c6b49115b87d",
+      "bytes": 7914
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m5_monochrome_icon.png": {
+      "sha256": "eff0005e702cbcb9397ab24e2ee5a971469054dd9dd5c9fca80a3ba0b4f95739",
+      "bytes": 3341
+    },
+    "assets/devices/frames/macbook-air-13-m5-0.svg": {
+      "sha256": "4f33ad1290003a056a27bfb1121174df859366cf6bc852d1e8b077109822bb54",
+      "bytes": 8367
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_16_m5_max_space_black_icon.svg": {
+      "sha256": "3cf75f488b7e0884d3f3d1024ccd8c13c41e6dd9994096108e9cbcc35d80b927",
+      "bytes": 16757
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_15_m4_midnight_icon.svg": {
+      "sha256": "f26449f7103a9d4a841212e5ce24ce21c6138bacddb0827f2dccea07de71eaca",
+      "bytes": 16679
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_13_m3_space_gray_icon.svg": {
+      "sha256": "819d710ee5560f7a1b6cb1aef98316ff2fc82ba753054d084ed3d59121e3ab28",
+      "bytes": 16684
+    },
+    "assets/devices/models/macbook-pro-14-m5.json": {
+      "sha256": "ec0b7e2dc3812a8d3b261ec44251712d8fe143120c536f4b53353ea87fc56208",
+      "bytes": 6885
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_13_m1_gold_icon.svg": {
+      "sha256": "f30a619ab28bda0abdbcf6fd72fa622e993251e588d3b2943fe69cacc9577013",
+      "bytes": 16208
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_15_m2_monochrome_icon.svg": {
+      "sha256": "06b8b47f90bb009d018fcb7bce73fbd0e1d8960775b5f4a9d5d3009d9bf33f7c",
+      "bytes": 2291
+    },
+    "assets/devices/previews/apple_macbook_air_15_m4_monochrome.png": {
+      "sha256": "c78950faca4803fe5158c084cf935c913e18a3a00c63520c1af1b6f2312169b3",
+      "bytes": 1392
+    },
+    "assets/devices/previews/apple_mac_mini_m1_monochrome.png": {
+      "sha256": "85b2ffa716906aeca891ba831e3044a25d31a8fcab1d64abd1afe008f7b1127c",
+      "bytes": 448
+    },
+    "assets/devices/models/mac-mini-m4.json": {
+      "sha256": "ae0de1d7ee37e95e2ab8dcef4f5cb82939d96ca0cb116b17813f1fbb960d8bf8",
+      "bytes": 2841
+    },
+    "assets/devices/icons/apple/pcs/ic_apple_mac_studio_m2_max_monochrome_icon.svg": {
+      "sha256": "6dd3aacf751760c72901807cde537f272bb23cb83229b781936cb24b72363c0b",
+      "bytes": 3452
+    },
+    "assets/devices/profiles/macbook-pro-14-m5-pro.json": {
+      "sha256": "3b3df55c4aff6e7e69724c282e8e70eb063969f72e02cb17dc256c93b57e1cb8",
+      "bytes": 14817
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_13_m5_silver_icon.png": {
+      "sha256": "310b387ea3c3b89996a4294d024a9c604b7979a7fd513f667bc14557ef46eaf1",
+      "bytes": 31962
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m1_max_monochrome_icon.svg": {
+      "sha256": "1a3ac4de8075f40d1a6fa92d693af45ceafe2425c2c4773d04884878ad087c80",
+      "bytes": 2283
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m2_max_space_gray_icon.png": {
+      "sha256": "07d288cc9ae74458cfa33632261d32c02e378d9065d8f928baa37ce49591fb53",
+      "bytes": 34085
+    },
+    "assets/devices/frames/macbook-air-15-m5-0.svg": {
+      "sha256": "4f11cfc1bf908d6b9c6b7f18bf454395d3202f260c0343feed9f41db87b5f3ce",
+      "bytes": 8456
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_13_m3_silver_icon.svg": {
+      "sha256": "1efbfc393d8f0071e07ace6b53ac460f8dea4470c713e6bdc6d5adecb920999e",
+      "bytes": 16680
+    },
+    "assets/devices/frames/macbook-pro-14-m5-max-0.svg": {
+      "sha256": "821dec0a0512ba0b523cc571798958783991cfe4c87b45e456103779035d051f",
+      "bytes": 8275
+    },
+    "assets/devices/profiles/macbook-air-15-m2.json": {
+      "sha256": "c0bd93e9afb89b49f5462b4eb4dca9b1ea735651f4ec0aace82b98ba096f95eb",
+      "bytes": 16059
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m4_pro_silver_icon.png": {
+      "sha256": "d4132b89e3fa9f760d0ec6472f7f92b2c716a377336f3adac55e65cbbc039c00",
+      "bytes": 32367
+    },
+    "assets/devices/profiles/macbook-air-13-m2.json": {
+      "sha256": "014e319d185ade46ccea8e1101d05227e6447c7bb6d4730fd6129168851c7bbe",
+      "bytes": 15964
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m2_pro_space_gray_icon.png": {
+      "sha256": "07d288cc9ae74458cfa33632261d32c02e378d9065d8f928baa37ce49591fb53",
+      "bytes": 34085
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_16_m4_max_space_black_icon.svg": {
+      "sha256": "0cbc2e13231ac12289172fb2e22e0c51bdcb9353594d2bb14fc4d2280efda2b8",
+      "bytes": 16757
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m4_space_black_icon.svg": {
+      "sha256": "22ff522589af7c441a4c95337de30f316b45f5af92feab2986c275eefdbfb739",
+      "bytes": 16736
+    },
+    "assets/devices/previews/apple_macbook_pro_14_m4_space_black.png": {
+      "sha256": "2c0df4f9c3b83c4e3c7db32f3918a108de939b3535cb4e2c9420ceb7d2eeeedf",
+      "bytes": 8003
+    },
+    "assets/devices/models/macbook-pro-14-m3.json": {
+      "sha256": "feed780cc677f5fd60940fd0aff61d2a201f07f4686208435911a169c58d4f52",
+      "bytes": 6894
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m4_pro_silver_icon.svg": {
+      "sha256": "fcc452c637b8b8958acf6c9afa5ceeb80700e9a914d59d925e701af8c5b57764",
+      "bytes": 16735
+    },
+    "assets/devices/models/macbook-pro-16-m3-pro.json": {
+      "sha256": "ed1892f345db3e12a5afeee619e1b7ea7334a66442d957aa7659ef4347db2f71",
+      "bytes": 6865
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_16_m3_max_monochrome_icon.svg": {
+      "sha256": "af3d919072a090a64279e96b1f512b8f3d0b1beedd91fa4a325657e5e25bb071",
+      "bytes": 2286
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_16_m3_max_silver_icon.svg": {
+      "sha256": "f1041bba4eeefc53b880e6640fecb8a34cde04b3dd609b11743c5f60ff52eeeb",
+      "bytes": 16752
+    },
+    "assets/devices/profiles/mac-mini-m5-pro.json": {
+      "sha256": "946b889defdebc30703539008a17349bab17c14843707fd48c2ae6f38edfeedc",
+      "bytes": 5771
+    },
+    "assets/devices/frames/macbook-pro-16-m4-pro-0.svg": {
+      "sha256": "6238ec07dfe77d77ef63291db39b6dc2e6b0f6d548bdb1ea238128d86fd891e7",
+      "bytes": 8252
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_13_m5_silver_icon.svg": {
+      "sha256": "8d9406cd58db40413e3422d2ba8fb51a5ab2866a24a6995d2431579a68c5bc08",
+      "bytes": 16680
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_13_m5_monochrome_icon.png": {
+      "sha256": "060d4ec16a6306e6d3df21322a974cf3e007f160d946f2ec4bd83732eb888bc6",
+      "bytes": 3325
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m5_silver_icon.svg": {
+      "sha256": "dc3413f2712817578873288b062c2a2c5543132f13b97b1d8c33035908816ed9",
+      "bytes": 16731
+    },
+    "assets/devices/icons/apple/pcs/ic_apple_mac_studio_m4_max_monochrome_icon.svg": {
+      "sha256": "863ef73ae49cfea4de7c833146bf3370645da7e6d1e361f08d249d2238166a2d",
+      "bytes": 3452
+    },
+    "assets/devices/previews/apple_mac_studio_m3_ultra_monochrome.png": {
+      "sha256": "3cef4ea64cee3bbc86cc86f820e226ae1fecb215503e149ec2ec50260bbbf085",
+      "bytes": 1476
+    },
+    "assets/devices/previews/apple_macbook_air_13_m5_silver.png": {
+      "sha256": "18ac899127d63875c97f1659c64da5c88fbdc5a3b2aba27627cf95c23b271329",
+      "bytes": 7904
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m5_monochrome_icon.svg": {
+      "sha256": "89b3a1a3813ea7db9286022a8740787ca60e5622fb6b82676aa989cbf1e57f8d",
+      "bytes": 2279
+    },
+    "assets/devices/previews/apple_macbook_neo_a18_pro_blush.png": {
+      "sha256": "4978d00f96d5964b64d642c57be2253ead9b6922dbc1838303c4a75b165bd35c",
+      "bytes": 8062
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_13_m2_midnight_icon.svg": {
+      "sha256": "76f955620bc51bf60a27fda719c5f9cde75cd7d915a095d73201d465d5a960df",
+      "bytes": 16682
+    },
+    "assets/devices/previews/apple_macbook_air_13_m3_midnight.png": {
+      "sha256": "9118bc9a574c94f4b4b3259724403697153faa909db040e5cd775ba7301e10fa",
+      "bytes": 7931
+    },
+    "assets/devices/previews/apple_macbook_pro_16_m3_max_monochrome.png": {
+      "sha256": "140b81efe5c52d84c5f070e8fa8d126f558036e8f598894e6869ee32000ebd97",
+      "bytes": 1415
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_16_m5_pro_space_black_icon.svg": {
+      "sha256": "36f2baeb5ca9f7fc0d5630d5f72b998e756a07a7b79c062230ebcc925e105dda",
+      "bytes": 16757
+    },
+    "assets/devices/models/macbook-pro-16-m2-pro.json": {
+      "sha256": "9a39f843ccb89ef6bce42f40e15d2327f3f93fe7d68872d312443fae841a9694",
+      "bytes": 6874
+    },
+    "assets/devices/profiles/mac-studio-m5-max.json": {
+      "sha256": "1b53a1ae09f93da7c125b9a0d8505d40691b36931934a05f6713d31c0541607e",
+      "bytes": 6593
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_16_m4_pro_space_black_icon.png": {
+      "sha256": "de335654ba224c2a797788f34e34ff76bc8f20a373775aaae7c06920d479039d",
+      "bytes": 32921
+    },
+    "assets/devices/previews/apple_mac_mini_m4_pro_silver.png": {
+      "sha256": "f4acb1c842fed0d59b1bc4fc416dc6863e82b76feed692bd9c6b658418460c06",
+      "bytes": 4971
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_15_m2_silver_icon.svg": {
+      "sha256": "24cbdf543ba8612ba3de3c2128ebb386466d388772058b477d7948ef86f79470",
+      "bytes": 16677
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m3_pro_silver_icon.png": {
+      "sha256": "d4132b89e3fa9f760d0ec6472f7f92b2c716a377336f3adac55e65cbbc039c00",
+      "bytes": 32367
+    },
+    "assets/devices/previews/apple_macbook_pro_14_m4_pro_silver.png": {
+      "sha256": "8b5e873aeb54b76536b9cbfcd239c97b053e726f70c13ea4d778c6b49115b87d",
+      "bytes": 7914
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m4_pro_space_black_icon.png": {
+      "sha256": "2ee61022a7a3fe04ffaac1d37fda4518153d48f8e2aff1eaff368695c615562d",
+      "bytes": 34093
+    },
+    "assets/devices/icons/apple/pcs/ic_apple_mac_mini_m6_silver_icon.png": {
+      "sha256": "560624bb85731e63479354260de875d5cf7be548a98a85757dd73ea4c45ea6a8",
+      "bytes": 12658
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m4_max_silver_icon.png": {
+      "sha256": "d4132b89e3fa9f760d0ec6472f7f92b2c716a377336f3adac55e65cbbc039c00",
+      "bytes": 32367
+    },
+    "assets/devices/previews/apple_macbook_pro_16_m2_pro_space_gray.png": {
+      "sha256": "5aa19b449f4580773a42ffe46a584280f2dcde95ed3a63f5b660ceceaca92ab1",
+      "bytes": 7954
+    },
+    "assets/devices/previews/apple_macbook_air_15_m2_monochrome.png": {
+      "sha256": "c78950faca4803fe5158c084cf935c913e18a3a00c63520c1af1b6f2312169b3",
+      "bytes": 1392
+    },
+    "assets/devices/icons/apple/pcs/ic_apple_mac_studio_m3_ultra_silver_icon.svg": {
+      "sha256": "19a3f965f401fad424854b829f22d621ad1a8668f5ee9ab4e3c328fa2ffe636f",
+      "bytes": 11181
+    },
+    "assets/devices/models/mac-studio-m3-ultra.json": {
+      "sha256": "db913184fd74a69306dabe057d5ac0631ef6e862499ad979a97bee171623b1a8",
+      "bytes": 2873
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_13_m1_space_gray_icon.png": {
+      "sha256": "e7b003f1879d44abde4f0bcf9e245fb1996a905a8683ae00f1fad9d77e7965b9",
+      "bytes": 29386
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_16_m2_pro_space_gray_icon.svg": {
+      "sha256": "b73ff68e48782f4ca23c84920488ca3e7cb55c3d63780ddfe730a2f306c7662d",
+      "bytes": 16756
+    },
+    "assets/devices/icons/apple/pcs/ic_apple_mac_studio_m2_max_silver_icon.svg": {
+      "sha256": "64a713c389a58f9f2d3ea7354ea668096c1b5f133459df739da1120f1f37a7e8",
+      "bytes": 11179
+    },
+    "assets/devices/previews/apple_macbook_pro_14_m3_pro_silver.png": {
+      "sha256": "8b5e873aeb54b76536b9cbfcd239c97b053e726f70c13ea4d778c6b49115b87d",
+      "bytes": 7914
+    },
+    "assets/devices/build_macs.py": {
+      "sha256": "f3e749912c0c0b8c1bc3d2163aba7303394d7b67176c7d8b6523a93391c1aae4",
+      "bytes": 5859
+    },
+    "assets/devices/models/macbook-air-15-m3.json": {
+      "sha256": "e871bc787530bf143d63e5f46e9e08bd61c6015aba3e75130668da811ba2395b",
+      "bytes": 8726
+    },
+    "assets/devices/models/macbook-air-15-m2.json": {
+      "sha256": "53d886e373d051b32a64ddf7f159f16f9eb873d295e1db53e9f39c50f4194943",
+      "bytes": 8775
+    },
+    "assets/devices/profiles/mac-studio-m4-max.json": {
+      "sha256": "86d063924943df4ad81d33276aa3d4f97996934fd1e73b0738b8a3d160b565de",
+      "bytes": 6593
+    },
+    "assets/devices/frames/macbook-pro-13-m1-0.svg": {
+      "sha256": "4265e102c12b125462fcc2d456ad86b517a7626421854afa9a1533cc5a44c71d",
+      "bytes": 5454
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_13_m5_monochrome_icon.svg": {
+      "sha256": "1283a461b51d028ba8c381b1c826259fa03ee60cab4203368b73450997c158a1",
+      "bytes": 2281
+    },
+    "assets/devices/frames/macbook-pro-14-m1-max-0.svg": {
+      "sha256": "821dec0a0512ba0b523cc571798958783991cfe4c87b45e456103779035d051f",
+      "bytes": 8275
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m4_monochrome_icon.png": {
+      "sha256": "eff0005e702cbcb9397ab24e2ee5a971469054dd9dd5c9fca80a3ba0b4f95739",
+      "bytes": 3341
+    },
+    "assets/devices/previews/apple_macbook_pro_14_m4_pro_monochrome.png": {
+      "sha256": "81268ee65b660345fc72c0245c1ce945eb7d286ec8f3cf9efa543a16b6c531a8",
+      "bytes": 1417
+    },
+    "assets/devices/icons/apple/pcs/ic_apple_mac_mini_m1_monochrome_icon.png": {
+      "sha256": "c0af6e76291e13c28fb07945c5ab5cd83c32fa23d8b5bcfee342b0fcd32d6963",
+      "bytes": 1984
+    },
+    "assets/devices/previews/apple_mac_studio_m5_ultra_monochrome.png": {
+      "sha256": "3cef4ea64cee3bbc86cc86f820e226ae1fecb215503e149ec2ec50260bbbf085",
+      "bytes": 1476
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m2_max_monochrome_icon.svg": {
+      "sha256": "aba7e95db02408bf083bd147f0bef02457f7e261d4ed600f587ae36572707191",
+      "bytes": 2283
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_15_m2_space_gray_icon.png": {
+      "sha256": "203de44a3590f6e3d526473977b7229206b886293d4f9c78d5b2c70c3a7cd88c",
+      "bytes": 32913
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m3_silver_icon.svg": {
+      "sha256": "0b724face4428c872345aaff5e8ee9f21cab62eab6ad44c0d68a764a5a942ffe",
+      "bytes": 16731
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_neo_a18_pro_monochrome_icon.svg": {
+      "sha256": "22b904c4abb866128a8645c3f74e62cf6cdac66a47330f1560aeb26d440faf2a",
+      "bytes": 1799
+    },
+    "assets/devices/profiles/mac-mini-m2-pro.json": {
+      "sha256": "879c30fbf41fa04cec3912ab2b93c9586f97994a7b213ea3b22bf0da836a749f",
+      "bytes": 5897
+    },
+    "assets/devices/previews/apple_macbook_pro_14_m4_pro_space_black.png": {
+      "sha256": "2c0df4f9c3b83c4e3c7db32f3918a108de939b3535cb4e2c9420ceb7d2eeeedf",
+      "bytes": 8003
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_neo_a18_pro_monochrome_icon.png": {
+      "sha256": "eb4dd8bf38491de3e658618911e87162dd0840f9f6bedd9510552be463599e10",
+      "bytes": 3597
+    },
+    "assets/devices/previews/apple_macbook_air_15_m4_midnight.png": {
+      "sha256": "faa6ef73ff2db53cced9c582813d3b86a8c77d987cdb6a9fac8696ba358a9de0",
+      "bytes": 8058
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m4_silver_icon.svg": {
+      "sha256": "04e5751169589784ce60c2783a72a4443252d6175c3589dc34009df18b824984",
+      "bytes": 16731
+    },
+    "assets/devices/models/mac-studio-m2-ultra.json": {
+      "sha256": "23291b3c03e734213d7cd4b841380a9a564e0572c05c2437a9467d49635dd611",
+      "bytes": 2873
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m3_monochrome_icon.svg": {
+      "sha256": "40e63ec7338e6c294dbad12126afb979ecb0c6c7862537f03348f9f0120cf848",
+      "bytes": 2279
+    },
+    "assets/devices/previews/apple_macbook_pro_16_m5_pro_monochrome.png": {
+      "sha256": "140b81efe5c52d84c5f070e8fa8d126f558036e8f598894e6869ee32000ebd97",
+      "bytes": 1415
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m3_pro_space_black_icon.svg": {
+      "sha256": "9fb2c548927d477ec9b9b3622d7b1275eb185d3a7af199b6f259b5e23de00225",
+      "bytes": 16740
+    },
+    "assets/devices/previews/apple_macbook_air_13_m5_sky_blue.png": {
+      "sha256": "e568e1fcd7099bd148575e60f1f50d0deea0fbd6b1757db9409869ac72203bb8",
+      "bytes": 7981
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_15_m4_starlight_icon.svg": {
+      "sha256": "7378239f5def8c21946b0c3f605edd914221d722e9d47c0125e1b9082662f94d",
+      "bytes": 16680
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m3_silver_icon.png": {
+      "sha256": "d4132b89e3fa9f760d0ec6472f7f92b2c716a377336f3adac55e65cbbc039c00",
+      "bytes": 32367
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m5_pro_silver_icon.png": {
+      "sha256": "d4132b89e3fa9f760d0ec6472f7f92b2c716a377336f3adac55e65cbbc039c00",
+      "bytes": 32367
+    },
+    "assets/devices/previews/apple_mac_studio_m2_ultra_silver.png": {
+      "sha256": "cc6a0a03c56be59a20f03682892add19e436e08e59d5118b23fd6aceba0adb24",
+      "bytes": 6114
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_13_m2_space_gray_icon.png": {
+      "sha256": "de8750f222c2374cf467cc01b0bd1740d2d09879d060cb5ab029672366dac3de",
+      "bytes": 33668
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m1_max_silver_icon.svg": {
+      "sha256": "9d45b2d7d4923c85e912c105e61429b1e6ad6395dccf612dbca963bc43b62cdb",
+      "bytes": 16735
+    },
+    "assets/devices/icons/apple/pcs/ic_apple_mac_studio_m2_ultra_silver_icon.png": {
+      "sha256": "761026f2f3bff535686698cbf4849064ad02ad5ad242dc4e11fb7f46276b15f5",
+      "bytes": 16599
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m3_pro_monochrome_icon.png": {
+      "sha256": "eff0005e702cbcb9397ab24e2ee5a971469054dd9dd5c9fca80a3ba0b4f95739",
+      "bytes": 3341
+    },
+    "assets/devices/previews/apple_macbook_air_15_m5_midnight.png": {
+      "sha256": "faa6ef73ff2db53cced9c582813d3b86a8c77d987cdb6a9fac8696ba358a9de0",
+      "bytes": 8058
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_16_m3_pro_monochrome_icon.svg": {
+      "sha256": "27805fd8edffa7ac00a07ea7f5a2d05c5b65b3954d2eb16a6afd3b1c6288f61f",
+      "bytes": 2286
+    },
+    "assets/devices/models/macbook-pro-16-m4-pro.json": {
+      "sha256": "e5f57a2d4c86d846e7dfdead64cf27d86e3e2de2abd505e13a0ef90e302f3dfb",
+      "bytes": 6865
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_16_m2_pro_monochrome_icon.svg": {
+      "sha256": "c893898aa5d4a0a98a7dbaaefa7461ed2b729d5caeadea218424ffbc7927c2aa",
+      "bytes": 2286
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m4_max_silver_icon.svg": {
+      "sha256": "18d15ee8763d7351ba4cbc5e6db6950c351e36968b5792c412d009f2976b8a9f",
+      "bytes": 16735
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_15_m2_space_gray_icon.svg": {
+      "sha256": "c83316cdb20df30489a40288c1bbe987ac1117c10453ae6d70681531bcccba57",
+      "bytes": 16681
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_16_m5_pro_space_black_icon.png": {
+      "sha256": "de335654ba224c2a797788f34e34ff76bc8f20a373775aaae7c06920d479039d",
+      "bytes": 32921
+    },
+    "assets/devices/profiles/macbook-pro-16-m5-pro.json": {
+      "sha256": "9e1032efd737794ccaefe7a923f576725726e620f485c8f274114d6a155ac6e7",
+      "bytes": 14583
+    },
+    "assets/devices/previews/apple_macbook_pro_16_m5_pro_silver.png": {
+      "sha256": "07066ebd014579e06ea478dc06140358b0a4651079a7251dcb42fa682e711f45",
+      "bytes": 7933
+    },
+    "assets/devices/previews/apple_macbook_pro_16_m1_max_monochrome.png": {
+      "sha256": "140b81efe5c52d84c5f070e8fa8d126f558036e8f598894e6869ee32000ebd97",
+      "bytes": 1415
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_neo_a18_pro_indigo_icon.png": {
+      "sha256": "b5df966ba276786be647b3eee78d80f1bd8dc4cb955dba65b11b61bb92ceac88",
+      "bytes": 27181
+    },
+    "assets/devices/frames/macbook-pro-16-m4-max-0.svg": {
+      "sha256": "6238ec07dfe77d77ef63291db39b6dc2e6b0f6d548bdb1ea238128d86fd891e7",
+      "bytes": 8252
+    },
+    "assets/devices/icons/apple/pcs/ic_apple_mac_mini_m5_pro_monochrome_icon.png": {
+      "sha256": "f1f02e9aa3040537248f0d5ff14958598facb265c019e76d8881665b3b07ec12",
+      "bytes": 2451
+    },
+    "assets/devices/frames/macbook-air-13-m1-0.svg": {
+      "sha256": "c1a40edebb8856f0fa55c4c2e27b58ff1ff4a19238f0574f5f10d05fab67efa8",
+      "bytes": 5440
+    },
+    "assets/devices/icons/apple/pcs/ic_apple_mac_studio_m1_max_silver_icon.svg": {
+      "sha256": "82f4c3434e2918cc80300b12eec849f9f64d690ffc848b31ad3ed6dfb54c8ff7",
+      "bytes": 11179
+    },
+    "assets/devices/previews/apple_macbook_air_15_m4_starlight.png": {
+      "sha256": "98639bafd83a2e2779e987cf86d45e46da3c3d17aaea13559a1ac0c00239fa92",
+      "bytes": 8083
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_13_m2_silver_icon.png": {
+      "sha256": "86a5f5f998e9ece599942e2640aa07c7e2726dac09dd9054f3ba715f1a121986",
+      "bytes": 27647
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_13_m4_silver_icon.svg": {
+      "sha256": "83a710e61789359898dd63d6e1f9b8d0c71e7656b250adc22615bf0b595d270f",
+      "bytes": 16680
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_16_m4_max_monochrome_icon.png": {
+      "sha256": "e6ad5d9f1b5c623435f368c63c9aa17738678310e3a808c3e1c0c6ff6c8ec3ac",
+      "bytes": 3438
+    },
+    "assets/devices/previews/apple_macbook_air_13_m4_monochrome.png": {
+      "sha256": "524977bbf1ee6c43c2cd17cf745a248bc6779a65fd4ce429c170256858269cbe",
+      "bytes": 1393
+    },
+    "assets/devices/models/macbook-neo-a18-pro.json": {
+      "sha256": "3a457d4588df480809ac3e5d553600b6d1e1786e8812c1b9c0ae17f15be424b1",
+      "bytes": 8877
+    },
+    "assets/devices/previews/apple_macbook_pro_16_m1_max_silver.png": {
+      "sha256": "07066ebd014579e06ea478dc06140358b0a4651079a7251dcb42fa682e711f45",
+      "bytes": 7933
+    },
+    "assets/devices/previews/apple_macbook_pro_14_m5_monochrome.png": {
+      "sha256": "81268ee65b660345fc72c0245c1ce945eb7d286ec8f3cf9efa543a16b6c531a8",
+      "bytes": 1417
+    },
+    "assets/devices/icons/apple/pcs/ic_apple_mac_studio_m2_ultra_monochrome_icon.png": {
+      "sha256": "867f3d90f6299df035a765803cb784a6cfcd5c4f6d284ea5e2a766cf62db0e8e",
+      "bytes": 3172
+    },
+    "assets/devices/icons/apple/pcs/ic_apple_mac_mini_m5_pro_monochrome_icon.svg": {
+      "sha256": "0d1a93144d5d05f9d82059ddf29b00929edd2a5bdc6bd252364728f0f0b68646",
+      "bytes": 1925
+    },
+    "assets/devices/frames/macbook-pro-14-m3-pro-0.svg": {
+      "sha256": "821dec0a0512ba0b523cc571798958783991cfe4c87b45e456103779035d051f",
+      "bytes": 8275
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m1_pro_silver_icon.svg": {
+      "sha256": "5b0b641cc7a7511d97bf463ecafd70c040c8dba8ddc6c4bd8cc1c7f59bb42b03",
+      "bytes": 16735
+    },
+    "assets/devices/frames/macbook-pro-14-m4-max-0.svg": {
+      "sha256": "821dec0a0512ba0b523cc571798958783991cfe4c87b45e456103779035d051f",
+      "bytes": 8275
+    },
+    "assets/devices/icons/apple/pcs/ic_apple_mac_mini_m4_pro_silver_icon.png": {
+      "sha256": "560624bb85731e63479354260de875d5cf7be548a98a85757dd73ea4c45ea6a8",
+      "bytes": 12658
+    },
+    "assets/devices/previews/apple_macbook_pro_13_m1_silver.png": {
+      "sha256": "8d369862597fab25bdc0a74c2a1609445525e5e6e5bc166a00b9e7204203c8df",
+      "bytes": 7538
+    },
+    "assets/devices/icons/apple/pcs/ic_apple_mac_studio_m5_max_silver_icon.png": {
+      "sha256": "761026f2f3bff535686698cbf4849064ad02ad5ad242dc4e11fb7f46276b15f5",
+      "bytes": 16599
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m1_max_monochrome_icon.png": {
+      "sha256": "eff0005e702cbcb9397ab24e2ee5a971469054dd9dd5c9fca80a3ba0b4f95739",
+      "bytes": 3341
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_13_m5_sky_blue_icon.png": {
+      "sha256": "f5c3930a78e742bef642a10b557ca84ccdd04bcfb8085dd732fa6619bc63ca4d",
+      "bytes": 32775
+    },
+    "assets/devices/frames/macbook-pro-14-m2-max-0.svg": {
+      "sha256": "821dec0a0512ba0b523cc571798958783991cfe4c87b45e456103779035d051f",
+      "bytes": 8275
+    },
+    "assets/devices/frames/macbook-pro-16-m2-max-0.svg": {
+      "sha256": "6238ec07dfe77d77ef63291db39b6dc2e6b0f6d548bdb1ea238128d86fd891e7",
+      "bytes": 8252
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_pro_14_m3_space_gray_icon.png": {
+      "sha256": "07d288cc9ae74458cfa33632261d32c02e378d9065d8f928baa37ce49591fb53",
+      "bytes": 34085
+    },
+    "assets/devices/icons/apple/laptops/ic_apple_macbook_air_13_m4_starlight_icon.png": {
+      "sha256": "46aa2576698f6890d5bb3357ee26d1f3db1e454f7c74eadc975374c25ddbb125",
+      "bytes": 32601
     }
   }
 }

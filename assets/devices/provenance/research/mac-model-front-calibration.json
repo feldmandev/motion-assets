@@ -1,0 +1,219 @@
+{
+  "as_of": "2026-10-25",
+  "method": "Lid and OLED boundary ratios measured in primary Apple front renders. Vertical scale is anchored to published native pixel-density-derived OLED height; native aspect and base envelope remain authoritative. Perspective and artwork sampling introduce about 0.5?1.5 mm uncertainty. Pro13 uses a four-corner homography; inferred lid height exceeded the published closed envelope, so published depth is retained and only border asymmetry is fitted.",
+  "chassis": {
+    "macbook-air-13-wedge": {
+      "lid_height_mm": 203.8,
+      "screen_top_mm": 13.0,
+      "reference_image": "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111883_macbookair.png",
+      "source_specs": "https://support.apple.com/en-us/111883",
+      "outer_rect_px": [
+        78,
+        0,
+        864,
+        535
+      ],
+      "display_rect_px": [
+        97,
+        34,
+        844,
+        504
+      ],
+      "confidence": "photo-estimated, not CAD",
+      "lower_oled_corners": "square; only upper OLED corners are rounded in Apple front artwork"
+    },
+    "macbook-air-13-flat": {
+      "lid_height_mm": 209.6,
+      "screen_top_mm": 6.8,
+      "reference_image": "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/mba-13inch-15inch.png",
+      "source_specs": "https://support.apple.com/en-us/122210",
+      "outer_rect_px": [
+        101,
+        211,
+        899,
+        762
+      ],
+      "display_rect_px": [
+        119,
+        229,
+        881,
+        725
+      ],
+      "confidence": "photo-estimated, not CAD",
+      "lower_oled_corners": "square; only upper OLED corners are rounded in Apple front artwork",
+      "notch_width_mm": 35.5,
+      "notch_height_mm": 6.5,
+      "camera_below_screen_top_mm": 1.5,
+      "qualification": "Apple reuses this front hero for 13/15-inch specs; its lid/display width ratio closely matches the13-inch published width. Checked against the independently labelled13-inch M2 composite."
+    },
+    "macbook-air-15-flat": {
+      "lid_height_mm": 232.0,
+      "screen_top_mm": 7.1,
+      "reference_image": "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/mba_15_m3_2024_hero.png",
+      "source_specs": "https://support.apple.com/en-us/118552",
+      "outer_rect_px": [
+        94,
+        211,
+        908,
+        766
+      ],
+      "display_rect_px": [
+        109,
+        227,
+        891,
+        734
+      ],
+      "confidence": "photo-estimated, not CAD",
+      "lower_oled_corners": "square; only upper OLED corners are rounded in Apple front artwork",
+      "notch_width_mm": 35.0,
+      "notch_height_mm": 6.5,
+      "camera_below_screen_top_mm": 1.5
+    },
+    "macbook-pro-13-touchbar": {
+      "lid_height_mm": 212.4,
+      "screen_top_mm": 17.1,
+      "reference_image": "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111893_macbookpro13.png",
+      "source_specs": "https://support.apple.com/en-us/111893",
+      "outer_rect_px": null,
+      "display_rect_px": null,
+      "confidence": "photo-estimated, not CAD",
+      "lower_oled_corners": "square; only upper OLED corners are rounded in Apple front artwork",
+      "homography_display_quad_px": [
+        [
+          24,
+          25
+        ],
+        [
+          731,
+          25
+        ],
+        [
+          689,
+          236
+        ],
+        [
+          66,
+          236
+        ]
+      ],
+      "homography_lid_quad_px": [
+        [
+          1,
+          0
+        ],
+        [
+          754,
+          0
+        ],
+        [
+          704,
+          254
+        ],
+        [
+          50,
+          254
+        ]
+      ],
+      "qualification": "Retain published212.4mm closed depth; photo-inferred215mm lid exceeds that envelope and is not accepted as a physical dimension."
+    },
+    "macbook-pro-14-notch": {
+      "lid_height_mm": 214.0,
+      "screen_top_mm": 5.3,
+      "reference_image": "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111902_mbp14-silver2.png",
+      "source_specs": "https://support.apple.com/en-us/111902",
+      "outer_rect_px": [
+        132,
+        48,
+        964,
+        616
+      ],
+      "display_rect_px": [
+        145,
+        62,
+        950,
+        584
+      ],
+      "confidence": "photo-estimated, not CAD",
+      "lower_oled_corners": "square; only upper OLED corners are rounded in Apple front artwork",
+      "notch_width_mm": 37.0,
+      "notch_height_mm": 6.5,
+      "camera_below_screen_top_mm": 2.0
+    },
+    "macbook-pro-16-notch": {
+      "lid_height_mm": 240.6,
+      "screen_top_mm": 5.1,
+      "reference_image": "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111901_mbp16-gray.png",
+      "source_specs": "https://support.apple.com/en-us/111901",
+      "outer_rect_px": [
+        103,
+        23,
+        1011,
+        637
+      ],
+      "display_rect_px": [
+        116,
+        36,
+        998,
+        606
+      ],
+      "confidence": "photo-estimated, not CAD",
+      "lower_oled_corners": "square; only upper OLED corners are rounded in Apple front artwork",
+      "notch_width_mm": 37.0,
+      "notch_height_mm": 6.5,
+      "camera_below_screen_top_mm": 2.0
+    },
+    "macbook-pro-14-m3-base": {
+      "lid_height_mm": 214.0,
+      "screen_top_mm": 5.3,
+      "reference_image": "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111902_mbp14-silver2.png",
+      "source_specs": "https://support.apple.com/en-us/111902",
+      "outer_rect_px": [
+        132,
+        48,
+        964,
+        616
+      ],
+      "display_rect_px": [
+        145,
+        62,
+        950,
+        584
+      ],
+      "confidence": "photo-estimated, not CAD",
+      "lower_oled_corners": "square; only upper OLED corners are rounded in Apple front artwork",
+      "notch_width_mm": 37.0,
+      "notch_height_mm": 6.5,
+      "camera_below_screen_top_mm": 2.0,
+      "qualification": "Shared14-inch front envelope with Pro-tier chassis; port differences retained independently."
+    },
+    "macbook-neo-13": {
+      "lid_height_mm": 199.1,
+      "screen_top_mm": 9.0,
+      "reference_image": "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/macbook-neo-13-inch-a18-pro.png",
+      "source_specs": "https://support.apple.com/en-us/126322",
+      "outer_rect_px": [
+        154,
+        254,
+        846,
+        719
+      ],
+      "display_rect_px": [
+        174,
+        275,
+        826,
+        683
+      ],
+      "confidence": "photo-estimated, not CAD",
+      "lower_oled_corners": "square; only upper OLED corners are rounded in Apple front artwork"
+    }
+  },
+  "outline_sampling_verification": {
+    "model": "macbook-pro-14-m1-pro",
+    "hausdorff_mm_by_samples": {
+      "400": 0.7687909876032318,
+      "4096": 0.08196595111893105
+    },
+    "applied_profile_samples": 4096,
+    "scope": "Mac outlined OLED only; native size and full UV extent unchanged"
+  }
+}

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "release": "v0.1.11",
-  "archive": "motion-assets-models-0.1.11.zip",
+  "release": "v0.1.12",
+  "archive": "motion-assets-models-0.1.12.zip",
   "files": {
     "assets/devices/models/galaxy-a34.b343a058b447.glb.gz": {
       "sha256": "b343a058b4471152319e5e2cc1178abdb42ec8336286a8824aab49a33d055777",
@@ -1017,6 +1017,256 @@
       "sha256": "11c844ca0595a5902079b64687c695b90ad124b69b9505d50df5466b1e3511f4",
       "bytes": 624812,
       "glbSha256": "ae27dd0bf819d254c538f7240119a33afdcb8370a71e08e28ebca1c43b786c4e"
+    },
+    "assets/devices/models/mac-mini-m1.4fa6848e5ec6.glb.gz": {
+      "sha256": "4fa6848e5ec641f843e33fbcc06623b809cfb589a6a9e1762c243e7769052b3e",
+      "bytes": 741993,
+      "glbSha256": "f9b00584b86a8f7bdb0809fa998f7b07c391cf357409ccc5be798a655b35cb9b"
+    },
+    "assets/devices/models/mac-mini-m2.2485898e76f9.glb.gz": {
+      "sha256": "2485898e76f9413f9b7f027de959160d56769e4f7cd337ccd2f880467ee65c96",
+      "bytes": 741897,
+      "glbSha256": "3e2db8e0544735e3e4486c703ac74c1bd5e275c428e4720e9bac99ef5a0cb7c7"
+    },
+    "assets/devices/models/mac-mini-m2-pro.bcde494cc71f.glb.gz": {
+      "sha256": "bcde494cc71f0e01981a165af8020478768bd41c9e5a5d310210da5b7953842c",
+      "bytes": 873587,
+      "glbSha256": "01119a1b2effb75012ee47601ac0041086ea02cc207936d0088622012317f86e"
+    },
+    "assets/devices/models/mac-mini-m4.2a50614c9442.glb.gz": {
+      "sha256": "2a50614c9442da146c62e8f3468ebd76522cda0faff517705154aa2d5cd7c094",
+      "bytes": 1564172,
+      "glbSha256": "05432ac88298cbef95824a26d82d1ec22eca66de288f67c12e03152cb54a6bd3"
+    },
+    "assets/devices/models/mac-mini-m4-pro.7704e5e6840a.glb.gz": {
+      "sha256": "7704e5e6840a2545155104fde59cc4e981090e96d4a0fe682eb151f0ccf8d39f",
+      "bytes": 1564166,
+      "glbSha256": "6c636afde076f1eb57d90db0ad6256324e0f09f1fd97dc98129c75daa70c926c"
+    },
+    "assets/devices/models/mac-mini-m6.c39b83789427.glb.gz": {
+      "sha256": "c39b837894273396941c54c0f1ec769c6788d91d6e962b78d8dfe3c70b2efb9e",
+      "bytes": 1564173,
+      "glbSha256": "96621bfa9e4ac8999a96305d758943633326021ddc4fe30d341b1c3c8bf968ff"
+    },
+    "assets/devices/models/mac-mini-m5-pro.34ac3bf34418.glb.gz": {
+      "sha256": "34ac3bf34418ac8745fd59d0773b2b6e69b9f549c7328a00d41ad778a914aee4",
+      "bytes": 1564176,
+      "glbSha256": "5f7ba7476d34fafacff2ed748b20a289d41bef1a03345ca54398c34012f55d39"
+    },
+    "assets/devices/models/mac-studio-m1-max.47ddbd92be35.glb.gz": {
+      "sha256": "47ddbd92be3538feb6f0c589c738a35d9341b25ab2b65886e11b149b487f1add",
+      "bytes": 1125677,
+      "glbSha256": "0746706248722af8955a034c6b8ae6080076c0f7a5fce910821e95d779599360"
+    },
+    "assets/devices/models/mac-studio-m1-ultra.950ba57cf56b.glb.gz": {
+      "sha256": "950ba57cf56bb9e204bf72f652e0d38f54dffd8e84c6ee986441b55c3bd2403a",
+      "bytes": 1125688,
+      "glbSha256": "d2e610301c125065e4344b86593f7586f2ec95961d12152531bc2f2fa8481f1c"
+    },
+    "assets/devices/models/mac-studio-m2-max.9b745fcd79b1.glb.gz": {
+      "sha256": "9b745fcd79b1c02a4622fff695946848d21dde3193ac0f28fa8d9de04dc7c3ed",
+      "bytes": 1125650,
+      "glbSha256": "b710c4112f157cf416bf9ad183c05bf4718199f817165d51876ac18bf93f5d66"
+    },
+    "assets/devices/models/mac-studio-m2-ultra.48a0dcd0ded7.glb.gz": {
+      "sha256": "48a0dcd0ded783f07638132fe6f7a6dc3c1d2a9691bbdb1322873af41cdd832c",
+      "bytes": 1125672,
+      "glbSha256": "9686429857ac6849e0d9684fc530fa3de4f24a550264185256fe343ad0ff4962"
+    },
+    "assets/devices/models/mac-studio-m4-max.0bdabeeab7ea.glb.gz": {
+      "sha256": "0bdabeeab7eab6a4faeec933c079245de991d543746f79cca43f4815a90528ac",
+      "bytes": 1125683,
+      "glbSha256": "d03c65de32d0f9d659d26f14437471dfa8d75280ccd67f0bbe8c48c1eb671018"
+    },
+    "assets/devices/models/mac-studio-m3-ultra.d13786cdac8c.glb.gz": {
+      "sha256": "d13786cdac8cef272ee9ecc4c9cc486c69e262941b412c97e75be24d19b18c83",
+      "bytes": 1125678,
+      "glbSha256": "fb30ec39076d78b05652d1586770dc5861ffb871094c52c9d890d538339b44c4"
+    },
+    "assets/devices/models/mac-studio-m5-max.14bbcf7345dd.glb.gz": {
+      "sha256": "14bbcf7345dd139318d623866040983f4ed00fa15fa51bd2118b6939bb97ea37",
+      "bytes": 1125685,
+      "glbSha256": "0e35ffea35f733af2e8588f644e0278d303c2f372b6b3bfac4004527017c9857"
+    },
+    "assets/devices/models/mac-studio-m5-ultra.de2f3ea47d5a.glb.gz": {
+      "sha256": "de2f3ea47d5a1bbb349b8befbac74b9d29efe2925b3ef02aa29850088602441f",
+      "bytes": 1125665,
+      "glbSha256": "89a2e707340628584fe9ce10d460d27be48e4b6bdc354ef3fec42871485e9624"
+    },
+    "assets/devices/models/macbook-air-13-m1.96c21ab22090.glb.gz": {
+      "sha256": "96c21ab22090f772ac659dd9d611b90351ae6937915140b465030122ef1eb7f3",
+      "bytes": 1022571,
+      "glbSha256": "9794cf5f8f2ead900df2046cd392a0efe6b67d8bd16dbf9eaa7292133bd319f2"
+    },
+    "assets/devices/models/macbook-air-13-m2.2929bbd9aaa3.glb.gz": {
+      "sha256": "2929bbd9aaa36adb419ef5c573388d09c850475a4406aac9eddf93470e314aa7",
+      "bytes": 888015,
+      "glbSha256": "69e1275bf94286701cf8d9b79d3fe3bcee0c3625fb069a580055ecefa0f9dc30"
+    },
+    "assets/devices/models/macbook-air-15-m2.f4e303eebe11.glb.gz": {
+      "sha256": "f4e303eebe116a40845f1ee22e6aae96be9d7f79b8c3048bc14eff5f3e6601f1",
+      "bytes": 890134,
+      "glbSha256": "a2ab6fa4500a4cb55597a8750997b8672942e93fdbd6cb113ee0749580f643e7"
+    },
+    "assets/devices/models/macbook-air-13-m3.aa27a4a0dba1.glb.gz": {
+      "sha256": "aa27a4a0dba13c94f50aa42fa5613dc5cd07fcc48d0f4872e6abb0703ca26066",
+      "bytes": 888005,
+      "glbSha256": "e75d6a05103a6b5b0802025dd4bd834b64991c0cd6d33b560365ffa58e1657b0"
+    },
+    "assets/devices/models/macbook-air-15-m3.2d5febd5dcfb.glb.gz": {
+      "sha256": "2d5febd5dcfb36534009123fae41a6c5a1af1450de0f55a6dfd86e85c81626d3",
+      "bytes": 890140,
+      "glbSha256": "942a20a03d1678a4dc14f19d8a6d3d7778d623a42f6a3e205ad05095887a8b05"
+    },
+    "assets/devices/models/macbook-air-13-m4.dac93586a437.glb.gz": {
+      "sha256": "dac93586a437b23202e35854cd2a562a65ce474ae2b584d2129c95f8db3515ae",
+      "bytes": 888019,
+      "glbSha256": "1dde96914d9081503f0da44c9452f2b974d8b6cf46b766eb87249c09e7709418"
+    },
+    "assets/devices/models/macbook-air-15-m4.dadb7fea5308.glb.gz": {
+      "sha256": "dadb7fea5308c1fa71cc08d604314ca7aa287853f67817ada3bbe70fe6f33f4e",
+      "bytes": 890135,
+      "glbSha256": "4f787b498ee2bd0fd70f37d81f212c01e499997042a14ff8e235ea2daf55695b"
+    },
+    "assets/devices/models/macbook-air-13-m5.eef9c0ab3f52.glb.gz": {
+      "sha256": "eef9c0ab3f529341e0a4ca286fb015921bc202fc49dc7d14d5e8639d428d439d",
+      "bytes": 888007,
+      "glbSha256": "80409dd5bd4946de022e2fa786c4d5d1a19066245377ac3561ace0dfe6d12011"
+    },
+    "assets/devices/models/macbook-air-15-m5.10acbca5c8b4.glb.gz": {
+      "sha256": "10acbca5c8b4902116640454e14dc4e688e6045f4f5d0037a85fa93410400ae0",
+      "bytes": 890139,
+      "glbSha256": "696e29925aa5d8f81c02f08a8ff503407162c0a116d33be880dcde86c61fb02d"
+    },
+    "assets/devices/models/macbook-pro-13-m1.6ff774d2fff2.glb.gz": {
+      "sha256": "6ff774d2fff2e09062feaa0d29e861a0222112a73a56de07a4e22af8b37246dc",
+      "bytes": 954896,
+      "glbSha256": "ebc15da283f59fd93f1b07403011196c390b0e2e108355879bed0b7e9a8971d5"
+    },
+    "assets/devices/models/macbook-pro-13-m2.21b9e0da527a.glb.gz": {
+      "sha256": "21b9e0da527a086e5be7aeb67dda0b5905e2abcb858b2ec44cdf8011e51081f0",
+      "bytes": 954897,
+      "glbSha256": "1867617c1a228af23a786e94843bb54111dc8d9c7e86965454d3cc346edbd36c"
+    },
+    "assets/devices/models/macbook-pro-14-m1-pro.fa7d3e9ad4f5.glb.gz": {
+      "sha256": "fa7d3e9ad4f587c263e0c8f516bf54aeac68d207d8a5b6b3cbfa1ee9e3fab0aa",
+      "bytes": 1180544,
+      "glbSha256": "3ff4426500e226f186c0ee63bf859c53714bd4318298b4e720b10109577db0e3"
+    },
+    "assets/devices/models/macbook-pro-14-m1-max.0edb85eb3740.glb.gz": {
+      "sha256": "0edb85eb37403e3ae71f1cac9e08448e2b650124230681ffb4f25c85d1fab3ba",
+      "bytes": 1180536,
+      "glbSha256": "0d1da332053cb2921732b31aa37a96152328b8ef0c76255ea60e99f23af17cc1"
+    },
+    "assets/devices/models/macbook-pro-16-m1-pro.778675397402.glb.gz": {
+      "sha256": "778675397402423d21a55fe4883ea68a267812da2621a95efa69d1b6a8425231",
+      "bytes": 1346531,
+      "glbSha256": "6f0d4d4eb00d08eb95d7173375a54e177c8943ae9005aecaea521bfcbc34e4b9"
+    },
+    "assets/devices/models/macbook-pro-16-m1-max.805cfc678d4b.glb.gz": {
+      "sha256": "805cfc678d4b26431f38fcc68dcba55f9df148548f644d37d5834f56c9a1f961",
+      "bytes": 1346554,
+      "glbSha256": "dfe40e80abc3c92665be85daa6c3e9860d99828ff5fba11ae7c577412377a930"
+    },
+    "assets/devices/models/macbook-pro-14-m2-pro.8089e705a792.glb.gz": {
+      "sha256": "8089e705a79213febeb8a554908ddbd72f323e07fca22ecb885b72c5ebc70ed3",
+      "bytes": 1180544,
+      "glbSha256": "69b41d8e031c60223c6edd6f9d1de7a31b61b3cda80b07203d135d7f1eaf1c3e"
+    },
+    "assets/devices/models/macbook-pro-14-m2-max.021af04bf01b.glb.gz": {
+      "sha256": "021af04bf01bcd8b098290b4d7b711b833219bbd93c6507d49318debb0e286e7",
+      "bytes": 1180550,
+      "glbSha256": "4ef3cef2e0511944a03018b1983ed8a0b6436905d1fe4d8dff15a70a120965e2"
+    },
+    "assets/devices/models/macbook-pro-16-m2-pro.b62ec845414c.glb.gz": {
+      "sha256": "b62ec845414cbdfab7ca26c1e44196f72984ac54fc0167bb51ff399f2632896f",
+      "bytes": 1346537,
+      "glbSha256": "c345fbf52d7d522086bcda40c825ab4dc5e8e8ed685d2cebc4bf0fb1c744d077"
+    },
+    "assets/devices/models/macbook-pro-16-m2-max.18919e1ba85d.glb.gz": {
+      "sha256": "18919e1ba85d8c81ad3fa4c9f5d9691f0d167f860bc5852a9b98a198b08db535",
+      "bytes": 1346548,
+      "glbSha256": "21940876f30a101b238435292b5a0e91c44af5d57af3fbb5a00b1ab4bbfd3ce6"
+    },
+    "assets/devices/models/macbook-pro-14-m3-pro.448ff51afc84.glb.gz": {
+      "sha256": "448ff51afc84e38177b28bbd8595f19d718a34d11c961238ff876e844049e60c",
+      "bytes": 1180536,
+      "glbSha256": "5189a62ea7558b57a4bbe3608005bf86508480ac838fded384f9a61cef615fb8"
+    },
+    "assets/devices/models/macbook-pro-14-m3-max.841ca25d44af.glb.gz": {
+      "sha256": "841ca25d44af86fda3040ca0c3c0373b4c9a4ec238a942d32118886d87de2fe0",
+      "bytes": 1180551,
+      "glbSha256": "5d97f67aaac1ba4d4ed20437d9367a4dc88c96c782c0d624634e6100f0fdbf16"
+    },
+    "assets/devices/models/macbook-pro-16-m3-pro.c8609a238128.glb.gz": {
+      "sha256": "c8609a23812840ffcf33e88375d3c8d085925440e1c662f5d5dec654eabd93ba",
+      "bytes": 1346506,
+      "glbSha256": "99b5c28167267f14dd6db875a9778735e31d048bbf53023ec89ac3ffd0e73948"
+    },
+    "assets/devices/models/macbook-pro-16-m3-max.77cc4fe0fa09.glb.gz": {
+      "sha256": "77cc4fe0fa0973e25f93e5a5660ba93e93681444b89e2dd5bef4df543e94adb9",
+      "bytes": 1346541,
+      "glbSha256": "7bf390d12c3dd1e76064845b8557e961c9c23debb9c88c5821ba3531fd1692b8"
+    },
+    "assets/devices/models/macbook-pro-14-m4-pro.84ef4c0e2cbd.glb.gz": {
+      "sha256": "84ef4c0e2cbd215771dc5f2ff171be36d8d5037b495400949af6b6cab1efec15",
+      "bytes": 1180551,
+      "glbSha256": "92349cbc407388b79d475c482b38d59c0e85a790ab81ef812e0c5c439d6cdd1c"
+    },
+    "assets/devices/models/macbook-pro-14-m4-max.df07ab0743d0.glb.gz": {
+      "sha256": "df07ab0743d0bcac5c5f50875f3313889b32aab1e96a701afe89d644c32d1ce8",
+      "bytes": 1180546,
+      "glbSha256": "c8e95a8882f45f72f280de2dc06ad236cda992b2bdb5c91d525776a8dff8032f"
+    },
+    "assets/devices/models/macbook-pro-16-m4-pro.fd4a4c3884c2.glb.gz": {
+      "sha256": "fd4a4c3884c246ba7032588ed1ae31ab023275fceeef2b64f178d47e9e885b8e",
+      "bytes": 1346508,
+      "glbSha256": "a2ca7b0cc1b835ac11316d9f743e149cd7a7007185835e2517eb0c7b29ae9fbd"
+    },
+    "assets/devices/models/macbook-pro-16-m4-max.6657d3967206.glb.gz": {
+      "sha256": "6657d39672060a73fb56fec06e46eb5d1a1f87b36b58033ebd9d74d023de99f2",
+      "bytes": 1346542,
+      "glbSha256": "976c567e0d095e7023501915cc3f2bd46a393cad7a51368cabcdacd75530a6ee"
+    },
+    "assets/devices/models/macbook-pro-14-m5-pro.13c13ce5ace8.glb.gz": {
+      "sha256": "13c13ce5ace833d0fc3e0c91fe83c3d3b3a9a8cfdec0be28923437eb19f0864f",
+      "bytes": 1180539,
+      "glbSha256": "3575012bff0f9a26e0490ee3d3cb257e51f024030a9fd9eb9fef83d8043c243a"
+    },
+    "assets/devices/models/macbook-pro-14-m5-max.a31a42fb7cc4.glb.gz": {
+      "sha256": "a31a42fb7cc4d31cf86f6536101ce383dd72019fcb7abc252a54442f58e65e6e",
+      "bytes": 1180544,
+      "glbSha256": "85028c1b0b0f2e680d607ae23a73173c122f7333b06483f2fd8a8caded051e28"
+    },
+    "assets/devices/models/macbook-pro-16-m5-pro.23ff03b4dfbf.glb.gz": {
+      "sha256": "23ff03b4dfbf7ec9632c258091eb5ed219fd0aac13a1808b9cbf2eb5544cb799",
+      "bytes": 1346539,
+      "glbSha256": "049b5c9ac6f4fc47377504e2e171bcf6652fe91c8ae58a72fbc8a2cdab132554"
+    },
+    "assets/devices/models/macbook-pro-16-m5-max.c39629f40839.glb.gz": {
+      "sha256": "c39629f408395a63a96a1e712d844004b5bc3820e00f32e1ec0f5820b3aaadee",
+      "bytes": 1346541,
+      "glbSha256": "2b8a323a297ac8eb4504411975b5d63691badfdfe5af1510125267e4baf0e796"
+    },
+    "assets/devices/models/macbook-pro-14-m3.6e328cef8776.glb.gz": {
+      "sha256": "6e328cef8776ec7bdae3aaac4c21286ed7ebcf4fe2036aab4f6c68497baabfe8",
+      "bytes": 1119462,
+      "glbSha256": "e1000d0bb17e759c5e72e95743bf7660ae1b3a5b2d1e1a6194bf289957efa029"
+    },
+    "assets/devices/models/macbook-pro-14-m4.0a6d51e51d0c.glb.gz": {
+      "sha256": "0a6d51e51d0c5d7c131c62c5b2f68a641ad72c98fed679ee40c20a1f933e4eda",
+      "bytes": 1180542,
+      "glbSha256": "58527d6b83589131471f19779280e03e21c6ea8023e9bb9ea381ef65f488fa3e"
+    },
+    "assets/devices/models/macbook-pro-14-m5.5bf1bc6d251d.glb.gz": {
+      "sha256": "5bf1bc6d251d7dbbea853986c7789c0ec01e527b0a836b4a66261fee3f894321",
+      "bytes": 1180543,
+      "glbSha256": "af642ec640e7ca66a91119a703140ebbe2d5e3d2a3f3a6bd4bb4483f49a8698c"
+    },
+    "assets/devices/models/macbook-neo-a18-pro.55be7ba2bb46.glb.gz": {
+      "sha256": "55be7ba2bb466d5522a82d295945e645dfc629fee507964a8f2c33999577a277",
+      "bytes": 933647,
+      "glbSha256": "6f60bb1ddb8f8e985bdfe901a341117253cbd1473e51c87cd843ba13515ec5e6"
     }
   }
 }

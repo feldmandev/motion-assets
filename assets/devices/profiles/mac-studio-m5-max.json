@@ -1,0 +1,289 @@
+{
+  "id": "mac-studio-m5-max",
+  "name": "Mac Studio (M5 Max, 2026)",
+  "manufacturer": "Apple",
+  "form_factor": "pc",
+  "body_mm": {
+    "width": 197,
+    "height": 95,
+    "depth": 197,
+    "corner_radius": 24,
+    "edge_roll_mm": [
+      1.1,
+      1.1
+    ]
+  },
+  "finish": "Silver",
+  "finishes": {
+    "Silver": {
+      "back": {
+        "rgb": [
+          0.78431,
+          0.79216,
+          0.80784
+        ],
+        "metal": 0.8,
+        "rough": 0.33
+      },
+      "rail": {
+        "rgb": [
+          0.78431,
+          0.79216,
+          0.80784
+        ],
+        "metal": 0.8,
+        "rough": 0.28
+      },
+      "trackpad": {
+        "rgb": [
+          0.7529375999999999,
+          0.7604736,
+          0.7755264
+        ],
+        "metal": 0.15,
+        "rough": 0.34
+      },
+      "logo": {
+        "rgb": [
+          0.18823439999999997,
+          0.1901184,
+          0.1938816
+        ],
+        "metal": 0.55,
+        "rough": 0.19
+      },
+      "keycap": {
+        "rgb": [
+          1,
+          1,
+          1
+        ],
+        "rough": 0.42
+      }
+    }
+  },
+  "materials": {
+    "back": {
+      "rgb": [
+        0.78431,
+        0.79216,
+        0.80784
+      ],
+      "metal": 0.8,
+      "rough": 0.33
+    },
+    "rail": {
+      "rgb": [
+        0.78431,
+        0.79216,
+        0.80784
+      ],
+      "metal": 0.8,
+      "rough": 0.28
+    },
+    "trackpad": {
+      "rgb": [
+        0.7529375999999999,
+        0.7604736,
+        0.7755264
+      ],
+      "metal": 0.15,
+      "rough": 0.34
+    },
+    "logo": {
+      "rgb": [
+        0.18823439999999997,
+        0.1901184,
+        0.1938816
+      ],
+      "metal": 0.55,
+      "rough": 0.19
+    },
+    "keycap": {
+      "rgb": [
+        1,
+        1,
+        1
+      ],
+      "rough": 0.42
+    },
+    "black": {
+      "rgb": [
+        0.008,
+        0.009,
+        0.012
+      ],
+      "rough": 0.45
+    },
+    "flash": {
+      "rgb": [
+        0.88,
+        0.9,
+        0.87
+      ],
+      "rough": 0.3
+    }
+  },
+  "status": "published specifications; illustrative geometry",
+  "apple_mac": {
+    "dimensions_mm": {
+      "width": 197,
+      "depth": 197,
+      "height": 95
+    },
+    "ports": {
+      "front": [
+        {
+          "type": "usb_c",
+          "u": 0.165,
+          "v": 0.81,
+          "width_mm": 2.7,
+          "height_mm": 8.4,
+          "orientation": "vertical",
+          "protocol": "USB 3"
+        },
+        {
+          "type": "usb_c",
+          "u": 0.233,
+          "v": 0.81,
+          "width_mm": 2.7,
+          "height_mm": 8.4,
+          "orientation": "vertical",
+          "protocol": "USB 3"
+        },
+        {
+          "type": "sdxc",
+          "u": 0.37,
+          "v": 0.81,
+          "width_mm": 28,
+          "height_mm": 2
+        },
+        {
+          "type": "led",
+          "u": 0.84,
+          "v": 0.81,
+          "width_mm": 1.3,
+          "height_mm": 1.3
+        }
+      ],
+      "rear": [
+        {
+          "type": "usb_c",
+          "u": 0.13,
+          "v": 0.82,
+          "width_mm": 2.7,
+          "height_mm": 8.4,
+          "orientation": "vertical",
+          "protocol": "Thunderbolt 5"
+        },
+        {
+          "type": "usb_c",
+          "u": 0.18,
+          "v": 0.82,
+          "width_mm": 2.7,
+          "height_mm": 8.4,
+          "orientation": "vertical",
+          "protocol": "Thunderbolt 5"
+        },
+        {
+          "type": "usb_c",
+          "u": 0.23,
+          "v": 0.82,
+          "width_mm": 2.7,
+          "height_mm": 8.4,
+          "orientation": "vertical",
+          "protocol": "Thunderbolt 5"
+        },
+        {
+          "type": "usb_c",
+          "u": 0.28,
+          "v": 0.82,
+          "width_mm": 2.7,
+          "height_mm": 8.4,
+          "orientation": "vertical",
+          "protocol": "Thunderbolt 5"
+        },
+        {
+          "type": "ethernet",
+          "u": 0.36,
+          "v": 0.82,
+          "width_mm": 16,
+          "height_mm": 13.5
+        },
+        {
+          "type": "power_inlet",
+          "u": 0.48,
+          "v": 0.82,
+          "width_mm": 17,
+          "height_mm": 8
+        },
+        {
+          "type": "usb_a",
+          "u": 0.59,
+          "v": 0.82,
+          "width_mm": 5,
+          "height_mm": 13,
+          "orientation": "vertical"
+        },
+        {
+          "type": "usb_a",
+          "u": 0.65,
+          "v": 0.82,
+          "width_mm": 5,
+          "height_mm": 13,
+          "orientation": "vertical"
+        },
+        {
+          "type": "hdmi",
+          "u": 0.75,
+          "v": 0.82,
+          "width_mm": 14,
+          "height_mm": 4.8
+        },
+        {
+          "type": "audio",
+          "u": 0.83,
+          "v": 0.82,
+          "width_mm": 3.5,
+          "height_mm": 3.5
+        },
+        {
+          "type": "power_button",
+          "u": 0.92,
+          "v": 0.82,
+          "width_mm": 7,
+          "height_mm": 7
+        }
+      ]
+    },
+    "corner_radius_mm": 24,
+    "base_foot_height_mm": 7,
+    "top_logo_width_mm": 46,
+    "shape": "rounded-square",
+    "rear_vent": {
+      "top": 0.08,
+      "bottom": 0.6,
+      "left": 0.06,
+      "right": 0.94,
+      "kind": "perforated-grid"
+    },
+    "kind": "pc",
+    "family": "mac-studio",
+    "chassis_id": "mac-studio-2022",
+    "touchbar": false,
+    "notch": false
+  },
+  "sources": [
+    "https://support.apple.com/en-us/128107",
+    "https://support.apple.com/en-us/102231"
+  ],
+  "accuracy": {
+    "body_dimensions": "Published Apple width, depth and closed height; physical envelope is recorded in apple_mac.dimensions_mm.",
+    "camera_geometry": "Camera aperture, port placement, socket internals and vent depths are illustrative photo estimates.",
+    "screen_geometry": "Native resolution and physical display extent from published pixel density; rounded corners and notch dimensions estimated from product imagery.",
+    "finishes": "Official finish names; approximate sRGB aluminum, glass and finish-toned reflective Apple inlays.",
+    "branding": "Apple vector contour on the centered top desktop face or exterior laptop lid; no Apple mark on the laptop display bezel.",
+    "detail_geometry": "Published port types/count; socket size, curved enclosure sections, keyboard layout, grille, feet and split lid/base thickness estimated."
+  },
+  "screens": []
+}

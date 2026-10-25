@@ -249,7 +249,7 @@ def prepare_screen(spec, body, screen_image=None):
                 vertex.co.z -= drop*MM
     elif spec.get('outline_mm'):
         from geometry import traced_ring
-        points = [(x*MM, y*MM, 0) for x, y in traced_ring(spec['outline_mm'], 0, 400)]
+        points = [(x*MM, y*MM, 0) for x, y in traced_ring(spec['outline_mm'], 0, spec.get('outline_samples', 400))]
         faces = [tuple(range(len(points)))]
     else:
         points = screen_outline(width, height, radius)

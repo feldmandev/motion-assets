@@ -1,0 +1,366 @@
+{
+  "id": "macbook-air-13-m4",
+  "name": "MacBook Air 13-inch (M4, 2025)",
+  "state": "default",
+  "glbUrl": "assets/devices/models/macbook-air-13-m4.dac93586a437.glb.gz",
+  "sha256": "dac93586a437b23202e35854cd2a562a65ce474ae2b584d2129c95f8db3515ae",
+  "body_mm": {
+    "width": 304.1,
+    "height": 209.6,
+    "depth": 3.3,
+    "base_depth_mm": 7.4,
+    "base_length_mm": 215,
+    "closed_depth_mm": 11.3,
+    "corner_radius": 11,
+    "edge_roll_mm": [
+      0.35,
+      0.2
+    ]
+  },
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        2560,
+        1664
+      ],
+      "size_mm": [
+        290.2856923076923,
+        188.6857
+      ],
+      "center_mm": [
+        0.0,
+        109.05714416503906,
+        5.539999961853027
+      ],
+      "corner_radius_mm": 5.5,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0,
+      "frame_bounds_mm": [
+        6.907153846153875,
+        6.799999999999997,
+        290.2856923076923,
+        188.6857
+      ],
+      "frame_screen_px": null,
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "width": 304.1,
+        "height": 209.6,
+        "depth": 3.3,
+        "base_depth_mm": 7.4,
+        "base_length_mm": 215,
+        "closed_depth_mm": 11.3,
+        "corner_radius": 11,
+        "edge_roll_mm": [
+          0.35,
+          0.2
+        ]
+      },
+      "cutouts": [],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/macbook-air-13-m4-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "trackpad": "trackpad",
+    "logo": "logo",
+    "keycap": "keycap",
+    "black": "black",
+    "flash": "flash"
+  },
+  "articulation": {
+    "animation": "Fold",
+    "axis": "X",
+    "axis_mm": [
+      0,
+      0.6,
+      5.400000000000006
+    ],
+    "moving_panel": "Lid",
+    "fixed_panel": "Base",
+    "pivots": {
+      "Lid": "Fold pivot | Lid",
+      "Base": "Fold pivot | Base"
+    },
+    "open_degrees": 0,
+    "closed_degrees": 90,
+    "duration_seconds": 1,
+    "closed_body_mm": {
+      "width": 304.1,
+      "height": 11.3,
+      "depth": 215
+    }
+  },
+  "panels": [
+    {
+      "name": "Lid",
+      "center_mm": [
+        0,
+        105.39999999999999,
+        3.7500000000000058
+      ],
+      "body_mm": {
+        "width": 304.1,
+        "height": 209.6,
+        "depth": 3.3,
+        "corner_radius": 11
+      },
+      "buttons": false
+    },
+    {
+      "name": "Base",
+      "center_mm": [
+        0,
+        -3.7,
+        107.5
+      ],
+      "body_mm": {
+        "width": 304.1,
+        "height": 7.4,
+        "depth": 215,
+        "corner_radius": 11
+      },
+      "buttons": false
+    }
+  ],
+  "icon_morph": {
+    "kind": "laptop",
+    "windows": 0
+  },
+  "finishes": [
+    {
+      "name": "Silver",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.78431,
+            0.79216,
+            0.80784
+          ],
+          "metal": 0.8,
+          "rough": 0.33
+        },
+        "rail": {
+          "rgb": [
+            0.78431,
+            0.79216,
+            0.80784
+          ],
+          "metal": 0.8,
+          "rough": 0.28
+        },
+        "trackpad": {
+          "rgb": [
+            0.7529375999999999,
+            0.7604736,
+            0.7755264
+          ],
+          "metal": 0.15,
+          "rough": 0.34
+        },
+        "logo": {
+          "rgb": [
+            0.18823439999999997,
+            0.1901184,
+            0.1938816
+          ],
+          "metal": 0.55,
+          "rough": 0.19
+        },
+        "keycap": {
+          "rgb": [
+            1,
+            1,
+            1
+          ],
+          "rough": 0.42
+        }
+      }
+    },
+    {
+      "name": "Starlight",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.85098,
+            0.82353,
+            0.77255
+          ],
+          "metal": 0.8,
+          "rough": 0.33
+        },
+        "rail": {
+          "rgb": [
+            0.85098,
+            0.82353,
+            0.77255
+          ],
+          "metal": 0.8,
+          "rough": 0.28
+        },
+        "trackpad": {
+          "rgb": [
+            0.8169407999999999,
+            0.7905888,
+            0.741648
+          ],
+          "metal": 0.15,
+          "rough": 0.34
+        },
+        "logo": {
+          "rgb": [
+            0.20423519999999998,
+            0.1976472,
+            0.185412
+          ],
+          "metal": 0.55,
+          "rough": 0.19
+        },
+        "keycap": {
+          "rgb": [
+            1,
+            1,
+            1
+          ],
+          "rough": 0.42
+        }
+      }
+    },
+    {
+      "name": "Sky Blue",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.72549,
+            0.78824,
+            0.83137
+          ],
+          "metal": 0.8,
+          "rough": 0.33
+        },
+        "rail": {
+          "rgb": [
+            0.72549,
+            0.78824,
+            0.83137
+          ],
+          "metal": 0.8,
+          "rough": 0.28
+        },
+        "trackpad": {
+          "rgb": [
+            0.6964703999999999,
+            0.7567104,
+            0.7981152
+          ],
+          "metal": 0.15,
+          "rough": 0.34
+        },
+        "logo": {
+          "rgb": [
+            0.17411759999999998,
+            0.1891776,
+            0.1995288
+          ],
+          "metal": 0.55,
+          "rough": 0.19
+        },
+        "keycap": {
+          "rgb": [
+            1,
+            1,
+            1
+          ],
+          "rough": 0.42
+        }
+      }
+    },
+    {
+      "name": "Midnight",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.18824,
+            0.23137,
+            0.28627
+          ],
+          "metal": 0.8,
+          "rough": 0.33
+        },
+        "rail": {
+          "rgb": [
+            0.18824,
+            0.23137,
+            0.28627
+          ],
+          "metal": 0.8,
+          "rough": 0.28
+        },
+        "trackpad": {
+          "rgb": [
+            0.1807104,
+            0.22211519999999998,
+            0.2748192
+          ],
+          "metal": 0.15,
+          "rough": 0.34
+        },
+        "logo": {
+          "rgb": [
+            0.0602368,
+            0.0740384,
+            0.0916064
+          ],
+          "metal": 0.55,
+          "rough": 0.19
+        },
+        "keycap": {
+          "rgb": [
+            1,
+            1,
+            1
+          ],
+          "rough": 0.42
+        }
+      }
+    }
+  ],
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/macbook-air-13-m4.json",
+    "accuracy": {
+      "body_dimensions": "Published Apple width, depth and closed height; physical envelope is recorded in apple_mac.dimensions_mm.",
+      "camera_geometry": "Camera aperture, port placement, socket internals and vent depths are illustrative photo estimates.",
+      "screen_geometry": "Native resolution and physical display extent from published pixel density; rounded corners and notch dimensions estimated from product imagery.",
+      "finishes": "Official finish names; approximate sRGB aluminum, glass and finish-toned reflective Apple inlays.",
+      "branding": "Apple vector contour on the centered top desktop face or exterior laptop lid; no Apple mark on the laptop display bezel.",
+      "detail_geometry": "Published port types/count; socket size, curved enclosure sections, keyboard layout, grille, feet and split lid/base thickness estimated.",
+      "hinge": "One rigid X-axis clamshell joint; 0.6 mm clearance above base; opens/closes lid without changing screen UVs. Hinge mechanism illustrative.",
+      "front_frame": "Independent lid height, display placement and notch width fitted to primary Apple front artwork; base footprint and native OLED aspect retained. Photo estimates, not CAD."
+    },
+    "sources": [
+      "https://support.apple.com/en-us/122209",
+      "https://support.apple.com/en-us/102869",
+      "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/mba-13inch-15inch.png",
+      "https://support.apple.com/en-us/122210"
+    ]
+  }
+}

@@ -1,0 +1,792 @@
+{
+  "id": "macbook-air-13-m3",
+  "name": "MacBook Air 13-inch (M3, 2024)",
+  "manufacturer": "Apple",
+  "form_factor": "laptop",
+  "body_mm": {
+    "width": 304.1,
+    "height": 209.6,
+    "depth": 3.3,
+    "base_depth_mm": 7.4,
+    "base_length_mm": 215,
+    "closed_depth_mm": 11.3,
+    "corner_radius": 11,
+    "edge_roll_mm": [
+      0.35,
+      0.2
+    ]
+  },
+  "finish": "Silver",
+  "finishes": {
+    "Silver": {
+      "back": {
+        "rgb": [
+          0.78431,
+          0.79216,
+          0.80784
+        ],
+        "metal": 0.8,
+        "rough": 0.33
+      },
+      "rail": {
+        "rgb": [
+          0.78431,
+          0.79216,
+          0.80784
+        ],
+        "metal": 0.8,
+        "rough": 0.28
+      },
+      "trackpad": {
+        "rgb": [
+          0.7529375999999999,
+          0.7604736,
+          0.7755264
+        ],
+        "metal": 0.15,
+        "rough": 0.34
+      },
+      "logo": {
+        "rgb": [
+          0.18823439999999997,
+          0.1901184,
+          0.1938816
+        ],
+        "metal": 0.55,
+        "rough": 0.19
+      },
+      "keycap": {
+        "rgb": [
+          1,
+          1,
+          1
+        ],
+        "rough": 0.42
+      }
+    },
+    "Starlight": {
+      "back": {
+        "rgb": [
+          0.85098,
+          0.82353,
+          0.77255
+        ],
+        "metal": 0.8,
+        "rough": 0.33
+      },
+      "rail": {
+        "rgb": [
+          0.85098,
+          0.82353,
+          0.77255
+        ],
+        "metal": 0.8,
+        "rough": 0.28
+      },
+      "trackpad": {
+        "rgb": [
+          0.8169407999999999,
+          0.7905888,
+          0.741648
+        ],
+        "metal": 0.15,
+        "rough": 0.34
+      },
+      "logo": {
+        "rgb": [
+          0.20423519999999998,
+          0.1976472,
+          0.185412
+        ],
+        "metal": 0.55,
+        "rough": 0.19
+      },
+      "keycap": {
+        "rgb": [
+          1,
+          1,
+          1
+        ],
+        "rough": 0.42
+      }
+    },
+    "Space Gray": {
+      "back": {
+        "rgb": [
+          0.46667,
+          0.47451,
+          0.50196
+        ],
+        "metal": 0.8,
+        "rough": 0.33
+      },
+      "rail": {
+        "rgb": [
+          0.46667,
+          0.47451,
+          0.50196
+        ],
+        "metal": 0.8,
+        "rough": 0.28
+      },
+      "trackpad": {
+        "rgb": [
+          0.44800319999999993,
+          0.4555296,
+          0.48188159999999997
+        ],
+        "metal": 0.15,
+        "rough": 0.34
+      },
+      "logo": {
+        "rgb": [
+          0.11200079999999998,
+          0.1138824,
+          0.12047039999999999
+        ],
+        "metal": 0.55,
+        "rough": 0.19
+      },
+      "keycap": {
+        "rgb": [
+          1,
+          1,
+          1
+        ],
+        "rough": 0.42
+      }
+    },
+    "Midnight": {
+      "back": {
+        "rgb": [
+          0.18824,
+          0.23137,
+          0.28627
+        ],
+        "metal": 0.8,
+        "rough": 0.33
+      },
+      "rail": {
+        "rgb": [
+          0.18824,
+          0.23137,
+          0.28627
+        ],
+        "metal": 0.8,
+        "rough": 0.28
+      },
+      "trackpad": {
+        "rgb": [
+          0.1807104,
+          0.22211519999999998,
+          0.2748192
+        ],
+        "metal": 0.15,
+        "rough": 0.34
+      },
+      "logo": {
+        "rgb": [
+          0.0602368,
+          0.0740384,
+          0.0916064
+        ],
+        "metal": 0.55,
+        "rough": 0.19
+      },
+      "keycap": {
+        "rgb": [
+          1,
+          1,
+          1
+        ],
+        "rough": 0.42
+      }
+    }
+  },
+  "materials": {
+    "back": {
+      "rgb": [
+        0.78431,
+        0.79216,
+        0.80784
+      ],
+      "metal": 0.8,
+      "rough": 0.33
+    },
+    "rail": {
+      "rgb": [
+        0.78431,
+        0.79216,
+        0.80784
+      ],
+      "metal": 0.8,
+      "rough": 0.28
+    },
+    "trackpad": {
+      "rgb": [
+        0.7529375999999999,
+        0.7604736,
+        0.7755264
+      ],
+      "metal": 0.15,
+      "rough": 0.34
+    },
+    "logo": {
+      "rgb": [
+        0.18823439999999997,
+        0.1901184,
+        0.1938816
+      ],
+      "metal": 0.55,
+      "rough": 0.19
+    },
+    "keycap": {
+      "rgb": [
+        1,
+        1,
+        1
+      ],
+      "rough": 0.42
+    },
+    "black": {
+      "rgb": [
+        0.008,
+        0.009,
+        0.012
+      ],
+      "rough": 0.45
+    },
+    "flash": {
+      "rgb": [
+        0.88,
+        0.9,
+        0.87
+      ],
+      "rough": 0.3
+    }
+  },
+  "status": "published specifications; illustrative geometry",
+  "apple_mac": {
+    "dimensions_mm": {
+      "width": 304.1,
+      "depth": 215,
+      "height": 11.3
+    },
+    "ports": {
+      "left": [
+        {
+          "type": "magsafe",
+          "u": 0.9,
+          "v": 0.5,
+          "width_mm": 16.5,
+          "height_mm": 3
+        },
+        {
+          "type": "usb_c",
+          "u": 0.81,
+          "v": 0.5,
+          "width_mm": 8.4,
+          "height_mm": 2.7,
+          "protocol": "Thunderbolt 3"
+        },
+        {
+          "type": "usb_c",
+          "u": 0.74,
+          "v": 0.5,
+          "width_mm": 8.4,
+          "height_mm": 2.7,
+          "protocol": "Thunderbolt 3"
+        }
+      ],
+      "right": [
+        {
+          "type": "audio",
+          "u": 0.9,
+          "v": 0.5,
+          "width_mm": 3.5,
+          "height_mm": 3.5
+        }
+      ]
+    },
+    "shape": "flat-rounded",
+    "corner_radius_mm": 11,
+    "lid_depth_mm": 3.3,
+    "display": {
+      "resolution": [
+        2560,
+        1664
+      ],
+      "diagonal_in": 13.6,
+      "width_mm": 290.2857,
+      "height_mm": 188.6857,
+      "notch": true,
+      "physical_size_basis": "native pixel count / published pixels per inch; full rectangular extent before corner/notch clipping",
+      "corner_radius_mm": 5.5,
+      "notch_width_mm": 35.5,
+      "notch_height_mm": 6.5
+    },
+    "keyboard": "black-chiclet-full-height-function-row",
+    "speaker_grilles": "hidden-hinge",
+    "top_logo_width_mm": 42,
+    "kind": "laptop",
+    "family": "macbook-air",
+    "chassis_id": "macbook-air-13-flat",
+    "touchbar": false,
+    "notch": true,
+    "lid_height_mm": 209.6,
+    "hinge_offset_mm": 5.400000000000006,
+    "camera_below_screen_top_mm": 1.5,
+    "screen_center_y_mm": 3.657149999999999
+  },
+  "sources": [
+    "https://support.apple.com/en-us/118551",
+    "https://support.apple.com/en-us/102869",
+    "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/mba-13inch-15inch.png",
+    "https://support.apple.com/en-us/122210"
+  ],
+  "accuracy": {
+    "body_dimensions": "Published Apple width, depth and closed height; physical envelope is recorded in apple_mac.dimensions_mm.",
+    "camera_geometry": "Camera aperture, port placement, socket internals and vent depths are illustrative photo estimates.",
+    "screen_geometry": "Native resolution and physical display extent from published pixel density; rounded corners and notch dimensions estimated from product imagery.",
+    "finishes": "Official finish names; approximate sRGB aluminum, glass and finish-toned reflective Apple inlays.",
+    "branding": "Apple vector contour on the centered top desktop face or exterior laptop lid; no Apple mark on the laptop display bezel.",
+    "detail_geometry": "Published port types/count; socket size, curved enclosure sections, keyboard layout, grille, feet and split lid/base thickness estimated.",
+    "hinge": "One rigid X-axis clamshell joint; 0.6 mm clearance above base; opens/closes lid without changing screen UVs. Hinge mechanism illustrative.",
+    "front_frame": "Independent lid height, display placement and notch width fitted to primary Apple front artwork; base footprint and native OLED aspect retained. Photo estimates, not CAD."
+  },
+  "panels": [
+    {
+      "name": "Lid",
+      "center_mm": [
+        0,
+        105.39999999999999,
+        3.7500000000000058
+      ],
+      "body_mm": {
+        "width": 304.1,
+        "height": 209.6,
+        "depth": 3.3,
+        "corner_radius": 11
+      },
+      "buttons": false
+    },
+    {
+      "name": "Base",
+      "center_mm": [
+        0,
+        -3.7,
+        107.5
+      ],
+      "body_mm": {
+        "width": 304.1,
+        "height": 7.4,
+        "depth": 215,
+        "corner_radius": 11
+      },
+      "buttons": false
+    }
+  ],
+  "screen": {
+    "object": "Device screen",
+    "node": "Device screen",
+    "panel": "Lid",
+    "resolution": [
+      2560,
+      1664
+    ],
+    "fit_box_mm": [
+      290.2856923076923,
+      188.6857
+    ],
+    "center_mm": [
+      0,
+      3.657149999999999,
+      1.79
+    ],
+    "frame_center_mm": [
+      0,
+      3.657149999999999
+    ],
+    "corner_radius_mm": 5.5,
+    "create_cutouts": false,
+    "cutouts": [],
+    "corner_radii_mm": [
+      0,
+      5.5,
+      5.5,
+      0
+    ],
+    "outline_mm": [
+      [
+        -145.14284615384614,
+        -94.34285
+      ],
+      [
+        -145.14284615384614,
+        -88.84285
+      ],
+      [
+        -145.14284615384614,
+        0.0
+      ],
+      [
+        -145.14284615384614,
+        88.84285
+      ],
+      [
+        -145.13107023165844,
+        89.20256721076579
+      ],
+      [
+        -145.09579289140208,
+        89.56074405721029
+      ],
+      [
+        -145.0371651960639,
+        89.91584677108871
+      ],
+      [
+        -144.955438198436,
+        90.26635474806386
+      ],
+      [
+        -144.8509618660692,
+        90.61076705916739
+      ],
+      [
+        -144.7241835826582,
+        90.947608878008
+      ],
+      [
+        -144.57564623227591,
+        91.2754377962045
+      ],
+      [
+        -144.40598587466056,
+        91.59285
+      ],
+      [
+        -144.21592902151014,
+        91.89848628160782
+      ],
+      [
+        -144.00628952544793,
+        92.19103785954796
+      ],
+      [
+        -143.77796509498052,
+        92.46925198305038
+      ],
+      [
+        -143.53193345037215,
+        92.73193729652601
+      ],
+      [
+        -143.26924813689652,
+        92.97796894113438
+      ],
+      [
+        -142.9910340133941,
+        93.20629337160179
+      ],
+      [
+        -142.69848243545394,
+        93.415932867664
+      ],
+      [
+        -142.39284615384614,
+        93.6059897208144
+      ],
+      [
+        -142.07543395005064,
+        93.77565007842978
+      ],
+      [
+        -141.74760503185414,
+        93.92418742881208
+      ],
+      [
+        -141.41076321301352,
+        94.05096571222307
+      ],
+      [
+        -141.06635090191,
+        94.15544204458988
+      ],
+      [
+        -140.71584292493483,
+        94.23716904221777
+      ],
+      [
+        -140.36074021105642,
+        94.29579673755596
+      ],
+      [
+        -140.00256336461192,
+        94.33107407781232
+      ],
+      [
+        -139.64284615384614,
+        94.34285
+      ],
+      [
+        -17.75,
+        94.34285
+      ],
+      [
+        -17.75,
+        88.94284999999999
+      ],
+      [
+        -17.74058934751119,
+        88.79927118855794
+      ],
+      [
+        -17.712518408917973,
+        88.65814905038722
+      ],
+      [
+        -17.666267485762415,
+        88.5218982243984
+      ],
+      [
+        -17.602627944162883,
+        88.39285
+      ],
+      [
+        -17.522688674320356,
+        88.2732124280904
+      ],
+      [
+        -17.4278174593052,
+        88.1650325406948
+      ],
+      [
+        -17.319637571909592,
+        88.07016132567963
+      ],
+      [
+        -17.2,
+        87.99022205583711
+      ],
+      [
+        -17.070951775601596,
+        87.92658251423758
+      ],
+      [
+        -16.934700949612772,
+        87.88033159108201
+      ],
+      [
+        -16.793578811442057,
+        87.8522606524888
+      ],
+      [
+        -16.65,
+        87.84285
+      ],
+      [
+        16.65,
+        87.84285
+      ],
+      [
+        16.793578811442057,
+        87.8522606524888
+      ],
+      [
+        16.934700949612772,
+        87.88033159108201
+      ],
+      [
+        17.070951775601596,
+        87.92658251423758
+      ],
+      [
+        17.2,
+        87.99022205583711
+      ],
+      [
+        17.319637571909592,
+        88.07016132567963
+      ],
+      [
+        17.4278174593052,
+        88.1650325406948
+      ],
+      [
+        17.522688674320356,
+        88.2732124280904
+      ],
+      [
+        17.60262794416288,
+        88.39285
+      ],
+      [
+        17.666267485762415,
+        88.5218982243984
+      ],
+      [
+        17.712518408917973,
+        88.65814905038722
+      ],
+      [
+        17.74058934751119,
+        88.79927118855794
+      ],
+      [
+        17.75,
+        88.94284999999999
+      ],
+      [
+        17.75,
+        94.34285
+      ],
+      [
+        139.64284615384614,
+        94.34285
+      ],
+      [
+        140.00256336461192,
+        94.33107407781232
+      ],
+      [
+        140.36074021105642,
+        94.29579673755596
+      ],
+      [
+        140.71584292493483,
+        94.23716904221777
+      ],
+      [
+        141.06635090191,
+        94.15544204458988
+      ],
+      [
+        141.41076321301352,
+        94.05096571222307
+      ],
+      [
+        141.74760503185414,
+        93.92418742881208
+      ],
+      [
+        142.07543395005064,
+        93.77565007842978
+      ],
+      [
+        142.39284615384614,
+        93.6059897208144
+      ],
+      [
+        142.69848243545394,
+        93.415932867664
+      ],
+      [
+        142.9910340133941,
+        93.20629337160179
+      ],
+      [
+        143.26924813689652,
+        92.97796894113438
+      ],
+      [
+        143.53193345037215,
+        92.73193729652601
+      ],
+      [
+        143.77796509498052,
+        92.46925198305038
+      ],
+      [
+        144.00628952544793,
+        92.19103785954796
+      ],
+      [
+        144.21592902151014,
+        91.89848628160782
+      ],
+      [
+        144.40598587466056,
+        91.59285
+      ],
+      [
+        144.57564623227591,
+        91.2754377962045
+      ],
+      [
+        144.7241835826582,
+        90.947608878008
+      ],
+      [
+        144.8509618660692,
+        90.61076705916739
+      ],
+      [
+        144.955438198436,
+        90.26635474806386
+      ],
+      [
+        145.0371651960639,
+        89.91584677108871
+      ],
+      [
+        145.09579289140208,
+        89.56074405721029
+      ],
+      [
+        145.13107023165844,
+        89.20256721076578
+      ],
+      [
+        145.14284615384614,
+        88.84285
+      ],
+      [
+        145.14284615384614,
+        0.0
+      ],
+      [
+        145.14284615384614,
+        -88.84285
+      ],
+      [
+        145.14284615384614,
+        -94.34285
+      ],
+      [
+        139.64284615384614,
+        -94.34285
+      ],
+      [
+        -139.64284615384614,
+        -94.34285
+      ]
+    ],
+    "outline_samples": 4096,
+    "mesh_cutouts": true,
+    "frame_use_outline": true
+  },
+  "articulation": {
+    "animation": "Fold",
+    "axis": "X",
+    "axis_mm": [
+      0,
+      0.6,
+      5.400000000000006
+    ],
+    "moving_panel": "Lid",
+    "fixed_panel": "Base",
+    "pivots": {
+      "Lid": "Fold pivot | Lid",
+      "Base": "Fold pivot | Base"
+    },
+    "open_degrees": 0,
+    "closed_degrees": 90,
+    "duration_seconds": 1,
+    "closed_body_mm": {
+      "width": 304.1,
+      "height": 11.3,
+      "depth": 215
+    }
+  }
+}

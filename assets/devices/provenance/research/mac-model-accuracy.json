@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-25",
+  "catalog": "apple-mac-catalog.json",
+  "scope": "50 Apple silicon Mac mini, Mac Studio and MacBook families across 12 exterior chassis; one Neo configuration family",
+  "published_inputs": [
+    "Physical width, depth and closed height",
+    "Native display resolution and rectangular display extent from published pixel density",
+    "Official finish names and port types/counts"
+  ],
+  "photo_estimates": [
+    "Corner profiles and fillet depth",
+    "Desktop foot, intake fins, rear perforation pitch and recessed socket internals",
+    "Port center positions and socket opening sizes",
+    "Separate lid/base thickness and 0.6 mm hinge clearance",
+    "Notch and rounded display corners",
+    "US keycap, speaker and trackpad layout dimensions",
+    "Apple inlay size, aluminum RGB/roughness and finish-toned logo reflectance"
+  ],
+  "implementation": {
+    "desktop": "Screenless static model with actual shallow socket cuts, separate underside foot/intake and centered top Apple inlay. Old mini has black rear I/O insert; Studio has a recessed perforated rear sheet.",
+    "laptop": "Rigid X-axis Fold clip from open to closed. Native screen UVs remain fixed and notch geometry actually excludes OLED triangles. Apple inlay is on the exterior lid only.",
+    "normals": "Machined planar walls remain flat after Boolean port cuts; curved fillets are smooth. This avoids diagonal reflection fans across the front.",
+    "branding": "Existing Apple vector contour retains its 0.814036673 width/height ratio, including separate leaf.",
+    "reviews": "Chip-only variants with identical physical dimensions, display, port layout and palette reuse canonical PNG review images; each GLB retains its own device identity.",
+    "webgl_surfaces": "Actual display opening in the black cover, recessed keyboard and trackpad pockets, and recessed perforated speaker sheets avoid nearly coplanar overlaps in browser depth buffers.",
+    "intake_finish": "Compact mini intake fins use charcoal polymer with dielectric highlights; connector cavities remain absorbing black. The gallery provides an underside inspection view."
+  },
+  "limitations": [
+    "These procedural models are not Apple CAD or dimensional metrology.",
+    "US keyboard artwork is representative; ISO/JIS key arrangements and functional Touch Bar content are not modeled.",
+    "Neo keycaps are finish-tinted and its trackpad is described as mechanical Multi-Touch; force mechanics are not simulated.",
+    "Neo right side speaker slit is supported by a close-up. The inferred left slit is omitted because the proposed coordinates overlap documented USB-C sockets.",
+    "Socket shells are recessed and recognizable; connector pinouts and internal board assemblies are illustrative."
+  ]
+}

@@ -1,0 +1,419 @@
+{
+  "id": "macbook-air-13-m1",
+  "name": "MacBook Air 13-inch (M1, 2020)",
+  "manufacturer": "Apple",
+  "form_factor": "laptop",
+  "body_mm": {
+    "width": 304.1,
+    "height": 203.8,
+    "depth": 3.4,
+    "base_depth_mm": 12.100000000000001,
+    "base_length_mm": 212.4,
+    "closed_depth_mm": 16.1,
+    "corner_radius": 10,
+    "edge_roll_mm": [
+      0.35,
+      0.2
+    ]
+  },
+  "finish": "Gold",
+  "finishes": {
+    "Gold": {
+      "back": {
+        "rgb": [
+          0.83529,
+          0.72941,
+          0.62745
+        ],
+        "metal": 0.8,
+        "rough": 0.33
+      },
+      "rail": {
+        "rgb": [
+          0.83529,
+          0.72941,
+          0.62745
+        ],
+        "metal": 0.8,
+        "rough": 0.28
+      },
+      "trackpad": {
+        "rgb": [
+          0.8018784,
+          0.7002336,
+          0.6023519999999999
+        ],
+        "metal": 0.15,
+        "rough": 0.34
+      },
+      "logo": {
+        "rgb": [
+          0.2004696,
+          0.1750584,
+          0.15058799999999997
+        ],
+        "metal": 0.55,
+        "rough": 0.19
+      },
+      "keycap": {
+        "rgb": [
+          1,
+          1,
+          1
+        ],
+        "rough": 0.42
+      },
+      "bezel_mark": {
+        "rgb": [
+          0.5429385,
+          0.4741165,
+          0.4078425
+        ],
+        "metal": 0.25,
+        "rough": 0.35
+      }
+    },
+    "Silver": {
+      "back": {
+        "rgb": [
+          0.78431,
+          0.79216,
+          0.80784
+        ],
+        "metal": 0.8,
+        "rough": 0.33
+      },
+      "rail": {
+        "rgb": [
+          0.78431,
+          0.79216,
+          0.80784
+        ],
+        "metal": 0.8,
+        "rough": 0.28
+      },
+      "trackpad": {
+        "rgb": [
+          0.7529375999999999,
+          0.7604736,
+          0.7755264
+        ],
+        "metal": 0.15,
+        "rough": 0.34
+      },
+      "logo": {
+        "rgb": [
+          0.18823439999999997,
+          0.1901184,
+          0.1938816
+        ],
+        "metal": 0.55,
+        "rough": 0.19
+      },
+      "keycap": {
+        "rgb": [
+          1,
+          1,
+          1
+        ],
+        "rough": 0.42
+      },
+      "bezel_mark": {
+        "rgb": [
+          0.5098015,
+          0.514904,
+          0.525096
+        ],
+        "metal": 0.25,
+        "rough": 0.35
+      }
+    },
+    "Space Gray": {
+      "back": {
+        "rgb": [
+          0.46667,
+          0.47451,
+          0.50196
+        ],
+        "metal": 0.8,
+        "rough": 0.33
+      },
+      "rail": {
+        "rgb": [
+          0.46667,
+          0.47451,
+          0.50196
+        ],
+        "metal": 0.8,
+        "rough": 0.28
+      },
+      "trackpad": {
+        "rgb": [
+          0.44800319999999993,
+          0.4555296,
+          0.48188159999999997
+        ],
+        "metal": 0.15,
+        "rough": 0.34
+      },
+      "logo": {
+        "rgb": [
+          0.11200079999999998,
+          0.1138824,
+          0.12047039999999999
+        ],
+        "metal": 0.55,
+        "rough": 0.19
+      },
+      "keycap": {
+        "rgb": [
+          1,
+          1,
+          1
+        ],
+        "rough": 0.42
+      },
+      "bezel_mark": {
+        "rgb": [
+          0.3033355,
+          0.3084315,
+          0.326274
+        ],
+        "metal": 0.25,
+        "rough": 0.35
+      }
+    }
+  },
+  "materials": {
+    "back": {
+      "rgb": [
+        0.83529,
+        0.72941,
+        0.62745
+      ],
+      "metal": 0.8,
+      "rough": 0.33
+    },
+    "rail": {
+      "rgb": [
+        0.83529,
+        0.72941,
+        0.62745
+      ],
+      "metal": 0.8,
+      "rough": 0.28
+    },
+    "trackpad": {
+      "rgb": [
+        0.8018784,
+        0.7002336,
+        0.6023519999999999
+      ],
+      "metal": 0.15,
+      "rough": 0.34
+    },
+    "logo": {
+      "rgb": [
+        0.2004696,
+        0.1750584,
+        0.15058799999999997
+      ],
+      "metal": 0.55,
+      "rough": 0.19
+    },
+    "keycap": {
+      "rgb": [
+        1,
+        1,
+        1
+      ],
+      "rough": 0.42
+    },
+    "bezel_mark": {
+      "rgb": [
+        0.5429385,
+        0.4741165,
+        0.4078425
+      ],
+      "metal": 0.25,
+      "rough": 0.35
+    },
+    "black": {
+      "rgb": [
+        0.008,
+        0.009,
+        0.012
+      ],
+      "rough": 0.45
+    },
+    "flash": {
+      "rgb": [
+        0.88,
+        0.9,
+        0.87
+      ],
+      "rough": 0.3
+    }
+  },
+  "status": "published specifications; illustrative geometry",
+  "apple_mac": {
+    "dimensions_mm": {
+      "width": 304.1,
+      "depth": 212.4,
+      "height": 16.1
+    },
+    "ports": {
+      "left": [
+        {
+          "type": "usb_c",
+          "u": 0.9,
+          "v": 0.35,
+          "width_mm": 8.4,
+          "height_mm": 2.7,
+          "protocol": "Thunderbolt 3"
+        },
+        {
+          "type": "usb_c",
+          "u": 0.83,
+          "v": 0.35,
+          "width_mm": 8.4,
+          "height_mm": 2.7,
+          "protocol": "Thunderbolt 3"
+        }
+      ],
+      "right": [
+        {
+          "type": "audio",
+          "u": 0.9,
+          "v": 0.35,
+          "width_mm": 3.5,
+          "height_mm": 3.5
+        }
+      ]
+    },
+    "shape": "wedge",
+    "front_height_mm": 4.1,
+    "corner_radius_mm": 10,
+    "lid_depth_mm": 3.4,
+    "display": {
+      "resolution": [
+        2560,
+        1600
+      ],
+      "diagonal_in": 13.3,
+      "width_mm": 286.4493,
+      "height_mm": 179.0308,
+      "notch": false,
+      "physical_size_basis": "native pixel count / published pixels per inch; full rectangular extent before corner/notch clipping",
+      "corner_radius_mm": 0.8
+    },
+    "keyboard": "black-chiclet-function-row",
+    "speaker_grilles": "beside-keyboard",
+    "top_logo_width_mm": 42,
+    "kind": "laptop",
+    "family": "macbook-air",
+    "chassis_id": "macbook-air-13-wedge",
+    "touchbar": false,
+    "notch": false,
+    "lid_height_mm": 203.8,
+    "hinge_offset_mm": 8.599999999999994,
+    "camera_below_screen_top_mm": null,
+    "screen_center_y_mm": -0.615399999999994
+  },
+  "sources": [
+    "https://support.apple.com/en-us/111883",
+    "https://support.apple.com/en-us/102869",
+    "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111883_macbookair.png"
+  ],
+  "accuracy": {
+    "body_dimensions": "Published Apple width, depth and closed height; physical envelope is recorded in apple_mac.dimensions_mm.",
+    "camera_geometry": "Camera aperture, port placement, socket internals and vent depths are illustrative photo estimates.",
+    "screen_geometry": "Native resolution and physical display extent from published pixel density; rounded corners and notch dimensions estimated from product imagery.",
+    "finishes": "Official finish names; approximate sRGB aluminum, glass and finish-toned reflective Apple inlays.",
+    "branding": "Apple vector contour on the centered top desktop face or exterior laptop lid; no Apple mark on the laptop display bezel.",
+    "detail_geometry": "Published port types/count; socket size, curved enclosure sections, keyboard layout, grille, feet and split lid/base thickness estimated.",
+    "hinge": "One rigid X-axis clamshell joint; 0.6 mm clearance above base; opens/closes lid without changing screen UVs. Hinge mechanism illustrative.",
+    "front_frame": "Independent lid height, display placement and notch width fitted to primary Apple front artwork; base footprint and native OLED aspect retained. Photo estimates, not CAD.",
+    "front_wordmark": "Legacy bottom-bezel wordmark uses an approximate sans-serif outline and finish-tinted material; modern notched models omit it."
+  },
+  "panels": [
+    {
+      "name": "Lid",
+      "center_mm": [
+        0,
+        102.5,
+        6.899999999999994
+      ],
+      "body_mm": {
+        "width": 304.1,
+        "height": 203.8,
+        "depth": 3.4,
+        "corner_radius": 10
+      },
+      "buttons": false
+    },
+    {
+      "name": "Base",
+      "center_mm": [
+        0,
+        -6.050000000000001,
+        106.2
+      ],
+      "body_mm": {
+        "width": 304.1,
+        "height": 12.100000000000001,
+        "depth": 212.4,
+        "corner_radius": 10
+      },
+      "buttons": false
+    }
+  ],
+  "screen": {
+    "object": "Device screen",
+    "node": "Device screen",
+    "panel": "Lid",
+    "resolution": [
+      2560,
+      1600
+    ],
+    "fit_box_mm": [
+      286.44928,
+      179.0308
+    ],
+    "center_mm": [
+      0,
+      -0.615399999999994,
+      1.8399999999999999
+    ],
+    "frame_center_mm": [
+      0,
+      -0.615399999999994
+    ],
+    "corner_radius_mm": 0.8,
+    "create_cutouts": false,
+    "cutouts": []
+  },
+  "articulation": {
+    "animation": "Fold",
+    "axis": "X",
+    "axis_mm": [
+      0,
+      0.6,
+      8.599999999999994
+    ],
+    "moving_panel": "Lid",
+    "fixed_panel": "Base",
+    "pivots": {
+      "Lid": "Fold pivot | Lid",
+      "Base": "Fold pivot | Base"
+    },
+    "open_degrees": 0,
+    "closed_degrees": 90,
+    "duration_seconds": 1,
+    "closed_body_mm": {
+      "width": 304.1,
+      "height": 16.1,
+      "depth": 212.4
+    }
+  }
+}

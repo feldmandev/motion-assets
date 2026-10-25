@@ -1,0 +1,6683 @@
+{
+  "as_of": "2026-10-25",
+  "scope": "Mac mini, Mac Studio and all Apple silicon MacBook families introduced fromM1-era2020 onward, including2026A18ProMacBookNeo; noIntelmachines. Separate chiptiers retained even when enclosures shared.",
+  "schema_version": 1,
+  "coordinate_conventions": {
+    "dimensions_mm": "Physical width left-to-right, depth front-to-back, height bottom-to-top with laptop lid closed. Translate into rendering framework coordinates explicitly.",
+    "port_uv": "u left-to-right in straight front/rear view; laptop side u front-to-back. v top-to-bottom on the exposed aluminum face. Approximate normalized photo placement, not mechanical datums.",
+    "display": "Full native rectangular pixel extent; native aspect retained. Rounded corners and centered camera housing remove visible areas; notch envelope estimates are not manufacturer CAD."
+  },
+  "accuracy": {
+    "published": "Official Apple envelope dimensions, display resolution/diagonal/ppi, finish names, existence/year and model identifiers.",
+    "estimated": "Corner/fillet radii, lid/base split, notch dimensions, logo dimensions, opening sizes/positions, vents and foot details.",
+    "materials": "Finishes are names only; RGB, roughness and metal shaders must remain explicitly estimated.",
+    "rights": "Procedural descriptions and measurements; Apple branding/reference image URLs identify Apple-owned material. No downloaded reference photos included."
+  },
+  "chassis": {
+    "mac-mini-2020": {
+      "dimensions_mm": {
+        "width": 197,
+        "depth": 197,
+        "height": 36
+      },
+      "ports": {
+        "front": [
+          {
+            "type": "led",
+            "u": 0.825,
+            "v": 0.6,
+            "width_mm": 1.3,
+            "height_mm": 1.3
+          }
+        ],
+        "rear": [
+          {
+            "type": "power_button",
+            "u": 0.04,
+            "v": 0.42,
+            "width_mm": 7,
+            "height_mm": 7
+          },
+          {
+            "type": "power_inlet",
+            "u": 0.14,
+            "v": 0.42,
+            "width_mm": 17,
+            "height_mm": 8
+          },
+          {
+            "type": "ethernet",
+            "u": 0.24,
+            "v": 0.42,
+            "width_mm": 16,
+            "height_mm": 13.5
+          },
+          {
+            "type": "usb_c",
+            "u": 0.405,
+            "v": 0.42,
+            "width_mm": 8.4,
+            "height_mm": 2.7
+          },
+          {
+            "type": "usb_c",
+            "u": 0.485,
+            "v": 0.42,
+            "width_mm": 8.4,
+            "height_mm": 2.7
+          },
+          {
+            "type": "hdmi",
+            "u": 0.58,
+            "v": 0.42,
+            "width_mm": 14,
+            "height_mm": 4.8
+          },
+          {
+            "type": "usb_a",
+            "u": 0.765,
+            "v": 0.42,
+            "width_mm": 13,
+            "height_mm": 5
+          },
+          {
+            "type": "usb_a",
+            "u": 0.86,
+            "v": 0.42,
+            "width_mm": 13,
+            "height_mm": 5
+          },
+          {
+            "type": "audio",
+            "u": 0.815,
+            "v": 0.78,
+            "width_mm": 3.5,
+            "height_mm": 3.5
+          }
+        ]
+      },
+      "corner_radius_mm": 25,
+      "base_foot_height_mm": 2.0,
+      "top_logo_width_mm": 45,
+      "shape": "rounded-square",
+      "rear_vent": {
+        "u": 0.52,
+        "v": 0.8,
+        "width_mm": 75,
+        "height_mm": 8,
+        "kind": "horizontal-slotted-recess"
+      },
+      "rear_insert": "black inset panel; horizontal USB-C/USB-A openings above exhaust, headphone below USB-A group"
+    },
+    "mac-mini-2023": {
+      "dimensions_mm": {
+        "width": 197,
+        "depth": 197,
+        "height": 35.8
+      },
+      "ports": {
+        "front": [
+          {
+            "type": "led",
+            "u": 0.825,
+            "v": 0.6,
+            "width_mm": 1.3,
+            "height_mm": 1.3
+          }
+        ],
+        "rear": [
+          {
+            "type": "power_button",
+            "u": 0.04,
+            "v": 0.42,
+            "width_mm": 7,
+            "height_mm": 7
+          },
+          {
+            "type": "power_inlet",
+            "u": 0.14,
+            "v": 0.42,
+            "width_mm": 17,
+            "height_mm": 8
+          },
+          {
+            "type": "ethernet",
+            "u": 0.24,
+            "v": 0.42,
+            "width_mm": 16,
+            "height_mm": 13.5
+          },
+          {
+            "type": "usb_c",
+            "u": 0.405,
+            "v": 0.42,
+            "width_mm": 8.4,
+            "height_mm": 2.7
+          },
+          {
+            "type": "usb_c",
+            "u": 0.485,
+            "v": 0.42,
+            "width_mm": 8.4,
+            "height_mm": 2.7
+          },
+          {
+            "type": "hdmi",
+            "u": 0.58,
+            "v": 0.42,
+            "width_mm": 14,
+            "height_mm": 4.8
+          },
+          {
+            "type": "usb_a",
+            "u": 0.765,
+            "v": 0.42,
+            "width_mm": 13,
+            "height_mm": 5
+          },
+          {
+            "type": "usb_a",
+            "u": 0.86,
+            "v": 0.42,
+            "width_mm": 13,
+            "height_mm": 5
+          },
+          {
+            "type": "audio",
+            "u": 0.815,
+            "v": 0.78,
+            "width_mm": 3.5,
+            "height_mm": 3.5
+          }
+        ]
+      },
+      "corner_radius_mm": 25,
+      "base_foot_height_mm": 2.0,
+      "top_logo_width_mm": 45,
+      "shape": "rounded-square",
+      "rear_vent": {
+        "u": 0.52,
+        "v": 0.8,
+        "width_mm": 75,
+        "height_mm": 8,
+        "kind": "horizontal-slotted-recess"
+      },
+      "rear_insert": "black inset panel; horizontal USB-C/USB-A openings above exhaust, headphone below USB-A group"
+    },
+    "mac-mini-2024": {
+      "dimensions_mm": {
+        "width": 127,
+        "depth": 127,
+        "height": 50
+      },
+      "ports": {
+        "front": [
+          {
+            "type": "usb_c",
+            "u": 0.205,
+            "v": 0.63,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.326,
+            "v": 0.63,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical"
+          },
+          {
+            "type": "led",
+            "u": 0.692,
+            "v": 0.63,
+            "width_mm": 1.3,
+            "height_mm": 1.3
+          },
+          {
+            "type": "audio",
+            "u": 0.79,
+            "v": 0.63,
+            "width_mm": 3.5,
+            "height_mm": 3.5
+          }
+        ],
+        "rear": [
+          {
+            "type": "power_inlet",
+            "u": 0.22,
+            "v": 0.6,
+            "width_mm": 17,
+            "height_mm": 8
+          },
+          {
+            "type": "ethernet",
+            "u": 0.4,
+            "v": 0.6,
+            "width_mm": 16,
+            "height_mm": 13.5
+          },
+          {
+            "type": "hdmi",
+            "u": 0.565,
+            "v": 0.6,
+            "width_mm": 14,
+            "height_mm": 4.8
+          },
+          {
+            "type": "usb_c",
+            "u": 0.695,
+            "v": 0.6,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.765,
+            "v": 0.6,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.835,
+            "v": 0.6,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical"
+          }
+        ],
+        "bottom": [
+          {
+            "type": "power_button",
+            "u": 0.15,
+            "v": 0.18,
+            "width_mm": 7,
+            "height_mm": 7
+          }
+        ]
+      },
+      "corner_radius_mm": 18,
+      "base_foot_height_mm": 7,
+      "top_logo_width_mm": 36,
+      "shape": "rounded-square",
+      "bottom_note": "Power button on underside, not rear; recessed black circular vent/foot projects below aluminum"
+    },
+    "mac-studio-2022": {
+      "dimensions_mm": {
+        "width": 197,
+        "depth": 197,
+        "height": 95
+      },
+      "ports": {
+        "front": [
+          {
+            "type": "usb_c",
+            "u": 0.165,
+            "v": 0.81,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.233,
+            "v": 0.81,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical"
+          },
+          {
+            "type": "sdxc",
+            "u": 0.37,
+            "v": 0.81,
+            "width_mm": 28,
+            "height_mm": 2
+          },
+          {
+            "type": "led",
+            "u": 0.84,
+            "v": 0.81,
+            "width_mm": 1.3,
+            "height_mm": 1.3
+          }
+        ],
+        "rear": [
+          {
+            "type": "usb_c",
+            "u": 0.13,
+            "v": 0.82,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.18,
+            "v": 0.82,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.23,
+            "v": 0.82,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.28,
+            "v": 0.82,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical"
+          },
+          {
+            "type": "ethernet",
+            "u": 0.36,
+            "v": 0.82,
+            "width_mm": 16,
+            "height_mm": 13.5
+          },
+          {
+            "type": "power_inlet",
+            "u": 0.48,
+            "v": 0.82,
+            "width_mm": 17,
+            "height_mm": 8
+          },
+          {
+            "type": "usb_a",
+            "u": 0.59,
+            "v": 0.82,
+            "width_mm": 5,
+            "height_mm": 13,
+            "orientation": "vertical"
+          },
+          {
+            "type": "usb_a",
+            "u": 0.65,
+            "v": 0.82,
+            "width_mm": 5,
+            "height_mm": 13,
+            "orientation": "vertical"
+          },
+          {
+            "type": "hdmi",
+            "u": 0.75,
+            "v": 0.82,
+            "width_mm": 14,
+            "height_mm": 4.8
+          },
+          {
+            "type": "audio",
+            "u": 0.83,
+            "v": 0.82,
+            "width_mm": 3.5,
+            "height_mm": 3.5
+          },
+          {
+            "type": "power_button",
+            "u": 0.92,
+            "v": 0.82,
+            "width_mm": 7,
+            "height_mm": 7
+          }
+        ]
+      },
+      "corner_radius_mm": 24,
+      "base_foot_height_mm": 7,
+      "top_logo_width_mm": 46,
+      "shape": "rounded-square",
+      "rear_vent": {
+        "top": 0.08,
+        "bottom": 0.6,
+        "left": 0.06,
+        "right": 0.94,
+        "kind": "perforated-grid"
+      }
+    },
+    "macbook-air-13-wedge": {
+      "dimensions_mm": {
+        "width": 304.1,
+        "depth": 212.4,
+        "height": 16.1
+      },
+      "ports": {
+        "left": [
+          {
+            "type": "usb_c",
+            "u": 0.9,
+            "v": 0.35,
+            "width_mm": 8.4,
+            "height_mm": 2.7
+          },
+          {
+            "type": "usb_c",
+            "u": 0.83,
+            "v": 0.35,
+            "width_mm": 8.4,
+            "height_mm": 2.7
+          }
+        ],
+        "right": [
+          {
+            "type": "audio",
+            "u": 0.9,
+            "v": 0.35,
+            "width_mm": 3.5,
+            "height_mm": 3.5
+          }
+        ]
+      },
+      "shape": "wedge",
+      "front_height_mm": 4.1,
+      "corner_radius_mm": 10,
+      "lid_depth_mm": 3.4,
+      "display": {
+        "resolution": [
+          2560,
+          1600
+        ],
+        "diagonal_in": 13.3,
+        "width_mm": 286.4493,
+        "height_mm": 179.0308,
+        "notch": false,
+        "physical_size_basis": "native pixel count / published pixels per inch; full rectangular extent before corner/notch clipping",
+        "corner_radius_mm": 0.8
+      },
+      "keyboard": "black-chiclet-function-row",
+      "speaker_grilles": "beside-keyboard",
+      "top_logo_width_mm": 42
+    },
+    "macbook-air-13-flat": {
+      "dimensions_mm": {
+        "width": 304.1,
+        "depth": 215,
+        "height": 11.3
+      },
+      "ports": {
+        "left": [
+          {
+            "type": "magsafe",
+            "u": 0.9,
+            "v": 0.5,
+            "width_mm": 16.5,
+            "height_mm": 3
+          },
+          {
+            "type": "usb_c",
+            "u": 0.81,
+            "v": 0.5,
+            "width_mm": 8.4,
+            "height_mm": 2.7
+          },
+          {
+            "type": "usb_c",
+            "u": 0.74,
+            "v": 0.5,
+            "width_mm": 8.4,
+            "height_mm": 2.7
+          }
+        ],
+        "right": [
+          {
+            "type": "audio",
+            "u": 0.9,
+            "v": 0.5,
+            "width_mm": 3.5,
+            "height_mm": 3.5
+          }
+        ]
+      },
+      "shape": "flat-rounded",
+      "corner_radius_mm": 11,
+      "lid_depth_mm": 3.3,
+      "display": {
+        "resolution": [
+          2560,
+          1664
+        ],
+        "diagonal_in": 13.6,
+        "width_mm": 290.2857,
+        "height_mm": 188.6857,
+        "notch": true,
+        "physical_size_basis": "native pixel count / published pixels per inch; full rectangular extent before corner/notch clipping",
+        "corner_radius_mm": 5.5,
+        "notch_width_mm": 31,
+        "notch_height_mm": 6.5
+      },
+      "keyboard": "black-chiclet-full-height-function-row",
+      "speaker_grilles": "hidden-hinge",
+      "top_logo_width_mm": 42
+    },
+    "macbook-air-15-flat": {
+      "dimensions_mm": {
+        "width": 340.4,
+        "depth": 237.6,
+        "height": 11.5
+      },
+      "ports": {
+        "left": [
+          {
+            "type": "magsafe",
+            "u": 0.9,
+            "v": 0.5,
+            "width_mm": 16.5,
+            "height_mm": 3
+          },
+          {
+            "type": "usb_c",
+            "u": 0.81,
+            "v": 0.5,
+            "width_mm": 8.4,
+            "height_mm": 2.7
+          },
+          {
+            "type": "usb_c",
+            "u": 0.74,
+            "v": 0.5,
+            "width_mm": 8.4,
+            "height_mm": 2.7
+          }
+        ],
+        "right": [
+          {
+            "type": "audio",
+            "u": 0.9,
+            "v": 0.5,
+            "width_mm": 3.5,
+            "height_mm": 3.5
+          }
+        ]
+      },
+      "shape": "flat-rounded",
+      "corner_radius_mm": 11,
+      "lid_depth_mm": 3.5,
+      "display": {
+        "resolution": [
+          2880,
+          1864
+        ],
+        "diagonal_in": 15.3,
+        "width_mm": 326.5714,
+        "height_mm": 211.3643,
+        "notch": true,
+        "physical_size_basis": "native pixel count / published pixels per inch; full rectangular extent before corner/notch clipping",
+        "corner_radius_mm": 5.5,
+        "notch_width_mm": 31,
+        "notch_height_mm": 6.5
+      },
+      "keyboard": "black-chiclet-full-height-function-row",
+      "speaker_grilles": "hidden-hinge",
+      "top_logo_width_mm": 42
+    },
+    "macbook-pro-13-touchbar": {
+      "dimensions_mm": {
+        "width": 304.1,
+        "depth": 212.4,
+        "height": 15.6
+      },
+      "ports": {
+        "left": [
+          {
+            "type": "usb_c",
+            "u": 0.9,
+            "v": 0.5,
+            "width_mm": 8.4,
+            "height_mm": 2.7
+          },
+          {
+            "type": "usb_c",
+            "u": 0.83,
+            "v": 0.5,
+            "width_mm": 8.4,
+            "height_mm": 2.7
+          }
+        ],
+        "right": [
+          {
+            "type": "audio",
+            "u": 0.9,
+            "v": 0.5,
+            "width_mm": 3.5,
+            "height_mm": 3.5
+          }
+        ]
+      },
+      "shape": "flat-rounded",
+      "corner_radius_mm": 10,
+      "lid_depth_mm": 3.8,
+      "display": {
+        "resolution": [
+          2560,
+          1600
+        ],
+        "diagonal_in": 13.3,
+        "width_mm": 286.4493,
+        "height_mm": 179.0308,
+        "notch": false,
+        "physical_size_basis": "native pixel count / published pixels per inch; full rectangular extent before corner/notch clipping",
+        "corner_radius_mm": 0.8
+      },
+      "keyboard": "black-chiclet-touch-bar",
+      "speaker_grilles": "beside-keyboard",
+      "top_logo_width_mm": 42
+    },
+    "macbook-pro-14-notch": {
+      "dimensions_mm": {
+        "width": 312.6,
+        "depth": 221.2,
+        "height": 15.5
+      },
+      "ports": {
+        "left": [
+          {
+            "type": "magsafe",
+            "u": 0.86,
+            "v": 0.48,
+            "width_mm": 16.5,
+            "height_mm": 3
+          },
+          {
+            "type": "usb_c",
+            "u": 0.78,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7
+          },
+          {
+            "type": "usb_c",
+            "u": 0.72,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7
+          },
+          {
+            "type": "audio",
+            "u": 0.67,
+            "v": 0.48,
+            "width_mm": 3.5,
+            "height_mm": 3.5
+          }
+        ],
+        "right": [
+          {
+            "type": "sdxc",
+            "u": 0.68,
+            "v": 0.48,
+            "width_mm": 28,
+            "height_mm": 2
+          },
+          {
+            "type": "usb_c",
+            "u": 0.78,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7
+          },
+          {
+            "type": "hdmi",
+            "u": 0.86,
+            "v": 0.48,
+            "width_mm": 14,
+            "height_mm": 4.8
+          }
+        ]
+      },
+      "shape": "flat-rounded",
+      "corner_radius_mm": 11,
+      "lid_depth_mm": 4.2,
+      "display": {
+        "resolution": [
+          3024,
+          1964
+        ],
+        "diagonal_in": 14.2,
+        "width_mm": 302.4,
+        "height_mm": 196.4,
+        "notch": true,
+        "physical_size_basis": "native pixel count / published pixels per inch; full rectangular extent before corner/notch clipping",
+        "corner_radius_mm": 5.5,
+        "notch_width_mm": 32,
+        "notch_height_mm": 6.5
+      },
+      "keyboard": "black-keyboard-well-full-height-function-row",
+      "speaker_grilles": "beside-keyboard",
+      "top_logo_width_mm": 43
+    },
+    "macbook-pro-16-notch": {
+      "dimensions_mm": {
+        "width": 355.7,
+        "depth": 248.1,
+        "height": 16.8
+      },
+      "ports": {
+        "left": [
+          {
+            "type": "magsafe",
+            "u": 0.86,
+            "v": 0.48,
+            "width_mm": 16.5,
+            "height_mm": 3
+          },
+          {
+            "type": "usb_c",
+            "u": 0.78,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7
+          },
+          {
+            "type": "usb_c",
+            "u": 0.72,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7
+          },
+          {
+            "type": "audio",
+            "u": 0.67,
+            "v": 0.48,
+            "width_mm": 3.5,
+            "height_mm": 3.5
+          }
+        ],
+        "right": [
+          {
+            "type": "sdxc",
+            "u": 0.68,
+            "v": 0.48,
+            "width_mm": 28,
+            "height_mm": 2
+          },
+          {
+            "type": "usb_c",
+            "u": 0.78,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7
+          },
+          {
+            "type": "hdmi",
+            "u": 0.86,
+            "v": 0.48,
+            "width_mm": 14,
+            "height_mm": 4.8
+          }
+        ]
+      },
+      "shape": "flat-rounded",
+      "corner_radius_mm": 12,
+      "lid_depth_mm": 4.5,
+      "display": {
+        "resolution": [
+          3456,
+          2234
+        ],
+        "diagonal_in": 16.2,
+        "width_mm": 345.6,
+        "height_mm": 223.4,
+        "notch": true,
+        "physical_size_basis": "native pixel count / published pixels per inch; full rectangular extent before corner/notch clipping",
+        "corner_radius_mm": 5.5,
+        "notch_width_mm": 32,
+        "notch_height_mm": 6.5
+      },
+      "keyboard": "black-keyboard-well-full-height-function-row",
+      "speaker_grilles": "beside-keyboard",
+      "top_logo_width_mm": 45
+    },
+    "macbook-pro-14-m3-base": {
+      "dimensions_mm": {
+        "width": 312.6,
+        "depth": 221.2,
+        "height": 15.5
+      },
+      "ports": {
+        "left": [
+          {
+            "type": "magsafe",
+            "u": 0.86,
+            "v": 0.48,
+            "width_mm": 16.5,
+            "height_mm": 3
+          },
+          {
+            "type": "usb_c",
+            "u": 0.78,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7
+          },
+          {
+            "type": "usb_c",
+            "u": 0.72,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7
+          },
+          {
+            "type": "audio",
+            "u": 0.67,
+            "v": 0.48,
+            "width_mm": 3.5,
+            "height_mm": 3.5
+          }
+        ],
+        "right": [
+          {
+            "type": "sdxc",
+            "u": 0.68,
+            "v": 0.48,
+            "width_mm": 28,
+            "height_mm": 2
+          },
+          {
+            "type": "hdmi",
+            "u": 0.86,
+            "v": 0.48,
+            "width_mm": 14,
+            "height_mm": 4.8
+          }
+        ]
+      },
+      "shape": "flat-rounded",
+      "corner_radius_mm": 11,
+      "lid_depth_mm": 4.2,
+      "display": {
+        "resolution": [
+          3024,
+          1964
+        ],
+        "diagonal_in": 14.2,
+        "width_mm": 302.4,
+        "height_mm": 196.4,
+        "notch": true,
+        "physical_size_basis": "native pixel count / published pixels per inch; full rectangular extent before corner/notch clipping",
+        "corner_radius_mm": 5.5,
+        "notch_width_mm": 32,
+        "notch_height_mm": 6.5
+      },
+      "keyboard": "black-keyboard-well-full-height-function-row",
+      "speaker_grilles": "beside-keyboard",
+      "top_logo_width_mm": 43
+    },
+    "macbook-neo-13": {
+      "dimensions_mm": {
+        "width": 297.5,
+        "depth": 206.4,
+        "height": 12.7
+      },
+      "ports": {
+        "left": [
+          {
+            "type": "usb_c",
+            "u": 0.886,
+            "v": 0.54,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "USB 3, 10Gb/s, DisplayPort and charging"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.811,
+            "v": 0.54,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "USB 2, 480Mb/s and charging; no DisplayPort"
+          }
+        ],
+        "right": [
+          {
+            "type": "audio",
+            "u": 0.734,
+            "v": 0.54,
+            "width_mm": 3.5,
+            "height_mm": 3.5
+          }
+        ]
+      },
+      "shape": "flat-rounded",
+      "corner_radius_mm": 10.5,
+      "lid_depth_mm": 3.5,
+      "display": {
+        "resolution": [
+          2408,
+          1506
+        ],
+        "diagonal_in": 13.0,
+        "width_mm": 279.284,
+        "height_mm": 174.6685,
+        "notch": false,
+        "physical_size_basis": "native pixel count / published219ppi; full rectangular extent before clipping",
+        "corner_radius_mm": 4.5
+      },
+      "keyboard": "finish-tinted-chiclet-full-height-function-row",
+      "speaker_grilles": "side-slits",
+      "side_speaker_slits": {
+        "right": {
+          "u_start": 0.8,
+          "u_end": 0.94,
+          "v": 0.54,
+          "height_mm": 1.3
+        },
+        "left": {
+          "u_start": 0.8,
+          "u_end": 0.94,
+          "v": 0.54,
+          "height_mm": 1.3,
+          "accuracy": "paired side speaker inferred from product dual-speaker description; left closeup does not independently reveal full slit"
+        }
+      },
+      "top_logo_width_mm": 40,
+      "webcam": {
+        "description": "small centered1080pFaceTimeHD camera in upper bezel; no display notch",
+        "center_x_normalized": 0.5,
+        "diameter_mm": 2.3,
+        "size_accuracy": "illustrative photo estimate"
+      },
+      "trackpad": "mechanical Multi-Touch, not Force Touch",
+      "touch_id": "512GB option;256GB model power key withoutTouchID; one exterior family"
+    }
+  },
+  "devices": [
+    {
+      "id": "mac-mini-m1",
+      "icon_id": "apple_mac_mini_m1",
+      "name": "Mac mini (M1, 2020)",
+      "family": "mac-mini",
+      "kind": "pc",
+      "chip": "M1",
+      "chips": [
+        "M1"
+      ],
+      "year": 2020,
+      "chassis_id": "mac-mini-2020",
+      "dimensions_mm": {
+        "width": 197,
+        "depth": 197,
+        "height": 36
+      },
+      "finishes": [
+        "Silver"
+      ],
+      "model_identifiers": [
+        "Macmini9,1"
+      ],
+      "tech_specs": "https://support.apple.com/en-us/111894",
+      "sources": [
+        "https://support.apple.com/en-us/111894",
+        "https://support.apple.com/en-us/102852"
+      ],
+      "ports": {
+        "front": [
+          {
+            "type": "led",
+            "u": 0.825,
+            "v": 0.6,
+            "width_mm": 1.3,
+            "height_mm": 1.3
+          }
+        ],
+        "rear": [
+          {
+            "type": "power_button",
+            "u": 0.04,
+            "v": 0.42,
+            "width_mm": 7,
+            "height_mm": 7
+          },
+          {
+            "type": "power_inlet",
+            "u": 0.14,
+            "v": 0.42,
+            "width_mm": 17,
+            "height_mm": 8
+          },
+          {
+            "type": "ethernet",
+            "u": 0.24,
+            "v": 0.42,
+            "width_mm": 16,
+            "height_mm": 13.5
+          },
+          {
+            "type": "usb_c",
+            "u": 0.405,
+            "v": 0.42,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 3"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.485,
+            "v": 0.42,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 3"
+          },
+          {
+            "type": "hdmi",
+            "u": 0.58,
+            "v": 0.42,
+            "width_mm": 14,
+            "height_mm": 4.8
+          },
+          {
+            "type": "usb_a",
+            "u": 0.765,
+            "v": 0.42,
+            "width_mm": 13,
+            "height_mm": 5
+          },
+          {
+            "type": "usb_a",
+            "u": 0.86,
+            "v": 0.42,
+            "width_mm": 13,
+            "height_mm": 5
+          },
+          {
+            "type": "audio",
+            "u": 0.815,
+            "v": 0.78,
+            "width_mm": 3.5,
+            "height_mm": 3.5
+          }
+        ]
+      },
+      "accuracy": "Published external envelope and finish names; corner radii, split lid/base thickness, internal geometry and port positions are illustrative photo estimates.",
+      "reference_images": [
+        "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111894_macminihero.png",
+        "https://cdsassets.apple.com/live/7WUAS350/images/mac-mini/mac-mini-2020-m1.png"
+      ]
+    },
+    {
+      "id": "mac-mini-m2",
+      "icon_id": "apple_mac_mini_m2",
+      "name": "Mac mini (M2, 2023)",
+      "family": "mac-mini",
+      "kind": "pc",
+      "chip": "M2",
+      "chips": [
+        "M2"
+      ],
+      "year": 2023,
+      "chassis_id": "mac-mini-2023",
+      "dimensions_mm": {
+        "width": 197,
+        "depth": 197,
+        "height": 35.8
+      },
+      "finishes": [
+        "Silver"
+      ],
+      "model_identifiers": [
+        "Mac14,3"
+      ],
+      "tech_specs": "https://support.apple.com/en-us/111837",
+      "sources": [
+        "https://support.apple.com/en-us/111837",
+        "https://support.apple.com/en-us/102852"
+      ],
+      "ports": {
+        "front": [
+          {
+            "type": "led",
+            "u": 0.825,
+            "v": 0.6,
+            "width_mm": 1.3,
+            "height_mm": 1.3
+          }
+        ],
+        "rear": [
+          {
+            "type": "power_button",
+            "u": 0.04,
+            "v": 0.42,
+            "width_mm": 7,
+            "height_mm": 7
+          },
+          {
+            "type": "power_inlet",
+            "u": 0.14,
+            "v": 0.42,
+            "width_mm": 17,
+            "height_mm": 8
+          },
+          {
+            "type": "ethernet",
+            "u": 0.24,
+            "v": 0.42,
+            "width_mm": 16,
+            "height_mm": 13.5
+          },
+          {
+            "type": "usb_c",
+            "u": 0.405,
+            "v": 0.42,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.485,
+            "v": 0.42,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "hdmi",
+            "u": 0.58,
+            "v": 0.42,
+            "width_mm": 14,
+            "height_mm": 4.8
+          },
+          {
+            "type": "usb_a",
+            "u": 0.765,
+            "v": 0.42,
+            "width_mm": 13,
+            "height_mm": 5
+          },
+          {
+            "type": "usb_a",
+            "u": 0.86,
+            "v": 0.42,
+            "width_mm": 13,
+            "height_mm": 5
+          },
+          {
+            "type": "audio",
+            "u": 0.815,
+            "v": 0.78,
+            "width_mm": 3.5,
+            "height_mm": 3.5
+          }
+        ]
+      },
+      "accuracy": "Published external envelope and finish names; corner radii, split lid/base thickness, internal geometry and port positions are illustrative photo estimates.",
+      "reference_images": [
+        "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111837_mac-mini-2023-m2-pro.png",
+        "https://cdsassets.apple.com/live/7WUAS350/images/mac-mini/mac-mini-2023-m2.png"
+      ]
+    },
+    {
+      "id": "mac-mini-m2-pro",
+      "icon_id": "apple_mac_mini_m2_pro",
+      "name": "Mac mini (M2 Pro, 2023)",
+      "family": "mac-mini",
+      "kind": "pc",
+      "chip": "M2 Pro",
+      "chips": [
+        "M2 Pro"
+      ],
+      "year": 2023,
+      "chassis_id": "mac-mini-2023",
+      "dimensions_mm": {
+        "width": 197,
+        "depth": 197,
+        "height": 35.8
+      },
+      "finishes": [
+        "Silver"
+      ],
+      "model_identifiers": [
+        "Mac14,12"
+      ],
+      "tech_specs": "https://support.apple.com/en-us/111837",
+      "sources": [
+        "https://support.apple.com/en-us/111837",
+        "https://support.apple.com/en-us/102852"
+      ],
+      "ports": {
+        "front": [
+          {
+            "type": "led",
+            "u": 0.825,
+            "v": 0.6,
+            "width_mm": 1.3,
+            "height_mm": 1.3
+          }
+        ],
+        "rear": [
+          {
+            "type": "power_button",
+            "u": 0.04,
+            "v": 0.42,
+            "width_mm": 7,
+            "height_mm": 7
+          },
+          {
+            "type": "power_inlet",
+            "u": 0.14,
+            "v": 0.42,
+            "width_mm": 17,
+            "height_mm": 8
+          },
+          {
+            "type": "ethernet",
+            "u": 0.24,
+            "v": 0.42,
+            "width_mm": 16,
+            "height_mm": 13.5
+          },
+          {
+            "type": "usb_c",
+            "u": 0.33,
+            "v": 0.42,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.41,
+            "v": 0.42,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.49,
+            "v": 0.42,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.57,
+            "v": 0.42,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "hdmi",
+            "u": 0.665,
+            "v": 0.42,
+            "width_mm": 14,
+            "height_mm": 4.8
+          },
+          {
+            "type": "usb_a",
+            "u": 0.77,
+            "v": 0.42,
+            "width_mm": 13,
+            "height_mm": 5
+          },
+          {
+            "type": "usb_a",
+            "u": 0.86,
+            "v": 0.42,
+            "width_mm": 13,
+            "height_mm": 5
+          },
+          {
+            "type": "audio",
+            "u": 0.815,
+            "v": 0.78,
+            "width_mm": 3.5,
+            "height_mm": 3.5
+          }
+        ]
+      },
+      "accuracy": "Published external envelope and finish names; corner radii, split lid/base thickness, internal geometry and port positions are illustrative photo estimates.",
+      "reference_images": [
+        "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111837_mac-mini-2023-m2-pro.png",
+        "https://cdsassets.apple.com/live/7WUAS350/images/mac-mini/mac-mini-2023-m2-pro.png"
+      ]
+    },
+    {
+      "id": "mac-mini-m4",
+      "icon_id": "apple_mac_mini_m4",
+      "name": "Mac mini (M4, 2024)",
+      "family": "mac-mini",
+      "kind": "pc",
+      "chip": "M4",
+      "chips": [
+        "M4"
+      ],
+      "year": 2024,
+      "chassis_id": "mac-mini-2024",
+      "dimensions_mm": {
+        "width": 127,
+        "depth": 127,
+        "height": 50
+      },
+      "finishes": [
+        "Silver"
+      ],
+      "model_identifiers": [
+        "Mac16,10"
+      ],
+      "tech_specs": "https://support.apple.com/en-us/121555",
+      "sources": [
+        "https://support.apple.com/en-us/121555",
+        "https://support.apple.com/en-us/102852"
+      ],
+      "ports": {
+        "front": [
+          {
+            "type": "usb_c",
+            "u": 0.205,
+            "v": 0.63,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.326,
+            "v": 0.63,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical"
+          },
+          {
+            "type": "led",
+            "u": 0.692,
+            "v": 0.63,
+            "width_mm": 1.3,
+            "height_mm": 1.3
+          },
+          {
+            "type": "audio",
+            "u": 0.79,
+            "v": 0.63,
+            "width_mm": 3.5,
+            "height_mm": 3.5
+          }
+        ],
+        "rear": [
+          {
+            "type": "power_inlet",
+            "u": 0.22,
+            "v": 0.6,
+            "width_mm": 17,
+            "height_mm": 8
+          },
+          {
+            "type": "ethernet",
+            "u": 0.4,
+            "v": 0.6,
+            "width_mm": 16,
+            "height_mm": 13.5
+          },
+          {
+            "type": "hdmi",
+            "u": 0.565,
+            "v": 0.6,
+            "width_mm": 14,
+            "height_mm": 4.8
+          },
+          {
+            "type": "usb_c",
+            "u": 0.695,
+            "v": 0.6,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical",
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.765,
+            "v": 0.6,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical",
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.835,
+            "v": 0.6,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical",
+            "protocol": "Thunderbolt 4"
+          }
+        ],
+        "bottom": [
+          {
+            "type": "power_button",
+            "u": 0.15,
+            "v": 0.18,
+            "width_mm": 7,
+            "height_mm": 7
+          }
+        ]
+      },
+      "accuracy": "Published external envelope and finish names; corner radii, split lid/base thickness, internal geometry and port positions are illustrative photo estimates.",
+      "reference_images": [
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/mac-mini-2024.png",
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/121555-mac-mini-2024-en-portimage1.png",
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/121555-mac-mini-2024-en-portimage2.png"
+      ]
+    },
+    {
+      "id": "mac-mini-m4-pro",
+      "icon_id": "apple_mac_mini_m4_pro",
+      "name": "Mac mini (M4 Pro, 2024)",
+      "family": "mac-mini",
+      "kind": "pc",
+      "chip": "M4 Pro",
+      "chips": [
+        "M4 Pro"
+      ],
+      "year": 2024,
+      "chassis_id": "mac-mini-2024",
+      "dimensions_mm": {
+        "width": 127,
+        "depth": 127,
+        "height": 50
+      },
+      "finishes": [
+        "Silver"
+      ],
+      "model_identifiers": [
+        "Mac16,11"
+      ],
+      "tech_specs": "https://support.apple.com/en-us/121555",
+      "sources": [
+        "https://support.apple.com/en-us/121555",
+        "https://support.apple.com/en-us/102852"
+      ],
+      "ports": {
+        "front": [
+          {
+            "type": "usb_c",
+            "u": 0.205,
+            "v": 0.63,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.326,
+            "v": 0.63,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical"
+          },
+          {
+            "type": "led",
+            "u": 0.692,
+            "v": 0.63,
+            "width_mm": 1.3,
+            "height_mm": 1.3
+          },
+          {
+            "type": "audio",
+            "u": 0.79,
+            "v": 0.63,
+            "width_mm": 3.5,
+            "height_mm": 3.5
+          }
+        ],
+        "rear": [
+          {
+            "type": "power_inlet",
+            "u": 0.22,
+            "v": 0.6,
+            "width_mm": 17,
+            "height_mm": 8
+          },
+          {
+            "type": "ethernet",
+            "u": 0.4,
+            "v": 0.6,
+            "width_mm": 16,
+            "height_mm": 13.5
+          },
+          {
+            "type": "hdmi",
+            "u": 0.565,
+            "v": 0.6,
+            "width_mm": 14,
+            "height_mm": 4.8
+          },
+          {
+            "type": "usb_c",
+            "u": 0.695,
+            "v": 0.6,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical",
+            "protocol": "Thunderbolt 5"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.765,
+            "v": 0.6,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical",
+            "protocol": "Thunderbolt 5"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.835,
+            "v": 0.6,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical",
+            "protocol": "Thunderbolt 5"
+          }
+        ],
+        "bottom": [
+          {
+            "type": "power_button",
+            "u": 0.15,
+            "v": 0.18,
+            "width_mm": 7,
+            "height_mm": 7
+          }
+        ]
+      },
+      "accuracy": "Published external envelope and finish names; corner radii, split lid/base thickness, internal geometry and port positions are illustrative photo estimates.",
+      "reference_images": [
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/mac-mini-2024.png",
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/121555-mac-mini-2024-en-portimage1.png",
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/121555-mac-mini-2024-en-portimage2.png"
+      ]
+    },
+    {
+      "id": "mac-mini-m6",
+      "icon_id": "apple_mac_mini_m6",
+      "name": "Mac mini (M6, 2026)",
+      "family": "mac-mini",
+      "kind": "pc",
+      "chip": "M6",
+      "chips": [
+        "M6"
+      ],
+      "year": 2026,
+      "chassis_id": "mac-mini-2024",
+      "dimensions_mm": {
+        "width": 127,
+        "depth": 127,
+        "height": 50
+      },
+      "finishes": [
+        "Silver"
+      ],
+      "model_identifiers": [
+        "Mac18,5"
+      ],
+      "tech_specs": "https://support.apple.com/en-us/128108",
+      "sources": [
+        "https://support.apple.com/en-us/128108",
+        "https://support.apple.com/en-us/102852"
+      ],
+      "ports": {
+        "front": [
+          {
+            "type": "usb_c",
+            "u": 0.205,
+            "v": 0.63,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.326,
+            "v": 0.63,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical"
+          },
+          {
+            "type": "led",
+            "u": 0.692,
+            "v": 0.63,
+            "width_mm": 1.3,
+            "height_mm": 1.3
+          },
+          {
+            "type": "audio",
+            "u": 0.79,
+            "v": 0.63,
+            "width_mm": 3.5,
+            "height_mm": 3.5
+          }
+        ],
+        "rear": [
+          {
+            "type": "power_inlet",
+            "u": 0.22,
+            "v": 0.6,
+            "width_mm": 17,
+            "height_mm": 8
+          },
+          {
+            "type": "ethernet",
+            "u": 0.4,
+            "v": 0.6,
+            "width_mm": 16,
+            "height_mm": 13.5
+          },
+          {
+            "type": "hdmi",
+            "u": 0.565,
+            "v": 0.6,
+            "width_mm": 14,
+            "height_mm": 4.8
+          },
+          {
+            "type": "usb_c",
+            "u": 0.695,
+            "v": 0.6,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical",
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.765,
+            "v": 0.6,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical",
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.835,
+            "v": 0.6,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical",
+            "protocol": "Thunderbolt 4"
+          }
+        ],
+        "bottom": [
+          {
+            "type": "power_button",
+            "u": 0.15,
+            "v": 0.18,
+            "width_mm": 7,
+            "height_mm": 7
+          }
+        ]
+      },
+      "accuracy": "Published external envelope and finish names; corner radii, split lid/base thickness, internal geometry and port positions are illustrative photo estimates.",
+      "reference_images": [
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/mac-mini-2024.png"
+      ]
+    },
+    {
+      "id": "mac-mini-m5-pro",
+      "icon_id": "apple_mac_mini_m5_pro",
+      "name": "Mac mini (M5 Pro, 2026)",
+      "family": "mac-mini",
+      "kind": "pc",
+      "chip": "M5 Pro",
+      "chips": [
+        "M5 Pro"
+      ],
+      "year": 2026,
+      "chassis_id": "mac-mini-2024",
+      "dimensions_mm": {
+        "width": 127,
+        "depth": 127,
+        "height": 50
+      },
+      "finishes": [
+        "Silver"
+      ],
+      "model_identifiers": [
+        "Mac17,16"
+      ],
+      "tech_specs": "https://support.apple.com/en-us/128108",
+      "sources": [
+        "https://support.apple.com/en-us/128108",
+        "https://support.apple.com/en-us/102852"
+      ],
+      "ports": {
+        "front": [
+          {
+            "type": "usb_c",
+            "u": 0.205,
+            "v": 0.63,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.326,
+            "v": 0.63,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical"
+          },
+          {
+            "type": "led",
+            "u": 0.692,
+            "v": 0.63,
+            "width_mm": 1.3,
+            "height_mm": 1.3
+          },
+          {
+            "type": "audio",
+            "u": 0.79,
+            "v": 0.63,
+            "width_mm": 3.5,
+            "height_mm": 3.5
+          }
+        ],
+        "rear": [
+          {
+            "type": "power_inlet",
+            "u": 0.22,
+            "v": 0.6,
+            "width_mm": 17,
+            "height_mm": 8
+          },
+          {
+            "type": "ethernet",
+            "u": 0.4,
+            "v": 0.6,
+            "width_mm": 16,
+            "height_mm": 13.5
+          },
+          {
+            "type": "hdmi",
+            "u": 0.565,
+            "v": 0.6,
+            "width_mm": 14,
+            "height_mm": 4.8
+          },
+          {
+            "type": "usb_c",
+            "u": 0.695,
+            "v": 0.6,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical",
+            "protocol": "Thunderbolt 5"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.765,
+            "v": 0.6,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical",
+            "protocol": "Thunderbolt 5"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.835,
+            "v": 0.6,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical",
+            "protocol": "Thunderbolt 5"
+          }
+        ],
+        "bottom": [
+          {
+            "type": "power_button",
+            "u": 0.15,
+            "v": 0.18,
+            "width_mm": 7,
+            "height_mm": 7
+          }
+        ]
+      },
+      "accuracy": "Published external envelope and finish names; corner radii, split lid/base thickness, internal geometry and port positions are illustrative photo estimates.",
+      "reference_images": [
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/mac-mini-2024.png"
+      ]
+    },
+    {
+      "id": "mac-studio-m1-max",
+      "icon_id": "apple_mac_studio_m1_max",
+      "name": "Mac Studio (M1 Max, 2022)",
+      "family": "mac-studio",
+      "kind": "pc",
+      "chip": "M1 Max",
+      "chips": [
+        "M1 Max"
+      ],
+      "year": 2022,
+      "chassis_id": "mac-studio-2022",
+      "dimensions_mm": {
+        "width": 197,
+        "depth": 197,
+        "height": 95
+      },
+      "finishes": [
+        "Silver"
+      ],
+      "model_identifiers": [
+        "Mac13,1"
+      ],
+      "tech_specs": "https://support.apple.com/en-us/111900",
+      "sources": [
+        "https://support.apple.com/en-us/111900",
+        "https://support.apple.com/en-us/102231"
+      ],
+      "ports": {
+        "front": [
+          {
+            "type": "usb_c",
+            "u": 0.165,
+            "v": 0.81,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical",
+            "protocol": "USB 3"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.233,
+            "v": 0.81,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical",
+            "protocol": "USB 3"
+          },
+          {
+            "type": "sdxc",
+            "u": 0.37,
+            "v": 0.81,
+            "width_mm": 28,
+            "height_mm": 2
+          },
+          {
+            "type": "led",
+            "u": 0.84,
+            "v": 0.81,
+            "width_mm": 1.3,
+            "height_mm": 1.3
+          }
+        ],
+        "rear": [
+          {
+            "type": "usb_c",
+            "u": 0.13,
+            "v": 0.82,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical",
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.18,
+            "v": 0.82,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical",
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.23,
+            "v": 0.82,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical",
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.28,
+            "v": 0.82,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical",
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "ethernet",
+            "u": 0.36,
+            "v": 0.82,
+            "width_mm": 16,
+            "height_mm": 13.5
+          },
+          {
+            "type": "power_inlet",
+            "u": 0.48,
+            "v": 0.82,
+            "width_mm": 17,
+            "height_mm": 8
+          },
+          {
+            "type": "usb_a",
+            "u": 0.59,
+            "v": 0.82,
+            "width_mm": 5,
+            "height_mm": 13,
+            "orientation": "vertical"
+          },
+          {
+            "type": "usb_a",
+            "u": 0.65,
+            "v": 0.82,
+            "width_mm": 5,
+            "height_mm": 13,
+            "orientation": "vertical"
+          },
+          {
+            "type": "hdmi",
+            "u": 0.75,
+            "v": 0.82,
+            "width_mm": 14,
+            "height_mm": 4.8
+          },
+          {
+            "type": "audio",
+            "u": 0.83,
+            "v": 0.82,
+            "width_mm": 3.5,
+            "height_mm": 3.5
+          },
+          {
+            "type": "power_button",
+            "u": 0.92,
+            "v": 0.82,
+            "width_mm": 7,
+            "height_mm": 7
+          }
+        ]
+      },
+      "accuracy": "Published external envelope and finish names; corner radii, split lid/base thickness, internal geometry and port positions are illustrative photo estimates.",
+      "reference_images": [
+        "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111900_sp865-mac-studio-2022.png",
+        "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111900_sp865-portimage-2-en.png",
+        "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111900_sp865-portimage-1-en.png"
+      ]
+    },
+    {
+      "id": "mac-studio-m1-ultra",
+      "icon_id": "apple_mac_studio_m1_ultra",
+      "name": "Mac Studio (M1 Ultra, 2022)",
+      "family": "mac-studio",
+      "kind": "pc",
+      "chip": "M1 Ultra",
+      "chips": [
+        "M1 Ultra"
+      ],
+      "year": 2022,
+      "chassis_id": "mac-studio-2022",
+      "dimensions_mm": {
+        "width": 197,
+        "depth": 197,
+        "height": 95
+      },
+      "finishes": [
+        "Silver"
+      ],
+      "model_identifiers": [
+        "Mac13,2"
+      ],
+      "tech_specs": "https://support.apple.com/en-us/111900",
+      "sources": [
+        "https://support.apple.com/en-us/111900",
+        "https://support.apple.com/en-us/102231"
+      ],
+      "ports": {
+        "front": [
+          {
+            "type": "usb_c",
+            "u": 0.165,
+            "v": 0.81,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical",
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.233,
+            "v": 0.81,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical",
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "sdxc",
+            "u": 0.37,
+            "v": 0.81,
+            "width_mm": 28,
+            "height_mm": 2
+          },
+          {
+            "type": "led",
+            "u": 0.84,
+            "v": 0.81,
+            "width_mm": 1.3,
+            "height_mm": 1.3
+          }
+        ],
+        "rear": [
+          {
+            "type": "usb_c",
+            "u": 0.13,
+            "v": 0.82,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical",
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.18,
+            "v": 0.82,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical",
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.23,
+            "v": 0.82,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical",
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.28,
+            "v": 0.82,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical",
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "ethernet",
+            "u": 0.36,
+            "v": 0.82,
+            "width_mm": 16,
+            "height_mm": 13.5
+          },
+          {
+            "type": "power_inlet",
+            "u": 0.48,
+            "v": 0.82,
+            "width_mm": 17,
+            "height_mm": 8
+          },
+          {
+            "type": "usb_a",
+            "u": 0.59,
+            "v": 0.82,
+            "width_mm": 5,
+            "height_mm": 13,
+            "orientation": "vertical"
+          },
+          {
+            "type": "usb_a",
+            "u": 0.65,
+            "v": 0.82,
+            "width_mm": 5,
+            "height_mm": 13,
+            "orientation": "vertical"
+          },
+          {
+            "type": "hdmi",
+            "u": 0.75,
+            "v": 0.82,
+            "width_mm": 14,
+            "height_mm": 4.8
+          },
+          {
+            "type": "audio",
+            "u": 0.83,
+            "v": 0.82,
+            "width_mm": 3.5,
+            "height_mm": 3.5
+          },
+          {
+            "type": "power_button",
+            "u": 0.92,
+            "v": 0.82,
+            "width_mm": 7,
+            "height_mm": 7
+          }
+        ]
+      },
+      "accuracy": "Published external envelope and finish names; corner radii, split lid/base thickness, internal geometry and port positions are illustrative photo estimates.",
+      "reference_images": [
+        "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111900_sp865-mac-studio-2022.png",
+        "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111900_sp865-portimage-2-en.png",
+        "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111900_sp865-portimage-1-en.png"
+      ]
+    },
+    {
+      "id": "mac-studio-m2-max",
+      "icon_id": "apple_mac_studio_m2_max",
+      "name": "Mac Studio (M2 Max, 2023)",
+      "family": "mac-studio",
+      "kind": "pc",
+      "chip": "M2 Max",
+      "chips": [
+        "M2 Max"
+      ],
+      "year": 2023,
+      "chassis_id": "mac-studio-2022",
+      "dimensions_mm": {
+        "width": 197,
+        "depth": 197,
+        "height": 95
+      },
+      "finishes": [
+        "Silver"
+      ],
+      "model_identifiers": [
+        "Mac14,13"
+      ],
+      "tech_specs": "https://support.apple.com/en-us/111835",
+      "sources": [
+        "https://support.apple.com/en-us/111835",
+        "https://support.apple.com/en-us/102231"
+      ],
+      "ports": {
+        "front": [
+          {
+            "type": "usb_c",
+            "u": 0.165,
+            "v": 0.81,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical",
+            "protocol": "USB 3"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.233,
+            "v": 0.81,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical",
+            "protocol": "USB 3"
+          },
+          {
+            "type": "sdxc",
+            "u": 0.37,
+            "v": 0.81,
+            "width_mm": 28,
+            "height_mm": 2
+          },
+          {
+            "type": "led",
+            "u": 0.84,
+            "v": 0.81,
+            "width_mm": 1.3,
+            "height_mm": 1.3
+          }
+        ],
+        "rear": [
+          {
+            "type": "usb_c",
+            "u": 0.13,
+            "v": 0.82,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical",
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.18,
+            "v": 0.82,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical",
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.23,
+            "v": 0.82,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical",
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.28,
+            "v": 0.82,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical",
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "ethernet",
+            "u": 0.36,
+            "v": 0.82,
+            "width_mm": 16,
+            "height_mm": 13.5
+          },
+          {
+            "type": "power_inlet",
+            "u": 0.48,
+            "v": 0.82,
+            "width_mm": 17,
+            "height_mm": 8
+          },
+          {
+            "type": "usb_a",
+            "u": 0.59,
+            "v": 0.82,
+            "width_mm": 5,
+            "height_mm": 13,
+            "orientation": "vertical"
+          },
+          {
+            "type": "usb_a",
+            "u": 0.65,
+            "v": 0.82,
+            "width_mm": 5,
+            "height_mm": 13,
+            "orientation": "vertical"
+          },
+          {
+            "type": "hdmi",
+            "u": 0.75,
+            "v": 0.82,
+            "width_mm": 14,
+            "height_mm": 4.8
+          },
+          {
+            "type": "audio",
+            "u": 0.83,
+            "v": 0.82,
+            "width_mm": 3.5,
+            "height_mm": 3.5
+          },
+          {
+            "type": "power_button",
+            "u": 0.92,
+            "v": 0.82,
+            "width_mm": 7,
+            "height_mm": 7
+          }
+        ]
+      },
+      "accuracy": "Published external envelope and finish names; corner radii, split lid/base thickness, internal geometry and port positions are illustrative photo estimates.",
+      "reference_images": [
+        "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111835_sp894-mac-studio-2023.png",
+        "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111835_sp894-portimage-1-en.png",
+        "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111835_sp894-portimage-2-en.png"
+      ]
+    },
+    {
+      "id": "mac-studio-m2-ultra",
+      "icon_id": "apple_mac_studio_m2_ultra",
+      "name": "Mac Studio (M2 Ultra, 2023)",
+      "family": "mac-studio",
+      "kind": "pc",
+      "chip": "M2 Ultra",
+      "chips": [
+        "M2 Ultra"
+      ],
+      "year": 2023,
+      "chassis_id": "mac-studio-2022",
+      "dimensions_mm": {
+        "width": 197,
+        "depth": 197,
+        "height": 95
+      },
+      "finishes": [
+        "Silver"
+      ],
+      "model_identifiers": [
+        "Mac14,14"
+      ],
+      "tech_specs": "https://support.apple.com/en-us/111835",
+      "sources": [
+        "https://support.apple.com/en-us/111835",
+        "https://support.apple.com/en-us/102231"
+      ],
+      "ports": {
+        "front": [
+          {
+            "type": "usb_c",
+            "u": 0.165,
+            "v": 0.81,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical",
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.233,
+            "v": 0.81,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical",
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "sdxc",
+            "u": 0.37,
+            "v": 0.81,
+            "width_mm": 28,
+            "height_mm": 2
+          },
+          {
+            "type": "led",
+            "u": 0.84,
+            "v": 0.81,
+            "width_mm": 1.3,
+            "height_mm": 1.3
+          }
+        ],
+        "rear": [
+          {
+            "type": "usb_c",
+            "u": 0.13,
+            "v": 0.82,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical",
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.18,
+            "v": 0.82,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical",
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.23,
+            "v": 0.82,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical",
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.28,
+            "v": 0.82,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical",
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "ethernet",
+            "u": 0.36,
+            "v": 0.82,
+            "width_mm": 16,
+            "height_mm": 13.5
+          },
+          {
+            "type": "power_inlet",
+            "u": 0.48,
+            "v": 0.82,
+            "width_mm": 17,
+            "height_mm": 8
+          },
+          {
+            "type": "usb_a",
+            "u": 0.59,
+            "v": 0.82,
+            "width_mm": 5,
+            "height_mm": 13,
+            "orientation": "vertical"
+          },
+          {
+            "type": "usb_a",
+            "u": 0.65,
+            "v": 0.82,
+            "width_mm": 5,
+            "height_mm": 13,
+            "orientation": "vertical"
+          },
+          {
+            "type": "hdmi",
+            "u": 0.75,
+            "v": 0.82,
+            "width_mm": 14,
+            "height_mm": 4.8
+          },
+          {
+            "type": "audio",
+            "u": 0.83,
+            "v": 0.82,
+            "width_mm": 3.5,
+            "height_mm": 3.5
+          },
+          {
+            "type": "power_button",
+            "u": 0.92,
+            "v": 0.82,
+            "width_mm": 7,
+            "height_mm": 7
+          }
+        ]
+      },
+      "accuracy": "Published external envelope and finish names; corner radii, split lid/base thickness, internal geometry and port positions are illustrative photo estimates.",
+      "reference_images": [
+        "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111835_sp894-mac-studio-2023.png",
+        "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111835_sp894-portimage-1-en.png",
+        "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111835_sp894-portimage-2-en.png"
+      ]
+    },
+    {
+      "id": "mac-studio-m4-max",
+      "icon_id": "apple_mac_studio_m4_max",
+      "name": "Mac Studio (M4 Max, 2025)",
+      "family": "mac-studio",
+      "kind": "pc",
+      "chip": "M4 Max",
+      "chips": [
+        "M4 Max"
+      ],
+      "year": 2025,
+      "chassis_id": "mac-studio-2022",
+      "dimensions_mm": {
+        "width": 197,
+        "depth": 197,
+        "height": 95
+      },
+      "finishes": [
+        "Silver"
+      ],
+      "model_identifiers": [
+        "Mac16,9"
+      ],
+      "tech_specs": "https://support.apple.com/en-us/122211",
+      "sources": [
+        "https://support.apple.com/en-us/122211",
+        "https://support.apple.com/en-us/102231"
+      ],
+      "ports": {
+        "front": [
+          {
+            "type": "usb_c",
+            "u": 0.165,
+            "v": 0.81,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical",
+            "protocol": "USB 3"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.233,
+            "v": 0.81,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical",
+            "protocol": "USB 3"
+          },
+          {
+            "type": "sdxc",
+            "u": 0.37,
+            "v": 0.81,
+            "width_mm": 28,
+            "height_mm": 2
+          },
+          {
+            "type": "led",
+            "u": 0.84,
+            "v": 0.81,
+            "width_mm": 1.3,
+            "height_mm": 1.3
+          }
+        ],
+        "rear": [
+          {
+            "type": "usb_c",
+            "u": 0.13,
+            "v": 0.82,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical",
+            "protocol": "Thunderbolt 5"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.18,
+            "v": 0.82,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical",
+            "protocol": "Thunderbolt 5"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.23,
+            "v": 0.82,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical",
+            "protocol": "Thunderbolt 5"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.28,
+            "v": 0.82,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical",
+            "protocol": "Thunderbolt 5"
+          },
+          {
+            "type": "ethernet",
+            "u": 0.36,
+            "v": 0.82,
+            "width_mm": 16,
+            "height_mm": 13.5
+          },
+          {
+            "type": "power_inlet",
+            "u": 0.48,
+            "v": 0.82,
+            "width_mm": 17,
+            "height_mm": 8
+          },
+          {
+            "type": "usb_a",
+            "u": 0.59,
+            "v": 0.82,
+            "width_mm": 5,
+            "height_mm": 13,
+            "orientation": "vertical"
+          },
+          {
+            "type": "usb_a",
+            "u": 0.65,
+            "v": 0.82,
+            "width_mm": 5,
+            "height_mm": 13,
+            "orientation": "vertical"
+          },
+          {
+            "type": "hdmi",
+            "u": 0.75,
+            "v": 0.82,
+            "width_mm": 14,
+            "height_mm": 4.8
+          },
+          {
+            "type": "audio",
+            "u": 0.83,
+            "v": 0.82,
+            "width_mm": 3.5,
+            "height_mm": 3.5
+          },
+          {
+            "type": "power_button",
+            "u": 0.92,
+            "v": 0.82,
+            "width_mm": 7,
+            "height_mm": 7
+          }
+        ]
+      },
+      "accuracy": "Published external envelope and finish names; corner radii, split lid/base thickness, internal geometry and port positions are illustrative photo estimates.",
+      "reference_images": [
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/mac-studio-2025.png",
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/122211-mac-studio-en-portimage-1.png",
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/122211-mac-studio-en-portimage-2.png"
+      ]
+    },
+    {
+      "id": "mac-studio-m3-ultra",
+      "icon_id": "apple_mac_studio_m3_ultra",
+      "name": "Mac Studio (M3 Ultra, 2025)",
+      "family": "mac-studio",
+      "kind": "pc",
+      "chip": "M3 Ultra",
+      "chips": [
+        "M3 Ultra"
+      ],
+      "year": 2025,
+      "chassis_id": "mac-studio-2022",
+      "dimensions_mm": {
+        "width": 197,
+        "depth": 197,
+        "height": 95
+      },
+      "finishes": [
+        "Silver"
+      ],
+      "model_identifiers": [
+        "Mac15,14"
+      ],
+      "tech_specs": "https://support.apple.com/en-us/122211",
+      "sources": [
+        "https://support.apple.com/en-us/122211",
+        "https://support.apple.com/en-us/102231"
+      ],
+      "ports": {
+        "front": [
+          {
+            "type": "usb_c",
+            "u": 0.165,
+            "v": 0.81,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical",
+            "protocol": "Thunderbolt 5"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.233,
+            "v": 0.81,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical",
+            "protocol": "Thunderbolt 5"
+          },
+          {
+            "type": "sdxc",
+            "u": 0.37,
+            "v": 0.81,
+            "width_mm": 28,
+            "height_mm": 2
+          },
+          {
+            "type": "led",
+            "u": 0.84,
+            "v": 0.81,
+            "width_mm": 1.3,
+            "height_mm": 1.3
+          }
+        ],
+        "rear": [
+          {
+            "type": "usb_c",
+            "u": 0.13,
+            "v": 0.82,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical",
+            "protocol": "Thunderbolt 5"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.18,
+            "v": 0.82,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical",
+            "protocol": "Thunderbolt 5"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.23,
+            "v": 0.82,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical",
+            "protocol": "Thunderbolt 5"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.28,
+            "v": 0.82,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical",
+            "protocol": "Thunderbolt 5"
+          },
+          {
+            "type": "ethernet",
+            "u": 0.36,
+            "v": 0.82,
+            "width_mm": 16,
+            "height_mm": 13.5
+          },
+          {
+            "type": "power_inlet",
+            "u": 0.48,
+            "v": 0.82,
+            "width_mm": 17,
+            "height_mm": 8
+          },
+          {
+            "type": "usb_a",
+            "u": 0.59,
+            "v": 0.82,
+            "width_mm": 5,
+            "height_mm": 13,
+            "orientation": "vertical"
+          },
+          {
+            "type": "usb_a",
+            "u": 0.65,
+            "v": 0.82,
+            "width_mm": 5,
+            "height_mm": 13,
+            "orientation": "vertical"
+          },
+          {
+            "type": "hdmi",
+            "u": 0.75,
+            "v": 0.82,
+            "width_mm": 14,
+            "height_mm": 4.8
+          },
+          {
+            "type": "audio",
+            "u": 0.83,
+            "v": 0.82,
+            "width_mm": 3.5,
+            "height_mm": 3.5
+          },
+          {
+            "type": "power_button",
+            "u": 0.92,
+            "v": 0.82,
+            "width_mm": 7,
+            "height_mm": 7
+          }
+        ]
+      },
+      "accuracy": "Published external envelope and finish names; corner radii, split lid/base thickness, internal geometry and port positions are illustrative photo estimates.",
+      "reference_images": [
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/mac-studio-2025.png",
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/122211-mac-studio-en-portimage-1.png",
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/122211-mac-studio-en-portimage-2.png"
+      ]
+    },
+    {
+      "id": "mac-studio-m5-max",
+      "icon_id": "apple_mac_studio_m5_max",
+      "name": "Mac Studio (M5 Max, 2026)",
+      "family": "mac-studio",
+      "kind": "pc",
+      "chip": "M5 Max",
+      "chips": [
+        "M5 Max"
+      ],
+      "year": 2026,
+      "chassis_id": "mac-studio-2022",
+      "dimensions_mm": {
+        "width": 197,
+        "depth": 197,
+        "height": 95
+      },
+      "finishes": [
+        "Silver"
+      ],
+      "model_identifiers": [
+        "Mac17,14"
+      ],
+      "tech_specs": "https://support.apple.com/en-us/128107",
+      "sources": [
+        "https://support.apple.com/en-us/128107",
+        "https://support.apple.com/en-us/102231"
+      ],
+      "ports": {
+        "front": [
+          {
+            "type": "usb_c",
+            "u": 0.165,
+            "v": 0.81,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical",
+            "protocol": "USB 3"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.233,
+            "v": 0.81,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical",
+            "protocol": "USB 3"
+          },
+          {
+            "type": "sdxc",
+            "u": 0.37,
+            "v": 0.81,
+            "width_mm": 28,
+            "height_mm": 2
+          },
+          {
+            "type": "led",
+            "u": 0.84,
+            "v": 0.81,
+            "width_mm": 1.3,
+            "height_mm": 1.3
+          }
+        ],
+        "rear": [
+          {
+            "type": "usb_c",
+            "u": 0.13,
+            "v": 0.82,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical",
+            "protocol": "Thunderbolt 5"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.18,
+            "v": 0.82,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical",
+            "protocol": "Thunderbolt 5"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.23,
+            "v": 0.82,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical",
+            "protocol": "Thunderbolt 5"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.28,
+            "v": 0.82,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical",
+            "protocol": "Thunderbolt 5"
+          },
+          {
+            "type": "ethernet",
+            "u": 0.36,
+            "v": 0.82,
+            "width_mm": 16,
+            "height_mm": 13.5
+          },
+          {
+            "type": "power_inlet",
+            "u": 0.48,
+            "v": 0.82,
+            "width_mm": 17,
+            "height_mm": 8
+          },
+          {
+            "type": "usb_a",
+            "u": 0.59,
+            "v": 0.82,
+            "width_mm": 5,
+            "height_mm": 13,
+            "orientation": "vertical"
+          },
+          {
+            "type": "usb_a",
+            "u": 0.65,
+            "v": 0.82,
+            "width_mm": 5,
+            "height_mm": 13,
+            "orientation": "vertical"
+          },
+          {
+            "type": "hdmi",
+            "u": 0.75,
+            "v": 0.82,
+            "width_mm": 14,
+            "height_mm": 4.8
+          },
+          {
+            "type": "audio",
+            "u": 0.83,
+            "v": 0.82,
+            "width_mm": 3.5,
+            "height_mm": 3.5
+          },
+          {
+            "type": "power_button",
+            "u": 0.92,
+            "v": 0.82,
+            "width_mm": 7,
+            "height_mm": 7
+          }
+        ]
+      },
+      "accuracy": "Published external envelope and finish names; corner radii, split lid/base thickness, internal geometry and port positions are illustrative photo estimates.",
+      "reference_images": [
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/mac-studio-2025.png"
+      ]
+    },
+    {
+      "id": "mac-studio-m5-ultra",
+      "icon_id": "apple_mac_studio_m5_ultra",
+      "name": "Mac Studio (M5 Ultra, 2026)",
+      "family": "mac-studio",
+      "kind": "pc",
+      "chip": "M5 Ultra",
+      "chips": [
+        "M5 Ultra"
+      ],
+      "year": 2026,
+      "chassis_id": "mac-studio-2022",
+      "dimensions_mm": {
+        "width": 197,
+        "depth": 197,
+        "height": 95
+      },
+      "finishes": [
+        "Silver"
+      ],
+      "model_identifiers": [
+        "Mac17,15"
+      ],
+      "tech_specs": "https://support.apple.com/en-us/128107",
+      "sources": [
+        "https://support.apple.com/en-us/128107",
+        "https://support.apple.com/en-us/102231"
+      ],
+      "ports": {
+        "front": [
+          {
+            "type": "usb_c",
+            "u": 0.165,
+            "v": 0.81,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical",
+            "protocol": "Thunderbolt 5"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.233,
+            "v": 0.81,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical",
+            "protocol": "Thunderbolt 5"
+          },
+          {
+            "type": "sdxc",
+            "u": 0.37,
+            "v": 0.81,
+            "width_mm": 28,
+            "height_mm": 2
+          },
+          {
+            "type": "led",
+            "u": 0.84,
+            "v": 0.81,
+            "width_mm": 1.3,
+            "height_mm": 1.3
+          }
+        ],
+        "rear": [
+          {
+            "type": "usb_c",
+            "u": 0.13,
+            "v": 0.82,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical",
+            "protocol": "Thunderbolt 5"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.18,
+            "v": 0.82,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical",
+            "protocol": "Thunderbolt 5"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.23,
+            "v": 0.82,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical",
+            "protocol": "Thunderbolt 5"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.28,
+            "v": 0.82,
+            "width_mm": 2.7,
+            "height_mm": 8.4,
+            "orientation": "vertical",
+            "protocol": "Thunderbolt 5"
+          },
+          {
+            "type": "ethernet",
+            "u": 0.36,
+            "v": 0.82,
+            "width_mm": 16,
+            "height_mm": 13.5
+          },
+          {
+            "type": "power_inlet",
+            "u": 0.48,
+            "v": 0.82,
+            "width_mm": 17,
+            "height_mm": 8
+          },
+          {
+            "type": "usb_a",
+            "u": 0.59,
+            "v": 0.82,
+            "width_mm": 5,
+            "height_mm": 13,
+            "orientation": "vertical"
+          },
+          {
+            "type": "usb_a",
+            "u": 0.65,
+            "v": 0.82,
+            "width_mm": 5,
+            "height_mm": 13,
+            "orientation": "vertical"
+          },
+          {
+            "type": "hdmi",
+            "u": 0.75,
+            "v": 0.82,
+            "width_mm": 14,
+            "height_mm": 4.8
+          },
+          {
+            "type": "audio",
+            "u": 0.83,
+            "v": 0.82,
+            "width_mm": 3.5,
+            "height_mm": 3.5
+          },
+          {
+            "type": "power_button",
+            "u": 0.92,
+            "v": 0.82,
+            "width_mm": 7,
+            "height_mm": 7
+          }
+        ]
+      },
+      "accuracy": "Published external envelope and finish names; corner radii, split lid/base thickness, internal geometry and port positions are illustrative photo estimates.",
+      "reference_images": [
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/mac-studio-2025.png"
+      ]
+    },
+    {
+      "id": "macbook-air-13-m1",
+      "icon_id": "apple_macbook_air_13_m1",
+      "name": "MacBook Air 13-inch (M1, 2020)",
+      "family": "macbook-air",
+      "kind": "laptop",
+      "chip": "M1",
+      "chips": [
+        "M1"
+      ],
+      "year": 2020,
+      "chassis_id": "macbook-air-13-wedge",
+      "dimensions_mm": {
+        "width": 304.1,
+        "depth": 212.4,
+        "height": 16.1
+      },
+      "finishes": [
+        "Gold",
+        "Silver",
+        "Space Gray"
+      ],
+      "model_identifiers": [
+        "MacBookAir10,1"
+      ],
+      "tech_specs": "https://support.apple.com/en-us/111883",
+      "sources": [
+        "https://support.apple.com/en-us/111883",
+        "https://support.apple.com/en-us/102869"
+      ],
+      "ports": {
+        "left": [
+          {
+            "type": "usb_c",
+            "u": 0.9,
+            "v": 0.35,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 3"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.83,
+            "v": 0.35,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 3"
+          }
+        ],
+        "right": [
+          {
+            "type": "audio",
+            "u": 0.9,
+            "v": 0.35,
+            "width_mm": 3.5,
+            "height_mm": 3.5
+          }
+        ]
+      },
+      "accuracy": "Published external envelope and finish names; corner radii, split lid/base thickness, internal geometry and port positions are illustrative photo estimates.",
+      "display": {
+        "resolution": [
+          2560,
+          1600
+        ],
+        "diagonal_in": 13.3,
+        "width_mm": 286.4493,
+        "height_mm": 179.0308,
+        "notch": false,
+        "physical_size_basis": "native pixel count / published pixels per inch; full rectangular extent before corner/notch clipping",
+        "corner_radius_mm": 0.8
+      },
+      "reference_images": [
+        "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111883_macbookair.png",
+        "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111883_sp825-portimage-1-en.png",
+        "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111883_sp825-portimage-2-en.png"
+      ]
+    },
+    {
+      "id": "macbook-air-13-m2",
+      "icon_id": "apple_macbook_air_13_m2",
+      "name": "MacBook Air 13-inch (M2, 2022)",
+      "family": "macbook-air",
+      "kind": "laptop",
+      "chip": "M2",
+      "chips": [
+        "M2"
+      ],
+      "year": 2022,
+      "chassis_id": "macbook-air-13-flat",
+      "dimensions_mm": {
+        "width": 304.1,
+        "depth": 215,
+        "height": 11.3
+      },
+      "finishes": [
+        "Silver",
+        "Starlight",
+        "Space Gray",
+        "Midnight"
+      ],
+      "model_identifiers": [
+        "Mac14,2"
+      ],
+      "tech_specs": "https://support.apple.com/en-us/111867",
+      "sources": [
+        "https://support.apple.com/en-us/111867",
+        "https://support.apple.com/en-us/102869"
+      ],
+      "ports": {
+        "left": [
+          {
+            "type": "magsafe",
+            "u": 0.9,
+            "v": 0.5,
+            "width_mm": 16.5,
+            "height_mm": 3
+          },
+          {
+            "type": "usb_c",
+            "u": 0.81,
+            "v": 0.5,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 3"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.74,
+            "v": 0.5,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 3"
+          }
+        ],
+        "right": [
+          {
+            "type": "audio",
+            "u": 0.9,
+            "v": 0.5,
+            "width_mm": 3.5,
+            "height_mm": 3.5
+          }
+        ]
+      },
+      "accuracy": "Published external envelope and finish names; corner radii, split lid/base thickness, internal geometry and port positions are illustrative photo estimates.",
+      "display": {
+        "resolution": [
+          2560,
+          1664
+        ],
+        "diagonal_in": 13.6,
+        "width_mm": 290.2857,
+        "height_mm": 188.6857,
+        "notch": true,
+        "physical_size_basis": "native pixel count / published pixels per inch; full rectangular extent before corner/notch clipping",
+        "corner_radius_mm": 5.5,
+        "notch_width_mm": 31,
+        "notch_height_mm": 6.5
+      },
+      "reference_images": [
+        "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111867_SP869-2022-macbook-air-m2-colors.png",
+        "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111867_sp869-portimage-2.png",
+        "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111867_sp869-portimage-1.png"
+      ]
+    },
+    {
+      "id": "macbook-air-15-m2",
+      "icon_id": "apple_macbook_air_15_m2",
+      "name": "MacBook Air 15-inch (M2, 2023)",
+      "family": "macbook-air",
+      "kind": "laptop",
+      "chip": "M2",
+      "chips": [
+        "M2"
+      ],
+      "year": 2023,
+      "chassis_id": "macbook-air-15-flat",
+      "dimensions_mm": {
+        "width": 340.4,
+        "depth": 237.6,
+        "height": 11.5
+      },
+      "finishes": [
+        "Silver",
+        "Starlight",
+        "Space Gray",
+        "Midnight"
+      ],
+      "model_identifiers": [
+        "Mac14,15"
+      ],
+      "tech_specs": "https://support.apple.com/en-us/111346",
+      "sources": [
+        "https://support.apple.com/en-us/111346",
+        "https://support.apple.com/en-us/102869"
+      ],
+      "ports": {
+        "left": [
+          {
+            "type": "magsafe",
+            "u": 0.9,
+            "v": 0.5,
+            "width_mm": 16.5,
+            "height_mm": 3
+          },
+          {
+            "type": "usb_c",
+            "u": 0.81,
+            "v": 0.5,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 3"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.74,
+            "v": 0.5,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 3"
+          }
+        ],
+        "right": [
+          {
+            "type": "audio",
+            "u": 0.9,
+            "v": 0.5,
+            "width_mm": 3.5,
+            "height_mm": 3.5
+          }
+        ]
+      },
+      "accuracy": "Published external envelope and finish names; corner radii, split lid/base thickness, internal geometry and port positions are illustrative photo estimates.",
+      "display": {
+        "resolution": [
+          2880,
+          1864
+        ],
+        "diagonal_in": 15.3,
+        "width_mm": 326.5714,
+        "height_mm": 211.3643,
+        "notch": true,
+        "physical_size_basis": "native pixel count / published pixels per inch; full rectangular extent before corner/notch clipping",
+        "corner_radius_mm": 5.5,
+        "notch_width_mm": 31,
+        "notch_height_mm": 6.5
+      },
+      "reference_images": [
+        "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111346_SP893-2023-macbook-air-m2.png",
+        "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111346_sp893-portimage-2-en.png",
+        "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111346_sp893-portimage-1-en.png"
+      ]
+    },
+    {
+      "id": "macbook-air-13-m3",
+      "icon_id": "apple_macbook_air_13_m3",
+      "name": "MacBook Air 13-inch (M3, 2024)",
+      "family": "macbook-air",
+      "kind": "laptop",
+      "chip": "M3",
+      "chips": [
+        "M3"
+      ],
+      "year": 2024,
+      "chassis_id": "macbook-air-13-flat",
+      "dimensions_mm": {
+        "width": 304.1,
+        "depth": 215,
+        "height": 11.3
+      },
+      "finishes": [
+        "Silver",
+        "Starlight",
+        "Space Gray",
+        "Midnight"
+      ],
+      "model_identifiers": [
+        "Mac15,12"
+      ],
+      "tech_specs": "https://support.apple.com/en-us/118551",
+      "sources": [
+        "https://support.apple.com/en-us/118551",
+        "https://support.apple.com/en-us/102869"
+      ],
+      "ports": {
+        "left": [
+          {
+            "type": "magsafe",
+            "u": 0.9,
+            "v": 0.5,
+            "width_mm": 16.5,
+            "height_mm": 3
+          },
+          {
+            "type": "usb_c",
+            "u": 0.81,
+            "v": 0.5,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 3"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.74,
+            "v": 0.5,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 3"
+          }
+        ],
+        "right": [
+          {
+            "type": "audio",
+            "u": 0.9,
+            "v": 0.5,
+            "width_mm": 3.5,
+            "height_mm": 3.5
+          }
+        ]
+      },
+      "accuracy": "Published external envelope and finish names; corner radii, split lid/base thickness, internal geometry and port positions are illustrative photo estimates.",
+      "display": {
+        "resolution": [
+          2560,
+          1664
+        ],
+        "diagonal_in": 13.6,
+        "width_mm": 290.2857,
+        "height_mm": 188.6857,
+        "notch": true,
+        "physical_size_basis": "native pixel count / published pixels per inch; full rectangular extent before corner/notch clipping",
+        "corner_radius_mm": 5.5,
+        "notch_width_mm": 31,
+        "notch_height_mm": 6.5
+      },
+      "reference_images": [
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/mba_13_m3_2024_hero.png",
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/118551-mba-port-1-en.png",
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/118551-mba-port-2-en.png"
+      ]
+    },
+    {
+      "id": "macbook-air-15-m3",
+      "icon_id": "apple_macbook_air_15_m3",
+      "name": "MacBook Air 15-inch (M3, 2024)",
+      "family": "macbook-air",
+      "kind": "laptop",
+      "chip": "M3",
+      "chips": [
+        "M3"
+      ],
+      "year": 2024,
+      "chassis_id": "macbook-air-15-flat",
+      "dimensions_mm": {
+        "width": 340.4,
+        "depth": 237.6,
+        "height": 11.5
+      },
+      "finishes": [
+        "Silver",
+        "Starlight",
+        "Space Gray",
+        "Midnight"
+      ],
+      "model_identifiers": [
+        "Mac15,13"
+      ],
+      "tech_specs": "https://support.apple.com/en-us/118552",
+      "sources": [
+        "https://support.apple.com/en-us/118552",
+        "https://support.apple.com/en-us/102869"
+      ],
+      "ports": {
+        "left": [
+          {
+            "type": "magsafe",
+            "u": 0.9,
+            "v": 0.5,
+            "width_mm": 16.5,
+            "height_mm": 3
+          },
+          {
+            "type": "usb_c",
+            "u": 0.81,
+            "v": 0.5,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 3"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.74,
+            "v": 0.5,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 3"
+          }
+        ],
+        "right": [
+          {
+            "type": "audio",
+            "u": 0.9,
+            "v": 0.5,
+            "width_mm": 3.5,
+            "height_mm": 3.5
+          }
+        ]
+      },
+      "accuracy": "Published external envelope and finish names; corner radii, split lid/base thickness, internal geometry and port positions are illustrative photo estimates.",
+      "display": {
+        "resolution": [
+          2880,
+          1864
+        ],
+        "diagonal_in": 15.3,
+        "width_mm": 326.5714,
+        "height_mm": 211.3643,
+        "notch": true,
+        "physical_size_basis": "native pixel count / published pixels per inch; full rectangular extent before corner/notch clipping",
+        "corner_radius_mm": 5.5,
+        "notch_width_mm": 31,
+        "notch_height_mm": 6.5
+      },
+      "reference_images": [
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/mba_15_m3_2024_hero.png",
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/118551-mba-port-1-en.png",
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/118551-mba-port-2-en.png"
+      ]
+    },
+    {
+      "id": "macbook-air-13-m4",
+      "icon_id": "apple_macbook_air_13_m4",
+      "name": "MacBook Air 13-inch (M4, 2025)",
+      "family": "macbook-air",
+      "kind": "laptop",
+      "chip": "M4",
+      "chips": [
+        "M4"
+      ],
+      "year": 2025,
+      "chassis_id": "macbook-air-13-flat",
+      "dimensions_mm": {
+        "width": 304.1,
+        "depth": 215,
+        "height": 11.3
+      },
+      "finishes": [
+        "Silver",
+        "Starlight",
+        "Sky Blue",
+        "Midnight"
+      ],
+      "model_identifiers": [
+        "Mac16,12"
+      ],
+      "tech_specs": "https://support.apple.com/en-us/122209",
+      "sources": [
+        "https://support.apple.com/en-us/122209",
+        "https://support.apple.com/en-us/102869"
+      ],
+      "ports": {
+        "left": [
+          {
+            "type": "magsafe",
+            "u": 0.9,
+            "v": 0.5,
+            "width_mm": 16.5,
+            "height_mm": 3
+          },
+          {
+            "type": "usb_c",
+            "u": 0.81,
+            "v": 0.5,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.74,
+            "v": 0.5,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 4"
+          }
+        ],
+        "right": [
+          {
+            "type": "audio",
+            "u": 0.9,
+            "v": 0.5,
+            "width_mm": 3.5,
+            "height_mm": 3.5
+          }
+        ]
+      },
+      "accuracy": "Published external envelope and finish names; corner radii, split lid/base thickness, internal geometry and port positions are illustrative photo estimates.",
+      "display": {
+        "resolution": [
+          2560,
+          1664
+        ],
+        "diagonal_in": 13.6,
+        "width_mm": 290.2857,
+        "height_mm": 188.6857,
+        "notch": true,
+        "physical_size_basis": "native pixel count / published pixels per inch; full rectangular extent before corner/notch clipping",
+        "corner_radius_mm": 5.5,
+        "notch_width_mm": 31,
+        "notch_height_mm": 6.5
+      },
+      "reference_images": [
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/mba-13inch-15inch.png",
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/122209-122210-macbook-air-en-portimage-1.png",
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/122209-122210-macbook-air-en-portimage-2.png"
+      ]
+    },
+    {
+      "id": "macbook-air-15-m4",
+      "icon_id": "apple_macbook_air_15_m4",
+      "name": "MacBook Air 15-inch (M4, 2025)",
+      "family": "macbook-air",
+      "kind": "laptop",
+      "chip": "M4",
+      "chips": [
+        "M4"
+      ],
+      "year": 2025,
+      "chassis_id": "macbook-air-15-flat",
+      "dimensions_mm": {
+        "width": 340.4,
+        "depth": 237.6,
+        "height": 11.5
+      },
+      "finishes": [
+        "Silver",
+        "Starlight",
+        "Sky Blue",
+        "Midnight"
+      ],
+      "model_identifiers": [
+        "Mac16,13"
+      ],
+      "tech_specs": "https://support.apple.com/en-us/122210",
+      "sources": [
+        "https://support.apple.com/en-us/122210",
+        "https://support.apple.com/en-us/102869"
+      ],
+      "ports": {
+        "left": [
+          {
+            "type": "magsafe",
+            "u": 0.9,
+            "v": 0.5,
+            "width_mm": 16.5,
+            "height_mm": 3
+          },
+          {
+            "type": "usb_c",
+            "u": 0.81,
+            "v": 0.5,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.74,
+            "v": 0.5,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 4"
+          }
+        ],
+        "right": [
+          {
+            "type": "audio",
+            "u": 0.9,
+            "v": 0.5,
+            "width_mm": 3.5,
+            "height_mm": 3.5
+          }
+        ]
+      },
+      "accuracy": "Published external envelope and finish names; corner radii, split lid/base thickness, internal geometry and port positions are illustrative photo estimates.",
+      "display": {
+        "resolution": [
+          2880,
+          1864
+        ],
+        "diagonal_in": 15.3,
+        "width_mm": 326.5714,
+        "height_mm": 211.3643,
+        "notch": true,
+        "physical_size_basis": "native pixel count / published pixels per inch; full rectangular extent before corner/notch clipping",
+        "corner_radius_mm": 5.5,
+        "notch_width_mm": 31,
+        "notch_height_mm": 6.5
+      },
+      "reference_images": [
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/mba-13inch-15inch.png",
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/122209-122210-macbook-air-en-portimage-1.png",
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/122209-122210-macbook-air-en-portimage-2.png"
+      ]
+    },
+    {
+      "id": "macbook-air-13-m5",
+      "icon_id": "apple_macbook_air_13_m5",
+      "name": "MacBook Air 13-inch (M5, 2026)",
+      "family": "macbook-air",
+      "kind": "laptop",
+      "chip": "M5",
+      "chips": [
+        "M5"
+      ],
+      "year": 2026,
+      "chassis_id": "macbook-air-13-flat",
+      "dimensions_mm": {
+        "width": 304.1,
+        "depth": 215,
+        "height": 11.3
+      },
+      "finishes": [
+        "Silver",
+        "Starlight",
+        "Sky Blue",
+        "Midnight"
+      ],
+      "model_identifiers": [
+        "Mac17,3"
+      ],
+      "tech_specs": "https://support.apple.com/en-us/126320",
+      "sources": [
+        "https://support.apple.com/en-us/126320",
+        "https://support.apple.com/en-us/102869"
+      ],
+      "ports": {
+        "left": [
+          {
+            "type": "magsafe",
+            "u": 0.9,
+            "v": 0.5,
+            "width_mm": 16.5,
+            "height_mm": 3
+          },
+          {
+            "type": "usb_c",
+            "u": 0.81,
+            "v": 0.5,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.74,
+            "v": 0.5,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 4"
+          }
+        ],
+        "right": [
+          {
+            "type": "audio",
+            "u": 0.9,
+            "v": 0.5,
+            "width_mm": 3.5,
+            "height_mm": 3.5
+          }
+        ]
+      },
+      "accuracy": "Published external envelope and finish names; corner radii, split lid/base thickness, internal geometry and port positions are illustrative photo estimates.",
+      "display": {
+        "resolution": [
+          2560,
+          1664
+        ],
+        "diagonal_in": 13.6,
+        "width_mm": 290.2857,
+        "height_mm": 188.6857,
+        "notch": true,
+        "physical_size_basis": "native pixel count / published pixels per inch; full rectangular extent before corner/notch clipping",
+        "corner_radius_mm": 5.5,
+        "notch_width_mm": 31,
+        "notch_height_mm": 6.5
+      },
+      "reference_images": [
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/macbook-air-13-inch-m5.png"
+      ]
+    },
+    {
+      "id": "macbook-air-15-m5",
+      "icon_id": "apple_macbook_air_15_m5",
+      "name": "MacBook Air 15-inch (M5, 2026)",
+      "family": "macbook-air",
+      "kind": "laptop",
+      "chip": "M5",
+      "chips": [
+        "M5"
+      ],
+      "year": 2026,
+      "chassis_id": "macbook-air-15-flat",
+      "dimensions_mm": {
+        "width": 340.4,
+        "depth": 237.6,
+        "height": 11.5
+      },
+      "finishes": [
+        "Silver",
+        "Starlight",
+        "Sky Blue",
+        "Midnight"
+      ],
+      "model_identifiers": [
+        "Mac17,4"
+      ],
+      "tech_specs": "https://support.apple.com/en-us/126321",
+      "sources": [
+        "https://support.apple.com/en-us/126321",
+        "https://support.apple.com/en-us/102869"
+      ],
+      "ports": {
+        "left": [
+          {
+            "type": "magsafe",
+            "u": 0.9,
+            "v": 0.5,
+            "width_mm": 16.5,
+            "height_mm": 3
+          },
+          {
+            "type": "usb_c",
+            "u": 0.81,
+            "v": 0.5,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.74,
+            "v": 0.5,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 4"
+          }
+        ],
+        "right": [
+          {
+            "type": "audio",
+            "u": 0.9,
+            "v": 0.5,
+            "width_mm": 3.5,
+            "height_mm": 3.5
+          }
+        ]
+      },
+      "accuracy": "Published external envelope and finish names; corner radii, split lid/base thickness, internal geometry and port positions are illustrative photo estimates.",
+      "display": {
+        "resolution": [
+          2880,
+          1864
+        ],
+        "diagonal_in": 15.3,
+        "width_mm": 326.5714,
+        "height_mm": 211.3643,
+        "notch": true,
+        "physical_size_basis": "native pixel count / published pixels per inch; full rectangular extent before corner/notch clipping",
+        "corner_radius_mm": 5.5,
+        "notch_width_mm": 31,
+        "notch_height_mm": 6.5
+      },
+      "reference_images": [
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/macbook-air-15-inch-m5.png"
+      ]
+    },
+    {
+      "id": "macbook-pro-13-m1",
+      "icon_id": "apple_macbook_pro_13_m1",
+      "name": "MacBook Pro 13-inch (M1, 2020)",
+      "family": "macbook-pro",
+      "kind": "laptop",
+      "chip": "M1",
+      "chips": [
+        "M1"
+      ],
+      "year": 2020,
+      "chassis_id": "macbook-pro-13-touchbar",
+      "dimensions_mm": {
+        "width": 304.1,
+        "depth": 212.4,
+        "height": 15.6
+      },
+      "finishes": [
+        "Silver",
+        "Space Gray"
+      ],
+      "model_identifiers": [
+        "MacBookPro17,1"
+      ],
+      "tech_specs": "https://support.apple.com/en-us/111893",
+      "sources": [
+        "https://support.apple.com/en-us/111893",
+        "https://support.apple.com/en-us/108052"
+      ],
+      "ports": {
+        "left": [
+          {
+            "type": "usb_c",
+            "u": 0.9,
+            "v": 0.5,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 3"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.83,
+            "v": 0.5,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 3"
+          }
+        ],
+        "right": [
+          {
+            "type": "audio",
+            "u": 0.9,
+            "v": 0.5,
+            "width_mm": 3.5,
+            "height_mm": 3.5
+          }
+        ]
+      },
+      "accuracy": "Published external envelope and finish names; corner radii, split lid/base thickness, internal geometry and port positions are illustrative photo estimates.",
+      "display": {
+        "resolution": [
+          2560,
+          1600
+        ],
+        "diagonal_in": 13.3,
+        "width_mm": 286.4493,
+        "height_mm": 179.0308,
+        "notch": false,
+        "physical_size_basis": "native pixel count / published pixels per inch; full rectangular extent before corner/notch clipping",
+        "corner_radius_mm": 0.8
+      },
+      "reference_images": [
+        "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111893_macbookpro13.png"
+      ]
+    },
+    {
+      "id": "macbook-pro-13-m2",
+      "icon_id": "apple_macbook_pro_13_m2",
+      "name": "MacBook Pro 13-inch (M2, 2022)",
+      "family": "macbook-pro",
+      "kind": "laptop",
+      "chip": "M2",
+      "chips": [
+        "M2"
+      ],
+      "year": 2022,
+      "chassis_id": "macbook-pro-13-touchbar",
+      "dimensions_mm": {
+        "width": 304.1,
+        "depth": 212.4,
+        "height": 15.6
+      },
+      "finishes": [
+        "Silver",
+        "Space Gray"
+      ],
+      "model_identifiers": [
+        "Mac14,7"
+      ],
+      "tech_specs": "https://support.apple.com/en-us/111869",
+      "sources": [
+        "https://support.apple.com/en-us/111869",
+        "https://support.apple.com/en-us/108052"
+      ],
+      "ports": {
+        "left": [
+          {
+            "type": "usb_c",
+            "u": 0.9,
+            "v": 0.5,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 3"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.83,
+            "v": 0.5,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 3"
+          }
+        ],
+        "right": [
+          {
+            "type": "audio",
+            "u": 0.9,
+            "v": 0.5,
+            "width_mm": 3.5,
+            "height_mm": 3.5
+          }
+        ]
+      },
+      "accuracy": "Published external envelope and finish names; corner radii, split lid/base thickness, internal geometry and port positions are illustrative photo estimates.",
+      "display": {
+        "resolution": [
+          2560,
+          1600
+        ],
+        "diagonal_in": 13.3,
+        "width_mm": 286.4493,
+        "height_mm": 179.0308,
+        "notch": false,
+        "physical_size_basis": "native pixel count / published pixels per inch; full rectangular extent before corner/notch clipping",
+        "corner_radius_mm": 0.8
+      },
+      "reference_images": [
+        "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111869_sp870-macbook-pro-13-in-m2-2022.png",
+        "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111869_sp870-portimage-2.png",
+        "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111869_sp870-portimage-1.png"
+      ]
+    },
+    {
+      "id": "macbook-pro-14-m1-pro",
+      "icon_id": "apple_macbook_pro_14_m1_pro",
+      "name": "MacBook Pro 14-inch (M1 Pro, 2021)",
+      "family": "macbook-pro",
+      "kind": "laptop",
+      "chip": "M1 Pro",
+      "chips": [
+        "M1 Pro"
+      ],
+      "year": 2021,
+      "chassis_id": "macbook-pro-14-notch",
+      "dimensions_mm": {
+        "width": 312.6,
+        "depth": 221.2,
+        "height": 15.5
+      },
+      "finishes": [
+        "Silver",
+        "Space Gray"
+      ],
+      "model_identifiers": [
+        "MacBookPro18,3"
+      ],
+      "tech_specs": "https://support.apple.com/en-us/111902",
+      "sources": [
+        "https://support.apple.com/en-us/111902",
+        "https://support.apple.com/en-us/108052"
+      ],
+      "ports": {
+        "left": [
+          {
+            "type": "magsafe",
+            "u": 0.86,
+            "v": 0.48,
+            "width_mm": 16.5,
+            "height_mm": 3
+          },
+          {
+            "type": "usb_c",
+            "u": 0.78,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.72,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "audio",
+            "u": 0.67,
+            "v": 0.48,
+            "width_mm": 3.5,
+            "height_mm": 3.5
+          }
+        ],
+        "right": [
+          {
+            "type": "sdxc",
+            "u": 0.68,
+            "v": 0.48,
+            "width_mm": 28,
+            "height_mm": 2
+          },
+          {
+            "type": "usb_c",
+            "u": 0.78,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "hdmi",
+            "u": 0.86,
+            "v": 0.48,
+            "width_mm": 14,
+            "height_mm": 4.8
+          }
+        ]
+      },
+      "accuracy": "Published external envelope and finish names; corner radii, split lid/base thickness, internal geometry and port positions are illustrative photo estimates.",
+      "display": {
+        "resolution": [
+          3024,
+          1964
+        ],
+        "diagonal_in": 14.2,
+        "width_mm": 302.4,
+        "height_mm": 196.4,
+        "notch": true,
+        "physical_size_basis": "native pixel count / published pixels per inch; full rectangular extent before corner/notch clipping",
+        "corner_radius_mm": 5.5,
+        "notch_width_mm": 32,
+        "notch_height_mm": 6.5
+      },
+      "reference_images": [
+        "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111902_mbp14-silver2.png",
+        "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111902_sp854portimage2.png",
+        "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111902_sp854portimage1.png"
+      ]
+    },
+    {
+      "id": "macbook-pro-14-m1-max",
+      "icon_id": "apple_macbook_pro_14_m1_max",
+      "name": "MacBook Pro 14-inch (M1 Max, 2021)",
+      "family": "macbook-pro",
+      "kind": "laptop",
+      "chip": "M1 Max",
+      "chips": [
+        "M1 Max"
+      ],
+      "year": 2021,
+      "chassis_id": "macbook-pro-14-notch",
+      "dimensions_mm": {
+        "width": 312.6,
+        "depth": 221.2,
+        "height": 15.5
+      },
+      "finishes": [
+        "Silver",
+        "Space Gray"
+      ],
+      "model_identifiers": [
+        "MacBookPro18,4"
+      ],
+      "tech_specs": "https://support.apple.com/en-us/111902",
+      "sources": [
+        "https://support.apple.com/en-us/111902",
+        "https://support.apple.com/en-us/108052"
+      ],
+      "ports": {
+        "left": [
+          {
+            "type": "magsafe",
+            "u": 0.86,
+            "v": 0.48,
+            "width_mm": 16.5,
+            "height_mm": 3
+          },
+          {
+            "type": "usb_c",
+            "u": 0.78,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.72,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "audio",
+            "u": 0.67,
+            "v": 0.48,
+            "width_mm": 3.5,
+            "height_mm": 3.5
+          }
+        ],
+        "right": [
+          {
+            "type": "sdxc",
+            "u": 0.68,
+            "v": 0.48,
+            "width_mm": 28,
+            "height_mm": 2
+          },
+          {
+            "type": "usb_c",
+            "u": 0.78,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "hdmi",
+            "u": 0.86,
+            "v": 0.48,
+            "width_mm": 14,
+            "height_mm": 4.8
+          }
+        ]
+      },
+      "accuracy": "Published external envelope and finish names; corner radii, split lid/base thickness, internal geometry and port positions are illustrative photo estimates.",
+      "display": {
+        "resolution": [
+          3024,
+          1964
+        ],
+        "diagonal_in": 14.2,
+        "width_mm": 302.4,
+        "height_mm": 196.4,
+        "notch": true,
+        "physical_size_basis": "native pixel count / published pixels per inch; full rectangular extent before corner/notch clipping",
+        "corner_radius_mm": 5.5,
+        "notch_width_mm": 32,
+        "notch_height_mm": 6.5
+      },
+      "reference_images": [
+        "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111902_mbp14-silver2.png",
+        "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111902_sp854portimage2.png",
+        "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111902_sp854portimage1.png"
+      ]
+    },
+    {
+      "id": "macbook-pro-16-m1-pro",
+      "icon_id": "apple_macbook_pro_16_m1_pro",
+      "name": "MacBook Pro 16-inch (M1 Pro, 2021)",
+      "family": "macbook-pro",
+      "kind": "laptop",
+      "chip": "M1 Pro",
+      "chips": [
+        "M1 Pro"
+      ],
+      "year": 2021,
+      "chassis_id": "macbook-pro-16-notch",
+      "dimensions_mm": {
+        "width": 355.7,
+        "depth": 248.1,
+        "height": 16.8
+      },
+      "finishes": [
+        "Silver",
+        "Space Gray"
+      ],
+      "model_identifiers": [
+        "MacBookPro18,1"
+      ],
+      "tech_specs": "https://support.apple.com/en-us/111901",
+      "sources": [
+        "https://support.apple.com/en-us/111901",
+        "https://support.apple.com/en-us/108052"
+      ],
+      "ports": {
+        "left": [
+          {
+            "type": "magsafe",
+            "u": 0.86,
+            "v": 0.48,
+            "width_mm": 16.5,
+            "height_mm": 3
+          },
+          {
+            "type": "usb_c",
+            "u": 0.78,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.72,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "audio",
+            "u": 0.67,
+            "v": 0.48,
+            "width_mm": 3.5,
+            "height_mm": 3.5
+          }
+        ],
+        "right": [
+          {
+            "type": "sdxc",
+            "u": 0.68,
+            "v": 0.48,
+            "width_mm": 28,
+            "height_mm": 2
+          },
+          {
+            "type": "usb_c",
+            "u": 0.78,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "hdmi",
+            "u": 0.86,
+            "v": 0.48,
+            "width_mm": 14,
+            "height_mm": 4.8
+          }
+        ]
+      },
+      "accuracy": "Published external envelope and finish names; corner radii, split lid/base thickness, internal geometry and port positions are illustrative photo estimates.",
+      "display": {
+        "resolution": [
+          3456,
+          2234
+        ],
+        "diagonal_in": 16.2,
+        "width_mm": 345.6,
+        "height_mm": 223.4,
+        "notch": true,
+        "physical_size_basis": "native pixel count / published pixels per inch; full rectangular extent before corner/notch clipping",
+        "corner_radius_mm": 5.5,
+        "notch_width_mm": 32,
+        "notch_height_mm": 6.5
+      },
+      "reference_images": [
+        "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111901_mbp16-gray.png",
+        "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111902_sp854portimage2.png",
+        "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111902_sp854portimage1.png"
+      ]
+    },
+    {
+      "id": "macbook-pro-16-m1-max",
+      "icon_id": "apple_macbook_pro_16_m1_max",
+      "name": "MacBook Pro 16-inch (M1 Max, 2021)",
+      "family": "macbook-pro",
+      "kind": "laptop",
+      "chip": "M1 Max",
+      "chips": [
+        "M1 Max"
+      ],
+      "year": 2021,
+      "chassis_id": "macbook-pro-16-notch",
+      "dimensions_mm": {
+        "width": 355.7,
+        "depth": 248.1,
+        "height": 16.8
+      },
+      "finishes": [
+        "Silver",
+        "Space Gray"
+      ],
+      "model_identifiers": [
+        "MacBookPro18,2"
+      ],
+      "tech_specs": "https://support.apple.com/en-us/111901",
+      "sources": [
+        "https://support.apple.com/en-us/111901",
+        "https://support.apple.com/en-us/108052"
+      ],
+      "ports": {
+        "left": [
+          {
+            "type": "magsafe",
+            "u": 0.86,
+            "v": 0.48,
+            "width_mm": 16.5,
+            "height_mm": 3
+          },
+          {
+            "type": "usb_c",
+            "u": 0.78,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.72,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "audio",
+            "u": 0.67,
+            "v": 0.48,
+            "width_mm": 3.5,
+            "height_mm": 3.5
+          }
+        ],
+        "right": [
+          {
+            "type": "sdxc",
+            "u": 0.68,
+            "v": 0.48,
+            "width_mm": 28,
+            "height_mm": 2
+          },
+          {
+            "type": "usb_c",
+            "u": 0.78,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "hdmi",
+            "u": 0.86,
+            "v": 0.48,
+            "width_mm": 14,
+            "height_mm": 4.8
+          }
+        ]
+      },
+      "accuracy": "Published external envelope and finish names; corner radii, split lid/base thickness, internal geometry and port positions are illustrative photo estimates.",
+      "display": {
+        "resolution": [
+          3456,
+          2234
+        ],
+        "diagonal_in": 16.2,
+        "width_mm": 345.6,
+        "height_mm": 223.4,
+        "notch": true,
+        "physical_size_basis": "native pixel count / published pixels per inch; full rectangular extent before corner/notch clipping",
+        "corner_radius_mm": 5.5,
+        "notch_width_mm": 32,
+        "notch_height_mm": 6.5
+      },
+      "reference_images": [
+        "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111901_mbp16-gray.png",
+        "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111902_sp854portimage2.png",
+        "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111902_sp854portimage1.png"
+      ]
+    },
+    {
+      "id": "macbook-pro-14-m2-pro",
+      "icon_id": "apple_macbook_pro_14_m2_pro",
+      "name": "MacBook Pro 14-inch (M2 Pro, 2023)",
+      "family": "macbook-pro",
+      "kind": "laptop",
+      "chip": "M2 Pro",
+      "chips": [
+        "M2 Pro"
+      ],
+      "year": 2023,
+      "chassis_id": "macbook-pro-14-notch",
+      "dimensions_mm": {
+        "width": 312.6,
+        "depth": 221.2,
+        "height": 15.5
+      },
+      "finishes": [
+        "Silver",
+        "Space Gray"
+      ],
+      "model_identifiers": [
+        "Mac14,9"
+      ],
+      "tech_specs": "https://support.apple.com/en-us/111340",
+      "sources": [
+        "https://support.apple.com/en-us/111340",
+        "https://support.apple.com/en-us/108052"
+      ],
+      "ports": {
+        "left": [
+          {
+            "type": "magsafe",
+            "u": 0.86,
+            "v": 0.48,
+            "width_mm": 16.5,
+            "height_mm": 3
+          },
+          {
+            "type": "usb_c",
+            "u": 0.78,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.72,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "audio",
+            "u": 0.67,
+            "v": 0.48,
+            "width_mm": 3.5,
+            "height_mm": 3.5
+          }
+        ],
+        "right": [
+          {
+            "type": "sdxc",
+            "u": 0.68,
+            "v": 0.48,
+            "width_mm": 28,
+            "height_mm": 2
+          },
+          {
+            "type": "usb_c",
+            "u": 0.78,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "hdmi",
+            "u": 0.86,
+            "v": 0.48,
+            "width_mm": 14,
+            "height_mm": 4.8
+          }
+        ]
+      },
+      "accuracy": "Published external envelope and finish names; corner radii, split lid/base thickness, internal geometry and port positions are illustrative photo estimates.",
+      "display": {
+        "resolution": [
+          3024,
+          1964
+        ],
+        "diagonal_in": 14.2,
+        "width_mm": 302.4,
+        "height_mm": 196.4,
+        "notch": true,
+        "physical_size_basis": "native pixel count / published pixels per inch; full rectangular extent before corner/notch clipping",
+        "corner_radius_mm": 5.5,
+        "notch_width_mm": 32,
+        "notch_height_mm": 6.5
+      },
+      "reference_images": [
+        "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111340_macbook-pro-2023-14in.png",
+        "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111340_sp889-portimage-2-en.png",
+        "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111340_sp889-portimage-1-en.png"
+      ]
+    },
+    {
+      "id": "macbook-pro-14-m2-max",
+      "icon_id": "apple_macbook_pro_14_m2_max",
+      "name": "MacBook Pro 14-inch (M2 Max, 2023)",
+      "family": "macbook-pro",
+      "kind": "laptop",
+      "chip": "M2 Max",
+      "chips": [
+        "M2 Max"
+      ],
+      "year": 2023,
+      "chassis_id": "macbook-pro-14-notch",
+      "dimensions_mm": {
+        "width": 312.6,
+        "depth": 221.2,
+        "height": 15.5
+      },
+      "finishes": [
+        "Silver",
+        "Space Gray"
+      ],
+      "model_identifiers": [
+        "Mac14,5"
+      ],
+      "tech_specs": "https://support.apple.com/en-us/111340",
+      "sources": [
+        "https://support.apple.com/en-us/111340",
+        "https://support.apple.com/en-us/108052"
+      ],
+      "ports": {
+        "left": [
+          {
+            "type": "magsafe",
+            "u": 0.86,
+            "v": 0.48,
+            "width_mm": 16.5,
+            "height_mm": 3
+          },
+          {
+            "type": "usb_c",
+            "u": 0.78,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.72,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "audio",
+            "u": 0.67,
+            "v": 0.48,
+            "width_mm": 3.5,
+            "height_mm": 3.5
+          }
+        ],
+        "right": [
+          {
+            "type": "sdxc",
+            "u": 0.68,
+            "v": 0.48,
+            "width_mm": 28,
+            "height_mm": 2
+          },
+          {
+            "type": "usb_c",
+            "u": 0.78,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "hdmi",
+            "u": 0.86,
+            "v": 0.48,
+            "width_mm": 14,
+            "height_mm": 4.8
+          }
+        ]
+      },
+      "accuracy": "Published external envelope and finish names; corner radii, split lid/base thickness, internal geometry and port positions are illustrative photo estimates.",
+      "display": {
+        "resolution": [
+          3024,
+          1964
+        ],
+        "diagonal_in": 14.2,
+        "width_mm": 302.4,
+        "height_mm": 196.4,
+        "notch": true,
+        "physical_size_basis": "native pixel count / published pixels per inch; full rectangular extent before corner/notch clipping",
+        "corner_radius_mm": 5.5,
+        "notch_width_mm": 32,
+        "notch_height_mm": 6.5
+      },
+      "reference_images": [
+        "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111340_macbook-pro-2023-14in.png",
+        "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111340_sp889-portimage-2-en.png",
+        "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111340_sp889-portimage-1-en.png"
+      ]
+    },
+    {
+      "id": "macbook-pro-16-m2-pro",
+      "icon_id": "apple_macbook_pro_16_m2_pro",
+      "name": "MacBook Pro 16-inch (M2 Pro, 2023)",
+      "family": "macbook-pro",
+      "kind": "laptop",
+      "chip": "M2 Pro",
+      "chips": [
+        "M2 Pro"
+      ],
+      "year": 2023,
+      "chassis_id": "macbook-pro-16-notch",
+      "dimensions_mm": {
+        "width": 355.7,
+        "depth": 248.1,
+        "height": 16.8
+      },
+      "finishes": [
+        "Silver",
+        "Space Gray"
+      ],
+      "model_identifiers": [
+        "Mac14,10"
+      ],
+      "tech_specs": "https://support.apple.com/en-us/111838",
+      "sources": [
+        "https://support.apple.com/en-us/111838",
+        "https://support.apple.com/en-us/108052"
+      ],
+      "ports": {
+        "left": [
+          {
+            "type": "magsafe",
+            "u": 0.86,
+            "v": 0.48,
+            "width_mm": 16.5,
+            "height_mm": 3
+          },
+          {
+            "type": "usb_c",
+            "u": 0.78,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.72,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "audio",
+            "u": 0.67,
+            "v": 0.48,
+            "width_mm": 3.5,
+            "height_mm": 3.5
+          }
+        ],
+        "right": [
+          {
+            "type": "sdxc",
+            "u": 0.68,
+            "v": 0.48,
+            "width_mm": 28,
+            "height_mm": 2
+          },
+          {
+            "type": "usb_c",
+            "u": 0.78,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "hdmi",
+            "u": 0.86,
+            "v": 0.48,
+            "width_mm": 14,
+            "height_mm": 4.8
+          }
+        ]
+      },
+      "accuracy": "Published external envelope and finish names; corner radii, split lid/base thickness, internal geometry and port positions are illustrative photo estimates.",
+      "display": {
+        "resolution": [
+          3456,
+          2234
+        ],
+        "diagonal_in": 16.2,
+        "width_mm": 345.6,
+        "height_mm": 223.4,
+        "notch": true,
+        "physical_size_basis": "native pixel count / published pixels per inch; full rectangular extent before corner/notch clipping",
+        "corner_radius_mm": 5.5,
+        "notch_width_mm": 32,
+        "notch_height_mm": 6.5
+      },
+      "reference_images": [
+        "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111838_macbook-pro-2023-16in.png",
+        "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111340_sp889-portimage-2-en.png",
+        "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111340_sp889-portimage-1-en.png"
+      ]
+    },
+    {
+      "id": "macbook-pro-16-m2-max",
+      "icon_id": "apple_macbook_pro_16_m2_max",
+      "name": "MacBook Pro 16-inch (M2 Max, 2023)",
+      "family": "macbook-pro",
+      "kind": "laptop",
+      "chip": "M2 Max",
+      "chips": [
+        "M2 Max"
+      ],
+      "year": 2023,
+      "chassis_id": "macbook-pro-16-notch",
+      "dimensions_mm": {
+        "width": 355.7,
+        "depth": 248.1,
+        "height": 16.8
+      },
+      "finishes": [
+        "Silver",
+        "Space Gray"
+      ],
+      "model_identifiers": [
+        "Mac14,6"
+      ],
+      "tech_specs": "https://support.apple.com/en-us/111838",
+      "sources": [
+        "https://support.apple.com/en-us/111838",
+        "https://support.apple.com/en-us/108052"
+      ],
+      "ports": {
+        "left": [
+          {
+            "type": "magsafe",
+            "u": 0.86,
+            "v": 0.48,
+            "width_mm": 16.5,
+            "height_mm": 3
+          },
+          {
+            "type": "usb_c",
+            "u": 0.78,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.72,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "audio",
+            "u": 0.67,
+            "v": 0.48,
+            "width_mm": 3.5,
+            "height_mm": 3.5
+          }
+        ],
+        "right": [
+          {
+            "type": "sdxc",
+            "u": 0.68,
+            "v": 0.48,
+            "width_mm": 28,
+            "height_mm": 2
+          },
+          {
+            "type": "usb_c",
+            "u": 0.78,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "hdmi",
+            "u": 0.86,
+            "v": 0.48,
+            "width_mm": 14,
+            "height_mm": 4.8
+          }
+        ]
+      },
+      "accuracy": "Published external envelope and finish names; corner radii, split lid/base thickness, internal geometry and port positions are illustrative photo estimates.",
+      "display": {
+        "resolution": [
+          3456,
+          2234
+        ],
+        "diagonal_in": 16.2,
+        "width_mm": 345.6,
+        "height_mm": 223.4,
+        "notch": true,
+        "physical_size_basis": "native pixel count / published pixels per inch; full rectangular extent before corner/notch clipping",
+        "corner_radius_mm": 5.5,
+        "notch_width_mm": 32,
+        "notch_height_mm": 6.5
+      },
+      "reference_images": [
+        "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111838_macbook-pro-2023-16in.png",
+        "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111340_sp889-portimage-2-en.png",
+        "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111340_sp889-portimage-1-en.png"
+      ]
+    },
+    {
+      "id": "macbook-pro-14-m3-pro",
+      "icon_id": "apple_macbook_pro_14_m3_pro",
+      "name": "MacBook Pro 14-inch (M3 Pro, 2023)",
+      "family": "macbook-pro",
+      "kind": "laptop",
+      "chip": "M3 Pro",
+      "chips": [
+        "M3 Pro"
+      ],
+      "year": 2023,
+      "chassis_id": "macbook-pro-14-notch",
+      "dimensions_mm": {
+        "width": 312.6,
+        "depth": 221.2,
+        "height": 15.5
+      },
+      "finishes": [
+        "Silver",
+        "Space Black"
+      ],
+      "model_identifiers": [
+        "Mac15,6"
+      ],
+      "tech_specs": "https://support.apple.com/en-us/117736",
+      "sources": [
+        "https://support.apple.com/en-us/117736",
+        "https://support.apple.com/en-us/108052"
+      ],
+      "ports": {
+        "left": [
+          {
+            "type": "magsafe",
+            "u": 0.86,
+            "v": 0.48,
+            "width_mm": 16.5,
+            "height_mm": 3
+          },
+          {
+            "type": "usb_c",
+            "u": 0.78,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.72,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "audio",
+            "u": 0.67,
+            "v": 0.48,
+            "width_mm": 3.5,
+            "height_mm": 3.5
+          }
+        ],
+        "right": [
+          {
+            "type": "sdxc",
+            "u": 0.68,
+            "v": 0.48,
+            "width_mm": 28,
+            "height_mm": 2
+          },
+          {
+            "type": "usb_c",
+            "u": 0.78,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "hdmi",
+            "u": 0.86,
+            "v": 0.48,
+            "width_mm": 14,
+            "height_mm": 4.8
+          }
+        ]
+      },
+      "accuracy": "Published external envelope and finish names; corner radii, split lid/base thickness, internal geometry and port positions are illustrative photo estimates.",
+      "display": {
+        "resolution": [
+          3024,
+          1964
+        ],
+        "diagonal_in": 14.2,
+        "width_mm": 302.4,
+        "height_mm": 196.4,
+        "notch": true,
+        "physical_size_basis": "native pixel count / published pixels per inch; full rectangular extent before corner/notch clipping",
+        "corner_radius_mm": 5.5,
+        "notch_width_mm": 32,
+        "notch_height_mm": 6.5
+      },
+      "reference_images": [
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/macbook-pro-14-inch-m3-pro-or-m3.png",
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/117736-117737-macbook-pro-portimage-1-en.png",
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/117736-117737-macbook-pro-portimage-2-en.png"
+      ]
+    },
+    {
+      "id": "macbook-pro-14-m3-max",
+      "icon_id": "apple_macbook_pro_14_m3_max",
+      "name": "MacBook Pro 14-inch (M3 Max, 2023)",
+      "family": "macbook-pro",
+      "kind": "laptop",
+      "chip": "M3 Max",
+      "chips": [
+        "M3 Max"
+      ],
+      "year": 2023,
+      "chassis_id": "macbook-pro-14-notch",
+      "dimensions_mm": {
+        "width": 312.6,
+        "depth": 221.2,
+        "height": 15.5
+      },
+      "finishes": [
+        "Silver",
+        "Space Black"
+      ],
+      "model_identifiers": [
+        "Mac15,8",
+        "Mac15,10"
+      ],
+      "tech_specs": "https://support.apple.com/en-us/117736",
+      "sources": [
+        "https://support.apple.com/en-us/117736",
+        "https://support.apple.com/en-us/108052"
+      ],
+      "ports": {
+        "left": [
+          {
+            "type": "magsafe",
+            "u": 0.86,
+            "v": 0.48,
+            "width_mm": 16.5,
+            "height_mm": 3
+          },
+          {
+            "type": "usb_c",
+            "u": 0.78,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.72,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "audio",
+            "u": 0.67,
+            "v": 0.48,
+            "width_mm": 3.5,
+            "height_mm": 3.5
+          }
+        ],
+        "right": [
+          {
+            "type": "sdxc",
+            "u": 0.68,
+            "v": 0.48,
+            "width_mm": 28,
+            "height_mm": 2
+          },
+          {
+            "type": "usb_c",
+            "u": 0.78,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "hdmi",
+            "u": 0.86,
+            "v": 0.48,
+            "width_mm": 14,
+            "height_mm": 4.8
+          }
+        ]
+      },
+      "accuracy": "Published external envelope and finish names; corner radii, split lid/base thickness, internal geometry and port positions are illustrative photo estimates.",
+      "display": {
+        "resolution": [
+          3024,
+          1964
+        ],
+        "diagonal_in": 14.2,
+        "width_mm": 302.4,
+        "height_mm": 196.4,
+        "notch": true,
+        "physical_size_basis": "native pixel count / published pixels per inch; full rectangular extent before corner/notch clipping",
+        "corner_radius_mm": 5.5,
+        "notch_width_mm": 32,
+        "notch_height_mm": 6.5
+      },
+      "reference_images": [
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/macbook-pro-14-inch-m3-pro-or-m3.png",
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/117736-117737-macbook-pro-portimage-1-en.png",
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/117736-117737-macbook-pro-portimage-2-en.png"
+      ]
+    },
+    {
+      "id": "macbook-pro-16-m3-pro",
+      "icon_id": "apple_macbook_pro_16_m3_pro",
+      "name": "MacBook Pro 16-inch (M3 Pro, 2023)",
+      "family": "macbook-pro",
+      "kind": "laptop",
+      "chip": "M3 Pro",
+      "chips": [
+        "M3 Pro"
+      ],
+      "year": 2023,
+      "chassis_id": "macbook-pro-16-notch",
+      "dimensions_mm": {
+        "width": 355.7,
+        "depth": 248.1,
+        "height": 16.8
+      },
+      "finishes": [
+        "Silver",
+        "Space Black"
+      ],
+      "model_identifiers": [
+        "Mac15,7"
+      ],
+      "tech_specs": "https://support.apple.com/en-us/117737",
+      "sources": [
+        "https://support.apple.com/en-us/117737",
+        "https://support.apple.com/en-us/108052"
+      ],
+      "ports": {
+        "left": [
+          {
+            "type": "magsafe",
+            "u": 0.86,
+            "v": 0.48,
+            "width_mm": 16.5,
+            "height_mm": 3
+          },
+          {
+            "type": "usb_c",
+            "u": 0.78,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.72,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "audio",
+            "u": 0.67,
+            "v": 0.48,
+            "width_mm": 3.5,
+            "height_mm": 3.5
+          }
+        ],
+        "right": [
+          {
+            "type": "sdxc",
+            "u": 0.68,
+            "v": 0.48,
+            "width_mm": 28,
+            "height_mm": 2
+          },
+          {
+            "type": "usb_c",
+            "u": 0.78,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "hdmi",
+            "u": 0.86,
+            "v": 0.48,
+            "width_mm": 14,
+            "height_mm": 4.8
+          }
+        ]
+      },
+      "accuracy": "Published external envelope and finish names; corner radii, split lid/base thickness, internal geometry and port positions are illustrative photo estimates.",
+      "display": {
+        "resolution": [
+          3456,
+          2234
+        ],
+        "diagonal_in": 16.2,
+        "width_mm": 345.6,
+        "height_mm": 223.4,
+        "notch": true,
+        "physical_size_basis": "native pixel count / published pixels per inch; full rectangular extent before corner/notch clipping",
+        "corner_radius_mm": 5.5,
+        "notch_width_mm": 32,
+        "notch_height_mm": 6.5
+      },
+      "reference_images": [
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/macbook-pro-14-inch-m3-pro-or-m3.png",
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/117736-117737-macbook-pro-portimage-1-en.png",
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/117736-117737-macbook-pro-portimage-2-en.png"
+      ]
+    },
+    {
+      "id": "macbook-pro-16-m3-max",
+      "icon_id": "apple_macbook_pro_16_m3_max",
+      "name": "MacBook Pro 16-inch (M3 Max, 2023)",
+      "family": "macbook-pro",
+      "kind": "laptop",
+      "chip": "M3 Max",
+      "chips": [
+        "M3 Max"
+      ],
+      "year": 2023,
+      "chassis_id": "macbook-pro-16-notch",
+      "dimensions_mm": {
+        "width": 355.7,
+        "depth": 248.1,
+        "height": 16.8
+      },
+      "finishes": [
+        "Silver",
+        "Space Black"
+      ],
+      "model_identifiers": [
+        "Mac15,9",
+        "Mac15,11"
+      ],
+      "tech_specs": "https://support.apple.com/en-us/117737",
+      "sources": [
+        "https://support.apple.com/en-us/117737",
+        "https://support.apple.com/en-us/108052"
+      ],
+      "ports": {
+        "left": [
+          {
+            "type": "magsafe",
+            "u": 0.86,
+            "v": 0.48,
+            "width_mm": 16.5,
+            "height_mm": 3
+          },
+          {
+            "type": "usb_c",
+            "u": 0.78,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.72,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "audio",
+            "u": 0.67,
+            "v": 0.48,
+            "width_mm": 3.5,
+            "height_mm": 3.5
+          }
+        ],
+        "right": [
+          {
+            "type": "sdxc",
+            "u": 0.68,
+            "v": 0.48,
+            "width_mm": 28,
+            "height_mm": 2
+          },
+          {
+            "type": "usb_c",
+            "u": 0.78,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "hdmi",
+            "u": 0.86,
+            "v": 0.48,
+            "width_mm": 14,
+            "height_mm": 4.8
+          }
+        ]
+      },
+      "accuracy": "Published external envelope and finish names; corner radii, split lid/base thickness, internal geometry and port positions are illustrative photo estimates.",
+      "display": {
+        "resolution": [
+          3456,
+          2234
+        ],
+        "diagonal_in": 16.2,
+        "width_mm": 345.6,
+        "height_mm": 223.4,
+        "notch": true,
+        "physical_size_basis": "native pixel count / published pixels per inch; full rectangular extent before corner/notch clipping",
+        "corner_radius_mm": 5.5,
+        "notch_width_mm": 32,
+        "notch_height_mm": 6.5
+      },
+      "reference_images": [
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/macbook-pro-14-inch-m3-pro-or-m3.png",
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/117736-117737-macbook-pro-portimage-1-en.png",
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/117736-117737-macbook-pro-portimage-2-en.png"
+      ]
+    },
+    {
+      "id": "macbook-pro-14-m4-pro",
+      "icon_id": "apple_macbook_pro_14_m4_pro",
+      "name": "MacBook Pro 14-inch (M4 Pro, 2024)",
+      "family": "macbook-pro",
+      "kind": "laptop",
+      "chip": "M4 Pro",
+      "chips": [
+        "M4 Pro"
+      ],
+      "year": 2024,
+      "chassis_id": "macbook-pro-14-notch",
+      "dimensions_mm": {
+        "width": 312.6,
+        "depth": 221.2,
+        "height": 15.5
+      },
+      "finishes": [
+        "Silver",
+        "Space Black"
+      ],
+      "model_identifiers": [
+        "Mac16,6"
+      ],
+      "tech_specs": "https://support.apple.com/en-us/121553",
+      "sources": [
+        "https://support.apple.com/en-us/121553",
+        "https://support.apple.com/en-us/108052"
+      ],
+      "ports": {
+        "left": [
+          {
+            "type": "magsafe",
+            "u": 0.86,
+            "v": 0.48,
+            "width_mm": 16.5,
+            "height_mm": 3
+          },
+          {
+            "type": "usb_c",
+            "u": 0.78,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 5"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.72,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 5"
+          },
+          {
+            "type": "audio",
+            "u": 0.67,
+            "v": 0.48,
+            "width_mm": 3.5,
+            "height_mm": 3.5
+          }
+        ],
+        "right": [
+          {
+            "type": "sdxc",
+            "u": 0.68,
+            "v": 0.48,
+            "width_mm": 28,
+            "height_mm": 2
+          },
+          {
+            "type": "usb_c",
+            "u": 0.78,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 5"
+          },
+          {
+            "type": "hdmi",
+            "u": 0.86,
+            "v": 0.48,
+            "width_mm": 14,
+            "height_mm": 4.8
+          }
+        ]
+      },
+      "accuracy": "Published external envelope and finish names; corner radii, split lid/base thickness, internal geometry and port positions are illustrative photo estimates.",
+      "display": {
+        "resolution": [
+          3024,
+          1964
+        ],
+        "diagonal_in": 14.2,
+        "width_mm": 302.4,
+        "height_mm": 196.4,
+        "notch": true,
+        "physical_size_basis": "native pixel count / published pixels per inch; full rectangular extent before corner/notch clipping",
+        "corner_radius_mm": 5.5,
+        "notch_width_mm": 32,
+        "notch_height_mm": 6.5
+      },
+      "reference_images": [
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/mbp14-m4-2024.png",
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/charging-expansion-en-2.png",
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/charging-expansion-en-1.png"
+      ]
+    },
+    {
+      "id": "macbook-pro-14-m4-max",
+      "icon_id": "apple_macbook_pro_14_m4_max",
+      "name": "MacBook Pro 14-inch (M4 Max, 2024)",
+      "family": "macbook-pro",
+      "kind": "laptop",
+      "chip": "M4 Max",
+      "chips": [
+        "M4 Max"
+      ],
+      "year": 2024,
+      "chassis_id": "macbook-pro-14-notch",
+      "dimensions_mm": {
+        "width": 312.6,
+        "depth": 221.2,
+        "height": 15.5
+      },
+      "finishes": [
+        "Silver",
+        "Space Black"
+      ],
+      "model_identifiers": [
+        "Mac16,8"
+      ],
+      "tech_specs": "https://support.apple.com/en-us/121553",
+      "sources": [
+        "https://support.apple.com/en-us/121553",
+        "https://support.apple.com/en-us/108052"
+      ],
+      "ports": {
+        "left": [
+          {
+            "type": "magsafe",
+            "u": 0.86,
+            "v": 0.48,
+            "width_mm": 16.5,
+            "height_mm": 3
+          },
+          {
+            "type": "usb_c",
+            "u": 0.78,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 5"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.72,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 5"
+          },
+          {
+            "type": "audio",
+            "u": 0.67,
+            "v": 0.48,
+            "width_mm": 3.5,
+            "height_mm": 3.5
+          }
+        ],
+        "right": [
+          {
+            "type": "sdxc",
+            "u": 0.68,
+            "v": 0.48,
+            "width_mm": 28,
+            "height_mm": 2
+          },
+          {
+            "type": "usb_c",
+            "u": 0.78,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 5"
+          },
+          {
+            "type": "hdmi",
+            "u": 0.86,
+            "v": 0.48,
+            "width_mm": 14,
+            "height_mm": 4.8
+          }
+        ]
+      },
+      "accuracy": "Published external envelope and finish names; corner radii, split lid/base thickness, internal geometry and port positions are illustrative photo estimates.",
+      "display": {
+        "resolution": [
+          3024,
+          1964
+        ],
+        "diagonal_in": 14.2,
+        "width_mm": 302.4,
+        "height_mm": 196.4,
+        "notch": true,
+        "physical_size_basis": "native pixel count / published pixels per inch; full rectangular extent before corner/notch clipping",
+        "corner_radius_mm": 5.5,
+        "notch_width_mm": 32,
+        "notch_height_mm": 6.5
+      },
+      "reference_images": [
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/mbp14-m4-2024.png",
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/charging-expansion-en-2.png",
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/charging-expansion-en-1.png"
+      ]
+    },
+    {
+      "id": "macbook-pro-16-m4-pro",
+      "icon_id": "apple_macbook_pro_16_m4_pro",
+      "name": "MacBook Pro 16-inch (M4 Pro, 2024)",
+      "family": "macbook-pro",
+      "kind": "laptop",
+      "chip": "M4 Pro",
+      "chips": [
+        "M4 Pro"
+      ],
+      "year": 2024,
+      "chassis_id": "macbook-pro-16-notch",
+      "dimensions_mm": {
+        "width": 355.7,
+        "depth": 248.1,
+        "height": 16.8
+      },
+      "finishes": [
+        "Silver",
+        "Space Black"
+      ],
+      "model_identifiers": [
+        "Mac16,7"
+      ],
+      "tech_specs": "https://support.apple.com/en-us/121554",
+      "sources": [
+        "https://support.apple.com/en-us/121554",
+        "https://support.apple.com/en-us/108052"
+      ],
+      "ports": {
+        "left": [
+          {
+            "type": "magsafe",
+            "u": 0.86,
+            "v": 0.48,
+            "width_mm": 16.5,
+            "height_mm": 3
+          },
+          {
+            "type": "usb_c",
+            "u": 0.78,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 5"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.72,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 5"
+          },
+          {
+            "type": "audio",
+            "u": 0.67,
+            "v": 0.48,
+            "width_mm": 3.5,
+            "height_mm": 3.5
+          }
+        ],
+        "right": [
+          {
+            "type": "sdxc",
+            "u": 0.68,
+            "v": 0.48,
+            "width_mm": 28,
+            "height_mm": 2
+          },
+          {
+            "type": "usb_c",
+            "u": 0.78,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 5"
+          },
+          {
+            "type": "hdmi",
+            "u": 0.86,
+            "v": 0.48,
+            "width_mm": 14,
+            "height_mm": 4.8
+          }
+        ]
+      },
+      "accuracy": "Published external envelope and finish names; corner radii, split lid/base thickness, internal geometry and port positions are illustrative photo estimates.",
+      "display": {
+        "resolution": [
+          3456,
+          2234
+        ],
+        "diagonal_in": 16.2,
+        "width_mm": 345.6,
+        "height_mm": 223.4,
+        "notch": true,
+        "physical_size_basis": "native pixel count / published pixels per inch; full rectangular extent before corner/notch clipping",
+        "corner_radius_mm": 5.5,
+        "notch_width_mm": 32,
+        "notch_height_mm": 6.5
+      },
+      "reference_images": [
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/mbp16-2024.png",
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/charging-expansion-en-2.png",
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/charging-expansion-en-1.png"
+      ]
+    },
+    {
+      "id": "macbook-pro-16-m4-max",
+      "icon_id": "apple_macbook_pro_16_m4_max",
+      "name": "MacBook Pro 16-inch (M4 Max, 2024)",
+      "family": "macbook-pro",
+      "kind": "laptop",
+      "chip": "M4 Max",
+      "chips": [
+        "M4 Max"
+      ],
+      "year": 2024,
+      "chassis_id": "macbook-pro-16-notch",
+      "dimensions_mm": {
+        "width": 355.7,
+        "depth": 248.1,
+        "height": 16.8
+      },
+      "finishes": [
+        "Silver",
+        "Space Black"
+      ],
+      "model_identifiers": [
+        "Mac16,5"
+      ],
+      "tech_specs": "https://support.apple.com/en-us/121554",
+      "sources": [
+        "https://support.apple.com/en-us/121554",
+        "https://support.apple.com/en-us/108052"
+      ],
+      "ports": {
+        "left": [
+          {
+            "type": "magsafe",
+            "u": 0.86,
+            "v": 0.48,
+            "width_mm": 16.5,
+            "height_mm": 3
+          },
+          {
+            "type": "usb_c",
+            "u": 0.78,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 5"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.72,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 5"
+          },
+          {
+            "type": "audio",
+            "u": 0.67,
+            "v": 0.48,
+            "width_mm": 3.5,
+            "height_mm": 3.5
+          }
+        ],
+        "right": [
+          {
+            "type": "sdxc",
+            "u": 0.68,
+            "v": 0.48,
+            "width_mm": 28,
+            "height_mm": 2
+          },
+          {
+            "type": "usb_c",
+            "u": 0.78,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 5"
+          },
+          {
+            "type": "hdmi",
+            "u": 0.86,
+            "v": 0.48,
+            "width_mm": 14,
+            "height_mm": 4.8
+          }
+        ]
+      },
+      "accuracy": "Published external envelope and finish names; corner radii, split lid/base thickness, internal geometry and port positions are illustrative photo estimates.",
+      "display": {
+        "resolution": [
+          3456,
+          2234
+        ],
+        "diagonal_in": 16.2,
+        "width_mm": 345.6,
+        "height_mm": 223.4,
+        "notch": true,
+        "physical_size_basis": "native pixel count / published pixels per inch; full rectangular extent before corner/notch clipping",
+        "corner_radius_mm": 5.5,
+        "notch_width_mm": 32,
+        "notch_height_mm": 6.5
+      },
+      "reference_images": [
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/mbp16-2024.png",
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/charging-expansion-en-2.png",
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/charging-expansion-en-1.png"
+      ]
+    },
+    {
+      "id": "macbook-pro-14-m5-pro",
+      "icon_id": "apple_macbook_pro_14_m5_pro",
+      "name": "MacBook Pro 14-inch (M5 Pro, 2026)",
+      "family": "macbook-pro",
+      "kind": "laptop",
+      "chip": "M5 Pro",
+      "chips": [
+        "M5 Pro"
+      ],
+      "year": 2026,
+      "chassis_id": "macbook-pro-14-notch",
+      "dimensions_mm": {
+        "width": 312.6,
+        "depth": 221.2,
+        "height": 15.5
+      },
+      "finishes": [
+        "Silver",
+        "Space Black"
+      ],
+      "model_identifiers": [
+        "Mac17,7"
+      ],
+      "tech_specs": "https://support.apple.com/en-us/126318",
+      "sources": [
+        "https://support.apple.com/en-us/126318",
+        "https://support.apple.com/en-us/108052"
+      ],
+      "ports": {
+        "left": [
+          {
+            "type": "magsafe",
+            "u": 0.86,
+            "v": 0.48,
+            "width_mm": 16.5,
+            "height_mm": 3
+          },
+          {
+            "type": "usb_c",
+            "u": 0.78,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 5"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.72,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 5"
+          },
+          {
+            "type": "audio",
+            "u": 0.67,
+            "v": 0.48,
+            "width_mm": 3.5,
+            "height_mm": 3.5
+          }
+        ],
+        "right": [
+          {
+            "type": "sdxc",
+            "u": 0.68,
+            "v": 0.48,
+            "width_mm": 28,
+            "height_mm": 2
+          },
+          {
+            "type": "usb_c",
+            "u": 0.78,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 5"
+          },
+          {
+            "type": "hdmi",
+            "u": 0.86,
+            "v": 0.48,
+            "width_mm": 14,
+            "height_mm": 4.8
+          }
+        ]
+      },
+      "accuracy": "Published external envelope and finish names; corner radii, split lid/base thickness, internal geometry and port positions are illustrative photo estimates.",
+      "display": {
+        "resolution": [
+          3024,
+          1964
+        ],
+        "diagonal_in": 14.2,
+        "width_mm": 302.4,
+        "height_mm": 196.4,
+        "notch": true,
+        "physical_size_basis": "native pixel count / published pixels per inch; full rectangular extent before corner/notch clipping",
+        "corner_radius_mm": 5.5,
+        "notch_width_mm": 32,
+        "notch_height_mm": 6.5
+      },
+      "reference_images": [
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/macbook-pro-14-inch-m5-pro-m5-max.png"
+      ]
+    },
+    {
+      "id": "macbook-pro-14-m5-max",
+      "icon_id": "apple_macbook_pro_14_m5_max",
+      "name": "MacBook Pro 14-inch (M5 Max, 2026)",
+      "family": "macbook-pro",
+      "kind": "laptop",
+      "chip": "M5 Max",
+      "chips": [
+        "M5 Max"
+      ],
+      "year": 2026,
+      "chassis_id": "macbook-pro-14-notch",
+      "dimensions_mm": {
+        "width": 312.6,
+        "depth": 221.2,
+        "height": 15.5
+      },
+      "finishes": [
+        "Silver",
+        "Space Black"
+      ],
+      "model_identifiers": [
+        "Mac17,9"
+      ],
+      "tech_specs": "https://support.apple.com/en-us/126318",
+      "sources": [
+        "https://support.apple.com/en-us/126318",
+        "https://support.apple.com/en-us/108052"
+      ],
+      "ports": {
+        "left": [
+          {
+            "type": "magsafe",
+            "u": 0.86,
+            "v": 0.48,
+            "width_mm": 16.5,
+            "height_mm": 3
+          },
+          {
+            "type": "usb_c",
+            "u": 0.78,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 5"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.72,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 5"
+          },
+          {
+            "type": "audio",
+            "u": 0.67,
+            "v": 0.48,
+            "width_mm": 3.5,
+            "height_mm": 3.5
+          }
+        ],
+        "right": [
+          {
+            "type": "sdxc",
+            "u": 0.68,
+            "v": 0.48,
+            "width_mm": 28,
+            "height_mm": 2
+          },
+          {
+            "type": "usb_c",
+            "u": 0.78,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 5"
+          },
+          {
+            "type": "hdmi",
+            "u": 0.86,
+            "v": 0.48,
+            "width_mm": 14,
+            "height_mm": 4.8
+          }
+        ]
+      },
+      "accuracy": "Published external envelope and finish names; corner radii, split lid/base thickness, internal geometry and port positions are illustrative photo estimates.",
+      "display": {
+        "resolution": [
+          3024,
+          1964
+        ],
+        "diagonal_in": 14.2,
+        "width_mm": 302.4,
+        "height_mm": 196.4,
+        "notch": true,
+        "physical_size_basis": "native pixel count / published pixels per inch; full rectangular extent before corner/notch clipping",
+        "corner_radius_mm": 5.5,
+        "notch_width_mm": 32,
+        "notch_height_mm": 6.5
+      },
+      "reference_images": [
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/macbook-pro-14-inch-m5-pro-m5-max.png"
+      ]
+    },
+    {
+      "id": "macbook-pro-16-m5-pro",
+      "icon_id": "apple_macbook_pro_16_m5_pro",
+      "name": "MacBook Pro 16-inch (M5 Pro, 2026)",
+      "family": "macbook-pro",
+      "kind": "laptop",
+      "chip": "M5 Pro",
+      "chips": [
+        "M5 Pro"
+      ],
+      "year": 2026,
+      "chassis_id": "macbook-pro-16-notch",
+      "dimensions_mm": {
+        "width": 355.7,
+        "depth": 248.1,
+        "height": 16.8
+      },
+      "finishes": [
+        "Silver",
+        "Space Black"
+      ],
+      "model_identifiers": [
+        "Mac17,6"
+      ],
+      "tech_specs": "https://support.apple.com/en-us/126319",
+      "sources": [
+        "https://support.apple.com/en-us/126319",
+        "https://support.apple.com/en-us/108052"
+      ],
+      "ports": {
+        "left": [
+          {
+            "type": "magsafe",
+            "u": 0.86,
+            "v": 0.48,
+            "width_mm": 16.5,
+            "height_mm": 3
+          },
+          {
+            "type": "usb_c",
+            "u": 0.78,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 5"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.72,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 5"
+          },
+          {
+            "type": "audio",
+            "u": 0.67,
+            "v": 0.48,
+            "width_mm": 3.5,
+            "height_mm": 3.5
+          }
+        ],
+        "right": [
+          {
+            "type": "sdxc",
+            "u": 0.68,
+            "v": 0.48,
+            "width_mm": 28,
+            "height_mm": 2
+          },
+          {
+            "type": "usb_c",
+            "u": 0.78,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 5"
+          },
+          {
+            "type": "hdmi",
+            "u": 0.86,
+            "v": 0.48,
+            "width_mm": 14,
+            "height_mm": 4.8
+          }
+        ]
+      },
+      "accuracy": "Published external envelope and finish names; corner radii, split lid/base thickness, internal geometry and port positions are illustrative photo estimates.",
+      "display": {
+        "resolution": [
+          3456,
+          2234
+        ],
+        "diagonal_in": 16.2,
+        "width_mm": 345.6,
+        "height_mm": 223.4,
+        "notch": true,
+        "physical_size_basis": "native pixel count / published pixels per inch; full rectangular extent before corner/notch clipping",
+        "corner_radius_mm": 5.5,
+        "notch_width_mm": 32,
+        "notch_height_mm": 6.5
+      },
+      "reference_images": [
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/macbook-pro-16-inch-m5-pro-m5-max.png"
+      ]
+    },
+    {
+      "id": "macbook-pro-16-m5-max",
+      "icon_id": "apple_macbook_pro_16_m5_max",
+      "name": "MacBook Pro 16-inch (M5 Max, 2026)",
+      "family": "macbook-pro",
+      "kind": "laptop",
+      "chip": "M5 Max",
+      "chips": [
+        "M5 Max"
+      ],
+      "year": 2026,
+      "chassis_id": "macbook-pro-16-notch",
+      "dimensions_mm": {
+        "width": 355.7,
+        "depth": 248.1,
+        "height": 16.8
+      },
+      "finishes": [
+        "Silver",
+        "Space Black"
+      ],
+      "model_identifiers": [
+        "Mac17,8"
+      ],
+      "tech_specs": "https://support.apple.com/en-us/126319",
+      "sources": [
+        "https://support.apple.com/en-us/126319",
+        "https://support.apple.com/en-us/108052"
+      ],
+      "ports": {
+        "left": [
+          {
+            "type": "magsafe",
+            "u": 0.86,
+            "v": 0.48,
+            "width_mm": 16.5,
+            "height_mm": 3
+          },
+          {
+            "type": "usb_c",
+            "u": 0.78,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 5"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.72,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 5"
+          },
+          {
+            "type": "audio",
+            "u": 0.67,
+            "v": 0.48,
+            "width_mm": 3.5,
+            "height_mm": 3.5
+          }
+        ],
+        "right": [
+          {
+            "type": "sdxc",
+            "u": 0.68,
+            "v": 0.48,
+            "width_mm": 28,
+            "height_mm": 2
+          },
+          {
+            "type": "usb_c",
+            "u": 0.78,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 5"
+          },
+          {
+            "type": "hdmi",
+            "u": 0.86,
+            "v": 0.48,
+            "width_mm": 14,
+            "height_mm": 4.8
+          }
+        ]
+      },
+      "accuracy": "Published external envelope and finish names; corner radii, split lid/base thickness, internal geometry and port positions are illustrative photo estimates.",
+      "display": {
+        "resolution": [
+          3456,
+          2234
+        ],
+        "diagonal_in": 16.2,
+        "width_mm": 345.6,
+        "height_mm": 223.4,
+        "notch": true,
+        "physical_size_basis": "native pixel count / published pixels per inch; full rectangular extent before corner/notch clipping",
+        "corner_radius_mm": 5.5,
+        "notch_width_mm": 32,
+        "notch_height_mm": 6.5
+      },
+      "reference_images": [
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/macbook-pro-16-inch-m5-pro-m5-max.png"
+      ]
+    },
+    {
+      "id": "macbook-pro-14-m3",
+      "icon_id": "apple_macbook_pro_14_m3",
+      "name": "MacBook Pro 14-inch (M3, 2023)",
+      "family": "macbook-pro",
+      "kind": "laptop",
+      "chip": "M3",
+      "chips": [
+        "M3"
+      ],
+      "year": 2023,
+      "chassis_id": "macbook-pro-14-m3-base",
+      "dimensions_mm": {
+        "width": 312.6,
+        "depth": 221.2,
+        "height": 15.5
+      },
+      "finishes": [
+        "Silver",
+        "Space Gray"
+      ],
+      "model_identifiers": [
+        "Mac15,3"
+      ],
+      "tech_specs": "https://support.apple.com/en-us/117735",
+      "sources": [
+        "https://support.apple.com/en-us/117735",
+        "https://support.apple.com/en-us/108052"
+      ],
+      "ports": {
+        "left": [
+          {
+            "type": "magsafe",
+            "u": 0.86,
+            "v": 0.48,
+            "width_mm": 16.5,
+            "height_mm": 3
+          },
+          {
+            "type": "usb_c",
+            "u": 0.78,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 3"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.72,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 3"
+          },
+          {
+            "type": "audio",
+            "u": 0.67,
+            "v": 0.48,
+            "width_mm": 3.5,
+            "height_mm": 3.5
+          }
+        ],
+        "right": [
+          {
+            "type": "sdxc",
+            "u": 0.68,
+            "v": 0.48,
+            "width_mm": 28,
+            "height_mm": 2
+          },
+          {
+            "type": "hdmi",
+            "u": 0.86,
+            "v": 0.48,
+            "width_mm": 14,
+            "height_mm": 4.8
+          }
+        ]
+      },
+      "accuracy": "Published external envelope and finish names; corner radii, split lid/base thickness, internal geometry and port positions are illustrative photo estimates.",
+      "display": {
+        "resolution": [
+          3024,
+          1964
+        ],
+        "diagonal_in": 14.2,
+        "width_mm": 302.4,
+        "height_mm": 196.4,
+        "notch": true,
+        "physical_size_basis": "native pixel count / published pixels per inch; full rectangular extent before corner/notch clipping",
+        "corner_radius_mm": 5.5,
+        "notch_width_mm": 32,
+        "notch_height_mm": 6.5
+      },
+      "reference_images": [
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/macbook-pro-14-inch-m3-pro-or-m3.png",
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/117735-macbook-pro-portimage-1-en.png",
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/117735-macbook-pro-portimage-2-en.png"
+      ]
+    },
+    {
+      "id": "macbook-pro-14-m4",
+      "icon_id": "apple_macbook_pro_14_m4",
+      "name": "MacBook Pro 14-inch (M4, 2024)",
+      "family": "macbook-pro",
+      "kind": "laptop",
+      "chip": "M4",
+      "chips": [
+        "M4"
+      ],
+      "year": 2024,
+      "chassis_id": "macbook-pro-14-notch",
+      "dimensions_mm": {
+        "width": 312.6,
+        "depth": 221.2,
+        "height": 15.5
+      },
+      "finishes": [
+        "Silver",
+        "Space Black"
+      ],
+      "model_identifiers": [
+        "Mac16,1"
+      ],
+      "tech_specs": "https://support.apple.com/en-us/121552",
+      "sources": [
+        "https://support.apple.com/en-us/121552",
+        "https://support.apple.com/en-us/108052"
+      ],
+      "ports": {
+        "left": [
+          {
+            "type": "magsafe",
+            "u": 0.86,
+            "v": 0.48,
+            "width_mm": 16.5,
+            "height_mm": 3
+          },
+          {
+            "type": "usb_c",
+            "u": 0.78,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.72,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "audio",
+            "u": 0.67,
+            "v": 0.48,
+            "width_mm": 3.5,
+            "height_mm": 3.5
+          }
+        ],
+        "right": [
+          {
+            "type": "sdxc",
+            "u": 0.68,
+            "v": 0.48,
+            "width_mm": 28,
+            "height_mm": 2
+          },
+          {
+            "type": "usb_c",
+            "u": 0.78,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "hdmi",
+            "u": 0.86,
+            "v": 0.48,
+            "width_mm": 14,
+            "height_mm": 4.8
+          }
+        ]
+      },
+      "accuracy": "Published external envelope and finish names; corner radii, split lid/base thickness, internal geometry and port positions are illustrative photo estimates.",
+      "display": {
+        "resolution": [
+          3024,
+          1964
+        ],
+        "diagonal_in": 14.2,
+        "width_mm": 302.4,
+        "height_mm": 196.4,
+        "notch": true,
+        "physical_size_basis": "native pixel count / published pixels per inch; full rectangular extent before corner/notch clipping",
+        "corner_radius_mm": 5.5,
+        "notch_width_mm": 32,
+        "notch_height_mm": 6.5
+      },
+      "reference_images": [
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/mbp14-m4-2024.png",
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/charging-expansion-en-2.png",
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/charging-expansion-en-1.png"
+      ]
+    },
+    {
+      "id": "macbook-pro-14-m5",
+      "icon_id": "apple_macbook_pro_14_m5",
+      "name": "MacBook Pro 14-inch (M5, 2025)",
+      "family": "macbook-pro",
+      "kind": "laptop",
+      "chip": "M5",
+      "chips": [
+        "M5"
+      ],
+      "year": 2025,
+      "chassis_id": "macbook-pro-14-notch",
+      "dimensions_mm": {
+        "width": 312.6,
+        "depth": 221.2,
+        "height": 15.5
+      },
+      "finishes": [
+        "Silver",
+        "Space Black"
+      ],
+      "model_identifiers": [
+        "Mac17,2"
+      ],
+      "tech_specs": "https://support.apple.com/en-us/125405",
+      "sources": [
+        "https://support.apple.com/en-us/125405",
+        "https://support.apple.com/en-us/108052"
+      ],
+      "ports": {
+        "left": [
+          {
+            "type": "magsafe",
+            "u": 0.86,
+            "v": 0.48,
+            "width_mm": 16.5,
+            "height_mm": 3
+          },
+          {
+            "type": "usb_c",
+            "u": 0.78,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.72,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "audio",
+            "u": 0.67,
+            "v": 0.48,
+            "width_mm": 3.5,
+            "height_mm": 3.5
+          }
+        ],
+        "right": [
+          {
+            "type": "sdxc",
+            "u": 0.68,
+            "v": 0.48,
+            "width_mm": 28,
+            "height_mm": 2
+          },
+          {
+            "type": "usb_c",
+            "u": 0.78,
+            "v": 0.48,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "Thunderbolt 4"
+          },
+          {
+            "type": "hdmi",
+            "u": 0.86,
+            "v": 0.48,
+            "width_mm": 14,
+            "height_mm": 4.8
+          }
+        ]
+      },
+      "accuracy": "Published external envelope and finish names; corner radii, split lid/base thickness, internal geometry and port positions are illustrative photo estimates.",
+      "display": {
+        "resolution": [
+          3024,
+          1964
+        ],
+        "diagonal_in": 14.2,
+        "width_mm": 302.4,
+        "height_mm": 196.4,
+        "notch": true,
+        "physical_size_basis": "native pixel count / published pixels per inch; full rectangular extent before corner/notch clipping",
+        "corner_radius_mm": 5.5,
+        "notch_width_mm": 32,
+        "notch_height_mm": 6.5
+      },
+      "reference_images": [
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/macbook-pro-14-inch-m5.png"
+      ]
+    },
+    {
+      "id": "macbook-neo-a18-pro",
+      "icon_id": "apple_macbook_neo_a18_pro",
+      "name": "MacBook Neo (A18 Pro, 2026)",
+      "family": "macbook-neo",
+      "kind": "laptop",
+      "chip": "A18 Pro",
+      "chips": [
+        "A18 Pro"
+      ],
+      "year": 2026,
+      "chassis_id": "macbook-neo-13",
+      "dimensions_mm": {
+        "width": 297.5,
+        "depth": 206.4,
+        "height": 12.7
+      },
+      "finishes": [
+        "Silver",
+        "Blush",
+        "Citrus",
+        "Indigo"
+      ],
+      "model_identifiers": [],
+      "model_identifier_note": "Not stated on reviewed public techspec pages; omitted rather than inferred.",
+      "tech_specs": "https://support.apple.com/en-us/126322",
+      "sources": [
+        "https://support.apple.com/en-us/126322",
+        "https://www.apple.com/macbook-neo/specs/"
+      ],
+      "ports": {
+        "left": [
+          {
+            "type": "usb_c",
+            "u": 0.886,
+            "v": 0.54,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "USB 3, 10Gb/s, DisplayPort and charging"
+          },
+          {
+            "type": "usb_c",
+            "u": 0.811,
+            "v": 0.54,
+            "width_mm": 8.4,
+            "height_mm": 2.7,
+            "protocol": "USB 2, 480Mb/s and charging; no DisplayPort"
+          }
+        ],
+        "right": [
+          {
+            "type": "audio",
+            "u": 0.734,
+            "v": 0.54,
+            "width_mm": 3.5,
+            "height_mm": 3.5
+          }
+        ]
+      },
+      "display": {
+        "resolution": [
+          2408,
+          1506
+        ],
+        "diagonal_in": 13.0,
+        "width_mm": 279.284,
+        "height_mm": 174.6685,
+        "notch": false,
+        "physical_size_basis": "native pixel count / published219ppi; full rectangular extent before clipping",
+        "corner_radius_mm": 4.5
+      },
+      "configuration_options": [
+        {
+          "storage_gb": 256,
+          "touch_id": false
+        },
+        {
+          "storage_gb": 512,
+          "touch_id": true
+        }
+      ],
+      "accuracy": "Published envelope, native display/ppi, finishes, camera class and USB protocols. Split lid/base thickness, corners, port/slit positions and webcam dimensions are photo estimates. Speaker left slit not independently resolved.",
+      "reference_images": [
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/macbook-neo-13-inch-a18-pro.png",
+        "https://www.apple.com/v/macbook-neo/c/images/specs/hero__cp2jyjh3uumq_large.jpg",
+        "https://www.apple.com/v/macbook-neo/c/images/specs/finish__czy7cev7ongy_large.jpg",
+        "https://www.apple.com/v/macbook-neo/c/images/specs/charging1__bh73vm3pydbm_large.jpg",
+        "https://www.apple.com/v/macbook-neo/c/images/specs/charging2__e4nlvbizph2e_large.jpg"
+      ]
+    }
+  ],
+  "reference_review": [
+    {
+      "source": "https://support.apple.com/en-us/102852",
+      "finding": "Official identification index explicitly lists 2026 Mac mini M6 and M5 Pro, 2024 M4/M4 Pro, 2023 M2/M2 Pro and 2020 M1; no M3 or M5 base mini added."
+    },
+    {
+      "source": "https://support.apple.com/en-us/102231",
+      "finding": "Official identification index explicitly lists 2026 M5 Max/M5 Ultra, 2025 M4 Max/M3 Ultra, 2023 M2 Max/M2 Ultra and 2022 M1 Max/M1 Ultra Studio models."
+    },
+    {
+      "source": "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/121555-mac-mini-2024-en-portimage1.png",
+      "finding": "Inspected straight modern mini front: two vertical USB-C openings left, status light then audio jack right; Apple logo lies on top plane, never front. Slotted black cooling foot beneath aluminum."
+    },
+    {
+      "source": "https://cdsassets.apple.com/live/7WUAS350/images/mac-mini/mac-mini-2020-m1.png",
+      "finding": "Inspected combined front/rear: blank front with tiny right LED, black rear insert, horizontal USB openings, audio beneath right USB-A group, horizontal lower exhaust."
+    },
+    {
+      "source": "https://cdsassets.apple.com/live/7WUAS350/images/mac-mini/mac-mini-2023-m2-pro.png",
+      "finding": "Same older footprint with four rear USB-C Thunderbolt openings, not two. Other rear openings remain individually placed."
+    },
+    {
+      "source": "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111835_sp894-portimage-1-en.png",
+      "finding": "Inspected Studio front: two vertical USB-C/TB openings and SD slot near lower left, white status light lower right; tall body and lower black vent lip."
+    },
+    {
+      "source": "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111835_sp894-portimage-2-en.png",
+      "finding": "Inspected Studio rear: broad upper perforated vent, lower row of four vertical USB-C, Ethernet, mains inlet, two vertical USB-A, HDMI/audio and power button."
+    },
+    {
+      "source": "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111883_sp825-portimage-1-en.png",
+      "finding": "Inspected original Air wedge side: two horizontal USB-C openings toward hinge; front edge far thinner than back. No MagSafe or display notch."
+    },
+    {
+      "source": "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111867_sp869-portimage-1.png",
+      "finding": "Inspected flat Air side: MagSafe plus two USB-C openings on left toward hinge; headphone on right. No external speaker grilles beside keyboard in the newer flat Air design."
+    },
+    {
+      "source": "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111902_sp854portimage1.png",
+      "finding": "Inspected notched Pro right side: SDXC nearest front, then USB-C, HDMI toward hinge; base M3 14 omits right USB-C."
+    },
+    {
+      "source": "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111902_sp854portimage2.png",
+      "finding": "Inspected notched Pro left side: MagSafe nearest hinge, then two USB-C, then headphone. Full-height function row rather than old 13-inch Touch Bar."
+    },
+    {
+      "source": "https://www.apple.com/macbook-neo/specs/",
+      "finding": "Official2026NeoA18Pro exists alongsideM-seriesAir/Pro; inspected straight front,finishgroup,andcroppedleft/rightsidephotos. No notch orMagSafe;2leftUSB-Cwithdifferentprotocols;rightheadphoneandside-speakerslit. TouchID512GB isconfigurationoption, notseparatefamily."
+    }
+  ],
+  "final_checks": {
+    "unique_models": 50,
+    "unique_icon_ids": 50,
+    "chassis": 12,
+    "families": {
+      "mac-mini": 7,
+      "mac-studio": 8,
+      "macbook-air": 9,
+      "macbook-pro": 25,
+      "macbook-neo": 1
+    },
+    "positive_dimensions": true,
+    "display_native_aspects_preserved": true,
+    "all_ports_normalized_and_positive": true,
+    "official_identification_and_tech_spec_urls_present": true,
+    "unannounced_models_added": false
+  }
+}

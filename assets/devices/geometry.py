@@ -457,6 +457,9 @@ def create_device(profile):
     mats = {key: material(key, value['rgb'], value.get('metal', 0), value.get('rough', .3))
             for key, value in finish.items()}
     mats['black'].node_tree.nodes['Principled BSDF'].inputs['Specular IOR Level'].default_value = 0
+    if profile.get('apple_mac'):
+        from apple_mac_geometry import create_mac_device
+        return create_mac_device(profile, root, mats)
     if profile['id'].startswith('pixel-'):
         mats['front_glass'] = material('Pixel front cover glass', finish['black']['rgb'], rough=.16)
         glass_shader = mats['front_glass'].node_tree.nodes['Principled BSDF']

@@ -1,0 +1,268 @@
+{
+  "id": "macbook-pro-14-m4-max",
+  "name": "MacBook Pro 14-inch (M4 Max, 2024)",
+  "state": "default",
+  "glbUrl": "assets/devices/models/macbook-pro-14-m4-max.df07ab0743d0.glb.gz",
+  "sha256": "df07ab0743d0bcac5c5f50875f3313889b32aab1e96a701afe89d644c32d1ce8",
+  "body_mm": {
+    "width": 312.6,
+    "height": 214.0,
+    "depth": 4.2,
+    "base_depth_mm": 10.700000000000001,
+    "base_length_mm": 221.2,
+    "closed_depth_mm": 15.5,
+    "corner_radius": 11,
+    "edge_roll_mm": [
+      0.35,
+      0.2
+    ]
+  },
+  "screens": [
+    {
+      "node": "Device screen",
+      "nodes": [
+        "Device screen"
+      ],
+      "material": "Device screen | replace texture at runtime",
+      "resolution": [
+        3024,
+        1964
+      ],
+      "size_mm": [
+        302.4,
+        196.39999999999998
+      ],
+      "center_mm": [
+        0.0,
+        111.0999984741211,
+        7.339999675750732
+      ],
+      "corner_radius_mm": 5.5,
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "edge_curve_mm": 0,
+      "frame_bounds_mm": [
+        5.100000000000023,
+        5.299999999999997,
+        302.4,
+        196.39999999999998
+      ],
+      "frame_screen_px": null,
+      "frame_file": "frame.svg",
+      "frame_body_mm": {
+        "width": 312.6,
+        "height": 214.0,
+        "depth": 4.2,
+        "base_depth_mm": 10.700000000000001,
+        "base_length_mm": 221.2,
+        "closed_depth_mm": 15.5,
+        "corner_radius": 11,
+        "edge_roll_mm": [
+          0.35,
+          0.2
+        ]
+      },
+      "cutouts": [],
+      "uv": "u right, v up; full image maps to [0,1] without cropping",
+      "input": "Use raycast screen UV times actual stream size; reject cutouts and rounded corners"
+    }
+  ],
+  "frames": [
+    {
+      "name": "Device screen",
+      "file": "frame.svg",
+      "image": "assets/devices/frames/macbook-pro-14-m4-max-0.svg"
+    }
+  ],
+  "slots": {
+    "back": "back",
+    "rail": "rail",
+    "trackpad": "trackpad",
+    "logo": "logo",
+    "keycap": "keycap",
+    "black": "black",
+    "flash": "flash"
+  },
+  "articulation": {
+    "animation": "Fold",
+    "axis": "X",
+    "axis_mm": [
+      0,
+      0.6,
+      7.199999999999989
+    ],
+    "moving_panel": "Lid",
+    "fixed_panel": "Base",
+    "pivots": {
+      "Lid": "Fold pivot | Lid",
+      "Base": "Fold pivot | Base"
+    },
+    "open_degrees": 0,
+    "closed_degrees": 90,
+    "duration_seconds": 1,
+    "closed_body_mm": {
+      "width": 312.6,
+      "height": 15.5,
+      "depth": 221.2
+    }
+  },
+  "panels": [
+    {
+      "name": "Lid",
+      "center_mm": [
+        0,
+        107.6,
+        5.099999999999989
+      ],
+      "body_mm": {
+        "width": 312.6,
+        "height": 214.0,
+        "depth": 4.2,
+        "corner_radius": 11
+      },
+      "buttons": false
+    },
+    {
+      "name": "Base",
+      "center_mm": [
+        0,
+        -5.3500000000000005,
+        110.6
+      ],
+      "body_mm": {
+        "width": 312.6,
+        "height": 10.700000000000001,
+        "depth": 221.2,
+        "corner_radius": 11
+      },
+      "buttons": false
+    }
+  ],
+  "icon_morph": {
+    "kind": "laptop",
+    "windows": 0
+  },
+  "finishes": [
+    {
+      "name": "Silver",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.78431,
+            0.79216,
+            0.80784
+          ],
+          "metal": 0.8,
+          "rough": 0.33
+        },
+        "rail": {
+          "rgb": [
+            0.78431,
+            0.79216,
+            0.80784
+          ],
+          "metal": 0.8,
+          "rough": 0.28
+        },
+        "trackpad": {
+          "rgb": [
+            0.7529375999999999,
+            0.7604736,
+            0.7755264
+          ],
+          "metal": 0.15,
+          "rough": 0.34
+        },
+        "logo": {
+          "rgb": [
+            0.18823439999999997,
+            0.1901184,
+            0.1938816
+          ],
+          "metal": 0.55,
+          "rough": 0.19
+        },
+        "keycap": {
+          "rgb": [
+            1,
+            1,
+            1
+          ],
+          "rough": 0.42
+        }
+      }
+    },
+    {
+      "name": "Space Black",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.20392,
+            0.21176,
+            0.23137
+          ],
+          "metal": 0.8,
+          "rough": 0.33
+        },
+        "rail": {
+          "rgb": [
+            0.20392,
+            0.21176,
+            0.23137
+          ],
+          "metal": 0.8,
+          "rough": 0.28
+        },
+        "trackpad": {
+          "rgb": [
+            0.19576319999999997,
+            0.2032896,
+            0.22211519999999998
+          ],
+          "metal": 0.15,
+          "rough": 0.34
+        },
+        "logo": {
+          "rgb": [
+            0.0652544,
+            0.06776320000000001,
+            0.0740384
+          ],
+          "metal": 0.55,
+          "rough": 0.19
+        },
+        "keycap": {
+          "rgb": [
+            1,
+            1,
+            1
+          ],
+          "rough": 0.42
+        }
+      }
+    }
+  ],
+  "provenance": {
+    "kind": "procedural-estimate",
+    "profile": "assets/devices/profiles/macbook-pro-14-m4-max.json",
+    "accuracy": {
+      "body_dimensions": "Published Apple width, depth and closed height; physical envelope is recorded in apple_mac.dimensions_mm.",
+      "camera_geometry": "Camera aperture, port placement, socket internals and vent depths are illustrative photo estimates.",
+      "screen_geometry": "Native resolution and physical display extent from published pixel density; rounded corners and notch dimensions estimated from product imagery.",
+      "finishes": "Official finish names; approximate sRGB aluminum, glass and finish-toned reflective Apple inlays.",
+      "branding": "Apple vector contour on the centered top desktop face or exterior laptop lid; no Apple mark on the laptop display bezel.",
+      "detail_geometry": "Published port types/count; socket size, curved enclosure sections, keyboard layout, grille, feet and split lid/base thickness estimated.",
+      "hinge": "One rigid X-axis clamshell joint; 0.6 mm clearance above base; opens/closes lid without changing screen UVs. Hinge mechanism illustrative.",
+      "front_frame": "Independent lid height, display placement and notch width fitted to primary Apple front artwork; base footprint and native OLED aspect retained. Photo estimates, not CAD."
+    },
+    "sources": [
+      "https://support.apple.com/en-us/121553",
+      "https://support.apple.com/en-us/108052",
+      "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111902_mbp14-silver2.png",
+      "https://support.apple.com/en-us/111902"
+    ]
+  }
+}
