@@ -3225,8 +3225,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-z-fold3-unfolded.6bd4ee597707.glb.gz",
-  "sha256": "6bd4ee597707b347ddaa882fa1febd6f6c463d1be208962a2cf1fea6b44e0bb0",
+  "glbUrl": "assets/devices/models/galaxy-z-fold3-unfolded.da04b5280c2b.glb.gz",
+  "sha256": "da04b5280c2bdc5121f2630a50b2ee2f51828eca69837226f91f37d1452c6c04",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-z-fold3-unfolded.json",

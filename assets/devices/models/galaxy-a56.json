@@ -272,8 +272,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-a56.04adbd078d5c.glb.gz",
-  "sha256": "04adbd078d5c2e78092b196c4509a758fc65bd234956f173687b72eb47510c3d",
+  "glbUrl": "assets/devices/models/galaxy-a56.cb386a60dedc.glb.gz",
+  "sha256": "cb386a60dedc71cd1b89d152cc45d84afcae06e19aa2300b825cda400c34ae93",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-a56.json",

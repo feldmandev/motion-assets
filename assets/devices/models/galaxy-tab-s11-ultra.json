@@ -224,8 +224,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-tab-s11-ultra.28c337ecbb3d.glb.gz",
-  "sha256": "28c337ecbb3de046701429cfac3ff90053cfe485054b5122804a38d62f0604ad",
+  "glbUrl": "assets/devices/models/galaxy-tab-s11-ultra.59cd876ca5e2.glb.gz",
+  "sha256": "59cd876ca5e2ea4925dec21369e4566e45e2ee375c94c293d5fe8884d3572249",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-tab-s11-ultra.json",

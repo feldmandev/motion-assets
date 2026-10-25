@@ -339,8 +339,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/honor-robot-phone.580a56866bf3.glb.gz",
-  "sha256": "580a56866bf37eb69317b1a2c80c3ee5e814769fe7db7891189888b0b9c0796b",
+  "glbUrl": "assets/devices/models/honor-robot-phone.91a9e3554845.glb.gz",
+  "sha256": "91a9e35548450cf3da992e4a94b72518f57bce2cc1d21637f8f4a723eb0efd07",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/honor-robot-phone.json",

@@ -306,8 +306,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-z-flip7-fe-folded.340bf98f6efa.glb.gz",
-  "sha256": "340bf98f6efa67817ee8c1d42435d60fe51a885d865ee3e4faca8e2dbdab9fc1",
+  "glbUrl": "assets/devices/models/galaxy-z-flip7-fe-folded.3736d5f3dbf6.glb.gz",
+  "sha256": "3736d5f3dbf660f59e1df18330d9e2bde176854afb0693df129a046525fec793",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-z-flip7-fe-folded.json",

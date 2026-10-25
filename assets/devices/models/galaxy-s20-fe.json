@@ -352,8 +352,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-s20-fe.e730f813cf48.glb.gz",
-  "sha256": "e730f813cf486a49112a2034df811140d3ab7451c4fd3bb20301db570a04d889",
+  "glbUrl": "assets/devices/models/galaxy-s20-fe.dca658e47f29.glb.gz",
+  "sha256": "dca658e47f296abbef12d5fa6be5a3c7930cc5edd2493b74132f7e0d91779ded",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-s20-fe.json",

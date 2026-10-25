@@ -1,40 +1,41 @@
-// Camera coating colors and studio lobes from the reviewed Pixel optics viewer.
-// The bundled model-viewer is pinned; correlatedObjects exposes its Three materials/textures.
+// Single dielectric AR film: unpolarized Fresnel interference at RGB wavelengths.
+// Reflection uses the viewer's HDR environment; there is no emitted or painted color.
 async function applyCameraCoatings(viewer){
   const objects=facade=>facade[Object.getOwnPropertySymbols(facade).find(s=>s.description==='correlatedObjects')];
-  if(!viewer.__cameraCoatingTextures){
-    const images={"outer":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAABCAIAAAC+O+cgAAAAjUlEQVR4nHWMgRHAIAgDcdwu0ik6q+khBBDb88SQvBnX/QCTZwKwOXWqp5OmCds56GOKy3CW5ibhoDlFy48PiHQyWLuFbOaSruxQue8fMvUOVn1EOkubehEEQKwA6yTJpwdxt8JGZukObyppNhDnEwjD2l392hlBjJqnPtfW3EtOeNuG33+DZlfnN33GC/C2XiyHWPhRAAAAAElFTkSuQmCC","inner":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAABCAIAAAC+O+cgAAAAiElEQVR4nJ2P0RGAIAxDy6bu4hrOSj2gaRMOf9QTm+Slnu2+nu7d3edZw5jUZxN+yZEakryMZu8ewIqITB+DfTlnaSwxY4dNe6rE1h1UANXBC/cWycKScVYLFEXRkG7AxSRSirAEN5IWSbZ5WrT1aKVaP67WTubRUZeUbymDvF8WnL6rJn5JzBffJE058p/Y/gAAAABJRU5ErkJggg=="};
-    viewer.__cameraCoatingTextures={};
-    for(const [name,url] of Object.entries(images)){
-      const texture=await viewer.createTexture(url);
-      viewer.__cameraCoatingTextures[name]=[...objects(texture)][0];
-    }
-  }
+  const gltf=viewer.originalGltfJson;
   for(const facade of viewer.model.materials){
     if(!/element [12] coating|curved internal optical coating|Pixel front optics \| coated glass|Apple optical glass|Robot optical glass|^Lens [12]$/.test(facade.name))continue;
-    const texture=viewer.__cameraCoatingTextures[/element 2/.test(facade.name)?'inner':'outer'];
+    const index=gltf.materials.findIndex(m=>m.name===facade.name);
+    const primitive=gltf.meshes.flatMap(m=>m.primitives).find(p=>p.material===index);
+    const bounds=gltf.accessors[primitive.attributes.POSITION];
+    const extent=bounds.min.map((v,i)=>bounds.max[i]-v),axis=extent.indexOf(Math.min(...extent));
     for(const material of objects(facade)){
       material.transmission=0;material.transparent=true;material.opacity=1;
       material.blending=2;material.side=0;material.depthWrite=false;
       material.onBeforeCompile=shader=>{
-        shader.uniforms.cameraCoating={value:texture};
-        shader.fragmentShader='uniform sampler2D cameraCoating;\n'+shader.fragmentShader;
+        shader.uniforms.coatingAxis={value:[0,1,2].map(i=>i===axis?1:0)};
+        shader.uniforms.coatingThickness={value:/element 2/.test(facade.name)?114:100};
+        shader.vertexShader='uniform vec3 coatingAxis; varying float coatingFace;\n'+shader.vertexShader.replace('#include <beginnormal_vertex>',`#include <beginnormal_vertex>
+          // Ground lens edges are blackened; only the polished optical face reflects.
+          coatingFace=smoothstep(.25,.75,abs(dot(normal,coatingAxis)));`);
+        shader.fragmentShader='uniform float coatingThickness; varying float coatingFace;\n'+shader.fragmentShader;
         shader.fragmentShader=shader.fragmentShader.replace('#include <opaque_fragment>',`
           vec3 coatingV=normalize(vViewPosition);
+          float ci=clamp(abs(dot(normal,coatingV)),.001,1.);
+          float nf=1.38,ns=1.7;
+          float cf=sqrt(1.-(1.-ci*ci)/(nf*nf)),cs=sqrt(1.-(1.-ci*ci)/(ns*ns));
+          vec2 a=vec2((ci-nf*cf)/(ci+nf*cf),(nf*ci-cf)/(nf*ci+cf));
+          vec2 b=vec2((nf*cf-ns*cs)/(nf*cf+ns*cs),(ns*cf-nf*cs)/(ns*cf+nf*cs));
+          vec3 phase=cos(12.5663706144*nf*coatingThickness*cf/vec3(610.,550.,460.));
+          vec3 rs=(a.x*a.x+b.x*b.x+2.*a.x*b.x*phase)/(1.+a.x*a.x*b.x*b.x+2.*a.x*b.x*phase);
+          vec3 rp=(a.y*a.y+b.y*b.y+2.*a.y*b.y*phase)/(1.+a.y*a.y*b.y*b.y+2.*a.y*b.y*phase);
           vec3 coatingR=inverseTransformDirection(reflect(-coatingV,normal),viewMatrix);
-          float coatingCosine=clamp(abs(dot(normal,coatingV)),.001,1.);
-          float coatingLight=.045
-            +12.*exp((dot(coatingR,normalize(vec3(-.8,.8,-1.)))-1.)/.14)
-            +24.*exp((dot(coatingR,normalize(vec3(.35,-.2,-1.)))-1.)/.0025)
-            +12.*exp((dot(coatingR,normalize(vec3(.6,.1,-1.)))-1.)/.0015)
-            +1.5*exp((dot(coatingR,normalize(vec3(-1.,-.6,-.5)))-1.)/.045)
-            +4.*exp((dot(coatingR,normalize(vec3(.4,.4,1.)))-1.)/.14)
-            +12.*exp((dot(coatingR,normalize(vec3(-.15,.1,1.)))-1.)/.003);
-          outgoingLight=texture2D(cameraCoating,vec2(coatingCosine,.5)).rgb*coatingLight;
+          vec3 incident=textureCubeUV(envMap,envMapRotation*coatingR,.045).rgb*envMapIntensity;
+          outgoingLight=incident*.5*(rs+rp)*coatingFace;
           diffuseColor.a=1.;
           #include <opaque_fragment>`);
       };
-      material.customProgramCacheKey=()=> 'reviewed-camera-coating-v1';
+      material.customProgramCacheKey=()=> 'dielectric-camera-film-v3';
       material.needsUpdate=true;
     }
   }

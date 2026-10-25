@@ -30,6 +30,10 @@ def _detail_material(profile, role, spec):
             shader.inputs[socket].default_value = spec[key]
     overrides = dict(profile.get('materials', {}).get(role, {}))
     overrides.update(profile.get('finishes', {}).get(profile.get('finish'), {}).get(role, {}))
+    if role == 'antenna':
+        overrides['rgb'] = list(profile['materials'][spec['color_role']]['rgb'])
+        luminance = sum(v*w for v, w in zip(overrides['rgb'], (.2126, .7152, .0722)))
+        overrides['rgb'] = [v*.72 + (.12 if luminance < .45 else .08) for v in overrides['rgb']]
     if 'rgb' in overrides:
         shader.inputs['Base Color'].default_value = tuple(
             v/12.92 if v <= .04045 else ((v+.055)/1.055)**2.4 for v in overrides['rgb']) + (1,)
@@ -39,7 +43,11 @@ def _detail_material(profile, role, spec):
     roles = profile.setdefault('material_objects', {key: key for key in profile.get('materials', {})})
     roles[role] = mat.name
     for palette in profile.get('finishes', {}).values():
-        if role not in palette:
+        if role == 'antenna':
+            rgb = palette[spec['color_role']]['rgb']
+            luminance = sum(v*w for v, w in zip(rgb, (.2126, .7152, .0722)))
+            palette[role] = {'rgb': [v*.72 + (.12 if luminance < .45 else .08) for v in rgb], 'rough': .68, 'metal': 0}
+        elif role not in palette:
             palette[role] = {'rgb': list(palette[spec['color_role']]['rgb'])}
     return mat
 

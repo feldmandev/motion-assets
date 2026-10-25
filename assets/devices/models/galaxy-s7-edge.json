@@ -285,8 +285,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-s7-edge.2705d81bf5c7.glb.gz",
-  "sha256": "2705d81bf5c703928075caed63d7b2260a5e7f6aa6602e54956aa99c6400ecbd",
+  "glbUrl": "assets/devices/models/galaxy-s7-edge.5df3008991e8.glb.gz",
+  "sha256": "5df3008991e81ff22751cbf8b3caf632ed486e3cfb340acce880461f10a90f78",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-s7-edge.json",

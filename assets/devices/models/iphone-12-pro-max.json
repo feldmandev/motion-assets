@@ -462,8 +462,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/iphone-12-pro-max.36a880e1a28f.glb.gz",
-  "sha256": "36a880e1a28f16f33a016acff92c281c803c3b92906112d571c6f0381a4dbddb",
+  "glbUrl": "assets/devices/models/iphone-12-pro-max.8d0545fef7ff.glb.gz",
+  "sha256": "8d0545fef7ff486fe9db84e6ac2fda4dd3236e3226b7a1541b1b16ed53248aa8",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/iphone-12-pro-max.json",

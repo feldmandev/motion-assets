@@ -262,8 +262,8 @@ def prepare_screen(spec, body, screen_image=None):
     shader = material.node_tree.nodes['Principled BSDF']
     fallback = (.07, .16, .22) if spec.get('foldable_surface') else (.006, .008, .012)
     shader.inputs['Base Color'].default_value = fallback + (1,)
-    shader.inputs['Roughness'].default_value = 1
-    shader.inputs['Specular IOR Level'].default_value = 0
+    shader.inputs['Roughness'].default_value = .22
+    shader.inputs['Specular IOR Level'].default_value = .3
     if spec.get('foldable_surface'):
         shader.inputs['Emission Color'].default_value = fallback + (1,)
         shader.inputs['Emission Strength'].default_value = .35
@@ -401,6 +401,20 @@ def coating_for(name):
 def apply_lens_coatings():
     """Set the Principled thin film on every lens/cover coating material (Cycles/EEVEE)."""
     for mat in bpy.data.materials:
+        if mat.use_nodes and any(name in mat.name for name in ('Optical outer rim', 'Optical barrel', 'baffle ridge', 'iris retainer ring')):
+            node = mat.node_tree.nodes['Principled BSDF']
+            node.inputs['Base Color'].default_value = (.0015, .0018, .0022, 1)
+            node.inputs['Metallic'].default_value = 0
+            node.inputs['Roughness'].default_value = .5
+            node.inputs['Specular IOR Level'].default_value = .03
+            node.inputs['Coat Weight'].default_value = 0
+        if mat.use_nodes and 'internal prism optic' in mat.name:
+            node = mat.node_tree.nodes['Principled BSDF']
+            node.inputs['Base Color'].default_value = (.001, .001, .001, 1)
+            node.inputs['Metallic'].default_value = 0
+            node.inputs['Roughness'].default_value = .6
+            node.inputs['Specular IOR Level'].default_value = 0
+            node.inputs['Coat Weight'].default_value = 0
         coating = coating_for(mat.name)
         if not (coating and mat.use_nodes):
             continue
@@ -422,12 +436,16 @@ def add_glb_iridescence(path, foldable=False):
         return 0
     changed = 0
     for mat in gltf.get('materials', []):
+        if mat.get('name', '').startswith('Device screen |'):
+            mat.setdefault('pbrMetallicRoughness', {})['roughnessFactor'] = .22
+            extensions = mat.setdefault('extensions', {})
+            extensions.pop('KHR_materials_unlit', None)
+            extensions['KHR_materials_specular'] = {'specularFactor': .6}
         if foldable and mat.get('name', '').startswith('Device screen |'):
             # Folded views expose the OLED from steep angles and occasionally from its back face.
             # Keep both sides renderable and give the exported material a lit fallback so WebGL
             # never flashes the old near-black placeholder while the runtime texture is created.
             mat['doubleSided'] = True
-            mat.setdefault('extensions', {})['KHR_materials_unlit'] = {}
             pbr = mat.setdefault('pbrMetallicRoughness', {})
             pbr['baseColorFactor'] = [.07, .16, .22, 1]
             mat['emissiveFactor'] = [.07, .16, .22]
@@ -460,7 +478,7 @@ def add_glb_iridescence(path, foldable=False):
         apply_glb(path, BASE/'.optics-backup')
         return 0
     used = gltf.setdefault('extensionsUsed', [])
-    for name in ('KHR_materials_iridescence', *(['KHR_materials_unlit'] if foldable else [])):
+    for name in ('KHR_materials_iridescence', 'KHR_materials_specular'):
         if name not in used:
             used.append(name)
     data = json.dumps(gltf, separators=(',', ':')).encode()
@@ -656,7 +674,7 @@ def build(profile_path, output, screen_image=None, finish=None):
     scene = bpy.context.scene
     scene.unit_settings.system = 'METRIC'
     scene.unit_settings.length_unit = 'MILLIMETERS'
-    scene.render.resolution_y = screens[0][0]['resolution'][1]
+    scene.render.resolution_y = screens[0][0]['resolution'][1] if screens else 1080
     scene.render.resolution_x = round(scene.render.resolution_y*body['width']/body['height'])
     scene.render.resolution_percentage = 100
     scene.render.film_transparent = True
@@ -735,7 +753,7 @@ def build(profile_path, output, screen_image=None, finish=None):
                    'input': 'Use raycast screen UV times actual stream size; reject cutouts and rounded corners'})
     metadata = {
         'id': profile['id'], 'name': profile['name'], 'finish': profile['finish'],
-        'body_mm': body, 'screen': screen_metadata[0], 'screens': screen_metadata,
+        'body_mm': body, 'screen': screen_metadata[0] if screen_metadata else None, 'screens': screen_metadata,
         'finishes': profile.get('finishes', {}), 'status': profile.get('status', 'reviewed reference'),
         'material_slots': profile.get('material_objects', {role:role for role in profile.get('materials', {})}),
         'coordinates': {'blend': 'metres; X right, Y up, front +Z',
@@ -744,8 +762,8 @@ def build(profile_path, output, screen_image=None, finish=None):
         'accuracy': profile['accuracy'], 'sources': profile['sources'],
         'export': {'blend': 'Reviewed optical shaders; replaceable screen',
                    'glb': 'PBR approximation of optical shaders; replace screen material with unlit video texture'},
-        'checks': {'screen_aspect_error': max(abs(item['size_mm'][0]/item['size_mm'][1] -
-                        item['resolution'][0]/item['resolution'][1]) for item in screen_metadata),
+        'checks': {'screen_aspect_error': max((abs(item['size_mm'][0]/item['size_mm'][1] -
+                        item['resolution'][0]/item['resolution'][1]) for item in screen_metadata), default=0),
                    'model_objects': len(parts)}
     }
     if 'camera_measurement' in profile:

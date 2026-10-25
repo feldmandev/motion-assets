@@ -296,8 +296,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/nothing-phone-3a.16d97d9ffc83.glb.gz",
-  "sha256": "16d97d9ffc83584794f351fd6275452f2379b483cc60f0e6590605b16cd2fa84",
+  "glbUrl": "assets/devices/models/nothing-phone-3a.07c317eaa409.glb.gz",
+  "sha256": "07c317eaa409c647e0ec44d22c71f2dd8f42956203a1e35bf45c688734e2a8f5",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/nothing-phone-3a.json",

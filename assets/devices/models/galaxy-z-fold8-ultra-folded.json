@@ -3156,8 +3156,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-z-fold8-ultra-folded.c268f9b38f92.glb.gz",
-  "sha256": "c268f9b38f9276b3096860efca9e7ea4f3fb1114f30a57c7d4e08fc848f002c5",
+  "glbUrl": "assets/devices/models/galaxy-z-fold8-ultra-folded.ac4d41ecee1f.glb.gz",
+  "sha256": "ac4d41ecee1fede1133f84d7c26bcd7bce6c6e2699ce4f51db67206516078062",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-z-fold8-ultra-folded.json",

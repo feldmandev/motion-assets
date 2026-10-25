@@ -1,6 +1,6 @@
 {
   "id": "pixel-9-pro-fold-unfolded",
-  "name": "Pixel 9 Pro Fold \u00b7 unfolded",
+  "name": "Pixel 9 Pro Fold · unfolded",
   "finish": "Obsidian",
   "body_mm": {
     "height": 155.2,
@@ -101,9 +101,9 @@
       },
       "antenna": {
         "rgb": [
-          0.33,
-          0.34784,
-          0.35549
+          0.35760000000000003,
+          0.37044479999999996,
+          0.3759528
         ],
         "rough": 0.68,
         "metal": 0
@@ -142,9 +142,9 @@
       },
       "antenna": {
         "rgb": [
-          0.77098,
-          0.77098,
-          0.74294
+          0.6351055999999999,
+          0.6351055999999999,
+          0.6149167999999999
         ],
         "rough": 0.68,
         "metal": 0

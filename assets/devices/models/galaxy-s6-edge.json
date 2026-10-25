@@ -285,8 +285,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-s6-edge.aef8e0e28739.glb.gz",
-  "sha256": "aef8e0e287391ad70ae4208471268fa502b5918154b2a3e9e99ab0cbc2ba555c",
+  "glbUrl": "assets/devices/models/galaxy-s6-edge.01f36af8f6e3.glb.gz",
+  "sha256": "01f36af8f6e30dc6c88c2d5b5c7dba2f1f29c43ba436a1907bf1a34a97f36f73",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-s6-edge.json",

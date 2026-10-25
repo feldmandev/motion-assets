@@ -314,8 +314,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/googlebook-acer-14.6717735df0b4.glb.gz",
-  "sha256": "6717735df0b4506e0a8ce0c95c45e97ac03cb15021d4d3ca77b1a818b8212755",
+  "glbUrl": "assets/devices/models/googlebook-acer-14.2b3351e5cd1a.glb.gz",
+  "sha256": "2b3351e5cd1a10251475090168e8eae7ddc241bb06574d62ac7a1504b09b1b6d",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/googlebook-acer-14.json",

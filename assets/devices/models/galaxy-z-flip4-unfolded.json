@@ -503,8 +503,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-z-flip4-unfolded.a4c8a0fa9661.glb.gz",
-  "sha256": "a4c8a0fa96612a50872ef6870bbd93a48f904b4b6991d9852e561a4db9604d84",
+  "glbUrl": "assets/devices/models/galaxy-z-flip4-unfolded.35f2fbe596f7.glb.gz",
+  "sha256": "35f2fbe596f714ffa286e40a96aea3f647ad2e4b6e3dc7aa1efe32b00f1d471c",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-z-flip4-unfolded.json",

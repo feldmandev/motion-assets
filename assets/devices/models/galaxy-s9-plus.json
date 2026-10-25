@@ -332,8 +332,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-s9-plus.33d4a0ffe222.glb.gz",
-  "sha256": "33d4a0ffe22257946b60a9d6f68c9785c316f27137fa330c70c91a37c65bf5f8",
+  "glbUrl": "assets/devices/models/galaxy-s9-plus.876ec948d572.glb.gz",
+  "sha256": "876ec948d572b213634c495b86f1c4782c0dc3f19488e8538ba6ab7cebc84414",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-s9-plus.json",

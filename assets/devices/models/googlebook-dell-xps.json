@@ -364,8 +364,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/googlebook-dell-xps.d444161e2f63.glb.gz",
-  "sha256": "d444161e2f63c4bcc7d2ba9fe39c09a690a2f62b63b18a3709752e030cab8e3f",
+  "glbUrl": "assets/devices/models/googlebook-dell-xps.0e9c9592ea82.glb.gz",
+  "sha256": "0e9c9592ea821ef1585309131d6e45c80d60d5a0c2dd43fba20fc28c2b8a814a",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/googlebook-dell-xps.json",

@@ -1801,9 +1801,9 @@
         },
         "antenna": {
           "rgb": [
-            0.33,
-            0.34784,
-            0.35549
+            0.35760000000000003,
+            0.37044479999999996,
+            0.3759528
           ],
           "rough": 0.68,
           "metal": 0
@@ -1845,9 +1845,9 @@
         },
         "antenna": {
           "rgb": [
-            0.77098,
-            0.77098,
-            0.74294
+            0.6351055999999999,
+            0.6351055999999999,
+            0.6149167999999999
           ],
           "rough": 0.68,
           "metal": 0
@@ -1855,8 +1855,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/pixel-9-pro-fold-unfolded.0e51796a192a.glb.gz",
-  "sha256": "0e51796a192a4af18f16ee41c575de8aa146ddb742de806292edd190abdf1d76",
+  "glbUrl": "assets/devices/models/pixel-9-pro-fold-unfolded.73494ec01110.glb.gz",
+  "sha256": "73494ec0111008eb0e51d30f395d64505d2dab3c1774afa19daee415dd7fac15",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/pixel-9-pro-fold-unfolded.json",

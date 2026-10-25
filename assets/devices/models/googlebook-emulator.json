@@ -364,8 +364,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/googlebook-emulator.63b089ff0365.glb.gz",
-  "sha256": "63b089ff0365c5081935df2135ff64a90a49b7d8c9c590a88ad19b26bafe5dce",
+  "glbUrl": "assets/devices/models/googlebook-emulator.3199e1675f0f.glb.gz",
+  "sha256": "3199e1675f0f0c752abb390713eb6b18b7a33fab66094aea1fe5e06386d633d3",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/googlebook-emulator.json",

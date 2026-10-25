@@ -396,8 +396,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-s10-plus.c8cdde818438.glb.gz",
-  "sha256": "c8cdde818438bf2147d75a606b2f106f6088a8e73f248d70e4cb7510e90aafd5",
+  "glbUrl": "assets/devices/models/galaxy-s10-plus.496963990cce.glb.gz",
+  "sha256": "496963990cceb6c234ec6186418536196c9876ca7479d07edb56faf0baa24315",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-s10-plus.json",

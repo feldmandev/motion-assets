@@ -308,8 +308,8 @@
       }
     }
   ],
-  "glbUrl": "assets/devices/models/galaxy-z-trifold-folded.48029fa3ed87.glb.gz",
-  "sha256": "48029fa3ed871835a369da0ad3c940281f46732c33a8239a0ec910d99c51c4dd",
+  "glbUrl": "assets/devices/models/galaxy-z-trifold-folded.d00ec6a43e65.glb.gz",
+  "sha256": "d00ec6a43e6542558dfde1065a5ffbeb2ded794c62ca35ad0489fa9bc7ee5b2d",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/galaxy-z-trifold-folded.json",
