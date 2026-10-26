@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Xiaomi remote to TV · Motion assets</title>
+<style>
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#e5e7e9;color:#25232a;font:15px system-ui,sans-serif}#scene{position:absolute;inset:0;pointer-events:none}canvas{display:block}#icon{display:none}header{position:absolute;top:20px;left:24px;right:24px;display:flex;justify-content:space-between;align-items:center;gap:16px}h1{font-size:18px;margin:0}a{color:#67558c;text-decoration:none}.controls{position:absolute;left:50%;bottom:24px;transform:translateX(-50%);display:flex;align-items:center;gap:14px;background:#faf7ffed;border:1px solid #d8d3e0;border-radius:24px;padding:12px 16px;width:min(650px,calc(100% - 32px));box-shadow:0 8px 32px #25232a12}button{border:0;border-radius:18px;background:#67558c;color:white;padding:10px 16px;font:inherit;cursor:pointer}button:disabled{opacity:.5;cursor:wait}input{min-width:50px;flex:1;accent-color:#67558c}output{font-variant-numeric:tabular-nums;white-space:nowrap}#status{position:absolute;top:58px;left:24px;font-size:13px;color:#625d68}@media(max-width:500px){header{left:16px;right:16px;align-items:flex-start}h1{font-size:16px;max-width:190px}.controls{gap:8px;padding:10px}button{padding:10px 12px}output{font-size:12px}}
+</style>
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/"}}</script>
+</head>
+<body>
+<div id="scene"><div id="icon"></div></div>
+<header><h1>Xiaomi remote → TV</h1><a href="devices.html">Back to gallery</a></header>
+<div id="status" role="status">Loading animation…</div>
+<div class="controls"><button id="play" disabled>Play</button><button id="replay" disabled>Replay</button><input id="timeline" aria-label="Animation time" type="range" min="0" max="7.5" step="0.001" value="0" disabled><output id="time">0.0 / 7.5 s</output></div>
+<script type="module">
+import {startTvTransition} from './assets/devices/animations/xiaomi-tv-animation.js';
+const play=document.querySelector('#play'),replay=document.querySelector('#replay'),timeline=document.querySelector('#timeline'),time=document.querySelector('#time'),status=document.querySelector('#status');
+let seconds=0,playing=false,previous=0,frame=0,dispose;
+function target(){const width=Math.min(innerWidth,(innerHeight-160)*16/9),height=width*9/16;return{x:(innerWidth-width)/2,y:(innerHeight-height)/2,width,height};}
+function draw(value){seconds=Math.max(0,Math.min(7.5,value));window.renderTransitionFrame(seconds);timeline.value=seconds;time.value=seconds.toFixed(1)+' / 7.5 s';}
+function pause(){playing=false;cancelAnimationFrame(frame);play.textContent='Play';}
+function tick(now){if(!playing)return;draw(seconds+(now-previous)/1000);previous=now;if(seconds>=7.5){pause();return;}frame=requestAnimationFrame(tick);}
+function start(){if(seconds>=7.5)draw(0);playing=true;previous=performance.now();play.textContent='Pause';frame=requestAnimationFrame(tick);}
+play.onclick=()=>playing?pause():start();replay.onclick=()=>{pause();draw(0);start();};timeline.oninput=()=>{pause();draw(Number(timeline.value));};
+addEventListener('keydown',event=>{if(event.code==='Space'&&event.target===document.body){event.preventDefault();play.click();}});
+const screen=document.createElement('canvas');screen.width=1280;screen.height=720;
+const ctx=screen.getContext('2d'),gradient=ctx.createLinearGradient(0,0,1280,720);
+gradient.addColorStop(0,'#183b6b');gradient.addColorStop(.5,'#7771ac');gradient.addColorStop(1,'#57a6a4');ctx.fillStyle=gradient;ctx.fillRect(0,0,1280,720);
+const glow=ctx.createRadialGradient(950,180,20,950,180,600);glow.addColorStop(0,'#c3dfdfaa');glow.addColorStop(1,'#c3dfdf00');ctx.fillStyle=glow;ctx.fillRect(0,0,1280,720);
+const snapshot=screen.toDataURL();
+try{
+ dispose=await startTvTransition({capture:true,origin:{x:innerWidth/2-100,y:innerHeight/2-100,width:200,height:200}},{snapshot:()=>snapshot,target,fade:()=>{},onReady:()=>{},done:()=>false,ready:()=>true,visible:()=>true,prepared:()=>{},handoff:()=>{},complete:()=>{}});
+ draw(0);status.textContent='Icon → 3D remote → camera glide → connected TV';
+ for(const control of [play,replay,timeline])control.disabled=false;
+ if(!matchMedia('(prefers-reduced-motion: reduce)').matches)start();
+ addEventListener('resize',()=>draw(seconds));
+ window.animationPlayer={draw,pause,get seconds(){return seconds;},get playing(){return playing;}};
+}catch(error){status.textContent='Could not load animation: '+error.message;console.error(error);}
+addEventListener('pagehide',()=>{pause();dispose?.();});
+</script>
+</body>
+</html>

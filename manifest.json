@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": "0.1.13",
+  "version": "0.1.14",
   "repository": "https://github.com/feldmandev/motion-assets",
   "modules": [
     "shapes",
@@ -46,8 +46,8 @@
       "bytes": 11306
     },
     "assets/devices/catalog.json": {
-      "sha256": "c9a3e7630b4ae23f897eff55c6b67a97b3d416936a5df289652e73095e3cde3b",
-      "bytes": 8183818
+      "sha256": "e728590a1c8aabc759bf36eebe58e24766d79d9246a347011ecd64f23ab594ed",
+      "bytes": 8169330
     },
     "assets/devices/fold_centering.js": {
       "sha256": "4a351ae0107277fefe9d510f44f3cc0902f9e187b2efc07d2713b9237c634758",
@@ -8402,8 +8402,8 @@
       "bytes": 8007
     },
     "assets/devices/models-manifest.json": {
-      "sha256": "ebedf9f2532d092534a77824de4ba5c0f31cd77cd9deb7c380e72454a65f09bd",
-      "bytes": 69285
+      "sha256": "fae3551cd0503a376dfafe417b677d9e7e74705fb233a6e54ccbb605e096f348",
+      "bytes": 69093
     },
     "assets/devices/nothing_geometry.py": {
       "sha256": "e431193f1c606d9805e66c2072b6daa63a486ee06ce3065a54d39d2717958022",
@@ -19028,6 +19028,122 @@
     "assets/devices/icons/apple/laptops/ic_apple_macbook_air_13_m4_starlight_icon.png": {
       "sha256": "46aa2576698f6890d5bb3357ee26d1f3db1e454f7c74eadc975374c25ddbb125",
       "bytes": 32601
+    },
+    "assets/devices/provenance/xiaomi-tv/prepare_symbols.py": {
+      "sha256": "a39ca29ad7e460708b0af537c3f5f0ccce1e4ed30e87480aedcb63f9572198e7",
+      "bytes": 3330
+    },
+    "assets/devices/previews/xiaomi-tv-connected.png": {
+      "sha256": "bad7ea850330b9282a5736be8dc5fe0cea547b1512e0c2459e48b172bd231b8d",
+      "bytes": 47516
+    },
+    "assets/devices/animations/xiaomi-tv-transition.json": {
+      "sha256": "9aa0463251edd3b656712778cc9c665ac653a54ec5164ce594b35498f9ef7e67",
+      "bytes": 51260
+    },
+    "assets/devices/previews/xiaomi-tv-stick.png": {
+      "sha256": "80312a67ee2b4fc2b24218d58d647361bffcd6768e1caa00414e21c8a79462f2",
+      "bytes": 14703
+    },
+    "assets/devices/models/xiaomi-tv-stick.json": {
+      "sha256": "0f3ad77331118d9ac35aa70fff36e98ed24f229b9af7d065cd0dbf449e4d489b",
+      "bytes": 1267
+    },
+    "assets/devices/icons/xiaomi/remote/xiaomi-tv-remote.png": {
+      "sha256": "9393f24373b71ac8c6029e15ea6700f9963135d06d948c4f1ad2dd3c230cc90f",
+      "bytes": 57416
+    },
+    "assets/devices/provenance/xiaomi-tv/logo-sources/prime-original.svg": {
+      "sha256": "8aaa625b2e8a8ba5247e1035e111b73feb312df08c9ff04e2ef59240595f29a2",
+      "bytes": 8712
+    },
+    "assets/devices/provenance/xiaomi-tv/continuous/prepare_morph.py": {
+      "sha256": "637dbfd35c983d2145da0c2217553c3c6d41b29a253cfcae126e26ef672199d3",
+      "bytes": 9507
+    },
+    "assets/devices/provenance/xiaomi-tv-sources.json": {
+      "sha256": "15e1a0385eb955d7b1b900ea629e81b04866f0bafd9fe42ed7f6a25161810ff2",
+      "bytes": 749
+    },
+    "assets/devices/provenance/xiaomi-tv/logo-sources/netflix-original.svg": {
+      "sha256": "0c12d5374247e16fced565a207d010bf39f1eb55ee0394581ced67b2e6fa7b92",
+      "bytes": 1118
+    },
+    "assets/devices/provenance/xiaomi-tv/prepare_artwork.py": {
+      "sha256": "6bfe0d373ca5a3ad7a7219b697bdc5f00e712bc31edb9236a7ffec5eebfb703a",
+      "bytes": 1297
+    },
+    "assets/devices/icons/xiaomi/tv/xiaomi-tv-connected.png": {
+      "sha256": "bad7ea850330b9282a5736be8dc5fe0cea547b1512e0c2459e48b172bd231b8d",
+      "bytes": 47516
+    },
+    "assets/devices/models/xiaomi-tv-connected.json": {
+      "sha256": "bfa0588d9106f21ac012ea74f58fc15697ec81460f209a1d819e32883235a22a",
+      "bytes": 1280
+    },
+    "assets/devices/provenance/xiaomi-tv/logo-sources/netflix.svg": {
+      "sha256": "78d8c26cb0fa1afd7d71e4e278efbbf9ac754adbeaf9f106a1c74ca6d5e965df",
+      "bytes": 1119
+    },
+    "assets/devices/provenance/xiaomi-tv/build_icons.py": {
+      "sha256": "1075d80b263667ab341ef7849591cdf9ecac3458966024e684a5d88e6524f0ca",
+      "bytes": 5858
+    },
+    "assets/devices/icons/xiaomi/tv/xiaomi-tv-stick.png": {
+      "sha256": "80312a67ee2b4fc2b24218d58d647361bffcd6768e1caa00414e21c8a79462f2",
+      "bytes": 14703
+    },
+    "assets/devices/icons/xiaomi/tv/xiaomi-tv-stick.svg": {
+      "sha256": "0282f718c3409188bb2e61ed8a53959e057a5c8f5117e711d2fb45727e7b8d2e",
+      "bytes": 1406
+    },
+    "assets/devices/provenance/xiaomi-tv/logo-sources/youtube-official.svg": {
+      "sha256": "ed490a808ac585296d37bf2da3b7f3ced93bcc0c5d671b05368405e784a5675f",
+      "bytes": 3743
+    },
+    "assets/devices/provenance/xiaomi-tv/label-paths.json": {
+      "sha256": "3fddd6c31734a8b93b220454935faed0bf2d4d7c429b0dea6e550be96b814f32",
+      "bytes": 36037
+    },
+    "assets/devices/models/xiaomi-tv-remote.json": {
+      "sha256": "976193444aef825b58fbc940d903802745d995a873e39c19ef5ee5962b822bcb",
+      "bytes": 1273
+    },
+    "assets/devices/icons/xiaomi/tv/xiaomi-tv-connected.svg": {
+      "sha256": "825b173dfea94612950f88f32d99b5fad37aca76e1b2c26acbdee540a07b77a6",
+      "bytes": 772
+    },
+    "assets/devices/provenance/xiaomi-tv/symbol-paths.json": {
+      "sha256": "324eb504a30c6c498cfdb57e901c4e4c85104524feada11b096b04d9a0f582df",
+      "bytes": 9205
+    },
+    "assets/devices/previews/xiaomi-tv-remote.png": {
+      "sha256": "9393f24373b71ac8c6029e15ea6700f9963135d06d948c4f1ad2dd3c230cc90f",
+      "bytes": 57416
+    },
+    "assets/devices/provenance/xiaomi-tv-verification.json": {
+      "sha256": "2557b60116ae789355a43b3b7512181ae5e9481b237452c55df83ceea8ff6b9c",
+      "bytes": 806
+    },
+    "assets/devices/provenance/xiaomi-tv/build_scene.py": {
+      "sha256": "45f0efc6bba5b8bc7e861f8cc3bb3f54790d4375dfb3df4c1c9002b093e64840",
+      "bytes": 35066
+    },
+    "assets/devices/provenance/xiaomi-tv/logo-sources/prime-monochrome.svg": {
+      "sha256": "4ba7a8a8b98ab50c4f0702765e93c6fd69b6add05c4d1680157d7851381cefe4",
+      "bytes": 8322
+    },
+    "assets/devices/icons/xiaomi/remote/xiaomi-tv-remote.svg": {
+      "sha256": "469a37753f4256f1b91f19b5ded97ddfb229020cb6cb8587a747d3212814b0d1",
+      "bytes": 76687
+    },
+    "assets/devices/animations/xiaomi-tv-animation.js": {
+      "sha256": "a7767874d95be1ff66328ad65868687ebe736d6a17029182ab1bc2a421e3484b",
+      "bytes": 8961
+    },
+    "assets/devices/provenance/XIAOMI_TV.md": {
+      "sha256": "9f38b14fa237f4f29832b4e90cb05e2a07e1dc9a02511f5ead9726f53a88151c",
+      "bytes": 1761
     }
   }
 }

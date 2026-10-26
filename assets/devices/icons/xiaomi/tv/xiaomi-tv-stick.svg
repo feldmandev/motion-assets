@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="108" height="108" viewBox="0 0 108 108">
+<defs><linearGradient id="matte"><stop stop-color="#111518"/><stop offset=".28" stop-color="#303438"/><stop offset=".65" stop-color="#353a3e"/><stop offset="1" stop-color="#101417"/></linearGradient><linearGradient id="gloss"><stop stop-color="#040607"/><stop offset=".17" stop-color="#080c0e"/><stop offset=".24" stop-color="#3c4449"/><stop offset=".30" stop-color="#11171a"/><stop offset=".65" stop-color="#040608"/><stop offset="1" stop-color="#1e2429"/></linearGradient><linearGradient id="metal"><stop stop-color="#838a8e"/><stop offset=".25" stop-color="#e0e3e4"/><stop offset="1" stop-color="#bbc1c5"/></linearGradient><clipPath id="body"><rect x="44.5" y="27" width="19" height="58.2" rx="7"/></clipPath></defs>
+<rect x="49.6" y="18.1" width="8.8" height="10.5" rx=".6" fill="url(#metal)"/>
+<rect x="44.5" y="27" width="19" height="58.2" rx="7" fill="url(#matte)"/>
+<g clip-path="url(#body)"><rect x="44.5" y="63.9" width="19" height="21.3" fill="url(#gloss)"/><path d="M44.5 63.9H63.5" stroke="#080c10" stroke-width=".25"/></g>
+<text x="54" y="48.5" transform="rotate(90 54 48.5)" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-weight="600" font-size="5.3" fill="#757c80">xiaomi</text>
+<rect x="53.7" y="77.4" width=".6" height="2" rx=".25" fill="#f7fcff"/>
+</svg>

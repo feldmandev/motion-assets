@@ -1,0 +1,13 @@
+{
+  "kind": "procedural-estimate",
+  "sources": [
+    "https://www.mi.com/global/product/xiaomi-tv-stick-4k/",
+    "https://www.mi.com/us/product/xiaomi-tv-stick-4k/specs/"
+  ],
+  "accuracy": {
+    "geometry": "Photo-estimated curved remote, stick and port placement; not vendor CAD or calibrated measurements.",
+    "television": "Illustrative TV assembly and replaceable screen artwork; not a claimed Xiaomi TV model.",
+    "branding": "Vendor and app marks remain owned by their respective owners. Remote gallery icon uses the final simplified GPU-rendered flat pose, wrapped in SVG.",
+    "animation": "Final 68-part Icon geometry morph and material interpolation, followed by the authored camera path. No raster/model opacity crossfade."
+  }
+}

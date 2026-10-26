@@ -1,0 +1,33 @@
+{
+  "id": "xiaomi-tv-remote",
+  "name": "Xiaomi TV Stick remote",
+  "state": "default",
+  "glbUrl": "assets/devices/models/xiaomi-tv-remote.ad243f318f89.glb.gz",
+  "sha256": "ad243f318f898301a497d8cd8465f8a2c6c30356b47152fcb5fc30e82846b883",
+  "screens": [],
+  "frames": [],
+  "slots": {},
+  "finishes": [
+    {
+      "name": "Graphite",
+      "materials": {}
+    }
+  ],
+  "articulation": null,
+  "panels": [],
+  "orientation": "0deg 0deg 0deg",
+  "cameraOrbit": "0deg 35deg auto",
+  "provenance": {
+    "kind": "procedural-estimate",
+    "sources": [
+      "https://www.mi.com/global/product/xiaomi-tv-stick-4k/",
+      "https://www.mi.com/us/product/xiaomi-tv-stick-4k/specs/"
+    ],
+    "accuracy": {
+      "geometry": "Photo-estimated curved remote, stick and port placement; not vendor CAD or calibrated measurements.",
+      "television": "Illustrative TV assembly and replaceable screen artwork; not a claimed Xiaomi TV model.",
+      "branding": "Vendor and app marks remain owned by their respective owners. Remote gallery icon uses the final simplified GPU-rendered flat pose, wrapped in SVG.",
+      "animation": "Final 68-part Icon geometry morph and material interpolation, followed by the authored camera path. No raster/model opacity crossfade."
+    }
+  }
+}

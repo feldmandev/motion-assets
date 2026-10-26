@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "release": "v0.1.13",
-  "archive": "motion-assets-models-0.1.13.zip",
+  "release": "v0.1.14",
+  "archive": "motion-assets-models-0.1.14.zip",
   "files": {
     "assets/devices/models/galaxy-a34.b343a058b447.glb.gz": {
       "sha256": "b343a058b4471152319e5e2cc1178abdb42ec8336286a8824aab49a33d055777",
@@ -1267,6 +1267,26 @@
       "sha256": "55be7ba2bb466d5522a82d295945e645dfc629fee507964a8f2c33999577a277",
       "bytes": 933647,
       "glbSha256": "6f60bb1ddb8f8e985bdfe901a341117253cbd1473e51c87cd843ba13515ec5e6"
+    },
+    "assets/devices/models/xiaomi-tv-stick.02938b30f465.glb.gz": {
+      "sha256": "02938b30f465b6397bf6a4dbd137a5fb1b8429eb32e1a45d61308c87a1142913",
+      "bytes": 78052,
+      "glbSha256": "d402222bb193f68b085c7caff4357c2712593d3257092aeb25872295b6919cae"
+    },
+    "assets/devices/models/xiaomi-tv-remote.ad243f318f89.glb.gz": {
+      "sha256": "ad243f318f898301a497d8cd8465f8a2c6c30356b47152fcb5fc30e82846b883",
+      "bytes": 7178234,
+      "glbSha256": "5289cfafee9346b50e1c3d9c45349636371ff93f700cb8e5686755bc1add277d"
+    },
+    "assets/devices/models/xiaomi-tv-connected.e2c63c14ecbb.glb.gz": {
+      "sha256": "e2c63c14ecbb294a5a075ca04af7aeb52b9d9e405f18ba15b2ccaf08e6159c94",
+      "bytes": 125255,
+      "glbSha256": "e769e5ba8718fb360bdec960919f1de1408aed38f7fc5f833e138cdca525c335"
+    },
+    "assets/devices/models/xiaomi-tv-transition.fed33d108eeb.glb.gz": {
+      "sha256": "fed33d108eeb48ce9100744e98606f6791a69bbf0d4374fa189b368f721b3233",
+      "bytes": 15606800,
+      "glbSha256": "c43080a3a46b56ca2429f3b8f375f3bc49f3fb58696e6cc0d021adb168d234bf"
     }
   }
 }

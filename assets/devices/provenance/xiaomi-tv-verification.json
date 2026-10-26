@@ -1,0 +1,39 @@
+{
+  "families": [
+    {
+      "id": "xiaomi-tv-stick",
+      "meshes": 15,
+      "finitePositions": true
+    },
+    {
+      "id": "xiaomi-tv-remote",
+      "meshes": 67,
+      "finitePositions": true
+    },
+    {
+      "id": "xiaomi-tv-connected",
+      "meshes": 23,
+      "finitePositions": true
+    }
+  ],
+  "transition": {
+    "duration": 7.5,
+    "cameraSamples": 225,
+    "iconMeshes": 68,
+    "introSeconds": 1.15,
+    "finitePositions": true,
+    "sourceGlbSha256": "c43080a3a46b56ca2429f3b8f375f3bc49f3fb58696e6cc0d021adb168d234bf"
+  },
+  "publicationChecks": {
+    "allFloatAccessorsFinite": true,
+    "browserIconMeshes": 68,
+    "reviewedSeconds": [
+      0,
+      1.15,
+      3.5,
+      7.5
+    ],
+    "browserErrors": 0,
+    "scrubbing": "passed"
+  }
+}

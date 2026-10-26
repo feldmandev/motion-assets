@@ -16429,5 +16429,74 @@
       "hasFrame": true,
       "articulated": true
     }
+  },
+  {
+    "model": "xiaomi-tv-stick",
+    "label": "Xiaomi TV Stick 4K",
+    "brand": "xiaomi",
+    "kind": "tv",
+    "variants": [
+      {
+        "color": "graphite",
+        "svg": "assets/devices/icons/xiaomi/tv/xiaomi-tv-stick.svg",
+        "png": "assets/devices/icons/xiaomi/tv/xiaomi-tv-stick.png",
+        "preview": "assets/devices/previews/xiaomi-tv-stick.png"
+      }
+    ],
+    "provenance": "drawn-from-references",
+    "license": "LicenseRef-Device-Artwork",
+    "animation": "xiaomi-tv-animation.html",
+    "model3d": {
+      "states": {
+        "default": "xiaomi-tv-stick"
+      },
+      "hasFrame": false
+    }
+  },
+  {
+    "model": "xiaomi-tv-remote",
+    "label": "Xiaomi TV Stick remote",
+    "brand": "xiaomi",
+    "kind": "remote",
+    "variants": [
+      {
+        "color": "graphite",
+        "svg": "assets/devices/icons/xiaomi/remote/xiaomi-tv-remote.svg",
+        "png": "assets/devices/icons/xiaomi/remote/xiaomi-tv-remote.png",
+        "preview": "assets/devices/previews/xiaomi-tv-remote.png"
+      }
+    ],
+    "provenance": "drawn-from-references",
+    "license": "LicenseRef-Device-Artwork",
+    "animation": "xiaomi-tv-animation.html",
+    "model3d": {
+      "states": {
+        "default": "xiaomi-tv-remote"
+      },
+      "hasFrame": false
+    }
+  },
+  {
+    "model": "xiaomi-tv-connected",
+    "label": "TV with Xiaomi TV Stick",
+    "brand": "xiaomi",
+    "kind": "tv",
+    "variants": [
+      {
+        "color": "graphite",
+        "svg": "assets/devices/icons/xiaomi/tv/xiaomi-tv-connected.svg",
+        "png": "assets/devices/icons/xiaomi/tv/xiaomi-tv-connected.png",
+        "preview": "assets/devices/previews/xiaomi-tv-connected.png"
+      }
+    ],
+    "provenance": "drawn-from-references",
+    "license": "LicenseRef-Device-Artwork",
+    "animation": "xiaomi-tv-animation.html",
+    "model3d": {
+      "states": {
+        "default": "xiaomi-tv-connected"
+      },
+      "hasFrame": false
+    }
   }
 ]
