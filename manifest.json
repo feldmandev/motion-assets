@@ -46,8 +46,8 @@
       "bytes": 11306
     },
     "assets/devices/catalog.json": {
-      "sha256": "e728590a1c8aabc759bf36eebe58e24766d79d9246a347011ecd64f23ab594ed",
-      "bytes": 8169330
+      "sha256": "cb5c75cbb0b2a115be14b4369822808cae5606d9dfed4af36f68377eb77ae8a0",
+      "bytes": 8185832
     },
     "assets/devices/fold_centering.js": {
       "sha256": "4a351ae0107277fefe9d510f44f3cc0902f9e187b2efc07d2713b9237c634758",
@@ -8402,8 +8402,8 @@
       "bytes": 8007
     },
     "assets/devices/models-manifest.json": {
-      "sha256": "fae3551cd0503a376dfafe417b677d9e7e74705fb233a6e54ccbb605e096f348",
-      "bytes": 69093
+      "sha256": "a475e8ae11838a7886f60987bd7b07677c98679e4f27bb0ad02f842c690bfbed",
+      "bytes": 70385
     },
     "assets/devices/nothing_geometry.py": {
       "sha256": "e431193f1c606d9805e66c2072b6daa63a486ee06ce3065a54d39d2717958022",
@@ -19046,8 +19046,8 @@
       "bytes": 14703
     },
     "assets/devices/models/xiaomi-tv-stick.json": {
-      "sha256": "0f3ad77331118d9ac35aa70fff36e98ed24f229b9af7d065cd0dbf449e4d489b",
-      "bytes": 1267
+      "sha256": "da363311cf4fe35c5497976edf01d77132788d94802dbfef4a89e589c0bbf1d9",
+      "bytes": 1453
     },
     "assets/devices/icons/xiaomi/remote/xiaomi-tv-remote.png": {
       "sha256": "9393f24373b71ac8c6029e15ea6700f9963135d06d948c4f1ad2dd3c230cc90f",
@@ -19078,8 +19078,8 @@
       "bytes": 47516
     },
     "assets/devices/models/xiaomi-tv-connected.json": {
-      "sha256": "bfa0588d9106f21ac012ea74f58fc15697ec81460f209a1d819e32883235a22a",
-      "bytes": 1280
+      "sha256": "4907f9c7c88d132c88868e0dd16555ab7d205a54bfebaf3edd9fcf172a79b586",
+      "bytes": 1466
     },
     "assets/devices/provenance/xiaomi-tv/logo-sources/netflix.svg": {
       "sha256": "78d8c26cb0fa1afd7d71e4e278efbbf9ac754adbeaf9f106a1c74ca6d5e965df",
@@ -19106,8 +19106,8 @@
       "bytes": 36037
     },
     "assets/devices/models/xiaomi-tv-remote.json": {
-      "sha256": "976193444aef825b58fbc940d903802745d995a873e39c19ef5ee5962b822bcb",
-      "bytes": 1273
+      "sha256": "3586260a1e39b836e9a1b090b859631a806e21f58bc15539fd451b4fdb89d7bc",
+      "bytes": 1459
     },
     "assets/devices/icons/xiaomi/tv/xiaomi-tv-connected.svg": {
       "sha256": "825b173dfea94612950f88f32d99b5fad37aca76e1b2c26acbdee540a07b77a6",

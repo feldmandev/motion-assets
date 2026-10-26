@@ -16,7 +16,7 @@
   "articulation": null,
   "panels": [],
   "orientation": "0deg 0deg 0deg",
-  "cameraOrbit": "0deg 35deg auto",
+  "cameraOrbit": "0deg 80deg auto",
   "provenance": {
     "kind": "procedural-estimate",
     "sources": [
@@ -29,5 +29,11 @@
       "branding": "Vendor and app marks remain owned by their respective owners. Remote gallery icon uses the final simplified GPU-rendered flat pose, wrapped in SVG.",
       "animation": "Final 68-part Icon geometry morph and material interpolation, followed by the authored camera path. No raster/model opacity crossfade."
     }
+  },
+  "orbits": {
+    "front": "0deg 90deg auto",
+    "rear": "180deg 90deg auto",
+    "side": "90deg 80deg auto",
+    "reset": "0deg 80deg auto"
   }
 }

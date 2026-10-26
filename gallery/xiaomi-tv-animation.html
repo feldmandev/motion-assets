@@ -18,6 +18,7 @@
 import {startTvTransition} from './assets/devices/animations/xiaomi-tv-animation.js';
 const play=document.querySelector('#play'),replay=document.querySelector('#replay'),timeline=document.querySelector('#timeline'),time=document.querySelector('#time'),status=document.querySelector('#status');
 let seconds=0,playing=false,previous=0,frame=0,dispose;
+const origin={x:innerWidth/2-100,y:innerHeight/2-100,width:200,height:200};
 function target(){const width=Math.min(innerWidth,(innerHeight-160)*16/9),height=width*9/16;return{x:(innerWidth-width)/2,y:(innerHeight-height)/2,width,height};}
 function draw(value){seconds=Math.max(0,Math.min(7.5,value));window.renderTransitionFrame(seconds);timeline.value=seconds;time.value=seconds.toFixed(1)+' / 7.5 s';}
 function pause(){playing=false;cancelAnimationFrame(frame);play.textContent='Play';}
@@ -31,11 +32,11 @@ gradient.addColorStop(0,'#183b6b');gradient.addColorStop(.5,'#7771ac');gradient.
 const glow=ctx.createRadialGradient(950,180,20,950,180,600);glow.addColorStop(0,'#c3dfdfaa');glow.addColorStop(1,'#c3dfdf00');ctx.fillStyle=glow;ctx.fillRect(0,0,1280,720);
 const snapshot=screen.toDataURL();
 try{
- dispose=await startTvTransition({capture:true,origin:{x:innerWidth/2-100,y:innerHeight/2-100,width:200,height:200}},{snapshot:()=>snapshot,target,fade:()=>{},onReady:()=>{},done:()=>false,ready:()=>true,visible:()=>true,prepared:()=>{},handoff:()=>{},complete:()=>{}});
+ dispose=await startTvTransition({capture:true,origin},{snapshot:()=>snapshot,target,fade:()=>{},onReady:()=>{},done:()=>false,ready:()=>true,visible:()=>true,prepared:()=>{},handoff:()=>{},complete:()=>{}});
  draw(0);status.textContent='Icon → 3D remote → camera glide → connected TV';
  for(const control of [play,replay,timeline])control.disabled=false;
  if(!matchMedia('(prefers-reduced-motion: reduce)').matches)start();
- addEventListener('resize',()=>draw(seconds));
+ addEventListener('resize',()=>{origin.x=innerWidth/2-100;origin.y=innerHeight/2-100;draw(seconds);});
  window.animationPlayer={draw,pause,get seconds(){return seconds;},get playing(){return playing;}};
 }catch(error){status.textContent='Could not load animation: '+error.message;console.error(error);}
 addEventListener('pagehide',()=>{pause();dispose?.();});
