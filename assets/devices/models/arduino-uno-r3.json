@@ -1,0 +1,167 @@
+{
+  "id": "arduino-uno-r3",
+  "name": "Arduino Uno R3",
+  "state": "default",
+  "glbUrl": "assets/devices/models/arduino-uno-r3.03e0338f1dcf.glb.gz",
+  "sha256": "03e0338f1dcf4153829ad1062f94e8bfba7c9696ac699fa1bf1af2058e529629",
+  "body_mm": {
+    "width": 68.6,
+    "height": 15.0,
+    "depth": 53.4,
+    "pcb_thickness": 1.6
+  },
+  "screens": [],
+  "frames": [],
+  "slots": {
+    "pcb": "Arduino PCB",
+    "silkscreen": "PCB silkscreen",
+    "metal": "Connector shield",
+    "pin_silver": "Tinned pins & pads",
+    "plastic": "Header & jack housing"
+  },
+  "finishes": [
+    {
+      "name": "Teal",
+      "materials": {
+        "pcb": {
+          "rgb": [
+            0.0,
+            0.506,
+            0.518
+          ],
+          "rough": 0.34,
+          "metal": 0.05
+        },
+        "silkscreen": {
+          "rgb": [
+            0.94,
+            0.96,
+            0.96
+          ],
+          "rough": 0.42,
+          "metal": 0.0
+        },
+        "metal": {
+          "rgb": [
+            0.79,
+            0.82,
+            0.85
+          ],
+          "rough": 0.22,
+          "metal": 0.88
+        },
+        "pin_silver": {
+          "rgb": [
+            0.78,
+            0.8,
+            0.83
+          ],
+          "rough": 0.38,
+          "metal": 0.8
+        },
+        "plastic": {
+          "rgb": [
+            0.11,
+            0.12,
+            0.14
+          ],
+          "rough": 0.42,
+          "metal": 0.04
+        }
+      }
+    }
+  ],
+  "articulation": null,
+  "panels": [],
+  "orientation": "0deg 0deg 0deg",
+  "introOrbit": "0deg 0deg",
+  "icon_morph": {
+    "mode": "planar",
+    "viewBox": 108,
+    "scale": 1220.0,
+    "originX": 57.977199999999996,
+    "originY": 53.96339999999999,
+    "planeY": 0.0008
+  },
+  "exposure": 0.8,
+  "cameraOrbit": "-22deg 50deg auto",
+  "orbits": {
+    "front": "0deg 62deg auto",
+    "back": "180deg 62deg auto",
+    "side": "-90deg 80deg auto",
+    "angle": "-22deg 50deg auto",
+    "reset": "-22deg 50deg auto"
+  },
+  "peripheral": {
+    "category": "microcontroller",
+    "architecture": "avr-atmega328p",
+    "transports": [
+      "usb",
+      "serial"
+    ],
+    "usb": {
+      "vendorIds": [
+        9025,
+        10755
+      ],
+      "productIds": [
+        67,
+        1,
+        579
+      ],
+      "matches": [
+        {
+          "vendorId": 9025,
+          "productId": 67,
+          "name": "Arduino Uno R3"
+        },
+        {
+          "vendorId": 9025,
+          "productId": 1,
+          "name": "Arduino Uno"
+        },
+        {
+          "vendorId": 9025,
+          "productId": 579,
+          "name": "Arduino Uno R3"
+        },
+        {
+          "vendorId": 10755,
+          "productId": 67,
+          "name": "Arduino Uno R3"
+        }
+      ],
+      "namePatterns": [
+        "Arduino Uno",
+        "ATmega328P",
+        "ATmega16U2"
+      ]
+    },
+    "pins": {
+      "digital": 14,
+      "pwm": [
+        3,
+        5,
+        6,
+        9,
+        10,
+        11
+      ],
+      "analog": 6,
+      "voltage": 5.0
+    }
+  },
+  "provenance": {
+    "kind": "procedural-peripheral-board",
+    "profile": "assets/devices/profiles/arduino-uno-r3.json",
+    "sources": [
+      "https://docs.arduino.cc/hardware/uno-rev3/",
+      "https://store.arduino.cc/products/arduino-uno-rev3"
+    ],
+    "accuracy": {
+      "body_dimensions": "Published Arduino Uno R3 PCB outline (68.6 x 53.4 mm) and four mounting holes.",
+      "component_geometry": "Procedural USB-B port, DC barrel jack, ATmega328P DIP-28 socket, 2.54 mm female headers, ICSP headers, crystal, reset switch and SMD status LEDs.",
+      "finishes": "Classic Arduino teal solder mask with white silkscreen, brushed nickel connectors and matte black headers."
+    }
+  }
+}
