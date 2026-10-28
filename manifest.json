@@ -66,8 +66,8 @@
       "bytes": 2961
     },
     "assets/devices/catalog.json": {
-      "sha256": "daa24e0eb2241461b9f537d7505b4cc5f481fcee1b19229a3b2543f3972a81d2",
-      "bytes": 8281342
+      "sha256": "ba3c318898a7036c99b19accefbb7e75f74d12957284e49d7134848f00840452",
+      "bytes": 9733671
     },
     "assets/devices/fold_centering.js": {
       "sha256": "4a351ae0107277fefe9d510f44f3cc0902f9e187b2efc07d2713b9237c634758",
@@ -19480,6 +19480,102 @@
     "assets/devices/icons/generic/tablets/ic_generic_tablet_rose_quartz_icon.png": {
       "sha256": "812e6c66b4ca746ab76d17e178b86df484eaa956ad05026f5851c80eda7c1799",
       "bytes": 27828
+    },
+    "assets/devices/icons/generic/peripherals/ic_generic_speaker_graphite_icon.svg": {
+      "sha256": "ecc7082e1e21bf23846031469d3a3c58a2a20103f8c523fd73790228bfc96c27",
+      "bytes": 171619
+    },
+    "assets/devices/icons/generic/peripherals/ic_generic_speaker_graphite_icon.png": {
+      "sha256": "cb2612f3393e6fcb2f9fa2de66ab8f350f13383400b20b1cffbe9f64d891d31e",
+      "bytes": 66484
+    },
+    "assets/devices/previews/generic_speaker_graphite.png": {
+      "sha256": "05441b8042b774af16e43afe85ed8c44232487ec8daced12cc9ea201e0ec52f6",
+      "bytes": 9894
+    },
+    "assets/devices/icons/generic/peripherals/ic_generic_speaker_cool_orange_icon.svg": {
+      "sha256": "10831dff392bc62389c6a4ed5a3b0f799ac1c71b35869cc501a939a04dadd6bf",
+      "bytes": 171619
+    },
+    "assets/devices/icons/generic/peripherals/ic_generic_speaker_cool_orange_icon.png": {
+      "sha256": "ab4ab62742e6a14758400e9dc4cdedd925234589cebe0d9e5dd1adca7aade3b2",
+      "bytes": 67227
+    },
+    "assets/devices/previews/generic_speaker_cool_orange.png": {
+      "sha256": "80b16305705d3f25ec30c09c7bd34c9d94545998429064247c3e17a8629aa369",
+      "bytes": 9720
+    },
+    "assets/devices/icons/generic/peripherals/ic_generic_speaker_purple_icon.svg": {
+      "sha256": "d12d90c9aae7f67d751e59b29fb29c81dc2d0c763933249c4e6a67104e8338d1",
+      "bytes": 171619
+    },
+    "assets/devices/icons/generic/peripherals/ic_generic_speaker_purple_icon.png": {
+      "sha256": "d0682b5539ab41e6da0868e10165b79b4f7cb3c860e8de34d60148d439a47556",
+      "bytes": 65184
+    },
+    "assets/devices/previews/generic_speaker_purple.png": {
+      "sha256": "d35cc96f134dd9c8b71b241f00d44aff86a750aba7635c4fff57857a370fa7b5",
+      "bytes": 9251
+    },
+    "assets/devices/icons/generic/peripherals/ic_generic_speaker_green_icon.svg": {
+      "sha256": "eb616c28d5bb3a5398b4a6d0fcec378ecce28e3b38cedf0aded365b778f7cc28",
+      "bytes": 171619
+    },
+    "assets/devices/icons/generic/peripherals/ic_generic_speaker_green_icon.png": {
+      "sha256": "1125d0017e2a3e449ae1a594cd91f060202ee0b39c950294a0952256a27d3f7c",
+      "bytes": 67198
+    },
+    "assets/devices/previews/generic_speaker_green.png": {
+      "sha256": "d7b86009f400ddb8142bdeb929839698d7aeb353ce0a0582d0778716835b3dfc",
+      "bytes": 9736
+    },
+    "assets/devices/icons/generic/peripherals/ic_generic_speaker_deep_blue_icon.svg": {
+      "sha256": "79d2cc48d26a26b90892897e99d3f6ba2601fcdc90aee5bc552d8cc23536ec83",
+      "bytes": 171619
+    },
+    "assets/devices/icons/generic/peripherals/ic_generic_speaker_deep_blue_icon.png": {
+      "sha256": "0e4d5c162bfb487605912479dd559725332575c1cfb87d488e39def67e44e289",
+      "bytes": 64784
+    },
+    "assets/devices/previews/generic_speaker_deep_blue.png": {
+      "sha256": "fe973d2013db8285877889411a49bbe1f5f1b6f819a75bd62f8396c445173abd",
+      "bytes": 9124
+    },
+    "assets/devices/icons/generic/peripherals/ic_generic_speaker_light_blue_icon.svg": {
+      "sha256": "359b83a361514d413506e8e159312d3e78a0ecc10842992e95deba50a1a3686a",
+      "bytes": 171619
+    },
+    "assets/devices/icons/generic/peripherals/ic_generic_speaker_light_blue_icon.png": {
+      "sha256": "5134ec5db2c93eb2e330596a4f079bbeb53eb78e205cd44455da4a73c3b72709",
+      "bytes": 68262
+    },
+    "assets/devices/previews/generic_speaker_light_blue.png": {
+      "sha256": "2884b83cb7570bfe7ec02ecfb77ff2fc4d0139d3ab27336104da78ca13a1ac67",
+      "bytes": 10166
+    },
+    "assets/devices/icons/generic/peripherals/ic_generic_speaker_burgundy_icon.svg": {
+      "sha256": "e4dde391479e197d27facd44495bc910548251add131ae35176ab84708abaafe",
+      "bytes": 171619
+    },
+    "assets/devices/icons/generic/peripherals/ic_generic_speaker_burgundy_icon.png": {
+      "sha256": "8628faf1591bf6994225040ce211ed9047b166b0ce133891fa2b799fe4096a03",
+      "bytes": 54412
+    },
+    "assets/devices/previews/generic_speaker_burgundy.png": {
+      "sha256": "62821e365ba0052334b7f94cb847270246abd9bf206903c83acba502f3fdc3f6",
+      "bytes": 6536
+    },
+    "assets/devices/icons/generic/peripherals/ic_generic_speaker_rose_quartz_icon.svg": {
+      "sha256": "fb4401fcb395fc23a4bd422dcc63e8fccf80fbaa61a16df0572605a6b9928a85",
+      "bytes": 171619
+    },
+    "assets/devices/icons/generic/peripherals/ic_generic_speaker_rose_quartz_icon.png": {
+      "sha256": "84e8e919b56d2f39827a9e15eed0a81eea50a1053c9c39512b3cc518a06009b3",
+      "bytes": 66464
+    },
+    "assets/devices/previews/generic_speaker_rose_quartz.png": {
+      "sha256": "ccaba8591f70cebcd3831981dccc99785dadad8e3a7cbb5ef0c855bd54b24f49",
+      "bytes": 9696
     }
   }
 }
