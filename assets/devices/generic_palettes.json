@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "description": "Shared finishes for every brand-neutral generic device and generic peripheral. Each palette is one tonal ramp from highlight to deep; artwork and 3D materials map their graphite tones onto the same ramp position. Graphite is the original generic finish and its stops are the exact existing generic values.",
+  "roles": [
+    "highlight",
+    "light",
+    "mid",
+    "dark",
+    "housing",
+    "deep"
+  ],
+  "palettes": [
+    {
+      "id": "graphite",
+      "name": "Graphite",
+      "stops": {
+        "highlight": "#e0e7ee",
+        "light": "#c2ced9",
+        "mid": "#9cabbc",
+        "dark": "#63758a",
+        "housing": "#53677b",
+        "deep": "#344b63"
+      }
+    },
+    {
+      "id": "cool_orange",
+      "name": "Cool Orange",
+      "stops": {
+        "highlight": "#ffe0c7",
+        "light": "#ffbf8f",
+        "mid": "#f2965a",
+        "dark": "#cf6a2c",
+        "housing": "#b45722",
+        "deep": "#7c3612"
+      }
+    },
+    {
+      "id": "purple",
+      "name": "Purple",
+      "reference": "Deep violet keyed to Galaxy S24 Cobalt Violet (repo galaxy_s24 artwork #5c567c/#403c57/#2e2a47), slightly richer so it reads clearly as purple.",
+      "stops": {
+        "highlight": "#cbc3ee",
+        "light": "#9f93d8",
+        "mid": "#7567b9",
+        "dark": "#4f4685",
+        "housing": "#433b72",
+        "deep": "#2a2347"
+      }
+    },
+    {
+      "id": "green",
+      "name": "Light Green",
+      "stops": {
+        "highlight": "#edf5d9",
+        "light": "#d5e6b9",
+        "mid": "#b7d18c",
+        "dark": "#90ab64",
+        "housing": "#788f53",
+        "deep": "#4e6336"
+      },
+      "reference": "Light mint inspired by OnePlus 15R Mint Breeze"
+    },
+    {
+      "id": "deep_blue",
+      "name": "Deep Blue",
+      "stops": {
+        "highlight": "#bccbf1",
+        "light": "#8299df",
+        "mid": "#4d6ac2",
+        "dark": "#2a4790",
+        "housing": "#213c7c",
+        "deep": "#132350"
+      }
+    },
+    {
+      "id": "light_blue",
+      "name": "Light Blue",
+      "stops": {
+        "highlight": "#e6f5fd",
+        "light": "#c6e6f8",
+        "mid": "#9dd0ef",
+        "dark": "#64a6d3",
+        "housing": "#5294c2",
+        "deep": "#2f6890"
+      }
+    },
+    {
+      "id": "burgundy",
+      "name": "Burgundy",
+      "reference": "Galaxy S22 Ultra Burgundy",
+      "stops": {
+        "highlight": "#dfc2c9",
+        "light": "#bd949e",
+        "mid": "#95646f",
+        "dark": "#643c45",
+        "housing": "#512f38",
+        "deep": "#3b1d24"
+      }
+    },
+    {
+      "id": "rose_quartz",
+      "name": "Rose Quartz",
+      "reference": "Pixel 9 Pro XL Rose Quartz",
+      "stops": {
+        "highlight": "#fcecf0",
+        "light": "#f4dce3",
+        "mid": "#e9c5d1",
+        "dark": "#cda0b2",
+        "housing": "#b88b9e",
+        "deep": "#8d6075"
+      }
+    }
+  ]
+}

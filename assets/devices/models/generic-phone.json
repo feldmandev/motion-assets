@@ -38,8 +38,204 @@
     }
   ],
   "adaptive": true,
-  "slots": {},
-  "finishes": [],
+  "slots": {
+    "back": "Body",
+    "bar": "Camera housing"
+  },
+  "finishes": [
+    {
+      "name": "Graphite",
+      "palette": "graphite",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.7813,
+            0.8205,
+            0.8554
+          ],
+          "metal": 0.15,
+          "rough": 0.45
+        },
+        "bar": {
+          "rgb": [
+            0.6059,
+            0.6681,
+            0.7236
+          ],
+          "metal": 0.15,
+          "rough": 0.45
+        }
+      }
+    },
+    {
+      "name": "Cool Orange",
+      "palette": "cool_orange",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.9255,
+            0.5608,
+            0.3294
+          ],
+          "metal": 0.15,
+          "rough": 0.45
+        },
+        "bar": {
+          "rgb": [
+            0.7059,
+            0.3412,
+            0.1333
+          ],
+          "metal": 0.15,
+          "rough": 0.45
+        }
+      }
+    },
+    {
+      "name": "Purple",
+      "palette": "purple",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.4353,
+            0.3843,
+            0.6941
+          ],
+          "metal": 0.15,
+          "rough": 0.45
+        },
+        "bar": {
+          "rgb": [
+            0.2627,
+            0.2314,
+            0.4471
+          ],
+          "metal": 0.15,
+          "rough": 0.45
+        }
+      }
+    },
+    {
+      "name": "Light Green",
+      "palette": "green",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.6902,
+            0.7961,
+            0.5255
+          ],
+          "metal": 0.15,
+          "rough": 0.45
+        },
+        "bar": {
+          "rgb": [
+            0.4706,
+            0.5608,
+            0.3255
+          ],
+          "metal": 0.15,
+          "rough": 0.45
+        }
+      }
+    },
+    {
+      "name": "Deep Blue",
+      "palette": "deep_blue",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.2824,
+            0.3961,
+            0.7294
+          ],
+          "metal": 0.15,
+          "rough": 0.45
+        },
+        "bar": {
+          "rgb": [
+            0.1294,
+            0.2353,
+            0.4863
+          ],
+          "metal": 0.15,
+          "rough": 0.45
+        }
+      }
+    },
+    {
+      "name": "Light Blue",
+      "palette": "light_blue",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.5804,
+            0.7882,
+            0.9176
+          ],
+          "metal": 0.15,
+          "rough": 0.45
+        },
+        "bar": {
+          "rgb": [
+            0.3216,
+            0.5804,
+            0.7608
+          ],
+          "metal": 0.15,
+          "rough": 0.45
+        }
+      }
+    },
+    {
+      "name": "Burgundy",
+      "palette": "burgundy",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.5529,
+            0.3686,
+            0.4118
+          ],
+          "metal": 0.15,
+          "rough": 0.45
+        },
+        "bar": {
+          "rgb": [
+            0.3176,
+            0.1843,
+            0.2196
+          ],
+          "metal": 0.15,
+          "rough": 0.45
+        }
+      }
+    },
+    {
+      "name": "Rose Quartz",
+      "palette": "rose_quartz",
+      "materials": {
+        "back": {
+          "rgb": [
+            0.8941,
+            0.749,
+            0.8
+          ],
+          "metal": 0.15,
+          "rough": 0.45
+        },
+        "bar": {
+          "rgb": [
+            0.7216,
+            0.5451,
+            0.6196
+          ],
+          "metal": 0.15,
+          "rough": 0.45
+        }
+      }
+    }
+  ],
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/generic-phone.json",

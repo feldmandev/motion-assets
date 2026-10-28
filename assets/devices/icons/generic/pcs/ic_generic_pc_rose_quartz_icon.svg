@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="54" height="46" viewBox="27 31 54 46">
+<defs>
+<linearGradient id="body" gradientUnits="userSpaceOnUse" x1="54" y1="34" x2="54" y2="66"><stop stop-color="#fcecf0"/><stop offset=".24" stop-color="#f4dce3"/><stop offset=".55" stop-color="#e9c5d1"/><stop offset="1" stop-color="#cda0b2"/></linearGradient>
+<linearGradient id="stand" gradientUnits="userSpaceOnUse" x1="54" y1="66" x2="54" y2="74.5"><stop stop-color="#cda0b2"/><stop offset=".5" stop-color="#d5abbb"/><stop offset="1" stop-color="#c79aac"/></linearGradient>
+<linearGradient id="glass" gradientUnits="userSpaceOnUse" x1="39" y1="35.5" x2="65" y2="64.5"><stop stop-color="#7897ae"/><stop offset=".4" stop-color="#4c6d89"/><stop offset=".74" stop-color="#304c68"/><stop offset="1" stop-color="#1b3049"/></linearGradient>
+<radialGradient id="light" gradientUnits="userSpaceOnUse" cx="36" cy="37" r="37" gradientTransform="translate(0 12.95) scale(1 .65)"><stop stop-color="#c2dde5" stop-opacity=".58"/><stop offset=".55" stop-color="#a4c8dd" stop-opacity=".14"/><stop offset="1" stop-color="#a4c8dd" stop-opacity="0"/></radialGradient>
+</defs>
+<desc>Generic desktop monitor in the Documents device icon style: softly rounded graphite body, rich blue glass and a curved graphite stand continuous with the bezel. Equal 2.25-unit bezels on every side; concentric outer and screen corner radii of 5 and 2.75 units.</desc>
+<path d="M51 64h6v4.8c0 1.8.8 2.7 2.6 3l3.4.5c1.7.3 2.5.9 2.5 1.7 0 .4-.4.7-1 .7h-21c-.6 0-1-.3-1-.7 0-.8.8-1.4 2.5-1.7l3.4-.5c1.8-.3 2.6-1.2 2.6-3z" fill="url(#stand)"/>
+<rect x="30" y="34" width="48" height="32" rx="5" fill="url(#body)"/>
+<rect x="32.25" y="36.25" width="43.5" height="27.5" rx="2.75" fill="url(#glass)"/>
+<rect x="32.25" y="36.25" width="43.5" height="27.5" rx="2.75" fill="url(#light)"/>
+<circle cx="54" cy="35.125" r=".65" fill="#344b63"/>
+</svg>
