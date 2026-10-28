@@ -89,12 +89,12 @@
       "name": "Burgundy",
       "reference": "Galaxy S22 Ultra Burgundy",
       "stops": {
-        "highlight": "#dfc2c9",
-        "light": "#bd949e",
-        "mid": "#95646f",
-        "dark": "#643c45",
-        "housing": "#512f38",
-        "deep": "#3b1d24"
+        "highlight": "#aa8791",
+        "light": "#98727e",
+        "mid": "#885e6c",
+        "dark": "#79515f",
+        "housing": "#704956",
+        "deep": "#623e4a"
       }
     },
     {

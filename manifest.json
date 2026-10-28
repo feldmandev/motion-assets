@@ -66,7 +66,7 @@
       "bytes": 2961
     },
     "assets/devices/catalog.json": {
-      "sha256": "b813a8806ec94b969ea12a1c3797d637b28dc7ada5bd2b990ccfcf8dfe757be7",
+      "sha256": "daa24e0eb2241461b9f537d7505b4cc5f481fcee1b19229a3b2543f3972a81d2",
       "bytes": 8281342
     },
     "assets/devices/fold_centering.js": {
@@ -9446,15 +9446,15 @@
       "bytes": 12148
     },
     "assets/devices/models/generic-pc.json": {
-      "sha256": "321619ce58fec68668d9f6e0798a60cbbca4018dedcb14a46ed0d946b51abfc5",
+      "sha256": "4d39ca5cb72cf884f0693a8b17938cf4b164d98a28bcbcaa0faad0a482dbe86c",
       "bytes": 6488
     },
     "assets/devices/models/generic-phone.json": {
-      "sha256": "afe5e8ee0b99fb984f9c0ec7acb5b87a97e9c3ab6a4789cdd76f4c0942d81616",
+      "sha256": "dd5cc4d02727529efe1cbe9c79679c865547435369aa6a77d23c9b6752fe9c53",
       "bytes": 5055
     },
     "assets/devices/models/generic-tablet.json": {
-      "sha256": "09bd568b03fb58de659207972bc0d01c4eecbac2958878791d270c448bbd8955",
+      "sha256": "26ffe187bc5c979295f2fe4d7b801c3181a76b22785fbfdc185bf89807287d34",
       "bytes": 5062
     },
     "assets/devices/models/googlebook-acer-14.json": {
@@ -19166,7 +19166,7 @@
       "bytes": 11357
     },
     "assets/devices/generic_palettes.json": {
-      "sha256": "1630ca4be531ed646f4d93de1d2767bae22b1a18ae8528735a2220dab7b34a79",
+      "sha256": "c1f7349b0bb179990c9f377d8ab32bf049b3d62c00c702af82137b2553c5f2c0",
       "bytes": 2984
     },
     "assets/devices/icons/generic/laptops/ic_generic_googlebook_cool_orange_icon.svg": {
@@ -19210,8 +19210,8 @@
       "bytes": 1910
     },
     "assets/devices/models/generic-googlebook.json": {
-      "sha256": "ca80b4ac450dedc5a499418b8c35822a9051f931f49238fcafc8180386eac280",
-      "bytes": 12189
+      "sha256": "2b54e070de983bc2f7773396ff6f32938620803367dc0471b92331e2bf010d88",
+      "bytes": 12201
     },
     "assets/devices/icons/generic/pcs/ic_generic_pc_cool_orange_icon.svg": {
       "sha256": "3356ff8ab3a94b9bc924273c130a61cf798ef649c03c4a4338b0129002a8c367",
@@ -19394,12 +19394,12 @@
       "bytes": 28846
     },
     "assets/devices/icons/generic/laptops/ic_generic_googlebook_burgundy_icon.svg": {
-      "sha256": "b7086babe93b3072e59225446c65f8dcd8815a3d8c06cb1facf5059575d6bcd6",
+      "sha256": "654287956801e0c045dc3b9fc24aea5d749b899197efd24d0eef6cf211dd33c3",
       "bytes": 2074
     },
     "assets/devices/previews/generic_googlebook_burgundy.png": {
-      "sha256": "600bdf3734dd9ce6fe616f12e950e0a7902dc67ec4af3abdb467b3651c531050",
-      "bytes": 2029
+      "sha256": "c4017d90414655d554b3f4719b8c0dc565bf1896f9dff2f0c00dff485397c8ba",
+      "bytes": 1775
     },
     "assets/devices/icons/generic/laptops/ic_generic_googlebook_rose_quartz_icon.svg": {
       "sha256": "88f0e4a2fc7f1649345f99334323623eb6ff440890e7ae674ceddb91693d69ce",
@@ -19410,16 +19410,16 @@
       "bytes": 1824
     },
     "assets/devices/icons/generic/pcs/ic_generic_pc_burgundy_icon.svg": {
-      "sha256": "681c8471dc4fa8af5440e2342ef74ae06d71241a1c698bfce86f5b4c81f2862e",
+      "sha256": "0d0d3ac0d3b1c55fbb6b54f3d1a2f957acd56ca32d9e617149de3dbadf10f369",
       "bytes": 1891
     },
     "assets/devices/previews/generic_pc_burgundy.png": {
-      "sha256": "2bf8f766cccee8e058ea6db3b08481f378152d53495ed36a700505bb2a3a8860",
-      "bytes": 8197
+      "sha256": "d92bce1da51816df39cccd70933e5afab1ff0491fc55bff937527f72bb598fa1",
+      "bytes": 7802
     },
     "assets/devices/icons/generic/pcs/ic_generic_pc_burgundy_icon.png": {
-      "sha256": "e711915a0ddf01b3b05283ab06255a12defcaa67d13539590e5bdda2ea2df77a",
-      "bytes": 164632
+      "sha256": "3e629ff94f14d54987dc2c00220101a2d7f3c05079f4831e726c338a43f8cc96",
+      "bytes": 163075
     },
     "assets/devices/icons/generic/pcs/ic_generic_pc_rose_quartz_icon.svg": {
       "sha256": "5b0a8a409e35b8806ccc1f6e61756262d6061ec9b285227fd6752254e20d2213",
@@ -19434,16 +19434,16 @@
       "bytes": 165632
     },
     "assets/devices/icons/generic/phones/ic_generic_phone_burgundy_icon.svg": {
-      "sha256": "94cf3e9971cde808948e451fc74eb2108c1f1fdf135f7d51da068ad9ac4dd333",
+      "sha256": "e9bb0950d38bece5315adb8c6f736c6939091142063a3f76de859b7eb0d857fc",
       "bytes": 1353
     },
     "assets/devices/previews/generic_phone_burgundy.png": {
-      "sha256": "3d254cf70a763c7bbc6501b1514e61586605c0735fc3e607b0811d68ae6ac514",
-      "bytes": 12231
+      "sha256": "3d3bca3b1694b1b75b952bf9670d059f7bf9b8e59a542fc1e8ba103eb1f0938c",
+      "bytes": 12299
     },
     "assets/devices/icons/generic/phones/ic_generic_phone_burgundy_icon.png": {
-      "sha256": "42da0641e270bbb0ea1c5e1654942d16d9432971dd72fe2ea01e1553e88a9a8a",
-      "bytes": 196755
+      "sha256": "d5093a3ef3c3f7ba2b699ac8a17b056b8fe381213fbe9d9d609625a0d8da7d56",
+      "bytes": 171603
     },
     "assets/devices/icons/generic/phones/ic_generic_phone_rose_quartz_icon.svg": {
       "sha256": "a48b33d2018d47abfd00df7971d32130aba4589c91bb5d2153b9b527ca15fed1",
@@ -19458,16 +19458,16 @@
       "bytes": 191340
     },
     "assets/devices/icons/generic/tablets/ic_generic_tablet_burgundy_icon.svg": {
-      "sha256": "2c1b07aa62fd638dad65a32582de417f67a3127f65e4582c58d4ef79214e16d1",
+      "sha256": "c8a657829bc9090c4f3666035b4a0e320d2ddd45dc3d4d83acf0d90716d182c4",
       "bytes": 986
     },
     "assets/devices/previews/generic_tablet_burgundy.png": {
-      "sha256": "d64302825b00585ed0bf2cd5faa1878ec9a29834b0d1592c8ea2b713b25c7fd4",
-      "bytes": 2950
+      "sha256": "4a465b49eacebd767bf8782d11be9d1ae66139bbeca8a52c33d4d46bcfec5fef",
+      "bytes": 2925
     },
     "assets/devices/icons/generic/tablets/ic_generic_tablet_burgundy_icon.png": {
-      "sha256": "bb94ed5d3d2a7a7dfb331b93f822cbe8e68bf9cced68eb93a398e24c679b73e7",
-      "bytes": 26433
+      "sha256": "6135c4243b51aeaa3bba2d05b757c84c02d8e046cf54a6a98281c9f96dfed401",
+      "bytes": 25605
     },
     "assets/devices/icons/generic/tablets/ic_generic_tablet_rose_quartz_icon.svg": {
       "sha256": "c988474e98e9aee8f90c2773e20a61767cf0e24739e0263ebcf6d2d53c3c2ee4",
