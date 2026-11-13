@@ -101,8 +101,8 @@ def apply_pixel_rail_details(profile, root):
     details = profile.get('rail_details')
     if not details:
         return {'applied': False, 'reason': 'no measured rail_details'}
-    if not profile['id'].startswith('pixel-'):
-        raise ValueError('rail_details requires an explicitly opted-in Pixel profile')
+    if not profile['id'].startswith('pixel-') and profile['id'] not in {'iphone-17-pro','iphone-17-pro-max'}:
+        raise ValueError('rail_details requires an explicitly opted-in device profile')
     bpy.context.view_layer.update()
     objects = {obj.name: obj for obj in (root, *root.children_recursive)}
     seams = [dict(seam, inset_mm=seam['inset_mm'] if 'inset_mm' in seam

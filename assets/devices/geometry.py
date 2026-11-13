@@ -375,9 +375,9 @@ def camera_assembly(spec, body, materials, parent, prototypes):
                 disk(f'Camera {index} | optical glass', lx, ly, window_optical_z+.035,
                      ww*.47, .04, materials['iphone_lens'], parent)
                 disk(f'Camera {index} | iris', lx, ly, window_optical_z+.008,
-                     lr*.69, .018, materials['iphone_iris'], parent)
+                     lens.get('iris_radius_mm', lr*.69), .018, materials['iphone_iris'], parent)
                 disk(f'Camera {index} | local pupil', lx, ly, window_optical_z-.006,
-                     lr*.46, .012, materials['black'], parent)
+                     lens.get('pupil_radius_mm', lr*.46), .012, materials['black'], parent)
             else:
                 clone_optics(prototypes, lens['kind'], lx, ly, window_optical_z, lr,
                              max(spec.get('optical_bump_mm', 0), .8), parent, index,
@@ -465,7 +465,7 @@ def create_device(profile):
         glass_shader = mats['front_glass'].node_tree.nodes['Principled BSDF']
         glass_shader.inputs['IOR'].default_value = 1.46
         glass_shader.inputs['Coat Weight'].default_value = .2
-    prototypes = load_optics()
+    prototypes = [] if profile.get('camera', {}).get('local_pupil') else load_optics()
     cover = bpy.data.materials.get('Camera pill | antireflective clear cover')
     # This material is loaded with the optics only when referenced; otherwise construct the same cover.
     if cover is None:
@@ -512,8 +512,8 @@ def create_device(profile):
         ring = (lambda inset: traced_ring(pts, inset)) if pts else None
         rolls = body.get('edge_roll_mm', [body.get('edge_roll', .55)]*2)
         back_roll, front_roll = rolls
-        slab('Aluminum enclosure', width, height, depth-.05, radii, (0, 0, 0),
-             mats['rail'], parent, rolls, points=pts)
+        enclosure = slab('Aluminum enclosure', width, height, depth-.05, radii, (0, 0, 0),
+                         mats['rail'], parent, rolls, points=pts)
         back_face = -(depth-.05)/2
 
         def rear_shell(name, offset, mat, extra=0.0):
@@ -542,6 +542,8 @@ def create_device(profile):
                 glass_pts = traced_ring(cover_screen['outline_mm'], -border) if cover_screen.get('outline_mm') else None
             slab('Rear cover glass',sw+2*border,sh+2*border,.25,cover_screen['corner_radius_mm']+border,
                  (sx,sy,-depth/2+.1),mats.get('front_glass',mats['black']),parent,.08,points=glass_pts)
+        elif body.get('rear_style') == 'aluminum-unibody' and not cover_half:
+            pass  # The enclosure is the exposed rear metal; rear_details supplies the glass insert.
         elif body.get('rear_style') == 'unibody' and not cover_half:
             # Pixel 4a/5/5a use a coated one-piece rear shell instead of the inset
             # glass panel used by the glass-backed Pixels. Keep the shell continuous
@@ -666,6 +668,25 @@ def create_device(profile):
                 for name, y, length in [('Power', height*.18, 10), ('Volume', height*.035, 20)]:
                     button = slab(name, 2.5, length, .5, 1.2, (width/2+.15, y, 0), mats['rail'], parent, .12)
                     button.rotation_euler[1] = math.pi/2
+        if body.get('rear_style') == 'aluminum-unibody':
+            port = slab('USB-C opening tool', 9, 3.1, 2, .7,
+                        (0,-height/2+.2,0), None, parent, .05)
+            port.rotation_euler[0] = math.pi/2
+            subtract(enclosure, port)
+            pocket = slab('USB-C cavity', 9, 3.1, .12, .7,
+                          (0,-height/2+1,0), mats['black'], parent, .02)
+            pocket.rotation_euler[0] = math.pi/2
+            tongue = slab('USB-C tongue', 6.6, .5, 1, .2,
+                          (0,-height/2+.8,0), mats['black'], parent, .04)
+            tongue.rotation_euler[0] = math.pi/2
+            for index, px in enumerate([-17.4,-15.2,-13,-10.8,10.8,13,15.2,17.4,19.6,21.8]):
+                hole = cylinder_y('Speaker port tool',px,-height/2+.2,0,.53,2,None,parent)
+                subtract(enclosure, hole)
+                cylinder_y(f'Speaker / microphone port {index}',px,-height/2+1.2,0,.53,.08,
+                           mats['black'],parent)
+            for px in (-6.5,6.5):
+                cylinder_y('Bottom screw',px,-height/2-.003,0,.7,.04,mats['rail'],parent)
+                cylinder_y('Bottom screw recess',px,-height/2-.027,0,.25,.012,mats['black'],parent)
         if articulation and not articulation.get('joints'):
             inner_x = width/2-.35 if panel['center_mm'][0] < articulation['axis_mm'][0] else -width/2+.35
             slab(f'Hinge leaf | {panel["name"]}', .7, height-8, .42, .28,

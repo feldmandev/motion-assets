@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="34" height="54" viewBox="37 27 34 54">
+<defs>
+<linearGradient id="body" gradientUnits="userSpaceOnUse" x1="54" y1="29" x2="54" y2="79"><stop stop-color="#f9e6eb"/><stop offset=".38" stop-color="#efd1db"/><stop offset=".72" stop-color="#e0b9c7"/><stop offset="1" stop-color="#cda0b2"/></linearGradient>
+<radialGradient id="light" gradientUnits="userSpaceOnUse" cx="41" cy="31" r="41"><stop stop-color="#fdf5f7" stop-opacity=".55"/><stop offset="1" stop-color="#fae9ed" stop-opacity="0"/></radialGradient>
+<clipPath id="phone"><rect x="39" y="29" width="30" height="50" rx="7.25"/></clipPath>
+</defs>
+<desc>Generic phone with a vertical dual-camera housing. The body radius is 7.25; the capsule is inset 2.5 with radius 4.75, sharing the upper-left corner center.</desc>
+<rect x="39" y="29" width="30" height="50" rx="7.25" fill="url(#body)"/>
+<rect x="39" y="29" width="30" height="50" rx="7.25" fill="url(#light)"/>
+<g clip-path="url(#phone)">
+<rect x="41.5" y="31.5" width="9.5" height="17.6" rx="4.75" fill="#b88b9e"/>
+<circle cx="46.25" cy="36.25" r="3.35" fill="#182839"/>
+<circle cx="46.25" cy="44.35" r="3.35" fill="#182839"/>
+<circle cx="45.45" cy="35.45" r=".45" fill="#648098"/><circle cx="45.45" cy="43.55" r=".45" fill="#648098"/>
+<circle cx="54" cy="36.25" r="1.15" fill="#f1e9d8"/>
+</g></svg>

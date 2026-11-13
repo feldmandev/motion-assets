@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="108" height="108" viewBox="0 0 108 108" fill="none">
+<defs><linearGradient id="car-body" gradientUnits="userSpaceOnUse" x1="40" y1="36" x2="70" y2="74"><stop stop-color="#edf5d9"/><stop offset=".24" stop-color="#d5e6b9"/><stop offset=".55" stop-color="#b7d18c"/><stop offset="1" stop-color="#90ab64"/></linearGradient><linearGradient id="car-glass" gradientUnits="userSpaceOnUse" x1="36" y1="39" x2="68" y2="51"><stop stop-color="#7897ae"/><stop offset=".4" stop-color="#4c6d89"/><stop offset=".74" stop-color="#304c68"/><stop offset="1" stop-color="#1b3049"/></linearGradient><radialGradient id="car-light" gradientUnits="userSpaceOnUse" cx="40" cy="40" r="30"><stop stop-color="#c2dde5" stop-opacity=".58"/><stop offset=".55" stop-color="#a4c8dd" stop-opacity=".14"/><stop offset="1" stop-color="#a4c8dd" stop-opacity="0"/></radialGradient><linearGradient id="car-tire" gradientUnits="userSpaceOnUse" x1="54" y1="62" x2="54" y2="80"><stop stop-color="#53677b"/><stop offset=".5" stop-color="#344b63"/><stop offset="1" stop-color="#182839"/></linearGradient><linearGradient id="car-hub" gradientUnits="userSpaceOnUse" x1="54" y1="67" x2="54" y2="75"><stop stop-color="#edf5d9"/><stop offset=".24" stop-color="#d5e6b9"/><stop offset=".55" stop-color="#b7d18c"/><stop offset="1" stop-color="#90ab64"/></linearGradient></defs>
+<desc>Generic compact hatchback, side view facing right.</desc>
+<path d="M22 71q-4 0-4-4v-9q0-6 5-8l6-9q3-5 8-5h22q5 0 8 4l8 10 9 2q6 1.5 6 7v8q0 4-4 4z" fill="url(#car-body)"/>
+<path d="M30 50l6-8q2-3 5-3h9v11zM54 39h6q3 0 5 2.5L71 50H54z" fill="url(#car-glass)"/>
+<path d="M30 50l6-8q2-3 5-3h9v11zM54 39h6q3 0 5 2.5L71 50H54z" fill="url(#car-light)"/>
+<rect x="84" y="56" width="5" height="3" rx="1.5" fill="#f1e9d8"/><rect x="18.5" y="56" width="3" height="3" rx="1.2" fill="#d99a84"/>
+<circle cx="35" cy="71" r="8.5" fill="url(#car-tire)"/><circle cx="74" cy="71" r="8.5" fill="url(#car-tire)"/>
+<circle cx="35" cy="71" r="3.5" fill="url(#car-hub)"/><circle cx="74" cy="71" r="3.5" fill="url(#car-hub)"/>
+</svg>

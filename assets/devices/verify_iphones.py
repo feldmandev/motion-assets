@@ -167,6 +167,15 @@ def verify(profile_path, research):
     if '-pro' in pid and not pid.startswith('iphone-11-'):
         assert len(cameras[0].get('sensors', [])) >= 2, (pid, 'LiDAR/rear mic missing')
 
+    if pid in {'iphone-17-pro','iphone-17-pro-max'}:
+        assert 'Ceramic Shield rear glass' in names and 'Rear glass' not in names
+        assert profile['body_mm']['rear_style'] == 'aluminum-unibody'
+        assert profile['camera']['integrated_plateau']
+        assert [lens['kind'] for lens in profile['camera']['lenses']] == ['ultrawide','main','periscope']
+        assert len([name for name in names if name.startswith('Antenna seam |')]) == 8
+        assert {'USB-C cavity','USB-C tongue'} <= names
+        assert len([name for name in names if name.startswith('Speaker / microphone port ')]) == 10
+
     if pid == 'iphone-duo-unfolded':
         assert metadata.get('articulation') == profile['articulation']
         assert 'Rear microphone 0' in names, (pid, 'horizontal rear microphone missing')

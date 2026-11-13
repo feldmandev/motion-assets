@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="108" height="108" viewBox="0 0 108 108" fill="none">
+<defs><linearGradient id="hie-bud" gradientUnits="userSpaceOnUse" x1="26" y1="38" x2="40" y2="80"><stop stop-color="#aa8791"/><stop offset=".24" stop-color="#98727e"/><stop offset=".55" stop-color="#885e6c"/><stop offset="1" stop-color="#79515f"/></linearGradient><linearGradient id="hie-tip" gradientUnits="userSpaceOnUse" x1="40" y1="36" x2="48" y2="46"><stop stop-color="#815866"/><stop offset=".4" stop-color="#734c59"/><stop offset=".74" stop-color="#623e4a"/><stop offset="1" stop-color="#402730"/></linearGradient><radialGradient id="hie-light" gradientUnits="userSpaceOnUse" cx="30" cy="44" r="12"><stop stop-color="#c2dde5" stop-opacity=".58"/><stop offset=".55" stop-color="#a4c8dd" stop-opacity=".14"/><stop offset="1" stop-color="#a4c8dd" stop-opacity="0"/></radialGradient></defs>
+<desc>Generic in-ear earbuds pair with silicone tips and short stems.</desc>
+<g transform="translate(54 58) scale(1.12) translate(-54 -58)"><g id="hie-l"><ellipse cx="44" cy="40.5" rx="4.5" ry="5.5" transform="rotate(-40 44 40.5)" fill="url(#hie-tip)"/>
+<rect x="27" y="50" width="8" height="28" rx="4" transform="rotate(8 31 50)" fill="url(#hie-bud)"/>
+<circle cx="34" cy="49" r="11" fill="url(#hie-bud)"/>
+<circle cx="34" cy="49" r="11" fill="url(#hie-light)"/>
+<circle cx="27.6" cy="74" r="1.5" fill="#f1e9d8" fill-opacity=".85"/></g>
+<use href="#hie-l" transform="translate(108 0) scale(-1 1)"/></g>
+</svg>

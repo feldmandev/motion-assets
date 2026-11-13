@@ -196,7 +196,7 @@ PHONES = {
             ln(.226, .321, .179), ln(.465, .321, .179), ln(.226, .552, .179), circ(.465, .552, .179, "dark"), fl(.465, .552, .068)]),
     # Same measured rear-reference set and shared stylization as the 11R above.
     "oneplus_11": dict(logo_fills={"#151618": "#393a3e", "#1a2c25": "#405b51"}, camera_width=29, aspect=74.1/163.1, logo=("oneplus", .5, .5, .162), r=.15,
-        el=[mod(0, .116, .357, .762, .035, "metal"), circ(.357, .439, .646, "metal"), circ(.357, .439, .615, "camera_dark"),
+        el=[mod(0, .116, .357, .762, .035, "dark_metal"), circ(.357, .439, .646, "dark_metal"), circ(.357, .439, .615, "dial_dark"),
             ln(.244, .320, .173), ln(.502, .320, .173), ln(.244, .544, .173), circ(.502, .544, .173, "dark"), fl(.502, .544, .066)]),
     "oneplus_12": dict(logo_fills={"#18191b": "#3e3f42", "#1c3630": "#446a62"}, camera_width=28, aspect=75.8/164.3, logo=("oneplus", .5, .5359, .1583), r=.15,
         el=[mod(0, .1245, .386, .8455, .035, "metal"), circ(.386, .485, .721, "metal"), circ(.386, .485, .69, "body"),
@@ -500,6 +500,14 @@ def module(doc, x0, y0, x1, y1, r, kind, top, mid, bot, bottom_r=None):
         i = min(w, h) * .025
         doc.add(rounded_rect(x0 + i, y0 + i, w - 2 * i, h - 2 * i, rr - i),
                 doc.lin(x0, y0, x0, y1, [(0, mix(top, "#ffffff", .08)), (1, mid)]))
+    elif kind == "dial_dark":
+        doc.add(rounded_rect(x0, y0, w, h, rr), doc.lin(x0, y0, x1, y1, [(0, "#191c20"), (1, "#090c10")]))
+    elif kind == "dark_metal":
+        # OnePlus 11's dark steel decor is not a silver ring/shoulder.
+        doc.add(rounded_rect(x0, y0, w, h, rr), doc.lin(x1, y0, x0, y1, [(0, mix(mid, "#ffffff", .09)), (1, mix(mid, "#000000", .12))]))
+        i = min(w, h) * .02
+        doc.add(rounded_rect(x0 + i, y0 + i, w - 2 * i, h - 2 * i, max(rr - i, 0)),
+                doc.lin(x0, y0, x1, y1, [(0, mix(mid, "#ffffff", .03)), (1, mix(mid, "#000000", .18))]))
     elif kind == "metal":
         doc.add(rounded_rect(x0, y0, w, h, rr), doc.lin(x1, y0, x0, y1, [(0, mix(top, "#ffffff", .55)), (1, mix(mid, "#6b6e73", .45))]))
         i = min(w, h) * .02

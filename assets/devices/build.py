@@ -689,7 +689,7 @@ def build(profile_path, output, screen_image=None, finish=None):
     rail_material = bpy.data.materials.get(rail_name)
     if profile.get('form_factor', 'phone') == 'phone' and rail_material and rail_material.use_nodes:
         shader = rail_material.node_tree.nodes.get('Principled BSDF')
-        if shader and shader.inputs['Metallic'].default_value > .5:
+        if shader and shader.inputs['Metallic'].default_value > .5 and body.get('rear_style') != 'aluminum-unibody':
             shader.inputs['Roughness'].default_value = max(.1, min(.25, shader.inputs['Roughness'].default_value*.65))
     apply_lens_coatings()
     from optics import apply_blender

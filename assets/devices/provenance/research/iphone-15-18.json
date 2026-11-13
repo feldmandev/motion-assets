@@ -26791,15 +26791,18 @@
       "colors": [
         {
           "name": "Silver",
-          "hex": "#d7d7d5"
+          "hex": "#c4c5c6",
+          "rail_hex": "#c9c9c7"
         },
         {
           "name": "Cosmic Orange",
-          "hex": "#ca754b"
+          "hex": "#ca754b",
+          "rail_hex": "#e47b3a"
         },
         {
           "name": "Deep Blue",
-          "hex": "#343f53"
+          "hex": "#273248",
+          "rail_hex": "#3f4c67"
         }
       ],
       "status": "official",
@@ -29472,15 +29475,18 @@
       "colors": [
         {
           "name": "Silver",
-          "hex": "#d7d7d5"
+          "hex": "#c4c5c6",
+          "rail_hex": "#c9c9c7"
         },
         {
           "name": "Cosmic Orange",
-          "hex": "#ca754b"
+          "hex": "#ca754b",
+          "rail_hex": "#e47b3a"
         },
         {
           "name": "Deep Blue",
-          "hex": "#343f53"
+          "hex": "#273248",
+          "rail_hex": "#3f4c67"
         }
       ],
       "status": "official",

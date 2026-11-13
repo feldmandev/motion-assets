@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="52" height="36.4" viewBox="28 35.8 52 36.4">
+<defs><linearGradient id="body" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#ffc090"/><stop offset=".48" stop-color="#f6a26b"/><stop offset="1" stop-color="#d77539"/></linearGradient><clipPath id="tablet"><rect x="30" y="37.8" width="48" height="32.4" rx="4.75"/></clipPath></defs>
+<desc>Generic tablet. Larger vertical dual-camera housing. Body radius 4.75, capsule inset 1.5 and radius 3.25 share the upper-left corner center.</desc>
+<rect x="30" y="37.8" width="48" height="32.4" rx="4.75" fill="url(#body)"/>
+<g clip-path="url(#tablet)">
+<rect x="31.5" y="39.3" width="6.5" height="12" rx="3.25" fill="#b45722"/>
+<circle cx="34.75" cy="42.55" r="2.1" fill="#182839"/>
+<circle cx="34.75" cy="48.05" r="2.1" fill="#182839"/>
+<circle cx="34.2" cy="42" r=".3" fill="#648098"/><circle cx="34.2" cy="47.5" r=".3" fill="#648098"/>
+<circle cx="40.2" cy="42.55" r=".8" fill="#f1eadb"/>
+</g></svg>

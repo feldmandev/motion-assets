@@ -709,16 +709,6 @@
       "bytes": 821101,
       "glbSha256": "cf1cfe186f2ff45576fd5a4128fc633c54271ef8fce7d685a1bb802e3dc43b07"
     },
-    "assets/devices/models/iphone-17-pro-max.68b49da3b554.glb.gz": {
-      "sha256": "68b49da3b554fac864059b18b35a5e34d40ad923c8bfeeaa33fef18231b5ed3d",
-      "bytes": 967966,
-      "glbSha256": "aa67c45d013d08f895974258cfa591c3bba1b97072a53e158738fe6e6890e9d5"
-    },
-    "assets/devices/models/iphone-17-pro.31529a2faa52.glb.gz": {
-      "sha256": "31529a2faa5244b1f1ab4d347489795b1e1ae098c02cfbfdcc7b2f4494042ec4",
-      "bytes": 969399,
-      "glbSha256": "cb50834b70f60735831b07f40ef08ab010643d237985c06e7ab37bb00812bd27"
-    },
     "assets/devices/models/iphone-17.2b13cab517f8.glb.gz": {
       "sha256": "2b13cab517f8aae414f52b5ac99281bcfa7d1a7d849358f4a78787166dae0188",
       "bytes": 905454,
@@ -1293,6 +1283,16 @@
       "sha256": "fed33d108eeb48ce9100744e98606f6791a69bbf0d4374fa189b368f721b3233",
       "bytes": 15606800,
       "glbSha256": "c43080a3a46b56ca2429f3b8f375f3bc49f3fb58696e6cc0d021adb168d234bf"
+    },
+    "assets/devices/models/iphone-17-pro.d7a721a9fa58.glb.gz": {
+      "sha256": "d7a721a9fa5819127cb120fbfe35a289202c08c3760d2551b951f33b82916e33",
+      "bytes": 1311998,
+      "glbSha256": "1cdc86be1b914efd4d82c5038989e22e4fad364227708929563acb92b98f5728"
+    },
+    "assets/devices/models/iphone-17-pro-max.f4725ebcd02c.glb.gz": {
+      "sha256": "f4725ebcd02c515905a3e520dc1d0c188acc11a50a9b3ea55302e76ec0d25530",
+      "bytes": 1309004,
+      "glbSha256": "dae6c11e75d978e3fac3a0a84c23dffce097c38325750c57323f1be327c3748b"
     }
   }
 }

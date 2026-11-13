@@ -46,7 +46,8 @@
           0.7,
           0.58
         ],
-        "front_curve": 0
+        "front_curve": 0,
+        "rear_style": "aluminum-unibody"
       },
       "cutouts": [
         {
@@ -74,7 +75,8 @@
       0.7,
       0.58
     ],
-    "front_curve": 0
+    "front_curve": 0,
+    "rear_style": "aluminum-unibody"
   },
   "icon_morph": {
     "windows": 3,
@@ -96,7 +98,8 @@
     "bar": "bar",
     "logo": "logo",
     "black": "black",
-    "flash": "flash"
+    "flash": "flash",
+    "antenna": "antenna"
   },
   "finishes": [
     {
@@ -104,33 +107,40 @@
       "materials": {
         "back": {
           "rgb": [
-            0.8431372549019608,
-            0.8431372549019608,
-            0.8352941176470589
+            0.7686274509803922,
+            0.7725490196078432,
+            0.7764705882352941
           ]
         },
         "rail": {
           "rgb": [
-            0.8431372549019608,
-            0.8431372549019608,
-            0.8352941176470589
+            0.788235294117647,
+            0.788235294117647,
+            0.7803921568627451
           ]
         },
         "bar": {
           "rgb": [
-            0.8431372549019608,
-            0.8431372549019608,
-            0.8352941176470589
+            0.788235294117647,
+            0.788235294117647,
+            0.7803921568627451
           ]
         },
         "logo": {
           "rgb": [
-            0.5882352941176471,
-            0.5882352941176471,
-            0.596078431372549
+            0.4765490196078432,
+            0.4789803921568628,
+            0.4814117647058824
+          ]
+        },
+        "antenna": {
+          "rgb": [
+            0.6475294117647058,
+            0.6475294117647058,
+            0.6418823529411765
           ],
-          "metal": 0.92,
-          "rough": 0.18
+          "rough": 0.68,
+          "metal": 0
         }
       }
     },
@@ -146,26 +156,33 @@
         },
         "rail": {
           "rgb": [
-            0.792156862745098,
-            0.4588235294117647,
-            0.29411764705882354
+            0.8941176470588236,
+            0.4823529411764706,
+            0.22745098039215686
           ]
         },
         "bar": {
           "rgb": [
-            0.792156862745098,
-            0.4588235294117647,
-            0.29411764705882354
+            0.8941176470588236,
+            0.4823529411764706,
+            0.22745098039215686
           ]
         },
         "logo": {
           "rgb": [
-            0.792156862745098,
-            0.5294117647058824,
-            0.35294117647058826
+            0.49113725490196075,
+            0.2844705882352941,
+            0.1823529411764706
+          ]
+        },
+        "antenna": {
+          "rgb": [
+            0.7237647058823529,
+            0.4272941176470588,
+            0.24376470588235294
           ],
-          "metal": 0.92,
-          "rough": 0.18
+          "rough": 0.68,
+          "metal": 0
         }
       }
     },
@@ -174,52 +191,61 @@
       "materials": {
         "back": {
           "rgb": [
-            0.20392156862745098,
-            0.24705882352941178,
-            0.3254901960784314
+            0.15294117647058825,
+            0.19607843137254902,
+            0.2823529411764706
           ]
         },
         "rail": {
           "rgb": [
-            0.20392156862745098,
             0.24705882352941178,
-            0.3254901960784314
+            0.2980392156862745,
+            0.403921568627451
           ]
         },
         "bar": {
           "rgb": [
-            0.20392156862745098,
             0.24705882352941178,
-            0.3254901960784314
+            0.2980392156862745,
+            0.403921568627451
           ]
         },
         "logo": {
           "rgb": [
-            0.3764705882352941,
-            0.42745098039215684,
-            0.5294117647058824
+            0.31011764705882355,
+            0.3411764705882353,
+            0.4032941176470588
+          ]
+        },
+        "antenna": {
+          "rgb": [
+            0.2978823529411765,
+            0.33458823529411763,
+            0.4108235294117647
           ],
-          "metal": 0.92,
-          "rough": 0.18
+          "rough": 0.68,
+          "metal": 0
         }
       }
     }
   ],
-  "glbUrl": "assets/devices/models/iphone-17-pro-max.68b49da3b554.glb.gz",
-  "sha256": "68b49da3b554fac864059b18b35a5e34d40ad923c8bfeeaa33fef18231b5ed3d",
+  "glbUrl": "assets/devices/models/iphone-17-pro-max.f4725ebcd02c.glb.gz",
+  "sha256": "f4725ebcd02c515905a3e520dc1d0c188acc11a50a9b3ea55302e76ec0d25530",
   "provenance": {
     "kind": "procedural-estimate",
     "profile": "assets/devices/profiles/iphone-17-pro-max.json",
     "accuracy": {
       "body_dimensions": "Apple published metric dimensions",
       "screen_geometry": "visual estimates; compound corner curves documented in Apple dimensional PDFs are not constant circular radii",
-      "camera_geometry": "Apple drawing lens coordinates and depths; island outline bounds/radius are visual approximations",
-      "controls": "Apple dimensional-drawing control centerlines across the generated slab catalog",
-      "finishes": "finish names official; RGB visual approximations, not calibrated manufacturer paint values"
+      "camera_geometry": "Apple drawing lens coordinates and depths; island outline bounds/radius are visual approximations; pupil sizes are visual approximations of the three distinct optics",
+      "controls": "Apple drawing control centerlines, lengths and widths; small edge fillets approximate",
+      "finishes": "finish names official; RGB visual approximations, not calibrated manufacturer paint values",
+      "rear_glass": "Separate Ceramic Shield insert; outline and antenna locations estimated from Apple dimensional drawings and product photos"
     },
     "sources": [
       "https://support.apple.com/en-us/125091",
-      "https://developer.apple.com/download/files/accessories/dimensional-drawings/iphone-17-pro-max.pdf"
+      "https://developer.apple.com/download/files/accessories/dimensional-drawings/iphone-17-pro-max.pdf",
+      "https://www.apple.com/newsroom/2025/09/apple-unveils-iphone-17-pro-and-iphone-17-pro-max/"
     ]
   }
 }

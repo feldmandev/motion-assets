@@ -15,6 +15,7 @@ import xml.etree.ElementTree as ET
 import numpy as np
 import trimesh
 from catalog import ROOT, write_json
+from generic_palettes import generic_materials, model_finishes
 
 sys.path.insert(0, str(ROOT/'assets/devices'))
 from optics import apply_glb
@@ -97,11 +98,12 @@ def main():
         frame_path.write_text(frame)
         profile = {"id": model_id, "name": label, "accuracy": {"geometry": "Brand-neutral procedural illustration, not measured hardware or vendor CAD."}, "sources": [{"kind": "original", "description": "Motion generic device artwork and authored screen mapping"}]}
         write_json(folder / "profiles" / (model_id + ".json"), profile)
+        slots, finishes = model_finishes(generic_materials(kind))
         data = {"id": model_id, "name": label, "state": "default", "glbUrl": relative, "sha256": digest,
             "screens": [{"node": "Device screen", "nodes": ["Device screen"], "material": screen_name, "resolution": pixels,
                 "size_mm": [sw, sh], "center_mm": [0, 0, depth / 2 + .1], "rotation_deg": [0, 0, 0], "corner_radius_mm": sr}],
             "frames": [{"name": "Device screen", "file": frame_path.name, "image": frame_path.relative_to(ROOT).as_posix()}],
-            "adaptive": True, "slots": {}, "finishes": [],
+            "adaptive": True, "slots": slots, "finishes": finishes,
             "provenance": {"kind": "procedural-estimate", "profile": f"assets/devices/profiles/{model_id}.json", **{key: profile[key] for key in ["accuracy", "sources"]}}}
         write_json(folder / "models" / (model_id + ".json"), data)
         entry = next(device for device in catalog if device["model"] == ident)

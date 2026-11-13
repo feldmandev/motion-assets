@@ -262,6 +262,39 @@ def profile(device):
             'sources':device['sources'], 'accuracy':dict(device.get('accuracy',{}), body_dimensions='Apple published metric dimensions', screen_geometry=front.get('radius_status',front.get('radii_status','Apple drawing active area; corners approximate')), camera_geometry=camera.get('status',camera.get('measurement_status','Apple drawing dimensions where supplied; corner curvature and optics approximate')), controls='Apple dimensional-drawing control centerlines across the generated slab catalog', finishes=device.get('color_status','Official finish names; approximate sRGB materials'))}
     if front.get('body_outline_mm'):
         result['body_outline_mm'] = front['body_outline_mm']
+    if device['id'] in {'iphone-17-pro', 'iphone-17-pro-max'}:
+        body['rear_style'] = 'aluminum-unibody'
+        glass_height = body['height'] - 53.8
+        result['rear_details'] = [{'name':'Ceramic Shield rear glass', 'center_mm':[0,-21.3],
+                                  'size_mm':[body['width']-8.6,glass_height,9.0],
+                                  'depth_mm':.045,'material':'back'}]
+        spec.update(integrated_plateau=True, roll_mm=[1.15,.18])
+        for lens, kind, iris, pupil in zip(spec['lenses'], ('ultrawide','main','periscope'),
+                                          (3.2,4.1,3.5), (2.1,2.8,2.2)):
+            lens.update(kind=kind, iris_radius_mm=iris, pupil_radius_mm=pupil)
+        for button in buttons:
+            camera_control = button['name'] == 'Camera Control'
+            button.update(width_mm=3.03 if camera_control else 2.66,
+                          length_mm={'Side button':17.7,'Volume up':11.2,'Volume down':11.2,
+                                     'Action button':6.9,'Camera Control':17.1}[button['name']],
+                          radius_mm=1.515 if camera_control else 1.33)
+        result['rail_details'] = {
+            'enclosure':'Aluminum enclosure','rail_material':'rail',
+            'materials':{'antenna':{'color_role':'rail','metal':0,'rough':.68}},
+            'antenna_breaks':[
+                {'id':f'{edge}-{end}','edge':edge,'center_axis_mm':position,
+                 'width_mm':1.2,'inset_mm':1.0,'material':'antenna'}
+                for edge in ('left','right')
+                for end,position in [('upper',body['height']/2-18),('lower',-body['height']/2+17)]
+            ] + [
+                {'id':f'{edge}-{side}','edge':edge,'center_axis_mm':position,
+                 'width_mm':1.2,'inset_mm':1.0,'material':'antenna'}
+                for edge in ('top','bottom') for side,position in [('left',-17),('right',17)]
+            ]}
+        result['sources'].append('https://www.apple.com/newsroom/2025/09/apple-unveils-iphone-17-pro-and-iphone-17-pro-max/')
+        result['accuracy']['rear_glass'] = 'Separate Ceramic Shield insert; outline and antenna locations estimated from Apple dimensional drawings and product photos'
+        result['accuracy']['camera_geometry'] += '; pupil sizes are visual approximations of the three distinct optics'
+        result['accuracy']['controls'] = 'Apple drawing control centerlines, lengths and widths; small edge fillets approximate'
     return result
 
 
