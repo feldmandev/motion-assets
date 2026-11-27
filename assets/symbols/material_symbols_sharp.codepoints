@@ -1186,6 +1186,7 @@ docs_apps_script f0c3
 document_scanner e5fa
 document_search f385
 document_share ffea6
+document_share_stack ffe93
 domain e7ee
 domain_add eb62
 domain_disabled e0ef
@@ -2834,6 +2835,7 @@ person_cancel f566
 person_celebrate f7fe
 person_check f565
 person_edit f4fa
+person_eye ffe9e
 person_filled f0d3
 person_heart f290
 person_off e510
@@ -3548,6 +3550,7 @@ speed_2 fff38
 speed_2x f4eb
 speed_3 fff37
 speed_4 fff36
+speed_4_progress ffe94
 speed_camera f470
 spellcheck e8ce
 split_scene f3bf
